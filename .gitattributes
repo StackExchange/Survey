@@ -19,3 +19,6 @@ packages/archive/**/*.eot filter=lfs diff=lfs merge=lfs -text
 packages/archive/**/*.html filter=lfs diff=lfs merge=lfs -text
 packages/archive/**/*.js filter=lfs diff=lfs merge=lfs -text
 packages/archive/**/*.css filter=lfs diff=lfs merge=lfs -text
+
+# Top-level archive landing page is hand-edited — keep it as a regular blob.
+packages/archive/index.html !filter !diff !merge text
