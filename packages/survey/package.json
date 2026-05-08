@@ -17,13 +17,13 @@
 		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@tsconfig/svelte": "^5.0.8",
-		"@types/node": "^24.12.2",
+		"@types/node": "^25.6.2",
 		"ajv-cli": "^5.0.0",
 		"json-schema-to-typescript": "^15.0.4",
-		"svelte": "^5.55.4",
-		"svelte-check": "^4.4.6",
+		"svelte": "^5.55.5",
+		"svelte-check": "^4.4.8",
 		"tsx": "^4.21.0",
 		"typescript": "~6.0.2",
 		"vite": "^8.0.10"
