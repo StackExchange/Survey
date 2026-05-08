@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentExternal
+  version: '2025.1'
+  title: You indicated you use or develop AI agents as part of your development work. Have you used any of the following out-of-the-box agents, copilots or assistants?
+  type: multi_select
+  required: false
+  options:
+    - AgentGPT
+    - Amazon Codewhisperer
+    - Auto-GPT
+    - Blackbox AI
+    - Bolt.new
+    - ChatGPT
+    - Claude Code
+    - Cody
+    - Devin AI
+    - GitHub Copilot
+    - Glean (Enterprise Agents)
+    - Google Gemini
+    - Lovable.dev
+    - Microsoft Copilot
+    - OpenHands (formerly OpenDevin)
+    - Perplexity
+    - Replit
+    - Roo code (Roo-Cline)
+    - Tabnine
+    - v0.dev
+  show_if:
+    AIAgents:
+      - daily
+      - weekly
+      - monthly

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SurveyLength
+  version: '2025.1'
+  title: How do you feel about the length of the survey this year?
+  type: multi_select
+  required: false
+  options:
+    - Too short
+    - Appropriate in length
+    - Too long

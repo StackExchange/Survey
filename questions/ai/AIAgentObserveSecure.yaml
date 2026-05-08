@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentObserveSecure
+  version: '2025.1'
+  title: You indicated you use or develop AI agents as part of your development work. Have you used any of the following tools for AI agent observability, monitoring or security in the past year?
+  type: multi_select
+  required: false
+  options:
+    - Adversarial Robustness Toolbox (ART)
+    - arize
+    - Galileo
+    - Grafana + Prometheus
+    - helicone
+    - Honeycomb
+    - Langfuse
+    - LangSmith
+    - Metero
+    - New Relic
+    - opik
+    - Protect AI
+    - Sentry
+    - Snyk
+    - Vectra AI
+    - Wiz
+  show_if:
+    AIAgents:
+      - daily
+      - weekly
+      - monthly

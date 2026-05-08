@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIOpen
+  version: '2025.1'
+  title: Looking ahead 3–5 years, what skills do you believe will remain valuable for developers even as AI tools become more capable? Please describe.
+  type: free_text
+  required: false
+  lines: multi

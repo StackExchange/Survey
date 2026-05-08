@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: DevEnvsChoice
+  version: '2025.1'
+  title: Did you work with development environments or AI-enabled code editing tools in the last year or do you plan to in the year to come?  Here, we are referring to programs like VS Code that allow you to write, edit and save code easily and help you share code with other developers or AI agents.
+  type: single_select
+  required: false
+  options:
+    - Yes
+    - No
+    - I don't know

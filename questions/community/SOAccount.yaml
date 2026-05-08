@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOAccount
+  version: '2025.1'
+  title: Do you have a Stack Overflow account?
+  type: single_select
+  required: false
+  options:
+    - Yes
+    - No
+    - Not sure/can't remember

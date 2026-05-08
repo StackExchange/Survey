@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Consent
+  version: '2025.1'
+  title: |-
+    **You consent to providing your information to help us stay privacy compliant**
+
+    Your participation in this survey is completely anonymous. As in previous years, anonymized results of the survey will be made publicly available under the Open Database License, where anyone can download and analyze the data. On that note, throughout the survey, certain answers you and your peers give will be treated as personally identifiable information, and therefore kept out of the anonymized results file. The information gathered via this survey is made available to the public in the spirit of community which Stack Overflow was founded and to serve as a resource for everyone who codes.  More about the importance of privacy at Stack Overflow is available to [read on our website](https://stackoverflow.com/legal/privacy-policy).
+
+    By selecting "I agree" and submitting this survey, you acknowledge that you voluntarily consent to your anonymous answers being made publicly available.
+  type: single_select
+  required: true
+  options:
+    - I agree
+    - I do not agree (selecting this will end the survey)

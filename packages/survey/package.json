@@ -1,0 +1,36 @@
+{
+	"name": "survey",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Tooling for updating the Stack Overflow Developer Survey in Qualtrics, as well as creating a preview.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+		"export": "tsx scripts/qualtrics.ts",
+		"gen:types": "tsx scripts/gen-types.ts",
+		"validate:questions": "ajv validate -s ../../questions/question.schema.json -d \"../../questions/**/*.yaml\" --strict=false --errors=text",
+		"validate:survey": "ajv validate -s survey.schema.json -d survey.yaml --strict=false --errors=text",
+		"validate:cross": "tsx scripts/validate.ts",
+		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@tsconfig/svelte": "^5.0.8",
+		"@types/node": "^24.12.2",
+		"ajv-cli": "^5.0.0",
+		"json-schema-to-typescript": "^15.0.4",
+		"svelte": "^5.55.4",
+		"svelte-check": "^4.4.6",
+		"tsx": "^4.21.0",
+		"typescript": "~6.0.2",
+		"vite": "^8.0.10"
+	},
+	"dependencies": {
+		"@dnd-kit/svelte": "^0.4.0",
+		"marked": "^15.0.0",
+		"yaml": "^2.8.3"
+	}
+}

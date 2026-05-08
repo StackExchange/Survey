@@ -1,0 +1,17 @@
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# Annual survey repo — monthly cadence keeps PR noise low during quiet months.
+# Security advisories run independently of `interval`, so CVE patches still
+# arrive promptly. Workspace package.jsons under packages/* are picked up
+# automatically from the root manifest.
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      dev:
+        dependency-type: development
+      prod:
+        dependency-type: production

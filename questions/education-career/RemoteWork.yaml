@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: RemoteWork
+  version: '2025.1'
+  title: Which best describes your current work situation?
+  type: single_select
+  required: false
+  options:
+    - Remote
+    - In-person
+    - Hybrid (some remote, leans heavy to in-person)
+    - Hybrid (some in-person, leans heavy to flexibility)
+    - Your choice (very flexible, you can come in when you want or just as needed)
+  show_if:
+    any:
+      - Employment:
+          - employed
+      - EmploymentAddl:
+          - hrs_under_10
+          - hrs_10_19
+          - hrs_20_29

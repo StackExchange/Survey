@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgent_Uses
+  version: '2025.1'
+  title: What industry purposes or specific tasks are you using AI agents in your development work? Select all that apply from both lists.
+  type: multi_select
+  required: false
+  options:
+    - Business process automation
+    - Customer service support
+    - Cybersecurity
+    - Data and analytics
+    - Decision intelligence
+    - IT operations
+    - Marketing
+    - Software engineering
+    - Robotics
+    - label: 'Other Industry purpose (write in):'
+      text_entry: true
+  show_if:
+    not:
+      AIAgents:
+        - plans_to
+        - wont_use

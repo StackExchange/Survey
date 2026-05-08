@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SO_Actions
+  version: '2025.1'
+  title: When visiting Stack Overflow, which following activities are you most interested in?  Please rank the following so the first activity is what most interests you and last is your least interested activity.
+  type: rank
+  required: false
+  randomize: true
+  options:
+    - Browse content related to Q&A posts I recently viewed
+    - Read and/or vote on comments for a Question or Answer I am interested in
+    - Bookmark posts to look at later
+    - Directly open a Q&A post via search, documentation or a peer
+    - Ask a question
+    - Answer a question
+    - Comment on Q&A posts
+    - Upvote/Downvote Q&A posts
+    - Use discussion or chat feature
+    - label: 'Other (write in):'
+      text_entry: true

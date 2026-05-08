@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Employment
+  version: '2025.1'
+  title: Which of the following best describes your current employment status?
+  type: single_select
+  required: true
+  options:
+    - Employed
+    - label: Independent contractor, freelancer, or self-employed
+      key: independent
+    - Not employed
+    - Student
+    - Retired
+    - label: I prefer not to say
+      key: prefer_not_to_say

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: DevEnvWantEntry
+  version: '2025.1'
+  title: Was the developer environment or AI-enabled code editing tool you want to use not listed above?  List below, separated by a comma and a space for each, what **you want to use next year**.
+  type: free_text
+  required: false
+  lines: single
+  show_if:
+    not:
+      DevEnvsChoice:
+        - no

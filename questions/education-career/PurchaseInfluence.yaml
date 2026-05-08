@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: PurchaseInfluence
+  version: '2025.1'
+  title: Have you **influenced or endorsed** a new technology purchase at your organization or sole proprietor job in the past year?
+  type: single_select
+  required: false
+  options:
+    - Yes, I influenced the purchase of a substantial addition to the tech stack
+    - Yes, I influenced the purchase of a tool that more than five colleagues use but it is not a substantial addition to the tech stack
+    - Yes, I endorsed a tool that was open-source and is currently used by more than just myself but no purchase was made
+    - Yes, I endorsed a tool that was ultimately not purchased or used at my organization
+    - No
+  show_if:
+    any:
+      - Employment:
+          - employed
+          - independent
+      - EmploymentAddl:
+          - hrs_under_10
+          - hrs_10_19
+          - hrs_20_29

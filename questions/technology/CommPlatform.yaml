@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: CommPlatform
+  version: '2025.1'
+  title: Which **community platforms** have you utilized considerably or consistently in the past year, and which would you like to use next year?  Select all that apply.
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - '**Worked with** in past year'
+      - '**Want** to work with next year'
+  options:
+    - Stack Overflow
+    - Stack Exchange
+    - Discord
+    - Reddit
+    - Dev.to
+    - Hacker News
+    - Hashnode
+    - GitHub (public projects, not private repos)
+    - Slack (public channels, not work)
+    - Bluesky
+    - X
+    - Kaggle
+    - YouTube
+    - Twitch
+    - LinkedIn
+    - Substack
+    - Medium
+    - Company-sponsored forums

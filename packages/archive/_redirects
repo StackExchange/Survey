@@ -1,0 +1,18 @@
+# Current-year proxy — must win over generic /:year/* below.
+# 200! = rewrite + force (beats everything, even static files).
+/2025           https://stackoverflow-survey-2.netlify.app/2025             200!
+/2025/*         https://stackoverflow-survey-2.netlify.app/2025/:splat      200!
+
+# Live survey shortcut.
+/survey/*       https://survey.stackoverflow.co/:splat                      302
+
+# /YYYY and /YYYY/ → serve the per-year site's index.html.
+# (Scraped HTML uses absolute asset paths like /legacy-assets/… or /YYYY/…,
+# so no trailing-slash redirect is needed for relative-path resolution.)
+/:year          /:year/site/index.html    200
+/:year/         /:year/site/index.html    200
+
+# /YYYY/<anything> → /YYYY/site/<anything>. Static files at /YYYY/
+# (results.csv, schema.csv, survey.pdf) are served directly from disk
+# before rewrites apply.
+/:year/*        /:year/site/:splat        200

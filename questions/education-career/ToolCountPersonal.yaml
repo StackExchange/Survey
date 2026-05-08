@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ToolCountPersonal
+  version: '2025.1'
+  title: |-
+    For your **side projects or other personal work** over the past year (focus on the project you spent the most time on if applicable):  
+      
+    Excluding general operating systems and web browsers, how many **distinct software applications or platforms** did you regularly use to do your job? Please enter a whole number below with no punctuation, or leave blank.
+  type: free_text
+  required: false
+  lines: single
+  validate:
+    type: number
+    min: 0
+    max: 1000

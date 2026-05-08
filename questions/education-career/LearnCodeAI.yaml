@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: LearnCodeAI
+  version: '2025.1'
+  title: Did you spend time in the last year learning AI programming or AI-enabled tooling on your own or at work?
+  type: single_select
+  required: false
+  options:
+    - label: Yes, I learned how to use AI-enabled tools **required for my job or to benefit my career**
+      key: for_career
+    - label: Yes, I learned how to use AI-enabled tools for **my personal curiosity and/or hobbies**
+      key: personal
+    - No, I learned something that was not related to AI or AI enablement as **required for my job or to benefit my career**
+    - No, I learned something that was not related to AI or AI enablement for **my personal curiosity and/or hobbies**
+    - No, I didn't spend time learning in the past year

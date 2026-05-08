@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: LearnCodeChoose
+  version: '2025.1'
+  title: Did you begin learning to code or learn a new coding skill/programming language in the last year?
+  type: single_select
+  required: false
+  options:
+    - label: Yes, I am new to coding or currently a student
+      key: new_to_coding
+    - label: Yes, I am **not new** to coding but am learning new coding techniques or programming language
+      key: learning_new
+    - No, I am not new to coding and did not learn new coding techniques or programming languages

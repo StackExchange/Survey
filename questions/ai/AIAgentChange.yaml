@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentChange
+  version: '2025.1'
+  title: Have AI tools or AI agents changed how you complete development work in the past year?
+  type: single_select
+  required: false
+  options:
+    - Yes, to a great extent
+    - Yes, somewhat
+    - Not at all or minimally
+    - No, but my development work has changed somewhat due to non-AI factors
+    - No, but my development work has **significantly** changed due to non-AI factors

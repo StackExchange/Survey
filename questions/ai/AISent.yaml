@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AISent
+  version: '2025.1'
+  title: How favorable is your stance on using AI tools as part of your development workflow?
+  type: single_select
+  required: false
+  options:
+    - Very favorable
+    - Favorable
+    - Indifferent
+    - Unfavorable
+    - Very unfavorable
+    - Unsure

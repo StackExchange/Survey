@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: PlatformChoice
+  version: '2025.1'
+  title: Did you work with cloud platforms, containerization/orchestration tools, package managers, build tools or infrastructure as code solutions in the last year or do you plan to in the year to come?  Here, we are referring to tooling that automates, manages, and scales the entire application lifecycle, often leveraging remote, virtualized resources.
+  type: single_select
+  required: false
+  options:
+    - Yes
+    - No
+    - I don't know

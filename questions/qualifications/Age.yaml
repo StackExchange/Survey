@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Age
+  version: '2025.1'
+  title: What is your age?
+  type: single_select
+  required: true
+  options:
+    - Under 18 years old
+    - 18-24 years old
+    - 25-34 years old
+    - 35-44 years old
+    - 45-54 years old
+    - 55-64 years old
+    - 65 years or older
+    - Prefer not to say

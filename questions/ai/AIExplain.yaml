@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIExplain
+  version: '2025.1'
+  title: In your own words, is "vibe coding" part of your professional development work? For this question, we define vibe coding according to the [Wikipedia definition](https://en.wikipedia.org/wiki/Vibe_coding), the process of generating software from LLM prompts.
+  type: free_text
+  required: false
+  lines: multi

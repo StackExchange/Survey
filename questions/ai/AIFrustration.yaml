@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIFrustration
+  version: '2025.1'
+  title: When using AI tools, which of the following problems or frustrations have you encountered? Select all that apply.
+  type: multi_select
+  required: false
+  randomize: true
+  options:
+    - AI solutions that are almost right, but not quite
+    - It’s hard to understand how or why the code works
+    - Debugging AI-generated code is more time-consuming
+    - I’ve become less confident in my own problem-solving
+    - I haven’t encountered any problems
+    - I don’t use AI tools regularly
+    - label: 'Other (write in):'
+      text_entry: true

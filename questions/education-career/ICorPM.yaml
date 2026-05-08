@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ICorPM
+  version: '2025.1'
+  title: Are you an individual contributor or people manager?
+  type: single_select
+  required: false
+  options:
+    - Individual contributor
+    - People manager
+  show_if:
+    any:
+      - Employment:
+          - employed
+      - EmploymentAddl:
+          - hrs_under_10
+          - hrs_10_19
+          - hrs_20_29

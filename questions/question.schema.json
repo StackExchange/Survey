@@ -1,0 +1,192 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Survey question",
+	"description": "One question file under questions/. Filename must match question.id.",
+	"type": "object",
+	"required": ["question"],
+	"additionalProperties": false,
+	"properties": {
+		"question": {
+			"type": "object",
+			"required": ["id", "version", "title", "type", "required"],
+			"additionalProperties": false,
+			"properties": {
+				"id": {
+					"type": "string",
+					"pattern": "^[A-Za-z0-9_-]+$",
+					"description": "Stable identifier; used as the Qualtrics DataExportTag and as the filename."
+				},
+				"version": {
+					"type": "string",
+					"pattern": "^\\d{4}\\.\\d+$",
+					"description": "Survey release version this question shipped under, e.g. 2025.1."
+				},
+				"title": {
+					"type": "string",
+					"description": "The prompt as Markdown. **bold**, *italic*, [text](url), and `- ` lists are supported."
+				},
+				"type": {
+					"enum": ["single_select", "multi_select", "nps", "free_text", "rank", "scale", "display", "meta"]
+				},
+				"required": { "type": "boolean" },
+				"deprecated": {
+					"type": "boolean",
+					"description": "Optional. Implicit default false. Set to true to mark a question retired but kept on file."
+				},
+				"tags": {
+					"type": "array",
+					"items": { "type": "string" },
+					"description": "Optional. Implicit default []."
+				},
+				"rationale": {
+					"type": "string",
+					"description": "Optional. Implicit default \"\". Why this question exists / what it tracks."
+				},
+				"history": {
+					"type": "array",
+					"description": "Optional. Implicit default []. Year-by-year changelog of edits.",
+					"items": {
+						"type": "object",
+						"required": ["version", "changes"],
+						"additionalProperties": false,
+						"properties": {
+							"version": { "type": "string", "pattern": "^\\d{4}\\.\\d+$" },
+							"changes": { "type": "string" }
+						}
+					}
+				},
+				"display": {
+					"enum": ["dropdown"],
+					"description": "Render variant for type:single_select."
+				},
+				"lines": {
+					"enum": ["single", "multi"],
+					"description": "Required for type:free_text."
+				},
+				"randomize": {
+					"type": "boolean",
+					"description": "Shuffle option order; pin any text_entry choice to the end."
+				},
+				"validate": {
+					"type": "object",
+					"required": ["type"],
+					"additionalProperties": false,
+					"properties": {
+						"type": { "enum": ["number", "email", "phone", "zip", "date"] },
+						"min": { "type": "number" },
+						"max": { "type": "number" },
+						"decimals": { "type": "integer", "minimum": 0 }
+					}
+				},
+				"scale_min": {
+					"type": "number",
+					"description": "NPS-style scale lower bound."
+				},
+				"scale_max": {
+					"type": "number",
+					"description": "NPS-style scale upper bound."
+				},
+				"scale_labels": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"min": { "type": "string" },
+						"max": { "type": "string" }
+					}
+				},
+				"scale": {
+					"type": "object",
+					"required": ["multiple", "columns"],
+					"additionalProperties": false,
+					"description": "Required for type:scale.",
+					"properties": {
+						"multiple": { "type": "boolean" },
+						"columns": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "type": "string" }
+						}
+					}
+				},
+				"options": {
+					"type": "array",
+					"items": {
+						"oneOf": [
+							{ "type": "string", "minLength": 1 },
+							{
+								"type": "object",
+								"required": ["label"],
+								"additionalProperties": false,
+								"properties": {
+									"label": { "type": "string", "minLength": 1 },
+									"key": {
+										"type": "string",
+										"pattern": "^[a-z_][a-z0-9_]*$",
+										"description": "Override the implicit slug; only used by show_if references. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools)."
+									},
+									"text_entry": {
+										"type": "boolean",
+										"description": "Free-input choice (the 'Other (please specify)' pattern)."
+									}
+								}
+							}
+						]
+					}
+				},
+				"show_if": { "$ref": "#/definitions/showIf" }
+			}
+		}
+	},
+	"definitions": {
+		"showIf": {
+			"oneOf": [
+				{
+					"type": "object",
+					"required": ["any"],
+					"additionalProperties": false,
+					"properties": {
+						"any": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/showIf" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["all"],
+					"additionalProperties": false,
+					"properties": {
+						"all": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/showIf" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["not"],
+					"additionalProperties": false,
+					"properties": {
+						"not": { "$ref": "#/definitions/showIf" }
+					}
+				},
+				{
+					"type": "object",
+					"minProperties": 1,
+					"additionalProperties": {
+						"oneOf": [
+							{ "type": "string" },
+							{
+								"type": "array",
+								"minItems": 1,
+								"items": { "type": "string" }
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

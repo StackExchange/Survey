@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+.svelte-kit
+
+# Pipeline output — rebuilt from packages/archive/ by packages/db/.
+data/db/*
+!data/db/README.md
+
+# Local Netlify folder
+.netlify
+/.env

@@ -1,0 +1,10 @@
+{
+	"name": "archive",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Static archive of historical Stack Overflow Developer Survey result sites and raw data.",
+	"scripts": {
+		"dev": "netlify dev --offline",
+		"deploy": "netlify deploy --prod"
+	}
+}

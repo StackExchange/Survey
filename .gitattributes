@@ -1,0 +1,21 @@
+packages/archive/**/*.csv filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Images
+packages/archive/**/*.png filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.gif filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.webp filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.ico filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.svg filter=lfs diff=lfs merge=lfs -text
+# Fonts
+packages/archive/**/*.woff filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.woff2 filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.ttf filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.otf filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.eot filter=lfs diff=lfs merge=lfs -text
+# Built / vendored archive output (large minified bundles, pre-rendered HTML)
+packages/archive/**/*.html filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.js filter=lfs diff=lfs merge=lfs -text
+packages/archive/**/*.css filter=lfs diff=lfs merge=lfs -text

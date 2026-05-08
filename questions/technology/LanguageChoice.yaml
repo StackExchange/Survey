@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: LanguageChoice
+  version: '2025.1'
+  title: Did you work with programming, scripting and markup languages in the last year or do you plan to in the year to come?  Here, we are referring to anything you use that is conventionally referred to as code.
+  type: single_select
+  required: false
+  options:
+    - Yes
+    - No
+    - I don't know

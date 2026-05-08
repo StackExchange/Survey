@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AITool
+  version: '2025.1'
+  title: Which parts of your development workflow are you currently integrating into AI or using AI tools to accomplish or plan to use AI to accomplish over the next 3 - 5 years?  Please select one for each scenario.
+  type: scale
+  required: false
+  randomize: true
+  scale:
+    multiple: false
+    columns:
+      - Currently mostly AI
+      - Currently partially AI
+      - Plan to mostly use AI
+      - Plan to partially use AI
+      - Don't plan to use AI for this task
+  options:
+    - Learning about a codebase
+    - Project planning
+    - Writing code
+    - Documenting code
+    - Debugging or fixing code
+    - Testing code
+    - Committing and reviewing code
+    - Deployment and monitoring
+    - Predictive analytics
+    - Search for answers
+    - Generating content or synthetic data
+    - Creating or maintaining documentation
+    - Learning new concepts or technologies
+    - label: 'Other (write in):'
+      text_entry: true

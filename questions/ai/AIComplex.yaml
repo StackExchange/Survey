@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIComplex
+  version: '2025.1'
+  title: How well do the AI tools you use in your development workflow handle complex tasks?
+  type: single_select
+  required: false
+  options:
+    - Very well at handling complex tasks
+    - Good, but not great at handling complex tasks
+    - Neither good or bad at handling complex tasks
+    - Bad at handling complex tasks
+    - Very poor at handling complex tasks
+    - I don't use AI tools for complex tasks / I don't know

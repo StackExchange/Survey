@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AgentUsesGeneral
+  version: '2025.2'
+  title: 'What are you using AI for?'
+  type: multi_select
+  required: false
+  options:
+    - Agent/multi-agent orchestration
+    - Integration with external agents and APIs
+    - Vector databases for AI applications
+    - Personalized agent creation
+    - MCP servers
+    - Language processing
+    - Multi-platform search enablement
+    - label: 'Other specific task (write in):'
+      text_entry: true
+  show_if:
+    not:
+      AIAgents:
+        - plans_to
+        - wont_use

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOVisitFreq
+  version: '2025.1'
+  title: How frequently would you say you visit Stack Overflow?
+  type: single_select
+  required: false
+  options:
+    - Less than once per month or monthly
+    - A few times per month or weekly
+    - A few times per week
+    - Daily or almost daily
+    - Multiple times per day
+    - Less than once every 2 - 3 months
+    - Infrequently, less than once per year

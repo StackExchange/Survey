@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: JobSatPoints
+  version: '2025.1'
+  title: 'Rank the following attributes of your current professional job in technology according to those that contribute your job satisfaction so that the first is the most important, last is least important (if you just started a new job, consider the job you spent the most time at in the past year):'
+  type: rank
+  required: false
+  randomize: true
+  options:
+    - Control over the level of quality in projects
+    - Autonomy and trust to manage your own tasks
+    - You like your manager
+    - Collaboration and support from a team
+    - Expert mentors
+    - Opportunities to mentor and lead junior-level coworkers
+    - Developing specialized expertise
+    - Solving real-world problems
+    - Job stability and career growth with a single employer
+    - Innovation through solving challenging and complex problems
+    - Working with new technologies and tools
+    - Competitive pay and benefits
+    - Recognition from peers for your work
+    - Recognition from leadership for your work
+    - label: 'Other (please specify):'
+      text_entry: true
+  show_if:
+    MainBranch:
+      - developer

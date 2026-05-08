@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TechOppose
+  version: '2025.1'
+  title: What would turn you off or cause you to reject it (most to least important)?
+  type: rank
+  required: false
+  randomize: true
+  options:
+    - Lack of AI or AI agents
+    - Poor usability
+    - Lack of or sub-par API
+    - Inefficient or time-costly
+    - Prohibitive pricing
+    - Security or privacy concerns
+    - Availability of better alternatives
+    - Outdated or obsolete technology or features
+    - Ethical concerns
+    - label: 'Other (please specify):'
+      text_entry: true

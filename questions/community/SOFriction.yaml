@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOFriction
+  version: '2025.1'
+  title: When you visit Stack Overflow, how often is it a result of encountering issues from AI or AI-enabled tools that require extra time or effort to fix, understand, or debug?
+  type: single_select
+  required: false
+  options:
+    - More than half the time
+    - About half of the time
+    - Less than half of the time
+    - Rarely, almost never
+    - I don't use AI or AI-enabled tools

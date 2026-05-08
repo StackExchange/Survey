@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIHuman
+  version: '2025.1'
+  title: In the future, if AI can do most coding tasks, in which situations would you still want to ask another person for help? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - When I’m stuck and can’t explain the problem
+    - When I want to fully understand something
+    - When I want to learn best practices
+    - When I don’t trust AI’s answers
+    - When I need help fixing complex or unfamiliar code
+    - When I need quick help troubleshooting
+    - When I want to compare different solutions
+    - When I have ethical or security concerns about code
+    - I don’t think I’ll need help from people anymore
+    - label: 'Other (please specify):'
+      text_entry: true

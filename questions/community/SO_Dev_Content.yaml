@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SO_Dev_Content
+  version: '2025.1'
+  title: Whether it be to solve a problem, for career growth or connecting with a community of developers, is there an alternative to the Q&A format you prefer using today or would like to see on Stack Overflow to get what you need? Select all that apply.
+  type: multi_select
+  required: false
+  randomize: true
+  options:
+    - Chat (people)
+    - Chat (bot/AI)
+    - Message Boards
+    - Long-form articles
+    - Videos
+    - Coding challenges
+    - Logic games/puzzles
+    - Lists of recommendations (tools, frameworks, technologies, etc.)
+    - Direct messaging of users
+    - Job board
+    - Day-in-the-life profiles/interviews with experts
+    - label: 'Other (write in):'
+      text_entry: true

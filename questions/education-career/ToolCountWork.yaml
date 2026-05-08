@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ToolCountWork
+  version: '2025.1'
+  title: |-
+    For your **primary work role** (student, developer, or technologist) over the past year:  
+      
+    Excluding general operating systems (like Windows or macOS) and web browsers, **how many distinct software applications or platforms** did you regularly use to create, analyze, manage, or share information in order to do your job? Please enter a whole number below with no punctuation, or leave blank.
+  type: free_text
+  required: false
+  lines: single
+  validate:
+    type: number
+    min: 0
+    max: 10000
+  show_if:
+    not:
+      Employment:
+        - retired

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentChallenges
+  version: '2025.1'
+  title: To what extent do you agree with the following statements regarding AI agents?
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Strongly agree
+      - Somewhat agree
+      - Neutral
+      - Somewhat disagree
+      - Strongly disagree
+  options:
+    - I am concerned about the accuracy of the information provided by AI agents.
+    - Integrating AI agents with my existing tools and workflows can be difficult.
+    - It takes significant time and effort to learn how to use AI agents effectively.
+    - The cost of using certain AI agent platforms is a barrier.
+    - I have concerns about the security and privacy of data when using AI agents.
+    - My company's IT and/or InfoSec teams have strict rules that do not allow me to use AI agent tools or platforms
+    - label: 'Write in the most significant challenge if not listed above:'
+      text_entry: true

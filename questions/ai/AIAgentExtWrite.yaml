@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentExtWrite
+  version: '2025.1'
+  title: Was the out-of-the-box agents, copilots or assistants you used in the past year not listed above?  Please write them below separated by a comma and space if there are more than one.
+  type: free_text
+  required: false
+  lines: single
+  show_if:
+    AIAgents:
+      - daily
+      - weekly
+      - monthly

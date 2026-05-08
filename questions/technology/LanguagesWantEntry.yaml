@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: LanguagesWantEntry
+  version: '2025.1'
+  title: Was the programming language you want to use not listed above? List below, separated by a comma and a space for each, the programming language(s) **you want to use next year**.
+  type: free_text
+  required: false
+  lines: single
+  show_if:
+    not:
+      LanguageChoice:
+        - no

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TechEndorseIntro
+  version: '2025.1'
+  title: |-
+    When you’re in a position to **influence or endorse a technology**, whether at work, for school, or for a personal project you’re responsible for, what features or attributes matter most when deciding to support a tool? What factors would be deal-breakers?  
+      
+    First, select the context (work, school, personal project).  Then, rank the following features in order of importance.​​​​​​
+  type: single_select
+  required: false
+  options:
+    - Work
+    - School
+    - Personal Project

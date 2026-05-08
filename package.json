@@ -1,0 +1,26 @@
+{
+	"name": "stackoverflow-devsurvey",
+	"version": "0.0.0",
+	"description": "Stack Overflow Annual Developer Survey content & tooling.",
+	"private": true,
+	"workspaces": [
+		"packages/archive",
+		"packages/survey"
+	],
+	"scripts": {
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"author": "Stack Exchange Inc.",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"netlify-cli": "^25.6.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.5.1",
+		"prettier-plugin-tailwindcss": "^0.7.2"
+	},
+	"dependencies": {
+		"@types/lodash-es": "^4.17.12",
+		"lodash-es": "^4.18.1"
+	}
+}

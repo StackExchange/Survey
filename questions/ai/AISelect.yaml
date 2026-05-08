@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AISelect
+  version: '2025.1'
+  title: Do you currently use AI tools in your development process?
+  type: single_select
+  required: false
+  options:
+    - Yes, I use AI tools daily
+    - Yes, I use AI tools weekly
+    - Yes, I use AI tools monthly or infrequently
+    - No, but I plan to soon
+    - No, and I don't plan to

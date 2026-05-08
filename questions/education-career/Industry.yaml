@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Industry
+  version: '2025.1'
+  title: What industry do you work for in?
+  type: single_select
+  required: false
+  options:
+    - Software Development
+    - Computer Systems Design and Services
+    - Internet, Telecomm or Information Services
+    - Fintech
+    - Energy
+    - Government
+    - Banking/Financial Services
+    - Manufacturing
+    - Transportation, or Supply Chain
+    - Healthcare
+    - Retail and Consumer Services
+    - Higher Education
+    - Media & Advertising Services
+    - Insurance
+    - label: 'Other:'
+      text_entry: true
+  show_if:
+    any:
+      - Employment:
+          - employed
+          - independent
+      - EmploymentAddl:
+          - hrs_under_10
+          - hrs_10_19
+          - hrs_20_29

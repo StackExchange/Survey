@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOComm
+  version: '2025.1'
+  title: Do you consider yourself a member of the Stack Overflow community?
+  type: single_select
+  required: false
+  options:
+    - No, not at all
+    - No, not really
+    - Neutral
+    - Yes, somewhat
+    - Yes, definitely
+    - Not sure

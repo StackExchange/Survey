@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: OfficeStackAsync
+  version: '2025.1'
+  title: Which **collaborative work management and/or code documentation tools** did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - '**Worked with** in past year'
+      - '**Want** to work with next year'
+  options:
+    - Airtable
+    - Asana
+    - Azure Devops
+    - Clickup
+    - Coda
+    - Confluence
+    - Doxygen
+    - GitHub
+    - GitLab
+    - Google Colab
+    - Google Workspace
+    - Jira
+    - Linear
+    - Lucid (includes Lucidchart)
+    - Markdown File
+    - Microsoft Planner
+    - Miro
+    - Monday.com
+    - Notion
+    - Obsidian
+    - Redmine
+    - Stack Overflow for Teams
+    - Trello
+    - Wikis
+    - YouTrack

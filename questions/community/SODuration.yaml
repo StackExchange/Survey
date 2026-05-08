@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SODuration
+  version: '2025.1'
+  title: How long have you used Stack Overflow?
+  type: single_select
+  required: false
+  options:
+    - I don't use Stack Overflow
+    - Less than one year
+    - Between 1 and 3 years
+    - Between 3 and 5 years
+    - Between 5 and 10 years
+    - Between 10 and 15 years
+    - More than 15 years, or since Stack Overflow started in 2008

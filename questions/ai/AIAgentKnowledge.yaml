@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentKnowledge
+  version: '2025.1'
+  title: You indicated you use or develop AI agents as part of your development work. Have you used any of the following tools for AI agent memory or data management in the past year?
+  type: multi_select
+  required: false
+  options:
+    - ChromaDB
+    - Fireproof
+    - GitHub MCP Server
+    - LanceDB
+    - LangMem
+    - Letta
+    - mem0
+    - Milvus
+    - Neo4j
+    - pgvector
+    - Pinecone
+    - Qdrant
+    - Redis
+    - supabase
+    - Weaviate
+    - Zep
+  show_if:
+    AIAgents:
+      - daily
+      - weekly
+      - monthly

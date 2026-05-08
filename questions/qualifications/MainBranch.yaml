@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: MainBranch
+  version: '2025.1'
+  title: Are you someone who writes code? Please select one of the following options that best describes you today.
+  type: single_select
+  required: true
+  options:
+    - label: I am a developer by profession
+      key: developer
+    - I am not primarily a developer, but I write code sometimes as part of my work/studies
+    - I used to be a developer by profession, but no longer am
+    - I am learning to code
+    - I code primarily as a hobby
+    - I work with developers or my work supports developers but am not a developer by profession
+    - None of these

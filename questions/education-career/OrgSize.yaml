@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: OrgSize
+  version: '2025.1'
+  title: Approximately how many people are employed by your employer?  This should only include your primary company, and if there was more than one employer please consider the one you spent most of your time working for in the past year.
+  type: single_select
+  required: false
+  options:
+    - Just me - I am a freelancer, sole proprietor, etc.
+    - Less than 20 employees
+    - 20 to 99 employees
+    - 100 to 499 employees
+    - 500 to 999 employees
+    - 1,000 to 4,999 employees
+    - 5,000 to 9,999 employees
+    - 10,000 or more employees
+    - I don’t know
+  show_if:
+    any:
+      - Employment:
+          - employed
+      - EmploymentAddl:
+          - hrs_under_10
+          - hrs_10_19
+          - hrs_20_29

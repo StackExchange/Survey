@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIThreat
+  version: '2025.1'
+  title: Do you believe AI is a threat to your current job?
+  type: single_select
+  required: false
+  options:
+    - Yes
+    - No
+    - I'm not sure
+  show_if:
+    not:
+      Employment:
+        - retired

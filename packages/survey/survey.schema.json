@@ -1,0 +1,70 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Survey structure",
+	"description": "Top-level survey.yaml: the flow Qualtrics presents to respondents.",
+	"type": "object",
+	"required": ["flow"],
+	"additionalProperties": true,
+	"properties": {
+		"flow": {
+			"type": "array",
+			"items": { "$ref": "#/definitions/flowElement" }
+		}
+	},
+	"definitions": {
+		"flowElement": {
+			"oneOf": [
+				{
+					"type": "object",
+					"required": ["block", "pages"],
+					"additionalProperties": false,
+					"description": "A standard block of pages.",
+					"properties": {
+						"block": { "type": "string", "minLength": 1 },
+						"pages": {
+							"type": "array",
+							"items": {
+								"oneOf": [
+									{ "type": "string", "minLength": 1 },
+									{
+										"type": "array",
+										"minItems": 1,
+										"items": { "type": "string", "minLength": 1 }
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["randomize", "blocks"],
+					"additionalProperties": false,
+					"description": "BlockRandomizer: present `randomize` of the listed blocks per respondent in random order.",
+					"properties": {
+						"randomize": { "type": "integer", "minimum": 1 },
+						"even_presentation": { "type": "boolean" },
+						"blocks": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/flowElement" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["if", "then"],
+					"additionalProperties": false,
+					"description": "BranchLogic: only run `then` when `if` is true.",
+					"properties": {
+						"if": {},
+						"then": {
+							"type": "array",
+							"items": { "$ref": "#/definitions/flowElement" }
+						}
+					}
+				}
+			]
+		}
+	}
+}

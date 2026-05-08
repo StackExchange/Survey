@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAcc
+  version: '2025.1'
+  title: How much do you trust the accuracy of the output from AI tools as part of your development workflow?
+  type: single_select
+  required: false
+  options:
+    - Highly trust
+    - Somewhat trust
+    - Neither trust nor distrust
+    - Somewhat distrust
+    - Highly distrust

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOPartFreq
+  version: '2025.1'
+  title: How frequently would you say you participate in Q&A on Stack Overflow? By participate we mean ask, answer, and vote or comment on questions.
+  type: single_select
+  required: false
+  options:
+    - I have never participated in Q&A on Stack Overflow
+    - Infrequently, less than once per year
+    - Less than once every 2 - 3 months
+    - Less than once per month or monthly
+    - A few times per month or weekly
+    - A few times per week
+    - Daily or almost daily
+    - Multiple times per day
