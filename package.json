@@ -14,10 +14,10 @@
 	"author": "Stack Exchange Inc.",
 	"license": "Apache-2.0",
 	"devDependencies": {
-		"netlify-cli": "^25.6.0",
+		"netlify-cli": "^26.0.1",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.5.1",
-		"prettier-plugin-tailwindcss": "^0.7.2"
+		"prettier-plugin-tailwindcss": "^0.8.0"
 	},
 	"dependencies": {
 		"@types/lodash-es": "^4.17.12",
