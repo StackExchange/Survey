@@ -10,7 +10,13 @@
 // If you find yourself wanting to edit a schema-derived type here, change
 // the schema instead and regenerate.
 
-import type { FlowElement as _FlowElement, ShowIf, SurveyQuestion as _SurveyQuestion, SurveyStructure } from './generated'
+import type {
+	FlowElement as _FlowElement,
+	PageEntry as _PageEntry,
+	ShowIf,
+	SurveyQuestion as _SurveyQuestion,
+	SurveyStructure,
+} from './generated'
 
 export type { ShowIf }
 
@@ -28,6 +34,14 @@ export type RandomizerElement = Extract<FlowElement, { randomize: number }>
 
 // The schema lets `if` be any value; tighten it to ShowIf for our consumers.
 export type BranchElement = Omit<Extract<FlowElement, { if: unknown }>, 'if'> & {
+	if: ShowIf
+}
+
+// A page within a block: a single id, an id list, or an if/then wrapping
+// nested page entries. Schema-derived; the `if` is tightened to ShowIf for
+// the same reason as BranchElement above.
+export type PageEntry = _PageEntry
+export type PageBranchEntry = Omit<Extract<PageEntry, { if: unknown }>, 'if'> & {
 	if: ShowIf
 }
 

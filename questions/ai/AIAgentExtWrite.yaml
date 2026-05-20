@@ -6,8 +6,3 @@ question:
   type: free_text
   required: false
   lines: single
-  show_if:
-    AIAgents:
-      - daily
-      - weekly
-      - monthly

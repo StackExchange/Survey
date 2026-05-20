@@ -1,0 +1,154 @@
+# yaml-language-server: $schema=./survey.schema.json
+# Survey Flow - the order Qualtrics presents blocks to a respondent.
+# Docs: https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/survey-flow-overview/
+#
+# Each entry under `pages:` is one of:
+#   - a single question id           -> "Foo"
+#   - a list of ids on the same page -> [Foo, Bar]
+#   - an if/then wrapping pages      -> if: <expr>, then: [...]
+#
+# The if/then form is "page-level branch logic": pages inside `then` only
+# render when `if` evaluates true. Use it to hoist `show_if` rules that are
+# shared across sibling pages — flow file becomes the single source of truth.
+# Page-break docs: https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/page-breaks/
+flow:
+  - block: Qualifications
+    pages:
+      - [Welcome, MetaInfo]
+      - [MainBranch]
+      - [Age]
+      - [Consent]
+  - block: Education + Career
+    pages:
+      - [EdLevel, Employment]
+      - [EmploymentAddl]
+      - [WorkExp]
+      - [LearnCodeChoose]
+      - [LearnCode]
+      - [LearnCodeAI]
+      - [AILearnHow]
+      - [YearsCode]
+      - [DevType]
+      - if:
+          any:
+            - Employment:
+                - employed
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [OrgSize, ICorPM, RemoteWork]
+      - [PurchaseInfluence]
+      - [TechEndorseIntro, TechEndorse, TechOppose]
+      - [Industry]
+      - if:
+          MainBranch:
+            - developer
+        then:
+          - [JobSat, JobSatPoints]
+      - if:
+          not:
+            Employment:
+              - retired
+        then:
+          - [AIThreat]
+          - [NewRole]
+      - [ToolCountWork, ToolCountPersonal]
+  - block: Compensation
+    pages:
+      - [Country, Currency, CompTotal]
+  # Block Randomizer: present `randomize` of the listed blocks per respondent
+  # in random order. `even_presentation` asks Qualtrics to balance which blocks
+  # appear across respondents (matters most when randomize < blocks count).
+  # Docs: https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/block-randomizer/
+  - randomize: 3
+    even_presentation: true
+    blocks:
+      - block: Tech and Tech Culture
+        pages:
+          - [LanguageChoice]
+          - if:
+              not:
+                LanguageChoice:
+                  - no
+            then:
+              - [Language, LanguagesHaveEntry, LanguagesWantEntry]
+          - [DatabaseChoice]
+          - if:
+              not:
+                DatabaseChoice:
+                  - no
+            then:
+              - [Database, DatabaseHaveEntry, DatabaseWantEntry]
+          - [PlatformChoice]
+          - if:
+              not:
+                PlatformChoice:
+                  - no
+            then:
+              - [Platform, PlatformHaveEntry, PlatformWantEntry]
+          - [WebframeChoice]
+          - if:
+              not:
+                WebframeChoice:
+                  - no
+            then:
+              - [Webframe, WebframeHaveEntry, WebframeWantEntry]
+          - [DevEnvsChoice]
+          - if:
+              not:
+                DevEnvsChoice:
+                  - no
+            then:
+              - [DevEnvs, DevEnvHaveEntry, DevEnvWantEntry]
+          - [SOTags, SOTagsHaveEntry, SOTagsWantEntry]
+          - [OpSys]
+          - [OfficeStackAsync, OfficeStackHaveEntry, OfficeStackWantEntry]
+          - [CommPlatform, CommPlatformHaveEntr, CommPlatformWantEntr]
+          - [AIModelsChoice]
+          - if:
+              not:
+                AIModelsChoice:
+                  - no
+            then:
+              - [AIModels, AIModelsHaveEntry, AIModelsWantEntry]
+      - block: Community
+        pages:
+          - [SOAccount, SOVisitFreq, SODuration]
+          - [SOPartFreq, SO_Dev_Content]
+          - [SO_Actions]
+          - [SOComm, SOFriction]
+      - block: AI + AI Agents
+        pages:
+          - [AISelect]
+          - [AISent, AIAcc, AIComplex]
+          - [AITool]
+          - [AIFrustration]
+          - [AIExplain]
+          - [AIAgents]
+          - [AIAgentChange]
+          - if:
+              not:
+                AIAgents:
+                  - plans_to
+                  - wont_use
+            then:
+              - [AIAgent_Uses, AgentUsesGeneral]
+              - [AIAgentImpact]
+          - [AIAgentChallenges]
+          - if:
+              AIAgents:
+                - daily
+                - weekly
+                - monthly
+            then:
+              - [AIAgentKnowledge, AIAgentKnowWrite]
+              - [AIAgentOrchestration, AIAgentOrchWrite]
+              - [AIAgentObserveSecure, AIAgentObsWrite]
+              - [AIAgentExternal, AIAgentExtWrite]
+          - [AIHuman]
+          - [AIOpen]
+  - block: Final Thoughts
+    pages:
+      - [SurveyLength, SurveyEase, SurveyIssues]

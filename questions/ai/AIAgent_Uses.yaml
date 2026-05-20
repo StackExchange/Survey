@@ -17,8 +17,3 @@ question:
     - Robotics
     - label: 'Other Industry purpose (write in):'
       text_entry: true
-  show_if:
-    not:
-      AIAgents:
-        - plans_to
-        - wont_use

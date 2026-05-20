@@ -23,6 +23,3 @@ question:
     - Recognition from leadership for your work
     - label: 'Other (please specify):'
       text_entry: true
-  show_if:
-    MainBranch:
-      - developer

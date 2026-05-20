@@ -20,7 +20,9 @@ interface QuestionDoc {
 }
 
 let errors = 0
-const files = fs.globSync('**/*.yaml', { cwd: questionsDir })
+// Match `<category>/<id>.yaml` only — leaves the top-level survey.yaml and
+// any future root-level files out of the per-question filename check.
+const files = fs.globSync('*/*.yaml', { cwd: questionsDir })
 
 for (const rel of files) {
 	const expected = path.basename(rel, '.yaml')

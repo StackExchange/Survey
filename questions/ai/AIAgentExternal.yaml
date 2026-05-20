@@ -26,8 +26,3 @@ question:
     - Roo code (Roo-Cline)
     - Tabnine
     - v0.dev
-  show_if:
-    AIAgents:
-      - daily
-      - weekly
-      - monthly

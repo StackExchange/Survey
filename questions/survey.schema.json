@@ -12,6 +12,31 @@
 		}
 	},
 	"definitions": {
+		"pageEntry": {
+			"description": "One page within a block. A single id, a list of ids on the same page, or an if/then wrapping a list of pages that should only show when the condition holds.",
+			"oneOf": [
+				{ "type": "string", "minLength": 1 },
+				{
+					"type": "array",
+					"minItems": 1,
+					"items": { "type": "string", "minLength": 1 }
+				},
+				{
+					"type": "object",
+					"required": ["if", "then"],
+					"additionalProperties": false,
+					"description": "Page-level branch: render `then` only when `if` is true. Hoist shared `show_if` rules here so the flow file is the single source of truth.",
+					"properties": {
+						"if": {},
+						"then": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/pageEntry" }
+						}
+					}
+				}
+			]
+		},
 		"flowElement": {
 			"oneOf": [
 				{
@@ -23,16 +48,7 @@
 						"block": { "type": "string", "minLength": 1 },
 						"pages": {
 							"type": "array",
-							"items": {
-								"oneOf": [
-									{ "type": "string", "minLength": 1 },
-									{
-										"type": "array",
-										"minItems": 1,
-										"items": { "type": "string", "minLength": 1 }
-									}
-								]
-							}
+							"items": { "$ref": "#/definitions/pageEntry" }
 						}
 					}
 				},

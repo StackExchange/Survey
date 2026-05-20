@@ -9,13 +9,13 @@
 import YAML from 'yaml'
 import type { Question, Survey } from '$lib/types'
 
-const questionRaws = import.meta.glob<string>('../../../../../questions/**/*.yaml', {
+const questionRaws = import.meta.glob<string>('$questions/*/*.yaml', {
 	eager: true,
 	query: '?raw',
 	import: 'default',
 })
 
-const surveyRaws = import.meta.glob<string>('../../../survey.yaml', {
+const surveyRaws = import.meta.glob<string>('$questions/survey.yaml', {
 	eager: true,
 	query: '?raw',
 	import: 'default',
