@@ -47,14 +47,6 @@
 	}
 </script>
 
-<svelte:head>
-	<style>
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
-</svelte:head>
-
 <div class="progress-wrap" aria-hidden="true">
 	<div class="progress-bar" style:width={`${((nav.index + 1) / Math.max(1, pages.length)) * 100}%`}></div>
 </div>
@@ -88,8 +80,6 @@
 		flex-direction: column;
 	}
 	.page-section {
-		/* anchor target — leave headroom so scrollIntoView doesn't bury the
-		   page top under the fixed progress bar. */
 		scroll-margin-top: 1rem;
 		margin-block: 1.5rem;
 	}
@@ -97,9 +87,6 @@
 		margin-block-start: 0;
 	}
 
-	/* Footer + progress bar are pinned to the bottom/top of the main column
-	   (66% of the viewport), not the full viewport — the mini-map occupies
-	   the right 33% and we don't want either bar sliding under it. */
 	.nav,
 	.progress-wrap {
 		position: fixed;
