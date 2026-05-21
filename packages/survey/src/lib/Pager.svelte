@@ -1,76 +1,120 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import { answers, reset } from '$lib/store/answers.svelte'
-	import { visibleQuestions } from '$lib/data/show_if'
+	import { reset } from '$lib/store/answers.svelte'
 	import { questions } from '$lib/data/load'
-	import { canonicaliseUrl, jumpToQuestion, nav, navigate, pages, subscribePopState } from '$lib/store/nav.svelte'
+	import { jumpToQuestion, nav, navigate, pageAnchorId, pages, setCurrentIndex } from '$lib/store/nav.svelte'
 	import Page from './Page.svelte'
 
-	const current = $derived(pages[Math.min(nav.index, Math.max(0, pages.length - 1))])
-	const visibleCount = $derived(current ? visibleQuestions(current, answers, questions).length : 0)
+	let listEl: HTMLElement | undefined = $state()
 
 	onMount(() => {
-		canonicaliseUrl()
-		return subscribePopState()
+		if (!listEl) return
+
+		// Watch every page section. As the user scrolls, whichever has the
+		// highest intersection ratio becomes `nav.index`. `rootMargin` biases
+		// "current" toward the section at the top of the viewport rather than
+		// the geometric middle — feels right for top-down reading.
+		const observer = new IntersectionObserver(
+			(entries) => {
+				let best: { i: number; ratio: number } | null = null
+				for (const e of entries) {
+					if (!e.isIntersecting) continue
+					const i = Number((e.target as HTMLElement).dataset.pageIndex)
+					if (!best || e.intersectionRatio > best.ratio) {
+						best = { i, ratio: e.intersectionRatio }
+					}
+				}
+				if (best) setCurrentIndex(best.i)
+			},
+			{ rootMargin: '-25% 0px -50% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
+		)
+		listEl.querySelectorAll<HTMLElement>('section[data-page-index]').forEach((s) => observer.observe(s))
+
+		// Browser handles initial hash scroll natively, but doing it again on
+		// next frame gives layout a chance to settle (web-fonts etc).
+		if (location.hash) {
+			requestAnimationFrame(() => {
+				document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'start' })
+			})
+		}
+
+		return () => observer.disconnect()
 	})
 
-	function next() {
-		navigate(nav.index + 1)
-	}
-	function back() {
-		navigate(nav.index - 1)
-	}
 	function resetAll() {
 		reset()
 		navigate(0)
 	}
 </script>
 
-{#if current}
-	<Page page={current} {questions} onJump={jumpToQuestion} />
+<svelte:head>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</svelte:head>
 
-	<div class="progress-wrap" aria-hidden="true">
-		<div class="progress-bar" style:width={`${((nav.index + 1) / Math.max(1, pages.length)) * 100}%`}></div>
+<div class="progress-wrap" aria-hidden="true">
+	<div class="progress-bar" style:width={`${((nav.index + 1) / Math.max(1, pages.length)) * 100}%`}></div>
+</div>
+
+<div class="pages-list" bind:this={listEl}>
+	{#each pages as p, i (i)}
+		<section id={pageAnchorId(p)} data-page-index={i} class="page-section">
+			<Page page={p} {questions} onJump={jumpToQuestion} pageNumber={i + 1} />
+		</section>
+	{/each}
+</div>
+
+<footer class="nav">
+	<div class="logo">
+		<svg width="32" height="32" viewBox="0 0 32 32" class="svg-icon IconGlyph32" aria-hidden="true"
+			><path
+				d="m23.8 17.23.04.02v.01za17.6 17.6 0 0 0-3.36 8.23v.02a18 18 0 0 0-.05 4.53H4.01v-4.55h14.23q.03-.28.09-.56L4.62 21.1l1.14-4.39 13.88 3.84.2-.44L7.37 12.7l2.2-3.94 12.64 7.53.3-.37L12.18 5.23 15.3 2 25.8 12.87l1.11 1.15q-1.76 1.39-3.12 3.2"
+			/></svg
+		>
+		<h1>Developer Survey Preview</h1>
 	</div>
 
-	<footer class="nav">
-	  <h1>Developer Survey Preview</h1>
-
-		<span class="counts">
-			Page {nav.index + 1} / {pages.length}
-			·
-			{visibleCount}
-			{visibleCount === 1 ? 'question' : 'questions'} visible
-		</span>
-
-		<div class="actions">
-			<button type="button" onclick={back} disabled={nav.index === 0}>←</button>
-			<button type="button" onclick={resetAll}>Reset</button>
-			<button type="button" class="primary" onclick={next} disabled={nav.index >= pages.length - 1}>→</button>
-		</div>
-	</footer>
-{:else}
-	<p>No pages — check survey.yaml.</p>
-{/if}
+	<div class="actions">
+		<button type="button" onclick={resetAll}>Reset</button>
+	</div>
+</footer>
 
 <style>
-	/* Footer + progress bar are pinned to the bottom/top of the *main column*
-	   (66% of the viewport), not the full viewport — the mini-map occupies the
-	   right 33% and we don't want either bar sliding under it. */
-	.nav {
+	.pages-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.page-section {
+		/* anchor target — leave headroom so scrollIntoView doesn't bury the
+		   page top under the fixed progress bar. */
+		scroll-margin-top: 1rem;
+		margin-block: 1.5rem;
+	}
+	.page-section:first-child {
+		margin-block-start: 0;
+	}
+
+	/* Footer + progress bar are pinned to the bottom/top of the main column
+	   (66% of the viewport), not the full viewport — the mini-map occupies
+	   the right 33% and we don't want either bar sliding under it. */
+	.nav,
+	.progress-wrap {
 		position: fixed;
-		left: 0;
-		width: 66%;
+		left: 0; right: 0;
+		z-index: 1000;
+		width: 100%;
 		box-sizing: border-box;
 	}
 	.nav {
-		bottom: 0;
+		top: 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: 1rem;
 		padding: 0.9rem 1.5rem;
-		background: var(--bg);
 	}
 	.nav h1 {
 		margin: 0;
@@ -78,11 +122,15 @@
 		font-weight: 600;
 		color: var(--text-h);
 	}
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
 	.progress-wrap {
 		top: 0;
 		height: 2px;
 		overflow: hidden;
-		position: absolute;
 	}
 	.progress-bar {
 		height: 100%;
@@ -90,10 +138,6 @@
 		transition: width 0.25s ease-out;
 	}
 
-	.counts {
-		opacity: 0.7;
-		font-size: 0.85em;
-	}
 	.actions {
 		display: flex;
 		gap: 0.5rem;
@@ -105,14 +149,9 @@
 		border: 1px solid rgba(127, 127, 127, 0.4);
 		background: transparent;
 		cursor: pointer;
+		background: var(--bg-page);
 	}
-	.nav button:disabled {
-		opacity: 0.4;
-		cursor: not-allowed;
-	}
-	.nav button.primary {
-		background: var(--accent, #6962d6);
-		color: white;
-		border-color: var(--accent, #6962d6);
+	.nav button:hover {
+    opacity: 0.8;
 	}
 </style>

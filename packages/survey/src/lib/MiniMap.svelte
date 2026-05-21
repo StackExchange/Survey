@@ -125,7 +125,7 @@
 					</div>
 				</div>
 			{/each}
-			<div class="q-body">{@render questionBtn()}</div>
+			<div class="tree">{@render questionBtn()}</div>
 		{:else}
 			{@render questionBtn()}
 		{/if}
@@ -142,33 +142,22 @@
 		top: 0;
 		right: 0;
 		bottom: 0;
-		width: 33%;
+		width: 30%;
 		max-height: 100vh;
 		overflow-y: auto;
-		padding: 0.5rem 0.75rem 4rem;
+		padding: 1rem;
 		font-size: 0.85em;
-		--shown: #1a6f1a;
-		--hidden: #a17c00;
-		--guide: rgba(127, 127, 127, 0.22);
-	}
-	@media (prefers-color-scheme: dark) {
-		.mini-map {
-			--shown: #7ec97e;
-			--hidden: #e5b54a;
-		}
 	}
 
-	/* Every level of the tree is its own `<ol>`. Indent + the vertical guide
-	   come from each nested `<ol>` having a left padding and border-left. */
 	.tree {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
-	li > .tree {
-		margin-inline-start: 0.35rem;
+	.tree .tree {
+		margin-inline-start: 0.4rem;
 		padding-inline-start: 0.5rem;
-		border-inline-start: 1px solid var(--guide);
+		border-inline-start: 1px solid var(--border);
 	}
 	li {
 		padding-block: 0.05rem;
@@ -191,62 +180,37 @@
 		display: block;
 	}
 
-	/* One open/closed rule set covers both flow-level branch `<li>`s and the
-	   per-question gate `<div>` (which carries `class="branch question-gate"`). */
-
-	/* Open/closed state: tint only the branch chip + the vertical guide line
-	   that descends from it. Don't cascade colour into the nested content —
-	   the pages/blocks inside keep their own colouring. Closed branches are
-	   amber rather than dimmed so they stay readable + clickable. */
 	.branch.open > .branch-row,
 	.q.open .branch > .branch-row {
 		color: var(--shown);
 	}
-	.branch.open > .tree {
+	.open > .tree {
 		border-inline-start-color: var(--shown);
 	}
 	.branch.closed > .branch-row,
 	.q.closed .branch > .branch-row {
 		color: var(--hidden);
 	}
-	.branch.closed > .tree,
-	.q.closed > .q-body {
+	.q.closed .question-btn {
+	  opacity: 0.4;
+		cursor: not-allowed;
+	}
+	.closed > .tree {
 		border-inline-start-color: var(--hidden);
-	}
-	.q.open > .q-body {
-		border-inline-start-color: var(--shown);
-	}
-
-	/* Question-row wrapper used only when a per-question gate sits above it —
-	   gives the button the same descending border-left as the nested OL under
-	   a flow-level branch, so the question reads as "inside" the gate. */
-	.q-body {
-		margin-inline-start: 0.35rem;
-		padding-inline-start: 0.5rem;
-		border-inline-start: 1px solid var(--guide);
 	}
 	.branch-cond {
 		font-family: var(--mono);
 		line-height: 1.3;
 	}
 
-	/* The `⤷ condition` text line — wrapped in its own element so the tint
-	   doesn't cover the nested page list below. inline-flex keeps the chip
-	   only as wide as the condition text. */
 	.branch-row {
 		display: inline-flex;
 		align-items: baseline;
 		padding: 0 0 5px 0.8rem;
 		font-size: 0.7rem;
-		margin: 0 0 0 0.35rem;
+		margin: 0 0 0 0.4rem;
     border-left: 1px solid;
 	}
-
-	/* Wrapper for a single question inside a page LI. The .open / .closed
-	   state classes are picked up by the descendant selectors above
-	   (`.q.open .branch ...`, `.q.closed .branch ...`) — the chip recolours
-	   amber/green; the button itself stays at full opacity so the page is
-	   always readable and clickable. */
 
 	.question-btn {
 		all: unset;
@@ -269,10 +233,11 @@
 		outline-offset: 1px;
 	}
 	.question-btn.current {
-		background: var(--accent-bg, rgba(105, 98, 214, 0.12));
-		color: var(--text-h);
+		background: var(--text-h);
+		color: var(--bg-page);
 		font-weight: 600;
 	}
+
 	.page-idx {
 		font-variant-numeric: tabular-nums;
 		opacity: 0.55;

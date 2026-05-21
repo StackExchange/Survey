@@ -36,7 +36,6 @@
 	input,
 	textarea {
 		width: 100%;
-		max-width: 32rem;
 		padding: 0.5rem;
 		border-radius: 0.3rem;
 		font: inherit;

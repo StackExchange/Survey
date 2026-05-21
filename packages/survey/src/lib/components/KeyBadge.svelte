@@ -8,7 +8,6 @@
 	.kbadge {
 		font-size: 0.7em;
 		padding: 0.05rem 0.35rem;
-		border-radius: 0.25rem;
 		background: rgba(127, 127, 127, 0.15);
 		color: inherit;
 		opacity: 0.7;

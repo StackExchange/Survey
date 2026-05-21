@@ -14,6 +14,6 @@
 		padding: 2rem 1.5rem 5rem;
 		box-sizing: border-box;
 		min-width: 0;
-		width: 66%;
+		width: 70%;
 	}
 </style>

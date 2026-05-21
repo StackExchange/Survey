@@ -10,10 +10,12 @@
 		page,
 		questions,
 		onJump,
+		pageNumber,
 	}: {
 		page: Page
 		questions: Record<string, Question>
 		onJump: (qid: string) => void
+		pageNumber?: number
 	} = $props()
 
 	const visible = $derived(visibleQuestions(page, answers, questions))
@@ -43,10 +45,15 @@
 </script>
 
 <div class="page">
+	{#if pageNumber !== undefined}
+		<div class="page-tab" aria-hidden="true">{String(pageNumber).padStart(2, '0')}</div>
+	{/if}
+
 	{#each renderIds as id (id)}
 		{#if questions[id]}
 			{@const hidden = !visible.includes(id)}
 			{@const conds = conditionsFor(id)}
+
 			<div class="slot" class:dimmed={hidden}>
 				{#if conds.length > 0}
 					<aside class="cond-notice" class:hidden class:shown={!hidden} aria-label={hidden ? 'Hidden question' : 'Conditional question'}>
@@ -62,6 +69,7 @@
 						</ul>
 					</aside>
 				{/if}
+
 				<QuestionView question={questions[id]} />
 			</div>
 		{/if}
@@ -74,9 +82,23 @@
 
 <style>
 	.page {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 3rem;
+		margin: auto;
+		background: var(--bg-page);
+		max-width: 960px;
+	}
+	.page-tab {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 8px;
+		background: var(--text-h);
+		color: var(--bg-page);
+		font-size: 0.85em;
+		font-variant-numeric: tabular-nums;
+		line-height: 1;
 	}
 	.slot {
 		display: flex;
@@ -90,10 +112,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 0.5rem;
-		margin: 0.75rem 0 0;
-		padding: 0.4rem 0.6rem;
-		border: 1px dashed rgba(127, 127, 127, 0.4);
-		border-radius: 0.4rem;
+		padding: 1rem 3rem;
 		background: rgba(127, 127, 127, 0.04);
 		font-size: 0.85em;
 	}
@@ -104,7 +123,6 @@
 	.tag {
 		display: inline-block;
 		padding: 0.1rem 0.45rem;
-		border-radius: 0.25rem;
 		background: rgba(127, 127, 127, 0.2);
 		font-size: 0.85em;
 		font-weight: 600;

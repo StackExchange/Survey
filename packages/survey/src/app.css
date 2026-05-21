@@ -1,10 +1,14 @@
 :root {
 	--text: #2a2733;
 	--text-h: #08060d;
-	--bg: #fff;
-	--border: #e5e4e7;
+	--bg: #f0efee;
+	--bg-page: #fff;
+	--border: #ccc;
 	--code-bg: #f4f3ec;
 	--accent: #ff5e00;
+
+	--shown: #1a6f1a;
+	--hidden: #a17c00;
 
 	--sans: 'Stack Sans Text', system-ui, 'Segoe UI', Roboto, sans-serif;
 	--heading: 'Stack Sans Headline', system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -25,8 +29,12 @@
 		--text: #d6d3de;
 		--text-h: #f3f4f6;
 		--bg: #16171d;
+		--bg-page: #2e2a2b;
 		--border: #2e303a;
 		--code-bg: #1f2028;
+
+		--shown: #7ec97e;
+		--hidden: #e5b54a;
 	}
 }
 

@@ -1,93 +1,57 @@
-// Centralised navigation state for the preview.
+// Navigation state for the long-scroll preview.
 //
-// Owns the survey-wide page index (which page the respondent is currently
-// looking at) and the helpers to mutate it — back/next, jump-to-index,
-// jump-to-question-id. Both the Pager (Back/Next buttons, progress bar)
-// and the MiniMap (sidebar) read from and write to this single store.
+// The whole survey renders as one scrollable column — each page is a
+// `<section>` with a stable `id` derived from its first question. URL state
+// is just the hash (`#q-<question-id>`), which the browser handles natively
+// for back/forward + initial load.
 //
-// Index source-of-truth precedence on initial load:
-//   1. URL  `?q=<questionId>`         (so shared links work)
-//   2. sessionStorage                 (so refresh + HMR don't lose position)
-//   3. 0                              (fresh visit)
-//
-// On every navigate(), we push a new history entry with `?q=<first-question
-// -id-on-the-new-page>` so browser back/forward retraces user jumps.
+// `nav.index` is set by the Pager's IntersectionObserver as the user scrolls
+// (it's whichever page section is currently in view). The MiniMap reads
+// `nav.index` to highlight the current page, and calls `navigate()` /
+// `jumpToQuestion()` to smooth-scroll the viewport to a section.
 
 import { flatten } from '$lib/data/flow'
 import { questions, survey } from '$lib/data/load'
 import type { Page } from '$lib/types'
 
-const INDEX_KEY = 'devsurvey-preview-index'
-
 export const pages: Page[] = flatten(survey.flow, questions, { respectRandomizerSubset: false })
 
-function indexFromUrl(): number {
-	if (typeof location === 'undefined') return -1
-	const qid = new URLSearchParams(location.search).get('q')
-	if (!qid) return -1
-	return pages.findIndex((p) => p.questions.includes(qid))
+// Stable DOM id for a page's section. Used as both the scroll target and
+// the URL hash. Prefixed so it can never collide with a question id used
+// as an `aria-labelledby` or similar elsewhere on the page.
+export function pageAnchorId(page: Page): string {
+	return `q-${page.questions[0]}`
 }
 
-function indexFromStorage(): number {
-	if (typeof sessionStorage === 'undefined') return 0
-	const raw = sessionStorage.getItem(INDEX_KEY)
-	const n = raw ? Number(raw) : 0
-	if (!Number.isFinite(n) || n < 0 || n >= pages.length) return 0
-	return n
-}
+export const nav = $state({ index: 0 })
 
-function urlForIndex(i: number): string {
-	const qid = pages[i]?.questions[0]
-	const search = qid ? `?q=${encodeURIComponent(qid)}` : ''
-	return `${location.pathname}${search}${location.hash}`
-}
-
-const initial = (() => {
-	const fromUrl = indexFromUrl()
-	if (fromUrl >= 0) return fromUrl
-	return indexFromStorage()
-})()
-
-export const nav = $state({ index: initial })
-
-function persistIndex(i: number): void {
-	if (typeof sessionStorage !== 'undefined') {
-		sessionStorage.setItem(INDEX_KEY, String(i))
+export function setCurrentIndex(i: number): void {
+	if (i !== nav.index && i >= 0 && i < pages.length) {
+		nav.index = i
+		// Mirror the current section into the URL hash so HMR / refresh /
+		// shared links land back on the same page. `replaceState` so the
+		// scroll stream doesn't bloat browser history.
+		if (typeof history !== 'undefined') {
+			history.replaceState(null, '', `#${pageAnchorId(pages[i])}`)
+		}
 	}
 }
 
-// Initial canonicalisation: replaceState so the URL reflects the resolved
-// index without adding a history entry. Components call this once.
-let canonicalised = false
-export function canonicaliseUrl(): void {
-	if (canonicalised || typeof history === 'undefined') return
-	history.replaceState({ index: nav.index }, '', urlForIndex(nav.index))
-	canonicalised = true
+function scrollToPage(i: number): void {
+	if (typeof document === 'undefined' || i < 0 || i >= pages.length) return
+	const id = pageAnchorId(pages[i])
+	const el = document.getElementById(id)
+	if (!el) return
+	el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	// Update the URL hash without retriggering the browser's own jump-scroll.
+	history.replaceState(null, '', `#${id}`)
 }
 
-export function navigate(newIndex: number, push = true): void {
-	if (newIndex < 0 || newIndex >= pages.length || newIndex === nav.index) return
-	nav.index = newIndex
-	persistIndex(newIndex)
-	if (typeof history !== 'undefined') {
-		const url = urlForIndex(newIndex)
-		if (push) history.pushState({ index: newIndex }, '', url)
-		else history.replaceState({ index: newIndex }, '', url)
-	}
+export function navigate(i: number): void {
+	scrollToPage(i)
 }
 
 export function jumpToQuestion(qid: string): void {
 	const i = pages.findIndex((p) => p.questions.includes(qid))
-	if (i >= 0) navigate(i)
-}
-
-// Wire to browser back/forward. Returns an unsubscribe.
-export function subscribePopState(): () => void {
-	if (typeof window === 'undefined') return () => {}
-	const onPop = () => {
-		const i = indexFromUrl()
-		if (i >= 0) nav.index = i
-	}
-	addEventListener('popstate', onPop)
-	return () => removeEventListener('popstate', onPop)
+	if (i >= 0) scrollToPage(i)
 }
