@@ -18,10 +18,6 @@
 		pageNumber?: number
 	} = $props()
 
-	// Always render every (non-deprecated, known) question so the page is
-	// inspectable. Visibility comes solely from `page.condition` — the
-	// ancestor branch condition from the flow walker. Per-question gates
-	// don't exist anymore; everything lives in survey.yaml's if/then.
 	const renderIds = $derived(page.questions.filter((id) => questions[id] && !questions[id].deprecated))
 	const hidden = $derived(!!page.condition && !evaluate(page.condition, answers, questions))
 </script>

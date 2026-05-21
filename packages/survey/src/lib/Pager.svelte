@@ -10,10 +10,6 @@
 	onMount(() => {
 		if (!listEl) return
 
-		// Watch every page section. As the user scrolls, whichever has the
-		// highest intersection ratio becomes `nav.index`. `rootMargin` biases
-		// "current" toward the section at the top of the viewport rather than
-		// the geometric middle — feels right for top-down reading.
 		const observer = new IntersectionObserver(
 			(entries) => {
 				let best: { i: number; ratio: number } | null = null
@@ -26,7 +22,7 @@
 				}
 				if (best) setCurrentIndex(best.i)
 			},
-			{ rootMargin: '-25% 0px -50% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
+			{ rootMargin: '-10% 0px -80% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
 		)
 		listEl.querySelectorAll<HTMLElement>('section[data-page-index]').forEach((s) => observer.observe(s))
 
