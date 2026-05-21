@@ -21,7 +21,3 @@ question:
     - Stack Overflow or Stack Exchange
     - label: 'Other (please specify):'
       text_entry: true
-  show_if:
-    LearnCodeAI:
-      - for_career
-      - personal

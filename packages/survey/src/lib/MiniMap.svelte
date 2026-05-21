@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { survey, questions } from '$lib/data/load'
-	import { tokenizeShowIf } from '$lib/data/format_show_if'
-	import { evaluate } from '$lib/data/show_if'
+	import { tokenizeCondition } from '$lib/data/format_condition'
+	import { evaluate } from '$lib/data/condition'
 	import { answers } from '$lib/store/answers.svelte'
 	import { nav, navigate, pages } from '$lib/store/nav.svelte'
-	import type { FlowElement, PageEntry, ShowIf } from '$lib/types'
-	import ShowIfTokens from './ShowIfTokens.svelte'
+	import type { Condition, FlowElement, PageEntry } from '$lib/types'
+	import ConditionTokens from './ConditionTokens.svelte'
 
-	// Map question id -> flat page index, for navigation + the visible
-	// page number on the first question of each page.
+	// Map question id -> flat page index, for navigation + the page number
+	// shown on each question button.
 	const pageIndexByQid = $derived.by(() => {
 		const m = new Map<string, number>()
 		pages.forEach((p, i) => p.questions.forEach((q) => m.set(q, i)))
@@ -43,11 +43,11 @@
 					{@render flowList(el.blocks, gateOpen)}
 				</li>
 			{:else if 'if' in el}
-				{@const cond = el.if as ShowIf}
+				{@const cond = el.if as Condition}
 				{@const open = gateOpen && evaluate(cond, answers, questions)}
 				<li class="branch {open ? 'open' : 'closed'}">
 					<div class="branch-row">
-						<span class="branch-cond"><ShowIfTokens tokens={tokenizeShowIf(cond)} onJump={handleJump} /></span>
+						<span class="branch-cond"><ConditionTokens tokens={tokenizeCondition(cond)} onJump={handleJump} /></span>
 					</div>
 					{@render flowList(el.then, open)}
 				</li>
@@ -62,32 +62,16 @@
 			{#if typeof entry === 'string' || Array.isArray(entry)}
 				{@const ids = visibleIds(entry)}
 				{#if ids.length > 0}
-					{@const pi = pageIndexByQid.get(ids[0])}
-					{@const onlyShowIf = ids.length === 1 ? questions[ids[0]]?.show_if : undefined}
-					{#if onlyShowIf}
-						{@const open = gateOpen && evaluate(onlyShowIf, answers, questions)}
-						<li class="branch {open ? 'open' : 'closed'}">
-							<div class="branch-row">
-								<span class="branch-cond"><ShowIfTokens tokens={tokenizeShowIf(onlyShowIf)} onJump={handleJump} /></span>
-							</div>
-							<ol class="tree">
-								<li class="page">
-									{@render pageContent(ids, pi, open, true)}
-								</li>
-							</ol>
-						</li>
-					{:else}
-						<li class="page">
-							{@render pageContent(ids, pi, gateOpen, false)}
-						</li>
-					{/if}
+					<li class="page">
+						{@render pageButton(ids, pageIndexByQid.get(ids[0]))}
+					</li>
 				{/if}
 			{:else}
-				{@const cond = entry.if as ShowIf}
+				{@const cond = entry.if as Condition}
 				{@const open = gateOpen && evaluate(cond, answers, questions)}
 				<li class="branch {open ? 'open' : 'closed'}">
 					<div class="branch-row">
-						<span class="branch-cond"><ShowIfTokens tokens={tokenizeShowIf(cond)} onJump={handleJump} /></span>
+						<span class="branch-cond"><ConditionTokens tokens={tokenizeCondition(cond)} onJump={handleJump} /></span>
 					</div>
 					{@render pagesList(entry.then as PageEntry[], open)}
 				</li>
@@ -96,40 +80,19 @@
 	</ol>
 {/snippet}
 
-{#snippet pageContent(ids: string[], pageIndex: number | undefined, gateOpen: boolean, gateHoisted: boolean)}
-	{@const gates = gateHoisted
-		? []
-		: ids.map((qid) => ({ qid, expr: questions[qid]?.show_if })).filter((g): g is { qid: string; expr: ShowIf } => !!g.expr)}
-	{@const anyGateFails = gates.some((g) => !evaluate(g.expr, answers, questions))}
-	{@const state = !gateOpen || anyGateFails ? 'closed' : gates.length > 0 ? 'open' : ''}
-	{#snippet questionBtn()}
-		<button
-			type="button"
-			class="question-btn"
-			class:current={pageIndex !== undefined && nav.index === pageIndex}
-			onclick={() => pageIndex !== undefined && navigate(pageIndex)}
-			title={pageIndex !== undefined ? `Page ${pageIndex + 1}` : undefined}
-		>
-			<span class="page-idx" aria-hidden="true">
-				{pageIndex !== undefined ? String(pageIndex + 1).padStart(2, '0') : ''}
-			</span>
-			<span class="question-qid">{ids.join(', ')}</span>
-		</button>
-	{/snippet}
-	<div class="q {state}">
-		{#if gates.length > 0}
-			{#each gates as g (g.qid)}
-				<div class="branch question-gate">
-					<div class="branch-row">
-						<span class="branch-cond"><ShowIfTokens tokens={tokenizeShowIf(g.expr)} onJump={handleJump} /></span>
-					</div>
-				</div>
-			{/each}
-			<div class="tree">{@render questionBtn()}</div>
-		{:else}
-			{@render questionBtn()}
-		{/if}
-	</div>
+{#snippet pageButton(ids: string[], pageIndex: number | undefined)}
+	<button
+		type="button"
+		class="question-btn"
+		class:current={pageIndex !== undefined && nav.index === pageIndex}
+		onclick={() => pageIndex !== undefined && navigate(pageIndex)}
+		title={pageIndex !== undefined ? `Page ${pageIndex + 1}` : undefined}
+	>
+		<span class="page-idx" aria-hidden="true">
+			{pageIndex !== undefined ? String(pageIndex + 1).padStart(2, '0') : ''}
+		</span>
+		<span class="question-qid">{ids.join(', ')}</span>
+	</button>
 {/snippet}
 
 <aside class="mini-map" aria-label="Survey flow">
@@ -180,20 +143,14 @@
 		display: block;
 	}
 
-	.branch.open > .branch-row,
-	.q.open .branch > .branch-row {
+	.branch.open > .branch-row {
 		color: var(--shown);
 	}
 	.open > .tree {
 		border-inline-start-color: var(--shown);
 	}
-	.branch.closed > .branch-row,
-	.q.closed .branch > .branch-row {
+	.branch.closed > .branch-row {
 		color: var(--hidden);
-	}
-	.q.closed .question-btn {
-	  opacity: 0.4;
-		cursor: not-allowed;
 	}
 	.closed > .tree {
 		border-inline-start-color: var(--hidden);
@@ -201,6 +158,9 @@
 	.branch-cond {
 		font-family: var(--mono);
 		line-height: 1.3;
+	}
+	.closed .question-btn {
+	  opacity: 0.3;
 	}
 
 	.branch-row {

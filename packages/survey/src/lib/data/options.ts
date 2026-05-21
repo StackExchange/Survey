@@ -1,6 +1,6 @@
 // Normalise the polymorphic option entries (bare string OR object with
 // label/key/text_entry) into a uniform shape for rendering and for resolving
-// show_if references.
+// the keys referenced by survey.yaml's if/then blocks.
 
 import { snakeCase } from 'lodash-es'
 import type { OptionEntry } from '$lib/types'
@@ -10,8 +10,8 @@ export interface NormalisedOption {
 	label: string
 	textEntry: boolean
 	// True when the option had an explicit `key:` in the YAML — these are the
-	// deliberately-named keys other questions reference in their show_if. The
-	// preview surfaces them as a small badge alongside the option.
+	// deliberately-named keys referenced by `if/then` blocks in survey.yaml.
+	// The preview surfaces them as a small badge alongside the option.
 	explicitKey: boolean
 }
 

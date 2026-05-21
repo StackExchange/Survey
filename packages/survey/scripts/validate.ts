@@ -2,7 +2,7 @@
 // Cross-cutting checks that JSON Schema can't express.
 // Schema validation itself runs via ajv-cli (see package.json scripts).
 //
-// TODO: show_if reference resolution
+// TODO: if/then condition reference resolution (parent qid + option key existence)
 // TODO: flow → question existence
 // TODO: deprecation warnings
 

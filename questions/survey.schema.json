@@ -12,6 +12,57 @@
 		}
 	},
 	"definitions": {
+		"condition": {
+			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Each leaf is `{ParentQuestionId: [optionKey, …]}` — true iff the respondent's answer for ParentQuestionId is one of the listed keys. Combine with `any`, `all`, `not`.",
+			"oneOf": [
+				{
+					"type": "object",
+					"required": ["any"],
+					"additionalProperties": false,
+					"properties": {
+						"any": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/condition" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["all"],
+					"additionalProperties": false,
+					"properties": {
+						"all": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/condition" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["not"],
+					"additionalProperties": false,
+					"properties": {
+						"not": { "$ref": "#/definitions/condition" }
+					}
+				},
+				{
+					"type": "object",
+					"minProperties": 1,
+					"additionalProperties": {
+						"oneOf": [
+							{ "type": "string" },
+							{
+								"type": "array",
+								"minItems": 1,
+								"items": { "type": "string" }
+							}
+						]
+					}
+				}
+			]
+		},
 		"pageEntry": {
 			"description": "One page within a block. A single id, a list of ids on the same page, or an if/then wrapping a list of pages that should only show when the condition holds.",
 			"oneOf": [
@@ -25,9 +76,9 @@
 					"type": "object",
 					"required": ["if", "then"],
 					"additionalProperties": false,
-					"description": "Page-level branch: render `then` only when `if` is true. Hoist shared `show_if` rules here so the flow file is the single source of truth.",
+					"description": "Page-level branch: render `then` only when `if` is true.",
 					"properties": {
-						"if": {},
+						"if": { "$ref": "#/definitions/condition" },
 						"then": {
 							"type": "array",
 							"minItems": 1,
@@ -73,7 +124,7 @@
 					"additionalProperties": false,
 					"description": "BranchLogic: only run `then` when `if` is true.",
 					"properties": {
-						"if": {},
+						"if": { "$ref": "#/definitions/condition" },
 						"then": {
 							"type": "array",
 							"items": { "$ref": "#/definitions/flowElement" }

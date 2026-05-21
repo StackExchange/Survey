@@ -8,8 +8,9 @@
 #   - an if/then wrapping pages      -> if: <expr>, then: [...]
 #
 # The if/then form is "page-level branch logic": pages inside `then` only
-# render when `if` evaluates true. Use it to hoist `show_if` rules that are
-# shared across sibling pages — flow file becomes the single source of truth.
+# render when `if` evaluates true. All visibility rules live here — there's
+# no per-question `show_if` field, so survey.yaml is the single source of
+# truth for what a respondent sees.
 # Page-break docs: https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/page-breaks/
 flow:
   - block: Qualifications
@@ -21,12 +22,27 @@ flow:
   - block: Education + Career
     pages:
       - [EdLevel, Employment]
-      - [EmploymentAddl]
+      - if:
+          not:
+            Employment:
+              - prefer_not_to_say
+        then:
+          - [EmploymentAddl]
       - [WorkExp]
       - [LearnCodeChoose]
-      - [LearnCode]
+      - if:
+          LearnCodeChoose:
+            - new_to_coding
+            - learning_new
+        then:
+          - [LearnCode]
       - [LearnCodeAI]
-      - [AILearnHow]
+      - if:
+          LearnCodeAI:
+            - for_career
+            - personal
+        then:
+          - [AILearnHow]
       - [YearsCode]
       - [DevType]
       - if:
@@ -39,14 +55,38 @@ flow:
                 - hrs_20_29
         then:
           - [OrgSize, ICorPM, RemoteWork]
-      - [PurchaseInfluence]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [PurchaseInfluence]
       - [TechEndorseIntro, TechEndorse, TechOppose]
-      - [Industry]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [Industry]
       - if:
           MainBranch:
             - developer
         then:
           - [JobSat, JobSatPoints]
+      # ToolCountWork was previously on the same page as ToolCountPersonal,
+      # gated by `not Employment = retired`. To get the gate out of the
+      # question file we split the page — non-retirees see ToolCountWork
+      # on its own page just before ToolCountPersonal.
       - if:
           not:
             Employment:
@@ -54,7 +94,8 @@ flow:
         then:
           - [AIThreat]
           - [NewRole]
-      - [ToolCountWork, ToolCountPersonal]
+          - [ToolCountWork]
+      - [ToolCountPersonal]
   - block: Compensation
     pages:
       - [Country, Currency, CompTotal]

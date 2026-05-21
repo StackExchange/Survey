@@ -22,12 +22,3 @@ question:
     - Insurance
     - label: 'Other:'
       text_entry: true
-  show_if:
-    any:
-      - Employment:
-          - employed
-          - independent
-      - EmploymentAddl:
-          - hrs_under_10
-          - hrs_10_19
-          - hrs_20_29

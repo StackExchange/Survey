@@ -4,26 +4,6 @@
  * Regenerate with `npm run gen:types -w survey`.
  */
 
-export type ShowIf =
-	| {
-			/**
-			 * @minItems 1
-			 */
-			any: [ShowIf, ...ShowIf[]];
-	  }
-	| {
-			/**
-			 * @minItems 1
-			 */
-			all: [ShowIf, ...ShowIf[]];
-	  }
-	| {
-			not: ShowIf;
-	  }
-	| {
-			[k: string]: string | [string, ...string[]];
-	  };
-
 /**
  * One question file under questions/. Filename must match question.id.
  */
@@ -107,7 +87,7 @@ export interface SurveyQuestion {
 			| {
 					label: string;
 					/**
-					 * Override the implicit slug; only used by show_if references. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools).
+					 * Override the implicit slug; referenced by `if/then` blocks in survey.yaml. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools).
 					 */
 					key?: string;
 					/**
@@ -116,7 +96,6 @@ export interface SurveyQuestion {
 					text_entry?: boolean;
 			  }
 		)[];
-		show_if?: ShowIf;
 	};
 }
 
@@ -134,7 +113,7 @@ export type FlowElement =
 			blocks: [FlowElement, ...FlowElement[]];
 	  }
 	| {
-			if: unknown;
+			if: Condition;
 			then: FlowElement[];
 	  };
 /**
@@ -144,11 +123,33 @@ export type PageEntry =
 	| string
 	| [string, ...string[]]
 	| {
-			if: unknown;
+			if: Condition;
 			/**
 			 * @minItems 1
 			 */
 			then: [PageEntry, ...PageEntry[]];
+	  };
+/**
+ * Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Each leaf is `{ParentQuestionId: [optionKey, …]}` — true iff the respondent's answer for ParentQuestionId is one of the listed keys. Combine with `any`, `all`, `not`.
+ */
+export type Condition =
+	| {
+			/**
+			 * @minItems 1
+			 */
+			any: [Condition, ...Condition[]];
+	  }
+	| {
+			/**
+			 * @minItems 1
+			 */
+			all: [Condition, ...Condition[]];
+	  }
+	| {
+			not: Condition;
+	  }
+	| {
+			[k: string]: string | [string, ...string[]];
 	  };
 
 /**

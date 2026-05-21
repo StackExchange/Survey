@@ -18,7 +18,3 @@ question:
     - Volunteering (regularly)
     - Caring for dependents (children, elderly, etc.)
     - None of the above
-  show_if:
-    not:
-      Employment:
-        - prefer_not_to_say

@@ -3,49 +3,35 @@
 // Schema-derived types come from `./generated.ts` (regenerate with
 // `npm run gen:types -w survey` after editing either schema). This file:
 //   - re-exports the generated types under friendlier names,
-//   - extracts nested shapes (Validate, ScaleSpec, OptionEntry, …) for
-//     ergonomic imports,
+//   - extracts nested shapes (Validate, ScaleSpec, OptionEntry) used by
+//     question components,
 //   - declares runtime-only types the schemas don't cover (`Answer`, `Page`).
 //
 // If you find yourself wanting to edit a schema-derived type here, change
 // the schema instead and regenerate.
 
 import type {
+	Condition,
 	FlowElement as _FlowElement,
 	PageEntry as _PageEntry,
-	ShowIf,
 	SurveyQuestion as _SurveyQuestion,
 	SurveyStructure,
 } from './generated'
 
-export type { ShowIf }
+export type { Condition }
+export type Survey = SurveyStructure
 
 export type Question = _SurveyQuestion['question']
-export type QuestionType = Question['type']
 export type OptionEntry = NonNullable<Question['options']>[number]
 export type Validate = NonNullable<Question['validate']>
 export type ScaleSpec = NonNullable<Question['scale']>
-export type ScaleLabels = NonNullable<Question['scale_labels']>
-export type HistoryEntry = NonNullable<Question['history']>[number]
 
 export type FlowElement = _FlowElement
 export type BlockElement = Extract<FlowElement, { block: string }>
-export type RandomizerElement = Extract<FlowElement, { randomize: number }>
-
-// The schema lets `if` be any value; tighten it to ShowIf for our consumers.
-export type BranchElement = Omit<Extract<FlowElement, { if: unknown }>, 'if'> & {
-	if: ShowIf
-}
 
 // A page within a block: a single id, an id list, or an if/then wrapping
-// nested page entries. Schema-derived; the `if` is tightened to ShowIf for
-// the same reason as BranchElement above.
+// nested page entries. Schema-derived.
 export type PageEntry = _PageEntry
-export type PageBranchEntry = Omit<Extract<PageEntry, { if: unknown }>, 'if'> & {
-	if: ShowIf
-}
-
-export type Survey = SurveyStructure
 
 // --- runtime-only types (not derivable from any schema) -----------------
 
@@ -54,7 +40,7 @@ export type Survey = SurveyStructure
 export interface Page {
 	block: string
 	questions: string[]
-	condition?: ShowIf
+	condition?: Condition
 }
 
 // Answer state — one entry per answered question.

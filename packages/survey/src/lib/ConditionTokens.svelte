@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { ShowIfToken } from '$lib/data/format_show_if'
+	import type { ConditionToken } from '$lib/data/format_condition'
 
-	let { tokens, onJump }: { tokens: ShowIfToken[]; onJump: (qid: string) => void } = $props()
+	let { tokens, onJump }: { tokens: ConditionToken[]; onJump: (qid: string) => void } = $props()
 </script>
 
 <span class="tokens">
@@ -15,7 +15,7 @@
 </span>
 
 <style>
-	/* pre-wrap so \n separators emitted by tokenizeShowIf become real line
+	/* pre-wrap so \n separators emitted by tokenizeCondition become real line
 	   breaks — each OR/AND in a multi-clause condition flows onto a new line. */
 	.tokens {
 		white-space: pre-wrap;

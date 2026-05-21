@@ -2,7 +2,7 @@
 	let { value }: { value: string } = $props()
 </script>
 
-<code class="kbadge" title="Option key (referenced by show_if)">{value}</code>
+<code class="kbadge" title="Option key (referenced by if/then in survey.yaml)">{value}</code>
 
 <style>
 	.kbadge {
