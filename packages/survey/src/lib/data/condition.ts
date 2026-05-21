@@ -49,7 +49,7 @@ export function evaluate(expr: Condition, answers: Record<string, Answer>, quest
 export function visibleQuestions(
 	page: { questions: string[]; condition?: Condition },
 	answers: Record<string, Answer>,
-	questions: Record<string, Question>,
+	questions: Record<string, Question>
 ): string[] {
 	if (page.condition && !evaluate(page.condition, answers, questions)) return []
 	return page.questions.filter((id) => questions[id] && !questions[id].deprecated)

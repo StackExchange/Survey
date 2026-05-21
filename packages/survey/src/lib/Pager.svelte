@@ -22,7 +22,7 @@
 				}
 				if (best) setCurrentIndex(best.i)
 			},
-			{ rootMargin: '-10% 0px -80% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
+			{ rootMargin: '-10% 0px -80% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
 		)
 		listEl.querySelectorAll<HTMLElement>('section[data-page-index]').forEach((s) => observer.observe(s))
 
@@ -86,7 +86,8 @@
 	.nav,
 	.progress-wrap {
 		position: fixed;
-		left: 0; right: 0;
+		left: 0;
+		right: 0;
 		z-index: 1000;
 		width: 100%;
 		box-sizing: border-box;
@@ -135,6 +136,6 @@
 		background: var(--bg-page);
 	}
 	.nav button:hover {
-    opacity: 0.8;
+		opacity: 0.8;
 	}
 </style>

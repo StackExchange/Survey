@@ -16,12 +16,12 @@ export interface NormalisedOption {
 }
 
 export function normaliseOptions(opts: OptionEntry[] | undefined): NormalisedOption[] {
-  if (!opts) return []
+	if (!opts) return []
 
 	return opts.map((opt) => {
 		if (typeof opt === 'string') {
 			return { key: snakeCase(opt), label: opt, textEntry: false, explicitKey: false }
-    }
+		}
 
 		return {
 			key: opt.key ?? snakeCase(opt.label),

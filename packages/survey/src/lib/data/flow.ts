@@ -15,7 +15,7 @@ function pagesFromEntries(
 	entries: PageEntry[],
 	blockName: string,
 	condition: Condition | undefined,
-	questions: Record<string, Question>,
+	questions: Record<string, Question>
 ): Page[] {
 	const out: Page[] = []
 
@@ -48,7 +48,12 @@ function pagesFromBlock(block: BlockElement, condition: Condition | undefined, q
 	return pagesFromEntries(block.pages as PageEntry[], block.block, condition, questions)
 }
 
-function walk(elements: FlowElement[], condition: Condition | undefined, questions: Record<string, Question>, opts: FlattenOptions): Page[] {
+function walk(
+	elements: FlowElement[],
+	condition: Condition | undefined,
+	questions: Record<string, Question>,
+	opts: FlattenOptions
+): Page[] {
 	const out: Page[] = []
 
 	for (const el of elements) {

@@ -47,7 +47,7 @@
 
 <style>
 	.q {
-	  padding: 3rem;
+		padding: 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.6rem;

@@ -28,7 +28,7 @@
 
 <style>
 	.sortable-item {
-	  background: var(--bg-page);
+		background: var(--bg-page);
 		list-style: none;
 		touch-action: none;
 	}

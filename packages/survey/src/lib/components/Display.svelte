@@ -11,7 +11,7 @@
 
 <style>
 	.display {
-	  padding: 3rem;
+		padding: 3rem;
 		font-size: 1rem;
 		line-height: 1.5;
 	}

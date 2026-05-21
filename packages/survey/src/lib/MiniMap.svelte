@@ -137,7 +137,7 @@
 	}
 
 	.randomizer-label {
-	  margin-top: 10px;
+		margin-top: 10px;
 		opacity: 0.75;
 		font-style: italic;
 		display: block;
@@ -160,7 +160,7 @@
 		line-height: 1.3;
 	}
 	.closed .question-btn {
-	  opacity: 0.3;
+		opacity: 0.3;
 	}
 
 	.branch-row {
@@ -169,7 +169,7 @@
 		padding: 0 0 5px 0.8rem;
 		font-size: 0.7rem;
 		margin: 0 0 0 0.4rem;
-    border-left: 1px solid;
+		border-left: 1px solid;
 	}
 
 	.question-btn {
@@ -210,5 +210,4 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-
 </style>
