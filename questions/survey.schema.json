@@ -1,0 +1,137 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Survey structure",
+	"description": "Top-level survey.yaml: the flow Qualtrics presents to respondents.",
+	"type": "object",
+	"required": ["flow"],
+	"additionalProperties": true,
+	"properties": {
+		"flow": {
+			"type": "array",
+			"items": { "$ref": "#/definitions/flowElement" }
+		}
+	},
+	"definitions": {
+		"condition": {
+			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Each leaf is `{ParentQuestionId: [optionKey, …]}` — true iff the respondent's answer for ParentQuestionId is one of the listed keys. Combine with `any`, `all`, `not`.",
+			"oneOf": [
+				{
+					"type": "object",
+					"required": ["any"],
+					"additionalProperties": false,
+					"properties": {
+						"any": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/condition" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["all"],
+					"additionalProperties": false,
+					"properties": {
+						"all": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/condition" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["not"],
+					"additionalProperties": false,
+					"properties": {
+						"not": { "$ref": "#/definitions/condition" }
+					}
+				},
+				{
+					"type": "object",
+					"minProperties": 1,
+					"additionalProperties": {
+						"oneOf": [
+							{ "type": "string" },
+							{
+								"type": "array",
+								"minItems": 1,
+								"items": { "type": "string" }
+							}
+						]
+					}
+				}
+			]
+		},
+		"pageEntry": {
+			"description": "One page within a block. A single id, a list of ids on the same page, or an if/then wrapping a list of pages that should only show when the condition holds.",
+			"oneOf": [
+				{ "type": "string", "minLength": 1 },
+				{
+					"type": "array",
+					"minItems": 1,
+					"items": { "type": "string", "minLength": 1 }
+				},
+				{
+					"type": "object",
+					"required": ["if", "then"],
+					"additionalProperties": false,
+					"description": "Page-level branch: render `then` only when `if` is true.",
+					"properties": {
+						"if": { "$ref": "#/definitions/condition" },
+						"then": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/pageEntry" }
+						}
+					}
+				}
+			]
+		},
+		"flowElement": {
+			"oneOf": [
+				{
+					"type": "object",
+					"required": ["block", "pages"],
+					"additionalProperties": false,
+					"description": "A standard block of pages.",
+					"properties": {
+						"block": { "type": "string", "minLength": 1 },
+						"pages": {
+							"type": "array",
+							"items": { "$ref": "#/definitions/pageEntry" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["randomize", "blocks"],
+					"additionalProperties": false,
+					"description": "BlockRandomizer: present `randomize` of the listed blocks per respondent in random order.",
+					"properties": {
+						"randomize": { "type": "integer", "minimum": 1 },
+						"even_presentation": { "type": "boolean" },
+						"blocks": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "$ref": "#/definitions/flowElement" }
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["if", "then"],
+					"additionalProperties": false,
+					"description": "BranchLogic: only run `then` when `if` is true.",
+					"properties": {
+						"if": { "$ref": "#/definitions/condition" },
+						"then": {
+							"type": "array",
+							"items": { "$ref": "#/definitions/flowElement" }
+						}
+					}
+				}
+			]
+		}
+	}
+}

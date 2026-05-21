@@ -122,7 +122,7 @@
 									"key": {
 										"type": "string",
 										"pattern": "^[a-z_][a-z0-9_]*$",
-										"description": "Override the implicit slug; only used by show_if references. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools)."
+										"description": "Override the implicit slug; referenced by `if/then` blocks in survey.yaml. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools)."
 									},
 									"text_entry": {
 										"type": "boolean",
@@ -132,61 +132,8 @@
 							}
 						]
 					}
-				},
-				"show_if": { "$ref": "#/definitions/showIf" }
-			}
-		}
-	},
-	"definitions": {
-		"showIf": {
-			"oneOf": [
-				{
-					"type": "object",
-					"required": ["any"],
-					"additionalProperties": false,
-					"properties": {
-						"any": {
-							"type": "array",
-							"minItems": 1,
-							"items": { "$ref": "#/definitions/showIf" }
-						}
-					}
-				},
-				{
-					"type": "object",
-					"required": ["all"],
-					"additionalProperties": false,
-					"properties": {
-						"all": {
-							"type": "array",
-							"minItems": 1,
-							"items": { "$ref": "#/definitions/showIf" }
-						}
-					}
-				},
-				{
-					"type": "object",
-					"required": ["not"],
-					"additionalProperties": false,
-					"properties": {
-						"not": { "$ref": "#/definitions/showIf" }
-					}
-				},
-				{
-					"type": "object",
-					"minProperties": 1,
-					"additionalProperties": {
-						"oneOf": [
-							{ "type": "string" },
-							{
-								"type": "array",
-								"minItems": 1,
-								"items": { "type": "string" }
-							}
-						]
-					}
 				}
-			]
+			}
 		}
 	}
 }

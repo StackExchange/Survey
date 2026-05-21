@@ -1,0 +1,195 @@
+# yaml-language-server: $schema=./survey.schema.json
+# Survey Flow - the order Qualtrics presents blocks to a respondent.
+# Docs: https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/survey-flow-overview/
+#
+# Each entry under `pages:` is one of:
+#   - a single question id           -> "Foo"
+#   - a list of ids on the same page -> [Foo, Bar]
+#   - an if/then wrapping pages      -> if: <expr>, then: [...]
+#
+# The if/then form is "page-level branch logic": pages inside `then` only
+# render when `if` evaluates true. All visibility rules live here — there's
+# no per-question `show_if` field, so survey.yaml is the single source of
+# truth for what a respondent sees.
+# Page-break docs: https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/page-breaks/
+flow:
+  - block: Qualifications
+    pages:
+      - [Welcome, MetaInfo]
+      - [MainBranch]
+      - [Age]
+      - [Consent]
+  - block: Education + Career
+    pages:
+      - [EdLevel, Employment]
+      - if:
+          not:
+            Employment:
+              - prefer_not_to_say
+        then:
+          - [EmploymentAddl]
+      - [WorkExp]
+      - [LearnCodeChoose]
+      - if:
+          LearnCodeChoose:
+            - new_to_coding
+            - learning_new
+        then:
+          - [LearnCode]
+      - [LearnCodeAI]
+      - if:
+          LearnCodeAI:
+            - for_career
+            - personal
+        then:
+          - [AILearnHow]
+      - [YearsCode]
+      - [DevType]
+      - if:
+          any:
+            - Employment:
+                - employed
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [OrgSize, ICorPM, RemoteWork]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [PurchaseInfluence]
+      - [TechEndorseIntro, TechEndorse, TechOppose]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
+          - [Industry]
+      - if:
+          MainBranch:
+            - developer
+        then:
+          - [JobSat, JobSatPoints]
+      # ToolCountWork was previously on the same page as ToolCountPersonal,
+      # gated by `not Employment = retired`. To get the gate out of the
+      # question file we split the page — non-retirees see ToolCountWork
+      # on its own page just before ToolCountPersonal.
+      - if:
+          not:
+            Employment:
+              - retired
+        then:
+          - [AIThreat]
+          - [NewRole]
+          - [ToolCountWork]
+      - [ToolCountPersonal]
+  - block: Compensation
+    pages:
+      - [Country, Currency, CompTotal]
+  # Block Randomizer: present `randomize` of the listed blocks per respondent
+  # in random order. `even_presentation` asks Qualtrics to balance which blocks
+  # appear across respondents (matters most when randomize < blocks count).
+  # Docs: https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/block-randomizer/
+  - randomize: 3
+    even_presentation: true
+    blocks:
+      - block: Tech and Tech Culture
+        pages:
+          - [LanguageChoice]
+          - if:
+              not:
+                LanguageChoice:
+                  - no
+            then:
+              - [Language, LanguagesHaveEntry, LanguagesWantEntry]
+          - [DatabaseChoice]
+          - if:
+              not:
+                DatabaseChoice:
+                  - no
+            then:
+              - [Database, DatabaseHaveEntry, DatabaseWantEntry]
+          - [PlatformChoice]
+          - if:
+              not:
+                PlatformChoice:
+                  - no
+            then:
+              - [Platform, PlatformHaveEntry, PlatformWantEntry]
+          - [WebframeChoice]
+          - if:
+              not:
+                WebframeChoice:
+                  - no
+            then:
+              - [Webframe, WebframeHaveEntry, WebframeWantEntry]
+          - [DevEnvsChoice]
+          - if:
+              not:
+                DevEnvsChoice:
+                  - no
+            then:
+              - [DevEnvs, DevEnvHaveEntry, DevEnvWantEntry]
+          - [SOTags, SOTagsHaveEntry, SOTagsWantEntry]
+          - [OpSys]
+          - [OfficeStackAsync, OfficeStackHaveEntry, OfficeStackWantEntry]
+          - [CommPlatform, CommPlatformHaveEntr, CommPlatformWantEntr]
+          - [AIModelsChoice]
+          - if:
+              not:
+                AIModelsChoice:
+                  - no
+            then:
+              - [AIModels, AIModelsHaveEntry, AIModelsWantEntry]
+      - block: Community
+        pages:
+          - [SOAccount, SOVisitFreq, SODuration]
+          - [SOPartFreq, SO_Dev_Content]
+          - [SO_Actions]
+          - [SOComm, SOFriction]
+      - block: AI + AI Agents
+        pages:
+          - [AISelect]
+          - [AISent, AIAcc, AIComplex]
+          - [AITool]
+          - [AIFrustration]
+          - [AIExplain]
+          - [AIAgents]
+          - [AIAgentChange]
+          - if:
+              not:
+                AIAgents:
+                  - plans_to
+                  - wont_use
+            then:
+              - [AIAgent_Uses, AgentUsesGeneral]
+              - [AIAgentImpact]
+          - [AIAgentChallenges]
+          - if:
+              AIAgents:
+                - daily
+                - weekly
+                - monthly
+            then:
+              - [AIAgentKnowledge, AIAgentKnowWrite]
+              - [AIAgentOrchestration, AIAgentOrchWrite]
+              - [AIAgentObserveSecure, AIAgentObsWrite]
+              - [AIAgentExternal, AIAgentExtWrite]
+          - [AIHuman]
+          - [AIOpen]
+  - block: Final Thoughts
+    pages:
+      - [SurveyLength, SurveyEase, SurveyIssues]

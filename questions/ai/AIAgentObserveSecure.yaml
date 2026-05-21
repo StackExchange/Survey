@@ -22,8 +22,3 @@ question:
     - Snyk
     - Vectra AI
     - Wiz
-  show_if:
-    AIAgents:
-      - daily
-      - weekly
-      - monthly

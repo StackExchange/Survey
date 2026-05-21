@@ -56,7 +56,3 @@ question:
     - Zig
     - Mojo
     - Gleam
-  show_if:
-    not:
-      LanguageChoice:
-        - no

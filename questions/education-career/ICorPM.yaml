@@ -8,11 +8,3 @@ question:
   options:
     - Individual contributor
     - People manager
-  show_if:
-    any:
-      - Employment:
-          - employed
-      - EmploymentAddl:
-          - hrs_under_10
-          - hrs_10_19
-          - hrs_20_29

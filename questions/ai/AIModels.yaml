@@ -28,7 +28,3 @@ question:
     - Perplexity Sonar models
     - Reka (Flash 3 or other Reka models)
     - X Grok models
-  show_if:
-    not:
-      AIModelsChoice:
-        - no

@@ -38,7 +38,3 @@ question:
     - Windsurf
     - Xcode
     - Zed
-  show_if:
-    not:
-      DevEnvsChoice:
-        - no

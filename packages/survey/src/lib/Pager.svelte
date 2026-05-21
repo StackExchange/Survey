@@ -1,184 +1,130 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import { answers, reset, loadIndex, saveIndex } from '$lib/store/answers.svelte'
-	import { visibleQuestions } from '$lib/data/show_if'
-	import { flatten } from '$lib/data/flow'
-	import { questions, survey } from '$lib/data/load'
-	import type { Page as PageT } from '$lib/types'
+	import { reset } from '$lib/store/answers.svelte'
+	import { questions } from '$lib/data/load'
+	import { jumpToQuestion, nav, navigate, pageAnchorId, pages, setCurrentIndex } from '$lib/store/nav.svelte'
 	import Page from './Page.svelte'
 
-	let index = $state(loadIndex())
-	$effect(() => saveIndex(index))
-
-	// Mirror the current page into the URL as `?q=<first-question-id>` so
-	// browser back/forward works and links are shareable. URL takes priority
-	// over sessionStorage on first load.
-	function indexFromUrl(): number {
-		const qid = new URLSearchParams(location.search).get('q')
-		if (!qid) return -1
-		return pages.findIndex((p) => p.questions.includes(qid))
-	}
-	function urlForIndex(i: number): string {
-		const qid = pages[i]?.questions[0]
-		const search = qid ? `?q=${encodeURIComponent(qid)}` : ''
-		return `${location.pathname}${search}${location.hash}`
-	}
-	function navigate(newIndex: number, push = true) {
-		if (newIndex < 0 || newIndex >= pages.length || newIndex === index) return
-		index = newIndex
-		const url = urlForIndex(newIndex)
-		if (push) history.pushState({ index: newIndex }, '', url)
-		else history.replaceState({ index: newIndex }, '', url)
-	}
+	let listEl: HTMLElement | undefined = $state()
 
 	onMount(() => {
-		const fromUrl = indexFromUrl()
-		if (fromUrl >= 0) index = fromUrl
-		history.replaceState({ index }, '', urlForIndex(index))
-		const onPop = () => {
-			const i = indexFromUrl()
-			if (i >= 0) index = i
+		if (!listEl) return
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				let best: { i: number; ratio: number } | null = null
+				for (const e of entries) {
+					if (!e.isIntersecting) continue
+					const i = Number((e.target as HTMLElement).dataset.pageIndex)
+					if (!best || e.intersectionRatio > best.ratio) {
+						best = { i, ratio: e.intersectionRatio }
+					}
+				}
+				if (best) setCurrentIndex(best.i)
+			},
+			{ rootMargin: '-10% 0px -80% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+		)
+		listEl.querySelectorAll<HTMLElement>('section[data-page-index]').forEach((s) => observer.observe(s))
+
+		// Browser handles initial hash scroll natively, but doing it again on
+		// next frame gives layout a chance to settle (web-fonts etc).
+		if (location.hash) {
+			requestAnimationFrame(() => {
+				document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'start' })
+			})
 		}
-		addEventListener('popstate', onPop)
-		return () => removeEventListener('popstate', onPop)
+
+		return () => observer.disconnect()
 	})
 
-	const pages = $derived<PageT[]>(flatten(survey.flow, questions, { respectRandomizerSubset: false }))
-
-	// Live "is this page visible right now" — we still navigate through them all,
-	// but pages whose condition is false render an empty state. (We could
-	// auto-skip, but for a preview keeping them visible is more useful.)
-	const current = $derived(pages[Math.min(index, Math.max(0, pages.length - 1))])
-	const blockOrdinal = $derived.by(() => {
-		const seen = new Set<string>()
-		const order: string[] = []
-		for (const p of pages) {
-			if (!seen.has(p.block)) {
-				seen.add(p.block)
-				order.push(p.block)
-			}
-		}
-		return { all: order, currentIdx: order.indexOf(current?.block ?? '') }
-	})
-
-	function next() {
-		navigate(index + 1)
-	}
-	function back() {
-		navigate(index - 1)
-	}
-	function jumpToQuestion(qid: string) {
-		const i = pages.findIndex((p) => p.questions.includes(qid))
-		if (i >= 0) navigate(i)
-	}
-
-	// Group pages by block so the page dropdown can show <optgroup>s and the
-	// labels stay short ("question id, question id" rather than "Block: ids").
-	const pageGroups = $derived.by(() => {
-		const groups: { block: string; items: { i: number; label: string }[] }[] = []
-		let current: (typeof groups)[number] | null = null
-		pages.forEach((p, i) => {
-			if (!current || current.block !== p.block) {
-				current = { block: p.block, items: [] }
-				groups.push(current)
-			}
-			current.items.push({ i, label: p.questions.join(', ') })
-		})
-		return groups
-	})
 	function resetAll() {
 		reset()
 		navigate(0)
 	}
-
-	const visibleCount = $derived(current ? visibleQuestions(current, answers, questions).length : 0)
 </script>
 
-<div class="preview-bar">
-	<header class="progress">
-		<span class="counts">
-			Block {blockOrdinal.currentIdx + 1} / {blockOrdinal.all.length}
-			· Page {index + 1} / {pages.length}
-			·
-			{visibleCount}
-			{visibleCount === 1 ? 'question' : 'questions'}
-		</span>
-	</header>
-	<label class="control">
-		<select value={String(index)} onchange={(e) => navigate(Number((e.target as HTMLSelectElement).value))}>
-			{#each pageGroups as g (g.block)}
-				<optgroup label={g.block}>
-					{#each g.items as item (item.i)}
-						<option value={String(item.i)}>{item.i + 1}. {item.label}</option>
-					{/each}
-				</optgroup>
-			{/each}
-		</select>
-	</label>
+<div class="progress-wrap" aria-hidden="true">
+	<div class="progress-bar" style:width={`${((nav.index + 1) / Math.max(1, pages.length)) * 100}%`}></div>
 </div>
 
-{#if current}
-	<Page page={current} {questions} onJump={jumpToQuestion} />
+<div class="pages-list" bind:this={listEl}>
+	{#each pages as p, i (i)}
+		<section id={pageAnchorId(p)} data-page-index={i} class="page-section">
+			<Page page={p} {questions} onJump={jumpToQuestion} pageNumber={i + 1} />
+		</section>
+	{/each}
+</div>
 
-	<footer class="nav">
-		<div class="progress-bar" style:width={`${((index + 1) / Math.max(1, pages.length)) * 100}%`} aria-hidden="true"></div>
-		<button type="button" onclick={back} disabled={index === 0}>← Back</button>
-		<button type="button" onclick={resetAll}>Reset answers</button>
-		<button type="button" class="primary" onclick={next} disabled={index >= pages.length - 1}> Next → </button>
-	</footer>
-{:else}
-	<p>No pages — check survey.yaml.</p>
-{/if}
+<footer class="nav">
+	<div class="logo">
+		<svg width="32" height="32" viewBox="0 0 32 32" class="svg-icon IconGlyph32" aria-hidden="true"
+			><path
+				d="m23.8 17.23.04.02v.01za17.6 17.6 0 0 0-3.36 8.23v.02a18 18 0 0 0-.05 4.53H4.01v-4.55h14.23q.03-.28.09-.56L4.62 21.1l1.14-4.39 13.88 3.84.2-.44L7.37 12.7l2.2-3.94 12.64 7.53.3-.37L12.18 5.23 15.3 2 25.8 12.87l1.11 1.15q-1.76 1.39-3.12 3.2"
+			/></svg
+		>
+		<h1>Developer Survey Preview</h1>
+	</div>
+
+	<div class="actions">
+		<button type="button" onclick={resetAll}>Reset</button>
+	</div>
+</footer>
 
 <style>
-	.preview-bar {
+	.pages-list {
 		display: flex;
-		gap: 0.6rem;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0.5rem 0;
-		border-bottom: 1px solid rgba(127, 127, 127, 0.15);
-		margin-bottom: 1rem;
-		font-size: 0.85em;
+		flex-direction: column;
 	}
-	.control {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.3rem;
+	.page-section {
+		scroll-margin-top: 1rem;
+		margin-block: 1.5rem;
 	}
-	.control span {
-		opacity: 0.7;
+	.page-section:first-child {
+		margin-block-start: 0;
 	}
-	.progress {
-		display: flex;
-		align-items: center;
-		gap: 0.6rem;
-		padding: 0.5rem 0;
-		font-size: 0.9em;
-	}
-	.counts {
-		opacity: 0.7;
-	}
-	.nav {
-		background: var(--bg);
-		display: flex;
-		justify-content: space-between;
-		gap: 0.5rem;
-		padding: 1.25rem;
-		margin-top: 1rem;
-		border-top: 1px solid rgba(127, 127, 127, 0.2);
+
+	.nav,
+	.progress-wrap {
 		position: fixed;
-		bottom: 0;
 		left: 0;
 		right: 0;
+		z-index: 1000;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.nav {
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.9rem 1.5rem;
+	}
+	.nav h1 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--text-h);
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.progress-wrap {
+		top: 0;
+		height: 2px;
+		overflow: hidden;
 	}
 	.progress-bar {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 2px;
+		height: 100%;
 		background: var(--accent);
 		transition: width 0.25s ease-out;
+	}
+
+	.actions {
+		display: flex;
+		gap: 0.5rem;
 	}
 	.nav button {
 		padding: 0.55rem 1.2rem;
@@ -187,23 +133,9 @@
 		border: 1px solid rgba(127, 127, 127, 0.4);
 		background: transparent;
 		cursor: pointer;
+		background: var(--bg-page);
 	}
-	.nav button:disabled {
-		opacity: 0.4;
-		cursor: not-allowed;
-	}
-	.nav button.primary {
-		background: var(--accent, #6962d6);
-		color: white;
-		border-color: var(--accent, #6962d6);
-	}
-	select {
-		max-width: 16rem;
-		padding: 0.3rem 0.5rem;
-		font: inherit;
-		border-radius: 0.3rem;
-		border: 1px solid rgba(127, 127, 127, 0.4);
-		background: transparent;
-		cursor: pointer;
+	.nav button:hover {
+		opacity: 0.8;
 	}
 </style>

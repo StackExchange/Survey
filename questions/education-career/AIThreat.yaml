@@ -9,7 +9,3 @@ question:
     - Yes
     - No
     - I'm not sure
-  show_if:
-    not:
-      Employment:
-        - retired

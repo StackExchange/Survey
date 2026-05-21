@@ -39,7 +39,3 @@ question:
     - Vue.js
     - WordPress
     - Axum
-  show_if:
-    not:
-      WebframeChoice:
-        - no

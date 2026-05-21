@@ -6,10 +6,10 @@ import { marked } from 'marked'
 marked.use({ breaks: true, gfm: true })
 
 export function mdToHtml(md: string): string {
-  if (typeof md !== 'string' || md === '') return md ?? ''
+	if (typeof md !== 'string' || md === '') return md ?? ''
 
 	const isInline = !md.includes('\n') && !/^\s*[-*]\s/m.test(md)
-  const out = isInline ? marked.parseInline(md) : marked.parse(md)
+	const out = isInline ? marked.parseInline(md) : marked.parse(md)
 
 	return (out as string).trim()
 }

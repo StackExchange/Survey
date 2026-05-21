@@ -28,10 +28,8 @@
 
 <style>
 	.sortable-item {
+		background: var(--bg-page);
 		list-style: none;
 		touch-action: none;
-	}
-	.dragging {
-		opacity: 0.6;
 	}
 </style>

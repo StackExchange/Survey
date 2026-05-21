@@ -23,8 +23,3 @@ question:
     - AI agents have improved collaboration within my team.
     - label: Write in the most significant benefit if not listed above.
       text_entry: true
-  show_if:
-    not:
-      AIAgents:
-        - plans_to
-        - wont_use

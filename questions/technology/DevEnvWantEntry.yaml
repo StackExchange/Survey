@@ -6,7 +6,3 @@ question:
   type: free_text
   required: false
   lines: single
-  show_if:
-    not:
-      DevEnvsChoice:
-        - no

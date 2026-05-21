@@ -41,7 +41,3 @@ question:
     - Amazon Redshift
     - Pocketbase
     - Valkey
-  show_if:
-    not:
-      DatabaseChoice:
-        - no

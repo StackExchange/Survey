@@ -2,7 +2,7 @@
 // Cross-cutting checks that JSON Schema can't express.
 // Schema validation itself runs via ajv-cli (see package.json scripts).
 //
-// TODO: show_if reference resolution
+// TODO: if/then condition reference resolution (parent qid + option key existence)
 // TODO: flow → question existence
 // TODO: deprecation warnings
 
@@ -20,7 +20,9 @@ interface QuestionDoc {
 }
 
 let errors = 0
-const files = fs.globSync('**/*.yaml', { cwd: questionsDir })
+// Match `<category>/<id>.yaml` only — leaves the top-level survey.yaml and
+// any future root-level files out of the per-question filename check.
+const files = fs.globSync('*/*.yaml', { cwd: questionsDir })
 
 for (const rel of files) {
 	const expected = path.basename(rel, '.yaml')

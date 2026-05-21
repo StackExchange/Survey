@@ -15,8 +15,3 @@ question:
     - Multi-platform search enablement
     - label: 'Other specific task (write in):'
       text_entry: true
-  show_if:
-    not:
-      AIAgents:
-        - plans_to
-        - wont_use

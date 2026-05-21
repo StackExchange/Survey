@@ -9,20 +9,20 @@
 import YAML from 'yaml'
 import type { Question, Survey } from '$lib/types'
 
-const questionRaws = import.meta.glob<string>('../../../../../questions/**/*.yaml', {
+const questionRaws = import.meta.glob<string>('$questions/*/*.yaml', {
 	eager: true,
 	query: '?raw',
 	import: 'default',
 })
 
-const surveyRaws = import.meta.glob<string>('../../../survey.yaml', {
+const surveyRaws = import.meta.glob<string>('$questions/survey.yaml', {
 	eager: true,
 	query: '?raw',
 	import: 'default',
 })
 
 function loadQuestions(): Record<string, Question> {
-  const out: Record<string, Question> = {}
+	const out: Record<string, Question> = {}
 
 	for (const [path, raw] of Object.entries(questionRaws)) {
 		try {
@@ -31,15 +31,15 @@ function loadQuestions(): Record<string, Question> {
 		} catch (e) {
 			console.error(`Failed to parse ${path}:`, e)
 		}
-  }
+	}
 
 	return out
 }
 
 function loadSurvey(): Survey {
-  const [, raw] = Object.entries(surveyRaws)[0] ?? []
+	const [, raw] = Object.entries(surveyRaws)[0] ?? []
 
-  if (!raw) throw new Error('survey.yaml not found via import.meta.glob')
+	if (!raw) throw new Error('survey.yaml not found via import.meta.glob')
 
 	return YAML.parse(raw) as Survey
 }

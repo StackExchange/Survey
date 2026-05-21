@@ -1,8 +1,9 @@
 // Walk the survey-level flow tree and produce a flat ordered list of pages.
 // Each page knows the questions to show, the block it belongs to, and any
-// ancestor branch condition it inherited.
+// ancestor branch condition it inherited (from a flow-level `if/then` or a
+// page-level `if/then` inside a block).
 
-import type { BlockElement, FlowElement, Page, Question, ShowIf } from '$lib/types'
+import type { BlockElement, FlowElement, Page, PageEntry, Question, Condition } from '$lib/types'
 
 interface FlattenOptions {
 	// When true, BlockRandomizer's SubSet is honoured by picking the first
@@ -10,31 +11,50 @@ interface FlattenOptions {
 	respectRandomizerSubset?: boolean
 }
 
-function pagesFromBlock(block: BlockElement, condition: ShowIf | undefined, questions: Record<string, Question>): Page[] {
-  const out: Page[] = []
+function pagesFromEntries(
+	entries: PageEntry[],
+	blockName: string,
+	condition: Condition | undefined,
+	questions: Record<string, Question>
+): Page[] {
+	const out: Page[] = []
 
-	for (const page of block.pages) {
-		const ids = (Array.isArray(page) ? page : [page]).filter((id) => {
-      const q = questions[id]
-
-			// Skip deprecated and unknown questions; the validator already warns.
-			return q && !q.deprecated
-    })
-
-    if (ids.length === 0) continue
-
-		out.push({
-			block: block.block,
-			questions: ids,
-			...(condition !== undefined ? { condition } : {}),
-		})
-  }
+	for (const entry of entries) {
+		if (typeof entry === 'string' || Array.isArray(entry)) {
+			const ids = (Array.isArray(entry) ? entry : [entry]).filter((id) => {
+				const q = questions[id]
+				// Skip deprecated and unknown questions; the validator already warns.
+				return q && !q.deprecated
+			})
+			if (ids.length === 0) continue
+			out.push({
+				block: blockName,
+				questions: ids,
+				...(condition !== undefined ? { condition } : {}),
+			})
+		} else if (entry && typeof entry === 'object' && 'if' in entry && 'then' in entry) {
+			// Page-level if/then: AND the branch condition with any ancestor
+			// condition and recurse into its `then` page entries.
+			const branchIf = entry.if as Condition
+			const next: Condition | undefined = condition !== undefined ? { all: [condition, branchIf] } : branchIf
+			out.push(...pagesFromEntries(entry.then as PageEntry[], blockName, next, questions))
+		}
+	}
 
 	return out
 }
 
-function walk(elements: FlowElement[], condition: ShowIf | undefined, questions: Record<string, Question>, opts: FlattenOptions): Page[] {
-  const out: Page[] = []
+function pagesFromBlock(block: BlockElement, condition: Condition | undefined, questions: Record<string, Question>): Page[] {
+	return pagesFromEntries(block.pages as PageEntry[], block.block, condition, questions)
+}
+
+function walk(
+	elements: FlowElement[],
+	condition: Condition | undefined,
+	questions: Record<string, Question>,
+	opts: FlattenOptions
+): Page[] {
+	const out: Page[] = []
 
 	for (const el of elements) {
 		if ('block' in el) {
@@ -43,11 +63,11 @@ function walk(elements: FlowElement[], condition: ShowIf | undefined, questions:
 			const blocks = opts.respectRandomizerSubset ? el.blocks.slice(0, el.randomize) : el.blocks
 			out.push(...walk(blocks, condition, questions, opts))
 		} else if ('if' in el) {
-			const branchIf = el.if as ShowIf
-			const next: ShowIf | undefined = condition !== undefined ? { all: [condition, branchIf] } : branchIf
+			const branchIf = el.if as Condition
+			const next: Condition | undefined = condition !== undefined ? { all: [condition, branchIf] } : branchIf
 			out.push(...walk(el.then, next, questions, opts))
 		}
-  }
+	}
 
 	return out
 }

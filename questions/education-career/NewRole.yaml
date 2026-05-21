@@ -11,7 +11,3 @@ question:
     - I have transitioned into a new career and/or industry voluntarily
     - I have transitioned into a new career and/or industry involuntarily
     - I have neither consider or transitioned into a new career or industry
-  show_if:
-    not:
-      Employment:
-        - retired

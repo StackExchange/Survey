@@ -47,10 +47,10 @@
 
 <style>
 	.q {
+		padding: 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.6rem;
-		padding: 1rem 0;
 		border-bottom: 1px solid rgba(127, 127, 127, 0.15);
 	}
 	.q:last-child {
@@ -70,7 +70,7 @@
 		align-self: flex-start;
 		font-size: 0.75em;
 		padding: 0.1rem 0.4rem;
-		border-radius: 0.25rem;
+		border-radius: 0;
 		background: rgba(127, 127, 127, 0.15);
 		color: inherit;
 		opacity: 0.7;

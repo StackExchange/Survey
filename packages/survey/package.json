@@ -9,10 +9,9 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-		"export": "tsx scripts/qualtrics.ts",
 		"gen:types": "tsx scripts/gen-types.ts",
-		"validate:questions": "ajv validate -s ../../questions/question.schema.json -d \"../../questions/**/*.yaml\" --strict=false --errors=text",
-		"validate:survey": "ajv validate -s survey.schema.json -d survey.yaml --strict=false --errors=text",
+		"validate:questions": "ajv validate -s ../../questions/question.schema.json -d \"../../questions/*/*.yaml\" --strict=false --errors=text",
+		"validate:survey": "ajv validate -s ../../questions/survey.schema.json -d ../../questions/survey.yaml --strict=false --errors=text",
 		"validate:cross": "tsx scripts/validate.ts",
 		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross"
 	},
