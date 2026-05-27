@@ -7,7 +7,7 @@ The tooling for previewing and building the survey from these files is in **[pac
 ## Why YAML?
 
 - Human-readable by non-engineers (researchers, PMs, community managers).
-- Inline `#` comments make RFC annotation natural.
+- Inline `#` comments make review notes and context easy to preserve.
 - Multiline strings handle rationale and context cleanly.
 - Widely understood; PRs and reviews feel familiar.
 - Machine-parseable into any survey tool or rendering engine.
