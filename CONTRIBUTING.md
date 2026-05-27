@@ -2,6 +2,8 @@
 
 This repo is maintained by Stack Overflow employees, but we welcome the help of others looking to improve the survey for all.
 
+You do not need to know GitHub, YAML, npm, or code to participate in survey-content discussions. Plain-English suggestions are welcome.
+
 ## Bugs
 
 If you spot a bug — whether in the results pages, the historical data, the question YAMLs, or the tooling — please [open an issue](../../issues/new). A useful report includes:
@@ -15,12 +17,14 @@ For anything sensitive (suspected PII, security issues) please [follow the proce
 
 ## Questions
 
-For suggestions about **survey content** — adding a question, rewording one, deprecating one, or restructuring the flow — please [start a Discussion](../../discussions) rather than opening a PR or issue. Content changes need community input before they’re worth coding up. Useful posts include:
+For suggestions about **survey content** — adding a question, rewording one, deprecating one, or restructuring the flow — please [start a Discussion](https://github.com/StackExchange/Survey/discussions) rather than opening a PR or issue. Content changes benefit from community input before they’re worth coding up. Useful posts include:
 
 - The question or change you’re discussing, in plain English.
 - Why it matters: who benefits, what gap it fills, what story the data would tell.
 - Any prior art (other surveys that ask this, academic work, related Stack Overflow posts).
-- If it’s a change to an existing question how might it afect or improve the year-over-year comparability?
+- If it’s a change to an existing question, how might it affect or improve the year-over-year comparability?
+
+Comments and upvotes on Discussion posts are encouraged. They help signal interest, sharpen wording, and identify tradeoffs. They are not binding votes: the final survey remains at Stack Overflow’s discretion.
 
 ## Pull requests
 
