@@ -8,9 +8,9 @@
 // QIDs are preserved across runs, so a re-run with no edits is a no-op.
 //
 // Scope: questions + blocks + page breaks + per-question DisplayLogic (the
-// if/then branching from survey.yaml, AND-ing ancestor conditions). Blocks are
-// appended to the flow if missing, but block ordering and the randomize:N
-// BlockRandomizer are not synced yet (Phase 2b).
+// if/then branching from survey.yaml, AND-ing ancestor conditions) + the survey
+// flow (block order + randomize:N/even_presentation BlockRandomizer, preserving
+// any existing EmbeddedData).
 //
 // Config comes from the environment:
 //   QUALTRICS_API_TOKEN   X-API-TOKEN for the Survey Definitions API
@@ -39,7 +39,7 @@ import {
 	signaturesEqual,
 	toQuestionPayload,
 } from './qualtrics.ts'
-import type { ChoiceResolver, QualtricsConfig, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
+import type { ChoiceResolver, QualtricsConfig, QualtricsFlowElement, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
 import type { Condition, FlowElement, PageEntry, Question, Survey } from '../src/lib/types/index.ts'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
@@ -96,26 +96,46 @@ function flattenPageEntries(entries: PageEntry[], cond: Condition | undefined, c
 	return groups
 }
 
-function collectBlocks(
-	flow: FlowElement[],
-	notes: Set<string>,
-	out: DesiredBlock[],
-	conds: Map<string, Condition>,
-	cond?: Condition
-): void {
+function collectBlocks(flow: FlowElement[], out: DesiredBlock[], conds: Map<string, Condition>, cond?: Condition): void {
 	for (const el of flow) {
 		if ('block' in el) {
 			out.push({ name: el.block, pageGroups: flattenPageEntries(el.pages, cond, conds) })
 		} else if ('randomize' in el) {
-			notes.add(
-				`BlockRandomizer (randomize: ${el.randomize}, even_presentation: ${el.even_presentation ?? false}) — block order/randomizer not synced yet (Phase 2b)`
-			)
-			collectBlocks(el.blocks, notes, out, conds, cond)
+			collectBlocks(el.blocks, out, conds, cond)
 		} else {
 			// Flow-level if/then: AND the condition onto every question in `then`.
-			collectBlocks(el.then, notes, out, conds, andConditions(cond, el.if))
+			collectBlocks(el.then, out, conds, andConditions(cond, el.if))
 		}
 	}
+}
+
+// --- flow structure (block order + BlockRandomizer) -----------------------
+
+type FlowNode = { kind: 'block'; name: string } | { kind: 'randomizer'; subset: number; even: boolean; blocks: string[] }
+
+// Block names in order, recursing through if/then and nested randomizers.
+function blockNamesIn(flow: FlowElement[]): string[] {
+	const names: string[] = []
+	for (const el of flow) {
+		if ('block' in el) names.push(el.block)
+		else if ('randomize' in el) names.push(...blockNamesIn(el.blocks))
+		else names.push(...blockNamesIn(el.then))
+	}
+	return names
+}
+
+// Top-level flow shape: a sequence of blocks and BlockRandomizers. Flow-level
+// if/then wrappers contribute their blocks inline (their visibility is handled
+// by per-question DisplayLogic, not the flow).
+function collectFlowNodes(flow: FlowElement[]): FlowNode[] {
+	const nodes: FlowNode[] = []
+	for (const el of flow) {
+		if ('block' in el) nodes.push({ kind: 'block', name: el.block })
+		else if ('randomize' in el)
+			nodes.push({ kind: 'randomizer', subset: el.randomize, even: el.even_presentation ?? false, blocks: blockNamesIn(el.blocks) })
+		else nodes.push(...collectFlowNodes(el.then))
+	}
+	return nodes
 }
 
 // --- CLI / config -------------------------------------------------------
@@ -154,7 +174,7 @@ function runOffline(
 	questions: Record<string, Question>,
 	desiredBlocks: DesiredBlock[],
 	conds: Map<string, Condition>,
-	notes: Set<string>,
+	flowNodes: FlowNode[],
 	aiTextChecks: unknown
 ): void {
 	console.error('No QUALTRICS_API_TOKEN set — offline transform preview (no network).\n')
@@ -187,13 +207,13 @@ function runOffline(
 		}
 	}
 
-	printNotes(notes)
+	console.log('\n# Flow\n' + describeFlow(flowNodes))
 }
 
-function printNotes(notes: Set<string>): void {
-	if (notes.size === 0) return
-	console.error('\nNot synced yet:')
-	for (const n of notes) console.error(`  - ${n}`)
+function describeFlow(flowNodes: FlowNode[]): string {
+	return flowNodes
+		.map((nd) => (nd.kind === 'block' ? nd.name : `Randomize(${nd.subset}, even=${nd.even}) of [${nd.blocks.join(', ')}]`))
+		.join('\n')
 }
 
 // --- reconcile ----------------------------------------------------------
@@ -206,6 +226,8 @@ interface Counters {
 	orphanedDeleted: number
 	logicSet: number
 	logicUnchanged: number
+	flow: string
+	survey: { id: string; name: string; status: string; lastModified: string; brandId: string }
 	failures: { id: string; kind: string; message: string }[]
 }
 
@@ -215,7 +237,7 @@ async function reconcile(
 	questions: Record<string, Question>,
 	desiredBlocks: DesiredBlock[],
 	conds: Map<string, Condition>,
-	notes: Set<string>,
+	flowNodes: FlowNode[],
 	aiTextChecks: unknown
 ): Promise<Counters> {
 	const counts: Counters = {
@@ -226,9 +248,18 @@ async function reconcile(
 		orphanedDeleted: 0,
 		logicSet: 0,
 		logicUnchanged: 0,
+		flow: 'n/a',
+		survey: { id: '', name: '', status: '', lastModified: '', brandId: '' },
 		failures: [],
 	}
 	const def: SurveyDefinition = await client.getDefinition()
+	counts.survey = {
+		id: def.SurveyID ?? '',
+		name: def.SurveyName ?? '',
+		status: def.SurveyStatus ?? '',
+		lastModified: def.LastModified ?? '',
+		brandId: def.BrandID ?? '',
+	}
 
 	// Index existing questions by DataExportTag, and blocks by Description (name).
 	const existingByTag = new Map<string, { qid: string }>()
@@ -378,9 +409,8 @@ async function reconcile(
 		counts.logicSet++
 	}
 
-	// 4. Ensure every managed block is reachable from the flow (append-only;
-	//    never rewrite existing flow logic — that's Phase 2b).
-	await ensureBlocksInFlow(client, flags, def, desiredBlocks, blockIdByName, would, log)
+	// 4. Flow: rebuild block order + BlockRandomizer, preserving EmbeddedData.
+	counts.flow = await syncFlow(client, flags, def, flowNodes, blockIdByName, would, log)
 
 	// 5. Orphans: present in survey, gone from YAML.
 	for (const [tag, { qid }] of existingByTag) {
@@ -398,54 +428,79 @@ async function reconcile(
 		}
 	}
 
-	printNotes(notes)
 	return counts
 }
 
-async function ensureBlocksInFlow(
+// Rebuild the survey flow from survey.yaml: block order + BlockRandomizer,
+// while preserving any element we don't model (EmbeddedData, Branch, etc.) in
+// its original position. Idempotent — re-PUTs only when the block-name order or
+// randomizer structure changed.
+const FLOW_BLOCK_TYPES = new Set(['Block', 'Standard', 'BlockRandomizer'])
+
+async function syncFlow(
 	client: QualtricsClient,
 	flags: Flags,
 	def: SurveyDefinition,
-	desiredBlocks: DesiredBlock[],
+	flowNodes: FlowNode[],
 	blockIdByName: Map<string, string>,
 	would: (m: string) => void,
 	log: (m: string) => void
-): Promise<void> {
+): Promise<string> {
 	const flow = def.SurveyFlow
-
 	if (!flow?.Flow) {
 		console.error('  ! survey has no readable SurveyFlow; skipping flow update (verify survey state)')
-		return
+		return 'skipped'
 	}
 
-	const inFlow = new Set<string>()
+	const nameById = new Map<string, string>()
+	for (const [blockId, block] of Object.entries(def.Blocks ?? {})) nameById.set(block.ID ?? blockId, block.Description ?? blockId)
 
-	const walk = (els: typeof flow.Flow) => {
+	// Next FlowID number above the existing max, so preserved elements keep theirs.
+	let maxN = 0
+	const scan = (els: QualtricsFlowElement[]) => {
 		for (const el of els) {
-			if (el.ID) inFlow.add(el.ID)
-			if (el.Flow) walk(el.Flow)
+			const m = /^FL_(\d+)$/.exec(el.FlowID ?? '')
+			if (m) maxN = Math.max(maxN, Number(m[1]))
+			if (el.Flow) scan(el.Flow)
 		}
 	}
+	scan(flow.Flow)
+	let n = maxN + 1
+	const fid = () => `FL_${n++}`
 
-	walk(flow.Flow)
+	const blockRef = (name: string): QualtricsFlowElement => ({ Type: 'Standard', ID: blockIdByName.get(name)!, FlowID: fid(), Autofill: [] })
+	const built: QualtricsFlowElement[] = flowNodes.map((node) =>
+		node.kind === 'block'
+			? blockRef(node.name)
+			: { Type: 'BlockRandomizer', FlowID: fid(), SubSet: node.subset, EvenPresentation: node.even, Flow: node.blocks.map(blockRef) }
+	)
 
-	const toAppend = desiredBlocks
-		.map((b) => ({ name: b.name, id: blockIdByName.get(b.name)! }))
-		.filter((b) => !b.id.startsWith('NEW_BLOCK:') && !inFlow.has(b.id))
+	const preserved = flow.Flow.filter((el) => !FLOW_BLOCK_TYPES.has(el.Type))
+	const desired = [...preserved, ...built]
 
-	if (toAppend.length === 0) return
+	// Compare by block-name order + randomizer shape, ignoring volatile FlowIDs.
+	const sig = (els: QualtricsFlowElement[]): string =>
+		els
+			.map((el) =>
+				el.Type === 'BlockRandomizer'
+					? `R:${el.SubSet}:${el.EvenPresentation}:[${(el.Flow ?? []).map((c) => nameById.get(c.ID ?? '') ?? c.ID).join(',')}]`
+					: FLOW_BLOCK_TYPES.has(el.Type)
+						? `B:${nameById.get(el.ID ?? '') ?? el.ID}`
+						: el.Type
+			)
+			.join('|')
 
-	for (const b of toAppend) {
-		if (flags.dryRun) would(`append block "${b.name}" (${b.id}) to flow`)
-		else log(`  flow += "${b.name}" (${b.id})`)
+	if (flags.dryRun) {
+		would(`replace survey flow: ${describeFlow(flowNodes).replace(/\n/g, ' -> ')}`)
+		return 'dry-run'
 	}
-
-	if (flags.dryRun) return
-
-	let nextFlowNum = flow.Flow.length + 1
-
-	const appended = toAppend.map((b) => ({ Type: 'Block', ID: b.id, FlowID: `FL_${nextFlowNum++}` }))
-	await client.updateFlow({ ...flow, Flow: [...flow.Flow, ...appended] })
+	if (sig(desired) === sig(flow.Flow)) {
+		log('  flow unchanged')
+		return 'unchanged'
+	}
+	await client.updateFlow({ ...flow, Flow: desired })
+	log(`  flow updated (${built.length} top-level elements)`)
+	return 'updated'
 }
 
 // --- main ---------------------------------------------------------------
@@ -456,25 +511,35 @@ async function main(): Promise<void> {
 	const survey = loadSurvey()
 	const aiTextChecks = (survey as { defaults?: { ai_text_checks?: unknown } }).defaults?.ai_text_checks
 
-	const notes = new Set<string>()
 	const desiredBlocks: DesiredBlock[] = []
 	const conds = new Map<string, Condition>()
-	collectBlocks(survey.flow, notes, desiredBlocks, conds)
+	collectBlocks(survey.flow, desiredBlocks, conds)
+	const flowNodes = collectFlowNodes(survey.flow)
 
 	const config = readConfig()
 	if (!config) {
-		runOffline(questions, desiredBlocks, conds, notes, aiTextChecks)
+		runOffline(questions, desiredBlocks, conds, flowNodes, aiTextChecks)
 		return
 	}
 
 	const client = new QualtricsClient(config)
-	const counts = await reconcile(client, flags, questions, desiredBlocks, conds, notes, aiTextChecks)
+	const counts = await reconcile(client, flags, questions, desiredBlocks, conds, flowNodes, aiTextChecks)
 
 	const mode = flags.dryRun ? '[dry-run] ' : ''
+	const s = counts.survey
+	const id = s.id || config.surveyId
+	// Builder URL is {brand}.{datacenter}.qualtrics.com, e.g. stackoverflow.pdx1.
+	const host = `${s.brandId ? `${s.brandId}.` : ''}${config.datacenter}.qualtrics.com`
+	console.error(
+		`\n${mode}Survey: ${s.name || '(unnamed)'} [${id}]` +
+			`${s.status ? ` — ${s.status}` : ''}${s.lastModified ? `, last modified ${s.lastModified}` : ''}\n` +
+			`  https://${host}/survey-builder/${id}/edit`
+	)
 
 	console.error(
 		`\n${mode}done — created ${counts.created}, updated ${counts.updated}, unchanged ${counts.unchanged}, ` +
 			`display-logic ${counts.logicSet} set / ${counts.logicUnchanged} unchanged, ` +
+			`flow ${counts.flow}, ` +
 			`orphaned ${counts.orphanedKept + counts.orphanedDeleted} (deleted ${counts.orphanedDeleted}), ` +
 			`failed ${counts.failures.length}.`
 	)

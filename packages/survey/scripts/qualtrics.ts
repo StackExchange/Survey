@@ -546,6 +546,10 @@ export interface QualtricsConfig {
 // field is `SurveyFlow` (not `Flow`).
 export interface SurveyDefinition {
 	SurveyID?: string
+	SurveyName?: string
+	SurveyStatus?: string
+	LastModified?: string
+	BrandID?: string
 	Questions: Record<string, QuestionLike & { QuestionID?: string }>
 	Blocks: Record<string, QualtricsBlock>
 	SurveyFlow?: QualtricsFlow
@@ -568,6 +572,10 @@ export interface QualtricsFlowElement {
 	ID?: string
 	FlowID?: string
 	Flow?: QualtricsFlowElement[]
+	SubSet?: number
+	EvenPresentation?: boolean
+	Autofill?: unknown[]
+	EmbeddedData?: unknown[]
 }
 
 export interface QualtricsFlow {
