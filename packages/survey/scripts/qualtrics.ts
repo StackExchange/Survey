@@ -9,9 +9,8 @@
 // The friendly `type` (+ `display`/`lines`/`scale.multiple` modifiers) maps
 // deterministically to the Qualtrics QuestionType/Selector/SubSelector triple;
 // see the table in questions/README.md, which this file is the implementation
-// of. Several exact payload sub-field spellings (Randomization, content-type
-// validation, NPS labels) are best confirmed against a live GET of an existing
-// survey — those spots are flagged with `PHASE-0` comments.
+// of. The exact payload shapes (Randomization, content-type validation, NPS
+// labels, etc.) were verified against a real survey definition GET.
 
 import { snakeCase } from 'lodash-es'
 import { marked } from 'marked'
