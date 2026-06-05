@@ -1,3 +1,5 @@
+![Stack Overflow Developer Survey](https://github.com/user-attachments/assets/b77c3ec9-a097-4359-b9d9-a4cf06288212)
+
 # Stack Overflow Developer Survey
 
 > [!NOTE]
