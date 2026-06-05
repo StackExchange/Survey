@@ -549,7 +549,7 @@ function printSummary(counts: Counters, config: QualtricsConfig, flags: Flags): 
 		'',
 		rule,
 		`  ${s.name || '(unnamed survey)'}${flags.dryRun ? '   — dry-run, no changes written' : ''}`,
-    `  ${subtitle}`,
+		`  ${subtitle}`,
 		rule,
 		`  https://${host}/survey-builder/${id}/edit`,
 		rule,
