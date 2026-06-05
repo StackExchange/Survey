@@ -525,27 +525,41 @@ async function main(): Promise<void> {
 	const client = new QualtricsClient(config)
 	const counts = await reconcile(client, flags, questions, desiredBlocks, conds, flowNodes, aiTextChecks)
 
-	const mode = flags.dryRun ? '[dry-run] ' : ''
+	printSummary(counts, config, flags)
+}
+
+function printSummary(counts: Counters, config: QualtricsConfig, flags: Flags): void {
 	const s = counts.survey
 	const id = s.id || config.surveyId
 	// Builder URL is {brand}.{datacenter}.qualtrics.com, e.g. stackoverflow.pdx1.
 	const host = `${s.brandId ? `${s.brandId}.` : ''}${config.datacenter}.qualtrics.com`
-	console.error(
-		`\n${mode}Survey: ${s.name || '(unnamed)'} [${id}]` +
-			`${s.status ? ` — ${s.status}` : ''}${s.lastModified ? `, last modified ${s.lastModified}` : ''}\n` +
-			`  https://${host}/survey-builder/${id}/edit`
-	)
+	const when = s.lastModified ? s.lastModified.replace('T', ' ').replace('Z', ' UTC') : 'unknown'
+	const subtitle = [id, s.status, `modified ${when}`].filter(Boolean).join('  ·  ')
+	const rule = '─'.repeat(68)
 
-	console.error(
-		`\n${mode}done — created ${counts.created}, updated ${counts.updated}, unchanged ${counts.unchanged}, ` +
-			`display-logic ${counts.logicSet} set / ${counts.logicUnchanged} unchanged, ` +
-			`flow ${counts.flow}, ` +
-			`orphaned ${counts.orphanedKept + counts.orphanedDeleted} (deleted ${counts.orphanedDeleted}), ` +
-			`failed ${counts.failures.length}.`
-	)
+	const rows: [string, string][] = [
+		['Questions', `${counts.created} created · ${counts.updated} updated · ${counts.unchanged} unchanged`],
+		['Display logic', `${counts.logicSet} set · ${counts.logicUnchanged} unchanged`],
+		['Flow', counts.flow],
+		['Orphaned', `${counts.orphanedKept + counts.orphanedDeleted} (${counts.orphanedDeleted} deleted)`],
+		['Failed', String(counts.failures.length)],
+	]
+
+	const out = [
+		'',
+		rule,
+		`  ${s.name || '(unnamed survey)'}${flags.dryRun ? '   — dry-run, no changes written' : ''}`,
+    `  ${subtitle}`,
+		rule,
+		`  https://${host}/survey-builder/${id}/edit`,
+		rule,
+		...rows.map(([label, value]) => `  ${label.padEnd(15)}${value}`),
+		rule,
+	]
+	console.error(out.join('\n'))
 
 	if (counts.failures.length > 0) {
-		console.error('\nFailures (grouped by question type):')
+		console.error('\nfailures (grouped by question type):')
 		const byKind = new Map<string, string[]>()
 		for (const f of counts.failures) byKind.set(f.kind, [...(byKind.get(f.kind) ?? []), f.id])
 		for (const [kind, ids] of byKind) console.error(`  ${kind}: ${ids.join(', ')}`)
