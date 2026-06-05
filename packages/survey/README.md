@@ -37,7 +37,7 @@ Final output of the survey is done via the [Qualtrics API](https://api.qualtrics
 
 ### Sync
 
-`packages/survey/scripts/qualtrics-sync.ts` pushes this YAML into an **existing** Qualtrics survey via the [Survey Definitions API](https://api.qualtrics.com/). It transforms each question with the [type mapping](#type-mapping) above and reconciles **idempotently keyed on `DataExportTag`** (which equals `question.id` / the filename):
+`packages/survey/scripts/qualtrics-sync.ts` pushes this YAML into an **existing** Qualtrics survey via the [Survey Definitions API](https://api.qualtrics.com/). It transforms each question with the [type mapping](../../questions/README.md#type-mapping) and reconciles **idempotently keyed on `DataExportTag`** (which equals `question.id` / the filename):
 
 - in YAML, not in the survey → **created**,
 - in both → **updated only when the content changed**,
