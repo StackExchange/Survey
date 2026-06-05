@@ -96,7 +96,7 @@ The friendly `type` (and optional `display` / `lines` modifiers) maps determinis
 | `display`       | _(default)_         | DB           | TB       | _none_         |
 | `meta`          | _(default)_         | Meta         | Browser  | _none_         |
 
-The canonical lookup lives in `TYPE_TABLE` at the top of [`packages/survey/scripts/qualtrics.ts`](../packages/survey/scripts/qualtrics.ts), which the [Qualtrics sync](#qualtrics-sync) command uses to post questions.
+The canonical lookup lives in `TYPE_TABLE` at the top of [`packages/survey/scripts/qualtrics.ts`](../packages/survey/scripts/qualtrics.ts), which the Qualtrics sync script uses to post questions.
 
 ### Scale (matrix) questions
 

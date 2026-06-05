@@ -15,7 +15,8 @@
 		"validate:cross": "tsx scripts/validate.ts",
 		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross",
 		"sync:qualtrics": "tsx --env-file-if-exists=../../.env scripts/qualtrics-sync.ts",
-		"sync:qualtrics:dry": "tsx --env-file-if-exists=../../.env scripts/qualtrics-sync.ts --dry-run"
+		"sync:qualtrics:dry": "tsx --env-file-if-exists=../../.env scripts/qualtrics-sync.ts --dry-run",
+		"sync:qualtrics:dump": "tsx --env-file-if-exists=../../.env scripts/qualtrics-dump.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",

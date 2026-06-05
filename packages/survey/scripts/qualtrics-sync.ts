@@ -7,11 +7,10 @@
 // in YAML are reported as orphans and deleted only under --prune. Qualtrics
 // QIDs are preserved across runs, so a re-run with no edits is a no-op.
 //
-// Phase 1 scope: questions + blocks + page breaks + ensuring every block is
-// reachable from the flow. The if/then branching and randomize:N
-// BlockRandomizer in survey.yaml are printed but NOT pushed (see Phase 2 in
-// the plan); this script never rewrites existing flow logic, only appends
-// missing blocks.
+// Scope: questions + blocks + page breaks + per-question DisplayLogic (the
+// if/then branching from survey.yaml, AND-ing ancestor conditions). Blocks are
+// appended to the flow if missing, but block ordering and the randomize:N
+// BlockRandomizer are not synced yet (Phase 2b).
 //
 // Config comes from the environment:
 //   QUALTRICS_API_TOKEN   X-API-TOKEN for the Survey Definitions API
@@ -30,9 +29,18 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import YAML from 'yaml'
-import { QualtricsClient, createSafePayload, questionSignature, signaturesEqual, toQuestionPayload } from './qualtrics.ts'
-import type { QualtricsConfig, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
-import type { FlowElement, PageEntry, Question, Survey } from '../src/lib/types/index.ts'
+import {
+	QualtricsClient,
+	buildDisplayLogic,
+	createSafePayload,
+	displayLogicSignature,
+	optionKey,
+	questionSignature,
+	signaturesEqual,
+	toQuestionPayload,
+} from './qualtrics.ts'
+import type { ChoiceResolver, QualtricsConfig, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
+import type { Condition, FlowElement, PageEntry, Question, Survey } from '../src/lib/types/index.ts'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(here, '../../..')
@@ -55,7 +63,7 @@ function loadSurvey(): Survey {
 	return YAML.parse(fs.readFileSync(path.join(questionsDir, 'survey.yaml'), 'utf8')) as Survey
 }
 
-// --- flatten the flow into blocks (Phase 1) -----------------------------
+// --- flatten the flow into blocks -----------------------------------------
 
 interface DesiredBlock {
 	name: string
@@ -63,29 +71,49 @@ interface DesiredBlock {
 	pageGroups: string[][]
 }
 
-function flattenPageEntries(entries: PageEntry[], notes: Set<string>): string[][] {
+// AND a parent if-condition with an inner one. Matches the README: a nested
+// page is shown only when every ancestor branch passes.
+function andConditions(parent: Condition | undefined, inner: Condition): Condition {
+	if (!parent) return inner
+	return { all: [parent, inner] }
+}
+
+// Walk page entries; carry the accumulated if-condition down so each question
+// id records the condition under which it is shown (in `conds`).
+function flattenPageEntries(entries: PageEntry[], cond: Condition | undefined, conds: Map<string, Condition>): string[][] {
 	const groups: string[][] = []
 	for (const e of entries) {
-		if (typeof e === 'string') groups.push([e])
-		else if (Array.isArray(e)) groups.push([...e])
-		else {
-			notes.add('page-level branch (if/then) — visibility logic not synced in Phase 1')
-			groups.push(...flattenPageEntries(e.then, notes))
+		if (typeof e === 'string') {
+			groups.push([e])
+			if (cond) conds.set(e, cond)
+		} else if (Array.isArray(e)) {
+			groups.push([...e])
+			if (cond) for (const id of e) conds.set(id, cond)
+		} else {
+			groups.push(...flattenPageEntries(e.then, andConditions(cond, e.if), conds))
 		}
 	}
 	return groups
 }
 
-function collectBlocks(flow: FlowElement[], notes: Set<string>, out: DesiredBlock[]): void {
+function collectBlocks(
+	flow: FlowElement[],
+	notes: Set<string>,
+	out: DesiredBlock[],
+	conds: Map<string, Condition>,
+	cond?: Condition
+): void {
 	for (const el of flow) {
 		if ('block' in el) {
-			out.push({ name: el.block, pageGroups: flattenPageEntries(el.pages, notes) })
+			out.push({ name: el.block, pageGroups: flattenPageEntries(el.pages, cond, conds) })
 		} else if ('randomize' in el) {
-			notes.add(`BlockRandomizer (randomize: ${el.randomize}, even_presentation: ${el.even_presentation ?? false}) — not synced in Phase 1`)
-			collectBlocks(el.blocks, notes, out)
+			notes.add(
+				`BlockRandomizer (randomize: ${el.randomize}, even_presentation: ${el.even_presentation ?? false}) — block order/randomizer not synced yet (Phase 2b)`
+			)
+			collectBlocks(el.blocks, notes, out, conds, cond)
 		} else {
-			notes.add('flow-level branch (if/then) — not synced in Phase 1')
-			collectBlocks(el.then, notes, out)
+			// Flow-level if/then: AND the condition onto every question in `then`.
+			collectBlocks(el.then, notes, out, conds, andConditions(cond, el.if))
 		}
 	}
 }
@@ -122,7 +150,13 @@ function readConfig(): QualtricsConfig | undefined {
 
 // --- offline mode: print transforms only --------------------------------
 
-function runOffline(questions: Record<string, Question>, desiredBlocks: DesiredBlock[], notes: Set<string>, aiTextChecks: unknown): void {
+function runOffline(
+	questions: Record<string, Question>,
+	desiredBlocks: DesiredBlock[],
+	conds: Map<string, Condition>,
+	notes: Set<string>,
+	aiTextChecks: unknown
+): void {
 	console.error('No QUALTRICS_API_TOKEN set — offline transform preview (no network).\n')
 	for (const block of desiredBlocks) {
 		console.log(`# Block: ${block.name}`)
@@ -137,12 +171,28 @@ function runOffline(questions: Record<string, Question>, desiredBlocks: DesiredB
 			}
 		}
 	}
+
+	// DisplayLogic preview. Offline we have no QIDs, so stand in the parent id
+	// for the QID; positions and structure are still real.
+	const offlineResolve: ChoiceResolver = (parentId, key) => {
+		const idx = (questions[parentId]?.options ?? []).findIndex((o) => optionKey(o) === key)
+		return { qid: parentId, pos: idx + 1 }
+	}
+	console.log('\n# DisplayLogic (parent id stands in for QID)')
+	for (const [id, condition] of conds) {
+		try {
+			console.log(`## ${id}\n` + JSON.stringify(buildDisplayLogic(condition, offlineResolve, id), null, 2))
+		} catch (e) {
+			console.error(`  ✗ ${id}: ${e instanceof Error ? e.message : String(e)}`)
+		}
+	}
+
 	printNotes(notes)
 }
 
 function printNotes(notes: Set<string>): void {
 	if (notes.size === 0) return
-	console.error('\nPhase 2 (not synced yet):')
+	console.error('\nNot synced yet:')
 	for (const n of notes) console.error(`  - ${n}`)
 }
 
@@ -154,6 +204,8 @@ interface Counters {
 	unchanged: number
 	orphanedKept: number
 	orphanedDeleted: number
+	logicSet: number
+	logicUnchanged: number
 	failures: { id: string; kind: string; message: string }[]
 }
 
@@ -162,10 +214,20 @@ async function reconcile(
 	flags: Flags,
 	questions: Record<string, Question>,
 	desiredBlocks: DesiredBlock[],
+	conds: Map<string, Condition>,
 	notes: Set<string>,
 	aiTextChecks: unknown
 ): Promise<Counters> {
-	const counts: Counters = { created: 0, updated: 0, unchanged: 0, orphanedKept: 0, orphanedDeleted: 0, failures: [] }
+	const counts: Counters = {
+		created: 0,
+		updated: 0,
+		unchanged: 0,
+		orphanedKept: 0,
+		orphanedDeleted: 0,
+		logicSet: 0,
+		logicUnchanged: 0,
+		failures: [],
+	}
 	const def: SurveyDefinition = await client.getDefinition()
 
 	// Index existing questions by DataExportTag, and blocks by Description (name).
@@ -268,8 +330,56 @@ async function reconcile(
 		else await client.updateBlock(blockId, { Type: 'Standard', Description: block.name, BlockElements: elements })
 	}
 
+	// 3b. Branching: stamp per-question DisplayLogic from accumulated if/then
+	//     conditions. Runs after the upsert so every parent QID is resolvable.
+	const resolveChoice: ChoiceResolver = (parentId, key) => {
+		const qid = qidByTag.get(parentId)
+		if (!qid) throw new Error(`references parent "${parentId}" which was not synced`)
+		const pq = questions[parentId]
+		if (!pq) throw new Error(`references parent "${parentId}" with no question file`)
+		const idx = (pq.options ?? []).findIndex((o) => optionKey(o) === key)
+		if (idx < 0) throw new Error(`references option "${key}" not found on "${parentId}"`)
+		return { qid, pos: idx + 1 }
+	}
+
+	for (const [id, condition] of conds) {
+		if (!desiredTags.has(id)) continue
+		const qid = qidByTag.get(id)
+		if (!qid) continue
+		let dl
+		try {
+			dl = buildDisplayLogic(condition, resolveChoice, id)
+		} catch (e) {
+			const message = e instanceof Error ? e.message : String(e)
+			counts.failures.push({ id, kind: 'DisplayLogic', message })
+			console.error(`  ✗ ${id} (DisplayLogic): ${message}`)
+			continue
+		}
+		const existingDL = qid.startsWith('NEW:') ? undefined : def.Questions[qid]?.DisplayLogic
+		if (displayLogicSignature(dl) === displayLogicSignature(existingDL)) {
+			counts.logicUnchanged++
+			continue
+		}
+		if (flags.dryRun) {
+			would(`set display logic on "${id}" (${qid})`)
+		} else {
+			try {
+				const payload = toQuestionPayload(questions[id], aiTextChecks)
+				payload.DisplayLogic = dl
+				await client.updateQuestion(qid, payload)
+				log(`  ⊃ ${id} display logic (${qid})`)
+			} catch (e) {
+				const message = e instanceof Error ? e.message : String(e)
+				counts.failures.push({ id, kind: 'DisplayLogic', message })
+				console.error(`  ✗ ${id} (DisplayLogic PUT): ${message.split('\n')[0].slice(0, 280)}`)
+				continue
+			}
+		}
+		counts.logicSet++
+	}
+
 	// 4. Ensure every managed block is reachable from the flow (append-only;
-	//    never rewrite existing flow logic — that's Phase 2).
+	//    never rewrite existing flow logic — that's Phase 2b).
 	await ensureBlocksInFlow(client, flags, def, desiredBlocks, blockIdByName, would, log)
 
 	// 5. Orphans: present in survey, gone from YAML.
@@ -301,10 +411,10 @@ async function ensureBlocksInFlow(
 	would: (m: string) => void,
 	log: (m: string) => void
 ): Promise<void> {
-	const flow = def.Flow
+	const flow = def.SurveyFlow
 
 	if (!flow?.Flow) {
-		console.error('  ! survey has no readable Flow; skipping flow update (verify survey state)')
+		console.error('  ! survey has no readable SurveyFlow; skipping flow update (verify survey state)')
 		return
 	}
 
@@ -348,21 +458,23 @@ async function main(): Promise<void> {
 
 	const notes = new Set<string>()
 	const desiredBlocks: DesiredBlock[] = []
-	collectBlocks(survey.flow, notes, desiredBlocks)
+	const conds = new Map<string, Condition>()
+	collectBlocks(survey.flow, notes, desiredBlocks, conds)
 
 	const config = readConfig()
 	if (!config) {
-		runOffline(questions, desiredBlocks, notes, aiTextChecks)
+		runOffline(questions, desiredBlocks, conds, notes, aiTextChecks)
 		return
 	}
 
 	const client = new QualtricsClient(config)
-	const counts = await reconcile(client, flags, questions, desiredBlocks, notes, aiTextChecks)
+	const counts = await reconcile(client, flags, questions, desiredBlocks, conds, notes, aiTextChecks)
 
 	const mode = flags.dryRun ? '[dry-run] ' : ''
 
 	console.error(
 		`\n${mode}done — created ${counts.created}, updated ${counts.updated}, unchanged ${counts.unchanged}, ` +
+			`display-logic ${counts.logicSet} set / ${counts.logicUnchanged} unchanged, ` +
 			`orphaned ${counts.orphanedKept + counts.orphanedDeleted} (deleted ${counts.orphanedDeleted}), ` +
 			`failed ${counts.failures.length}.`
 	)

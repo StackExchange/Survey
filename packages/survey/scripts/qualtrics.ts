@@ -15,7 +15,7 @@
 
 import { snakeCase } from 'lodash-es'
 import { marked } from 'marked'
-import type { OptionEntry, Question, Validate } from '../src/lib/types/index.ts'
+import type { Condition, OptionEntry, Question, Validate } from '../src/lib/types/index.ts'
 
 // --- type mapping -------------------------------------------------------
 
@@ -133,6 +133,7 @@ export interface QualtricsQuestionPayload {
 	Validation?: QualtricsValidation
 	Randomization?: QualtricsRandomization
 	Configuration?: Record<string, unknown>
+	DisplayLogic?: DisplayLogic
 }
 
 // Standard browser-metadata fields for a Meta/Browser question.
@@ -372,6 +373,7 @@ interface QuestionLike {
 	ChoiceOrder?: (string | number)[]
 	Answers?: Record<string, { Display?: string }>
 	AnswerOrder?: (string | number)[]
+	DisplayLogic?: unknown
 }
 
 export function questionSignature(q: QuestionLike): QuestionSignature {
@@ -396,6 +398,142 @@ export function signaturesEqual(a: QuestionSignature, b: QuestionSignature): boo
 	return JSON.stringify(a) === JSON.stringify(b)
 }
 
+// --- display logic (if/then branching) ----------------------------------
+
+// A respondent answers a parent question; a condition leaf names a parent
+// question id + one of its option keys. The resolver turns that into the
+// Qualtrics question id (QID) and the 1-based choice position.
+export type ChoiceResolver = (parentId: string, optionKey: string) => { qid: string; pos: number }
+
+export interface DisplayLogicExpression {
+	LogicType: 'Question'
+	QuestionID: string
+	QuestionIDFromLocator: string
+	QuestionIsInLoop: 'no'
+	ChoiceLocator: string
+	LeftOperand: string
+	Operator: 'Selected' | 'NotSelected'
+	Type: 'Expression'
+	Conjuction?: 'And' | 'Or'
+}
+
+export interface DisplayLogic {
+	[group: string]: unknown
+	Type: 'BooleanExpression'
+	inPage: boolean
+}
+
+// One conjunction term, before resolution to a QID/position.
+interface Term {
+	parentId: string
+	optionKey: string
+	operator: 'Selected' | 'NotSelected'
+}
+interface Clause {
+	join: 'And' | 'Or'
+	terms: Term[]
+}
+
+// Negate a clause (De Morgan): flip the join and every operator. This is how a
+// `not` over a leaf maps to AND-ed NotSelected expressions in the reference.
+function negate(c: Clause): Clause {
+	return {
+		join: c.join === 'And' ? 'Or' : 'And',
+		terms: c.terms.map((t) => ({ ...t, operator: t.operator === 'Selected' ? 'NotSelected' : 'Selected' })),
+	}
+}
+
+// Merge child clauses under a single join. Qualtrics display logic is one flat
+// group with no parentheses, so a child can only merge if it's a single term or
+// already shares the target join. Anything else needs a multi-group expression
+// we don't emit yet — throw rather than silently mis-encode.
+function merge(join: 'And' | 'Or', children: Clause[], context: string): Clause {
+	const terms: Term[] = []
+	for (const child of children) {
+		if (child.terms.length > 1 && child.join !== join) {
+			throw new Error(`condition too complex to encode as a single Qualtrics group (${context}); needs nested And/Or`)
+		}
+		terms.push(...child.terms)
+	}
+	return { join, terms }
+}
+
+function flattenCondition(cond: Condition, context: string): Clause {
+	// The Condition union's leaf member is an index signature, which defeats
+	// `in`-narrowing, so discriminate manually on the combinator keys.
+	const c = cond as Record<string, unknown>
+	if (Array.isArray(c.any))
+		return merge(
+			'Or',
+			(c.any as Condition[]).map((x) => flattenCondition(x, context)),
+			context
+		)
+	if (Array.isArray(c.all))
+		return merge(
+			'And',
+			(c.all as Condition[]).map((x) => flattenCondition(x, context)),
+			context
+		)
+	if (c.not && typeof c.not === 'object') return negate(flattenCondition(c.not as Condition, context))
+
+	// Leaf: { ParentQuestionId: key | [keys] } — true iff the parent's answer is
+	// one of the listed keys, i.e. an OR of Selected.
+	const terms: Term[] = []
+	for (const [parentId, keys] of Object.entries(c as Record<string, string | string[]>)) {
+		for (const key of Array.isArray(keys) ? keys : [keys]) {
+			terms.push({ parentId, optionKey: key, operator: 'Selected' })
+		}
+	}
+	return { join: 'Or', terms }
+}
+
+function expr(qid: string, pos: number, operator: 'Selected' | 'NotSelected', conjunction?: 'And' | 'Or'): DisplayLogicExpression {
+	const locator = `q://${qid}/SelectableChoice/${pos}`
+	const e: DisplayLogicExpression = {
+		LogicType: 'Question',
+		QuestionID: qid,
+		QuestionIDFromLocator: qid,
+		QuestionIsInLoop: 'no',
+		ChoiceLocator: locator,
+		LeftOperand: locator,
+		Operator: operator,
+		Type: 'Expression',
+	}
+	// Qualtrics misspells "Conjunction"; the 2nd+ expression in a group carries it.
+	if (conjunction) e.Conjuction = conjunction
+	return e
+}
+
+// Translate a survey.yaml Condition into a Qualtrics DisplayLogic
+// BooleanExpression (a single conjunction group). Throws if a parent/option
+// can't be resolved or the condition can't be flattened to one group.
+export function buildDisplayLogic(cond: Condition, resolve: ChoiceResolver, context = 'condition'): DisplayLogic {
+	const clause = flattenCondition(cond, context)
+	const group: Record<string, unknown> = { Type: 'If' }
+	clause.terms.forEach((t, i) => {
+		const { qid, pos } = resolve(t.parentId, t.optionKey)
+		group[String(i)] = expr(qid, pos, t.operator, i > 0 ? clause.join : undefined)
+	})
+	return { '0': group, Type: 'BooleanExpression', inPage: false }
+}
+
+// Comparable shape of a DisplayLogic object that ignores the human-readable
+// Description (which Qualtrics auto-generates) so re-runs are no-ops. Works on
+// both our generated logic and the logic returned by a definition GET.
+export function displayLogicSignature(dl: unknown): string {
+	if (!dl || typeof dl !== 'object') return ''
+	const out: string[] = []
+	for (const [gk, group] of Object.entries(dl as Record<string, unknown>)) {
+		if (gk === 'Type' || gk === 'inPage' || !group || typeof group !== 'object') continue
+		for (const [ek, e] of Object.entries(group as Record<string, unknown>)) {
+			if (ek === 'Type' || !e || typeof e !== 'object') continue
+			const ex = e as { Operator?: string; LeftOperand?: string; Conjuction?: string }
+			out.push(`${gk}.${ek}:${ex.Operator ?? ''}:${ex.LeftOperand ?? ''}:${ex.Conjuction ?? ''}`)
+		}
+	}
+	return out.sort().join('|')
+}
+
 // --- API client ---------------------------------------------------------
 
 export interface QualtricsConfig {
@@ -404,12 +542,13 @@ export interface QualtricsConfig {
 	surveyId: string
 }
 
-// Shape of the relevant slice of a survey-definition GET result.
+// Shape of the relevant slice of a survey-definition GET result. Note the flow
+// field is `SurveyFlow` (not `Flow`).
 export interface SurveyDefinition {
 	SurveyID?: string
 	Questions: Record<string, QuestionLike & { QuestionID?: string }>
 	Blocks: Record<string, QualtricsBlock>
-	Flow?: QualtricsFlow
+	SurveyFlow?: QualtricsFlow
 }
 
 export interface QualtricsBlockElement {
