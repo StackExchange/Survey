@@ -52,4 +52,31 @@ claude mcp add-json qualtrics \
 
 ## Qualtrics sync
 
-Coming soon…
+`packages/survey/scripts/qualtrics-sync.ts` pushes this YAML into an **existing** Qualtrics survey via the [Survey Definitions API](https://api.qualtrics.com/). It transforms each question with the [type mapping](#type-mapping) above and reconciles **idempotently keyed on `DataExportTag`** (which equals `question.id` / the filename):
+
+- in YAML, not in the survey → **created**,
+- in both → **updated only when the content changed**,
+- in the survey, not in YAML → reported as an **orphan**, deleted only with `--prune`.
+
+Qualtrics `QID`s are preserved across runs, so a re-run with no edits is a no-op. New questions are created with a minimal payload and then immediately updated with the full payload (`DataExportTag`, recodes, randomization) — the create-then-update sequence avoids the API's create-time validation errors.
+
+Configure via environment variables:
+
+```sh
+export QUALTRICS_API_TOKEN=...     # X-API-TOKEN
+export QUALTRICS_DATACENTER=...    # e.g. iad1, fra1, syd1
+export QUALTRICS_SURVEY_ID=SV_...  # the target existing survey
+```
+
+Then, from the repo root:
+
+```sh
+npm run sync:qualtrics:dry -w survey   # read-only GET + reconcile, prints WOULD-write actions
+npm run sync:qualtrics -w survey       # apply changes
+npm run sync:qualtrics -w survey -- --prune    # also delete orphaned questions/blocks
+npm run sync:qualtrics -w survey -- --verbose  # per-question decisions
+```
+
+With no `QUALTRICS_API_TOKEN`, the script runs **offline** and just prints the transformed payloads — handy for eyeballing the transforms without credentials.
+
+**Phase 1 scope:** questions, blocks, page breaks, and ensuring every block is reachable from the flow (new blocks are appended; existing flow is never rewritten). The flow-level `if/then` branching and the `randomize: N` BlockRandomizer are printed as "not synced yet" and left for a later phase.
