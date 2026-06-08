@@ -13,11 +13,15 @@
 		"validate:questions": "tsx scripts/validate-schema.ts questions",
 		"validate:survey": "tsx scripts/validate-schema.ts survey",
 		"validate:cross": "tsx scripts/validate.ts",
-		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross"
+		"validate": "npm run validate:questions && npm run validate:survey && npm run validate:cross",
+		"sync:qualtrics": "tsx --env-file-if-exists=../../.env scripts/qualtrics-sync.ts",
+		"sync:qualtrics:dry": "tsx --env-file-if-exists=../../.env scripts/qualtrics-sync.ts --dry-run",
+		"sync:qualtrics:dump": "tsx --env-file-if-exists=../../.env scripts/qualtrics-dump.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@tsconfig/svelte": "^5.0.8",
+		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^25.9.1",
 		"ajv": "^8.20.0",
 		"json-schema-to-typescript": "^15.0.4",
@@ -29,6 +33,7 @@
 	},
 	"dependencies": {
 		"@dnd-kit/svelte": "^0.4.0",
+		"lodash-es": "^4.18.1",
 		"marked": "^18.0.4",
 		"yaml": "^2.9.0"
 	}

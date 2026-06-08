@@ -9,3 +9,6 @@ data/db/*
 # Local Netlify folder
 .netlify
 /.env
+
+# Qualtrics survey-definition dumps (for local diffing)
+.qualtrics-dumps/
