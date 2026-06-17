@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AICost
+  version: '2026.1'
+  title: Has cost or usage limits ever changed how you personally use AI tools at work?
+  type: multi_select
+  required: false
+  options:
+    - Yes, usage is metered to manage costs
+    - Yes, I personally monitor my own use
+    - Yes, I choose cheaper/faster models when possible
+    - Yes, my company/team has switched models/vendors that are more affordable
+    - Yes, I am more selective about tasks
+    - No, cost/limits have not affected my usage
+    - My company/team has increased budget for AI
+    - I have not encountered cost or usage limits
+    - Not sure

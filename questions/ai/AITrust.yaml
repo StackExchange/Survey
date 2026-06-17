@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AITrust
+  version: '2026.1'
+  title: How much do you trust the output from AI tools or AI agents as part of your workflow?
+  type: single_select
+  required: false
+  options:
+    - I do not trust it for most work tasks
+    - I trust it for low-risk work tasks only
+    - I trust it when I can easily verify the output
+    - I trust it for many tasks, but not important work decisions
+    - I trust it for many tasks, including important work decisions
+    - Not sure / I do not use AI tools

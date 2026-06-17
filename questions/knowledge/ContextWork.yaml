@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ContextWork
+  version: '2026.1'
+  title: Which of the following do you do to manage or prepare context for your work? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - Keep notes or prompts in a separate document
+    - Copy and paste information between tools
+    - Start new AI chats or sessions to reset context
+    - Manually select files or documents for AI tools
+    - Ask teammates where to find information
+    - Search across multiple tools
+    - Maintain personal documentation or notes
+    - Maintain team documentation or wikis
+    - Reuse saved prompts or templates
+    - Limit the context I share because of privacy/security concerns
+    - I do not do anything specific to manage context
+    - label: Other, please specify
+      key: other
+      text_entry: true

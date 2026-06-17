@@ -73,6 +73,10 @@ export function optionKey(o: OptionEntry): string {
 	return o.key ?? snakeCase(o.label)
 }
 
+export function answerKey(label: string): string {
+	return snakeCase(label)
+}
+
 export function isTextEntry(o: OptionEntry): boolean {
 	return typeof o !== 'string' && o.text_entry === true
 }
@@ -150,6 +154,7 @@ const CONTENT_TYPE: Record<NonNullable<Validate>['type'], string> = {
 	phone: 'ValidPhone',
 	zip: 'ValidZip',
 	date: 'ValidDate',
+	selection_count: 'ChoiceRange',
 }
 
 // Every question carries a Validation block in the reference survey, so this
@@ -163,8 +168,14 @@ export function validationToSettings(q: Question, aiTextChecks?: unknown): Qualt
 
 	const v = q.validate
 	if (v) {
-		settings.Type = 'ContentType'
-		settings.ContentType = CONTENT_TYPE[v.type]
+		if (v.type === 'selection_count') {
+			settings.Type = 'ChoiceRange'
+			if (v.min !== undefined) settings.MinChoices = String(v.min)
+			if (v.max !== undefined) settings.MaxChoices = String(v.max)
+		} else {
+			settings.Type = 'ContentType'
+			settings.ContentType = CONTENT_TYPE[v.type]
+		}
 		if (v.type === 'number') {
 			const valid: Record<string, string> = { NumDecimals: String(v.decimals ?? 0) }
 			if (v.min !== undefined) valid.Min = String(v.min)
@@ -357,6 +368,7 @@ export interface QuestionSignature {
 	dataExportTag: string
 	text: string
 	forceResponse: string
+	validation: string
 	choices: string[]
 	answers: string[]
 }
@@ -367,7 +379,7 @@ interface QuestionLike {
 	SubSelector?: string
 	DataExportTag?: string
 	QuestionText?: string
-	Validation?: { Settings?: { ForceResponse?: string } }
+	Validation?: { Settings?: { ForceResponse?: string } & Record<string, unknown> }
 	Choices?: Record<string, { Display?: string; TextEntry?: string }>
 	ChoiceOrder?: (string | number)[]
 	Answers?: Record<string, { Display?: string }>
@@ -385,6 +397,7 @@ export function questionSignature(q: QuestionLike): QuestionSignature {
 		dataExportTag: q.DataExportTag ?? '',
 		text: stripTags(q.QuestionText ?? ''),
 		forceResponse: q.Validation?.Settings?.ForceResponse ?? '',
+		validation: JSON.stringify(q.Validation?.Settings ?? {}),
 		choices: choiceOrder.map((k) => {
 			const c = q.Choices?.[k]
 			return stripTags(c?.Display ?? '') + (c?.TextEntry ? ' [TE]' : '')
@@ -399,10 +412,10 @@ export function signaturesEqual(a: QuestionSignature, b: QuestionSignature): boo
 
 // --- display logic (if/then branching) ----------------------------------
 
-// A respondent answers a parent question; a condition leaf names a parent
-// question id + one of its option keys. The resolver turns that into the
-// Qualtrics question id (QID) and the 1-based choice position.
-export type ChoiceResolver = (parentId: string, optionKey: string) => { qid: string; pos: number }
+// A respondent answers a parent question; condition leaves name either a
+// parent choice row or a matrix row + column. The resolver turns those into the
+// Qualtrics question id (QID) and 1-based positions.
+export type ChoiceResolver = (parentId: string, optionKey: string, answerKey?: string) => { qid: string; pos: number; answerPos?: number }
 
 export interface DisplayLogicExpression {
 	LogicType: 'Question'
@@ -426,6 +439,7 @@ export interface DisplayLogic {
 interface Term {
 	parentId: string
 	optionKey: string
+	answerKey?: string
 	operator: 'Selected' | 'NotSelected'
 }
 interface Clause {
@@ -474,6 +488,21 @@ function flattenCondition(cond: Condition, context: string): Clause {
 			context
 		)
 	if (c.not && typeof c.not === 'object') return negate(flattenCondition(c.not as Condition, context))
+	if (c.matrix && typeof c.matrix === 'object') {
+		const m = c.matrix as { question?: string; row?: string; column?: string; selected?: boolean }
+		if (!m.question || !m.row || !m.column) throw new Error(`invalid matrix condition (${context})`)
+		return {
+			join: 'Or',
+			terms: [
+				{
+					parentId: m.question,
+					optionKey: m.row,
+					answerKey: answerKey(m.column),
+					operator: m.selected === false ? 'NotSelected' : 'Selected',
+				},
+			],
+		}
+	}
 
 	// Leaf: { ParentQuestionId: key | [keys] } — true iff the parent's answer is
 	// one of the listed keys, i.e. an OR of Selected.
@@ -486,8 +515,14 @@ function flattenCondition(cond: Condition, context: string): Clause {
 	return { join: 'Or', terms }
 }
 
-function expr(qid: string, pos: number, operator: 'Selected' | 'NotSelected', conjunction?: 'And' | 'Or'): DisplayLogicExpression {
-	const locator = `q://${qid}/SelectableChoice/${pos}`
+function expr(
+	qid: string,
+	pos: number,
+	operator: 'Selected' | 'NotSelected',
+	conjunction?: 'And' | 'Or',
+	answerPos?: number
+): DisplayLogicExpression {
+	const locator = answerPos ? `q://${qid}/SelectableChoice/${pos}/Answer/${answerPos}` : `q://${qid}/SelectableChoice/${pos}`
 	const e: DisplayLogicExpression = {
 		LogicType: 'Question',
 		QuestionID: qid,
@@ -510,8 +545,8 @@ export function buildDisplayLogic(cond: Condition, resolve: ChoiceResolver, cont
 	const clause = flattenCondition(cond, context)
 	const group: Record<string, unknown> = { Type: 'If' }
 	clause.terms.forEach((t, i) => {
-		const { qid, pos } = resolve(t.parentId, t.optionKey)
-		group[String(i)] = expr(qid, pos, t.operator, i > 0 ? clause.join : undefined)
+		const { qid, pos, answerPos } = resolve(t.parentId, t.optionKey, t.answerKey)
+		group[String(i)] = expr(qid, pos, t.operator, i > 0 ? clause.join : undefined, answerPos)
 	})
 	return { '0': group, Type: 'BooleanExpression', inPage: false }
 }

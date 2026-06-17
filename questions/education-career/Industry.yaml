@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: Industry
-  version: '2025.1'
-  title: What industry do you work for in?
+  version: '2026.1'
+  title: What industry is the company you work for in?
   type: single_select
   required: false
   options:
@@ -20,5 +20,6 @@ question:
     - Higher Education
     - Media & Advertising Services
     - Insurance
-    - label: 'Other:'
+    - label: Other, please specify
+      key: other
       text_entry: true

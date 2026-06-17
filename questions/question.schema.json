@@ -72,7 +72,7 @@
 					"required": ["type"],
 					"additionalProperties": false,
 					"properties": {
-						"type": { "enum": ["number", "email", "phone", "zip", "date"] },
+						"type": { "enum": ["number", "email", "phone", "zip", "date", "selection_count"] },
 						"min": { "type": "number" },
 						"max": { "type": "number" },
 						"decimals": { "type": "integer", "minimum": 0 }

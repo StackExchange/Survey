@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: CommunityGap
+  version: '2026.1'
+  title: What, if anything, prevents you from participating more in technical or professional communities? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - I usually find answers without posting
+    - AI tools answer enough of my questions
+    - I do not feel confident asking questions publicly
+    - I worry about being judged or criticized
+    - I do not have time
+    - I do not know where to participate
+    - Communities feel too advanced or specialized
+    - Communities do not feel welcoming to people like me
+    - My questions are too specific to my company or context
+    - I prefer private conversations
+    - I have privacy, legal, or employer restrictions
+    - Nothing prevents me from participating more
+    - Not applicable

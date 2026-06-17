@@ -31,6 +31,7 @@ import { fileURLToPath } from 'node:url'
 import YAML from 'yaml'
 import {
 	QualtricsClient,
+	answerKey,
 	buildDisplayLogic,
 	createSafePayload,
 	displayLogicSignature,
@@ -194,9 +195,10 @@ function runOffline(
 
 	// DisplayLogic preview. Offline we have no QIDs, so stand in the parent id
 	// for the QID; positions and structure are still real.
-	const offlineResolve: ChoiceResolver = (parentId, key) => {
+	const offlineResolve: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
 		const idx = (questions[parentId]?.options ?? []).findIndex((o) => optionKey(o) === key)
-		return { qid: parentId, pos: idx + 1 }
+		const answerIdx = matrixAnswerKey ? (questions[parentId]?.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey) : -1
+		return { qid: parentId, pos: idx + 1, answerPos: matrixAnswerKey ? answerIdx + 1 : undefined }
 	}
 	console.log('\n# DisplayLogic (parent id stands in for QID)')
 	for (const [id, condition] of conds) {
@@ -363,14 +365,18 @@ async function reconcile(
 
 	// 3b. Branching: stamp per-question DisplayLogic from accumulated if/then
 	//     conditions. Runs after the upsert so every parent QID is resolvable.
-	const resolveChoice: ChoiceResolver = (parentId, key) => {
+	const resolveChoice: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
 		const qid = qidByTag.get(parentId)
 		if (!qid) throw new Error(`references parent "${parentId}" which was not synced`)
 		const pq = questions[parentId]
 		if (!pq) throw new Error(`references parent "${parentId}" with no question file`)
 		const idx = (pq.options ?? []).findIndex((o) => optionKey(o) === key)
 		if (idx < 0) throw new Error(`references option "${key}" not found on "${parentId}"`)
-		return { qid, pos: idx + 1 }
+		if (!matrixAnswerKey) return { qid, pos: idx + 1 }
+
+		const answerIdx = (pq.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey)
+		if (answerIdx < 0) throw new Error(`references matrix column "${matrixAnswerKey}" not found on "${parentId}"`)
+		return { qid, pos: idx + 1, answerPos: answerIdx + 1 }
 	}
 
 	for (const [id, condition] of conds) {

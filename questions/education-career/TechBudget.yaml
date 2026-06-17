@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TechBudget
+  version: '2026.1'
+  title: Has your department's budget increased, decreased, or stayed the same in your most recent budget cycle? When considering your department, refer to the one you are working in today.
+  type: single_select
+  required: false
+  options:
+    - label: Increased
+      key: increased
+    - label: Decreased
+      key: decreased
+    - label: Stayed the same
+      key: stayed_the_same
+    - label: I don't know
+      key: dont_know

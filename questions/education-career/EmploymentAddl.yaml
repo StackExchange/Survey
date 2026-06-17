@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: EmploymentAddl
-  version: '2025.1'
-  title: Which of the following **additional** activities are you currently engaged in?
+  version: '2026.1'
+  title: Which of the following additional activities are you currently engaged in?
   type: multi_select
   required: false
   options:

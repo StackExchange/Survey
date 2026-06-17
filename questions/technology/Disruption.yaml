@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Disruption
+  version: '2026.1'
+  title: What kinds of AI mistakes have cost you or your team the most time in the past year? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - plausible but wrong code
+    - outdated APIs
+    - missing context
+    - security/privacy issue
+    - hallucinated package/config
+    - poor debugging path
+    - licensing/source uncertainty
+    - hard-to-review generated code
+    - incorrect or stale internal knowledge
+    - label: Other, please specify
+      key: other
+      text_entry: true

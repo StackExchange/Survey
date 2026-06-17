@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: TechEndorse
-  version: '2025.1'
-  title: What attracts you to a technology or causes you to endorse it (most to least important)?
-  type: rank
+  version: '2026.1'
+  title: For technology that you love to use at work, school, or on personal projects, what feature is most important to you? Conversely, what feature turns you against a tool you use for work, school, or personal projects?
+  type: single_select
   required: false
   randomize: true
   options:
@@ -16,5 +16,6 @@ question:
     - Good brand and public image
     - Reliability and low latency
     - Costs are manageable
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

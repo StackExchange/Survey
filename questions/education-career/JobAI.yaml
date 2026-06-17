@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: JobAI
+  version: '2026.1'
+  title: For the workplace attributes that contribute to your job being easier or harder, rate them according to how much you agree they are related to AI or AI agents.
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Strongly disagree
+      - Disagree
+      - Neither agree nor disagree
+      - Agree
+      - Strongly agree
+  options:
+    - Clear or unclear priorities or requirements
+    - Access to or lack of access to the right tools or platforms
+    - Reliable or unreliable systems, infrastructure, or environments
+    - Helpful or poor documentation or knowledge sharing
+    - Supportive or unsupportive teammates, managers, or mentors
+    - Enough or not enough time, staffing, or resources
+    - AI or AI agents
+    - Other

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: ICorPM
-  version: '2025.1'
+  version: '2026.1'
   title: Are you an individual contributor or people manager?
   type: single_select
   required: false

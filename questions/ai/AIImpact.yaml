@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIImpact
+  version: '2026.1'
+  title: When using AI tools or AI agents at work, how useful has AI proven itself for the task or activity? Select one answer for each.
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - very useful
+      - useful
+      - no strong opinion
+      - more impractical than useful, not useful
+      - N/A.
+  options:
+    - design
+    - implementation
+    - review
+    - debugging/refactoring
+    - documentation
+    - architecture exploration
+    - communication

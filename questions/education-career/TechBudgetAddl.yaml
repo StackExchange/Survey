@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TechBudgetAddl
+  version: '2026.1'
+  title: What was the reason your department's budget changed or stayed the same?
+  type: free_text
+  required: false
+  lines: multi

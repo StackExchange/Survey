@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOChange
+  version: '2026.1'
+  title: How has AI changed your Stack Overflow usage? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - visit less for simple questions
+    - visit more for verification (for example, source attribution)
+    - ask fewer questions
+    - ask more advanced questions
+    - contribute less
+    - contribute more
+    - visit SO more because AI-generated answers lead you there
+    - no change.

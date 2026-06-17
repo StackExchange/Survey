@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AICostPrompt
+  version: '2026.1'
+  title: Have you changed how you write prompts or structure requests to reduce cost or improve output quality?
+  type: single_select
+  required: false
+  options:
+    - 'Yes'
+    - 'No'

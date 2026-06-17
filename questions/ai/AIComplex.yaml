@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: AIComplex
-  version: '2025.1'
-  title: How well do the AI tools you use in your development workflow handle complex tasks?
+  version: '2026.1'
+  title: How well do the AI tools or AI agents you use in your development workflow handle complex tasks?
   type: single_select
   required: false
   options:

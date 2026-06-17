@@ -8,10 +8,12 @@
 	let { question }: { question: Question } = $props()
 	const opts = $derived(normaliseOptions(question.options))
 	const selected = $derived((answers[question.id] as string[] | undefined) ?? [])
+	const maxSelections = $derived(question.validate?.type === 'selection_count' ? question.validate.max : undefined)
 
 	function toggle(key: string) {
 		const set = new Set(selected)
 		if (set.has(key)) set.delete(key)
+		else if (maxSelections !== undefined && selected.length >= maxSelections) return
 		else set.add(key)
 		setAnswer(question.id, [...set])
 	}
@@ -20,7 +22,14 @@
 <div class="choices">
 	{#each opts as opt (opt.key)}
 		<label class="choice">
-			<input type="checkbox" name={question.id} value={opt.key} checked={selected.includes(opt.key)} onchange={() => toggle(opt.key)} />
+			<input
+				type="checkbox"
+				name={question.id}
+				value={opt.key}
+				checked={selected.includes(opt.key)}
+				disabled={maxSelections !== undefined && selected.length >= maxSelections && !selected.includes(opt.key)}
+				onchange={() => toggle(opt.key)}
+			/>
 			<Markdown inline content={opt.label} />
 			{#if opt.explicitKey}<KeyBadge value={opt.key} />{/if}
 			{#if opt.textEntry && selected.includes(opt.key)}

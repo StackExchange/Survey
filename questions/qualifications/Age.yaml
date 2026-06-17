@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: Age
-  version: '2025.1'
+  version: '2026.1'
   title: What is your age?
   type: single_select
   required: true

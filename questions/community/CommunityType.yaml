@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: CommunityType
+  version: '2026.1'
+  title: How do you participate in technical or professional communities? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - I read answers, posts, or discussions
+    - I ask questions
+    - I answer questions
+    - I comment or react
+    - I share resources with others
+    - I follow specific creators or experts
+    - I participate in private groups or chats
+    - I attend events, meetups, or webinars
+    - I contribute to open-source projects
+    - I moderate or help manage a community
+    - I do not currently participate in communities

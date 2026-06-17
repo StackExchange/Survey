@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Answers
+  version: '2026.1'
+  title: Which actions do you turn to first when trying to find answers to a problem? Select your top 3 choices.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 3
+  options:
+    - Use online search tools to find general guidance and/or discourse
+    - Send a message to a human I trust directly
+    - Send a message to a human that I don't know directly
+    - Post a message in a group text or private discussion among humans I know
+    - Ask an AI agent
+    - Post in a public online forum
+    - Go directly to a maintained repository or more than one and search within its contents (this could be a repository like Wikipedia or IMDB or GitHub projects)

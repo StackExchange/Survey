@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: KnowAgentTrust
+  version: '2026.1'
+  title: When using AI tools or agents for work, how much control do you usually have over the work information they use?
+  type: single_select
+  required: false
+  options:
+    - I decide exactly what information to give the AI tool
+    - I choose from available sources, files, or systems
+    - The AI tool chooses the information automatically
+    - Someone else manages what information the AI tool can access
+    - I am not sure what information the AI tool uses
+    - I do not use AI tools or agents for work

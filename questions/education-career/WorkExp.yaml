@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: WorkExp
-  version: '2025.1'
-  title: How many years of professional work experience do you have? Please round to the nearest whole number, excluding any decimal points.  If your answer is '0', please leave blank.
+  version: '2026.1'
+  title: How many years have you been working professionally in total? Please round to the nearest whole number, excluding any decimal points.
   type: free_text
   required: false
   lines: single

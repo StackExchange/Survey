@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AISat
+  version: '2026.1'
+  title: When using AI tools or AI agents at work, which of the following have increased or decreased your usual satisfaction with completing the task? Select one answer for each.
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Greatly improved
+      - Somewhat improved
+      - No change
+      - Somewhat decreased
+      - Greatly decreased
+  options:
+    - design
+    - implementation
+    - review
+    - debugging/refactoring
+    - documentation
+    - architecture exploration
+    - communication

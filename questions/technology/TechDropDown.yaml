@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TechDropDown
+  version: '2026.1'
+  title: In the last 12 months, has your role at work, school, or in personal projects intersected with any of the following types of work involving technology? Consider what you used in each context. If you had more than one role in a context, refer to all roles within that setting that you held in the last 12 months. Select all that apply.
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Work
+      - School
+      - Personal projects
+      - None
+  options:
+    - label: I used a programming, scripting or markup language to create something visual, in software/hardware or for data
+      key: programming_language
+    - label: I used a database for storage, querying, deployment
+      key: database
+    - label: I used a cloud platform or any tools related to cloud technologies
+      key: cloud_platform
+    - label: I built, maintained or learned about web technologies
+      key: web_technologies
+    - label: I used a development environment (IDE) to write code or interact with agent-assisted developer tools
+      key: development_environment
+    - label: I used a community platform or online public forum to search, comment, post to or read from
+      key: community_platform
+    - label: I used an LLM (large language model)
+      key: llm
+    - label: I used a knowledge management platform (such as a wiki)
+      key: knowledge_management
+    - label: I used an enterprise search platform (a secure way to search for disparate internal content)
+      key: enterprise_search
+    - label: I used security software for permissions and compliance operations
+      key: security_software

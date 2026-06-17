@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIUse
+  version: '2026.1'
+  title: Which of the following best describes how AI tools or agents are used at your organization today?
+  type: single_select
+  required: false
+  options:
+    - AI use is mostly optional and left up to individuals
+    - Some teams actively encourage AI use, but practices vary across the organization
+    - My organization provides approved AI tools and guidance for how to use them
+    - My organization expects some employees to use AI tools for certain types of work
+    - My organization measures or evaluates AI use as part of employee or team performance
+    - My organization does not currently use AI tools or agents for work
+    - Not sure

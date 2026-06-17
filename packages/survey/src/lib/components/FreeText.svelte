@@ -15,7 +15,18 @@
 			else if (v.max !== undefined) parts.push(`≤ ${v.max}`)
 			return parts.join(', ')
 		}
-		return ({ email: 'Email address', phone: 'Phone number', zip: 'ZIP / postal code', date: 'Date' } as const)[v.type]
+		switch (v.type) {
+			case 'email':
+				return 'Email address'
+			case 'phone':
+				return 'Phone number'
+			case 'zip':
+				return 'ZIP / postal code'
+			case 'date':
+				return 'Date'
+			default:
+				return null
+		}
 	})
 </script>
 

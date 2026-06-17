@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: SurveyIssues
-  version: '2025.1'
-  title: Did you have any issues (technical or otherwise) while taking this survey?  Please describe.
+  version: '2026.1'
+  title: Did you have any issues (technical or otherwise) while taking this survey? Please describe.
   type: free_text
   required: false
   lines: multi

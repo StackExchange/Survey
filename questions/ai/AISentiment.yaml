@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AISentiment
+  version: '2026.1'
+  title: How would you describe your attitude toward using AI tools or agents as part of your work?
+  type: single_select
+  required: false
+  options:
+    - Very unfavorable
+    - Somewhat unfavorable
+    - Neutral
+    - Somewhat favorable
+    - Very favorable
+    - Not sure

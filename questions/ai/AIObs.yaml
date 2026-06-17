@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIObs
+  version: '2026.1'
+  title: Have you used any of the following tools for AI agent observability, prompts, or evals in the past year? Do you want to use any of the following in the next 6 months?
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Used in the past year
+      - Want to use in the next 6 months
+  options:
+    - Adversarial Robustness Toolbox (ART)
+    - arize
+    - Galileo
+    - Grafana + Prometheus
+    - helicone
+    - Honeycomb
+    - Langfuse
+    - LangSmith
+    - Metero
+    - New Relic
+    - opik
+    - Protect AI
+    - Sentry
+    - Snyk
+    - Vectra AI
+    - Wiz

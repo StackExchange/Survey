@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIRetain
+  version: '2026.1'
+  title: When AI tools remember things about your work, who should control that memory?
+  type: single_select
+  required: false
+  options:
+    - just me
+    - my team
+    - my organization centrally
+    - I do not want AI to retain memory
+    - not sure.

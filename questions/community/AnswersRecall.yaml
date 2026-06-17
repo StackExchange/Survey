@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AnswersRecall
+  version: '2026.1'
+  title: Do you recall the last time you posted a question or answer in a public forum? If so, describe it to the best of your ability here.
+  type: free_text
+  required: false
+  lines: multi

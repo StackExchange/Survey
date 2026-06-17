@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Languages
+  version: '2026.1'
+  title: Which programming, scripting, and markup languages have you done extensive development work in over the past year? Which do you want to work in over the next year? Which languages do you prefer to use in your agentic workflows? If you worked with a language, your agent worked with that language, and you want to continue using it in the future, please check all boxes in that row.
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - '**Worked with** in past year'
+      - '**Want** to work with next year'
+      - Used in agents
+  options:
+    - Ada
+    - Assembly
+    - Bash/Shell (all shells)
+    - label: C
+      key: c
+    - label: C#
+      key: c_sharp
+    - label: C++
+      key: c_plus_plus
+    - COBOL
+    - Dart
+    - Delphi
+    - Elixir
+    - Erlang
+    - F#
+    - Fortran
+    - GDScript
+    - Go
+    - Groovy
+    - HTML/CSS
+    - Java
+    - JavaScript
+    - Kotlin
+    - Lisp
+    - Lua
+    - MATLAB
+    - MicroPython
+    - OCaml
+    - Perl
+    - PHP
+    - PowerShell
+    - Prolog
+    - Python
+    - R
+    - Ruby
+    - Rust
+    - Scala
+    - SQL
+    - Swift
+    - TypeScript
+    - VBA
+    - Visual Basic (.Net)
+    - Zig
+    - Mojo
+    - Gleam

@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: JobSat
-  version: '2025.1'
-  title: How satisfied are you in your current professional developer role?
+  version: '2026.1'
+  title: How satisfied are you in your current professional role?
   type: nps
   required: false
   scale_min: 0

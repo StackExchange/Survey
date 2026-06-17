@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAvoid
+  version: '2026.1'
+  title: Do you try to avoid using AI tools or agents at work or school? Select the option below that most accurately reflects your reasoning.
+  type: single_select
+  required: false
+  options:
+    - '#NAME?'

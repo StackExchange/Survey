@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: PurchasePower
+  version: '2026.1'
+  title: Which of the following describes your role in choosing or using software tools at your organization? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - I make the final decision to purchase tools
+    - I approve or manage budget for tools
+    - I evaluate, recommend, or shortlist tools
+    - I influence tool choices by giving feedback or requirements
+    - I use tools selected by others
+    - I do not have a role in choosing or using software tools at my organization

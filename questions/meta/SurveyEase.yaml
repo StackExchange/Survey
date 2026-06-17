@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: SurveyEase
-  version: '2025.1'
+  version: '2026.1'
   title: How easy or difficult was this survey to complete?
   type: multi_select
   required: false

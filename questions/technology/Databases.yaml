@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Databases
+  version: '2026.1'
+  title: Which database environments have you done extensive development work in over the past year? Which do you want to work in over the next year? If you worked with the database and want to continue to do so, please check both boxes in that row.
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - '**Worked with** in past year'
+      - '**Want** to work with next year'
+  options:
+    - BigQuery
+    - Cassandra
+    - Cloud Firestore
+    - Cosmos DB
+    - Databricks SQL
+    - Datomic
+    - DuckDB
+    - Dynamodb
+    - Elasticsearch
+    - Firebase Realtime Database
+    - H2
+    - IBM DB2
+    - InfluxDB
+    - MariaDB
+    - Microsoft Access
+    - Microsoft SQL Server
+    - MongoDB
+    - MySQL
+    - Neo4J
+    - Oracle
+    - PostgreSQL
+    - Redis
+    - Snowflake
+    - SQLite
+    - Supabase
+    - Clickhouse
+    - Cockroachdb
+    - Amazon Redshift
+    - Pocketbase
+    - Valkey

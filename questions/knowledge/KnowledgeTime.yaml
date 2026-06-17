@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: KnowledgeTime
+  version: '2026.1'
+  title: For each source, how important is it that information you use to operate is recent or clearly timestamped?
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Very important
+      - Important
+      - Somewhat important
+      - Not very important
+      - Least important
+  options:
+    - Sources selected in KnowledgeQ

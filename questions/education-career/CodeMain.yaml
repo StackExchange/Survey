@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: CodeMain
+  version: '2026.1'
+  title: Are you someone who creates code? Please select one of the following options that best describes you today.
+  type: single_select
+  required: false
+  options:
+    - label: I create code as a primary part of my job
+      key: primary_job
+    - label: I create code occasionally
+      key: occasionally
+    - label: I review/maintain code but rarely create it
+      key: review_maintain
+    - label: I manage or support people who create code
+      key: manage_support
+    - label: I do not create code.
+      key: do_not_create_code
