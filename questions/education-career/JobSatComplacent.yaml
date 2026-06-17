@@ -6,10 +6,10 @@ question:
   type: single_select
   required: false
   options:
-    - lack of upward mobility due to corporate tightening
+    - Lack of upward mobility due to corporate tightening
     - AI automating the challenging parts of my job
-    - economic uncertainty making me hesitant to switch roles
-    - burnout/tech fatigue
+    - Economic uncertainty making me hesitant to switch roles
+    - Burnout/tech fatigue
     - I do not feel complacent
     - label: Other, please specify
       key: other

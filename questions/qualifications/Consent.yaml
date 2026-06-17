@@ -3,11 +3,9 @@ question:
   id: Consent
   version: '2026.1'
   title: |-
-    **You consent to providing your information to help us stay privacy compliant**
+    This survey is for research purposes only. Your participation in this survey is completely anonymous, and you will not be contacted about your responses. All results will be analyzed only in the aggregate. Anonymized results of the survey will be made publicly available under the Open Database License, where anyone can download and analyze the data. Certain answers you and your peers give may be considered personally identifiable information and therefore kept out of the anonymized results file. The information gathered via this survey is made available to the public in the spirit of community on which Stack Overflow was founded and to serve as a resource for everyone who codes. If you have any questions about this survey, please contact Stack’s Privacy Team at [privacy@stackoverflow.com](mailto:privacy@stackoverflow.com).
 
-    Your participation in this survey is completely anonymous. As in previous years, anonymized results of the survey will be made publicly available under the Open Database License, where anyone can download and analyze the data. On that note, throughout the survey, certain answers you and your peers give will be treated as personally identifiable information and therefore kept out of the anonymized results file. The information gathered via this survey is made available to the public in the spirit of community on which Stack Overflow was founded and to serve as a resource for everyone who codes. More about the importance of privacy at Stack Overflow is available to read on our website.
-
-    By selecting "I agree" and submitting this survey, you acknowledge that you voluntarily consent to your anonymous answers being made publicly available.
+    By clicking "I agree", you acknowledge that you have read our [Privacy Policy](https://stackoverflow.com/legal/privacy-policy) and agree to the [Terms of Service](https://stackoverflow.com/legal/terms-of-service/public). You may unsubscribe from these communications at any time by clicking the link at the bottom of our emails or by following the instructions in our Privacy Policy.
   type: single_select
   required: true
   options:

@@ -13,20 +13,20 @@ question:
       - Plan to Use AI Less
       - Do not plan to use AI
   options:
-    - design
-    - implementation
-    - review
-    - debugging/refactoring
-    - documentation
-    - architecture exploration
-    - communication.
-    - generating code in a familiar area
-    - generating code in an unfamiliar area
-    - writing documentation
-    - creating/deploying infrastructure to development
-    - creating/deploying infrastructure to production
-    - answering simple technical questions
-    - answering complex technical questions
-    - writing communication materials
-    - generating visual/audio elements
-    - understanding a new codebase.
+    - Design
+    - Implementation
+    - Review
+    - Debugging/refactoring
+    - Documentation
+    - Architecture exploration
+    - Communication.
+    - Generating code in a familiar area
+    - Generating code in an unfamiliar area
+    - Writing documentation
+    - Creating/deploying infrastructure to development
+    - Creating/deploying infrastructure to production
+    - Answering simple technical questions
+    - Answering complex technical questions
+    - Writing communication materials
+    - Generating visual/audio elements
+    - Understanding a new codebase.

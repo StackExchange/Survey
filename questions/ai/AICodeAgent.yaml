@@ -11,23 +11,36 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - AgentGPT
-    - Amazon Codewhisperer
-    - Auto-GPT
-    - Blackbox AI
-    - Bolt.new
-    - ChatGPT
     - Claude Code
-    - Cody
-    - Devin AI
+    - Cursor
+    - OpenAI Codex
     - GitHub Copilot
-    - Glean (Enterprise Agents)
-    - Google Gemini
-    - Lovable.dev
-    - Microsoft Copilot
-    - OpenHands (formerly OpenDevin)
-    - Perplexity
-    - Replit
-    - Roo code (Roo-Cline)
+    - Google Antigravity
+    - Windsurf
+    - Devin
+    - Google Jules
+    - Warp
+    - Cline
+    - Mistral Vibe
+    - Amazon Q Developer
+    - Aider
+    - BLACKBOX AI
+    - Gemini Code Assist
+    - Sourcegraph Cody
+    - Replit Agent
+    - Kilo Code
+    - JetBrains AI
+    - Continue
+    - Trae
     - Tabnine
-    - v0.dev
+    - Kavia AI
+    - Codium (Qodo)
+    - Supermaven
+    - Augment Code
+    - Pi
+    - Sweep
+    - Open Code
+    - ECA
+    - Syntropy
+    - Approxima
+    - Emdash

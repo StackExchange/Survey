@@ -12,20 +12,25 @@ question:
       - '**Want** to work with next year'
       - Used in agents
   options:
-    - Alibaba Cloud Qwen models
-    - Amazon Titan models
-    - 'Anthropic: Claude Sonnet'
-    - 'Cohere: Command A'
-    - DeepSeek (R- Reasoning models)
-    - DeepSeek (V- General purpose models)
-    - Gemini (Flash general purpose models)
-    - Gemini (Pro Reasoning models)
-    - Meta Llama (all models)
-    - Microsoft Phi-4 models
-    - Mistral AI models
-    - openAI GPT (chatbot models)
-    - openAI Image generating models
-    - openAI Reasoning models
-    - Perplexity Sonar models
-    - Reka (Flash 3 or other Reka models)
-    - X Grok models
+    - OpenAI
+    - Anthropic
+    - Google AI
+    - Meta AI
+    - Mistral AI
+    - Voyage AI (MongoDB)
+    - Cohere
+    - Microsoft
+    - xAI
+    - DeepSeek
+    - Databricks (DBRX)
+    - Moonshot AI
+    - Black Forest Labs
+    - Alibaba Qwen
+    - Snowflake
+    - Stability AI
+    - Reka
+    - "01.AI"
+    - Zhipu AI
+    - Guide Labs
+    - Cascade
+    - Luel

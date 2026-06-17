@@ -10,3 +10,17 @@ question:
     columns:
       - Used in the past year
       - Want to use in the next 6 months
+  options:
+    - Zapier
+    - n8n
+    - Make
+    - Gumloop
+    - Temporal
+    - DBOS
+    - Relay.app
+    - Prefect
+    - Bubble Lab
+    - Trigger.dev
+    - Inngest
+    - Activepieces
+    - Cofia

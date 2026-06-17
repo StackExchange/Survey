@@ -10,3 +10,22 @@ question:
     columns:
       - Used in the past year
       - Want to use in the next 6 months
+  options:
+    - Replit
+    - v0
+    - Lovable
+    - Bolt.new
+    - Create
+    - Base44
+    - Voiceflow
+    - Botpress
+    - Langflow
+    - Flowise
+    - Stack AI
+    - Marblism
+    - Pickaxe
+    - Relevance AI
+    - Wordware
+    - Sparkles
+    - Glue
+    - Rivet

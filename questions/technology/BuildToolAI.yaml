@@ -6,9 +6,9 @@ question:
   type: multi_select
   required: false
   options:
-    - small scripts/automations
-    - team-level internal tools
-    - cross-team/platform tools
-    - customer-facing products
-    - replacing paid vendors
-    - none.
+    - Small scripts/automations
+    - Team-level internal tools
+    - Cross-team/platform tools
+    - Customer-facing products
+    - Replacing paid vendors
+    - None.

@@ -11,22 +11,25 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Agno
-    - Amazon Bedrock Agents
-    - AutoGen (Microsoft)
-    - CrewAI
-    - Haystack
-    - IBM watsonx.ai
     - LangChain
     - LangGraph
-    - Llama Index
-    - lyzr
-    - Martian
-    - Ollama
-    - OpenRouter
-    - phidata
+    - Strands
+    - OpenAI Agents SDK
+    - Llama Stack
+    - GripTape
+    - CrewAI
+    - Google ADK
+    - AutoGen
+    - Vercel AI SDK
+    - Dify
+    - DSPy
     - Semantic Kernel
-    - Smol-AGI
+    - Instructor
+    - Pydantic AI
+    - Hermes Agent
+    - Agno
+    - Atomic Agents
     - Smolagents
-    - Vertex AI
-    - Zapier
+    - "21st.dev"
+    - Terminal Use
+    - Mastra

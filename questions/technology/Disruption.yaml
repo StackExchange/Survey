@@ -6,15 +6,15 @@ question:
   type: multi_select
   required: false
   options:
-    - plausible but wrong code
-    - outdated APIs
-    - missing context
-    - security/privacy issue
-    - hallucinated package/config
-    - poor debugging path
-    - licensing/source uncertainty
-    - hard-to-review generated code
-    - incorrect or stale internal knowledge
+    - Plausible but wrong code
+    - Outdated APIs
+    - Missing context
+    - Security/privacy issue
+    - Hallucinated package/config
+    - Poor debugging path
+    - Licensing/source uncertainty
+    - Hard-to-review generated code
+    - Incorrect or stale internal knowledge
     - label: Other, please specify
       key: other
       text_entry: true

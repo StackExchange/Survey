@@ -11,19 +11,12 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - ChromaDB
-    - Fireproof
-    - GitHub MCP Server
-    - LanceDB
-    - LangMem
+    - Mem0
     - Letta
-    - mem0
-    - Milvus
-    - Neo4j
-    - pgvector
-    - Pinecone
-    - Qdrant
-    - Redis
-    - supabase
-    - Weaviate
     - Zep
+    - LangMem
+    - Supermemory
+    - Cognee
+    - Graphiti
+    - Hyperspell
+    - Memary

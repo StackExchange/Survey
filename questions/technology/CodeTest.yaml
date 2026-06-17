@@ -10,3 +10,12 @@ question:
     columns:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
+  options:
+    - CodeRabbit
+    - Greptile
+    - Qodo (formerly Codium)
+    - Graphite
+    - Ellipsis
+    - Bito
+    - Sourcery
+    - Canary

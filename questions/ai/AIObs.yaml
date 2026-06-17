@@ -11,19 +11,35 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Adversarial Robustness Toolbox (ART)
-    - arize
-    - Galileo
-    - Grafana + Prometheus
-    - helicone
-    - Honeycomb
-    - Langfuse
+    - Respan
     - LangSmith
-    - Metero
-    - New Relic
-    - opik
-    - Protect AI
+    - Weights & Biases
+    - MLflow
+    - Langfuse
+    - Arize AI
+    - Helicone
+    - Traceloop
+    - Datadog LLM
+    - HoneyHive
+    - Braintrust
+    - Promptfoo
+    - Patronus AI
+    - Humanloop
+    - Portkey
     - Sentry
-    - Snyk
-    - Vectra AI
-    - Wiz
+    - DeepEval
+    - Ragas
+    - Galileo AI
+    - LangWatch
+    - PromptLayer
+    - Confident AI
+    - Opik
+    - Agenta
+    - Future AGI
+    - Lunary
+    - Parea AI
+    - Sentrial
+    - Athina AI
+    - Moda
+    - Ashr
+    - Chamber
