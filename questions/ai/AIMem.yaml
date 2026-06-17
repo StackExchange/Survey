@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIMem
+  version: '2026.1'
+  title: Have you used any of the following tools for AI agent memory or vector databases in the past year? Do you want to use any of the following in the next 6 months?
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Used in the past year
+      - Want to use in the next 6 months
+  options:
+    - ChromaDB
+    - Fireproof
+    - GitHub MCP Server
+    - LanceDB
+    - LangMem
+    - Letta
+    - mem0
+    - Milvus
+    - Neo4j
+    - pgvector
+    - Pinecone
+    - Qdrant
+    - Redis
+    - supabase
+    - Weaviate
+    - Zep

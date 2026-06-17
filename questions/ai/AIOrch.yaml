@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIOrch
+  version: '2026.1'
+  title: Have you used any of the following tools for AI agent orchestration or agent frameworks in the past year? Do you want to use any of the following in the next 6 months?
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Used in the past year
+      - Want to use in the next 6 months
+  options:
+    - Agno
+    - Amazon Bedrock Agents
+    - AutoGen (Microsoft)
+    - CrewAI
+    - Haystack
+    - IBM watsonx.ai
+    - LangChain
+    - LangGraph
+    - Llama Index
+    - lyzr
+    - Martian
+    - Ollama
+    - OpenRouter
+    - phidata
+    - Semantic Kernel
+    - Smol-AGI
+    - Smolagents
+    - Vertex AI
+    - Zapier

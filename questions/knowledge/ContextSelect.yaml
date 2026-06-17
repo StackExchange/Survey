@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ContextSelect
+  version: '2026.1'
+  title: When working on a project or task, which types of context are most important for you to have? Select up to 5.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 5
+  options:
+    - Project goals or requirements
+    - Prior decisions and rationale
+    - Current status or ownership
+    - Related tickets, tasks, or issues
+    - Code, repositories, or technical documentation
+    - Pull requests, commit history, or release notes
+    - Customer or user feedback
+    - Business goals or product strategy
+    - Compliance, security, or policy requirements
+    - Team norms, preferences, or ways of working
+    - Past discussions in chat, email, or meetings
+    - Data, dashboards, or reports
+    - I do not usually need additional context
+    - label: Other, please specify
+      key: other
+      text_entry: true

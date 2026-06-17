@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIWork
+  version: '2026.1'
+  title: Which parts of your workflow are you currently integrating into AI or using AI agents to accomplish? Will they be more or less integrated over the next year? Please select one for each scenario.
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Currently Use AI
+      - Plan to Use AI More
+      - Plan to Use AI Less
+      - Do not plan to use AI
+  options:
+    - design
+    - implementation
+    - review
+    - debugging/refactoring
+    - documentation
+    - architecture exploration
+    - communication.
+    - generating code in a familiar area
+    - generating code in an unfamiliar area
+    - writing documentation
+    - creating/deploying infrastructure to development
+    - creating/deploying infrastructure to production
+    - answering simple technical questions
+    - answering complex technical questions
+    - writing communication materials
+    - generating visual/audio elements
+    - understanding a new codebase.

@@ -22,6 +22,10 @@ function joinGroups(parts: ConditionToken[][], sep: string): ConditionToken[] {
 // join operator at every `any`/`all` level (De Morgan), so we never need to
 // render a "NOT (…)" prefix — every leaf becomes "<qid> is not 'value'".
 export function tokenizeCondition(expr: Condition, negated = false): ConditionToken[] {
+	const rawExpr = expr as unknown as {
+		matrix?: { question: string; row: string; column: string; selected?: boolean }
+	}
+
 	if ('any' in expr && Array.isArray(expr.any)) {
 		const parts = (expr.any as Condition[]).map((e) => tokenizeCondition(e, negated))
 		// NOT(A OR B) = (NOT A) AND (NOT B)
@@ -34,6 +38,14 @@ export function tokenizeCondition(expr: Condition, negated = false): ConditionTo
 	}
 	if ('not' in expr) {
 		return tokenizeCondition(expr.not as Condition, !negated)
+	}
+	if (rawExpr.matrix) {
+		const selected = rawExpr.matrix.selected ?? true
+		const op = negated ? (selected ? 'is not selected' : 'is selected') : selected ? 'is selected' : 'is not selected'
+		return [
+			{ qid: rawExpr.matrix.question },
+			{ text: ` row '${rawExpr.matrix.row}' / column '${rawExpr.matrix.column}' ${op}` },
+		]
 	}
 
 	const entries = Object.entries(expr)

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ContextFreq
+  version: '2026.1'
+  title: How often do you discover important work context only after you have already started or completed a task?
+  type: single_select
+  required: false
+  options:
+    - Very often
+    - Often
+    - Sometimes
+    - Rarely
+    - Never
+    - Not sure
+    - Not applicable

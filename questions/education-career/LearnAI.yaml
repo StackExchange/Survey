@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: LearnAI
+  version: '2026.1'
+  title: In the last year, did you spend time learning AI programming or AI-enabled tooling on your own or at work?
+  type: single_select
+  required: false
+  options:
+    - label: Yes, on my own
+      key: yes_own
+    - label: Yes, at work
+      key: yes_work
+    - label: Yes, both on my own and at work
+      key: yes_both
+    - label: No
+      key: no

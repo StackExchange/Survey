@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIWorkNext
+  version: '2026.1'
+  title: When you receive an AI-generated answer for a development task, what do you usually do before using it? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - run it locally
+    - read official docs
+    - search Stack Overflow
+    - ask a coworker
+    - inspect tests/security implications
+    - compare against codebase context
+    - use as-is
+    - I do not use AI tools.

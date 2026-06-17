@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Gender
+  version: '2026.1'
+  title: Which of the following best represents your gender identity?
+  type: single_select
+  required: false
+  options:
+    - Woman
+    - Man
+    - Non-binary
+    - label: 'Prefer to self-describe: ____'
+      key: self_describe
+      text_entry: true
+    - label: Prefer not to say
+      key: prefer_not_to_say

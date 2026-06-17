@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: WelcomeText
+  version: '2026.1'
+  title: |-
+    **Welcome to the 2026 Stack Overflow Developer Survey**
+
+    This is the 16th Annual Stack Overflow Developer Survey, the longest-running and most comprehensive study of technologists and developers worldwide. 
+
+    By proceeding, you contribute to an [invaluable body of knowledge that is available](https://survey.stackoverflow.co/) to developers worldwide. We've structured the survey to respect your time, taking approximately 15 - 18 minutes to complete. There are two screening questions to make sure you meet a few basic qualifications. Most questions are not required and we have done our best to keep required questions to a minimum. You can take as much time as you need, but we encourage you to finish this survey in one sitting so that you get a chance to answer all questions. After 72 hours, your answers will be recorded if you do not get a chance to read every question and have consented to share your answers. Any questions you have about the survey can be directed to our open-source repo [here](https://github.com/StackExchange/Survey).
+
+    Important Note on Ad Blockers and Cloud Security tools: Ad blockers and cloud security tools can sometimes block essential scripts or elements needed for the survey to function correctly. To avoid any potential error messages, delays in the survey appearing or disruptions, please consider temporarily pausing your cloud security or ad-blocking plugin, or specifically unblocking Qualtrics while you take the survey.
+
+    **To begin, click Next!**
+  type: display
+  required: false

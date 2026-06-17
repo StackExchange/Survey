@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: Currency
-  version: '2025.1'
+  version: '2026.1'
   title: Which currency do you use day-to-day? If your answer is complicated, please pick the one you're most comfortable estimating in.
   type: single_select
-  required: true
+  required: false
   display: dropdown
   options:
     - USD United States dollar

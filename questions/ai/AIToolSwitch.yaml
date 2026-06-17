@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIToolSwitch
+  version: '2026.1'
+  title: In the past year, have you switched from one AI tool to another for work? If yes, what was the primary reason?
+  type: single_select
+  required: false
+  options:
+    - No
+    - Yes — better output quality
+    - Yes — lower cost
+    - Yes — better integration with my workflow or development environment
+    - Yes — better security, privacy, or compliance
+    - Yes — my organization required or recommended a different tool
+    - Yes — for a specific feature
+    - Yes — better support for agents, automation, or coding workflows
+    - Yes — access to a preferred model or provider
+    - Yes — the previous tool became too expensive, limited, or unavailable
+    - label: Yes — another reason (write in)
+      key: other
+      text_entry: true
+    - Not applicable — I do not use AI tools for work

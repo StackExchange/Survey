@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: DevIDE
+  version: '2026.1'
+  title: Which development environments and AI-enabled code editing tools did you use regularly over the past year? Which do you want to work with over the next year? Please check all that apply.
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - '**Worked with** in past year'
+      - '**Want** to work with next year'
+      - Used in agents
+  options:
+    - Aider
+    - Android Studio
+    - Bolt
+    - Claude Code
+    - Cline and/or Roo
+    - Cursor
+    - Eclipse
+    - IntelliJ IDEA
+    - Jupyter Notebook/JupyterLab
+    - Lovable.dev
+    - Nano
+    - Neovim
+    - Notepad++
+    - PhpStorm
+    - PyCharm
+    - Rider
+    - RustRover
+    - Sublime Text
+    - Trae
+    - Vim
+    - Visual Studio
+    - Visual Studio Code
+    - VSCodium
+    - WebStorm
+    - Windsurf
+    - Xcode
+    - Zed

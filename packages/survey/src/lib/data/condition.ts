@@ -12,6 +12,7 @@
 // are normalised to a Set for membership testing.
 
 import type { Answer, Condition, Question } from '$lib/types'
+import { snakeCase } from 'lodash-es'
 
 function selectedKeys(answer: Answer): Set<string> {
 	if (answer === undefined || answer === null) return new Set()
@@ -21,6 +22,10 @@ function selectedKeys(answer: Answer): Set<string> {
 }
 
 export function evaluate(expr: Condition, answers: Record<string, Answer>, questions: Record<string, Question>): boolean {
+	const rawExpr = expr as unknown as {
+		matrix?: { question: string; row: string; column: string; selected?: boolean }
+	}
+
 	if ('any' in expr && Array.isArray(expr.any)) {
 		return expr.any.some((sub) => evaluate(sub as Condition, answers, questions))
 	}
@@ -29,6 +34,17 @@ export function evaluate(expr: Condition, answers: Record<string, Answer>, quest
 	}
 	if ('not' in expr) {
 		return !evaluate(expr.not as Condition, answers, questions)
+	}
+	if (rawExpr.matrix) {
+		const { question: parentId, row, column, selected = true } = rawExpr.matrix
+		if (!questions[parentId]) return false
+		const answer = answers[parentId]
+		if (!answer || typeof answer !== 'object' || Array.isArray(answer)) return selected === false
+
+		const rowValue = (answer as Record<string, string | string[]>)[row]
+		const columnKey = snakeCase(column)
+		const isSelected = Array.isArray(rowValue) ? rowValue.includes(columnKey) : rowValue === columnKey
+		return selected ? isSelected : !isSelected
 	}
 
 	// Leaf: { ParentId: keyOrKeys }

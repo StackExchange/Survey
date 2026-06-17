@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: KnowledgeSourceAI
+  version: '2026.1'
+  title: How important is source attribution when deciding whether to trust an AI-generated technical answer?
+  type: single_select
+  required: false
+  options:
+    - Very important
+    - Important
+    - Somewhat important
+    - Not very important
+    - Least important

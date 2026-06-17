@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: OrgSize
-  version: '2025.1'
-  title: Approximately how many people are employed by your employer?  This should only include your primary company, and if there was more than one employer please consider the one you spent most of your time working for in the past year.
+  version: '2026.1'
+  title: Approximately how many people are employed by your employer? This should only include your primary company. If you had more than one employer, please consider the one you spent most of your time working for in the past year.
   type: single_select
   required: false
   options:

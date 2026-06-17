@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: RoleFunctions
+  version: '2026.1'
+  title: In a typical week, which of the following job functions do you need to do your work?
+  type: multi_select
+  required: false
+  options:
+    - Debugging or troubleshooting
+    - Making a technical design or architecture decision
+    - Changing production code or infrastructure
+    - Responding to a customer or stakeholder question
+    - Investigating an incident or outage
+    - Onboarding to a new project or codebase
+    - Choosing between technical approaches
+    - Letting an AI agent take action

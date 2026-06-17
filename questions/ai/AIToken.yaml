@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIToken
+  version: '2026.1'
+  title: Which, if any, of the following has your organization done related to AI tool or model usage? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - Set limits on who can use certain AI tools or models
+    - Set limits on AI tool or model usage or spending
+    - Reviewed internal usage or spending data for AI tools or models
+    - Approved different AI tools or models for different types of work
+    - Compared buying an AI tool with building something internally
+    - Stopped using or reduced spending on other software tools while increasing investment in AI tools or models
+    - Negotiated shorter commitments or the ability to change AI usage over time
+    - None of the above
+    - Not sure

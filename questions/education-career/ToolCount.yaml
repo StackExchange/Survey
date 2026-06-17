@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ToolCount
+  version: '2026.1'
+  title: |-
+    In a typical month over the past year, about how many distinct software tools, platforms, or services did you personally use to do your primary work?
+
+    Count tools you intentionally opened, configured, or relied on to create, analyze, manage, build, deploy, support, or share work. These may be free, purchased, internal, or open-source tools.
+
+    Do not count general operating systems, web browsers, programming languages, libraries/packages, one-off scripts or commands, or multiple interchangeable utilities that serve the same narrow purpose.
+  type: free_text
+  required: false
+  lines: single
+  validate:
+    type: number
+    min: 0
+    max: 10000

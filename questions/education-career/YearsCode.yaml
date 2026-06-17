@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: YearsCode
-  version: '2025.1'
-  title: Including any education, how many years have you been coding in total?  Please round to the nearest whole number, excluding any decimal points.
+  version: '2026.1'
+  title: Including any education, how many years have you been coding in total? Please round to the nearest whole number, excluding any decimal points.
   type: free_text
   required: false
   lines: single

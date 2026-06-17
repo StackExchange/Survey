@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: JobDifficulty
+  version: '2026.1'
+  title: Think about your current role and how often in the past 6 months you have felt your job was harder to do because of aspects of your work setting outside of your control. When things are not working well at work, what do you attribute that to? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - Unclear priorities or requirements
+    - Lack of access to the right tools or platforms
+    - Unreliable systems, infrastructure, or environments
+    - Poor documentation or knowledge sharing
+    - Lack of support from teammates, managers, or mentors
+    - Not enough time, staffing, or resources
+    - AI or AI agents
+    - label: Other, please specify
+      key: other
+      text_entry: true

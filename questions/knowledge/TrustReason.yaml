@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: TrustReason
+  version: '2026.1'
+  title: When deciding whether to rely on work-related information, which signals matter most to you? Select up to 5.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 5
+  options:
+    - It is recent or clearly up to date
+    - It is marked final, approved, accepted, or official
+    - It is not marked draft, outdated, deprecated, or superseded
+    - I know who created or owns it
+    - It comes from an official or trusted source
+    - It was reviewed or validated by a subject matter expert
+    - It includes sources, citations, links, or supporting evidence
+    - It is consistent with other trusted information
+    - Other people on my team use or endorse it
+    - It is clear, complete, and easy to understand
+    - It respects access, privacy, or permission rules
+    - None of these
+    - Not sure

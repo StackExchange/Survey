@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AITry
+  version: '2026.1'
+  title: Which of the following best describes how your organization currently approaches AI tools or models?
+  type: single_select
+  required: false
+  options:
+    - We mostly use one approved tool or model
+    - We use a few approved tools or models
+    - Different teams choose their own tools or models
+    - We are trying multiple tools or models before deciding what to use longer-term
+    - We are building internal tools or models
+    - We are not using AI tools or models in a meaningful way
+    - Not sure

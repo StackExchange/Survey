@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: KnowMgmt
+  version: '2026.1'
+  title: Which knowledge management platforms have you used for work in the past year? Which would you like to use next year? Which have you used in your agentic workflows?
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Used for work in past year
+      - Would like to use next year
+      - Used in agentic workflows

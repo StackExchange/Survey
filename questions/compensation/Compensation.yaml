@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: Compensation
+  version: '2026.1'
+  title: What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.
+  type: free_text
+  required: false
+  lines: single
+  validate:
+    type: number
+    min: 0

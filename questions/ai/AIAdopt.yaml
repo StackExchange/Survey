@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAdopt
+  version: '2026.1'
+  title: When you or your organization decides whether to adopt, continue using, or expand use of an AI tool or model for your work, which factors matter most? Select up to 3.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 3
+  options:
+    - The tool produces useful and accurate results (trust)
+    - The tool works well with how people already do their jobs
+    - The tool meets security, privacy requirements
+    - The tool meets legal or compliance requirements
+    - The price is acceptable for the value it provides
+    - Usage and spending are easy to monitor or limit
+    - The tool connects with systems people already use
+    - The organization can switch tools or models without major disruption
+    - Employees or teams are asking to use it
+    - There is evidence that the tool improves business outcomes
+    - The tool reduces time spent correcting, retrying, or reworking outputs
+    - The tool has observability already integrated or built in
+    - Review burden is low
+    - Human oversight is manageable
+    - Your company policy allows for usage
+    - Not sure
+    - label: Other, please specify
+      key: other
+      text_entry: true

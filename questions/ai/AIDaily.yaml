@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIDaily
+  version: '2026.1'
+  title: You indicated that you use AI tools and/or agents daily. How much of your workday do you use AI tools to help you work?
+  type: single_select
+  required: false
+  options:
+    - none
+    - <1 hour and not every day
+    - <1 hour every day
+    - 1-2 hours/day
+    - 2-4 hours/day
+    - 4+ hours/day.

@@ -13,7 +13,7 @@
 	},
 	"definitions": {
 		"condition": {
-			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Each leaf is `{ParentQuestionId: [optionKey, …]}` — true iff the respondent's answer for ParentQuestionId is one of the listed keys. Combine with `any`, `all`, `not`.",
+			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Combine with `any`, `all`, `not`.",
 			"oneOf": [
 				{
 					"type": "object",
@@ -45,6 +45,27 @@
 					"additionalProperties": false,
 					"properties": {
 						"not": { "$ref": "#/definitions/condition" }
+					}
+				},
+				{
+					"type": "object",
+					"required": ["matrix"],
+					"additionalProperties": false,
+					"properties": {
+						"matrix": {
+							"type": "object",
+							"required": ["question", "row", "column"],
+							"additionalProperties": false,
+							"properties": {
+								"question": { "type": "string", "minLength": 1 },
+								"row": { "type": "string", "minLength": 1 },
+								"column": { "type": "string", "minLength": 1 },
+								"selected": {
+									"type": "boolean",
+									"description": "Defaults to true. Set false to encode 'matrix row / column is not selected'."
+								}
+							}
+						}
 					}
 				},
 				{

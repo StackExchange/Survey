@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AICodeAgent
+  version: '2026.1'
+  title: Have you used any of the following coding agents or assistants in the past year? Do you want to use any of the following in the next 6 months?
+  type: scale
+  required: false
+  scale:
+    multiple: true
+    columns:
+      - Used in the past year
+      - Want to use in the next 6 months
+  options:
+    - AgentGPT
+    - Amazon Codewhisperer
+    - Auto-GPT
+    - Blackbox AI
+    - Bolt.new
+    - ChatGPT
+    - Claude Code
+    - Cody
+    - Devin AI
+    - GitHub Copilot
+    - Glean (Enterprise Agents)
+    - Google Gemini
+    - Lovable.dev
+    - Microsoft Copilot
+    - OpenHands (formerly OpenDevin)
+    - Perplexity
+    - Replit
+    - Roo code (Roo-Cline)
+    - Tabnine
+    - v0.dev

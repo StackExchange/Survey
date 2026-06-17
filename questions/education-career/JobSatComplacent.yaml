@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: JobSatComplacent
+  version: '2026.1'
+  title: If you feel complacent at work, what is the primary driver?
+  type: single_select
+  required: false
+  options:
+    - lack of upward mobility due to corporate tightening
+    - AI automating the challenging parts of my job
+    - economic uncertainty making me hesitant to switch roles
+    - burnout/tech fatigue
+    - I do not feel complacent
+    - label: Other, please specify
+      key: other
+      text_entry: true

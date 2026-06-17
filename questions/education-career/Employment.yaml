@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
   id: Employment
-  version: '2025.1'
+  version: '2026.1'
   title: Which of the following best describes your current employment status?
   type: single_select
   required: true

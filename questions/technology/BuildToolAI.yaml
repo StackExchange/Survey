@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: BuildToolAI
+  version: '2026.1'
+  title: Which of the following, if any, has your team built with AI assistance in the past 12 months?
+  type: multi_select
+  required: false
+  options:
+    - small scripts/automations
+    - team-level internal tools
+    - cross-team/platform tools
+    - customer-facing products
+    - replacing paid vendors
+    - none.

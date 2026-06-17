@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: ContextProblems
+  version: '2026.1'
+  title: Which of the following make it difficult to get the context you need for work? Select all that apply.
+  type: multi_select
+  required: false
+  options:
+    - Information is spread across too many tools
+    - Information is outdated
+    - Information is incomplete
+    - I do not know where to look
+    - I do not know which source is authoritative
+    - Important context lives in people’s heads
+    - Important decisions are hard to find later
+    - Different teams have different versions of the truth
+    - Access or permissions prevent me from seeing what I need
+    - Search does not return useful results
+    - AI tools do not have enough context
+    - AI tools use the wrong context
+    - I intentionally limit context because of privacy or security concerns
+    - I usually have the context I need
+    - Not applicable

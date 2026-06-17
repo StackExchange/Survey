@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: CommunitySkills
+  version: '2026.1'
+  title: Which sources most influence what technical, AI, or professional skills you decide to learn next? Select up to 3.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 3
+  options:
+    - Coworkers, classmates, or peers
+    - Manager or workplace expectations
+    - Online communities or forums
+    - Stack Overflow / Stack Exchange
+    - YouTube or video creators
+    - Podcasts
+    - Newsletters or blogs
+    - Social media
+    - Courses or certifications
+    - Documentation
+    - AI tools or chatbots
+    - Job postings or labor market signals
+    - Conferences or events
+    - I am not currently deciding what to learn next

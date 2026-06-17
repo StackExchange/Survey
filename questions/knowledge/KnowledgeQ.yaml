@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: KnowledgeQ
+  version: '2026.1'
+  title: When you need to answer a work-related question, which sources do you use most often? Select up to 5.
+  type: multi_select
+  required: false
+  validate:
+    type: selection_count
+    min: 0
+    max: 5
+  options:
+    - Coworkers or teammates
+    - Manager or leadership
+    - Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base
+    - Internal chat tools, such as Slack or Teams
+    - Project management or ticketing tools
+    - Code repositories or code comments
+    - Product, vendor, or API documentation
+    - Meeting notes or transcripts
+    - Customer, support, or sales information
+    - Past decisions or architecture records
+    - Stack Overflow
+    - Official docs
+    - Vendor forum
+    - None of these
+    - Not sure
+    - label: Other, please specify
+      key: other
+      text_entry: true
