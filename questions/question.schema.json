@@ -108,6 +108,23 @@
 						}
 					}
 				},
+				"carry_forward": {
+					"type": "object",
+					"required": ["from"],
+					"additionalProperties": false,
+					"description": "For scale questions, derive row statements from the selected options of a previous choice question.",
+					"properties": {
+						"from": {
+							"type": "string",
+							"pattern": "^[A-Za-z0-9_-]+$",
+							"description": "Question id whose selected options should become this question's row statements."
+						},
+						"include_text_entry": {
+							"type": "boolean",
+							"description": "When true, use the respondent's text-entry value as the carried-forward row label."
+						}
+					}
+				},
 				"options": {
 					"type": "array",
 					"items": {

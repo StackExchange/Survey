@@ -533,9 +533,38 @@ flow:
                 - hrs_20_29
         then:
           - [KnowledgeQ]
+      - if:
+          KnowledgeQ:
+            - coworkers_or_teammates
+            - manager_or_leadership
+            - internal_documentation_i_e_design_product_or_planning_docs_wiki_or_knowledge_base
+            - internal_chat_tools_such_as_slack_or_teams
+            - project_management_or_ticketing_tools
+            - code_repositories_or_code_comments
+            - product_vendor_or_api_documentation
+            - meeting_notes_or_transcripts
+            - customer_support_or_sales_information
+            - past_decisions_or_architecture_records
+            - stack_overflow
+            - official_docs
+            - vendor_forum
+            - none_of_these
+            - not_sure
+            - other
+        then:
           - [KnowledgeAcc]
           - [KnowledgeTime]
           - [KnowledgeSource]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
           - [KnowledgeSourceAI]
           - [KnowAgentDelegate]
           - [KnowledgeA]

@@ -6,8 +6,8 @@ question:
   type: single_select
   required: false
   options:
-    - just me
-    - my team
-    - my organization centrally
+    - Just me
+    - My team
+    - My organization centrally
     - I do not want AI to retain memory
-    - not sure.
+    - Not sure.

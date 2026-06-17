@@ -82,6 +82,19 @@ export interface SurveyQuestion {
 			 */
 			columns: [string, ...string[]];
 		};
+		/**
+		 * For scale questions, derive row statements from the selected options of a previous choice question.
+		 */
+		carry_forward?: {
+			/**
+			 * Question id whose selected options should become this question's row statements.
+			 */
+			from: string;
+			/**
+			 * When true, use the respondent's text-entry value as the carried-forward row label.
+			 */
+			include_text_entry?: boolean;
+		};
 		options?: (
 			| string
 			| {
