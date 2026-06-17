@@ -8,16 +8,16 @@ question:
   scale:
     multiple: false
     columns:
-      - very useful
-      - useful
-      - no strong opinion
-      - more impractical than useful, not useful
+      - Very useful
+      - Useful
+      - No strong opinion
+      - More impractical than useful, not useful
       - N/A.
   options:
-    - design
-    - implementation
-    - review
-    - debugging/refactoring
-    - documentation
-    - architecture exploration
-    - communication
+    - Design
+    - Implementation
+    - Review
+    - Debugging/refactoring
+    - Documentation
+    - Architecture exploration
+    - Communication

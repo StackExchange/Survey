@@ -14,10 +14,10 @@ question:
       - Somewhat decreased
       - Greatly decreased
   options:
-    - design
-    - implementation
-    - review
-    - debugging/refactoring
-    - documentation
-    - architecture exploration
-    - communication
+    - Design
+    - Implementation
+    - Review
+    - Debugging/refactoring
+    - Documentation
+    - Architecture exploration
+    - Communication

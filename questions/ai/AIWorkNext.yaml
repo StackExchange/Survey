@@ -6,11 +6,11 @@ question:
   type: multi_select
   required: false
   options:
-    - run it locally
-    - read official docs
-    - search Stack Overflow
-    - ask a coworker
-    - inspect tests/security implications
-    - compare against codebase context
-    - use as-is
+    - Run it locally
+    - Read official docs
+    - Search Stack Overflow
+    - Ask a coworker
+    - Inspect tests/security implications
+    - Compare against codebase context
+    - Use as-is
     - I do not use AI tools.
