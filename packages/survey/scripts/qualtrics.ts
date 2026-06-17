@@ -106,6 +106,7 @@ export interface QualtricsChoice {
 	// "Other" choice (MC/multi/rank), '1' on Meta/Browser fields. Normal choices
 	// omit it.
 	TextEntry?: 'true' | '1'
+	DisplayLogic?: DisplayLogic
 }
 
 export interface QualtricsRandomization {
@@ -137,6 +138,11 @@ export interface QualtricsQuestionPayload {
 	Randomization?: QualtricsRandomization
 	Configuration?: Record<string, unknown>
 	DisplayLogic?: DisplayLogic
+}
+
+export interface QuestionPayloadContext {
+	questions?: Record<string, Question>
+	qidByTag?: Map<string, string>
 }
 
 // Standard browser-metadata fields for a Meta/Browser question.
@@ -252,6 +258,27 @@ function buildChoices(options: OptionEntry[]): ChoiceBlock {
 	return { Choices, ChoiceOrder, textEntryKeys }
 }
 
+function buildCarryForwardChoices(q: Question, ctx: QuestionPayloadContext): ChoiceBlock {
+	const sourceId = q.carry_forward?.from
+	const parent = sourceId ? ctx.questions?.[sourceId] : undefined
+	if (!sourceId || !parent?.options) return buildChoices([])
+
+	const sourceQid = ctx.qidByTag?.get(sourceId) ?? sourceId
+	const Choices: Record<string, QualtricsChoice> = {}
+	const ChoiceOrder: string[] = []
+
+	parent.options.forEach((opt, i) => {
+		const ck = String(i + 1)
+		const choice: QualtricsChoice = { Display: mdInline(optionLabel(opt)) }
+		if (q.carry_forward?.include_text_entry && isTextEntry(opt)) choice.Display = `\${q://${sourceQid}/ChoiceTextEntryValue/${ck}}`
+		choice.DisplayLogic = { '0': { '0': expr(sourceQid, i + 1, 'Selected'), Type: 'If' }, Type: 'BooleanExpression', inPage: false }
+		Choices[ck] = choice
+		ChoiceOrder.push(ck)
+	})
+
+	return { Choices, ChoiceOrder, textEntryKeys: [] }
+}
+
 // NPS choices are keyed by the score itself ("0".."10"), no RecodeValues, and
 // the two anchor labels live in ColumnLabels [min, max] — matching the
 // reference survey.
@@ -290,7 +317,7 @@ function buildMatrixAnswers(columns: string[]): Pick<QualtricsQuestionPayload, '
 
 // --- the main transform -------------------------------------------------
 
-export function toQuestionPayload(q: Question, aiTextChecks?: unknown): QualtricsQuestionPayload {
+export function toQuestionPayload(q: Question, aiTextChecks?: unknown, ctx: QuestionPayloadContext = {}): QualtricsQuestionPayload {
 	const triple = typeTripleFor(q)
 	const base: QualtricsQuestionPayload = {
 		QuestionText: mdBlock(q.title),
@@ -317,7 +344,7 @@ export function toQuestionPayload(q: Question, aiTextChecks?: unknown): Qualtric
 			break
 		}
 		case 'scale': {
-			const block = buildChoices(q.options ?? [])
+			const block = q.carry_forward ? buildCarryForwardChoices(q, ctx) : buildChoices(q.options ?? [])
 			base.Choices = block.Choices
 			base.ChoiceOrder = block.ChoiceOrder
 			Object.assign(base, buildMatrixAnswers(q.scale?.columns ?? []))
@@ -380,7 +407,7 @@ interface QuestionLike {
 	DataExportTag?: string
 	QuestionText?: string
 	Validation?: { Settings?: { ForceResponse?: string } & Record<string, unknown> }
-	Choices?: Record<string, { Display?: string; TextEntry?: string }>
+	Choices?: Record<string, { Display?: string; TextEntry?: string; DisplayLogic?: unknown }>
 	ChoiceOrder?: (string | number)[]
 	Answers?: Record<string, { Display?: string }>
 	AnswerOrder?: (string | number)[]
@@ -400,7 +427,8 @@ export function questionSignature(q: QuestionLike): QuestionSignature {
 		validation: JSON.stringify(q.Validation?.Settings ?? {}),
 		choices: choiceOrder.map((k) => {
 			const c = q.Choices?.[k]
-			return stripTags(c?.Display ?? '') + (c?.TextEntry ? ' [TE]' : '')
+			const logic = displayLogicSignature(c?.DisplayLogic)
+			return stripTags(c?.Display ?? '') + (c?.TextEntry ? ' [TE]' : '') + (logic ? ` [DL:${logic}]` : '')
 		}),
 		answers: answerOrder.map((k) => stripTags(q.Answers?.[k]?.Display ?? '')),
 	}

@@ -188,7 +188,7 @@ function runOffline(
 					console.error(`  ! ${id}: referenced in flow but no question file found`)
 					continue
 				}
-				console.log(JSON.stringify(toQuestionPayload(q, aiTextChecks), null, 2))
+				console.log(JSON.stringify(toQuestionPayload(q, aiTextChecks, { questions }), null, 2))
 			}
 		}
 	}
@@ -292,6 +292,7 @@ async function reconcile(
 	// 2. Upsert questions (create into home block, or update in place).
 	const desiredTags = new Set<string>()
 	const qidByTag = new Map<string, string>()
+	for (const [tag, { qid }] of existingByTag) qidByTag.set(tag, qid)
 	for (const block of desiredBlocks) {
 		const blockId = blockIdByName.get(block.name)!
 		for (const group of block.pageGroups) {
@@ -302,8 +303,8 @@ async function reconcile(
 					continue
 				}
 				desiredTags.add(id)
-				const payload = toQuestionPayload(q, aiTextChecks)
 				const existing = existingByTag.get(id)
+				const payload = toQuestionPayload(q, aiTextChecks, { questions, qidByTag })
 				const kind = [payload.QuestionType, payload.Selector, payload.SubSelector].filter(Boolean).join('/')
 
 				try {
@@ -401,7 +402,7 @@ async function reconcile(
 			would(`set display logic on "${id}" (${qid})`)
 		} else {
 			try {
-				const payload = toQuestionPayload(questions[id], aiTextChecks)
+				const payload = toQuestionPayload(questions[id], aiTextChecks, { questions, qidByTag })
 				payload.DisplayLogic = dl
 				await client.updateQuestion(qid, payload)
 				log(`  ⊃ ${id} display logic (${qid})`)

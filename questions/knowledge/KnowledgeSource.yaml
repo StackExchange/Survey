@@ -13,5 +13,6 @@ question:
       - Somewhat important
       - Not very important
       - Least important
-  options:
-    - Sources selected in KnowledgeQ
+  carry_forward:
+    from: KnowledgeQ
+    include_text_entry: true

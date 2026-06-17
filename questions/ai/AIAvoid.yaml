@@ -6,4 +6,9 @@ question:
   type: single_select
   required: false
   options:
-    - '#NAME?'
+    - Environmental concerns
+    - Concern over losing job skills or training an AI to replace you
+    - Issues with privacy or security
+    - Moral or ethical concerns
+    - Difficulty or lack of training
+    - I do not avoid using AI at work or school

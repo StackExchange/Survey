@@ -1,16 +1,43 @@
 <script lang="ts">
 	import { snakeCase } from 'lodash-es'
 	import { answers, setAnswer } from '$lib/store/answers.svelte'
+	import { questions as allQuestions } from '$lib/data/load'
 	import { normaliseOptions } from '$lib/data/options'
+	import type { NormalisedOption } from '$lib/data/options'
 	import type { Question } from '$lib/types'
 	import Markdown from './Markdown.svelte'
 	import KeyBadge from './KeyBadge.svelte'
 
 	let { question }: { question: Question } = $props()
-	const rows = $derived(normaliseOptions(question.options))
+	const rows = $derived(resolveRows(question))
 	const cols = $derived((question.scale?.columns ?? []).map((label) => ({ key: snakeCase(label), label })))
 	const multiple = $derived(question.scale?.multiple ?? false)
 	const value = $derived((answers[question.id] as Record<string, string | string[]> | undefined) ?? {})
+
+	function resolveRows(q: Question): NormalisedOption[] {
+		const carry = q.carry_forward
+		if (!carry) return normaliseOptions(q.options)
+
+		const parent = allQuestions[carry.from]
+		const selected = answers[carry.from]
+		if (!parent || !Array.isArray(selected)) return []
+
+		const parentOptions = normaliseOptions(parent.options)
+		return selected
+			.map((key) => {
+				const opt = parentOptions.find((o) => o.key === key)
+				if (!opt) return undefined
+
+				const textEntryValue = answers[`${carry.from}__${opt.key}`]
+				const label =
+					carry.include_text_entry && opt.textEntry && typeof textEntryValue === 'string' && textEntryValue.trim()
+						? textEntryValue.trim()
+						: opt.label
+
+				return { ...opt, label }
+			})
+			.filter((row): row is NormalisedOption => row !== undefined)
+	}
 
 	function single(rowKey: string, colKey: string) {
 		setAnswer(question.id, { ...value, [rowKey]: colKey })
