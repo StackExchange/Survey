@@ -39,3 +39,6 @@ question:
     - Windsurf
     - Xcode
     - Zed
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

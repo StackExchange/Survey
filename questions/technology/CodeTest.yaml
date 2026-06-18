@@ -19,3 +19,6 @@ question:
     - Bito
     - Sourcery
     - Canary
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

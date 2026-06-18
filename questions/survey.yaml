@@ -13,11 +13,9 @@
 # truth for what a respondent sees.
 # Page-break docs: https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/page-breaks/
 flow:
-  - block: Welcome
-    pages:
-      - [WelcomeText]
   - block: Qualifications
     pages:
+      - [WelcomeText]
       - [Consent]
       - [Age]
   - block: Work, Identity + Skills

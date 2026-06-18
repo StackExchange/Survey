@@ -11,3 +11,35 @@ question:
       - Used for work in past year
       - Would like to use next year
       - Used in agentic workflows
+  options:
+    - Atlassian Confluence
+    - Notion
+    - Microsoft SharePoint
+    - Google Workspace / Google Drive / Google Docs / Google Sites
+    - Stack Internal / Stack Overflow for Teams
+    - Guru
+    - Slab
+    - Coda
+    - Quip
+    - Nuclino
+    - Slite
+    - Tettra
+    - GitBook
+    - ReadMe
+    - Document360
+    - Helpjuice
+    - KnowledgeOwl
+    - Bloomfire
+    - Zendesk Guide
+    - ServiceNow Knowledge Management
+    - Salesforce Knowledge
+    - Freshdesk / Freshservice Knowledge Base
+    - MediaWiki
+    - Wiki.js
+    - DokuWiki
+    - BookStack
+    - Outline
+    - XWiki
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

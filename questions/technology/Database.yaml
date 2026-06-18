@@ -41,3 +41,6 @@ question:
     - Amazon Redshift
     - Pocketbase
     - Valkey
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true
