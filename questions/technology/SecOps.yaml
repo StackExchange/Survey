@@ -11,3 +11,33 @@ question:
       - Used for work in past year
       - Would like to use next year
       - Used in agentic workflows
+  options:
+    - Aqua Security
+    - Auth0
+    - BeyondTrust
+    - Check Point
+    - Checkmarx
+    - Contrast Security
+    - CrowdStrike
+    - CyberArk
+    - Datadog
+    - Delinea
+    - Fortinet
+    - Keycloak
+    - '[Mend.io](http://Mend.io)'
+    - Okta
+    - OneLogin
+    - OpenText
+    - Orca Security
+    - Ping Identity
+    - PortSwigger
+    - SentinelOne
+    - Sonar
+    - Splunk
+    - Tenable
+    - Teleport
+    - Veracode
+    - Wiz
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

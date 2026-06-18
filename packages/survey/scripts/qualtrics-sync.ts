@@ -349,6 +349,21 @@ async function reconcile(
 		}
 	}
 
+	// If a question moved between blocks, Qualtrics can leave the old block
+	// reference around. Remove synced questions from blocks that are no longer
+	// represented by survey.yaml before writing the desired block elements.
+	const desiredBlockNames = new Set(desiredBlocks.map((block) => block.name))
+	const desiredQids = new Set([...desiredTags].map((tag) => qidByTag.get(tag)).filter((qid): qid is string => !!qid))
+	for (const [blockId, block] of Object.entries(def.Blocks ?? {})) {
+		const name = block.Description ?? blockId
+		if (desiredBlockNames.has(name)) continue
+		const elements = block.BlockElements ?? []
+		const cleaned = elements.filter((el) => !(el.Type === 'Question' && el.QuestionID && desiredQids.has(el.QuestionID)))
+		if (cleaned.length === elements.length) continue
+		if (flags.dryRun) would(`remove moved YAML questions from stale block "${name}"`)
+		else await client.updateBlock(block.ID ?? blockId, { Type: block.Type ?? 'Standard', Description: name, BlockElements: cleaned })
+	}
+
 	// 3. Set each block's elements: question order + page breaks between pages.
 	for (const block of desiredBlocks) {
 		const blockId = blockIdByName.get(block.name)!

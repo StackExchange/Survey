@@ -53,3 +53,6 @@ question:
     - Webpack
     - Yandex Cloud
     - Yarn
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

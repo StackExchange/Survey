@@ -26,3 +26,6 @@ question:
     - ChromeOS
     - Pop!\_OS
     - NixOS
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

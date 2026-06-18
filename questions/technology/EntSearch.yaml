@@ -11,3 +11,25 @@ question:
       - Used for work in past year
       - Would like to use next year
       - Used in agentic workflows
+  options:
+    - Algolia
+    - Amazon Kendra
+    - Apache Solr
+    - Azure AI Search / Azure Cognitive Search
+    - Coveo
+    - Elastic / Elasticsearch / Elastic Enterprise Search
+    - Glean
+    - Google Cloud Search / Vertex AI Search
+    - IBM Watson Discovery
+    - Lucidworks
+    - Microsoft Search
+    - MongoDB Atlas Search
+    - OpenSearch
+    - Salesforce Einstein Search
+    - SearchStax
+    - ServiceNow AI Search
+    - Sinequa
+    - Yext
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true

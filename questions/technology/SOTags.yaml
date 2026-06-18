@@ -32,3 +32,6 @@ question:
     - uv
     - Ultralytics
     - visionOS
+    - label: "Other, please specify:"
+      key: other
+      text_entry: true
