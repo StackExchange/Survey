@@ -144,434 +144,465 @@ flow:
                 - hrs_20_29
         then:
           - [JobEase]
+          - if:
+              JobEase:
+                - clear_priorities_or_requirements
+                - access_to_the_right_tools_or_platforms
+                - reliable_systems_infrastructure_or_environments
+                - helpful_documentation_or_knowledge_sharing
+                - supportive_teammates_managers_or_mentors
+                - enough_time_staffing_or_resources
+                - better_processes_workflows_or_coordination
+                - other
+                - nothing_has_made_my_job_easier_in_the_past_6_months
+                - i_m_not_sure
+            then:
+              - [JobEaseAI]
           - [JobDifficulty]
+          - if:
+              JobDifficulty:
+                - unclear_priorities_or_requirements
+                - lack_of_access_to_the_right_tools_or_platforms
+                - unreliable_systems_infrastructure_or_environments
+                - poor_documentation_or_knowledge_sharing
+                - lack_of_support_from_teammates_managers_or_mentors
+                - not_enough_time_staffing_or_resources
+                - inefficient_processes_workflows_or_coordination
+                - other
+                - nothing_has_made_my_job_harder_in_the_past_6_months
+                - i_m_not_sure
+            then:
+              - [JobDifficultyAI]
           - [JobAI]
           - [ToolCount]
       - [Gender]
       - [Country]
       - [Currency]
       - [Compensation]
-  - block: Technology
-    pages:
-      - [TechDropDown]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: programming_language
-            column: None
-            selected: false
-        then:
-          - [Languages]
-          - [CodeTest]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: database
-            column: None
-            selected: false
-        then:
-          - [Databases]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: cloud_platform
-            column: None
-            selected: false
-        then:
-          - [CloudPlat]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: web_technologies
-            column: None
-            selected: false
-        then:
-          - [WebFramework]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: development_environment
-            column: None
-            selected: false
-        then:
-          - [DevIDE]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: community_platform
-            column: None
-            selected: false
-        then:
-          - [CommPlat]
-          - [CommPlatAddl]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: llm
-            column: None
-            selected: false
-        then:
-          - [LLM]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: knowledge_management
-            column: None
-            selected: false
-        then:
-          - [KnowMgmt]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: enterprise_search
-            column: None
-            selected: false
-        then:
-          - [EntSearch]
-      - if:
-          matrix:
-            question: TechDropDown
-            row: security_software
-            column: None
-            selected: false
-        then:
-          - [SecOps]
-      - [BuildTool]
-      - [BuildToolAI]
-      - [Disruption]
-  - block: Community
-    pages:
-      - [SOAccount]
-      - [SOYears]
-      - [SOChange]
-      - [Answers]
-      - [AnswersRecall]
-      - [AnswersTrust]
-      - [CommunityType]
-      - [CommunityGap]
-      - [CommunityFormat]
-      - [CommunitySkills]
-  - block: AI + AI Agents
-    pages:
-      - [AISelect]
-      - if:
-          any:
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Daily
-        then:
-          - [AIDaily]
-      - if:
-          any:
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Monthly/Infrequent
-        then:
-          - [AISentiment]
-          - [AIComplex]
-      - if:
-          any:
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Monthly/Infrequent
-        then:
-          - [AITrust]
-      - if:
-          any:
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Monthly/Infrequent
-        then:
-          - [AIWork]
-          - [AIWorkNext]
-      - if:
-          any:
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_coding_assistants_or_coding_agents
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: general_purpose_ai_chat_tools
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: ai_agents_or_automated_workflows
-                column: Monthly/Infrequent
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Daily
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Weekly
-            - matrix:
-                question: AISelect
-                row: internal_ai_tools_built_by_my_company
-                column: Monthly/Infrequent
-        then:
-          - [AIToolCount]
-          - [AIToolSwitch]
-          - [AIImpact]
-          - [AISat]
-          - [AIRetain]
-      - [AIMem]
-      - [AIOrch]
-      - [AIObs]
-      - [AICodeAgent]
-      - [AINoCode]
-      - [AIAutomate]
-      - [AIUse]
-      - if:
-          AIUse:
-            - ai_use_is_mostly_optional_and_left_up_to_individuals
-            - some_teams_actively_encourage_ai_use_but_practices_vary_across_the_organization
-            - my_organization_provides_approved_ai_tools_and_guidance_for_how_to_use_them
-            - my_organization_expects_some_employees_to_use_ai_tools_for_certain_types_of_work
-            - my_organization_measures_or_evaluates_ai_use_as_part_of_employee_or_team_performance
-            - not_sure
-        then:
-          - [AIAvoid]
-      - [AITry]
-      - [AIAdopt]
-      - [AIToken]
-      - [AICost]
-      - if:
-          AICost:
-            - yes_usage_is_metered_to_manage_costs
-            - yes_i_personally_monitor_my_own_use
-            - yes_i_choose_cheaper_faster_models_when_possible
-            - yes_my_company_team_has_switched_models_vendors_that_are_more_affordable
-            - yes_i_am_more_selective_about_tasks
-        then:
-          - [AICostPrompt]
-  - block: Knowledge - Trust - Context
-    pages:
-      - if:
-          any:
-            - Employment:
-                - employed
-                - independent
-            - EmploymentAddl:
-                - hrs_under_10
-                - hrs_10_19
-                - hrs_20_29
-        then:
-          - [KnowledgeQ]
-      - if:
-          KnowledgeQ:
-            - coworkers_or_teammates
-            - manager_or_leadership
-            - internal_documentation_i_e_design_product_or_planning_docs_wiki_or_knowledge_base
-            - internal_chat_tools_such_as_slack_or_teams
-            - project_management_or_ticketing_tools
-            - code_repositories_or_code_comments
-            - product_vendor_or_api_documentation
-            - meeting_notes_or_transcripts
-            - customer_support_or_sales_information
-            - past_decisions_or_architecture_records
-            - stack_overflow
-            - official_docs
-            - vendor_forum
-            - none_of_these
-            - not_sure
-            - other
-        then:
-          - [KnowledgeAcc]
-          - [KnowledgeTime]
-          - [KnowledgeSource]
-      - if:
-          any:
-            - Employment:
-                - employed
-                - independent
-            - EmploymentAddl:
-                - hrs_under_10
-                - hrs_10_19
-                - hrs_20_29
-        then:
-          - [KnowledgeSourceAI]
-          - [KnowAgentDelegate]
-          - [KnowledgeA]
-          - [TrustReason]
-          - [KnowAgentTrust]
-          - [ContextSelect]
-          - [ContextProblems]
-          - [ContextFreq]
-          - [ContextWork]
+  - randomize: 4
+    even_presentation: true
+    blocks:
+      - block: Technology
+        pages:
+          - [TechDropDown]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: programming_language
+                column: None
+                selected: false
+            then:
+              - [Languages]
+              - [CodeTest]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: database
+                column: None
+                selected: false
+            then:
+              - [Databases]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: cloud_platform
+                column: None
+                selected: false
+            then:
+              - [CloudPlat]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: web_technologies
+                column: None
+                selected: false
+            then:
+              - [WebFramework]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: development_environment
+                column: None
+                selected: false
+            then:
+              - [DevIDE]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: community_platform
+                column: None
+                selected: false
+            then:
+              - [CommPlat]
+              - [CommPlatAddl]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: llm
+                column: None
+                selected: false
+            then:
+              - [LLM]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: knowledge_management
+                column: None
+                selected: false
+            then:
+              - [KnowMgmt]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: enterprise_search
+                column: None
+                selected: false
+            then:
+              - [EntSearch]
+          - if:
+              matrix:
+                question: TechDropDown
+                row: security_software
+                column: None
+                selected: false
+            then:
+              - [SecOps]
+          - [BuildTool]
+          - [BuildToolAI]
+          - [Disruption]
+      - block: Community
+        pages:
+          - [SOAccount]
+          - [SOYears]
+          - [SOChange]
+          - [Answers]
+          - [AnswersRecall]
+          - [AnswersTrust]
+          - [CommunityType]
+          - [CommunityGap]
+          - [CommunityFormat]
+          - [CommunitySkills]
+      - block: AI + AI Agents
+        pages:
+          - [AISelect]
+          - if:
+              any:
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Daily
+            then:
+              - [AIDaily]
+          - if:
+              any:
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Monthly/Infrequent
+            then:
+              - [AISentiment]
+              - [AIComplex]
+          - if:
+              any:
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Monthly/Infrequent
+            then:
+              - [AITrust]
+          - if:
+              any:
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Monthly/Infrequent
+            then:
+              - [AIWork]
+              - [AIWorkNext]
+          - if:
+              any:
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_coding_assistants_or_coding_agents
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: general_purpose_ai_chat_tools
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: ai_agents_or_automated_workflows
+                    column: Monthly/Infrequent
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Daily
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Weekly
+                - matrix:
+                    question: AISelect
+                    row: internal_ai_tools_built_by_my_company
+                    column: Monthly/Infrequent
+            then:
+              - [AIToolCount]
+              - [AIToolSwitch]
+              - [AIImpact]
+              - [AISat]
+              - [AIRetain]
+          - [AIMem]
+          - [AIOrch]
+          - [AIObs]
+          - [AICodeAgent]
+          - [AINoCode]
+          - [AIAutomate]
+          - [AIUse]
+          - if:
+              AIUse:
+                - ai_use_is_mostly_optional_and_left_up_to_individuals
+                - some_teams_actively_encourage_ai_use_but_practices_vary_across_the_organization
+                - my_organization_provides_approved_ai_tools_and_guidance_for_how_to_use_them
+                - my_organization_expects_some_employees_to_use_ai_tools_for_certain_types_of_work
+                - my_organization_measures_or_evaluates_ai_use_as_part_of_employee_or_team_performance
+                - not_sure
+            then:
+              - [AIAvoid]
+          - [AITry]
+          - [AIAdopt]
+          - [AIToken]
+          - [AICost]
+          - if:
+              AICost:
+                - yes_usage_is_metered_to_manage_costs
+                - yes_i_personally_monitor_my_own_use
+                - yes_i_choose_cheaper_faster_models_when_possible
+                - yes_my_company_team_has_switched_models_vendors_that_are_more_affordable
+                - yes_i_am_more_selective_about_tasks
+            then:
+              - [AICostPrompt]
+      - block: Knowledge - Trust - Context
+        pages:
+          - if:
+              any:
+                - Employment:
+                    - employed
+                    - independent
+                - EmploymentAddl:
+                    - hrs_under_10
+                    - hrs_10_19
+                    - hrs_20_29
+            then:
+              - [KnowledgeQ]
+          - if:
+              KnowledgeQ:
+                - coworkers_or_teammates
+                - manager_or_leadership
+                - internal_documentation_i_e_design_product_or_planning_docs_wiki_or_knowledge_base
+                - internal_chat_tools_such_as_slack_or_teams
+                - project_management_or_ticketing_tools
+                - code_repositories_or_code_comments
+                - product_vendor_or_api_documentation
+                - meeting_notes_or_transcripts
+                - customer_support_or_sales_information
+                - past_decisions_or_architecture_records
+                - stack_overflow
+                - official_docs
+                - vendor_forum
+                - none_of_these
+                - not_sure
+                - other
+            then:
+              - [KnowledgeAcc]
+              - [KnowledgeTime]
+              - [KnowledgeSource]
+          - if:
+              any:
+                - Employment:
+                    - employed
+                    - independent
+                - EmploymentAddl:
+                    - hrs_under_10
+                    - hrs_10_19
+                    - hrs_20_29
+            then:
+              - [KnowledgeSourceAI]
+              - [KnowAgentDelegate]
+              - [KnowledgeA]
+              - [TrustReason]
+              - [KnowAgentTrust]
+              - [ContextSelect]
+              - [ContextProblems]
+              - [ContextFreq]
+              - [ContextWork]
   - block: Final Thoughts
     pages:
       - [SurveyLength]

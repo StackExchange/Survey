@@ -13,5 +13,6 @@ question:
     - I’ve become less confident in my own problem-solving
     - I haven’t encountered any problems
     - I don’t use AI tools regularly
-    - label: 'Other (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true

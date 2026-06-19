@@ -19,5 +19,6 @@ question:
     - Other online resources (e.g. standard search, forum, online community)
     - School (i.e., University, College, etc)
     - Stack Overflow or Stack Exchange
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

@@ -29,6 +29,6 @@ question:
     - Substack
     - Medium
     - Company-sponsored forums
-    - label: "Other, please specify:"
+    - label: Other, please specify
       key: other
       text_entry: true

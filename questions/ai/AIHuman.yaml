@@ -15,5 +15,6 @@ question:
     - When I want to compare different solutions
     - When I have ethical or security concerns about code
     - I don’t think I’ll need help from people anymore
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

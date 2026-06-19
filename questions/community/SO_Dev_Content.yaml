@@ -18,5 +18,6 @@ question:
     - Direct messaging of users
     - Job board
     - Day-in-the-life profiles/interviews with experts
-    - label: 'Other (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true

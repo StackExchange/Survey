@@ -2,20 +2,24 @@
 question:
   id: TechEndorse
   version: '2026.1'
-  title: For technology that you love to use at work, school, or on personal projects, what feature is most important to you? Conversely, what feature turns you against a tool you use for work, school, or personal projects?
+  title: Thinking about technologies you enjoy using for work, school, or personal projects, what is the main reason you would recommend one to others? Select one.
   type: single_select
   required: false
   randomize: true
   options:
-    - AI integration or AI Agent capabilities
-    - Easy-to-use API
-    - Robust and complete API
-    - Customizable and manageable codebase
-    - Reputation for quality
-    - Connected to an open-source project
-    - Good brand and public image
-    - Reliability and low latency
-    - Costs are manageable
+    - It helps me be more productive or save time
+    - It is easy to learn and use
+    - It has excellent documentation, examples, or learning resources
+    - It has a strong developer experience, such as APIs, SDKs, tooling, or integrations
+    - It is reliable, performant, and stable
+    - It is flexible, customizable, or easy to adapt to my needs
+    - It has strong security, privacy, or compliance features
+    - It has a strong community, ecosystem, or open-source presence
+    - It has a reputation for quality and long-term trustworthiness
+    - It has manageable cost, pricing, or licensing
+    - It has useful AI features or agent capabilities
     - label: Other, please specify
       key: other
       text_entry: true
+    - I would not recommend any technology I use
+    - I’m not sure

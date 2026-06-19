@@ -15,5 +15,6 @@ question:
     - Marketing
     - Software engineering
     - Robotics
-    - label: 'Other Industry purpose (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true
