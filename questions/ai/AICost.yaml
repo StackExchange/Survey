@@ -8,7 +8,8 @@ question:
   options:
     - Yes, usage is metered to manage costs
     - Yes, I personally monitor my own use
-    - Yes, I choose cheaper/faster models when possible
+    - Yes, I choose cheaper models when possible
+    - Yes, I choose faster models even when they cost more
     - Yes, my company/team has switched models/vendors that are more affordable
     - Yes, I am more selective about tasks
     - No, cost/limits have not affected my usage

@@ -56,6 +56,6 @@ question:
     - Zig
     - Mojo
     - Gleam
-    - label: "Other, please specify:"
+    - label: Other, please specify
       key: other
       text_entry: true

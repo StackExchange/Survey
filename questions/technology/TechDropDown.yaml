@@ -33,6 +33,6 @@ question:
       key: enterprise_search
     - label: I used security software for permissions and compliance operations
       key: security_software
-    - label: "Other, please specify:"
+    - label: Other, please specify
       key: other
       text_entry: true

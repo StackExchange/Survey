@@ -21,5 +21,6 @@ question:
     - Competitive pay and benefits
     - Recognition from peers for your work
     - Recognition from leadership for your work
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

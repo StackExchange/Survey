@@ -16,5 +16,6 @@ question:
     - Comment on Q&A posts
     - Upvote/Downvote Q&A posts
     - Use discussion or chat feature
-    - label: 'Other (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true

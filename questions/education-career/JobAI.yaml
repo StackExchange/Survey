@@ -21,4 +21,6 @@ question:
     - Supportive or unsupportive teammates, managers, or mentors
     - Enough or not enough time, staffing, or resources
     - AI or AI agents
-    - Other
+    - label: Other, please specify
+      key: other
+      text_entry: true

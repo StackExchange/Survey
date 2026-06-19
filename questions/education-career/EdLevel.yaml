@@ -13,5 +13,6 @@ question:
     - Bachelor’s degree (B.A., B.S., B.Eng., etc.)
     - Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
     - Professional degree (JD, MD, Ph.D, Ed.D, etc.)
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

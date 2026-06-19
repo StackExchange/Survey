@@ -1,0 +1,11 @@
+question:
+  id: JobDifficultyAI
+  version: '2026.1'
+  title: Was AI or AI agents a reason this factor made your job harder?
+  type: single_select
+  required: false
+  options:
+    - Yes, AI or AI agents were the main reason
+    - Yes, AI or AI agents contributed, but were not the main reason
+    - No, AI or AI agents were not a reason
+    - I’m not sure

@@ -2,9 +2,10 @@
 question:
   id: JobDifficulty
   version: '2026.1'
-  title: Think about your current role and how often in the past 6 months you have felt your job was harder to do because of aspects of your work setting outside of your control. When things are not working well at work, what do you attribute that to? Select all that apply.
-  type: multi_select
+  title: In the past 6 months, which factor has done the most to make your job harder to do?
+  type: single_select
   required: false
+  randomize: true
   options:
     - Unclear priorities or requirements
     - Lack of access to the right tools or platforms
@@ -12,7 +13,9 @@ question:
     - Poor documentation or knowledge sharing
     - Lack of support from teammates, managers, or mentors
     - Not enough time, staffing, or resources
-    - AI or AI agents
+    - Inefficient processes, workflows, or coordination
     - label: Other, please specify
       key: other
       text_entry: true
+    - Nothing has made my job harder in the past 6 months
+    - I’m not sure

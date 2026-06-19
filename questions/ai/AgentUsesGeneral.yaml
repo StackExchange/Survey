@@ -13,5 +13,6 @@ question:
     - MCP servers
     - Language processing
     - Multi-platform search enablement
-    - label: 'Other specific task (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true

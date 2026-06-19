@@ -28,5 +28,6 @@ question:
     - Generating content or synthetic data
     - Creating or maintaining documentation
     - Learning new concepts or technologies
-    - label: 'Other (write in):'
+    - label: Other, please specify
+      key: other
       text_entry: true

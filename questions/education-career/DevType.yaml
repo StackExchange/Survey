@@ -37,5 +37,6 @@ question:
     - Support engineer or analyst
     - System administrator
     - UX, Research Ops or UI design professional
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true

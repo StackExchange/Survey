@@ -16,5 +16,6 @@ question:
     - Availability of better alternatives
     - Outdated or obsolete technology or features
     - Ethical concerns
-    - label: 'Other (please specify):'
+    - label: Other, please specify
+      key: other
       text_entry: true
