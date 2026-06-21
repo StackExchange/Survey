@@ -6,20 +6,28 @@ question:
   type: single_select
   required: false
   options:
-    - Software Development
-    - Computer Systems Design and Services
-    - Internet, Telecomm or Information Services
-    - Fintech
+    - Agriculture, forestry, fishing, and hunting
+    - Banking/financial services
+    - Broadcasting or publishing
+    - Education
     - Energy
+    - Engineering services or applied R&D
+    - Fintech
     - Government
-    - Banking/Financial Services
-    - Manufacturing
-    - Transportation, or Supply Chain
     - Healthcare
-    - Retail and Consumer Services
-    - Higher Education
-    - Media & Advertising Services
+    - Hospitality or travel
     - Insurance
+    - IT services, consulting, systems integration, or managed services
+    - Life sciences or biotechnology
+    - Manufacturing
+    - Media or advertising services
+    - Mining or construction
+    - Non-profit or social services
+    - Retail, e-commerce or consumer services
+    - Scientific research
+    - Software development
+    - Transportation or supply chain
+    - Utilities, internet or telecommunications
     - label: Other, please specify
       key: other
       text_entry: true

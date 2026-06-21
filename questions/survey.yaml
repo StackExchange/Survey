@@ -144,35 +144,55 @@ flow:
                 - hrs_20_29
         then:
           - [JobEase]
-          - if:
-              JobEase:
-                - clear_priorities_or_requirements
-                - access_to_the_right_tools_or_platforms
-                - reliable_systems_infrastructure_or_environments
-                - helpful_documentation_or_knowledge_sharing
-                - supportive_teammates_managers_or_mentors
-                - enough_time_staffing_or_resources
-                - better_processes_workflows_or_coordination
-                - other
-                - nothing_has_made_my_job_easier_in_the_past_6_months
-                - i_m_not_sure
-            then:
-              - [JobEaseAI]
+      - if:
+          JobEase:
+            - clear_priorities_or_requirements
+            - access_to_the_right_tools_or_platforms
+            - reliable_systems_infrastructure_or_environments
+            - helpful_documentation_or_knowledge_sharing
+            - supportive_teammates_managers_or_mentors
+            - enough_time_staffing_or_resources
+            - better_processes_workflows_or_coordination
+            - other
+            - nothing_has_made_my_job_easier_in_the_past_6_months
+            - im_not_sure
+        then:
+          - [JobEaseAI]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
           - [JobDifficulty]
-          - if:
-              JobDifficulty:
-                - unclear_priorities_or_requirements
-                - lack_of_access_to_the_right_tools_or_platforms
-                - unreliable_systems_infrastructure_or_environments
-                - poor_documentation_or_knowledge_sharing
-                - lack_of_support_from_teammates_managers_or_mentors
-                - not_enough_time_staffing_or_resources
-                - inefficient_processes_workflows_or_coordination
-                - other
-                - nothing_has_made_my_job_harder_in_the_past_6_months
-                - i_m_not_sure
-            then:
-              - [JobDifficultyAI]
+      - if:
+          JobDifficulty:
+            - unclear_priorities_or_requirements
+            - lack_of_access_to_the_right_tools_or_platforms
+            - unreliable_systems_infrastructure_or_environments
+            - poor_documentation_or_knowledge_sharing
+            - lack_of_support_from_teammates_managers_or_mentors
+            - not_enough_time_staffing_or_resources
+            - inefficient_processes_workflows_or_coordination
+            - other
+            - nothing_has_made_my_job_harder_in_the_past_6_months
+            - im_not_sure
+        then:
+          - [JobDifficultyAI]
+      - if:
+          any:
+            - Employment:
+                - employed
+                - independent
+            - EmploymentAddl:
+                - hrs_under_10
+                - hrs_10_19
+                - hrs_20_29
+        then:
           - [JobAI]
           - [ToolCount]
       - [Gender]
@@ -544,7 +564,8 @@ flow:
               AICost:
                 - yes_usage_is_metered_to_manage_costs
                 - yes_i_personally_monitor_my_own_use
-                - yes_i_choose_cheaper_faster_models_when_possible
+                - yes_i_choose_cheaper_models_when_possible
+                - yes_i_choose_faster_models_even_when_they_cost_more
                 - yes_my_company_team_has_switched_models_vendors_that_are_more_affordable
                 - yes_i_am_more_selective_about_tasks
             then:

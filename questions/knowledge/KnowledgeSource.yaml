@@ -2,7 +2,7 @@
 question:
   id: KnowledgeSource
   version: '2026.1'
-  title: For each source, how important is it that information you use to operate is easy to verify, such as when its source is accessible?
+  title: For each source you selected, how important is it that you can quickly check where the information came from before relying on it for work?  By “check where the information came from,” we mean being able to quickly open or review the original source, context, citation, document, message, ticket, dashboard, or person behind the information.
   type: scale
   required: false
   scale:

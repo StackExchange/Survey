@@ -14,5 +14,5 @@ question:
       key: review_maintain
     - label: I manage or support people who create code
       key: manage_support
-    - label: I do not create code.
+    - label: I do not create code
       key: do_not_create_code
