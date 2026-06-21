@@ -7,17 +7,17 @@ question:
   required: false
   randomize: true
   options:
-    - Books / Physical media
+    - Books / physical media
     - Technical documentation (is generated for/by the tool or system)
-    - Coding Bootcamp
+    - Coding bootcamp
     - Colleague or on-the-job training
     - Games or coding challenges
-    - Online Courses or Certification (includes all media types)
-    - AI CodeGen tools or AI-enabled apps
+    - Online courses or certification (includes all media types)
+    - AI codegen tools or AI-enabled apps
     - Blogs or podcasts
     - Videos (not associated with specific online course or certification)
     - Other online resources (e.g. standard search, forum, online community)
-    - School (i.e., University, College, etc)
+    - School (i.e., university, college, etc)
     - Stack Overflow or Stack Exchange
     - label: Other, please specify
       key: other

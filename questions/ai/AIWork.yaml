@@ -6,27 +6,30 @@ question:
   type: scale
   required: false
   scale:
-    multiple: false
+    multiple: true
     columns:
-      - Currently Use AI
-      - Plan to Use AI More
-      - Plan to Use AI Less
-      - Do not plan to use AI
+      - Currently use AI or AI agents for this
+      - Expect to use AI More or AI agents more for this
+      - Expect to use AI or AI agents less for this
+      - Do not use AI or AI agents for this and do not plan to
+      - This is not part of my workflow
   options:
-    - Design
-    - Implementation
-    - Review
-    - Debugging/refactoring
-    - Documentation
-    - Architecture exploration
-    - Communication.
+    - Architecture or technical design exploration
+    - Product, UX, or visual design
     - Generating code in a familiar area
     - Generating code in an unfamiliar area
-    - Writing documentation
-    - Creating/deploying infrastructure to development
-    - Creating/deploying infrastructure to production
-    - Answering simple technical questions
-    - Answering complex technical questions
-    - Writing communication materials
-    - Generating visual/audio elements
-    - Understanding a new codebase.
+    - Understanding or onboarding to a new codebase
+    - Debugging, troubleshooting, or refactoring code
+    - Writing or improving tests
+    - Reviewing code, pull requests, or design decisions
+    - Finding or fixing security issues
+    - Writing documentation, comments, or knowledge base content
+    - Answering straightforward technical questions
+    - Answering complex or ambiguous technical questions
+    - Searching, summarizing, or interpreting internal knowledge
+    - Analyzing data, logs, metrics, or query results
+    - Writing tickets, requirements, plans, or project updates
+    - Writing emails, messages, summaries, or other communication
+    - Creating or configuring development/test environments
+    - Deploying, operating, or troubleshooting production systems
+    - Generating visual, audio, or multimedia elements
