@@ -56,9 +56,11 @@ flow:
         then:
           - [LearnAIHow]
       - if:
-          not:
-            CodeMain:
-              - do_not_create_code
+          CodeMain:
+            - primary_job
+            - occasionally
+            - review_maintain
+            - manage_support
         then:
           - [YearsCode]
       - [WorkExp]
