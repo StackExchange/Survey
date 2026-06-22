@@ -16,6 +16,7 @@ question:
     - ASP.NET
     - ASP.NET Core
     - Astro
+    - Axum
     - Blazor
     - Deno
     - Django
@@ -24,21 +25,27 @@ question:
     - FastAPI
     - Fastify
     - Flask
+    - Hono
+    - htmx
     - jQuery
+    - Koa
     - Laravel
     - NestJS
     - Next.js
     - Node.js
     - Nuxt.js
     - Phoenix
+    - Preact
     - React
+    - Remix
     - Ruby on Rails
+    - SolidJS
     - Spring Boot
     - Svelte
+    - SvelteKit
     - Symfony
     - Vue.js
     - WordPress
-    - Axum
     - label: Other, please specify
       key: other
       text_entry: true

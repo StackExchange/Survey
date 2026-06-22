@@ -1,8 +1,0 @@
-# yaml-language-server: $schema=../question.schema.json
-question:
-  id: CommPlatformHaveEntr
-  version: '2025.1'
-  title: Was the community platform you use not listed above?  List below, separated by a comma and a space for each, what you used in the past year.
-  type: free_text
-  required: false
-  lines: single
