@@ -2,7 +2,7 @@
 question:
   id: LLM
   version: '2026.1'
-  title: Which LLM models for AI tools have you used for work in the past year? Which would you like to use next year? Select all that apply.
+  title: Which LLM model vendors for AI tools have you used for work in the past year? Which would you like to use next year? Select all that apply.
   type: scale
   required: false
   scale:
