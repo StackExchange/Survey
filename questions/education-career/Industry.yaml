@@ -23,11 +23,11 @@ question:
     - Media or advertising services
     - Mining or construction
     - Non-profit or social services
-    - Retail, e-commerce or consumer services
+    - Retail, e-commerce, or consumer services
     - Scientific research
     - Software development
     - Transportation or supply chain
-    - Utilities, internet or telecommunications
+    - Utilities, internet, or telecommunications
     - label: Other, please specify
       key: other
       text_entry: true

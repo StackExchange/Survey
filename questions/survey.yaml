@@ -56,9 +56,11 @@ flow:
         then:
           - [LearnAIHow]
       - if:
-          not:
-            CodeMain:
-              - do_not_create_code
+          CodeMain:
+            - primary_job
+            - occasionally
+            - review_maintain
+            - manage_support
         then:
           - [YearsCode]
       - [WorkExp]
@@ -254,6 +256,161 @@ flow:
                 selected: false
             then:
               - [CommPlat]
+          - if:
+              any:
+                - matrix:
+                    question: CommPlat
+                    row: stack_overflow
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: stack_overflow
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: stack_exchange
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: stack_exchange
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: discord
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: discord
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: reddit
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: reddit
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: dev_to
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: dev_to
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: hacker_news
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: hacker_news
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: hashnode
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: hashnode
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: git_hub_public_projects_not_private_repos
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: git_hub_public_projects_not_private_repos
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: slack_public_channels_not_work
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: slack_public_channels_not_work
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: bluesky
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: bluesky
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: x
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: x
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: kaggle
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: kaggle
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: you_tube
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: you_tube
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: twitch
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: twitch
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: linked_in
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: linked_in
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: substack
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: substack
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: medium
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: medium
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: company_sponsored_forums
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: company_sponsored_forums
+                    column: '**Want** to work with next year'
+                - matrix:
+                    question: CommPlat
+                    row: other
+                    column: '**Worked with** in past year'
+                - matrix:
+                    question: CommPlat
+                    row: other
+                    column: '**Want** to work with next year'
+            then:
               - [CommPlatAddl]
           - if:
               matrix:
