@@ -13,7 +13,7 @@ question:
       - Personal projects
       - None
   options:
-    - label: I used a programming, scripting or markup language to create something visual, in software/hardware or for data
+    - label: I used a programming, scripting, or markup language to create something visual, in software/hardware, or for data
       key: programming_language
     - label: I used a database for storage, querying, deployment
       key: database
@@ -23,7 +23,7 @@ question:
       key: web_technologies
     - label: I used a development environment (IDE) to write code or interact with agent-assisted developer tools
       key: development_environment
-    - label: I used a community platform or online public forum to search, comment, post to or read from
+    - label: I used a community platform or online public forum to search, comment, post to, or read from
       key: community_platform
     - label: I used an LLM (large language model)
       key: llm

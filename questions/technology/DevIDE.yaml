@@ -2,32 +2,34 @@
 question:
   id: DevIDE
   version: '2026.1'
-  title: Which development environments and AI-enabled code editing tools did you use regularly over the past year? Which do you want to work with over the next year? Please check all that apply.
+  title: Which development environments and code editors did you use regularly over the past year? Which do you want to use over the next year? Please check all that apply.
   type: scale
   required: false
   scale:
     multiple: true
     columns:
-      - '**Worked with** in past year'
-      - '**Want** to work with next year'
-      - Used in agents
+      - Used in past year
+      - Want to use next year
   options:
-    - Aider
     - Android Studio
-    - Bolt
-    - Claude Code
-    - Cline and/or Roo
+    - CLion
     - Cursor
     - Eclipse
+    - Emacs
+    - GitHub Codespaces
+    - GoLand
     - IntelliJ IDEA
     - Jupyter Notebook/JupyterLab
-    - Lovable.dev
+    - Kiro
     - Nano
+    - NetBeans
     - Neovim
     - Notepad++
     - PhpStorm
     - PyCharm
+    - Replit
     - Rider
+    - RubyMine
     - RustRover
     - Sublime Text
     - Trae
