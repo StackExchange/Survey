@@ -11,14 +11,43 @@ question:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
   options:
-    - CodeRabbit
-    - Greptile
-    - Qodo (formerly Codium)
-    - Graphite
-    - Ellipsis
-    - Bito
-    - Sourcery
+    - Appium
+    - BrowserStack
     - Canary
+    - CodeRabbit
+    - Codecov
+    - CodeQL
+    - Cucumber
+    - Cypress
+    - Datadog
+    - DeepSource
+    - Ellipsis
+    - ESLint
+    - Graphite
+    - Greptile
+    - JaCoCo
+    - Jest
+    - JUnit
+    - k6
+    - Mocha
+    - New Relic
+    - NUnit
+    - Playwright
+    - Postman / Newman
+    - pytest
+    - Qodo
+    - Robot Framework
+    - RSpec
+    - Selenium
+    - Semgrep
+    - Sentry
+    - SonarQube / SonarCloud
+    - Sourcery
+    - Snyk Code
+    - Testcontainers
+    - TestNG
+    - Vitest
+    - xUnit.net
     - label: Other, please specify
       key: other
       text_entry: true

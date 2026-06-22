@@ -1,8 +1,0 @@
-# yaml-language-server: $schema=../question.schema.json
-question:
-  id: LanguagesHaveEntry
-  version: '2025.1'
-  title: Was the programming language you use not listed above?  List below, separated by a comma and a space for each, the programming language(s) **you used in the past year**.
-  type: free_text
-  required: false
-  lines: single

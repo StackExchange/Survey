@@ -11,47 +11,62 @@ question:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
   options:
+    - Akamai Connected Cloud / Linode
     - Amazon Web Services (AWS)
     - Ansible
     - APT
+    - Bazel
     - Bun
     - Cargo
     - Chocolatey
     - Cloudflare
+    - CMake
     - Composer
-    - Datadog
-    - Digital Ocean
-    - Docker
+    - Conda
+    - DigitalOcean
+    - Docker / Docker Compose
     - Firebase
+    - Fly.io
     - Google Cloud
     - Gradle
+    - Helm
     - Heroku
+    - Hetzner Cloud
     - Homebrew
     - IBM Cloud
     - Kubernetes
     - Make
-    - Maven (build tool)
+    - Maven
     - Microsoft Azure
     - MSBuild
     - Netlify
-    - New Relic
+    - Nix
     - Ninja
     - npm
     - NuGet
+    - OpenShift
+    - OpenTofu
+    - Oracle Cloud Infrastructure (OCI)
+    - OVHcloud
     - Pacman
-    - Pip
+    - pip
     - pnpm
     - Podman
     - Poetry
-    - Prometheus
+    - Pulumi
     - Railway
-    - Splunk
+    - Rancher
+    - Render
+    - RubyGems / Bundler
+    - Scaleway
     - Supabase
     - Terraform
+    - uv
     - Vercel
     - Vite
+    - Vultr
     - Webpack
-    - Yandex Cloud
+    - Winget
     - Yarn
     - label: Other, please specify
       key: other
