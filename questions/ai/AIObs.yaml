@@ -11,35 +11,36 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Respan
-    - LangSmith
-    - Weights & Biases
-    - MLflow
-    - Langfuse
-    - Arize AI
-    - Helicone
-    - Traceloop
-    - Datadog LLM
-    - HoneyHive
-    - Braintrust
-    - Promptfoo
-    - Patronus AI
-    - Humanloop
-    - Portkey
-    - Sentry
-    - DeepEval
-    - Ragas
-    - Galileo AI
-    - LangWatch
-    - PromptLayer
-    - Confident AI
-    - Opik
     - Agenta
-    - Future AGI
-    - Lunary
-    - Parea AI
-    - Sentrial
-    - Athina AI
-    - Moda
+    - Arize AI
     - Ashr
+    - Athina AI
+    - Braintrust
     - Chamber
+    - Datadog Agent / LLM
+    - DeepEval / Confident AI
+    - Evidently AI
+    - Future AGI
+    - Galileo AI
+    - Helicone
+    - HoneyHive
+    - Humanloop
+    - Langfuse
+    - LangSmith
+    - LangWatch
+    - Lunary
+    - MLflow
+    - Moda
+    - OpenAI Evals
+    - Opik
+    - Parea AI
+    - Patronus AI
+    - Portkey
+    - Promptfoo
+    - PromptLayer
+    - Ragas
+    - Respan
+    - Sentrial
+    - Sentry
+    - Traceloop
+    - W&B Weave

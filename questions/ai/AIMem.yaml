@@ -11,12 +11,12 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Mem0
-    - Letta
-    - Zep
-    - LangMem
-    - Supermemory
     - Cognee
     - Graphiti
     - Hyperspell
+    - LangMem
+    - Letta
     - Memary
+    - Mem0
+    - Supermemory
+    - Zep

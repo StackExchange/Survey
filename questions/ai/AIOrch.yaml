@@ -11,25 +11,27 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - LangChain
-    - LangGraph
-    - Strands
-    - OpenAI Agents SDK
-    - Llama Stack
-    - GripTape
-    - CrewAI
-    - Google ADK
-    - AutoGen
-    - Vercel AI SDK
-    - Dify
-    - DSPy
-    - Semantic Kernel
-    - Instructor
-    - Pydantic AI
-    - Hermes Agent
+    - "21st.dev"
     - Agno
     - Atomic Agents
-    - Smolagents
-    - '21st.dev'
-    - Terminal Use
+    - AutoGen
+    - CrewAI
+    - Dify
+    - DSPy
+    - Google ADK
+    - GripTape
+    - Hatchet
+    - Hermes Agent
+    - Instructor
+    - Kestra
+    - LangChain
+    - LangGraph
+    - Llama Stack
     - Mastra
+    - OpenAI Agents SDK
+    - Pydantic AI
+    - Semantic Kernel
+    - Smolagents
+    - Strands
+    - Terminal Use
+    - Vercel AI SDK

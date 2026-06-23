@@ -1,8 +1,0 @@
-# yaml-language-server: $schema=../question.schema.json
-question:
-  id: AIModelsWantEntry
-  version: '2025.1'
-  title: Was the LLM model for AI tools you want to use not listed above?  List below, separated by a comma and a space for each, what **you want to use next year**.
-  type: free_text
-  required: false
-  lines: single

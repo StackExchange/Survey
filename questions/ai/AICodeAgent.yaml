@@ -11,36 +11,36 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
+    - Aider
+    - Amazon Q Developer
+    - Approxima
+    - Augment Code
+    - BLACKBOX AI
     - Claude Code
+    - Cline
+    - Codium (Qodo)
+    - Continue
     - Cursor
-    - OpenAI Codex
+    - Devin
+    - ECA
+    - Emdash
+    - Gemini Code Assist
     - GitHub Copilot
     - Google Antigravity
-    - Windsurf
-    - Devin
     - Google Jules
-    - Warp
-    - Cline
-    - Mistral Vibe
-    - Amazon Q Developer
-    - Aider
-    - BLACKBOX AI
-    - Gemini Code Assist
-    - Sourcegraph Cody
-    - Replit Agent
-    - Kilo Code
-    - JetBrains AI
-    - Continue
-    - Trae
-    - Tabnine
+    - JetBrains Junie
     - Kavia AI
-    - Codium (Qodo)
-    - Supermaven
-    - Augment Code
-    - Pi
-    - Sweep
+    - Kilo Code
+    - Mistral Vibe
     - Open Code
-    - ECA
+    - OpenAI Codex
+    - Pi
+    - Replit Agent
+    - Sourcegraph Cody
+    - Supermaven
+    - Sweep
     - Syntropy
-    - Approxima
-    - Emdash
+    - Tabnine
+    - Trae
+    - Warp
+    - Windsurf

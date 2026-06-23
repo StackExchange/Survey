@@ -11,16 +11,16 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Zapier
-    - n8n
-    - Make
-    - Gumloop
-    - Temporal
-    - DBOS
-    - Relay.app
-    - Prefect
-    - Bubble Lab
-    - Trigger.dev
-    - Inngest
     - Activepieces
+    - Airtable Automations
+    - Bubble Lab
     - Cofia
+    - Gumloop
+    - Lindy
+    - Make
+    - n8n
+    - Prefect
+    - Relay.app
+    - Temporal
+    - Trigger.dev
+    - Zapier
