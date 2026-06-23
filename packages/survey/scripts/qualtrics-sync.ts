@@ -199,6 +199,7 @@ function runOffline(
 	// DisplayLogic preview. Offline we have no QIDs, so stand in the parent id
 	// for the QID; positions and structure are still real.
 	const offlineResolve: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
+		if (!key) return { qid: parentId, pos: 0 }
 		const parent = questions[parentId]
 		const idx = (parent?.options ?? []).findIndex((o) => optionKey(o) === key)
 		const answerIdx = matrixAnswerKey
@@ -391,6 +392,7 @@ async function reconcile(
 	const resolveChoice: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
 		const qid = qidByTag.get(parentId)
 		if (!qid) throw new Error(`references parent "${parentId}" which was not synced`)
+		if (!key) return { qid, pos: 0 }
 		const pq = questions[parentId]
 		if (!pq) throw new Error(`references parent "${parentId}" with no question file`)
 		const idx = (pq.options ?? []).findIndex((o) => optionKey(o) === key)

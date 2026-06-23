@@ -143,7 +143,7 @@ export type PageEntry =
 			then: [PageEntry, ...PageEntry[]]
 	  }
 /**
- * Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Combine with `any`, `all`, `not`.
+ * Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Selected-answer leaves are `{ selected_answer: { question } }`. Selected-count leaves are `{ selected_count: { question, greater_than } }`. Combine with `any`, `all`, `not`.
  */
 export type Condition =
 	| {
@@ -170,6 +170,17 @@ export type Condition =
 				 * Defaults to true. Set false to encode 'matrix row / column is not selected'.
 				 */
 				selected?: boolean
+			}
+	  }
+	| {
+			selected_count: {
+				question: string
+				greater_than: number
+			}
+	  }
+	| {
+			selected_answer: {
+				question: string
 			}
 	  }
 	| {

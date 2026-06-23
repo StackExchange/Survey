@@ -445,7 +445,7 @@ export function signaturesEqual(a: QuestionSignature, b: QuestionSignature): boo
 // A respondent answers a parent question; condition leaves name either a
 // parent choice row or a matrix row + column. The resolver turns those into the
 // Qualtrics question id (QID) and 1-based positions.
-export type ChoiceResolver = (parentId: string, optionKey: string, answerKey?: string) => { qid: string; pos: number; answerPos?: number }
+export type ChoiceResolver = (parentId: string, optionKey?: string, answerKey?: string) => { qid: string; pos: number; answerPos?: number }
 
 export interface DisplayLogicExpression {
 	LogicType: 'Question'
@@ -454,9 +454,10 @@ export interface DisplayLogicExpression {
 	QuestionIsInLoop: 'no'
 	ChoiceLocator: string
 	LeftOperand: string
-	Operator: 'Selected' | 'NotSelected'
+	Operator: 'Selected' | 'NotSelected' | 'GreaterThan'
 	Type: 'Expression'
 	Conjuction?: 'And' | 'Or'
+	RightOperand?: string
 }
 
 export interface DisplayLogic {
@@ -468,9 +469,11 @@ export interface DisplayLogic {
 // One conjunction term, before resolution to a QID/position.
 interface Term {
 	parentId: string
-	optionKey: string
+	optionKey?: string
 	answerKey?: string
-	operator: 'Selected' | 'NotSelected'
+	operator: 'Selected' | 'NotSelected' | 'GreaterThan'
+	countGreaterThan?: number
+	selectedAnswer?: boolean
 }
 interface Clause {
 	join: 'And' | 'Or'
@@ -480,6 +483,9 @@ interface Clause {
 // Negate a clause (De Morgan): flip the join and every operator. This is how a
 // `not` over a leaf maps to AND-ed NotSelected expressions in the reference.
 function negate(c: Clause): Clause {
+	if (c.terms.some((t) => t.operator === 'GreaterThan')) {
+		throw new Error('selected-count conditions cannot be negated for Qualtrics display logic')
+	}
 	return {
 		join: c.join === 'And' ? 'Or' : 'And',
 		terms: c.terms.map((t) => ({ ...t, operator: t.operator === 'Selected' ? 'NotSelected' : 'Selected' })),
@@ -533,6 +539,34 @@ function flattenCondition(cond: Condition, context: string): Clause {
 			],
 		}
 	}
+	if (c.selected_count && typeof c.selected_count === 'object') {
+		const m = c.selected_count as { question?: string; greater_than?: number }
+		if (!m.question || typeof m.greater_than !== 'number') throw new Error(`invalid selected-count condition (${context})`)
+		return {
+			join: 'Or',
+			terms: [
+				{
+					parentId: m.question,
+					operator: 'GreaterThan',
+					countGreaterThan: m.greater_than,
+				},
+			],
+		}
+	}
+	if (c.selected_answer && typeof c.selected_answer === 'object') {
+		const m = c.selected_answer as { question?: string; selected?: boolean }
+		if (!m.question) throw new Error(`invalid selected-answer condition (${context})`)
+		return {
+			join: 'Or',
+			terms: [
+				{
+					parentId: m.question,
+					operator: m.selected === false ? 'NotSelected' : 'Selected',
+					selectedAnswer: true,
+				},
+			],
+		}
+	}
 
 	// Leaf: { ParentQuestionId: key | [keys] } — true iff the parent's answer is
 	// one of the listed keys, i.e. an OR of Selected.
@@ -568,6 +602,39 @@ function expr(
 	return e
 }
 
+function countExpr(qid: string, greaterThan: number, conjunction?: 'And' | 'Or'): DisplayLogicExpression {
+	const locator = `q://${qid}/SelectedAnswerCount/1`
+	const e: DisplayLogicExpression = {
+		LogicType: 'Question',
+		QuestionID: qid,
+		QuestionIDFromLocator: qid,
+		QuestionIsInLoop: 'no',
+		ChoiceLocator: locator,
+		LeftOperand: locator,
+		Operator: 'GreaterThan',
+		RightOperand: String(greaterThan),
+		Type: 'Expression',
+	}
+	if (conjunction) e.Conjuction = conjunction
+	return e
+}
+
+function selectedAnswerExpr(qid: string, operator: 'Selected' | 'NotSelected', conjunction?: 'And' | 'Or'): DisplayLogicExpression {
+	const locator = `q://${qid}/SelectableAnswer/1`
+	const e: DisplayLogicExpression = {
+		LogicType: 'Question',
+		QuestionID: qid,
+		QuestionIDFromLocator: qid,
+		QuestionIsInLoop: 'no',
+		ChoiceLocator: locator,
+		LeftOperand: locator,
+		Operator: operator,
+		Type: 'Expression',
+	}
+	if (conjunction) e.Conjuction = conjunction
+	return e
+}
+
 // Translate a survey.yaml Condition into a Qualtrics DisplayLogic
 // BooleanExpression (a single conjunction group). Throws if a parent/option
 // can't be resolved or the condition can't be flattened to one group.
@@ -575,6 +642,17 @@ export function buildDisplayLogic(cond: Condition, resolve: ChoiceResolver, cont
 	const clause = flattenCondition(cond, context)
 	const group: Record<string, unknown> = { Type: 'If' }
 	clause.terms.forEach((t, i) => {
+		if (t.operator === 'GreaterThan') {
+			const { qid } = resolve(t.parentId)
+			group[String(i)] = countExpr(qid, t.countGreaterThan ?? 0, i > 0 ? clause.join : undefined)
+			return
+		}
+		if (t.selectedAnswer) {
+			const { qid } = resolve(t.parentId)
+			group[String(i)] = selectedAnswerExpr(qid, t.operator, i > 0 ? clause.join : undefined)
+			return
+		}
+		if (!t.optionKey) throw new Error(`missing option key in display logic (${context})`)
 		const { qid, pos, answerPos } = resolve(t.parentId, t.optionKey, t.answerKey)
 		group[String(i)] = expr(qid, pos, t.operator, i > 0 ? clause.join : undefined, answerPos)
 	})
@@ -591,8 +669,8 @@ export function displayLogicSignature(dl: unknown): string {
 		if (gk === 'Type' || gk === 'inPage' || !group || typeof group !== 'object') continue
 		for (const [ek, e] of Object.entries(group as Record<string, unknown>)) {
 			if (ek === 'Type' || !e || typeof e !== 'object') continue
-			const ex = e as { Operator?: string; LeftOperand?: string; Conjuction?: string }
-			out.push(`${gk}.${ek}:${ex.Operator ?? ''}:${ex.LeftOperand ?? ''}:${ex.Conjuction ?? ''}`)
+			const ex = e as { Operator?: string; LeftOperand?: string; Conjuction?: string; RightOperand?: string }
+			out.push(`${gk}.${ek}:${ex.Operator ?? ''}:${ex.LeftOperand ?? ''}:${ex.RightOperand ?? ''}:${ex.Conjuction ?? ''}`)
 		}
 	}
 	return out.sort().join('|')

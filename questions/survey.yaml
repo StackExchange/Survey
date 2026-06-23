@@ -203,320 +203,59 @@ flow:
         pages:
           - [TechDropDown]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: programming_language
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: programming_language
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: programming_language
-                    column: Personal projects
+              TechDropDown:
+                - programming_language
             then:
               - [Languages]
               - [CodeTest]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: database
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: database
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: database
-                    column: Personal projects
+              TechDropDown:
+                - database
             then:
               - [Databases]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: cloud_platform
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: cloud_platform
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: cloud_platform
-                    column: Personal projects
+              TechDropDown:
+                - cloud_platform
             then:
               - [CloudPlat]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: web_technologies
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: web_technologies
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: web_technologies
-                    column: Personal projects
+              TechDropDown:
+                - web_technologies
             then:
               - [WebFramework]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: development_environment
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: development_environment
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: development_environment
-                    column: Personal projects
+              TechDropDown:
+                - development_environment
             then:
               - [DevIDE]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: community_platform
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: community_platform
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: community_platform
-                    column: Personal projects
+              TechDropDown:
+                - community_platform
             then:
               - [CommPlat]
           - if:
-              any:
-                - matrix:
-                    question: CommPlat
-                    row: stack_overflow
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: stack_overflow
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: stack_exchange
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: stack_exchange
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: discord
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: discord
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: reddit
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: reddit
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: dev_to
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: dev_to
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: hacker_news
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: hacker_news
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: hashnode
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: hashnode
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: git_hub_public_projects_not_private_repos
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: git_hub_public_projects_not_private_repos
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: slack_public_channels_not_work
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: slack_public_channels_not_work
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: bluesky
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: bluesky
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: x
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: x
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: kaggle
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: kaggle
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: you_tube
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: you_tube
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: twitch
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: twitch
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: linked_in
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: linked_in
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: substack
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: substack
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: medium
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: medium
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: company_sponsored_forums
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: company_sponsored_forums
-                    column: '**Want** to work with next year'
-                - matrix:
-                    question: CommPlat
-                    row: other
-                    column: '**Worked with** in past year'
-                - matrix:
-                    question: CommPlat
-                    row: other
-                    column: '**Want** to work with next year'
+              selected_answer:
+                question: CommPlat
             then:
               - [CommPlatAddl]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: llm
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: llm
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: llm
-                    column: Personal projects
+              TechDropDown:
+                - llm
             then:
               - [LLM]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: knowledge_management
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: knowledge_management
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: knowledge_management
-                    column: Personal projects
+              TechDropDown:
+                - knowledge_management
             then:
               - [KnowMgmt]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: enterprise_search
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: enterprise_search
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: enterprise_search
-                    column: Personal projects
+              TechDropDown:
+                - enterprise_search
             then:
               - [EntSearch]
           - if:
-              any:
-                - matrix:
-                    question: TechDropDown
-                    row: security_software
-                    column: Work
-                - matrix:
-                    question: TechDropDown
-                    row: security_software
-                    column: School
-                - matrix:
-                    question: TechDropDown
-                    row: security_software
-                    column: Personal projects
+              TechDropDown:
+                - security_software
             then:
               - [SecOps]
           - [BuildTool]
@@ -567,23 +306,8 @@ flow:
             then:
               - [AIFreq]
           - if:
-              any:
-                - matrix:
-                    question: AIFreq
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Daily
-                - matrix:
-                    question: AIFreq
-                    row: general_purpose_ai_chat_tools
-                    column: Daily
-                - matrix:
-                    question: AIFreq
-                    row: ai_agents_or_automated_workflows
-                    column: Daily
-                - matrix:
-                    question: AIFreq
-                    row: internal_ai_tools_built_by_my_company
-                    column: Daily
+              selected_answer:
+                question: AIFreq
             then:
               - [AIDaily]
           - if:
@@ -612,13 +336,10 @@ flow:
           - [AIAutomate]
           - [AIUse]
           - if:
-              AIUse:
-                - ai_use_is_mostly_optional_and_left_up_to_individuals
-                - some_teams_actively_encourage_ai_use_but_practices_vary_across_the_organization
-                - my_organization_provides_approved_ai_tools_and_guidance_for_how_to_use_them
-                - my_organization_expects_some_employees_to_use_ai_tools_for_certain_types_of_work
-                - my_organization_measures_or_evaluates_ai_use_as_part_of_employee_or_team_performance
-                - not_sure
+              Employment:
+                - employed
+                - independent
+                - student
             then:
               - [AIAvoid]
           - [AITry]

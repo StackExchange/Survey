@@ -13,7 +13,7 @@
 	},
 	"definitions": {
 		"condition": {
-			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Combine with `any`, `all`, `not`.",
+			"description": "Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Selected-answer leaves are `{ selected_answer: { question } }`. Selected-count leaves are `{ selected_count: { question, greater_than } }`. Combine with `any`, `all`, `not`.",
 			"oneOf": [
 				{
 					"type": "object",
@@ -64,6 +64,37 @@
 									"type": "boolean",
 									"description": "Defaults to true. Set false to encode 'matrix row / column is not selected'."
 								}
+							}
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["selected_count"],
+					"additionalProperties": false,
+					"properties": {
+						"selected_count": {
+							"type": "object",
+							"required": ["question", "greater_than"],
+							"additionalProperties": false,
+							"properties": {
+								"question": { "type": "string", "minLength": 1 },
+								"greater_than": { "type": "number" }
+							}
+						}
+					}
+				},
+				{
+					"type": "object",
+					"required": ["selected_answer"],
+					"additionalProperties": false,
+					"properties": {
+						"selected_answer": {
+							"type": "object",
+							"required": ["question"],
+							"additionalProperties": false,
+							"properties": {
+								"question": { "type": "string", "minLength": 1 }
 							}
 						}
 					}
