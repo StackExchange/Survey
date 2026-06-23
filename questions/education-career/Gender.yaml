@@ -9,7 +9,7 @@ question:
     - Woman
     - Man
     - Non-binary
-    - label: 'Prefer to self-describe: ____'
+    - label: 'Prefer to self-describe:'
       key: self_describe
       text_entry: true
     - label: Prefer not to say

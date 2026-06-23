@@ -13,9 +13,10 @@ question:
     - Helpful documentation or knowledge sharing
     - Supportive teammates, managers, or mentors
     - Enough time, staffing, or resources
+    - Leadership activity or organizational changes
     - Better processes, workflows, or coordination
+    - Nothing has made my job easier in the past 6 months
+    - I’m not sure
     - label: Other, please specify
       key: other
       text_entry: true
-    - Nothing has made my job easier in the past 6 months
-    - I’m not sure

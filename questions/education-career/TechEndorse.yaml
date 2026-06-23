@@ -18,8 +18,8 @@ question:
     - It has a reputation for quality and long-term trustworthiness
     - It has manageable cost, pricing, or licensing
     - It has useful AI features or agent capabilities
+    - I would not recommend any technology I use
+    - I’m not sure
     - label: Other, please specify
       key: other
       text_entry: true
-    - I would not recommend any technology I use
-    - I’m not sure

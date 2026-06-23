@@ -266,8 +266,10 @@ function buildCarryForwardChoices(q: Question, ctx: QuestionPayloadContext): Cho
 	const sourceQid = ctx.qidByTag?.get(sourceId) ?? sourceId
 	const Choices: Record<string, QualtricsChoice> = {}
 	const ChoiceOrder: string[] = []
+	const allowKeys = q.options?.length ? new Set(q.options.map(optionKey)) : undefined
 
 	parent.options.forEach((opt, i) => {
+		if (allowKeys && !allowKeys.has(optionKey(opt))) return
 		const ck = String(i + 1)
 		const choice: QualtricsChoice = { Display: mdInline(optionLabel(opt)) }
 		if (q.carry_forward?.include_text_entry && isTextEntry(opt)) choice.Display = `\${q://${sourceQid}/ChoiceTextEntryValue/${ck}}`

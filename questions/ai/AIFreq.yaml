@@ -1,14 +1,20 @@
 # yaml-language-server: $schema=../question.schema.json
 question:
-  id: AISelect
+  id: AIFreq
   version: '2026.1'
-  title: Do you currently use AI tools or AI agents in your role at work?
-  type: multi_select
+  title: How often do you use each of these AI tools or AI agents in your role at work?
+  type: scale
   required: false
+  scale:
+    multiple: false
+    columns:
+      - Daily
+      - Weekly
+      - Monthly or Infrequent
+  carry_forward:
+    from: AISelect
   options:
     - AI coding assistants or coding agents
     - General-purpose AI chat tools
     - AI agents or automated workflows
     - Internal AI tools built by my company
-    - label: I don’t use AI tools
-      key: dont_use_ai_tools

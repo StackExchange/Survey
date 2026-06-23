@@ -1,11 +1,16 @@
 question:
   id: JobEaseAI
   version: '2026.1'
-  title: Was AI or AI agents a reason this factor made your job easier?
-  type: single_select
+  title: For each factor that made your job easier, was AI or AI agents a reason?
+  type: scale
   required: false
-  options:
-    - Yes, AI or AI agents were the main reason
-    - Yes, AI or AI agents contributed, but were not the main reason
-    - No, AI or AI agents were not a reason
-    - I’m not sure
+  scale:
+    multiple: false
+    columns:
+      - Yes, AI or AI agents were the main reason
+      - Yes, AI or AI agents contributed, but were not the main reason
+      - No, AI or AI agents were not a reason
+      - I’m not sure
+  carry_forward:
+    from: JobEase
+    include_text_entry: true
