@@ -21,9 +21,23 @@ function selectedKeys(answer: Answer): Set<string> {
 	return new Set() // numbers/objects/free-text aren't choice answers
 }
 
+function selectedAnswerCount(answer: Answer): number {
+	if (answer === undefined || answer === null) return 0
+	if (Array.isArray(answer)) return answer.length
+	if (typeof answer === 'string') return answer ? 1 : 0
+	if (typeof answer !== 'object') return 0
+
+	return Object.values(answer as Record<string, string | string[] | undefined>).reduce((count, value) => {
+		if (Array.isArray(value)) return count + value.length
+		return value ? count + 1 : count
+	}, 0)
+}
+
 export function evaluate(expr: Condition, answers: Record<string, Answer>, questions: Record<string, Question>): boolean {
 	const rawExpr = expr as unknown as {
 		matrix?: { question: string; row: string; column: string; selected?: boolean }
+		selected_count?: { question: string; greater_than: number }
+		selected_answer?: { question: string }
 	}
 
 	if ('any' in expr && Array.isArray(expr.any)) {
@@ -45,6 +59,16 @@ export function evaluate(expr: Condition, answers: Record<string, Answer>, quest
 		const columnKey = snakeCase(column)
 		const isSelected = Array.isArray(rowValue) ? rowValue.includes(columnKey) : rowValue === columnKey
 		return selected ? isSelected : !isSelected
+	}
+	if (rawExpr.selected_count) {
+		const { question: parentId, greater_than } = rawExpr.selected_count
+		if (!questions[parentId]) return false
+		return selectedAnswerCount(answers[parentId]) > greater_than
+	}
+	if (rawExpr.selected_answer) {
+		const { question: parentId } = rawExpr.selected_answer
+		if (!questions[parentId]) return false
+		return selectedAnswerCount(answers[parentId]) > 0
 	}
 
 	// Leaf: { ParentId: keyOrKeys }

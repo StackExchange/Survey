@@ -24,6 +24,8 @@ function joinGroups(parts: ConditionToken[][], sep: string): ConditionToken[] {
 export function tokenizeCondition(expr: Condition, negated = false): ConditionToken[] {
 	const rawExpr = expr as unknown as {
 		matrix?: { question: string; row: string; column: string; selected?: boolean }
+		selected_count?: { question: string; greater_than: number }
+		selected_answer?: { question: string }
 	}
 
 	if ('any' in expr && Array.isArray(expr.any)) {
@@ -43,6 +45,14 @@ export function tokenizeCondition(expr: Condition, negated = false): ConditionTo
 		const selected = rawExpr.matrix.selected ?? true
 		const op = negated ? (selected ? 'is not selected' : 'is selected') : selected ? 'is selected' : 'is not selected'
 		return [{ qid: rawExpr.matrix.question }, { text: ` row '${rawExpr.matrix.row}' / column '${rawExpr.matrix.column}' ${op}` }]
+	}
+	if (rawExpr.selected_count) {
+		const op = negated ? 'has no selections greater than' : 'has selections greater than'
+		return [{ qid: rawExpr.selected_count.question }, { text: ` ${op} ${rawExpr.selected_count.greater_than}` }]
+	}
+	if (rawExpr.selected_answer) {
+		const op = negated ? 'has no selected answers' : 'has a selected answer'
+		return [{ qid: rawExpr.selected_answer.question }, { text: ` ${op}` }]
 	}
 
 	const entries = Object.entries(expr)
