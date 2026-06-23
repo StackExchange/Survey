@@ -11,21 +11,21 @@ question:
       - Used in the past year
       - Want to use in the next 6 months
   options:
-    - Replit
-    - v0
-    - Lovable
-    - Bolt.new
-    - Create
     - Base44
-    - Voiceflow
+    - Bolt.new
     - Botpress
-    - Langflow
+    - Create
+    - Dify
     - Flowise
-    - Stack AI
+    - Langflow
+    - Lovable
     - Marblism
+    - MindStudio
     - Pickaxe
     - Relevance AI
-    - Wordware
-    - Sparkles
-    - Glue
+    - Replit Agent
     - Rivet
+    - Stack AI
+    - v0
+    - Voiceflow
+    - Wordware
