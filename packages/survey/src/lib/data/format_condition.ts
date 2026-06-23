@@ -42,10 +42,7 @@ export function tokenizeCondition(expr: Condition, negated = false): ConditionTo
 	if (rawExpr.matrix) {
 		const selected = rawExpr.matrix.selected ?? true
 		const op = negated ? (selected ? 'is not selected' : 'is selected') : selected ? 'is selected' : 'is not selected'
-		return [
-			{ qid: rawExpr.matrix.question },
-			{ text: ` row '${rawExpr.matrix.row}' / column '${rawExpr.matrix.column}' ${op}` },
-		]
+		return [{ qid: rawExpr.matrix.question }, { text: ` row '${rawExpr.matrix.row}' / column '${rawExpr.matrix.column}' ${op}` }]
 	}
 
 	const entries = Object.entries(expr)

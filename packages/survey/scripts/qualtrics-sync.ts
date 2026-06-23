@@ -201,7 +201,9 @@ function runOffline(
 	const offlineResolve: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
 		const parent = questions[parentId]
 		const idx = (parent?.options ?? []).findIndex((o) => optionKey(o) === key)
-		const answerIdx = matrixAnswerKey ? (questions[parentId]?.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey) : -1
+		const answerIdx = matrixAnswerKey
+			? (questions[parentId]?.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey)
+			: -1
 		const pos = parent?.type === 'nps' ? Number(key) : idx + 1
 		return { qid: parentId, pos, answerPos: matrixAnswerKey ? answerIdx + 1 : undefined }
 	}

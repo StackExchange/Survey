@@ -12,76 +12,76 @@ export interface SurveyQuestion {
 		/**
 		 * Stable identifier; used as the Qualtrics DataExportTag and as the filename.
 		 */
-		id: string;
+		id: string
 		/**
 		 * Survey release version this question shipped under, e.g. 2025.1.
 		 */
-		version: string;
+		version: string
 		/**
 		 * The prompt as Markdown. **bold**, *italic*, [text](url), and `- ` lists are supported.
 		 */
-		title: string;
-		type: "single_select" | "multi_select" | "nps" | "free_text" | "rank" | "scale" | "display" | "meta";
-		required: boolean;
+		title: string
+		type: 'single_select' | 'multi_select' | 'nps' | 'free_text' | 'rank' | 'scale' | 'display' | 'meta'
+		required: boolean
 		/**
 		 * Optional. Implicit default false. Set to true to mark a question retired but kept on file.
 		 */
-		deprecated?: boolean;
+		deprecated?: boolean
 		/**
 		 * Optional. Implicit default [].
 		 */
-		tags?: string[];
+		tags?: string[]
 		/**
 		 * Optional. Implicit default "". Why this question exists / what it tracks.
 		 */
-		rationale?: string;
+		rationale?: string
 		/**
 		 * Optional. Implicit default []. Year-by-year changelog of edits.
 		 */
 		history?: {
-			version: string;
-			changes: string;
-		}[];
+			version: string
+			changes: string
+		}[]
 		/**
 		 * Render variant for type:single_select.
 		 */
-		display?: "dropdown";
+		display?: 'dropdown'
 		/**
 		 * Required for type:free_text.
 		 */
-		lines?: "single" | "multi";
+		lines?: 'single' | 'multi'
 		/**
 		 * Shuffle option order; pin any text_entry choice to the end.
 		 */
-		randomize?: boolean;
+		randomize?: boolean
 		validate?: {
-			type: "number" | "email" | "phone" | "zip" | "date" | "selection_count";
-			min?: number;
-			max?: number;
-			decimals?: number;
-		};
+			type: 'number' | 'email' | 'phone' | 'zip' | 'date' | 'selection_count'
+			min?: number
+			max?: number
+			decimals?: number
+		}
 		/**
 		 * NPS-style scale lower bound.
 		 */
-		scale_min?: number;
+		scale_min?: number
 		/**
 		 * NPS-style scale upper bound.
 		 */
-		scale_max?: number;
+		scale_max?: number
 		scale_labels?: {
-			min?: string;
-			max?: string;
-		};
+			min?: string
+			max?: string
+		}
 		/**
 		 * Required for type:scale.
 		 */
 		scale?: {
-			multiple: boolean;
+			multiple: boolean
 			/**
 			 * @minItems 1
 			 */
-			columns: [string, ...string[]];
-		};
+			columns: [string, ...string[]]
+		}
 		/**
 		 * For scale questions, derive row statements from the selected options of a previous choice question.
 		 */
@@ -89,46 +89,46 @@ export interface SurveyQuestion {
 			/**
 			 * Question id whose selected options should become this question's row statements.
 			 */
-			from: string;
+			from: string
 			/**
 			 * When true, use the respondent's text-entry value as the carried-forward row label.
 			 */
-			include_text_entry?: boolean;
-		};
+			include_text_entry?: boolean
+		}
 		options?: (
 			| string
 			| {
-					label: string;
+					label: string
 					/**
 					 * Override the implicit slug; referenced by `if/then` blocks in survey.yaml. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools).
 					 */
-					key?: string;
+					key?: string
 					/**
 					 * Free-input choice (the 'Other (please specify)' pattern).
 					 */
-					text_entry?: boolean;
+					text_entry?: boolean
 			  }
-		)[];
-	};
+		)[]
+	}
 }
 
 export type FlowElement =
 	| {
-			block: string;
-			pages: PageEntry[];
+			block: string
+			pages: PageEntry[]
 	  }
 	| {
-			randomize: number;
-			even_presentation?: boolean;
+			randomize: number
+			even_presentation?: boolean
 			/**
 			 * @minItems 1
 			 */
-			blocks: [FlowElement, ...FlowElement[]];
+			blocks: [FlowElement, ...FlowElement[]]
 	  }
 	| {
-			if: Condition;
-			then: FlowElement[];
-	  };
+			if: Condition
+			then: FlowElement[]
+	  }
 /**
  * One page within a block. A single id, a list of ids on the same page, or an if/then wrapping a list of pages that should only show when the condition holds.
  */
@@ -136,12 +136,12 @@ export type PageEntry =
 	| string
 	| [string, ...string[]]
 	| {
-			if: Condition;
+			if: Condition
 			/**
 			 * @minItems 1
 			 */
-			then: [PageEntry, ...PageEntry[]];
-	  };
+			then: [PageEntry, ...PageEntry[]]
+	  }
 /**
  * Boolean expression over respondent answers. Used by the `if` field of branch and page-level if/then blocks. Choice leaves are `{ParentQuestionId: [optionKey, …]}`. Matrix leaves are `{ matrix: { question, row, column, selected } }`. Combine with `any`, `all`, `not`.
  */
@@ -150,37 +150,36 @@ export type Condition =
 			/**
 			 * @minItems 1
 			 */
-			any: [Condition, ...Condition[]];
+			any: [Condition, ...Condition[]]
 	  }
 	| {
 			/**
 			 * @minItems 1
 			 */
-			all: [Condition, ...Condition[]];
+			all: [Condition, ...Condition[]]
 	  }
 	| {
-			not: Condition;
+			not: Condition
 	  }
 	| {
 			matrix: {
-				question: string;
-				row: string;
-				column: string;
+				question: string
+				row: string
+				column: string
 				/**
 				 * Defaults to true. Set false to encode 'matrix row / column is not selected'.
 				 */
-				selected?: boolean;
-			};
+				selected?: boolean
+			}
 	  }
 	| {
-			[k: string]: string | [string, ...string[]];
-	  };
+			[k: string]: string | [string, ...string[]]
+	  }
 
 /**
  * Top-level survey.yaml: the flow Qualtrics presents to respondents.
  */
 export interface SurveyStructure {
-	flow: FlowElement[];
-	[k: string]: unknown;
+	flow: FlowElement[]
+	[k: string]: unknown
 }
-
