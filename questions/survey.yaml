@@ -336,13 +336,10 @@ flow:
           - [AIAutomate]
           - [AIUse]
           - if:
-              AIUse:
-                - ai_use_is_mostly_optional_and_left_up_to_individuals
-                - some_teams_actively_encourage_ai_use_but_practices_vary_across_the_organization
-                - my_organization_provides_approved_ai_tools_and_guidance_for_how_to_use_them
-                - my_organization_expects_some_employees_to_use_ai_tools_for_certain_types_of_work
-                - my_organization_measures_or_evaluates_ai_use_as_part_of_employee_or_team_performance
-                - not_sure
+              Employment:
+                - employed
+                - independent
+                - student
             then:
               - [AIAvoid]
           - [AITry]

@@ -2,7 +2,7 @@
 question:
   id: KnowledgeA
   version: '2026.1'
-  title: In a typical week, how much time do you spend looking for information you need to do your work?
+  title: In a typical week, how much time do you spend looking for information you need to do your work?  Please provide a whole number representing hours per week, rounding up to the nearest whole number if needed.
   type: free_text
   required: false
   lines: single
