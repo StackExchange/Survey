@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
 .svelte-kit
+/deno.lock
 
 # Pipeline output — rebuilt from packages/archive/ by packages/db/.
 data/db/*
