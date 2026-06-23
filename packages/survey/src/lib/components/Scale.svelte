@@ -23,7 +23,9 @@
 		if (!parent || !Array.isArray(selected)) return []
 
 		const parentOptions = normaliseOptions(parent.options)
+		const allowKeys = q.options?.length ? new Set(normaliseOptions(q.options).map((o) => o.key)) : undefined
 		return selected
+			.filter((key) => !allowKeys || allowKeys.has(String(key)))
 			.map((key) => {
 				const opt = parentOptions.find((o) => o.key === key)
 				if (!opt) return undefined

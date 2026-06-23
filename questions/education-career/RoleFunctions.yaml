@@ -2,15 +2,25 @@
 question:
   id: RoleFunctions
   version: '2026.1'
-  title: In a typical week, which of the following job functions do you need to do your work?
+  title: In a typical week, which of the following activities are part of your work? Select all that apply.
   type: multi_select
   required: false
   options:
+    - Writing, editing, or generating code
     - Debugging or troubleshooting
-    - Making a technical design or architecture decision
-    - Changing production code or infrastructure
-    - Responding to a customer or stakeholder question
-    - Investigating an incident or outage
-    - Onboarding to a new project or codebase
-    - Choosing between technical approaches
-    - Letting an AI agent take action (autonomously, without you directing each step).
+    - Reviewing code, pull requests, or technical changes
+    - Writing or maintaining tests
+    - Writing or updating documentation
+    - Making technical design or architecture decisions
+    - Planning, scoping, or estimating work
+    - Changing production code, systems, or infrastructure
+    - Deploying or releasing software
+    - Monitoring systems, logs, metrics, or alerts
+    - Investigating an incident, outage, or production issue
+    - Maintaining dependencies, packages, or development environments
+    - Finding or fixing security, privacy, or compliance issues
+    - Analyzing data, reports, or business metrics
+    - Onboarding to a new project, tool, system, or codebase
+    - Answering questions from teammates, customers, users, or stakeholders
+    - Coordinating work across teams or functions
+    - None of the above

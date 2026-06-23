@@ -2,7 +2,7 @@
 question:
   id: CommPlatAddl
   version: '2026.1'
-  title: Which creators from [PIPE IN FROM CommPlat] do you use to keep up with the latest technology news? Write them in below. Separate each with a comma.
+  title: Which creators from community platforms do you use to keep up with the latest technology news? Write them in below. Separate each with a comma.
   type: free_text
   required: false
   lines: multi

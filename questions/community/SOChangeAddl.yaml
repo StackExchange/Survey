@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOChangeAddl
+  version: '2026.1'
+  title: In your own words, what changed about how you use Stack Overflow?
+  type: free_text
+  required: false
+  lines: multi

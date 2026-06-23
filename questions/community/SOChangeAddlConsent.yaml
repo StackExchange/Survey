@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: SOChangeAddlConsent
+  version: '2026.1'
+  title: May we use your response about how your Stack Overflow usage has changed?
+  type: single_select
+  required: false
+  options:
+    - label: I agree to allow Stack to share my statement above publicly.
+      key: public
+    - label: I agree to share my statement for Stack Research Team review only.
+      key: research_only

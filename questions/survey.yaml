@@ -156,8 +156,6 @@ flow:
             - enough_time_staffing_or_resources
             - better_processes_workflows_or_coordination
             - other
-            - nothing_has_made_my_job_easier_in_the_past_6_months
-            - im_not_sure
         then:
           - [JobEaseAI]
       - if:
@@ -181,8 +179,6 @@ flow:
             - not_enough_time_staffing_or_resources
             - inefficient_processes_workflows_or_coordination
             - other
-            - nothing_has_made_my_job_harder_in_the_past_6_months
-            - im_not_sure
         then:
           - [JobDifficultyAI]
       - if:
@@ -195,7 +191,6 @@ flow:
                 - hrs_10_19
                 - hrs_20_29
         then:
-          - [JobAI]
           - [ToolCount]
       - [Gender]
       - [Country]
@@ -452,245 +447,67 @@ flow:
           - [SOAccount]
           - [SOYears]
           - [SOChange]
+          - if:
+              SOChange:
+                - visit_less_for_simple_questions
+                - visit_more_for_verification_for_example_source_attribution
+                - ask_fewer_questions
+                - ask_more_advanced_questions
+                - contribute_less
+                - contribute_more
+                - visit_so_more_because_ai_generated_answers_lead_you_there
+                - other
+                - no_change
+            then:
+              - [SOChangeAddl, SOChangeAddlConsent]
           - [Answers]
           - [AnswersRecall]
           - [AnswersTrust]
           - [CommunityType]
           - [CommunityGap]
-          - [CommunityFormat]
           - [CommunitySkills]
       - block: AI + AI Agents
         pages:
           - [AISelect]
           - if:
               any:
+                - AISelect:
+                    - ai_coding_assistants_or_coding_agents
+                    - general_purpose_ai_chat_tools
+                    - ai_agents_or_automated_workflows
+                    - internal_ai_tools_built_by_my_company
+            then:
+              - [AIFreq]
+          - if:
+              any:
                 - matrix:
-                    question: AISelect
+                    question: AIFreq
                     row: ai_coding_assistants_or_coding_agents
                     column: Daily
                 - matrix:
-                    question: AISelect
+                    question: AIFreq
                     row: general_purpose_ai_chat_tools
                     column: Daily
                 - matrix:
-                    question: AISelect
+                    question: AIFreq
                     row: ai_agents_or_automated_workflows
                     column: Daily
                 - matrix:
-                    question: AISelect
+                    question: AIFreq
                     row: internal_ai_tools_built_by_my_company
                     column: Daily
             then:
               - [AIDaily]
           - if:
-              any:
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Monthly/Infrequent
+              not:
+                AISelect:
+                  - dont_use_ai_tools
             then:
               - [AISentiment]
               - [AIComplex]
-          - if:
-              any:
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Monthly/Infrequent
-            then:
               - [AITrust]
-          - if:
-              any:
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Monthly/Infrequent
-            then:
               - [AIWork]
               - [AIWorkNext]
-          - if:
-              any:
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_coding_assistants_or_coding_agents
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: general_purpose_ai_chat_tools
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: ai_agents_or_automated_workflows
-                    column: Monthly/Infrequent
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Daily
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Weekly
-                - matrix:
-                    question: AISelect
-                    row: internal_ai_tools_built_by_my_company
-                    column: Monthly/Infrequent
-            then:
               - [AIToolCount]
               - [AIToolSwitch]
               - [AIImpact]

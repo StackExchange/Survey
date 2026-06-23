@@ -2,7 +2,7 @@
 question:
   id: Role
   version: '2026.1'
-  title: Which of the following describes your current job or the job you had for the most time in the past year?
+  title: Which of the following best describes your current role, or the role you held for the most time in the past year?
   type: single_select
   required: false
   options:
@@ -16,6 +16,7 @@ question:
     - Data or business analyst
     - Data scientist
     - Database administrator or engineer
+    - Developer advocate or developer relations professional
     - Developer, AI apps or physical AI
     - Developer, back-end
     - Developer, desktop or enterprise applications
@@ -26,17 +27,22 @@ question:
     - Developer, mobile
     - Developer, QA or test
     - DevOps engineer or professional
+    - Educator or instructor
     - Engineering manager
     - Financial analyst or engineer
-    - Founder, technology or otherwise
+    - Founder or entrepreneur
+    - Hardware engineer
     - Product manager
     - Project manager
     - Retired
     - Senior executive (C-suite, VP, etc.)
+    - Site reliability engineer
+    - Solutions engineer, implementation engineer, or forward-deployed engineer
     - Student
     - Support engineer or analyst
     - System administrator
-    - UX, Research Ops or UI design professional
+    - Technical writer or documentation professional
+    - UX, research, or UI design professional
     - label: Other, please specify
       key: other
       text_entry: true
