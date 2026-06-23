@@ -2,7 +2,7 @@
 question:
   id: CommPlat
   version: '2026.1'
-  title: Which community platforms have you used considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.
+  title: Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.
   type: scale
   required: false
   scale:
