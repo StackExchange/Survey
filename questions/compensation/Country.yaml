@@ -4,7 +4,7 @@ question:
   version: '2026.1'
   title: Where do you live?
   type: single_select
-  required: false
+  required: true
   display: dropdown
   options:
     - United States of America

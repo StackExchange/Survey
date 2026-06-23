@@ -21,3 +21,6 @@ question:
     - I intentionally limit context because of privacy or security concerns
     - I usually have the context I need
     - Not applicable
+    - label: Other, please specify
+      key: other
+      text_entry: true

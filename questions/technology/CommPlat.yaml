@@ -11,24 +11,24 @@ question:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
   options:
-    - Stack Overflow
-    - Stack Exchange
-    - Discord
-    - Reddit
+    - Bluesky
+    - Company-sponsored forums
     - Dev.to
+    - Discord
+    - GitHub (public projects, not private repos)
     - Hacker News
     - Hashnode
-    - GitHub (public projects, not private repos)
-    - Slack (public channels, not work)
-    - Bluesky
-    - X
     - Kaggle
-    - YouTube
-    - Twitch
     - LinkedIn
-    - Substack
     - Medium
-    - Company-sponsored forums
+    - Reddit
+    - Slack (public channels, not work)
+    - Stack Exchange
+    - Stack Overflow
+    - Substack
+    - Twitch
+    - X
+    - YouTube
     - label: Other, please specify
       key: other
       text_entry: true
