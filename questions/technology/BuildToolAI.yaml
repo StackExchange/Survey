@@ -5,10 +5,11 @@ question:
   title: Which of the following, if any, has your team built with AI assistance in the past 12 months?
   type: multi_select
   required: false
+  carry_forward:
+    from: BuildTool
   options:
     - Small scripts/automations
     - Team-level internal tools
     - Cross-team/platform tools
     - Customer-facing products
     - Replacing paid vendors
-    - None

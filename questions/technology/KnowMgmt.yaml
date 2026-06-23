@@ -13,33 +13,25 @@ question:
       - Used in agentic workflows
   options:
     - Atlassian Confluence
-    - Notion
-    - Microsoft SharePoint
-    - Google Workspace / Google Drive / Google Docs / Google Sites
-    - Stack Internal / Stack Overflow for Teams
-    - Guru
-    - Slab
+    - Bloomfire
+    - BookStack
     - Coda
-    - Quip
-    - Nuclino
-    - Slite
-    - Tettra
-    - GitBook
-    - ReadMe
     - Document360
+    - DokuWiki
+    - Google Workspace / Google Drive / Google Docs
+    - Guru
     - Helpjuice
     - KnowledgeOwl
-    - Bloomfire
-    - Zendesk Guide
-    - ServiceNow Knowledge Management
-    - Salesforce Knowledge
-    - Freshdesk / Freshservice Knowledge Base
-    - MediaWiki
-    - Wiki.js
-    - DokuWiki
-    - BookStack
+    - Microsoft SharePoint
+    - Notion
+    - Nuclino
     - Outline
+    - Quip
+    - ServiceNow Knowledge Management
+    - Slab
+    - Stack Internal / Stack Overflow for Teams
     - XWiki
+    - Zendesk Guide
     - label: Other, please specify
       key: other
       text_entry: true

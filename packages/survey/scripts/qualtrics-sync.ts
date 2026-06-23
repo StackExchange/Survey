@@ -18,10 +18,11 @@
 //   QUALTRICS_SURVEY_ID   target existing survey, e.g. SV_xxxxx
 //
 // Usage:
-//   tsx scripts/qualtrics-sync.ts [--dry-run] [--prune] [--verbose]
-//   --dry-run  read-only GET + full reconcile, print WOULD-write actions
-//   --prune    allow deleting questions/blocks that are gone from YAML
-//   --verbose  print per-question decisions
+//   tsx scripts/qualtrics-sync.ts [--dry-run] [--prune] [--verbose] [--force-display-logic]
+//   --dry-run              read-only GET + full reconcile, print WOULD-write actions
+//   --prune                allow deleting questions/blocks that are gone from YAML
+//   --verbose              print per-question decisions
+//   --force-display-logic  overwrite all YAML-managed DisplayLogic, even when signatures match
 // With no QUALTRICS_API_TOKEN, runs offline: prints the transformed payloads
 // only (no network), so the transforms can be eyeballed without credentials.
 
@@ -145,6 +146,7 @@ interface Flags {
 	dryRun: boolean
 	prune: boolean
 	verbose: boolean
+	forceDisplayLogic: boolean
 }
 
 function parseFlags(argv: string[]): Flags {
@@ -152,6 +154,7 @@ function parseFlags(argv: string[]): Flags {
 		dryRun: argv.includes('--dry-run'),
 		prune: argv.includes('--prune'),
 		verbose: argv.includes('--verbose'),
+		forceDisplayLogic: argv.includes('--force-display-logic'),
 	}
 }
 
@@ -196,9 +199,11 @@ function runOffline(
 	// DisplayLogic preview. Offline we have no QIDs, so stand in the parent id
 	// for the QID; positions and structure are still real.
 	const offlineResolve: ChoiceResolver = (parentId, key, matrixAnswerKey) => {
-		const idx = (questions[parentId]?.options ?? []).findIndex((o) => optionKey(o) === key)
+		const parent = questions[parentId]
+		const idx = (parent?.options ?? []).findIndex((o) => optionKey(o) === key)
 		const answerIdx = matrixAnswerKey ? (questions[parentId]?.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey) : -1
-		return { qid: parentId, pos: idx + 1, answerPos: matrixAnswerKey ? answerIdx + 1 : undefined }
+		const pos = parent?.type === 'nps' ? Number(key) : idx + 1
+		return { qid: parentId, pos, answerPos: matrixAnswerKey ? answerIdx + 1 : undefined }
 	}
 	console.log('\n# DisplayLogic (parent id stands in for QID)')
 	for (const [id, condition] of conds) {
@@ -388,7 +393,7 @@ async function reconcile(
 		if (!pq) throw new Error(`references parent "${parentId}" with no question file`)
 		const idx = (pq.options ?? []).findIndex((o) => optionKey(o) === key)
 		if (idx < 0) throw new Error(`references option "${key}" not found on "${parentId}"`)
-		if (!matrixAnswerKey) return { qid, pos: idx + 1 }
+		if (!matrixAnswerKey) return { qid, pos: pq.type === 'nps' ? Number(key) : idx + 1 }
 
 		const answerIdx = (pq.scale?.columns ?? []).findIndex((col) => answerKey(col) === matrixAnswerKey)
 		if (answerIdx < 0) throw new Error(`references matrix column "${matrixAnswerKey}" not found on "${parentId}"`)
@@ -409,7 +414,7 @@ async function reconcile(
 			continue
 		}
 		const existingDL = qid.startsWith('NEW:') ? undefined : def.Questions[qid]?.DisplayLogic
-		if (displayLogicSignature(dl) === displayLogicSignature(existingDL)) {
+		if (!flags.forceDisplayLogic && displayLogicSignature(dl) === displayLogicSignature(existingDL)) {
 			counts.logicUnchanged++
 			continue
 		}

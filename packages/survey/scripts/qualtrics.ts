@@ -335,7 +335,7 @@ export function toQuestionPayload(q: Question, aiTextChecks?: unknown, ctx: Ques
 		case 'single_select':
 		case 'multi_select':
 		case 'rank': {
-			const block = buildChoices(q.options ?? [])
+			const block = q.carry_forward ? buildCarryForwardChoices(q, ctx) : buildChoices(q.options ?? [])
 			base.Choices = block.Choices
 			base.ChoiceOrder = block.ChoiceOrder
 			if (q.randomize) base.Randomization = buildRandomization(block.ChoiceOrder, block.textEntryKeys)

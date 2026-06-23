@@ -6,3 +6,7 @@ question:
   type: free_text
   required: false
   lines: single
+  validate:
+    type: number
+    min: 1
+    max: 100

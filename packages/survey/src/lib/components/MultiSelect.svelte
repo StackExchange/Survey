@@ -1,14 +1,31 @@
 <script lang="ts">
 	import { answers, setAnswer } from '$lib/store/answers.svelte'
+	import { questions as allQuestions } from '$lib/data/load'
 	import { normaliseOptions } from '$lib/data/options'
 	import type { Question } from '$lib/types'
 	import Markdown from './Markdown.svelte'
 	import KeyBadge from './KeyBadge.svelte'
 
 	let { question }: { question: Question } = $props()
-	const opts = $derived(normaliseOptions(question.options))
+	const opts = $derived(resolveOptions(question))
 	const selected = $derived((answers[question.id] as string[] | undefined) ?? [])
 	const maxSelections = $derived(question.validate?.type === 'selection_count' ? question.validate.max : undefined)
+
+	function resolveOptions(q: Question) {
+		const carry = q.carry_forward
+		if (!carry) return normaliseOptions(q.options)
+
+		const parent = allQuestions[carry.from]
+		const parentSelected = answers[carry.from]
+		if (!parent || !Array.isArray(parentSelected)) return []
+
+		const parentOptions = normaliseOptions(parent.options)
+		const allowKeys = q.options?.length ? new Set(normaliseOptions(q.options).map((o) => o.key)) : undefined
+		return parentSelected
+			.filter((key) => !allowKeys || allowKeys.has(String(key)))
+			.map((key) => parentOptions.find((o) => o.key === key))
+			.filter((opt): opt is NonNullable<typeof opt> => opt !== undefined)
+	}
 
 	function toggle(key: string) {
 		const set = new Set(selected)
