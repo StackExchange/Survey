@@ -2,9 +2,6 @@
 
 # Stack Overflow Developer Survey
 
-> [!NOTE]
-> This repository is a work in progress. The 2026 Stack Overflow Developer Survey is being built here, and some current question content still reflects the 2025 survey while the next instrument takes shape.
-
 This repository contains the public question bank, survey flow, validation schemas, preview tooling, and historical archive for the Stack Overflow Annual Developer Survey. The goal is to make the survey instrument easier to inspect, discuss, improve, and maintain over time.
 
 You can view the current live survey preview at [stackoverflow-survey-preview.netlify.app](https://stackoverflow-survey-preview.netlify.app/). It reflects the latest deployed copy of the survey preview from this repository.
