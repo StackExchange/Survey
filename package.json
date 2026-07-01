@@ -15,8 +15,8 @@
 	"license": "Apache-2.0",
 	"devDependencies": {
 		"netlify-cli": "^26.1.0",
-		"prettier": "^3.8.1",
-		"prettier-plugin-svelte": "^4.1.0",
+		"prettier": "^3.9.4",
+		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.0"
 	},
 	"dependencies": {
