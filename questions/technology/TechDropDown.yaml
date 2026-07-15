@@ -2,11 +2,11 @@
 question:
   id: TechDropDown
   version: '2026.1'
-  title: In the last 12 months, has your role at work, school, or in personal projects intersected with any of the following types of work involving technology? Consider what you used in each context. If you had more than one role in a context, refer to all roles within that setting that you held in the last 12 months. Select all that apply.
+  title: In the last 12 months, has your role at work, school, or in personal projects intersected with any of the following types of settings involving technology? We are going to ask you about to ask you about tools you used within each setting next. Select all that apply.
   type: multi_select
   required: false
   options:
-    - label: I used a programming, scripting, or markup language to create something visual, in software/hardware, or for data
+    - label: I used a programming, scripting, or markup language for any reason
       key: programming_language
     - label: I used a database for storage, querying, deployment
       key: database

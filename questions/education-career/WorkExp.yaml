@@ -2,7 +2,7 @@
 question:
   id: WorkExp
   version: '2026.1'
-  title: How many years have you been working professionally in total? Please round to the nearest whole number, excluding any decimal points.
+  title: How many years have you been working professionally in total? Please round to the nearest whole number, excluding any decimal points.&nbsp; If you have no professional work experience, you can leave this question unanswered.
   type: free_text
   required: false
   lines: single

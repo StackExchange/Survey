@@ -202,62 +202,22 @@ flow:
       - block: Technology
         pages:
           - [TechDropDown]
-          - if:
-              TechDropDown:
-                - programming_language
-            then:
-              - [Languages]
-              - [CodeTest]
-          - if:
-              TechDropDown:
-                - database
-            then:
-              - [Databases]
-          - if:
-              TechDropDown:
-                - cloud_platform
-            then:
-              - [CloudPlat]
-          - if:
-              TechDropDown:
-                - web_technologies
-            then:
-              - [WebFramework]
-          - if:
-              TechDropDown:
-                - development_environment
-            then:
-              - [DevIDE]
-          - if:
-              TechDropDown:
-                - community_platform
-            then:
-              - [CommPlat]
+          - [Languages]
+          - [CodeTest]
+          - [Databases]
+          - [CloudPlat]
+          - [WebFramework]
+          - [DevIDE]
+          - [CommPlat]
           - if:
               selected_answer:
                 question: CommPlat
             then:
               - [CommPlatAddl]
-          - if:
-              TechDropDown:
-                - llm
-            then:
-              - [LLM]
-          - if:
-              TechDropDown:
-                - knowledge_management
-            then:
-              - [KnowMgmt]
-          - if:
-              TechDropDown:
-                - enterprise_search
-            then:
-              - [EntSearch]
-          - if:
-              TechDropDown:
-                - security_software
-            then:
-              - [SecOps]
+          - [LLM]
+          - [KnowMgmt]
+          - [EntSearch]
+          - [SecOps]
           - [BuildTool]
           - if:
               BuildTool:

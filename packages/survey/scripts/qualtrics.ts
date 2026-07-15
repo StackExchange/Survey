@@ -402,6 +402,18 @@ export interface QuestionSignature {
 	answers: string[]
 }
 
+function stableStringify(value: unknown): string {
+	if (Array.isArray(value)) return `[${value.map(stableStringify).join(',')}]`
+	if (value && typeof value === 'object') {
+		const obj = value as Record<string, unknown>
+		return `{${Object.keys(obj)
+			.sort()
+			.map((k) => `${JSON.stringify(k)}:${stableStringify(obj[k])}`)
+			.join(',')}}`
+	}
+	return JSON.stringify(value)
+}
+
 interface QuestionLike {
 	QuestionType?: string
 	Selector?: string
@@ -426,7 +438,7 @@ export function questionSignature(q: QuestionLike): QuestionSignature {
 		dataExportTag: q.DataExportTag ?? '',
 		text: stripTags(q.QuestionText ?? ''),
 		forceResponse: q.Validation?.Settings?.ForceResponse ?? '',
-		validation: JSON.stringify(q.Validation?.Settings ?? {}),
+		validation: stableStringify(q.Validation?.Settings ?? {}),
 		choices: choiceOrder.map((k) => {
 			const c = q.Choices?.[k]
 			const logic = displayLogicSignature(c?.DisplayLogic)
