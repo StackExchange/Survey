@@ -2,6 +2,8 @@
   base = "packages/archive"
   publish = "."
 
-[[edge_functions]]
-  function = "survey-banner"
-  path = "/*"
+# Dispays a promo banner across the index and all archived surveys
+# see: packages/archive/netlify/edge-functions/survey-banner.ts
+#[[edge_functions]]
+#  function = "survey-banner"
+#  path = "/*"
