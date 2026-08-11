@@ -12,13 +12,14 @@ question:
     - Coding bootcamp
     - Colleague or on-the-job training
     - Games or coding challenges
-    - Online courses or certification (includes all media types)
-    - AI codegen tools or AI-enabled apps
+    - Online courses or certification
+    - AI (codegen tools or chat apps)
     - Blogs or podcasts
-    - Videos (not associated with specific online course or certification)
+    - Videos (i.e. Youtube)
     - Other online resources (e.g. standard search, forum, online community)
     - School (i.e., university, college, etc)
     - Stack Overflow or Stack Exchange
+    - Reviewing GitHub projects or existing code repositories
     - label: Other, please specify
       key: other
       text_entry: true

@@ -12,3 +12,6 @@ question:
     - Moral or ethical concerns
     - Difficulty or lack of training
     - I do not avoid using AI at work or school
+    - label: 'Other, please specify:'
+      key: other
+      text_entry: true
