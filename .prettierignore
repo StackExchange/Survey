@@ -1,2 +1,17 @@
+# Package managers
 package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Build output
+build/
+.output/
+.svelte-kit/
+
+# Static assets, served as-is
+packages/results/static/
+
+# Historical result sites, kept as published
 packages/archive/

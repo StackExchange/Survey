@@ -10,4 +10,5 @@ question:
     - About half of the time
     - Less than half of the time
     - Rarely, almost never
-    - I don't use AI or AI-enabled tools
+    - label: I don't use AI or AI-enabled tools
+      short: Don't use AI tools

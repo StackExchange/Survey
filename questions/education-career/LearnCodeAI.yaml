@@ -12,4 +12,5 @@ question:
       key: personal
     - No, I learned something that was not related to AI or AI enablement as **required for my job or to benefit my career**
     - No, I learned something that was not related to AI or AI enablement for **my personal curiosity and/or hobbies**
-    - No, I didn't spend time learning in the past year
+    - label: No, I didn't spend time learning in the past year
+      short: No, didn’t learn last year

@@ -14,10 +14,12 @@ question:
     - Videos
     - Coding challenges
     - Logic games/puzzles
-    - Lists of recommendations (tools, frameworks, technologies, etc.)
+    - label: Lists of recommendations (tools, frameworks, technologies, etc.)
+      short: Recommendation lists
     - Direct messaging of users
     - Job board
-    - Day-in-the-life profiles/interviews with experts
+    - label: Day-in-the-life profiles/interviews with experts
+      short: Expert profiles and interviews
     - label: Other, please specify
       key: other
       text_entry: true

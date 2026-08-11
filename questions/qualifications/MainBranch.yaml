@@ -8,9 +8,12 @@ question:
   options:
     - label: I am a developer by profession
       key: developer
-    - I am not primarily a developer, but I write code sometimes as part of my work/studies
-    - I used to be a developer by profession, but no longer am
+    - label: I am not primarily a developer, but I write code sometimes as part of my work/studies
+      short: Write code sometimes
+    - label: I used to be a developer by profession, but no longer am
+      short: Formerly a developer
     - I am learning to code
     - I code primarily as a hobby
-    - I work with developers or my work supports developers but am not a developer by profession
+    - label: I work with developers or my work supports developers but am not a developer by profession
+      short: Work with developers
     - None of these

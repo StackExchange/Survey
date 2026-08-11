@@ -6,8 +6,12 @@ question:
   type: single_select
   required: false
   options:
-    - Yes, I influenced the purchase of a substantial addition to the tech stack
-    - Yes, I influenced the purchase of a tool that more than five colleagues use but it is not a substantial addition to the tech stack
-    - Yes, I endorsed a tool that was open-source and is currently used by more than just myself but no purchase was made
-    - Yes, I endorsed a tool that was ultimately not purchased or used at my organization
+    - label: Yes, I influenced the purchase of a substantial addition to the tech stack
+      short: Yes, a substantial purchase
+    - label: Yes, I influenced the purchase of a tool that more than five colleagues use but it is not a substantial addition to the tech stack
+      short: Yes, a smaller team purchase
+    - label: Yes, I endorsed a tool that was open-source and is currently used by more than just myself but no purchase was made
+      short: Yes, endorsed open source
+    - label: Yes, I endorsed a tool that was ultimately not purchased or used at my organization
+      short: Yes, endorsed but not adopted
     - No

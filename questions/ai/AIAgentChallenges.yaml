@@ -14,11 +14,17 @@ question:
       - Somewhat disagree
       - Strongly disagree
   options:
-    - I am concerned about the accuracy of the information provided by AI agents.
-    - Integrating AI agents with my existing tools and workflows can be difficult.
-    - It takes significant time and effort to learn how to use AI agents effectively.
-    - The cost of using certain AI agent platforms is a barrier.
-    - I have concerns about the security and privacy of data when using AI agents.
-    - My company's IT and/or InfoSec teams have strict rules that do not allow me to use AI agent tools or platforms
+    - label: I am concerned about the accuracy of the information provided by AI agents.
+      short: Accuracy concerns
+    - label: Integrating AI agents with my existing tools and workflows can be difficult.
+      short: Hard to integrate
+    - label: It takes significant time and effort to learn how to use AI agents effectively.
+      short: Takes time to learn
+    - label: The cost of using certain AI agent platforms is a barrier.
+      short: Cost is a barrier
+    - label: I have concerns about the security and privacy of data when using AI agents.
+      short: Security and privacy
+    - label: My company's IT and/or InfoSec teams have strict rules that do not allow me to use AI agent tools or platforms
+      short: Blocked by IT or InfoSec
     - label: 'Write in the most significant challenge if not listed above:'
       text_entry: true

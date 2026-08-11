@@ -9,24 +9,32 @@ question:
     - Academic researcher
     - AI/ML engineer
     - Applied scientist
-    - Architect, software or solutions
+    - label: Architect, software or solutions
+      short: Architect
     - Cloud infrastructure engineer
-    - Cybersecurity or InfoSec professional
+    - label: Cybersecurity or InfoSec professional
+      short: Cybersecurity or InfoSec
     - Data engineer
     - Data or business analyst
     - Data scientist
-    - Database administrator or engineer
-    - Developer advocate or developer relations professional
-    - Developer, AI apps or physical AI
+    - label: Database administrator or engineer
+      short: Database admin or engineer
+    - label: Developer advocate or developer relations professional
+      short: Developer advocate
+    - label: Developer, AI apps or physical AI
+      short: Developer, AI or physical AI
     - Developer, back-end
-    - Developer, desktop or enterprise applications
-    - Developer, embedded applications or devices
+    - label: Developer, desktop or enterprise applications
+      short: Developer, desktop/enterprise
+    - label: Developer, embedded applications or devices
+      short: Developer, embedded
     - Developer, front-end
     - Developer, full-stack
     - Developer, game or graphics
     - Developer, mobile
     - Developer, QA or test
-    - DevOps engineer or professional
+    - label: DevOps engineer or professional
+      short: DevOps engineer
     - Educator or instructor
     - Engineering manager
     - Financial analyst or engineer
@@ -35,14 +43,18 @@ question:
     - Product manager
     - Project manager
     - Retired
-    - Senior executive (C-suite, VP, etc.)
+    - label: Senior executive (C-suite, VP, etc.)
+      short: Senior executive
     - Site reliability engineer
-    - Solutions engineer, implementation engineer, or forward-deployed engineer
+    - label: Solutions engineer, implementation engineer, or forward-deployed engineer
+      short: Solutions engineer
     - Student
     - Support engineer or analyst
     - System administrator
-    - Technical writer or documentation professional
-    - UX, research, or UI design professional
+    - label: Technical writer or documentation professional
+      short: Technical writer
+    - label: UX, research, or UI design professional
+      short: UX, research or UI design
     - label: Other, please specify
       key: other
       text_entry: true

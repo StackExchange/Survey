@@ -7,11 +7,16 @@ question:
   required: false
   randomize: true
   options:
-    - AI solutions that are almost right, but not quite
-    - It’s hard to understand how or why the code works
-    - Debugging AI-generated code is more time-consuming
-    - I’ve become less confident in my own problem-solving
-    - I haven’t encountered any problems
+    - label: AI solutions that are almost right, but not quite
+      short: Almost right, not quite
+    - label: It’s hard to understand how or why the code works
+      short: Hard to understand the code
+    - label: Debugging AI-generated code is more time-consuming
+      short: Debugging takes longer
+    - label: I’ve become less confident in my own problem-solving
+      short: Less confident on my own
+    - label: I haven’t encountered any problems
+      short: No problems encountered
     - I don’t use AI tools regularly
     - label: Other, please specify
       key: other

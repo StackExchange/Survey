@@ -25,9 +25,12 @@ question:
     - Deployment and monitoring
     - Predictive analytics
     - Search for answers
-    - Generating content or synthetic data
-    - Creating or maintaining documentation
-    - Learning new concepts or technologies
+    - label: Generating content or synthetic data
+      short: Content or synthetic data
+    - label: Creating or maintaining documentation
+      short: Documentation
+    - label: Learning new concepts or technologies
+      short: Learning new technologies
     - label: Other, please specify
       key: other
       text_entry: true

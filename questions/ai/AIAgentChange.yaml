@@ -9,5 +9,6 @@ question:
     - Yes, to a great extent
     - Yes, somewhat
     - Not at all or minimally
-    - No, but my development work has changed somewhat due to non-AI factors
+    - label: No, but my development work has changed somewhat due to non-AI factors
+      short: No, changed somewhat (non-AI)
     - No, but my development work has **significantly** changed due to non-AI factors

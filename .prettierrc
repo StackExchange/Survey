@@ -11,6 +11,12 @@
 			"options": {
 				"parser": "svelte"
 			}
+		},
+		{
+			"files": "packages/results/**",
+			"options": {
+				"tailwindStylesheet": "./packages/results/src/routes/layout.css"
+			}
 		}
 	]
 }

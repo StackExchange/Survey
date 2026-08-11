@@ -1,0 +1,307 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Chapter colours are composed at runtime from $lib/constants, so nothing
+   scannable spells them out. Without this four of the five have no background. */
+@source inline('{bg,border,text}-{blue,purple,yellow,pink,green,beige,orange-medium}');
+
+/* mode-watcher owns `.dark` on <html>, applied before first paint. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+	font-family: 'Stack Sans Text';
+	font-style: normal;
+	font-weight: 200 700;
+	font-display: swap;
+	src: url('$lib/assets/fonts/StackSansText[wght].woff2') format('woff2-variations');
+}
+@font-face {
+	font-family: 'Stack Sans Headline';
+	font-style: normal;
+	font-weight: 200 700;
+	font-display: swap;
+	src: url('$lib/assets/fonts/StackSansHeadline[wght].woff2') format('woff2-variations');
+}
+
+:root {
+	color-scheme: light;
+
+	--font-fallback:
+		system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@theme {
+	--font-sans: 'Stack Sans Text', var(--font-fallback);
+	--font-headline: 'Stack Sans Headline', var(--font-fallback);
+	--max-width-fluid: clamp(600px, 95vw, 1800px);
+
+	--container: initial;
+
+	/* https://stackoverflow.design/brand/color */
+	--color-*: initial;
+	--color-orange: #ff5e00;
+	--color-orange-medium: #6e1527;
+	--color-orange-dark: #31070f;
+
+	--color-white: #ffffff;
+	--color-off-white: #f0efee;
+
+	--color-beige: #998b7a;
+
+	--color-blue: #5074ef;
+	--color-blue-light: #c6d1e1;
+	--color-blue-extra-light: #d9e1ed;
+	--color-blue-dark: #00165e;
+
+	--color-purple: #9e9cff;
+	--color-purple-dark: #390a91;
+
+	--color-pink: #f39fff;
+	--color-pink-dark: #4d1855;
+
+	--color-green: #85af24;
+	--color-green-dark: #253702;
+
+	--color-yellow: #ffcc01;
+	--color-yellow-dark: #413101;
+
+	--color-black: #201c1d;
+	--color-black-100: #f9f8f8;
+	--color-black-150: #f0efee;
+	--color-black-200: #e5e4e3;
+	--color-black-225: #dbd8d4;
+	--color-black-250: #ccc8c2;
+	--color-black-300: #bcb9b3;
+	--color-black-350: #a09e9b;
+	--color-black-400: #636261;
+	--color-black-500: #4a4a4a;
+
+	--color-black-600: #201c1d;
+}
+
+/* Charts carry these as presentation attributes with a literal fallback, so a
+   standalone .svg still renders outside the page. Keep in step with
+   $charts/utils/theme.ts.
+
+   `.chart-light` re-states them for the export preview: a rasterised chart never
+   sees this file and always resolves the light literals, so the preview has to
+   say the same on a dark page. */
+:root,
+.chart-light {
+	--chart-bg: var(--color-black-150);
+	--chart-ink: var(--color-black);
+	--chart-muted: var(--color-black-400);
+	--chart-rule: var(--color-blue-light);
+	--chart-tint: var(--color-black-100);
+	--chart-accent: var(--color-orange);
+
+	--chart-from: var(--color-blue);
+	--chart-to: var(--color-orange);
+
+	/* A hero's isometric faces, and the unfilled cells of a waffle. */
+	--chart-face-top: var(--color-orange);
+	--chart-face-side: var(--color-beige);
+	--chart-ghost: var(--color-black-200);
+
+	/* Categorical ramp, brand order. Pointed at the tokens rather than repeating
+	   the hexes, so a brand change reaches the charts. */
+	--chart-series-1: var(--color-blue);
+	--chart-series-2: var(--color-purple);
+	--chart-series-3: var(--color-pink);
+	--chart-series-4: var(--color-yellow);
+	--chart-series-5: var(--color-green);
+	--chart-series-6: var(--color-orange);
+	--chart-series-7: var(--color-beige);
+	--chart-series-8: var(--color-blue-dark);
+}
+
+.dark {
+	--chart-bg: var(--color-black);
+	--chart-ink: var(--color-white);
+	--chart-muted: var(--color-black-300);
+	--chart-rule: var(--color-black-500);
+	--chart-tint: var(--color-black-500);
+	--chart-ghost: var(--color-black-500);
+
+	/* The brand ramp reads on both grounds except its darkest blue, which all but
+	   disappears on the dark page. Only that one is swapped — and once it is light,
+	   a label sitting on it has to turn dark. */
+	--chart-series-8: var(--color-blue-light);
+	--chart-on-series-8: var(--color-black);
+}
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: clamp(1rem, 5vw, 2rem);
+	max-width: var(--max-width-fluid);
+}
+
+/* Full-bleed bands. Wider than `container`, which is inset inside a max-width. */
+@utility gutter {
+	padding: clamp(1.5rem, 5vw, 4rem);
+}
+@utility gutter-x {
+	padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+body {
+	font-family: var(--font-sans);
+
+	background-color: var(--color-white);
+	color: var(--color-black);
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	margin: 0;
+	view-transition-name: body;
+}
+
+.dark {
+	color-scheme: dark;
+}
+
+.dark body {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
+
+/* On <html> only for the length of the swap, so hover states and first paint
+   stay instant. */
+@media (prefers-reduced-motion: no-preference) {
+	.theme-fade,
+	.theme-fade *,
+	.theme-fade *::before,
+	.theme-fade *::after {
+		transition:
+			background-color 250ms ease,
+			border-color 250ms ease,
+			outline-color 250ms ease,
+			color 250ms ease,
+			fill 250ms ease;
+	}
+}
+
+.font-headline-notch {
+	font-family: 'Stack Sans Headline', var(--font-fallback);
+	font-feature-settings: 'ss01' 1;
+}
+
+/* SVG icons - from Stacks */
+
+.svg-icon:not(.native) *,
+.svg-spot:not(.native) * {
+	fill: currentColor;
+}
+
+/* Stacks artwork hardcodes these five and expects the host page to define them.
+   Scoped to the artwork, not :root: here `--white` means "the page colour". */
+.svg-icon,
+.svg-spot {
+	--white: var(--color-white);
+	--black-150: var(--color-black-150);
+	--black-600: var(--color-black-600);
+	--blue-400: var(--color-blue);
+	--purple-600: var(--color-purple-dark);
+}
+
+/* A data URI cannot reference a token, so the stroke is spelled out per theme. */
+.bg-grid {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M.5 30V.5H30" fill="none" stroke="%23e5e4e3"/></svg>');
+	background-position: 50% 0;
+}
+
+.dark .bg-grid {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M.5 30V.5H30" fill="none" stroke="%234a4a4a"/></svg>');
+	background-position: 50% 0;
+}
+
+.dark :where(.svg-icon, .svg-spot) {
+	--white: var(--color-black);
+	--black-150: var(--color-black-500);
+	--black-600: var(--color-white);
+	--purple-600: var(--color-purple);
+}
+
+/* View transitons - https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API */
+
+.vt-nav {
+	view-transition-name: main-nav;
+}
+
+::view-transition-group(main-nav) {
+	z-index: 50;
+}
+
+.vt-chapter-header {
+	view-transition-name: page-header;
+	view-transition-class: chapter-header;
+}
+
+@keyframes page-header-collapse {
+	from {
+		height: var(--page-header-from);
+	}
+	50% {
+		height: 0;
+	}
+	to {
+		height: var(--page-header-to);
+	}
+}
+
+/* Scoped to .vt-swap-header, set only when both pages have a header: on an
+   exit-only group `animation: none` would pin the old snapshot on screen. */
+.vt-swap-header::view-transition-group(.chapter-header) {
+	animation: 600ms page-header-collapse;
+	overflow: clip;
+}
+
+.vt-swap-header::view-transition-old(.chapter-header),
+.vt-swap-header::view-transition-new(.chapter-header) {
+	block-size: auto;
+	object-fit: none;
+	object-position: top center;
+	mix-blend-mode: normal;
+}
+
+.vt-swap-header::view-transition-old(.chapter-header) {
+	animation: none;
+}
+
+@keyframes page-header-swap {
+	0%,
+	49.99% {
+		opacity: 0;
+	}
+	50%,
+	100% {
+		opacity: 1;
+	}
+}
+
+.vt-swap-header::view-transition-new(.chapter-header) {
+	animation: 600ms page-header-swap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
+
+/* :where() keeps specificity at zero, so a component's own ring still wins. */
+:where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+	outline: 2px solid var(--color-orange);
+	outline-offset: 2px;
+}
+
+/* The skip link and post-navigation focus are moved to, not tabbed to. */
+:where(main, [tabindex='-1']):focus,
+:where(main, [tabindex='-1']):focus-visible {
+	outline: none;
+}

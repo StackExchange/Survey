@@ -3,12 +3,22 @@
 	"version": "0.0.0",
 	"description": "Stack Overflow Annual Developer Survey content & tooling.",
 	"private": true,
+	"homepage": "https://survey.stackoverflow.co",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/StackExchange/Survey.git"
+	},
+	"bugs": {
+		"url": "https://github.com/StackExchange/Survey/issues"
+	},
 	"workspaces": [
 		"packages/archive",
+		"packages/results",
 		"packages/survey"
 	],
 	"scripts": {
-		"lint": "prettier --check .",
+		"lint": "prettier --check . && npm run lint --workspaces --if-present",
+		"check": "npm run check --workspaces --if-present",
 		"format": "prettier --write ."
 	},
 	"author": "Stack Exchange Inc.",
