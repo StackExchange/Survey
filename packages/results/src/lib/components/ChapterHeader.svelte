@@ -62,14 +62,11 @@
 		},
 		panel: {
 			innerClass: '',
-			// Sits inside a chapter's `overview` h2 on the year page, so it nests as h3.
 			nameEl: 'h3',
 			wrapClass: '',
 			nameClass: 'font-headline flex-wrap text-3xl font-normal',
 			blockClass: 'px-2 py-1',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			// The chapter description already leads the section; the panel carries the
-			// block's own headline and description through `children` instead.
 			descriptionClass: null,
 			vt: false,
 			mark: true,
@@ -89,7 +86,6 @@
 
 	const options = $derived(variants[variant])
 
-	// A null `descriptionClass` is how a variant opts out of the chapter description.
 	const description = $derived(options.descriptionClass ? chapter.description : '')
 </script>
 
