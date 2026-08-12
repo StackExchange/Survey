@@ -38,7 +38,7 @@
 				{@render children()}
 			{:else}
 				<div class="bg-white p-5 dark:bg-black-600">
-					<h3 class="font-headline text-3xl font-normal">{block.headline}</h3>
+					<h4 class="font-headline text-3xl font-normal">{block.headline}</h4>
 					{#if block.description}
 						<Markdown content={block.description} class="text-black-400 dark:text-black-300 mt-3 text-base" />
 					{/if}
