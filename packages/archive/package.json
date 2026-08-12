@@ -2,9 +2,5 @@
 	"name": "archive",
 	"version": "0.0.0",
 	"private": true,
-	"description": "Static archive of historical Stack Overflow Developer Survey result sites and raw data.",
-	"scripts": {
-		"dev": "netlify dev --offline",
-		"deploy": "netlify deploy --prod"
-	}
+	"description": "Static archive of historical Stack Overflow Developer Survey result sites and raw data. Not deployed: packages/results links the year sites into its own build."
 }

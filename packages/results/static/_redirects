@@ -2,10 +2,5 @@
 /2025    https://stackoverflow-survey-2.netlify.app/2025/        200
 /2025/*  https://stackoverflow-survey-2.netlify.app/2025/:splat   200
 
-# packages/archive is a separate site
-/:year            https://stackoverflow-survey.netlify.app/:year                  200
-/:year/*          https://stackoverflow-survey.netlify.app/:year/:splat            200
-/legacy-assets/*  https://stackoverflow-survey.netlify.app/legacy-assets/:splat    200
-
 # Legacy shortcut from insights.stackoverflow.com/survey
 /survey/*  https://survey.stackoverflow.co/:splat  302
