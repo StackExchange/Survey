@@ -1,6 +1,2 @@
-# 2025 - will move into packages/archive
-/2025    https://stackoverflow-survey-2.netlify.app/2025/        200
-/2025/*  https://stackoverflow-survey-2.netlify.app/2025/:splat   200
-
 # Legacy shortcut from insights.stackoverflow.com/survey
 /survey/*  https://survey.stackoverflow.co/:splat  302
