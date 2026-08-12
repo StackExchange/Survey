@@ -108,6 +108,12 @@ npm run build -w survey
 npm run gen:types -w survey
 ```
 
+Run the live survey result site preview:
+
+```sh
+npm run dev -w results
+```
+
 ## Versioning
 
 Survey releases follow a yearly-with-patches scheme:
