@@ -25,7 +25,13 @@ export function GET() {
 		`# ${siteName}`,
 		siteDescriptionLong,
 		'## Results by year',
-		published.map(({ year, results, data }) => `- [${year} results](${results})${data ? ` · [responses (CSV)](${data})` : ''}`).join('\n'),
+		// Absolute: a relative path is meaningless to whatever reads this file next.
+		published
+			.map(({ year, results, data }) => {
+				const link = results!.startsWith('/') ? `${siteUrl}${results}` : results
+				return `- [${year} results](${link})${data ? ` · [responses (CSV)](${data})` : ''}`
+			})
+			.join('\n'),
 		`Cite as: ${siteName}, ${licence.holder}`
 	)
 

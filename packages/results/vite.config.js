@@ -2,6 +2,9 @@ import tailwindcss from '@tailwindcss/vite'
 import adapter from '@sveltejs/adapter-static'
 import { sveltekit } from '@sveltejs/kit/vite'
 import { defineConfig } from 'vite'
+import years from '../archive/index.json' with { type: 'json' }
+
+const archived = new Set(years.map(({ year }) => `/${year}`))
 
 export default defineConfig({
 	plugins: [
@@ -18,6 +21,9 @@ export default defineConfig({
 			prerender: {
 				// Nothing links to the endpoints, so they are named rather than crawled.
 				entries: ['*', '/sitemap.xml', '/index.md'],
+				handleHttpError: ({ path, message }) => {
+					if (!archived.has(path)) throw new Error(message)
+				},
 			},
 			adapter: adapter(),
 		}),

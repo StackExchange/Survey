@@ -1,5 +1,0 @@
-# Public /YYYY paths → the per-year site on disk. 2025 is not here yet; the apex
-# proxies that year straight to its own deploy.
-/:year    /:year/site/index.html  200
-/:year/   /:year/site/index.html  200
-/:year/*  /:year/site/:splat      200
