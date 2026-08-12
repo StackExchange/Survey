@@ -34,7 +34,6 @@
 			nameClass: 'font-headline-notch text-7xl text-[clamp(var(--text-4xl),5vw+1rem,var(--text-7xl))] font-semibold',
 			blockClass: 'px-3 py-2',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			description: 'description',
 			descriptionClass: 'mt-5',
 			vt: false,
 			mark: false,
@@ -46,8 +45,7 @@
 			nameClass: 'font-headline-notch mt-auto text-8xl text-[clamp(var(--text-5xl),5vw+1rem,var(--text-8xl))] font-normal',
 			blockClass: '',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			descriptionClass: 'mt-4',
-			description: null,
+			descriptionClass: null,
 			vt: true,
 			mark: false,
 		},
@@ -58,20 +56,21 @@
 			nameClass: 'font-headline text-4xl font-normal',
 			blockClass: 'px-2 py-1',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			description: 'description',
 			descriptionClass: 'text-xl bg-white dark:bg-black p-4',
 			vt: true,
 			mark: true,
 		},
 		panel: {
-			innerClass: 'container mx-auto',
-			nameEl: 'h1',
-			wrapClass: 'bg-black-100 relative overflow-hidden flex flex-col items-stretch px-6 py-15',
+			innerClass: '',
+			// Sits inside a chapter's `overview` h2 on the year page, so it nests as h3.
+			nameEl: 'h3',
+			wrapClass: '',
 			nameClass: 'font-headline flex-wrap text-3xl font-normal',
 			blockClass: 'px-2 py-1',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			description: 'description',
-			descriptionClass: 'text-xl mt-5 w-1/2',
+			// The chapter description already leads the section; the panel carries the
+			// block's own headline and description through `children` instead.
+			descriptionClass: null,
 			vt: false,
 			mark: true,
 		},
@@ -82,7 +81,6 @@
 			nameClass: 'sr-only font-headline flex-wrap text-3xl font-normal',
 			blockClass: 'px-2 py-1',
 			sectionClass: 'sr-only',
-			description: 'description',
 			descriptionClass: 'text-xl mt-5 w-1/2',
 			vt: false,
 			mark: true,
@@ -90,7 +88,9 @@
 	} satisfies Record<Variant, unknown>)
 
 	const options = $derived(variants[variant])
-	const description = $derived(options.description ? chapter[options.description] : '')
+
+	// A null `descriptionClass` is how a variant opts out of the chapter description.
+	const description = $derived(options.descriptionClass ? chapter.description : '')
 </script>
 
 <header class="{options.vt ? 'vt-chapter-header' : ''} {options.wrapClass}">
