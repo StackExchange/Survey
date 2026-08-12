@@ -11,11 +11,11 @@ npm run build -w results
 
 Netlify, from the repo root so that the install honours the root `package-lock.json`:
 
-| Setting        | Value                    |
-| -------------- | ------------------------ |
-| Base directory | _(repo root)_            |
+| Setting        | Value                      |
+| -------------- | -------------------------- |
+| Base directory | _(repo root)_              |
 | Build command  | `npm run build -w results` |
-| Publish        | `packages/results/build` |
+| Publish        | `packages/results/build`   |
 
 There is no `netlify.toml` — headers and redirects are `static/_headers` and
 `static/_redirects`, which Netlify reads from the publish directory whatever the

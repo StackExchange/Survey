@@ -68,7 +68,7 @@ For free-text questions that need content checks, write a flat [Zod-style](https
 
 ```yaml
 validate: { type: number, min: 1, max: 100 }
-validate: { type: number, min: 0 }              # max omitted = unbounded
+validate: { type: number, min: 0 } # max omitted = unbounded
 validate: { type: number, min: 0, max: 10, decimals: 2 }
 validate: { type: email }
 validate: { type: phone }
