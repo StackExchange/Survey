@@ -1,30 +1,8 @@
-# This site no longer serves the apex — survey.stackoverflow.co is packages/results,
-# which proxies /2011–/2025 and /legacy-assets/* through to here. See its netlify.toml.
+# 2025 - will move into packages/archive
+/2025    https://stackoverflow-survey-2.netlify.app/2025         200
+/2025/*  https://stackoverflow-survey-2.netlify.app/2025/:splat   200
 
-# Data files bounce to GitHub rather than being served from this disk: they run to
-# ~159MB apiece and have attracted abuse. The apex has the same three rules, which
-# fire first for traffic arriving that way; these catch anyone hitting this host
-# directly, so the bypass is closed too. Must stay above every rule below.
-/:year/results.csv  https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/results.csv  302
-/:year/schema.csv   https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/schema.csv   302
-/:year/survey.pdf   https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/survey.pdf   302
-
-# TEMPORARY — delete both lines once 2025/site/ lands here. 2025's results site is
-# still its own deploy; only its data files are on this disk. When the built site
-# is committed alongside 2024's, the generic /:year rules below cover it like every
-# other year and stackoverflow-survey-2 can be retired.
-#
-# The proxy lives here rather than at the apex because the survey-banner edge
-# function wraps context.next(), so it injects into the response this rule fetches.
-# Point the apex straight at the 2025 deploy and that year loses its banner.
-/2025           https://stackoverflow-survey-2.netlify.app/2025             200
-/2025/*         https://stackoverflow-survey-2.netlify.app/2025/:splat      200
-
-# /YYYY and /YYYY/ → serve the per-year site's index.html.
-# (Scraped HTML uses absolute asset paths like /legacy-assets/… or /YYYY/…,
-# so no trailing-slash redirect is needed for relative-path resolution.)
-/:year          /:year/site/index.html    200
-/:year/         /:year/site/index.html    200
-
-# /YYYY/<anything> → /YYYY/site/<anything>.
-/:year/*        /:year/site/:splat        200
+# Public /YYYY paths → the per-year site on disk.
+/:year    /:year/site/index.html  200
+/:year/   /:year/site/index.html  200
+/:year/*  /:year/site/:splat      200

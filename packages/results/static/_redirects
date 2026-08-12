@@ -1,14 +1,7 @@
-# QoL redirects for packages/archive
-/:year/results.csv  https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/results.csv  302
-/:year/schema.csv   https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/schema.csv   302
-/:year/survey.pdf   https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/survey.pdf   302
-
-# packages/archive is a seperate site
-/:year    https://stackoverflow-survey.netlify.app/:year          200
-/:year/*  https://stackoverflow-survey.netlify.app/:year/:splat    200
-
-# Root-absolute in the 2015–2021 pages, so it cannot move off the apex
-/legacy-assets/*  https://stackoverflow-survey.netlify.app/legacy-assets/:splat  200
+# packages/archive is a separate site
+/:year            https://stackoverflow-survey.netlify.app/:year                  200
+/:year/*          https://stackoverflow-survey.netlify.app/:year/:splat            200
+/legacy-assets/*  https://stackoverflow-survey.netlify.app/legacy-assets/:splat    200
 
 # Legacy shortcut from insights.stackoverflow.com/survey
 /survey/*  https://survey.stackoverflow.co/:splat  302
