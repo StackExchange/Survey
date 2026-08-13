@@ -47,7 +47,7 @@
 	bind:this={tablist}
 	role="tablist"
 	aria-label={label}
-	class="flex flex-nowrap gap-2 overflow-x-auto mb-2 lg:mb-0 bg-white dark:bg-black"
+	class="mb-2 flex flex-nowrap gap-2 overflow-x-auto bg-white lg:mb-0 dark:bg-black"
 >
 	{#each demographics as entry (entry.demographic.id)}
 		{@const id = entry.demographic.id}
@@ -60,9 +60,9 @@
 			aria-selected={active}
 			aria-controls={panelId}
 			tabindex={active ? 0 : -1}
-			class="relative px-5 py-3 whitespace-nowrap cursor-pointer {active
-				? 'bg-black-150 dark:bg-black-500 font-semibold'
-				: 'text-black-400 dark:text-black-300 lg:bg-black-100 lg:dark:bg-black-600 hover:text-black dark:hover:text-white dark:hover:border-black-500 border-transparent'}"
+			class="relative cursor-pointer px-5 py-3 whitespace-nowrap {active
+				? 'bg-black-150 font-semibold dark:bg-black-500'
+				: 'border-transparent text-black-400 hover:text-black lg:bg-black-100 dark:text-black-300 dark:hover:border-black-500 dark:hover:text-white lg:dark:bg-black-600'}"
 			onclick={() => onselect(id)}
 			onkeydown={onKeydown}
 		>

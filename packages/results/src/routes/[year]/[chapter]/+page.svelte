@@ -9,10 +9,8 @@
 	import Seo from '$lib/components/Seo.svelte'
 	import { IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 	import { SpotDataset } from '@stackoverflow/stacks-icons/spots'
-	import Markdown from '$lib/components/Markdown.svelte'
 
 	let { data, params } = $props()
-
 </script>
 
 <Seo title="{data.chapter.name} {data.year}" description={data.chapter.description} graph={data.chapter.jsonld} />
@@ -31,7 +29,7 @@
 	</div>
 
 	<div class="container mx-auto mb-60">
-		<Markdown html={data.chapter.descriptionLongHtml} class="max-w-prose text-lg" />
+		<div class="md max-w-prose text-lg">{@html data.chapter.descriptionLongHtml}</div>
 	</div>
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}

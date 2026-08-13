@@ -27,7 +27,6 @@
 
 <!-- Every year URL comes from the archive index as a string, so there is no route
      id for `resolve` to check. -->
-<!-- eslint-disable svelte/no-navigation-without-resolve -->
 
 {#snippet links(entry: Year)}
 	<div class="-ml-3 flex flex-wrap gap-1">

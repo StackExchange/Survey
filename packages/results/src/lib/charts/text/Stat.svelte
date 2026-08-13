@@ -22,5 +22,5 @@
 </p>
 
 {#if row}
-	<p class="text-black-400 dark:text-black-300 mt-6 text-lg">{short(row.response)}</p>
+	<p class="mt-6 text-lg text-black-400 dark:text-black-300">{short(row.response)}</p>
 {/if}

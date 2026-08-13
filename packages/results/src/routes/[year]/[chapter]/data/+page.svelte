@@ -8,7 +8,6 @@
 	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
 	import WhatWeAsked from '$lib/components/WhatWeAsked.svelte'
 	import Seo from '$lib/components/Seo.svelte'
-	import Markdown from '$lib/components/Markdown.svelte'
 	import Icon from '$lib/components/Icon.svelte'
 	import { IconArrowDownRight, IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
 	import { SpotMetrics } from '@stackoverflow/stacks-icons/spots'
@@ -106,7 +105,7 @@
 							</h3>
 
 							{#if block.description}
-								<Markdown html={block.descriptionHtml} class="text-black-400 dark:text-black-300" />
+								<div class="md text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 							{/if}
 
 							{#if shown.definition}

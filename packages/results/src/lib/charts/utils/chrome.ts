@@ -23,7 +23,6 @@ export interface Chrome {
 // drawing in the file than the one on screen. Below this the drawing scrolls.
 export const CHART_WIDTH = 950
 
-
 export const CHIP = 30
 export const CHIP_SIZE = 18
 export const TITLE_SIZE = 26

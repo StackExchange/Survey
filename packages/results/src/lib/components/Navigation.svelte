@@ -91,20 +91,20 @@
 
 <svelte:window bind:scrollY onkeydown={onWindowKeydown} onpointerdown={onWindowPointerdown} />
 
-<header class="vt-nav flex fixed top-0 right-0 left-0 z-50 pointer-events-none">
+<header class="vt-nav pointer-events-none fixed top-0 right-0 left-0 z-50 flex">
 	{#if wordmark}
-		<h1 class="leading-0 origin-left" transition:wipe>
-			<a class="inline-flex items-stretch pointer-events-auto leading-4" href={resolve('/[year]', { year })}>
-				<span class="bg-orange text-black flex items-center p-2"><Icon src={IconGlyph32Square} title="Stack Overflow" /></span>
-				<span class="bg-black hover:bg-black-500 flex items-center px-4 text-white">Developer Survey {year}</span>
+		<h1 class="origin-left leading-0" transition:wipe>
+			<a class="pointer-events-auto inline-flex items-stretch leading-4" href={resolve('/[year]', { year })}>
+				<span class="flex items-center bg-orange p-2 text-black"><Icon src={IconGlyph32Square} title="Stack Overflow" /></span>
+				<span class="flex items-center bg-black px-4 text-white hover:bg-black-500">Developer Survey {year}</span>
 			</a>
 		</h1>
 	{/if}
 
-	<nav data-nav class="text-white z-50 w-auto lg:w-1/2 lg:max-w-50 pointer-events-auto ml-auto relative" aria-label="Sections">
+	<nav data-nav class="pointer-events-auto relative z-50 ml-auto w-auto text-white lg:w-1/2 lg:max-w-50" aria-label="Sections">
 		<button
 			bind:this={toggle}
-			class="ml-auto lg:w-full flex items-center justify-between gap-2 text-left bg-black hover:bg-black-500 fill-current border-l-4 border-black-150 dark:border-black-500 h-12 px-4 py-3 text-sm font-semibold cursor-pointer"
+			class="ml-auto flex h-12 cursor-pointer items-center justify-between gap-2 border-l-4 border-black-150 bg-black fill-current px-4 py-3 text-left text-sm font-semibold hover:bg-black-500 lg:w-full dark:border-black-500"
 			aria-expanded={open}
 			aria-controls="navigation-list"
 			aria-label={open ? 'Close menu' : 'Open menu'}
@@ -116,12 +116,11 @@
 			<Icon src={open ? IconCross : IconMenu} />
 		</button>
 
-		<!-- eslint-disable svelte/no-navigation-without-resolve -- each href is already resolved in `links` -->
 		<ol bind:this={list} id="navigation-list" class="absolute top-full right-0 lg:w-full">
 			{#each open ? links : [] as link, i (link.href)}
 				<li class="origin-right" in:wipe={{ delay: i * 60 }} out:wipe={{ duration: 200, delay: (links.length - 1 - i) * 60 }}>
 					<a
-						class="block bg-black border-l-4 w-full {link.borderClass} px-4 py-2 aria-[current=page]:bg-black-500"
+						class="block w-full border-l-4 bg-black {link.borderClass} px-4 py-2 aria-[current=page]:bg-black-500"
 						href={link.href}
 						aria-current={current === link.href ? 'page' : undefined}
 						onclick={() => close()}
@@ -132,6 +131,5 @@
 				</li>
 			{/each}
 		</ol>
-		<!-- eslint-enable svelte/no-navigation-without-resolve -->
 	</nav>
 </header>

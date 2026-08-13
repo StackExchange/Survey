@@ -80,7 +80,6 @@
 			value={citation}></textarea>
 
 		<p class="mt-2 text-xs text-black-400 dark:text-black-300">
-			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- the licence's own canonical URL -->
 			Response data is released under the <a class="underline" href={licence.database.url}>{licence.database.name}</a>, which asks that you
 			attribute it.
 		</p>

@@ -38,7 +38,7 @@
 		<button
 			type="button"
 			onclick={close}
-			class="bg-black-150 hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black fixed top-0 right-0 z-50 p-3"
+			class="fixed top-0 right-0 z-50 bg-black-150 p-3 hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black"
 		>
 			<span class="sr-only">Close</span>
 			<Icon src={IconCross} />

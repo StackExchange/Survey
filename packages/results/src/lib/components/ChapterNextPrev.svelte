@@ -11,19 +11,19 @@
 {#snippet card(chapter: any, direction: 'previous' | 'next')}
 	{@const back = direction === 'previous'}
 
-	<li class="flex w-1/2 lg:w-1/3 items-end relative dark:text-black">
+	<li class="relative flex w-1/2 items-end lg:w-1/3 dark:text-black">
 		<a
-			class="group transition-transform hover:scale-110 p-6 w-full {back
-				? 'bg-white dark:bg-black-200 origin-bottom-left'
+			class="group w-full p-6 transition-transform hover:scale-110 {back
+				? 'origin-bottom-left bg-white dark:bg-black-200'
 				: `bg-${chapterColour(chapter.index).primary} origin-bottom-right`}"
 			rel={back ? 'prev' : 'next'}
 			href={resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}
 		>
-			<span class="{back ? 'text-black-400' : 'text-black'} flex items-center mb-2 text-sm">
+			<span class="{back ? 'text-black-400' : 'text-black'} mb-2 flex items-center text-sm">
 				{back ? 'Previous' : 'Next'}:
 			</span>
 
-			<span class="font-headline block {back ? 'text-3xl mb-20' : 'text-5xl mb-40'}">
+			<span class="block font-headline {back ? 'mb-20 text-3xl' : 'mb-40 text-5xl'}">
 				{chapter.name}
 			</span>
 		</a>
@@ -34,7 +34,7 @@
 
 {#if previous || next}
 	<section class="mt-24 bg-black-150 dark:bg-black-500" aria-labelledby="whats-next">
-		<h2 id="whats-next" class="font-headline-notch text-4xl lg:text-6xl gutter">What’s next?</h2>
+		<h2 id="whats-next" class="font-headline-notch gutter text-4xl lg:text-6xl">What’s next?</h2>
 
 		<ul class="mt-6 flex justify-between gap-6">
 			{#if previous}{@render card(previous, 'previous')}{/if}

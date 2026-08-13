@@ -11,6 +11,5 @@
 </script>
 
 <g transform="translate({px(x)} {px(y)}) scale({scale})" {fill} role="presentation">
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -- static markup from stacks-icons -->
 	{@html glyph.markup}
 </g>

@@ -11,7 +11,6 @@
 	import Figure from '$lib/components/Figure.svelte'
 	import CopyPage from '$lib/components/CopyPage.svelte'
 	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
-	import Markdown from '$lib/components/Markdown.svelte'
 	import { rowSelection } from '$charts/utils/rows.svelte'
 	import { askedInContext, askedMeta } from '$lib/components/WhatWeAsked.svelte'
 	import { githubRepo, siteUrl } from '$lib/constants'
@@ -62,7 +61,6 @@
 		chosen = { question: data.question.id, id }
 		// replaceState, not pushState: back still means the previous page, and
 		// `page.url` is left alone, which keeps the canonical clean.
-		// eslint-disable-next-line svelte/no-navigation-without-resolve -- the current path plus a query, not a route
 		replaceState(id === fallback.demographic.id ? location.pathname : `${location.pathname}?d=${id}`, page.state)
 	}
 
@@ -150,7 +148,7 @@
 		<section class="mt-12" aria-labelledby="asked">
 			<h2 id="asked" class="font-headline text-2xl font-semibold">What we asked</h2>
 
-			<Markdown html={definition.titleHtml} class="mt-3 max-w-prose text-lg" />
+			<div class="md mt-3 max-w-prose text-lg">{@html definition.titleHtml}</div>
 
 			<p class="mt-2 text-sm text-black-400 dark:text-black-300">
 				{askedMeta(definition)}{#if definition.carry_forward?.from}

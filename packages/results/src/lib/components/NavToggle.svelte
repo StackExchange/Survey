@@ -20,14 +20,12 @@
 	const there = 'group-hover:bg-black-150 dark:group-hover:bg-black-400'
 </script>
 
-<!-- eslint-disable svelte/no-navigation-without-resolve -- the caller resolves both hrefs -->
 <a
 	href={other.href}
 	aria-label="Switch to {other.label}"
-	class="group flex w-fit bg-black-200 dark:bg-black-500 p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
+	class="group flex w-fit bg-black-200 p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange dark:bg-black-500"
 >
 	{#each options as option, i (option.href)}
 		<span class="px-5 py-1.5 {i === at ? here : there}">{option.label}</span>
 	{/each}
 </a>
-<!-- eslint-enable svelte/no-navigation-without-resolve -->

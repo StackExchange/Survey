@@ -39,8 +39,8 @@
 	const scales = $derived(width ? '[&>svg]:h-auto' : '')
 </script>
 
-<figure class="flex h-full flex-col relative">
-	<div class="grow pb-3 bg-black-150 dark:bg-black-500 {fits}">
+<figure class="relative flex h-full flex-col">
+	<div class="grow bg-black-150 pb-3 dark:bg-black-500 {fits}">
 		<div bind:clientWidth={measured} class="[&>svg]:w-full {scales} {floor} {light}">
 			{#if Chart}
 				<ChartRoot chart={Chart} figure={block} width={drawn} {chrome} onhover={(data, event) => (hovered = { data, event })} />
@@ -54,8 +54,7 @@
 		<!-- The sample size, share and subtext are drawn inside the chart, so they
 		     leave with it. Only the link is left out here. -->
 		{#if href}
-			<p class="flex gap-4 bg-black-150 dark:bg-black-500 px-4 pb-4 absolute bottom-0 right-0">
-				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- resolved by the caller, which owns the route -->
+			<p class="absolute right-0 bottom-0 flex gap-4 bg-black-150 px-4 pb-4 dark:bg-black-500">
 				<a {href} onclick={open} class="ml-auto flex items-center gap-1.5 hover:underline" aria-label="Permalink: {block.demographic.name}">
 					Share
 					<Icon src={IconShare} />
