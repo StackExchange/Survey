@@ -1,9 +1,10 @@
 <script lang="ts">
-	// Horizontal bars, one per response. Two row shapes reach this: a share, and a
-	// value named by `metadata.label` (the six salary questions).
+	// Horizontal bars, one per response. Two row shapes reach this: a share (`pct`),
+	// and a named measure the loader resolved into `figure.value` — the salary
+	// questions, which carry no share at all.
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
 	import {
 		PAD,
@@ -46,7 +47,7 @@
 				title: String(row.response ?? ''),
 				rows: [
 					{ value: format(row), label: value?.label ?? 'of respondents', color: series(0) },
-					...(row.frequency ? [{ value: count(row.frequency), label: 'respondents' }] : []),
+					...(row.count ? [{ value: count(row.count), label: 'respondents' }] : []),
 				],
 			},
 			event
@@ -62,10 +63,10 @@
 	const short = $derived(shorten(figure))
 
 	// The salary questions carry {key, label, unit}; everything else is a share.
-	const value = $derived(figure.metadata?.label ?? null)
+	const value = $derived(figure.value ?? null)
 	const unit = $derived(value?.unit ?? '')
 
-	const amount = (row: any) => (value ? (row[value.key] ?? 0) : (row.percent ?? 0))
+	const amount = (row: any) => (value ? (row[value.key] ?? 0) : (row.pct ?? 0))
 	const format = (row: any) => (value ? `${unit}${count(amount(row))}` : percent(amount(row)))
 
 	// A share is drawn against a full 0–1 unless normalising; a value has no

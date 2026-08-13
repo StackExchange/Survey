@@ -55,7 +55,7 @@
 	})
 
 	// The only charts that read `normalise`.
-	const scalable = $derived(['bar', 'bar-clustered', 'dumbbell'].includes(figure.chart) && !figure.metadata?.label)
+	const scalable = $derived(['bar', 'bar-clustered', 'dumbbell'].includes(figure.chart) && !figure.value)
 
 	async function png() {
 		const blob = await toPng(Chart, { figure: selection.shown, width: CHART_WIDTH, scale: SCALE, chrome })
@@ -92,24 +92,22 @@
 	     the export, chrome and all, redrawn in place as the controls change. -->
 	<div class="min-w-0 grow">{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}</div>
 
-	<fieldset class="flex gap-3 mt-4">
+	<fieldset class="mt-4 flex gap-3">
 		<legend class="sr-only">Download this chart</legend>
 
 		{#if scalable}
 			<label class="flex items-start gap-2">
 				<input type="checkbox" class="mt-1 shrink-0" bind:checked={normalise} />
 				<span class="flex items-center gap-3">
-				  Scale to the largest value
-					<span class="text-black-400 dark:text-black-300 block text-xs">
-						Easier to read, no longer comparable with other charts.
-					</span>
+					Scale to the largest value
+					<span class="block text-xs text-black-400 dark:text-black-300"> Easier to read, no longer comparable with other charts. </span>
 				</span>
 			</label>
 		{/if}
 
-		<label class="flex items-center gap-1 ml-auto">
+		<label class="ml-auto flex items-center gap-1">
 			Format
-			<select bind:value={format} class="dark:border-black-500 dark:bg-black border px-2 py-1 shrink-0 w-35">
+			<select bind:value={format} class="w-35 shrink-0 border px-2 py-1 dark:border-black-500 dark:bg-black">
 				<option value="png">PNG</option>
 				<option value="svg">SVG</option>
 			</select>
@@ -117,7 +115,7 @@
 
 		<button
 			type="button"
-			class="hover:bg-white dark:hover:bg-black-600 flex cursor-pointer items-center justify-center gap-2 border px-3 py-2 disabled:cursor-wait"
+			class="flex cursor-pointer items-center justify-center gap-2 border px-3 py-2 hover:bg-white disabled:cursor-wait dark:hover:bg-black-600"
 			disabled={status === 'working' || !selection.kept.length}
 			onclick={download}
 		>
@@ -127,7 +125,7 @@
 	</fieldset>
 
 	{#if selection.listable && selection.touched}
-		<p class="dark:border-black-500 border-t pt-4">
+		<p class="border-t pt-4 dark:border-black-500">
 			Drawing {selection.kept.length} of {selection.rows.length} rows{#if selection.focus.length}, {selection.focus.length} highlighted{/if}.
 			<button type="button" class="cursor-pointer underline" onclick={() => selection.reset()}>Reset</button>
 		</p>

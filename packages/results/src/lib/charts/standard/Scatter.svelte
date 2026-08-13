@@ -3,7 +3,7 @@
 	// `var()` tokens and d3 can only interpolate literal colours.
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { PAD, chars, clip, count, middle, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
 
@@ -21,8 +21,12 @@
 	const LABEL_SIZE = 12
 
 	const rows = $derived((figure.data ?? []).filter(Boolean))
-	const meta = $derived(figure.metadata ?? {})
+	// Which two of the row's named measures to plot, resolved by the loader — the
+	// export names its columns and says nothing about where they belong.
+	const axes = $derived(figure.axes ?? null)
 	const short = $derived(shorten(figure))
+
+	const valueAt = (row: any, axis: any) => (axis ? (row?.[axis.key] ?? 0) : 0)
 
 	const plotWidth = $derived(Math.max(1, width - AXIS_LEFT - RAMP_WIDTH - PAD))
 	// An aspect ratio, not a fixed height: how steep the cloud looks is part of
@@ -40,18 +44,18 @@
 
 	const xScale = $derived(
 		scaleLinear()
-			.domain(span(rows.map((row: any) => row.x ?? 0)))
+			.domain(span(rows.map((row: any) => valueAt(row, axes?.x))))
 			.range([0, plotWidth])
 			.nice()
 	)
 	const yScale = $derived(
 		scaleLinear()
-			.domain(span(rows.map((row: any) => row.y ?? 0)))
+			.domain(span(rows.map((row: any) => valueAt(row, axes?.y))))
 			.range([plotHeight, 0])
 			.nice()
 	)
 
-	const frequencies = $derived(rows.map((row: any) => row.frequency ?? 0))
+	const frequencies = $derived(rows.map((row: any) => row.count ?? 0))
 	const opacity = $derived(scaleLinear().domain(span(frequencies)).range([0.3, 1]).clamp(true))
 
 	// '$' reads before the number, '%' after it — prefixing both gives "%10".
@@ -70,10 +74,10 @@
 	const points = $derived.by(() => {
 		const placed = rows
 			.map((row: any) => {
-				const cx = px(xScale(row.x ?? 0))
+				const cx = px(xScale(valueAt(row, axes?.x)))
 				const flip = cx > plotWidth * 0.72
 				// Clipped to the room beside the point, which varies by position.
-				return { row, cx, cy: px(yScale(row.y ?? 0)), flip, room: (flip ? cx : plotWidth - cx) - GUTTER }
+				return { row, cx, cy: px(yScale(valueAt(row, axes?.y))), flip, room: (flip ? cx : plotWidth - cx) - GUTTER }
 			})
 			.sort((a: any, b: any) => a.cy - b.cy)
 
@@ -96,9 +100,9 @@
 			{
 				title: String(row.response ?? ''),
 				rows: [
-					{ value: tick(row.y ?? 0, meta.y), label: meta.y?.label, color: theme.from },
-					{ value: tick(row.x ?? 0, meta.x), label: meta.x?.label },
-					{ value: count(row.frequency), label: 'respondents' },
+					{ value: tick(valueAt(row, axes?.y), axes?.y), label: axes?.y?.label, color: theme.from },
+					{ value: tick(valueAt(row, axes?.x), axes?.x), label: axes?.x?.label },
+					{ value: count(row.count), label: 'respondents' },
 				],
 			},
 			event
@@ -117,7 +121,7 @@
 			{@const at = px(xScale(value))}
 			<line x1={at} x2={at} y1="0" y2={plotHeight} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
 			<text x={at} y={plotHeight + 18} text-anchor="middle" font-size={TICK_SIZE} fill={theme.muted}>
-				{tick(value, meta.x)}
+				{tick(value, axes?.x)}
 			</text>
 		{/each}
 
@@ -125,16 +129,16 @@
 			{@const at = px(yScale(value))}
 			<line x1="0" x2={plotWidth} y1={at} y2={at} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
 			<text x="-10" y={middle(at, TICK_SIZE)} text-anchor="end" font-size={TICK_SIZE} fill={theme.muted}>
-				{tick(value, meta.y)}
+				{tick(value, axes?.y)}
 			</text>
 		{/each}
 
-		{#if meta.x?.label}
+		{#if axes?.x?.label}
 			<text x={plotWidth / 2} y={plotHeight + 46} text-anchor="middle" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
-				{clip(String(meta.x.label), chars(plotWidth, LABEL_SIZE))}
+				{clip(String(axes.x.label), chars(plotWidth, LABEL_SIZE))}
 			</text>
 		{/if}
-		{#if meta.y?.label}
+		{#if axes?.y?.label}
 			<text
 				text-anchor="middle"
 				font-size={LABEL_SIZE}
@@ -142,7 +146,7 @@
 				fill={theme.ink}
 				transform="translate(-56, {plotHeight / 2}) rotate(-90)"
 			>
-				{clip(String(meta.y.label), chars(plotHeight, LABEL_SIZE))}
+				{clip(String(axes.y.label), chars(plotHeight, LABEL_SIZE))}
 			</text>
 		{/if}
 
@@ -153,7 +157,7 @@
 				cy={point.cy}
 				r={active === i ? DOT + 2 : DOT}
 				fill={theme.from}
-				fill-opacity={px(opacity(point.row.frequency ?? 0))}
+				fill-opacity={px(opacity(point.row.count ?? 0))}
 				stroke={active === i ? theme.ink : theme.background}
 			/>
 

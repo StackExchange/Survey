@@ -1,11 +1,12 @@
 <script lang="ts">
-	// The Likert shape. Rows carry parallel arrays — `percent[i]`, `offset[i]`,
-	// `frequency[i]` — indexed against `metadata`, a plain array of segment labels.
+	// The Likert shape. Rows arrive flat — one per (statement, segment) — and are
+	// grouped into bars here. The export carries no offset column, so the running
+	// sum that stacks the segments is computed rather than read.
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { useFocus } from '$charts/utils/chrome'
-	import Legend from '$charts/svg-components/Legend.svelte'
+	import Legend from '$charts/svg/Legend.svelte'
 	import {
 		PAD,
 		chars,
@@ -44,9 +45,9 @@
 		onhover?.(
 			{
 				title: String(row.response ?? ''),
-				rows: (row.percent ?? []).map((share: number, i: number) => ({
-					value: percent(share),
-					label: row.frequency?.[i] ? `${labels[i]} · ${count(row.frequency[i])}` : labels[i],
+				rows: row.segments.map((segment: any, i: number) => ({
+					value: percent(segment.pct),
+					label: segment.count ? `${labels[i]} · ${count(segment.count)}` : labels[i],
 					color: series(i),
 				})),
 			},
@@ -59,9 +60,40 @@
 		onhover?.(null)
 	}
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
 	const short = $derived(shorten(figure))
-	const labels = $derived((figure.metadata ?? []).map(short))
+	const names = $derived(figure.series ?? [])
+	const labels = $derived(names.map(short))
+
+	// Rows arrive one per (statement, segment). Grouping keeps the order the export
+	// wrote them in, and the offset each segment stacks at is the running sum of the
+	// ones before it — the export ships no offset column.
+	const rows = $derived.by(() => {
+		const order: string[] = []
+		const bySegment: Record<string, Record<string, any>> = {}
+
+		for (const row of (figure.data ?? []).filter(Boolean)) {
+			const response = String(row.response ?? '')
+			if (!bySegment[response]) {
+				bySegment[response] = {}
+				order.push(response)
+			}
+			bySegment[response][String(row.series ?? '')] = row
+		}
+
+		return order.map((response) => {
+			const found = bySegment[response]
+			let offset = 0
+
+			const segments = names.map((name: string) => {
+				const pct = found[name]?.pct ?? 0
+				const segment = { pct, count: found[name]?.count ?? null, offset }
+				offset += pct
+				return segment
+			})
+
+			return { response, segments }
+		})
+	})
 
 	const plotWidth = $derived(Math.max(1, width - PAD * 2))
 	const key = $derived(legend(labels, plotWidth))
@@ -88,10 +120,10 @@
 					{clip(short(row.response), chars(plotWidth, LABEL_SIZE))}
 				</text>
 
-				{#each row.percent ?? [] as share, i (i)}
-					{@const left = px(x(row.offset?.[i] ?? 0))}
-					{@const w = px(x(share ?? 0))}
-					{@const value = percent(share)}
+				{#each row.segments as segment, i (i)}
+					{@const left = px(x(segment.offset))}
+					{@const w = px(x(segment.pct))}
+					{@const value = percent(segment.pct)}
 					<rect x={left} y={y + LABEL} width={w} height={BAR} fill={series(i)} />
 
 					<!-- Only where the segment can actually hold the label. -->

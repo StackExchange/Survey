@@ -3,9 +3,9 @@
 	// labelled on the outer side of its dot, so the two never collide.
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import Legend from '$charts/svg-components/Legend.svelte'
+	import Legend from '$charts/svg/Legend.svelte'
 	import {
 		PAD,
 		chars,

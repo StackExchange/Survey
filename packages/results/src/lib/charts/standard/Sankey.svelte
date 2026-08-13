@@ -5,7 +5,7 @@
 	// to an eight-column DAG with names colliding into downstream nodes.
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { PAD, chars, clip, count, middle, px, pxPath, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
 

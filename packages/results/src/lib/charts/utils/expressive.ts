@@ -6,13 +6,13 @@ import { count, percent, px, shorten } from '$charts/utils/theme'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
-// The salary questions carry `{key, label, unit}` and a named column instead of
-// a share. Everything else is `percent`.
-const valueOf = (figure: any) => figure.metadata?.label ?? null
+// The salary questions carry a named measure instead of a share, resolved by the
+// loader into `{key, label, unit}`. Everything else is `pct`.
+const valueOf = (figure: any) => figure.value ?? null
 
 export const amountOf = (figure: any) => {
 	const value = valueOf(figure)
-	return (row: any) => (value ? (row?.[value.key] ?? 0) : (row?.percent ?? 0))
+	return (row: any) => (value ? (row?.[value.key] ?? 0) : (row?.pct ?? 0))
 }
 
 export const formatOf = (figure: any) => {

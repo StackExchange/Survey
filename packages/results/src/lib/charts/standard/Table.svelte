@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Columns and cell formatting come from $lib/table, the same helpers behind
 	// DataTable and the markdown twins, so the three renderings agree.
-	import { cell, columns } from '$lib/table'
+	import { cell, columns, headerFor } from '$lib/table'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { PAD, chars, clip, middle, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
 
@@ -22,7 +22,7 @@
 		onhover?.(
 			{
 				title: String(row[keys[0]] ?? ''),
-				rows: keys.slice(1).map((key, i) => ({ value: cell(row[key], key, figure.metadata?.labels), label: headers[i + 1] })),
+				rows: keys.slice(1).map((key, i) => ({ value: cell(row[key], key), label: headers[i + 1] })),
 			},
 			event
 		)
@@ -37,11 +37,10 @@
 	const keys = $derived(columns(rows))
 	const short = $derived(shorten(figure))
 
-	const headers = $derived(
-		Array.isArray(figure.metadata) && figure.metadata.length === keys.length
-			? figure.metadata.map(String)
-			: keys.map((key) => key.replace(/_/g, ' '))
-	)
+	// The export ships column names, not column headings. `response` is the one
+	// the question itself names — "Country", "Language" — so it takes the
+	// question's own label where there is one.
+	const headers = $derived(keys.map((key) => headerFor(key, figure.definition?.title ?? figure.name)))
 
 	// The first column is the response and takes the space; the rest are numbers.
 	const numeric = $derived(keys.map((key) => key !== keys[0] && rows.some((row: any) => typeof row[key] === 'number')))
@@ -94,7 +93,7 @@
 			{/if}
 
 			{#each keys as key, i (key)}
-				{@const text = short(cell(row[key], key, figure.metadata?.labels))}
+				{@const text = short(cell(row[key], key))}
 				<text
 					x={numeric[i] ? edge(i) : x(i)}
 					y={middle(y + ROW / 2 - 4, CELL_SIZE)}
