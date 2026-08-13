@@ -76,8 +76,6 @@
 
 		<div class="text-lg bg-black-500 dark:bg-black-200 text-white dark:text-black pt-6 px-6 pb-3 max-w-full lg:max-w-1/2 leading-snug">
 			<p class="mb-6">{siteDescriptionLong}</p>
-
-			<a class="underline" href={resolve('/2026')}>Results</a>
 			{@render links(current)}
 		</div>
 	</div>
