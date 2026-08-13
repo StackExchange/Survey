@@ -16,7 +16,7 @@ import { marked } from 'marked'
 import YAML from 'yaml'
 
 import { licence, siteDescription, siteDescriptionLong, siteName, siteUrl } from '../src/lib/constants.ts'
-import { STRUCTURAL, measure } from '../src/lib/measures.ts'
+import { STRUCTURAL, labelFor } from '../src/lib/labels.ts'
 
 marked.use({ breaks: true, gfm: true })
 
@@ -95,25 +95,25 @@ const summary = ({ id, name, index, description, descriptionLong }) => ({
 // nests cuts under `datasets`; the tidy one declares them up front.
 const isTidy = (question) => Array.isArray(question?.meta?.slices)
 
-const measureKeys = (rows) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]
+const valueKeys = (rows) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]
 
 // A bar draws the share. Where the rows carry none — the salary questions — it
-// draws the first named measure instead.
+// draws the first named column instead.
 const valueFor = (rows) => {
 	if (rows.some((row) => typeof row.pct === 'number')) return null
-	const [first] = measureKeys(rows)
-	return first ? measure(first) : null
+	const [first] = valueKeys(rows)
+	return first ? labelFor(first) : null
 }
 
 // A scatter needs two, and which is which the data can't say. The convention:
-// the explanatory measure on x, the money on y. Right for the only scatter in the
+// the explanatory column on x, the money on y. Right for the only scatter in the
 // survey, and wrong the day a currency column stops ending in `_usd` — so the run
 // prints what it resolved.
 const axesFor = (rows) => {
-	const keys = measureKeys(rows)
+	const keys = valueKeys(rows)
 	const x = keys.find((key) => !key.endsWith('_usd'))
 	const y = keys.find((key) => key.endsWith('_usd'))
-	return x && y ? { x: measure(x), y: measure(y) } : null
+	return x && y ? { x: labelFor(x), y: labelFor(y) } : null
 }
 
 // One cut: its rows, minus the slice index that selected them, minus any column
@@ -157,7 +157,7 @@ function resolve(ctx, chapterId, dataId, where, chart) {
 	const axes = chart === 'scatter' ? axesFor(rows) : null
 
 	if (chart === 'scatter' && !axes) {
-		return ctx.fail(`${where}: a scatter needs one non-currency and one currency measure, found ${measureKeys(rows).join(', ')}`)
+		return ctx.fail(`${where}: a scatter needs one non-currency and one currency column, found ${valueKeys(rows).join(', ')}`)
 	}
 
 	// `response -> short` for the strings this figure draws, from the question bank.

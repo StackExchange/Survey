@@ -1,9 +1,9 @@
 // A figure's rows as a table, for the markdown twins and the screen-reader table
 // beside each chart. Shared so the two cannot disagree.
-import { columnLabel } from '$lib/measures'
+import { columnLabel } from '$lib/labels'
 
 // Key-union rather than a switch on chart type: a question can carry any of the
-// named measures beside `count` and `pct`, so a new one renders without a branch.
+// named columns beside `count` and `pct`, so a new one renders without a branch.
 export const columns = (rows: any[]) => [...new Set(rows.filter(Boolean).flatMap((row) => Object.keys(row)))]
 
 // Whole numbers: the smallest cut in the export is 1.6%, so nothing rounds to 0%.

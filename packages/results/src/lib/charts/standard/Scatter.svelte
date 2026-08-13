@@ -21,7 +21,7 @@
 	const LABEL_SIZE = 12
 
 	const rows = $derived((figure.data ?? []).filter(Boolean))
-	// Which two of the row's named measures to plot, resolved by the loader — the
+	// Which two of the row's named columns to plot, resolved by the loader — the
 	// export names its columns and says nothing about where they belong.
 	const axes = $derived(figure.axes ?? null)
 	const short = $derived(shorten(figure))

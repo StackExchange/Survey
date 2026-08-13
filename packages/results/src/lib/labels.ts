@@ -1,9 +1,9 @@
-// What a named numeric column means.
+// What to call a column.
 //
 // The export ships raw column names and no presentation — deliberately, so the
 // same column can't word itself differently across 283 datasets. One registry,
-// imported by both the generator (`scripts/data/measures.js`, which adds the
-// rules for which column a figure plots) and `$lib/table` for column headings.
+// read by the generator (which decides which column a figure plots) and by
+// `$lib/table` for column headings.
 //
 // Eventually this arrives as a `measures` block in the export's index.json and
 // the file becomes a reader. Until then it is the one place the wording lives.
@@ -12,7 +12,7 @@
 // `short` is the table heading, where there isn't — a header clipped to
 // "Percent of re…" says less than "Percent".
 
-export type Measure = { key: string; label: string; unit: string }
+export type Label = { key: string; label: string; unit: string }
 
 const REGISTRY: Record<string, { label: string; unit?: string; short?: string }> = {
 	count: { label: 'Respondents' },
@@ -28,7 +28,7 @@ const REGISTRY: Record<string, { label: string; unit?: string; short?: string }>
 
 const humanise = (key: string) => key.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase())
 
-export const measure = (key: string): Measure => ({
+export const labelFor = (key: string): Label => ({
 	key,
 	label: REGISTRY[key]?.label ?? humanise(key),
 	unit: REGISTRY[key]?.unit ?? '',
@@ -36,5 +36,5 @@ export const measure = (key: string): Measure => ({
 
 export const columnLabel = (key: string) => REGISTRY[key]?.short ?? REGISTRY[key]?.label ?? humanise(key)
 
-// The shape every row has. Anything else a row carries is a measure.
+// The shape every row has. Anything else a row carries is a value worth labelling.
 export const STRUCTURAL = new Set(['slice', 'series', 'response', 'count', 'pct'])
