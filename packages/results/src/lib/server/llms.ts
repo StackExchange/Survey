@@ -1,14 +1,22 @@
-// Every published page, once. The sitemap, llms.txt, the .md twins and their
-// prerender entries all derive from `listPages()`, so the four cannot drift.
+// Every published page, once, and its markdown twin.
+//
+// The sitemap, llms.txt, the .md endpoints and their prerender entries all
+// derive from `listPages()`, so the four cannot drift. The twins exist for
+// models rather than people — a browser downloads text/markdown rather than
+// rendering it, and the HTML page is what a person follows.
+import { error } from '@sveltejs/kit'
+
 import years from '$archive/index.json'
-import methodologyData from '$data/methodology.json'
 
 import { licence, siteDescription, siteName, siteUrl } from '$lib/constants'
 import { ofSurvey, toMarkdown } from '$lib/table'
 
-import { getChapter, getChapterData, getChapters, getQuestion, listChapters, listQuestions, settings } from './content'
+import site from '$generated/site.json'
+import yearPayload from '$generated/year.json'
 
-const year = String(settings.year)
+import { getChapter, getChapterData, getQuestion } from './content'
+
+const year = String(site.settings.year)
 
 export type PageKind = 'home' | 'year' | 'chapter' | 'methodology' | 'data' | 'question'
 
@@ -32,18 +40,18 @@ const ref = (kind: PageKind, path: string, title: string, description: string, p
 })
 
 export function listPages(): PageRef[] {
-	const chapters = listChapters()
+	const chapters = site.chapters
 
 	return [
 		ref('home', '/', siteName, siteDescription, {}),
-		ref('year', `/${year}`, `${siteName} ${year}`, settings.description, { year }),
+		ref('year', `/${year}`, `${siteName} ${year}`, site.settings.description, { year }),
 		...chapters.flatMap(({ id, name, description }: any) => [
 			ref('chapter', `/${year}/${id}`, `${name} ${year}`, description?.trim() || `The ${name} chapter.`, { year, page: id }),
 			ref('data', `/${year}/${id}/data`, `${name} data ${year}`, `Every figure in the ${name} chapter, with sample sizes.`, {
 				year,
 				chapter: id,
 			}),
-			...listQuestions(id).map(({ slug, name: question }: any) =>
+			...((site.questions as Record<string, any[]>)[id] ?? []).map(({ slug, name: question }: any) =>
 				ref('question', `/${year}/${id}/data/${slug}`, `${question} ${year}`, `${question}, by respondent group.`, {
 					year,
 					chapter: id,
@@ -93,13 +101,17 @@ function figure(block: any, heading: string) {
 	// printing the same text twice.
 	if (block.kind === 'quote') return join(`> ${block.headline}`, block.description)
 
+	// A question carries its cuts and nothing flat; a promoted figure is already
+	// narrowed to the one cut the sheet asked for.
+	const shown = block.demographics ? { ...block, ...block.demographics[0] } : block
+
 	return join(
 		heading,
-		block.description,
-		asked(block),
-		`${block.demographic?.name} · ${nLine(block.demographic)}`,
-		block.subtext && `_${block.subtext}_`,
-		toMarkdown(block.data, block.metadata?.labels)
+		shown.description,
+		asked(shown),
+		`${shown.demographic?.name} · ${nLine(shown.demographic)}`,
+		shown.subtext && `_${shown.subtext}_`,
+		toMarkdown(shown.data)
 	)
 }
 
@@ -109,7 +121,7 @@ function home(page: PageRef) {
 	return join(
 		frontMatter(page),
 		`# ${siteName}`,
-		settings.descriptionLong,
+		site.settings.descriptionLong,
 		`## ${current.year}`,
 		`- [Results](${siteUrl}/${year})\n- [Methodology](${siteUrl}/${year}/methodology)`,
 		'## Past years',
@@ -124,12 +136,12 @@ function home(page: PageRef) {
 }
 
 function yearPage(page: PageRef) {
-	const chapters = getChapters()
+	const chapters = yearPayload.chapters
 
 	return join(
 		frontMatter(page),
 		`# ${siteName} ${year}`,
-		settings.descriptionLong,
+		site.settings.descriptionLong,
 		'## Chapters',
 		chapters
 			.map(
@@ -183,7 +195,8 @@ function dataPage(page: PageRef, id: string) {
 }
 
 function questionPage(page: PageRef, chapterId: string, slug: string) {
-	const question: any = getQuestion(chapterId, slug)
+	// The payload is `{ question, chapter }` — the same object the route returns.
+	const question: any = getQuestion(chapterId, slug)?.question
 	if (!question || question.kind !== 'figure') return null
 
 	return join(
@@ -202,17 +215,16 @@ function questionPage(page: PageRef, chapterId: string, slug: string) {
 					.join('\n')
 			),
 		'## Results',
-		question.demographics
-			.map((d: any) =>
-				join(`### ${d.demographic.name}`, nLine(d.demographic), d.subtext && `_${d.subtext}_`, toMarkdown(d.data, d.metadata?.labels))
-			)
-			.join('\n\n'),
+		// `subtext` describes the question, not the cut, so it sits above the groups
+		// rather than being repeated under each one.
+		question.subtext && `_${question.subtext}_`,
+		question.demographics.map((d: any) => join(`### ${d.demographic.name}`, nLine(d.demographic), toMarkdown(d.data))).join('\n\n'),
 		`In context: ${siteUrl}/${year}/${chapterId}/data.md`
 	)
 }
 
 function methodologyPage(page: PageRef) {
-	const data: Record<string, any> = methodologyData
+	const data: Record<string, any> = site.methodology
 	const scalars = Object.entries(data).filter(([, value]) => typeof value !== 'object')
 
 	return join(
@@ -234,7 +246,7 @@ function methodologyPage(page: PageRef) {
 	)
 }
 
-export function renderMarkdown(page: PageRef): string | null {
+function renderMarkdown(page: PageRef): string | null {
 	const { chapter, question } = page.params
 
 	switch (page.kind) {
@@ -251,4 +263,25 @@ export function renderMarkdown(page: PageRef): string | null {
 		case 'methodology':
 			return methodologyPage(page)
 	}
+}
+
+// Nothing links to the .md twins as routes — the alternate link is absolute, so
+// the crawler skips it — so every endpoint declares its own entries. Loosely
+// typed because each route wants its own RouteParams.
+export const entriesFor =
+	(...kinds: PageKind[]) =>
+	(): any[] =>
+		listPages()
+			.filter((page) => kinds.includes(page.kind))
+			.map(({ params }) => params)
+
+export function markdown(kinds: PageKind[], params: Record<string, string | undefined>) {
+	const match = (page: PageRef) => kinds.includes(page.kind) && Object.entries(page.params).every(([key, value]) => params[key] === value)
+
+	const page = listPages().find(match)
+	const body = page && renderMarkdown(page)
+
+	if (!body) error(404, 'No markdown for this page')
+
+	return new Response(`${body}\n`, { headers: { 'content-type': 'text/markdown; charset=utf-8' } })
 }

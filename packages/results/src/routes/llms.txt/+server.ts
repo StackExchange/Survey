@@ -1,5 +1,5 @@
-import { settings } from '$lib/server/content'
-import { listPages } from '$lib/server/pages'
+import site from '$generated/site.json'
+import { listPages } from '$lib/server/llms'
 import { licence, siteName, siteUrl } from '$lib/constants'
 import years from '$archive/index.json'
 
@@ -10,7 +10,7 @@ export const prerender = true
 // model as the pages so the two cannot drift.
 export function GET() {
 	const pages = listPages()
-	const { year } = settings
+	const { year } = site.settings
 
 	// Names both, so a model can skip the HTML entirely.
 	const entry = ({ path, markdown, title, description }: any) =>
@@ -20,7 +20,7 @@ export function GET() {
 
 	const body = `# Stack Overflow Developer Survey
 
-> ${settings.descriptionLong}
+> ${site.settings.descriptionLong}
 
 Results are published annually and cover the technologies developers use, how they
 work, and how they learn. Response-level data is released for every year.

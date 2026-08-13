@@ -1,4 +1,4 @@
-import { entriesFor, markdown } from '$lib/server/md'
+import { entriesFor, markdown } from '$lib/server/llms'
 import type { EntryGenerator, RequestHandler } from './$types'
 
 // A standalone endpoint does not inherit prerender from the layout.
