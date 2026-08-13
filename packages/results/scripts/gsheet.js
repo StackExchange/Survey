@@ -5,20 +5,22 @@ import { fileURLToPath } from 'node:url'
 import { csvParseRows } from 'd3-dsv'
 import { camelCase, kebabCase } from 'lodash-es'
 
-import { sheet } from '../config.ts'
-
 // Where to save this
 const OUT = path.resolve(fileURLToPath(import.meta.url), '../../src/content/survey.json')
 
-// The Copy Spreadsheet — MUST BE SET TO PUBLIC.
+// The Copy Spreadsheet - MUST BE SET TO PUBLIC
 // https://docs.google.com/spreadsheets/d/[ID FROM HERE]/edit#
-const SHEET_ID = process.env[sheet.idEnvVar]
+const SHEET_ID = process.env.GOOGLE_SHEETS_SHEETID
 
-const LISTS = new Set(sheet.listColumns)
+// Columns with split with `|`
+const LISTS = new Set(['dataset', 'values'])
 
-if (!SHEET_ID) throw new Error(`${sheet.idEnvVar} is not set — see .env.example`)
+if (!SHEET_ID) throw new Error('GOOGLE_SHEETS_SHEETID is not set — see .env.example')
 
-const [settings, chapters, sections, questions, features] = await Promise.all(sheet.tabs.map(getSheet))
+// Define which tabs we accept
+const [settings, chapters, sections, questions, features] = await Promise.all(
+	['Settings', 'Chapters', 'Sections', 'Questions', 'Features'].map(getSheet)
+)
 
 function mapRow(headers, row) {
 	const out = {}
@@ -41,7 +43,7 @@ function mapRow(headers, row) {
 }
 
 async function getSheet(name) {
-	const res = await fetch(sheet.csvUrl(SHEET_ID, name))
+	const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(name)}`)
 
 	// A private sheet 401s, but a missing tab answers 200 with an HTML error page
 	if (!res.ok) throw new Error(`${name}: HTTP ${res.status} — is the sheet shared with "anyone with the link"?`)
