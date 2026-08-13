@@ -2,7 +2,11 @@
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"allowJs": true,
-		"checkJs": true,
+		// The app is all .ts and .svelte — there is no JavaScript in src/. Checking
+		// it only ever reached vite.config.js and, through it, the build scripts in
+		// scripts/, which are node tooling verified by running them rather than by
+		// the app's type graph. `npm run data` is the check that matters there.
+		"checkJs": false,
 		"skipLibCheck": true,
 		"moduleResolution": "bundler"
 	}

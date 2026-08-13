@@ -1,9 +1,10 @@
 import { error } from '@sveltejs/kit'
 
-import { getChapter, listChapters, settings } from '$lib/server/content'
+import site from '$generated/site.json'
+import { getChapter } from '$lib/server/content'
 import type { EntryGenerator, PageServerLoad } from './$types'
 
-export const entries: EntryGenerator = () => listChapters().map(({ id }) => ({ year: settings.year, chapter: id }))
+export const entries: EntryGenerator = () => site.entries.chapter
 
 export const load: PageServerLoad = ({ params }) => {
 	const chapter = getChapter(params.chapter)

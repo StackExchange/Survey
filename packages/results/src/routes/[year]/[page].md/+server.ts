@@ -1,6 +1,6 @@
 // One route for every single segment under [year]: the chapters and the
 // methodology. Two route ids differing only in param name would collide.
-import { entriesFor, markdown } from '$lib/server/md'
+import { entriesFor, markdown } from '$lib/server/llms'
 import type { EntryGenerator, RequestHandler } from './$types'
 
 // A standalone endpoint does not inherit prerender from the layout.

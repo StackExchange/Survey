@@ -13,6 +13,7 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
+		"data": "node scripts/data.js",
 		"content": "node --env-file-if-exists=../../.env scripts/gsheet.js"
 	},
 	"devDependencies": {

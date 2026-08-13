@@ -1,10 +1,10 @@
 import { error } from '@sveltejs/kit'
 
-import { listChapters, settings } from '$lib/server/content'
+import site from '$generated/site.json'
 import type { LayoutServerLoad } from './$types'
 
 export const load: LayoutServerLoad = ({ params }) => {
-	if (params.year !== settings.year) error(404, `No results for ${params.year}`)
+	if (params.year !== site.settings.year) error(404, `No results for ${params.year}`)
 
-	return { year: params.year, chapters: listChapters() }
+	return { year: params.year, chapters: site.chapters }
 }
