@@ -3,7 +3,7 @@
 	import { IconArrowDownLeft, IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 
 	import Icon from '$lib/components/Icon.svelte'
-	import { chapterColour } from '$lib/constants'
+	import { chapterColour } from '$config'
 
 	let { year, previous, next }: { year: string; previous?: any; next?: any } = $props()
 </script>

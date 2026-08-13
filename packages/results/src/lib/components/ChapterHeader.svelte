@@ -3,7 +3,7 @@
 	import type { Snippet } from 'svelte'
 
 	import PromoBanner from '$lib/components/PromoBanner.svelte'
-	import { chapterColour } from '$lib/constants'
+	import { chapterColour } from '$config'
 
 	type Variant = 'overview' | 'chapter' | 'data' | 'panel' | 'question'
 

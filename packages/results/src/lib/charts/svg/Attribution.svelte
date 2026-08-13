@@ -4,7 +4,7 @@
 	import Glyph from './Glyph.svelte'
 	import { FOOTER, logo, type Chrome } from '$charts/utils/chrome'
 	import { middle, PAD, px, theme } from '$charts/utils/theme'
-	import { licence } from '$lib/constants'
+	import { licence } from '$config'
 
 	let { chrome, y, width, margin = PAD }: { chrome: Chrome; y: number; width: number; margin?: number } = $props()
 

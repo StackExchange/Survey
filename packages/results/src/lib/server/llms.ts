@@ -8,7 +8,7 @@ import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
 
-import { licence, siteDescription, siteName, siteUrl } from '$lib/constants'
+import { licence, siteDescription, siteName, siteUrl } from '$config'
 import { ofSurvey, toMarkdown } from '$lib/table'
 
 import site from '$generated/site.json'

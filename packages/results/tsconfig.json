@@ -7,6 +7,7 @@
 		// scripts/, which are node tooling verified by running them rather than by
 		// the app's type graph. `npm run data` is the check that matters there.
 		"checkJs": false,
+		"allowImportingTsExtensions": true,
 		"skipLibCheck": true,
 		"moduleResolution": "bundler"
 	}

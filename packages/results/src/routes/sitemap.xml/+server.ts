@@ -1,6 +1,6 @@
 import years from '$archive/index.json'
 
-import { siteUrl } from '$lib/constants'
+import { siteUrl } from '$config'
 
 export const prerender = true
 

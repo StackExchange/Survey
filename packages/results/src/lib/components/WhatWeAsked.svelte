@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import { surveyPreview } from '$lib/constants'
+	import { surveyPreview } from '$config'
 
 	// The line under the wording: how it was asked, not what it asked.
 	export const askedMeta = (definition: any) =>

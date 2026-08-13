@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { IconArrowDownBox, IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
-	import { githubRepo, siteDescriptionLong, siteUrl } from '$lib/constants'
+	import { githubRepo, siteDescriptionLong, siteUrl } from '$config'
 
 	import BrandHeader from '$lib/components/BrandHeader.svelte'
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte'

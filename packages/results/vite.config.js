@@ -46,6 +46,7 @@ export default defineConfig({
 			},
 			alias: {
 				$archive: '../archive',
+				$config: 'config.ts',
 				$content: 'src/content',
 				$data: 'src/data',
 				$generated: 'src/generated',

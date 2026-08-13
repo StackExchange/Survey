@@ -2,7 +2,7 @@
 	import { IconArrowDownBox, IconClipboard } from '@stackoverflow/stacks-icons/icons'
 
 	import { save } from '$charts/utils/export'
-	import { licence, siteName } from '$lib/constants'
+	import { licence, siteName } from '$config'
 	import { toCsv, toMarkdown, toRows } from '$lib/table'
 	import Button from './Button.svelte'
 

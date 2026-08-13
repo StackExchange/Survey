@@ -2,7 +2,7 @@
 	import { asset } from '$app/paths'
 	import { page } from '$app/state'
 
-	import { ogImage, siteDescription, siteName, siteUrl } from '$lib/constants'
+	import { ogImage, siteDescription, siteName, siteUrl } from '$config'
 
 	// Once per route: `<svelte:head>` does not de-duplicate, so a layout *and* a
 	// page yields two of each tag. Site-wide tags live in app.html.

@@ -7,7 +7,7 @@
 	import { cubicOut } from 'svelte/easing'
 	import type { TransitionConfig } from 'svelte/transition'
 
-	import { chapterColour } from '$lib/constants'
+	import { chapterColour } from '$config'
 	import Icon from '$lib/components/Icon.svelte'
 
 	const reducedMotion = new MediaQuery('prefers-reduced-motion: reduce')

@@ -5,7 +5,7 @@
 
 	import Button from '$lib/components/Button.svelte'
 	import ButtonMenu from '$lib/components/ButtonMenu.svelte'
-	import { siteUrl } from '$lib/constants'
+	import { siteUrl } from '$config'
 
 	let { title = 'this page' }: { title?: string } = $props()
 

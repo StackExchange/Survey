@@ -13,7 +13,7 @@
 	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
 	import { rowSelection } from '$charts/utils/rows.svelte'
 	import { askedInContext, askedMeta } from '$lib/components/WhatWeAsked.svelte'
-	import { githubRepo, siteUrl } from '$lib/constants'
+	import { githubRepo, siteUrl } from '$config'
 	import Seo from '$lib/components/Seo.svelte'
 	import { ofSurvey } from '$lib/table'
 

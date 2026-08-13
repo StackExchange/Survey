@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment'
-	import { promo } from '$lib/constants'
+	import { promo } from '$config'
 
 	let dismissed = $state(browser && localStorage.getItem(promo.dismissedKey) === '1')
 

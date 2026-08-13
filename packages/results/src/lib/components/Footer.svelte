@@ -1,8 +1,7 @@
 <script>
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
 
-	import survey from '$content/survey.json'
-	import { copyrightYear, githubRepo, licence } from '$lib/constants'
+	import { githubRepo, licence } from '$config'
 
 	import {
 		IconLogo,
@@ -26,7 +25,7 @@
 				<Icon src={IconLogo} />
 			</a>
 			<p class="mt-12 text-sm leading-snug text-black-300">
-				Site design / logo © {copyrightYear}
+				Site design / logo © {new Date().getFullYear()}
 				{licence.holder}<br />
 				User contributions licensed under
 				<a class="underline hover:text-white" href={licence.contributions.url} rel="license external">{licence.contributions.name}</a><br />
