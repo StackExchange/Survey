@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { parse } from 'csv-parse/sync'
 import { camelCase, kebabCase } from 'lodash-es'
 
 // Where to save this
@@ -20,29 +21,6 @@ if (!SHEET_ID) throw new Error('GOOGLE_SHEETS_SHEETID is not set — see .env.ex
 const [settings, chapters, sections, questions, features] = await Promise.all(
 	['Settings', 'Chapters', 'Sections', 'Questions', 'Features'].map(getSheet)
 )
-
-// RFC 4180 enough for Sheets: quoted fields, doubled quotes, CRLF.
-function parseCsv(text) {
-	const rows = [[]]
-	let field = ''
-	let quoted = false
-
-	for (let i = 0; i < text.length; i++) {
-		const c = text[i]
-		if (quoted) {
-			if (c !== '"') field += c
-			else if (text[i + 1] === '"') ((field += '"'), i++)
-			else quoted = false
-		} else if (c === '"') quoted = true
-		else if (c === ',') (rows.at(-1).push(field), (field = ''))
-		else if (c === '\n') (rows.at(-1).push(field), (field = ''), rows.push([]))
-		else if (c !== '\r') field += c
-	}
-	rows.at(-1).push(field)
-
-	// Sheets pads the grid, so trailing blank rows are expected, not an error.
-	return rows.filter((row) => row.some((f) => f !== ''))
-}
 
 function mapRow(headers, row) {
 	const out = {}
@@ -71,8 +49,12 @@ async function getSheet(name) {
 	if (!res.ok) throw new Error(`${name}: HTTP ${res.status} — is the sheet shared with "anyone with the link"?`)
 	if (!res.headers.get('content-type')?.includes('csv')) throw new Error(`${name}: not CSV — does that tab exist?`)
 
-	const [headers, ...rows] = parseCsv(await res.text())
-	return rows.map((row) => mapRow(headers, row))
+	// `relax_column_count`: Sheets pads the grid, so a short or long row is the
+	// spreadsheet's shape rather than a malformed file.
+	const [headers, ...rows] = parse(await res.text(), { relax_column_count: true, skip_empty_lines: true, bom: true })
+
+	// A padded row is all-empty rather than absent, which `skip_empty_lines` won't catch.
+	return rows.filter((row) => row.some((field) => field !== '')).map((row) => mapRow(headers, row))
 }
 
 const byName = new Map(chapters.map((chapter) => [chapter.name, chapter]))
