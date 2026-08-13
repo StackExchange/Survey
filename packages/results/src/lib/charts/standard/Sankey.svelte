@@ -31,14 +31,20 @@
 
 	const rows = $derived((figure.data ?? []).filter(Boolean))
 	const short = $derived(shorten(figure))
-	const labels = $derived((figure.metadata?.labels ?? []).map(short))
 
-	// Only the labels a column actually uses: d3-sankey pushes a node with no
+	// A row is `response -> series`: worked with, wants to work with. The same
+	// language appears on both sides, so one id list spans both columns and a
+	// language keeps its colour across the flow.
+	const names = $derived([...new Set(rows.flatMap((row: any) => [row.response, row.series]))].filter(Boolean) as string[])
+	const labels = $derived(names.map(short))
+	const idOf = $derived(new Map(names.map((name: string, i: number) => [name, i])))
+
+	// Only the ids a column actually uses: d3-sankey pushes a node with no
 	// outgoing links to the far side, where it lands in the wrong column.
 	const columns = $derived.by(() => {
-		const sources = new Set(rows.map((row: any) => row.source))
-		const targets = new Set(rows.map((row: any) => row.target))
-		const ids = labels.map((_: string, i: number) => i)
+		const sources = new Set(rows.map((row: any) => idOf.get(row.response)))
+		const targets = new Set(rows.map((row: any) => idOf.get(row.series)))
+		const ids = names.map((_: string, i: number) => i)
 		return { left: ids.filter((i: number) => sources.has(i)), right: ids.filter((i: number) => targets.has(i)) }
 	})
 
@@ -60,10 +66,14 @@
 				[x0, HEAD],
 				[Math.max(x0 + NODE_WIDTH * 3, width - LABEL_WIDTH), HEAD + plotHeight],
 			])({
-			// `label` keeps the index into metadata.labels, which colours the node —
-			// the same language has to read the same in both columns.
+			// `label` keeps the shared id, which colours the node — the same language
+			// has to read the same in both columns.
 			nodes: [...columns.left, ...columns.right].map((id: number) => ({ name: labels[id], label: id })),
-			links: rows.map((row: any) => ({ ...row, source: left.get(row.source), target: right.get(row.target) })),
+			links: rows.map((row: any) => ({
+				source: left.get(idOf.get(row.response)),
+				target: right.get(idOf.get(row.series)),
+				value: row.count ?? 0,
+			})),
 		}) as { nodes: any[]; links: any[] }
 	})
 

@@ -1,6 +1,5 @@
 <script lang="ts">
-	// A group of bars per response, one per series, discovered from `metadata` as
-	// `percent1`, `percent2`, … Plain groups against one set of scales — nesting a
+	// A group of bars per response, one per series. Plain groups against one set of scales — nesting a
 	// Bar chart per group put an `<svg>` inside an `<svg>`.
 	import { scaleLinear } from 'd3-scale'
 
@@ -23,6 +22,7 @@
 		theme,
 	} from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { bySeries } from '$lib/table'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
@@ -44,7 +44,7 @@
 		onhover?.(
 			{
 				title: String(row.response ?? ''),
-				rows: cuts.map((cut, i) => ({ value: format(row, cut.key), label: cut.label, color: series(i) })),
+				rows: cuts.map((cut: any, i: number) => ({ value: format(row, i), label: cut.label, color: series(i) })),
 			},
 			event
 		)
@@ -55,31 +55,29 @@
 		onhover?.(null)
 	}
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
 	const short = $derived(shorten(figure))
 
-	// `percent1`, `percent2`, … in index order, each with the label it was given.
-	const cuts = $derived(
-		Object.keys(figure.metadata ?? {})
-			.filter((key) => /^percent\d+$/.test(key))
-			.sort()
-			.map((key) => ({ key, label: figure.metadata[key]?.label ?? key }))
-	)
+	// One bar per series, in the order the export introduced them.
+	const cuts = $derived((figure.series ?? []).map((name: string) => ({ key: name, label: short(name) })))
 
-	// A salary-style question labels its bars with a named value instead of a share.
-	const value = $derived(figure.metadata?.label ?? null)
-	const amount = (row: any, cut: string) => row[cut] ?? 0
-	const format = (row: any, cut: string) => (value ? `${value.unit ?? ''}${count(row[value.key])}` : percent(amount(row, cut)))
+	// A salary-style question labels its bars with a named measure instead of a share.
+	const value = $derived(figure.value ?? null)
+
+	// One group per response, holding a cell per series.
+	const rows = $derived(bySeries(figure.data, figure.series ?? []))
+
+	const amount = (row: any, i: number) => (value ? (row.cells[i]?.[value.key] ?? 0) : (row.cells[i]?.pct ?? 0))
+	const format = (row: any, i: number) => (value ? `${value.unit ?? ''}${count(amount(row, i))}` : percent(amount(row, i)))
 
 	const labelWidth = $derived(labelGutter(width))
 	const valueWidth = $derived(
-		Math.ceil(Math.max(24, ...rows.flatMap((row: any) => cuts.map((cut) => digitsWidth(format(row, cut.key), VALUE_SIZE))))) + 12
+		Math.ceil(Math.max(24, ...rows.flatMap((row: any) => cuts.map((_: any, i: number) => digitsWidth(format(row, i), VALUE_SIZE))))) + 12
 	)
 	const plotX = $derived(labelWidth + 12)
 	const plotWidth = $derived(Math.max(1, width - plotX - valueWidth - PAD))
 
 	// Every cut is a share of respondents, so all the bars read against one scale.
-	const top = $derived(domain(rows.flatMap((row: any) => cuts.map((cut) => amount(row, cut.key)))))
+	const top = $derived(domain(rows.flatMap((row: any) => cuts.map((_: any, i: number) => amount(row, i)))))
 	const x = $derived(scaleLinear().domain([0, top]).range([0, plotWidth]).clamp(true))
 
 	const groupHeight = $derived(cuts.length * (BAR + BAR_GAP) + GROUP_GAP)
@@ -117,12 +115,12 @@
 
 			{#each cuts as cut, i (cut.key)}
 				{@const barY = y + i * (BAR + BAR_GAP)}
-				{@const bar = px(x(amount(row, cut.key)))}
+				{@const bar = px(x(amount(row, i)))}
 				<rect x={plotX} y={barY} width={plotWidth} height={BAR} rx="2" fill={theme.tint} />
 				<rect x={plotX} y={barY} width={bar} height={BAR} rx="2" fill={series(i)} />
 
 				<text x={px(plotX + bar + 8)} y={middle(barY + BAR / 2, VALUE_SIZE)} font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
-					{format(row, cut.key)}
+					{format(row, i)}
 				</text>
 			{/each}
 

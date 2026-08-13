@@ -22,6 +22,7 @@
 		theme,
 	} from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { bySeries } from '$lib/table'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
@@ -40,13 +41,13 @@
 	// The gap is the point of the chart, so the readout carries it as its own row.
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		active = i
-		const gap = Math.round(((row.percent2 ?? 0) - (row.percent1 ?? 0)) * 100)
+		const gap = Math.round((row.b - row.a) * 100)
 		onhover?.(
 			{
 				title: String(row.response ?? ''),
 				rows: [
-					{ value: format(row.percent1, first), label: first.label, color: theme.from },
-					{ value: format(row.percent2, second), label: second.label, color: theme.to },
+					{ value: format(row.a), label: first, color: theme.from },
+					{ value: format(row.b), label: second, color: theme.to },
 					{ value: `${gap > 0 ? '+' : ''}${gap} pts`, label: 'difference' },
 				],
 			},
@@ -59,13 +60,23 @@
 		onhover?.(null)
 	}
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
 	const short = $derived(shorten(figure))
 
-	const first = $derived(figure.metadata?.percent1 ?? { label: 'percent1' })
-	const second = $derived(figure.metadata?.percent2 ?? { label: 'percent2' })
+	// Exactly two series — the chart is the gap between them.
+	const names = $derived(figure.series ?? [])
+	const first = $derived(short(names[0] ?? ''))
+	const second = $derived(short(names[1] ?? ''))
 
-	const format = (value: number, meta: any) => (meta?.unit === '%' || meta?.unit == null ? percent(value) : `${meta.unit}${count(value)}`)
+	// One row per response, carrying both ends.
+	const rows = $derived(
+		bySeries(figure.data, names).map(({ response, cells }) => ({
+			response,
+			a: cells[0]?.pct ?? 0,
+			b: cells[1]?.pct ?? 0,
+		}))
+	)
+
+	const format = (value: number) => percent(value)
 
 	// Narrow: the label takes its own line, the track the full width below it.
 	const stacked = $derived(stackRows(width, LABEL_SIZE))
@@ -78,15 +89,12 @@
 	// still be labelled.
 	const inset = $derived(
 		Math.max(
-			...rows.flatMap((row: any) => [
-				digitsWidth(format(row.percent1, first), VALUE_SIZE),
-				digitsWidth(format(row.percent2, second), VALUE_SIZE),
-			]),
+			...rows.flatMap((row: any) => [digitsWidth(format(row.a), VALUE_SIZE), digitsWidth(format(row.b), VALUE_SIZE)]),
 			24
 		) + DOT
 	)
 
-	const top = $derived(domain(rows.flatMap((row: any) => [row.percent1 ?? 0, row.percent2 ?? 0])))
+	const top = $derived(domain(rows.flatMap((row: any) => [row.a, row.b])))
 
 	const x = $derived(
 		scaleLinear()
@@ -95,7 +103,7 @@
 			.clamp(true)
 	)
 
-	const key = $derived(legend([first.label, second.label], Math.max(1, width - PAD * 2)))
+	const key = $derived(legend([first, second], Math.max(1, width - PAD * 2)))
 	// Stacked rows carry a line of text above the track.
 	const ROW = $derived(stacked ? LINE + TRACK : 30)
 	const height = $derived(PAD + key.height + rows.length * ROW + PAD)
@@ -111,9 +119,9 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + key.height + i * ROW}
 		{@const mid = stacked ? y + LINE + TRACK / 2 : y + ROW / 2}
-		{@const a = px(x(row.percent1))}
-		{@const b = px(x(row.percent2))}
-		{@const leading = (row.percent1 ?? 0) > (row.percent2 ?? 0)}
+		{@const a = px(x(row.a))}
+		{@const b = px(x(row.b))}
+		{@const leading = row.a > row.b}
 		<g opacity={dim(row.response)}>
 			<!-- Stacked, the track sits below its label line; wide, it centres the band. -->
 
@@ -138,7 +146,7 @@
 				font-weight="600"
 				fill={theme.ink}
 			>
-				{format(row.percent1, first)}
+				{format(row.a)}
 			</text>
 
 			<rect x={px(b - DOT / 2)} y={mid - DOT / 2} width={DOT} height={DOT} fill={theme.to} />
@@ -152,7 +160,7 @@
 				font-family="Stack Sans Headline"
 				fill={theme.ink}
 			>
-				{format(row.percent2, second)}
+				{format(row.b)}
 			</text>
 
 			<rect

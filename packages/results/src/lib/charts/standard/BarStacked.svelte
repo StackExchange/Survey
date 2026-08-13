@@ -24,6 +24,7 @@
 		theme,
 	} from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { bySeries } from '$lib/table'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
@@ -64,36 +65,23 @@
 	const names = $derived(figure.series ?? [])
 	const labels = $derived(names.map(short))
 
-	// Rows arrive one per (statement, segment). Grouping keeps the order the export
-	// wrote them in, and the offset each segment stacks at is the running sum of the
-	// ones before it — the export ships no offset column.
-	const rows = $derived.by(() => {
-		const order: string[] = []
-		const bySegment: Record<string, Record<string, any>> = {}
-
-		for (const row of (figure.data ?? []).filter(Boolean)) {
-			const response = String(row.response ?? '')
-			if (!bySegment[response]) {
-				bySegment[response] = {}
-				order.push(response)
-			}
-			bySegment[response][String(row.series ?? '')] = row
-		}
-
-		return order.map((response) => {
-			const found = bySegment[response]
+	// Segments stack at the running sum of the ones before them — the export ships
+	// no offset column, and computing it is cheaper than writing every row twice.
+	const rows = $derived(
+		bySeries(figure.data, names).map(({ response, cells }) => {
 			let offset = 0
 
-			const segments = names.map((name: string) => {
-				const pct = found[name]?.pct ?? 0
-				const segment = { pct, count: found[name]?.count ?? null, offset }
-				offset += pct
-				return segment
-			})
-
-			return { response, segments }
+			return {
+				response,
+				segments: cells.map((cell: any) => {
+					const pct = cell?.pct ?? 0
+					const segment = { pct, count: cell?.count ?? null, offset }
+					offset += pct
+					return segment
+				}),
+			}
 		})
-	})
+	)
 
 	const plotWidth = $derived(Math.max(1, width - PAD * 2))
 	const key = $derived(legend(labels, plotWidth))
