@@ -47,10 +47,12 @@ async function getSheet(name) {
 	if (!res.ok) throw new Error(`${name}: HTTP ${res.status} — is the sheet shared with "anyone with the link"?`)
 	if (!res.headers.get('content-type')?.includes('csv')) throw new Error(`${name}: not CSV — does that tab exist?`)
 
-	// d3-dsv is ragged-tolerant and strips a BOM, so Sheets' padded grid needs no
-	// options — only the all-empty rows filtering out, which aren't absent, just blank.
-	const [headers, ...rows] = csvParseRows(await res.text())
+	// d3-dsv is ragged-tolerant, so Sheets' padded grid needs no options. It does
+	// not strip a BOM though, and one would ride into the first header name and
+	// camelCase into a key nothing reads — losing that column silently.
+	const [headers, ...rows] = csvParseRows((await res.text()).replace(/^\uFEFF/, ''))
 
+	// Sheets pads the grid, so a blank row is all-empty rather than absent.
 	return rows.filter((row) => row.some((field) => field !== '')).map((row) => mapRow(headers, row))
 }
 
