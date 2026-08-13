@@ -24,6 +24,30 @@ export const headerFor = (key: string, questionName?: string | null) => (key ===
 
 const rowsOf = (rows: any[]) => (rows ?? []).filter(Boolean)
 
+/**
+ * Flat `(response, series)` rows regrouped into one entry per response, with a
+ * slot per series in `series` order — `null` where the export has no row for
+ * that combination.
+ *
+ * The four multi-series charts all need exactly this, and the export writes rows
+ * response-major, so first appearance is the display order.
+ */
+export function bySeries(rows: any[], series: string[]) {
+	const order: string[] = []
+	const index: Record<string, Record<string, any>> = {}
+
+	for (const row of rowsOf(rows)) {
+		const response = String(row.response ?? '')
+		if (!index[response]) {
+			index[response] = {}
+			order.push(response)
+		}
+		index[response][String(row.series ?? '')] = row
+	}
+
+	return order.map((response) => ({ response, cells: series.map((name) => index[response][name] ?? null) }))
+}
+
 export function toMarkdown(rows: any[]) {
 	const clean = rowsOf(rows)
 	if (!clean.length) return ''
