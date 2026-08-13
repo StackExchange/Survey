@@ -7,7 +7,7 @@
 	import NavToggle from '$lib/components/NavToggle.svelte'
 	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
 	import WhatWeAsked from '$lib/components/WhatWeAsked.svelte'
-	import { graph, JsonLd, Seo } from '$lib/seo'
+	import Seo from '$lib/components/Seo.svelte'
 	import Markdown from '$lib/components/Markdown.svelte'
 	import Icon from '$lib/components/Icon.svelte'
 	import { IconArrowDownRight, IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
@@ -22,9 +22,11 @@
 		chosen[block.id] = id
 	}
 
-	// Spread over the figure, so Figure and DataTable see the server's shape.
+	// Spread over the figure, so Figure and DataTable see one flat shape. The
+	// payload carries the cuts and nothing flat, so the first is the default.
 	function current(block: any) {
-		const group = (block.demographics ?? []).find((d: any) => d.demographic.id === chosen[block.id])
+		const groups = block.demographics ?? []
+		const group = groups.find((d: any) => d.demographic.id === chosen[block.id]) ?? groups[0]
 		return group ? { ...block, ...group } : block
 	}
 
@@ -35,35 +37,10 @@
 		return id && id !== (block.demographics ?? [])[0]?.demographic.id ? `${path}?d=${id}` : path
 	}
 
-	const year = $derived(data.year)
-	const path = $derived(`/${year}/${data.chapter.id}/data`)
-	const questions = $derived(data.chapter.sections.flatMap((s: any) => s.questions.filter((q: any) => q.kind === 'figure')))
 	const description = $derived(`Every figure in the ${data.chapter.name} chapter, with sample sizes.`)
-
-	const nodes = $derived([
-		graph.organization(),
-		graph.website(),
-		graph.webPage(
-			{
-				path,
-				title: `${data.chapter.name} data ${year}`,
-				description,
-				markdown: `${path}.md`,
-			},
-			graph.ids.dataset(path)
-		),
-		graph.breadcrumbs([
-			{ name: 'Developer Survey', path: '/' },
-			{ name: year, path: `/${year}` },
-			{ name: data.chapter.name, path: `/${year}/${data.chapter.id}` },
-			{ name: 'Data', path },
-		]),
-		graph.chapterDataset(year, data.chapter, questions),
-	])
 </script>
 
-<Seo title="{data.chapter.name} data {data.year}" {description} />
-<JsonLd graph={nodes} />
+<Seo title="{data.chapter.name} data {data.year}" {description} graph={data.chapter.jsonld} />
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Survey data">
 	<nav aria-label="Chapter sections" class="mt-10">
@@ -82,7 +59,7 @@
 </ChapterHeader>
 
 <main id="main" tabindex="-1">
-	<div class="flex justify-between items-center mt-8 mb-25 container mx-auto">
+	<div class="container mx-auto mt-8 mb-25 flex items-center justify-between">
 		<NavToggle
 			options={[
 				{ href: resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter }), label: 'Overview' },
@@ -96,9 +73,9 @@
 		<section aria-labelledby={section.id}>
 			<header class="bg-grid border-b border-b-black-200 dark:border-b-black-500">
 				<div class="container mx-auto">
-					<h2 id={section.id} class="font-headline text-2xl inline-flex items-center -mb-px">
-						<span class="bg-black text-white py-1 px-3 inline-block">{data.chapter.index}.{sectionIndex + 1}</span>
-						<span class="py-1 px-3 inline-block bg-black-150 dark:bg-black-500">{section.name}</span>
+					<h2 id={section.id} class="-mb-px inline-flex items-center font-headline text-2xl">
+						<span class="inline-block bg-black px-3 py-1 text-white">{data.chapter.index}.{sectionIndex + 1}</span>
+						<span class="inline-block bg-black-150 px-3 py-1 dark:bg-black-500">{section.name}</span>
 					</h2>
 				</div>
 			</header>
@@ -114,29 +91,29 @@
 					aria-labelledby={titleId}
 					class="{blockIndex + 1 !== section.questions.length
 						? 'border-b'
-						: ''} border-black-200 dark:border-black-500 py-20 overflow-x-clip"
+						: ''} overflow-x-clip border-black-200 py-20 dark:border-black-500"
 				>
-					<div class="container flex flex-col lg:flex-row gap-6 items-stretch">
+					<div class="container flex flex-col items-stretch gap-6 lg:flex-row">
 						<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-						<header tabindex="0" class="basis-1/4 flex flex-col lg:sticky top-16 max-h-[calc(100vh-4rem)] overflow-y-auto">
+						<header tabindex="0" class="top-16 flex max-h-[calc(100vh-4rem)] basis-1/4 flex-col overflow-y-auto lg:sticky">
 							<h3 id={titleId} class="mt-3 mb-3 font-headline text-3xl leading-8">
 								<a
 									class="group"
 									href={resolve('/[year]/[chapter]/data/[question]', { year: data.year, chapter: data.chapter.id, question: block.id })}
 								>
-									{block.name} <span class="inline-flex p-1 ml-0.5 aspect-square group-hover:bg-orange"><Icon src={IconArrowRight} /></span>
+									{block.name} <span class="ml-0.5 inline-flex aspect-square p-1 group-hover:bg-orange"><Icon src={IconArrowRight} /></span>
 								</a>
 							</h3>
 
 							{#if block.description}
-								<Markdown content={block.description} class="text-black-400 dark:text-black-300" />
+								<Markdown html={block.descriptionHtml} class="text-black-400 dark:text-black-300" />
 							{/if}
 
 							{#if shown.definition}
 								{@const definition = shown.definition}
 
-								<div class="mt-auto pt-6 relative">
-									<h4 class="w-fit flex items-center bg-blue-extra-light dark:bg-blue-dark px-4 pt-2 gap-2">
+								<div class="relative mt-auto pt-6">
+									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-dark">
 										<Icon src={IconQuestion} />
 										What we asked
 									</h4>
@@ -145,7 +122,7 @@
 							{/if}
 						</header>
 
-						<div class="basis-3/4 shrink min-w-0 flex flex-col">
+						<div class="flex min-w-0 shrink basis-3/4 flex-col">
 							<Demographics
 								demographics={groups}
 								selected={shown.demographic.id}
@@ -157,7 +134,7 @@
 							<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 							<div
 								id={panelId}
-								class="grow flex flex-col"
+								class="flex grow flex-col"
 								role={groups.length > 1 ? 'tabpanel' : undefined}
 								aria-labelledby={groups.length > 1 ? tabId(panelId, shown.demographic.id) : undefined}
 								tabindex={groups.length > 1 ? 0 : undefined}
@@ -175,13 +152,13 @@
 
 	<a
 		href={resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter })}
-		class="max-w-4xs bg-black hover:bg-orange-medium fixed right-5 bottom-5 flex leading-snug z-50"
+		class="max-w-4xs fixed right-5 bottom-5 z-50 flex bg-black leading-snug hover:bg-orange-medium"
 	>
-		<Icon src={SpotMetrics} class="native max-w-30 h-auto p-3" />
+		<Icon src={SpotMetrics} class="native h-auto max-w-30 p-3" />
 		<div class="p-3 pl-0">
-			<div class="text-white font-medium">Back to highlights</div>
+			<div class="font-medium text-white">Back to highlights</div>
 			<div class="text-black-350">Get the big picture</div>
-			<div class="text-black bg-orange self-end mt-auto p-2 absolute right-0 bottom-0"><Icon src={IconArrowDownRight} /></div>
+			<div class="absolute right-0 bottom-0 mt-auto self-end bg-orange p-2 text-black"><Icon src={IconArrowDownRight} /></div>
 		</div>
 	</a>
 </main>

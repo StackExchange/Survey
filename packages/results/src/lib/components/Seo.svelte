@@ -15,9 +15,12 @@
 		noindex?: boolean
 		// Set false where a page has no .md twin, such as the error page.
 		markdown?: boolean
+		// The page's schema.org @graph, built in scripts/data.js and carried on the
+		// payload. Absent on pages with no structured data, such as the error page.
+		graph?: any[]
 	}
 
-	let { title, description = siteDescription, image = ogImage, type = 'website', noindex = false, markdown = true }: Props = $props()
+	let { title, description = siteDescription, image = ogImage, type = 'website', noindex = false, markdown = true, graph }: Props = $props()
 
 	const fullTitle = $derived(title ? `${title} | ${siteName}` : siteName)
 	const canonical = $derived(`${siteUrl}${page.url.pathname}`)
@@ -26,6 +29,16 @@
 	// Absolute: the prerender crawler follows href on any tag, so a root-relative
 	// one would be enqueued and validated as a page.
 	const markdownUrl = $derived(`${siteUrl}${markdownPath(page.url.pathname)}`)
+
+	// A ld+json block is a data block, so the parser does not decode entities
+	// inside it — an entity would land in the JSON as literal text. The tag is
+	// assembled rather than written out: a literal closing tag would end this
+	// block for both the Svelte compiler and eslint's parser.
+	const jsonld = $derived(
+		graph?.length
+			? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</${'script'}>`
+			: null
+	)
 </script>
 
 <svelte:head>
@@ -50,5 +63,10 @@
 
 	{#if noindex}
 		<meta name="robots" content="noindex, nofollow" />
+	{/if}
+
+	{#if jsonld}
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -- serialised JSON-LD, escaped above -->
+		{@html jsonld}
 	{/if}
 </svelte:head>

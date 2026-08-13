@@ -15,7 +15,7 @@
 	import { rowSelection } from '$charts/utils/rows.svelte'
 	import { askedInContext, askedMeta } from '$lib/components/WhatWeAsked.svelte'
 	import { githubRepo, siteUrl } from '$lib/constants'
-	import { graph, JsonLd, Seo } from '$lib/seo'
+	import Seo from '$lib/components/Seo.svelte'
 	import { ofSurvey } from '$lib/table'
 
 	import type { PageData } from './$types'
@@ -86,61 +86,34 @@
 	})
 
 	// Built from the default group: that is what the prerendered HTML shows.
-	const nodes = $derived([
-		graph.organization(),
-		graph.website(),
-		graph.webPage(
-			{ path, title: `${data.question.name} ${data.year}`, description: data.question.description, markdown: `${path}.md` },
-			graph.ids.dataset(path)
-		),
-		graph.breadcrumbs([
-			{ name: 'Developer Survey', path: '/' },
-			{ name: data.year, path: `/${data.year}` },
-			{ name: data.chapter.name, path: `/${data.year}/${data.chapter.id}` },
-			{ name: 'Data', path: `/${data.year}/${data.chapter.id}/data` },
-			{ name: data.question.name, path },
-		]),
-		graph.questionDataset(data.year, data.chapter.id, { ...data.question, ...fallback }),
-	])
 </script>
 
 {#if !panel}
-	<Seo title="{data.question.name} {data.year}" description={data.question.description} />
-	<JsonLd graph={nodes} />
+	<Seo title="{data.question.name} {data.year}" description={data.question.description} graph={data.jsonld} />
 {/if}
 
-<div class="pt-25 pb-5 bg-black-100">
-  <div class="container flex justify-between">
-    <Button
-      href={resolve('/[year]/[chapter]/data', { year: data.year, chapter: data.chapter.id })}
-      icon={IconArrowLeft}
-      variant="plain"
-    >
-      All {data.chapter.name} data
-    </Button>
-    <label class="flex ml-auto mr-4">
-  			<span class="sr-only">Link to this chart</span>
-  			<input type="url" value={shareUrl} readonly class="py-1.5 min-w-2xs w-full" onfocus={(event) => event.currentTarget.select()} />
-  			<Button copy={shareUrl} icon={IconLink} title="Copy this url" variant="filled" size="icon" />
-  		</label>
-    <CopyPage title="the question &quot;{data.question.name}&quot;" />
-  </div>
+<div class="bg-black-100 pt-25 pb-5">
+	<div class="container flex justify-between">
+		<Button href={resolve('/[year]/[chapter]/data', { year: data.year, chapter: data.chapter.id })} icon={IconArrowLeft} variant="plain">
+			All {data.chapter.name} data
+		</Button>
+		<label class="mr-4 ml-auto flex">
+			<span class="sr-only">Link to this chart</span>
+			<input type="url" value={shareUrl} readonly class="w-full min-w-2xs py-1.5" onfocus={(event) => event.currentTarget.select()} />
+			<Button copy={shareUrl} icon={IconLink} title="Copy this url" variant="filled" size="icon" />
+		</label>
+		<CopyPage title="the question &quot;{data.question.name}&quot;" />
+	</div>
 </div>
 
-<svelte:element
-	this={panel ? 'div' : 'main'}
-	id={panel ? undefined : 'main'}
-	tabindex={panel ? undefined : -1}
-	class="mx-auto container"
->
-
- 	{#if demographics.length > 1}
-		<div class="border-black-150 dark:border-black-500 mt-8 border-b">
+<svelte:element this={panel ? 'div' : 'main'} id={panel ? undefined : 'main'} tabindex={panel ? undefined : -1} class="container mx-auto">
+	{#if demographics.length > 1}
+		<div class="mt-8 border-b border-black-150 dark:border-black-500">
 			<Demographics {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
 		</div>
 	{/if}
 
-  <ChartDownload {figure} {selection} name={exportName} year={data.year} url={shareUrl} chapter={data.chapter}>
+	<ChartDownload {figure} {selection} name={exportName} year={data.year} url={shareUrl} chapter={data.chapter}>
 		{#snippet chart({ block, chrome }: any)}
 			<div
 				id="figure"
@@ -152,10 +125,7 @@
 		{/snippet}
 	</ChartDownload>
 
-	<div class="flex justify-between items-center my-8 mx-auto">
-
-
-	</div>
+	<div class="mx-auto my-8 flex items-center justify-between"></div>
 
 	<p class="sr-only" aria-live="polite">
 		{current.demographic.name}, n = {count(current.demographic.n)}
@@ -164,11 +134,9 @@
 		{/if}
 	</p>
 
-
-
 	<section class="mt-12" aria-labelledby="data-table">
 		<h2 id="data-table" class="font-headline text-2xl font-semibold">Data table</h2>
-		<p class="text-black-400 dark:text-black-300 mt-1 text-sm">
+		<p class="mt-1 text-sm text-black-400 dark:text-black-300">
 			{current.demographic.name}, n = {count(current.demographic.n)}{#if share}
 				({share}){/if}
 		</p>
@@ -182,9 +150,9 @@
 		<section class="mt-12" aria-labelledby="asked">
 			<h2 id="asked" class="font-headline text-2xl font-semibold">What we asked</h2>
 
-			<Markdown content={definition.title} class="mt-3 max-w-prose text-lg" />
+			<Markdown html={definition.titleHtml} class="mt-3 max-w-prose text-lg" />
 
-			<p class="text-black-400 dark:text-black-300 mt-2 text-sm">
+			<p class="mt-2 text-sm text-black-400 dark:text-black-300">
 				{askedMeta(definition)}{#if definition.carry_forward?.from}
 					· options carried forward from {definition.carry_forward.from}{/if}
 			</p>
