@@ -58,7 +58,7 @@
 	const short = $derived(shorten(figure))
 
 	// One bar per series, in the order the export introduced them.
-	const cuts = $derived((figure.series ?? []).map((name: string) => ({ key: name, label: short(name) })))
+	const cuts: { key: string; label: string }[] = $derived((figure.series ?? []).map((name: string) => ({ key: name, label: short(name) })))
 
 	// A salary-style question labels its bars with a named measure instead of a share.
 	const value = $derived(figure.value ?? null)

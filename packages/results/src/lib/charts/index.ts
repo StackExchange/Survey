@@ -38,14 +38,12 @@ import type { Component } from 'svelte'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
 	// Standard — the "Data" section of a chapter.
-	//
-	// `bar-clustered`, `dumbbell` and `sankey` are left out on purpose. Their
-	// components still read the `plot_metadata` the legacy export carried and have
-	// not been rewritten for the tidy row shape, so registering them would draw an
-	// empty chart rather than fail. Add the id back with the rewrite.
 	bar: Bar,
 	'bar-stacked': BarStacked,
+	'bar-clustered': BarClustered,
+	dumbbell: Dumbbell,
 	scatter: Scatter,
+	sankey: Sankey,
 	table: Table,
 
 	// Hero (3D) — /[year]. One flat record rather than one per tier: the ids don't

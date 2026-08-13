@@ -1,8 +1,9 @@
 <script lang="ts">
-	// Flow between two columns of the same set. Rows are `{source, target, value}`
-	// indexing the *same* `metadata.labels`, so the node set is the labels twice —
-	// one column read from, one read to. As a single node set d3-sankey resolves it
-	// to an eight-column DAG with names colliding into downstream nodes.
+	// Flow between two columns of the same set: `response` is what a respondent
+	// worked with, `series` what they want next, drawn from one shared vocabulary.
+	// The node set is that vocabulary twice — one column read from, one read to. As
+	// a single node set d3-sankey resolves it to an eight-column DAG with names
+	// colliding into downstream nodes.
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -70,8 +71,8 @@
 			// has to read the same in both columns.
 			nodes: [...columns.left, ...columns.right].map((id: number) => ({ name: labels[id], label: id })),
 			links: rows.map((row: any) => ({
-				source: left.get(idOf.get(row.response)),
-				target: right.get(idOf.get(row.series)),
+				source: left.get(idOf.get(row.response)!),
+				target: right.get(idOf.get(row.series)!),
 				value: row.count ?? 0,
 			})),
 		}) as { nodes: any[]; links: any[] }

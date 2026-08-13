@@ -21,7 +21,6 @@ Content is stored in a public Google Sheet. To convert this to `src/survey,json`
 npm run content -w results
 ```
 
-
 ## Types of graphic
 
 ### Expressive
@@ -39,23 +38,25 @@ The 3D ("Hero") and 2D ("Highlight") types.
 | Min/max comparison                      | `3d-bar-stacked-minmax`     | `2d-bar-stacked-minmax`     |
 | Ranked Top X                            | `3d-rank`                   | `rank`                      |
 | Single stat callout (etc 1/4, 7.5, 85%) | `hero-stat`                 | `stat`                      |
-| Respondant quote                        | —                           | `quote`                      |
+| Respondant quote                        | —                           | `quote`                     |
 
 ### Standard
 
 Used in "Data" section of each chapter.
 
-| Type          | uid             |
-| ------------- | --------------- |
-| Bar           | `bar`           |
-| Bar stacked   | `bar-stacked`   |
-| Bar clustered | `bar-clustered` |
-| Scatter       | `scatter`       |
-| Sankey        | `sankey`        |
-| Dumbbell      | `dumbbell`      |
-| Table         | `table`         |
-| Box plot      | `box`           |
-| Line          | `line`          |
+Set per question in the `chart` column of the content sheet, and resolved through
+the registry in `src/lib/charts/index.ts` — a value with no entry there draws
+nothing, so the ids below are the whole list.
+
+| Type          | uid             | Row shape it draws                                       |
+| ------------- | --------------- | -------------------------------------------------------- |
+| Bar           | `bar`           | one row per response                                     |
+| Bar stacked   | `bar-stacked`   | a row per (response, series); segments sum to 100%       |
+| Bar clustered | `bar-clustered` | a row per (response, series); one bar each, shared scale |
+| Dumbbell      | `dumbbell`      | a row per (response, series), exactly two series         |
+| Sankey        | `sankey`        | a row per (source, target) — `response` → `series`       |
+| Scatter       | `scatter`       | one row per response, two named numeric columns          |
+| Table         | `table`         | any columns; headings come from `src/lib/labels.ts`      |
 
 ## Site structure
 

@@ -10,7 +10,6 @@
 		PAD,
 		chars,
 		clip,
-		count,
 		digitsWidth,
 		labelGutter,
 		legend,
@@ -88,10 +87,7 @@
 	// Both ends inset enough to hold the widest label, so a dot at 0% or 100% can
 	// still be labelled.
 	const inset = $derived(
-		Math.max(
-			...rows.flatMap((row: any) => [digitsWidth(format(row.a), VALUE_SIZE), digitsWidth(format(row.b), VALUE_SIZE)]),
-			24
-		) + DOT
+		Math.max(...rows.flatMap((row: any) => [digitsWidth(format(row.a), VALUE_SIZE), digitsWidth(format(row.b), VALUE_SIZE)]), 24) + DOT
 	)
 
 	const top = $derived(domain(rows.flatMap((row: any) => [row.a, row.b])))
