@@ -28,7 +28,7 @@
 </script>
 
 <div class="bg-blue-extra-light dark:bg-blue-dark relative p-4">
-	<Markdown content={definition.title} class="text-sm" />
+	<Markdown html={definition.titleHtml} class="text-sm" />
 
 	{#if definition.carry_forward?.from}
 		<p class="text-black-400 dark:text-black-300 mt-2 text-xs">Options carried forward from {definition.carry_forward.from}.</p>

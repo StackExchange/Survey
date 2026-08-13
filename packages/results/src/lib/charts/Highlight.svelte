@@ -26,7 +26,7 @@
 		{:else}
 			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
 			{#if block.description}
-				<Markdown content={block.description} class="text-black-400 dark:text-black-300 mt-4 text-base" />
+				<Markdown html={block.descriptionHtml} class="text-black-400 dark:text-black-300 mt-4 text-base" />
 			{/if}
 		{/if}
 	</div>

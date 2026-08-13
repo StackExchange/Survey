@@ -6,7 +6,7 @@
 	let { block }: { block: any } = $props()
 
 	// `description` is the attribution; most quotes leave it empty.
-	const cite = $derived(block.description?.trim())
+	const cite = $derived(block.descriptionHtml?.trim())
 </script>
 
 <blockquote class="mx-auto max-w-4xl text-center">
@@ -16,7 +16,7 @@
 
 	{#if cite}
 		<footer class="text-black-400 dark:text-black-300 mt-6 text-base">
-			<Markdown content={cite} />
+			<Markdown html={cite} />
 		</footer>
 	{/if}
 </blockquote>

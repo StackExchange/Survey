@@ -86,7 +86,7 @@
 
 	const options = $derived(variants[variant])
 
-	const description = $derived(options.descriptionClass ? chapter.description : '')
+	const description = $derived(options.descriptionClass ? chapter.descriptionHtml : '')
 </script>
 
 <header class="{options.vt ? 'vt-chapter-header' : ''} {options.wrapClass}">
@@ -130,7 +130,7 @@
 		</svelte:element>
 
 		{#if description}
-			<Markdown content={description} class="{options.descriptionClass} mb-auto max-w-2xl" />
+			<Markdown html={description} class="{options.descriptionClass} mb-auto max-w-2xl" />
 		{/if}
 
 		{#if children}

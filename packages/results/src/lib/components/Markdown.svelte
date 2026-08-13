@@ -1,20 +1,20 @@
 <script lang="ts">
 	import type { ClassValue } from 'svelte/elements'
 
-	import { mdToHtml } from '$lib/markdown'
-
-	// Content is chapter YAML we write ourselves, never a respondent, so it is not
-	// sanitised.
+	// The HTML is rendered in scripts/data.js and arrives on the payload as a
+	// `*Html` field beside its plain text. Doing it there rather than here keeps
+	// `marked` out of the client bundle; this component is the styling only.
+	//
+	// Content is sheet and question-bank copy we write ourselves, never a
+	// respondent, so it is not sanitised.
 	interface Props {
-		content?: string
+		html?: string
 		// Renders a span with no wrapping <p>, for copy inside a sentence.
 		inline?: boolean
 		class?: ClassValue
 	}
 
-	const { content = '', inline = false, class: className = '' }: Props = $props()
-
-	const html = $derived(mdToHtml(content ?? ''))
+	const { html = '', inline = false, class: className = '' }: Props = $props()
 </script>
 
 {#if inline}
