@@ -3,7 +3,6 @@
 	// `flip` moves them visually only — the copy stays first in the DOM, so the
 	// headline is still what a reader reaches before the figure.
 	import { charts } from '$charts'
-	import Markdown from '$lib/components/Markdown.svelte'
 
 	import type { Snippet } from 'svelte'
 
@@ -26,7 +25,7 @@
 		{:else}
 			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
 			{#if block.description}
-				<Markdown html={block.descriptionHtml} class="text-black-400 dark:text-black-300 mt-4 text-base" />
+				<div class="md mt-4 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 			{/if}
 		{/if}
 	</div>

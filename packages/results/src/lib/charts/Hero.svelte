@@ -4,7 +4,6 @@
 	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
 	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
 	import Icon from '$lib/components/Icon.svelte'
-	import Markdown from '$lib/components/Markdown.svelte'
 	import { openQuestion } from '$lib/panel'
 
 	import type { Snippet } from 'svelte'
@@ -40,20 +39,18 @@
 				<div class="bg-white p-5 dark:bg-black-600">
 					<h4 class="font-headline text-3xl font-normal">{block.headline}</h4>
 					{#if block.description}
-						<Markdown html={block.descriptionHtml} class="text-black-400 dark:text-black-300 mt-3 text-base" />
+						<div class="md mt-3 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 					{/if}
 				</div>
 
-				<!-- eslint-disable svelte/no-navigation-without-resolve -- both branches are resolve()d above -->
 				<a
-					class="bg-black-150 hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black flex w-fit items-center gap-2 self-end px-5 py-3"
+					class="flex w-fit items-center gap-2 self-end bg-black-150 px-5 py-3 hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black"
 					href={question ?? resolve('/[year]/[chapter]', { year, chapter: chapter.id })}
 					onclick={(event) => question && openQuestion(event, question)}
 				>
 					Dig deeper
 					<Icon src={IconArrowRight} />
 				</a>
-				<!-- eslint-enable svelte/no-navigation-without-resolve -->
 			{/if}
 		</ChapterHeader>
 	</div>

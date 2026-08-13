@@ -6,11 +6,9 @@
 	import Button from '$lib/components/Button.svelte'
 	import ButtonMenu from '$lib/components/ButtonMenu.svelte'
 	import { siteUrl } from '$lib/constants'
-	import { markdownPath } from '$lib/markdown'
 
 	let { title = 'this page' }: { title?: string } = $props()
 
-	const url = $derived(markdownPath(page.url.pathname))
 
 	const shared = $derived(dev ? new URL(url, page.url.origin).href : `${siteUrl}${url}`)
 

@@ -184,6 +184,21 @@ body {
 	}
 }
 
+/* Copy rendered from markdown in scripts/data.js, dropped in with {@html}. */
+.md p {
+	margin: 0 0 0.5em 0;
+}
+.md p:last-child {
+	margin-bottom: 0;
+}
+.md ul {
+	margin: 0.5em 0;
+	padding-left: 1.5em;
+}
+.md a {
+	text-decoration: underline;
+}
+
 .font-headline-notch {
 	font-family: 'Stack Sans Headline', var(--font-fallback);
 	font-feature-settings: 'ss01' 1;

@@ -3,7 +3,6 @@
 	import type { Snippet } from 'svelte'
 
 	import PromoBanner from '$lib/components/PromoBanner.svelte'
-	import Markdown from '$lib/components/Markdown.svelte'
 	import { chapterColour } from '$lib/constants'
 
 	type Variant = 'overview' | 'chapter' | 'data' | 'panel' | 'question'
@@ -119,7 +118,7 @@
 		</svg>
 	{/if}
 
-	<div class="{options.innerClass} relative z-40 flex flex-col flex-1">
+	<div class="{options.innerClass} relative z-40 flex flex-1 flex-col">
 		<svelte:element this={options.nameEl} class="flex {options.nameClass}">
 			<a class="inline-block {bg} text-black {options.blockClass}" href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}>
 				{chapter.name}
@@ -130,7 +129,7 @@
 		</svelte:element>
 
 		{#if description}
-			<Markdown html={description} class="{options.descriptionClass} mb-auto max-w-2xl" />
+			<div class="md {options.descriptionClass} mb-auto max-w-2xl">{@html description}</div>
 		{/if}
 
 		{#if children}

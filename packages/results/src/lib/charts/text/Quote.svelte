@@ -1,7 +1,6 @@
 <script lang="ts">
 	// A `quote` feature — no chart, no data. `<blockquote>` rather than a styled
 	// paragraph, so it is still a quotation with the CSS off.
-	import Markdown from '$lib/components/Markdown.svelte'
 
 	let { block }: { block: any } = $props()
 
@@ -15,8 +14,8 @@
 	</p>
 
 	{#if cite}
-		<footer class="text-black-400 dark:text-black-300 mt-6 text-base">
-			<Markdown html={cite} />
+		<footer class="mt-6 text-base text-black-400 dark:text-black-300">
+			<div class="md">{@html cite}</div>
 		</footer>
 	{/if}
 </blockquote>
