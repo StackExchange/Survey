@@ -1,7 +1,0 @@
-[build]
-  base = "packages/archive"
-  publish = "."
-
-[[edge_functions]]
-  function = "survey-banner"
-  path = "/*"

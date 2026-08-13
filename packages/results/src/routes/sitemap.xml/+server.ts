@@ -1,6 +1,6 @@
-import { listPages } from '$lib/server/pages'
-import { siteUrl } from '$lib/constants'
 import years from '$archive/index.json'
+
+import { siteUrl } from '$lib/constants'
 
 export const prerender = true
 
@@ -8,9 +8,11 @@ const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&l
 
 export function GET() {
 	const paths = [
-		...listPages().map(({ path }) => path),
-		// packages/archive through the proxy in netlify.toml
-		...years.slice(1).map(({ year: past }) => `/${past}`),
+		'/',
+		// packages/archive through the proxy in netlify.toml. 2011–2014 have no
+		// results page of their own — they point at the announcement blog post — so
+		// they are somebody else's to list.
+		...years.filter(({ results }) => results?.startsWith('/') || results?.startsWith(siteUrl)).map(({ year }) => `/${year}`),
 	]
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>

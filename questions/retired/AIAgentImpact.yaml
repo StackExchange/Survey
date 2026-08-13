@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgentImpact
+  version: '2025.1'
+  title: To what extent do you agree with the following statements regarding the impact of AI agents on your work as a developer?
+  type: scale
+  required: false
+  scale:
+    multiple: false
+    columns:
+      - Strongly agree
+      - Somewhat agree
+      - Neutral
+      - Somewhat disagree
+      - Strongly disagree
+  options:
+    - label: AI agents have increased my productivity.
+      short: Increased my productivity
+    - label: AI agents have helped me automate repetitive tasks.
+      short: Automated repetitive tasks
+    - label: AI agents have improved the quality of my code.
+      short: Improved my code quality
+    - label: AI agents have accelerated my learning about new technologies or codebases.
+      short: Accelerated my learning
+    - label: AI agents have helped me solve complex problems more effectively.
+      short: Solved complex problems
+    - label: AI agents have reduced the time spent on specific development tasks.
+      short: Reduced time on tasks
+    - label: AI agents have improved collaboration within my team.
+      short: Improved team collaboration
+    - label: Write in the most significant benefit if not listed above.
+      text_entry: true
+  deprecated: true

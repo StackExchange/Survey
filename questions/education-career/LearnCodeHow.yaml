@@ -8,22 +8,18 @@ question:
   randomize: true
   options:
     - Books / physical media
-    - label: Technical documentation (is generated for/by the tool or system)
-      short: Technical documentation
+    - Technical documentation (is generated for/by the tool or system)
     - Coding bootcamp
-    - label: Colleague or on-the-job training
-      short: Colleague or on-the-job
+    - Colleague or on-the-job training
     - Games or coding challenges
-    - Online courses or certification (includes all media types)
-    - AI codegen tools or AI-enabled apps
+    - Online courses or certification
+    - AI (codegen tools or chat apps)
     - Blogs or podcasts
-    - label: Videos (not associated with specific online course or certification)
-      short: Videos
-    - label: Other online resources (e.g. standard search, forum, online community)
-      short: Other online resources
+    - Videos (i.e. Youtube)
+    - Other online resources (e.g. standard search, forum, online community)
     - School (i.e., university, college, etc)
-    - label: Stack Overflow or Stack Exchange
-      short: Stack Overflow or Exchange
+    - Stack Overflow or Stack Exchange
+    - Reviewing GitHub projects or existing code repositories
     - label: Other, please specify
       key: other
       text_entry: true

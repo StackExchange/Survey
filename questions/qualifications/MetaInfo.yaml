@@ -1,7 +1,0 @@
-# yaml-language-server: $schema=../question.schema.json
-question:
-  id: MetaInfo
-  version: '2025.1'
-  title: Browser Meta Info
-  type: meta
-  required: false

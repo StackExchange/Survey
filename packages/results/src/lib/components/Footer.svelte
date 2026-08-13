@@ -2,7 +2,7 @@
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
 
 	import survey from '$content/survey.json'
-	import { githubRepo, licence } from '$lib/constants'
+	import { copyrightYear, githubRepo, licence } from '$lib/constants'
 
 	import {
 		IconLogo,
@@ -26,7 +26,7 @@
 				<Icon src={IconLogo} />
 			</a>
 			<p class="leading-snug text-black-300 text-sm mt-12">
-				Site design / logo © {survey.settings.year}
+				Site design / logo © {copyrightYear}
 				{licence.holder}<br />
 				User contributions licensed under
 				<a class="underline hover:text-white" href={licence.contributions.url} rel="license external">{licence.contributions.name}</a><br />

@@ -18,7 +18,9 @@ Every YAML carries a `# yaml-language-server: $schema=…` header, so editors wi
 
 `questions/{block}/{id}.yaml`
 
-Files are grouped into one folder per top-level survey block (`qualifications/`, `education-career/`, `compensation/`, `technology/`, `community/`, `ai/`, `meta/`) for navigation only — tooling discovers them recursively, so the folder name is just for organization.
+Files are grouped into one folder per top-level survey block (`qualifications/`, `education-career/`, `compensation/`, `technology/`, `community/`, `ai/`, `meta/`) for navigation only — block membership comes from `survey.yaml`, so the folder name is just for organization. Tooling globs one level deep (`questions/*/*.yaml`), so questions must sit directly in a block folder — a nested subfolder is not discovered.
+
+Retired questions live in `retired/`. See [Deprecating a question](#deprecating-a-question).
 
 ```yaml
 # yaml-language-server: $schema=../question.schema.json
@@ -46,7 +48,21 @@ question:
 
 `tags`, `rationale`, `history`, and `deprecated` are optional enrichment fields.
 
+`version` is the survey release the question **currently ships in**, so it is bumped on every carry-forward — a perennial question like `Country` reads `2026.1` even though it was first asked in 2011. The minor number belongs to the release, not the question: `2025.2` means the second 2025 fielding, not a second revision. `history` is where per-question edits are recorded.
+
 `title`, option `label`, column `label`, and `scale_labels` are stored as **Markdown** in YAML.
+
+### Deprecating a question
+
+Never delete a question file. The `id` is the Qualtrics `DataExportTag` and the stable handle for every past year's response data, so the file stays on record. To retire one:
+
+1. Set `deprecated: true`.
+2. Move the file to `questions/retired/`.
+3. Leave `version` at the last release the question shipped in — do **not** bump it.
+4. Add a `history` entry noting the retirement, and the replacement `id` if there is one.
+5. Remove the `id` from the `flow` in `survey.yaml`.
+
+Step 5 is what actually takes the question out of the survey, but the flag is the belt-and-braces: `pagesFromEntries` in [`flow.ts`](../packages/survey/src/lib/data/flow.ts) and `visibleQuestions` in [`condition.ts`](../packages/survey/src/lib/data/condition.ts) both filter deprecated ids, so a stale flow reference can never render a retired question.
 
 ### Option keys
 

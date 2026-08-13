@@ -7,7 +7,7 @@ import years from '../archive/index.json' with { type: 'json' }
 
 // Earlier years are other Netlify deploys, proxied in from netlify.toml
 // Exclude them from crawler errors
-const proxied = new Set(years.slice(1).map(({ year: past }) => `/${past}`))
+const archived = new Set(years.map(({ year }) => `/${year}`))
 
 export default defineConfig({
 	plugins: [
@@ -31,9 +31,10 @@ export default defineConfig({
 			// only routes without required params; routes under [year] declare their
 			// own `entries` beside the route.
 			prerender: {
-				entries: ['*', '/sitemap.xml', '/llms.txt'],
+				// Nothing links to the endpoints, so they are named rather than crawled.
+				entries: ['*', '/sitemap.xml', '/index.md', '/llms.txt'],
 				handleHttpError: ({ path, message }) => {
-					if (!proxied.has(path)) throw new Error(message)
+					if (!archived.has(path)) throw new Error(message)
 				},
 			},
 			adapter: adapter(),

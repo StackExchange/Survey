@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AILearnHow
+  version: '2025.1'
+  title: How did you learn to code for AI in the past year? Select all that apply.
+  type: multi_select
+  required: false
+  randomize: true
+  options:
+    - Books / Physical media
+    - label: Technical documentation (is generated for/by the tool or system)
+      short: Technical documentation
+    - Coding Bootcamp
+    - label: Colleague or on-the-job training
+      short: Colleague or on-the-job
+    - Games or coding challenges
+    - label: Online Courses or Certification (includes all media types)
+      short: Online courses or certs
+    - label: AI CodeGen tools or AI-enabled apps
+      short: AI codegen tools or apps
+    - Blogs or podcasts
+    - label: Videos (not associated with specific online course or certification)
+      short: Videos
+    - label: Other online resources (e.g. standard search, forum, online community)
+      short: Other online resources
+    - label: School (i.e., University, College, etc)
+      short: School or university
+    - label: Stack Overflow or Stack Exchange
+      short: Stack Overflow or Exchange
+    - label: Other, please specify
+      key: other
+      text_entry: true
+  deprecated: true

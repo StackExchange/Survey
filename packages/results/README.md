@@ -1,6 +1,11 @@
 # Results site
 
-The results site for the survey, built with [SvelteKit](https://svelte.dev/docs/kit/introduction).
+The survey results site, built with [SvelteKit](https://svelte.dev/docs/kit/introduction) and prerendered to static files. It serves the apex, `survey.stackoverflow.co`.
+
+```bash
+npm run dev -w results
+npm run build -w results
+```
 
 ## Live preview
 
@@ -55,6 +60,14 @@ Used in "Data" section of each chapter.
 ## Site structure
 
 The results site has the following heirarchy.
+
+### Earlier years
+
+2015–2025 are static HTML committed under `packages/archive`, moved into this packages by the build script:
+
+```
+npm run archive -w results
+```
 
 ### `/`: Developer Survey index
 

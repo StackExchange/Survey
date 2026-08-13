@@ -8,6 +8,14 @@ export const siteName = 'Stack Overflow Developer Survey'
 // Fallbacks only. Year-specific copy comes from $content/survey.json.
 export const siteDescription = 'Results of the annual Stack Overflow Developer Survey — how developers learn, build, and work.'
 
+// The index page's own copy, which is about the survey rather than about a year.
+export const siteDescriptionLong =
+	'Every year we ask developers about the tools they use, how they learn, and how they work. Explore the results of the largest survey of people who code.'
+
+// Baked in at build time: the site is prerendered, so `new Date()` would freeze
+// on whichever day the build ran anyway.
+export const copyrightYear = 2026
+
 export const ogImage = '/stack-overflow-dev-survey-open-graph.png'
 
 // Tailwind token fragments composed at call sites — `bg-${primary}`. Anything
