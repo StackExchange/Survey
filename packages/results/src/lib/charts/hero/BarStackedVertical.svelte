@@ -1,7 +1,7 @@
 <script lang="ts">
 	// The stepped pyramid. Slab heights are equal so only the footprint varies —
 	// varying both would measure the same number twice.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { slab } from '$charts/utils/iso'
 	import { middle, onSeries, px, series, theme } from '$charts/utils/theme'

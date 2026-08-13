@@ -4,7 +4,7 @@
 	// the split inside it is against 100%.
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, middle, percent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'

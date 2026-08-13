@@ -5,8 +5,8 @@
 	import Attribution from './Attribution.svelte'
 	import Header from './Header.svelte'
 	import Stats from './Stats.svelte'
-	import { chromeReader, EXPORT_PAD, FOOTER, headerLayout, STATS } from '$charts/utils/chrome'
-	import { figureTitle, px, theme } from '$charts/utils/theme'
+	import { chromeReader, FOOTER, headerLayout, STATS } from '$charts/utils/chrome'
+	import { PAD, px, theme } from '$charts/utils/theme'
 
 	import type { Snippet } from 'svelte'
 
@@ -26,7 +26,7 @@
 		children?: Snippet
 	} = $props()
 
-	const label = $derived(figureTitle(figure))
+	const label = $derived(figure.headline ?? figure.name ?? figure.question ?? figure.chart)
 	const uid = $props.id()
 
 	// Only an export sets this. On the page it is undefined and nothing below runs.
@@ -45,7 +45,7 @@
 
 	// A chart draws from its own origin, so the header is made room for by moving
 	// the whole drawing down rather than by the chart knowing about it.
-	const top = $derived(brand ? headerLayout(chrome, width, EXPORT_PAD).height : 0)
+	const top = $derived(brand ? headerLayout(chrome, width, PAD).height : 0)
 
 	// Charts compose their height from font sizes and ratios, so it arrives long.
 	const w = $derived(px(width))
@@ -83,7 +83,7 @@
 	{/if}
 
 	{#if brand}
-		<Header {chrome} {width} margin={EXPORT_PAD} />
+		<Header {chrome} {width} margin={PAD} />
 
 		<g transform="translate(0 {px(top)})">
 			{@render children?.()}
@@ -93,10 +93,10 @@
 	{/if}
 
 	{#if stats}
-		<Stats {figure} {width} {n} {share} y={top + height} margin={brand ? EXPORT_PAD : undefined} />
+		<Stats {figure} {width} {n} {share} y={top + height} margin={brand ? PAD : undefined} />
 	{/if}
 
 	{#if brand}
-		<Attribution {chrome} y={top + height + (stats ? STATS : 0)} {width} margin={EXPORT_PAD} />
+		<Attribution {chrome} y={top + height + (stats ? STATS : 0)} {width} margin={PAD} />
 	{/if}
 </svg>

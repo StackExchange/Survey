@@ -1,7 +1,7 @@
 <script lang="ts">
 	// The "1 in X" shape as cubes. Two rows once there are more than five, so the
 	// field stays wider than it is deep.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, SKEW, cube, cubeHeight } from '$charts/utils/iso'
 	import { series, theme } from '$charts/utils/theme'

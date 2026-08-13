@@ -1,5 +1,5 @@
 <script lang="ts">
-	// The band under an export. Drawn by SvgWrapper for a plain export and by
+	// The band under an export. Drawn by Wrap for a plain export and by
 	// SocialCard for a sized one, so the two cannot disagree.
 	import Glyph from './Glyph.svelte'
 	import { FOOTER, logo, type Chrome } from '$charts/utils/chrome'

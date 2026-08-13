@@ -1,7 +1,7 @@
 <script lang="ts">
 	// The "1 in X" shape: X cells with one filled. Rounding is the point of the
 	// form — 26% draws four cells — and the exact figure is in the `<desc>`.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, grid, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { px, series, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'

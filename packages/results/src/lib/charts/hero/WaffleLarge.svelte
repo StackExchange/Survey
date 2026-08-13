@@ -2,7 +2,7 @@
 	// A share as a field of cubes. 10 x 10 in grid space but laid out diagonally —
 	// each row steps half a cube right and a quarter down, which is what makes it
 	// read as a plane rather than a table.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, SKEW, cube, cubeHeight } from '$charts/utils/iso'
 	import { percent, series, theme } from '$charts/utils/theme'

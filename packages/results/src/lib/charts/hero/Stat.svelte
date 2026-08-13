@@ -1,7 +1,7 @@
 <script lang="ts">
 	// One number at hero scale on an isometric plinth. Extrapolated — no mockup.
 	// The plinth is what keeps it in the same family as the other nine.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { slab } from '$charts/utils/iso'
 	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'

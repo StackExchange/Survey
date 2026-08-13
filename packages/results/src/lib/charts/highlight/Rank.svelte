@@ -1,7 +1,7 @@
 <script lang="ts">
 	// A numbered list in data order. No bars: the sheet's `limit` has cut this to
 	// the top few, where the order is the finding and the gaps usually aren't.
-	import Frame from '$charts/svg-components/SvgWrapper.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, middle, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
