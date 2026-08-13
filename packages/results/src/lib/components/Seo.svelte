@@ -3,7 +3,6 @@
 	import { page } from '$app/state'
 
 	import { ogImage, siteDescription, siteName, siteUrl } from '$lib/constants'
-	import { markdownPath } from '$lib/markdown'
 
 	// Once per route: `<svelte:head>` does not de-duplicate, so a layout *and* a
 	// page yields two of each tag. Site-wide tags live in app.html.
@@ -28,7 +27,7 @@
 
 	// Absolute: the prerender crawler follows href on any tag, so a root-relative
 	// one would be enqueued and validated as a page.
-	const markdownUrl = $derived(`${siteUrl}${markdownPath(page.url.pathname)}`)
+	const markdownUrl = $derived(`${siteUrl}${page.url.pathname === '/' ? '/index.md' : `${page.url.pathname}.md`}`)
 
 	// A ld+json block is a data block, so the parser does not decode entities
 	// inside it — an entity would land in the JSON as literal text. The tag is
@@ -46,6 +45,7 @@
 
 	<meta name="description" content={description} />
 	<link rel="canonical" href={canonical} />
+
 	{#if markdown}
 		<link rel="alternate" type="text/markdown" href={markdownUrl} />
 	{/if}
@@ -66,7 +66,6 @@
 	{/if}
 
 	{#if jsonld}
-		<!-- eslint-disable-next-line svelte/no-at-html-tags -- serialised JSON-LD, escaped above -->
 		{@html jsonld}
 	{/if}
 </svelte:head>

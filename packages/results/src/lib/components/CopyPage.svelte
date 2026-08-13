@@ -9,6 +9,7 @@
 
 	let { title = 'this page' }: { title?: string } = $props()
 
+	const url = $derived(page.url.pathname === '/' ? '/index.md' : `${page.url.pathname}.md`)
 
 	const shared = $derived(dev ? new URL(url, page.url.origin).href : `${siteUrl}${url}`)
 
@@ -31,6 +32,6 @@
 
 <ButtonMenu {items} label="More page options" class="self-end">
 	{#snippet action()}
-		<Button copy={markdown} label="Copy page" icon={IconClipboard} class="max-lg:hidden bg-white" />
+		<Button copy={markdown} label="Copy page" icon={IconClipboard} class="bg-white max-lg:hidden" />
 	{/snippet}
 </ButtonMenu>

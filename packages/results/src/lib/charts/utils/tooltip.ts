@@ -1,6 +1,6 @@
 // An ordinary prop, not a context: ./export.ts mounts a chart with no host to
 // report to, and an absent `onhover` has to draw identically.
-export interface TooltipRow {
+interface TooltipRow {
 	value: string
 	label?: string
 	color?: string
