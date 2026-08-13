@@ -3,7 +3,6 @@
 
 	import { IconInfoFill, IconLogo } from '@stackoverflow/stacks-icons/icons'
 	import Icon from '$lib/components/Icon.svelte'
-	import PromoBanner from '$lib/components/PromoBanner.svelte'
 
 	let { label = null, children = null } = $props()
 </script>
@@ -25,8 +24,6 @@
 		</p>
 	{/if}
 </header>
-
-<PromoBanner />
 
 <style>
 	.vt-chapter-header {

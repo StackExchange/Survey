@@ -2,7 +2,6 @@
 	import { resolve } from '$app/paths'
 	import type { Snippet } from 'svelte'
 
-	import PromoBanner from '$lib/components/PromoBanner.svelte'
 	import { chapterColour } from '$config'
 
 	type Variant = 'overview' | 'chapter' | 'data' | 'panel' | 'question'
@@ -137,7 +136,3 @@
 		{/if}
 	</div>
 </header>
-
-{#if !['overview', 'panel'].includes(variant)}
-	<PromoBanner />
-{/if}
