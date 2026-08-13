@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { parse } from 'csv-parse/sync'
+import { csvParseRows } from 'd3-dsv'
 import { camelCase, kebabCase } from 'lodash-es'
 
 import { sheet } from '../config.ts'
@@ -47,11 +47,10 @@ async function getSheet(name) {
 	if (!res.ok) throw new Error(`${name}: HTTP ${res.status} — is the sheet shared with "anyone with the link"?`)
 	if (!res.headers.get('content-type')?.includes('csv')) throw new Error(`${name}: not CSV — does that tab exist?`)
 
-	// `relax_column_count`: Sheets pads the grid, so a short or long row is the
-	// spreadsheet's shape rather than a malformed file.
-	const [headers, ...rows] = parse(await res.text(), { relax_column_count: true, skip_empty_lines: true, bom: true })
+	// d3-dsv is ragged-tolerant and strips a BOM, so Sheets' padded grid needs no
+	// options — only the all-empty rows filtering out, which aren't absent, just blank.
+	const [headers, ...rows] = csvParseRows(await res.text())
 
-	// A padded row is all-empty rather than absent, which `skip_empty_lines` won't catch.
 	return rows.filter((row) => row.some((field) => field !== '')).map((row) => mapRow(headers, row))
 }
 

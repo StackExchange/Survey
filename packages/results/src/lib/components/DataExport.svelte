@@ -31,7 +31,10 @@
 		{ id: 'markdown', label: 'Markdown', text: toMarkdown(rows) },
 	])
 
-	const csv = () => save(new Blob([toCsv(rows)], { type: 'text/csv;charset=utf-8' }), `${name}.csv`)
+	// The BOM is for Excel, not for CSV: without it Windows Excel reads the file as
+	// the local codepage and "Côte d'Ivoire" arrives mangled. Added here rather than
+	// in `toCsv` so the string stays clean CSV for the JSON and clipboard paths.
+	const csv = () => save(new Blob(['\uFEFF', toCsv(rows)], { type: 'text/csv;charset=utf-8' }), `${name}.csv`)
 
 	// ODbL asks for attribution. No accessed-date: the page is prerendered, so a
 	// baked one would be the build's.

@@ -20,12 +20,6 @@ import { STRUCTURAL, labelFor } from '../src/lib/labels.ts'
 
 marked.use({ breaks: true, gfm: true })
 
-// Sheet and question-bank copy is markdown. Rendering it here rather than in a
-// component keeps `marked` — 47 KB, 15 KB gzipped — out of the client bundle.
-// The plain text stays alongside for meta tags, the sitemap and llms.txt.
-//
-// A single line with no list marker is a fragment, so it renders without the
-// wrapping <p> that would break it out of the sentence it sits in.
 function html(md) {
 	if (typeof md !== 'string' || md === '') return ''
 

@@ -1,5 +1,7 @@
 // A figure's rows as a table, for the markdown twins and the screen-reader table
 // beside each chart. Shared so the two cannot disagree.
+import { csvFormat } from 'd3-dsv'
+
 import { columnLabel } from '$lib/labels'
 
 // Key-union rather than a switch on chart type: a question can carry any of the
@@ -45,16 +47,9 @@ export function toRows(rows: any[]) {
 	return clean.map((row) => Object.fromEntries(keys.map((key) => [key, (row[key] ?? null) as any])))
 }
 
-// Quoted per RFC 4180.
+// d3-dsv rather than a hand-rolled quoter: same field escaping, already in the
+// project, and small enough to ship — this runs in the browser on download.
 export function toCsv(rows: any[]) {
-	const clean = toRows(rows)
-	if (!clean.length) return ''
-
-	const keys = Object.keys(clean[0])
-	const quote = (v: any) => {
-		const text = String(v ?? '')
-		return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text
-	}
-
-	return [keys.join(','), ...clean.map((row) => keys.map((key) => quote(row[key])).join(','))].join('\r\n')
+	const clean = rowsOf(rows)
+	return clean.length ? csvFormat(toRows(rows), columns(clean)) : ''
 }
