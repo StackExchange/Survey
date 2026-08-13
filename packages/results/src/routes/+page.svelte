@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
 	import { IconArrowDownBox, IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
-	import { githubRepo, siteDescriptionLong } from '$lib/constants'
-
+	import { githubRepo, siteDescriptionLong, siteUrl } from '$lib/constants'
 
 	import BrandHeader from '$lib/components/BrandHeader.svelte'
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
@@ -48,7 +46,7 @@
 
 {#snippet links(entry: Year)}
 	<div class="-ml-3 flex flex-wrap gap-1">
-		<Button variant="plain" href={entry.results} data-sveltekit-reload icon={IconChart} label="Results" />
+		<Button variant="plain" href={entry.results.replace(siteUrl, '')} data-sveltekit-reload icon={IconChart} label="Results" />
 
 		{#if entry.data}
 			<Button variant="plain" href={entry.data} rel="external" icon={IconArrowDownBox} label="Data (CSV)" />
