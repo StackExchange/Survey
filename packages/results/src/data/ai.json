@@ -1,0 +1,3475 @@
+{
+  "AISelect": {
+    "meta": {
+      "qid": "QID61",
+      "qname": "AISelect",
+      "question": "<p>Do you currently use AI tools or AI agents in your role at work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 17464
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 11509,
+        "pct": 0.659
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 10920,
+        "pct": 0.6253
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 4582,
+        "pct": 0.2624
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 3115,
+        "pct": 0.1784
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don’t use AI tools",
+        "count": 3003,
+        "pct": 0.172
+      }
+    ]
+  },
+  "AIFreq": {
+    "meta": {
+      "qid": "QID107",
+      "qname": "AIFreq",
+      "question": "<p>How often do you use each of these AI tools or AI agents in your role at work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "aifreqview",
+          "slice_value": "Daily",
+          "n": 14478
+        },
+        {
+          "slice_type": "aifreqview",
+          "slice_value": "Weekly",
+          "n": 14478
+        },
+        {
+          "slice_type": "aifreqview",
+          "slice_value": "Monthly or Infrequent",
+          "n": 14478
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 8403,
+        "pct": 0.7301
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 7162,
+        "pct": 0.6559
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 2889,
+        "pct": 0.6305
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 1487,
+        "pct": 0.4774
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 941,
+        "pct": 0.3021
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 2922,
+        "pct": 0.2676
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 1168,
+        "pct": 0.2549
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 2316,
+        "pct": 0.2012
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 645,
+        "pct": 0.2071
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 470,
+        "pct": 0.1026
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 768,
+        "pct": 0.0703
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 712,
+        "pct": 0.0619
+      }
+    ]
+  },
+  "AIWork": {
+    "meta": {
+      "qid": "QID66",
+      "qname": "AIWork",
+      "question": "<p>Which parts of your workflow are you currently integrating into AI or using AI agents to accomplish? Will they be more or less integrated over the next year? Please select one for each scenario.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12547
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 4848,
+        "pct": 0.3864
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 1887,
+        "pct": 0.1504
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 4338,
+        "pct": 0.3457
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 664,
+        "pct": 0.0529
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 1502,
+        "pct": 0.1197
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 5874,
+        "pct": 0.4682
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 2098,
+        "pct": 0.1672
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 3843,
+        "pct": 0.3063
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 1335,
+        "pct": 0.1064
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 514,
+        "pct": 0.041
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Answering straightforward technical questions",
+        "count": 7017,
+        "pct": 0.5593
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Answering straightforward technical questions",
+        "count": 1952,
+        "pct": 0.1556
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Answering straightforward technical questions",
+        "count": 3422,
+        "pct": 0.2727
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Answering straightforward technical questions",
+        "count": 881,
+        "pct": 0.0702
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Answering straightforward technical questions",
+        "count": 500,
+        "pct": 0.0399
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Architecture or technical design exploration",
+        "count": 5656,
+        "pct": 0.4508
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Architecture or technical design exploration",
+        "count": 2292,
+        "pct": 0.1827
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Architecture or technical design exploration",
+        "count": 3358,
+        "pct": 0.2676
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Architecture or technical design exploration",
+        "count": 983,
+        "pct": 0.0783
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Architecture or technical design exploration",
+        "count": 1445,
+        "pct": 0.1152
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Creating or configuring development/test environments",
+        "count": 3219,
+        "pct": 0.2566
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Creating or configuring development/test environments",
+        "count": 3282,
+        "pct": 0.2616
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Creating or configuring development/test environments",
+        "count": 3298,
+        "pct": 0.2629
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Creating or configuring development/test environments",
+        "count": 770,
+        "pct": 0.0614
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Creating or configuring development/test environments",
+        "count": 2046,
+        "pct": 0.1631
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 7684,
+        "pct": 0.6124
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 1065,
+        "pct": 0.0849
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 4340,
+        "pct": 0.3459
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 987,
+        "pct": 0.0787
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 323,
+        "pct": 0.0257
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 2264,
+        "pct": 0.1804
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 4093,
+        "pct": 0.3262
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 2651,
+        "pct": 0.2113
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 843,
+        "pct": 0.0672
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 2507,
+        "pct": 0.1998
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Finding or fixing security issues",
+        "count": 4018,
+        "pct": 0.3202
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Finding or fixing security issues",
+        "count": 1711,
+        "pct": 0.1364
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Finding or fixing security issues",
+        "count": 4409,
+        "pct": 0.3514
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Finding or fixing security issues",
+        "count": 765,
+        "pct": 0.061
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Finding or fixing security issues",
+        "count": 2223,
+        "pct": 0.1772
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Generating code in a familiar area",
+        "count": 8402,
+        "pct": 0.6696
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating code in a familiar area",
+        "count": 1091,
+        "pct": 0.087
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Generating code in a familiar area",
+        "count": 3784,
+        "pct": 0.3016
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Generating code in a familiar area",
+        "count": 937,
+        "pct": 0.0747
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Generating code in a familiar area",
+        "count": 276,
+        "pct": 0.022
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Generating code in an unfamiliar area",
+        "count": 6707,
+        "pct": 0.5346
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating code in an unfamiliar area",
+        "count": 1470,
+        "pct": 0.1172
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Generating code in an unfamiliar area",
+        "count": 4051,
+        "pct": 0.3229
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Generating code in an unfamiliar area",
+        "count": 1320,
+        "pct": 0.1052
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Generating code in an unfamiliar area",
+        "count": 511,
+        "pct": 0.0407
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 1997,
+        "pct": 0.1592
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 2752,
+        "pct": 0.2193
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 2142,
+        "pct": 0.1707
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 608,
+        "pct": 0.0485
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 4896,
+        "pct": 0.3902
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Product, UX, or visual design",
+        "count": 3551,
+        "pct": 0.283
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Product, UX, or visual design",
+        "count": 1768,
+        "pct": 0.1409
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Product, UX, or visual design",
+        "count": 2975,
+        "pct": 0.2371
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Product, UX, or visual design",
+        "count": 583,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Product, UX, or visual design",
+        "count": 4050,
+        "pct": 0.3228
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 4757,
+        "pct": 0.3791
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 2657,
+        "pct": 0.2118
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 3811,
+        "pct": 0.3037
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 1018,
+        "pct": 0.0811
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 1189,
+        "pct": 0.0948
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 5786,
+        "pct": 0.4611
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 1844,
+        "pct": 0.147
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 4199,
+        "pct": 0.3347
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 669,
+        "pct": 0.0533
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 922,
+        "pct": 0.0735
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 5870,
+        "pct": 0.4678
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 1520,
+        "pct": 0.1211
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 4139,
+        "pct": 0.3299
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 678,
+        "pct": 0.054
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 1373,
+        "pct": 0.1094
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 6036,
+        "pct": 0.4811
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 1928,
+        "pct": 0.1537
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 4239,
+        "pct": 0.3378
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 821,
+        "pct": 0.0654
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 793,
+        "pct": 0.0632
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 2700,
+        "pct": 0.2152
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 5279,
+        "pct": 0.4207
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 2393,
+        "pct": 0.1907
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 940,
+        "pct": 0.0749
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 1255,
+        "pct": 0.1
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Writing or improving tests",
+        "count": 6915,
+        "pct": 0.5511
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing or improving tests",
+        "count": 1015,
+        "pct": 0.0809
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Writing or improving tests",
+        "count": 4166,
+        "pct": 0.332
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Writing or improving tests",
+        "count": 661,
+        "pct": 0.0527
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Writing or improving tests",
+        "count": 1239,
+        "pct": 0.0987
+      },
+      {
+        "slice": 0,
+        "series": "Currently use AI or AI agents for this",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 3187,
+        "pct": 0.254
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 3500,
+        "pct": 0.279
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI More or AI agents more for this",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 3212,
+        "pct": 0.256
+      },
+      {
+        "slice": 0,
+        "series": "Expect to use AI or AI agents less for this",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 862,
+        "pct": 0.0687
+      },
+      {
+        "slice": 0,
+        "series": "This is not part of my workflow",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 1973,
+        "pct": 0.1572
+      }
+    ]
+  },
+  "AIImpact": {
+    "meta": {
+      "qid": "QID70",
+      "qname": "AIImpact",
+      "question": "<p>When using AI tools or AI agents at work, how useful has AI proven itself for the task or activity? Select one answer for each.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12615
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Architecture exploration",
+        "count": 1171,
+        "pct": 0.0928
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Architecture exploration",
+        "count": 2348,
+        "pct": 0.1861
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Architecture exploration",
+        "count": 4274,
+        "pct": 0.3388
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Architecture exploration",
+        "count": 3072,
+        "pct": 0.2435
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Architecture exploration",
+        "count": 1750,
+        "pct": 0.1387
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Communication",
+        "count": 2804,
+        "pct": 0.2223
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Communication",
+        "count": 2931,
+        "pct": 0.2323
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Communication",
+        "count": 2705,
+        "pct": 0.2144
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Communication",
+        "count": 1637,
+        "pct": 0.1298
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Communication",
+        "count": 2538,
+        "pct": 0.2012
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Debugging/refactoring",
+        "count": 1101,
+        "pct": 0.0873
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Debugging/refactoring",
+        "count": 1720,
+        "pct": 0.1363
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Debugging/refactoring",
+        "count": 4776,
+        "pct": 0.3786
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Debugging/refactoring",
+        "count": 4327,
+        "pct": 0.343
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Debugging/refactoring",
+        "count": 691,
+        "pct": 0.0548
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Design",
+        "count": 1796,
+        "pct": 0.1424
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Design",
+        "count": 2423,
+        "pct": 0.1921
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Design",
+        "count": 3844,
+        "pct": 0.3047
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Design",
+        "count": 2322,
+        "pct": 0.1841
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Design",
+        "count": 2230,
+        "pct": 0.1768
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Documentation",
+        "count": 1197,
+        "pct": 0.0949
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Documentation",
+        "count": 1825,
+        "pct": 0.1447
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Documentation",
+        "count": 3791,
+        "pct": 0.3005
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Documentation",
+        "count": 4412,
+        "pct": 0.3497
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Documentation",
+        "count": 1390,
+        "pct": 0.1102
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Implementation",
+        "count": 1126,
+        "pct": 0.0893
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Implementation",
+        "count": 1566,
+        "pct": 0.1241
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Implementation",
+        "count": 5056,
+        "pct": 0.4008
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Implementation",
+        "count": 4304,
+        "pct": 0.3412
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Implementation",
+        "count": 563,
+        "pct": 0.0446
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Review",
+        "count": 1097,
+        "pct": 0.087
+      },
+      {
+        "slice": 0,
+        "series": "No strong opinion",
+        "response": "Review",
+        "count": 2083,
+        "pct": 0.1651
+      },
+      {
+        "slice": 0,
+        "series": "Useful",
+        "response": "Review",
+        "count": 4630,
+        "pct": 0.367
+      },
+      {
+        "slice": 0,
+        "series": "Very useful",
+        "response": "Review",
+        "count": 3397,
+        "pct": 0.2693
+      },
+      {
+        "slice": 0,
+        "series": "N/A",
+        "response": "Review",
+        "count": 1408,
+        "pct": 0.1116
+      }
+    ]
+  },
+  "AISat": {
+    "meta": {
+      "qid": "QID71",
+      "qname": "AISat",
+      "question": "<p>When using AI tools or AI agents at work, which of the following have increased or decreased your usual satisfaction with completing the task? Select one answer for each.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12125
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Architecture exploration",
+        "count": 530,
+        "pct": 0.0437
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Architecture exploration",
+        "count": 2686,
+        "pct": 0.2215
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Architecture exploration",
+        "count": 4207,
+        "pct": 0.347
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Architecture exploration",
+        "count": 567,
+        "pct": 0.0468
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Architecture exploration",
+        "count": 3751,
+        "pct": 0.3094
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Communication",
+        "count": 1163,
+        "pct": 0.0959
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Communication",
+        "count": 1573,
+        "pct": 0.1297
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Communication",
+        "count": 5783,
+        "pct": 0.4769
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Communication",
+        "count": 927,
+        "pct": 0.0765
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Communication",
+        "count": 2239,
+        "pct": 0.1847
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Debugging/refactoring",
+        "count": 511,
+        "pct": 0.0421
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Debugging/refactoring",
+        "count": 3604,
+        "pct": 0.2972
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Debugging/refactoring",
+        "count": 2781,
+        "pct": 0.2294
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Debugging/refactoring",
+        "count": 735,
+        "pct": 0.0606
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Debugging/refactoring",
+        "count": 4230,
+        "pct": 0.3489
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Design",
+        "count": 682,
+        "pct": 0.0562
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Design",
+        "count": 2221,
+        "pct": 0.1832
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Design",
+        "count": 4636,
+        "pct": 0.3824
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Design",
+        "count": 854,
+        "pct": 0.0704
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Design",
+        "count": 3375,
+        "pct": 0.2784
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Documentation",
+        "count": 545,
+        "pct": 0.0449
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Documentation",
+        "count": 3858,
+        "pct": 0.3182
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Documentation",
+        "count": 3489,
+        "pct": 0.2878
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Documentation",
+        "count": 610,
+        "pct": 0.0503
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Documentation",
+        "count": 3286,
+        "pct": 0.271
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Implementation",
+        "count": 976,
+        "pct": 0.0805
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Implementation",
+        "count": 3161,
+        "pct": 0.2607
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Implementation",
+        "count": 2377,
+        "pct": 0.196
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Implementation",
+        "count": 1399,
+        "pct": 0.1154
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Implementation",
+        "count": 4008,
+        "pct": 0.3306
+      },
+      {
+        "slice": 0,
+        "series": "Greatly decreased",
+        "response": "Review",
+        "count": 623,
+        "pct": 0.0514
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Review",
+        "count": 2707,
+        "pct": 0.2233
+      },
+      {
+        "slice": 0,
+        "series": "No change",
+        "response": "Review",
+        "count": 3856,
+        "pct": 0.318
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat decreased",
+        "response": "Review",
+        "count": 782,
+        "pct": 0.0645
+      },
+      {
+        "slice": 0,
+        "series": "Somewhat improved",
+        "response": "Review",
+        "count": 3800,
+        "pct": 0.3134
+      }
+    ]
+  },
+  "AIMem": {
+    "meta": {
+      "qid": "QID73",
+      "qname": "AIMem",
+      "question": "<p>Have you used any of the following tools for AI agent memory or vector databases in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 1392
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Mem0",
+        "count": 279,
+        "pct": 0.2004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LangMem",
+        "count": 212,
+        "pct": 0.1523
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Memary",
+        "count": 176,
+        "pct": 0.1264
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Graphiti",
+        "count": 162,
+        "pct": 0.1164
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Supermemory",
+        "count": 162,
+        "pct": 0.1164
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Zep",
+        "count": 151,
+        "pct": 0.1085
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Letta",
+        "count": 150,
+        "pct": 0.1078
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cognee",
+        "count": 133,
+        "pct": 0.0955
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hyperspell",
+        "count": 129,
+        "pct": 0.0927
+      }
+    ]
+  },
+  "AIOrch": {
+    "meta": {
+      "qid": "QID74",
+      "qname": "AIOrch",
+      "question": "<p>Have you used any of the following tools for AI agent orchestration or agent frameworks in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 4400
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LangChain",
+        "count": 1329,
+        "pct": 0.302
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "OpenAI Agents SDK",
+        "count": 1048,
+        "pct": 0.2382
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Terminal Use",
+        "count": 832,
+        "pct": 0.1891
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LangGraph",
+        "count": 825,
+        "pct": 0.1875
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Llama Stack",
+        "count": 767,
+        "pct": 0.1743
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Google ADK",
+        "count": 617,
+        "pct": 0.1402
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hermes Agent",
+        "count": 449,
+        "pct": 0.102
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Vercel AI SDK",
+        "count": 395,
+        "pct": 0.0898
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Pydantic AI",
+        "count": 390,
+        "pct": 0.0886
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "CrewAI",
+        "count": 242,
+        "pct": 0.055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Semantic Kernel",
+        "count": 218,
+        "pct": 0.0495
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AutoGen",
+        "count": 200,
+        "pct": 0.0455
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Strands",
+        "count": 178,
+        "pct": 0.0405
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DSPy",
+        "count": 159,
+        "pct": 0.0361
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Mastra",
+        "count": 132,
+        "pct": 0.03
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Dify",
+        "count": 126,
+        "pct": 0.0286
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Smolagents",
+        "count": 116,
+        "pct": 0.0264
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Atomic Agents",
+        "count": 115,
+        "pct": 0.0261
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Instructor",
+        "count": 106,
+        "pct": 0.0241
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Agno",
+        "count": 105,
+        "pct": 0.0239
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "21st.dev",
+        "count": 100,
+        "pct": 0.0227
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GripTape",
+        "count": 91,
+        "pct": 0.0207
+      }
+    ]
+  },
+  "AIObs": {
+    "meta": {
+      "qid": "QID75",
+      "qname": "AIObs",
+      "question": "<p>Have you used any of the following tools for AI agent observability, prompts, or evals in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 2277
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sentry",
+        "count": 592,
+        "pct": 0.26
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LangSmith",
+        "count": 393,
+        "pct": 0.1726
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "MLflow",
+        "count": 347,
+        "pct": 0.1524
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Langfuse",
+        "count": 345,
+        "pct": 0.1515
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Datadog LLM",
+        "count": 271,
+        "pct": 0.119
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Weights &amp; Biases",
+        "count": 244,
+        "pct": 0.1072
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Arize AI",
+        "count": 133,
+        "pct": 0.0584
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Braintrust",
+        "count": 132,
+        "pct": 0.058
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DeepEval",
+        "count": 131,
+        "pct": 0.0575
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Respan",
+        "count": 127,
+        "pct": 0.0558
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Promptfoo",
+        "count": 121,
+        "pct": 0.0531
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Agenta",
+        "count": 114,
+        "pct": 0.0501
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ragas",
+        "count": 111,
+        "pct": 0.0487
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Galileo AI",
+        "count": 110,
+        "pct": 0.0483
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Portkey",
+        "count": 109,
+        "pct": 0.0479
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LangWatch",
+        "count": 101,
+        "pct": 0.0444
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Helicone",
+        "count": 95,
+        "pct": 0.0417
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Humanloop",
+        "count": 93,
+        "pct": 0.0408
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "PromptLayer",
+        "count": 92,
+        "pct": 0.0404
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Patronus AI",
+        "count": 91,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "HoneyHive",
+        "count": 90,
+        "pct": 0.0395
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Confident AI",
+        "count": 86,
+        "pct": 0.0378
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Traceloop",
+        "count": 86,
+        "pct": 0.0378
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Chamber",
+        "count": 85,
+        "pct": 0.0373
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Opik",
+        "count": 84,
+        "pct": 0.0369
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Future AGI",
+        "count": 80,
+        "pct": 0.0351
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sentrial",
+        "count": 79,
+        "pct": 0.0347
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Athina AI",
+        "count": 78,
+        "pct": 0.0343
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lunary",
+        "count": 77,
+        "pct": 0.0338
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Moda",
+        "count": 76,
+        "pct": 0.0334
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ashr",
+        "count": 70,
+        "pct": 0.0307
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Parea AI",
+        "count": 69,
+        "pct": 0.0303
+      }
+    ]
+  },
+  "AICodeAgent": {
+    "meta": {
+      "qid": "QID76",
+      "qname": "AICodeAgent",
+      "question": "<p>Have you used any of the following coding agents or assistants in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12255
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Claude Code",
+        "count": 8030,
+        "pct": 0.6552
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GitHub Copilot",
+        "count": 7196,
+        "pct": 0.5872
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "OpenAI Codex",
+        "count": 3620,
+        "pct": 0.2954
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cursor",
+        "count": 3127,
+        "pct": 0.2552
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Google Antigravity",
+        "count": 1956,
+        "pct": 0.1596
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Gemini Code Assist",
+        "count": 1789,
+        "pct": 0.146
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Open Code",
+        "count": 1662,
+        "pct": 0.1356
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "JetBrains AI",
+        "count": 1569,
+        "pct": 0.128
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Windsurf",
+        "count": 796,
+        "pct": 0.065
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Warp",
+        "count": 641,
+        "pct": 0.0523
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cline",
+        "count": 551,
+        "pct": 0.045
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Pi",
+        "count": 535,
+        "pct": 0.0437
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Amazon Q Developer",
+        "count": 476,
+        "pct": 0.0388
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Continue",
+        "count": 466,
+        "pct": 0.038
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Mistral Vibe",
+        "count": 393,
+        "pct": 0.0321
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kilo Code",
+        "count": 392,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Devin",
+        "count": 360,
+        "pct": 0.0294
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Google Jules",
+        "count": 307,
+        "pct": 0.0251
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Replit Agent",
+        "count": 285,
+        "pct": 0.0233
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Tabnine",
+        "count": 257,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Aider",
+        "count": 256,
+        "pct": 0.0209
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Codium (Qodo)",
+        "count": 206,
+        "pct": 0.0168
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "BLACKBOX AI",
+        "count": 202,
+        "pct": 0.0165
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Supermaven",
+        "count": 158,
+        "pct": 0.0129
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Trae",
+        "count": 154,
+        "pct": 0.0126
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Augment Code",
+        "count": 145,
+        "pct": 0.0118
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sourcegraph Cody",
+        "count": 114,
+        "pct": 0.0093
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Emdash",
+        "count": 85,
+        "pct": 0.0069
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Approxima",
+        "count": 69,
+        "pct": 0.0056
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ECA",
+        "count": 68,
+        "pct": 0.0055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sweep",
+        "count": 68,
+        "pct": 0.0055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kavia AI",
+        "count": 63,
+        "pct": 0.0051
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Syntropy",
+        "count": 63,
+        "pct": 0.0051
+      }
+    ]
+  },
+  "AINoCode": {
+    "meta": {
+      "qid": "QID77",
+      "qname": "AINoCode",
+      "question": "<p>Have you used any of the following no-code agent builder tools in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 2219
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lovable",
+        "count": 850,
+        "pct": 0.3831
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Replit",
+        "count": 629,
+        "pct": 0.2835
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "v0",
+        "count": 611,
+        "pct": 0.2753
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bolt.new",
+        "count": 381,
+        "pct": 0.1717
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Base44",
+        "count": 250,
+        "pct": 0.1127
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Langflow",
+        "count": 174,
+        "pct": 0.0784
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack AI",
+        "count": 159,
+        "pct": 0.0717
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Flowise",
+        "count": 92,
+        "pct": 0.0415
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Voiceflow",
+        "count": 92,
+        "pct": 0.0415
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Create",
+        "count": 91,
+        "pct": 0.041
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Glue",
+        "count": 85,
+        "pct": 0.0383
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Rivet",
+        "count": 78,
+        "pct": 0.0352
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Botpress",
+        "count": 77,
+        "pct": 0.0347
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Relevance AI",
+        "count": 72,
+        "pct": 0.0324
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sparkles",
+        "count": 68,
+        "pct": 0.0306
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Wordware",
+        "count": 67,
+        "pct": 0.0302
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Marblism",
+        "count": 65,
+        "pct": 0.0293
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Pickaxe",
+        "count": 61,
+        "pct": 0.0275
+      }
+    ]
+  },
+  "AIAutomate": {
+    "meta": {
+      "qid": "QID78",
+      "qname": "AIAutomate",
+      "question": "<p>Have you used any of the following workflow automation tools in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 4173
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Make",
+        "count": 1625,
+        "pct": 0.3894
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "n8n",
+        "count": 1364,
+        "pct": 0.3269
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Zapier",
+        "count": 771,
+        "pct": 0.1848
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Temporal",
+        "count": 249,
+        "pct": 0.0597
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefect",
+        "count": 125,
+        "pct": 0.03
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Trigger.dev",
+        "count": 100,
+        "pct": 0.024
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Inngest",
+        "count": 96,
+        "pct": 0.023
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Gumloop",
+        "count": 93,
+        "pct": 0.0223
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Relay.app",
+        "count": 92,
+        "pct": 0.022
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DBOS",
+        "count": 89,
+        "pct": 0.0213
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Activepieces",
+        "count": 82,
+        "pct": 0.0197
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bubble Lab",
+        "count": 79,
+        "pct": 0.0189
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cofia",
+        "count": 69,
+        "pct": 0.0165
+      }
+    ]
+  },
+  "AIWorkNext": {
+    "meta": {
+      "qid": "QID67",
+      "qname": "AIWorkNext",
+      "question": "<p>When you receive an AI-generated answer for a development task, what do you usually do before using it? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13162
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Run it locally",
+        "count": 10067,
+        "pct": 0.7649
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Compare against codebase context",
+        "count": 8411,
+        "pct": 0.639
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Inspect tests/security implications",
+        "count": 6977,
+        "pct": 0.5301
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Read official docs",
+        "count": 4998,
+        "pct": 0.3797
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Search Stack Overflow",
+        "count": 1601,
+        "pct": 0.1216
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Use as-is",
+        "count": 1265,
+        "pct": 0.0961
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask a coworker",
+        "count": 907,
+        "pct": 0.0689
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not use AI tools.",
+        "count": 228,
+        "pct": 0.0173
+      }
+    ]
+  },
+  "AIToolCount": {
+    "meta": {
+      "qid": "QID68",
+      "qname": "AIToolCount",
+      "question": "<p>In a typical week, about how many distinct AI tools or AI-enabled products do you personally use for work?<\/p>\n<p>Count a tool if you intentionally use its AI capability. This may include chatbots, AI search or answer tools, AI coding assistants, AI features in IDEs, autonomous AI agents, internal AI assistants, local model runtimes, or AI tools built into workplace software.<\/p>\n<p>Do not count AI features you do not knowingly use. Do not count multiple models inside the same product unless you use them through separate tools or interfaces.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 11919
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "0 tools",
+        "count": 75,
+        "pct": 0.0063
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "1 tool",
+        "count": 2351,
+        "pct": 0.1972
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "2 tools",
+        "count": 4097,
+        "pct": 0.3437
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "3-5 tools",
+        "count": 4823,
+        "pct": 0.4046
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "6-10 tools",
+        "count": 450,
+        "pct": 0.0378
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "11+ tools",
+        "count": 123,
+        "pct": 0.0103
+      }
+    ]
+  },
+  "AIDaily": {
+    "meta": {
+      "qid": "QID62",
+      "qname": "AIDaily",
+      "question": "<p>You indicated that you use AI tools and/or agents daily. How much of your workday do you use AI tools to help you work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10877
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "4+ hours/day",
+        "count": 3378,
+        "pct": 0.3106
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "1-2 hours/day",
+        "count": 2765,
+        "pct": 0.2542
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "2-4 hours/day",
+        "count": 2636,
+        "pct": 0.2423
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "<1 hour every day",
+        "count": 1335,
+        "pct": 0.1227
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "<1 hour and not every day",
+        "count": 763,
+        "pct": 0.0701
+      }
+    ]
+  },
+  "AISentiment": {
+    "meta": {
+      "qid": "QID63",
+      "qname": "AISentiment",
+      "question": "<p>How would you describe your attitude toward using AI tools or agents as part of your work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14428
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 10907
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 2663
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 823
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Very favorable",
+        "count": 4564,
+        "pct": 0.3163
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Somewhat favorable",
+        "count": 4385,
+        "pct": 0.3039
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Neutral",
+        "count": 2205,
+        "pct": 0.1528
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 2110,
+        "pct": 0.1462
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Very unfavorable",
+        "count": 994,
+        "pct": 0.0689
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure",
+        "count": 170,
+        "pct": 0.0118
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Very favorable",
+        "count": 4225,
+        "pct": 0.3874
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Somewhat favorable",
+        "count": 3494,
+        "pct": 0.3203
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Neutral",
+        "count": 1389,
+        "pct": 0.1273
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 1156,
+        "pct": 0.106
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Very unfavorable",
+        "count": 526,
+        "pct": 0.0482
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not sure",
+        "count": 117,
+        "pct": 0.0107
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Somewhat favorable",
+        "count": 761,
+        "pct": 0.2858
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 669,
+        "pct": 0.2512
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Neutral",
+        "count": 625,
+        "pct": 0.2347
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Very favorable",
+        "count": 286,
+        "pct": 0.1074
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Very unfavorable",
+        "count": 286,
+        "pct": 0.1074
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not sure",
+        "count": 36,
+        "pct": 0.0135
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 281,
+        "pct": 0.3414
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Neutral",
+        "count": 182,
+        "pct": 0.2211
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very unfavorable",
+        "count": 179,
+        "pct": 0.2175
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Somewhat favorable",
+        "count": 122,
+        "pct": 0.1482
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very favorable",
+        "count": 44,
+        "pct": 0.0535
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not sure",
+        "count": 15,
+        "pct": 0.0182
+      }
+    ]
+  },
+  "AIComplex": {
+    "meta": {
+      "qid": "QID65",
+      "qname": "AIComplex",
+      "question": "<p>How well do the AI tools or AI agents you use in your development workflow handle complex tasks?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14341
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 10849
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 2646
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 817
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 5564,
+        "pct": 0.388
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 2299,
+        "pct": 0.1603
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 2288,
+        "pct": 0.1595
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Neither good or bad at handling complex tasks",
+        "count": 2067,
+        "pct": 0.1441
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Very poor at handling complex tasks",
+        "count": 1141,
+        "pct": 0.0796
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don't use AI tools for complex tasks / I don't know",
+        "count": 982,
+        "pct": 0.0685
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 4734,
+        "pct": 0.4364
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 2139,
+        "pct": 0.1972
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 1489,
+        "pct": 0.1372
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Neither good or bad at handling complex tasks",
+        "count": 1470,
+        "pct": 0.1355
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Very poor at handling complex tasks",
+        "count": 575,
+        "pct": 0.053
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I don't use AI tools for complex tasks / I don't know",
+        "count": 442,
+        "pct": 0.0407
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 717,
+        "pct": 0.271
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 624,
+        "pct": 0.2358
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Neither good or bad at handling complex tasks",
+        "count": 467,
+        "pct": 0.1765
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Very poor at handling complex tasks",
+        "count": 379,
+        "pct": 0.1432
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I don't use AI tools for complex tasks / I don't know",
+        "count": 343,
+        "pct": 0.1296
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 116,
+        "pct": 0.0438
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I don't use AI tools for complex tasks / I don't know",
+        "count": 195,
+        "pct": 0.2387
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very poor at handling complex tasks",
+        "count": 184,
+        "pct": 0.2252
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 182,
+        "pct": 0.2228
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Neither good or bad at handling complex tasks",
+        "count": 120,
+        "pct": 0.1469
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 105,
+        "pct": 0.1285
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 31,
+        "pct": 0.0379
+      }
+    ]
+  },
+  "AITrust": {
+    "meta": {
+      "qid": "QID64",
+      "qname": "AITrust",
+      "question": "<p>How much do you trust the output from AI tools or AI agents as part of your workflow?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14304
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 10824
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 2630
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 819
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I trust it when I can easily verify the output",
+        "count": 6872,
+        "pct": 0.4804
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 2329,
+        "pct": 0.1628
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I trust it for low-risk work tasks only",
+        "count": 2326,
+        "pct": 0.1626
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 1754,
+        "pct": 0.1226
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I trust it for many tasks, including important work decisions",
+        "count": 949,
+        "pct": 0.0663
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure / I do not use AI tools",
+        "count": 74,
+        "pct": 0.0052
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I trust it when I can easily verify the output",
+        "count": 5218,
+        "pct": 0.4821
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 2116,
+        "pct": 0.1955
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I trust it for low-risk work tasks only",
+        "count": 1545,
+        "pct": 0.1427
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 1007,
+        "pct": 0.093
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I trust it for many tasks, including important work decisions",
+        "count": 897,
+        "pct": 0.0829
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not sure / I do not use AI tools",
+        "count": 41,
+        "pct": 0.0038
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I trust it when I can easily verify the output",
+        "count": 1353,
+        "pct": 0.5144
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I trust it for low-risk work tasks only",
+        "count": 563,
+        "pct": 0.2141
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 480,
+        "pct": 0.1825
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 181,
+        "pct": 0.0688
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I trust it for many tasks, including important work decisions",
+        "count": 37,
+        "pct": 0.0141
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not sure / I do not use AI tools",
+        "count": 16,
+        "pct": 0.0061
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I trust it when I can easily verify the output",
+        "count": 288,
+        "pct": 0.3516
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 259,
+        "pct": 0.3162
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I trust it for low-risk work tasks only",
+        "count": 211,
+        "pct": 0.2576
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 31,
+        "pct": 0.0379
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not sure / I do not use AI tools",
+        "count": 17,
+        "pct": 0.0208
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I trust it for many tasks, including important work decisions",
+        "count": 13,
+        "pct": 0.0159
+      }
+    ]
+  },
+  "AIToolSwitch": {
+    "meta": {
+      "qid": "QID69",
+      "qname": "AIToolSwitch",
+      "question": "<p>In the past year, have you switched from one AI tool to another for work? If yes, what was the primary reason?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13144
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 4423,
+        "pct": 0.3365
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — better output quality",
+        "count": 3305,
+        "pct": 0.2514
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — my organization required or recommended a different tool",
+        "count": 1394,
+        "pct": 0.1061
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — better integration with my workflow or development environment",
+        "count": 975,
+        "pct": 0.0742
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — lower cost",
+        "count": 835,
+        "pct": 0.0635
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — better support for agents, automation, or coding workflows",
+        "count": 487,
+        "pct": 0.0371
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — another reason (write in)",
+        "count": 466,
+        "pct": 0.0355
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — the previous tool became too expensive, limited, or unavailable",
+        "count": 433,
+        "pct": 0.0329
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — better security, privacy, or compliance",
+        "count": 283,
+        "pct": 0.0215
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — access to a preferred model or provider",
+        "count": 280,
+        "pct": 0.0213
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes — for a specific feature",
+        "count": 179,
+        "pct": 0.0136
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not applicable — I do not use AI tools for work",
+        "count": 84,
+        "pct": 0.0064
+      }
+    ]
+  },
+  "AIRetain": {
+    "meta": {
+      "qid": "QID72",
+      "qname": "AIRetain",
+      "question": "<p>When AI tools remember things about your work, who should control that memory?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12825
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Just me",
+        "count": 6877,
+        "pct": 0.5362
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My organization centrally",
+        "count": 1891,
+        "pct": 0.1474
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not want AI to retain memory",
+        "count": 1821,
+        "pct": 0.142
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My team",
+        "count": 1420,
+        "pct": 0.1107
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure",
+        "count": 816,
+        "pct": 0.0636
+      }
+    ]
+  },
+  "AIUse": {
+    "meta": {
+      "qid": "QID79",
+      "qname": "AIUse",
+      "question": "<p>Which of the following best describes how AI tools or agents are used at your organization today?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13167
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI use is mostly optional and left up to individuals",
+        "count": 3915,
+        "pct": 0.2973
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My organization provides approved AI tools and guidance for how to use them",
+        "count": 3154,
+        "pct": 0.2395
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Some teams actively encourage AI use, but practices vary across the organization",
+        "count": 2097,
+        "pct": 0.1593
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My organization expects some employees to use AI tools for certain types of work",
+        "count": 1507,
+        "pct": 0.1145
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My organization measures or evaluates AI use as part of employee or team performance",
+        "count": 1344,
+        "pct": 0.1021
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My organization does not currently use AI tools or agents for work",
+        "count": 804,
+        "pct": 0.0611
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure",
+        "count": 346,
+        "pct": 0.0263
+      }
+    ]
+  },
+  "AIAvoid": {
+    "meta": {
+      "qid": "QID80",
+      "qname": "AIAvoid",
+      "question": "<p>Do you try to avoid using AI tools or agents at work or school? Select the option below that most accurately reflects your reasoning.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13857
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not avoid using AI at work or school",
+        "count": 5728,
+        "pct": 0.4134
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Concern over losing job skills or training an AI to replace you",
+        "count": 2367,
+        "pct": 0.1708
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Moral or ethical concerns",
+        "count": 2108,
+        "pct": 0.1521
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Issues with privacy or security",
+        "count": 1802,
+        "pct": 0.13
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Environmental concerns",
+        "count": 1129,
+        "pct": 0.0815
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify:",
+        "count": 369,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Difficulty or lack of training",
+        "count": 354,
+        "pct": 0.0255
+      }
+    ]
+  },
+  "AITry": {
+    "meta": {
+      "qid": "QID81",
+      "qname": "AITry",
+      "question": "<p>Which of the following best describes how your organization currently approaches AI tools or models?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12637
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "We use a few approved tools or models",
+        "count": 4138,
+        "pct": 0.3275
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "We mostly use one approved tool or model",
+        "count": 2345,
+        "pct": 0.1856
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Different teams choose their own tools or models",
+        "count": 2186,
+        "pct": 0.173
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "We are trying multiple tools or models before deciding what to use longer-term",
+        "count": 1576,
+        "pct": 0.1247
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "We are not using AI tools or models in a meaningful way",
+        "count": 1197,
+        "pct": 0.0947
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure",
+        "count": 649,
+        "pct": 0.0514
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "We are building internal tools or models",
+        "count": 546,
+        "pct": 0.0432
+      }
+    ]
+  }
+}

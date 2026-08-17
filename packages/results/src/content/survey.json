@@ -1,0 +1,1784 @@
+{
+  "settings": {
+    "year": "2026",
+    "description": "Over XXXX developers told us how they learn, build, and work.",
+    "descriptionLong": "Now in it’s sixteenth year the annual Developer Survey provides a crucial snapshot into the needs of the global developer community, focusing on the tools and technologies they use or indeed don’t.",
+    "eyebrow": "It’s back and it’s bigger than ever"
+  },
+  "chapters": [
+    {
+      "name": "Work",
+      "description": "A description for the 'Work' section.",
+      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "id": "work",
+      "sections": [
+        {
+          "chapter": "Work",
+          "name": "TBD1",
+          "description": "",
+          "id": "tbd-1",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Age",
+              "dataId": "Age",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "age",
+              "dataIdSlug": "age"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Relationship to coding",
+              "dataId": "CodeMain",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "relationship-to-coding",
+              "dataIdSlug": "code-main"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Work environment",
+              "dataId": "Education",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "work-environment",
+              "dataIdSlug": "education"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Employment status",
+              "dataId": "Employment",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "employment-status",
+              "dataIdSlug": "employment"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Gender",
+              "dataId": "Gender",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "gender",
+              "dataIdSlug": "gender"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD1",
+              "name": "Country",
+              "dataId": "Country",
+              "chart": "table",
+              "subtext": "",
+              "description": "",
+              "id": "country",
+              "dataIdSlug": "country"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "TBD2",
+          "description": "",
+          "id": "tbd-2",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "TBD2",
+              "name": "Employment additional status",
+              "dataId": "EmploymentAddl",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "employment-additional-status",
+              "dataIdSlug": "employment-addl"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "TBD3",
+          "description": "",
+          "id": "tbd-3",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "TBD3",
+              "name": "IC or PM",
+              "dataId": "ICorPM",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ic-or-pm",
+              "dataIdSlug": "i-cor-pm"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD3",
+              "name": "Work Setting",
+              "dataId": "WorkSetting",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "work-setting",
+              "dataIdSlug": "work-setting"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD3",
+              "name": "Years coding",
+              "dataId": "YearsCode",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "years-coding",
+              "dataIdSlug": "years-code"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD3",
+              "name": "Years of work experience",
+              "dataId": "WorkExp",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "years-of-work-experience",
+              "dataIdSlug": "work-exp"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD3",
+              "name": "Title",
+              "dataId": "Role",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "title",
+              "dataIdSlug": "role"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "TBD4",
+          "description": "",
+          "id": "tbd-4",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "TBD4",
+              "name": "Functions at work",
+              "dataId": "RoleFunctions",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "functions-at-work",
+              "dataIdSlug": "role-functions"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD4",
+              "name": "Employer organization size",
+              "dataId": "OrgSize",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "employer-organization-size",
+              "dataIdSlug": "org-size"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD4",
+              "name": "Tech budget decisionmaker status",
+              "dataId": "TechBudget",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "tech-budget-decisionmaker-status",
+              "dataIdSlug": "tech-budget"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "TBD5",
+          "description": "",
+          "id": "tbd-5",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Relationship to purchase decisions at work",
+              "dataId": "PurchasePower",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "relationship-to-purchase-decisions-at-work",
+              "dataIdSlug": "purchase-power"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Reasons to endorse a technology",
+              "dataId": "TechEndorse",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "reasons-to-endorse-a-technology",
+              "dataIdSlug": "tech-endorse"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Industry",
+              "dataId": "Industry",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "industry",
+              "dataIdSlug": "industry"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Job satisfaction",
+              "dataId": "JobSat",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "job-satisfaction",
+              "dataIdSlug": "job-sat"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Reasons to be complacent with current job",
+              "dataId": "JobSatComplacent",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "reasons-to-be-complacent-with-current-job",
+              "dataIdSlug": "job-sat-complacent"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Reasons job is easy",
+              "dataId": "JobEase",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "reasons-job-is-easy",
+              "dataIdSlug": "job-ease"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Does AI affect job ease",
+              "dataId": "JobEaseAI",
+              "chart": "bar-stacked",
+              "subtext": "",
+              "description": "",
+              "id": "does-ai-affect-job-ease",
+              "dataIdSlug": "job-ease-ai"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Reasons job is difficult",
+              "dataId": "JobDifficulty",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "reasons-job-is-difficult",
+              "dataIdSlug": "job-difficulty"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Does AI affect job difficulties",
+              "dataId": "JobDifficultyAI",
+              "chart": "bar-stacked",
+              "subtext": "",
+              "description": "",
+              "id": "does-ai-affect-job-difficulties",
+              "dataIdSlug": "job-difficulty-ai"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Count of tools used",
+              "dataId": "ToolCount",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "count-of-tools-used",
+              "dataIdSlug": "tool-count"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Compensation",
+              "dataId": "Compensation",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "compensation",
+              "dataIdSlug": "compensation"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Work",
+          "headline": "Seven in ten respondents are in employment",
+          "description": "The remainder are split between freelancing, study and those not currently working.",
+          "tier": "hero",
+          "chart": "3d-waffle-large",
+          "dataId": "Employment",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Employed"
+          ],
+          "dataIdSlug": "employment"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Individual contributors outnumber managers six to one",
+          "description": "The overwhelming majority of respondents write code rather than manage the people who do.",
+          "tier": "hero",
+          "chart": "3d-cube",
+          "dataId": "ICorPM",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Individual contributor",
+            "People manager"
+          ],
+          "dataIdSlug": "i-cor-pm"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Remote work holds its ground in the US",
+          "description": "Fully remote remains the single most common arrangement, ahead of hybrid and in-person.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "WorkSetting",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "work-setting"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Most developers are individual contributors",
+          "description": "Just under one in seven respondents describe themselves as a people manager.",
+          "tier": "highlight",
+          "chart": "stat",
+          "dataId": "ICorPM",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Individual contributor"
+          ],
+          "dataIdSlug": "i-cor-pm"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "The shape of the companies developers work for",
+          "description": "Mid-sized organisations dominate, with true solo working rarer than often assumed.",
+          "tier": "highlight",
+          "chart": "2d-treemap",
+          "dataId": "OrgSize",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "org-size"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Pay varies more by country than by role",
+          "description": "The gap between the highest and lowest paying markets dwarfs the gap between job titles.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-minmax",
+          "dataId": "Compensation",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "compensation"
+        },
+        {
+          "chapter": "Work",
+          "headline": "One in five influenced a substantial tech purchase",
+          "description": "Developers shape buying decisions well beyond their own individual tooling choices.",
+          "tier": "highlight",
+          "chart": "2d-waffle-large",
+          "dataId": "TechBudget",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "tech-budget"
+        }
+      ],
+      "index": 1
+    },
+    {
+      "name": "Knowledge - Trust - Context",
+      "description": "A description for the 'Knowledge - Context - Trust' section.",
+      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "id": "knowledge-trust-context",
+      "sections": [
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "name": "Knowledge and context",
+          "description": "",
+          "id": "knowledge-and-context",
+          "questions": [
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Sources for work-related answers",
+              "dataId": "KnowledgeQ",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "sources-for-work-related-answers",
+              "dataIdSlug": "knowledge-q"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Tasks delegated to AI agents",
+              "dataId": "KnowAgentDelegate",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "tasks-delegated-to-ai-agents",
+              "dataIdSlug": "know-agent-delegate"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Signals of trustworthy information",
+              "dataId": "TrustReason",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "signals-of-trustworthy-information",
+              "dataIdSlug": "trust-reason"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Important project context",
+              "dataId": "ContextSelect",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "important-project-context",
+              "dataIdSlug": "context-select"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Barriers to finding context",
+              "dataId": "ContextProblems",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "barriers-to-finding-context",
+              "dataIdSlug": "context-problems"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Knowledge and context",
+              "name": "Managing work context",
+              "dataId": "ContextWork",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "managing-work-context",
+              "dataIdSlug": "context-work"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "name": "Information quality and trust",
+          "description": "",
+          "id": "information-quality-and-trust",
+          "questions": [
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Time spent finding information",
+              "dataId": "KnowledgeA",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "time-spent-finding-information",
+              "dataIdSlug": "knowledge-a"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Importance of information accuracy",
+              "dataId": "KnowledgeAcc",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "importance-of-information-accuracy",
+              "dataIdSlug": "knowledge-acc"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Importance of current information",
+              "dataId": "KnowledgeTime",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "importance-of-current-information",
+              "dataIdSlug": "knowledge-time"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Importance of source traceability",
+              "dataId": "KnowledgeSource",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "importance-of-source-traceability",
+              "dataIdSlug": "knowledge-source"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Source attribution for AI answers",
+              "dataId": "KnowledgeSourceAI",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "source-attribution-for-ai-answers",
+              "dataIdSlug": "knowledge-source-ai"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Control over information used by AI",
+              "dataId": "KnowAgentTrust",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "control-over-information-used-by-ai",
+              "dataIdSlug": "know-agent-trust"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "Information quality and trust",
+              "name": "Discovering context too late",
+              "dataId": "ContextFreq",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "discovering-context-too-late",
+              "dataIdSlug": "context-freq"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "name": "AI adoption and cost",
+          "description": "",
+          "id": "ai-adoption-and-cost",
+          "questions": [
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "AI adoption and cost",
+              "name": "Factors in AI adoption",
+              "dataId": "AIAdopt",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "factors-in-ai-adoption",
+              "dataIdSlug": "ai-adopt"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "AI adoption and cost",
+              "name": "Organizational AI usage practices",
+              "dataId": "AIToken",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "organizational-ai-usage-practices",
+              "dataIdSlug": "ai-token"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "AI adoption and cost",
+              "name": "AI cost and usage limits",
+              "dataId": "AICost",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-cost-and-usage-limits",
+              "dataIdSlug": "ai-cost"
+            },
+            {
+              "chapter": "Knowledge - Trust - Context",
+              "section": "AI adoption and cost",
+              "name": "Cost-conscious prompting",
+              "dataId": "AICostPrompt",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "cost-conscious-prompting",
+              "dataIdSlug": "ai-cost-prompt"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "name": "TBD16",
+          "description": "",
+          "id": "tbd-16"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "name": "TBD17",
+          "description": "",
+          "id": "tbd-17"
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Experience spans five decades of developers",
+          "description": "From those in their first year to those with more than fifty, the range is unusually wide.",
+          "tier": "hold",
+          "chart": "3d-bar-stacked-minmax",
+          "dataId": "KnowledgeQ",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "knowledge-q"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Three in four are developers by profession",
+          "description": "The rest write code as part of another role, are learning, or code as a hobby.",
+          "tier": "hold",
+          "chart": "3d-waffle-large",
+          "dataId": "KnowAgentDelegate",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "know-agent-delegate"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "hold",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "The age of the developer population",
+          "description": "The 25-34 bracket is the largest, with a long tail either side of it.",
+          "tier": "hold",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "ContextSelect",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-select"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Most respondents code for a living",
+          "description": "Professional developers make up the clear majority of everyone who answered.",
+          "tier": "hold",
+          "chart": "stat",
+          "dataId": "ContextFreq",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-freq"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Formal education among professionals",
+          "description": "A bachelors degree is the most common, but far from a prerequisite for the work.",
+          "tier": "hold",
+          "chart": "2d-treemap",
+          "dataId": "AIAdopt",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-adopt"
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "hold",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge - Trust - Context",
+          "headline": "Where developers learn to code",
+          "description": "Technical documentation leads, with Stack Overflow third behind general online resources.",
+          "tier": "hold",
+          "chart": "rank",
+          "dataId": "AIToken",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "ai-token"
+        }
+      ],
+      "index": 2
+    },
+    {
+      "name": "AI",
+      "description": "A description for the 'AI' section.",
+      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "id": "ai",
+      "sections": [
+        {
+          "chapter": "AI",
+          "name": "TBD6",
+          "description": "",
+          "id": "tbd-6",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "TBD6",
+              "name": "AI tool usage",
+              "dataId": "AISelect",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-tool-usage",
+              "dataIdSlug": "ai-select"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD6",
+              "name": "AI tool usage frequency",
+              "dataId": "AIFreq",
+              "chart": "bar-stacked",
+              "subtext": "",
+              "description": "",
+              "id": "ai-tool-usage-frequency",
+              "dataIdSlug": "ai-freq"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD6",
+              "name": "AI tool usage daily",
+              "dataId": "AIDaily",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-tool-usage-daily",
+              "dataIdSlug": "ai-daily"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD6",
+              "name": "Attitudes towards AI tools",
+              "dataId": "AISentiment",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "attitudes-towards-ai-tools",
+              "dataIdSlug": "ai-sentiment"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD6",
+              "name": "Trust in AI tools",
+              "dataId": "AITrust",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "trust-in-ai-tools",
+              "dataIdSlug": "ai-trust"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "TBD7",
+          "description": "",
+          "id": "tbd-7",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "TBD7",
+              "name": "AI workflow current and expected",
+              "dataId": "AIWork",
+              "chart": "bar-clustered",
+              "subtext": "",
+              "description": "",
+              "id": "ai-workflow-current-and-expected",
+              "dataIdSlug": "ai-work"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD7",
+              "name": "Next steps after receiving an AI prompt response",
+              "dataId": "AIWorkNext",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "next-steps-after-receiving-an-ai-prompt-response",
+              "dataIdSlug": "ai-work-next"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD7",
+              "name": "How good are AI tools at complex tasks",
+              "dataId": "AIComplex",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "how-good-are-ai-tools-at-complex-tasks",
+              "dataIdSlug": "ai-complex"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD7",
+              "name": "AI tool count",
+              "dataId": "AIToolCount",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-tool-count",
+              "dataIdSlug": "ai-tool-count"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "TBD8",
+          "description": "",
+          "id": "tbd-8",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI agent data storage tools",
+              "dataId": "AIMem",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-agent-data-storage-tools",
+              "dataIdSlug": "ai-mem"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI agent orchestration tools",
+              "dataId": "AIOrch",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-agent-orchestration-tools",
+              "dataIdSlug": "ai-orch"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI agent observability and security",
+              "dataId": "AIObs",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-agent-observability-and-security",
+              "dataIdSlug": "ai-obs"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI coding agents",
+              "dataId": "AICodeAgent",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-coding-agents",
+              "dataIdSlug": "ai-code-agent"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI-no-code agents",
+              "dataId": "AINoCode",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-no-code-agents",
+              "dataIdSlug": "ai-no-code"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD8",
+              "name": "AI agent automation tools",
+              "dataId": "AIAutomate",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-agent-automation-tools",
+              "dataIdSlug": "ai-automate"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "TBD9",
+          "description": "",
+          "id": "tbd-9",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "AI impact in different work functions",
+              "dataId": "AIImpact",
+              "chart": "bar-stacked",
+              "subtext": "",
+              "description": "",
+              "id": "ai-impact-in-different-work-functions",
+              "dataIdSlug": "ai-impact"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "Satisfaction with AI tools",
+              "dataId": "AISat",
+              "chart": "bar-stacked",
+              "subtext": "",
+              "description": "",
+              "id": "satisfaction-with-ai-tools",
+              "dataIdSlug": "ai-sat"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "Did you switch AI tools in the past year?",
+              "dataId": "AIToolSwitch",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "did-you-switch-ai-tools-in-the-past-year",
+              "dataIdSlug": "ai-tool-switch"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "AI memory retention",
+              "dataId": "AIRetain",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-memory-retention",
+              "dataIdSlug": "ai-retain"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "AI at work",
+              "dataId": "AIUse",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-at-work",
+              "dataIdSlug": "ai-use"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "AI avoidance",
+              "dataId": "AIAvoid",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ai-avoidance",
+              "dataIdSlug": "ai-avoid"
+            },
+            {
+              "chapter": "AI",
+              "section": "TBD9",
+              "name": "Vetting new AI tools",
+              "dataId": "AITry",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "vetting-new-ai-tools",
+              "dataIdSlug": "ai-try"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "AI",
+          "headline": "Half of professional developers now use AI tools daily",
+          "description": "Daily use is markedly higher among professionals than among those still learning to code.",
+          "tier": "hero",
+          "chart": "3d-waffle-medium",
+          "dataId": "AIFreq",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-freq"
+        },
+        {
+          "chapter": "AI",
+          "headline": "Sentiment cooled even as adoption climbed",
+          "description": "Favourable views fell year on year while daily use kept rising: enthusiasm is not the driver.",
+          "tier": "hero",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AISentiment",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-sentiment"
+        },
+        {
+          "chapter": "AI",
+          "headline": "A quarter of developers somewhat distrust AI accuracy",
+          "description": "Only 3% say they highly trust it, making distrust by far the more common position.",
+          "tier": "highlight",
+          "chart": "2d-waffle-medium",
+          "dataId": "AITrust",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "I trust it for many tasks, but not important work decisions"
+          ],
+          "dataIdSlug": "ai-trust"
+        },
+        {
+          "chapter": "AI",
+          "headline": "How well AI handles genuinely complex work",
+          "description": "Few rate it highly: most place it somewhere between good-not-great and actively poor.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AIComplex",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-complex"
+        },
+        {
+          "chapter": "AI",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "Almost right, but not quite: the top AI frustration",
+          "description": "Two thirds cite near-miss answers, ahead of the time cost of debugging AI-generated code.",
+          "tier": "highlight",
+          "chart": "stat",
+          "dataId": "AISat",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Communication"
+          ],
+          "dataIdSlug": "ai-sat"
+        },
+        {
+          "chapter": "AI",
+          "headline": "Daily use outpaces weekly use nearly three to one",
+          "description": "Among all respondents, AI has largely settled into an everyday habit rather than an occasional one.",
+          "tier": "highlight",
+          "chart": "2d-treemap-small",
+          "dataId": "AISelect",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "AI coding assistants or coding agents",
+            "General-purpose AI chat tools"
+          ],
+          "dataIdSlug": "ai-select"
+        }
+      ],
+      "index": 3
+    },
+    {
+      "name": "Technology",
+      "description": "A description for the 'Technology' section.",
+      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "id": "technology",
+      "sections": [
+        {
+          "chapter": "Technology",
+          "name": "Most popular technologies",
+          "description": "",
+          "id": "most-popular-technologies",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Users using technology",
+              "dataId": "TechDropDown",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "users-using-technology",
+              "dataIdSlug": "tech-drop-down"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "Languages",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "languages"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Code Testing tools",
+              "dataId": "CodeTest",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "code-testing-tools",
+              "dataIdSlug": "code-test"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Databases",
+              "dataId": "Databases",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "databases",
+              "dataIdSlug": "databases"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Cloud development",
+              "dataId": "CloudPlat",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "cloud-development",
+              "dataIdSlug": "cloud-plat"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Web frameworks and technologies",
+              "dataId": "WebFramework",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "web-framework"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "LLMs",
+              "dataId": "LLM",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "ll-ms",
+              "dataIdSlug": "llm"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Dev IDEs",
+              "dataId": "DevIDE",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "dev-id-es",
+              "dataIdSlug": "dev-ide"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Admired and Desired",
+          "description": "To better gauge hype versus reality, we created a visualization that shows the distance between the proportion of respondents who want to use a technology (“desired”) and the proportion of users that have used the same technology in the past year and want to continue using it (“admired”).",
+          "id": "admired-and-desired",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "DA_Language",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "da-language"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Code Testing tools",
+              "dataId": "DA_CodeTest",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "code-testing-tools",
+              "dataIdSlug": "da-code-test"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Databases",
+              "dataId": "DA_Database",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "databases",
+              "dataIdSlug": "da-database"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Cloud development",
+              "dataId": "DA_Platform",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "cloud-development",
+              "dataIdSlug": "da-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Web frameworks and technologies",
+              "dataId": "DA_Webframe",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "da-webframe"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Dev IDEs",
+              "dataId": "DA_DevEnvs",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "dev-id-es",
+              "dataIdSlug": "da-dev-envs"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "LLMs",
+              "dataId": "DA_LLM",
+              "chart": "dumbbell",
+              "subtext": "",
+              "description": "",
+              "id": "ll-ms",
+              "dataIdSlug": "da-llm"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Popular Knowledge Technologies",
+          "description": "",
+          "id": "popular-knowledge-technologies",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Knowledge Management Tools",
+              "dataId": "KnowMgmt",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "knowledge-management-tools",
+              "dataIdSlug": "know-mgmt"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Enterprise Search",
+              "dataId": "EntSearch",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "enterprise-search",
+              "dataIdSlug": "ent-search"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Security Operations Tools",
+              "dataId": "SecOps",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "security-operations-tools",
+              "dataIdSlug": "sec-ops"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Build vs. AI",
+          "description": "",
+          "id": "build-vs-ai",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did your team build tools?",
+              "dataId": "BuildTool",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "did-your-team-build-tools",
+              "dataIdSlug": "build-tool"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did you build tools with AI assistance?",
+              "dataId": "BuildToolAI",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "did-you-build-tools-with-ai-assistance",
+              "dataIdSlug": "build-tool-ai"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did AI cause business disruptions?",
+              "dataId": "Disruption",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "did-ai-cause-business-disruptions",
+              "dataIdSlug": "disruption"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Technology",
+          "headline": "JavaScript holds the top spot for a thirteenth year",
+          "description": "Ranked by the share of all respondents who did extensive development work in each language this year.",
+          "tier": "hero",
+          "chart": "3d-rank",
+          "dataId": "Languages",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "languages"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "PostgreSQL is now the default database",
+          "description": "Proportional share of respondents using each database, with Postgres well clear of MySQL and SQLite.",
+          "tier": "hero",
+          "chart": "3d-treemap",
+          "dataId": "Databases",
+          "dataset": [],
+          "limit": "6",
+          "values": [],
+          "dataIdSlug": "databases"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "The web frameworks developers actually reach for",
+          "description": "Node.js and React lead, with jQuery still placing well ahead of several newer arrivals.",
+          "tier": "highlight",
+          "chart": "rank",
+          "dataId": "WebFramework",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "web-framework"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Three in four developers write code in VS Code",
+          "description": "No other editor comes close: the nearest, Visual Studio, is used by well under a third.",
+          "tier": "highlight",
+          "chart": "2d-waffle-large",
+          "dataId": "DevIDE",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Visual Studio Code"
+          ],
+          "dataIdSlug": "dev-ide"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Where professional developers deploy",
+          "description": "Docker dominates, with npm and AWS the next most common parts of the toolchain.",
+          "tier": "highlight",
+          "chart": "2d-treemap",
+          "dataId": "CloudPlat",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "cloud-plat"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Anthropic LLMs are the ones most want to use of all model providers",
+          "description": "Ahead of OpenAI and Google among the LLMs people want to use.",
+          "tier": "highlight",
+          "chart": "stat",
+          "dataId": "LLM",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Anthropic"
+          ],
+          "dataIdSlug": "llm"
+        }
+      ],
+      "index": 4
+    },
+    {
+      "name": "Community",
+      "description": "A description for the 'Community' section.",
+      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "id": "community",
+      "sections": [
+        {
+          "chapter": "Community",
+          "name": "Finding and trusting answers",
+          "description": "",
+          "id": "finding-and-trusting-answers",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "AI’s impact on Stack Overflow usage",
+              "dataId": "SOChange",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "a-is-impact-on-stack-overflow-usage",
+              "dataIdSlug": "so-change"
+            },
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "Where developers look for answers",
+              "dataId": "Answers",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "where-developers-look-for-answers",
+              "dataIdSlug": "answers"
+            },
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "What makes answers trustworthy",
+              "dataId": "AnswersTrust",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "what-makes-answers-trustworthy",
+              "dataIdSlug": "answers-trust"
+            }
+          ]
+        },
+        {
+          "chapter": "Community",
+          "name": "Communities and learning",
+          "description": "",
+          "id": "communities-and-learning",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Community participation",
+              "dataId": "CommunityType",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "community-participation",
+              "dataIdSlug": "community-type"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Barriers to community participation",
+              "dataId": "CommunityGap",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "barriers-to-community-participation",
+              "dataIdSlug": "community-gap"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Sources influencing skill development",
+              "dataId": "CommunitySkills",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "sources-influencing-skill-development",
+              "dataIdSlug": "community-skills"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "How developers learned to code",
+              "dataId": "LearnCodeHow",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "how-developers-learned-to-code",
+              "dataIdSlug": "learn-code-how"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "How developers learned AI programming",
+              "dataId": "LearnAIHow",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "how-developers-learned-ai-programming",
+              "dataIdSlug": "learn-ai-how"
+            }
+          ]
+        },
+        {
+          "chapter": "Community",
+          "name": "Stack Overflow and community platforms",
+          "description": "",
+          "id": "stack-overflow-and-community-platforms",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Stack Overflow account ownership",
+              "dataId": "SOAccount",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "stack-overflow-account-ownership",
+              "dataIdSlug": "so-account"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Years using Stack Overflow",
+              "dataId": "SOYears",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "years-using-stack-overflow",
+              "dataIdSlug": "so-years"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Learning new coding skills",
+              "dataId": "LearnCode",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "learning-new-coding-skills",
+              "dataIdSlug": "learn-code"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Learning AI skills",
+              "dataId": "LearnAI",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "learning-ai-skills",
+              "dataIdSlug": "learn-ai"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Community platforms",
+              "dataId": "CommPlat",
+              "chart": "bar",
+              "subtext": "",
+              "description": "",
+              "id": "community-platforms",
+              "dataIdSlug": "comm-plat"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Community",
+          "headline": "Four in five respondents have a Stack Overflow account",
+          "description": "Account holding is near universal, even among those who rarely post or answer.",
+          "tier": "hero",
+          "chart": "hero-stat",
+          "dataId": "SOAccount",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Yes"
+          ],
+          "dataIdSlug": "so-account"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Most respondents already have an account",
+          "description": "Only around one in eight say they have never created one.",
+          "tier": "highlight",
+          "chart": "stat",
+          "dataId": "SOAccount",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Yes"
+          ],
+          "dataIdSlug": "so-account"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Participation is far rarer than visiting",
+          "description": "Nearly a third have never asked or answered, despite visiting regularly.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "Answers",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "answers"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "The content developers want most",
+          "description": "Recommendation lists lead, ahead of long-form articles and AI chat.",
+          "tier": "highlight",
+          "chart": "rank",
+          "dataId": "LearnCode",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "learn-code"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Somewhat beats definitely on belonging",
+          "description": "More respondents feel a qualified sense of community than an unequivocal one.",
+          "tier": "highlight",
+          "chart": "2d-treemap-small",
+          "dataId": "CommunitySkills",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Stack Overflow / Stack Exchange"
+          ],
+          "dataIdSlug": "community-skills"
+        },
+        {
+          "chapter": "Community",
+          "headline": "More than a quarter visit at least weekly",
+          "description": "Weekly visits are the single largest group, ahead of daily and multiple-times-daily use.",
+          "tier": "highlight",
+          "chart": "2d-waffle-medium",
+          "dataId": "CommPlat",
+          "dataset": [],
+          "limit": "",
+          "values": [
+            "Stack Overflow",
+            "Substack",
+            "Reddit"
+          ],
+          "dataIdSlug": "comm-plat"
+        }
+      ],
+      "index": 5
+    }
+  ]
+}
