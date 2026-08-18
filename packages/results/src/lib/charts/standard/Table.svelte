@@ -1,7 +1,8 @@
 <script lang="ts">
-	// Columns and cell formatting come from $lib/table, the same helpers behind
-	// DataTable and the markdown twins, so the three renderings agree.
-	import { cell, columns, headerFor } from '$lib/table'
+	// The whole table — columns, headings, formatted cells — comes from
+	// $lib/table, the same builder behind DataTable and the markdown twins, so the
+	// three renderings agree.
+	import { tableOf } from '$lib/table'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 	import { PAD, chars, clip, middle, px, shorten, theme } from '$charts/utils/theme'
@@ -20,10 +21,7 @@
 	const enter = (r: number, row: any, event: PointerEvent) => {
 		active = r
 		onhover?.(
-			{
-				title: String(row[keys[0]] ?? ''),
-				rows: keys.slice(1).map((key, i) => ({ value: cell(row[key], key), label: headers[i + 1] })),
-			},
+			{ title: row.cells[0], rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })) },
 			event
 		)
 	}
@@ -33,18 +31,14 @@
 		onhover?.(null)
 	}
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
-	const keys = $derived(columns(rows))
+	const table = $derived(tableOf(figure))
+	const rows = $derived(table?.rows ?? [])
+	const headers = $derived(table?.headers ?? [])
+	// The first column is the response and takes the space; the rest are numbers.
+	const numeric = $derived(table?.numeric ?? [])
 	const short = $derived(shorten(figure))
 
-	// The export ships column names, not column headings. `response` is the one
-	// the question itself names — "Country", "Language" — so it takes the
-	// question's own label where there is one.
-	const headers = $derived(keys.map((key) => headerFor(key, figure.definition?.title ?? figure.name)))
-
-	// The first column is the response and takes the space; the rest are numbers.
-	const numeric = $derived(keys.map((key) => key !== keys[0] && rows.some((row: any) => typeof row[key] === 'number')))
-	const others = $derived(Math.max(1, keys.length - 1))
+	const others = $derived(Math.max(1, headers.length - 1))
 	// Past ~13 columns the two clamps fight and the last runs over the edge; the
 	// widest table in the export has four.
 	const restWidth = $derived(Math.min(110, (width - PAD * 2) / (others + 2)))
@@ -62,7 +56,7 @@
 
 <Frame {figure} {width} {height}>
 	<g transform="translate(0, {PAD})">
-		{#each keys as key, i (key)}
+		{#each headers as header, i (i)}
 			<text
 				x={numeric[i] ? edge(i) : x(i)}
 				y="14"
@@ -71,7 +65,7 @@
 				font-weight="600"
 				fill={theme.ink}
 			>
-				{clip(headers[i], chars(colWidth(i) - 12, HEAD_SIZE))}
+				{clip(header, chars(colWidth(i) - 12, HEAD_SIZE))}
 			</text>
 		{/each}
 
@@ -92,8 +86,8 @@
 				/>
 			{/if}
 
-			{#each keys as key, i (key)}
-				{@const text = short(cell(row[key], key))}
+			{#each row.cells as value, i (i)}
+				{@const text = short(value)}
 				<text
 					x={numeric[i] ? edge(i) : x(i)}
 					y={middle(y + ROW / 2 - 4, CELL_SIZE)}

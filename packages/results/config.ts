@@ -38,20 +38,29 @@ export const licence = {
 	holder: 'Stack Exchange Inc.',
 }
 
+// ODbL asks for attribution, and both the "Use this data" panel and the markdown
+// twins have to ask for the same wording. No accessed-date: every page is
+// prerendered, so a baked one would be the build's rather than the reader's.
+export const citation = (title: string, year: string | number, url: string) =>
+	`${licence.holder} (${year}). “${title}”. ${siteName} ${year}. Licensed under ${licence.database.name}. ${url}`
+
+// The short form, for a page rather than a figure.
+export const citeAs = `Cite as: ${siteName}, ${licence.holder}`
+
 // The publisher, as schema.org describes it. `sameAs` is how a consumer knows
 // this Organization is the same one it has seen elsewhere.
 export const organisation = {
-  name: 'Stack Overflow',
+	name: 'Stack Overflow',
 	legalName: 'Stack Exchange Inc.',
 	url: 'https://stackoverflow.com/',
 	logo: '/apple-touch-icon.png',
-  sameAs: [
-    'https://stackexchange.com/',
+	sameAs: [
+		'https://stackexchange.com/',
 		'https://www.linkedin.com/company/stack-overflow/',
 		'https://github.com/StackExchange',
-    'https://twitter.com/stackoverflow',
-    'https://www.instagram.com/thestackoverflow/',
-    'https://www.youtube.com/c/StackOverflowOfficial',
+		'https://twitter.com/stackoverflow',
+		'https://www.instagram.com/thestackoverflow/',
+		'https://www.youtube.com/c/StackOverflowOfficial',
 		'https://www.threads.net/@thestackoverflow',
 	],
 }

@@ -42,7 +42,12 @@ const website = () => ({
 const breadcrumbs = (trail: { name: string; path: string }[]) => ({
 	'@type': 'BreadcrumbList',
 	'@id': `${siteUrl}${trail[trail.length - 1].path}#breadcrumbs`,
-	itemListElement: trail.map((item, i: number) => ({ '@type': 'ListItem', position: i + 1, name: item.name, item: `${siteUrl}${item.path}` })),
+	itemListElement: trail.map((item, i: number) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		name: item.name,
+		item: `${siteUrl}${item.path}`,
+	})),
 })
 
 const webPage = (page: any, mainEntity?: string) => ({

@@ -36,5 +36,16 @@ export const labelFor = (key: string): Label => ({
 
 export const columnLabel = (key: string) => REGISTRY[key]?.short ?? REGISTRY[key]?.label ?? humanise(key)
 
+// How a number in this column reads. `%` is a 0–1 fraction, `$` an amount;
+// anything else is a plain count or rank and reads as itself. Formatting keys
+// off this rather than off the key name, so a new currency column needs a
+// registry line and nothing else.
+export const unitFor = (key: string) => REGISTRY[key]?.unit ?? ''
+
 // The shape every row has. Anything else a row carries is a value worth labelling.
 export const STRUCTURAL = new Set(['slice', 'series', 'response', 'count', 'pct'])
+
+// The named columns beside `count` and `pct` — the salary and rank measures. Read
+// by the generator (to decide what a bar plots) and by `$lib/table` (to decide
+// what a pivoted cell shows), so the two agree on what counts as a measure.
+export const valueKeys = (rows: any[]) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]

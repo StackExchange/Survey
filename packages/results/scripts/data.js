@@ -16,7 +16,7 @@ import { marked } from 'marked'
 import YAML from 'yaml'
 
 import { graphsFor } from '../src/lib/jsonld.ts'
-import { STRUCTURAL, labelFor } from '../src/lib/labels.ts'
+import { columnLabel, labelFor, unitFor, valueKeys } from '../src/lib/labels.ts'
 
 marked.use({ breaks: true, gfm: true })
 
@@ -89,8 +89,6 @@ const summary = ({ id, name, index, description, descriptionLong }) => ({
 // nests cuts under `datasets`; the tidy one declares them up front.
 const isTidy = (question) => Array.isArray(question?.meta?.slices)
 
-const valueKeys = (rows) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]
-
 // A bar draws the share. Where the rows carry none — the salary questions — it
 // draws the first named column instead.
 const valueFor = (rows) => {
@@ -109,6 +107,17 @@ const axesFor = (rows) => {
 	const y = keys.find((key) => key.endsWith('_usd'))
 	return x && y ? { x: labelFor(x), y: labelFor(y) } : null
 }
+
+// Everything needed to print a column, resolved once here rather than re-derived
+// from the rows by every table, CSV and markdown twin that draws them. All 99
+// questions carry one column set across their cuts, so it sits on the figure.
+const columnsFor = (rows, title) =>
+	[...new Set(rows.flatMap((row) => Object.keys(row)))].map((key) => ({
+		key,
+		header: key === 'response' ? title || 'Response' : columnLabel(key),
+		unit: unitFor(key),
+		numeric: rows.some((row) => typeof row[key] === 'number'),
+	}))
 
 // One cut: its rows, minus the slice index that selected them, minus any column
 // null in all of them. Past this point a row stands alone.
@@ -136,7 +145,7 @@ function groupOf(question, slice, at, completions) {
 
 // Everything a figure derives from the data, with no sheet copy attached — a
 // question adds its Questions row, a promoted figure its Features row.
-function resolve(ctx, chapterId, dataId, where, chart) {
+function resolve(ctx, chapterId, dataId, where, chart, title) {
 	const question = ctx.data[chapterId]?.[dataId]
 	if (!question) return ctx.fail(`${where}: no question "${dataId}" in ${chapterId}.json`)
 	// A chapter is skipped wholesale when nothing in it is tidy, so reaching here
@@ -159,14 +168,23 @@ function resolve(ctx, chapterId, dataId, where, chart) {
 	const shorts = {}
 	for (const row of question.data) for (const v of [row.response, row.series]) if (asked[v]) shorts[v] = asked[v]
 
-	return { dataId, question: question.meta?.question ?? null, definition, value: valueFor(rows), axes, shorts, groups }
+	return {
+		dataId,
+		question: question.meta?.question ?? null,
+		definition,
+		columns: columnsFor(rows, title),
+		value: valueFor(rows),
+		axes,
+		shorts,
+		groups,
+	}
 }
 
 // A question with every cut. The cuts are the only copy of the rows — spreading
 // the first one flat as well would write every row twice, and both pages already
 // fall back to `demographics[0]`.
 function figureOf(ctx, chapterId, q) {
-	const { groups, ...resolved } = resolve(ctx, chapterId, q.dataId, `question "${q.name}" (${chapterId})`, q.chart) ?? {}
+	const { groups, ...resolved } = resolve(ctx, chapterId, q.dataId, `question "${q.name}" (${chapterId})`, q.chart, q.name) ?? {}
 	if (!groups) return null
 
 	return {
@@ -186,7 +204,7 @@ function featureOf(ctx, chapter, ref) {
 		return { kind: 'quote', chart: 'quote', headline: ref.headline, description: ref.description, descriptionHtml: html(ref.description) }
 
 	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
-	const { groups, ...resolved } = resolve(ctx, chapter.id, ref.dataId, where, ref.chart) ?? {}
+	const { groups, ...resolved } = resolve(ctx, chapter.id, ref.dataId, where, ref.chart, ref.headline) ?? {}
 	if (!groups) return null
 
 	const wanted = ref.dataset?.[0]

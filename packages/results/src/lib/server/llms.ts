@@ -8,7 +8,7 @@ import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
 
-import { licence, siteDescription, siteName, siteUrl } from '$config'
+import { citeAs, licence, siteDescription, siteName, siteUrl } from '$config'
 import { ofSurvey, toMarkdown } from '$lib/table'
 
 import site from '$generated/site.json'
@@ -111,7 +111,7 @@ function figure(block: any, heading: string) {
 		asked(shown),
 		`${shown.demographic?.name} · ${nLine(shown.demographic)}`,
 		shown.subtext && `_${shown.subtext}_`,
-		toMarkdown(shown.data)
+		toMarkdown(shown)
 	)
 }
 
@@ -131,7 +131,7 @@ function home(page: PageRef) {
 				return `- [${y} results](${link})${data ? ` · [responses (CSV)](${data})` : ''}`
 			})
 			.join('\n'),
-		`Cite as: ${siteName}, ${licence.holder}`
+		citeAs
 	)
 }
 
@@ -218,7 +218,9 @@ function questionPage(page: PageRef, chapterId: string, slug: string) {
 		// `subtext` describes the question, not the cut, so it sits above the groups
 		// rather than being repeated under each one.
 		question.subtext && `_${question.subtext}_`,
-		question.demographics.map((d: any) => join(`### ${d.demographic.name}`, nLine(d.demographic), toMarkdown(d.data))).join('\n\n'),
+		question.demographics
+			.map((d: any) => join(`### ${d.demographic.name}`, nLine(d.demographic), toMarkdown({ ...question, ...d })))
+			.join('\n\n'),
 		`In context: ${siteUrl}/${year}/${chapterId}/data.md`
 	)
 }
@@ -242,7 +244,7 @@ function methodologyPage(page: PageRef) {
 					.join('\n')
 			),
 		`Response data is released under the ${licence.database.name} (${licence.database.url}).`,
-		`Cite as: ${siteName}, ${licence.holder}`
+		citeAs
 	)
 }
 

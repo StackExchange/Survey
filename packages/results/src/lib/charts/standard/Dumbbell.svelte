@@ -6,20 +6,7 @@
 	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
 	import Legend from '$charts/svg/Legend.svelte'
-	import {
-		PAD,
-		chars,
-		clip,
-		digitsWidth,
-		labelGutter,
-		legend,
-		middle,
-		percent,
-		px,
-		shorten,
-		stackRows,
-		theme,
-	} from '$charts/utils/theme'
+	import { PAD, chars, clip, digitsWidth, labelGutter, legend, middle, percent, px, shorten, stackRows, theme } from '$charts/utils/theme'
 	import { HIT, type OnHover } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
