@@ -22,7 +22,7 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Remove once we have data
+# Remove once we're read to go live
 /src/content
 /src/data
 
