@@ -6,17 +6,28 @@ question:
   type: multi_select
   required: false
   options:
-    - Keep notes or prompts in a separate document
-    - Copy and paste information between tools
-    - Start new AI chats or sessions to reset context
-    - Manually select files or documents for AI tools
-    - Ask teammates where to find information
-    - Search across multiple tools
-    - Maintain personal documentation or notes
-    - Maintain team documentation or wikis
-    - Reuse saved prompts or templates
-    - Limit the context I share because of privacy/security concerns
-    - I do not do anything specific to manage context
+    - label: Keep notes or prompts in a separate document
+      short: Notes in a separate document
+    - label: Copy and paste information between tools
+      short: Copy and paste between tools
+    - label: Start new AI chats or sessions to reset context
+      short: Start a new chat to reset
+    - label: Manually select files or documents for AI tools
+      short: Manually pick files for AI
+    - label: Ask teammates where to find information
+      short: Ask teammates
+    - label: Search across multiple tools
+      short: Search multiple tools
+    - label: Maintain personal documentation or notes
+      short: Personal notes
+    - label: Maintain team documentation or wikis
+      short: Team documentation
+    - label: Reuse saved prompts or templates
+      short: Reuse saved prompts
+    - label: Limit the context I share because of privacy/security concerns
+      short: Limit what I share
+    - label: I do not do anything specific to manage context
+      short: Nothing specific
     - label: Other, please specify
       key: other
       text_entry: true

@@ -6,21 +6,38 @@ question:
   type: multi_select
   required: false
   options:
-    - Writing, editing, or generating code
-    - Debugging or troubleshooting
-    - Reviewing code, pull requests, or technical changes
-    - Writing or maintaining tests
-    - Writing or updating documentation
-    - Making technical design or architecture decisions
-    - Planning, scoping, or estimating work
-    - Changing production code, systems, or infrastructure
-    - Deploying or releasing software
-    - Monitoring systems, logs, metrics, or alerts
-    - Investigating an incident, outage, or production issue
-    - Maintaining dependencies, packages, or development environments
-    - Finding or fixing security, privacy, or compliance issues
-    - Analyzing data, reports, or business metrics
-    - Onboarding to a new project, tool, system, or codebase
-    - Answering questions from teammates, customers, users, or stakeholders
-    - Coordinating work across teams or functions
+    - label: Writing, editing, or generating code
+      short: Writing code
+    - label: Debugging or troubleshooting
+      short: Debugging
+    - label: Reviewing code, pull requests, or technical changes
+      short: Code review
+    - label: Writing or maintaining tests
+      short: Tests
+    - label: Writing or updating documentation
+      short: Documentation
+    - label: Making technical design or architecture decisions
+      short: Design and architecture
+    - label: Planning, scoping, or estimating work
+      short: Planning and estimating
+    - label: Changing production code, systems, or infrastructure
+      short: Changing production
+    - label: Deploying or releasing software
+      short: Deploying and releasing
+    - label: Monitoring systems, logs, metrics, or alerts
+      short: Monitoring and alerts
+    - label: Investigating an incident, outage, or production issue
+      short: Incidents and outages
+    - label: Maintaining dependencies, packages, or development environments
+      short: Dependencies and environments
+    - label: Finding or fixing security, privacy, or compliance issues
+      short: Security and compliance
+    - label: Analyzing data, reports, or business metrics
+      short: Data and metrics
+    - label: Onboarding to a new project, tool, system, or codebase
+      short: Onboarding to something new
+    - label: Answering questions from teammates, customers, users, or stakeholders
+      short: Answering questions
+    - label: Coordinating work across teams or functions
+      short: Coordinating across teams
     - None of the above

@@ -6,20 +6,33 @@ question:
   type: multi_select
   required: false
   options:
-    - Information is spread across too many tools
+    - label: Information is spread across too many tools
+      short: Spread across too many tools
     - Information is outdated
-    - Information is incomplete
-    - I do not know where to look
-    - I do not know which source is authoritative
-    - Important context lives in people’s heads
-    - Important decisions are hard to find later
-    - Different teams have different versions of the truth
-    - Access or permissions prevent me from seeing what I need
-    - Search does not return useful results
-    - AI tools do not have enough context
-    - AI tools use the wrong context
-    - I intentionally limit context because of privacy or security concerns
-    - I usually have the context I need
+    - label: Information is incomplete
+      short: Incomplete information
+    - label: I do not know where to look
+      short: Don't know where to look
+    - label: I do not know which source is authoritative
+      short: No authoritative source
+    - label: Important context lives in people’s heads
+      short: Context is in people’s heads
+    - label: Important decisions are hard to find later
+      short: Decisions are hard to find
+    - label: Different teams have different versions of the truth
+      short: Teams disagree on the truth
+    - label: Access or permissions prevent me from seeing what I need
+      short: Blocked by permissions
+    - label: Search does not return useful results
+      short: Search isn't useful
+    - label: AI tools do not have enough context
+      short: AI lacks enough context
+    - label: AI tools use the wrong context
+      short: AI uses the wrong context
+    - label: I intentionally limit context because of privacy or security concerns
+      short: I limit context deliberately
+    - label: I usually have the context I need
+      short: Usually have what I need
     - Not applicable
     - label: Other, please specify
       key: other

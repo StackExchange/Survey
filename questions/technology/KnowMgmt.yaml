@@ -18,7 +18,8 @@ question:
     - Coda
     - Document360
     - DokuWiki
-    - Google Workspace / Google Drive / Google Docs
+    - label: Google Workspace / Google Drive / Google Docs
+      short: Google Workspace
     - Guru
     - Helpjuice
     - KnowledgeOwl
@@ -27,9 +28,11 @@ question:
     - Nuclino
     - Outline
     - Quip
-    - ServiceNow Knowledge Management
+    - label: ServiceNow Knowledge Management
+      short: ServiceNow
     - Slab
-    - Stack Internal / Stack Overflow for Teams
+    - label: Stack Internal / Stack Overflow for Teams
+      short: Stack Internal
     - XWiki
     - Zendesk Guide
     - label: Other, please specify

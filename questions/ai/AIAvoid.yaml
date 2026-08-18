@@ -7,11 +7,16 @@ question:
   required: false
   options:
     - Environmental concerns
-    - Concern over losing job skills or training an AI to replace you
-    - Issues with privacy or security
-    - Moral or ethical concerns
-    - Difficulty or lack of training
-    - I do not avoid using AI at work or school
+    - label: Concern over losing job skills or training an AI to replace you
+      short: Losing skills to AI
+    - label: Issues with privacy or security
+      short: Privacy or security
+    - label: Moral or ethical concerns
+      short: Morals/ethics
+    - label: Difficulty or lack of training
+      short: Lack of training
+    - label: I do not avoid using AI at work or school
+      short: I don't avoid AI
     - label: 'Other, please specify:'
       key: other
       text_entry: true

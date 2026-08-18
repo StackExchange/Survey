@@ -15,14 +15,16 @@ question:
     - Company-sponsored forums
     - Dev.to
     - Discord
-    - GitHub (public projects, not private repos)
+    - label: GitHub (public projects, not private repos)
+      short: GitHub
     - Hacker News
     - Hashnode
     - Kaggle
     - LinkedIn
     - Medium
     - Reddit
-    - Slack (public channels, not work)
+    - label: Slack (public channels, not work)
+      short: Slack
     - Stack Exchange
     - Stack Overflow
     - Substack

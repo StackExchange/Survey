@@ -11,7 +11,8 @@ question:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
   options:
-    - Amazon Web Services (AWS)
+    - label: Amazon Web Services (AWS)
+      short: AWS
     - Ansible
     - APT
     - Bazel
@@ -45,7 +46,8 @@ question:
     - NuGet
     - OpenShift
     - OpenTofu
-    - Oracle Cloud Infrastructure (OCI)
+    - label: Oracle Cloud Infrastructure (OCI)
+      short: Oracle Cloud (OCI)
     - OVHcloud
     - Pacman
     - pip

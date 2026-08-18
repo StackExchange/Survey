@@ -6,28 +6,39 @@ question:
   type: single_select
   required: false
   options:
-    - Agriculture, forestry, fishing, and hunting
-    - Banking/financial services
-    - Broadcasting or publishing
+    - label: Agriculture, forestry, fishing, and hunting
+      short: Agriculture and forestry
+    - label: Banking/financial services
+      short: Banking and finance
+    - label: Broadcasting or publishing
+      short: Broadcasting or publishing
     - Education
     - Energy
-    - Engineering services or applied R&D
+    - label: Engineering services or applied R&D
+      short: Engineering and R&D
     - Fintech
     - Government
     - Healthcare
     - Hospitality or travel
     - Insurance
-    - IT services, consulting, systems integration, or managed services
-    - Life sciences or biotechnology
+    - label: IT services, consulting, systems integration, or managed services
+      short: IT services and consulting
+    - label: Life sciences or biotechnology
+      short: Life sciences and biotech
     - Manufacturing
-    - Media or advertising services
+    - label: Media or advertising services
+      short: Media and advertising
     - Mining or construction
-    - Non-profit or social services
-    - Retail, e-commerce, or consumer services
+    - label: Non-profit or social services
+      short: Non-profit or social
+    - label: Retail, e-commerce, or consumer services
+      short: Retail and e-commerce
     - Scientific research
     - Software development
-    - Transportation or supply chain
-    - Utilities, internet, or telecommunications
+    - label: Transportation or supply chain
+      short: Transport and supply chain
+    - label: Utilities, internet, or telecommunications
+      short: Utilities and telecoms
     - label: Other, please specify
       key: other
       text_entry: true

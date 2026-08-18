@@ -15,17 +15,21 @@ question:
     - Algolia
     - Amazon Kendra
     - Apache Solr
-    - Azure AI Search / Azure Cognitive Search
+    - label: Azure AI Search / Azure Cognitive Search
+      short: Azure AI Search
     - Coveo
-    - Elastic / Elasticsearch / Elastic Enterprise Search
+    - label: Elastic / Elasticsearch / Elastic Enterprise Search
+      short: Elastic
     - Glean
-    - Google Cloud Search / Vertex AI Search
+    - label: Google Cloud Search / Vertex AI Search
+      short: Google / Vertex AI Search
     - IBM Watson Discovery
     - Lucidworks
     - Microsoft Search
     - MongoDB Atlas Search
     - OpenSearch
-    - Salesforce Einstein Search
+    - label: Salesforce Einstein Search
+      short: Einstein Search
     - SearchStax
     - ServiceNow AI Search
     - Sinequa

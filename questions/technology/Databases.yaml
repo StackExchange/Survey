@@ -20,7 +20,8 @@ question:
     - DuckDB
     - Dynamodb
     - Elasticsearch
-    - Firebase Realtime Database
+    - label: Firebase Realtime Database
+      short: Firebase Realtime DB
     - H2
     - IBM DB2
     - InfluxDB

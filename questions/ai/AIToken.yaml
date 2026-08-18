@@ -6,13 +6,21 @@ question:
   type: multi_select
   required: false
   options:
-    - Set limits on who can use certain AI tools or models
-    - Set limits on AI tool or model usage or spending
-    - Reviewed internal usage or spending data for AI tools or models
-    - Approved different AI tools or models for different types of work
-    - Compared buying an AI tool with building something internally
-    - Stopped using or reduced spending on other software tools while increasing investment in AI tools or models
-    - Negotiated shorter commitments or the ability to switch AI tools or models over time
-    - Increased spending on AI tools or models because results justified it
+    - label: Set limits on who can use certain AI tools or models
+      short: Limited who can use them
+    - label: Set limits on AI tool or model usage or spending
+      short: Limited usage or spending
+    - label: Reviewed internal usage or spending data for AI tools or models
+      short: Reviewed usage data
+    - label: Approved different AI tools or models for different types of work
+      short: Different tools per task
+    - label: Compared buying an AI tool with building something internally
+      short: Compared buying vs building
+    - label: Stopped using or reduced spending on other software tools while increasing investment in AI tools or models
+      short: Cut other tools to fund AI
+    - label: Negotiated shorter commitments or the ability to switch AI tools or models over time
+      short: Negotiated shorter terms
+    - label: Increased spending on AI tools or models because results justified it
+      short: Spent more, results justified
     - None of the above
     - Not sure

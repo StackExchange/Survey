@@ -7,15 +7,24 @@ question:
   required: false
   randomize: true
   options:
-    - Unclear priorities or requirements
-    - Lack of access to the right tools or platforms
-    - Unreliable systems, infrastructure, or environments
-    - Poor documentation or knowledge sharing
-    - Lack of support from teammates, managers, or mentors
-    - Not enough time, staffing, or resources
-    - Inefficient processes, workflows, or coordination
-    - Leadership activity or organizational changes
-    - Nothing has made my job harder in the past 6 months
+    - label: Unclear priorities or requirements
+      short: Unclear priorities
+    - label: Lack of access to the right tools or platforms
+      short: No access to the right tools
+    - label: Unreliable systems, infrastructure, or environments
+      short: Unreliable systems
+    - label: Poor documentation or knowledge sharing
+      short: Poor documentation
+    - label: Lack of support from teammates, managers, or mentors
+      short: No support from others
+    - label: Not enough time, staffing, or resources
+      short: Not enough time or staffing
+    - label: Inefficient processes, workflows, or coordination
+      short: Inefficient processes
+    - label: Leadership activity or organizational changes
+      short: Leadership or org changes
+    - label: Nothing has made my job harder in the past 6 months
+      short: Nothing made it harder
     - I’m not sure
     - label: Other, please specify
       key: other

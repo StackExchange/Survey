@@ -7,15 +7,24 @@ question:
   required: false
   randomize: true
   options:
-    - Clear priorities or requirements
-    - Access to the right tools or platforms
-    - Reliable systems, infrastructure, or environments
-    - Helpful documentation or knowledge sharing
-    - Supportive teammates, managers, or mentors
-    - Enough time, staffing, or resources
-    - Leadership activity or organizational changes
-    - Better processes, workflows, or coordination
-    - Nothing has made my job easier in the past 6 months
+    - label: Clear priorities or requirements
+      short: Clear priorities
+    - label: Access to the right tools or platforms
+      short: The right tools
+    - label: Reliable systems, infrastructure, or environments
+      short: Reliable systems
+    - label: Helpful documentation or knowledge sharing
+      short: Helpful documentation
+    - label: Supportive teammates, managers, or mentors
+      short: Supportive teammates
+    - label: Enough time, staffing, or resources
+      short: Enough time and staffing
+    - label: Leadership activity or organizational changes
+      short: Leadership or org changes
+    - label: Better processes, workflows, or coordination
+      short: Better processes
+    - label: Nothing has made my job easier in the past 6 months
+      short: Nothing made it easier
     - I’m not sure
     - label: Other, please specify
       key: other

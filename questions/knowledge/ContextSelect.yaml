@@ -10,19 +10,32 @@ question:
     min: 0
     max: 5
   options:
-    - Project goals or requirements
-    - Prior decisions and rationale
-    - Current status or ownership
-    - Related tickets, tasks, or issues
-    - Code, repositories, or technical documentation
-    - Pull requests, commit history, or release notes
-    - Customer or user feedback
-    - Business goals or product strategy
-    - Compliance, security, or policy requirements
-    - Team norms, preferences, or ways of working
-    - Past discussions in chat, email, or meetings
-    - Data, dashboards, or reports
-    - I do not usually need additional context
+    - label: Project goals or requirements
+      short: Project goals
+    - label: Prior decisions and rationale
+      short: Prior decisions
+    - label: Current status or ownership
+      short: Status or ownership
+    - label: Related tickets, tasks, or issues
+      short: Related tickets
+    - label: Code, repositories, or technical documentation
+      short: Code and documentation
+    - label: Pull requests, commit history, or release notes
+      short: Pull requests and history
+    - label: Customer or user feedback
+      short: User feedback
+    - label: Business goals or product strategy
+      short: Business goals
+    - label: Compliance, security, or policy requirements
+      short: Compliance and policy
+    - label: Team norms, preferences, or ways of working
+      short: Team ways of working
+    - label: Past discussions in chat, email, or meetings
+      short: Past discussions
+    - label: Data, dashboards, or reports
+      short: Data and dashboards
+    - label: I do not usually need additional context
+      short: Don't need more context
     - label: Other, please specify
       key: other
       text_entry: true

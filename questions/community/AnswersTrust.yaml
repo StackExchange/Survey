@@ -10,10 +10,17 @@ question:
     min: 0
     max: 3
   options:
-    - The information was referred to me by a human I trust directly
-    - The format and content of the information is well-organized and logical
-    - The format and content of the information is creative and thought-provoking
-    - The information has many citations, sources themselves don't matter as much as the ability to track down the origin
-    - I can see user activity associated with the human that posts the information I find
-    - There are many upvotes/likes/shares/views associated with the content
-    - I heard about the source of information before from another trusted source, such as a news site, a social feed, or a podcast interview
+    - label: The information was referred to me by a human I trust directly
+      short: Referred by someone I trust
+    - label: The format and content of the information is well-organized and logical
+      short: Well organised and logical
+    - label: The format and content of the information is creative and thought-provoking
+      short: Creative and thoughtful
+    - label: The information has many citations, sources themselves don't matter as much as the ability to track down the origin
+      short: Many citations to follow
+    - label: I can see user activity associated with the human that posts the information I find
+      short: I can see who posted it
+    - label: There are many upvotes/likes/shares/views associated with the content
+      short: Lots of upvotes or views
+    - label: I heard about the source of information before from another trusted source, such as a news site, a social feed, or a podcast interview
+      short: Source I'd heard of before

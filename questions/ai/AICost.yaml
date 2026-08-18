@@ -6,13 +6,22 @@ question:
   type: multi_select
   required: false
   options:
-    - Yes, usage is metered to manage costs
-    - Yes, I personally monitor my own use
-    - Yes, I choose cheaper models when possible
-    - Yes, I choose faster models even when they cost more
-    - Yes, my company/team has switched models/vendors that are more affordable
-    - Yes, I am more selective about tasks
-    - No, cost/limits have not affected my usage
-    - My company/team has increased budget for AI
-    - I have not encountered cost or usage limits
+    - label: Yes, usage is metered to manage costs
+      short: Usage is metered
+    - label: Yes, I personally monitor my own use
+      short: I monitor my own use
+    - label: Yes, I choose cheaper models when possible
+      short: I choose cheaper models
+    - label: Yes, I choose faster models even when they cost more
+      short: Faster models, higher cost
+    - label: Yes, my company/team has switched models/vendors that are more affordable
+      short: Switched to cheaper vendors
+    - label: Yes, I am more selective about tasks
+      short: More selective about tasks
+    - label: No, cost/limits have not affected my usage
+      short: No, cost hasn't affected me
+    - label: My company/team has increased budget for AI
+      short: Budget was increased
+    - label: I have not encountered cost or usage limits
+      short: Haven't hit any limits
     - Not sure

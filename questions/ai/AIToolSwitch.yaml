@@ -7,16 +7,26 @@ question:
   required: false
   options:
     - No
-    - Yes — better output quality
+    - label: Yes — better output quality
+      short: Better output quality
     - Yes — lower cost
-    - Yes — better integration with my workflow or development environment
-    - Yes — better security, privacy, or compliance
-    - Yes — my organization required or recommended a different tool
-    - Yes — for a specific feature
-    - Yes — better support for agents, automation, or coding workflows
-    - Yes — access to a preferred model or provider
-    - Yes — the previous tool became too expensive, limited, or unavailable
+    - label: Yes — better integration with my workflow or development environment
+      short: Better integration
+    - label: Yes — better security, privacy, or compliance
+      short: Better security or privacy
+    - label: Yes — my organization required or recommended a different tool
+      short: My organization required it
+    - label: Yes — for a specific feature
+      short: For a specific feature
+    - label: Yes — better support for agents, automation, or coding workflows
+      short: Better agent support
+    - label: Yes — access to a preferred model or provider
+      short: A preferred model
+    - label: Yes — the previous tool became too expensive, limited, or unavailable
+      short: The old tool got too costly
     - label: Yes — another reason (write in)
+      short: Another reason
       key: other
       text_entry: true
-    - Not applicable — I do not use AI tools for work
+    - label: Not applicable — I do not use AI tools for work
+      short: Don't use AI for work

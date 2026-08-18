@@ -19,7 +19,8 @@ question:
     - GitHub Codespaces
     - GoLand
     - IntelliJ IDEA
-    - Jupyter Notebook/JupyterLab
+    - label: Jupyter Notebook/JupyterLab
+      short: Jupyter
     - Kiro
     - Nano
     - NetBeans

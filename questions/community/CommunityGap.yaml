@@ -6,16 +6,27 @@ question:
   type: multi_select
   required: false
   options:
-    - I usually find answers without posting
-    - AI tools answer enough of my questions
-    - I do not feel confident asking questions publicly
-    - I worry about being judged or criticized
+    - label: I usually find answers without posting
+      short: I find answers without asking
+    - label: AI tools answer enough of my questions
+      short: AI answers my questions
+    - label: I do not feel confident asking questions publicly
+      short: Not confident asking
+    - label: I worry about being judged or criticized
+      short: Worry about being judged
     - I do not have time
-    - I do not know where to participate
-    - Communities feel too advanced or specialized
-    - Communities do not feel welcoming to people like me
-    - My questions are too specific to my company or context
-    - I prefer private conversations
-    - I have privacy, legal, or employer restrictions
-    - Nothing prevents me from participating more
+    - label: I do not know where to participate
+      short: Don't know where to go
+    - label: Communities feel too advanced or specialized
+      short: Feel too specialized
+    - label: Communities do not feel welcoming to people like me
+      short: Not welcoming to me
+    - label: My questions are too specific to my company or context
+      short: My questions are too specific
+    - label: I prefer private conversations
+      short: I prefer private talk
+    - label: I have privacy, legal, or employer restrictions
+      short: Privacy or employer rules
+    - label: Nothing prevents me from participating more
+      short: Nothing prevents me
     - Not applicable

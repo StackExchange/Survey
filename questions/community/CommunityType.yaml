@@ -6,14 +6,22 @@ question:
   type: multi_select
   required: false
   options:
-    - I read answers, posts, or discussions
+    - label: I read answers, posts, or discussions
+      short: Read posts and discussions
     - I ask questions
     - I answer questions
     - I comment or react
-    - I share resources with others
-    - I follow specific creators or experts
-    - I participate in private groups or chats
-    - I attend events, meetups, or webinars
-    - I contribute to open-source projects
-    - I moderate or help manage a community
-    - I do not currently participate in communities
+    - label: I share resources with others
+      short: Share resources
+    - label: I follow specific creators or experts
+      short: Follow creators or experts
+    - label: I participate in private groups or chats
+      short: Private groups or chats
+    - label: I attend events, meetups, or webinars
+      short: Attend events and meetups
+    - label: I contribute to open-source projects
+      short: Contribute to open source
+    - label: I moderate or help manage a community
+      short: Moderate a community
+    - label: I do not currently participate in communities
+      short: Don't participate
