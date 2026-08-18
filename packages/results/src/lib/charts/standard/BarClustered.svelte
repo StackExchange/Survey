@@ -30,11 +30,10 @@
 	const dim = useFocus()
 	const domain = useDomain()
 
-	const BAR = 16
-	const BAR_GAP = 3
+	const BAR = 20
 	const GROUP_GAP = 16
 	const LABEL_SIZE = 13
-	const VALUE_SIZE = 12
+	const VALUE_SIZE = 13
 
 	let active = $state<number | null>(null)
 
@@ -80,7 +79,7 @@
 	const top = $derived(domain(rows.flatMap((row: any) => cuts.map((_: any, i: number) => amount(row, i)))))
 	const x = $derived(scaleLinear().domain([0, top]).range([0, plotWidth]).clamp(true))
 
-	const groupHeight = $derived(cuts.length * (BAR + BAR_GAP) + GROUP_GAP)
+	const groupHeight = $derived(cuts.length * BAR + GROUP_GAP)
 
 	const key = $derived(
 		legend(
@@ -114,11 +113,10 @@
 			</text>
 
 			{#each cuts as cut, i (cut.key)}
-				{@const barY = y + i * (BAR + BAR_GAP)}
+				{@const barY = y + i * BAR}
 				{@const bar = px(x(amount(row, i)))}
-				<rect x={plotX} y={barY} width={plotWidth} height={BAR} rx="2" fill={theme.tint} />
-				<rect x={plotX} y={barY} width={bar} height={BAR} rx="2" fill={series(i)} />
 
+				<rect x={plotX} y={barY} width={bar} height={BAR} fill={series(i)} />
 				<text x={px(plotX + bar + 8)} y={middle(barY + BAR / 2, VALUE_SIZE)} font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
 					{format(row, i)}
 				</text>
