@@ -141,6 +141,12 @@
 										"pattern": "^[a-z_][a-z0-9_]*$",
 										"description": "Override the implicit slug; referenced by `if/then` blocks in survey.yaml. Must start with a letter or underscore (digit-leading keys get number-parsed by some YAML 1.1 tools)."
 									},
+									"short": {
+										"type": "string",
+										"minLength": 1,
+										"maxLength": 30,
+										"description": "Chart-length rewrite of the label, for axis and row labels on the results site. Respondents always see `label`. A row chart gives labels about 34 characters and truncates past that. Scoped to this question — only its charts read it, plus any crosstab the results site has mapped to it (the compensation charts read DevType's roles)."
+									},
 									"text_entry": {
 										"type": "boolean",
 										"description": "Free-input choice (the 'Other (please specify)' pattern)."

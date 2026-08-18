@@ -6,15 +6,24 @@ question:
   type: multi_select
   required: false
   options:
-    - When I’m stuck and can’t explain the problem
-    - When I want to fully understand something
-    - When I want to learn best practices
-    - When I don’t trust AI’s answers
-    - When I need help fixing complex or unfamiliar code
-    - When I need quick help troubleshooting
-    - When I want to compare different solutions
-    - When I have ethical or security concerns about code
-    - I don’t think I’ll need help from people anymore
+    - label: When I’m stuck and can’t explain the problem
+      short: Stuck, can’t explain it
+    - label: When I want to fully understand something
+      short: To fully understand something
+    - label: When I want to learn best practices
+      short: Learning best practices
+    - label: When I don’t trust AI’s answers
+      short: Don’t trust AI’s answers
+    - label: When I need help fixing complex or unfamiliar code
+      short: Fixing unfamiliar code
+    - label: When I need quick help troubleshooting
+      short: Quick troubleshooting help
+    - label: When I want to compare different solutions
+      short: Comparing solutions
+    - label: When I have ethical or security concerns about code
+      short: Ethical or security concerns
+    - label: I don’t think I’ll need help from people anymore
+      short: Won’t need people anymore
     - label: Other, please specify
       key: other
       text_entry: true

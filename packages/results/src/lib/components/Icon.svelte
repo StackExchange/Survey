@@ -28,5 +28,4 @@
 	})
 </script>
 
-<!-- eslint-disable-next-line svelte/no-at-html-tags -- static markup from stacks-icons -->
 {@html svg}

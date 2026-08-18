@@ -14,13 +14,20 @@ question:
       - Somewhat disagree
       - Strongly disagree
   options:
-    - AI agents have increased my productivity.
-    - AI agents have helped me automate repetitive tasks.
-    - AI agents have improved the quality of my code.
-    - AI agents have accelerated my learning about new technologies or codebases.
-    - AI agents have helped me solve complex problems more effectively.
-    - AI agents have reduced the time spent on specific development tasks.
-    - AI agents have improved collaboration within my team.
+    - label: AI agents have increased my productivity.
+      short: Increased my productivity
+    - label: AI agents have helped me automate repetitive tasks.
+      short: Automated repetitive tasks
+    - label: AI agents have improved the quality of my code.
+      short: Improved my code quality
+    - label: AI agents have accelerated my learning about new technologies or codebases.
+      short: Accelerated my learning
+    - label: AI agents have helped me solve complex problems more effectively.
+      short: Solved complex problems
+    - label: AI agents have reduced the time spent on specific development tasks.
+      short: Reduced time on tasks
+    - label: AI agents have improved collaboration within my team.
+      short: Improved team collaboration
     - label: Write in the most significant benefit if not listed above.
       text_entry: true
   deprecated: true

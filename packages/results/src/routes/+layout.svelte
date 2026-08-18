@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation'
+	import { afterNavigate, onNavigate } from '$app/navigation'
 	import { ModeWatcher, mode } from 'mode-watcher'
 
 	import './layout.css'
@@ -38,7 +38,29 @@
 		document.getElementById('main')?.focus({ preventScroll: true })
 	})
 
-	// The chapter-header view transition lands with the pages it animates between.
+	// https://svelte.dev/blog/view-transitions
+	const headerHeight = () => `${Math.floor(document.querySelector('.vt-chapter-header')?.getBoundingClientRect().height ?? 0)}px`
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return
+
+		const root = document.documentElement
+
+		const from = headerHeight()
+		root.style.setProperty('--page-header-from', from)
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve()
+				await navigation.complete
+
+				const to = headerHeight()
+				root.style.setProperty('--page-header-to', to)
+
+				root.classList.toggle('vt-swap-header', from !== '0px' && to !== '0px')
+			})
+		})
+	})
 </script>
 
 <ModeWatcher disableTransitions={false} />
