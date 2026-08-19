@@ -2,7 +2,6 @@
 // Hand-rolled rather than derived from a page index: with one page there is
 // nothing for an index to keep in sync.
 import years from '$archive/index.json'
-
 import { licence, siteDescriptionLong, siteName, siteUrl } from '$lib/constants'
 
 export const prerender = true

@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import { reset } from '$lib/store/answers.svelte'
+
 	import { questions } from '$lib/data/load'
+	import { reset } from '$lib/store/answers.svelte'
 	import { jumpToQuestion, nav, navigate, pageAnchorId, pages, setCurrentIndex } from '$lib/store/nav.svelte'
+
 	import Page from './Page.svelte'
 
 	let listEl: HTMLElement | undefined = $state()

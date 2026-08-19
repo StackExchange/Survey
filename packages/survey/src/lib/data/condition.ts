@@ -11,8 +11,9 @@
 // selected: a string for single-select, an array for multi-select; both
 // are normalised to a Set for membership testing.
 
-import type { Answer, Condition, Question } from '$lib/types'
 import { snakeCase } from 'lodash-es'
+
+import type { Answer, Condition, Question } from '$lib/types'
 
 function selectedKeys(answer: Answer): Set<string> {
 	if (answer === undefined || answer === null) return new Set()

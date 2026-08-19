@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { answers, setAnswer } from '$lib/store/answers.svelte'
+
 	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()

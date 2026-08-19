@@ -11,10 +11,10 @@
 // the schema instead and regenerate.
 
 import type {
-	Condition,
 	FlowElement as _FlowElement,
 	PageEntry as _PageEntry,
 	SurveyQuestion as _SurveyQuestion,
+	Condition,
 	SurveyStructure,
 } from './generated'
 

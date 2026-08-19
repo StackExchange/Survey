@@ -1,14 +1,15 @@
 <script lang="ts">
-	import type { Question } from '$lib/types'
-	import Markdown from './Markdown.svelte'
-	import SingleSelect from './SingleSelect.svelte'
+	import Display from './Display.svelte'
 	import Dropdown from './Dropdown.svelte'
+	import FreeText from './FreeText.svelte'
+	import Markdown from './Markdown.svelte'
 	import MultiSelect from './MultiSelect.svelte'
 	import Nps from './Nps.svelte'
-	import FreeText from './FreeText.svelte'
 	import Rank from './Rank.svelte'
 	import Scale from './Scale.svelte'
-	import Display from './Display.svelte'
+	import SingleSelect from './SingleSelect.svelte'
+
+	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 </script>

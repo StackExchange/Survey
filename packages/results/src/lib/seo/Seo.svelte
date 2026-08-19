@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { asset } from '$app/paths'
 	import { page } from '$app/state'
-
 	import { ogImage, siteDescription, siteName, siteUrl } from '$lib/constants'
 	import { markdownPath } from '$lib/markdown'
 

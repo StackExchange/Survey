@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { answers } from '$lib/store/answers.svelte'
+	import QuestionView from '$lib/components/Question.svelte'
 	import { evaluate } from '$lib/data/condition'
 	import { tokenizeCondition } from '$lib/data/format_condition'
-	import type { Page, Question } from '$lib/types'
-	import QuestionView from '$lib/components/Question.svelte'
+	import { answers } from '$lib/store/answers.svelte'
+
 	import ConditionTokens from './ConditionTokens.svelte'
+
+	import type { Page, Question } from '$lib/types'
 
 	let {
 		page,
