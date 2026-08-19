@@ -12,6 +12,7 @@
 
 import { flatten } from '$lib/data/flow'
 import { questions, survey } from '$lib/data/load'
+
 import type { Page } from '$lib/types'
 
 export const pages: Page[] = flatten(survey.flow, questions, { respectRandomizerSubset: false })

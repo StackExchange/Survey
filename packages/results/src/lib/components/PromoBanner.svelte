@@ -11,7 +11,7 @@
 </script>
 
 {#if !dismissed && promo.visible}
-	<aside aria-label="Announcement" class="bg-blue flex items-center justify-center gap-4 px-4 py-3 text-white">
+	<aside aria-label="Announcement" class="flex items-center justify-center gap-4 bg-blue px-4 py-3 text-white">
 		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external, from $lib/constants -->
 		<a class="font-semibold hover:underline" href={promo.url}>{promo.text}</a>
 

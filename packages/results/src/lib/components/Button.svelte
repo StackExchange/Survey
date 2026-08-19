@@ -3,6 +3,7 @@
 	import clsx from 'clsx'
 
 	import { write } from '$lib/clipboard'
+
 	import Icon from './Icon.svelte'
 
 	import type { CopyStatus } from '$lib/clipboard'

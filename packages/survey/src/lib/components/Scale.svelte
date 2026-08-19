@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { snakeCase } from 'lodash-es'
-	import { answers, setAnswer } from '$lib/store/answers.svelte'
+
 	import { questions as allQuestions } from '$lib/data/load'
 	import { normaliseOptions } from '$lib/data/options'
+	import { answers, setAnswer } from '$lib/store/answers.svelte'
+
+	import KeyBadge from './KeyBadge.svelte'
+	import Markdown from './Markdown.svelte'
+
 	import type { NormalisedOption } from '$lib/data/options'
 	import type { Question } from '$lib/types'
-	import Markdown from './Markdown.svelte'
-	import KeyBadge from './KeyBadge.svelte'
 
 	let { question }: { question: Question } = $props()
 	const rows = $derived(resolveRows(question))

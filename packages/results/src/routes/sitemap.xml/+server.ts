@@ -1,5 +1,4 @@
 import years from '$archive/index.json'
-
 import { siteUrl } from '$lib/constants'
 
 export const prerender = true

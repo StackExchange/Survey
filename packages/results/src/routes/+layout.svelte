@@ -1,13 +1,13 @@
 <script lang="ts">
+	import { mode, ModeWatcher } from 'mode-watcher'
+
 	import { afterNavigate } from '$app/navigation'
-	import { ModeWatcher, mode } from 'mode-watcher'
 
 	import './layout.css'
 
+	import headlineFont from '$lib/assets/fonts/StackSansHeadline[wght].woff2?url'
 	// https://stackoverflow.design/brand/typography
 	import textFont from '$lib/assets/fonts/StackSansText[wght].woff2?url'
-	import headlineFont from '$lib/assets/fonts/StackSansHeadline[wght].woff2?url'
-
 	import Footer from '$lib/components/Footer.svelte'
 
 	let { children } = $props()

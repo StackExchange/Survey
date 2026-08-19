@@ -5,7 +5,6 @@
 // `Question`/`suggestedAnswer`: that vocabulary is community Q&A and would assert
 // respondents proposed the options. `QAPage` drives Google's Q&A rich result.
 import { asset } from '$app/paths'
-
 import { licence, siteDescription, siteName, siteUrl } from '$lib/constants'
 
 const licenceUrl = licence.database.url

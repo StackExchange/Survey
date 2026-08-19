@@ -1,11 +1,14 @@
 <script lang="ts">
-	import { answers, setAnswer } from '$lib/store/answers.svelte'
-	import { normaliseOptions } from '$lib/data/options'
-	import type { Question } from '$lib/types'
 	import { DragDropProvider } from '@dnd-kit/svelte'
-	import Markdown from './Markdown.svelte'
+
+	import { normaliseOptions } from '$lib/data/options'
+	import { answers, setAnswer } from '$lib/store/answers.svelte'
+
 	import KeyBadge from './KeyBadge.svelte'
+	import Markdown from './Markdown.svelte'
 	import SortableItem from './SortableItem.svelte'
+
+	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 	const opts = $derived(normaliseOptions(question.options))

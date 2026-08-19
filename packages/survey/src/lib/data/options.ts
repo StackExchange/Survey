@@ -3,6 +3,7 @@
 // the keys referenced by survey.yaml's if/then blocks.
 
 import { snakeCase } from 'lodash-es'
+
 import type { OptionEntry } from '$lib/types'
 
 export interface NormalisedOption {

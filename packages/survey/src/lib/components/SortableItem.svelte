@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { createSortable } from '@dnd-kit/svelte/sortable'
+
 	import type { Snippet } from 'svelte'
 
 	let {

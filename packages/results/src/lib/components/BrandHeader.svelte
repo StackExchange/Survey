@@ -1,26 +1,26 @@
 <script>
-	import { resolve } from '$app/paths'
-
 	import { IconInfoFill, IconLogo } from '@stackoverflow/stacks-icons/icons'
+
+	import { resolve } from '$app/paths'
 	import Icon from '$lib/components/Icon.svelte'
 	import PromoBanner from '$lib/components/PromoBanner.svelte'
 
 	let { label = null, children = null } = $props()
 </script>
 
-<header class="vt-chapter-header gutter bg-black-150 dark:bg-black-500 min-h-[70vh] flex flex-col">
-	<h1 class="chapter-title font-headline-notch font-normal text-white flex flex-col items-start my-auto">
-		<a href={resolve('/')} class="bg-orange text-black py-4 px-3"><Icon src={IconLogo} title="Stack Overflow" /></a>
-		<span class="bg-black dark:bg-white dark:text-black px-[0.3em] pt-[0.1em] pb-[0.2em]">Developer</span>
-		<span class="bg-black dark:bg-white dark:text-black px-[0.3em] pb-[0.2em]">Survey</span>
-		{#if label}<span class="bg-white text-black dark:bg-black dark:text-white px-[0.3em] py-[0.15em]">{label}</span>{/if}
+<header class="vt-chapter-header flex min-h-[70vh] flex-col bg-black-150 gutter dark:bg-black-500">
+	<h1 class="chapter-title font-headline-notch my-auto flex flex-col items-start font-normal text-white">
+		<a href={resolve('/')} class="bg-orange px-3 py-4 text-black"><Icon src={IconLogo} title="Stack Overflow" /></a>
+		<span class="bg-black px-[0.3em] pt-[0.1em] pb-[0.2em] dark:bg-white dark:text-black">Developer</span>
+		<span class="bg-black px-[0.3em] pb-[0.2em] dark:bg-white dark:text-black">Survey</span>
+		{#if label}<span class="bg-white px-[0.3em] py-[0.15em] text-black dark:bg-black dark:text-white">{label}</span>{/if}
 	</h1>
 
 	{#if children}
 		{@render children()}
 	{:else}
-		<p class="ml-auto mt-10 text-md lg:text-xl bg-white text-black py-4 px-6 max-w-2/3 lg:max-w-1/2 relative">
-			<span class="absolute top-0 right-full bg-black text-white p-1"><Icon src={IconInfoFill} /></span>
+		<p class="text-md relative mt-10 ml-auto max-w-2/3 bg-white px-6 py-4 text-black lg:max-w-1/2 lg:text-xl">
+			<span class="absolute top-0 right-full bg-black p-1 text-white"><Icon src={IconInfoFill} /></span>
 			The definitive report on the state of software development.
 		</p>
 	{/if}

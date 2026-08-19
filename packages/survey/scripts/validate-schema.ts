@@ -5,9 +5,11 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+
 import Ajv from 'ajv'
-import type { AnySchema, ErrorObject } from 'ajv'
 import YAML from 'yaml'
+
+import type { AnySchema, ErrorObject } from 'ajv'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(here, '../../..')

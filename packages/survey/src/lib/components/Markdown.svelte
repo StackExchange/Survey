@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { mdToHtml } from '$lib/data/markdown'
+
 	let { content = '', inline = false }: { content?: string; inline?: boolean } = $props()
 	const html = $derived(mdToHtml(content ?? ''))
 </script>

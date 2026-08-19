@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { answers, setAnswer } from '$lib/store/answers.svelte'
-	import type { Question } from '$lib/types'
+
 	import Markdown from './Markdown.svelte'
+
+	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 	const min = $derived(question.scale_min ?? 0)
