@@ -4,7 +4,7 @@
 
 	import { chapterColour } from '$config'
 
-	type Variant = 'overview' | 'chapter' | 'data' | 'panel' | 'question'
+	type Variant = 'home' | 'chapter' | 'data' | 'hero' | 'question'
 
 	let {
 		year,
@@ -25,14 +25,14 @@
 	const bg = $derived(`bg-${colours.primary}`)
 
 	const variants = $derived({
-		overview: {
+		home: {
 			innerClass: 'container mx-auto',
 			nameEl: 'h2',
 			wrapClass: null,
 			nameClass: 'font-headline-notch text-7xl text-[clamp(var(--text-4xl),5vw+1rem,var(--text-7xl))] font-semibold',
 			blockClass: 'px-3 py-2',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			descriptionClass: 'mt-5',
+			descriptionClass: 'mt-5 text-2xl',
 			vt: false,
 			mark: false,
 		},
@@ -58,7 +58,7 @@
 			vt: true,
 			mark: true,
 		},
-		panel: {
+		hero: {
 			innerClass: '',
 			nameEl: 'h3',
 			wrapClass: '',
@@ -67,7 +67,7 @@
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
 			descriptionClass: null,
 			vt: false,
-			mark: true,
+			mark: false,
 		},
 		question: {
 			innerClass: 'container mx-auto',

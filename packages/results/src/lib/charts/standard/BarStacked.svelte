@@ -31,11 +31,11 @@
 	// Dims every row but the focused ones. No-op unless an export asked for it.
 	const dim = useFocus()
 
-	const LABEL = 22
-	const BAR = 20
+	const LABEL = 18
+	const BAR = 25
 	const GAP = 18
 	const LABEL_SIZE = 13
-	const VALUE_SIZE = 11
+	const VALUE_SIZE = 14
 
 	let active = $state<number | null>(null)
 

@@ -32,7 +32,7 @@
 
 <section class="grid items-start gap-10 py-10 {columns}">
 	<div class={flip ? '' : 'lg:order-2'}>
-		<ChapterHeader {year} {chapter} variant="panel" section={block.section}>
+		<ChapterHeader {year} {chapter} variant="hero" section={block.section}>
 			{#if children}
 				{@render children()}
 			{:else}

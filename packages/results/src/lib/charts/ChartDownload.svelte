@@ -85,12 +85,25 @@
 	}
 
 	const label = $derived({ idle: `Download ${format.toUpperCase()}`, working: 'Rendering…', failed: 'Could not render' }[status])
+
+	// A chart's height is its row count, so hiding a row shortens the drawing and
+	// everything below it jumps — including the checkbox that was just clicked. The
+	// full-set height is held as a floor while rows are hidden, so the space stays
+	// reserved; a reset lets it go, and re-measures for the next width.
+	let box = $state(0)
+	let reserved = $state(0)
+
+	$effect(() => {
+		if (!selection.touched) reserved = box
+	})
 </script>
 
 <div>
 	<!-- One drawing, not a figure and a preview of it: the figure on the page *is*
 	     the export, chrome and all, redrawn in place as the controls change. -->
-	<div class="min-w-0 grow">{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}</div>
+	<div class="min-w-0 grow" bind:clientHeight={box} style:min-height={reserved ? `${reserved}px` : undefined}>
+		{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
+	</div>
 
 	<fieldset class="mt-4 flex gap-3">
 		<legend class="sr-only">Download this chart</legend>
