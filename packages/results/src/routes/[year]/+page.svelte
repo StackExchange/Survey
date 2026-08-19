@@ -111,7 +111,7 @@
 		</div>
 	</nav>
 
-	<nav aria-label="Previous surveys" class="bg-black py-30 bg-cover p-5" style="background-image:url(/home-pryamid.svg)">
+	<nav aria-label="Previous surveys" class="bg-black py-30 bg-cover bg-center p-5" style="background-image:url(/home-pryamid.svg)">
   	<div class="bg-white p-8 max-w-2xl mx-auto">
   		<h2 class="font-headline mb-8 text-4xl text-center">
         16 years of insights,<br/>Powered by Developers.
