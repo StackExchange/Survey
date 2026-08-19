@@ -2,18 +2,19 @@
 	// Horizontal bars, one per response. Two row shapes reach this: a share (`pct`),
 	// and a named measure the loader resolved into `figure.value` — the salary
 	// questions, which carry no share at all.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
 	import {
-		PAD,
 		chars,
 		clip,
 		count,
 		digitsWidth,
 		labelGutter,
 		middle,
+		PAD,
 		percent,
 		px,
 		series,
@@ -21,7 +22,9 @@
 		stackRows,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

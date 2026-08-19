@@ -1,13 +1,16 @@
 <script lang="ts">
 	// The two ends of the set as standing columns. Found here rather than authored,
 	// so the sheet can promote a whole question and still get the comparison.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { slab } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

@@ -1,11 +1,12 @@
 <script lang="ts">
 	// Two values as two cubes on a shared floor. Sides go as the square root, not
 	// the cube root: a reader compares the face they can see.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

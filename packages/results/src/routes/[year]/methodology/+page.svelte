@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Seo from '$lib/components/Seo.svelte'
+	import Seo from '$components/Seo.svelte'
 
 	let { data } = $props()
 </script>

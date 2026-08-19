@@ -1,12 +1,15 @@
 <script lang="ts">
 	// A column per response with a flat accent cap. The cap is a constant height:
 	// it echoes the isometric top face, it is not a second measurement.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

@@ -1,12 +1,13 @@
 <script lang="ts">
 	// One number at hero scale on an isometric plinth. Extrapolated — no mockup.
 	// The plinth is what keeps it in the same family as the other nine.
-	import Frame from '$charts/svg/Wrap.svelte'
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { slab } from '$charts/utils/iso'
 	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'
 
-	import type { OnHover } from '$charts/utils/tooltip'
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000 }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

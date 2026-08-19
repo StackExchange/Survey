@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/state'
 	import { IconCross } from '@stackoverflow/stacks-icons/icons'
 
-	import Icon from './Icon.svelte'
+	import { page } from '$app/state'
+
 	import QuestionPage from '../../routes/[year]/[chapter]/data/[question]/+page.svelte'
+	import Icon from './Icon.svelte'
 
 	// `<dialog>` rather than a div: backdrop, Escape, focus trap and inert
 	// background all come with it.

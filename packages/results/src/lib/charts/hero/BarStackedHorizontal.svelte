@@ -1,13 +1,16 @@
 <script lang="ts">
 	// Slabs on their side, length proportional to the share. Depth is constant, or
 	// they stop reading as one solid seen from one angle.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { SKEW, slab } from '$charts/utils/iso'
 	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

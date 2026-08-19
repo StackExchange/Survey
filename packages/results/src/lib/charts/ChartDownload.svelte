@@ -1,14 +1,16 @@
 <script lang="ts">
-	import { IconArrowDownBox } from '@stackoverflow/stacks-icons/icons'
-
-	import { charts } from '$charts'
-	import { CHART_WIDTH } from '$charts/utils/chrome'
-	import { save, toPng, toSvg } from '$charts/utils/export'
-	import Icon from '$lib/components/Icon.svelte'
-
 	import type { Chrome } from '$charts/utils/chrome'
 	import type { RowSelection } from '$charts/utils/rows.svelte'
 	import type { Snippet } from 'svelte'
+
+	import { IconArrowDownBox } from '@stackoverflow/stacks-icons/icons'
+
+	import { CHART_WIDTH } from '$charts/utils/chrome'
+	import { save, toPng, toSvg } from '$charts/utils/export'
+
+	import Icon from '$components/Icon.svelte'
+
+	import { charts } from '$charts'
 
 	// Drawn here rather than at build time: that is what lets an export carry
 	// options and follow the respondent group on screen.

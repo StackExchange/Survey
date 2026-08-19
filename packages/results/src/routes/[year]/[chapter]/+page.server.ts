@@ -1,8 +1,9 @@
+import type { EntryGenerator, PageServerLoad } from './$types'
+
 import { error } from '@sveltejs/kit'
 
 import site from '$generated/site.json'
 import { getChapter } from '$lib/server/content'
-import type { EntryGenerator, PageServerLoad } from './$types'
 
 export const entries: EntryGenerator = () => site.entries.chapter
 

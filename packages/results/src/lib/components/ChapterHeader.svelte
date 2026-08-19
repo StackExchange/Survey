@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
 	import type { Snippet } from 'svelte'
+
+	import { resolve } from '$app/paths'
 
 	import { chapterColour } from '$config'
 

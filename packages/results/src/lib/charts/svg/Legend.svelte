@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Draws the layout `legend()` in ./utils/theme.ts worked out. Colours arrive
 	// resolved and indexed alongside the labels.
-	import { SWATCH, middle, theme } from '$charts/utils/theme'
+	import { middle, SWATCH, theme } from '$charts/utils/theme'
 
 	let {
 		layout,

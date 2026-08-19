@@ -1,10 +1,13 @@
 <script lang="ts">
 	// A numbered list in data order. No bars: the sheet's `limit` has cut this to
 	// the top few, where the order is the finding and the gaps usually aren't.
-	import Frame from '$charts/svg/Wrap.svelte'
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, middle, series, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

@@ -1,14 +1,14 @@
 <script lang="ts">
+	import type { CopyStatus } from '$lib/clipboard'
+	import type { Snippet } from 'svelte'
+	import type { ClassValue, HTMLAttributes, MouseEventHandler } from 'svelte/elements'
+
 	import { IconCheckFillSquare } from '@stackoverflow/stacks-icons/icons'
 	import clsx from 'clsx'
 
 	import { write } from '$lib/clipboard'
 
 	import Icon from './Icon.svelte'
-
-	import type { CopyStatus } from '$lib/clipboard'
-	import type { Snippet } from 'svelte'
-	import type { ClassValue, HTMLAttributes, MouseEventHandler } from 'svelte/elements'
 
 	// `label` is a string so a copy button can swap it for "Copied"; anything
 	// richer goes in the default snippet instead.

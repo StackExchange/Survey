@@ -1,13 +1,16 @@
 <script>
 	import { resolve } from '$app/paths'
-	import Hero from '$charts/Hero.svelte'
-	import Quote from '$charts/text/Quote.svelte'
+
 	import { count } from '$charts/utils/theme'
 	import { chapterColour } from '$config'
-	import BrandHeader from '$lib/components/BrandHeader.svelte'
-	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
 	import { inversion } from '$lib/invert.svelte'
-	import Seo from '$lib/components/Seo.svelte'
+
+	import BrandHeader from '$components/BrandHeader.svelte'
+	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import Seo from '$components/Seo.svelte'
+
+	import Hero from '$charts/Hero.svelte'
+	import Quote from '$charts/text/Quote.svelte'
 
 	let { data } = $props()
 
@@ -79,11 +82,13 @@
 		<h2 class="font-headline-notch mb-4 text-5xl lg:text-8xl">Jump in, learn more</h2>
 		<p class="text-xl">Table of contents for the {data.settings.year} Stack Overflow Developer Survey</p>
 
-		<ul class="mx-auto lg:max-w-[80%] mt-15 font-headline text-left text-2xl grid lg:grid-cols-2 gap-6">
+		<ul class="mx-auto mt-15 grid gap-6 text-left font-headline text-2xl lg:max-w-[80%] lg:grid-cols-2">
 			{#each data.chapters as chapter, i (chapter.id)}
-				<li class="min-h-80 dark:text-black group bg-black-200">
+				<li class="group min-h-80 bg-black-200 dark:text-black">
 					<a
-						class="relative transition-transform group-hover:-translate-2 flex h-full flex-col items-start justify-between p-5 text-4xl bg-{chapterColour(chapter.index).primary}"
+						class="relative flex h-full flex-col items-start justify-between p-5 text-4xl transition-transform group-hover:-translate-2 bg-{chapterColour(
+							chapter.index
+						).primary}"
 						href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}
 					>
 						<span class="text-2xl">{i + 1}.0</span>
@@ -91,9 +96,12 @@
 					</a>
 				</li>
 			{/each}
-			<li class="min-h-80 text-white bg-black-200 group">
-				<a class="relative transition-transform group-hover:-translate-2 bg-black dark:bg-black-500 flex flex-col h-full p-4" href={resolve('/[year]/methodology', { year: data?.settings.year })}>
-				  <strong class="col-span-3 font-normal text-4xl mt-auto">Methodology</strong>
+			<li class="group min-h-80 bg-black-200 text-white">
+				<a
+					class="relative flex h-full flex-col bg-black p-4 transition-transform group-hover:-translate-2 dark:bg-black-500"
+					href={resolve('/[year]/methodology', { year: data?.settings.year })}
+				>
+					<strong class="col-span-3 mt-auto text-4xl font-normal">Methodology</strong>
 				</a>
 			</li>
 		</ul>

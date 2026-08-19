@@ -1,10 +1,13 @@
 <script lang="ts">
 	// The band under an export. Drawn by Wrap for a plain export and by
 	// SocialCard for a sized one, so the two cannot disagree.
-	import Glyph from './Glyph.svelte'
-	import { FOOTER, logo, type Chrome } from '$charts/utils/chrome'
+	import type { Chrome } from '$charts/utils/chrome'
+
+	import { FOOTER, logo } from '$charts/utils/chrome'
 	import { middle, PAD, px, theme } from '$charts/utils/theme'
 	import { licence } from '$config'
+
+	import Glyph from './Glyph.svelte'
 
 	let { chrome, y, width, margin = PAD }: { chrome: Chrome; y: number; width: number; margin?: number } = $props()
 

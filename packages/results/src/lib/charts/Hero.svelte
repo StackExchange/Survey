@@ -1,12 +1,16 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
-	import { charts } from '$charts'
+	import type { Snippet } from 'svelte'
+
 	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
-	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
-	import Icon from '$lib/components/Icon.svelte'
+
+	import { resolve } from '$app/paths'
+
 	import { openQuestion } from '$lib/panel'
 
-	import type { Snippet } from 'svelte'
+	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import Icon from '$components/Icon.svelte'
+
+	import { charts } from '$charts'
 
 	let {
 		block,

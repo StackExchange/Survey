@@ -1,13 +1,12 @@
 <script lang="ts">
 	// A group of bars per response, one per series. Plain groups against one set of scales — nesting a
 	// Bar chart per group put an `<svg>` inside an `<svg>`.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import Legend from '$charts/svg/Legend.svelte'
 	import {
-		PAD,
 		chars,
 		clip,
 		count,
@@ -15,14 +14,18 @@
 		labelGutter,
 		legend,
 		middle,
+		PAD,
 		percent,
 		px,
 		series,
 		shorten,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
+
+	import Legend from '$charts/svg/Legend.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

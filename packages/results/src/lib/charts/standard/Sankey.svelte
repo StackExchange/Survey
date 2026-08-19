@@ -4,11 +4,14 @@
 	// The node set is that vocabulary twice — one column read from, one read to. As
 	// a single node set d3-sankey resolves it to an eight-column DAG with names
 	// colliding into downstream nodes.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
+	import { chars, clip, count, middle, PAD, px, pxPath, series, shorten, theme } from '$charts/utils/theme'
+	import { HIT } from '$charts/utils/tooltip'
+
 	import Frame from '$charts/svg/Wrap.svelte'
-	import { PAD, chars, clip, count, middle, px, pxPath, series, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

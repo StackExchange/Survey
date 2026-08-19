@@ -1,16 +1,18 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
-	import ChapterNextPrev from '$lib/components/ChapterNextPrev.svelte'
-	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
-	import Figure from '$lib/components/Figure.svelte'
-	import CopyPage from '$lib/components/CopyPage.svelte'
-	import NavToggle from '$lib/components/NavToggle.svelte'
-	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
-	import WhatWeAsked from '$lib/components/WhatWeAsked.svelte'
-	import Seo from '$lib/components/Seo.svelte'
-	import Icon from '$lib/components/Icon.svelte'
 	import { IconArrowDownRight, IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
 	import { SpotMetrics } from '@stackoverflow/stacks-icons/spots'
+
+	import { resolve } from '$app/paths'
+
+	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
+	import CopyPage from '$components/CopyPage.svelte'
+	import Demographics, { tabId } from '$components/Demographics.svelte'
+	import Figure from '$components/Figure.svelte'
+	import Icon from '$components/Icon.svelte'
+	import NavToggle from '$components/NavToggle.svelte'
+	import Seo from '$components/Seo.svelte'
+	import WhatWeAsked from '$components/WhatWeAsked.svelte'
 
 	let { data, params } = $props()
 

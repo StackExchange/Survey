@@ -1,24 +1,27 @@
 <script lang="ts">
+	import type { PageData } from './$types'
+
+	import { IconArrowLeft, IconArrowRight, IconLink } from '@stackoverflow/stacks-icons/icons'
+
 	import { dev } from '$app/environment'
 	import { replaceState } from '$app/navigation'
 	import { resolve } from '$app/paths'
 	import { page } from '$app/state'
 
-	import ChartDownload from '$charts/ChartDownload.svelte'
-	import Button from '$lib/components/Button.svelte'
-	import DataExport from '$lib/components/DataExport.svelte'
-	import DataTable from '$charts/text/DataTable.svelte'
-	import Figure from '$lib/components/Figure.svelte'
-	import CopyPage from '$lib/components/CopyPage.svelte'
-	import Demographics, { tabId } from '$lib/components/Demographics.svelte'
 	import { rowSelection } from '$charts/utils/rows.svelte'
-	import { askedInContext, askedMeta } from '$lib/components/WhatWeAsked.svelte'
 	import { githubRepo, siteUrl } from '$config'
-	import Seo from '$lib/components/Seo.svelte'
 	import { ofSurvey } from '$lib/table'
 
-	import type { PageData } from './$types'
-	import { IconArrowLeft, IconArrowRight, IconLink } from '@stackoverflow/stacks-icons/icons'
+	import Button from '$components/Button.svelte'
+	import CopyPage from '$components/CopyPage.svelte'
+	import DataExport from '$components/DataExport.svelte'
+	import Demographics, { tabId } from '$components/Demographics.svelte'
+	import Figure from '$components/Figure.svelte'
+	import Seo from '$components/Seo.svelte'
+	import { askedInContext, askedMeta } from '$components/WhatWeAsked.svelte'
+
+	import ChartDownload from '$charts/ChartDownload.svelte'
+	import DataTable from '$charts/text/DataTable.svelte'
 
 	// Set only by QuestionPanel, which renders this page as a sheet over another
 	// route — the head tags and skip-link target belong to that route.

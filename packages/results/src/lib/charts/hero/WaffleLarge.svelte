@@ -2,11 +2,12 @@
 	// A share as a field of cubes. 10 x 10 in grid space but laid out diagonally —
 	// each row steps half a cube right and a quarter down, which is what makes it
 	// read as a plane rather than a table.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { CUBE, SKEW, cube, cubeHeight } from '$charts/utils/iso'
+	import { CUBE, cube, cubeHeight, SKEW } from '$charts/utils/iso'
 	import { percent, series, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

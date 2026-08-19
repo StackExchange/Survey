@@ -1,7 +1,7 @@
+import years from '$archive/index.json'
+import { licence, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
 import { listPages } from '$lib/server/llms'
-import { licence, siteName, siteUrl } from '$config'
-import years from '$archive/index.json'
 
 // Nothing links here, so it is also named in `prerender.entries` in vite.config.js.
 export const prerender = true

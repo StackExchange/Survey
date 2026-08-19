@@ -1,12 +1,12 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte'
+	import type { ClassValue } from 'svelte/elements'
+
 	import { IconChevronDown, IconChevronUp } from '@stackoverflow/stacks-icons/icons'
 	import clsx from 'clsx'
 	import { tick } from 'svelte'
 
 	import Button from './Button.svelte'
-
-	import type { Snippet } from 'svelte'
-	import type { ClassValue } from 'svelte/elements'
 
 	export type MenuItem = { name: string; href?: string; onclick?: () => void; icon?: string; external?: boolean }
 

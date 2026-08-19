@@ -2,9 +2,9 @@
 	// A chapter's Highlight (2D) feature: copy in one column, chart in the other.
 	// `flip` moves them visually only — the copy stays first in the DOM, so the
 	// headline is still what a reader reaches before the figure.
-	import { charts } from '$charts'
-
 	import type { Snippet } from 'svelte'
+
+	import { charts } from '$charts'
 
 	let { block, flip = false, children }: { block: any; flip?: boolean; children?: Snippet } = $props()
 

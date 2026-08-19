@@ -1,14 +1,17 @@
 <script lang="ts">
 	// Two points per response with the gap drawn between them. Each value is
 	// labelled on the outer side of its dot, so the two never collide.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import Legend from '$charts/svg/Legend.svelte'
-	import { PAD, chars, clip, digitsWidth, labelGutter, legend, middle, percent, px, shorten, stackRows, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
+	import { chars, clip, digitsWidth, labelGutter, legend, middle, PAD, percent, px, shorten, stackRows, theme } from '$charts/utils/theme'
+	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
+
+	import Legend from '$charts/svg/Legend.svelte'
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

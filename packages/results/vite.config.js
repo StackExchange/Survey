@@ -1,8 +1,8 @@
 import path from 'node:path'
 
-import tailwindcss from '@tailwindcss/vite'
 import adapter from '@sveltejs/adapter-static'
 import { sveltekit } from '@sveltejs/kit/vite'
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
 import years from '../archive/index.json' with { type: 'json' }
@@ -51,6 +51,7 @@ export default defineConfig({
 				$data: 'src/data',
 				$generated: 'src/generated',
 				$charts: 'src/lib/charts',
+				$components: 'src/lib/components',
 				$questions: '../../questions',
 			},
 			paths: {

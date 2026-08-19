@@ -1,6 +1,6 @@
 <script>
-	import Navigation from '$lib/components/Navigation.svelte'
-	import QuestionPanel from '$lib/components/QuestionPanel.svelte'
+	import Navigation from '$components/Navigation.svelte'
+	import QuestionPanel from '$components/QuestionPanel.svelte'
 
 	let { children, data } = $props()
 </script>

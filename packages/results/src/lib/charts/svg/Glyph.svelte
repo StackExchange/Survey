@@ -1,9 +1,9 @@
 <script lang="ts">
 	// `flatten` in ./utils/chrome.ts stripped the source's own fills, so `fill`
 	// here is the only one that applies — no stylesheet to depend on.
-	import { px, theme } from '$charts/utils/theme'
-
 	import type { Glyph } from '$charts/utils/chrome'
+
+	import { px, theme } from '$charts/utils/theme'
 
 	let { glyph, x, y, size, fill = theme.ink }: { glyph: Glyph; x: number; y: number; size: number; fill?: string } = $props()
 

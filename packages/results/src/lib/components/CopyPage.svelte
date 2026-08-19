@@ -1,11 +1,13 @@
 <script lang="ts">
-	import { dev } from '$app/environment'
-	import { page } from '$app/state'
 	import { IconClipboard, IconDocument, IconServiceClaude, IconServiceOpenAI } from '@stackoverflow/stacks-icons/icons'
 
-	import Button from '$lib/components/Button.svelte'
-	import ButtonMenu from '$lib/components/ButtonMenu.svelte'
+	import { dev } from '$app/environment'
+	import { page } from '$app/state'
+
 	import { siteUrl } from '$config'
+
+	import Button from '$components/Button.svelte'
+	import ButtonMenu from '$components/ButtonMenu.svelte'
 
 	let { title = 'this page' }: { title?: string } = $props()
 

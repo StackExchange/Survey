@@ -1,7 +1,10 @@
 <script lang="ts">
-	// The page's own header, drawn: chapter and section chips, then the question.
-	import { CHIP, CHIP_SIZE, headerLayout, TITLE_SIZE, type Chrome } from '$charts/utils/chrome'
+	import type { Chrome } from '$charts/utils/chrome'
+
+	import { CHIP, CHIP_SIZE, headerLayout, TITLE_SIZE } from '$charts/utils/chrome'
 	import { hanging, middle, PAD, px, textWidth, theme } from '$charts/utils/theme'
+
+	// The page's own header, drawn: chapter and section chips, then the question.
 
 	let { chrome, width, margin = PAD }: { chrome: Chrome; width: number; margin?: number } = $props()
 

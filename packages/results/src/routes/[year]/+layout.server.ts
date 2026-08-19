@@ -1,7 +1,8 @@
+import type { LayoutServerLoad } from './$types'
+
 import { error } from '@sveltejs/kit'
 
 import site from '$generated/site.json'
-import type { LayoutServerLoad } from './$types'
 
 export const load: LayoutServerLoad = ({ params }) => {
 	if (params.year !== site.settings.year) error(404, `No results for ${params.year}`)

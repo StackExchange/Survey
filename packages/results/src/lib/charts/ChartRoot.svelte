@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { setChrome, type Chrome } from '$charts/utils/chrome'
-
+	import type { Chrome } from '$charts/utils/chrome'
 	import type { OnHover } from '$charts/utils/tooltip'
 	import type { Component } from 'svelte'
+
+	import { setChrome } from '$charts/utils/chrome'
 
 	// A chart with whatever an export adds around it. Shared by Figure on the page
 	// and ./utils/export.ts off-screen, where Figure's own `<figure>` and tooltip

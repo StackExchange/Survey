@@ -1,10 +1,11 @@
 <script lang="ts">
 	// Every response as a rectangle proportional to its share. A cell carries its
 	// label only where it fits; the rest are in the readout and the `<desc>`.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf, treemapCells } from '$charts/utils/expressive'
 	import { chars, clip, onSeries, series, shorten } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

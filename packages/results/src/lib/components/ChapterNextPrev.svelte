@@ -1,9 +1,11 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
 	import { IconArrowDownLeft, IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 
-	import Icon from '$lib/components/Icon.svelte'
+	import { resolve } from '$app/paths'
+
 	import { chapterColour } from '$config'
+
+	import Icon from '$components/Icon.svelte'
 
 	let { year, previous, next }: { year: string; previous?: any; next?: any } = $props()
 </script>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { ofSurvey, tableOf } from '$lib/table'
-
 	import type { RowSelection } from '$charts/utils/rows.svelte'
+
+	import { ofSurvey, tableOf } from '$lib/table'
 
 	// The table itself comes from `$lib/table`, the same builder behind the
 	// markdown twins and the exports — so a heading, a rounding or a series pivot

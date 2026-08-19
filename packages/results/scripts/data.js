@@ -345,7 +345,6 @@ export async function generate() {
 		chapters: summaries.length,
 	}
 
-
 	const seo = graphsFor({ survey, years, chapters: summaries, chapterPayloads })
 
 	for (const chapter of live) {

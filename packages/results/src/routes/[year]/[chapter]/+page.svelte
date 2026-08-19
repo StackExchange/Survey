@@ -1,14 +1,17 @@
 <script>
-	import { resolve } from '$app/paths'
-	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
-	import Highlight from '$charts/Highlight.svelte'
-	import CopyPage from '$lib/components/CopyPage.svelte'
-	import NavToggle from '$lib/components/NavToggle.svelte'
-	import Quote from '$charts/text/Quote.svelte'
-	import Icon from '$lib/components/Icon.svelte'
-	import Seo from '$lib/components/Seo.svelte'
 	import { IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 	import { SpotDataset } from '@stackoverflow/stacks-icons/spots'
+
+	import { resolve } from '$app/paths'
+
+	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import CopyPage from '$components/CopyPage.svelte'
+	import Icon from '$components/Icon.svelte'
+	import NavToggle from '$components/NavToggle.svelte'
+	import Seo from '$components/Seo.svelte'
+
+	import Highlight from '$charts/Highlight.svelte'
+	import Quote from '$charts/text/Quote.svelte'
 
 	let { data, params } = $props()
 </script>

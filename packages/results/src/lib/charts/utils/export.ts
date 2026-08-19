@@ -1,14 +1,15 @@
 // Draws a chart to a PNG in the browser. The component is mounted off-screen at
 // the requested options rather than lifted off the page, so an export can differ
 // from what is on screen.
+import type { Chrome } from '$charts/utils/chrome'
+import type { Component } from 'svelte'
+
 import { mount, unmount } from 'svelte'
 
-import ChartRoot from '$charts/ChartRoot.svelte'
 import headlineFont from '$lib/assets/fonts/StackSansHeadline[wght].woff2?url'
 import textFont from '$lib/assets/fonts/StackSansText[wght].woff2?url'
 
-import type { Chrome } from '$charts/utils/chrome'
-import type { Component } from 'svelte'
+import ChartRoot from '$charts/ChartRoot.svelte'
 
 const SVG_NS = 'http://www.w3.org/2000/svg'
 

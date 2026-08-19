@@ -4,13 +4,8 @@
 // so the same render works inline and as a file; the ./text ones have no `<svg>`
 // and ./export.ts returns null for them, which ChartDownload treats as nothing
 // to offer.
-import Bar from './standard/Bar.svelte'
-import BarClustered from './standard/BarClustered.svelte'
-import BarStacked from './standard/BarStacked.svelte'
-import Dumbbell from './standard/Dumbbell.svelte'
-import Sankey from './standard/Sankey.svelte'
-import Scatter from './standard/Scatter.svelte'
-import Table from './standard/Table.svelte'
+import type { OnHover } from '$charts/utils/tooltip'
+import type { Component } from 'svelte'
 
 import HeroBarStackedHorizontal from './hero/BarStackedHorizontal.svelte'
 import HeroBarStackedMinmax from './hero/BarStackedMinmax.svelte'
@@ -21,7 +16,6 @@ import HeroStat from './hero/Stat.svelte'
 import HeroTreemap from './hero/Treemap.svelte'
 import HeroWaffleLarge from './hero/WaffleLarge.svelte'
 import HeroWaffleMedium from './hero/WaffleMedium.svelte'
-
 import HighlightBarStackedHorizontal from './highlight/BarStackedHorizontal.svelte'
 import HighlightBarStackedMinmax from './highlight/BarStackedMinmax.svelte'
 import HighlightBarStackedVertical from './highlight/BarStackedVertical.svelte'
@@ -30,11 +24,14 @@ import HighlightTreemap from './highlight/Treemap.svelte'
 import HighlightTreemapSmall from './highlight/TreemapSmall.svelte'
 import HighlightWaffleLarge from './highlight/WaffleLarge.svelte'
 import HighlightWaffleMedium from './highlight/WaffleMedium.svelte'
-
+import Bar from './standard/Bar.svelte'
+import BarClustered from './standard/BarClustered.svelte'
+import BarStacked from './standard/BarStacked.svelte'
+import Dumbbell from './standard/Dumbbell.svelte'
+import Sankey from './standard/Sankey.svelte'
+import Scatter from './standard/Scatter.svelte'
+import Table from './standard/Table.svelte'
 import TextStat from './text/Stat.svelte'
-
-import type { OnHover } from '$charts/utils/tooltip'
-import type { Component } from 'svelte'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
 	// Standard — the "Data" section of a chapter.

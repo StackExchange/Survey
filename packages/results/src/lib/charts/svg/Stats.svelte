@@ -2,9 +2,10 @@
 	// The figcaption drawn inside the `<svg>`, so it travels with the picture.
 	// Nothing here is announced: the frame is one `role="img"` whose `<desc>`
 	// already carries all three.
-	import Glyph from './Glyph.svelte'
 	import { icons, STATS } from '$charts/utils/chrome'
 	import { chars, clip, middle, PAD, px, textWidth, theme } from '$charts/utils/theme'
+
+	import Glyph from './Glyph.svelte'
 
 	let {
 		figure,

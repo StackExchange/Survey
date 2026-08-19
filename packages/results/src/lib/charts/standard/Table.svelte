@@ -2,11 +2,13 @@
 	// The whole table — columns, headings, formatted cells — comes from
 	// $lib/table, the same builder behind DataTable and the markdown twins, so the
 	// three renderings agree.
+	import type { OnHover } from '$charts/utils/tooltip'
+
+	import { chars, clip, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import { HIT } from '$charts/utils/tooltip'
 	import { tableOf } from '$lib/table'
 
 	import Frame from '$charts/svg/Wrap.svelte'
-	import { PAD, chars, clip, middle, px, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

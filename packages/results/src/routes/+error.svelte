@@ -3,8 +3,9 @@
 
 	import { resolve } from '$app/paths'
 	import { page } from '$app/state'
-	import Icon from '$lib/components/Icon.svelte'
-	import Seo from '$lib/components/Seo.svelte'
+
+	import Icon from '$components/Icon.svelte'
+	import Seo from '$components/Seo.svelte'
 
 	const status = $derived(page.status)
 	const message = $derived(page.error?.message ?? '')

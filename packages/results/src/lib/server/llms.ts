@@ -7,12 +7,10 @@
 import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
-
 import { citeAs, licence, siteDescription, siteName, siteUrl } from '$config'
-import { ofSurvey, toMarkdown } from '$lib/table'
-
 import site from '$generated/site.json'
 import yearPayload from '$generated/year.json'
+import { ofSurvey, toMarkdown } from '$lib/table'
 
 import { getChapter, getChapterData, getQuestion } from './content'
 

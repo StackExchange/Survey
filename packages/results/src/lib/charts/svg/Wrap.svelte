@@ -1,14 +1,15 @@
 <script lang="ts">
 	// The `<svg>` root every chart shares, sized for a standalone file. No drawn
 	// heading — the page supplies that around the figure.
+	import type { Snippet } from 'svelte'
+
+	import { chromeReader, FOOTER, headerLayout, STATS } from '$charts/utils/chrome'
+	import { PAD, px, theme } from '$charts/utils/theme'
 	import { ofSurvey } from '$lib/table'
+
 	import Attribution from './Attribution.svelte'
 	import Header from './Header.svelte'
 	import Stats from './Stats.svelte'
-	import { chromeReader, FOOTER, headerLayout, STATS } from '$charts/utils/chrome'
-	import { PAD, px, theme } from '$charts/utils/theme'
-
-	import type { Snippet } from 'svelte'
 
 	// `reading` is the chart's own account of its numbers, for the expressive forms
 	// that draw few or no value labels. Leads the description.

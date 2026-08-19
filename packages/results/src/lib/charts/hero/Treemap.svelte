@@ -2,11 +2,12 @@
 	// Cubes in a row, not the nested rectangles the name suggests: nesting reads as
 	// containment and these responses are multi-select. Sides go as the square root
 	// of the share, so the visible face is the proportional part.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

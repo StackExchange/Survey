@@ -4,6 +4,7 @@
 	import { save } from '$charts/utils/export'
 	import { citation, licence } from '$config'
 	import { toCsv, toJson, toMarkdown } from '$lib/table'
+
 	import Button from './Button.svelte'
 
 	// Every format here is a rendering of the same `$lib/table` output as the data

@@ -1,15 +1,17 @@
 <script lang="ts">
+	import type { Chrome } from '$charts/utils/chrome'
+	import type { TooltipData } from '$charts/utils/tooltip'
+
+	import { IconShare } from '@stackoverflow/stacks-icons/icons'
+
+	import { CHART_WIDTH } from '$charts/utils/chrome'
+	import { openQuestion } from '$lib/panel'
+
 	import { charts } from '$charts'
 	import ChartRoot from '$charts/ChartRoot.svelte'
 	import Tooltip from '$charts/Tooltip.svelte'
-	import { IconShare } from '@stackoverflow/stacks-icons/icons'
+
 	import Icon from './Icon.svelte'
-	import { openQuestion } from '$lib/panel'
-
-	import { CHART_WIDTH } from '$charts/utils/chrome'
-
-	import type { Chrome } from '$charts/utils/chrome'
-	import type { TooltipData } from '$charts/utils/tooltip'
 
 	// `width` fixes the layout, given only where the drawing has to be the file
 	// byte for byte. Everywhere else the chart follows its container.

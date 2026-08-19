@@ -1,7 +1,7 @@
 <script lang="ts">
-	import clsx from 'clsx'
-
 	import type { ClassValue } from 'svelte/elements'
+
+	import clsx from 'clsx'
 
 	// stacks-icons ships raw SVG strings, not components — hence the string surgery.
 	interface Props {

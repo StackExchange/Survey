@@ -1,11 +1,12 @@
 <script lang="ts">
 	// The "1 in X" shape as cubes. Two rows once there are more than five, so the
 	// field stays wider than it is deep.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { CUBE, SKEW, cube, cubeHeight } from '$charts/utils/iso'
+	import { CUBE, cube, cubeHeight, SKEW } from '$charts/utils/iso'
 	import { series, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

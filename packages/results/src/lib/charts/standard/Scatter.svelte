@@ -1,11 +1,14 @@
 <script lang="ts">
 	// Density is opacity on one hue, not an interpolated ramp: the palette is
 	// `var()` tokens and d3 can only interpolate literal colours.
+	import type { OnHover } from '$charts/utils/tooltip'
+
 	import { scaleLinear } from 'd3-scale'
 
+	import { chars, clip, count, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import { HIT } from '$charts/utils/tooltip'
+
 	import Frame from '$charts/svg/Wrap.svelte'
-	import { PAD, chars, clip, count, middle, px, shorten, theme } from '$charts/utils/theme'
-	import { HIT, type OnHover } from '$charts/utils/tooltip'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

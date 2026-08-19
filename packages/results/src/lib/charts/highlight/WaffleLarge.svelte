@@ -1,9 +1,10 @@
 <script lang="ts">
 	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
-	import Frame from '$charts/svg/Wrap.svelte'
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { percent, px, series, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
+
+	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 

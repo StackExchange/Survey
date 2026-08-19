@@ -1,14 +1,17 @@
 <script lang="ts">
-	import { MediaQuery } from 'svelte/reactivity'
-	import { resolve } from '$app/paths'
-	import { page } from '$app/state'
-	import { IconCross, IconMenu, IconGlyph32Square } from '@stackoverflow/stacks-icons/icons'
-	import { tick } from 'svelte'
-	import { cubicOut } from 'svelte/easing'
 	import type { TransitionConfig } from 'svelte/transition'
 
+	import { IconCross, IconGlyph32Square, IconMenu } from '@stackoverflow/stacks-icons/icons'
+	import { tick } from 'svelte'
+	import { cubicOut } from 'svelte/easing'
+	import { MediaQuery } from 'svelte/reactivity'
+
+	import { resolve } from '$app/paths'
+	import { page } from '$app/state'
+
 	import { chapterColour } from '$config'
-	import Icon from '$lib/components/Icon.svelte'
+
+	import Icon from '$components/Icon.svelte'
 
 	const reducedMotion = new MediaQuery('prefers-reduced-motion: reduce')
 

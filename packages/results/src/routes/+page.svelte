@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { IconArrowDownBox, IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
+
 	import { githubRepo, siteDescriptionLong, siteUrl } from '$config'
 
-	import BrandHeader from '$lib/components/BrandHeader.svelte'
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
-	import Button from '$lib/components/Button.svelte'
-
-	import Seo from '$lib/components/Seo.svelte'
+	import BrandHeader from '$components/BrandHeader.svelte'
+	import Button from '$components/Button.svelte'
+	import Seo from '$components/Seo.svelte'
+	import ThemeToggle from '$components/ThemeToggle.svelte'
 
 	let { data } = $props()
 

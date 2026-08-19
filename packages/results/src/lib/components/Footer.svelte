@@ -1,8 +1,4 @@
 <script>
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
-
-	import { githubRepo, licence } from '$config'
-
 	import {
 		IconLogo,
 		IconServiceCCPA,
@@ -13,10 +9,18 @@
 		IconServiceX,
 		IconServiceYouTube,
 	} from '@stackoverflow/stacks-icons/icons'
+
+	import { githubRepo, licence } from '$config'
+
+	import ThemeToggle from '$components/ThemeToggle.svelte'
+
 	import Icon from './Icon.svelte'
 </script>
 
-<footer id="footer-global" class="relative block overflow-hidden bg-black border-t border-transparent dark:border-black-500 gutter text-white">
+<footer
+	id="footer-global"
+	class="relative block overflow-hidden border-t border-transparent bg-black gutter text-white dark:border-black-500"
+>
 	<ThemeToggle class="pointer-events-auto absolute top-0 right-0" />
 
 	<div class="grid grid-cols-12 gap-8">
