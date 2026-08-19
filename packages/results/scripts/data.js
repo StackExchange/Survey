@@ -362,15 +362,10 @@ export async function generate() {
 		await write(`question/${key}.json`, { ...payload, jsonld: seo.question[key] }, state)
 	}
 
-	// Section names ride along for the year index's table of contents, which
-	// links each one at its anchor on the chapter's data page. Empty sections are
-	// dropped — the data page draws no header for them either.
-	const tocSections = (id) => chapterPayloads[id].sections.filter((s) => s.questions.length).map(({ id, name }) => ({ id, name }))
-
 	await write(
 		'year.json',
 		{
-			chapters: live.map((c) => ({ ...summary(c), sections: tocSections(c.id), heroes: featuresOf(ctx, c, 'hero') })),
+			chapters: live.map((c) => ({ ...summary(c), heroes: featuresOf(ctx, c, 'hero') })),
 			jsonld: seo.year,
 		},
 		state

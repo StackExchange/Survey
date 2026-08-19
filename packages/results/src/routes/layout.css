@@ -6,8 +6,14 @@
    scannable spells them out. Without this four of the five have no background. */
 @source inline('{bg,border,text}-{blue,purple,yellow,pink,green,beige,orange-medium}');
 
-/* mode-watcher owns `.dark` on <html>, applied before first paint. */
-@custom-variant dark (&:where(.dark, .dark *));
+/* mode-watcher owns `.dark` on <html>, applied before first paint.
+
+   `.theme-invert` is a subtree that reads as the opposite of the page: on a light
+   page every `dark:` utility inside it turns on, on a dark page every one turns
+   off. Both halves are needed — the reader chooses the page ground, so a section
+   cannot just be spelled dark. One level deep only; nesting an invert inside an
+   invert is not modelled. */
+@custom-variant dark (&:where(.dark, .dark *):not(.theme-invert, .theme-invert *), &:where(.theme-invert, .theme-invert *):not(.dark *));
 
 @font-face {
 	font-family: 'Stack Sans Text';
@@ -89,7 +95,8 @@
    sees this file and always resolves the light literals, so the preview has to
    say the same on a dark page. */
 :root,
-.chart-light {
+.chart-light,
+.dark .theme-invert {
 	--chart-bg: var(--color-black-150);
 	--chart-ink: var(--color-black);
 	--chart-muted: var(--color-black-400);
@@ -117,7 +124,8 @@
 	--chart-series-8: var(--color-blue-dark);
 }
 
-.dark {
+.dark,
+.theme-invert {
 	--chart-bg: var(--color-black);
 	--chart-ink: var(--color-white);
 	--chart-muted: var(--color-black-300);

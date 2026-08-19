@@ -1,18 +1,17 @@
 <script>
-	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
-
 	import { resolve } from '$app/paths'
 	import Hero from '$charts/Hero.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 	import { count } from '$charts/utils/theme'
 	import { chapterColour } from '$config'
 	import BrandHeader from '$lib/components/BrandHeader.svelte'
-	import Button from '$lib/components/Button.svelte'
 	import ChapterHeader from '$lib/components/ChapterHeader.svelte'
-	import Icon from '$lib/components/Icon.svelte'
+	import { inversion } from '$lib/invert.svelte'
 	import Seo from '$lib/components/Seo.svelte'
 
 	let { data } = $props()
+
+	const highlights = inversion()
 </script>
 
 <Seo title="Results {data.year}" graph={data.jsonld} />
@@ -56,9 +55,9 @@
 		</div>
 	</section>
 
-	<section aria-label="Highlights">
-		{#each data.chapters as chapter (chapter.id)}
-			<section class="min-h-screen bg-black-150 py-30 dark:bg-black-600">
+	<section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
+		{#each data.chapters as chapter, chapterI (chapter.id)}
+			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30">
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}
@@ -76,36 +75,26 @@
 		{/each}
 	</section>
 
-	<nav aria-label="Table of contents" class="px-5 py-30 text-center">
-		<h2 class="font-headline-notch mb-3 text-8xl">Jump in, learn more</h2>
+	<nav aria-label="Table of contents" class="container py-30 text-center">
+		<h2 class="font-headline-notch mb-4 text-5xl lg:text-8xl">Jump in, learn more</h2>
 		<p class="text-xl">Table of contents for the {data.settings.year} Stack Overflow Developer Survey</p>
 
-		<ul class="mx-auto mt-15 grid max-w-6xl gap-3 text-left text-2xl *:min-h-56 lg:grid-cols-2">
+		<ul class="mx-auto lg:max-w-[80%] mt-15 font-headline text-left text-2xl grid lg:grid-cols-2 gap-6">
 			{#each data.chapters as chapter, i (chapter.id)}
-				<li class={`bg-${chapterColour(chapter.index).primary} p5 flex flex-col`}>
-					<span class="font-headline">{i + 1}.0</span>
-					<a class="flex items-center gap-2" href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}>
+				<li class="min-h-80 dark:text-black group bg-black-200">
+					<a
+						class="relative transition-transform group-hover:-translate-2 flex h-full flex-col items-start justify-between p-5 text-4xl bg-{chapterColour(chapter.index).primary}"
+						href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}
+					>
+						<span class="text-2xl">{i + 1}.0</span>
 						{chapter.name}
-						<Icon src={IconArrowRight} />
 					</a>
-
-					<ul class="mt-4 text-lg">
-						{#each chapter.sections as section, secI (section.id)}
-							<li>
-								<a
-									class="hover:underline"
-									href="{resolve('/[year]/[chapter]/data', { year: data?.settings.year, chapter: chapter.id })}#{section.id}"
-								>
-									{i + 1}.{secI + 1}
-									{section.name}
-								</a>
-							</li>
-						{/each}
-					</ul>
 				</li>
 			{/each}
-			<li class="bg-black text-white">
-				<a class="d-block flex h-full items-end p-5" href={resolve('/[year]/methodology', { year: data?.settings.year })}> Methodology </a>
+			<li class="min-h-80 text-white bg-black-200 group">
+				<a class="relative transition-transform group-hover:-translate-2 bg-black dark:bg-black-500 flex flex-col h-full p-4" href={resolve('/[year]/methodology', { year: data?.settings.year })}>
+				  <strong class="col-span-3 font-normal text-4xl mt-auto">Methodology</strong>
+				</a>
 			</li>
 		</ul>
 	</nav>
