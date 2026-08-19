@@ -1,10 +1,10 @@
 <script>
+	import { SpotError404, SpotError500 } from '@stackoverflow/stacks-icons/spots'
+
 	import { resolve } from '$app/paths'
 	import { page } from '$app/state'
 	import Icon from '$lib/components/Icon.svelte'
 	import Seo from '$lib/components/Seo.svelte'
-
-	import { SpotError404, SpotError500 } from '@stackoverflow/stacks-icons/spots'
 
 	const status = $derived(page.status)
 	const message = $derived(page.error?.message ?? '')

@@ -3,7 +3,7 @@
 // ancestor branch condition it inherited (from a flow-level `if/then` or a
 // page-level `if/then` inside a block).
 
-import type { BlockElement, FlowElement, Page, PageEntry, Question, Condition } from '$lib/types'
+import type { BlockElement, Condition, FlowElement, Page, PageEntry, Question } from '$lib/types'
 
 interface FlattenOptions {
 	// When true, BlockRandomizer's SubSet is honoured by picking the first

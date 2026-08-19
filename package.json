@@ -24,6 +24,7 @@
 	"author": "Stack Exchange Inc.",
 	"license": "Apache-2.0",
 	"devDependencies": {
+		"@ianvs/prettier-plugin-sort-imports": "^4.7.1",
 		"netlify-cli": "^27.1.1",
 		"prettier": "^3.9.6",
 		"prettier-plugin-svelte": "^4.1.1",

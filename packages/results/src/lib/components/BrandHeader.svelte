@@ -1,7 +1,7 @@
 <script>
-	import { resolve } from '$app/paths'
-
 	import { IconInfoFill, IconLogo } from '@stackoverflow/stacks-icons/icons'
+
+	import { resolve } from '$app/paths'
 	import Icon from '$lib/components/Icon.svelte'
 
 	let { label = null, children = null } = $props()

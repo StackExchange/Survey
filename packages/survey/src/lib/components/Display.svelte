@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { Question } from '$lib/types'
 	import Markdown from './Markdown.svelte'
+
+	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 </script>

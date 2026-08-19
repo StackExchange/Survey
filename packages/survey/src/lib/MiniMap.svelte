@@ -1,11 +1,13 @@
 <script lang="ts">
-	import { survey, questions } from '$lib/data/load'
-	import { tokenizeCondition } from '$lib/data/format_condition'
 	import { evaluate } from '$lib/data/condition'
+	import { tokenizeCondition } from '$lib/data/format_condition'
+	import { questions, survey } from '$lib/data/load'
 	import { answers } from '$lib/store/answers.svelte'
 	import { nav, navigate, pages } from '$lib/store/nav.svelte'
-	import type { Condition, FlowElement, PageEntry } from '$lib/types'
+
 	import ConditionTokens from './ConditionTokens.svelte'
+
+	import type { Condition, FlowElement, PageEntry } from '$lib/types'
 
 	// Map question id -> flat page index, for navigation + the page number
 	// shown on each question button.

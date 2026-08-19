@@ -7,6 +7,7 @@
 // from it re-render automatically.
 
 import YAML from 'yaml'
+
 import type { Question, Survey } from '$lib/types'
 
 const questionRaws = import.meta.glob<string>('$questions/*/*.yaml', {

@@ -1,10 +1,11 @@
 // Generate src/lib/data/types.generated.ts from the JSON schemas.
 // Run with `npm run gen:types -w survey`. Re-run after editing either schema.
 
-import { compileFromFile } from 'json-schema-to-typescript'
 import { writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+
+import { compileFromFile } from 'json-schema-to-typescript'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(here, '../../..')

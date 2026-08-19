@@ -1,6 +1,7 @@
-import prettier from 'eslint-config-prettier'
 import path from 'node:path'
+
 import js from '@eslint/js'
+import prettier from 'eslint-config-prettier'
 import svelte from 'eslint-plugin-svelte'
 import { defineConfig, includeIgnoreFile } from 'eslint/config'
 import globals from 'globals'

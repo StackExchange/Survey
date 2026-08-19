@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { answers, setAnswer } from '$lib/store/answers.svelte'
 	import { normaliseOptions } from '$lib/data/options'
+	import { answers, setAnswer } from '$lib/store/answers.svelte'
+
 	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
