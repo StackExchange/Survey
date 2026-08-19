@@ -244,35 +244,6 @@ const featuresOf = (ctx, chapter, tier) =>
 		.map((f) => featureOf(ctx, chapter, f))
 		.filter(Boolean)
 
-// --- stats -------------------------------------------------------------------
-
-// The escape hatches at the bottom of an options list. They are answers, not
-// technologies, so they don't count towards the breadth the year index prints.
-const NON_ANSWER = /^(other|none of the above|i don't use)/i
-
-// How many technologies the survey asked about: the options of the technology
-// chapter's `scale` grids — the "worked with / want to work with" matrices —
-// deduped, because a technology can appear in more than one grid. Counted from
-// the bank rather than the export so the number is what was asked, and doesn't
-// wobble as data drops land.
-function technologyCount(bank) {
-	const names = new Set()
-
-	for (const question of Object.values(bank)) {
-		if (question.type !== 'scale' || !question.source.startsWith('questions/technology/')) continue
-
-		for (const option of question.options ?? []) {
-			const label = typeof option === 'string' ? option : option.label
-			if (typeof option === 'object' && option.text_entry) continue
-			if (NON_ANSWER.test(label)) continue
-
-			names.add(label)
-		}
-	}
-
-	return names.size
-}
-
 // --- assembly ----------------------------------------------------------------
 
 // Only write when the bytes changed: the generator writes inside Vite's watched
@@ -362,30 +333,18 @@ export async function generate() {
 		}
 	}
 
-	// The counts the year index prints, in one place: nobody should be retyping
-	// them into the sheet the day a new export lands.
+	// The counts the year index prints. All five are a lookup, not a derivation —
+	// a stat that needs its own pass over the bank belongs in the export instead.
 	const stats = {
-		respondents: methodology.TotalRespondents ?? null,
-		countries: methodology.TotalCountries ?? null,
-		technologies: technologyCount(bank),
+		// Editorial, not derived: the sheet publishes the headline figure, and the
+		// Name/Value tab has no types, so it arrives as a string.
+		respondents: Number(survey.settings.respondents),
+		countries: methodology.TotalCountries,
+		salaries: methodology.GaveSalary,
 		questions: Object.values(index).flat().length,
 		chapters: summaries.length,
 	}
 
-	// Sheet copy carries `{{respondents}}` rather than a number that goes stale.
-	// Settings only — chapter and figure copy names its own figures.
-	const fill = (text) =>
-		typeof text !== 'string'
-			? text
-			: text.replace(/\{\{(\w+)\}\}/g, (token, key) => {
-					if (typeof stats[key] !== 'number') {
-						problems.push(`settings: no stat for ${token} — have ${Object.keys(stats).join(', ')}`)
-						return token
-					}
-					return stats[key].toLocaleString('en-US')
-				})
-
-	survey.settings = Object.fromEntries(Object.entries(survey.settings).map(([key, value]) => [key, fill(value)]))
 
 	const seo = graphsFor({ survey, years, chapters: summaries, chapterPayloads })
 
@@ -403,7 +362,19 @@ export async function generate() {
 		await write(`question/${key}.json`, { ...payload, jsonld: seo.question[key] }, state)
 	}
 
-	await write('year.json', { chapters: live.map((c) => ({ ...summary(c), heroes: featuresOf(ctx, c, 'hero') })), jsonld: seo.year }, state)
+	// Section names ride along for the year index's table of contents, which
+	// links each one at its anchor on the chapter's data page. Empty sections are
+	// dropped — the data page draws no header for them either.
+	const tocSections = (id) => chapterPayloads[id].sections.filter((s) => s.questions.length).map(({ id, name }) => ({ id, name }))
+
+	await write(
+		'year.json',
+		{
+			chapters: live.map((c) => ({ ...summary(c), sections: tocSections(c.id), heroes: featuresOf(ctx, c, 'hero') })),
+			jsonld: seo.year,
+		},
+		state
+	)
 
 	const year = String(survey.settings.year)
 
