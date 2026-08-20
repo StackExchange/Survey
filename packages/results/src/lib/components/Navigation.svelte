@@ -24,6 +24,14 @@
 	// once you have scrolled past it.
 	const wordmark = $derived(page.route.id !== '/[year]' || scrollY > 500)
 
+	// The question panel puts its own close button exactly where this toggle sits, so
+	// the menu stands down while the panel is open. The wordmark stays, over the panel.
+	const panelled = $derived(Boolean(page.state.question))
+
+	$effect(() => {
+		if (panelled) open = false
+	})
+
 	const plain = 'border-black-150 dark:border-black-500'
 
 	const links = $derived([
@@ -104,7 +112,13 @@
 		</h1>
 	{/if}
 
-	<nav data-nav class="pointer-events-auto relative z-50 ml-auto w-auto text-white lg:w-1/2 lg:max-w-50" aria-label="Sections">
+	<nav
+		data-nav
+		class="pointer-events-auto relative z-50 ml-auto w-auto text-white transition-[opacity,visibility] duration-200 lg:w-1/2 lg:max-w-50 {panelled
+			? 'invisible opacity-0'
+			: 'visible opacity-100'}"
+		aria-label="Sections"
+	>
 		<button
 			bind:this={toggle}
 			class="ml-auto flex h-12 cursor-pointer items-center justify-between gap-2 border-l-4 border-black-150 bg-black fill-current px-4 py-3 text-left text-sm font-semibold hover:bg-black-500 lg:w-full dark:border-black-500"

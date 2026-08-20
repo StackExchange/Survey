@@ -82,9 +82,9 @@
 
 			<div class="lg:col-span-2 lg:col-start-11">
 				{#if format.download}
-					<Button class="w-full" label="Download CSV" icon={IconArrowDownBox} onclick={format.download} />
+					<Button class="w-full truncate" label="Download CSV" icon={IconArrowDownBox} onclick={format.download} />
 				{:else}
-					<Button class="w-full" copy={format.text} label="Copy {format.label}" icon={IconClipboard} />
+					<Button class="w-full truncate" copy={format.text} label="Copy {format.label}" icon={IconClipboard} />
 				{/if}
 			</div>
 		</div>

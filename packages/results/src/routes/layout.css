@@ -156,6 +156,10 @@
 
 html {
 	scroll-padding-top: 70px;
+
+	/* The question panel hides this overflow while it is open; a reserved gutter is
+	   what keeps the page behind it from shifting sideways as the bar goes. */
+	scrollbar-gutter: stable;
 }
 body {
 	font-family: var(--font-sans);

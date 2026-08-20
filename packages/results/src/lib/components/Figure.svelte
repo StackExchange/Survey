@@ -58,7 +58,7 @@
 		{#if href}
 			<p class="absolute right-0 bottom-0 flex gap-4 bg-black-150 px-4 pb-4 dark:bg-black-500">
 				<a {href} onclick={open} class="ml-auto flex items-center gap-1.5 hover:underline" aria-label="Permalink: {block.demographic.name}">
-					Share
+					Share & permalink
 					<Icon src={IconShare} />
 				</a>
 			</p>

@@ -111,7 +111,7 @@
 	{...rest}
 >
 	{#if icon || status === 'copied'}
-		<Icon class={status === 'copied' ? 'text-green' : ''} src={status === 'copied' ? IconCheckFillSquare : icon!} />
+		<Icon class="shrink-0 {status === 'copied' ? 'text-green' : ''}" src={status === 'copied' ? IconCheckFillSquare : icon!} />
 	{/if}
 
 	{#if children}
@@ -126,7 +126,7 @@
 	{/if}
 
 	{#if iconEnd}
-		<Icon src={iconEnd} />
+		<Icon src={iconEnd} class="shrink-0" />
 	{/if}
 </svelte:element>
 
