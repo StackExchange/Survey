@@ -1,6 +1,4 @@
 <script lang="ts">
-	// Real text, not an `<svg>`: selectable, translatable, scales with the reader's
-	// own font size, and liftable by an answer engine.
 	import { formatOf, rowsOf } from '$charts/utils/expressive'
 	import { shorten } from '$charts/utils/theme'
 
@@ -11,8 +9,6 @@
 
 	const text = $derived(row ? formatOf(figure)(row) : '—')
 
-	// Only a trailing `%` splits off. A salary's `$` leads the number, and treating
-	// that as the unit printed it twice.
 	const unit = $derived(text.endsWith('%') ? '%' : '')
 	const figures = $derived(unit ? text.slice(0, -unit.length) : text)
 </script>

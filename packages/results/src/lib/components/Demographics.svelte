@@ -4,6 +4,8 @@
 </script>
 
 <script lang="ts">
+	import { respondents } from '$lib/table'
+
 	// Demographic tabs. Presentational — the page owns the selection. One shared
 	// panel, so every tab points at the same `aria-controls`.
 	let {
@@ -22,8 +24,6 @@
 	} = $props()
 
 	let tablist = $state<HTMLDivElement | null>(null)
-
-	const count = (n: number | null) => n?.toLocaleString('en-US') ?? '—'
 
 	// Automatic activation, per the WAI-ARIA tabs pattern: the data is already here.
 	function onKeydown(event: KeyboardEvent) {
@@ -71,7 +71,7 @@
 			     and without a positioned ancestor these resolve against the initial
 			     containing block, escaping the tablist's overflow and widening the
 			     document by however far the last tab sits off-screen. -->
-			<span class="sr-only">, n = {count(entry.demographic.n)}</span>
+			<span class="sr-only">, n = {respondents(entry.demographic.n)}</span>
 		</button>
 	{/each}
 </div>

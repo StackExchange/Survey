@@ -154,6 +154,9 @@
 	padding-inline: clamp(1.5rem, 5vw, 4rem);
 }
 
+html {
+	scroll-padding-top: 70px;
+}
 body {
 	font-family: var(--font-sans);
 

@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { IconArrowDownRight, IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
+	import { IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
 	import { SpotMetrics } from '@stackoverflow/stacks-icons/spots'
 
 	import { resolve } from '$app/paths'
 
 	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import ChapterJump from '$components/ChapterJump.svelte'
 	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
 	import Demographics, { tabId } from '$components/Demographics.svelte'
@@ -116,7 +117,7 @@
 								<div class="relative mt-auto pt-6">
 									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-light dark:text-black">
 										<Icon src={IconQuestion} />
-										What we asked
+										What was asked
 									</h4>
 									<WhatWeAsked {definition} name={block.name} />
 								</div>
@@ -149,17 +150,13 @@
 		</section>
 	{/each}
 
-	<ChapterNextPrev year={data.year} previous={data.chapter.previous} next={data.chapter.next} />
-
-	<a
+	<ChapterJump
 		href={resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter })}
-		class="max-w-4xs fixed right-5 bottom-5 z-50 flex bg-black leading-snug hover:bg-orange-medium"
-	>
-		<Icon src={SpotMetrics} class="native h-auto max-w-30 p-3" />
-		<div class="p-3 pl-0">
-			<div class="font-medium text-white">Back to highlights</div>
-			<div class="text-black-350">Get the big picture</div>
-			<div class="absolute right-0 bottom-0 mt-auto self-end bg-orange p-2 text-black"><Icon src={IconArrowDownRight} /></div>
-		</div>
-	</a>
+		spot={SpotMetrics}
+		title="See the {data.chapter.name} highlights"
+		subtitle="Get the big picture"
+		direction="back"
+	/>
 </main>
+
+<ChapterNextPrev year={data.year} previous={data.chapter.previous} next={data.chapter.next} />

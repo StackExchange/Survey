@@ -8,8 +8,6 @@ import { PAD, wrapText } from './theme'
 export interface Chrome {
 	brand?: boolean
 	year?: string
-	/** Absolute; drawn without its protocol. */
-	url?: string
 	/** Responses to bring forward. Everything else dims. */
 	focus?: string[]
 	/** Scale a share chart to its own largest value rather than to a full 100%. */

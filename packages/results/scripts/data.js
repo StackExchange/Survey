@@ -306,8 +306,11 @@ export async function generate() {
 
 	for (const chapter of live) {
 		// Questions flattened out of their sections, so neighbours are findable.
-		const flat = (chapter.sections ?? []).flatMap((section) =>
-			(section.questions ?? []).map((q) => ({ ...q, sectionId: section.id, sectionName: section.name }))
+		const flat = (chapter.sections ?? []).flatMap((section, at) =>
+			// `sectionNumber` is the 1-based position the data page prints as
+			// `chapter.index`.`sectionNumber`; a question payload has no section list
+			// to count for itself.
+			(section.questions ?? []).map((q) => ({ ...q, sectionId: section.id, sectionName: section.name, sectionNumber: at + 1 }))
 		)
 
 		const drawable = flat.map((q) => figureOf(ctx, chapter.id, q)).filter(Boolean)

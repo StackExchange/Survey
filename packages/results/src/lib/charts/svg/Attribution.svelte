@@ -5,7 +5,7 @@
 
 	import { FOOTER, logo } from '$charts/utils/chrome'
 	import { middle, PAD, px, theme } from '$charts/utils/theme'
-	import { licence } from '$config'
+	import { licence, siteUrl } from '$config'
 
 	import Glyph from './Glyph.svelte'
 
@@ -16,7 +16,7 @@
 	const LOGO_HEIGHT = 20
 
 	const survey = $derived(`Developer Survey ${chrome.year ?? ''}`.trim())
-	const site = $derived(chrome.url?.replace(/^https?:\/\//, '') ?? '')
+	const site = siteUrl.replace(/^https?:\/\//, '')
 	const terms = $derived(`Data licensed under ${licence.database.name}`)
 
 	// Right-aligned, so both lines end on the margin whatever the URL's length.
@@ -28,7 +28,7 @@
 <Glyph glyph={logo} x={margin} y={y + (FOOTER - LOGO_HEIGHT) / 2} size={LOGO_HEIGHT} />
 
 <text x={right} y={first} text-anchor="end" font-size={SIZE} fill={theme.ink}>
-	<tspan font-weight="600">{survey}</tspan>{#if site}<tspan>&#160;&#160;{site}</tspan>{/if}
+	<tspan font-weight="600">{survey}</tspan>{#if site}<tspan>&#160&#160;{site}</tspan>{/if}
 </text>
 
 <text x={right} y={second} text-anchor="end" font-size={SIZE} fill={theme.ink}>{terms}</text>

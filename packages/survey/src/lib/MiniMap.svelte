@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Condition, FlowElement, PageEntry } from '$lib/types'
+
 	import { evaluate } from '$lib/data/condition'
 	import { tokenizeCondition } from '$lib/data/format_condition'
 	import { questions, survey } from '$lib/data/load'
@@ -6,8 +8,6 @@
 	import { nav, navigate, pages } from '$lib/store/nav.svelte'
 
 	import ConditionTokens from './ConditionTokens.svelte'
-
-	import type { Condition, FlowElement, PageEntry } from '$lib/types'
 
 	// Map question id -> flat page index, for navigation + the page number
 	// shown on each question button.

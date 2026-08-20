@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { IconCross } from '@stackoverflow/stacks-icons/icons'
 
+	import { afterNavigate, goto } from '$app/navigation'
 	import { page } from '$app/state'
 
 	import QuestionPage from '../../routes/[year]/[chapter]/data/[question]/+page.svelte'
@@ -11,6 +12,15 @@
 	const data = $derived(page.state.question)
 
 	let dialog = $state<HTMLDialogElement>()
+
+	// A shallow back/forward between the opener and the panel never reaches
+	// afterNavigate — the router handles it without navigating. So state that
+	// survives a real navigation means we returned to a panel entry from
+	// elsewhere, and the opener has remounted underneath it. The address bar is
+	// already the question's own URL, so render that for real instead.
+	afterNavigate((nav) => {
+		if (nav.type === 'popstate' && page.state.question) void goto(location.href, { replaceState: true })
+	})
 
 	$effect(() => {
 		if (!dialog) return

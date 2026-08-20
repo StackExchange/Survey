@@ -10,6 +10,11 @@ import { licence, siteName } from '$config'
 // Whole numbers: the smallest cut in the export is 1.6%, so nothing rounds to 0%.
 export const ofSurvey = (share: number | null | undefined) => (typeof share === 'number' ? `${Math.round(share * 100)}%` : null)
 
+// The `n =` beside a cut, wherever it is written — the figcaption, the table
+// caption, the markdown twin. An em-dash where the export has no count, so a
+// missing `n` reads as missing rather than as zero.
+export const respondents = (n: number | null | undefined) => n?.toLocaleString('en-US') ?? '—'
+
 // `%` is a 0–1 fraction, `$` an amount; anything else reads as itself.
 function cell(value: any, unit: string): string {
 	if (typeof value !== 'number') return String(value ?? '')

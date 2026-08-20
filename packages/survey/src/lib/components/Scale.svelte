@@ -1,4 +1,7 @@
 <script lang="ts">
+	import type { NormalisedOption } from '$lib/data/options'
+	import type { Question } from '$lib/types'
+
 	import { snakeCase } from 'lodash-es'
 
 	import { questions as allQuestions } from '$lib/data/load'
@@ -7,9 +10,6 @@
 
 	import KeyBadge from './KeyBadge.svelte'
 	import Markdown from './Markdown.svelte'
-
-	import type { NormalisedOption } from '$lib/data/options'
-	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 	const rows = $derived(resolveRows(question))

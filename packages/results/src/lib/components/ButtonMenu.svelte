@@ -15,7 +15,7 @@
 		label = 'More options',
 		action,
 		class: className,
-		menuClass = 'right-0 lg:right-auto lg:left-0',
+		menuClass = 'right-0',
 	}: {
 		items: MenuItem[]
 		label?: string

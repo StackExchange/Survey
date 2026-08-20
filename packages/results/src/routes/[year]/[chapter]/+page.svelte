@@ -1,12 +1,11 @@
 <script>
-	import { IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 	import { SpotDataset } from '@stackoverflow/stacks-icons/spots'
 
 	import { resolve } from '$app/paths'
 
 	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import ChapterJump from '$components/ChapterJump.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import Icon from '$components/Icon.svelte'
 	import NavToggle from '$components/NavToggle.svelte'
 	import Seo from '$components/Seo.svelte'
 
@@ -45,15 +44,10 @@
 		</article>
 	{/each}
 
-	<a
+	<ChapterJump
 		href={resolve('/[year]/[chapter]/data', { year: params.year, chapter: params.chapter })}
-		class="max-w-4xs fixed right-5 bottom-5 flex bg-black leading-snug hover:bg-orange-medium"
-	>
-		<Icon src={SpotDataset} class="native h-auto max-w-30 p-3" />
-		<div class="p-3 pl-0">
-			<div class="font-medium text-white">Explore {data.chapter.name} data</div>
-			<div class="text-black-350">See the full breakdown</div>
-			<div class="absolute right-0 bottom-0 mt-auto self-end bg-orange p-2 text-black"><Icon src={IconArrowDownRight} /></div>
-		</div>
-	</a>
+		spot={SpotDataset}
+		title="Explore {data.chapter.name} data"
+		subtitle="See the full breakdown"
+	/>
 </main>

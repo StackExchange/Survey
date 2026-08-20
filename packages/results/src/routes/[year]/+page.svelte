@@ -1,4 +1,6 @@
 <script>
+	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
+
 	import { resolve } from '$app/paths'
 
 	import { count } from '$charts/utils/theme'
@@ -6,17 +8,19 @@
 	import { inversion } from '$lib/invert.svelte'
 
 	import BrandHeader from '$components/BrandHeader.svelte'
+	// eslint-disable-next-line no-unused-vars -- the Highlights section below is parked, not gone
 	import ChapterHeader from '$components/ChapterHeader.svelte'
-	import Seo from '$components/Seo.svelte'
 	import Icon from '$components/Icon.svelte'
-	import Button from '$components/Button.svelte'
+	import Seo from '$components/Seo.svelte'
 
+	// eslint-disable-next-line no-unused-vars -- as above: both are the parked Highlights section's
 	import Hero from '$charts/Hero.svelte'
+	// eslint-disable-next-line no-unused-vars
 	import Quote from '$charts/text/Quote.svelte'
-	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
 
 	let { data } = $props()
 
+	// eslint-disable-next-line no-unused-vars -- drives the parked Highlights section's scroll attachments
 	const highlights = inversion()
 </script>
 
@@ -49,7 +53,7 @@
 		<img src="/img/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
 		<div class="relative z-50 container my-60 flex items-end text-2xl leading-snug lg:w-50">
 			<dl
-				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:dark:text-black *:px-5 [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
+				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
 			>
 				<dt>{count(data.stats.respondents)}</dt>
 				<dd>Responses</dd>
@@ -61,7 +65,7 @@
 		</div>
 	</section>
 
-	<section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
+	<!-- <section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
 		{#each data.chapters as chapter, chapterI (chapter.id)}
 			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30">
 				<ChapterHeader year={data.year} {chapter} variant="home" />
@@ -79,57 +83,64 @@
 				{/each}
 			</section>
 		{/each}
-	</section>
-	<nav aria-label="Table of contents" class="bg-black-150 py-30 text-center">
-  	<div class="container">
-  		<h2 class="font-headline-notch mb-4 text-5xl lg:text-8xl">Jump in, learn more</h2>
-  		<p class="text-xl">Table of contents for the {data.settings.year} Stack Overflow Developer Survey</p>
+	</section> -->
 
-  		<ul class="mx-auto mt-15 grid gap-6 text-left font-headline text-2xl lg:max-w-[80%] lg:grid-cols-2">
-  			{#each data.chapters as chapter, i (chapter.id)}
-  				<li class="group min-h-80 bg-black dark:text-black">
-  					<a
-  						class="relative flex h-full flex-col items-start justify-between p-5 text-4xl transition-transform group-hover:-translate-2 bg-{chapterColour(
-  							chapter.index
-  						).primary}"
-  						href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}
-  					>
-  						<span class="text-2xl">{i + 1}.0</span>
-  						{chapter.name}
-  					</a>
-  				</li>
-  			{/each}
-  			<li class="group min-h-80 bg-black-500 dark:bg-black-400 text-white">
-  				<a
-  					class="relative flex h-full flex-col bg-black p-4 transition-transform group-hover:-translate-2 dark:bg-black"
-  					href={resolve('/[year]/methodology', { year: data?.settings.year })}
-  				>
-  					<strong class="col-span-3 mt-auto text-4xl font-normal">Methodology</strong>
-  				</a>
-  			</li>
-  		</ul>
+	<nav aria-label="Table of contents" class="bg-black-150 py-30 text-center dark:bg-black-500">
+		<div class="container">
+			<h2 class="font-headline-notch mb-4 text-5xl lg:text-8xl">Jump in, learn more</h2>
+			<p class="text-xl">Table of contents for the {data.settings.year} Stack Overflow Developer Survey</p>
+
+			<ul class="mx-auto mt-15 grid gap-6 text-left font-headline text-2xl lg:max-w-[80%] lg:grid-cols-2">
+				{#each data.chapters as chapter, i (chapter.id)}
+					<li class="group min-h-80 bg-black dark:text-black">
+						<a
+							class="relative flex h-full flex-col items-start justify-between p-5 text-4xl transition-transform group-hover:-translate-2 bg-{chapterColour(
+								chapter.index
+							).primary}"
+							href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}
+						>
+							<span class="text-2xl">{i + 1}.0</span>
+							{chapter.name}
+						</a>
+					</li>
+				{/each}
+				<li class="group min-h-80 bg-black-500 text-white dark:bg-black-400">
+					<a
+						class="relative flex h-full flex-col bg-black p-4 transition-transform group-hover:-translate-2 dark:bg-black"
+						href={resolve('/[year]/methodology', { year: data?.settings.year })}
+					>
+						<strong class="col-span-3 mt-auto text-4xl font-normal">Methodology</strong>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 
-	<nav aria-label="Previous surveys" class="bg-black py-30 bg-cover bg-center p-5 bg-[url(/img/home-pryamid.svg)]">
-  	<div class="bg-white dark:bg-black p-8 max-w-2xl mx-auto">
-  		<h2 class="font-headline mb-8 text-4xl text-center">
-        16 years of insights,<br/>Powered by Developers.
-      </h2>
-  		<p class="text-base mb-2">Previous years:</p>
-      <ul>
-        {#each [2025,2024,2023,2022,2021] as year (`prev-${year}`)}
-          <li>
-            <a href="https://survey.stackoverflow.co/{year}" class="flex justify-between py-3 -mt-px border-b hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:px-4 hover:-mx-4">
-              {year}
-              <Icon src={IconArrowRight} />
-            </a>
-          </li>
-        {/each}
-      </ul>
-      <a href="https://survey.stackoverflow.co/" class="bg-black-200 hover:bg-black-150 dark:text-black text-center block w-full px-5 py-2 mt-8">
-        Go even more retro…
-      </a>
+	<nav aria-label="Previous surveys" class="bg-black bg-[url(/img/home-pryamid.svg)] bg-cover bg-center p-5 py-30">
+		<div class="mx-auto max-w-2xl bg-white p-8 dark:bg-black">
+			<h2 class="mb-8 text-center font-headline text-4xl">
+				16 years of insights,<br />Powered by Developers.
+			</h2>
+			<p class="mb-2 text-base">Previous years:</p>
+			<ul>
+				{#each [2025, 2024, 2023, 2022, 2021] as year (`prev-${year}`)}
+					<li>
+						<a
+							href="https://survey.stackoverflow.co/{year}"
+							class="-mt-px flex justify-between border-b py-3 hover:-mx-4 hover:bg-black hover:px-4 hover:text-white dark:hover:bg-white dark:hover:text-black"
+						>
+							{year}
+							<Icon src={IconArrowRight} />
+						</a>
+					</li>
+				{/each}
+			</ul>
+			<a
+				href="https://survey.stackoverflow.co/"
+				class="mt-8 block w-full bg-black-200 px-5 py-2 text-center hover:bg-black-150 dark:text-black"
+			>
+				Go even more retro…
+			</a>
 		</div>
 	</nav>
 </main>

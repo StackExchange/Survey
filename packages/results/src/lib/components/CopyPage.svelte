@@ -32,8 +32,8 @@
 	}
 </script>
 
-<ButtonMenu {items} label="More page options" class="self-end">
+<ButtonMenu {items} label="More page options">
 	{#snippet action()}
-		<Button copy={markdown} label="Copy page" icon={IconClipboard} class="max-lg:hidden" />
+		<Button copy={markdown} label="Copy page" icon={IconClipboard} class="text-nowrap max-lg:hidden" />
 	{/snippet}
 </ButtonMenu>

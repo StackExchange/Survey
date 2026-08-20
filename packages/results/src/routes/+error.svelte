@@ -4,6 +4,7 @@
 	import { resolve } from '$app/paths'
 	import { page } from '$app/state'
 
+	import Button from '$components/Button.svelte'
 	import Icon from '$components/Icon.svelte'
 	import Seo from '$components/Seo.svelte'
 
@@ -19,12 +20,12 @@
 	<div class="m-auto text-center">
 		<Icon src={illo} class="native mb-6" title={status.toString()} />
 
-		<h1 class="mt-2 font-headline text-3xl font-bold">{heading}</h1>
+		<h1 class="mt-8 font-headline text-3xl font-semibold">{heading}</h1>
 
 		{#if message}
-			<p class="mt-3 text-lg">{message}</p>
+			<p class="mt-2 mb-8 text-base">{message}</p>
 		{/if}
 
-		<a class="mt-8 inline-block underline" href={resolve('/')}>Go to home</a>
+		<Button href={resolve('/')} variant="filled">Go to homepage</Button>
 	</div>
 </main>

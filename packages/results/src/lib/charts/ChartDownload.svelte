@@ -1,16 +1,19 @@
 <script lang="ts">
 	import type { Chrome } from '$charts/utils/chrome'
-	import type { RowSelection } from '$charts/utils/rows.svelte'
 	import type { Snippet } from 'svelte'
 
 	import { IconArrowDownBox } from '@stackoverflow/stacks-icons/icons'
+	import { SpotLoading } from '@stackoverflow/stacks-icons/spots'
 
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { save, toPng, toSvg } from '$charts/utils/export'
+	import { rowSelection } from '$charts/utils/rows.svelte'
 
-	import Icon from '$components/Icon.svelte'
+	import Button from '$components/Button.svelte'
 
 	import { charts } from '$charts'
+
+	import ChartOptions from './ChartOptions.svelte'
 
 	// Drawn here rather than at build time: that is what lets an export carry
 	// options and follow the respondent group on screen.
@@ -18,23 +21,33 @@
 		figure,
 		name,
 		year,
-		url,
 		chapter,
 		chart,
-		selection,
 	}: {
 		figure: any
 		name: string
 		year: string
-		url: string
 		chapter: any
 		// The page's own figure, redrawn with whatever these controls are set to.
 		chart: Snippet<[{ block: any; chrome: Chrome; width: number }]>
-		/** Owned by the page and driven from the data table's leading columns. */
-		selection: RowSelection
 	} = $props()
 
 	const Chart = $derived(charts[figure.chart as keyof typeof charts])
+
+	// Which rows the drawing carries. Owned here rather than by the page: the
+	// controls over the chart and the file leaving it are the same decision.
+	const selection = rowSelection(() => figure)
+
+	// Radios need a group name of their own: a page can carry more than one of
+	// these, and two groups sharing a name would fight over the checked option.
+	const id = $props.id()
+
+	// Named for what the file is for, not what it is: the extension is along for
+	// the ride for anyone who does care which one they are picking.
+	const formats = [
+		{ value: 'png', label: 'Social', extension: '.png' },
+		{ value: 'svg', label: 'Vector', extension: '.svg' },
+	] as const
 
 	let format = $state<'png' | 'svg'>('png')
 	let normalise = $state(true)
@@ -48,7 +61,6 @@
 	const chrome = $derived({
 		brand: true,
 		year,
-		url,
 		focus: selection.focus,
 		normalise,
 		chapter: chapter.name,
@@ -86,63 +98,71 @@
 		}
 	}
 
-	const label = $derived({ idle: `Download ${format.toUpperCase()}`, working: 'Rendering…', failed: 'Could not render' }[status])
-
-	// A chart's height is its row count, so hiding a row shortens the drawing and
-	// everything below it jumps — including the checkbox that was just clicked. The
-	// full-set height is held as a floor while rows are hidden, so the space stays
-	// reserved; a reset lets it go, and re-measures for the next width.
-	let box = $state(0)
-	let reserved = $state(0)
-
-	$effect(() => {
-		if (!selection.touched) reserved = box
-	})
+	const label = $derived({ idle: `Download`, working: 'Rendering…', failed: 'Could not render' }[status])
 </script>
 
 <div>
 	<!-- One drawing, not a figure and a preview of it: the figure on the page *is*
 	     the export, chrome and all, redrawn in place as the controls change. -->
-	<div class="min-w-0 grow" bind:clientHeight={box} style:min-height={reserved ? `${reserved}px` : undefined}>
-		{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
+	<div class="relative min-w-0 grow">
+		<div class="absolute top-0 right-0 z-20">
+			<ChartOptions {selection} />
+		</div>
+
+		<!-- Below its floor the drawing scrolls rather than re-laying out into unreadable labels. -->
+		<div class="overflow-x-auto">
+			<div class="min-w-160">
+				{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
+			</div>
+		</div>
 	</div>
 
-	<fieldset class="mt-4 flex gap-3">
+	<fieldset class="mt-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-3">
 		<legend class="sr-only">Download this chart</legend>
 
 		{#if scalable}
-			<label class="flex items-start gap-2">
+			<label class="flex cursor-pointer items-start gap-2">
 				<input type="checkbox" class="mt-1 shrink-0" bind:checked={normalise} />
-				<span class="flex items-center gap-3">
+				<span class="select-none">
 					Scale to the largest value
 					<span class="block text-xs text-black-400 dark:text-black-300"> Easier to read, no longer comparable with other charts. </span>
 				</span>
 			</label>
 		{/if}
 
-		<label class="ml-auto flex items-center gap-1">
-			Format
-			<select bind:value={format} class="w-35 shrink-0 border px-2 py-1 dark:border-black-500 dark:bg-black">
-				<option value="png">PNG</option>
-				<option value="svg">SVG</option>
-			</select>
-		</label>
+		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
+			<span id="{id}-format">Format</span>
 
-		<button
-			type="button"
-			class="flex cursor-pointer items-center justify-center gap-2 border px-3 py-2 hover:bg-white disabled:cursor-wait dark:hover:bg-black-600"
-			disabled={status === 'working' || !selection.kept.length}
+			<div role="radiogroup" aria-labelledby="{id}-format" class="flex bg-black-200 p-1 dark:bg-black-500">
+				{#each formats as option (option.value)}
+					<label class="flex cursor-pointer">
+						<input class="peer sr-only" type="radio" name="{id}-format" value={option.value} bind:group={format} />
+						<span
+							class="px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
+						>
+							{option.label}
+							<!-- Dimmed rather than coloured: this sits on the track when unpicked and
+							     on the white pill when picked, and opacity reads on both. -->
+							<span class="opacity-60">({option.extension})</span>
+						</span>
+					</label>
+				{/each}
+			</div>
+		</div>
+
+		<Button
+			class="justify-center"
 			onclick={download}
+			disabled={status === 'working' || !selection.kept.length}
+			iconEnd={status === 'working' ? SpotLoading : IconArrowDownBox}
 		>
-			<Icon src={IconArrowDownBox} />
 			{label}
-		</button>
+		</Button>
 	</fieldset>
 
 	{#if selection.listable && selection.touched}
 		<p class="border-t pt-4 dark:border-black-500">
-			Drawing {selection.kept.length} of {selection.rows.length} rows{#if selection.focus.length}, {selection.focus.length} highlighted{/if}.
-			<button type="button" class="cursor-pointer underline" onclick={() => selection.reset()}>Reset</button>
+			Drawing {selection.kept.length} of {selection.rows.length} rows{#if selection.focus.length}, {selection.focus.length} focused{/if}.
 		</p>
 	{/if}
 </div>

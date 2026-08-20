@@ -1,16 +1,17 @@
 <script lang="ts" module>
 	import { surveyPreview } from '$config'
 
-	// The line under the wording: how it was asked, not what it asked.
-	export const askedMeta = (definition: any) =>
+	// How a question was asked, not what it asked — the facts that sit under the
+	// wording. A list rather than a sentence: every caller renders them as one run
+	// of separated chips, so the separator belongs to the CSS, not to the string.
+	export const askedFacts = (definition: any): string[] =>
 		[
 			definition.type.replace(/_/g, ' '),
 			definition.required ? 'required' : 'optional',
 			`v${definition.version}`,
 			definition.randomize && 'options randomised',
-		]
-			.filter(Boolean)
-			.join(' · ')
+			definition.carry_forward?.from && `options carried forward from ${definition.carry_forward.from}`,
+		].filter(Boolean)
 
 	// The instrument as respondents met it, scrolled to this question.
 	export const askedInContext = (definition: any) => `${surveyPreview}/#q-${definition.id}`
@@ -29,11 +30,11 @@
 <div class="relative bg-blue-extra-light p-4 dark:bg-blue-light dark:text-black">
 	<div class="md text-sm">{@html definition.titleHtml}</div>
 
-	{#if definition.carry_forward?.from}
-		<p class="mt-2 text-xs text-black-400 dark:text-black-300">Options carried forward from {definition.carry_forward.from}.</p>
-	{/if}
-
-	<p class="mt-2 text-xs text-black-400">{askedMeta(definition)}</p>
+	<ul class="mt-2 flex flex-wrap text-xs text-black-400 dark:text-black-300">
+		{#each askedFacts(definition) as fact (fact)}
+			<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
+		{/each}
+	</ul>
 
 	<a
 		aria-label="View in context: {name}"

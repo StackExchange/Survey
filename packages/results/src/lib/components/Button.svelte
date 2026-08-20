@@ -24,6 +24,7 @@
 		variant = 'outline',
 		size,
 		title,
+		disabled = false,
 		element = $bindable(null),
 		class: className,
 		onclick,
@@ -43,15 +44,18 @@
 		variant?: keyof typeof variants
 		size?: keyof typeof sizes
 		title?: string
+		// Ignored on an <a>: there is no disabled anchor, so a caller drops the href instead.
+		disabled?: boolean
 		element?: HTMLElement | null
 		class?: ClassValue
 	} & HTMLAttributes<HTMLElement> = $props()
 
 	const variants = {
-		outline: 'border dark:border-black-400 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500',
-		filled: 'bg-black-200 dark:bg-black-400 dark:text-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-black-300',
+		outline: 'bg-white border dark:border-black-400 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500',
+		filled:
+			'bg-black-200 dark:bg-black-400 dark:text-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-black-300',
 		plain: 'hover:bg-black dark:hover:bg-black-500 hover:text-white',
-		link: 'underline underline-offset-2 hover:text-orange',
+		link: 'underline-offset-2 hover:text-blue',
 	}
 
 	const sizes = { md: 'px-3 py-2', icon: 'p-2', none: '' }
@@ -93,10 +97,16 @@
 	{href}
 	{title}
 	type={href ? undefined : 'button'}
+	disabled={href ? undefined : disabled || undefined}
 	target={external ? '_blank' : undefined}
 	rel={rel ?? (external ? 'noopener' : undefined)}
 	aria-label={label || children ? undefined : title}
-	class={clsx('inline-flex cursor-pointer items-center gap-2 text-sm', variants[variant], padding, className)}
+	class={clsx(
+		'inline-flex cursor-pointer items-center gap-2 text-sm disabled:cursor-not-allowed disabled:opacity-60',
+		variants[variant],
+		padding,
+		className
+	)}
 	onclick={activate}
 	{...rest}
 >

@@ -1,8 +1,7 @@
 // Which responses an export draws, and which it brings forward.
 //
-// Owned here rather than in either component that needs it: the data table
-// carries the controls, next to the numbers they act on, and ChartDownload reads
-// the result to draw and to download. Call during component init.
+// Held by ChartDownload, which owns both halves: ChartOptions sets it and the
+// drawing reads it. Call during component init.
 
 export function rowSelection(figure: () => any) {
 	// Keyed by group the way the page keys its own selection: responses differ

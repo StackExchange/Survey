@@ -2,8 +2,8 @@
 //
 // The export ships raw column names and no presentation — deliberately, so the
 // same column can't word itself differently across 283 datasets. One registry,
-// read by the generator (which decides which column a figure plots) and by
-// `$lib/table` for column headings.
+// read at build time by the generator, which decides which column a figure plots
+// and bakes the headings onto `figure.columns`. Nothing at runtime reads it.
 //
 // Eventually this arrives as a `measures` block in the export's index.json and
 // the file becomes a reader. Until then it is the one place the wording lives.
@@ -46,6 +46,6 @@ export const unitFor = (key: string) => REGISTRY[key]?.unit ?? ''
 export const STRUCTURAL = new Set(['slice', 'series', 'response', 'count', 'pct'])
 
 // The named columns beside `count` and `pct` — the salary and rank measures. Read
-// by the generator (to decide what a bar plots) and by `$lib/table` (to decide
-// what a pivoted cell shows), so the two agree on what counts as a measure.
+// by the generator to decide what a bar plots; `$lib/table` doesn't re-derive it,
+// it reads the `columns` the generator resolved from this.
 export const valueKeys = (rows: any[]) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]

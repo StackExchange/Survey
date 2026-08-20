@@ -35,7 +35,7 @@
 {/snippet}
 
 {#if previous || next}
-	<section class="mt-24 bg-black-150 dark:bg-black-500" aria-labelledby="whats-next">
+	<section class="mt-5 bg-black-150 dark:bg-black-500" aria-labelledby="whats-next">
 		<h2 id="whats-next" class="font-headline-notch gutter text-4xl lg:text-6xl">What’s next?</h2>
 
 		<ul class="mt-6 flex justify-between gap-6">

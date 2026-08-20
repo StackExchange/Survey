@@ -1,10 +1,6 @@
 <script lang="ts">
-	// A `quote` feature — no chart, no data. `<blockquote>` rather than a styled
-	// paragraph, so it is still a quotation with the CSS off.
-
 	let { block }: { block: any } = $props()
 
-	// `description` is the attribution; most quotes leave it empty.
 	const cite = $derived(block.descriptionHtml?.trim())
 </script>
 

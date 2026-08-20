@@ -10,7 +10,7 @@ import years from '$archive/index.json'
 import { citeAs, licence, siteDescription, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
 import yearPayload from '$generated/year.json'
-import { ofSurvey, toMarkdown } from '$lib/table'
+import { ofSurvey, respondents, toMarkdown } from '$lib/table'
 
 import { getChapter, getChapterData, getQuestion } from './content'
 
@@ -66,8 +66,6 @@ export function listPages(): PageRef[] {
 
 const join = (...parts: (string | null | undefined | false)[]) => parts.filter(Boolean).join('\n\n')
 
-const count = (n: number | null | undefined) => n?.toLocaleString('en-US') ?? '—'
-
 const frontMatter = (page: PageRef, extra: Record<string, string> = {}) =>
 	[
 		'---',
@@ -82,7 +80,7 @@ const frontMatter = (page: PageRef, extra: Record<string, string> = {}) =>
 // Same wording as the figcaption and the table caption, from the same helper.
 function nLine(demographic: any) {
 	const share = ofSurvey(demographic?.share)
-	return `n = ${count(demographic?.n)}${share ? ` (${share})` : ''}`
+	return `n = ${respondents(demographic?.n)}${share ? ` (${share})` : ''}`
 }
 
 // From the bank where it resolves, the export otherwise.
