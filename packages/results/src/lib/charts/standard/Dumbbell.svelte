@@ -6,7 +6,7 @@
 	import { scaleLinear } from 'd3-scale'
 
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import { chars, clip, digitsWidth, labelGutter, legend, middle, PAD, percent, px, shorten, stackRows, theme } from '$charts/utils/theme'
+	import { chars, clip, digitsWidth, labelGutter, labelsAbove, legend, middle, PAD, percent, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
@@ -68,10 +68,10 @@
 	const format = (value: number) => percent(value)
 
 	// Narrow: the label takes its own line, the track the full width below it.
-	const stacked = $derived(stackRows(width, LABEL_SIZE))
+	const labelAbove = $derived(labelsAbove(width, LABEL_SIZE))
 
 	const labelWidth = $derived(labelGutter(width))
-	const plotX = $derived(stacked ? 0 : labelWidth + 12)
+	const plotX = $derived(labelAbove ? 0 : labelWidth + 12)
 	const plotWidth = $derived(Math.max(1, width - plotX - PAD))
 
 	// Both ends inset enough to hold the widest label, so a dot at 0% or 100% can
@@ -91,7 +91,7 @@
 
 	const key = $derived(legend([first, second], Math.max(1, width - PAD * 2)))
 	// Stacked rows carry a line of text above the track.
-	const ROW = $derived(stacked ? LINE + TRACK : 30)
+	const ROW = $derived(labelAbove ? LINE + TRACK : 30)
 	const height = $derived(PAD + key.height + rows.length * ROW + PAD)
 
 	const pair = [theme.from, theme.to]
@@ -104,7 +104,7 @@
 
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + key.height + i * ROW}
-		{@const mid = stacked ? y + LINE + TRACK / 2 : y + ROW / 2}
+		{@const mid = labelAbove ? y + LINE + TRACK / 2 : y + ROW / 2}
 		{@const a = px(x(row.a))}
 		{@const b = px(x(row.b))}
 		{@const leading = row.a > row.b}
@@ -115,8 +115,8 @@
 				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity="0.05" />
 			{/if}
 
-			<text x={PAD} y={middle(stacked ? y + LINE / 2 : mid, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
-				{clip(short(row.response), chars(stacked ? width : labelWidth, LABEL_SIZE))}
+			<text x={PAD} y={middle(labelAbove ? y + LINE / 2 : mid, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
+				{clip(short(row.response), chars(labelAbove ? width : labelWidth, LABEL_SIZE))}
 			</text>
 
 			<rect width={Math.max(a, b) - Math.min(a, b)} x={Math.min(a, b)} y={mid - DOT / 2} height={DOT} fill={theme.rule} />

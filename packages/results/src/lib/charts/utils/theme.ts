@@ -91,8 +91,9 @@ export const labelGutter = (width: number) => Math.round(width * 0.2)
 
 const MIN_GUTTER_CHARS = 18
 
-// Whether a row chart stacks its label above the bar rather than beside it.
-export const stackRows = (width: number, fontSize: number) => chars(labelGutter(width), fontSize) < MIN_GUTTER_CHARS
+// Whether a row chart draws its label above the bar rather than beside it,
+// because the gutter is too narrow to hold a useful number of characters.
+export const labelsAbove = (width: number, fontSize: number) => chars(labelGutter(width), fontSize) < MIN_GUTTER_CHARS
 
 export const SWATCH = 9
 const LEGEND_ROW = 22

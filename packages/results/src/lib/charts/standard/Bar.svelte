@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Horizontal bars, one per response. Two row shapes reach this: a share (`pct`),
-	// and a named measure the loader resolved into `figure.value` — the salary
-	// questions, which carry no share at all.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
@@ -13,13 +10,13 @@
 		count,
 		digitsWidth,
 		labelGutter,
+		labelsAbove,
 		middle,
 		PAD,
 		percent,
 		px,
 		series,
 		shorten,
-		stackRows,
 		theme,
 	} from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
@@ -76,26 +73,26 @@
 	// natural maximum, so it scales to the largest in the set.
 	const scale = $derived(value ? Math.max(1, ...rows.map(amount)) : domain(rows.map(amount)))
 
-	const stacked = $derived(stackRows(width, LABEL_SIZE))
+	const labelAbove = $derived(labelsAbove(width, LABEL_SIZE))
 
 	const labelWidth = $derived(labelGutter(width))
 
 	// Reserved from the widest label it will actually draw.
 	const valueWidth = $derived(Math.ceil(Math.max(24, ...rows.map((row: any) => digitsWidth(format(row), LABEL_SIZE)))) + 12)
-	const plotX = $derived(stacked ? 0 : labelWidth + 12)
-	const plotWidth = $derived(Math.max(1, width - plotX - (stacked ? 0 : valueWidth) - PAD))
+	const plotX = $derived(labelAbove ? 0 : labelWidth + 12)
+	const plotWidth = $derived(Math.max(1, width - plotX - (labelAbove ? 0 : valueWidth) - PAD))
 
 	const x = $derived(scaleLinear().domain([0, scale]).range([0, plotWidth]).clamp(true))
 
 	// Stacked rows carry a line of text as well as the bar.
-	const ROW = $derived(stacked ? LINE + BAR + GAP : BAR + GAP)
+	const ROW = $derived(labelAbove ? LINE + BAR + GAP : BAR + GAP)
 	const height = $derived(PAD + rows.length * ROW + PAD)
 </script>
 
 <Frame {figure} {width} {height}>
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + i * ROW}
-		{@const bar = px(x(amount(row)))}
+		{@const bar = amount(row) ? Math.max(1, px(x(amount(row)))) : 0}
 		{@const label = clip(short(row.response), chars(width - valueWidth, LABEL_SIZE))}
 
 		<g opacity={dim(row.response)}>
@@ -103,7 +100,7 @@
 				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity="0.05" />
 			{/if}
 
-			{#if stacked}
+			{#if labelAbove}
 				<text x={PAD} y={middle(y + LINE / 2, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
 					{label}
 				</text>
