@@ -36,7 +36,7 @@
 	</section>
 
 	<section class="container my-60 grid gap-20 lg:grid-cols-2">
-		<img src="/home-categories.svg" class="h-auto w-full" width="611" height="485" alt="Categories" />
+		<img src="/img/home-categories.svg" class="h-auto w-full" width="611" height="485" alt="Categories" />
 		<p class="max-w-2xl text-4xl">
 			<span class="font-headline-notch block text-[260px] leading-60">
 				{data.stats.questions}
@@ -46,10 +46,10 @@
 	</section>
 
 	<section class="spindle-scope relative overflow-hidden">
-		<img src="/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
+		<img src="/img/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
 		<div class="relative z-50 container my-60 flex items-end text-2xl leading-snug lg:w-50">
 			<dl
-				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:px-5 [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
+				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:dark:text-black *:px-5 [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
 			>
 				<dt>{count(data.stats.respondents)}</dt>
 				<dd>Responses</dd>
@@ -99,9 +99,9 @@
   					</a>
   				</li>
   			{/each}
-  			<li class="group min-h-80 bg-black-500 text-white">
+  			<li class="group min-h-80 bg-black-500 dark:bg-black-400 text-white">
   				<a
-  					class="relative flex h-full flex-col bg-black p-4 transition-transform group-hover:-translate-2 dark:bg-black-500"
+  					class="relative flex h-full flex-col bg-black p-4 transition-transform group-hover:-translate-2 dark:bg-black"
   					href={resolve('/[year]/methodology', { year: data?.settings.year })}
   				>
   					<strong class="col-span-3 mt-auto text-4xl font-normal">Methodology</strong>
@@ -111,8 +111,8 @@
 		</div>
 	</nav>
 
-	<nav aria-label="Previous surveys" class="bg-black py-30 bg-cover bg-center p-5" style="background-image:url(/home-pryamid.svg)">
-  	<div class="bg-white p-8 max-w-2xl mx-auto">
+	<nav aria-label="Previous surveys" class="bg-black py-30 bg-cover bg-center p-5 bg-[url(/img/home-pryamid.svg)]">
+  	<div class="bg-white dark:bg-black p-8 max-w-2xl mx-auto">
   		<h2 class="font-headline mb-8 text-4xl text-center">
         16 years of insights,<br/>Powered by Developers.
       </h2>
@@ -120,14 +120,14 @@
       <ul>
         {#each [2025,2024,2023,2022,2021] as year (`prev-${year}`)}
           <li>
-            <a href="https://survey.stackoverflow.co/{year}" class="flex justify-between py-3 -mt-px border-b hover:bg-black hover:text-white transition-[padding] hover:px-4 hover:-mx-4">
+            <a href="https://survey.stackoverflow.co/{year}" class="flex justify-between py-3 -mt-px border-b hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:px-4 hover:-mx-4">
               {year}
               <Icon src={IconArrowRight} />
             </a>
           </li>
         {/each}
       </ul>
-      <a href="https://survey.stackoverflow.co/" class="bg-black-200 hover:bg-black-150 text-center block w-full px-5 py-2 mt-8">
+      <a href="https://survey.stackoverflow.co/" class="bg-black-200 hover:bg-black-150 dark:text-black text-center block w-full px-5 py-2 mt-8">
         Go even more retro…
       </a>
 		</div>

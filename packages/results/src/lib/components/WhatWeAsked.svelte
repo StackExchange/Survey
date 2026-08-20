@@ -26,14 +26,14 @@
 	let { definition, name }: { definition: any; name: string } = $props()
 </script>
 
-<div class="relative bg-blue-extra-light p-4 dark:bg-blue-dark">
+<div class="relative bg-blue-extra-light p-4 dark:bg-blue-light dark:text-black">
 	<div class="md text-sm">{@html definition.titleHtml}</div>
 
 	{#if definition.carry_forward?.from}
 		<p class="mt-2 text-xs text-black-400 dark:text-black-300">Options carried forward from {definition.carry_forward.from}.</p>
 	{/if}
 
-	<p class="mt-2 text-xs text-black-400 dark:text-black-300">{askedMeta(definition)}</p>
+	<p class="mt-2 text-xs text-black-400">{askedMeta(definition)}</p>
 
 	<a
 		aria-label="View in context: {name}"

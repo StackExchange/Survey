@@ -30,7 +30,7 @@
 	.vt-chapter-header {
 		padding-block: clamp(2.5rem, 8vw, 4rem) clamp(1.5rem, 6vw, 4.5rem);
 
-		background-image: url(/bg-brand-hero.svg);
+		background-image: url(/img/bg-brand-hero.svg);
 		background-position: 100% 100%;
 		background-repeat: no-repeat;
 		background-size: contain;

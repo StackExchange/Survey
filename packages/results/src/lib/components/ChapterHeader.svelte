@@ -40,7 +40,7 @@
 		chapter: {
 			innerClass: 'container mx-auto',
 			nameEl: 'h1',
-			wrapClass: `flex flex-col items-stretch pt-25 pb-7 min-h-[50vh] ${bg} bg-[url(/bg-chapter-hero.svg)] bg-no-repeat bg-cover bg-bottom-right`,
+			wrapClass: `flex flex-col items-stretch pt-25 pb-7 min-h-[50vh] ${bg} bg-[url(/img/bg-chapter-hero.svg)] bg-no-repeat bg-cover bg-bottom-right`,
 			nameClass: 'font-headline-notch mt-auto text-8xl text-[clamp(var(--text-5xl),5vw+1rem,var(--text-8xl))] font-normal',
 			blockClass: '',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',

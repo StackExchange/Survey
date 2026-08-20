@@ -48,10 +48,9 @@
 	} & HTMLAttributes<HTMLElement> = $props()
 
 	const variants = {
-		outline: 'border hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-600',
-		// The ground stays light in both themes, so the ink has to be stated.
-		filled: 'bg-black-200 text-black hover:bg-black hover:text-white dark:hover:bg-black-600',
-		plain: 'hover:bg-black hover:text-white dark:hover:bg-black-600',
+		outline: 'border dark:border-black-400 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500',
+		filled: 'bg-black-200 dark:bg-black-400 dark:text-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-black-300',
+		plain: 'hover:bg-black dark:hover:bg-black-500 hover:text-white',
 		link: 'underline underline-offset-2 hover:text-orange',
 	}
 

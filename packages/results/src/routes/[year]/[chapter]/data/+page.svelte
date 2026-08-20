@@ -114,7 +114,7 @@
 								{@const definition = shown.definition}
 
 								<div class="relative mt-auto pt-6">
-									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-dark">
+									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-light dark:text-black">
 										<Icon src={IconQuestion} />
 										What we asked
 									</h4>
