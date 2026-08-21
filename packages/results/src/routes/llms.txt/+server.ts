@@ -1,62 +1,46 @@
 import years from '$archive/index.json'
-import { licence, siteName, siteUrl } from '$config'
+import { licence, siteDescriptionLong, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
-import { listPages } from '$lib/server/llms'
 
-// Nothing links here, so it is also named in `prerender.entries` in vite.config.js.
 export const prerender = true
 
-// https://llmstxt.org — an index, not a dump. Generated from the same content
-// model as the pages so the two cannot drift.
 export function GET() {
-	const pages = listPages()
+	const [current, ...past] = years as any[]
 	const { year } = site.settings
 
-	// Names both, so a model can skip the HTML entirely.
-	const entry = ({ path, markdown, title, description }: any) =>
-		`- [${title}](${siteUrl}${path}): ${description.trim() || title} — markdown: ${siteUrl}${markdown}`
+	const link = (results: string) => (results.startsWith('/') ? `${siteUrl}${results}` : results)
 
-	const of = (...kinds: string[]) => pages.filter(({ kind }) => kinds.includes(kind))
+	const body = `# ${siteName}
 
-	const body = `# Stack Overflow Developer Survey
+> ${siteDescriptionLong}
 
-> ${site.settings.descriptionLong}
+Run every year since ${years[years.length - 1].year}, the survey asks developers about the
+technologies they use, how they work, and how they learn. Each year is published at its own
+path and stays there, and the response-level data is released once the results are out.
 
-Results are published annually and cover the technologies developers use, how they
-work, and how they learn. Response-level data is released for every year.
+This page covers the survey as a whole. For the full contents of a single year — chapters,
+figures, and one page per question — read that year's own index, ${siteUrl}/${year}/llms.txt.
 
-Every page on this site has a markdown twin at the same URL plus \`.md\`.
+## ${current.year} results
 
-## ${year} results
+- [${siteName} ${current.year}](${link(current.results)}): ${site.settings.description.trim() || `The ${current.year} results.`}
+- [${current.year} index](${siteUrl}/${current.year}/llms.txt): every chapter, figure, and question in ${current.year}.
+- [${current.year} methodology](${siteUrl}/${current.year}/methodology): how the survey was run and how the numbers were worked out.
 
-${of('year', 'chapter', 'data').map(entry).join('\n')}
-
-## How it was asked
-
-${of('methodology').map(entry).join('\n')}
+Every page under /${current.year} has a markdown twin at the same URL plus \`.md\`.
 
 ## Past years
 
-${years
-	.slice(1)
-	.map(({ year: past, results }) => `- [${past} results](${results.startsWith('/') ? `${siteUrl}${results}` : results})`)
-	.join('\n')}
+${past.map(({ year: y, results }) => `- [${y} results](${link(results)})`).join('\n')}
 
 ## Response data
 
-Raw responses, one CSV per year, released under the ${licence.database.name}.
+Raw responses, one CSV per year, released under the ${licence.database.name}. The files are
+large — tens to hundreds of megabytes — and are served from GitHub.
 
-${years
-	.slice(1)
-	.map(({ year: past, data }) => `- [${past} responses (CSV)](${data})`)
-	.join('\n')}
-
-## Optional
-
-One page per question, each with every respondent group and a markdown twin.
-
-${of('question')
-	.map(({ path, markdown, title }) => `- [${title}](${siteUrl}${path}) — markdown: ${siteUrl}${markdown}`)
+${past
+	.filter(({ data }) => data)
+	.map(({ year: y, data, source }) => `- [${y} responses (CSV)](${data})${source ? ` — schema and notes: ${source}` : ''}`)
 	.join('\n')}
 
 ## Licence
