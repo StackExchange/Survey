@@ -6,7 +6,7 @@
 	import ChapterHeader from '$components/ChapterHeader.svelte'
 	import ChapterJump from '$components/ChapterJump.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import NavToggle from '$components/NavToggle.svelte'
+	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import Seo from '$components/Seo.svelte'
 
 	import Highlight from '$charts/Highlight.svelte'
@@ -21,7 +21,7 @@
 
 <main id="main" tabindex="-1">
 	<div class="container mx-auto my-8 flex items-center justify-between">
-		<NavToggle
+		<ButtonToggle
 			options={[
 				{ href: resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter }), label: 'Overview' },
 				{ href: resolve('/[year]/[chapter]/data', { year: params.year, chapter: params.chapter }), label: 'Full data' },

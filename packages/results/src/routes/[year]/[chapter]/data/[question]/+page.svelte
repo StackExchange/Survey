@@ -12,8 +12,8 @@
 
 	import Button from '$components/Button.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import DataExport from '$components/DataExport.svelte'
-	import Demographics, { tabId } from '$components/Demographics.svelte'
+	import QuestionData from '$components/QuestionData.svelte'
+	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
 	import Seo from '$components/Seo.svelte'
@@ -149,7 +149,7 @@
 
 	{#if demographics.length > 1}
 		<div class="border-b border-black-150 dark:border-black-500">
-			<Demographics {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
+			<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
 		</div>
 	{/if}
 
@@ -228,7 +228,7 @@
 			</p>
 		{/if}
 
-		<DataExport {figure} name={exportName} url={shareUrl} year={data.year} />
+		<QuestionData {figure} name={exportName} url={shareUrl} year={data.year} />
 	</section>
 
 	{#if dev}

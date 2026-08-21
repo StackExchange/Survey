@@ -7,7 +7,6 @@
 	import { toCsv, toJson, toMarkdown } from '$lib/table'
 
 	import Button from './Button.svelte'
-	import Icon from './Icon.svelte'
 
 	let { figure, name, url, year }: { figure: any; name: string; url: string; year: string } = $props()
 
@@ -47,9 +46,9 @@
 </script>
 
 <div class="flex flex-col gap-6">
-	{#each formats as format (format.id)}
-		<div class="flex flex-col gap-4 border-t border-black-200 pt-5 lg:grid lg:grid-cols-12 lg:items-start lg:gap-6">
-			<div class="lg:col-span-4">
+	{#each formats as format, i (format.id)}
+		<div class="items-start gap-4 {i !== 0 ? 'border-t' : undefined} border-black-200 dark:border-black-500 pt-5 lg:flex lg:gap-6">
+			<div class="flex-1/3">
 				<h3 class="mb-2 font-headline text-2xl font-medium">
 					{#if format.text}
 						<label for="export-{format.id}">{format.label}</label>
@@ -69,24 +68,23 @@
 			</div>
 
 			{#if format.text}
-				<div class="lg:col-span-6">
+				<div class="relative flex-2/3">
 					<textarea
 						id="export-{format.id}"
-						class="w-full resize-y border-0 bg-black-100 p-3 font-mono text-xs dark:bg-black"
+						class="w-full resize-y border-0 bg-black-100 p-3 pr-15 font-mono text-xs dark:bg-black"
 						rows={format.rows ?? 14}
 						readonly
 						spellcheck="false"
 						value={format.text}></textarea>
+					<div class="absolute top-0 right-0">
+						<Button variant="filled" copy={format.text} aria-label="Copy {format.label}" icon={IconClipboard} />
+					</div>
 				</div>
 			{/if}
 
-			<div class="lg:col-span-2 lg:col-start-11">
-				{#if format.download}
-					<Button class="w-full truncate" label="Download CSV" icon={IconArrowDownBox} onclick={format.download} />
-				{:else}
-					<Button class="w-full truncate" copy={format.text} label="Copy {format.label}" icon={IconClipboard} />
-				{/if}
-			</div>
+			{#if format.download}
+				<Button label="Download CSV" icon={IconArrowDownBox} onclick={format.download} />
+			{/if}
 		</div>
 	{/each}
 </div>

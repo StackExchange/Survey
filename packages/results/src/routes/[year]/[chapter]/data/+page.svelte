@@ -8,10 +8,10 @@
 	import ChapterJump from '$components/ChapterJump.svelte'
 	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import Demographics, { tabId } from '$components/Demographics.svelte'
+	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
-	import NavToggle from '$components/NavToggle.svelte'
+	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import Seo from '$components/Seo.svelte'
 	import WhatWeAsked from '$components/WhatWeAsked.svelte'
 
@@ -62,7 +62,7 @@
 
 <main id="main" tabindex="-1">
 	<div class="container mx-auto mt-8 mb-25 flex items-center justify-between">
-		<NavToggle
+		<ButtonToggle
 			options={[
 				{ href: resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter }), label: 'Overview' },
 				{ href: resolve('/[year]/[chapter]/data', { year: params.year, chapter: params.chapter }), label: 'Full data' },
@@ -125,7 +125,7 @@
 						</header>
 
 						<div class="flex min-w-0 shrink basis-3/4 flex-col">
-							<Demographics
+							<QuestionTabs
 								demographics={groups}
 								selected={shown.demographic.id}
 								label="Respondent group for {block.name}"

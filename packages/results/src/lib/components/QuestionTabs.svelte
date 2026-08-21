@@ -6,8 +6,6 @@
 <script lang="ts">
 	import { respondents } from '$lib/table'
 
-	// Demographic tabs. Presentational — the page owns the selection. One shared
-	// panel, so every tab points at the same `aria-controls`.
 	let {
 		demographics,
 		selected,
@@ -67,10 +65,6 @@
 			onkeydown={onKeydown}
 		>
 			{entry.demographic.name}
-			<!-- `relative` on the button is load-bearing: sr-only is position:absolute,
-			     and without a positioned ancestor these resolve against the initial
-			     containing block, escaping the tablist's overflow and widening the
-			     document by however far the last tab sits off-screen. -->
 			<span class="sr-only">, n = {respondents(entry.demographic.n)}</span>
 		</button>
 	{/each}
