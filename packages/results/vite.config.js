@@ -9,7 +9,6 @@ import years from '../archive/index.json' with { type: 'json' }
 import { generate, summarise } from './scripts/data.js'
 
 // Earlier years are other Netlify deploys, proxied in from netlify.toml
-// Exclude them from crawler errors
 const archived = new Set(years.map(({ year }) => `/${year}`))
 
 // What the generator reads, so dev can rebuild the payloads when they change.
@@ -17,10 +16,7 @@ const inputs = ['src/data', 'src/content/survey.json', '../../questions'].map((p
 
 export default defineConfig({
 	plugins: [
-		// Before sveltekit(): scripts/data.js bakes src/data + src/content into the
-		// payloads the routes import, so they must exist before the graph resolves.
-		// A plugin rather than a prebuild hook — `vite build` run directly, or a
-		// Netlify command that drifts, would silently skip a hook.
+		// scripts/data.js to bake the content vs doing it in server files
 		{
 			name: 'survey-data',
 			async buildStart() {

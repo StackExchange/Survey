@@ -17,22 +17,18 @@
 
 	let { data, params } = $props()
 
-	// Chosen group per figure, keyed by figure id — there are up to 28 on a page.
 	let chosen = $state<Record<string, string>>({})
 
 	function choose(block: any, id: string) {
 		chosen[block.id] = id
 	}
 
-	// Spread over the figure, so Figure and DataTable see one flat shape. The
-	// payload carries the cuts and nothing flat, so the first is the default.
 	function current(block: any) {
 		const groups = block.demographics ?? []
-		const group = groups.find((d: any) => d.demographic.id === chosen[block.id]) ?? groups[0]
+		const group = groups.find((d: any) => d.demographic.id === chosen[block.id]) ?? groups[0] // first is default
 		return group ? { ...block, ...group } : block
 	}
 
-	// Left off for the default group, whose bare URL is the canonical one.
 	function permalink(block: any) {
 		const path = resolve('/[year]/[chapter]/data/[question]', { year: data.year, chapter: data.chapter.id, question: block.id })
 		const id = chosen[block.id]
