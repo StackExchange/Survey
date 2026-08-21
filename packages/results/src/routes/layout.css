@@ -101,6 +101,7 @@
 	--chart-ink: var(--color-black);
 	--chart-muted: var(--color-black-400);
 	--chart-rule: var(--color-blue-light);
+	--chart-grid: var(--color-black-350);
 	--chart-tint: var(--color-black-100);
 	--chart-accent: var(--color-orange);
 
@@ -131,6 +132,7 @@
 	--chart-muted: var(--color-black-300);
 	--chart-tint: var(--color-black-500);
 	--chart-ghost: var(--color-black-500);
+	--chart-grid: var(--color-black-500);
 
 	/* The brand ramp reads on both grounds except its darkest blue, which all but
 	   disappears on the dark page. Only that one is swapped — and once it is light,
