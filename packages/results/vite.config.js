@@ -57,9 +57,6 @@ export default defineConfig({
 			paths: {
 				relative: false,
 			},
-			// Nothing links to these, so crawling alone would miss them. `*` covers
-			// only routes without required params; routes under [year] declare their
-			// own `entries` beside the route.
 			prerender: {
 				// Nothing links to the endpoints, so they are named rather than crawled.
 				entries: ['*', '/sitemap.xml', '/index.md', '/llms.txt'],
