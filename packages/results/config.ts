@@ -32,7 +32,7 @@ export const chapterColour = (index: number) => chapterColours[(index - 1) % cha
 
 // Citation
 export const licence = {
-	database: { name: 'ODbL 1.0', url: 'https://opendatacommons.org/licenses/odbl/1-0/' },
+	database: { name: 'ODbL 1.0', full: 'Open Database License (ODbL) 1.0', url: 'https://opendatacommons.org/licenses/odbl/1-0/' },
 	contents: { name: 'DbCL 1.0', url: 'https://opendatacommons.org/licenses/dbcl/1-0/' },
 	contributions: { name: 'CC BY-SA', url: 'https://creativecommons.org/licenses/by-sa/4.0/' },
 	code: { name: 'Apache-2.0', url: `${githubRepo}/blob/main/LICENSE.md` },
