@@ -2,7 +2,7 @@
 	import type { Chrome } from '$charts/utils/chrome'
 	import type { TooltipData } from '$charts/utils/tooltip'
 
-	import { IconShare } from '@stackoverflow/stacks-icons/icons'
+	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { openQuestion } from '$lib/panel'
@@ -72,10 +72,10 @@
 		<span class="sr-only">{caption}</span>
 
 		{#if href}
-			<p class="absolute right-0 bottom-0 flex gap-4 bg-black-150 px-4 pb-4 dark:bg-black-500">
-				<a {href} onclick={open} class="ml-auto flex items-center gap-1.5 hover:underline" aria-label="Permalink: {block.demographic.name}">
-					Share & permalink
-					<Icon src={IconShare} />
+			<p class="absolute right-0 bottom-0 flex gap-4 bg-black-150 dark:bg-black-500">
+				<a {href} onclick={open} class="px-4 pt-4 pb-4 ml-auto flex items-center gap-1.5 hover:bg-black hover:text-white" aria-label="Permalink: {block.demographic.name}">
+					Share or cite
+					<Icon src={IconLink} />
 				</a>
 			</p>
 		{/if}
