@@ -6,8 +6,8 @@ import type { Component } from 'svelte'
 
 import { mount, unmount } from 'svelte'
 
-import headlineFont from '$lib/assets/fonts/StackSansHeadline[wght].woff2?url'
-import textFont from '$lib/assets/fonts/StackSansText[wght].woff2?url'
+import headlineFont from '$lib/assets/fonts/StackSansHeadline.woff2?url'
+import textFont from '$lib/assets/fonts/StackSansText.woff2?url'
 
 import ChartRoot from '$charts/ChartRoot.svelte'
 
