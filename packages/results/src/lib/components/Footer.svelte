@@ -59,9 +59,10 @@
 				<li><a class="hover:underline" href="https://stackoverflow.com/legal/cookie-policy/">Cookie policy</a></li>
 				<li>
 					<button
-						class="ot-sdk-show-settings flex cursor-pointer items-center gap-2 hover:underline"
+						class="flex cursor-pointer items-center gap-2 hover:underline"
 						type="button"
 						title="Open cookie settings"
+						onclick={() => window.OneTrust?.ToggleInfoDisplay()}
 					>
 						Your Privacy Choices
 						<Icon src={IconServiceCCPA} />
