@@ -8,7 +8,8 @@ question:
   randomize: true
   options:
     - Books / physical media
-    - Technical documentation (is generated for/by the tool or system)
+    - label: Technical documentation (is generated for/by the tool or system)
+      short: Technical docs
     - Coding bootcamp
     - Colleague or on-the-job training
     - Games or coding challenges

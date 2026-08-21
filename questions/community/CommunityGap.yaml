@@ -7,13 +7,13 @@ question:
   required: false
   options:
     - label: I usually find answers without posting
-      short: I find answers without asking
+      short: Find without posting
     - label: AI tools answer enough of my questions
-      short: AI answers my questions
+      short: I use AI
     - label: I do not feel confident asking questions publicly
       short: Not confident asking
     - label: I worry about being judged or criticized
-      short: Worry about being judged
+      short: Judged/critizied
     - I do not have time
     - label: I do not know where to participate
       short: Don't know where to go
@@ -22,11 +22,11 @@ question:
     - label: Communities do not feel welcoming to people like me
       short: Not welcoming to me
     - label: My questions are too specific to my company or context
-      short: My questions are too specific
+      short: Questions are specific
     - label: I prefer private conversations
       short: I prefer private talk
     - label: I have privacy, legal, or employer restrictions
-      short: Privacy or employer rules
+      short: Privacy or employer
     - label: Nothing prevents me from participating more
       short: Nothing prevents me
     - Not applicable

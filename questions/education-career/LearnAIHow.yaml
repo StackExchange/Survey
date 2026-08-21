@@ -9,7 +9,7 @@ question:
   options:
     - Books / Physical media
     - label: Technical documentation (is generated for/by the tool or system)
-      short: Technical documentation
+      short: Technical docs
     - Coding Bootcamp
     - label: Colleague or on-the-job training
       short: Colleague or on-the-job
@@ -17,7 +17,7 @@ question:
     - label: Online Courses or Certification (includes all media types)
       short: Online courses or certs
     - label: AI CodeGen tools or AI-enabled apps
-      short: AI codegen tools or apps
+      short: AI
     - Blogs or podcasts
     - label: Videos (not associated with specific online course or certification)
       short: Videos
