@@ -5,9 +5,10 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { SKEW, slab } from '$charts/utils/iso'
-	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, DIM, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -17,14 +18,14 @@
 	const LABEL_SIZE = 34
 	const VALUE_SIZE = 15
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const largest = $derived(Math.max(0.0001, ...rows.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 
 	const column = $derived(px((width * 0.72) / Math.max(rows.length, 1)))
 	const thickness = $derived(px(column * 0.62))
@@ -40,13 +41,7 @@
 	const y = $derived(scaleLinear().domain([0, largest]).range([0, plot]).clamp(true))
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: series(4) }] }, event)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: series(4) }] }, event)
 	}
 </script>
 
@@ -58,12 +53,12 @@
 		{@const box = slab(x, floor - body, thickness, body, depth)}
 		{@const label = clip(short(row.response), chars(body - 24, LABEL_SIZE))}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect {x} y="0" width={px(Math.max(thickness + depth, HIT))} height={floor} fill="transparent" />
 
-			<g opacity={active === null || active === i ? 1 : 0.72}>
+			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.side} fill={series(0)} />
 				<path d={box.front} fill={series(4)} />
 				<path d={box.top} fill={theme.faceTop} />

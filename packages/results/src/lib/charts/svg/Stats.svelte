@@ -1,18 +1,12 @@
 <script lang="ts">
+	import type { Caption } from '$charts/utils/caption'
+
 	import { icons, STATS } from '$charts/utils/chrome'
 	import { chars, clip, middle, PAD, px, textWidth, theme } from '$charts/utils/theme'
 
 	import Glyph from './Glyph.svelte'
 
-	let {
-		figure,
-		y,
-		width,
-		n,
-		share,
-		terms,
-		margin = PAD,
-	}: { figure: any; y: number; width: number; n: string; share: string | null; terms?: string; margin?: number } = $props()
+	let { facts, y, width, terms, margin = PAD }: { facts: Caption; y: number; width: number; terms?: string; margin?: number } = $props()
 
 	const SIZE = 14
 	const ICON = 20
@@ -21,9 +15,9 @@
 
 	const items = $derived(
 		[
-			n && { icon: icons.respondents, text: n },
-			share && { icon: icons.share, text: share },
-			figure.subtext && { icon: icons.note, text: String(figure.subtext) },
+			facts.n && { icon: icons.respondents, text: facts.n },
+			facts.share && { icon: icons.share, text: facts.share },
+			facts.subtext && { icon: icons.note, text: facts.subtext },
 		].filter(Boolean) as { icon: (typeof icons)['note']; text: string }[]
 	)
 

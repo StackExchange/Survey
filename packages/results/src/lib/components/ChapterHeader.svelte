@@ -21,10 +21,8 @@
 		children?: Snippet
 	} = $props()
 
-	// Presentation, so derived here rather than shipped from the server.
 	const colours = $derived(chapterColour(chapter.index))
 	const bg = $derived(colours.bg)
-	// The data variant only paints its blocks from lg up, so it needs the responsive colour.
 	const bgLg = $derived(colours.bgLg)
 
 	const variants = $derived({
@@ -59,7 +57,7 @@
 			wrapClass: 'bg-black-150 relative overflow-hidden flex flex-col items-stretch pt-25 pb-7 dark:bg-black-500 min-h-[50vh]',
 			nameClass: 'font-headline text-4xl font-normal',
 			blockClass: 'lg:px-2 lg:py-1',
-			sectionClass: 'lg:bg-black lg:text-white lg:dark:bg-white lg:dark:text-black block md:inline-block',
+			sectionClass: 'lg:bg-black lg:text-white lg:dark:bg-white lg:dark:text-black',
 			descriptionClass: 'text-xl lg:bg-white lg:dark:bg-black lg:p-4 mt-5 lg:mt-0',
 			vt: true,
 			mark: true,

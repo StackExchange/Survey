@@ -7,11 +7,13 @@
 	import { scaleLinear } from 'd3-scale'
 
 	import { useFocus } from '$charts/utils/chrome'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import {
 		chars,
 		clip,
 		count,
 		hanging,
+		HOVER_WASH,
 		legend,
 		middle,
 		onSeries,
@@ -41,13 +43,13 @@
 	const LABEL_SIZE = 13
 	const VALUE_SIZE = 14
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// One hit target per statement, not per segment: a 2% slice is a few pixels
 	// wide, and it gives the narrow segments somewhere to show their label.
 	const enter = (r: number, row: any, event: PointerEvent) => {
-		active = r
-		onhover?.(
+		hover.enter(
+			r,
 			{
 				title: String(row.response ?? ''),
 				rows: row.segments.map((segment: any, i: number) => ({
@@ -58,11 +60,6 @@
 			},
 			event
 		)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
 	}
 
 	const short = $derived(shorten(figure))
@@ -109,15 +106,15 @@
 				opacity={dim(row.response)}
 				role="presentation"
 				onpointermove={(event) => enter(r, row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
 			>
 				<!-- First child, so every label paints over it and stays selectable. The
 				     handlers are on the group, so the whole row still answers the pointer. -->
 				<rect x={-PAD} y={y - GAP / 4} width={plotWidth + PAD * 2} height={Math.max(band, HIT)} fill="transparent" />
 
-				{#if active === r}
-					<rect x={-PAD} y={y - GAP / 4} width={plotWidth + PAD * 2} height={band} fill={theme.ink} opacity="0.05" />
+				{#if hover.active === r}
+					<rect x={-PAD} y={y - GAP / 4} width={plotWidth + PAD * 2} height={band} fill={theme.ink} opacity={HOVER_WASH} />
 				{/if}
 
 				<text y={hanging(y, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>

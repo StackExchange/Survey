@@ -8,6 +8,8 @@
 
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
+	import { rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, count, middle, PAD, px, pxPath, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
@@ -16,7 +18,7 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	// A strand under the pointer, so the rest can drop back and let it be followed.
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// One gradient per link, so they need a namespace of their own on the page.
 	const uid = $props.id()
@@ -33,7 +35,7 @@
 	// each end rather than the single gutter a row chart needs.
 	const LABEL_WIDTH = $derived(Math.round(width * 0.17))
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
+	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 
 	// A row is `response -> series`: worked with, wants to work with. The same
@@ -88,8 +90,8 @@
 	const hue = (node: any) => series(node.label ?? 0)
 
 	const enter = (i: number, edge: any, event: PointerEvent) => {
-		active = i
-		onhover?.(
+		hover.enter(
+			i,
 			{
 				title: `${edge.source.name} → ${edge.target.name}`,
 				rows: [
@@ -100,11 +102,6 @@
 			},
 			event
 		)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
 	}
 </script>
 
@@ -140,7 +137,7 @@
 				stroke="url(#link-{uid}-{i})"
 				stroke-width={px(Math.max(1, edge.width ?? 1))}
 				fill="none"
-				opacity={active === null ? 0.35 : active === i ? 0.85 : 0.12}
+				opacity={hover.active === null ? 0.35 : hover.active === i ? 0.85 : 0.12}
 			/>
 		{/each}
 
@@ -154,8 +151,8 @@
 				fill="none"
 				role="presentation"
 				onpointermove={(event) => enter(i, edge, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
 			/>
 		{/each}
 

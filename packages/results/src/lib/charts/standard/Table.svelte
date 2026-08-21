@@ -1,7 +1,8 @@
 <script lang="ts">
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { chars, clip, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import { useHover } from '$charts/utils/hover.svelte'
+	import { chars, clip, HOVER_WASH, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 	import { tableOf } from '$lib/table'
 
@@ -14,19 +15,14 @@
 	const HEAD_SIZE = 14
 	const CELL_SIZE = 14
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const enter = (r: number, row: any, event: PointerEvent) => {
-		active = r
-		onhover?.(
+		hover.enter(
+			r,
 			{ title: row.cells[0], rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })) },
 			event
 		)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
 	}
 
 	const table = $derived(tableOf(figure))
@@ -65,17 +61,17 @@
 		{#each rows as row, r (r)}
 			{@const y = HEAD + r * ROW}
 
-			<g role="presentation" onpointermove={(event) => enter(r, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<g role="presentation" onpointermove={(event) => enter(r, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 				<rect x={PAD} y={y + (ROW - Math.max(ROW, HIT)) / 2 - 4} width={width - PAD * 2} height={Math.max(ROW, HIT)} fill="transparent" />
 
-				{#if r % 2 || active === r}
+				{#if r % 2 || hover.active === r}
 					<rect
 						x={PAD}
 						y={y - 4}
 						width={width - PAD * 2}
 						height={ROW}
-						fill={active === r ? theme.ink : theme.tint}
-						opacity={active === r ? 0.05 : 1}
+						fill={hover.active === r ? theme.ink : theme.tint}
+						opacity={hover.active === r ? HOVER_WASH : 1}
 					/>
 				{/if}
 

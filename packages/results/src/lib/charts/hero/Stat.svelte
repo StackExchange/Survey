@@ -3,7 +3,7 @@
 	// The plinth is what keeps it in the same family as the other nine.
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { formatOf, readingOf, rowsOf, splitUnit } from '$charts/utils/expressive'
 	import { slab } from '$charts/utils/iso'
 	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'
 
@@ -16,10 +16,7 @@
 	const row = $derived(rowsOf(figure)[0])
 	const short = $derived(shorten(figure))
 
-	// Only a trailing `%` splits off, as in ../text/Stat.svelte.
-	const text = $derived(row ? formatOf(figure)(row) : '—')
-	const unit = $derived(text.endsWith('%') ? '%' : '')
-	const figures = $derived(unit ? text.slice(0, -unit.length) : text)
+	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
 
 	const SIZE = $derived(px(Math.min(width * 0.34, 380)))
 	const plinth = $derived(px(SIZE * 0.16))

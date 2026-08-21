@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Two values as two squares. Area rather than height, so "three times more" is
 	// three times the square — the sides are the square roots of the shares.
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
@@ -17,7 +17,7 @@
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const largest = $derived(Math.max(0.0001, ...rows.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 
 	// The tallest square gets the plot, and it is always the larger of the two.
 	const box = $derived(px(Math.min((width - GAP) * 0.62, 340)))

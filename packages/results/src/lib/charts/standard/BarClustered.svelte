@@ -6,21 +6,9 @@
 	import { scaleLinear } from 'd3-scale'
 
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import {
-		chars,
-		clip,
-		count,
-		digitsWidth,
-		labelGutter,
-		legend,
-		middle,
-		PAD,
-		percent,
-		px,
-		series,
-		shorten,
-		theme,
-	} from '$charts/utils/theme'
+	import { amountOf, formatOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
+	import { chars, clip, digitsWidth, HOVER_WASH, labelGutter, legend, middle, PAD, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
@@ -39,12 +27,12 @@
 	const LABEL_SIZE = 13
 	const VALUE_SIZE = 13
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// The group is the target, so the readout compares the cuts side by side.
 	const enter = (r: number, row: any, event: PointerEvent) => {
-		active = r
-		onhover?.(
+		hover.enter(
+			r,
 			{
 				title: String(row.response ?? ''),
 				rows: cuts.map((cut: any, i: number) => ({ value: format(row, i), label: cut.label, color: series(i) })),
@@ -53,24 +41,18 @@
 		)
 	}
 
-	const leave = () => {
-		active = null
-		onhover?.(null)
-	}
-
 	const short = $derived(shorten(figure))
 
 	// One bar per series, in the order the export introduced them.
 	const cuts: { key: string; label: string }[] = $derived((figure.series ?? []).map((name: string) => ({ key: name, label: short(name) })))
 
-	// A salary-style question labels its bars with a named measure instead of a share.
-	const value = $derived(figure.value ?? null)
-
 	// One group per response, holding a cell per series.
 	const rows = $derived(bySeries(figure.data, figure.series ?? []))
 
-	const amount = (row: any, i: number) => (value ? (row.cells[i]?.[value.key] ?? 0) : (row.cells[i]?.pct ?? 0))
-	const format = (row: any, i: number) => (value ? `${value.unit ?? ''}${count(amount(row, i))}` : percent(amount(row, i)))
+	// A group holds one cell per series, so the measure is read off the cell.
+	const cell = (row: any, i: number) => row.cells[i]
+	const amount = $derived(amountOf(figure, cell))
+	const format = $derived(formatOf(figure, cell))
 
 	const labelWidth = $derived(labelGutter(width))
 	const valueWidth = $derived(
@@ -107,15 +89,15 @@
 			opacity={dim(row.response)}
 			role="presentation"
 			onpointermove={(event) => enter(r, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
 		>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" y={y - GROUP_GAP / 2} {width} height={Math.max(groupHeight, HIT)} fill="transparent" />
 
-			{#if active === r}
-				<rect x="0" y={y - GROUP_GAP / 2} {width} height={groupHeight} fill={theme.ink} opacity="0.05" />
+			{#if hover.active === r}
+				<rect x="0" y={y - GROUP_GAP / 2} {width} height={groupHeight} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
 			<text

@@ -66,3 +66,8 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	rank: HighlightRank,
 	stat: TextStat,
 }
+
+// Which ids answer the "scale to the largest value" option — i.e. the charts that
+// call `useDomain()`. Here rather than in ChartDownload.svelte, so the ids and the
+// list that names them sit in one file.
+export const SCALABLE = new Set(['bar', 'bar-clustered', 'dumbbell'])

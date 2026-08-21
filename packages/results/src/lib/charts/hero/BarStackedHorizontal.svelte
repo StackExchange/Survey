@@ -5,9 +5,10 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { SKEW, slab } from '$charts/utils/iso'
-	import { chars, clip, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, DIM, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -18,14 +19,14 @@
 	const GAP = 46
 	const LABEL_SIZE = 15
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const largest = $derived(Math.max(0.0001, ...rows.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 
 	const depth = $derived(px(BAR * 0.62))
 	// The longest bar plus its end cap has to land inside the width.
@@ -43,13 +44,7 @@
 	const height = $derived(LEAD + rows.length * (BAR + GAP) - GAP)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(4) }] }, event)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(4) }] }, event)
 	}
 </script>
 
@@ -59,12 +54,12 @@
 		{@const y = px(LEAD + i * (BAR + GAP))}
 		{@const box = slab(0, y, length, BAR, depth)}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" y={px(y - box.rise)} width={px(Math.max(length + depth, HIT))} height={px(BAR + box.rise)} fill="transparent" />
 
-			<g opacity={active === null || active === i ? 1 : 0.75}>
+			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.top} fill={series(4)} />
 				<path d={box.front} fill={series(0)} />
 				<path d={box.side} fill={theme.faceTop} />

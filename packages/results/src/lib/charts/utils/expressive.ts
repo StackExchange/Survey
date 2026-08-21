@@ -8,17 +8,43 @@ export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
 // The salary questions carry a named measure instead of a share, resolved by the
 // loader into `{key, label, unit}`. Everything else is `pct`.
-const valueOf = (figure: any) => figure.value ?? null
+export const valueOf = (figure: any) => figure.value ?? null
 
-export const amountOf = (figure: any) => {
+// `pick` is for the charts whose row holds several measurements — a clustered
+// bar reads `row.cells[i]`, so it passes the cell in rather than the row.
+type Pick = (...args: any[]) => any
+const self: Pick = (row: any) => row
+
+export const amountOf = (figure: any, pick: Pick = self) => {
 	const value = valueOf(figure)
-	return (row: any) => (value ? (row?.[value.key] ?? 0) : (row?.pct ?? 0))
+	return (...args: any[]) => {
+		const cell = pick(...args)
+		return value ? (cell?.[value.key] ?? 0) : (cell?.pct ?? 0)
+	}
 }
 
-export const formatOf = (figure: any) => {
+export const formatOf = (figure: any, pick: Pick = self) => {
 	const value = valueOf(figure)
-	const amount = amountOf(figure)
-	return (row: any) => (value ? `${value.unit ?? ''}${count(amount(row))}` : percent(amount(row)))
+	const amount = amountOf(figure, pick)
+	return (...args: any[]) => (value ? `${value.unit ?? ''}${count(amount(...args))}` : percent(amount(...args)))
+}
+
+// Never zero: an empty or all-zero set would divide a scale by nothing. The
+// epsilon is smaller than `useDomain`'s, which is scaling a drawn axis rather
+// than guarding a division.
+export const largestOf = (values: number[]) => Math.max(0.0001, ...values)
+
+// The two extremes, for the forms that draw only the top and bottom response.
+export function endsOf(rows: any[], amount: (row: any) => number) {
+	const sorted = [...rows].sort((a, b) => amount(b) - amount(a))
+	return sorted.length > 1 ? [sorted[0], sorted[sorted.length - 1]] : sorted
+}
+
+// A trailing "%" is drawn smaller than the number it follows, so it is split off
+// rather than being part of the string.
+export function splitUnit(text: string) {
+	const figures = String(text ?? '')
+	return figures.endsWith('%') ? { figures: figures.slice(0, -1), unit: '%' } : { figures, unit: '' }
 }
 
 // The chart in a sentence, for the `<desc>`. These forms draw few value labels —

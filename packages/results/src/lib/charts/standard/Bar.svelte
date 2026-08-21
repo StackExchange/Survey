@@ -4,16 +4,18 @@
 	import { scaleLinear } from 'd3-scale'
 
 	import { useDomain, useFocus } from '$charts/utils/chrome'
+	import { amountOf, formatOf, rowsOf, valueOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import {
 		chars,
 		clip,
 		count,
 		digitsWidth,
+		HOVER_WASH,
 		labelGutter,
 		labelsAbove,
 		middle,
 		PAD,
-		percent,
 		px,
 		series,
 		shorten,
@@ -36,13 +38,13 @@
 	const LINE = 20
 	const LABEL_SIZE = 16
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// The drawn label is shortened then clipped, so the readout is the only place
 	// the response appears in full.
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.(
+		hover.enter(
+			i,
 			{
 				title: String(row.response ?? ''),
 				rows: [
@@ -54,20 +56,13 @@
 		)
 	}
 
-	const leave = () => {
-		active = null
-		onhover?.(null)
-	}
-
-	const rows = $derived((figure.data ?? []).filter(Boolean))
+	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 
 	// The salary questions carry {key, label, unit}; everything else is a share.
-	const value = $derived(figure.value ?? null)
-	const unit = $derived(value?.unit ?? '')
-
-	const amount = (row: any) => (value ? (row[value.key] ?? 0) : (row.pct ?? 0))
-	const format = (row: any) => (value ? `${unit}${count(amount(row))}` : percent(amount(row)))
+	const value = $derived(valueOf(figure))
+	const amount = $derived(amountOf(figure))
+	const format = $derived(formatOf(figure))
 
 	// A share is drawn against a full 0–1 unless normalising; a value has no
 	// natural maximum, so it scales to the largest in the set.
@@ -101,15 +96,15 @@
 			opacity={dim(row.response)}
 			role="presentation"
 			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
 		>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" y={y + (ROW - Math.max(ROW, HIT)) / 2} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
-			{#if active === i}
-				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity="0.05" />
+			{#if hover.active === i}
+				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
 			{#if labelAbove}

@@ -2,7 +2,7 @@
 	// Cubes in a row, not the nested rectangles the name suggests: nesting reads as
 	// containment and these responses are multi-select. Sides go as the square root
 	// of the share, so the visible face is the proportional part.
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -18,7 +18,7 @@
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const largest = $derived(Math.max(0.0001, ...rows.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 	const sides = $derived(rows.map((row: any) => Math.sqrt(Math.max(amount(row), 0) / largest)))
 
 	// The biggest is 1 by definition, so the scale falls out of the shares.

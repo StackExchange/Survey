@@ -5,6 +5,8 @@
 
 	import { scaleLinear } from 'd3-scale'
 
+	import { rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, count, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
@@ -12,7 +14,7 @@
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// Two scatters on one page would otherwise share a gradient id.
 	const uid = $props.id()
@@ -23,7 +25,7 @@
 	const TICK_SIZE = 11
 	const LABEL_SIZE = 12
 
-	const rows = $derived((figure.data ?? []).filter(Boolean))
+	const rows = $derived(rowsOf(figure))
 	// Which two of the row's named columns to plot, resolved by the loader — the
 	// export names its columns and says nothing about where they belong.
 	const axes = $derived(figure.axes ?? null)
@@ -98,8 +100,8 @@
 	// Opacity is the one encoding a reader cannot put a number to, so the count
 	// leads the readout.
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.(
+		hover.enter(
+			i,
 			{
 				title: String(row.response ?? ''),
 				rows: [
@@ -110,11 +112,6 @@
 			},
 			event
 		)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
 	}
 </script>
 
@@ -155,7 +152,12 @@
 
 		{#each points as point, i (point.row.response ?? i)}
 			{@const side = point.flip ? -1 : 1}
-			<g role="presentation" onpointermove={(event) => enter(i, point.row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<g
+				role="presentation"
+				onpointermove={(event) => enter(i, point.row, event)}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
+			>
 				<!-- A 6px dot is a pinpoint; this is what the pointer actually has to
 				     find. First child, so the name paints over it and stays selectable. -->
 				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
@@ -163,10 +165,10 @@
 				<circle
 					cx={point.cx}
 					cy={point.cy}
-					r={active === i ? DOT + 2 : DOT}
+					r={hover.active === i ? DOT + 2 : DOT}
 					fill={theme.from}
 					fill-opacity={px(opacity(point.row.count ?? 0))}
-					stroke={active === i ? theme.ink : theme.background}
+					stroke={hover.active === i ? theme.ink : theme.background}
 				/>
 
 				<!-- A leader only when the name had to move off its own point. -->

@@ -5,9 +5,10 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, endsOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { slab } from '$charts/utils/iso'
-	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, descent, DIM, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -16,18 +17,15 @@
 
 	const LABEL_SIZE = 15
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const ends = $derived.by(() => {
-		const sorted = [...rowsOf(figure)].sort((a, b) => amount(b) - amount(a))
-		return sorted.length > 1 ? [sorted[0], sorted[sorted.length - 1]] : sorted
-	})
+	const ends = $derived(endsOf(rowsOf(figure), amount))
 
-	const largest = $derived(Math.max(0.0001, ...ends.map(amount)))
+	const largest = $derived(largestOf(ends.map(amount)))
 
 	const column = $derived(px(Math.min(width * 0.2, 210)))
 	const depth = $derived(px(column * 0.72))
@@ -40,13 +38,7 @@
 	const y = $derived(scaleLinear().domain([0, largest]).range([0, plot]).clamp(true))
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)
 	}
 </script>
 
@@ -59,12 +51,12 @@
 		{@const x = px(i * (column + gap))}
 		{@const box = slab(x, floor - body, column, body, depth)}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect {x} y={px(floor - body - box.rise)} width={px(Math.max(column + depth, HIT))} height={px(body + box.rise)} fill="transparent" />
 
-			<g opacity={active === null || active === i ? 1 : 0.75}>
+			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.side} fill={theme.faceSide} />
 				<path d={box.front} fill={series(0)} />
 				<path d={box.top} fill={theme.faceTop} />

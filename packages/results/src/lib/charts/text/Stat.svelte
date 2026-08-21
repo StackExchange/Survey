@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatOf, rowsOf } from '$charts/utils/expressive'
+	import { formatOf, rowsOf, splitUnit } from '$charts/utils/expressive'
 	import { shorten } from '$charts/utils/theme'
 
 	let { figure }: { figure: any } = $props()
@@ -7,10 +7,7 @@
 	const row = $derived(rowsOf(figure)[0])
 	const short = $derived(shorten(figure))
 
-	const text = $derived(row ? formatOf(figure)(row) : '—')
-
-	const unit = $derived(text.endsWith('%') ? '%' : '')
-	const figures = $derived(unit ? text.slice(0, -unit.length) : text)
+	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
 </script>
 
 <p class="font-headline text-[clamp(var(--text-6xl),14vw,14rem)] leading-none font-medium">

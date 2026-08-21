@@ -4,9 +4,9 @@
 
 	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
+	import { captionText } from '$charts/utils/caption'
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { openQuestion } from '$lib/panel'
-	import { ofSurvey, respondents } from '$lib/table'
 
 	import { charts } from '$charts'
 	import ChartRoot from '$charts/ChartRoot.svelte'
@@ -40,14 +40,7 @@
 
 	const scales = $derived(width ? '[&>svg]:h-auto' : '')
 
-	const n = $derived(block.demographic?.n)
-	const share = $derived(ofSurvey(block.demographic?.share))
-
-	const caption = $derived(
-		[block.demographic?.name, n != null && `n = ${respondents(n)}`, share && `${share} of respondents`, block.subtext]
-			.filter(Boolean)
-			.join(' · ')
-	)
+	const caption = $derived(captionText(block))
 </script>
 
 <figure class="relative flex h-full flex-col">

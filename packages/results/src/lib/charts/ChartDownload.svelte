@@ -11,7 +11,7 @@
 
 	import Button from '$components/Button.svelte'
 
-	import { charts } from '$charts'
+	import { charts, SCALABLE } from '$charts'
 
 	import ChartOptions from './ChartOptions.svelte'
 
@@ -53,12 +53,14 @@
 		focus: selection.focus,
 		normalise,
 		url,
+		// Not `figureTitle`: a masthead should stay blank rather than fall back to
+		// the question text or the chart id.
 		headline: figure.headline ?? figure.name,
 		demographic: figure.demographic?.name,
 	})
 
 	// The only charts that read `normalise`.
-	const scalable = $derived(['bar', 'bar-clustered', 'dumbbell'].includes(figure.chart) && !figure.value)
+	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
 
 	// The masthead is on the file only: on screen the page's own footer says the same.
 	const exported = $derived({ ...chrome, footer: true })
@@ -109,12 +111,12 @@
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
 			<span id="{id}-format" class="sr-only">Format</span>
 
-			<div role="radiogroup" aria-labelledby="{id}-format" class="flex w-full lg:w-auto bg-black-200 p-1 dark:bg-black-500">
+			<div role="radiogroup" aria-labelledby="{id}-format" class="flex w-full bg-black-200 p-1 lg:w-auto dark:bg-black-500">
 				{#each formats as option (option.value)}
 					<label class="flex flex-1 cursor-pointer text-center text-nowrap">
 						<input class="peer sr-only" type="radio" name="{id}-format" value={option.value} bind:group={format} />
 						<span
-							class="px-4 py-1 w-full select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
+							class="w-full px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
 						>
 							{option.label}
 							<span class="opacity-60">({option.extension})</span>

@@ -5,8 +5,9 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { amountOf, endsOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
+	import { chars, clip, descent, HOVER_WASH, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -16,19 +17,16 @@
 	const CAP = 34
 	const LABEL_SIZE = 13
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
 	// Highest first, so the pair reads left to right as the headline says it.
-	const ends = $derived.by(() => {
-		const sorted = [...rowsOf(figure)].sort((a, b) => amount(b) - amount(a))
-		return sorted.length > 1 ? [sorted[0], sorted[sorted.length - 1]] : sorted
-	})
+	const ends = $derived(endsOf(rowsOf(figure), amount))
 
-	const largest = $derived(Math.max(0.0001, ...ends.map(amount)))
+	const largest = $derived(largestOf(ends.map(amount)))
 
 	const plot = $derived(px(Math.min(width * 0.75, 460)))
 	const height = $derived(plot + CAP + LABEL_SIZE * 2.4 + 8 + descent(LABEL_SIZE))
@@ -38,13 +36,7 @@
 	const y = $derived(scaleLinear().domain([0, largest]).range([0, plot]).clamp(true))
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)
 	}
 </script>
 
@@ -76,12 +68,12 @@
 			y="0"
 			width={Math.max(column, HIT)}
 			height={px(plot + CAP)}
-			fill={active === i ? theme.ink : 'transparent'}
-			opacity={active === i ? 0.05 : 1}
+			fill={hover.active === i ? theme.ink : 'transparent'}
+			opacity={hover.active === i ? HOVER_WASH : 1}
 			role="presentation"
 			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
 		/>
 	{/each}
 </Frame>

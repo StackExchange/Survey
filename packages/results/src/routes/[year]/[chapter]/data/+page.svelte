@@ -45,10 +45,10 @@
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
-					<a href={`#${section.id}`} class="mt-3 flex gap-3 text-xl leading-tight lg:items-center">
+					<a href={`#${section.id}`} class="py-1.5 flex gap-3 text-xl leading-tight lg:items-center group">
 						<span>{data.chapter.index}.{sectionIndex + 1}.</span>
-						{section.name}
-						<Icon src={IconArrowRight} class="ml-auto self-center md:ml-0" />
+						<span class="group-hover:underline">{section.name}</span>
+						<Icon src={IconArrowRight} class="ml-auto self-center md:ml-0 relative transition-transform group-hover:translate-x-2" />
 					</a>
 				</li>
 			{/each}
@@ -57,7 +57,7 @@
 </ChapterHeader>
 
 <main id="main" tabindex="-1">
-	<div class="container mx-auto mt-8 mb-25 flex items-center justify-between">
+	<div class="container mx-auto my-8 flex items-center justify-between">
 		<ButtonToggle
 			options={[
 				{ href: resolve('/[year]/[chapter]', { year: params.year, chapter: params.chapter }), label: 'Overview' },
@@ -89,12 +89,12 @@
 					aria-labelledby={titleId}
 					class="{blockIndex + 1 !== section.questions.length
 						? 'border-b'
-						: ''} overflow-x-clip border-black-200 py-20 dark:border-black-500"
+						: ''} overflow-x-clip border-black-200 py-15 dark:border-black-500"
 				>
 					<div class="container flex flex-col items-stretch gap-6 lg:flex-row">
 						<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 						<header tabindex="0" class="top-16 flex max-h-[calc(100vh-4rem)] basis-1/4 flex-col overflow-y-auto lg:sticky">
-							<h3 id={titleId} class="mt-3 mb-3 font-headline text-3xl leading-8">
+							<h3 id={titleId} class="my-3 font-headline text-3xl leading-8">
 								<a
 									class="group"
 									href={resolve('/[year]/[chapter]/data/[question]', { year: data.year, chapter: data.chapter.id, question: block.id })}
@@ -115,7 +115,7 @@
 										<Icon src={IconQuestion} />
 										Question
 									</h4>
-									<QuestionSurvey {definition} name={block.name} />
+									<QuestionSurvey {definition} />
 								</div>
 							{/if}
 						</header>

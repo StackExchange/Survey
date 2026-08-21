@@ -4,6 +4,7 @@
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, middle, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
@@ -17,7 +18,7 @@
 	const LABEL_SIZE = 30
 	const VALUE_SIZE = 15
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
@@ -30,13 +31,7 @@
 	const labelWidth = $derived(width - TAB - 40 - 90)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: series(i) }] }, event)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: series(i) }] }, event)
 	}
 </script>
 
@@ -44,12 +39,12 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = i * (ROW + GAP)}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" {y} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
-			<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={active === i ? theme.rule : theme.ghost} />
+			<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={hover.active === i ? theme.rule : theme.ghost} />
 			<rect x="0" {y} width={TAB} height={ROW} fill={series(i)} />
 
 			<text x={TAB + 24} y={middle(y + ROW / 2, LABEL_SIZE)} font-family={theme.fontHeadline} font-size={LABEL_SIZE} fill={theme.ink}>

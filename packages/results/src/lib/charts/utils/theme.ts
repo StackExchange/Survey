@@ -58,6 +58,11 @@ export const onSeries = (i: number) => theme.onSeries[i % theme.onSeries.length]
 
 export const PAD = 15
 
+// The wash laid over the row under the pointer, and the opacity of the hero
+// slabs that aren't. Both were repeated as bare literals across the charts.
+export const HOVER_WASH = 0.05
+export const DIM = 0.75
+
 // `places` is for the few values that aren't lengths: a scale factor multiplies
 // up, so it needs more of them.
 export function px(n: number, places = 2) {

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte'
 
+	import { captionOf, captionText } from '$charts/utils/caption'
 	import { chromeReader, headerLayout, MASTHEAD, STATS } from '$charts/utils/chrome'
-	import { PAD, px, theme } from '$charts/utils/theme'
+	import { figureTitle, PAD, px, theme } from '$charts/utils/theme'
 	import { licence } from '$config'
-	import { ofSurvey } from '$lib/table'
 
 	import Footer from './Footer.svelte'
 	import Header from './Header.svelte'
@@ -24,7 +24,7 @@
 		children?: Snippet
 	} = $props()
 
-	const label = $derived(figure.headline ?? figure.name ?? figure.question ?? figure.chart)
+	const label = $derived(figureTitle(figure))
 	const uid = $props.id()
 
 	const readChrome = chromeReader()
@@ -32,9 +32,8 @@
 	const brand = $derived(chrome.brand ?? false)
 	// Set only by the export, so the preview stops at the caption.
 	const footer = $derived(chrome.footer ?? false)
-	const n = $derived(figure.demographic?.n?.toLocaleString('en-US') ?? '')
-	const share = $derived(ofSurvey(figure.demographic?.share))
-	const stats = $derived(Boolean(n || share || figure.subtext))
+	const facts = $derived(captionOf(figure))
+	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext))
 	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)
 	const caption = $derived(stats || brand)
 	const top = $derived(brand ? headerLayout(chrome, width, PAD).height : 0)
@@ -43,9 +42,7 @@
 	const w = $derived(px(width))
 	const h = $derived(px(foot + (footer ? MASTHEAD : 0)))
 
-	const description = $derived(
-		[reading, figure.demographic?.name, n && `n = ${n}`, share && `${share} of respondents`, figure.subtext].filter(Boolean).join(' · ')
-	)
+	const description = $derived(captionText(figure, reading))
 </script>
 
 <svg
@@ -77,7 +74,7 @@
 	{/if}
 
 	{#if caption}
-		<Stats {figure} {width} {n} {share} {terms} y={top + height} margin={brand ? PAD : undefined} />
+		<Stats {facts} {width} {terms} y={top + height} margin={brand ? PAD : undefined} />
 	{/if}
 
 	{#if footer}

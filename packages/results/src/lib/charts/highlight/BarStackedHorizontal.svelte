@@ -6,8 +6,9 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { chars, clip, middle, percent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { useHover } from '$charts/utils/hover.svelte'
+	import { chars, clip, HOVER_WASH, middle, percent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -18,21 +19,21 @@
 	const GAP = 14
 	const LABEL_SIZE = 12
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	const largest = $derived(Math.max(0.0001, ...rows.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 	const x = $derived(scaleLinear().domain([0, largest]).range([0, width]).clamp(true))
 
 	const height = $derived(rows.length * (BAR + GAP))
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
-		onhover?.(
+		hover.enter(
+			i,
 			{
 				title: String(row.response ?? ''),
 				rows: [
@@ -43,11 +44,6 @@
 			event
 		)
 	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
-	}
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, 8)}>
@@ -57,13 +53,13 @@
 		{@const start = px((width - length) / 2)}
 		{@const split = px(length * Math.min(Math.max(amount(row), 0), 1))}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 
-			{#if active === i}
-				<rect x="0" y={y - GAP / 2} {width} height={BAR + GAP} fill={theme.ink} opacity="0.05" />
+			{#if hover.active === i}
+				<rect x="0" y={y - GAP / 2} {width} height={BAR + GAP} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
 			<rect x={start} {y} width={split} height={BAR} fill={theme.accent} />

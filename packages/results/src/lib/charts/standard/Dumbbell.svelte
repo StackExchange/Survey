@@ -6,7 +6,22 @@
 	import { scaleLinear } from 'd3-scale'
 
 	import { useDomain, useFocus } from '$charts/utils/chrome'
-	import { chars, clip, digitsWidth, labelGutter, labelsAbove, legend, middle, PAD, percent, px, shorten, theme } from '$charts/utils/theme'
+	import { useHover } from '$charts/utils/hover.svelte'
+	import {
+		chars,
+		clip,
+		digitsWidth,
+		HOVER_WASH,
+		labelGutter,
+		labelsAbove,
+		legend,
+		middle,
+		PAD,
+		percent,
+		px,
+		shorten,
+		theme,
+	} from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
@@ -26,13 +41,13 @@
 	const LINE = 20
 	const TRACK = 30
 
-	let active = $state<number | null>(null)
+	const hover = useHover(() => onhover)
 
 	// The gap is the point of the chart, so the readout carries it as its own row.
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		active = i
 		const gap = Math.round((row.b - row.a) * 100)
-		onhover?.(
+		hover.enter(
+			i,
 			{
 				title: String(row.response ?? ''),
 				rows: [
@@ -43,11 +58,6 @@
 			},
 			event
 		)
-	}
-
-	const leave = () => {
-		active = null
-		onhover?.(null)
 	}
 
 	const short = $derived(shorten(figure))
@@ -115,8 +125,8 @@
 			opacity={dim(row.response)}
 			role="presentation"
 			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
 		>
 			<!-- First child, so every label paints over it and stays selectable. The
 			     handlers are on the group, so the whole row still answers the pointer. -->
@@ -124,8 +134,8 @@
 
 			<!-- Stacked, the track sits below its label line; wide, it centres the band. -->
 
-			{#if active === i}
-				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity="0.05" />
+			{#if hover.active === i}
+				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
 			<text x={PAD} y={middle(labelAbove ? y + LINE / 2 : mid, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>

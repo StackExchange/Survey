@@ -34,8 +34,6 @@
 		'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-/* `static`: the chapter mark reaches for `--color-*` from a style attribute, which
-   is not usage Tailwind can see, so the palette is emitted whether used or not. */
 @theme static {
 	--font-sans: 'Stack Sans Text', var(--font-fallback);
 	--font-headline: 'Stack Sans Headline', var(--font-fallback);
@@ -85,13 +83,6 @@
 	--color-black-600: #201c1d;
 }
 
-/* Charts carry these as presentation attributes with a literal fallback, so a
-   standalone .svg still renders outside the page. Keep in step with
-   $charts/utils/theme.ts.
-
-   `.chart-light` re-states them for the export preview: a rasterised chart never
-   sees this file and always resolves the light literals, so the preview has to
-   say the same on a dark page. */
 :root,
 .chart-light,
 .dark .theme-invert {
@@ -132,9 +123,7 @@
 	--chart-ghost: var(--color-black-500);
 	--chart-grid: var(--color-black-500);
 
-	/* The brand ramp reads on both grounds except its darkest blue, which all but
-	   disappears on the dark page. Only that one is swapped — and once it is light,
-	   a label sitting on it has to turn dark. */
+	/* Override these as not readable on dark mode */
 	--chart-series-8: var(--color-blue-light);
 	--chart-on-series-8: var(--color-black);
 }
@@ -163,9 +152,7 @@
 
 html {
 	scroll-padding-top: 70px;
-
-	/* The question panel hides this overflow while it is open; a reserved gutter is
-	   what keeps the page behind it from shifting sideways as the bar goes. */
+	scroll-behavior: smooth;
 	scrollbar-gutter: stable;
 }
 body {

@@ -43,7 +43,7 @@
 	<div bind:this={root} class="relative">
 		<Button
 			bind:element={toggle}
-			class="justify-center w-full lg:w-auto"
+			class="w-full justify-center lg:w-auto"
 			iconEnd={caret}
 			label="Customise"
 			title={open ? 'Close chart options' : 'Chart options'}
