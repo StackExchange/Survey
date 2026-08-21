@@ -49,10 +49,10 @@
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
-					<a href={`#${section.id}`} class="flex items-center gap-3 text-xl">
+					<a href={`#${section.id}`} class="flex lg:items-center gap-3 text-xl mt-3 leading-tight">
 						<span>{data.chapter.index}.{sectionIndex + 1}.</span>
 						{section.name}
-						<Icon src={IconArrowRight} />
+						<Icon src={IconArrowRight} class="self-center ml-auto md:ml-0" />
 					</a>
 				</li>
 			{/each}

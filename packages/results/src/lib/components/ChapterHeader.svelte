@@ -119,7 +119,7 @@
 	{/if}
 
 	<div class="{options.innerClass} relative z-40 flex flex-1 flex-col">
-		<svelte:element this={options.nameEl} class="flex {options.nameClass}">
+		<svelte:element this={options.nameEl} class="flex flex-col md:flex-row {options.nameClass}">
 			<a class="inline-block {bg} text-black {options.blockClass}" href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}>
 				{chapter.name}
 			</a>
