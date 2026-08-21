@@ -68,7 +68,7 @@
 
 <svelte:window onkeydown={onWindowKeydown} />
 
-<div class="tint fixed inset-0 z-40 bg-black/50 {data ? 'visible opacity-100' : 'invisible opacity-0'}" style="backdrop-filter:grayscale(1)" aria-hidden="true"></div>
+<div onclick={close} class="tint fixed inset-0 z-40 bg-black/50 {data ? 'visible opacity-100' : 'invisible opacity-0'}" style="backdrop-filter:grayscale(1)" aria-hidden="true"></div>
 
 <dialog
 	bind:this={dialog}
@@ -79,15 +79,15 @@
 >
 	{#if shown}
 	  <div class="h-0 sticky top-0 right-0 z-10 text-right">
-		<button
-			type="button"
-			onclick={close}
-			class="z-50 cursor-pointer bg-black p-3 text-white hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black"
-		>
-			<span class="sr-only">Close</span>
-			<Icon src={IconCross} />
-		</button>
-			</div>
+  		<button
+  			type="button"
+  			onclick={close}
+  			class="z-50 cursor-pointer bg-black p-3 text-white hover:bg-orange dark:bg-black-500 dark:hover:bg-orange dark:hover:text-black"
+  		>
+  			<span class="sr-only">Close</span>
+  			<Icon src={IconCross} />
+  		</button>
+		</div>
 
 		<QuestionPage data={shown} panel />
 	{/if}
