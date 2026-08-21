@@ -1,9 +1,6 @@
 <script lang="ts" module>
 	import { surveyPreview } from '$config'
 
-	// How a question was asked, not what it asked — the facts that sit under the
-	// wording. A list rather than a sentence: every caller renders them as one run
-	// of separated chips, so the separator belongs to the CSS, not to the string.
 	export const askedFacts = (definition: any): string[] =>
 		[
 			definition.type.replace(/_/g, ' '),
@@ -13,7 +10,6 @@
 			definition.carry_forward?.from && `options carried forward from ${definition.carry_forward.from}`,
 		].filter(Boolean)
 
-	// The instrument as respondents met it, scrolled to this question.
 	export const askedInContext = (definition: any) => `${surveyPreview}/#q-${definition.id}`
 </script>
 
@@ -22,8 +18,6 @@
 
 	import Icon from './Icon.svelte'
 
-	// 18 of 82 dataIds are crosstabs or DA_/WW_ families with no YAML, so callers
-	// guard on there being a definition. Options aren't listed — Country offers 201.
 	let { definition, name }: { definition: any; name: string } = $props()
 </script>
 

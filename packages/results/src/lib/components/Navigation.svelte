@@ -37,7 +37,7 @@
 		...chapters.map((chapter) => ({
 			href: resolve('/[year]/[chapter]', { year, chapter: chapter.id }),
 			name: chapter.name,
-			borderClass: `border-${chapterColour(chapter.index).primary}`,
+			borderClass: chapterColour(chapter.index).border,
 		})),
 		{ href: resolve('/[year]/methodology', { year }), name: 'Methodology', borderClass: plain },
 	])
@@ -130,7 +130,7 @@
 			{#each open ? links : [] as link, i (link.href)}
 				<li class="origin-right" in:wipe={{ delay: i * 60 }} out:wipe={{ duration: 200, delay: (links.length - 1 - i) * 60 }}>
 					<a
-						class="block w-full border-l-4 bg-black {link.borderClass} hover:bg-black-500 px-4 py-2 aria-[current=page]:bg-black-500 aria-[current=page]:font-bold"
+						class="block w-full border-l-4 bg-black {link.borderClass} px-4 py-2 hover:bg-black-500 aria-[current=page]:bg-black-500 aria-[current=page]:font-bold"
 						href={link.href}
 						aria-current={current === link.href ? 'page' : undefined}
 						onclick={() => close()}

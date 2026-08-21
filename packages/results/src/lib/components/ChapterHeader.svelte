@@ -23,7 +23,7 @@
 
 	// Presentation, so derived here rather than shipped from the server.
 	const colours = $derived(chapterColour(chapter.index))
-	const bg = $derived(`bg-${colours.primary}`)
+	const bg = $derived(colours.bgLg)
 
 	const variants = $derived({
 		home: {
@@ -51,7 +51,7 @@
 		data: {
 			innerClass: 'container mx-auto',
 			nameEl: 'h1',
-			wrapClass: 'bg-black-150 relative overflow-hidden flex flex-col items-stretch pt-25 pb-7 dark:bg-black-500 min-h-[40vh]',
+			wrapClass: 'bg-black-150 relative overflow-hidden flex flex-col items-stretch pt-25 pb-7 dark:bg-black-500 min-h-[50vh]',
 			nameClass: 'font-headline text-4xl font-normal',
 			blockClass: 'px-2 py-1',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
@@ -71,15 +71,15 @@
 			mark: false,
 		},
 		question: {
-			innerClass: 'container mx-auto',
-			nameEl: 'h1',
-			wrapClass: 'bg-black-100 relative overflow-hidden flex flex-col items-stretch px-6 pt-30 pb-8',
-			nameClass: 'sr-only font-headline flex-wrap text-3xl font-normal',
-			blockClass: 'px-2 py-1',
-			sectionClass: 'sr-only',
-			descriptionClass: 'text-xl mt-5 w-1/2',
+			innerClass: 'mx-auto w-full max-w-300 px-6',
+			nameEl: null,
+			wrapClass: `flex flex-col items-stretch justify-end pt-25 ${bg} bg-[url(/img/bg-chapter-hero.svg)] bg-no-repeat bg-cover bg-bottom-right`,
+			nameClass: '',
+			blockClass: '',
+			sectionClass: '',
+			descriptionClass: null,
 			vt: false,
-			mark: true,
+			mark: false,
 		},
 	} satisfies Record<Variant, unknown>)
 
@@ -92,7 +92,7 @@
 	{#if options.mark}
 		<svg
 			class="pointer-events-none absolute right-0 bottom-0 h-full w-1/2 max-w-220"
-			style="--mark-primary: var(--color-{colours.primary}, #201c1d); --mark-secondary: var(--color-{colours.secondary}, #998b7a)"
+			style="--mark-primary: {colours.primary}; --mark-secondary: {colours.secondary}"
 			viewBox="0 0 680 435"
 			fill="none"
 			preserveAspectRatio="xMaxYMax meet"
@@ -119,14 +119,16 @@
 	{/if}
 
 	<div class="{options.innerClass} relative z-40 flex flex-1 flex-col">
-		<svelte:element this={options.nameEl} class="flex flex-col md:flex-row {options.nameClass}">
-			<a class="inline-block {bg} text-black {options.blockClass}" href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}>
-				{chapter.name}
-			</a>
-			{#if section}
-				<span class="{options.sectionClass} {options.blockClass}">{section}</span>
-			{/if}
-		</svelte:element>
+		{#if options.nameEl}
+			<svelte:element this={options.nameEl} class="flex flex-col md:flex-row {options.nameClass}">
+				<a class="inline-block {bg} text-black {options.blockClass}" href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}>
+					{chapter.name}
+				</a>
+				{#if section}
+					<span class="{options.sectionClass} {options.blockClass}">{section}</span>
+				{/if}
+			</svelte:element>
+		{/if}
 
 		{#if description}
 			<div class="md {options.descriptionClass} mb-auto max-w-2xl">{@html description}</div>

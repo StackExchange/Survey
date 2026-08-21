@@ -13,7 +13,7 @@
 	import Icon from '$components/Icon.svelte'
 	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import Seo from '$components/Seo.svelte'
-	import WhatWeAsked from '$components/WhatWeAsked.svelte'
+	import QuestionSurvey from '$components/QuestionSurvey.svelte'
 
 	let { data, params } = $props()
 
@@ -40,7 +40,7 @@
 
 <Seo title="{data.chapter.name} data {data.year}" {description} graph={data.chapter.jsonld} />
 
-<ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Survey data">
+<ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Data">
 	<nav aria-label="Chapter sections" class="mt-10">
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
@@ -69,9 +69,9 @@
 
 	{#each data.chapter.sections as section, sectionIndex (section.id)}
 		<section aria-labelledby={section.id}>
-			<header class="bg-grid border-b border-b-black-200 dark:border-b-black-500">
+			<header class="bg-grid border-b border-b-black-200 dark:border-b-black-500 py-5">
 				<div class="container mx-auto">
-					<h2 id={section.id} class="-mb-px inline-flex items-center font-headline text-2xl">
+					<h2 id={section.id} class="-mb-px inline-flex flex-col lg:flex-row items-start lg:items-center font-headline text-2xl">
 						<span class="inline-block bg-black px-3 py-1 text-white">{data.chapter.index}.{sectionIndex + 1}</span>
 						<span class="inline-block bg-black-150 px-3 py-1 dark:bg-black-500">{section.name}</span>
 					</h2>
@@ -115,7 +115,7 @@
 										<Icon src={IconQuestion} />
 										Question
 									</h4>
-									<WhatWeAsked {definition} name={block.name} />
+									<QuestionSurvey {definition} name={block.name} />
 								</div>
 							{/if}
 						</header>

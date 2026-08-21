@@ -17,7 +17,7 @@
 		<a
 			class="group w-full p-6 transition-transform hover:scale-110 {back
 				? 'origin-bottom-left bg-white dark:bg-black-200'
-				: `bg-${chapterColour(chapter.index).primary} origin-bottom-right`}"
+				: `${chapterColour(chapter.index).bg} origin-bottom-right`}"
 			rel={back ? 'prev' : 'next'}
 			href={resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}
 		>
