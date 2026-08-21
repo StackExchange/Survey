@@ -13,8 +13,10 @@ question:
       short: Some college, no degree
     - label: Associate degree (A.A., A.S., etc.)
       short: Associate degree
-    - Bachelor's degree (B.A., B.S., B.Eng., etc.)
-    - Master's degree (M.A., M.S., M.Eng., MBA, etc.)
+    - label: Bachelor's degree (B.A., B.S., B.Eng., etc.)
+      short: Bachelor's degree
+    - label: Master's degree (M.A., M.S., M.Eng., MBA, etc.)
+      short: Master's degree
     - label: Professional degree (JD, MD, Ph.D, Ed.D, etc.)
       short: Professional degree
     - label: Other, please specify

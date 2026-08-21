@@ -7,9 +7,9 @@ question:
   required: false
   options:
     - label: Keep notes or prompts in a separate document
-      short: Notes in a separate document
+      short: Notes in separate doc
     - label: Copy and paste information between tools
-      short: Copy and paste between tools
+      short: Copy/paste between tools
     - label: Start new AI chats or sessions to reset context
       short: Start a new chat to reset
     - label: Manually select files or documents for AI tools

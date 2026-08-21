@@ -16,9 +16,9 @@ question:
     - label: The tool works well with how people already do their jobs
       short: Fits how people work
     - label: The tool meets security, privacy requirements
-      short: Meets security and privacy
+      short: Security & privacy
     - label: The tool meets legal or compliance requirements
-      short: Meets legal and compliance
+      short: Legal & compliance
     - label: The price is acceptable for the value it provides
       short: Price matches the value
     - label: The tool is worth paying more for because of better results
@@ -26,13 +26,13 @@ question:
     - label: Usage and spending are easy to monitor or limit
       short: Spending is easy to limit
     - label: The tool connects with systems people already use
-      short: Connects to existing systems
+      short: Connects to existing sys.
     - label: The organization can switch tools or models without major disruption
-      short: Can switch without disruption
+      short: Switch without disruption
     - label: Employees or teams are asking to use it
       short: Teams are asking for it
     - label: There is evidence that the tool improves business outcomes
-      short: Evidence of better outcomes
+      short: Signs of better outcomes
     - label: The tool reduces time spent correcting, retrying, or reworking outputs
       short: Less reworking of outputs
     - label: The tool has observability already integrated or built in

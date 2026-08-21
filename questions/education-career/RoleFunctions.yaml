@@ -29,13 +29,13 @@ question:
     - label: Investigating an incident, outage, or production issue
       short: Incidents and outages
     - label: Maintaining dependencies, packages, or development environments
-      short: Dependencies and environments
+      short: Maintaining dependencies
     - label: Finding or fixing security, privacy, or compliance issues
       short: Security and compliance
     - label: Analyzing data, reports, or business metrics
       short: Data and metrics
     - label: Onboarding to a new project, tool, system, or codebase
-      short: Onboarding to something new
+      short: Onboarding to new thing
     - label: Answering questions from teammates, customers, users, or stakeholders
       short: Answering questions
     - label: Coordinating work across teams or functions

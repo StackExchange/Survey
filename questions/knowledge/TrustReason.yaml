@@ -25,7 +25,7 @@ question:
     - label: It includes sources, citations, links, or supporting evidence
       short: Includes sources
     - label: It is consistent with other trusted information
-      short: Consistent with other sources
+      short: Matches other sources
     - label: Other people on my team use or endorse it
       short: My team endorses it
     - label: It is clear, complete, and easy to understand

@@ -15,7 +15,7 @@ question:
     - label: Yes, I choose faster models even when they cost more
       short: Faster models, higher cost
     - label: Yes, my company/team has switched models/vendors that are more affordable
-      short: Switched to cheaper vendors
+      short: Yes, switched to cheaper
     - label: Yes, I am more selective about tasks
       short: More selective about tasks
     - label: No, cost/limits have not affected my usage
