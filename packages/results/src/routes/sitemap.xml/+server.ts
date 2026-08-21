@@ -1,17 +1,22 @@
 import years from '$archive/index.json'
 import { siteUrl } from '$config'
+import { listPages } from '$lib/server/llms'
 
 export const prerender = true
 
 const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
 
 export function GET() {
+	const current = listPages().map(({ path }) => path)
+	const listed = new Set(current)
+
 	const paths = [
-		'/',
-		// packages/archive through the proxy in netlify.toml. 2011–2014 have no
-		// results page of their own — they point at the announcement blog post — so
-		// they are somebody else's to list.
-		...years.filter(({ results }) => results?.startsWith('/') || results?.startsWith(siteUrl)).map(({ year }) => `/${year}`),
+		...current,
+		// Filter so only microsites from packages/archive
+		...years
+			.filter(({ results }) => results?.startsWith('/') || results?.startsWith(siteUrl))
+			.map(({ year }) => `/${year}`)
+			.filter((path) => !listed.has(path)),
 	]
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>
