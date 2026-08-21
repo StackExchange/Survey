@@ -21,29 +21,26 @@
 		figure,
 		name,
 		year,
-		chapter,
+		url,
 		chart,
 	}: {
 		figure: any
 		name: string
 		year: string
-		chapter: any
+		/** The question's own absolute URL. Passed in, not read off `page`: opened in
+		 *  the panel this is drawn over another route, whose address is not the one
+		 *  the file should carry. */
+		url: string
 		// The page's own figure, redrawn with whatever these controls are set to.
 		chart: Snippet<[{ block: any; chrome: Chrome; width: number }]>
 	} = $props()
 
 	const Chart = $derived(charts[figure.chart as keyof typeof charts])
 
-	// Which rows the drawing carries. Owned here rather than by the page: the
-	// controls over the chart and the file leaving it are the same decision.
 	const selection = rowSelection(() => figure)
 
-	// Radios need a group name of their own: a page can carry more than one of
-	// these, and two groups sharing a name would fight over the checked option.
 	const id = $props.id()
 
-	// Named for what the file is for, not what it is: the extension is along for
-	// the ride for anyone who does care which one they are picking.
 	const formats = [
 		{ value: 'png', label: 'Social', extension: '.png' },
 		{ value: 'svg', label: 'Vector', extension: '.svg' },
@@ -56,30 +53,32 @@
 	// One size: 2400px covers print and a retina screen.
 	const SCALE = 3
 
-	// Everything leaving the page carries attribution; on the page the figcaption
-	// already says it.
 	const chrome = $derived({
 		brand: true,
 		year,
 		focus: selection.focus,
 		normalise,
-		chapter: chapter.name,
-		section: figure.sectionName,
+		url,
 		headline: figure.headline ?? figure.name,
+		demographic: figure.demographic?.name,
 	})
 
 	// The only charts that read `normalise`.
 	const scalable = $derived(['bar', 'bar-clustered', 'dumbbell'].includes(figure.chart) && !figure.value)
 
+	// The masthead is on the file only: on screen the page's own footer says the same.
+	const exported = $derived({ ...chrome, footer: true })
+
 	async function png() {
-		const blob = await toPng(Chart, { figure: selection.shown, width: CHART_WIDTH, scale: SCALE, chrome })
+		const blob = await toPng(Chart, { figure: selection.shown, width: CHART_WIDTH, scale: SCALE, chrome: exported })
 		if (!blob) return null
 		return { blob, extension: 'png' }
 	}
 
 	async function svg() {
-		const drawn = await toSvg(Chart, { figure: selection.shown, width: CHART_WIDTH, chrome })
+		const drawn = await toSvg(Chart, { figure: selection.shown, width: CHART_WIDTH, chrome: exported })
 		if (!drawn) return null
+
 		// Optional, but it is what makes the file open as SVG rather than as text.
 		const markup = `<?xml version="1.0" encoding="UTF-8"?>\n${drawn.markup}`
 		return { blob: new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }), extension: 'svg' }
@@ -102,29 +101,16 @@
 </script>
 
 <div>
-	<div class="relative min-w-0 grow">
-		<div class="absolute top-0 right-0 z-20">
-			<ChartOptions {selection} />
-		</div>
-		<div class="overflow-x-auto">
-			<div class="min-w-160">
-				{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
-			</div>
+	<div class="overflow-x-auto">
+		<div class="min-w-160">
+			{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
 		</div>
 	</div>
 
 	<fieldset class="mt-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-3">
-		<legend class="sr-only">Download this chart</legend>
+		<legend class="sr-only">Customise and download this chart</legend>
 
-		{#if scalable}
-			<label class="flex cursor-pointer items-start gap-2">
-				<input type="checkbox" class="mt-1 shrink-0" bind:checked={normalise} />
-				<span class="select-none">
-					Scale to the largest value
-					<span class="block text-xs text-black-400 dark:text-black-300"> Easier to read, no longer comparable with other charts. </span>
-				</span>
-			</label>
-		{/if}
+		<ChartOptions {selection} {scalable} bind:normalise />
 
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
 			<span id="{id}-format">Format</span>

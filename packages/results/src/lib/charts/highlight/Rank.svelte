@@ -44,27 +44,21 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = i * (ROW + GAP)}
 
-		<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={active === i ? theme.rule : theme.ghost} />
-		<rect x="0" {y} width={TAB} height={ROW} fill={series(i)} />
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" {y} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
-		<text x={TAB + 24} y={middle(y + ROW / 2, LABEL_SIZE)} font-family={theme.fontHeadline} font-size={LABEL_SIZE} fill={theme.ink}>
-			{i + 1}. {clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
-		</text>
+			<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={active === i ? theme.rule : theme.ghost} />
+			<rect x="0" {y} width={TAB} height={ROW} fill={series(i)} />
 
-		<text x={valueX} y={middle(y + ROW / 2, VALUE_SIZE)} text-anchor="end" font-size={VALUE_SIZE} font-weight="600" fill={theme.muted}>
-			{format(row)}
-		</text>
+			<text x={TAB + 24} y={middle(y + ROW / 2, LABEL_SIZE)} font-family={theme.fontHeadline} font-size={LABEL_SIZE} fill={theme.ink}>
+				{i + 1}. {clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
+			</text>
 
-		<rect
-			x="0"
-			{y}
-			{width}
-			height={Math.max(ROW, HIT)}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
+			<text x={valueX} y={middle(y + ROW / 2, VALUE_SIZE)} text-anchor="end" font-size={VALUE_SIZE} font-weight="600" fill={theme.muted}>
+				{format(row)}
+			</text>
+		</g>
 	{/each}
 </Frame>

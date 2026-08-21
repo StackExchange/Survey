@@ -58,37 +58,31 @@
 		{@const box = slab(x, floor - body, thickness, body, depth)}
 		{@const label = clip(short(row.response), chars(body - 24, LABEL_SIZE))}
 
-		<g opacity={active === null || active === i ? 1 : 0.72}>
-			<path d={box.side} fill={series(0)} />
-			<path d={box.front} fill={series(4)} />
-			<path d={box.top} fill={theme.faceTop} />
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect {x} y="0" width={px(Math.max(thickness + depth, HIT))} height={floor} fill="transparent" />
 
-			<!-- Down the face, reading bottom-to-top: at this size the response is
-			     far too long to sit under a column this narrow. -->
-			<text
-				transform="translate({px(x + thickness * 0.72)} {px(floor - 16)}) rotate(-90)"
-				font-family={theme.fontHeadline}
-				font-size={LABEL_SIZE}
-				fill={theme.ink}
-			>
-				{label}
-			</text>
+			<g opacity={active === null || active === i ? 1 : 0.72}>
+				<path d={box.side} fill={series(0)} />
+				<path d={box.front} fill={series(4)} />
+				<path d={box.top} fill={theme.faceTop} />
 
-			<text {x} y={px(floor + VALUE_SIZE + 8)} font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
-				{format(row)}
-			</text>
+				<!-- Down the face, reading bottom-to-top: at this size the response is
+				     far too long to sit under a column this narrow. -->
+				<text
+					transform="translate({px(x + thickness * 0.72)} {px(floor - 16)}) rotate(-90)"
+					font-family={theme.fontHeadline}
+					font-size={LABEL_SIZE}
+					fill={theme.ink}
+				>
+					{label}
+				</text>
+
+				<text {x} y={px(floor + VALUE_SIZE + 8)} font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
+					{format(row)}
+				</text>
+			</g>
 		</g>
-
-		<rect
-			{x}
-			y="0"
-			width={px(Math.max(thickness + depth, HIT))}
-			height={floor}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
 	{/each}
 </Frame>

@@ -155,48 +155,42 @@
 
 		{#each points as point, i (point.row.response ?? i)}
 			{@const side = point.flip ? -1 : 1}
-			<circle
-				cx={point.cx}
-				cy={point.cy}
-				r={active === i ? DOT + 2 : DOT}
-				fill={theme.from}
-				fill-opacity={px(opacity(point.row.count ?? 0))}
-				stroke={active === i ? theme.ink : theme.background}
-			/>
+			<g role="presentation" onpointermove={(event) => enter(i, point.row, event)} onpointerleave={leave} onpointercancel={leave}>
+				<!-- A 6px dot is a pinpoint; this is what the pointer actually has to
+				     find. First child, so the name paints over it and stays selectable. -->
+				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
 
-			<!-- A leader only when the name had to move off its own point. -->
-			{#if Math.abs(point.labelY - point.cy) > 2}
-				<line
-					x1={point.cx + side * (DOT + 3)}
-					x2={point.cx + side * (GUTTER - 2)}
-					y1={point.cy}
-					y2={point.labelY}
-					stroke={theme.rule}
-					vector-effect="non-scaling-stroke"
+				<circle
+					cx={point.cx}
+					cy={point.cy}
+					r={active === i ? DOT + 2 : DOT}
+					fill={theme.from}
+					fill-opacity={px(opacity(point.row.count ?? 0))}
+					stroke={active === i ? theme.ink : theme.background}
 				/>
-			{/if}
 
-			<text
-				x={point.cx + side * GUTTER}
-				y={middle(point.labelY, TICK_SIZE)}
-				text-anchor={point.flip ? 'end' : 'start'}
-				font-size={TICK_SIZE}
-				fill={theme.ink}
-			>
-				{clip(short(point.row.response), chars(point.room, TICK_SIZE))}
-			</text>
+				<!-- A leader only when the name had to move off its own point. -->
+				{#if Math.abs(point.labelY - point.cy) > 2}
+					<line
+						x1={point.cx + side * (DOT + 3)}
+						x2={point.cx + side * (GUTTER - 2)}
+						y1={point.cy}
+						y2={point.labelY}
+						stroke={theme.rule}
+						vector-effect="non-scaling-stroke"
+					/>
+				{/if}
 
-			<!-- A 6px dot is a pinpoint; this is what the pointer actually has to find. -->
-			<circle
-				cx={point.cx}
-				cy={point.cy}
-				r={HIT / 2}
-				fill="transparent"
-				role="presentation"
-				onpointermove={(event) => enter(i, point.row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
-			/>
+				<text
+					x={point.cx + side * GUTTER}
+					y={middle(point.labelY, TICK_SIZE)}
+					text-anchor={point.flip ? 'end' : 'start'}
+					font-size={TICK_SIZE}
+					fill={theme.ink}
+				>
+					{clip(short(point.row.response), chars(point.room, TICK_SIZE))}
+				</text>
+			</g>
 		{/each}
 	</g>
 

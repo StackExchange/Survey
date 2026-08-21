@@ -21,6 +21,7 @@
 	} from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
+	import Gridlines from '$charts/svg/Gridlines.svelte'
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
@@ -79,8 +80,8 @@
 
 	// Reserved from the widest label it will actually draw.
 	const valueWidth = $derived(Math.ceil(Math.max(24, ...rows.map((row: any) => digitsWidth(format(row), LABEL_SIZE)))) + 12)
-	const plotX = $derived(labelAbove ? 0 : labelWidth + 12)
-	const plotWidth = $derived(Math.max(1, width - plotX - (labelAbove ? 0 : valueWidth) - PAD))
+	const plotX = $derived(labelAbove ? PAD : labelWidth + 12)
+	const plotWidth = $derived(Math.max(1, width - plotX - valueWidth - PAD))
 
 	const x = $derived(scaleLinear().domain([0, scale]).range([0, plotWidth]).clamp(true))
 
@@ -90,12 +91,24 @@
 </script>
 
 <Frame {figure} {width} {height}>
+	<Gridlines from={plotX} to={plotX + plotWidth} top={PAD} bottom={PAD + rows.length * ROW} />
+
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + i * ROW}
 		{@const bar = amount(row) ? Math.max(1, px(x(amount(row)))) : 0}
-		{@const label = clip(short(row.response), chars(width - valueWidth, LABEL_SIZE))}
+		{@const label = clip(short(row.response), chars(width - PAD * 2, LABEL_SIZE))}
 
-		<g opacity={dim(row.response)}>
+		<g
+			opacity={dim(row.response)}
+			role="presentation"
+			onpointermove={(event) => enter(i, row, event)}
+			onpointerleave={leave}
+			onpointercancel={leave}
+		>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" y={y + (ROW - Math.max(ROW, HIT)) / 2} {width} height={Math.max(ROW, HIT)} fill="transparent" />
+
 			{#if active === i}
 				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity="0.05" />
 			{/if}
@@ -105,11 +118,11 @@
 					{label}
 				</text>
 
-				<text x={px(plotX + bar + 8 + PAD)} y={middle(y + ROW / 1.6, LABEL_SIZE)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
+				<text x={px(plotX + bar + 8)} y={middle(y + ROW / 1.6, LABEL_SIZE)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
 					{format(row)}
 				</text>
 
-				<rect x={PAD} y={y + LINE} width={bar} height={BAR} fill={series(0)} />
+				<rect x={plotX} y={y + LINE} width={bar} height={BAR} fill={series(0)} />
 			{:else}
 				<text x={PAD} y={middle(y + ROW / 2, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
 					{clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
@@ -121,18 +134,6 @@
 					{format(row)}
 				</text>
 			{/if}
-
-			<rect
-				x="0"
-				y={y + (ROW - Math.max(ROW, HIT)) / 2}
-				{width}
-				height={Math.max(ROW, HIT)}
-				fill="transparent"
-				role="presentation"
-				onpointermove={(event) => enter(i, row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
-			/>
 		</g>
 	{/each}
 </Frame>

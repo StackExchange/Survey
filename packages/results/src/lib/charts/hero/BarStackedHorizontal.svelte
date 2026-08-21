@@ -59,31 +59,25 @@
 		{@const y = px(LEAD + i * (BAR + GAP))}
 		{@const box = slab(0, y, length, BAR, depth)}
 
-		<g opacity={active === null || active === i ? 1 : 0.75}>
-			<path d={box.top} fill={series(4)} />
-			<path d={box.front} fill={series(0)} />
-			<path d={box.side} fill={theme.faceTop} />
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" y={px(y - box.rise)} width={px(Math.max(length + depth, HIT))} height={px(BAR + box.rise)} fill="transparent" />
+
+			<g opacity={active === null || active === i ? 1 : 0.75}>
+				<path d={box.top} fill={series(4)} />
+				<path d={box.front} fill={series(0)} />
+				<path d={box.side} fill={theme.faceTop} />
+			</g>
+
+			<!-- Above its own bar: a row this deep has no gutter to put a label in, and
+			     the responses here are whole phrases. -->
+			<text x="0" y={px(y - box.rise - 8)} font-size={LABEL_SIZE} fill={theme.muted}>
+				{clip(short(row.response), chars(width - 90, LABEL_SIZE))}
+			</text>
+			<text x={px(length + depth)} y={px(y - box.rise - 8)} text-anchor="end" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
+				{format(row)}
+			</text>
 		</g>
-
-		<!-- Above its own bar: a row this deep has no gutter to put a label in, and
-		     the responses here are whole phrases. -->
-		<text x="0" y={px(y - box.rise - 8)} font-size={LABEL_SIZE} fill={theme.muted}>
-			{clip(short(row.response), chars(width - 90, LABEL_SIZE))}
-		</text>
-		<text x={px(length + depth)} y={px(y - box.rise - 8)} text-anchor="end" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
-			{format(row)}
-		</text>
-
-		<rect
-			x="0"
-			y={px(y - box.rise)}
-			width={px(Math.max(length + depth, HIT))}
-			height={px(BAR + box.rise)}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
 	{/each}
 </Frame>

@@ -53,33 +53,27 @@
 		{@const x = px((base - w) / 2)}
 		{@const box = slab(x, y, w, thickness, depth * (w / base))}
 
-		<g opacity={active === null || active === i ? 1 : 0.75}>
-			<path d={box.side} fill={theme.faceSide} />
-			<path d={box.front} fill={series(0)} />
-			<path d={box.top} fill={theme.faceTop} />
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect {x} y={px(y - box.rise)} width={Math.max(w, HIT)} height={px(thickness + box.rise)} fill="transparent" />
 
-			<text
-				x={px(x + w / 2)}
-				y={middle(px(y + thickness / 2), VALUE_SIZE)}
-				text-anchor="middle"
-				font-size={VALUE_SIZE}
-				font-weight="600"
-				fill={onSeries(0)}
-			>
-				{format(row)}
-			</text>
+			<g opacity={active === null || active === i ? 1 : 0.75}>
+				<path d={box.side} fill={theme.faceSide} />
+				<path d={box.front} fill={series(0)} />
+				<path d={box.top} fill={theme.faceTop} />
+
+				<text
+					x={px(x + w / 2)}
+					y={middle(px(y + thickness / 2), VALUE_SIZE)}
+					text-anchor="middle"
+					font-size={VALUE_SIZE}
+					font-weight="600"
+					fill={onSeries(0)}
+				>
+					{format(row)}
+				</text>
+			</g>
 		</g>
-
-		<rect
-			{x}
-			y={px(y - box.rise)}
-			width={Math.max(w, HIT)}
-			height={px(thickness + box.rise)}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
 	{/each}
 </Frame>

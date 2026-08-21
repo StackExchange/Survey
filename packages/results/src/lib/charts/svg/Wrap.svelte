@@ -1,18 +1,15 @@
 <script lang="ts">
-	// The `<svg>` root every chart shares, sized for a standalone file. No drawn
-	// heading — the page supplies that around the figure.
 	import type { Snippet } from 'svelte'
 
-	import { chromeReader, FOOTER, headerLayout, STATS } from '$charts/utils/chrome'
+	import { chromeReader, headerLayout, MASTHEAD, STATS } from '$charts/utils/chrome'
 	import { PAD, px, theme } from '$charts/utils/theme'
+	import { licence } from '$config'
 	import { ofSurvey } from '$lib/table'
 
-	import Attribution from './Attribution.svelte'
+	import Footer from './Footer.svelte'
 	import Header from './Header.svelte'
 	import Stats from './Stats.svelte'
 
-	// `reading` is the chart's own account of its numbers, for the expressive forms
-	// that draw few or no value labels. Leads the description.
 	let {
 		figure,
 		width,
@@ -30,30 +27,22 @@
 	const label = $derived(figure.headline ?? figure.name ?? figure.question ?? figure.chart)
 	const uid = $props.id()
 
-	// Only an export sets this. On the page it is undefined and nothing below runs.
 	const readChrome = chromeReader()
 	const chrome = $derived(readChrome?.() ?? {})
-
-	// A card lays the chart out itself, so this nests and leaves the ground and the
-	// band to the card.
 	const brand = $derived(chrome.brand ?? false)
-
+	// Set only by the export, so the preview stops at the caption.
+	const footer = $derived(chrome.footer ?? false)
 	const n = $derived(figure.demographic?.n?.toLocaleString('en-US') ?? '')
 	const share = $derived(ofSurvey(figure.demographic?.share))
-
-	// In the drawing rather than beside it, so it travels with it.
 	const stats = $derived(Boolean(n || share || figure.subtext))
-
-	// A chart draws from its own origin, so the header is made room for by moving
-	// the whole drawing down rather than by the chart knowing about it.
+	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)
+	const caption = $derived(stats || brand)
 	const top = $derived(brand ? headerLayout(chrome, width, PAD).height : 0)
-
-	// Charts compose their height from font sizes and ratios, so it arrives long.
+	// Where the masthead band starts: flush with the bottom edge, under everything.
+	const foot = $derived(top + height + (caption ? STATS : 0) + PAD)
 	const w = $derived(px(width))
-	const h = $derived(px(top + height + (stats ? STATS : 0) + (brand ? FOOTER : PAD)))
+	const h = $derived(px(foot + (footer ? MASTHEAD : 0)))
 
-	// The marks are role="presentation", so this is all a screen reader gets from
-	// the drawing itself — the numbers live in the table beside it.
 	const description = $derived(
 		[reading, figure.demographic?.name, n && `n = ${n}`, share && `${share} of respondents`, figure.subtext].filter(Boolean).join(' · ')
 	)
@@ -87,11 +76,13 @@
 		{@render children?.()}
 	{/if}
 
-	{#if stats}
-		<Stats {figure} {width} {n} {share} y={top + height} margin={brand ? PAD : undefined} />
+	{#if caption}
+		<Stats {figure} {width} {n} {share} {terms} y={top + height} margin={brand ? PAD : undefined} />
 	{/if}
 
-	{#if brand}
-		<Attribution {chrome} y={top + height + (stats ? STATS : 0)} {width} margin={PAD} />
+	{#if footer}
+		<g transform="translate(0 {px(foot)})">
+			<Footer {chrome} {width} margin={PAD} />
+		</g>
 	{/if}
 </svg>

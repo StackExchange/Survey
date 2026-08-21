@@ -59,27 +59,21 @@
 		{@const x = px(i * (column + gap))}
 		{@const box = slab(x, floor - body, column, body, depth)}
 
-		<g opacity={active === null || active === i ? 1 : 0.75}>
-			<path d={box.side} fill={theme.faceSide} />
-			<path d={box.front} fill={series(0)} />
-			<path d={box.top} fill={theme.faceTop} />
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect {x} y={px(floor - body - box.rise)} width={px(Math.max(column + depth, HIT))} height={px(body + box.rise)} fill="transparent" />
+
+			<g opacity={active === null || active === i ? 1 : 0.75}>
+				<path d={box.side} fill={theme.faceSide} />
+				<path d={box.front} fill={series(0)} />
+				<path d={box.top} fill={theme.faceTop} />
+			</g>
+
+			<text {x} y={px(floor + LABEL_SIZE + 10)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>{format(row)}</text>
+			<text {x} y={px(floor + LABEL_SIZE * 2.6 + 10)} font-size={LABEL_SIZE} fill={theme.muted}>
+				{clip(short(row.response), chars(column + gap, LABEL_SIZE))}
+			</text>
 		</g>
-
-		<text {x} y={px(floor + LABEL_SIZE + 10)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>{format(row)}</text>
-		<text {x} y={px(floor + LABEL_SIZE * 2.6 + 10)} font-size={LABEL_SIZE} fill={theme.muted}>
-			{clip(short(row.response), chars(column + gap, LABEL_SIZE))}
-		</text>
-
-		<rect
-			{x}
-			y={px(floor - body - box.rise)}
-			width={px(Math.max(column + depth, HIT))}
-			height={px(body + box.rise)}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
 	{/each}
 </Frame>

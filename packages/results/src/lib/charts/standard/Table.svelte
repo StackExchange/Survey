@@ -1,7 +1,4 @@
 <script lang="ts">
-	// The whole table — columns, headings, formatted cells — comes from
-	// $lib/table, the same builder behind DataTable and the markdown twins, so the
-	// three renderings agree.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { chars, clip, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
@@ -19,7 +16,6 @@
 
 	let active = $state<number | null>(null)
 
-	// Nothing else on the page recovers what the ellipsis ate.
 	const enter = (r: number, row: any, event: PointerEvent) => {
 		active = r
 		onhover?.(
@@ -36,22 +32,15 @@
 	const table = $derived(tableOf(figure))
 	const rows = $derived(table?.rows ?? [])
 	const headers = $derived(table?.headers ?? [])
-	// The first column is the response and takes the space; the rest are numbers.
 	const numeric = $derived(table?.numeric ?? [])
 	const short = $derived(shorten(figure))
-
 	const others = $derived(Math.max(1, headers.length - 1))
-	// Past ~13 columns the two clamps fight and the last runs over the edge; the
-	// widest table in the export has four.
 	const restWidth = $derived(Math.min(110, (width - PAD * 2) / (others + 2)))
 	const firstWidth = $derived(Math.max(120, width - PAD * 2 - restWidth * others))
 
 	const colWidth = (i: number) => (i === 0 ? firstWidth : restWidth)
-	// (i - 1) narrow columns, not i: i left an empty slot and pushed the last
-	// column off the canvas.
-	const x = (i: number) => px(PAD + (i === 0 ? 0 : firstWidth + restWidth * (i - 1)))
-	// Right-aligned columns are measured from their right edge.
-	const edge = (i: number) => px(x(i) + colWidth(i) - 12)
+	const x = (i: number) => px(PAD * 2 + (i === 0 ? 0 : firstWidth + restWidth * (i - 1)))
+	const edge = (i: number) => px(x(i) + colWidth(i) - PAD * 2)
 
 	const height = $derived(PAD + HEAD + rows.length * ROW + PAD)
 </script>
@@ -76,42 +65,33 @@
 		{#each rows as row, r (r)}
 			{@const y = HEAD + r * ROW}
 
-			<!-- Banded rather than ruled: 172 rows of hairline is a lot of noise. -->
-			{#if r % 2 || active === r}
-				<rect
-					x={PAD}
-					y={y - 4}
-					width={width - PAD * 2}
-					height={ROW}
-					fill={active === r ? theme.ink : theme.tint}
-					opacity={active === r ? 0.05 : 1}
-				/>
-			{/if}
+			<g role="presentation" onpointermove={(event) => enter(r, row, event)} onpointerleave={leave} onpointercancel={leave}>
+				<rect x={PAD} y={y + (ROW - Math.max(ROW, HIT)) / 2 - 4} width={width - PAD * 2} height={Math.max(ROW, HIT)} fill="transparent" />
 
-			{#each row.cells as value, i (i)}
-				{@const text = short(value)}
-				<text
-					x={numeric[i] ? edge(i) : x(i)}
-					y={middle(y + ROW / 2 - 4, CELL_SIZE)}
-					text-anchor={numeric[i] ? 'end' : 'start'}
-					font-size={CELL_SIZE}
-					fill={theme.ink}
-				>
-					{clip(text, chars(colWidth(i) - 12, CELL_SIZE))}
-				</text>
-			{/each}
+				{#if r % 2 || active === r}
+					<rect
+						x={PAD}
+						y={y - 4}
+						width={width - PAD * 2}
+						height={ROW}
+						fill={active === r ? theme.ink : theme.tint}
+						opacity={active === r ? 0.05 : 1}
+					/>
+				{/if}
 
-			<rect
-				x={PAD}
-				y={y + (ROW - Math.max(ROW, HIT)) / 2 - 4}
-				width={width - PAD * 2}
-				height={Math.max(ROW, HIT)}
-				fill="transparent"
-				role="presentation"
-				onpointermove={(event) => enter(r, row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
-			/>
+				{#each row.cells as value, i (i)}
+					{@const text = short(value)}
+					<text
+						x={numeric[i] ? edge(i) : x(i)}
+						y={middle(y + ROW / 2 - 4, CELL_SIZE)}
+						text-anchor={numeric[i] ? 'end' : 'start'}
+						font-size={CELL_SIZE}
+						fill={theme.ink}
+					>
+						{clip(text, chars(colWidth(i) - 12, CELL_SIZE))}
+					</text>
+				{/each}
+			</g>
 		{/each}
 	</g>
 </Frame>

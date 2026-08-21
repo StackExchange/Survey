@@ -3,37 +3,45 @@
 import { IconAnswer, IconInfo, IconLogo, IconUserStack } from '@stackoverflow/stacks-icons/icons'
 import { getContext, setContext } from 'svelte'
 
-import { PAD, wrapText } from './theme'
+import { PAD, textWidth, wrapText } from './theme'
 
 export interface Chrome {
 	brand?: boolean
+	/** The masthead band. Only the downloaded file carries it; the preview does not. */
+	footer?: boolean
 	year?: string
 	/** Responses to bring forward. Everything else dims. */
 	focus?: string[]
 	/** Scale a share chart to its own largest value rather than to a full 100%. */
 	normalise?: boolean
-	chapter?: string
-	section?: string
 	headline?: string
+	/** The question's canonical URL, drawn in the masthead. */
+	url?: string
+	/** The cut the figure is of — "All Respondents", "United Kingdom". */
+	demographic?: string
 }
 
 // Fixed, not measured: a chart that followed its container would put a different
 // drawing in the file than the one on screen. Below this the drawing scrolls.
 export const CHART_WIDTH = 950
 
-export const CHIP = 30
-export const CHIP_SIZE = 18
+// The band across the bottom: the survey and its URL on the left, the logo in an
+// orange block at the right.
+export const MASTHEAD = 48
+export const LOGO = 20
+// Around the logo, and so what sets the orange block's width.
+export const LOGO_PAD = 20
+
 export const TITLE_SIZE = 26
+export const ASIDE = 14
 export const STATS = 26
-export const FOOTER = 65
 
 // Asked before the chart is drawn: everything below shifts down by `height`.
 export function headerLayout(chrome: Chrome, width: number, margin = PAD) {
-	const chips = Boolean(chrome.chapter || chrome.section)
-	const top = margin + (chips ? CHIP + 24 : 0)
+	const top = margin
 	const lines = chrome.headline ? wrapText(chrome.headline, width - margin * 2, TITLE_SIZE, 2) : []
 
-	return { chips, top, lines, height: lines.length ? top + lines.length * (TITLE_SIZE * 1.2) + 10 : top }
+	return { top, lines, height: lines.length ? top + lines.length * (TITLE_SIZE * 1.2) + 10 : top }
 }
 
 const KEY = Symbol('chart-chrome')

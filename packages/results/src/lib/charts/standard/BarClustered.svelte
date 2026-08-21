@@ -24,6 +24,7 @@
 	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
+	import Gridlines from '$charts/svg/Gridlines.svelte'
 	import Legend from '$charts/svg/Legend.svelte'
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -98,9 +99,21 @@
 		<Legend layout={key} colors={cuts.map((_, i) => series(i))} />
 	</g>
 
+	<Gridlines from={plotX} to={plotX + plotWidth} top={PAD + key.height} bottom={PAD + key.height + rows.length * groupHeight} />
+
 	{#each rows as row, r (row.response ?? r)}
 		{@const y = PAD + key.height + r * groupHeight}
-		<g opacity={dim(row.response)}>
+		<g
+			opacity={dim(row.response)}
+			role="presentation"
+			onpointermove={(event) => enter(r, row, event)}
+			onpointerleave={leave}
+			onpointercancel={leave}
+		>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" y={y - GROUP_GAP / 2} {width} height={Math.max(groupHeight, HIT)} fill="transparent" />
+
 			{#if active === r}
 				<rect x="0" y={y - GROUP_GAP / 2} {width} height={groupHeight} fill={theme.ink} opacity="0.05" />
 			{/if}
@@ -124,18 +137,6 @@
 					{format(row, i)}
 				</text>
 			{/each}
-
-			<rect
-				x="0"
-				y={y - GROUP_GAP / 2}
-				{width}
-				height={Math.max(groupHeight, HIT)}
-				fill="transparent"
-				role="presentation"
-				onpointermove={(event) => enter(r, row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
-			/>
 		</g>
 	{/each}
 </Frame>

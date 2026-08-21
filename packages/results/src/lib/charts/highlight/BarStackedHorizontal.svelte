@@ -57,33 +57,27 @@
 		{@const start = px((width - length) / 2)}
 		{@const split = px(length * Math.min(Math.max(amount(row), 0), 1))}
 
-		{#if active === i}
-			<rect x="0" y={y - GAP / 2} {width} height={BAR + GAP} fill={theme.ink} opacity="0.05" />
-		{/if}
+		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={leave} onpointercancel={leave}>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 
-		<rect x={start} {y} width={split} height={BAR} fill={theme.accent} />
-		<rect x={px(start + split)} {y} width={px(Math.max(length - split, 0))} height={BAR} fill={series(0)} />
+			{#if active === i}
+				<rect x="0" y={y - GAP / 2} {width} height={BAR + GAP} fill={theme.ink} opacity="0.05" />
+			{/if}
 
-		<!-- In the left margin where the row is short enough to leave one, and
-		     dropped where it isn't: the rows are centred, so the margin is whatever
-		     the value happens to leave, and a label can't be promised space. The
-		     readout and the `<desc>` carry every response either way. -->
-		{#if start > 90}
-			<text x={px(start - 10)} y={middle(y + BAR / 2, LABEL_SIZE)} text-anchor="end" font-size={LABEL_SIZE} fill={theme.muted}>
-				{clip(short(row.response), chars(start - 16, LABEL_SIZE))}
-			</text>
-		{/if}
+			<rect x={start} {y} width={split} height={BAR} fill={theme.accent} />
+			<rect x={px(start + split)} {y} width={px(Math.max(length - split, 0))} height={BAR} fill={series(0)} />
 
-		<rect
-			x="0"
-			{y}
-			{width}
-			height={Math.max(BAR, HIT)}
-			fill="transparent"
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={leave}
-			onpointercancel={leave}
-		/>
+			<!-- In the left margin where the row is short enough to leave one, and
+			     dropped where it isn't: the rows are centred, so the margin is whatever
+			     the value happens to leave, and a label can't be promised space. The
+			     readout and the `<desc>` carry every response either way. -->
+			{#if start > 90}
+				<text x={px(start - 10)} y={middle(y + BAR / 2, LABEL_SIZE)} text-anchor="end" font-size={LABEL_SIZE} fill={theme.muted}>
+					{clip(short(row.response), chars(start - 16, LABEL_SIZE))}
+				</text>
+			{/if}
+		</g>
 	{/each}
 </Frame>

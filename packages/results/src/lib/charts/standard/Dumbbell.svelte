@@ -10,6 +10,7 @@
 	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
+	import Gridlines from '$charts/svg/Gridlines.svelte'
 	import Legend from '$charts/svg/Legend.svelte'
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -102,13 +103,25 @@
 		<Legend layout={key} colors={pair} />
 	</g>
 
+	<Gridlines from={plotX + inset} to={plotX + plotWidth - inset} top={PAD + key.height} bottom={PAD + key.height + rows.length * ROW} />
+
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + key.height + i * ROW}
 		{@const mid = labelAbove ? y + LINE + TRACK / 2 : y + ROW / 2}
 		{@const a = px(x(row.a))}
 		{@const b = px(x(row.b))}
 		{@const leading = row.a > row.b}
-		<g opacity={dim(row.response)}>
+		<g
+			opacity={dim(row.response)}
+			role="presentation"
+			onpointermove={(event) => enter(i, row, event)}
+			onpointerleave={leave}
+			onpointercancel={leave}
+		>
+			<!-- First child, so every label paints over it and stays selectable. The
+			     handlers are on the group, so the whole row still answers the pointer. -->
+			<rect x="0" y={y + (ROW - Math.max(ROW, HIT)) / 2} {width} height={Math.max(ROW, HIT)} fill="transparent" />
+
 			<!-- Stacked, the track sits below its label line; wide, it centres the band. -->
 
 			{#if active === i}
@@ -148,18 +161,6 @@
 			>
 				{format(row.b)}
 			</text>
-
-			<rect
-				x="0"
-				y={y + (ROW - Math.max(ROW, HIT)) / 2}
-				{width}
-				height={Math.max(ROW, HIT)}
-				fill="transparent"
-				role="presentation"
-				onpointermove={(event) => enter(i, row, event)}
-				onpointerleave={leave}
-				onpointercancel={leave}
-			/>
 		</g>
 	{/each}
 </Frame>

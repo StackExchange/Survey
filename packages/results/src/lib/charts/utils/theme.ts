@@ -8,6 +8,7 @@ export const theme = {
 	ink: token('ink', '#201c1d'),
 	muted: token('muted', '#636261'),
 	rule: token('rule', '#c6d1e1'),
+	grid: token('grid', '#bcb9b3'),
 	tint: token('tint', '#f9f8f8'),
 	accent: token('accent', '#ff5e00'),
 
