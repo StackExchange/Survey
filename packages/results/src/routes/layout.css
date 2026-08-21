@@ -2,10 +2,6 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-/* Chapter colours are composed at runtime from $lib/constants, so nothing
-   scannable spells them out. Without this four of the five have no background. */
-@source inline('{bg,border,text}-{blue,purple,yellow,pink,green,beige,orange-medium}');
-
 /* mode-watcher owns `.dark` on <html>, applied before first paint.
 
    `.theme-invert` is a subtree that reads as the opposite of the page: on a light
@@ -20,14 +16,14 @@
 	font-style: normal;
 	font-weight: 200 700;
 	font-display: swap;
-	src: url('$lib/assets/fonts/StackSansText[wght].woff2') format('woff2-variations');
+	src: url('$lib/assets/fonts/StackSansText.woff2') format('woff2-variations');
 }
 @font-face {
 	font-family: 'Stack Sans Headline';
 	font-style: normal;
 	font-weight: 200 700;
 	font-display: swap;
-	src: url('$lib/assets/fonts/StackSansHeadline[wght].woff2') format('woff2-variations');
+	src: url('$lib/assets/fonts/StackSansHeadline.woff2') format('woff2-variations');
 }
 
 :root {
@@ -38,7 +34,9 @@
 		'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@theme {
+/* `static`: the chapter mark reaches for `--color-*` from a style attribute, which
+   is not usage Tailwind can see, so the palette is emitted whether used or not. */
+@theme static {
 	--font-sans: 'Stack Sans Text', var(--font-fallback);
 	--font-headline: 'Stack Sans Headline', var(--font-fallback);
 	--max-width-fluid: clamp(600px, 95vw, 1800px);
@@ -153,6 +151,14 @@
 }
 @utility gutter-x {
 	padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+/* Scrolling stays; only the bar goes. For strips that are obviously swipeable. */
+@utility no-scrollbar {
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 html {
