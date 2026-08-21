@@ -8,19 +8,15 @@
 	import { inversion } from '$lib/invert.svelte'
 
 	import BrandHeader from '$components/BrandHeader.svelte'
-	// eslint-disable-next-line no-unused-vars -- the Highlights section below is parked, not gone
 	import ChapterHeader from '$components/ChapterHeader.svelte'
 	import Icon from '$components/Icon.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	// eslint-disable-next-line no-unused-vars -- as above: both are the parked Highlights section's
 	import Hero from '$charts/Hero.svelte'
-	// eslint-disable-next-line no-unused-vars
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data } = $props()
 
-	// eslint-disable-next-line no-unused-vars -- drives the parked Highlights section's scroll attachments
 	const highlights = inversion()
 </script>
 
@@ -65,7 +61,7 @@
 		</div>
 	</section>
 
-	<!-- <section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
+	<section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
 		{#each data.chapters as chapter, chapterI (chapter.id)}
 			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30">
 				<ChapterHeader year={data.year} {chapter} variant="home" />
@@ -83,7 +79,7 @@
 				{/each}
 			</section>
 		{/each}
-	</section> -->
+	</section>
 
 	<nav aria-label="Table of contents" class="bg-black-150 py-30 text-center dark:bg-black-500">
 		<div class="container">
