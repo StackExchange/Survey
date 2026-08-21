@@ -9,7 +9,8 @@
 	import Button from '$components/Button.svelte'
 	import ButtonMenu from '$components/ButtonMenu.svelte'
 
-	let { title = 'this page' }: { title?: string } = $props()
+	// `compact` drops the labelled half to a lone toggle on narrow screens, for rows that have to stay on one line.
+	let { title = 'this page', compact = true }: { title?: string; compact?: boolean } = $props()
 
 	const url = $derived(page.url.pathname === '/' ? '/index.md' : `${page.url.pathname}.md`)
 
@@ -34,6 +35,6 @@
 
 <ButtonMenu {items} label="More page options">
 	{#snippet action()}
-		<Button copy={markdown} label="Copy page" icon={IconClipboard} class="text-nowrap max-lg:hidden" />
+		<Button copy={markdown} label="Copy page" icon={IconClipboard} class={['text-nowrap', compact && 'max-sm:hidden']} />
 	{/snippet}
 </ButtonMenu>

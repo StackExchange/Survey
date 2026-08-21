@@ -15,8 +15,6 @@
 
 	import ChartOptions from './ChartOptions.svelte'
 
-	// Drawn here rather than at build time: that is what lets an export carry
-	// options and follow the respondent group on screen.
 	let {
 		figure,
 		name,
@@ -27,11 +25,7 @@
 		figure: any
 		name: string
 		year: string
-		/** The question's own absolute URL. Passed in, not read off `page`: opened in
-		 *  the panel this is drawn over another route, whose address is not the one
-		 *  the file should carry. */
 		url: string
-		// The page's own figure, redrawn with whatever these controls are set to.
 		chart: Snippet<[{ block: any; chrome: Chrome; width: number }]>
 	} = $props()
 
@@ -113,14 +107,14 @@
 		<ChartOptions {selection} {scalable} bind:normalise />
 
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
-			<span id="{id}-format">Format</span>
+			<span id="{id}-format" class="sr-only">Format</span>
 
-			<div role="radiogroup" aria-labelledby="{id}-format" class="flex bg-black-200 p-1 dark:bg-black-500">
+			<div role="radiogroup" aria-labelledby="{id}-format" class="flex w-full lg:w-auto bg-black-200 p-1 dark:bg-black-500">
 				{#each formats as option (option.value)}
-					<label class="flex cursor-pointer">
+					<label class="flex flex-1 cursor-pointer text-center text-nowrap">
 						<input class="peer sr-only" type="radio" name="{id}-format" value={option.value} bind:group={format} />
 						<span
-							class="px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
+							class="px-4 py-1 w-full select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
 						>
 							{option.label}
 							<span class="opacity-60">({option.extension})</span>

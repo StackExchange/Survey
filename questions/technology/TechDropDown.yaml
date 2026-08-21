@@ -19,7 +19,7 @@ question:
       short: Web technologies
       key: web_technologies
     - label: I used a development environment (IDE) to write code or interact with agent-assisted developer tools
-      short: Development environments
+      short: Dev environments
       key: development_environment
     - label: I used a community platform or online public forum to search, comment, post to, or read from for technology-related content
       short: Community platforms
@@ -28,7 +28,7 @@ question:
       short: Large language models
       key: llm
     - label: I used a knowledge management platform (such as a wiki)
-      short: Knowledge management
+      short: Knowledge mgmt.
       key: knowledge_management
     - label: I used an enterprise search platform (a secure way to search for disparate internal content)
       short: Enterprise search

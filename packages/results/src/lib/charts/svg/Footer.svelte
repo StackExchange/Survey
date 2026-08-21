@@ -2,7 +2,7 @@
 	import type { Chrome } from '$charts/utils/chrome'
 
 	import { LOGO, logo, LOGO_PAD, MASTHEAD } from '$charts/utils/chrome'
-	import { middle, PAD, px, theme } from '$charts/utils/theme'
+	import { middle, PAD, px, textWidth, theme } from '$charts/utils/theme'
 
 	import Glyph from './Glyph.svelte'
 
@@ -12,8 +12,12 @@
 
 	const survey = $derived(`Developer Survey ${chrome.year ?? ''}`.trim())
 	const site = $derived((chrome.url ?? '').replace(/^https?:\/\//, ''))
+	// Figma collapses a <text> to one style, so the two weights are two nodes and
+	// the gap between them is measured rather than spaced with nbsp.
+	const GAP = 14
+	const url = $derived(px(margin + textWidth(survey, SIZE) + GAP))
 	const mark = $derived(px((logo.width / logo.height) * LOGO))
-	const block = $derived(px(mark + LOGO_PAD * 2))
+	const block = $derived(px(mark + LOGO_PAD * 1.5))
 	const left = $derived(px(width - block))
 </script>
 
@@ -21,6 +25,8 @@
 
 <Glyph glyph={logo} x={left + LOGO_PAD} y={(MASTHEAD - LOGO) / 2} size={LOGO} fill={theme.accent} />
 
-<text x={margin} y={middle(MASTHEAD / 2, SIZE)} font-size={SIZE} fill={theme.background}>
-	<tspan font-weight="600">{survey}</tspan>&nbsp;&nbsp;&nbsp;{#if site}<tspan>{site}</tspan>{/if}
-</text>
+<text x={margin} y={middle(MASTHEAD / 2, SIZE)} font-size={SIZE} font-weight="600" fill={theme.background}>{survey}</text>
+
+{#if site}
+	<text x={url} y={middle(MASTHEAD / 2, SIZE)} font-size={SIZE} font-weight="400" fill={theme.background}>{site}</text>
+{/if}

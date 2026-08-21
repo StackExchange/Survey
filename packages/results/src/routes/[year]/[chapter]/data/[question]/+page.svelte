@@ -134,9 +134,9 @@
 			{/if}
 		</div>
 
-		<div class="flex gap-4">
-			<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" />
-			<CopyPage title="the question &quot;{data.question.name}&quot;" />
+		<div class="flex shrink-0 flex-wrap gap-3 sm:gap-4">
+			<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
+			<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
 		</div>
 	</header>
 
@@ -181,7 +181,7 @@
 
 		<div class="-mx-2 my-8"><DataTable {figure} /></div>
 
-		<div class="flex justify-between gap-8">
+		<div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-8">
 			{#if definition?.options?.length}
 				<details>
 					<summary class="w-fit cursor-pointer text-sm">

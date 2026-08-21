@@ -7,7 +7,8 @@
 	import ButtonMenu from '$components/ButtonMenu.svelte'
 
 	// `title` is what the share text says; `url` is what gets shared and copied.
-	let { url, title, class: className }: { url: string; title: string; class?: ClassValue } = $props()
+	// `compact` drops the labelled half to a lone toggle on narrow screens, for rows that have to stay on one line.
+	let { url, title, compact = true, class: className }: { url: string; title: string; compact?: boolean; class?: ClassValue } = $props()
 
 	const text = $derived(encodeURIComponent(title))
 	const link = $derived(encodeURIComponent(url))
@@ -36,6 +37,6 @@
 
 <ButtonMenu {items} label="More share options" class={className}>
 	{#snippet action()}
-		<Button copy={url} label="Copy link" icon={IconLink} title="Copy this url" class="text-nowrap max-lg:hidden" />
+		<Button copy={url} label="Copy link" icon={IconLink} title="Copy this url" class={['text-nowrap', compact && 'max-sm:hidden']} />
 	{/snippet}
 </ButtonMenu>

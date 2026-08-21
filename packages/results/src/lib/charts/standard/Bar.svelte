@@ -34,8 +34,7 @@
 	const BAR = 25
 	const GAP = 8
 	const LINE = 20
-
-	const LABEL_SIZE = 14
+	const LABEL_SIZE = 16
 
 	let active = $state<number | null>(null)
 

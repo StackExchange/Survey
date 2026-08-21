@@ -43,7 +43,7 @@
 	<div bind:this={root} class="relative">
 		<Button
 			bind:element={toggle}
-			class="justify-center"
+			class="justify-center w-full lg:w-auto"
 			iconEnd={caret}
 			label="Customise"
 			title={open ? 'Close chart options' : 'Chart options'}
@@ -71,8 +71,6 @@
 					</label>
 				{/if}
 
-				<!-- Only where a response identifies one row: a repeated one is neither a
-				     unique key nor a thing `toggle` could hide on its own. -->
 				{#if selection.listable}
 					<ul class="mt-3 flex flex-col">
 						{#each selection.rows as row (row.response)}
