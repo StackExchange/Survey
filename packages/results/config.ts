@@ -18,14 +18,19 @@ export const githubRepo = 'https://github.com/StackExchange/Survey'
 // Root url for question previews
 export const surveyPreview = 'https://stackoverflow-survey-preview.netlify.app'
 
-// Colors which get compiled by Tailwind `bg-${primary}`.
-// Echo in `@source inline` safelist in layout.css.
+// Index of the value maps to the survey.json chapter order
 const chapterColours = [
-	{ primary: 'blue', secondary: 'beige' }, // Developers
-	{ primary: 'pink', secondary: 'purple' }, // Technology
-	{ primary: 'yellow', secondary: 'beige' }, // AI
-	{ primary: 'green', secondary: 'blue' }, // Work
-	{ primary: 'purple', secondary: 'orange-medium' }, // Community
+	{ bg: 'bg-blue', bgLg: 'lg:bg-blue', border: 'border-blue', primary: 'var(--color-blue)', secondary: 'var(--color-beige)' },
+	{ bg: 'bg-pink', bgLg: 'lg:bg-pink', border: 'border-pink', primary: 'var(--color-pink)', secondary: 'var(--color-purple)' },
+	{ bg: 'bg-yellow', bgLg: 'lg:bg-yellow', border: 'border-yellow', primary: 'var(--color-yellow)', secondary: 'var(--color-beige)' },
+	{ bg: 'bg-green', bgLg: 'lg:bg-green', border: 'border-green', primary: 'var(--color-green)', secondary: 'var(--color-blue)' },
+	{
+		bg: 'bg-purple',
+		bgLg: 'lg:bg-purple',
+		border: 'border-purple',
+		primary: 'var(--color-purple)',
+		secondary: 'var(--color-orange-medium)',
+	},
 ]
 
 export const chapterColour = (index: number) => chapterColours[(index - 1) % chapterColours.length]

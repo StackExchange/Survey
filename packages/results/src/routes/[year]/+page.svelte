@@ -90,9 +90,9 @@
 				{#each data.chapters as chapter, i (chapter.id)}
 					<li class="group min-h-80 bg-black dark:text-black">
 						<a
-							class="relative flex h-full flex-col items-start justify-between p-5 text-4xl transition-transform group-hover:-translate-2 bg-{chapterColour(
+							class="relative flex h-full flex-col items-start justify-between p-5 text-4xl transition-transform group-hover:-translate-2 {chapterColour(
 								chapter.index
-							).primary}"
+							).bg}"
 							href={resolve('/[year]/[chapter]', { year: data?.settings.year, chapter: chapter.id })}
 						>
 							<span class="text-2xl">{i + 1}.0</span>
