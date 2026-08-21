@@ -16,10 +16,10 @@
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
 	import QuestionData from '$components/QuestionData.svelte'
+	import { askedFacts, askedInContext } from '$components/QuestionSurvey.svelte'
 	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Seo from '$components/Seo.svelte'
 	import Share from '$components/Share.svelte'
-	import { askedFacts, askedInContext } from '$components/QuestionSurvey.svelte'
 
 	import ChartDownload from '$charts/ChartDownload.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
@@ -92,7 +92,9 @@
 <div class="mb-10">
 	<ChapterHeader year={data.year} chapter={data.chapter} variant="question">
 		<nav aria-label="Breadcrumb" class="justify-between gap-5 lg:flex">
-			<ol class="flex flex-wrap items-end font-headline text-xl [&_a]:block [&_a]:px-2 [&_a]:py-1 [&_a]:hover:bg-black-500 [&_a]:hover:text-white">
+			<ol
+				class="flex flex-wrap items-end font-headline text-xl [&_a]:block [&_a]:px-2 [&_a]:py-1 [&_a]:hover:bg-black-500 [&_a]:hover:text-white"
+			>
 				<li>
 					<a href={chapterPath} class="bg-black-500 text-white">{data.chapter.name}</a>
 				</li>

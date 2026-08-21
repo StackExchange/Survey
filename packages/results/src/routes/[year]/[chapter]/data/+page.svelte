@@ -4,16 +4,16 @@
 
 	import { resolve } from '$app/paths'
 
+	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
 	import ChapterJump from '$components/ChapterJump.svelte'
 	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
-	import ButtonToggle from '$components/ButtonToggle.svelte'
-	import Seo from '$components/Seo.svelte'
 	import QuestionSurvey from '$components/QuestionSurvey.svelte'
+	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
+	import Seo from '$components/Seo.svelte'
 
 	let { data, params } = $props()
 
@@ -45,10 +45,10 @@
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
-					<a href={`#${section.id}`} class="flex lg:items-center gap-3 text-xl mt-3 leading-tight">
+					<a href={`#${section.id}`} class="mt-3 flex gap-3 text-xl leading-tight lg:items-center">
 						<span>{data.chapter.index}.{sectionIndex + 1}.</span>
 						{section.name}
-						<Icon src={IconArrowRight} class="self-center ml-auto md:ml-0" />
+						<Icon src={IconArrowRight} class="ml-auto self-center md:ml-0" />
 					</a>
 				</li>
 			{/each}
@@ -69,9 +69,9 @@
 
 	{#each data.chapter.sections as section, sectionIndex (section.id)}
 		<section aria-labelledby={section.id}>
-			<header class="bg-grid border-b border-b-black-200 dark:border-b-black-500 py-5">
+			<header class="bg-grid border-b border-b-black-200 py-5 dark:border-b-black-500">
 				<div class="container mx-auto">
-					<h2 id={section.id} class="-mb-px inline-flex flex-col lg:flex-row items-start lg:items-center font-headline text-2xl">
+					<h2 id={section.id} class="-mb-px inline-flex flex-col items-start font-headline text-2xl lg:flex-row lg:items-center">
 						<span class="inline-block bg-black px-3 py-1 text-white">{data.chapter.index}.{sectionIndex + 1}</span>
 						<span class="inline-block bg-black-150 px-3 py-1 dark:bg-black-500">{section.name}</span>
 					</h2>

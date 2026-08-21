@@ -3,11 +3,11 @@
 
 	import { resolve } from '$app/paths'
 
+	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
 	import ChapterJump from '$components/ChapterJump.svelte'
 	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
-	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import Seo from '$components/Seo.svelte'
 
 	import Highlight from '$charts/Highlight.svelte'

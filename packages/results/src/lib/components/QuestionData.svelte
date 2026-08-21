@@ -47,7 +47,7 @@
 
 <div class="flex flex-col gap-6">
 	{#each formats as format, i (format.id)}
-		<div class="items-start gap-4 {i !== 0 ? 'border-t' : undefined} border-black-200 dark:border-black-500 pt-5 lg:flex lg:gap-6">
+		<div class="items-start gap-4 {i !== 0 ? 'border-t' : undefined} border-black-200 pt-5 lg:flex lg:gap-6 dark:border-black-500">
 			<div class="flex-1/3">
 				<h3 class="mb-2 font-headline text-2xl font-medium">
 					{#if format.text}
