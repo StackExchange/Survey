@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types'
 
-	import { IconArrowLeft, IconArrowRight, IconLink, IconQuestion, IconTrendUp } from '@stackoverflow/stacks-icons/icons'
+	import { IconArrowLeft, IconArrowRight, IconQuestion, IconTrendUp } from '@stackoverflow/stacks-icons/icons'
 
 	import { dev } from '$app/environment'
 	import { replaceState } from '$app/navigation'
@@ -69,8 +69,6 @@
 
 	/* Links out, and what a download is called */
 
-	const shareId = $props.id()
-
 	const dataPath = $derived(resolve('/[year]/[chapter]/data', { year: data.year, chapter: data.chapter.id }))
 
 	const chapterPath = $derived(resolve('/[year]/[chapter]', { year: data.year, chapter: data.chapter.id }))
@@ -90,59 +88,49 @@
 	<Seo title="{data.question.name} {data.year}" description={data.question.description} graph={data.jsonld} />
 {/if}
 
-<div class="bg-{chapterColour(data.chapter.index).primary} mb-10 pt-20 pb-5">
-	<nav aria-label="Breadcrumb" class="container justify-between gap-5 lg:flex">
-		<ol class="lg:mb0 mb-3 flex flex-wrap items-end gap-x-1 text-lg">
+<div class="bg-{chapterColour(data.chapter.index).primary} mb-10 pt-20">
+	<nav aria-label="Breadcrumb" class="mx-auto max-w-300 justify-between gap-5 px-6 lg:flex">
+		<ol class="flex flex-wrap items-end text-lg [&_a]:block [&_a]:px-3 [&_a]:py-2 [&_a]:hover:bg-black-500 [&_a]:hover:text-white">
 			<li>
-				<a href={chapterPath} class="font-semibold hover:underline">{data.chapter.name}</a>
+				<a href={chapterPath} class="bg-black font-semibold text-white dark:bg-white dark:text-black">{data.chapter.name}</a>
 			</li>
-			<li class="flex items-center gap-x-1">
-				<span aria-hidden="true" class="px-1 font-extralight">/</span>
-				<a href={dataPath} class="self-end hover:underline">Data</a>
+			<li>
+				<a href={dataPath} class="bg-black-400 text-white">Data</a>
 			</li>
 			{#if data.question.sectionName}
-				<li class="flex items-center gap-x-1">
-					<span aria-hidden="true" class="px-1 font-extralight">/</span>
-					<a href="{dataPath}#{data.question.sectionId}" class="self-end hover:underline">
+				<li>
+					<a href="{dataPath}#{data.question.sectionId}" class="bg-white dark:text-white dark:bg-black">
 						<span class="tabular-nums">{data.chapter.index}.{data.question.sectionNumber}.</span>
 						{data.question.sectionName}
 					</a>
 				</li>
 			{/if}
 		</ol>
-
-		<div class="flex">
-			<label class="sr-only" for={shareId}>Link to this chart</label>
-			<input
-				id={shareId}
-				type="url"
-				value={shareUrl}
-				readonly
-				class="w-full min-w-2xs border-transparent py-1.5"
-				onfocus={(event) => event.currentTarget.select()}
-			/>
-			<Button copy={shareUrl} icon={IconLink} title="Copy this url" variant="filled" size="icon" />
-		</div>
 	</nav>
 </div>
 
-<svelte:element this={panel ? 'div' : 'main'} id={panel ? undefined : 'main'} tabindex={panel ? undefined : -1} class="container">
+<svelte:element
+	this={panel ? 'div' : 'main'}
+	id={panel ? undefined : 'main'}
+	tabindex={panel ? undefined : -1}
+	class="mx-auto max-w-300 px-6"
+>
 	<header class="mb-10 items-start justify-between gap-10 lg:flex">
 		<div>
 			<h1 class="sr-only">
 				{data.question.name}
 			</h1>
 			{#if data.question.description}
-  			<h2 id="analysis" class="sr-only">Our analysis</h2>
-  			<div aria-labelledby="analysis" class="mb-8 flex max-w-prose text-lg lg:mb-0">
-  				<span class="mt-px inline-block pr-3 text-7xl" aria-hidden="true">“</span>
-  				{@html data.question.description}
-  			</div>
+				<h2 id="analysis" class="sr-only">Our analysis</h2>
+				<div aria-labelledby="analysis" class="mb-8 flex max-w-prose text-lg lg:mb-0">
+					<span class="mt-px inline-block pr-3 text-7xl" aria-hidden="true">“</span>
+					{@html data.question.description}
+				</div>
 			{/if}
 		</div>
 
 		<div class="flex gap-4">
-			<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" class="flex gap-1" />
+			<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" />
 			<CopyPage title="the question &quot;{data.question.name}&quot;" />
 		</div>
 	</header>
@@ -169,9 +157,9 @@
 	</ChartDownload>
 
 	<section class="mt-18" id="data">
-		<h2 id="asked" class="mb-3 flex items-center gap-2">
-			<Icon src={IconQuestion} class="native" />
-			What was asked
+		<h2 id="asked" class="mb-4 inline-flex items-center gap-2 bg-black-100 dark:bg-transparent pr-2">
+			<span class="p-1.5 bg-blue-light"><Icon src={IconQuestion} class="native shrink-0" /></span>
+			Question
 		</h2>
 
 		{#if definition}
@@ -217,8 +205,8 @@
 	</section>
 
 	<section class="mt-16" aria-labelledby="export">
-		<h2 class="mb-5 flex items-center gap-2">
-			<Icon src={IconTrendUp} class="native" />
+		<h2 class="mb-4 inline-flex items-center gap-2 bg-black-100 dark:bg-transparent pr-2">
+			<span class="p-1.5 bg-blue-light"><Icon src={IconTrendUp} class="native" /></span>
 			Use this data
 		</h2>
 
@@ -245,33 +233,35 @@
 </svelte:element>
 
 {#if !panel && (data.question.previous || data.question.next)}
-	<nav class="mt-12 flex justify-between gap-6 bg-black-150 text-sm" aria-label="Questions in this chapter">
-		{#if data.question.previous}
-			<Button
-				variant="filled"
-				rel="prev"
-				icon={IconArrowLeft}
-				label="Previous: {data.question.previous.name}"
-				href={resolve('/[year]/[chapter]/data/[question]', {
-					year: data.year,
-					chapter: data.chapter.id,
-					question: data.question.previous.slug,
-				})}
-			/>
-		{/if}
-		{#if data.question.next}
-			<Button
-				variant="filled"
-				rel="next"
-				class="ml-auto text-right"
-				iconEnd={IconArrowRight}
-				label="Next: {data.question.next.name}"
-				href={resolve('/[year]/[chapter]/data/[question]', {
-					year: data.year,
-					chapter: data.chapter.id,
-					question: data.question.next.slug,
-				})}
-			/>
-		{/if}
+	<nav class="mt-24 text-sm relative top-px" aria-label="Questions in this chapter">
+	  <div class="mx-auto max-w-300 px-1 flex justify-between gap-6">
+  		{#if data.question.previous}
+  			<Button
+  				variant="filled"
+  				rel="prev"
+  				icon={IconArrowLeft}
+  				label="Previous: {data.question.previous.name}"
+  				href={resolve('/[year]/[chapter]/data/[question]', {
+  					year: data.year,
+  					chapter: data.chapter.id,
+  					question: data.question.previous.slug,
+  				})}
+  			/>
+  		{/if}
+  		{#if data.question.next}
+  			<Button
+  				variant="filled"
+  				rel="next"
+  				class="ml-auto text-right"
+  				iconEnd={IconArrowRight}
+  				label="Next: {data.question.next.name}"
+  				href={resolve('/[year]/[chapter]/data/[question]', {
+  					year: data.year,
+  					chapter: data.chapter.id,
+  					question: data.question.next.slug,
+  				})}
+  			/>
+  		{/if}
+		</div>
 	</nav>
 {/if}
