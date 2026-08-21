@@ -30,7 +30,7 @@
 <div class="relative bg-blue-extra-light p-4 dark:bg-blue-light dark:text-black">
 	<div class="md text-sm">{@html definition.titleHtml}</div>
 
-	<ul class="mt-2 flex flex-wrap text-xs text-black-400 dark:text-black-300">
+	<ul class="mt-2 flex flex-wrap text-xs text-black-400">
 		{#each askedFacts(definition) as fact (fact)}
 			<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
 		{/each}

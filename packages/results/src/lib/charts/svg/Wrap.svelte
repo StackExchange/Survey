@@ -50,7 +50,7 @@
 
 	// Charts compose their height from font sizes and ratios, so it arrives long.
 	const w = $derived(px(width))
-	const h = $derived(px(top + height + (stats ? STATS : 0) + (brand ? FOOTER : 0)))
+	const h = $derived(px(top + height + (stats ? STATS : 0) + (brand ? FOOTER : PAD)))
 
 	// The marks are role="presentation", so this is all a screen reader gets from
 	// the drawing itself — the numbers live in the table beside it.
@@ -59,9 +59,6 @@
 	)
 </script>
 
-<!-- font-family on the root so every mark inherits it. `preserveAspectRatio` is
-     what fits the chart into a card's content box: an inner <svg> scales its own
-     viewBox, so nothing has to measure the drawing first. -->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	width={w}
@@ -77,9 +74,6 @@
 	{#if description}<desc id="{uid}-desc">{description}</desc>{/if}
 
 	{#if brand}
-		<!-- Opaque, and behind the marks. A chart on the page inherits the page's
-		     ground; a file does not, and transparent ink on someone else's dark
-		     background is unreadable. -->
 		<rect x="0" y="0" width={w} height={h} fill={theme.background} />
 	{/if}
 

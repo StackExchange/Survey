@@ -117,7 +117,7 @@
 								<div class="relative mt-auto pt-6">
 									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-light dark:text-black">
 										<Icon src={IconQuestion} />
-										What was asked
+										Question
 									</h4>
 									<WhatWeAsked {definition} name={block.name} />
 								</div>
@@ -141,7 +141,7 @@
 								aria-labelledby={groups.length > 1 ? tabId(panelId, shown.demographic.id) : undefined}
 								tabindex={groups.length > 1 ? 0 : undefined}
 							>
-								<Figure block={shown} href={permalink(block)} />
+								<Figure block={shown} href={permalink(block)} table />
 							</div>
 						</div>
 					</div>

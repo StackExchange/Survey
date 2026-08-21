@@ -102,14 +102,10 @@
 </script>
 
 <div>
-	<!-- One drawing, not a figure and a preview of it: the figure on the page *is*
-	     the export, chrome and all, redrawn in place as the controls change. -->
 	<div class="relative min-w-0 grow">
 		<div class="absolute top-0 right-0 z-20">
 			<ChartOptions {selection} />
 		</div>
-
-		<!-- Below its floor the drawing scrolls rather than re-laying out into unreadable labels. -->
 		<div class="overflow-x-auto">
 			<div class="min-w-160">
 				{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
@@ -141,8 +137,6 @@
 							class="px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
 						>
 							{option.label}
-							<!-- Dimmed rather than coloured: this sits on the track when unpicked and
-							     on the white pill when picked, and opacity reads on both. -->
 							<span class="opacity-60">({option.extension})</span>
 						</span>
 					</label>
@@ -159,12 +153,6 @@
 			{label}
 		</Button>
 	</fieldset>
-
-	{#if selection.listable && selection.touched}
-		<p class="border-t pt-4 dark:border-black-500">
-			Drawing {selection.kept.length} of {selection.rows.length} rows{#if selection.focus.length}, {selection.focus.length} focused{/if}.
-		</p>
-	{/if}
 </div>
 
 <p class="sr-only" aria-live="polite">{status === 'idle' ? '' : label}</p>

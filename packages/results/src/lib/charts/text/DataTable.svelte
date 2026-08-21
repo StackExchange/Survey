@@ -21,7 +21,7 @@
 				{#each table.rows as row, i (i)}
 					<tr class="border-b border-black-150 last:border-0 dark:border-black-500">
 						{#each row.cells as value, c (c)}
-							<td class="px-2 py-1.5 align-top {!(i % 2) ? 'bg-black-100' : undefined} {table.numeric[c] ? 'text-right tabular-nums' : ''}"
+							<td class="px-2 py-1.5 align-top {!(i % 2) ? 'bg-black-100 dark:bg-black-500' : undefined} {table.numeric[c] ? 'text-right tabular-nums' : ''}"
 								>{value}</td
 							>
 						{/each}

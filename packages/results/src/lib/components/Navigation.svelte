@@ -20,12 +20,10 @@
 	let open = $state(false)
 	let scrollY = $state(0)
 
-	// The year index opens with BrandHeader, so the nav only carries the wordmark
-	// once you have scrolled past it.
+	// BrandHeader which has the logo for the index
 	const wordmark = $derived(page.route.id !== '/[year]' || scrollY > 500)
 
-	// The question panel puts its own close button exactly where this toggle sits, so
-	// the menu stands down while the panel is open. The wordmark stays, over the panel.
+	// Layering the nav when QuestionPanel.svelte is open
 	const panelled = $derived(Boolean(page.state.question))
 
 	$effect(() => {
@@ -54,8 +52,6 @@
 	let toggle = $state<HTMLButtonElement | null>(null)
 	let list = $state<HTMLOListElement | null>(null)
 
-	// `page.url.pathname` is safe here; only `search` and `searchParams` are
-	// disabled during prerendering.
 	const current = $derived(page.url.pathname)
 
 	async function toggleOpen() {
@@ -72,8 +68,7 @@
 		if (focusToggle) toggle?.focus()
 	}
 
-	// Not a roving tabindex: the anchors stay natively focusable, so this degrades
-	// to plain tabbing if it fails.
+	// Keyboard nav: esc and up/down arrows
 	function onListKeydown(event: KeyboardEvent) {
 		const items = [...(list?.querySelectorAll<HTMLAnchorElement>('a') ?? [])]
 		if (!items.length) return
@@ -127,8 +122,6 @@
 			aria-label={open ? 'Close menu' : 'Open menu'}
 			onclick={toggleOpen}
 		>
-			<!-- The text label is display:none below lg, which takes it out of the
-			     accessibility tree — hence aria-label above. -->
 			<span class="hidden lg:block">{open ? 'Close' : 'Menu'}</span>
 			<Icon src={open ? IconCross : IconMenu} />
 		</button>
@@ -137,7 +130,7 @@
 			{#each open ? links : [] as link, i (link.href)}
 				<li class="origin-right" in:wipe={{ delay: i * 60 }} out:wipe={{ duration: 200, delay: (links.length - 1 - i) * 60 }}>
 					<a
-						class="block w-full border-l-4 bg-black {link.borderClass} px-4 py-2 aria-[current=page]:bg-black-500"
+						class="block w-full border-l-4 bg-black {link.borderClass} hover:bg-black-500 px-4 py-2 aria-[current=page]:bg-black-500 aria-[current=page]:font-bold"
 						href={link.href}
 						aria-current={current === link.href ? 'page' : undefined}
 						onclick={() => close()}

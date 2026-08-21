@@ -1,32 +1,20 @@
 <script lang="ts">
 	import type { RowSelection } from '$charts/utils/rows.svelte'
 
-	import {
-		IconEye,
-		IconEyeOff,
-		IconWindowFillSideArrowRight,
-		IconWindowFillSideRight,
-		IconWindowSideArrowLeft,
-	} from '@stackoverflow/stacks-icons/icons'
+	import { IconCross, IconEye, IconSettings, IconSettingsFill } from '@stackoverflow/stacks-icons/icons'
 
 	import Button from '$components/Button.svelte'
 	import Icon from '$components/Icon.svelte'
 
-	// Which responses the export draws, and which it brings forward. Placed by the
-	// caller — only the panel is positioned here, against the toggle it hangs from.
-	// Over the chart rather than beside the numbers: these controls change the
-	// drawing, and the data table below says what the figure holds regardless.
 	let { selection }: { selection: RowSelection } = $props()
 
 	const id = $props.id()
 
 	let open = $state(false)
-	let hovered = $state(false)
 	let root = $state<HTMLElement | null>(null)
 	let toggle = $state<HTMLElement | null>(null)
 
-	// Open reads as a panel already out; hovering an open one reads as the way back.
-	const icon = $derived(open ? (hovered ? IconWindowFillSideArrowRight : IconWindowFillSideRight) : IconWindowSideArrowLeft)
+	const icon = $derived(open ? IconSettingsFill : IconSettings)
 
 	function close({ focusToggle = false } = {}) {
 		open = false
@@ -51,12 +39,11 @@
 			bind:element={toggle}
 			variant="filled"
 			size="icon"
-			{icon}
+			iconEnd={icon}
+			label="Customise"
 			title={open ? 'Close chart options' : 'Chart options'}
 			aria-expanded={open}
 			aria-controls={id}
-			onpointerenter={() => (hovered = true)}
-			onpointerleave={() => (hovered = false)}
 			onclick={() => (open = !open)}
 		/>
 
@@ -67,7 +54,7 @@
 				: 'hidden'}"
 		>
 			<fieldset>
-				<legend class="font-semibold">Edit label visibility</legend>
+				<legend class="font-semibold">Chart settings</legend>
 
 				<ul class="mt-3 flex flex-col">
 					{#each selection.rows as row (row.response)}
@@ -84,15 +71,14 @@
 
 							<button
 								type="button"
-								class="shrink-0 cursor-pointer border px-2 py-0.5 text-xs {on
+								class="flex shrink-0 cursor-pointer items-center gap-1 border px-2 py-0.5 text-xs {on
 									? 'bg-black text-white dark:bg-white dark:text-black'
 									: 'hover:bg-black-150 dark:border-black-500 dark:hover:bg-black-500'}"
 								aria-pressed={on}
 								aria-label="Focus {row.response}"
 								onclick={() => selection.highlight(row.response)}
 							>
-								Focus
-								<Icon src={on ? IconEyeOff : IconEye} />
+								Focus <Icon src={IconEye} />
 							</button>
 						</li>
 					{/each}
@@ -100,9 +86,19 @@
 			</fieldset>
 
 			{#if selection.touched}
-				<p class="mt-4 border-t pt-3 text-xs dark:border-black-500">
-					<button type="button" class="cursor-pointer underline" onclick={() => selection.reset()}>Show every row again</button>
+				<p class="mt-3 border-t pt-3 text-sm dark:border-black-500">
+					Drawing {selection.kept.length} of {selection.rows.length} rows{#if selection.focus.length}, {selection.focus.length} focused{/if}.
 				</p>
+
+				<div class="pt-3 pb-6">
+					<Button
+						variant="plain"
+						class="w-fill block self-stretch"
+						icon={IconCross}
+						label="Clear selection"
+						onclick={() => selection.reset()}
+					/>
+				</div>
 			{/if}
 		</div>
 	</div>
