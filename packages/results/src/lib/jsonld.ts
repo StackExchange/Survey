@@ -195,7 +195,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 			variableMeasured: figures.map((q: any) => ({
 				'@type': 'PropertyValue',
 				propertyID: q.dataId,
-				name: q.name ?? q.dataId,
+				name: q.name || q.dataId,
 				description: q.definition?.title ?? q.question,
 				url: `${siteUrl}${dataPath}/${q.id}`,
 			})),

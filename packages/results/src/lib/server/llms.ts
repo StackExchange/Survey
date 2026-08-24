@@ -159,7 +159,7 @@ function chapterPage(page: PageRef, id: string) {
 		`# ${chapter.name} ${year}`,
 		chapter.description,
 		'## Highlights',
-		chapter.highlights.map((h: any) => figure(h, `### ${h.headline ?? h.name}`)).join('\n\n'),
+		chapter.highlights.map((h: any) => figure(h, `### ${h.headline || h.name}`)).join('\n\n'),
 		`Every figure in this chapter: ${siteUrl}/${year}/${id}/data.md`
 	)
 }
@@ -179,7 +179,7 @@ function dataPage(page: PageRef, id: string) {
 					section.questions
 						.map((q: any) =>
 							join(
-								figure(q, `### ${q.name ?? q.dataId}`),
+								figure(q, `### ${q.name || q.dataId}`),
 								q.kind === 'figure' && `Every respondent group: ${siteUrl}/${year}/${id}/data/${q.id}.md`
 							)
 						)

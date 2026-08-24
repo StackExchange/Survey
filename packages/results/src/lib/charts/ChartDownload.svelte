@@ -55,7 +55,7 @@
 		url,
 		// Not `figureTitle`: a masthead should stay blank rather than fall back to
 		// the question text or the chart id.
-		headline: figure.headline ?? figure.name,
+		headline: figure.headline || figure.name,
 		demographic: figure.demographic?.name,
 	})
 

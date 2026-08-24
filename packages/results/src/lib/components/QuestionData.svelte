@@ -18,7 +18,7 @@
 			id: 'citation',
 			label: 'Citation',
 			spot: SpotArticle,
-			text: citation(figure.name ?? figure.headline ?? figure.dataId, year, url),
+			text: citation(figure.name || figure.headline || figure.dataId, year, url),
 			rows: 3,
 		},
 		{

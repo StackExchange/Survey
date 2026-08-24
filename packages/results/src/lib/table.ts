@@ -26,7 +26,7 @@ function cell(value: any, unit: string): string {
 
 const rowsOf = (figure: any) => (figure?.data ?? []).filter(Boolean)
 
-const titleOf = (figure: any) => figure?.name ?? figure?.headline ?? figure?.dataId ?? null
+const titleOf = (figure: any) => figure?.name || figure?.headline || figure?.dataId || null
 
 // Flat `(response, series)` rows regrouped one entry per response, a slot per
 // series, `null` where the export has no row for that pair. The export writes

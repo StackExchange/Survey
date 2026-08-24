@@ -146,7 +146,7 @@ export function wrapText(text: string, width: number, fontSize: number, max = 2)
 	return lines
 }
 
-export const figureTitle = (figure: any) => figure.headline ?? figure.name ?? figure.question ?? figure.chart
+export const figureTitle = (figure: any) => figure.headline || figure.name || figure.question || figure.chart
 
 export const clip = (text: string, chars: number) => (text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text)
 
