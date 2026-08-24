@@ -96,7 +96,7 @@
 <header class="{options.vt ? 'vt-chapter-header' : ''} {options.wrapClass}">
 	{#if options.mark}
 		<svg
-			class="pointer-events-none absolute right-0 bottom-0 h-full w-1/2 max-w-220 hidden md:block"
+			class="pointer-events-none absolute right-0 bottom-0 hidden h-full w-1/2 max-w-220 md:block"
 			style="--mark-primary: {colours.primary}; --mark-secondary: {colours.secondary}"
 			viewBox="0 0 680 435"
 			fill="none"

@@ -13,11 +13,11 @@
 {#snippet card(chapter: any, direction: 'previous' | 'next')}
 	{@const back = direction === 'previous'}
 
-	<li class="relative flex w-full lg:w-1/3 items-end dark:text-black">
+	<li class="relative flex w-full items-end lg:w-1/3 dark:text-black">
 		<a
 			class="group w-full p-6 transition-transform hover:scale-110 {back
-				? 'origin-bottom-left bg-white dark:bg-black-200 mr-12'
-				: `${chapterColour(chapter.index).bg} origin-bottom-right ml-12`}"
+				? 'mr-12 origin-bottom-left bg-white dark:bg-black-200'
+				: `${chapterColour(chapter.index).bg} ml-12 origin-bottom-right`}"
 			rel={back ? 'prev' : 'next'}
 			href={resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}
 		>
@@ -38,7 +38,7 @@
 	<section class="mt-5 bg-black-150 dark:bg-black-500" aria-labelledby="whats-next">
 		<h2 id="whats-next" class="font-headline-notch gutter text-4xl lg:text-6xl">What’s next?</h2>
 
-		<ul class="mt-6 flex flex-col lg:flex-row justify-between gap-6">
+		<ul class="mt-6 flex flex-col justify-between gap-6 lg:flex-row">
 			{#if previous}{@render card(previous, 'previous')}{/if}
 			{#if next}{@render card(next, 'next')}{/if}
 		</ul>

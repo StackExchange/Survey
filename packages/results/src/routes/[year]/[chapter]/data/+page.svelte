@@ -45,10 +45,10 @@
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
-					<a href={`#${section.id}`} class="py-1.5 flex gap-3 text-xl leading-tight lg:items-center group">
+					<a href={`#${section.id}`} class="group flex gap-3 py-1.5 text-xl leading-tight lg:items-center">
 						<span>{data.chapter.index}.{sectionIndex + 1}.</span>
 						<span class="group-hover:underline">{section.name}</span>
-						<Icon src={IconArrowRight} class="ml-auto self-center md:ml-0 relative transition-transform group-hover:translate-x-2" />
+						<Icon src={IconArrowRight} class="relative ml-auto self-center transition-transform group-hover:translate-x-2 md:ml-0" />
 					</a>
 				</li>
 			{/each}

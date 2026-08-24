@@ -100,132 +100,130 @@
 	</ChapterHeader>
 </div>
 
-<svelte:element
-	this={panel ? 'div' : 'main'}
-	id={panel ? undefined : 'main'}
-	tabindex={panel ? undefined : -1}
->
-  <div class="mx-auto max-w-300 mb-10 px-6">
-  	<header class="mb-10 items-start justify-between gap-10 lg:flex">
-  		<div>
-  			<h1 class="sr-only">
-  				{data.question.name}
-  			</h1>
-  			{#if data.question.description}
-  				<h2 id="analysis" class="sr-only">Our analysis</h2>
-  				<div aria-labelledby="analysis" class="mb-8 flex max-w-prose text-lg lg:mb-0">
-  					<span class="mt-px inline-block pr-3 text-7xl" aria-hidden="true">“</span>
-  					{@html data.question.description}
-  				</div>
-  			{/if}
-  		</div>
+<svelte:element this={panel ? 'div' : 'main'} id={panel ? undefined : 'main'} tabindex={panel ? undefined : -1}>
+	<div class="mx-auto mb-10 max-w-300 px-6">
+		<header class="mb-10 items-start justify-between gap-10 lg:flex">
+			<div>
+				<h1 class="sr-only">
+					{data.question.name}
+				</h1>
+				{#if data.question.description}
+					<h2 id="analysis" class="sr-only">Our analysis</h2>
+					<div aria-labelledby="analysis" class="mb-8 flex max-w-prose text-lg lg:mb-0">
+						<span class="mt-px inline-block pr-3 text-7xl" aria-hidden="true">“</span>
+						{@html data.question.description}
+					</div>
+				{/if}
+			</div>
 
-  		<div class="flex shrink-0 flex-wrap gap-3 sm:gap-4">
-  			<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
-  			<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
-  		</div>
-  	</header>
+			<div class="flex shrink-0 flex-wrap gap-3 sm:gap-4">
+				<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
+				<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
+			</div>
+		</header>
 
-  	{#if demographics.length > 1}
-  		<div class="border-b border-black-150 dark:border-black-500">
-  			<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
-  		</div>
-  	{/if}
+		{#if demographics.length > 1}
+			<div class="border-b border-black-150 dark:border-black-500">
+				<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
+			</div>
+		{/if}
 
-  	<ChartDownload {figure} name={exportName} year={data.year} url={shareUrl}>
-  		{#snippet chart({ block, chrome }: any)}
-  			<!-- The panel holds no focusable content as it’s an SVG -->
-  			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-  			<div
-  				id="figure"
-  				role={demographics.length > 1 ? 'tabpanel' : undefined}
-  				tabindex={demographics.length > 1 ? 0 : undefined}
-  				aria-labelledby={demographics.length > 1 ? tabId('figure', current.demographic.id) : undefined}
-  			>
-  				<Figure {block} {chrome} />
-  			</div>
-  		{/snippet}
-  	</ChartDownload>
-  </div>
+		<ChartDownload {figure} name={exportName} year={data.year} url={shareUrl}>
+			{#snippet chart({ block, chrome }: any)}
+				<!-- The panel holds no focusable content as it’s an SVG -->
+				<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+				<div
+					id="figure"
+					role={demographics.length > 1 ? 'tabpanel' : undefined}
+					tabindex={demographics.length > 1 ? 0 : undefined}
+					aria-labelledby={demographics.length > 1 ? tabId('figure', current.demographic.id) : undefined}
+				>
+					<Figure {block} {chrome} />
+				</div>
+			{/snippet}
+		</ChartDownload>
+	</div>
 
-  <div class="border-t border-black-200 py-10">
-    <section class="mx-auto max-w-300 px-6" id="data">
-  		<h2 id="asked" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
-  			<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
-  			Question
-  		</h2>
+	<div class="border-t border-black-200 py-10">
+		<section class="mx-auto max-w-300 px-6" id="data">
+			<h2 id="asked" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+				<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
+				Question
+			</h2>
 
-  		{#if definition}
-  			<div aria-labelledby="asked" class="mb-4 flex max-w-3xl justify-between font-headline text-2xl">
-  				{@html definition.titleHtml}
-  			</div>
+			{#if definition}
+				<div aria-labelledby="asked" class="mb-4 flex max-w-3xl justify-between font-headline text-2xl">
+					{@html definition.titleHtml}
+				</div>
 
-  			<ul class="mt-4 flex flex-wrap text-sm text-black-400 dark:text-black-300">
-  				{#each askedFacts(definition) as fact (fact)}
-  					<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
-  				{/each}
-  			</ul>
-  		{/if}
+				<ul class="mt-4 flex flex-wrap text-sm text-black-400 dark:text-black-300">
+					{#each askedFacts(definition) as fact (fact)}
+						<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
+					{/each}
+				</ul>
+			{/if}
 
-  		<div class="-mx-2 my-8"><DataTable {figure} /></div>
+			<div class="-mx-2 my-8"><DataTable {figure} /></div>
 
-  		<div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-8">
-  			{#if definition?.options?.length}
-  				<details>
-  					<summary class="w-fit cursor-pointer text-sm">
-  						{definition.options.length} options offered<span class="sr-only">: {data.question.name}</span>
-  					</summary>
-  					<ol class="mt-3 max-h-120 list-decimal gap-x-10 overflow-y-auto pl-5 text-sm md:columns-2">
-  						{#each definition.options as option, i (i)}
-  							<li class="break-inside-avoid">
-  								{optionLabel(option)}{#if optionFreeText(option)}
-  									<span class="text-black-400 dark:text-black-300">(with free-text entry)</span>{/if}
-  							</li>
-  						{/each}
-  					</ol>
-  				</details>
-  			{/if}
+			<div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-8">
+				{#if definition?.options?.length}
+					<details>
+						<summary class="w-fit cursor-pointer text-sm">
+							{definition.options.length} options offered<span class="sr-only">: {data.question.name}</span>
+						</summary>
+						<ol class="mt-3 max-h-120 list-decimal gap-x-10 overflow-y-auto pl-5 text-sm md:columns-2">
+							{#each definition.options as option, i (i)}
+								<li class="break-inside-avoid">
+									{optionLabel(option)}{#if optionFreeText(option)}
+										<span class="text-black-400 dark:text-black-300">(with free-text entry)</span>{/if}
+								</li>
+							{/each}
+						</ol>
+					</details>
+				{/if}
 
-  			{#if definition}
-  				<p class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-  					<Button variant="link" href={askedInContext(definition)} label="View in survey" iconEnd={IconArrowRight} />
-  					{#if definition.source}
-  						<Button variant="link" href={askedSource(definition)} label="Question definition (.yaml)" iconEnd={IconArrowRight} />
-  					{/if}
-  				</p>
-  			{/if}
-  		</div>
-    </section>
-  </div>
+				{#if definition}
+					<p class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+						<Button variant="link" href={askedInContext(definition)} label="View in survey" iconEnd={IconArrowRight} />
+						{#if definition.source}
+							<Button variant="link" href={askedSource(definition)} label="Question definition (.yaml)" iconEnd={IconArrowRight} />
+						{/if}
+					</p>
+				{/if}
+			</div>
+		</section>
+	</div>
 
-  <div class="border-t border-black-200 py-10">
-	  <section class="mx-auto max-w-300 px-6" aria-labelledby="export">
-  		<h2 class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
-  			<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>
-  			Use this data
-  		</h2>
+	<div class="border-t border-black-200 py-10">
+		<section class="mx-auto max-w-300 px-6" aria-labelledby="export">
+			<h2 class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+				<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>
+				Use this data
+			</h2>
 
-  		{#if figure.series?.length}
-  			<p class="mb-4 text-sm text-black-400 dark:text-black-300">
-  				The Markdown table shows one column per segment; the CSV and JSON carry every measure.
-  			</p>
-  		{/if}
+			{#if figure.series?.length}
+				<p class="mb-4 text-sm text-black-400 dark:text-black-300">
+					The Markdown table shows one column per segment; the CSV and JSON carry every measure.
+				</p>
+			{/if}
 
-  		<QuestionData {figure} name={exportName} url={shareUrl} year={data.year} />
+			<QuestionData {figure} name={exportName} url={shareUrl} year={data.year} />
 
-      {#if dev}
-    		<details class="block py-10">
-     			<summary class="w-fit cursor-pointer font-mono text-xs">DEV ONLY <strong>chartId</strong>: {figure.chart} <strong>dataId</strong>: {figure.dataId}</summary>
-     			<pre
-    				class="mt-1 overflow-x-auto rounded border border-black/10 bg-black/3 p-4 text-xs leading-relaxed dark:border-white/15 dark:bg-white/5">{JSON.stringify(
-     					figure,
-     					null,
-     					2
-    				)}</pre>
-    		</details>
-     	{/if}
-  	</section>
-  </div>
+			{#if dev}
+				<details class="block py-10">
+					<summary class="w-fit cursor-pointer font-mono text-xs"
+						>DEV ONLY <strong>chartId</strong>: {figure.chart} <strong>dataId</strong>: {figure.dataId}</summary
+					>
+					<pre
+						class="mt-1 overflow-x-auto rounded border border-black/10 bg-black/3 p-4 text-xs leading-relaxed dark:border-white/15 dark:bg-white/5">{JSON.stringify(
+							figure,
+							null,
+							2
+						)}</pre>
+				</details>
+			{/if}
+		</section>
+	</div>
 </svelte:element>
 
 {#if !panel && (data.question.previous || data.question.next)}

@@ -1,7 +1,7 @@
 <script lang="ts" module>
 	export const askedFacts = (definition: any): string[] =>
 		[
-      definition.dataId,
+			definition.dataId,
 			definition.type.replace(/_/g, ' '),
 			definition.required ? 'required' : 'optional',
 			`v${definition.version}`,
