@@ -1,0 +1,3043 @@
+{
+  "AISelect": {
+    "qid": "QID78",
+    "qname": "AISelect",
+    "question": "Do you currently use AI tools in your development process?",
+    "datasets": {
+      "AISelect": {
+        "name": "All Respondents",
+        "total_respondents": 33662,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 15850,
+            "percent": 0.4709
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 5946,
+            "percent": 0.1766
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 4623,
+            "percent": 0.1373
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 1792,
+            "percent": 0.0532
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 5451,
+            "percent": 0.1619
+          }
+        ]
+      },
+      "AISel_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 26004,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 13164,
+            "percent": 0.5062
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 4514,
+            "percent": 0.1736
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 3316,
+            "percent": 0.1275
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 1190,
+            "percent": 0.0458
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 3820,
+            "percent": 0.1469
+          }
+        ]
+      },
+      "AISel_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2843,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 1124,
+            "percent": 0.3954
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 531,
+            "percent": 0.1868
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 429,
+            "percent": 0.1509
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 204,
+            "percent": 0.0718
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 555,
+            "percent": 0.1952
+          }
+        ]
+      },
+      "AISel_prof_early": {
+        "name": "Early Career Devs",
+        "total_respondents": 6360,
+        "plot_type": "bar",
+        "plot_subtext": "Early career defined as 1 - 5 years work experience",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 3533,
+            "percent": 0.5555
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 1151,
+            "percent": 0.181
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 733,
+            "percent": 0.1153
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 161,
+            "percent": 0.0253
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 782,
+            "percent": 0.123
+          }
+        ]
+      },
+      "AISel_prof_mid": {
+        "name": "Mid Career Devs",
+        "total_respondents": 5997,
+        "plot_type": "bar",
+        "plot_subtext": "Mid career defined as 5 - 10 years work experience",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 3168,
+            "percent": 0.5283
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 1009,
+            "percent": 0.1683
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 809,
+            "percent": 0.1349
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 223,
+            "percent": 0.0372
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 788,
+            "percent": 0.1314
+          }
+        ]
+      },
+      "AISel_prof_exp": {
+        "name": "Experienced Devs",
+        "total_respondents": 13001,
+        "plot_type": "bar",
+        "plot_subtext": "Experienced dev defined as 10+ years work experience",
+        "data": [
+          {
+            "response": "Yes, I use AI tools daily",
+            "frequency": 6147,
+            "percent": 0.4728
+          },
+          {
+            "response": "Yes, I use AI tools weekly",
+            "frequency": 2238,
+            "percent": 0.1721
+          },
+          {
+            "response": "Yes, I use AI tools monthly or infrequently",
+            "frequency": 1684,
+            "percent": 0.1295
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 786,
+            "percent": 0.0605
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 2146,
+            "percent": 0.1651
+          }
+        ]
+      }
+    }
+  },
+  "AISent": {
+    "qid": "QID79",
+    "qname": "AISent",
+    "question": "How favorable is your stance on using AI tools as part of your development workflow?",
+    "datasets": {
+      "AISent": {
+        "name": "All Respondents",
+        "total_respondents": 33412,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 7662,
+            "percent": 0.2293
+          },
+          {
+            "response": "Favorable",
+            "frequency": 12287,
+            "percent": 0.3677
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 5872,
+            "percent": 0.1757
+          },
+          {
+            "response": "Unsure",
+            "frequency": 758,
+            "percent": 0.0227
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 3616,
+            "percent": 0.1082
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 3217,
+            "percent": 0.0963
+          }
+        ]
+      },
+      "AISent_Prof": {
+        "name": "Professional Developers",
+        "total_respondents": 25814,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 6074,
+            "percent": 0.2353
+          },
+          {
+            "response": "Favorable",
+            "frequency": 9723,
+            "percent": 0.3767
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 4492,
+            "percent": 0.174
+          },
+          {
+            "response": "Unsure",
+            "frequency": 453,
+            "percent": 0.0175
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 2725,
+            "percent": 0.1056
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 2347,
+            "percent": 0.0909
+          }
+        ]
+      },
+      "AISent_Learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2812,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 543,
+            "percent": 0.1931
+          },
+          {
+            "response": "Favorable",
+            "frequency": 942,
+            "percent": 0.335
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 468,
+            "percent": 0.1664
+          },
+          {
+            "response": "Unsure",
+            "frequency": 122,
+            "percent": 0.0434
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 381,
+            "percent": 0.1355
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 356,
+            "percent": 0.1266
+          }
+        ]
+      },
+      "AISent_Prof_early": {
+        "name": "Early Career Devs",
+        "total_respondents": 6293,
+        "plot_type": "bar",
+        "plot_subtext": "Early career defined as 1 - 5 years work experience",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 1434,
+            "percent": 0.2279
+          },
+          {
+            "response": "Favorable",
+            "frequency": 2536,
+            "percent": 0.403
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 1067,
+            "percent": 0.1696
+          },
+          {
+            "response": "Unsure",
+            "frequency": 84,
+            "percent": 0.0133
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 648,
+            "percent": 0.103
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 524,
+            "percent": 0.0833
+          }
+        ]
+      },
+      "AISent_Prof_mid": {
+        "name": "Mid Career Devs",
+        "total_respondents": 5957,
+        "plot_type": "bar",
+        "plot_subtext": "Mid career defined as 5 - 10 years work experience",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 1419,
+            "percent": 0.2382
+          },
+          {
+            "response": "Favorable",
+            "frequency": 2316,
+            "percent": 0.3888
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 963,
+            "percent": 0.1617
+          },
+          {
+            "response": "Unsure",
+            "frequency": 88,
+            "percent": 0.0148
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 656,
+            "percent": 0.1101
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 515,
+            "percent": 0.0865
+          }
+        ]
+      },
+      "AISent_Prof_exp": {
+        "name": "Experienced Devs",
+        "total_respondents": 12941,
+        "plot_type": "bar",
+        "plot_subtext": "Experienced devs defined as 10+ years work experience",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 3096,
+            "percent": 0.2392
+          },
+          {
+            "response": "Favorable",
+            "frequency": 4662,
+            "percent": 0.3603
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 2346,
+            "percent": 0.1813
+          },
+          {
+            "response": "Unsure",
+            "frequency": 270,
+            "percent": 0.0209
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 1333,
+            "percent": 0.103
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 1234,
+            "percent": 0.0954
+          }
+        ]
+      }
+    }
+  },
+  "AIAcc": {
+    "qid": "QID80",
+    "qname": "AIAcc",
+    "question": "How much do you trust the accuracy of the output from AI tools as part of your development workflow?",
+    "datasets": {
+      "AIAcc": {
+        "name": "All Respondents",
+        "total_respondents": 33244,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 1042,
+            "percent": 0.0313
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 9853,
+            "percent": 0.2964
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 8670,
+            "percent": 0.2608
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 6527,
+            "percent": 0.1963
+          }
+        ]
+      },
+      "AIAcc_Prof": {
+        "name": "Professional Developers",
+        "total_respondents": 25701,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 703,
+            "percent": 0.0274
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 7621,
+            "percent": 0.2965
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 6756,
+            "percent": 0.2629
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 5053,
+            "percent": 0.1966
+          }
+        ]
+      },
+      "AIAcc_Learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2781,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 170,
+            "percent": 0.0611
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 870,
+            "percent": 0.3128
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 672,
+            "percent": 0.2416
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 547,
+            "percent": 0.1967
+          }
+        ]
+      },
+      "AIAcc_Prof_early": {
+        "name": "Early Career Devs",
+        "total_respondents": 6254,
+        "plot_type": "bar",
+        "plot_subtext": "Early career defined as 1 - 5 years work experience",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 189,
+            "percent": 0.0302
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 1943,
+            "percent": 0.3107
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 1609,
+            "percent": 0.2573
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 1093,
+            "percent": 0.1748
+          }
+        ]
+      },
+      "AIAcc_Prof_mid": {
+        "name": "Mid Career Devs",
+        "total_respondents": 5931,
+        "plot_type": "bar",
+        "plot_subtext": "Mid career defined as 5 - 10 years work experience",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 168,
+            "percent": 0.0283
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 1796,
+            "percent": 0.3028
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 1545,
+            "percent": 0.2605
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 1168,
+            "percent": 0.1969
+          }
+        ]
+      },
+      "AIAcc_Prof_exp": {
+        "name": "Experienced Devs",
+        "total_respondents": 12908,
+        "plot_type": "bar",
+        "plot_subtext": "Experienced devs defined as 10+ years work experience",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 320,
+            "percent": 0.0248
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 3695,
+            "percent": 0.2863
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 3452,
+            "percent": 0.2674
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 2672,
+            "percent": 0.207
+          }
+        ]
+      }
+    }
+  },
+  "AIComplex": {
+    "qid": "QID81",
+    "qname": "AIComplex",
+    "question": "How well do the AI tools you use in your development workflow handle complex tasks?",
+    "datasets": {
+      "AIComplex": {
+        "name": "All Respondents",
+        "total_respondents": 33230,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 1451,
+            "percent": 0.0437
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 8368,
+            "percent": 0.2518
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 4679,
+            "percent": 0.1408
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 7315,
+            "percent": 0.2201
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 5838,
+            "percent": 0.1757
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 5579,
+            "percent": 0.1679
+          }
+        ]
+      },
+      "AIComplex_Prof": {
+        "name": "Professional Developers",
+        "total_respondents": 25695,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 993,
+            "percent": 0.0386
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 6464,
+            "percent": 0.2516
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 3659,
+            "percent": 0.1424
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 5853,
+            "percent": 0.2278
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 4790,
+            "percent": 0.1864
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 3936,
+            "percent": 0.1532
+          }
+        ]
+      },
+      "AIComplex_Learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2779,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 219,
+            "percent": 0.0788
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 716,
+            "percent": 0.2576
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 346,
+            "percent": 0.1245
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 528,
+            "percent": 0.19
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 452,
+            "percent": 0.1626
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 518,
+            "percent": 0.1864
+          }
+        ]
+      },
+      "AIComplex_Prof_early": {
+        "name": "Early Career Devs",
+        "total_respondents": 6258,
+        "plot_type": "bar",
+        "plot_subtext": "Early career defined as 1 - 5 years work experience",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 247,
+            "percent": 0.0395
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 1760,
+            "percent": 0.2812
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 838,
+            "percent": 0.1339
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 1477,
+            "percent": 0.236
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 1202,
+            "percent": 0.1921
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 734,
+            "percent": 0.1173
+          }
+        ]
+      },
+      "AIComplex_Prof_mid": {
+        "name": "Mid Career Devs",
+        "total_respondents": 5922,
+        "plot_type": "bar",
+        "plot_subtext": "Mid career defined as 5 - 10 years work experience",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 240,
+            "percent": 0.0405
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 1505,
+            "percent": 0.2541
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 815,
+            "percent": 0.1376
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 1415,
+            "percent": 0.2389
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 1156,
+            "percent": 0.1952
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 791,
+            "percent": 0.1336
+          }
+        ]
+      },
+      "AIComplex_Prof_exp": {
+        "name": "Experienced Devs",
+        "total_respondents": 12901,
+        "plot_type": "bar",
+        "plot_subtext": "Experienced dev career defined as 10+ years work experience",
+        "data": [
+          {
+            "response": "Very well at handling complex tasks",
+            "frequency": 467,
+            "percent": 0.0362
+          },
+          {
+            "response": "Good, but not great at handling complex tasks",
+            "frequency": 3029,
+            "percent": 0.2348
+          },
+          {
+            "response": "Neither good or bad at handling complex tasks",
+            "frequency": 1919,
+            "percent": 0.1487
+          },
+          {
+            "response": "Bad at handling complex tasks",
+            "frequency": 2852,
+            "percent": 0.2211
+          },
+          {
+            "response": "Very poor at handling complex tasks",
+            "frequency": 2315,
+            "percent": 0.1794
+          },
+          {
+            "response": "I don't use AI tools for complex tasks / I don't know",
+            "frequency": 2319,
+            "percent": 0.1798
+          }
+        ]
+      }
+    }
+  },
+  "AITool": {
+    "qid": "QID82",
+    "qname": "AITool",
+    "question": "Which parts of your development workflow are you currently integrating into AI or using AI tools to accomplish or plan to use AI to accomplish over the next 3 - 5 years?  Please select one for each scenario.",
+    "datasets": {
+      "AITool": {
+        "name": "Currently Mostly AI",
+        "total_respondents": 11202,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Search for answers",
+            "frequency": 6061,
+            "percent": 0.5411
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 4015,
+            "percent": 0.3584
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 3706,
+            "percent": 0.3308
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 3451,
+            "percent": 0.3081
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 2779,
+            "percent": 0.2481
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 2333,
+            "percent": 0.2083
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 2314,
+            "percent": 0.2066
+          },
+          {
+            "response": "Testing code",
+            "frequency": 2006,
+            "percent": 0.1791
+          },
+          {
+            "response": "Writing code",
+            "frequency": 1896,
+            "percent": 0.1693
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 1230,
+            "percent": 0.1098
+          },
+          {
+            "response": "Project planning",
+            "frequency": 1212,
+            "percent": 0.1082
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 1138,
+            "percent": 0.1016
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 690,
+            "percent": 0.0616
+          }
+        ]
+      },
+      "Currently_Partially_AI": {
+        "name": "Currently Partially AI",
+        "total_respondents": 20991,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Search for answers",
+            "frequency": 11711,
+            "percent": 0.5579
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 6012,
+            "percent": 0.2864
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 9949,
+            "percent": 0.474
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 6349,
+            "percent": 0.3025
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 5729,
+            "percent": 0.2729
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 6861,
+            "percent": 0.3269
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 9886,
+            "percent": 0.471
+          },
+          {
+            "response": "Testing code",
+            "frequency": 5775,
+            "percent": 0.2751
+          },
+          {
+            "response": "Writing code",
+            "frequency": 12389,
+            "percent": 0.5902
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 2669,
+            "percent": 0.1271
+          },
+          {
+            "response": "Project planning",
+            "frequency": 3592,
+            "percent": 0.1711
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 4739,
+            "percent": 0.2258
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 2195,
+            "percent": 0.1046
+          }
+        ]
+      },
+      "Plan_to_Partially_Use_AI": {
+        "name": "Plan to Partially Use AI",
+        "total_respondents": 22518,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Search for answers",
+            "frequency": 5403,
+            "percent": 0.2399
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 6309,
+            "percent": 0.2802
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 6291,
+            "percent": 0.2794
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 6864,
+            "percent": 0.3048
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 7313,
+            "percent": 0.3248
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 7861,
+            "percent": 0.3491
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 6948,
+            "percent": 0.3086
+          },
+          {
+            "response": "Testing code",
+            "frequency": 7804,
+            "percent": 0.3466
+          },
+          {
+            "response": "Writing code",
+            "frequency": 7288,
+            "percent": 0.3237
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 5636,
+            "percent": 0.2503
+          },
+          {
+            "response": "Project planning",
+            "frequency": 5584,
+            "percent": 0.248
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 7065,
+            "percent": 0.3137
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 5632,
+            "percent": 0.2501
+          }
+        ]
+      },
+      "Plan_to_Mostly_Use_AI": {
+        "name": "Plan to Mostly Use AI",
+        "total_respondents": 12790,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Search for answers",
+            "frequency": 2202,
+            "percent": 0.1722
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 3700,
+            "percent": 0.2893
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 2011,
+            "percent": 0.1572
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 3664,
+            "percent": 0.2865
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 4061,
+            "percent": 0.3175
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 2951,
+            "percent": 0.2307
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 1898,
+            "percent": 0.1484
+          },
+          {
+            "response": "Testing code",
+            "frequency": 3305,
+            "percent": 0.2584
+          },
+          {
+            "response": "Writing code",
+            "frequency": 1591,
+            "percent": 0.1244
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 2937,
+            "percent": 0.2296
+          },
+          {
+            "response": "Project planning",
+            "frequency": 1828,
+            "percent": 0.1429
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 2085,
+            "percent": 0.163
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 1927,
+            "percent": 0.1507
+          }
+        ]
+      },
+      "Dont_plan_to_use_AI_for_this_task": {
+        "name": "Don't Plan to Use AI for This Task",
+        "total_respondents": 25349,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Search for answers",
+            "frequency": 4956,
+            "percent": 0.1955
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 9672,
+            "percent": 0.3816
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 8179,
+            "percent": 0.3227
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 9749,
+            "percent": 0.3846
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 10047,
+            "percent": 0.3963
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 9994,
+            "percent": 0.3943
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 9218,
+            "percent": 0.3636
+          },
+          {
+            "response": "Testing code",
+            "frequency": 11187,
+            "percent": 0.4413
+          },
+          {
+            "response": "Writing code",
+            "frequency": 7320,
+            "percent": 0.2888
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 16618,
+            "percent": 0.6556
+          },
+          {
+            "response": "Project planning",
+            "frequency": 17551,
+            "percent": 0.6924
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 14876,
+            "percent": 0.5868
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 19222,
+            "percent": 0.7583
+          }
+        ]
+      }
+    }
+  },
+  "AIFrustration": {
+    "qid": "QID99",
+    "qname": "AIFrustration",
+    "question": "When using AI tools, which of the following problems or frustrations have you encountered? Select all that apply.",
+    "datasets": {
+      "AIFrustration": {
+        "name": "All Respondents",
+        "total_respondents": 31476,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "AI solutions that are almost right, but not quite",
+            "frequency": 20768,
+            "percent": 0.6598
+          },
+          {
+            "response": "Debugging AI-generated code is more time-consuming",
+            "frequency": 14232,
+            "percent": 0.4522
+          },
+          {
+            "response": "I don’t use AI tools regularly",
+            "frequency": 7409,
+            "percent": 0.2354
+          },
+          {
+            "response": "I’ve become less confident in my own problem-solving",
+            "frequency": 6307,
+            "percent": 0.2004
+          },
+          {
+            "response": "It’s hard to understand how or why the code works",
+            "frequency": 5136,
+            "percent": 0.1632
+          },
+          {
+            "response": "Other (write in):",
+            "frequency": 3655,
+            "percent": 0.1161
+          },
+          {
+            "response": "I haven’t encountered any problems",
+            "frequency": 1245,
+            "percent": 0.0396
+          }
+        ]
+      }
+    }
+  },
+  "AIExplain": {
+    "qid": "QID84",
+    "qname": "AIExplain",
+    "question": "In your own words, is &quot;vibe coding&quot; part of your professional development work? For this question, we define vibe coding according to the <a href=\"https://en.wikipedia.org/wiki/Vibe_coding\" target=\"_blank\">Wikipedia definition<\/a>, the process of generating software from LLM prompts.",
+    "datasets": {
+      "AIExplain": {
+        "name": "All Respondents",
+        "total_respondents": 26564,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 114,
+            "percent": 0.0043
+          },
+          {
+            "response": "Yes",
+            "frequency": 3167,
+            "percent": 0.1192
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 755,
+            "percent": 0.0284
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 548,
+            "percent": 0.0206
+          },
+          {
+            "response": "Not sure",
+            "frequency": 323,
+            "percent": 0.0122
+          },
+          {
+            "response": "No",
+            "frequency": 19176,
+            "percent": 0.7219
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 1420,
+            "percent": 0.0535
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 1061,
+            "percent": 0.0399
+          }
+        ]
+      },
+      "18-24 years old": {
+        "name": "18-24 years old",
+        "plot_type": "bar",
+        "total_respondents": 4212,
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 14,
+            "percent": 0.0033
+          },
+          {
+            "response": "Yes",
+            "frequency": 488,
+            "percent": 0.1159
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 133,
+            "percent": 0.0316
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 99,
+            "percent": 0.0235
+          },
+          {
+            "response": "Not sure",
+            "frequency": 50,
+            "percent": 0.0119
+          },
+          {
+            "response": "No",
+            "frequency": 3066,
+            "percent": 0.7279
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 217,
+            "percent": 0.0515
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 145,
+            "percent": 0.0344
+          }
+        ]
+      },
+      "25-34 years old": {
+        "name": "25-34 years old",
+        "plot_type": "bar",
+        "total_respondents": 8526,
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 30,
+            "percent": 0.0035
+          },
+          {
+            "response": "Yes",
+            "frequency": 1008,
+            "percent": 0.1182
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 276,
+            "percent": 0.0324
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 137,
+            "percent": 0.0161
+          },
+          {
+            "response": "Not sure",
+            "frequency": 108,
+            "percent": 0.0127
+          },
+          {
+            "response": "No",
+            "frequency": 6167,
+            "percent": 0.7233
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 489,
+            "percent": 0.0574
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 311,
+            "percent": 0.0365
+          }
+        ]
+      },
+      "35-44 years old": {
+        "name": "35-44 years old",
+        "plot_type": "bar",
+        "total_respondents": 7607,
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 37,
+            "percent": 0.0049
+          },
+          {
+            "response": "Yes",
+            "frequency": 911,
+            "percent": 0.1198
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 211,
+            "percent": 0.0277
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 166,
+            "percent": 0.0218
+          },
+          {
+            "response": "Not sure",
+            "frequency": 81,
+            "percent": 0.0106
+          },
+          {
+            "response": "No",
+            "frequency": 5474,
+            "percent": 0.7196
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 412,
+            "percent": 0.0542
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 315,
+            "percent": 0.0414
+          }
+        ]
+      },
+      "45-54 years old": {
+        "name": "45-54 years old",
+        "plot_type": "bar",
+        "total_respondents": 3838,
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 20,
+            "percent": 0.0052
+          },
+          {
+            "response": "Yes",
+            "frequency": 488,
+            "percent": 0.1271
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 96,
+            "percent": 0.025
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 74,
+            "percent": 0.0193
+          },
+          {
+            "response": "Not sure",
+            "frequency": 49,
+            "percent": 0.0128
+          },
+          {
+            "response": "No",
+            "frequency": 2738,
+            "percent": 0.7134
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 201,
+            "percent": 0.0524
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 172,
+            "percent": 0.0448
+          }
+        ]
+      },
+      "55-64 years old": {
+        "name": "55-64 years old",
+        "plot_type": "bar",
+        "total_respondents": 1657,
+        "data": [
+          {
+            "response": "Yes, emphatically",
+            "frequency": 13,
+            "percent": 0.0078
+          },
+          {
+            "response": "Yes",
+            "frequency": 189,
+            "percent": 0.1141
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 33,
+            "percent": 0.0199
+          },
+          {
+            "response": "I have tried it",
+            "frequency": 52,
+            "percent": 0.0314
+          },
+          {
+            "response": "Not sure",
+            "frequency": 24,
+            "percent": 0.0145
+          },
+          {
+            "response": "No",
+            "frequency": 1181,
+            "percent": 0.7127
+          },
+          {
+            "response": "No, emphatically",
+            "frequency": 76,
+            "percent": 0.0459
+          },
+          {
+            "response": "Uncategorized",
+            "frequency": 89,
+            "percent": 0.0537
+          }
+        ]
+      }
+    }
+  },
+  "AIHuman": {
+    "qid": "QID100",
+    "qname": "AIHuman",
+    "question": "In the future, if AI can do most coding tasks, in which situations would you still want to ask another person for help? Select all that apply.",
+    "datasets": {
+      "AIHuman": {
+        "name": "All Respondents",
+        "total_respondents": 29163,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "When I don’t trust AI’s answers",
+            "frequency": 21962,
+            "percent": 0.7531
+          },
+          {
+            "response": "When I have ethical or security concerns about code",
+            "frequency": 17992,
+            "percent": 0.6169
+          },
+          {
+            "response": "When I want to fully understand something",
+            "frequency": 17864,
+            "percent": 0.6126
+          },
+          {
+            "response": "When I want to learn best practices",
+            "frequency": 16944,
+            "percent": 0.581
+          },
+          {
+            "response": "When I’m stuck and can’t explain the problem",
+            "frequency": 15923,
+            "percent": 0.546
+          },
+          {
+            "response": "When I need help fixing complex or unfamiliar code",
+            "frequency": 14528,
+            "percent": 0.4982
+          },
+          {
+            "response": "When I want to compare different solutions",
+            "frequency": 12868,
+            "percent": 0.4412
+          },
+          {
+            "response": "When I need quick help troubleshooting",
+            "frequency": 8008,
+            "percent": 0.2746
+          },
+          {
+            "response": "Other",
+            "frequency": 1789,
+            "percent": 0.0613
+          },
+          {
+            "response": "I don’t think I’ll need help from people anymore",
+            "frequency": 1246,
+            "percent": 0.0427
+          }
+        ]
+      }
+    }
+  },
+  "AIAgents": {
+    "qid": "QID85",
+    "qname": "AIAgents",
+    "question": "Are you using AI agents in your work (development or otherwise)?  AI agents refer to autonomous software entities that can operate with minimal to no direct human intervention using artificial intelligence techniques.",
+    "datasets": {
+      "AIAgents": {
+        "name": "All Respondents",
+        "total_respondents": 31877,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI agents at work daily",
+            "frequency": 4503,
+            "percent": 0.1413
+          },
+          {
+            "response": "Yes, I use AI agents at work weekly",
+            "frequency": 2861,
+            "percent": 0.0898
+          },
+          {
+            "response": "Yes, I use AI agents at work monthly or infrequently",
+            "frequency": 2496,
+            "percent": 0.0783
+          },
+          {
+            "response": "No, but I plan to",
+            "frequency": 5550,
+            "percent": 0.1741
+          },
+          {
+            "response": "No, I use AI exclusively in copilot/autocomplete mode",
+            "frequency": 4393,
+            "percent": 0.1378
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 12074,
+            "percent": 0.3788
+          }
+        ]
+      },
+      "AIAgents_Prof": {
+        "name": "Professional Developers",
+        "total_respondents": 24752,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI agents at work daily",
+            "frequency": 3686,
+            "percent": 0.1489
+          },
+          {
+            "response": "Yes, I use AI agents at work weekly",
+            "frequency": 2285,
+            "percent": 0.0923
+          },
+          {
+            "response": "Yes, I use AI agents at work monthly or infrequently",
+            "frequency": 1913,
+            "percent": 0.0773
+          },
+          {
+            "response": "No, but I plan to",
+            "frequency": 4265,
+            "percent": 0.1723
+          },
+          {
+            "response": "No, I use AI exclusively in copilot/autocomplete mode",
+            "frequency": 3517,
+            "percent": 0.1421
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 9086,
+            "percent": 0.3671
+          }
+        ]
+      },
+      "AIAgents_Learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2610,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI agents at work daily",
+            "frequency": 344,
+            "percent": 0.1318
+          },
+          {
+            "response": "Yes, I use AI agents at work weekly",
+            "frequency": 203,
+            "percent": 0.0778
+          },
+          {
+            "response": "Yes, I use AI agents at work monthly or infrequently",
+            "frequency": 192,
+            "percent": 0.0736
+          },
+          {
+            "response": "No, but I plan to",
+            "frequency": 406,
+            "percent": 0.1556
+          },
+          {
+            "response": "No, I use AI exclusively in copilot/autocomplete mode",
+            "frequency": 315,
+            "percent": 0.1207
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 1150,
+            "percent": 0.4406
+          }
+        ]
+      },
+      "AIAgents_Prof_ai": {
+        "name": "Professional AI Users",
+        "total_respondents": 20892,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI agents at work daily",
+            "frequency": 3664,
+            "percent": 0.1754
+          },
+          {
+            "response": "Yes, I use AI agents at work weekly",
+            "frequency": 2267,
+            "percent": 0.1085
+          },
+          {
+            "response": "Yes, I use AI agents at work monthly or infrequently",
+            "frequency": 1856,
+            "percent": 0.0888
+          },
+          {
+            "response": "No, but I plan to",
+            "frequency": 3892,
+            "percent": 0.1863
+          },
+          {
+            "response": "No, I use AI exclusively in copilot/autocomplete mode",
+            "frequency": 3406,
+            "percent": 0.163
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 5807,
+            "percent": 0.278
+          }
+        ]
+      },
+      "AIAgents_Learn_ai": {
+        "name": "Learning AI Users",
+        "total_respondents": 2019,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I use AI agents at work daily",
+            "frequency": 334,
+            "percent": 0.1654
+          },
+          {
+            "response": "Yes, I use AI agents at work weekly",
+            "frequency": 194,
+            "percent": 0.0961
+          },
+          {
+            "response": "Yes, I use AI agents at work monthly or infrequently",
+            "frequency": 175,
+            "percent": 0.0867
+          },
+          {
+            "response": "No, but I plan to",
+            "frequency": 341,
+            "percent": 0.1689
+          },
+          {
+            "response": "No, I use AI exclusively in copilot/autocomplete mode",
+            "frequency": 296,
+            "percent": 0.1466
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 679,
+            "percent": 0.3363
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentChange": {
+    "qid": "QID83",
+    "qname": "AIAgentChange",
+    "question": "Have AI tools or AI agents changed how you complete development work in the past year?",
+    "datasets": {
+      "AIAgentChange": {
+        "name": "All Respondents",
+        "total_respondents": 31636,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, to a great extent",
+            "frequency": 5169,
+            "percent": 0.1634
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 11151,
+            "percent": 0.3525
+          },
+          {
+            "response": "Not at all or minimally",
+            "frequency": 13087,
+            "percent": 0.4137
+          },
+          {
+            "response": "No, but my development work has significantly changed due to non-AI factors",
+            "frequency": 821,
+            "percent": 0.026
+          },
+          {
+            "response": "No, but my development work has changed somewhat due to non-AI factors",
+            "frequency": 1408,
+            "percent": 0.0445
+          }
+        ]
+      }
+    }
+  },
+  "AIAgent_Uses": {
+    "qid": "QID86",
+    "qname": "AIAgent_Uses",
+    "question": "What industry purposes or specific tasks are you using AI agents in your development work? Select all that apply from both lists.",
+    "datasets": {
+      "AIAgent_Uses": {
+        "name": "Industry Purpose",
+        "total_respondents": 12301,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software engineering",
+            "frequency": 10277,
+            "percent": 0.8355
+          },
+          {
+            "response": "Data and analytics",
+            "frequency": 3062,
+            "percent": 0.2489
+          },
+          {
+            "response": "IT operations",
+            "frequency": 2213,
+            "percent": 0.1799
+          },
+          {
+            "response": "Business process automation",
+            "frequency": 2161,
+            "percent": 0.1757
+          },
+          {
+            "response": "Decision intelligence",
+            "frequency": 1384,
+            "percent": 0.1125
+          },
+          {
+            "response": "Customer service support",
+            "frequency": 1381,
+            "percent": 0.1123
+          },
+          {
+            "response": "Marketing",
+            "frequency": 1058,
+            "percent": 0.086
+          },
+          {
+            "response": "Cybersecurity",
+            "frequency": 907,
+            "percent": 0.0737
+          },
+          {
+            "response": "Robotics",
+            "frequency": 484,
+            "percent": 0.0393
+          },
+          {
+            "response": "Other",
+            "frequency": 266,
+            "percent": 0.0216
+          }
+        ]
+      }
+    }
+  },
+  "AgentUsesGeneral": {
+    "qid": "QID106",
+    "qname": "AgentUsesGeneral",
+    "question": "What industry purposes or specific tasks are you using AI agents in your development work? Select all that apply from both lists.",
+    "datasets": {
+      "AgentUsesGeneral": {
+        "name": "General Purpose",
+        "total_respondents": 5797,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Language processing",
+            "frequency": 2842,
+            "percent": 0.4903
+          },
+          {
+            "response": "Integration with external agents and APIs",
+            "frequency": 2219,
+            "percent": 0.3828
+          },
+          {
+            "response": "MCP servers",
+            "frequency": 1997,
+            "percent": 0.3445
+          },
+          {
+            "response": "Agent/multi-agent orchestration",
+            "frequency": 1627,
+            "percent": 0.2807
+          },
+          {
+            "response": "Vector databases for AI applications",
+            "frequency": 1395,
+            "percent": 0.2406
+          },
+          {
+            "response": "Multi-platform search enablement",
+            "frequency": 1125,
+            "percent": 0.1941
+          },
+          {
+            "response": "Personalized agent creation",
+            "frequency": 1063,
+            "percent": 0.1834
+          },
+          {
+            "response": "Other",
+            "frequency": 173,
+            "percent": 0.0298
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentImpact": {
+    "qid": "QID87",
+    "qname": "AIAgentImpact",
+    "question": "To what extent do you agree with the following statements regarding the impact of AI agents on your work as a developer?",
+    "datasets": {
+      "AIAgentImpact": {
+        "name": "All Respondents",
+        "total_respondents": 12823,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Strongly agree", "Somewhat agree", "Neutral", "Somewhat disagree", "Strongly disagree"],
+        "data": [
+          {
+            "response": "AI agents have accelerated my learning about new technologies or codebases.",
+            "frequency": [3426, 4500, 2675, 1025, 920],
+            "percent": [0.2731, 0.3587, 0.2132, 0.0817, 0.0733],
+            "offset": [0, 0.2731, 0.6318, 0.845, 0.9267]
+          },
+          {
+            "response": "AI agents have helped me automate repetitive tasks.",
+            "frequency": [3687, 4397, 2826, 884, 807],
+            "percent": [0.2926, 0.3489, 0.2243, 0.0702, 0.064],
+            "offset": [0, 0.2926, 0.6415, 0.8658, 0.936]
+          },
+          {
+            "response": "AI agents have helped me solve complex problems more effectively.",
+            "frequency": [2141, 4009, 3174, 1786, 1439],
+            "percent": [0.1706, 0.3195, 0.2529, 0.1423, 0.1147],
+            "offset": [0, 0.1706, 0.4901, 0.743, 0.8853]
+          },
+          {
+            "response": "AI agents have improved collaboration within my team.",
+            "frequency": [819, 1335, 5038, 2490, 2759],
+            "percent": [0.0658, 0.1073, 0.405, 0.2001, 0.2218],
+            "offset": [0, 0.0658, 0.1731, 0.5781, 0.7782]
+          },
+          {
+            "response": "AI agents have improved the quality of my code.",
+            "frequency": [1531, 3179, 4075, 2156, 1643],
+            "percent": [0.1217, 0.2526, 0.3238, 0.1713, 0.1306],
+            "offset": [0, 0.1217, 0.3743, 0.6981, 0.8694]
+          },
+          {
+            "response": "AI agents have increased my productivity.",
+            "frequency": [3536, 5232, 2598, 763, 626],
+            "percent": [0.2772, 0.4102, 0.2037, 0.0598, 0.0491],
+            "offset": [0, 0.2772, 0.6874, 0.8911, 0.9509]
+          },
+          {
+            "response": "AI agents have reduced the time spent on specific development tasks.",
+            "frequency": [3679, 5112, 2237, 860, 646],
+            "percent": [0.2935, 0.4079, 0.1785, 0.0686, 0.0515],
+            "offset": [0, 0.2935, 0.7014, 0.8799, 0.9485]
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentChallenges": {
+    "qid": "QID88",
+    "qname": "AIAgentChallenges",
+    "question": "To what extent do you agree with the following statements regarding AI agents?",
+    "datasets": {
+      "AIAgentChallenges": {
+        "name": "All Respondents",
+        "total_respondents": 28930,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Strongly agree", "Somewhat agree", "Neutral", "Somewhat disagree", "Strongly disagree"],
+        "data": [
+          {
+            "response": "I am concerned about the accuracy of the information provided by AI agents.",
+            "frequency": [16461, 8576, 2799, 670, 316],
+            "percent": [0.5711, 0.2976, 0.0971, 0.0232, 0.011],
+            "offset": [0, 0.5711, 0.8687, 0.9658, 0.989]
+          },
+          {
+            "response": "I have concerns about the security and privacy of data when using AI agents.",
+            "frequency": [15957, 7194, 3327, 1325, 636],
+            "percent": [0.5611, 0.253, 0.117, 0.0466, 0.0224],
+            "offset": [0, 0.5611, 0.8141, 0.9311, 0.9777]
+          },
+          {
+            "response": "Integrating AI agents with my existing tools and workflows can be difficult.",
+            "frequency": [4681, 8417, 10594, 3587, 1092],
+            "percent": [0.165, 0.2967, 0.3734, 0.1264, 0.0385],
+            "offset": [0, 0.165, 0.4617, 0.8351, 0.9615]
+          },
+          {
+            "response": "It takes significant time and effort to learn how to use AI agents effectively.",
+            "frequency": [4384, 7907, 9011, 5042, 1957],
+            "percent": [0.1549, 0.2794, 0.3184, 0.1782, 0.0691],
+            "offset": [0, 0.1549, 0.4343, 0.7527, 0.9309]
+          },
+          {
+            "response": "My company's IT and/or InfoSec teams have strict rules that do not allow me to use AI agent tools or platforms",
+            "frequency": [3853, 4022, 8518, 4169, 7280],
+            "percent": [0.1384, 0.1445, 0.3059, 0.1497, 0.2615],
+            "offset": [0, 0.1384, 0.2829, 0.5888, 0.7385]
+          },
+          {
+            "response": "The cost of using certain AI agent platforms is a barrier.",
+            "frequency": [7160, 7855, 8975, 2903, 1305],
+            "percent": [0.2539, 0.2786, 0.3183, 0.103, 0.0463],
+            "offset": [0, 0.2539, 0.5325, 0.8508, 0.9538]
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentKnowledge": {
+    "qid": "QID89",
+    "qname": "AIAgentKnowledge",
+    "question": "You indicated you use or develop AI agents as part of your development work.  Have you used any of the following tools for AI agent memory or data management in the past year?",
+    "datasets": {
+      "AIAgentKnowledge": {
+        "name": "All Respondents",
+        "total_respondents": 3398,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Redis",
+            "frequency": 1456,
+            "percent": 0.4285
+          },
+          {
+            "response": "GitHub MCP Server",
+            "frequency": 1454,
+            "percent": 0.4279
+          },
+          {
+            "response": "supabase",
+            "frequency": 711,
+            "percent": 0.2092
+          },
+          {
+            "response": "ChromaDB",
+            "frequency": 669,
+            "percent": 0.1969
+          },
+          {
+            "response": "pgvector",
+            "frequency": 609,
+            "percent": 0.1792
+          },
+          {
+            "response": "Neo4j",
+            "frequency": 419,
+            "percent": 0.1233
+          },
+          {
+            "response": "Pinecone",
+            "frequency": 379,
+            "percent": 0.1115
+          },
+          {
+            "response": "Qdrant",
+            "frequency": 280,
+            "percent": 0.0824
+          },
+          {
+            "response": "Milvus",
+            "frequency": 177,
+            "percent": 0.0521
+          },
+          {
+            "response": "Fireproof",
+            "frequency": 171,
+            "percent": 0.0503
+          },
+          {
+            "response": "LangMem",
+            "frequency": 162,
+            "percent": 0.0477
+          },
+          {
+            "response": "Weaviate",
+            "frequency": 152,
+            "percent": 0.0447
+          },
+          {
+            "response": "LanceDB",
+            "frequency": 150,
+            "percent": 0.0441
+          },
+          {
+            "response": "mem0",
+            "frequency": 136,
+            "percent": 0.04
+          },
+          {
+            "response": "Zep",
+            "frequency": 95,
+            "percent": 0.028
+          },
+          {
+            "response": "Letta",
+            "frequency": 84,
+            "percent": 0.0247
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentOrchestration": {
+    "qid": "QID90",
+    "qname": "AIAgentOrchestration",
+    "question": "You indicated you use or develop AI agents as part of your development work.  Have you used any of the following tools for AI agent orchestration or agent frameworks in the past year?",
+    "datasets": {
+      "AIAgentOrchestration": {
+        "name": "All Respondents",
+        "total_respondents": 3758,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Ollama",
+            "frequency": 1920,
+            "percent": 0.5109
+          },
+          {
+            "response": "LangChain",
+            "frequency": 1238,
+            "percent": 0.3294
+          },
+          {
+            "response": "LangGraph",
+            "frequency": 607,
+            "percent": 0.1615
+          },
+          {
+            "response": "Vertex AI",
+            "frequency": 569,
+            "percent": 0.1514
+          },
+          {
+            "response": "Amazon Bedrock Agents",
+            "frequency": 545,
+            "percent": 0.145
+          },
+          {
+            "response": "OpenRouter",
+            "frequency": 504,
+            "percent": 0.1341
+          },
+          {
+            "response": "Llama Index",
+            "frequency": 501,
+            "percent": 0.1333
+          },
+          {
+            "response": "AutoGen (Microsoft)",
+            "frequency": 452,
+            "percent": 0.1203
+          },
+          {
+            "response": "Zapier",
+            "frequency": 442,
+            "percent": 0.1176
+          },
+          {
+            "response": "CrewAI",
+            "frequency": 283,
+            "percent": 0.0753
+          },
+          {
+            "response": "Semantic Kernel",
+            "frequency": 224,
+            "percent": 0.0596
+          },
+          {
+            "response": "IBM watsonx.ai",
+            "frequency": 215,
+            "percent": 0.0572
+          },
+          {
+            "response": "Haystack",
+            "frequency": 164,
+            "percent": 0.0436
+          },
+          {
+            "response": "Smolagents",
+            "frequency": 139,
+            "percent": 0.037
+          },
+          {
+            "response": "Agno",
+            "frequency": 126,
+            "percent": 0.0335
+          },
+          {
+            "response": "phidata",
+            "frequency": 79,
+            "percent": 0.021
+          },
+          {
+            "response": "Smol-AGI",
+            "frequency": 72,
+            "percent": 0.0192
+          },
+          {
+            "response": "Martian",
+            "frequency": 65,
+            "percent": 0.0173
+          },
+          {
+            "response": "lyzr",
+            "frequency": 57,
+            "percent": 0.0152
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentObserveSecure": {
+    "qid": "QID91",
+    "qname": "AIAgentObserveSecure",
+    "question": "You indicated you use or develop AI agents as part of your development work.  Have you used any of the following tools for AI agent observability, monitoring or security in the past year?",
+    "datasets": {
+      "AIAgentObserveSecure": {
+        "name": "All Respondents",
+        "total_respondents": 2689,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Grafana + Prometheus",
+            "frequency": 1155,
+            "percent": 0.4295
+          },
+          {
+            "response": "Sentry",
+            "frequency": 856,
+            "percent": 0.3183
+          },
+          {
+            "response": "Snyk",
+            "frequency": 490,
+            "percent": 0.1822
+          },
+          {
+            "response": "New Relic",
+            "frequency": 350,
+            "percent": 0.1302
+          },
+          {
+            "response": "LangSmith",
+            "frequency": 336,
+            "percent": 0.125
+          },
+          {
+            "response": "Honeycomb",
+            "frequency": 238,
+            "percent": 0.0885
+          },
+          {
+            "response": "Langfuse",
+            "frequency": 238,
+            "percent": 0.0885
+          },
+          {
+            "response": "Wiz",
+            "frequency": 185,
+            "percent": 0.0688
+          },
+          {
+            "response": "Galileo",
+            "frequency": 167,
+            "percent": 0.0621
+          },
+          {
+            "response": "Adversarial Robustness Toolbox (ART)",
+            "frequency": 147,
+            "percent": 0.0547
+          },
+          {
+            "response": "Protect AI",
+            "frequency": 135,
+            "percent": 0.0502
+          },
+          {
+            "response": "Vectra AI",
+            "frequency": 118,
+            "percent": 0.0439
+          },
+          {
+            "response": "arize",
+            "frequency": 99,
+            "percent": 0.0368
+          },
+          {
+            "response": "helicone",
+            "frequency": 86,
+            "percent": 0.032
+          },
+          {
+            "response": "Metero",
+            "frequency": 73,
+            "percent": 0.0271
+          },
+          {
+            "response": "opik",
+            "frequency": 62,
+            "percent": 0.0231
+          }
+        ]
+      }
+    }
+  },
+  "AIAgentExternal": {
+    "qid": "QID92",
+    "qname": "AIAgentExternal",
+    "question": "You indicated you use or develop AI agents as part of your development work.  Have you used any of the following out-of-the-box agents, copilots or assistants?",
+    "datasets": {
+      "AIAgentExternal": {
+        "name": "All Respondents",
+        "total_respondents": 8323,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "ChatGPT",
+            "frequency": 6798,
+            "percent": 0.8168
+          },
+          {
+            "response": "GitHub Copilot",
+            "frequency": 5651,
+            "percent": 0.679
+          },
+          {
+            "response": "Google Gemini",
+            "frequency": 3945,
+            "percent": 0.474
+          },
+          {
+            "response": "Claude Code",
+            "frequency": 3393,
+            "percent": 0.4077
+          },
+          {
+            "response": "Microsoft Copilot",
+            "frequency": 2601,
+            "percent": 0.3125
+          },
+          {
+            "response": "Perplexity",
+            "frequency": 1350,
+            "percent": 0.1622
+          },
+          {
+            "response": "v0.dev",
+            "frequency": 755,
+            "percent": 0.0907
+          },
+          {
+            "response": "Bolt.new",
+            "frequency": 541,
+            "percent": 0.065
+          },
+          {
+            "response": "Lovable.dev",
+            "frequency": 475,
+            "percent": 0.0571
+          },
+          {
+            "response": "AgentGPT",
+            "frequency": 416,
+            "percent": 0.05
+          },
+          {
+            "response": "Tabnine",
+            "frequency": 416,
+            "percent": 0.05
+          },
+          {
+            "response": "Replit",
+            "frequency": 415,
+            "percent": 0.0499
+          },
+          {
+            "response": "Auto-GPT",
+            "frequency": 387,
+            "percent": 0.0465
+          },
+          {
+            "response": "Amazon Codewhisperer",
+            "frequency": 321,
+            "percent": 0.0386
+          },
+          {
+            "response": "Blackbox AI",
+            "frequency": 287,
+            "percent": 0.0345
+          },
+          {
+            "response": "Roo code (Roo-Cline)",
+            "frequency": 281,
+            "percent": 0.0338
+          },
+          {
+            "response": "Cody",
+            "frequency": 254,
+            "percent": 0.0305
+          },
+          {
+            "response": "Devin AI",
+            "frequency": 227,
+            "percent": 0.0273
+          },
+          {
+            "response": "Glean (Enterprise Agents)",
+            "frequency": 109,
+            "percent": 0.0131
+          },
+          {
+            "response": "OpenHands (formerly OpenDevin)",
+            "frequency": 85,
+            "percent": 0.0102
+          }
+        ]
+      }
+    }
+  },
+  "AI_Workflow_Sent": {
+    "qname": [],
+    "question": "How favorable is your stance on using AI tools as part of your development workflow and which parts of your development workflow are you currently integrating into AI or using AI tools to accomplish or plan to use AI to accomplish over the next 3 - 5 years? Please select one for each scenario.",
+    "datasets": {
+      "Currently mostly AI": {
+        "name": "Currently mostly AI",
+        "total_respondents": 11184,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "label": "Average AI Sentiment Recoded (1 - Very Unfavorable to 6 - Very Favorable)"
+          },
+          "y": {
+            "key": "percent",
+            "label": "Percent of respondents",
+            "unit": "%"
+          },
+          "response": {
+            "key": "Task",
+            "label": "Coding Task"
+          }
+        },
+        "data": [
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 1135,
+            "x": 5.4969,
+            "total": 11184,
+            "y": 10
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 2774,
+            "x": 5.3933,
+            "total": 11184,
+            "y": 25
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 2308,
+            "x": 5.5143,
+            "total": 11184,
+            "y": 21
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 685,
+            "x": 5.5577,
+            "total": 11184,
+            "y": 6
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 3446,
+            "x": 5.363,
+            "total": 11184,
+            "y": 31
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 4006,
+            "x": 5.2511,
+            "total": 11184,
+            "y": 36
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 2327,
+            "x": 5.4525,
+            "total": 11184,
+            "y": 21
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 3700,
+            "x": 5.4024,
+            "total": 11184,
+            "y": 33
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 1225,
+            "x": 5.3829,
+            "total": 11184,
+            "y": 11
+          },
+          {
+            "response": "Project planning",
+            "frequency": 1206,
+            "x": 5.4569,
+            "total": 11184,
+            "y": 11
+          },
+          {
+            "response": "Search for answers",
+            "frequency": 6053,
+            "x": 5.3496,
+            "total": 11184,
+            "y": 54
+          },
+          {
+            "response": "Testing code",
+            "frequency": 2001,
+            "x": 5.4338,
+            "total": 11184,
+            "y": 18
+          },
+          {
+            "response": "Writing code",
+            "frequency": 1889,
+            "x": 5.6469,
+            "total": 11184,
+            "y": 17
+          }
+        ]
+      },
+      "Currently partially AI": {
+        "name": "Currently partially AI",
+        "total_respondents": 20980,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "label": "Average AI Sentiment Recoded (1 - Very Unfavorable to 6 - Very Favorable)"
+          },
+          "y": {
+            "key": "percent",
+            "label": "Percent of respondents",
+            "unit": "%"
+          },
+          "response": {
+            "key": "Task",
+            "label": "Coding Task"
+          }
+        },
+        "data": [
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 4737,
+            "x": 5.137,
+            "total": 20980,
+            "y": 23
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 5727,
+            "x": 5.0236,
+            "total": 20980,
+            "y": 27
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 9882,
+            "x": 4.9922,
+            "total": 20980,
+            "y": 47
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 2194,
+            "x": 5.206,
+            "total": 20980,
+            "y": 10
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 6346,
+            "x": 4.9898,
+            "total": 20980,
+            "y": 30
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 6012,
+            "x": 4.9115,
+            "total": 20980,
+            "y": 29
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 6858,
+            "x": 5.035,
+            "total": 20980,
+            "y": 33
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 9944,
+            "x": 4.8626,
+            "total": 20980,
+            "y": 47
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 2667,
+            "x": 5.1436,
+            "total": 20980,
+            "y": 13
+          },
+          {
+            "response": "Project planning",
+            "frequency": 3592,
+            "x": 5.1205,
+            "total": 20980,
+            "y": 17
+          },
+          {
+            "response": "Search for answers",
+            "frequency": 11706,
+            "x": 4.7056,
+            "total": 20980,
+            "y": 56
+          },
+          {
+            "response": "Testing code",
+            "frequency": 5774,
+            "x": 5.0521,
+            "total": 20980,
+            "y": 28
+          },
+          {
+            "response": "Writing code",
+            "frequency": 12382,
+            "x": 5.0086,
+            "total": 20980,
+            "y": 59
+          }
+        ]
+      },
+      "Plan to partially use AI": {
+        "name": "Plan to partially use AI",
+        "total_respondents": 22500,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "label": "Average AI Sentiment Recoded (1 - Very Unfavorable to 6 - Very Favorable)"
+          },
+          "y": {
+            "key": "percent",
+            "label": "Percent of respondents",
+            "unit": "%"
+          },
+          "response": {
+            "key": "Task",
+            "label": "Coding Task"
+          }
+        },
+        "data": [
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 7061,
+            "x": 4.6989,
+            "total": 22500,
+            "y": 31
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 7311,
+            "x": 4.345,
+            "total": 22500,
+            "y": 32
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 6944,
+            "x": 4.3903,
+            "total": 22500,
+            "y": 31
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 5625,
+            "x": 4.8405,
+            "total": 22500,
+            "y": 25
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 6862,
+            "x": 4.297,
+            "total": 22500,
+            "y": 30
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 6306,
+            "x": 4.2138,
+            "total": 22500,
+            "y": 28
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 7858,
+            "x": 4.3832,
+            "total": 22500,
+            "y": 35
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 6284,
+            "x": 4.1857,
+            "total": 22500,
+            "y": 28
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 5631,
+            "x": 4.6027,
+            "total": 22500,
+            "y": 25
+          },
+          {
+            "response": "Project planning",
+            "frequency": 5578,
+            "x": 4.7576,
+            "total": 22500,
+            "y": 25
+          },
+          {
+            "response": "Search for answers",
+            "frequency": 5400,
+            "x": 3.7341,
+            "total": 22500,
+            "y": 24
+          },
+          {
+            "response": "Testing code",
+            "frequency": 7798,
+            "x": 4.426,
+            "total": 22500,
+            "y": 35
+          },
+          {
+            "response": "Writing code",
+            "frequency": 7283,
+            "x": 4.2996,
+            "total": 22500,
+            "y": 32
+          }
+        ]
+      },
+      "Plan to mostly use AI": {
+        "name": "Plan to mostly use AI",
+        "total_respondents": 12777,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "label": "Average AI Sentiment Recoded (1 - Very Unfavorable to 6 - Very Favorable)"
+          },
+          "y": {
+            "key": "percent",
+            "label": "Percent of respondents",
+            "unit": "%"
+          },
+          "response": {
+            "key": "Task",
+            "label": "Coding Task"
+          }
+        },
+        "data": [
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 2080,
+            "x": 5.151,
+            "total": 12777,
+            "y": 16
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 4056,
+            "x": 4.8982,
+            "total": 12777,
+            "y": 32
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 1893,
+            "x": 5.0111,
+            "total": 12777,
+            "y": 15
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 1927,
+            "x": 5.1339,
+            "total": 12777,
+            "y": 15
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 3659,
+            "x": 4.8849,
+            "total": 12777,
+            "y": 29
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 3695,
+            "x": 4.7475,
+            "total": 12777,
+            "y": 29
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 2948,
+            "x": 4.9922,
+            "total": 12777,
+            "y": 23
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 2008,
+            "x": 4.8909,
+            "total": 12777,
+            "y": 16
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 2934,
+            "x": 4.9918,
+            "total": 12777,
+            "y": 23
+          },
+          {
+            "response": "Project planning",
+            "frequency": 1826,
+            "x": 5.1522,
+            "total": 12777,
+            "y": 14
+          },
+          {
+            "response": "Search for answers",
+            "frequency": 2199,
+            "x": 4.6398,
+            "total": 12777,
+            "y": 17
+          },
+          {
+            "response": "Testing code",
+            "frequency": 3300,
+            "x": 5.0127,
+            "total": 12777,
+            "y": 26
+          },
+          {
+            "response": "Writing code",
+            "frequency": 1588,
+            "x": 5.0737,
+            "total": 12777,
+            "y": 12
+          }
+        ]
+      },
+      "Don't plan to use AI for this task": {
+        "name": "Don't plan to use AI for this task",
+        "total_respondents": 25332,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "label": "Average AI Sentiment Recoded (1 - Very Unfavorable to 6 - Very Favorable)"
+          },
+          "y": {
+            "key": "percent",
+            "label": "Percent of respondents",
+            "unit": "%"
+          },
+          "response": {
+            "key": "Task",
+            "label": "Coding Task"
+          }
+        },
+        "data": [
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 14868,
+            "x": 3.5832,
+            "total": 25332,
+            "y": 59
+          },
+          {
+            "response": "Creating or maintaining documentation",
+            "frequency": 10040,
+            "x": 3.2337,
+            "total": 25332,
+            "y": 40
+          },
+          {
+            "response": "Debugging or fixing code",
+            "frequency": 9214,
+            "x": 2.981,
+            "total": 25332,
+            "y": 36
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 19211,
+            "x": 3.8622,
+            "total": 25332,
+            "y": 76
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 9743,
+            "x": 3.1856,
+            "total": 25332,
+            "y": 38
+          },
+          {
+            "response": "Generating content or synthetic data",
+            "frequency": 9666,
+            "x": 3.3182,
+            "total": 25332,
+            "y": 38
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 9988,
+            "x": 3.1843,
+            "total": 25332,
+            "y": 39
+          },
+          {
+            "response": "Learning new concepts or technologies",
+            "frequency": 8176,
+            "x": 2.9809,
+            "total": 25332,
+            "y": 32
+          },
+          {
+            "response": "Predictive analytics",
+            "frequency": 16612,
+            "x": 3.787,
+            "total": 25332,
+            "y": 66
+          },
+          {
+            "response": "Project planning",
+            "frequency": 17541,
+            "x": 3.7669,
+            "total": 25332,
+            "y": 69
+          },
+          {
+            "response": "Search for answers",
+            "frequency": 4953,
+            "x": 2.4177,
+            "total": 25332,
+            "y": 20
+          },
+          {
+            "response": "Testing code",
+            "frequency": 11180,
+            "x": 3.3466,
+            "total": 25332,
+            "y": 44
+          },
+          {
+            "response": "Writing code",
+            "frequency": 7316,
+            "x": 2.5328,
+            "total": 25332,
+            "y": 29
+          }
+        ]
+      }
+    }
+  }
+}

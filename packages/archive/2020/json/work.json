@@ -1,0 +1,649 @@
+{
+  "Title": "Work",
+  "SubTitle": "Reminder: this year’s survey was taken in February, before COVID-19 was declared a pandemic by the World Health Organization and before the virus impacted every country in the world. Please keep the timing of the survey in mind when reviewing information such as job and salary data.",
+  "Copy": null,
+  "SubSections": [
+    {
+      "Title": "Employment",
+      "GraphCollections": [
+        {
+          "Title": "Employment Status",
+          "Copy": "Over 92% of professional developers are employed at least part-time. Roughly 12% of all respondents say they are students.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "63,854 responses",
+              "Data": {
+                "Employed full-time": 70.8961,
+                "Student": 12.195,
+                "Independent contractor, freelancer, or self-employed": 8.8828,
+                "Not employed, but looking for work": 3.6693,
+                "Employed part-time": 3.472,
+                "Not employed, and not looking for work": 0.5043,
+                "Retired": 0.3806
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "52,370 responses",
+              "Data": {
+                "Employed full-time": 82.7726,
+                "Independent contractor, freelancer, or self-employed": 9.5494,
+                "Employed part-time": 3.1201,
+                "Student": 2.1348,
+                "Not employed, but looking for work": 2.1157,
+                "Not employed, and not looking for work": 0.1795,
+                "Retired": 0.1279
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Employment Status by Geography",
+          "Copy": "India has an noticeably higher proportion of students compared to other countries that are well-represented in the survey data. In all of these locations, more than 70% of developers are employed full-time.",
+          "Graphs": [
+            {
+              "Title": "United States",
+              "SubText": "12,417 responses",
+              "Data": {
+                "Employed full-time": 78.6422,
+                "Student": 8.8669,
+                "Independent contractor, freelancer, or self-employed": 6.2656,
+                "Not employed, but looking for work": 2.867,
+                "Employed part-time": 2.1664,
+                "Retired": 0.7087,
+                "Not employed, and not looking for work": 0.4832
+              }
+            },
+            {
+              "Title": "India",
+              "SubText": "8,323 responses",
+              "Data": {
+                "Employed full-time": 73.1107,
+                "Student": 16.0159,
+                "Independent contractor, freelancer, or self-employed": 4.866,
+                "Not employed, but looking for work": 4.1692,
+                "Employed part-time": 1.5619,
+                "Not employed, and not looking for work": 0.2523,
+                "Retired": 0.024
+              }
+            },
+            {
+              "Title": "United Kingdom",
+              "SubText": "4,324 responses",
+              "Data": {
+                "Employed full-time": 77.3358,
+                "Independent contractor, freelancer, or self-employed": 9.667,
+                "Student": 8.3025,
+                "Employed part-time": 1.8501,
+                "Not employed, but looking for work": 1.7808,
+                "Retired": 0.6013,
+                "Not employed, and not looking for work": 0.4625
+              }
+            },
+            {
+              "Title": "Germany",
+              "SubText": "3,870 responses",
+              "Data": {
+                "Employed full-time": 70.2842,
+                "Student": 14.677,
+                "Employed part-time": 6.6667,
+                "Independent contractor, freelancer, or self-employed": 6.5375,
+                "Not employed, but looking for work": 1.3178,
+                "Not employed, and not looking for work": 0.2842,
+                "Retired": 0.2326
+              }
+            },
+            {
+              "Title": "Canada",
+              "SubText": "2,181 responses",
+              "Data": {
+                "Employed full-time": 72.2604,
+                "Student": 13.3884,
+                "Independent contractor, freelancer, or self-employed": 7.4278,
+                "Not employed, but looking for work": 3.3929,
+                "Employed part-time": 2.5218,
+                "Retired": 0.5961,
+                "Not employed, and not looking for work": 0.4127
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Overtime",
+          "Copy": "For the first time this year, we asked respondents how often they work overtime or beyond the formal time expectation of their job. Over 75% of developers work overtime at least occasionally, defined as one to two days per quarter.",
+          "Graphs": [
+            {
+              "Title": "Overtime",
+              "SubText": "43,231 responses",
+              "Data": {
+                "Never": 10.9135,
+                "Rarely: 1-2 days per year or less": 14.9684,
+                "Occasionally: 1-2 days per quarter but less than monthly": 21.901,
+                "Sometimes: 1-2 days per month but less than weekly": 26.71,
+                "Often: 1-2 days per week or more": 25.5072
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Company Information",
+      "GraphCollections": [
+        {
+          "Title": "Company Size",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Company Size",
+              "Copy": "",
+              "SubText": "44,334 responses",
+              "Data": {
+                "Just me - I am a freelancer, sole proprietor, etc.": 4.9398,
+                "2 to 9 employees": 9.945,
+                "10 to 19 employees": 9.3089,
+                "20 to 99 employees": 21.647,
+                "100 to 499 employees": 18.7463,
+                "500 to 999 employees": 6.4961,
+                "1,000 to 4,999 employees": 10.969,
+                "5,000 to 9,999 employees": 4.0781,
+                "10,000 or more employees": 13.8697
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Onboarding",
+          "Copy": "Almost half of the respondents reported that their company has a good onboarding process. About one fifth had no onboarding process at all.",
+          "Graphs": [
+            {
+              "Title": "Onboarding",
+              "SubText": "42,623 responses",
+              "Data": {
+                "Yes": 48.6334,
+                "No": 29.6905,
+                "Onboarding? What onboarding?": 21.6761
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Presence of DevOps Personnel",
+          "Copy": "We asked survey takers if their organizations have dedicated DevOps personnel. An equal amount of respondents reported that their company had at least one dedicated employee to handle DevOps as those who reported they had none.",
+          "Graphs": [
+            {
+              "Title": "Presence of DevOps Personnel",
+              "SubText": "42,686 responses",
+              "Data": {
+                "Yes": 43.8364,
+                "No": 43.6443,
+                "Not sure": 12.5193
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Importance of DevOps",
+          "Copy": "We also asked survey takers about the importance of DevOps to scaling software development. Almost 80% of respondents believed that DevOps is at least somewhat important, with almost half of the respondents noting that it is extremely important.",
+          "Graphs": [
+            {
+              "Title": "Importance of DevOps",
+              "SubText": "41,732 responses",
+              "Data": {
+                "Extremely important": 48.1477,
+                "Somewhat important": 30.993,
+                "Neutral": 17.4303,
+                "Not very important": 1.9913,
+                "Not at all important": 1.4377
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Career Values",
+      "GraphCollections": [
+        {
+          "Title": "How Do Developers Feel About Their Jobs?",
+          "Copy": "Overall, developers tend to be satisfied with their jobs, with almost 65% reporting that they are either slightly or very satisfied with their job. On the other end of the spectrum, around 25% are slightly to very dissatisfied.",
+          "Graphs": [
+            {
+              "Title": "How Do Developers Feel About Their Jobs?",
+              "SubText": "45,194 responses",
+              "Data": {
+                "Very dissatisfied": 8.2887,
+                "Slightly dissatisfied": 15.7632,
+                "Neither satisfied nor dissatisfied": 12.7959,
+                "Slightly satisfied": 30.8227,
+                "Very satisfied": 32.3295
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Looking for a Job",
+      "GraphCollections": [
+        {
+          "Title": "Job Search Status",
+          "Copy": "Almost 83% of respondents reported that they are either not actively looking or interested in new job opportunities. This is consistent with our findings about developer job satisfaction—most developers are happy with their jobs.",
+          "Graphs": [
+            {
+              "Title": "Job Search Status",
+              "SubText": "51,727 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 57.5637,
+                "I am not interested in new job opportunities": 25.1339,
+                "I am actively looking for a job": 17.3024
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Job Search Status by Geography",
+          "Copy": "When looking across several countries with large developer populations, job satisfaction is mostly consistent. In the US, UK, Germany, and Canada, over 80% of developers are not actively looking for a job, but at least half are open to new opportunities.",
+          "Graphs": [
+            {
+              "Title": "United States",
+              "SubText": "10,660 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 54.7186,
+                "I am not interested in new job opportunities": 31.379,
+                "I am actively looking for a job": 13.9024
+              }
+            },
+            {
+              "Title": "India",
+              "SubText": "6,031 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 56.5909,
+                "I am actively looking for a job": 32.1837,
+                "I am not interested in new job opportunities": 11.2253
+              }
+            },
+            {
+              "Title": "United Kingdom",
+              "SubText": "3,659 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 52.8833,
+                "I am not interested in new job opportunities": 34.4356,
+                "I am actively looking for a job": 12.6811
+              }
+            },
+            {
+              "Title": "Germany",
+              "SubText": "3,323 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 54.9804,
+                "I am not interested in new job opportunities": 34.6073,
+                "I am actively looking for a job": 10.4123
+              }
+            },
+            {
+              "Title": "Canada",
+              "SubText": "1,862 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 57.1966,
+                "I am not interested in new job opportunities": 29.4844,
+                "I am actively looking for a job": 13.319
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Who's Actively Looking for a Job?",
+          "Copy": "If we break out the data by job function, over 20% of academic researchers, data scientists, and data/business analysts are actively looking for a new job, followed closely by designers, game developers, and mobile developers at 19%. This is consistent with findings from past surveys, where we saw that academic researchers and designers were among the roles that had the lowest job satisfaction.",
+          "Graphs": [
+            {
+              "Title": "Who's Actively Looking for a Job?",
+              "SubText": "Mean of 44,927 responses",
+              "Data": {
+                "Academic researcher": 21.7186,
+                "Data scientist or machine learning specialist": 20.4709,
+                "Data or business analyst": 20.1953,
+                "Designer": 19.5754,
+                "Developer, game or graphics": 19.3081,
+                "Developer, mobile": 19.103,
+                "Educator": 18.8593,
+                "Scientist": 17.8759,
+                "Engineer, data": 17.609,
+                "Database administrator": 17.2341,
+                "Developer, front-end": 16.9463,
+                "Developer, embedded applications or devices": 16.4662,
+                "Developer, QA or test": 16.2649,
+                "Developer, back-end": 16.1789,
+                "Developer, full-stack": 15.7371,
+                "Engineer, site reliability": 15.5356,
+                "Developer, desktop or enterprise applications": 15.4823,
+                "System administrator": 15.4478,
+                "Product manager": 15.0327,
+                "Engineering manager": 13.6268,
+                "DevOps specialist": 12.7175,
+                "Senior executive/VP": 11.8349
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Job Hunt Factors",
+          "Copy": "For the first time, we asked developers what drove them to look for a new job. Better compensation was by far the most common factor for respondents with 70% of them noting that more pay was important. Wanting to work with new technologies was the second most popular factor, which is consistent with what respondents reported as one of the most important priorities when choosing between two jobs.",
+          "Graphs": [
+            {
+              "Title": "Job Hunt Factors",
+              "SubText": "42,286 responses; select all that apply",
+              "Data": {
+                "Better compensation": 69.9546,
+                "Wanting to work with new technologies": 58.5229,
+                "Curious about other opportunities": 57.1442,
+                "Growth or leadership opportunities": 52.9442,
+                "Better work/life balance": 48.2618,
+                "Trouble with leadership at my company": 26.7961,
+                "Looking to relocate": 26.2877,
+                "Having a bad day (or week or month) at work": 20.288,
+                "Trouble with my direct manager": 17.008,
+                "Just because": 12.3303,
+                "Trouble with my teammates": 11.6611,
+                "Wanting to share accomplishments with a wider network": 10.2966
+              }
+            }
+          ]
+        },
+        {
+          "Title": "How do you learn about a company during a job hunt",
+          "Copy": "We asked respondents how they learn about a company during a job hunt and received mixed responses. Most respondents turn to reviews on third party sites, such as Glassdoor and Blind. However, a large amount also learn from viewing company sponsored media, such as blogs and company culture videos. Interestingly, relatively fewer respondents seek publicly available financial information, such as data from Crunchbase, which is consistent with respondents noting that company financial performance and fundraising is not a very important factor when deciding to take a job.",
+          "Graphs": [
+            {
+              "Title": "How do you learn about a company during a job hunt",
+              "SubText": "41,022 responses; select all that apply",
+              "Data": {
+                "Company reviews from third party sites (e.g. Glassdoor, Blind)": 69.5944,
+                "Read company media, such as employee blogs or company culture videos": 65.2747,
+                "Personal network - friends or family": 63.3538,
+                "Read other media like news articles, founder profiles, etc. about the company": 49.2102,
+                "Directly asking current or past employees at the company": 36.1757,
+                "Publicly available financial information (e.g. Crunchbase)": 26.3834
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Job Priorities",
+      "GraphCollections": [
+        {
+          "Title": "Most Important Job Factors",
+          "Copy": "We asked the survey respondents if we control for compensation, benefits, and location, what three characteristics would most influence their decision to choose one job offer over another. Overall, the languages and technologies that the developer would be working with was most important, followed by the office environment or company culture and flexibility of schedule. Interestingly enough, the least important factors were the financial performance of the organization (11.4%), the specific team they would be working on (11.2%), and the diversity of the organization (6.6%).\n\nHowever, if we control for gender, we see some differences in the rankings. For example, among the women respondents, 48% selected company culture to be one of the most important factors and 18% indicated that diversity was also of top importance. Among the non-binary respondents, 49.9% chose office environment and company culture in the top three most important factors and 33.4% strongly valued the diversity of the company.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "49,349 responses; select three most important",
+              "Data": {
+                "Languages, frameworks, and other technologies I’d be working with": 51.3364,
+                "Office environment or company culture": 44.5419,
+                "Flex time or a flexible schedule": 43.8834,
+                "Opportunities for professional development": 41.3808,
+                "Remote work options": 33.255,
+                "How widely used or impactful my work output would be": 20.8251,
+                "Industry that I’d be working in": 15.3478,
+                "Family friendliness": 12.1299,
+                "Financial performance or funding status of the company or organization": 11.9395,
+                "Specific department or team I’d be working on": 11.7632,
+                "Diversity of the company or organization": 6.8634
+              }
+            },
+            {
+              "Title": "Men",
+              "SubText": "42,060 responses; select three most important",
+              "Data": {
+                "Languages, frameworks, and other technologies I’d be working with": 52.8103,
+                "Office environment or company culture": 44.4841,
+                "Flex time or a flexible schedule": 44.0347,
+                "Opportunities for professional development": 41.4979,
+                "Remote work options": 33.5663,
+                "How widely used or impactful my work output would be": 20.9891,
+                "Industry that I’d be working in": 15.34,
+                "Family friendliness": 12.1755,
+                "Financial performance or funding status of the company or organization": 12.097,
+                "Specific department or team I’d be working on": 11.7095,
+                "Diversity of the company or organization": 5.5064
+              }
+            },
+            {
+              "Title": "Women",
+              "SubText": "3,694 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 48.3216,
+                "Flex time or a flexible schedule": 45.5874,
+                "Languages, frameworks, and other technologies I’d be working with": 41.8246,
+                "Opportunities for professional development": 41.0937,
+                "Remote work options": 31.9978,
+                "How widely used or impactful my work output would be": 19.843,
+                "Diversity of the company or organization": 18.6248,
+                "Industry that I’d be working in": 14.0498,
+                "Specific department or team I’d be working on": 12.5338,
+                "Family friendliness": 10.7472,
+                "Financial performance or funding status of the company or organization": 8.8793
+              }
+            },
+            {
+              "Title": "Non-binary",
+              "HighlightIcon": true,
+              "SubText": "543 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 51.7495,
+                "Flex time or a flexible schedule": 41.6206,
+                "Languages, frameworks, and other technologies I’d be working with": 39.4107,
+                "Diversity of the company or organization": 34.6225,
+                "Remote work options": 30.9392,
+                "Opportunities for professional development": 26.7035,
+                "How widely used or impactful my work output would be": 22.8361,
+                "Industry that I’d be working in": 18.9687,
+                "Specific department or team I’d be working on": 10.8656,
+                "Financial performance or funding status of the company or organization": 7.5506,
+                "Family friendliness": 7.3665
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Weighting Important Job Factors in the US",
+          "Copy": "As mentioned previously, there are differences in job priorities by gender, so we also compared the overall opinion in the raw results with a weighted opinion. Weighting does not change the results significantly; however, we see gains in office environment or company culture and diversity of the organization.",
+          "Graphs": [
+            {
+              "Title": "United States Unweighted",
+              "SubText": "10,294 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 47.5423,
+                "Languages, frameworks, and other technologies I’d be working with": 47.1245,
+                "Flex time or a flexible schedule": 41.121,
+                "Remote work options": 37.1964,
+                "Opportunities for professional development": 33.4564,
+                "How widely used or impactful my work output would be": 23.4797,
+                "Industry that I’d be working in": 16.4076,
+                "Specific department or team I’d be working on": 16.0288,
+                "Family friendliness": 12.755,
+                "Financial performance or funding status of the company or organization": 12.483,
+                "Diversity of the company or organization": 9.1315
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "10,294 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 47.9086,
+                "Languages, frameworks, and other technologies I’d be working with": 45.6163,
+                "Flex time or a flexible schedule": 41.3737,
+                "Remote work options": 37.3108,
+                "Opportunities for professional development": 33.0169,
+                "How widely used or impactful my work output would be": 23.3513,
+                "Industry that I’d be working in": 16.1663,
+                "Specific department or team I’d be working on": 15.9011,
+                "Family friendliness": 12.4711,
+                "Financial performance or funding status of the company or organization": 12.0178,
+                "Diversity of the company or organization": 11.5645
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Salary",
+      "GraphCollections": [
+        {
+          "Title": "Salary by Developer Type",
+          "Copy": "Across the board, engineering managers, SREs, DevOps specialists, and data engineers tend to receive the highest salaries. When focusing on the US, we see some differences at the bottom of the salary spectrum. In the US, mobile developers and educators tend to have a higher salary relative to other occupations when compared to the global developer population.",
+          "Graphs": [
+            {
+              "Title": "Global",
+              "SubText": "Median of 34,279 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Engineering manager": 92,
+                "Engineer, site reliability": 80,
+                "DevOps specialist": 68,
+                "Engineer, data": 65,
+                "Data scientist or machine learning specialist": 58,
+                "Developer, embedded applications or devices": 57,
+                "Scientist": 57,
+                "Developer, desktop or enterprise applications": 56,
+                "Data or business analyst": 55,
+                "Developer, full-stack": 54,
+                "System administrator": 54,
+                "Developer, back-end": 53,
+                "Developer, QA or test": 53,
+                "Database administrator": 50,
+                "Developer, game or graphics": 50,
+                "Developer, front-end": 49,
+                "Educator": 49,
+                "Designer": 47,
+                "Developer, mobile": 43,
+                "Academic researcher": 41
+              }
+            },
+            {
+              "Title": "United States",
+              "SubText": "Median of 8,006 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Engineering manager": 151.5,
+                "Engineer, site reliability": 140,
+                "Data scientist or machine learning specialist": 125,
+                "DevOps specialist": 125,
+                "Engineer, data": 125,
+                "Developer, back-end": 120,
+                "Developer, embedded applications or devices": 120,
+                "Developer, mobile": 120,
+                "Scientist": 120,
+                "Developer, desktop or enterprise applications": 115,
+                "Educator": 115,
+                "Developer, full-stack": 112,
+                "Developer, game or graphics": 111.5,
+                "Database administrator": 110,
+                "Developer, front-end": 110,
+                "System administrator": 110,
+                "Developer, QA or test": 105,
+                "Academic researcher": 100,
+                "Data or business analyst": 100,
+                "Designer": 100
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Salary and Experience by Developer Type",
+          "Copy": "When we look at how salary compares with years of experience, we see the expected - developers with more experience tend to command higher salaries. However, we see some differences when we look at specific developer roles. SREs, DevOps specialists, and data engineers command a disproportionately higher salary compared to developers within a similar level of experience in different roles. This is consistent with what we saw in the salary trends as a whole. Designers, mobile developers and educators tend to command a disproportionately lower salary.",
+          "Graphs": [
+            {
+              "Title": "Salary and Experience by Developer Type",
+              "Type": "CustomFigure",
+              "FigurePath": "salary_devtype-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Salary and Experience by Language",
+          "Copy": "Salaries also differ in terms of years of experience when looking at the programming language a developer uses as well. For most languages, the relationship between salary and years of coding experience is linear. However, we see some outliers with users of Python and R commanding higher salaries. This could be explained by the fact that these languages are often used by data scientists who are among the most highly compensated developers.",
+          "Graphs": [
+            {
+              "Title": "Salary and Experience by Language",
+              "Type": "CustomFigure",
+              "FigurePath": "salary_language-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Hours Worked Per Week",
+          "Copy": "Globally, over 75% of developers work less than 45 hours per week. Senior executives, engineering managers and product managers tend to work longer hours.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "41,151 responses",
+              "Data": {
+                "Less than 30 hours": 7.2999,
+                "30 to 34 hours": 3.5795,
+                "35 to 39 hours": 13.4529,
+                "40 to 44 hours": 51.7217,
+                "45 to 49 hours": 11.1881,
+                "50 to 54 hours": 7.0496,
+                "55 to 59 hours": 1.1932,
+                "60 to 64 hours": 2.5589,
+                "65 to 69 hours": 0.1798,
+                "70 hours or more": 1.7764
+              }
+            },
+            {
+              "Title": "By Developer Type",
+              "SubText": "Mean of 40,610 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Senior executive/VP": 47.3789,
+                "Engineering manager": 43.8773,
+                "Product manager": 43.6105,
+                "Scientist": 42.2902,
+                "System administrator": 42.1589,
+                "Engineer, site reliability": 42.1492,
+                "Data or business analyst": 42.1473,
+                "Database administrator": 42.1196,
+                "DevOps specialist": 42.1015,
+                "Developer, embedded applications or devices": 41.9197,
+                "Data scientist or machine learning specialist": 41.8427,
+                "Engineer, data": 41.7595,
+                "Developer, QA or test": 41.734,
+                "Educator": 41.7002,
+                "Academic researcher": 41.4518,
+                "Developer, desktop or enterprise applications": 41.4201,
+                "Designer": 41.1094,
+                "Developer, mobile": 41.0325,
+                "Developer, game or graphics": 41.0264,
+                "Developer, back-end": 40.8299,
+                "Developer, full-stack": 40.7835,
+                "Developer, front-end": 40.634
+              }
+            },
+            {
+              "Title": "By Country",
+              "HighlightIcon": true,
+              "SubText": "Mean of 26,291 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "United States": 41.7924,
+                "Canada": 40.6458,
+                "France": 40.3848,
+                "India": 40.3452,
+                "Germany": 40.273,
+                "Brazil": 39.2968,
+                "United Kingdom": 39.1697
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

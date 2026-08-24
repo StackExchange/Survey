@@ -1,0 +1,3275 @@
+{
+  "Name": "Developer Survey 2018",
+  "Sections": [
+    {
+      "Title": "Overview",
+      "SubTitle": "This year, over 100,000 developers told us how they learn, build their careers, which tools they’re using, and what they want in a job.",
+      "SubSections": [
+        {
+          "Title": "Index",
+          "GraphCollections": []
+        }
+      ]
+    },
+    {
+      "Title": "Developer Profile",
+      "SubTitle": "What we know about the developers who are writing the script for the future",
+      "SubSections": [
+        {
+          "Title": "Developer Roles",
+          "GraphCollections": [
+            {
+              "Title": "Developer Type",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Developer Type",
+                  "Copy": "Over half of respondents identify as back-end developers, and about 20% work building mobile apps.",
+                  "SubText": "92,098 responses; select all that apply",
+                  "Data": {
+                    "Back-end developer": 57.8731,
+                    "Full-stack developer": 48.1585,
+                    "Front-end developer": 37.8097,
+                    "Mobile developer": 20.4174,
+                    "Desktop or enterprise applications developer": 17.1632,
+                    "Student": 17.0818,
+                    "Database administrator": 14.3499,
+                    "Designer": 13.0502,
+                    "System administrator": 11.2652,
+                    "DevOps specialist": 10.3683,
+                    "Data or business analyst": 8.2076,
+                    "Data scientist or machine learning specialist": 7.6961,
+                    "QA or test developer": 6.7254,
+                    "Engineering manager": 5.707,
+                    "Embedded applications or devices developer": 5.2325,
+                    "Game or graphics developer": 5.0403,
+                    "Product manager": 4.6863,
+                    "Educator or academic researcher": 3.9534,
+                    "C-suite executive (CEO, CTO, etc.)": 3.7905,
+                    "Marketing or sales professional": 1.2183
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Contributing to Open Source",
+              "Copy": "Almost half of professional developers contribute to open source projects.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "98,855 responses",
+                  "Data": {
+                    "No": 56.415,
+                    "Yes": 43.585
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "87,450 responses",
+                  "Data": {
+                    "No": 55.4877,
+                    "Yes": 44.5123
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Coding as a Hobby",
+              "Copy": "Many developers work on code outside of work. Over 80% of our respondents say that they code as a hobby.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "98,855 responses",
+                  "Data": {
+                    "Yes": 80.8224,
+                    "No": 19.1776
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "87,450 responses",
+                  "Data": {
+                    "Yes": 81.0166,
+                    "No": 18.9834
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Experience",
+          "GraphCollections": [
+            {
+              "Title": "Years Since Learning to Code",
+              "Copy": "There is a wide range of experience levels among developers, and a full third of professional developers learned to code five years ago or less.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "93,835 responses",
+                  "Data": {
+                    "0-2 years": 11.3838,
+                    "3-5 years": 24.8447,
+                    "6-8 years": 20.6085,
+                    "9-11 years": 12.9685,
+                    "12-14 years": 8.5576,
+                    "15-17 years": 6.5189,
+                    "18-20 years": 5.4052,
+                    "21-23 years": 2.822,
+                    "24-26 years": 1.9843,
+                    "27-29 years": 1.1296,
+                    "30 or more years": 3.7768
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "87,259 responses",
+                  "Data": {
+                    "0-2 years": 9.5509,
+                    "3-5 years": 24.4158,
+                    "6-8 years": 21.3594,
+                    "9-11 years": 13.5138,
+                    "12-14 years": 8.9446,
+                    "15-17 years": 6.7901,
+                    "18-20 years": 5.5501,
+                    "21-23 years": 2.9051,
+                    "24-26 years": 2.0376,
+                    "27-29 years": 1.1666,
+                    "30 or more years": 3.7658
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Years Coding Professionally",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Years Coding Professionally",
+                  "Copy": "Developers with many years of professional experience are rare.",
+                  "SubText": "77,903 responses",
+                  "Data": {
+                    "0-2 years": 30.0643,
+                    "3-5 years": 27.4213,
+                    "6-8 years": 14.6143,
+                    "9-11 years": 9.7211,
+                    "12-14 years": 5.503,
+                    "15-17 years": 3.8663,
+                    "18-20 years": 3.6327,
+                    "21-23 years": 1.756,
+                    "24-26 years": 1.1001,
+                    "27-29 years": 0.6495,
+                    "30 or more years": 1.6713
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Years of Professional Coding Experience by Developer Type",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Years of Professional Coding Experience by Developer Type",
+                  "Copy": "Developers who work in different areas of software development have different average amounts of experience. DevOps specialists and developers who code for desktop and enterprise applications have the most experience, while game/graphics developers and mobile developers have the fewest years of experience.",
+                  "SubText": "Mean of 77,078 responses",
+                  "Format": "{0:#.0}",
+                  "Data": {
+                    "Engineering manager": 10.1683,
+                    "DevOps specialist": 7.9538,
+                    "Desktop or enterprise applications developer": 7.7399,
+                    "Embedded applications or devices developer": 7.4724,
+                    "Data or business analyst": 7.183,
+                    "System administrator": 6.9649,
+                    "Database administrator": 6.8993,
+                    "Full-stack developer": 6.3014,
+                    "Back-end developer": 6.1906,
+                    "Educator or academic researcher": 6.1598,
+                    "Designer": 5.982,
+                    "QA or test developer": 5.8095,
+                    "Front-end developer": 5.4934,
+                    "Data scientist or machine learning specialist": 5.465,
+                    "Mobile developer": 5.1754,
+                    "Game or graphics developer": 4.6226
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Education",
+          "GraphCollections": [
+            {
+              "Title": "How Many Developers are Students?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Many Developers are Students?",
+                  "Copy": "About one-quarter of respondents are enrolled in a formal college or university program full-time or part-time.",
+                  "SubText": "94,901 responses",
+                  "Data": {
+                    "No": 74.1815,
+                    "Yes, full-time": 19.3823,
+                    "Yes, part-time": 6.4362
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Educational Attainment",
+              "Copy": "Worldwide, about three-fourths of professional developers have the equivalent of a bachelor's degree or higher. It is not that rare to find accomplished professional developers who have not completed a degree.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "94,703 responses",
+                  "Data": {
+                    "I never completed any formal education": 0.7392,
+                    "Primary/elementary school": 1.7486,
+                    "Secondary school": 9.4517,
+                    "Some college/university study without earning a degree": 12.365,
+                    "Associate degree": 3.1361,
+                    "Bachelor's degree": 46.101,
+                    "Master's degree": 22.5927,
+                    "Professional degree": 1.5279,
+                    "Doctoral degree": 2.3378
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "85,710 responses",
+                  "Data": {
+                    "I never completed any formal education": 0.6475,
+                    "Primary/elementary school": 1.3382,
+                    "Secondary school": 8.1741,
+                    "Some college/university study without earning a degree": 12.0581,
+                    "Associate degree": 3.1303,
+                    "Bachelor's degree": 47.6817,
+                    "Master's degree": 23.2435,
+                    "Professional degree": 1.4946,
+                    "Doctoral degree": 2.2319
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Undergraduate Major",
+              "Copy": "Of professional developers who studied at the university level, over 60% said they majored in computer science, computer engineering, or software engineering. This proportion is somewhat higher in currently enrolled students, and the proportion of respondents majoring in other engineering disciplines like electrical and mechanical engineering is lower among current students than among professionals.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "79,036 responses",
+                  "Data": {
+                    "Computer science, computer engineering, or software engineering": 63.6874,
+                    "Another engineering discipline (ex. civil, electrical, mechanical)": 8.7871,
+                    "Information systems, information technology, or system administration": 8.233,
+                    "A natural science (ex. biology, chemistry, physics)": 3.859,
+                    "Mathematics or statistics": 3.5655,
+                    "Web development or web design": 3.0594,
+                    "A business discipline (ex. accounting, finance, marketing)": 2.4305,
+                    "A humanities discipline (ex. literature, history, philosophy)": 2.0117,
+                    "A social science (ex. anthropology, psychology, political science)": 1.7422,
+                    "Fine arts or performing arts (ex. graphic design, music, studio art)": 1.4361,
+                    "I never declared a major": 0.8768,
+                    "A health science (ex. nursing, pharmacy, radiology)": 0.3113
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "75,134 responses",
+                  "Data": {
+                    "Computer science, computer engineering, or software engineering": 64.4209,
+                    "Another engineering discipline (ex. civil, electrical, mechanical)": 8.5248,
+                    "Information systems, information technology, or system administration": 8.3145,
+                    "A natural science (ex. biology, chemistry, physics)": 3.6428,
+                    "Mathematics or statistics": 3.4978,
+                    "Web development or web design": 3.0985,
+                    "A business discipline (ex. accounting, finance, marketing)": 2.3026,
+                    "A humanities discipline (ex. literature, history, philosophy)": 1.9618,
+                    "A social science (ex. anthropology, psychology, political science)": 1.693,
+                    "Fine arts or performing arts (ex. graphic design, music, studio art)": 1.4215,
+                    "I never declared a major": 0.8412,
+                    "A health science (ex. nursing, pharmacy, radiology)": 0.2808
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "Copy": "",
+                  "SubText": "17,652 responses",
+                  "Data": {
+                    "Computer science, computer engineering, or software engineering": 69.6068,
+                    "Information systems, information technology, or system administration": 8.5996,
+                    "Another engineering discipline (ex. civil, electrical, mechanical)": 6.6055,
+                    "Web development or web design": 4.2375,
+                    "Mathematics or statistics": 3.1045,
+                    "A natural science (ex. biology, chemistry, physics)": 2.8495,
+                    "A business discipline (ex. accounting, finance, marketing)": 1.7562,
+                    "A humanities discipline (ex. literature, history, philosophy)": 0.9461,
+                    "A social science (ex. anthropology, psychology, political science)": 0.9291,
+                    "I never declared a major": 0.5382,
+                    "Fine arts or performing arts (ex. graphic design, music, studio art)": 0.4929,
+                    "A health science (ex. nursing, pharmacy, radiology)": 0.3342
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Other Types of Education",
+              "Copy": "Developers are lifelong learners; almost 90% of all developers say they have taught themselves a new language, framework, or tool outside of their formal education. Among professional developers, almost half say they have taken an online course like a MOOC, and about a quarter have participated in a hackathon.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "67,960 responses; select all that apply",
+                  "Data": {
+                    "Taught yourself a new language, framework, or tool without taking a formal course": 86.6554,
+                    "Taken an online course in programming or software development (e.g. a MOOC)": 48.6051,
+                    "Contributed to open source software": 40.9064,
+                    "Received on-the-job training in software development": 35.0927,
+                    "Participated in a hackathon": 26.2978,
+                    "Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder)": 24.3202,
+                    "Taken a part-time in-person course in programming or software development": 17.8502,
+                    "Completed an industry certification program (e.g. MCPD)": 13.7316,
+                    "Participated in a full-time developer training program or bootcamp": 10.281
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "63,711 responses; select all that apply",
+                  "Data": {
+                    "Taught yourself a new language, framework, or tool without taking a formal course": 86.9614,
+                    "Taken an online course in programming or software development (e.g. a MOOC)": 48.607,
+                    "Contributed to open source software": 41.6223,
+                    "Received on-the-job training in software development": 36.0707,
+                    "Participated in a hackathon": 26.8839,
+                    "Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder)": 24.4746,
+                    "Taken a part-time in-person course in programming or software development": 17.7913,
+                    "Completed an industry certification program (e.g. MCPD)": 14.0886,
+                    "Participated in a full-time developer training program or bootcamp": 10.51
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ways Developer Learn on Their Own",
+              "Copy": "Developers know how valuable good documentation is because they often use it when learning something new. Stack Overflow Q&A also ranks highly as a way to learn.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "57,354 responses; select all that apply",
+                  "Data": {
+                    "The official documentation and/or standards for the technology": 83.0195,
+                    "Questions & answers on Stack Overflow": 82.6568,
+                    "A book or e-book from O’Reilly, Apress, or a similar publisher": 50.1796,
+                    "Online developer communities other than Stack Overflow (ex. forums, listservs, IRC channels, etc.)": 50.0994,
+                    "The technology’s online help system": 48.0559,
+                    "A college/university computer science or software engineering book": 19.7458,
+                    "Tapping your network of friends, family, and peers versed in the technology": 19.3884,
+                    "Internal Wikis, chat rooms, or documentation set up by my company for employees": 16.5586,
+                    "Pre-scheduled tutoring or mentoring sessions with a friend or colleague": 4.1375
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "54,007 responses; select all that apply",
+                  "Data": {
+                    "The official documentation and/or standards for the technology": 83.4725,
+                    "Questions & answers on Stack Overflow": 82.7967,
+                    "A book or e-book from O’Reilly, Apress, or a similar publisher": 50.4231,
+                    "Online developer communities other than Stack Overflow (ex. forums, listservs, IRC channels, etc.)": 49.9565,
+                    "The technology’s online help system": 48.2937,
+                    "Tapping your network of friends, family, and peers versed in the technology": 19.2271,
+                    "A college/university computer science or software engineering book": 19.1753,
+                    "Internal Wikis, chat rooms, or documentation set up by my company for employees": 16.4497,
+                    "Pre-scheduled tutoring or mentoring sessions with a friend or colleague": 4.0791
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Why Do Developers Participate in Hackathons?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Why Do Developers Participate in Hackathons?",
+                  "Copy": "We asked our respondents who said they have participated in hackathons or online coding competitions why they invest their time this way. The number one answer is that developers find these events enjoyable. These are also opportunities for learning, both general and specific.",
+                  "SubText": "25,691 responses; select all that apply",
+                  "Data": {
+                    "Because I find it enjoyable": 76.268,
+                    "To improve my general technical skills or programming ability": 66.1088,
+                    "To improve my knowledge of a specific programming language, framework, or other technology": 51.2203,
+                    "To improve my ability to work on a team with other programmers": 29.956,
+                    "To build my professional network": 27.4882,
+                    "To help me find new job opportunities": 20.805,
+                    "To win prizes or cash awards": 18.8743
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Bootcamp Success",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Bootcamp Success",
+                  "Copy": "Bootcamps are typically perceived as a way for newcomers to transition into a career as a software developer, but according to our survey, many participants in coding bootcamps were already working as developers. Almost half of our respondents who said they went to a coding bootcamp said they were already working as developers; these developers are likely updating their skills and moving to new areas of the tech industry. Of other bootcamp participants, the most common outcome is to find a job immediately or soon after graduating.",
+                  "SubText": "6,652 responses",
+                  "Data": {
+                    "I already had a full-time job as a developer when I began the program": 45.475,
+                    "Immediately after graduating": 16.3109,
+                    "Less than a month": 7.4564,
+                    "One to three months": 10.0421,
+                    "Four to six months": 5.2165,
+                    "Six months to a year": 3.5929,
+                    "Longer than a year": 3.172,
+                    "I haven’t gotten a developer job": 8.7342
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Demographics",
+          "GraphCollections": [
+            {
+              "Title": "Gender",
+              "Copy": "We asked our respondents about their gender identity, and found that over 90% of our respondents are male. According to Quantcast, women account for about 10% of Stack Overflow’s US traffic; this year 9% of US survey respondents are women. We had survey participation at almost the rate we would expect from our traffic. In regions including the United States, India, and the UK, women are represented at higher levels among students than among professional developers.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "64,469 responses; select all that apply",
+                  "Data": {
+                    "Male": 92.7345,
+                    "Female": 6.8389,
+                    "Non-binary, genderqueer, or gender non-conforming": 0.9229,
+                    "Transgender": 0.6561
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "60,486 responses; select all that apply",
+                  "Data": {
+                    "Male": 92.9537,
+                    "Female": 6.6429,
+                    "Non-binary, genderqueer, or gender non-conforming": 0.8994,
+                    "Transgender": 0.6514
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "Copy": "",
+                  "SubText": "14,009 responses; select all that apply",
+                  "Data": {
+                    "Male": 92.3549,
+                    "Female": 7.4095,
+                    "Non-binary, genderqueer, or gender non-conforming": 1.1421,
+                    "Transgender": 0.7495
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Race and Ethnicity",
+              "Copy": "We see higher proportions of developers of color in students than professional developers. This year, 7.4% of professional developers in the United States identified as black, Hispanic or Latino/Latina, or Native American while over 10% of students in the United States identified as a member of one of these groups.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "57,473 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 74.1844,
+                    "South Asian": 11.5463,
+                    "Hispanic or Latino/Latina": 6.7162,
+                    "East Asian": 5.1033,
+                    "Middle Eastern": 4.1289,
+                    "Black or of African descent": 2.7578,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.7743
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "53,982 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 74.284,
+                    "South Asian": 11.5464,
+                    "Hispanic or Latino/Latina": 6.7263,
+                    "East Asian": 5.0072,
+                    "Middle Eastern": 4.1088,
+                    "Black or of African descent": 2.7046,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.7503
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "Copy": "",
+                  "SubText": "12,023 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 64.2352,
+                    "South Asian": 15.3456,
+                    "Hispanic or Latino/Latina": 8.5669,
+                    "East Asian": 7.4441,
+                    "Middle Eastern": 6.1466,
+                    "Black or of African descent": 4.0339,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.9232
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Sexual Orientation",
+              "Copy": "This is the first year we asked our respondents about their sexual orientation.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "59,765 responses; select all that apply",
+                  "Data": {
+                    "Straight or heterosexual": 93.2452,
+                    "Bisexual or Queer": 4.2901,
+                    "Gay or Lesbian": 2.3843,
+                    "Asexual": 1.8891
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "56,131 responses; select all that apply",
+                  "Data": {
+                    "Straight or heterosexual": 93.3637,
+                    "Bisexual or Queer": 4.2383,
+                    "Gay or Lesbian": 2.3677,
+                    "Asexual": 1.8403
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "Copy": "",
+                  "SubText": "12,552 responses; select all that apply",
+                  "Data": {
+                    "Straight or heterosexual": 91.6507,
+                    "Bisexual or Queer": 5.1944,
+                    "Asexual": 2.8999,
+                    "Gay or Lesbian": 2.5494
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Parents' Education Level",
+              "Copy": "Like developers themselves, most developers' parents have the equivalent of a bachelor's degree or higher.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "61,813 responses",
+                  "Data": {
+                    "They never completed any formal education": 1.9203,
+                    "Primary/elementary school": 5.2319,
+                    "Secondary school": 17.252,
+                    "Some college/university study without earning a degree": 9.2456,
+                    "Associate degree": 4.6236,
+                    "Bachelor's degree": 29.2657,
+                    "Master's degree": 22.0504,
+                    "Professional degree": 4.4085,
+                    "Doctoral degree": 6.002
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "58,064 responses",
+                  "Data": {
+                    "They never completed any formal education": 1.9306,
+                    "Primary/elementary school": 5.2322,
+                    "Secondary school": 17.3515,
+                    "Some college/university study without earning a degree": 9.2346,
+                    "Associate degree": 4.6363,
+                    "Bachelor's degree": 29.3986,
+                    "Master's degree": 22.036,
+                    "Professional degree": 4.359,
+                    "Doctoral degree": 5.8212
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "Copy": "",
+                  "SubText": "13,326 responses",
+                  "Data": {
+                    "They never completed any formal education": 2.3863,
+                    "Primary/elementary school": 5.8832,
+                    "Secondary school": 16.2689,
+                    "Some college/university study without earning a degree": 9.2001,
+                    "Associate degree": 4.4875,
+                    "Bachelor's degree": 29.1385,
+                    "Master's degree": 22.4448,
+                    "Professional degree": 4.2774,
+                    "Doctoral degree": 5.9133
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Disability Status",
+              "Copy": "We know developers can experience many forms of disability and difference, from mental health challenges to physical disability. Mental health issues like depression and anxiety are particularly common among our respondents.",
+              "Graphs": [
+                {
+                  "Title": "Mental Health and Differences",
+                  "Copy": "",
+                  "SubText": "11,431 responses identified as having a mental difference",
+                  "Data": {
+                    "I have a mood or emotional disorder (ex. depression, bipolar disorder)": 8.4874,
+                    "I have an anxiety disorder": 7.7831,
+                    "I have a concentration and/or memory disorder": 5.9267,
+                    "I identify as autistic / a person with autism": 2.0981
+                  }
+                },
+                {
+                  "Title": "Physical Differences",
+                  "Copy": "",
+                  "SubText": "1,702 responses identified as having a physical difference",
+                  "Data": {
+                    "I am blind / have difficulty seeing": 1.4205,
+                    "I am deaf / have difficulty hearing": 0.7859,
+                    "I am unable to / find it difficult to walk and/or stand without assistance": 0.3143,
+                    "I am unable to / find it difficult to type": 0.2743
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Age",
+              "Copy": "About three-fourths of professional developers who took our survey are younger than 35.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "64,574 responses",
+                  "Data": {
+                    "Under 18 years old": 2.5366,
+                    "18 - 24 years old": 23.6148,
+                    "25 - 34 years old": 49.1823,
+                    "35 - 44 years old": 17.7734,
+                    "45 - 54 years old": 5.1305,
+                    "55 - 64 years old": 1.4851,
+                    "65 years or older": 0.2772
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Copy": "",
+                  "SubText": "60,583 responses",
+                  "Data": {
+                    "Under 18 years old": 1.8586,
+                    "18 - 24 years old": 22.3941,
+                    "25 - 34 years old": 50.8129,
+                    "35 - 44 years old": 18.1553,
+                    "45 - 54 years old": 5.1004,
+                    "55 - 64 years old": 1.446,
+                    "65 years or older": 0.2327
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Developer Role and Gender",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Developer Role and Gender",
+                  "Type": "CustomFigure",
+                  "Copy": "We find differences among developers by gender in our survey responses. For example, transgender and non-binary developers contribute to open source at higher rates (58% and 60%, respectively) than men or women (45% and 33%.)\n\nWe also see varying representation by men and women in different developer roles. All categories have dramatically more men than women but the ratio of men to women varies. Developers who are educators or academic researchers are about 10 times more likely to be men than women, while developers who are system admins or DevOps specialists are 25-30 times more likely to be men than women. Women have the highest representations as academics, QA developers, data scientists, and designers. These gender identifications are all 'select all that apply', so a developer can be counted in multiple categories.",
+                  "SubText": "The dashed line shows the average ratio of men's to women's participation",
+                  "FigurePath": "2018/devtype_ratio-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Experience and Gender",
+              "Copy": "Twice as many women than men have been coding two years or less than men.",
+              "Graphs": [
+                {
+                  "Title": "Men",
+                  "SubText": "59,749 responses",
+                  "Data": {
+                    "0-2 years": 8.0554,
+                    "3-5 years": 21.9301,
+                    "6-8 years": 20.72,
+                    "9-11 years": 13.94,
+                    "12-14 years": 9.6638,
+                    "15-17 years": 7.5332,
+                    "18-20 years": 6.3164,
+                    "21-23 years": 3.3992,
+                    "24-26 years": 2.385,
+                    "27-29 years": 1.4109,
+                    "30 or more years": 4.6645
+                  }
+                },
+                {
+                  "Title": "Women",
+                  "SubText": "4,404 responses",
+                  "Data": {
+                    "0-2 years": 17.3252,
+                    "3-5 years": 30.6312,
+                    "6-8 years": 20.4587,
+                    "9-11 years": 10.3542,
+                    "12-14 years": 6.1535,
+                    "15-17 years": 4.8592,
+                    "18-20 years": 4.4278,
+                    "21-23 years": 2.0209,
+                    "24-26 years": 1.3624,
+                    "27-29 years": 0.386,
+                    "30 or more years": 2.0209
+                  }
+                },
+                {
+                  "Title": "Non-binary and/or Transgender-identifying People",
+                  "SubText": "887 responses",
+                  "Data": {
+                    "0-2 years": 11.4994,
+                    "3-5 years": 24.1263,
+                    "6-8 years": 22.5479,
+                    "9-11 years": 16.7982,
+                    "12-14 years": 11.8377,
+                    "15-17 years": 7.779,
+                    "18-20 years": 6.8771,
+                    "21-23 years": 3.8331,
+                    "24-26 years": 1.5784,
+                    "27-29 years": 1.5784,
+                    "30 or more years": 6.2007
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Age and Experience by Country",
+              "Copy": "Developers are older with more experience in countries in Western Europe and North America and younger with less experience in countries like India and Brazil.",
+              "Graphs": [
+                {
+                  "Title": "Age",
+                  "Copy": "",
+                  "SubText": "Mean of 42,042 responses",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Australia": 29.0152,
+                    "United States": 28.6838,
+                    "United Kingdom": 28.2154,
+                    "Canada": 27.6744,
+                    "Germany": 26.6155,
+                    "France": 26.0183,
+                    "Brazil": 25.0285,
+                    "Russian Federation": 24.678,
+                    "Poland": 24.5683,
+                    "India": 22.696
+                  }
+                },
+                {
+                  "Title": "Years of Coding Experience",
+                  "Copy": "",
+                  "SubText": "Mean of 59,559 responses",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Australia": 11.7065,
+                    "United Kingdom": 11.3376,
+                    "United States": 10.684,
+                    "Canada": 10.2408,
+                    "Germany": 10.2181,
+                    "France": 9.2041,
+                    "Brazil": 8.0356,
+                    "Poland": 7.6252,
+                    "Russian Federation": 7.586,
+                    "India": 4.2262
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Connection and Competition",
+          "GraphCollections": [
+            {
+              "Title": "Kinship, Competition, and Self-Evaluation",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Kinship, Competition, and Self-Evaluation",
+                  "Copy": "We asked how much respondents agree or disagree with several statements about their place in the developer community. Overall 70% of developers agree or strongly agree that they feel a sense of connection with other developers. Developers are overall confident about their own skills compared to their peers, with only 18% agreeing or strongly agreeing that they are not as good at programming as their colleagues.",
+                  "SubText": "68,577 responses; agreement on a 1-5 scale, from strongly disagree to strongly agree",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "I feel a sense of kinship or connection to other developers": 3.5547,
+                    "I think of myself as competing with my peers": 2.6512,
+                    "I'm not as good at programming as most of my peers": 2.1806
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Experience and Belonging",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Experience and Belonging",
+                  "Type": "CustomFigure",
+                  "Copy": "Developers' feelings on how much they belong and how they stack up to their peers change with how much experience they have. More experienced developers feel more connected, more confident, and less competitive. Notice that feeling less skilled drops quickly with experience while feeling less competitive drops more gradually and continues to drop into the second decade of coding experience.",
+                  "FigurePath": "2018/kinship-1.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Life Outside Work",
+          "GraphCollections": [
+            {
+              "Title": "Children and Other Dependents",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Children and Other Dependents",
+                  "Copy": "This year we asked respondents if they have children or other dependents that they care for, and about a quarter of respondents say that they do. We asked in a free response question what these developers do for dependent care during work hours, and our respondents talked about options like school, their spouses/partners, and daycare.",
+                  "SubText": "62,596 responses",
+                  "Data": {
+                    "No": 71.0557,
+                    "Yes": 28.9443
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Time Do Developers Wake Up?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "What Time Do Developers Wake Up?",
+                  "Copy": "We are confident that most developers have pulled a late night here and there, but most of our respondents say they are up by 8am.",
+                  "SubText": "72,146 responses",
+                  "Data": {
+                    "Before 5:00 AM": 2.3979,
+                    "Between 5:00 - 6:00 AM": 12.3666,
+                    "Between 6:01 - 7:00 AM": 28.1679,
+                    "Between 7:01 - 8:00 AM": 29.4542,
+                    "Between 8:01 - 9:00 AM": 14.6813,
+                    "Between 9:01 - 10:00 AM": 4.7861,
+                    "Between 10:01 - 11:00 AM": 1.4138,
+                    "Between 11:01 AM - 12:00 PM": 0.5364,
+                    "After 12:01 PM": 0.4172,
+                    "I work night shifts": 0.4532,
+                    "I do not have a set schedule": 5.3253
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Much Time Do Developers Spend on a Computer?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Much Time Do Developers Spend on a Computer?",
+                  "Copy": "Our respondents include people who code as professionals, students, and hobbyists. The overwhelmingly majority spend large fractions of their waking hours on a typical day with their desktops and laptops.",
+                  "SubText": "72,133 responses",
+                  "Data": {
+                    "Less than 1 hour": 0.2523,
+                    "1 - 4 hours": 3.2565,
+                    "5 - 8 hours": 30.5963,
+                    "9 - 12 hours": 52.6569,
+                    "Over 12 hours": 13.238
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Much Time Do Developers Spend Outside?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Much Time Do Developers Spend Outside?",
+                  "Copy": "Developers get outside for recreation, commuting, or other reasons. About half of our respondents spend an hour or more outside a day.",
+                  "SubText": "72,024 responses",
+                  "Data": {
+                    "Less than 30 minutes": 15.5823,
+                    "30 - 59 minutes": 33.325,
+                    "1 - 2 hours": 38.5816,
+                    "3 - 4 hours": 9.9772,
+                    "Over 4 hours": 2.5339
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Healthy Habits",
+              "Copy": "Developers tell us they do not often skip meals because of their workload, and a majority say they exercise at least some. The most often chosen exercise frequency is 'never', however.",
+              "Graphs": [
+                {
+                  "Title": "How Often Do Developers Skip Meals To Be Productive?",
+                  "Copy": "",
+                  "SubText": "71,946 responses",
+                  "Data": {
+                    "Never": 63.6199,
+                    "1 - 2 times per week": 25.2467,
+                    "3 - 4 times per week": 5.9809,
+                    "Daily or almost every day": 5.1525
+                  }
+                },
+                {
+                  "Title": "How Often Do Developers Exercise?",
+                  "Copy": "",
+                  "SubText": "72,108 responses",
+                  "Data": {
+                    "I don't typically exercise": 37.4369,
+                    "1 - 2 times per week": 29.0287,
+                    "3 - 4 times per week": 19.8563,
+                    "Daily or almost every day": 13.6781
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Technology",
+      "SubTitle": "The tools of the trade",
+      "SubSections": [
+        {
+          "Title": "Most Popular Technologies",
+          "GraphCollections": [
+            {
+              "Title": "Programming, Scripting, and Markup Languages",
+              "Copy": "For the sixth year in a row, JavaScript is the most commonly used programming language. Python has risen in the ranks, surpassing C# this year, much like it surpassed PHP last year. Python has a solid claim to being the [fastest-growing major programming language](https://stackoverflow.blog/2017/09/06/incredible-growth-python/).\n\nWe see close alignment in the technology choices of professional developers and the developer population overall.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "78,334 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 69.8113,
+                    "HTML": 68.4607,
+                    "CSS": 65.079,
+                    "SQL": 57.025,
+                    "Java": 45.3456,
+                    "Bash/Shell": 39.7937,
+                    "Python": 38.7558,
+                    "C#": 34.4091,
+                    "PHP": 30.7287,
+                    "C++": 25.3683,
+                    "C": 23.0321,
+                    "TypeScript": 17.3947,
+                    "Ruby": 10.0991,
+                    "Swift": 8.0553,
+                    "Assembly": 7.3531,
+                    "Go": 7.0621,
+                    "Objective-C": 7.034,
+                    "VB.NET": 6.7072,
+                    "R": 6.1442,
+                    "Matlab": 5.8263,
+                    "VBA": 4.8638,
+                    "Kotlin": 4.4783,
+                    "Scala": 4.3659,
+                    "Groovy": 4.3059,
+                    "Perl": 4.1872
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "73,248 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 71.5173,
+                    "HTML": 69.3862,
+                    "CSS": 66.2284,
+                    "SQL": 58.5231,
+                    "Java": 45.3992,
+                    "Bash/Shell": 40.382,
+                    "Python": 37.9382,
+                    "C#": 35.2528,
+                    "PHP": 31.3674,
+                    "C++": 24.6123,
+                    "C": 22.0784,
+                    "TypeScript": 18.3104,
+                    "Ruby": 10.3498,
+                    "Swift": 8.2965,
+                    "Objective-C": 7.3203,
+                    "Go": 7.2439,
+                    "Assembly": 6.8998,
+                    "VB.NET": 6.8725,
+                    "R": 5.9537,
+                    "Matlab": 5.4691,
+                    "VBA": 4.7988,
+                    "Kotlin": 4.6595,
+                    "Groovy": 4.5025,
+                    "Scala": 4.4889,
+                    "Perl": 4.2336
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Frameworks, Libraries, and Tools",
+              "Copy": "Node.js and AngularJS continue to be the most commonly used technologies in this category, with React and .Net Core also important to many developers.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "51,620 responses; select all that apply",
+                  "Data": {
+                    "Node.js": 49.5893,
+                    "Angular": 36.852,
+                    "React": 27.7741,
+                    ".NET Core": 27.1716,
+                    "Spring": 17.5881,
+                    "Django": 13.024,
+                    "Cordova": 8.4638,
+                    "TensorFlow": 7.7993,
+                    "Xamarin": 7.3537,
+                    "Spark": 4.7947,
+                    "Hadoop": 4.7404,
+                    "Torch/PyTorch": 1.6815
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "49,665 responses; select all that apply",
+                  "Data": {
+                    "Node.js": 49.9064,
+                    "Angular": 37.5838,
+                    "React": 28.2593,
+                    ".NET Core": 27.1982,
+                    "Spring": 17.8133,
+                    "Django": 12.8139,
+                    "Cordova": 8.6359,
+                    "TensorFlow": 7.605,
+                    "Xamarin": 7.3774,
+                    "Spark": 4.7941,
+                    "Hadoop": 4.7317,
+                    "Torch/PyTorch": 1.6027
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Databases",
+              "Copy": "Like last year, MySQL and SQL Server are the most commonly used databases.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "66,264 responses; select all that apply",
+                  "Data": {
+                    "MySQL": 58.7182,
+                    "SQL Server": 41.1822,
+                    "PostgreSQL": 32.8625,
+                    "MongoDB": 25.9311,
+                    "SQLite": 19.6728,
+                    "Redis": 18.0219,
+                    "Elasticsearch": 14.0529,
+                    "MariaDB": 13.3602,
+                    "Oracle": 11.1312,
+                    "Microsoft Azure (Tables, CosmosDB, SQL, etc)": 7.8519,
+                    "Google Cloud Storage": 5.4826,
+                    "Memcached": 5.4555,
+                    "Amazon DynamoDB": 5.2125,
+                    "Amazon RDS/Aurora": 5.1129,
+                    "Cassandra": 3.6883,
+                    "IMB Db2": 2.5308,
+                    "Neo4j": 2.3723,
+                    "Amazon Redshift": 2.2078,
+                    "Apache Hive": 2.1701,
+                    "Google BigQuery": 2.0886,
+                    "Apache HBase": 1.6706
+                  }
+                },
+                {
+                  "Title": "All Respondents",
+                  "SubText": "63,299 responses; select all that apply",
+                  "Data": {
+                    "MySQL": 58.606,
+                    "SQL Server": 41.5836,
+                    "PostgreSQL": 33.3149,
+                    "MongoDB": 26.3969,
+                    "SQLite": 19.7302,
+                    "Redis": 18.4774,
+                    "Elasticsearch": 14.4315,
+                    "MariaDB": 13.5263,
+                    "Oracle": 11.1376,
+                    "Microsoft Azure (Tables, CosmosDB, SQL, etc)": 7.9606,
+                    "Memcached": 5.5909,
+                    "Google Cloud Storage": 5.4835,
+                    "Amazon DynamoDB": 5.2971,
+                    "Amazon RDS/Aurora": 5.2102,
+                    "Cassandra": 3.7489,
+                    "IMB Db2": 2.5356,
+                    "Neo4j": 2.3855,
+                    "Amazon Redshift": 2.218,
+                    "Apache Hive": 2.1801,
+                    "Google BigQuery": 2.0774,
+                    "Apache HBase": 1.6572
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Platforms",
+              "Copy": "Linux and Windows Desktop or Server are the most common choices that our respondents say they have done development work for this year.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "65,999 responses; select all that apply",
+                  "Data": {
+                    "Linux": 48.2719,
+                    "Windows Desktop or Server": 35.4445,
+                    "Android": 29.0262,
+                    "AWS": 24.1322,
+                    "Mac OS": 17.9124,
+                    "Raspberry Pi": 15.923,
+                    "Wordpress": 15.8881,
+                    "iOS": 15.4563,
+                    "Firebase": 14.5078,
+                    "Azure": 11.0108,
+                    "Arduino": 10.6153,
+                    "Heroku": 10.4744,
+                    "Google Cloud Platform/App Engine": 8.0335,
+                    "Serverless": 4.5258,
+                    "Drupal": 3.0455,
+                    "Amazon Echo": 2.9364,
+                    "Windows Phone": 2.7273,
+                    "Sharepoint": 2.6758,
+                    "ESP8266": 2.2212,
+                    "Salesforce": 2.2076,
+                    "Apple Watch or Apple TV": 1.9182,
+                    "IBM Cloud or Watson": 1.4394,
+                    "Google Home": 1.3515,
+                    "Gaming console": 1.2879,
+                    "Mainframe": 0.8076
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "62,406 responses; select all that apply",
+                  "Data": {
+                    "Linux": 48.2614,
+                    "Windows Desktop or Server": 35.1537,
+                    "Android": 29.2616,
+                    "AWS": 24.9047,
+                    "Mac OS": 18.1329,
+                    "Wordpress": 16.1363,
+                    "iOS": 15.8751,
+                    "Raspberry Pi": 15.7469,
+                    "Firebase": 14.9809,
+                    "Azure": 11.3739,
+                    "Heroku": 10.7345,
+                    "Arduino": 10.2923,
+                    "Google Cloud Platform/App Engine": 8.1723,
+                    "Serverless": 4.6582,
+                    "Drupal": 3.1295,
+                    "Amazon Echo": 2.9613,
+                    "Windows Phone": 2.7353,
+                    "Sharepoint": 2.7289,
+                    "Salesforce": 2.2546,
+                    "ESP8266": 2.1889,
+                    "Apple Watch or Apple TV": 1.9501,
+                    "IBM Cloud or Watson": 1.447,
+                    "Google Home": 1.306,
+                    "Gaming console": 1.2483,
+                    "Mainframe": 0.798
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted",
+          "GraphCollections": [
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Languages",
+              "Copy": "For the third year in a row, Rust is the most loved programming language among our respondents, followed close behind by Kotlin, a language we asked about for the first time on our survey this year. This means that proportionally, more developers want to continue working with these than other languages.\n\nAlso for the third year in a row, Visual Basic 6 ranks as the most dreaded programming language. Most dreaded means that a high percentage of developers who are currently using the technology express no interest in continuing to do so.\n\nPython is the most wanted language for the second year in a row, meaning that it is the language that developers who do not yet use it most often say they want to learn.",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Rust": 78.8907,
+                    "Kotlin": 75.057,
+                    "Python": 67.9634,
+                    "TypeScript": 67.0263,
+                    "Go": 65.6182,
+                    "Swift": 65.0713,
+                    "JavaScript": 61.9208,
+                    "C#": 60.414,
+                    "F#": 59.6413,
+                    "Clojure": 59.593,
+                    "Bash/Shell": 59.13,
+                    "Scala": 58.5088,
+                    "SQL": 57.5173,
+                    "HTML": 55.7097,
+                    "CSS": 55.0933,
+                    "Haskell": 53.6461,
+                    "Julia": 52.7907,
+                    "Java": 50.6658,
+                    "R": 49.4079,
+                    "Ruby": 47.4024,
+                    "Erlang": 47.1783,
+                    "C++": 46.6586,
+                    "Hack": 42.126,
+                    "PHP": 41.6393,
+                    "Ocaml": 41.4894
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Visual Basic 6": 89.8931,
+                    "Cobol": 84.0678,
+                    "CoffeeScript": 82.6738,
+                    "VB.NET": 80.9478,
+                    "VBA": 80.0262,
+                    "Matlab": 77.4321,
+                    "Assembly": 71.4236,
+                    "Perl": 71.2805,
+                    "Objective-C": 70.2722,
+                    "Lua": 68.24,
+                    "Groovy": 66.3504,
+                    "Dephi/Object Pascal": 65.0864,
+                    "C": 62.6427,
+                    "Ocaml": 58.5106,
+                    "PHP": 58.3607,
+                    "Hack": 57.874,
+                    "C++": 53.3414,
+                    "Erlang": 52.8217,
+                    "Ruby": 52.5976,
+                    "R": 50.5921,
+                    "Java": 49.3342,
+                    "Julia": 47.2093,
+                    "Haskell": 46.3539,
+                    "CSS": 44.9067,
+                    "HTML": 44.2903
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "Python": 25.0505,
+                    "JavaScript": 19.0026,
+                    "Go": 16.2163,
+                    "Kotlin": 12.4123,
+                    "TypeScript": 11.8913,
+                    "Java": 10.5075,
+                    "C++": 10.1919,
+                    "Rust": 8.2957,
+                    "C#": 7.9588,
+                    "Swift": 7.7164,
+                    "HTML": 7.5669,
+                    "CSS": 7.5653,
+                    "SQL": 6.7701,
+                    "R": 6.2932,
+                    "C": 5.8751,
+                    "Ruby": 5.7382,
+                    "Scala": 5.5876,
+                    "Haskell": 5.2828,
+                    "Bash/Shell": 4.8579,
+                    "PHP": 4.0501,
+                    "F#": 3.9682,
+                    "Assembly": 3.4437,
+                    "Erlang": 3.0017,
+                    "Clojure": 2.6901,
+                    "Objective-C": 2.6036
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Frameworks, Libraries, and Tools",
+              "Copy": "TensorFlow, one of the fastest growing technologies on Stack Overflow, is most loved by developers, while Cordova is most dreaded. React is the framework developers say they most want to work with if they do not already.",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "TensorFlow": 73.5221,
+                    "React": 69.4427,
+                    "Torch/PyTorch": 67.9724,
+                    "Node.js": 66.3528,
+                    ".NET Core": 66.0274,
+                    "Spark": 66.0202,
+                    "Spring": 60.0176,
+                    "Django": 58.3073,
+                    "Angular": 54.6023,
+                    "Hadoop": 53.9027,
+                    "Xamarin": 48.9726,
+                    "Cordova": 40.4211
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Cordova": 59.5789,
+                    "Xamarin": 51.0274,
+                    "Hadoop": 46.0973,
+                    "Angular": 45.3977,
+                    "Django": 41.6927,
+                    "Spring": 39.9824,
+                    "Spark": 33.9798,
+                    ".NET Core": 33.9726,
+                    "Node.js": 33.6472,
+                    "Torch/PyTorch": 32.0276,
+                    "React": 30.5573,
+                    "TensorFlow": 26.4779
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "React": 21.3405,
+                    "Node.js": 20.8719,
+                    "TensorFlow": 15.5442,
+                    "Angular": 14.2755,
+                    ".NET Core": 9.3075,
+                    "Django": 6.7243,
+                    "Hadoop": 6.4398,
+                    "Xamarin": 6.0589,
+                    "Spark": 4.8146,
+                    "Torch/PyTorch": 4.4694,
+                    "Spring": 3.7434,
+                    "Cordova": 2.5838
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Databases",
+              "Copy": "For the second year in a row, Redis is most loved database, meaning that proportionally more developers wanted to continue working with it than any other database. IMB's Db2 offering ranks as the most dreaded database, and for the second year in a row, MongoDB is the most wanted database.",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Redis": 64.501,
+                    "PostgreSQL": 62.0408,
+                    "Elasticsearch": 59.8905,
+                    "Amazon RDS/Aurora": 58.8253,
+                    "Microsoft Azure (Tables, CosmosDB, SQL, etc)": 56.6981,
+                    "Google Cloud Storage": 56.4667,
+                    "MongoDB": 55.0602,
+                    "MariaDB": 53.3379,
+                    "Google BigQuery": 52.3844,
+                    "SQL Server": 51.625,
+                    "Amazon DynamoDB": 50.8975,
+                    "Neo4j": 49.7455,
+                    "MySQL": 48.7111,
+                    "SQLite": 48.1359,
+                    "Cassandra": 46.4403,
+                    "Apache Hive": 46.1752,
+                    "Amazon Redshift": 44.8087,
+                    "Apache HBase": 43.6314,
+                    "Memcached": 42.213,
+                    "Oracle": 36.8764,
+                    "IMB Db2": 21.7651
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "IMB Db2": 78.2349,
+                    "Oracle": 63.1236,
+                    "Memcached": 57.787,
+                    "Apache HBase": 56.3686,
+                    "Amazon Redshift": 55.1913,
+                    "Apache Hive": 53.8248,
+                    "Cassandra": 53.5597,
+                    "SQLite": 51.8641,
+                    "MySQL": 51.2889,
+                    "Neo4j": 50.2545,
+                    "Amazon DynamoDB": 49.1025,
+                    "SQL Server": 48.375,
+                    "Google BigQuery": 47.6156,
+                    "MariaDB": 46.6621,
+                    "MongoDB": 44.9398,
+                    "Google Cloud Storage": 43.5333,
+                    "Microsoft Azure (Tables, CosmosDB, SQL, etc)": 43.3019,
+                    "Amazon RDS/Aurora": 41.1747,
+                    "Elasticsearch": 40.1095,
+                    "PostgreSQL": 37.9592,
+                    "Redis": 35.499
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "MongoDB": 18.574,
+                    "Elasticsearch": 12.1859,
+                    "PostgreSQL": 11.3822,
+                    "Redis": 9.6827,
+                    "MySQL": 7.53,
+                    "Microsoft Azure (Tables, CosmosDB, SQL, etc)": 7.2925,
+                    "Google Cloud Storage": 7.2574,
+                    "Cassandra": 6.0747,
+                    "Amazon DynamoDB": 5.7027,
+                    "Google BigQuery": 5.5608,
+                    "SQL Server": 4.1789,
+                    "Neo4j": 3.8895,
+                    "Amazon RDS/Aurora": 3.4917,
+                    "MariaDB": 3.4344,
+                    "Amazon Redshift": 3.263,
+                    "SQLite": 3.2608,
+                    "Memcached": 2.7373,
+                    "Apache Hive": 2.5674,
+                    "Apache HBase": 2.3508,
+                    "Oracle": 2.2801,
+                    "IMB Db2": 0.6992
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Platforms",
+              "Copy": "Linux is once again the most loved platform for development, with serverless infrastructure also loved this year. Sharepoint is the most dreaded development platform for the second year in a row, and many developers say they want to start developing for the Android platform and the Raspberry Pi.",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Linux": 76.5184,
+                    "Serverless": 75.226,
+                    "AWS": 68.5817,
+                    "Raspberry Pi": 67.6753,
+                    "ESP8266": 67.3943,
+                    "iOS": 64.5721,
+                    "Apple Watch or Apple TV": 63.981,
+                    "Mac OS": 63.8978,
+                    "Firebase": 63.8016,
+                    "Android": 63.7678,
+                    "Google Cloud Platform/App Engine": 62.467,
+                    "Gaming console": 61.2941,
+                    "Windows Desktop or Server": 61.1978,
+                    "Azure": 61.0155,
+                    "Arduino": 58.0502,
+                    "Google Home": 57.6233,
+                    "Amazon Echo": 53.1992,
+                    "Heroku": 52.206,
+                    "IBM Cloud or Watson": 43.6842,
+                    "Predix": 39.0909,
+                    "Wordpress": 36.8301,
+                    "Windows Phone": 31.2222,
+                    "Mainframe": 31.1445,
+                    "Salesforce": 30.3363,
+                    "Drupal": 29.5522
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Sharepoint": 71.8007,
+                    "Drupal": 70.4478,
+                    "Salesforce": 69.6637,
+                    "Mainframe": 68.8555,
+                    "Windows Phone": 68.7778,
+                    "Wordpress": 63.1699,
+                    "Predix": 60.9091,
+                    "IBM Cloud or Watson": 56.3158,
+                    "Heroku": 47.794,
+                    "Amazon Echo": 46.8008,
+                    "Google Home": 42.3767,
+                    "Arduino": 41.9498,
+                    "Azure": 38.9845,
+                    "Windows Desktop or Server": 38.8022,
+                    "Gaming console": 38.7059,
+                    "Google Cloud Platform/App Engine": 37.533,
+                    "Android": 36.2322,
+                    "Firebase": 36.1984,
+                    "Mac OS": 36.1022,
+                    "Apple Watch or Apple TV": 36.019,
+                    "iOS": 35.4279,
+                    "ESP8266": 32.6057,
+                    "Raspberry Pi": 32.3247,
+                    "AWS": 31.4183,
+                    "Serverless": 24.774
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "Android": 16.0212,
+                    "Raspberry Pi": 13.1301,
+                    "AWS": 12.0034,
+                    "Linux": 10.9245,
+                    "iOS": 9.5666,
+                    "Firebase": 8.3206,
+                    "Google Cloud Platform/App Engine": 8.2248,
+                    "Arduino": 7.7285,
+                    "Mac OS": 6.6019,
+                    "Azure": 6.4222,
+                    "Amazon Echo": 6.3141,
+                    "Serverless": 5.6466,
+                    "Google Home": 5.1181,
+                    "Gaming console": 4.4095,
+                    "Apple Watch or Apple TV": 3.319,
+                    "Heroku": 3.2335,
+                    "Windows Desktop or Server": 2.7019,
+                    "IBM Cloud or Watson": 2.3051,
+                    "Wordpress": 2.2858,
+                    "Windows Phone": 1.1892,
+                    "ESP8266": 1.135,
+                    "Salesforce": 1.1168,
+                    "Drupal": 0.9025,
+                    "Sharepoint": 0.7389,
+                    "Mainframe": 0.5588
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Development Environments and Tools",
+          "GraphCollections": [
+            {
+              "Title": "Most Popular Development Environments",
+              "Copy": "Visual Studio Code just edged out Visual Studio as the most popular developer environment tool across the board, but there are differences in tool choices by developer type and role. Developers who write code for mobile apps are more likely to choose Android Studio and XCode, the most popular choice by DevOps and sysadmins is Vim, and data scientists are more likely to work in IPython/Jupyter, PyCharm, and RStudio.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "75,398 responses; select all that apply",
+                  "Data": {
+                    "Visual Studio Code": 34.855,
+                    "Visual Studio": 34.3113,
+                    "Notepad++": 34.1587,
+                    "Sublime Text": 28.9265,
+                    "Vim": 25.8323,
+                    "IntelliJ": 24.8879,
+                    "Android Studio": 19.3082,
+                    "Eclipse": 18.8506,
+                    "Atom": 18.0058,
+                    "PyCharm": 11.9725,
+                    "XCode": 10.5918,
+                    "PHPStorm": 8.9565,
+                    "NetBeans": 8.1567,
+                    "IPython / Jupyter": 7.4299,
+                    "Emacs": 4.0863,
+                    "RStudio": 3.3197,
+                    "RubyMine": 1.5942,
+                    "TextMate": 1.0716,
+                    "Coda": 0.6459,
+                    "Komodo": 0.5716,
+                    "Zend": 0.3966,
+                    "Light Table": 0.1963
+                  }
+                },
+                {
+                  "Title": "Web Developers",
+                  "Copy": "",
+                  "SubText": "59,010 responses; select all that apply",
+                  "Data": {
+                    "Visual Studio Code": 38.6714,
+                    "Visual Studio": 35.7363,
+                    "Notepad++": 34.5196,
+                    "Sublime Text": 30.2389,
+                    "IntelliJ": 26.4921,
+                    "Vim": 26.1481,
+                    "Eclipse": 18.7426,
+                    "Atom": 18.6392,
+                    "Android Studio": 17.614,
+                    "PyCharm": 11.4184,
+                    "PHPStorm": 10.7202,
+                    "XCode": 8.7883,
+                    "NetBeans": 8.3816,
+                    "IPython / Jupyter": 5.8804,
+                    "Emacs": 3.7468,
+                    "RStudio": 1.9268,
+                    "RubyMine": 1.8099,
+                    "TextMate": 1.032,
+                    "Coda": 0.6219,
+                    "Komodo": 0.5609,
+                    "Zend": 0.4135,
+                    "Light Table": 0.1745
+                  }
+                },
+                {
+                  "Title": "Mobile Developers",
+                  "Copy": "",
+                  "SubText": "15,124 responses; select all that apply",
+                  "Data": {
+                    "Android Studio": 56.6186,
+                    "Visual Studio Code": 36.6371,
+                    "XCode": 35.1031,
+                    "Visual Studio": 32.9278,
+                    "Notepad++": 32.5443,
+                    "Sublime Text": 32.2335,
+                    "IntelliJ": 31.4864,
+                    "Eclipse": 20.689,
+                    "Atom": 20.2724,
+                    "Vim": 19.1351,
+                    "NetBeans": 10.8503,
+                    "PyCharm": 10.5726,
+                    "PHPStorm": 9.6337,
+                    "IPython / Jupyter": 3.8746,
+                    "Emacs": 2.6382,
+                    "TextMate": 1.8778,
+                    "RubyMine": 1.7059,
+                    "RStudio": 1.6927,
+                    "Coda": 1.1835,
+                    "Komodo": 0.767,
+                    "Zend": 0.562,
+                    "Light Table": 0.3108
+                  }
+                },
+                {
+                  "Title": "Sysadmin/DevOps",
+                  "Copy": "",
+                  "SubText": "13,780 responses; select all that apply",
+                  "Data": {
+                    "Vim": 40.1379,
+                    "Visual Studio Code": 36.4804,
+                    "Notepad++": 34.1872,
+                    "Visual Studio": 32.5689,
+                    "Sublime Text": 28.8026,
+                    "IntelliJ": 26.2482,
+                    "Atom": 19.8041,
+                    "Android Studio": 17.9971,
+                    "Eclipse": 17.5109,
+                    "PyCharm": 14.9419,
+                    "PHPStorm": 12.4456,
+                    "XCode": 9.0856,
+                    "NetBeans": 8.3672,
+                    "IPython / Jupyter": 7.656,
+                    "Emacs": 5.6386,
+                    "RubyMine": 2.4093,
+                    "RStudio": 2.3585,
+                    "TextMate": 1.582,
+                    "Komodo": 0.9507,
+                    "Coda": 0.7983,
+                    "Zend": 0.7039,
+                    "Light Table": 0.3991
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Developers' Primary Operating Systems",
+              "Copy": "We asked our respondents what operating systems they use for work. About half said they mainly use Windows, and the remainder were about evenly split between MacOS and Linux.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "76,179 responses",
+                  "Data": {
+                    "Windows": 49.9114,
+                    "MacOS": 26.6806,
+                    "Linux-based": 23.2137,
+                    "BSD/Unix": 0.1943
+                  }
+                },
+                {
+                  "Title": "All Respondents",
+                  "Copy": "",
+                  "SubText": "71,222 responses",
+                  "Data": {
+                    "Windows": 49.4173,
+                    "MacOS": 27.3637,
+                    "Linux-based": 23.0322,
+                    "BSD/Unix": 0.1867
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Many Monitors?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Many Monitors?",
+                  "Copy": "The median number of monitors for respondents at their main workstation is two.",
+                  "SubText": "76,398 responses",
+                  "Data": {
+                    "1": 31.8883,
+                    "2": 51.1309,
+                    "3": 14.3773,
+                    "4": 1.1833,
+                    "More than 4": 1.4202
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Top Paying Technologies",
+          "GraphCollections": [
+            {
+              "Title": "What Languages Are Associated with the Highest Salaries Worldwide?",
+              "Copy": "Globally, developers who use F#, Ocaml, Clojure, and Groovy earn the highest salaries, with median salaries above $70,000 USD. There are regional variations in which languages are associated with the highest pay. Erlang and Scala developers in the US are among the highest paid, while Clojure, Erlang, and Haskell developers earn the most in India.",
+              "Graphs": [
+                {
+                  "Title": "Global",
+                  "Copy": "",
+                  "SubText": "Median of 56,835 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "F#": 74000,
+                    "Ocaml": 73000,
+                    "Clojure": 72000,
+                    "Groovy": 72000,
+                    "Perl": 69000,
+                    "Rust": 69000,
+                    "Erlang": 67000,
+                    "Scala": 67000,
+                    "Go": 66000,
+                    "Ruby": 64000,
+                    "Bash/Shell": 63000,
+                    "CoffeeScript": 60000,
+                    "Haskell": 60000,
+                    "Julia": 60000,
+                    "TypeScript": 60000,
+                    "C#": 59000,
+                    "Objective-C": 58000,
+                    "R": 58000,
+                    "Swift": 57000,
+                    "Lua": 56000,
+                    "Python": 56000,
+                    "SQL": 56000,
+                    "JavaScript": 55000,
+                    "HTML": 54000,
+                    "CSS": 53000
+                  }
+                },
+                {
+                  "Title": "United States",
+                  "Copy": "",
+                  "SubText": "Median of 13,639 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Erlang": 115000,
+                    "Scala": 115000,
+                    "Ocaml": 114000,
+                    "Clojure": 110000,
+                    "Go": 110000,
+                    "Groovy": 110000,
+                    "Objective-C": 110000,
+                    "F#": 108000,
+                    "Hack": 108000,
+                    "Perl": 106000,
+                    "Kotlin": 105000,
+                    "Rust": 105000,
+                    "Swift": 102000,
+                    "TypeScript": 102000,
+                    "Bash/Shell": 100000,
+                    "CoffeeScript": 100000,
+                    "Dephi/Object Pascal": 100000,
+                    "Haskell": 100000,
+                    "Java": 100000,
+                    "Lua": 100000,
+                    "Ruby": 100000,
+                    "Julia": 98500,
+                    "C": 98000,
+                    "JavaScript": 98000,
+                    "Python": 98000
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Correlated Technologies",
+          "GraphCollections": [
+            {
+              "Title": "How Technologies Are Connected",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Technologies Are Connected",
+                  "Type": "CustomFigure",
+                  "Copy": "Technologies cluster together into related ecosystems that tend to be used by the same developers. In this chart we a large central cluster for web development (with JavaScript, HTML, and CSS) connected via SQL to one for Microsoft technologies (with C#, Visual Studio, and .NET Core). Along the left we see a constellation connecting Java, Android, and iOS across to Linux, bash/shell, and Python. Other smaller correlated clusters include Scala/Spark, C/C++, and other smaller technologies that include language-specific IDEs.",
+                  "FigurePath": "2018/tech_network-1.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Technology and Society",
+          "GraphCollections": [
+            {
+              "Title": "What Do Developers Think Is Dangerous and Exciting About AI?",
+              "Copy": "Some types of developers are involved in the increasing role of machine learning and artificial intelligence in the world today, so we asked developers what they think is dangerous and exciting about these technologies. There is not much consensus among developers about what is most dangerous; each answer was chosen roughly equally. The top choice for what is exciting about increasing AI is that jobs can be automated.",
+              "Graphs": [
+                {
+                  "Title": "Dangerous",
+                  "Copy": "",
+                  "SubText": "63,115 responses",
+                  "Data": {
+                    "Algorithms making important decisions": 28.5511,
+                    "Artificial intelligence surpassing human intelligence (\"the singularity\")": 27.9569,
+                    "Evolving definitions of \"fairness\" in algorithmic versus human decisions": 23.6996,
+                    "Increasing automation of jobs": 19.7924
+                  }
+                },
+                {
+                  "Title": "Exciting",
+                  "Copy": "",
+                  "SubText": "65,367 responses",
+                  "Data": {
+                    "Increasing automation of jobs": 40.7606,
+                    "Algorithms making important decisions": 23.5272,
+                    "Artificial intelligence surpassing human intelligence (\"the singularity\")": 23.3007,
+                    "Evolving definitions of \"fairness\" in algorithmic versus human decisions": 12.4115
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Who is Primary Responsible for Considering the Ramifications of AI?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Who is Primary Responsible for Considering the Ramifications of AI?",
+                  "Copy": "Developers are most likely to think that the creators and technologists behind the machine learning and AI algorithms are the ones who are ultimately most responsible for the societal issues surrounding artificial intelligence. About a quarter of respondents think that a regulatory body should be primarily responsible.",
+                  "SubText": "65,553 responses",
+                  "Data": {
+                    "The developers or the people creating the AI": 47.8208,
+                    "A governmental or other regulatory body": 27.8599,
+                    "Prominent industry leaders": 16.6049,
+                    "Nobody": 7.7144
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Do Developers Feel About the Future of AI?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Do Developers Feel About the Future of AI?",
+                  "Copy": "Developers are mostly optimistic about the possibilities that artificial intelligence offers our world, with almost three-fourths of respondents saying that they are overall more excited than worried about the AI future.",
+                  "SubText": "69,728 responses",
+                  "Data": {
+                    "I'm excited about the possibilities more than worried about the dangers.": 72.8158,
+                    "I'm worried about the dangers more than I'm excited about the possibilities.": 19.0297,
+                    "I don't care about it, or I haven't thought about it.": 8.1545
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "AI Concerns by Developer Type",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "AI Concerns by Developer Type",
+                  "Type": "CustomFigure",
+                  "Copy": "The concerns that developers bring to issues around artificial intelligence depend on the kind of coding work they do. For example, data scientists are 1.5 times more likely to consider issues around algorithmic fairness dangerous than any upcoming singularity, the most of any kind of developer. We included a free response option on this question; there was not much serious worry about Skynet, but many developers discussed systemic bias being built into algorithmic decision making and the danger of AI being used without the ability to inspect and reason about decision pathways.",
+                  "FigurePath": "2018/fairness_singular-1.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Work",
+      "SubTitle": "How developers get down to the business of software",
+      "SubSections": [
+        {
+          "Title": "Employment",
+          "GraphCollections": [
+            {
+              "Title": "Employment Status",
+              "Copy": "Over three-fourths of professional developers are employed full time, and 10% work as independent contractors, freelancers, or are self-employed.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "95,321 responses",
+                  "Data": {
+                    "Employed full-time": 73.9554,
+                    "Independent contractor, freelancer, or self-employed": 9.7376,
+                    "Not employed, but looking for work": 6.0899,
+                    "Employed part-time": 5.6441,
+                    "Not employed, and not looking for work": 4.3348,
+                    "Retired": 0.2381
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "86,447 responses",
+                  "Data": {
+                    "Employed full-time": 76.854,
+                    "Independent contractor, freelancer, or self-employed": 10.0084,
+                    "Employed part-time": 5.1257,
+                    "Not employed, but looking for work": 5.0389,
+                    "Not employed, and not looking for work": 2.8075,
+                    "Retired": 0.1654
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Employment Status by Geography",
+              "Copy": "Germany has an unusually high proportion of developers working part-time, and developers in the United States are somewhat less likely to work as independent contractors or freelancers.",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "19,948 responses",
+                  "Data": {
+                    "Employed full-time": 80.3639,
+                    "Independent contractor, freelancer, or self-employed": 6.557,
+                    "Not employed, but looking for work": 4.7925,
+                    "Employed part-time": 4.3613,
+                    "Not employed, and not looking for work": 3.5593,
+                    "Retired": 0.366
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "13,025 responses",
+                  "Data": {
+                    "Employed full-time": 78.7102,
+                    "Not employed, but looking for work": 9.2898,
+                    "Independent contractor, freelancer, or self-employed": 6.1727,
+                    "Not employed, and not looking for work": 3.8234,
+                    "Employed part-time": 1.9731,
+                    "Retired": 0.0307
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "6,652 responses",
+                  "Data": {
+                    "Employed full-time": 77.9615,
+                    "Independent contractor, freelancer, or self-employed": 11.5604,
+                    "Not employed, and not looking for work": 4.3897,
+                    "Not employed, but looking for work": 3.187,
+                    "Employed part-time": 2.4354,
+                    "Retired": 0.466
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "6,236 responses",
+                  "Data": {
+                    "Employed full-time": 70.2854,
+                    "Employed part-time": 13.0212,
+                    "Independent contractor, freelancer, or self-employed": 8.8679,
+                    "Not employed, and not looking for work": 4.474,
+                    "Not employed, but looking for work": 3.127,
+                    "Retired": 0.2245
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "3,314 responses",
+                  "Data": {
+                    "Employed full-time": 74.653,
+                    "Independent contractor, freelancer, or self-employed": 9.5655,
+                    "Not employed, but looking for work": 5.522,
+                    "Not employed, and not looking for work": 5.0996,
+                    "Employed part-time": 4.828,
+                    "Retired": 0.3319
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Employment Status for Professional Developers by Geography",
+              "Copy": "Respondents who are professional developers are employed full-time at higher rates than respondents in general.",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "18,435 responses",
+                  "Data": {
+                    "Employed full-time": 83.1625,
+                    "Independent contractor, freelancer, or self-employed": 6.6395,
+                    "Not employed, but looking for work": 4.1063,
+                    "Employed part-time": 3.4988,
+                    "Not employed, and not looking for work": 2.3162,
+                    "Retired": 0.2766
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "11,681 responses",
+                  "Data": {
+                    "Employed full-time": 82.3388,
+                    "Not employed, but looking for work": 7.311,
+                    "Independent contractor, freelancer, or self-employed": 6.2837,
+                    "Not employed, and not looking for work": 2.2772,
+                    "Employed part-time": 1.7721,
+                    "Retired": 0.0171
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "6,142 responses",
+                  "Data": {
+                    "Employed full-time": 80.495,
+                    "Independent contractor, freelancer, or self-employed": 11.8528,
+                    "Not employed, and not looking for work": 2.7027,
+                    "Not employed, but looking for work": 2.5399,
+                    "Employed part-time": 2.1003,
+                    "Retired": 0.3093
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "5,641 responses",
+                  "Data": {
+                    "Employed full-time": 72.3453,
+                    "Employed part-time": 12.3205,
+                    "Independent contractor, freelancer, or self-employed": 9.236,
+                    "Not employed, and not looking for work": 3.315,
+                    "Not employed, but looking for work": 2.6768,
+                    "Retired": 0.1064
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "3,020 responses",
+                  "Data": {
+                    "Employed full-time": 78.1457,
+                    "Independent contractor, freelancer, or self-employed": 10,
+                    "Not employed, but looking for work": 4.702,
+                    "Employed part-time": 3.8742,
+                    "Not employed, and not looking for work": 3.1126,
+                    "Retired": 0.1656
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Company Type",
+          "GraphCollections": [
+            {
+              "Title": "Industry",
+              "Copy": "Software developers work in a diverse range of industries (so diverse that it's hard to ask about them all in one question!) both inside and outside the technology industry. Our answer choices focused on the tech industry this year, and of these choices, more professional developers work for companies doing web development, IT, and SaaS.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "82,114 responses",
+                  "Data": {
+                    "Web development or design": 15.9814,
+                    "Other industry not listed here": 11.5778,
+                    "Information technology": 10.8301,
+                    "Software as a service (SaaS) development": 10.3344,
+                    "Other software development": 9.8923,
+                    "Financial technology or services": 8.7062,
+                    "Cloud-based solutions or services": 7.1315,
+                    "Data and analytics": 5.7286,
+                    "Consulting": 5.2549,
+                    "Media, advertising, publishing, or entertainment": 5.0673,
+                    "Retail or eCommerce": 5.0381,
+                    "Healthcare technology or services": 4.4572
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "78,991 responses",
+                  "Data": {
+                    "Web development or design": 16.331,
+                    "Other industry not listed here": 10.7835,
+                    "Information technology": 10.7607,
+                    "Software as a service (SaaS) development": 10.4949,
+                    "Other software development": 9.9733,
+                    "Financial technology or services": 8.8023,
+                    "Cloud-based solutions or services": 7.2223,
+                    "Data and analytics": 5.7513,
+                    "Consulting": 5.2588,
+                    "Media, advertising, publishing, or entertainment": 5.0917,
+                    "Retail or eCommerce": 5.0461,
+                    "Healthcare technology or services": 4.4841
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Company Size",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Company Size",
+                  "Copy": "Developers work in companies of all sizes, from quite small to large enterprise organizations. More software developers in the United States work at larger companies compared to the rest of the world.",
+                  "SubText": "71,531 responses",
+                  "Data": {
+                    "Fewer than 10 employees": 10.4556,
+                    "10 to 19 employees": 11.1937,
+                    "20 to 99 employees": 23.7603,
+                    "100 to 499 employees": 19.5873,
+                    "500 to 999 employees": 6.4727,
+                    "1,000 to 4,999 employees": 10.6723,
+                    "5,000 to 9,999 employees": 4.2178,
+                    "10,000 or more employees": 13.6402
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Career Values",
+          "GraphCollections": [
+            {
+              "Title": "What Do Developers Hope To Be Doing in Five Years?",
+              "Copy": "Developers' career goals are largely focused on technical work, with just over half of respondents saying they want to be in the same or a different technical role in the future. About a quarter of developers say they want to create their own company.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "75,718 responses",
+                  "Data": {
+                    "Working in a different or more specialized technical role than the one I'm in now": 33.8665,
+                    "Working as a founder or co-founder of my own company": 25.6795,
+                    "Doing the same work": 19.4458,
+                    "Working as an engineering manager or other functional manager": 9.8827,
+                    "Working as a product manager or project manager": 6.6087,
+                    "Working in a career completely unrelated to software development": 2.8408,
+                    "Retirement": 1.676
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "75,718 responses",
+                  "Data": {
+                    "Working in a different or more specialized technical role than the one I'm in now": 33.8665,
+                    "Working as a founder or co-founder of my own company": 25.6795,
+                    "Doing the same work": 19.4458,
+                    "Working as an engineering manager or other functional manager": 9.8827,
+                    "Working as a product manager or project manager": 6.6087,
+                    "Working in a career completely unrelated to software development": 2.8408,
+                    "Retirement": 1.676
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Do Developers Feel About Their Careers and Jobs?",
+              "Copy": "Developers tend to be satisfied with their career, more so in general than with their current job. Overall, career satisfaction does not vary significantly by industry. However, current job satisfaction is significantly lower for developers working in financial services and IT.",
+              "Graphs": [
+                {
+                  "Title": "Career Satisfication",
+                  "SubText": "76,504 responses",
+                  "Data": {
+                    "Extremely dissatisfied": 3.4155,
+                    "Moderately dissatisfied": 6.8781,
+                    "Slightly dissatisfied": 8.61,
+                    "Neither satisfied nor dissatisfied": 8.2558,
+                    "Slightly satisfied": 17.6252,
+                    "Moderately satisfied": 36.5027,
+                    "Extremely satisfied": 18.7127
+                  }
+                },
+                {
+                  "Title": "Job Satisfaction",
+                  "SubText": "69,276 responses",
+                  "Data": {
+                    "Extremely dissatisfied": 3.5828,
+                    "Moderately dissatisfied": 9.12,
+                    "Slightly dissatisfied": 10.1868,
+                    "Neither satisfied nor dissatisfied": 7.1684,
+                    "Slightly satisfied": 14.4523,
+                    "Moderately satisfied": 37.5383,
+                    "Extremely satisfied": 17.9514
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Ethics",
+          "GraphCollections": [
+            {
+              "Title": "What Would Developers Do If Asked to Write Code for an Unethical Purpose?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "What Would Developers Do If Asked to Write Code for an Unethical Purpose?",
+                  "Copy": "When posed with a hypothetical situation where they are asked to write code for a product or purpose that they consider clearly unethical, over half of our respondents say that they would not write such code. Ethical situations can be complicated, and about another third say that it would depend on the situation.",
+                  "SubText": "70,782 responses",
+                  "Data": {
+                    "No": 58.5474,
+                    "Depends on what it is": 36.635,
+                    "Yes": 4.8176
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Would Developers Report Ethical Problems with Code?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Would Developers Report Ethical Problems with Code?",
+                  "Copy": "The question of what to do *next* after an ethical problem has arisen is even more tricky, according to our respondents. The most common answer, from almost half of respondents, is that how to report an ethical problem depends on the particulars of any given situation.",
+                  "SubText": "70,426 responses",
+                  "Data": {
+                    "Depends on what it is": 46.5907,
+                    "Yes, but only within the company": 35.7254,
+                    "Yes, and publicly": 13.0634,
+                    "No": 4.6205
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Who Is Ultimately Most Responsible for Code That Accomplishes Something Unethical?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Who Is Ultimately Most Responsible for Code That Accomplishes Something Unethical?",
+                  "Copy": "Most developers feel that management is ultimately most accountable for unethical results of code; a developer who writes code used for unethical purposes was the least likely choice on this question.",
+                  "SubText": "64,540 responses",
+                  "Data": {
+                    "Upper management at the company/organization": 57.5116,
+                    "The person who came up with the idea": 22.8169,
+                    "The developer who wrote it": 19.6715
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Do Developers Have an Obligation to Consider the Ethical Implications of Their Code?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Do Developers Have an Obligation to Consider the Ethical Implications of Their Code?",
+                  "Copy": "Almost 80% of respondents affirm that considering what their code can be used for is the right thing for developers to do. We included a free response opportunity after this question, and we saw thoughtful reflections from developers. These include responses about how the tools developers build are powerful and come with a lot of responsibility, situations where unethical outcomes may accidentally arise, and how large teams are involved in building software but developers can be the last line of defense against unethical code.",
+                  "SubText": "69,309 responses",
+                  "Data": {
+                    "Yes": 79.6433,
+                    "Unsure / I don't know": 14.2738,
+                    "No": 6.0829
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Looking for a Job",
+          "GraphCollections": [
+            {
+              "Title": "Job Search Status",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Job Search Status",
+                  "Copy": "Only 16% of developers are actively looking for a job, but about three-fourths of developers are interested in hearing about new job opportunities.",
+                  "SubText": "79,488 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 59.8279,
+                    "I am not interested in new job opportunities": 24.2754,
+                    "I am actively looking for a job": 15.8967
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Job Search Status by Geography",
+              "Copy": "Job seeking status is largely consistent across the US, UK, Germany, and Canada.",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "17,706 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 56.3764,
+                    "I am not interested in new job opportunities": 29.3799,
+                    "I am actively looking for a job": 14.2438
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "9,886 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 58.4564,
+                    "I am actively looking for a job": 30.7303,
+                    "I am not interested in new job opportunities": 10.8133
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "5,812 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 55.9188,
+                    "I am not interested in new job opportunities": 33.0523,
+                    "I am actively looking for a job": 11.0289
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "5,317 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 58.0026,
+                    "I am not interested in new job opportunities": 31.2958,
+                    "I am actively looking for a job": 10.7015
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "2,881 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 61.4023,
+                    "I am not interested in new job opportunities": 26.3797,
+                    "I am actively looking for a job": 12.218
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Who's Actively Looking for a Job?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Who's Actively Looking for a Job?",
+                  "Copy": "Among professional developers, those who work at the C-level and as engineering managers or product managers are looking for work the least. Mobile developers and game/graphics developers are actively looking for work at higher proportions",
+                  "SubText": "Mean of 76,354 responses",
+                  "Data": {
+                    "Educator or academic researcher": 18.5123,
+                    "Mobile developer": 18.1235,
+                    "Data scientist or machine learning specialist": 18.0121,
+                    "Data or business analyst": 17.9491,
+                    "Game or graphics developer": 17.8819,
+                    "Designer": 17.7042,
+                    "Front-end developer": 15.9545,
+                    "Database administrator": 15.5806,
+                    "Back-end developer": 15.4393,
+                    "QA or test developer": 15.3216,
+                    "Full-stack developer": 15.1539,
+                    "Embedded applications or devices developer": 14.832,
+                    "System administrator": 14.4818,
+                    "Desktop or enterprise applications developer": 14.3606,
+                    "Engineering manager": 13.5944,
+                    "DevOps specialist": 13.4577,
+                    "Product manager": 12.9986,
+                    "C-suite executive (CEO, CTO, etc.)": 12.0335
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Long Ago Did Developers Last Change Jobs?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Long Ago Did Developers Last Change Jobs?",
+                  "Copy": "About half of developers have taken a new job within the past two years; frequent job changes are the norm for software developers.",
+                  "SubText": "78,889 responses",
+                  "Data": {
+                    "Less than a year ago": 34.6322,
+                    "Between 1 and 2 years ago": 21.9701,
+                    "Between 2 and 4 years ago": 18.7504,
+                    "More than 4 years ago": 18.8505,
+                    "I've never had a job": 5.7968
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Job Change Timelines by Geography",
+              "Copy": "Across the US, UK, Germany, and Canada, software developers change jobs at about the same rates.",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "17,633 responses",
+                  "Data": {
+                    "Less than a year ago": 31.3049,
+                    "Between 1 and 2 years ago": 20.8756,
+                    "Between 2 and 4 years ago": 21.0628,
+                    "More than 4 years ago": 23.7906,
+                    "I've never had a job": 2.966
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "9,722 responses",
+                  "Data": {
+                    "Less than a year ago": 36.3505,
+                    "Between 1 and 2 years ago": 25.2829,
+                    "Between 2 and 4 years ago": 17.6918,
+                    "More than 4 years ago": 9.4836,
+                    "I've never had a job": 11.1911
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "5,797 responses",
+                  "Data": {
+                    "Less than a year ago": 33.2931,
+                    "Between 1 and 2 years ago": 21.3386,
+                    "Between 2 and 4 years ago": 18.5786,
+                    "More than 4 years ago": 23.1672,
+                    "I've never had a job": 3.6226
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "5,262 responses",
+                  "Data": {
+                    "Less than a year ago": 30.7868,
+                    "Between 1 and 2 years ago": 20.6956,
+                    "Between 2 and 4 years ago": 20.7526,
+                    "More than 4 years ago": 23.0711,
+                    "I've never had a job": 4.694
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "2,868 responses",
+                  "Data": {
+                    "Less than a year ago": 34.3794,
+                    "Between 1 and 2 years ago": 21.304,
+                    "Between 2 and 4 years ago": 19.1771,
+                    "More than 4 years ago": 21.7225,
+                    "I've never had a job": 3.417
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Developer Opinions About Searching for Job",
+              "Copy": "We asked developers what they found annoying, exhausting, interesting, and exciting about the process of searching for a new job in separate free response questions. Respondents talked about the new opportunities, technologies, and people that a new job can offer, but expressed frustration with broken processes around interviews and recruiting.",
+              "Graphs": [
+                {
+                  "Title": "Top 20 Words Used for Annoying",
+                  "Copy": "",
+                  "SubText": "25,022 responses; % of respondents who used each word",
+                  "Data": {
+                    "job": 19.7906,
+                    "interview": 13.3323,
+                    "recruiter": 12.2812,
+                    "company": 9.7514,
+                    "time": 6.6182,
+                    "finding": 4.9836,
+                    "salary": 4.2722,
+                    "getting": 4.1523,
+                    "process": 3.461,
+                    "information": 3.381,
+                    "application": 3.2691,
+                    "employer": 3.2252,
+                    "lack": 3.2252,
+                    "experience": 3.0853,
+                    "work": 3.0533,
+                    "resume": 2.8895,
+                    "response": 2.8655,
+                    "waiting": 2.8655,
+                    "offer": 2.7136,
+                    "people": 2.6816
+                  }
+                },
+                {
+                  "Title": "Top 20 Words Used for Exhausting",
+                  "Copy": "",
+                  "SubText": "24,978 responses; % of respondents who used each word",
+                  "Data": {
+                    "interview": 18.4562,
+                    "job": 17.8237,
+                    "company": 10.3651,
+                    "finding": 9.9768,
+                    "recruiter": 6.9821,
+                    "time": 4.8202,
+                    "waiting": 4.6481,
+                    "getting": 3.8714,
+                    "application": 3.8033,
+                    "good": 3.6792,
+                    "letter": 3.371,
+                    "process": 3.3429,
+                    "work": 3.1428,
+                    "resume": 3.1067,
+                    "find": 3.0987,
+                    "right": 2.9706,
+                    "writing": 2.9426,
+                    "searching": 2.8145,
+                    "fit": 2.8065,
+                    "interviewing": 2.7544
+                  }
+                },
+                {
+                  "Title": "Top 20 Words Used for Interesting",
+                  "Copy": "",
+                  "SubText": "23,881 responses; % of respondents who used each word",
+                  "Data": {
+                    "new": 32.6661,
+                    "company": 17.9766,
+                    "opportunity": 12.8345,
+                    "people": 9.5055,
+                    "technology": 9.3882,
+                    "seeing": 8.6554,
+                    "learning": 8.2492,
+                    "job": 7.9352,
+                    "interview": 7.797,
+                    "finding": 6.2811,
+                    "different": 5.7828,
+                    "work": 5.3557,
+                    "know": 4.9705,
+                    "getting": 4.7067,
+                    "meeting": 4.6271,
+                    "interesting": 3.932,
+                    "get": 2.8014,
+                    "working": 2.793,
+                    "market": 2.7344,
+                    "thing": 2.7218
+                  }
+                },
+                {
+                  "Title": "Top 20 Words Used for Exciting",
+                  "Copy": "",
+                  "SubText": "24,211 responses; % of respondents who used each word",
+                  "Data": {
+                    "new": 41.9603,
+                    "opportunity": 16.6949,
+                    "company": 9.7972,
+                    "people": 8.9381,
+                    "job": 8.5911,
+                    "interview": 7.5916,
+                    "technology": 6.5962,
+                    "getting": 6.4186,
+                    "work": 5.8692,
+                    "finding": 5.799,
+                    "learning": 5.3529,
+                    "meeting": 4.5186,
+                    "know": 3.4406,
+                    "seeing": 3.391,
+                    "salary": 3.1184,
+                    "thing": 3.0523,
+                    "challenge": 2.9202,
+                    "working": 2.8747,
+                    "different": 2.8293,
+                    "something": 2.8086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Job Priorities",
+          "GraphCollections": [
+            {
+              "Title": "How Do Developers Assess Potential Jobs?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Do Developers Assess Potential Jobs?",
+                  "Copy": "In general, developers' top priority in assessing a job is compensation, followed by the specific technologies that they will work with.",
+                  "SubText": "66,985 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "The compensation and benefits offered": 3.9532,
+                    "The languages, frameworks, and other technologies I'd be working with": 4.0658,
+                    "Opportunities for professional development": 4.2252,
+                    "The office environment or company culture": 4.4072,
+                    "The opportunity to work from home/remotely": 5.6732,
+                    "The specific department or team I'd be working on": 5.9069,
+                    "How widely used or impactful the product or service I'd be working on is": 6.0578,
+                    "The industry that I'd be working in": 6.3971,
+                    "The financial performance or funding status of the company or organization": 6.6735,
+                    "The diversity of the company or organization": 7.64
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Differences in Assessing Jobs by Gender",
+              "Copy": "Different types of developers apply different sets of priorities when considering jobs. Developers who are not men rank the company culture and office environment as their highest concern when assessing a new job.",
+              "Graphs": [
+                {
+                  "Title": "Men",
+                  "Copy": "",
+                  "SubText": "54,536 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "The compensation and benefits offered": 3.8654,
+                    "The languages, frameworks, and other technologies I'd be working with": 4.0106,
+                    "Opportunities for professional development": 4.2244,
+                    "The office environment or company culture": 4.3903,
+                    "The opportunity to work from home/remotely": 5.6569,
+                    "The specific department or team I'd be working on": 5.9109,
+                    "How widely used or impactful the product or service I'd be working on is": 6.0531,
+                    "The industry that I'd be working in": 6.4229,
+                    "The financial performance or funding status of the company or organization": 6.6773,
+                    "The diversity of the company or organization": 7.7882
+                  }
+                },
+                {
+                  "Title": "Women",
+                  "Copy": "",
+                  "SubText": "4,026 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "The office environment or company culture": 4.1197,
+                    "Opportunities for professional development": 4.1932,
+                    "The compensation and benefits offered": 4.2628,
+                    "The languages, frameworks, and other technologies I'd be working with": 4.3847,
+                    "The specific department or team I'd be working on": 5.7717,
+                    "The opportunity to work from home/remotely": 5.7827,
+                    "How widely used or impactful the product or service I'd be working on is": 6.276,
+                    "The diversity of the company or organization": 6.4779,
+                    "The industry that I'd be working in": 6.5999,
+                    "The financial performance or funding status of the company or organization": 7.1299
+                  }
+                },
+                {
+                  "Title": "Non-binary and Transgender",
+                  "Copy": "",
+                  "SubText": "813 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "The office environment or company culture": 3.8675,
+                    "The compensation and benefits offered": 4.6013,
+                    "The languages, frameworks, and other technologies I'd be working with": 4.6821,
+                    "The diversity of the company or organization": 4.9881,
+                    "Opportunities for professional development": 5.2446,
+                    "The opportunity to work from home/remotely": 5.5959,
+                    "The specific department or team I'd be working on": 5.9763,
+                    "How widely used or impactful the product or service I'd be working on is": 6.1142,
+                    "The industry that I'd be working in": 6.4095,
+                    "The financial performance or funding status of the company or organization": 7.5075
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Developers Value in Compensation and Benefits",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "What Developers Value in Compensation and Benefits",
+                  "Copy": "Developers prioritize salary highest, with other considerations like computer equipment and conference budgets ranking lower.",
+                  "SubText": "64,918 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 1.8842,
+                    "Health insurance": 4.4506,
+                    "Computer/office equipment allowance": 5.6151,
+                    "Retirement or pension savings matching": 5.7656,
+                    "Conference or education budget": 5.8386,
+                    "Stock options or shares": 6.0806,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 6.8651,
+                    "Company-provided meals or snacks": 6.9482,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 7.0681,
+                    "Parental leave": 7.5632,
+                    "Childcare benefit": 7.9207
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Valuing Compensation and Benefits by Geography",
+              "Copy": "The specifics of how developers are compensated with salary and benefits work differently across the world, so developer responses vary by geography. Health insurance is prioritized in countries without a national healthcare system (like the United States), and pension benefits are unusually important to developers in the UK.",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "15,782 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 1.497,
+                    "Health insurance": 3.0522,
+                    "Retirement or pension savings matching": 4.2936,
+                    "Stock options or shares": 5.3485,
+                    "Computer/office equipment allowance": 6.3003,
+                    "Conference or education budget": 6.4234,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 7.4088,
+                    "Company-provided meals or snacks": 7.5893,
+                    "Parental leave": 7.8235,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 7.8459,
+                    "Childcare benefit": 8.4171
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "6,648 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 2.1915,
+                    "Health insurance": 4.9874,
+                    "Computer/office equipment allowance": 5.9422,
+                    "Stock options or shares": 5.9789,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 6.0844,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 6.3576,
+                    "Company-provided meals or snacks": 6.4895,
+                    "Conference or education budget": 6.6515,
+                    "Retirement or pension savings matching": 6.8574,
+                    "Parental leave": 7.0707,
+                    "Childcare benefit": 7.389
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "5,010 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 1.5078,
+                    "Retirement or pension savings matching": 4.715,
+                    "Computer/office equipment allowance": 5.4236,
+                    "Conference or education budget": 5.7864,
+                    "Stock options or shares": 5.8503,
+                    "Health insurance": 6.0164,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 6.723,
+                    "Company-provided meals or snacks": 6.9182,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 6.9251,
+                    "Parental leave": 7.7788,
+                    "Childcare benefit": 8.3555
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "4,410 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 2.5612,
+                    "Computer/office equipment allowance": 5.1156,
+                    "Conference or education budget": 5.1805,
+                    "Health insurance": 5.3136,
+                    "Retirement or pension savings matching": 6.1549,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 6.3569,
+                    "Company-provided meals or snacks": 6.4909,
+                    "Parental leave": 6.9361,
+                    "Stock options or shares": 7.1803,
+                    "Childcare benefit": 7.3129,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 7.3971
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "2,516 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "Salary and/or bonuses": 1.7266,
+                    "Health insurance": 3.9837,
+                    "Retirement or pension savings matching": 5.1371,
+                    "Stock options or shares": 5.6486,
+                    "Computer/office equipment allowance": 5.9583,
+                    "Conference or education budget": 6.153,
+                    "Fitness or wellness benefit (ex. gym membership, nutritionist)": 6.9428,
+                    "Company-provided meals or snacks": 7.1343,
+                    "Transportation benefit (ex. company-provided transportation, public transit allowance)": 7.1781,
+                    "Parental leave": 7.9865,
+                    "Childcare benefit": 8.151
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Development Practices",
+          "GraphCollections": [
+            {
+              "Title": "What Do Developers Use to Stay Comfortable While Working?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "What Do Developers Use to Stay Comfortable While Working?",
+                  "Copy": "Standing desks are not confined to trendy Silicon Valley offices; over half of our respondents say they use one, almost the same proportion who use a device like an ergonomic keyboard or mouse.",
+                  "SubText": "34,058 responses; select all that apply",
+                  "Data": {
+                    "Ergonomic keyboard or mouse": 52.1786,
+                    "Standing desk": 50.3934,
+                    "Wrist/hand supports or braces": 22.3648,
+                    "Fatigue-relieving floor mat": 12.4024
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Which Methodologies Do Developers Use?",
+              "Copy": "Agile and Scrum are popular methodologies for developers to keep their projects on track.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "58,981 responses; select all that apply",
+                  "Data": {
+                    "Agile": 85.358,
+                    "Scrum": 62.6778,
+                    "Kanban": 35.2486,
+                    "Pair programming": 28.3617,
+                    "Extreme programming (XP)": 15.7017,
+                    "Formal standard such as ISO 9001 or IEEE 12207 (aka “waterfall” methodologies)": 15.054,
+                    "Lean": 9.576,
+                    "Evidence-based software engineering": 3.5096,
+                    "Mob programming": 3.3112,
+                    "PRINCE2": 1.5344
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "57,075 responses; select all that apply",
+                  "Data": {
+                    "Agile": 85.894,
+                    "Scrum": 63.152,
+                    "Kanban": 35.5988,
+                    "Pair programming": 28.5028,
+                    "Extreme programming (XP)": 15.7127,
+                    "Formal standard such as ISO 9001 or IEEE 12207 (aka “waterfall” methodologies)": 14.9207,
+                    "Lean": 9.5085,
+                    "Evidence-based software engineering": 3.4779,
+                    "Mob programming": 3.3027,
+                    "PRINCE2": 1.4805
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Long Do Developers Expect New Coworkers to Take to Be Productive?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Long Do Developers Expect New Coworkers to Take to Be Productive?",
+                  "Copy": "We asked our respondents to imagine they had a new coworker with four years of relevant experience joining their team, and then to estimate how long that person would take to become fully productive and contribute at a typical level. About three-fourths of developers thought that hypothetical new coworker would be fully up to speed within three months or less.",
+                  "SubText": "51,872 responses",
+                  "Data": {
+                    "Less than a month": 30.0335,
+                    "One to three months": 44.6541,
+                    "Three to six months": 17.4005,
+                    "Six to nine months": 5.0605,
+                    "Nine months to a year": 1.6868,
+                    "More than a year": 1.1644
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Version Control",
+              "Copy": "Git is the dominant choice for version control for developers today, with almost 90% of developers checking in their code via git.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "74,298 responses; select all that apply",
+                  "Data": {
+                    "Git": 87.2486,
+                    "Subversion": 16.065,
+                    "Team Foundation Version Control": 10.8576,
+                    "Zip file back-ups": 7.8993,
+                    "Copying and pasting files to network shares": 7.8683,
+                    "I don't use version control": 4.7942,
+                    "Mercurial": 3.6071
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "69,808 responses; select all that apply",
+                  "Data": {
+                    "Git": 88.3552,
+                    "Subversion": 16.6213,
+                    "Team Foundation Version Control": 11.3211,
+                    "Copying and pasting files to network shares": 7.7169,
+                    "Zip file back-ups": 7.6968,
+                    "Mercurial": 3.7231,
+                    "I don't use version control": 3.6615
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Often Do Developers Check In Code?",
+              "Copy": "The majority of developers check in code multiple times per day, and professional developers are less likely to check in code never or rarely.",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "72,355 responses",
+                  "Data": {
+                    "Multiple times per day": 60.2115,
+                    "A few times per week": 19.0837,
+                    "Once a day": 9.1037,
+                    "Weekly or a few times per month": 6.8869,
+                    "Less than once per month": 3.2299,
+                    "Never": 1.4843
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "68,490 responses",
+                  "Data": {
+                    "Multiple times per day": 62.3755,
+                    "A few times per week": 18.521,
+                    "Once a day": 9.1532,
+                    "Weekly or a few times per month": 6.1775,
+                    "Less than once per month": 2.6559,
+                    "Never": 1.117
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How are Job Satisfaction and Committing Code Related?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How are Job Satisfaction and Committing Code Related?",
+                  "Copy": "Developers who check in code the most often also have higher job satisfaction.",
+                  "SubText": "Mean of 59,260 responses; satisfaction on a 1-7 scale, from extremely dissatisfied to extremely satisfied",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Multiple times per day": 5.1365,
+                    "Once a day": 4.9799,
+                    "A few times per week": 4.9392,
+                    "Never": 4.8151,
+                    "Weekly or a few times per month": 4.7936,
+                    "Less than once per month": 4.7333
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Salary",
+          "GraphCollections": [
+            {
+              "Title": "Salary by Developer Type",
+              "Copy": "Engineering managers, DevOps specialists, and data scientists command the highest salaries. See our [Methodology](https://insights.stackoverflow.com/survey/2018#methodology) section for information on how we converted local currencies used by respondents to U.S. dollars.\n\nAverage top earners vary by geography. In India, for example, data scientists are among the top earners, while in European countries, back-end developers and developers working with embedded devices are among the top earners.",
+              "Graphs": [
+                {
+                  "Title": "Global",
+                  "Copy": "",
+                  "SubText": "Median of 57,183 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Engineering manager": 89000,
+                    "DevOps specialist": 72000,
+                    "Data scientist or machine learning specialist": 60000,
+                    "Data or business analyst": 59000,
+                    "Embedded applications or devices developer": 59000,
+                    "Full-stack developer": 59000,
+                    "Desktop or enterprise applications developer": 57000,
+                    "Back-end developer": 56000,
+                    "System administrator": 56000,
+                    "QA or test developer": 55000,
+                    "Database administrator": 51000,
+                    "Front-end developer": 51000,
+                    "Designer": 46000,
+                    "Educator or academic researcher": 44000,
+                    "Mobile developer": 43000,
+                    "Game or graphics developer": 40000
+                  }
+                },
+                {
+                  "Title": "United States",
+                  "Copy": "",
+                  "SubText": "Median of 13,498 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Engineering manager": 137000,
+                    "DevOps specialist": 110000,
+                    "Back-end developer": 102000,
+                    "Data scientist or machine learning specialist": 102000,
+                    "Mobile developer": 101000,
+                    "Desktop or enterprise applications developer": 100000,
+                    "Full-stack developer": 100000,
+                    "Embedded applications or devices developer": 98000,
+                    "Front-end developer": 93000,
+                    "System administrator": 93000,
+                    "Data or business analyst": 90000,
+                    "Database administrator": 90000,
+                    "Game or graphics developer": 90000,
+                    "Educator or academic researcher": 88000,
+                    "Designer": 85000,
+                    "QA or test developer": 83000
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Salary and Experience by Developer Type",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Salary and Experience by Developer Type",
+                  "Type": "CustomFigure",
+                  "Copy": "Developers with more years of experience are paid more, naturally, but we also see that some type of coding work is paid more highly at the same level of experience. Data scientists and DevOps specialists are high earners for their level of experience.",
+                  "FigurePath": "2018/salary_devtype-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Salary and Experience by Language",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Salary and Experience by Language",
+                  "Type": "CustomFigure",
+                  "Copy": "Developers using languages that appear above the blue line in this chart such as Go, Clojure, and F# are being paid more even given how much experience they have. Developers using languages below the blue line like PHP and Visual Basic 6, however, are paid less even given years of experience. The size of the circles in this chart represents how many developers are using that language compared to the others.",
+                  "FigurePath": "2018/salary_language-1.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Community",
+      "SubTitle": "Where developers come to learn, share knowledge, and build their careers",
+      "SubSections": [
+        {
+          "Title": "Site Use",
+          "GraphCollections": [
+            {
+              "Title": "Visiting Stack Overflow",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Visiting Stack Overflow",
+                  "Copy": "Developers visit Stack Overflow. A lot. Stack Overflow is the largest, most trusted online developer community and over half of our respondents say they are at least daily visitors. Our users also feel very positively about Stack Overflow. We asked a traditional [net promoter score](https://en.wikipedia.org/wiki/Net_Promoter) question for Stack Overflow as a whole and our NPS is 75, a world class score according to benchmarks.",
+                  "SubText": "76,811 responses",
+                  "Data": {
+                    "I have never visited Stack Overflow (before today)": 0.5481,
+                    "Less than once per month or monthly": 2.0362,
+                    "A few times per month or weekly": 11.4814,
+                    "A few times per week": 22.3653,
+                    "Daily or almost daily": 32.5006,
+                    "Multiple times per day": 31.0685
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Many Participants Have a Stack Overflow Account?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Many Participants Have a Stack Overflow Account?",
+                  "Copy": "Almost 90% of the participants in our survey are registered users with accounts.",
+                  "SubText": "76,791 responses",
+                  "Data": {
+                    "Yes": 87.4399,
+                    "No": 8.7575,
+                    "I'm not sure / I can't remember": 3.8025
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Sharing What You've Built in Your Developer Story",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Sharing What You've Built in Your Developer Story",
+                  "Copy": "Only 17% of respondents have an up-to-date Developer Story here on Stack Overflow. You can [create your own Developer Story](https://stackoverflow.com/users/story/join) to show what matters most to you as a developer.",
+                  "SubText": "65,677 responses",
+                  "Data": {
+                    "No, and I don't know what that is": 36.5714,
+                    "No, I know what it is but I don't have one": 23.6978,
+                    "No, I have one but it's out of date": 23.0339,
+                    "Yes": 16.6969
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Often Do Developers Participate on Stack Overflow?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Often Do Developers Participate on Stack Overflow?",
+                  "Copy": "Some developers come to Stack Overflow only to find answers to their questions, and some participate in the community by asking, answering, voting for, or commenting on questions. The most common participation frequency in our survey participants is about monthly.",
+                  "SubText": "65,740 responses",
+                  "Data": {
+                    "I have never participated in Q&A on Stack Overflow": 17.3304,
+                    "Less than once per month or monthly": 39.212,
+                    "A few times per month or weekly": 22.6133,
+                    "A few times per week": 11.6596,
+                    "Daily or almost daily": 5.9446,
+                    "Multiple times per day": 3.24
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Developer Opinions on Ads",
+          "GraphCollections": [
+            {
+              "Title": "How Do Do Developers Feel About Ads?",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "How Do Do Developers Feel About Ads?",
+                  "Copy": "Like many websites, Stack Overflow has ads, and we want to know how to make our ads more relevant for our users. Over half of our respondents agreed or strongly agreed that they enjoy seeing online updates from companies they like and that online advertising can be valuable when it is relevant. A full 40% of developers say they fundamentally dislike the concept of advertising.",
+                  "SubText": "74,710 responses; agreement on a 1-5 scale, from strongly disagree to strongly agree",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "I enjoy seeing online updates from companies that I like": 3.3701,
+                    "Online advertising can be valuable when it is relevant to me": 3.3374,
+                    "I fundamentally dislike the concept of advertising": 3.221
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ad Priorities for Developers",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Ad Priorities for Developers",
+                  "Copy": "In general, developers' top priority in assessing an advertisement is whether it is relevant to them, followed by whether it provides useful information and is trustworthy. Developers are not swayed by free offers in advertisements.",
+                  "SubText": "60,479 responses; average ranking in order of importance",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "The advertisement is relevant to me": 2.7269,
+                    "The advertisement provides useful information": 3.3409,
+                    "The advertisement seems trustworthy": 3.7825,
+                    "The advertisement is honest about its goals": 3.8058,
+                    "The advertisement is from a company that I like": 4.3836,
+                    "The advertisement avoids fluffy or vague language": 4.8215,
+                    "The advertisement offers something of value, like a free trial": 5.1388
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Engaging Together",
+          "GraphCollections": [
+            {
+              "Title": "Do Developers Consider Themselves Part of the Stack Overflow Community?",
+              "Copy": "Most of the respondents to our survey consider themselves part of our community, but this varies for different groups of people. For example, we find that respondents who identify as male see themselves as part of the community at higher rates than those with other gender identities. The tech community as a whole and we as Stack Overflow in particular still have work to do in this area.",
+              "Graphs": [
+                {
+                  "Title": "Overall",
+                  "Copy": "",
+                  "SubText": "76,007 responses",
+                  "Data": {
+                    "Yes": 55.4502,
+                    "No": 22.3914,
+                    "I'm not sure": 22.1585
+                  }
+                },
+                {
+                  "Title": "Percent Who Consider Themselves Part of the Stack Overflow Community by Gender",
+                  "Copy": "",
+                  "SubText": "Mean of 64,804 responses; gender is select all that apply",
+                  "Data": {
+                    "Male": 56.899,
+                    "Female": 43.2985,
+                    "Non-binary, genderqueer, or gender non-conforming": 40.8403,
+                    "Transgender": 39.1924
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Interest in Hypothetical New Tools on Stack Overflow",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Interest in Hypothetical New Tools on Stack Overflow",
+                  "Copy": "As we work to make our community a better place for developers to learn, share, and grow their careers, we asked our survey respondents about their interest in possible new tools. An employer review system and help with career growth garnered the most interest.",
+                  "SubText": "70,687 responses; interest on a 1-5 scale, from not at all interested to extremely interested",
+                  "Format": "{0:n1}",
+                  "Data": {
+                    "An employer or job review system": 3.2019,
+                    "An area for Q&A related to career growth": 3.1866,
+                    "A programming-oriented blog platform": 2.962,
+                    "A peer mentoring system": 2.8058,
+                    "A private area for people new to programming": 2.6324
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Words Do Developers Use to Describe Stack Overflow?",
+              "Copy": "In these free response questions, we asked developers first to describe the Stack Overflow community in general, and then what they would change about it. Developers were largely positive about Stack Overflow, focusing on the helpful nature of the community, and specifically had ideas about how questions, answers, comments, and reputation are handled. The treatment of new users and new people in our community were mentioned often as well.",
+              "Graphs": [
+                {
+                  "Title": "Top 20 Words Used to Describe the Stack Overflow Community",
+                  "Copy": "",
+                  "SubText": "5,209 responses; % of respondents who used each word",
+                  "Data": {
+                    "helpful": 18.6792,
+                    "community": 12.2288,
+                    "developer": 10.2131,
+                    "people": 8.7349,
+                    "question": 7.2759,
+                    "great": 7.0071,
+                    "good": 6.9303,
+                    "help": 6.7191,
+                    "answer": 5.8361,
+                    "best": 5.8169,
+                    "knowledge": 5.2217,
+                    "place": 4.9338,
+                    "awesome": 4.2043,
+                    "problem": 3.7243,
+                    "sometimes": 3.5323,
+                    "useful": 3.494,
+                    "friendly": 3.2444,
+                    "helping": 3.1868,
+                    "can": 3.1484,
+                    "learn": 2.7836
+                  }
+                },
+                {
+                  "Title": "Top 20 Words Used to Suggest Changes to Stack Overflow",
+                  "Copy": "",
+                  "SubText": "3,453 responses; % of respondents who used each word",
+                  "Data": {
+                    "question": 36.6638,
+                    "answer": 19.8957,
+                    "nothing": 9.8755,
+                    "user": 9.0646,
+                    "people": 8.5143,
+                    "new": 8.4275,
+                    "make": 7.0374,
+                    "like": 6.5161,
+                    "better": 6.3423,
+                    "comment": 5.6762,
+                    "way": 5.5893,
+                    "can": 5.2708,
+                    "reputation": 4.8364,
+                    "get": 4.7205,
+                    "community": 4.6916,
+                    "good": 4.5757,
+                    "ask": 4.1992,
+                    "less": 4.1992,
+                    "vote": 4.1703,
+                    "job": 4.0255,
+                    "stack": 4.0255
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Developers' Perspectives About Our Community",
+              "Copy": {},
+              "Graphs": [
+                {
+                  "Title": "Developers' Perspectives About Our Community",
+                  "Type": "CustomFigure",
+                  "Copy": "Our survey this year included questions about what developers think the best, worst, most annoying, and most exciting things about Stack Overflow are. (These questions were randomized so that each respondent got one positive and one negative version.) In the positive versions of these questions, respondents were more likely to talk about the wealth of sharing and collaboration on our site. In the negative versions, respondents reflected on harsh interactions they've witnessed, downvotes, and handling of duplicate questions.",
+                  "FigurePath": "2018/positive_negative-1.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Methodology",
+      "SubTitle": "How we planned and analyzed our survey",
+      "SubSections": [
+        {
+          "Title": "Index",
+          "GraphCollections": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,787 @@
+{
+  "TBranch": {
+    "qid": "QID299",
+    "qname": "TBranch",
+    "question": "<span style=\"font-size:16px;\">Would you like to participate in the Professional Developer Series?<\/span>",
+    "datasets": {
+      "TBranch": {
+        "total_respondents": 38538,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 19256,
+            "percent": 0.4997
+          },
+          {
+            "frequency": 10450,
+            "percent": 0.2712
+          },
+          {
+            "response": "No",
+            "frequency": 8832,
+            "percent": 0.2292
+          }
+        ]
+      }
+    }
+  },
+  "ICorPM": {
+    "qid": "QID287",
+    "qname": "ICorPM",
+    "question": "Are you an independent contributor or people manager?",
+    "datasets": {
+      "ICorPM": {
+        "total_respondents": 18806,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Independent contributor",
+            "frequency": 15944,
+            "percent": 0.8478
+          },
+          {
+            "response": "People manager",
+            "frequency": 2862,
+            "percent": 0.1522
+          }
+        ]
+      }
+    }
+  },
+  "WorkExp": {
+    "qid": "QID288",
+    "qname": "WorkExp",
+    "question": "How many years of working experience do you have?",
+    "datasets": {
+      "WorkExp": {
+        "total_respondents": 19049,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": 0,
+            "frequency": 174,
+            "percent": 0.0091
+          },
+          {
+            "response": 1,
+            "frequency": 1304,
+            "percent": 0.0685
+          },
+          {
+            "response": 2,
+            "frequency": 1423,
+            "percent": 0.0747
+          },
+          {
+            "response": 3,
+            "frequency": 1574,
+            "percent": 0.0826
+          },
+          {
+            "response": 4,
+            "frequency": 1502,
+            "percent": 0.0788
+          },
+          {
+            "response": 5,
+            "frequency": 1624,
+            "percent": 0.0853
+          },
+          {
+            "response": 6,
+            "frequency": 1133,
+            "percent": 0.0595
+          },
+          {
+            "response": 7,
+            "frequency": 1076,
+            "percent": 0.0565
+          },
+          {
+            "response": 8,
+            "frequency": 981,
+            "percent": 0.0515
+          },
+          {
+            "response": 9,
+            "frequency": 614,
+            "percent": 0.0322
+          },
+          {
+            "response": 10,
+            "frequency": 1251,
+            "percent": 0.0657
+          },
+          {
+            "response": 11,
+            "frequency": 533,
+            "percent": 0.028
+          },
+          {
+            "response": 12,
+            "frequency": 711,
+            "percent": 0.0373
+          },
+          {
+            "response": 13,
+            "frequency": 345,
+            "percent": 0.0181
+          },
+          {
+            "response": 14,
+            "frequency": 397,
+            "percent": 0.0208
+          },
+          {
+            "response": 15,
+            "frequency": 724,
+            "percent": 0.038
+          },
+          {
+            "response": 16,
+            "frequency": 344,
+            "percent": 0.0181
+          },
+          {
+            "response": 17,
+            "frequency": 323,
+            "percent": 0.017
+          },
+          {
+            "response": 18,
+            "frequency": 281,
+            "percent": 0.0148
+          },
+          {
+            "response": 19,
+            "frequency": 139,
+            "percent": 0.0073
+          },
+          {
+            "response": 20,
+            "frequency": 586,
+            "percent": 0.0308
+          },
+          {
+            "response": 21,
+            "frequency": 132,
+            "percent": 0.0069
+          },
+          {
+            "response": 22,
+            "frequency": 263,
+            "percent": 0.0138
+          },
+          {
+            "response": 23,
+            "frequency": 167,
+            "percent": 0.0088
+          },
+          {
+            "response": 24,
+            "frequency": 128,
+            "percent": 0.0067
+          },
+          {
+            "response": 25,
+            "frequency": 361,
+            "percent": 0.019
+          },
+          {
+            "response": 26,
+            "frequency": 91,
+            "percent": 0.0048
+          },
+          {
+            "response": 27,
+            "frequency": 82,
+            "percent": 0.0043
+          },
+          {
+            "response": 28,
+            "frequency": 72,
+            "percent": 0.0038
+          },
+          {
+            "response": 29,
+            "frequency": 35,
+            "percent": 0.0018
+          },
+          {
+            "response": 30,
+            "frequency": 182,
+            "percent": 0.0096
+          },
+          {
+            "response": 31,
+            "frequency": 41,
+            "percent": 0.0022
+          },
+          {
+            "response": 32,
+            "frequency": 60,
+            "percent": 0.0031
+          },
+          {
+            "response": 33,
+            "frequency": 41,
+            "percent": 0.0022
+          },
+          {
+            "response": 34,
+            "frequency": 29,
+            "percent": 0.0015
+          },
+          {
+            "response": 35,
+            "frequency": 85,
+            "percent": 0.0045
+          },
+          {
+            "response": 36,
+            "frequency": 32,
+            "percent": 0.0017
+          },
+          {
+            "response": 37,
+            "frequency": 22,
+            "percent": 0.0012
+          },
+          {
+            "response": 38,
+            "frequency": 22,
+            "percent": 0.0012
+          },
+          {
+            "response": 39,
+            "frequency": 9,
+            "percent": 0.0005
+          },
+          {
+            "response": 40,
+            "frequency": 51,
+            "percent": 0.0027
+          },
+          {
+            "response": 41,
+            "frequency": 15,
+            "percent": 0.0008
+          },
+          {
+            "response": 42,
+            "frequency": 24,
+            "percent": 0.0013
+          },
+          {
+            "response": 43,
+            "frequency": 13,
+            "percent": 0.0007
+          },
+          {
+            "response": 44,
+            "frequency": 6,
+            "percent": 0.0003
+          },
+          {
+            "response": 45,
+            "frequency": 9,
+            "percent": 0.0005
+          },
+          {
+            "response": 46,
+            "frequency": 8,
+            "percent": 0.0004
+          },
+          {
+            "response": 47,
+            "frequency": 1,
+            "percent": 0.0001
+          },
+          {
+            "response": 48,
+            "frequency": 3,
+            "percent": 0.0002
+          },
+          {
+            "response": 50,
+            "frequency": 26,
+            "percent": 0.0014
+          }
+        ]
+      }
+    }
+  },
+  "Knowledge": {
+    "qid": "QID289",
+    "qname": "Knowledge",
+    "question": "Please rate your level of agreement with the following statement:",
+    "datasets": {
+      "Knowledge": {
+        "total_respondents": 18580,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "LearnCode_age"
+          },
+          "frequency1": {
+            "label": "Agree"
+          },
+          "percent1": {
+            "label": "Agree"
+          },
+          "frequency2": {
+            "label": "Neither agree nor disagree"
+          },
+          "percent2": {
+            "label": "Neither agree nor disagree"
+          },
+          "frequency3": {
+            "label": "Strongly agree"
+          },
+          "percent3": {
+            "label": "Strongly agree"
+          },
+          "frequency4": {
+            "label": "Disagree"
+          },
+          "percent4": {
+            "label": "Disagree"
+          },
+          "frequency5": {
+            "label": "Strongly disagree"
+          },
+          "percent5": {
+            "label": "Strongly disagree"
+          }
+        },
+        "data": [
+          {
+            "response": "I know which system or resource to use to find information and answers to questions I have.",
+            "frequency1": 9592,
+            "frequency3": 3838,
+            "frequency2": 2970,
+            "frequency4": 1411,
+            "frequency5": 283,
+            "percent1": 0.5163,
+            "percent3": 0.2066,
+            "percent2": 0.1598,
+            "percent4": 0.0759,
+            "percent5": 0.0152
+          },
+          {
+            "response": "I have interactions with people outside of my immediate team.",
+            "frequency1": 9216,
+            "frequency3": 6129,
+            "frequency2": 1626,
+            "frequency4": 1151,
+            "frequency5": 419,
+            "percent1": 0.496,
+            "percent3": 0.3299,
+            "percent2": 0.0875,
+            "percent4": 0.0619,
+            "percent5": 0.0226
+          },
+          {
+            "response": "I am able to quickly find answers to my questions with existing tools and resources.",
+            "frequency1": 8679,
+            "frequency3": 2751,
+            "frequency2": 4030,
+            "frequency4": 2228,
+            "frequency5": 454,
+            "percent1": 0.4671,
+            "percent3": 0.1481,
+            "percent2": 0.2169,
+            "percent4": 0.1199,
+            "percent5": 0.0244
+          },
+          {
+            "response": "I can find up-to-date information within my organization to help me do my job.",
+            "frequency1": 7619,
+            "frequency3": 2289,
+            "frequency2": 4341,
+            "frequency4": 3100,
+            "frequency5": 798,
+            "percent1": 0.4101,
+            "percent3": 0.1232,
+            "percent2": 0.2336,
+            "percent4": 0.1668,
+            "percent5": 0.0429
+          },
+          {
+            "response": "Waiting on answers to questions often causes interruptions and disrupts my workflow.",
+            "frequency1": 6806,
+            "frequency3": 2653,
+            "frequency2": 4564,
+            "frequency4": 3365,
+            "frequency5": 685,
+            "percent1": 0.3663,
+            "percent3": 0.1428,
+            "percent2": 0.2456,
+            "percent4": 0.1811,
+            "percent5": 0.0369
+          },
+          {
+            "response": "I often find myself answering questions that I’ve already answered before.",
+            "frequency1": 6693,
+            "frequency3": 2195,
+            "frequency2": 5029,
+            "frequency4": 3593,
+            "frequency5": 580,
+            "percent1": 0.3602,
+            "percent3": 0.1181,
+            "percent2": 0.2707,
+            "percent4": 0.1934,
+            "percent5": 0.0312
+          },
+          {
+            "response": "Knowledge silos prevent me from getting ideas across the organization (i.e., one individual or team has information that isn't shared with others)",
+            "frequency1": 5476,
+            "frequency3": 2036,
+            "frequency2": 4899,
+            "frequency4": 4180,
+            "frequency5": 1463,
+            "percent1": 0.2947,
+            "percent3": 0.1096,
+            "percent2": 0.2637,
+            "percent4": 0.225,
+            "percent5": 0.0787
+          }
+        ]
+      }
+    }
+  },
+  "Frequency": {
+    "qid": "QID290",
+    "qname": "Frequency",
+    "question": "How frequently do you experience each of the following?",
+    "datasets": {
+      "Frequency": {
+        "total_respondents": 18356,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "LearnCode_age"
+          },
+          "frequency1": {
+            "label": "1-2 times a week"
+          },
+          "percent1": {
+            "label": "1-2 times a week"
+          },
+          "frequency2": {
+            "label": "Never"
+          },
+          "percent2": {
+            "label": "Never"
+          },
+          "frequency3": {
+            "label": "3-5 times a week"
+          },
+          "percent3": {
+            "label": "3-5 times a week"
+          },
+          "frequency4": {
+            "label": "10+ times a week"
+          },
+          "percent4": {
+            "label": "10+ times a week"
+          },
+          "frequency5": {
+            "label": "6-10 times a week"
+          },
+          "percent5": {
+            "label": "6-10 times a week"
+          }
+        },
+        "data": [
+          {
+            "response": "Needing help from people outside of your immediate team?",
+            "frequency1": 11129,
+            "frequency2": 4659,
+            "frequency3": 1760,
+            "frequency4": 336,
+            "frequency5": 409,
+            "percent1": 0.6063,
+            "percent2": 0.2538,
+            "percent3": 0.0959,
+            "percent4": 0.0183,
+            "percent5": 0.0223
+          },
+          {
+            "response": "Encountering knowledge silos (where one individual or team has information that's not shared or distributed with other individuals or teams) at work?",
+            "frequency1": 9004,
+            "frequency2": 5822,
+            "frequency3": 2081,
+            "frequency4": 399,
+            "frequency5": 498,
+            "percent1": 0.4905,
+            "percent2": 0.3172,
+            "percent3": 0.1134,
+            "percent4": 0.0217,
+            "percent5": 0.0271
+          },
+          {
+            "response": "Interacting with people outside of your immediate team?",
+            "frequency1": 8608,
+            "frequency2": 1824,
+            "frequency3": 4094,
+            "frequency4": 1983,
+            "frequency5": 1765,
+            "percent1": 0.4689,
+            "percent2": 0.0994,
+            "percent3": 0.223,
+            "percent4": 0.108,
+            "percent5": 0.0962
+          }
+        ]
+      }
+    }
+  },
+  "TimeSearching": {
+    "qid": "QID291",
+    "qname": "TimeSearching",
+    "question": "On an average day, how much time do you typically spend searching for answers or solutions to problems you encounter at work? (This includes time spent searching on your own, asking a colleague, and waiting for a response).",
+    "datasets": {
+      "TimeSearching": {
+        "total_respondents": 18737,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 1854,
+            "percent": 0.0989
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 5175,
+            "percent": 0.2762
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 7151,
+            "percent": 0.3817
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 3274,
+            "percent": 0.1747
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 1283,
+            "percent": 0.0685
+          }
+        ]
+      }
+    }
+  },
+  "TimeAnswering": {
+    "qid": "QID292",
+    "qname": "TimeAnswering",
+    "question": "On an average day, how much time do you typically spend answering questions you get asked at work?",
+    "datasets": {
+      "TimeAnswering": {
+        "total_respondents": 18662,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 3935,
+            "percent": 0.2109
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 6207,
+            "percent": 0.3326
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 5502,
+            "percent": 0.2948
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 2249,
+            "percent": 0.1205
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 769,
+            "percent": 0.0412
+          }
+        ]
+      }
+    }
+  },
+  "Onboarding": {
+    "qid": "QID293",
+    "qname": "Onboarding",
+    "question": "The time it takes to onboard new hires at my company is:",
+    "datasets": {
+      "Onboarding": {
+        "total_respondents": 18488,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Somewhat long",
+            "frequency": 6631,
+            "percent": 0.3587
+          },
+          {
+            "response": "Just right",
+            "frequency": 6612,
+            "percent": 0.3576
+          },
+          {
+            "response": "Somewhat short",
+            "frequency": 2336,
+            "percent": 0.1264
+          },
+          {
+            "response": "Very long",
+            "frequency": 2190,
+            "percent": 0.1185
+          },
+          {
+            "response": "Very short",
+            "frequency": 719,
+            "percent": 0.0389
+          }
+        ]
+      }
+    }
+  },
+  "ProfessionalTech": {
+    "qid": "QID304",
+    "qname": "ProfessionalTech",
+    "question": "My company has:",
+    "datasets": {
+      "ProfessionalTech": {
+        "total_respondents": 18028,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Continuous integration (CI) and (more often) continuous delivery",
+            "frequency": 12632,
+            "percent": 0.2053
+          },
+          {
+            "response": "DevOps function",
+            "frequency": 10631,
+            "percent": 0.1728
+          },
+          {
+            "response": "Automated testing",
+            "frequency": 10490,
+            "percent": 0.1705
+          },
+          {
+            "response": "Microservices",
+            "frequency": 8821,
+            "percent": 0.1434
+          },
+          {
+            "response": "Developer portal or other central places to find tools/services",
+            "frequency": 6881,
+            "percent": 0.1118
+          },
+          {
+            "response": "Observability tools",
+            "frequency": 6721,
+            "percent": 0.1092
+          },
+          {
+            "response": "Innersource initiative",
+            "frequency": 2950,
+            "percent": 0.0479
+          },
+          {
+            "response": "None of these",
+            "frequency": 2400,
+            "percent": 0.039
+          }
+        ]
+      }
+    }
+  },
+  "SOTeamsUsage": {
+    "qid": "QID286",
+    "qname": "SOTeamsUsage",
+    "question": "Does your team use Stack Overflow for Teams?",
+    "datasets": {
+      "SOTeamsUsage": {
+        "total_respondents": 18836,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "No",
+            "frequency": 16648,
+            "percent": 0.8838
+          },
+          {
+            "response": "Yes",
+            "frequency": 1426,
+            "percent": 0.0757
+          },
+          {
+            "response": "No, but we want to use it",
+            "frequency": 762,
+            "percent": 0.0405
+          }
+        ]
+      }
+    }
+  },
+  "TrueFalse": {
+    "qid": "QID294",
+    "qname": "TrueFalse",
+    "question": "Last few questions...",
+    "datasets": {
+      "TrueFalse": {
+        "total_respondents": 18628,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "LearnCode_age"
+          },
+          "frequency1": {
+            "label": "Yes"
+          },
+          "percent1": {
+            "label": "Yes"
+          },
+          "frequency2": {
+            "label": "No"
+          },
+          "percent2": {
+            "label": "No"
+          }
+        },
+        "data": [
+          {
+            "response": "Does your employer give you time to learn new skills?",
+            "frequency1": 14570,
+            "frequency2": 3955,
+            "percent1": 0.7822,
+            "percent2": 0.2123
+          },
+          {
+            "response": "Are you involved in supporting new hires during their onboarding?",
+            "frequency1": 12259,
+            "frequency2": 6293,
+            "percent1": 0.6581,
+            "percent2": 0.3378
+          },
+          {
+            "response": "Do you use learning resources provided by your employer?",
+            "frequency1": 11601,
+            "frequency2": 6906,
+            "percent1": 0.6228,
+            "percent2": 0.3707
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1747 @@
+{
+  "TBranch": {
+    "qid": "QID299",
+    "qname": "TBranch",
+    "question": "Would you like to participate in the Professional Developer Series? *",
+    "datasets": {
+      "TBranch": {
+        "total_respondents": 44477,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 29960,
+            "percent": 0.6736
+          },
+          {
+            "response": "No",
+            "frequency": 14517,
+            "percent": 0.3264
+          }
+        ]
+      }
+    }
+  },
+  "ICorPM": {
+    "qid": "QID287",
+    "qname": "ICorPM",
+    "question": "Are you an individual contributor or people manager?",
+    "datasets": {
+      "ICorPM": {
+        "total_respondents": 29801,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Individual contributor",
+            "frequency": 25888,
+            "percent": 0.8687
+          },
+          {
+            "response": "People manager",
+            "frequency": 3913,
+            "percent": 0.1313
+          }
+        ]
+      }
+    }
+  },
+  "WorkExp": {
+    "qid": "QID288",
+    "qname": "WorkExp",
+    "question": "How many years of working experience do you have?",
+    "datasets": {
+      "WorkExp": {
+        "name": "All Respondents",
+        "total_respondents": 29466,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "1 to 4 years",
+            "frequency": 7257,
+            "percent": 0.2447
+          },
+          {
+            "response": "5 to 9 years",
+            "frequency": 7767,
+            "percent": 0.2619
+          },
+          {
+            "response": "10 to 14 years",
+            "frequency": 5496,
+            "percent": 0.1853
+          },
+          {
+            "response": "15 to 19 years",
+            "frequency": 3363,
+            "percent": 0.1134
+          },
+          {
+            "response": "20 to 24 years",
+            "frequency": 2299,
+            "percent": 0.0775
+          },
+          {
+            "response": "25 to 29 years",
+            "frequency": 1592,
+            "percent": 0.0537
+          },
+          {
+            "response": "30 to 34 years",
+            "frequency": 819,
+            "percent": 0.0276
+          },
+          {
+            "response": "35 to 39 years",
+            "frequency": 458,
+            "percent": 0.0154
+          },
+          {
+            "response": "40 to 44 years",
+            "frequency": 288,
+            "percent": 0.0097
+          },
+          {
+            "response": "45 to 49 years",
+            "frequency": 74,
+            "percent": 0.0025
+          },
+          {
+            "response": "50 years or more",
+            "frequency": 53,
+            "percent": 0.0018
+          }
+        ]
+      },
+      "WorkExp_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 25482,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "1 to 4 years",
+            "frequency": 6835,
+            "percent": 0.2664
+          },
+          {
+            "response": "5 to 9 years",
+            "frequency": 6923,
+            "percent": 0.2698
+          },
+          {
+            "response": "10 to 14 years",
+            "frequency": 4582,
+            "percent": 0.1786
+          },
+          {
+            "response": "15 to 19 years",
+            "frequency": 2656,
+            "percent": 0.1035
+          },
+          {
+            "response": "20 to 24 years",
+            "frequency": 1842,
+            "percent": 0.0718
+          },
+          {
+            "response": "25 to 29 years",
+            "frequency": 1258,
+            "percent": 0.049
+          },
+          {
+            "response": "30 to 34 years",
+            "frequency": 641,
+            "percent": 0.025
+          },
+          {
+            "response": "35 to 39 years",
+            "frequency": 385,
+            "percent": 0.015
+          },
+          {
+            "response": "40 to 44 years",
+            "frequency": 251,
+            "percent": 0.0098
+          },
+          {
+            "response": "45 to 49 years",
+            "frequency": 67,
+            "percent": 0.0026
+          },
+          {
+            "response": "50 years or more",
+            "frequency": 42,
+            "percent": 0.0016
+          }
+        ]
+      },
+      "WorkExp_PM": {
+        "name": "People Manager",
+        "total_respondents": 3879,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "1 to 4 years",
+            "frequency": 389,
+            "percent": 0.0999
+          },
+          {
+            "response": "5 to 9 years",
+            "frequency": 820,
+            "percent": 0.2107
+          },
+          {
+            "response": "10 to 14 years",
+            "frequency": 897,
+            "percent": 0.2305
+          },
+          {
+            "response": "15 to 19 years",
+            "frequency": 695,
+            "percent": 0.1786
+          },
+          {
+            "response": "20 to 24 years",
+            "frequency": 448,
+            "percent": 0.1151
+          },
+          {
+            "response": "25 to 29 years",
+            "frequency": 330,
+            "percent": 0.0848
+          },
+          {
+            "response": "30 to 34 years",
+            "frequency": 175,
+            "percent": 0.045
+          },
+          {
+            "response": "35 to 39 years",
+            "frequency": 72,
+            "percent": 0.0185
+          },
+          {
+            "response": "40 to 44 years",
+            "frequency": 37,
+            "percent": 0.0095
+          },
+          {
+            "response": "45 to 49 years",
+            "frequency": 7,
+            "percent": 0.0018
+          },
+          {
+            "response": "50 years or more",
+            "frequency": 9,
+            "percent": 0.0023
+          }
+        ]
+      }
+    }
+  },
+  "Knowledge": {
+    "qid": "QID289",
+    "qname": "Knowledge",
+    "question": "Please rate your level of agreement with the following statement:",
+    "datasets": {
+      "Knowledge": {
+        "name": "All Respondents",
+        "total_respondents": 28747,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+        "data": [
+          {
+            "response": "I am able to quickly find answers to my questions with existing tools and resources.",
+            "frequency": [3257, 12510, 7216, 4188, 859],
+            "percent": [0.1162, 0.4463, 0.2574, 0.1494, 0.0306],
+            "offset": [0, 0.1162, 0.5625, 0.8199, 0.9693]
+          },
+          {
+            "response": "I can find up-to-date information within my organization to help me do my job.",
+            "frequency": [2730, 10979, 7421, 5522, 1443],
+            "percent": [0.0972, 0.3908, 0.2641, 0.1965, 0.0514],
+            "offset": [0, 0.0972, 0.488, 0.7521, 0.9486]
+          },
+          {
+            "response": "I feel like I have the tools and/or resources to quickly understand and work on any area of my company's code/system/platform.",
+            "frequency": [3067, 10759, 7046, 5159, 1727],
+            "percent": [0.1105, 0.3876, 0.2538, 0.1859, 0.0622],
+            "offset": [0, 0.1105, 0.4981, 0.7519, 0.9378]
+          },
+          {
+            "response": "I have asked my employer to reimburse me for tools or a product that helps me do my job better or faster",
+            "frequency": [2554, 6657, 6155, 5890, 6379],
+            "percent": [0.0924, 0.2409, 0.2227, 0.2131, 0.2308],
+            "offset": [0, 0.0924, 0.3333, 0.556, 0.7691]
+          },
+          {
+            "response": "I have interactions with people outside of my immediate team.",
+            "frequency": [10310, 13454, 2392, 1813, 695],
+            "percent": [0.3597, 0.4694, 0.0834, 0.0633, 0.0242],
+            "offset": [0, 0.3597, 0.8291, 0.9125, 0.9758]
+          },
+          {
+            "response": "I know which system or resource to use to find information and answers to questions I have.",
+            "frequency": [5005, 14612, 5097, 2610, 556],
+            "percent": [0.1795, 0.5241, 0.1828, 0.0936, 0.0199],
+            "offset": [0, 0.1795, 0.7036, 0.8864, 0.98]
+          },
+          {
+            "response": "I often find myself answering questions that I’ve already answered before.",
+            "frequency": [3673, 9934, 7391, 5900, 966],
+            "percent": [0.1318, 0.3565, 0.2653, 0.2117, 0.0347],
+            "offset": [0, 0.1318, 0.4883, 0.7536, 0.9653]
+          },
+          {
+            "response": "Knowledge silos prevent me from getting ideas across the organization.",
+            "frequency": [3613, 9060, 7284, 5958, 2106],
+            "percent": [0.1289, 0.3233, 0.2599, 0.2126, 0.0752],
+            "offset": [0, 0.1289, 0.4522, 0.7121, 0.9247]
+          },
+          {
+            "response": "Waiting on answers to questions often causes interruptions and disrupts my workflow.",
+            "frequency": [4450, 10279, 6546, 5416, 1087],
+            "percent": [0.1602, 0.37, 0.2357, 0.195, 0.0391],
+            "offset": [0, 0.1602, 0.5302, 0.7659, 0.9609]
+          }
+        ]
+      },
+      "Knowledge_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 24869,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+        "data": [
+          {
+            "response": "I am able to quickly find answers to my questions with existing tools and resources.",
+            "frequency": [2750, 10755, 6302, 3674, 772],
+            "percent": [0.1134, 0.4435, 0.2598, 0.1515, 0.0318],
+            "offset": [0, 0.1134, 0.5569, 0.8167, 0.9682]
+          },
+          {
+            "response": "I can find up-to-date information within my organization to help me do my job.",
+            "frequency": [2275, 9459, 6432, 4850, 1295],
+            "percent": [0.0936, 0.3891, 0.2646, 0.1995, 0.0533],
+            "offset": [0, 0.0936, 0.4827, 0.7473, 0.9468]
+          },
+          {
+            "response": "I feel like I have the tools and/or resources to quickly understand and work on any area of my company's code/system/platform.",
+            "frequency": [2500, 9192, 6158, 4599, 1569],
+            "percent": [0.1041, 0.3827, 0.2564, 0.1915, 0.0653],
+            "offset": [0, 0.1041, 0.4868, 0.7432, 0.9347]
+          },
+          {
+            "response": "I have asked my employer to reimburse me for tools or a product that helps me do my job better or faster",
+            "frequency": [2056, 5559, 5337, 5239, 5709],
+            "percent": [0.086, 0.2326, 0.2233, 0.2192, 0.2389],
+            "offset": [0, 0.086, 0.3186, 0.5419, 0.7611]
+          },
+          {
+            "response": "I have interactions with people outside of my immediate team.",
+            "frequency": [8143, 12032, 2229, 1751, 643],
+            "percent": [0.3284, 0.4852, 0.0899, 0.0706, 0.0259],
+            "offset": [0, 0.3284, 0.8136, 0.9035, 0.9741]
+          },
+          {
+            "response": "I know which system or resource to use to find information and answers to questions I have.",
+            "frequency": [4169, 12618, 4495, 2325, 508],
+            "percent": [0.1729, 0.5232, 0.1864, 0.0964, 0.0211],
+            "offset": [0, 0.1729, 0.6961, 0.8825, 0.9789]
+          },
+          {
+            "response": "I often find myself answering questions that I’ve already answered before.",
+            "frequency": [3019, 8436, 6467, 5306, 875],
+            "percent": [0.1253, 0.35, 0.2683, 0.2201, 0.0363],
+            "offset": [0, 0.1253, 0.4753, 0.7436, 0.9637]
+          },
+          {
+            "response": "Knowledge silos prevent me from getting ideas across the organization.",
+            "frequency": [3134, 7783, 6372, 5166, 1786],
+            "percent": [0.1293, 0.3211, 0.2629, 0.2131, 0.0737],
+            "offset": [0, 0.1293, 0.4504, 0.7133, 0.9264]
+          },
+          {
+            "response": "Waiting on answers to questions often causes interruptions and disrupts my workflow.",
+            "frequency": [3882, 8871, 5679, 4680, 931],
+            "percent": [0.1615, 0.369, 0.2362, 0.1947, 0.0387],
+            "offset": [0, 0.1615, 0.5305, 0.7667, 0.9614]
+          }
+        ]
+      },
+      "Knowledge_PM": {
+        "name": "People Manager",
+        "total_respondents": 3791,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+        "data": [
+          {
+            "response": "I am able to quickly find answers to my questions with existing tools and resources.",
+            "frequency": [501, 1710, 898, 510, 85],
+            "percent": [0.1353, 0.4617, 0.2424, 0.1377, 0.0229],
+            "offset": [0, 0.1353, 0.597, 0.8394, 0.9771]
+          },
+          {
+            "response": "I can find up-to-date information within my organization to help me do my job.",
+            "frequency": [446, 1485, 973, 659, 145],
+            "percent": [0.1203, 0.4005, 0.2624, 0.1777, 0.0391],
+            "offset": [0, 0.1203, 0.5208, 0.7832, 0.9609]
+          },
+          {
+            "response": "I feel like I have the tools and/or resources to quickly understand and work on any area of my company's code/system/platform.",
+            "frequency": [560, 1536, 866, 554, 155],
+            "percent": [0.1525, 0.4184, 0.2359, 0.1509, 0.0422],
+            "offset": [0, 0.1525, 0.5709, 0.8068, 0.9577]
+          },
+          {
+            "response": "I have asked my employer to reimburse me for tools or a product that helps me do my job better or faster",
+            "frequency": [494, 1078, 800, 636, 659],
+            "percent": [0.1347, 0.294, 0.2182, 0.1734, 0.1797],
+            "offset": [0, 0.1347, 0.4287, 0.6469, 0.8203]
+          },
+          {
+            "response": "I have interactions with people outside of my immediate team.",
+            "frequency": [2144, 1382, 150, 53, 52],
+            "percent": [0.567, 0.3655, 0.0397, 0.014, 0.0138],
+            "offset": [0, 0.567, 0.9325, 0.9722, 0.9862]
+          },
+          {
+            "response": "I know which system or resource to use to find information and answers to questions I have.",
+            "frequency": [822, 1951, 589, 284, 46],
+            "percent": [0.2226, 0.5284, 0.1595, 0.0769, 0.0125],
+            "offset": [0, 0.2226, 0.751, 0.9105, 0.9874]
+          },
+          {
+            "response": "I often find myself answering questions that I’ve already answered before.",
+            "frequency": [645, 1471, 906, 580, 87],
+            "percent": [0.1748, 0.3988, 0.2456, 0.1572, 0.0236],
+            "offset": [0, 0.1748, 0.5736, 0.8192, 0.9764]
+          },
+          {
+            "response": "Knowledge silos prevent me from getting ideas across the organization.",
+            "frequency": [471, 1251, 898, 774, 314],
+            "percent": [0.127, 0.3374, 0.2422, 0.2087, 0.0847],
+            "offset": [0, 0.127, 0.4644, 0.7066, 0.9153]
+          },
+          {
+            "response": "Waiting on answers to questions often causes interruptions and disrupts my workflow.",
+            "frequency": [556, 1383, 849, 723, 153],
+            "percent": [0.1517, 0.3775, 0.2317, 0.1973, 0.0418],
+            "offset": [0, 0.1517, 0.5292, 0.7609, 0.9582]
+          }
+        ]
+      }
+    }
+  },
+  "Frequency": {
+    "qid": "QID290",
+    "qname": "Frequency",
+    "question": "How frequently do you experience each of the following?",
+    "datasets": {
+      "Frequency": {
+        "name": "All Respondents",
+        "total_respondents": 28462,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Never", "1-2 times a week", "3-5 times a week", "6-10 times a week", "10+ times a week"],
+        "data": [
+          {
+            "response": "Encountering knowledge silos (where one individual or team has information that's not shared or distributed with other individuals or teams) at work?",
+            "frequency": [14426, 768, 3447, 863, 8206],
+            "percent": [0.5206, 0.0277, 0.1244, 0.0311, 0.2961],
+            "offset": [0, 0.5206, 0.5483, 0.6727, 0.7038]
+          },
+          {
+            "response": "Interacting with people outside of your immediate team?",
+            "frequency": [12578, 3470, 6514, 3069, 2733],
+            "percent": [0.4434, 0.1223, 0.2297, 0.1082, 0.0964],
+            "offset": [0, 0.4434, 0.5657, 0.7954, 0.9036]
+          },
+          {
+            "response": "Needing help from people outside of your immediate team?",
+            "frequency": [16989, 483, 2721, 569, 7607],
+            "percent": [0.5989, 0.017, 0.0959, 0.0201, 0.2681],
+            "offset": [0, 0.5989, 0.6159, 0.7118, 0.7319]
+          }
+        ]
+      },
+      "Frequency_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 24632,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Never", "1-2 times a week", "3-5 times a week", "6-10 times a week", "10+ times a week"],
+        "data": [
+          {
+            "response": "Encountering knowledge silos (where one individual or team has information that's not shared or distributed with other individuals or teams) at work?",
+            "frequency": [12351, 656, 2933, 736, 7280],
+            "percent": [0.5156, 0.0274, 0.1224, 0.0307, 0.3039],
+            "offset": [0, 0.5156, 0.543, 0.6654, 0.6961]
+          },
+          {
+            "response": "Interacting with people outside of your immediate team?",
+            "frequency": [11388, 2551, 5586, 2466, 2555],
+            "percent": [0.4639, 0.1039, 0.2276, 0.1005, 0.1041],
+            "offset": [0, 0.4639, 0.5678, 0.7954, 0.8959]
+          },
+          {
+            "response": "Needing help from people outside of your immediate team?",
+            "frequency": [14797, 330, 2112, 428, 6879],
+            "percent": [0.6028, 0.0134, 0.086, 0.0174, 0.2802],
+            "offset": [0, 0.6028, 0.6162, 0.7022, 0.7196]
+          }
+        ]
+      },
+      "Frequency_PM": {
+        "name": "People Manager",
+        "total_respondents": 3747,
+        "plot_type": "stacked_bar",
+        "plot_metadata": ["Never", "1-2 times a week", "3-5 times a week", "6-10 times a week", "10+ times a week"],
+        "data": [
+          {
+            "response": "Encountering knowledge silos (where one individual or team has information that's not shared or distributed with other individuals or teams) at work?",
+            "frequency": [2033, 111, 506, 123, 909],
+            "percent": [0.5521, 0.0301, 0.1374, 0.0334, 0.2469],
+            "offset": [0, 0.5521, 0.5822, 0.7196, 0.753]
+          },
+          {
+            "response": "Interacting with people outside of your immediate team?",
+            "frequency": [1144, 908, 910, 603, 172],
+            "percent": [0.3061, 0.243, 0.2435, 0.1614, 0.046],
+            "offset": [0, 0.3061, 0.5491, 0.7926, 0.954]
+          },
+          {
+            "response": "Needing help from people outside of your immediate team?",
+            "frequency": [2137, 153, 603, 140, 709],
+            "percent": [0.5711, 0.0409, 0.1611, 0.0374, 0.1895],
+            "offset": [0, 0.5711, 0.612, 0.7731, 0.8105]
+          }
+        ]
+      }
+    }
+  },
+  "TimeSearching": {
+    "qid": "QID291",
+    "qname": "TimeSearching",
+    "question": "On an average day, how much time do you typically spend searching for answers or solutions to problems you encounter at work? (This includes time spent searching on your own, asking a colleague, and waiting for a response).",
+    "datasets": {
+      "TimeSearching": {
+        "name": "All Respondents",
+        "total_respondents": 28911,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 2689,
+            "percent": 0.093
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 7805,
+            "percent": 0.27
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 10951,
+            "percent": 0.3788
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 5275,
+            "percent": 0.1825
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 2191,
+            "percent": 0.0758
+          }
+        ]
+      },
+      "TimeSearching_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 25020,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 2262,
+            "percent": 0.0904
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 6668,
+            "percent": 0.2665
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 9494,
+            "percent": 0.3795
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 4655,
+            "percent": 0.1861
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 1941,
+            "percent": 0.0776
+          }
+        ]
+      },
+      "TimeSearching_PM": {
+        "name": "People Manager",
+        "total_respondents": 3803,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 421,
+            "percent": 0.1107
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 1114,
+            "percent": 0.2929
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 1422,
+            "percent": 0.3739
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 602,
+            "percent": 0.1583
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 244,
+            "percent": 0.0642
+          }
+        ]
+      }
+    }
+  },
+  "TimeAnswering": {
+    "qid": "QID292",
+    "qname": "TimeAnswering",
+    "question": "On an average day, how much time do you typically spend answering questions you get asked at work?",
+    "datasets": {
+      "TimeAnswering": {
+        "name": "All Respondents",
+        "total_respondents": 28844,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 5918,
+            "percent": 0.2052
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 9341,
+            "percent": 0.3238
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 8642,
+            "percent": 0.2996
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 3704,
+            "percent": 0.1284
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 1239,
+            "percent": 0.043
+          }
+        ]
+      },
+      "TimeAnswering_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 28844,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 5546,
+            "percent": 0.2222
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 8549,
+            "percent": 0.3425
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 7288,
+            "percent": 0.292
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 2744,
+            "percent": 0.1099
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 836,
+            "percent": 0.0335
+          }
+        ]
+      },
+      "TimeAnswering_PM": {
+        "name": "People Manager",
+        "total_respondents": 3794,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than 15 minutes a day",
+            "frequency": 350,
+            "percent": 0.0923
+          },
+          {
+            "response": "15-30 minutes a day",
+            "frequency": 763,
+            "percent": 0.2011
+          },
+          {
+            "response": "30-60 minutes a day",
+            "frequency": 1333,
+            "percent": 0.3513
+          },
+          {
+            "response": "60-120 minutes a day",
+            "frequency": 950,
+            "percent": 0.2504
+          },
+          {
+            "response": "Over 120 minutes a day",
+            "frequency": 398,
+            "percent": 0.1049
+          }
+        ]
+      }
+    }
+  },
+  "Frustration": {
+    "qid": "QID342",
+    "qname": "Frustration",
+    "question": "Which of these company challenges causes you the most frustration? Select all that apply.",
+    "datasets": {
+      "Frustration": {
+        "name": "All Respondents",
+        "total_respondents": 28251,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Amount of technical debt",
+            "frequency": 17614,
+            "percent": 0.6235
+          },
+          {
+            "response": "Complexity of tech stack for build",
+            "frequency": 9284,
+            "percent": 0.3286
+          },
+          {
+            "response": "Complexity of tech stack for deployment",
+            "frequency": 9132,
+            "percent": 0.3232
+          },
+          {
+            "response": "Reliability of tools/systems used in work",
+            "frequency": 8904,
+            "percent": 0.3152
+          },
+          {
+            "response": "Tracking my work",
+            "frequency": 7652,
+            "percent": 0.2709
+          },
+          {
+            "response": "Patching/updating core components",
+            "frequency": 7091,
+            "percent": 0.251
+          },
+          {
+            "response": "Number of software tools in use",
+            "frequency": 6432,
+            "percent": 0.2277
+          },
+          {
+            "response": "Showing my contributions",
+            "frequency": 5546,
+            "percent": 0.1963
+          },
+          {
+            "response": "Maintaining security of code being produced",
+            "frequency": 5253,
+            "percent": 0.1859
+          },
+          {
+            "response": "Maintaining security of systems/platforms used in work",
+            "frequency": 4351,
+            "percent": 0.154
+          },
+          {
+            "response": "None of these",
+            "frequency": 2450,
+            "percent": 0.0867
+          }
+        ]
+      },
+      "Frustration_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 24434,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Amount of technical debt",
+            "frequency": 15233,
+            "percent": 0.6234
+          },
+          {
+            "response": "Complexity of tech stack for build",
+            "frequency": 8174,
+            "percent": 0.3345
+          },
+          {
+            "response": "Complexity of tech stack for deployment",
+            "frequency": 7990,
+            "percent": 0.327
+          },
+          {
+            "response": "Reliability of tools/systems used in work",
+            "frequency": 7720,
+            "percent": 0.316
+          },
+          {
+            "response": "Tracking my work",
+            "frequency": 6550,
+            "percent": 0.2681
+          },
+          {
+            "response": "Patching/updating core components",
+            "frequency": 6093,
+            "percent": 0.2494
+          },
+          {
+            "response": "Number of software tools in use",
+            "frequency": 5533,
+            "percent": 0.2264
+          },
+          {
+            "response": "Showing my contributions",
+            "frequency": 4895,
+            "percent": 0.2003
+          },
+          {
+            "response": "Maintaining security of code being produced",
+            "frequency": 4306,
+            "percent": 0.1762
+          },
+          {
+            "response": "Maintaining security of systems/platforms used in work",
+            "frequency": 3527,
+            "percent": 0.1443
+          },
+          {
+            "response": "None of these",
+            "frequency": 2087,
+            "percent": 0.0854
+          }
+        ]
+      },
+      "Frustration_PM": {
+        "name": "People Manager",
+        "total_respondents": 3735,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Amount of technical debt",
+            "frequency": 2332,
+            "percent": 0.6244
+          },
+          {
+            "response": "Reliability of tools/systems used in work",
+            "frequency": 1164,
+            "percent": 0.3116
+          },
+          {
+            "response": "Complexity of tech stack for deployment",
+            "frequency": 1121,
+            "percent": 0.3001
+          },
+          {
+            "response": "Complexity of tech stack for build",
+            "frequency": 1086,
+            "percent": 0.2908
+          },
+          {
+            "response": "Tracking my work",
+            "frequency": 1076,
+            "percent": 0.2881
+          },
+          {
+            "response": "Patching/updating core components",
+            "frequency": 984,
+            "percent": 0.2635
+          },
+          {
+            "response": "Maintaining security of code being produced",
+            "frequency": 938,
+            "percent": 0.2511
+          },
+          {
+            "response": "Number of software tools in use",
+            "frequency": 880,
+            "percent": 0.2356
+          },
+          {
+            "response": "Maintaining security of systems/platforms used in work",
+            "frequency": 811,
+            "percent": 0.2171
+          },
+          {
+            "response": "Showing my contributions",
+            "frequency": 645,
+            "percent": 0.1727
+          },
+          {
+            "response": "None of these",
+            "frequency": 356,
+            "percent": 0.0953
+          }
+        ]
+      }
+    }
+  },
+  "ProfessionalTech": {
+    "qid": "QID304",
+    "qname": "ProfessionalTech",
+    "question": "My company has:",
+    "datasets": {
+      "ProfessionalTech": {
+        "name": "All Respondents",
+        "total_respondents": 27764,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Continuous integration (CI) and (more often) continuous delivery",
+            "frequency": 19044,
+            "percent": 0.6859
+          },
+          {
+            "response": "DevOps function",
+            "frequency": 16185,
+            "percent": 0.5829
+          },
+          {
+            "response": "Automated testing",
+            "frequency": 15629,
+            "percent": 0.5629
+          },
+          {
+            "response": "Microservices",
+            "frequency": 12839,
+            "percent": 0.4624
+          },
+          {
+            "response": "Knowledge sharing community",
+            "frequency": 11069,
+            "percent": 0.3987
+          },
+          {
+            "response": "Observability tools",
+            "frequency": 10629,
+            "percent": 0.3828
+          },
+          {
+            "response": "AI-assisted technology tool(s)",
+            "frequency": 8994,
+            "percent": 0.3239
+          },
+          {
+            "response": "Developer portal or other central places to find tools/services",
+            "frequency": 8060,
+            "percent": 0.2903
+          },
+          {
+            "response": "Innersource initiative",
+            "frequency": 4333,
+            "percent": 0.1561
+          },
+          {
+            "response": "None of these",
+            "frequency": 2894,
+            "percent": 0.1042
+          }
+        ]
+      }
+    }
+  },
+  "ProfessionalCloud": {
+    "qid": "QID332",
+    "qname": "ProfessionalCloud",
+    "question": "At my company, our applications, databases and services are hosted:",
+    "datasets": {
+      "ProfessionalCloud": {
+        "name": "All Respondents",
+        "total_respondents": 28491,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Hybrid (on-prem and cloud)",
+            "frequency": 13230,
+            "percent": 0.4644
+          },
+          {
+            "response": "Cloud only (single or multi-cloud)",
+            "frequency": 11256,
+            "percent": 0.3951
+          },
+          {
+            "response": "On-prem",
+            "frequency": 4005,
+            "percent": 0.1406
+          }
+        ]
+      }
+    }
+  },
+  "ProfessionalQuestion": {
+    "qid": "QID333",
+    "qname": "ProfessionalQuestion",
+    "question": "When you have a technical question at work, where do you first go to get an answer?",
+    "datasets": {
+      "ProfessionalQuestion": {
+        "name": "All Respondents",
+        "total_respondents": 28807,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Traditional public search engine",
+            "frequency": 15813,
+            "percent": 0.5489
+          },
+          {
+            "response": "A coworker",
+            "frequency": 5324,
+            "percent": 0.1848
+          },
+          {
+            "response": "AI-powered search (free)",
+            "frequency": 2251,
+            "percent": 0.0781
+          },
+          {
+            "response": "AI-powered search (paid)",
+            "frequency": 1947,
+            "percent": 0.0676
+          },
+          {
+            "response": "Slack search",
+            "frequency": 1053,
+            "percent": 0.0366
+          },
+          {
+            "response": "Do search of internal share drives/storage locations for documentation (i.e., not a structured knowledge base)",
+            "frequency": 937,
+            "percent": 0.0325
+          },
+          {
+            "response": "Internal Developer portal",
+            "frequency": 777,
+            "percent": 0.027
+          },
+          {
+            "response": "Other:",
+            "frequency": 559,
+            "percent": 0.0194
+          },
+          {
+            "response": "Microsoft Teams search",
+            "frequency": 146,
+            "percent": 0.0051
+          }
+        ]
+      },
+      "ProfessionalQuestion_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 24923,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Traditional public search engine",
+            "frequency": 13768,
+            "percent": 0.5524
+          },
+          {
+            "response": "A coworker",
+            "frequency": 4592,
+            "percent": 0.1842
+          },
+          {
+            "response": "AI-powered search (free)",
+            "frequency": 1937,
+            "percent": 0.0777
+          },
+          {
+            "response": "AI-powered search (paid)",
+            "frequency": 1598,
+            "percent": 0.0641
+          },
+          {
+            "response": "Slack search",
+            "frequency": 938,
+            "percent": 0.0376
+          },
+          {
+            "response": "Do search of internal share drives/storage locations for documentation (i.e., not a structured knowledge base)",
+            "frequency": 797,
+            "percent": 0.032
+          },
+          {
+            "response": "Internal Developer portal",
+            "frequency": 685,
+            "percent": 0.0275
+          },
+          {
+            "response": "Other:",
+            "frequency": 484,
+            "percent": 0.0194
+          },
+          {
+            "response": "Microsoft Teams search",
+            "frequency": 124,
+            "percent": 0.005
+          }
+        ]
+      },
+      "ProfessionalQuestion_PM": {
+        "name": "People Manager",
+        "total_respondents": 3796,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Traditional public search engine",
+            "frequency": 1993,
+            "percent": 0.525
+          },
+          {
+            "response": "A coworker",
+            "frequency": 714,
+            "percent": 0.1881
+          },
+          {
+            "response": "AI-powered search (paid)",
+            "frequency": 343,
+            "percent": 0.0904
+          },
+          {
+            "response": "AI-powered search (free)",
+            "frequency": 307,
+            "percent": 0.0809
+          },
+          {
+            "response": "Do search of internal share drives/storage locations for documentation (i.e., not a structured knowledge base)",
+            "frequency": 139,
+            "percent": 0.0366
+          },
+          {
+            "response": "Slack search",
+            "frequency": 115,
+            "percent": 0.0303
+          },
+          {
+            "response": "Internal Developer portal",
+            "frequency": 91,
+            "percent": 0.024
+          },
+          {
+            "response": "Other:",
+            "frequency": 72,
+            "percent": 0.019
+          },
+          {
+            "response": "Microsoft Teams search",
+            "frequency": 22,
+            "percent": 0.0058
+          }
+        ]
+      }
+    }
+  },
+  "Industry": {
+    "qid": "QID326",
+    "qname": "Industry",
+    "question": "What industry is the company you work for in?",
+    "datasets": {
+      "Industry": {
+        "name": "All Respondents",
+        "total_respondents": 28858,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 11918,
+            "percent": 0.413
+          },
+          {
+            "response": "Fintech",
+            "frequency": 1641,
+            "percent": 0.0569
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 1629,
+            "percent": 0.0564
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 1371,
+            "percent": 0.0475
+          },
+          {
+            "response": "Healthcare",
+            "frequency": 1277,
+            "percent": 0.0443
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 1265,
+            "percent": 0.0438
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 1264,
+            "percent": 0.0438
+          },
+          {
+            "response": "Government",
+            "frequency": 962,
+            "percent": 0.0333
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 894,
+            "percent": 0.031
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 890,
+            "percent": 0.0308
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 859,
+            "percent": 0.0298
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 844,
+            "percent": 0.0292
+          },
+          {
+            "response": "Energy",
+            "frequency": 578,
+            "percent": 0.02
+          },
+          {
+            "response": "Insurance",
+            "frequency": 389,
+            "percent": 0.0135
+          }
+        ]
+      },
+      "Industry_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 24949,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 10187,
+            "percent": 0.4083
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 1429,
+            "percent": 0.0573
+          },
+          {
+            "response": "Fintech",
+            "frequency": 1400,
+            "percent": 0.0561
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 1189,
+            "percent": 0.0477
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 1126,
+            "percent": 0.0451
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 1104,
+            "percent": 0.0443
+          },
+          {
+            "response": "Healthcare",
+            "frequency": 1089,
+            "percent": 0.0436
+          },
+          {
+            "response": "Government",
+            "frequency": 847,
+            "percent": 0.0339
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 787,
+            "percent": 0.0315
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 759,
+            "percent": 0.0304
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 755,
+            "percent": 0.0303
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 754,
+            "percent": 0.0302
+          },
+          {
+            "response": "Energy",
+            "frequency": 514,
+            "percent": 0.0206
+          },
+          {
+            "response": "Insurance",
+            "frequency": 345,
+            "percent": 0.0138
+          }
+        ]
+      },
+      "Industry_PM": {
+        "name": "People Manager",
+        "total_respondents": 3814,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 1685,
+            "percent": 0.4418
+          },
+          {
+            "response": "Fintech",
+            "frequency": 236,
+            "percent": 0.0619
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 196,
+            "percent": 0.0514
+          },
+          {
+            "response": "Healthcare",
+            "frequency": 184,
+            "percent": 0.0482
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 180,
+            "percent": 0.0472
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 156,
+            "percent": 0.0409
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 139,
+            "percent": 0.0364
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 133,
+            "percent": 0.0349
+          },
+          {
+            "response": "Government",
+            "frequency": 111,
+            "percent": 0.0291
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 101,
+            "percent": 0.0265
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 97,
+            "percent": 0.0254
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 86,
+            "percent": 0.0225
+          },
+          {
+            "response": "Energy",
+            "frequency": 62,
+            "percent": 0.0163
+          },
+          {
+            "response": "Insurance",
+            "frequency": 44,
+            "percent": 0.0115
+          }
+        ]
+      }
+    }
+  },
+  "JobSat": {
+    "qid": "QID336",
+    "qname": "JobSat",
+    "question": "How satisfied are you in your current professional developer role?",
+    "datasets": {
+      "JobSat": {
+        "name": "All Respondents",
+        "total_respondents": 29126,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Not Happy at Work",
+            "frequency": 9361,
+            "percent": 0.3214
+          },
+          {
+            "response": "Complacent at Work",
+            "frequency": 13888,
+            "percent": 0.4768
+          },
+          {
+            "response": "Happy at Work",
+            "frequency": 5877,
+            "percent": 0.2018
+          }
+        ]
+      },
+      "JobSat_IC": {
+        "name": "Individual Contributor",
+        "total_respondents": 25201,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Not Happy at Work",
+            "frequency": 8321,
+            "percent": 0.3302
+          },
+          {
+            "response": "Complacent at Work",
+            "frequency": 12017,
+            "percent": 0.4768
+          },
+          {
+            "response": "Happy at Work",
+            "frequency": 4863,
+            "percent": 0.193
+          }
+        ]
+      },
+      "JobSat_PM": {
+        "name": "People Manager",
+        "total_respondents": 3827,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Not Happy at Work",
+            "frequency": 1005,
+            "percent": 0.2626
+          },
+          {
+            "response": "Complacent at Work",
+            "frequency": 1829,
+            "percent": 0.4779
+          },
+          {
+            "response": "Happy at Work",
+            "frequency": 993,
+            "percent": 0.2595
+          }
+        ]
+      }
+    }
+  },
+  "JobSatPoints": {
+    "qid": "QID337",
+    "qname": "JobSatPoints",
+    "question": "Assign points to the following attributes of your job according to those that contribute the most to your satisfaction out of 100 total points:",
+    "datasets": {
+      "JobSatPoints": {
+        "name": "Happy Points",
+        "total_respondents": 3721,
+        "plot_type": "clustered_bar",
+        "plot_metadata": {
+          "label": {
+            "key": "mean",
+            "label": "Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean1": {
+            "label": "Group Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean2": {
+            "label": "Total Mean Satisfaction Points",
+            "unit": ""
+          }
+        },
+        "data": [
+          {
+            "response": "Improving quality of code and developer environments",
+            "mean1": 20.5,
+            "mean2": 21.1,
+            "percent1": 0.205,
+            "percent2": 0.211
+          },
+          {
+            "response": "Learning/using new tech",
+            "mean1": 17.8,
+            "mean2": 18.8,
+            "percent1": 0.178,
+            "percent2": 0.188
+          },
+          {
+            "response": "Building environments/architecture",
+            "mean1": 16.5,
+            "mean2": 16.3,
+            "percent1": 0.165,
+            "percent2": 0.163
+          },
+          {
+            "response": "Driving strategy for my team",
+            "mean1": 15.7,
+            "mean2": 14.1,
+            "percent1": 0.157,
+            "percent2": 0.141
+          },
+          {
+            "response": "Being a power user of a tool/language/process",
+            "mean1": 10.7,
+            "mean2": 11.2,
+            "percent1": 0.107,
+            "percent2": 0.112
+          },
+          {
+            "response": "Working with new and/or top-quality hardware",
+            "mean1": 5,
+            "mean2": 5,
+            "percent1": 0.05,
+            "percent2": 0.05
+          },
+          {
+            "response": "Contributing to open source",
+            "mean1": 4.9,
+            "mean2": 4.7,
+            "percent1": 0.049,
+            "percent2": 0.047
+          },
+          {
+            "response": "Securing data and environments",
+            "mean1": 4.6,
+            "mean2": 4.3,
+            "percent1": 0.046,
+            "percent2": 0.043
+          },
+          {
+            "response": "Excellent internal observability practices",
+            "mean1": 4.3,
+            "mean2": 4.4,
+            "percent1": 0.043,
+            "percent2": 0.044
+          }
+        ]
+      },
+      "JobSatPoints_Complacent": {
+        "name": "Complacent Points",
+        "total_respondents": 8358,
+        "plot_type": "clustered_bar",
+        "plot_metadata": {
+          "label": {
+            "key": "mean",
+            "label": "Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean1": {
+            "label": "Group Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean2": {
+            "label": "Total Mean Satisfaction Points",
+            "unit": ""
+          }
+        },
+        "data": [
+          {
+            "response": "Improving quality of code and developer environments",
+            "mean1": 21.2,
+            "mean2": 21.1,
+            "percent1": 0.212,
+            "percent2": 0.211
+          },
+          {
+            "response": "Learning/using new tech",
+            "mean1": 18.9,
+            "mean2": 18.8,
+            "percent1": 0.189,
+            "percent2": 0.188
+          },
+          {
+            "response": "Building environments/architecture",
+            "mean1": 16.4,
+            "mean2": 16.3,
+            "percent1": 0.164,
+            "percent2": 0.163
+          },
+          {
+            "response": "Driving strategy for my team",
+            "mean1": 14.3,
+            "mean2": 14.1,
+            "percent1": 0.143,
+            "percent2": 0.141
+          },
+          {
+            "response": "Being a power user of a tool/language/process",
+            "mean1": 11.4,
+            "mean2": 11.2,
+            "percent1": 0.114,
+            "percent2": 0.112
+          },
+          {
+            "response": "Working with new and/or top-quality hardware",
+            "mean1": 5,
+            "mean2": 5,
+            "percent1": 0.05,
+            "percent2": 0.05
+          },
+          {
+            "response": "Contributing to open source",
+            "mean1": 4.4,
+            "mean2": 4.7,
+            "percent1": 0.044,
+            "percent2": 0.047
+          },
+          {
+            "response": "Securing data and environments",
+            "mean1": 4.3,
+            "mean2": 4.3,
+            "percent1": 0.043,
+            "percent2": 0.043
+          },
+          {
+            "response": "Excellent internal observability practices",
+            "mean1": 4.2,
+            "mean2": 4.4,
+            "percent1": 0.042,
+            "percent2": 0.044
+          }
+        ]
+      },
+      "JobSatPoints_Unhappy": {
+        "name": "Unhappy Points",
+        "total_respondents": 5052,
+        "plot_type": "clustered_bar",
+        "plot_metadata": {
+          "label": {
+            "key": "mean",
+            "label": "Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean1": {
+            "label": "Group Mean Satisfaction Points",
+            "unit": ""
+          },
+          "mean2": {
+            "label": "Total Mean Satisfaction Points",
+            "unit": ""
+          }
+        },
+        "data": [
+          {
+            "response": "Improving quality of code and developer environments",
+            "mean1": 21.3,
+            "mean2": 21.1,
+            "percent1": 0.213,
+            "percent2": 0.211
+          },
+          {
+            "response": "Learning/using new tech",
+            "mean1": 19.4,
+            "mean2": 18.8,
+            "percent1": 0.194,
+            "percent2": 0.188
+          },
+          {
+            "response": "Building environments/architecture",
+            "mean1": 16,
+            "mean2": 16.3,
+            "percent1": 0.16,
+            "percent2": 0.163
+          },
+          {
+            "response": "Driving strategy for my team",
+            "mean1": 12.7,
+            "mean2": 14.1,
+            "percent1": 0.127,
+            "percent2": 0.141
+          },
+          {
+            "response": "Being a power user of a tool/language/process",
+            "mean1": 11.2,
+            "mean2": 11.2,
+            "percent1": 0.112,
+            "percent2": 0.112
+          },
+          {
+            "response": "Working with new and/or top-quality hardware",
+            "mean1": 5.2,
+            "mean2": 5,
+            "percent1": 0.052,
+            "percent2": 0.05
+          },
+          {
+            "response": "Contributing to open source",
+            "mean1": 5.1,
+            "mean2": 4.7,
+            "percent1": 0.051,
+            "percent2": 0.047
+          },
+          {
+            "response": "Excellent internal observability practices",
+            "mean1": 4.9,
+            "mean2": 4.4,
+            "percent1": 0.049,
+            "percent2": 0.044
+          },
+          {
+            "response": "Securing data and environments",
+            "mean1": 4.2,
+            "mean2": 4.3,
+            "percent1": 0.042,
+            "percent2": 0.043
+          }
+        ]
+      }
+    }
+  }
+}

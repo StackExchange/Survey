@@ -1,0 +1,1140 @@
+{
+  "Title": "Developer Profile",
+  "SubTitle": "What we know about the developers who are writing the script for the future",
+  "SubSections": [
+    {
+      "Title": "Geography",
+      "GraphCollections": [
+        {
+          "Title": "",
+          "Copy": "Each month, about 50 million people visit Stack Overflow to learn, share, and build their careers. We estimate that 21 million of these people are professional developers and university-level students. The majority of our survey respondents this year were people who said they are professional developers or who code sometimes as part of their work, or are students preparing for such a career. About 4% of respondents code as a hobby but not as a profession, and just under 2% of respondents used to be professional developers but no longer are.\n\nSee our [Methodology](https://insights.stackoverflow.com/survey/2019#methodology) section for details on how developers around the world accessed our survey.",
+          "Graphs": [
+            {
+              "Title": "Survey Respondents",
+              "Type": "SingleMap",
+              "Copy": "",
+              "GeoId": "survey_respondents",
+              "SubText": "88,615 responses"
+            },
+            {
+              "Title": "Monthly Stack Overflow Visits",
+              "Type": "SingleMap",
+              "Copy": "",
+              "GeoId": "so_traffic"
+            },
+            {
+              "Title": "Professional Developers",
+              "Type": "SingleMap",
+              "Copy": "",
+              "GeoId": "providence_counts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Developer Roles",
+      "GraphCollections": [
+        {
+          "Title": "Developer Type",
+          "Copy": "About 50% of respondents identify as <a href='https://stackoverflow.com/jobs?sort=i&q=full+stack+developer' target='_blank'>full-stack developers</a>, and about 17% consider themselves mobile developers. The median number of developer type identifications per respondent this year is 3, and the most common pairs are combinations of back-end, front-end, and full-stack developer. Pairs that are highly correlated include database administrator and system administrator, DevOps specialist and site reliability engineer, academic researcher and scientist, and designer and front-end developer.\n\nSurvey weighting is an approach used to analyze survey data when the survey sample doesn't match the underlying population well. For example, in our survey this year, 11% of US respondents identify as women, but data from the US Bureau of Labor Statistics estimates that <a href='https://www.bls.gov/opub/reports/womens-databook/2017/home.htm' target='_blank'>women's participation in the software developer workforce</a> is about twice that, more like 20%. We can use survey weighting to adjust for the mismatch between our survey sample and the population of developers. We know that there is a difference in [developer type representation by gender](https://insights.stackoverflow.com/survey/2019#developer-profile-_-developer-role-and-gender), so let's compare the overall proportions in our raw results for the United States with weighted proportions, assuming that we undersampled gender minorities at the rate indicated by the BLS report. When we use weighting, we see small increases in the representation of developer roles that have the most representation from women, like designers, and decreases in others with low representation from women, like DevOps.\n\nWe know there are more ways in which our survey sample doesn't match the underlying population of developers than only gender (including frequency of use of Stack Overflow), and the United States is not the only country for which we expect such a mismatch. The reason we're using this specific example of weighting here is that it is one where we know we have systemic sampling issues *and* we have an estimate about the expected population proportion. We can demonstrate the effect of our survey sample on our results, both in direction and magnitude.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "81,335 responses; select all that apply",
+              "Data": {
+                "Developer, full-stack": 51.9112,
+                "Developer, back-end": 49.9969,
+                "Developer, front-end": 32.7645,
+                "Developer, desktop or enterprise applications": 21.2897,
+                "Developer, mobile": 18.0709,
+                "Student": 14.6567,
+                "Database administrator": 11.7047,
+                "Designer": 11.2891,
+                "System administrator": 10.9781,
+                "DevOps specialist": 10.8957,
+                "Developer, embedded applications or devices": 8.9113,
+                "Data scientist or machine learning specialist": 7.9425,
+                "Developer, QA or test": 7.8183,
+                "Data or business analyst": 7.7384,
+                "Academic researcher": 7.2908,
+                "Engineer, data": 7.1544,
+                "Educator": 5.5228,
+                "Developer, game or graphics": 5.4577,
+                "Engineering manager": 5.1663,
+                "Product manager": 4.9573,
+                "Scientist": 4.447,
+                "Engineer, site reliability": 3.6282,
+                "Senior executive/VP": 2.5905,
+                "Marketing or sales professional": 1.1987
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "19,402 responses; select all that apply",
+              "Data": {
+                "Developer, full-stack": 54.7779,
+                "Developer, back-end": 45.7942,
+                "Developer, front-end": 31.4555,
+                "Developer, desktop or enterprise applications": 20.5597,
+                "Developer, mobile": 13.5605,
+                "Database administrator": 12.1225,
+                "DevOps specialist": 12.0451,
+                "Designer": 11.9215,
+                "System administrator": 11.4782,
+                "Student": 10.4989,
+                "Data or business analyst": 9.0248,
+                "Data scientist or machine learning specialist": 8.695,
+                "Developer, embedded applications or devices": 8.4837,
+                "Developer, QA or test": 8.4785,
+                "Engineer, data": 8.396,
+                "Engineering manager": 7.0972,
+                "Academic researcher": 6.0148,
+                "Developer, game or graphics": 4.8809,
+                "Engineer, site reliability": 4.8706,
+                "Product manager": 4.6851,
+                "Scientist": 4.649,
+                "Educator": 4.5768,
+                "Senior executive/VP": 3.4017,
+                "Marketing or sales professional": 1.237
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "19,402 responses; select all that apply",
+              "Data": {
+                "Developer, full-stack": 53.8458,
+                "Developer, back-end": 44.4726,
+                "Developer, front-end": 31.6049,
+                "Developer, desktop or enterprise applications": 19.6709,
+                "Developer, mobile": 13.2394,
+                "Designer": 12.07,
+                "Database administrator": 11.5261,
+                "DevOps specialist": 11.4037,
+                "System administrator": 11.0547,
+                "Student": 10.7012,
+                "Data or business analyst": 8.9471,
+                "Data scientist or machine learning specialist": 8.6933,
+                "Developer, QA or test": 8.3035,
+                "Engineer, data": 8.1494,
+                "Developer, embedded applications or devices": 8.1358,
+                "Engineering manager": 6.7307,
+                "Academic researcher": 6.0962,
+                "Developer, game or graphics": 4.9268,
+                "Educator": 4.7727,
+                "Engineer, site reliability": 4.673,
+                "Scientist": 4.6549,
+                "Product manager": 4.6503,
+                "Senior executive/VP": 3.1999,
+                "Marketing or sales professional": 1.2872
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Contributing to Open Source",
+          "Copy": "About 65% of professional developers on Stack Overflow contribute to open source projects once a year or more. Involvement in open source varies with language. Developers who work with Rust, WebAssembly, and Elixir contribute to open source at the highest rates, while developers who work with VBA, C#, and SQL do so at about half those rates.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "88,883 responses",
+              "Data": {
+                "Never": 36.3343,
+                "Less than once per year": 28.0954,
+                "Less than once a month but more than once per year": 23.1327,
+                "Once a month or more often": 12.4377
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "20,949 responses",
+              "Data": {
+                "Never": 36.7273,
+                "Less than once per year": 28.7412,
+                "Less than once a month but more than once per year": 22.9844,
+                "Once a month or more often": 11.5471
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "SubText": "20,949 responses",
+              "Data": {
+                "Never": 37.8426,
+                "Less than once per year": 28.4888,
+                "Less than once a month but more than once per year": 22.1859,
+                "Once a month or more often": 11.4827
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Coding as a Hobby",
+          "Copy": "Many developers work on code outside of work. About 80% of our respondents say that they code as a hobby. Other responsibilities outside of software can reduce developers' engagement in coding as a hobby; developers who say they have children or other caretaking responsibilities are less likely to code as a hobby. Respondents who are women are also less likely to say they code as a hobby.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "88,883 responses",
+              "Data": {
+                "Yes": 80.1694,
+                "No": 19.8306
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "20,949 responses",
+              "Data": {
+                "Yes": 80.3809,
+                "No": 19.6191
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "20,949 responses",
+              "Data": {
+                "Yes": 78.7109,
+                "No": 21.2891
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Experience",
+      "GraphCollections": [
+        {
+          "Title": "Years Since Learning to Code",
+          "Copy": "There is a wide range of experience levels among developers, and a full 45% of professional developers on Stack Overflow learned to code less than 10 years ago. See more on how [experience is related to gender](https://insights.stackoverflow.com/survey/2019#developer-profile-_-experience-and-gender).",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "87,938 responses",
+              "Data": {
+                "Less than 5 years": 20.5406,
+                "5 to 9 years": 31.0071,
+                "10 to 14 years": 19.0293,
+                "15 to 19 years": 11.1465,
+                "20 to 24 years": 7.7384,
+                "25 to 29 years": 3.6082,
+                "30 to 34 years": 3.2227,
+                "35 to 39 years": 2.288,
+                "40 to 44 years": 0.9541,
+                "45 to 49 years": 0.2638,
+                "50 years or more": 0.2013
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "72,688 responses",
+              "Data": {
+                "Less than 5 years": 13.4039,
+                "5 to 9 years": 31.3463,
+                "10 to 14 years": 21.6253,
+                "15 to 19 years": 12.9251,
+                "20 to 24 years": 8.9217,
+                "25 to 29 years": 4.1135,
+                "30 to 34 years": 3.6443,
+                "35 to 39 years": 2.5699,
+                "40 to 44 years": 1.0428,
+                "45 to 49 years": 0.2683,
+                "50 years or more": 0.139
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Years Coding Professionally",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Years Coding Professionally",
+              "Copy": "Over 40% of respondents have less than five years of professional coding experience. Developers who work with languages such as VBA, F#, and Clojure have the most years of professional coding experience, while developers who work with languages like Python, PHP, and Kotlin have the fewest.",
+              "SubText": "74,331 responses",
+              "Data": {
+                "Less than 5 years": 41.0381,
+                "5 to 9 years": 26.939,
+                "10 to 14 years": 14.5027,
+                "15 to 19 years": 7.3765,
+                "20 to 24 years": 5.5118,
+                "25 to 29 years": 1.9992,
+                "30 to 34 years": 1.4637,
+                "35 to 39 years": 0.7076,
+                "40 to 44 years": 0.3027,
+                "45 to 49 years": 0.0753,
+                "50 years or more": 0.0834
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Years of Professional Coding Experience by Developer Type",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Years of Professional Coding Experience by Developer Type",
+              "Copy": "Developers who work in different areas of software development have different average amounts of experience. Aside from technical executives and managers, SREs and developers who build for embedded devices have the most experience, while academic researchers and data scientists have the fewest years of experience. The related roles and disciplines of site reliability engineering and DevOps are somewhat new, but the people working in this field are highly experienced.",
+              "SubText": "Mean of 72,069 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Senior executive/VP": 14.5451,
+                "Engineering manager": 12.8391,
+                "Engineer, site reliability": 10.0108,
+                "Developer, embedded applications or devices": 9.9904,
+                "Database administrator": 9.9354,
+                "Developer, desktop or enterprise applications": 9.9168,
+                "DevOps specialist": 9.8985,
+                "Educator": 9.8845,
+                "System administrator": 9.7102,
+                "Data or business analyst": 9.3443,
+                "Designer": 9.1052,
+                "Scientist": 8.8778,
+                "Engineer, data": 8.5673,
+                "Developer, back-end": 8.4804,
+                "Developer, QA or test": 8.4128,
+                "Developer, full-stack": 8.2584,
+                "Developer, game or graphics": 8.2474,
+                "Developer, mobile": 7.9209,
+                "Developer, front-end": 7.8403,
+                "Data scientist or machine learning specialist": 7.8128,
+                "Academic researcher": 7.5786
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Writing That First Line of Code",
+          "Copy": "We asked respondents how old they were the first time they wrote a line of code or program, whether that was to make a webpage or say hello to the world. Overall, over half of respondents had written code by the time they were sixteen, but experience varies widely. There is two years' or more difference in the mean first age from countries like Australia and the UK compared to India and Brazil. If we control for developer age today, we see an even more dramatic disparity between India (where developers who are older today started coding later in life) and the UK (where developers who are older today started coding earlier in life). We also see differences with gender, with women writing their first code later than men and non-binary respondents writing code earlier than men.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "87,634 responses",
+              "Data": {
+                "Younger than 10 years": 8.742,
+                "10 to 11 years old": 9.7862,
+                "12 to 13 years old": 16.1033,
+                "14 to 15 years old": 19.5506,
+                "16 to 17 years old": 16.6009,
+                "18 to 19 years old": 14.2707,
+                "20 to 21 years old": 6.4564,
+                "22 to 23 years old": 3.154,
+                "24 to 25 years old": 2.0038,
+                "26 to 27 years old": 1.0361,
+                "28 to 29 years old": 0.671,
+                "30 years old or older": 1.6249
+              }
+            },
+            {
+              "Title": "By Country",
+              "HighlightIcon": true,
+              "SubText": "Mean of 56,027 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "India": 16.9535,
+                "Brazil": 16.0597,
+                "France": 15.2639,
+                "United States": 15.1596,
+                "Canada": 15.057,
+                "Poland": 14.6064,
+                "Germany": 14.5044,
+                "Netherlands": 14.4897,
+                "Russian Federation": 14.4563,
+                "United Kingdom": 14.2679,
+                "Australia": 14.2435
+              }
+            },
+            {
+              "Title": "By Gender",
+              "SubText": "Mean of 85,527 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Woman": 16.946,
+                "Man": 15.2856,
+                "Non-binary, genderqueer, or gender non-conforming": 14.273
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Education",
+      "GraphCollections": [
+        {
+          "Title": "How Many Developers are Students?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "How Many Developers are Students?",
+              "Copy": "About one-quarter of respondents are enrolled in a formal college or university program full-time or part-time.",
+              "SubText": "87,014 responses",
+              "Data": {
+                "No": 75.6384,
+                "Yes, full-time": 18.1224,
+                "Yes, part-time": 6.2392
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Educational Attainment",
+          "Copy": "Worldwide, about three-fourths of professional developer respondents have the equivalent of a bachelor's degree or higher, consistent with what we've found in previous years. However, it is not that rare to find accomplished professional developers who have not completed a degree.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "86,390 responses",
+              "Data": {
+                "I never completed any formal education": 0.6401,
+                "Primary/elementary school": 1.646,
+                "Secondary school": 10.0035,
+                "Some college/university study without earning a degree": 12.1565,
+                "Associate degree": 3.4009,
+                "Bachelor's degree": 45.2992,
+                "Master's degree": 22.6519,
+                "Professional degree": 1.3867,
+                "Doctoral degree": 2.8151
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "71,796 responses",
+              "Data": {
+                "I never completed any formal education": 0.4861,
+                "Primary/elementary school": 0.5474,
+                "Secondary school": 5.2092,
+                "Some college/university study without earning a degree": 11.4435,
+                "Associate degree": 3.3303,
+                "Bachelor's degree": 49.0821,
+                "Master's degree": 25.3691,
+                "Professional degree": 1.4165,
+                "Doctoral degree": 3.1158
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Undergraduate Major",
+          "Copy": "Of professional developers who studied at the university level, over 60% said they majored in computer science, computer engineering, or software engineering. This proportion is somewhat higher in currently enrolled students, and the proportion of respondents majoring in other engineering disciplines like electrical and mechanical engineering is lower among current students than among professionals.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "75,614 responses",
+              "Data": {
+                "Computer science, computer engineering, or software engineering": 62.4408,
+                "Another engineering discipline (ex. civil, electrical, mechanical)": 8.2286,
+                "Information systems, information technology, or system administration": 6.9471,
+                "Web development or web design": 4.5256,
+                "A natural science (ex. biology, chemistry, physics)": 4.2743,
+                "Mathematics or statistics": 3.9345,
+                "A business discipline (ex. accounting, finance, marketing)": 2.4347,
+                "A humanities discipline (ex. literature, history, philosophy)": 2.0777,
+                "A social science (ex. anthropology, psychology, political science)": 1.788,
+                "Fine arts or performing arts (ex. graphic design, music, studio art)": 1.6307,
+                "I never declared a major": 1.2908,
+                "A health science (ex. nursing, pharmacy, radiology)": 0.4272
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "66,823 responses",
+              "Data": {
+                "Computer science, computer engineering, or software engineering": 63.2641,
+                "Another engineering discipline (ex. civil, electrical, mechanical)": 8.2591,
+                "Information systems, information technology, or system administration": 6.8764,
+                "A natural science (ex. biology, chemistry, physics)": 4.3234,
+                "Web development or web design": 4.2545,
+                "Mathematics or statistics": 3.9014,
+                "A business discipline (ex. accounting, finance, marketing)": 2.2462,
+                "A humanities discipline (ex. literature, history, philosophy)": 2.0682,
+                "A social science (ex. anthropology, psychology, political science)": 1.7314,
+                "Fine arts or performing arts (ex. graphic design, music, studio art)": 1.6327,
+                "I never declared a major": 1.1074,
+                "A health science (ex. nursing, pharmacy, radiology)": 0.3352
+              }
+            },
+            {
+              "Title": "Students",
+              "SubText": "15,764 responses",
+              "Data": {
+                "Computer science, computer engineering, or software engineering": 68.2314,
+                "Information systems, information technology, or system administration": 6.7178,
+                "Another engineering discipline (ex. civil, electrical, mechanical)": 6.3753,
+                "Web development or web design": 6.0898,
+                "Mathematics or statistics": 3.5397,
+                "A natural science (ex. biology, chemistry, physics)": 3.3304,
+                "A business discipline (ex. accounting, finance, marketing)": 1.8587,
+                "A social science (ex. anthropology, psychology, political science)": 1.1165,
+                "A humanities discipline (ex. literature, history, philosophy)": 0.9452,
+                "I never declared a major": 0.7232,
+                "Fine arts or performing arts (ex. graphic design, music, studio art)": 0.6026,
+                "A health science (ex. nursing, pharmacy, radiology)": 0.4694
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Other Types of Education",
+          "Copy": "Developers are lifelong learners; almost 90% of all developers say they have taught themselves a new language, framework, or tool outside of their formal education. Among professional developers, about 60% say they took an online course like a MOOC (up significantly from last year), and about a quarter have participated in a hackathon.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "84,260 responses; select all that apply",
+              "Data": {
+                "Taught yourself a new language, framework, or tool without taking a formal course": 85.4522,
+                "Taken an online course in programming or software development (e.g. a MOOC)": 60.0914,
+                "Contributed to open source software": 41.023,
+                "Received on-the-job training in software development": 39.3247,
+                "Participated in a hackathon": 26.0325,
+                "Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder)": 25.4985,
+                "Taken a part-time in-person course in programming or software development": 18.7444,
+                "Participated in a full-time developer training program or bootcamp": 15.356,
+                "Completed an industry certification program (e.g. MCPD)": 15.0344
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "70,092 responses; select all that apply",
+              "Data": {
+                "Taught yourself a new language, framework, or tool without taking a formal course": 86.7503,
+                "Taken an online course in programming or software development (e.g. a MOOC)": 60.0525,
+                "Received on-the-job training in software development": 43.6041,
+                "Contributed to open source software": 43.0934,
+                "Participated in a hackathon": 27.083,
+                "Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder)": 25.4123,
+                "Taken a part-time in-person course in programming or software development": 18.694,
+                "Completed an industry certification program (e.g. MCPD)": 16.3984,
+                "Participated in a full-time developer training program or bootcamp": 16.0418
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Demographics",
+      "GraphCollections": [
+        {
+          "Title": "Race and Ethnicity",
+          "Copy": "We asked our respondents about their racial/ethnic identities and see evidence that people of color continue to be underrepresented among developers, especially among professional developers. We see higher proportions of people of color in students than professional developers. We have seen incremental improvement in this area year over year. In the United States this year, 22% of respondents are people of color (meaning they chose one or more non-white options on this question); last year 19% of United States respondents were people of color. Like with gender representation, this gradual change is encouraging, but the overall participation levels indicate we still have work to do, both on Stack Overflow and as the tech industry more broadly.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "76,668 responses; select all that apply",
+              "Data": {
+                "White or of European descent": 70.804,
+                "South Asian": 11.9294,
+                "Hispanic or Latino/Latina": 7.1334,
+                "East Asian": 5.8577,
+                "Middle Eastern": 4.7204,
+                "Black or of African descent": 3.6195,
+                "Multiracial": 2.3439,
+                "Biracial": 1.333,
+                "Native American, Pacific Islander, or Indigenous Australian": 0.8113
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "HighlightIcon": true,
+              "SubText": "63,991 responses; select all that apply",
+              "Data": {
+                "White or of European descent": 72.4883,
+                "South Asian": 11.1359,
+                "Hispanic or Latino/Latina": 7.3229,
+                "East Asian": 5.3492,
+                "Middle Eastern": 4.4663,
+                "Black or of African descent": 3.0864,
+                "Multiracial": 2.2503,
+                "Biracial": 1.2439,
+                "Native American, Pacific Islander, or Indigenous Australian": 0.7673
+              }
+            },
+            {
+              "Title": "Students",
+              "SubText": "17,487 responses; select all that apply",
+              "Data": {
+                "White or of European descent": 59.3355,
+                "South Asian": 17.2357,
+                "East Asian": 8.4863,
+                "Hispanic or Latino/Latina": 8.452,
+                "Middle Eastern": 6.7364,
+                "Black or of African descent": 5.1581,
+                "Multiracial": 2.8478,
+                "Biracial": 1.504,
+                "Native American, Pacific Islander, or Indigenous Australian": 0.915
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Gender",
+          "Copy": "We asked our respondents about their gender identity, and found that about globally 90% of our respondents are men. In regions including the United States, India, and the UK, women are represented at higher levels among students than among professional developers.\n\nThis year 11% of US survey respondents are women, up from 9% on last year's survey. This represents incremental improvement in this area, but the continued low proportion points to problems with inclusion in the tech industry in general and on Stack Overflow in particular. \n\nThis year, 1.2% of respondents identified as transgender, about double from last year. The gender identification question allowed respondents to select all that apply, and the question about transgender identity was separate from the question about gender identity.",
+          "Graphs": [
+            {
+              "Title": "Gender Minorities by Country",
+              "SubText": "86,210 responses; % who identify as women or non-binary",
+              "Data": {
+                "United States": 11.6928,
+                "Canada": 10.7078,
+                "United Kingdom": 8.6468,
+                "Australia": 7.535,
+                "India": 6.9825,
+                "Netherlands": 6.6923,
+                "Germany": 6.274,
+                "Russian Federation": 6.1419,
+                "Poland": 5.9318,
+                "Sweden": 5.8777,
+                "France": 5.5155,
+                "Spain": 5.3866,
+                "Brazil": 5.2223,
+                "Italy": 3.7158
+              }
+            },
+            {
+              "Title": "All Respondents",
+              "SubText": "85,406 responses; select all that apply",
+              "Data": {
+                "Man": 91.6821,
+                "Woman": 7.8554,
+                "Non-binary, genderqueer, or gender non-conforming": 1.1838
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "70,717 responses; select all that apply",
+              "Data": {
+                "Man": 92.0627,
+                "Woman": 7.4579,
+                "Non-binary, genderqueer, or gender non-conforming": 1.1002
+              }
+            },
+            {
+              "Title": "Students",
+              "HighlightIcon": true,
+              "SubText": "20,277 responses; select all that apply",
+              "Data": {
+                "Man": 91.3597,
+                "Woman": 8.5022,
+                "Non-binary, genderqueer, or gender non-conforming": 1.2625
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Developer Role and Gender",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Developer Role and Gender",
+              "Type": "CustomFigure",
+              "Copy": "We see varying representation from men and women in different developer roles on our survey. *All* categories have dramatically more developers who identify as men than women but the ratio of men to women varies. Developer types above the line have respondents that are more likely than average to be men, and those below the line have respondents who are more likely than average to be women. Developers who are data scientists or academic researchers are about 10 times more likely to be men than women, while developers who are system admins or DevOps specialists are 25-30 times more likely to be men than women. Women have the highest representation as front-end developers, designers, data scientists, data analysts, QA or test developers, scientists, and educators.",
+              "SubText": "The dashed line shows the average ratio of men's to women's participation",
+              "FigurePath": "devtype_ratio-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Experience and Gender",
+          "Copy": "When we look at differences in years since learning to code by gender, we see evidence for the shifting demographics of coding as a profession, as well as retention problems in the tech industry for underrepresented groups. <a href='https://www.researchgate.net/publication/268325574_By_RESEARCH_REPORT_The_Athena_Factor_Reversing_the_Brain_Drain_in_Science_Engineering_and_Technology' target='_blank'>Research</a> <a href='https://www.npr.org/sections/alltechconsidered/2014/08/12/339638726/many-women-leave-engineering-blame-the-work-culture' target='_blank'>shows</a>, for example, that women leave jobs in tech at higher rates than men. Among our respondents, both in the United States and internationally, women are about twice as likely as men to have three years of coding experience or less. Companies interested in building a diverse developer workforce that is more reflective of society should focus on retention of their senior developers from underrepresented groups, along with thoughtful hiring from the population of more junior developers.",
+          "Graphs": [
+            {
+              "Title": "Men",
+              "SubText": "77,945 responses",
+              "Data": {
+                "Less than 5 years": 19.3188,
+                "5 to 9 years": 30.8281,
+                "10 to 14 years": 19.3906,
+                "15 to 19 years": 11.553,
+                "20 to 24 years": 7.98,
+                "25 to 29 years": 3.7668,
+                "30 to 34 years": 3.3703,
+                "35 to 39 years": 2.3645,
+                "40 to 44 years": 0.9917,
+                "45 to 49 years": 0.272,
+                "50 years or more": 0.1924
+              }
+            },
+            {
+              "Title": "Women",
+              "HighlightIcon": true,
+              "SubText": "6,653 responses",
+              "Data": {
+                "Less than 5 years": 32.1509,
+                "5 to 9 years": 34.0298,
+                "10 to 14 years": 15.7673,
+                "15 to 19 years": 7.6507,
+                "20 to 24 years": 5.5163,
+                "25 to 29 years": 1.8638,
+                "30 to 34 years": 1.3678,
+                "35 to 39 years": 0.977,
+                "40 to 44 years": 0.3908,
+                "45 to 49 years": 0.0902,
+                "50 years or more": 0.1954
+              }
+            },
+            {
+              "Title": "Non-binary, genderqueer, or gender non-conforming",
+              "SubText": "991 responses",
+              "Data": {
+                "Less than 5 years": 20.888,
+                "5 to 9 years": 31.9879,
+                "10 to 14 years": 20.3835,
+                "15 to 19 years": 10.3935,
+                "20 to 24 years": 6.9627,
+                "25 to 29 years": 3.5318,
+                "30 to 34 years": 2.1191,
+                "35 to 39 years": 2.1191,
+                "40 to 44 years": 0.7064,
+                "45 to 49 years": 0.4036,
+                "50 years or more": 0.5045
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Sexual Orientation",
+          "Copy": "This is the second year we asked our respondents about their sexual orientation, and the proportions of respondents are mostly consistent since last year.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "76,147 responses; select all that apply",
+              "Data": {
+                "Straight / Heterosexual": 92.9715,
+                "Bisexual": 5.4579,
+                "Gay or Lesbian": 2.7027
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "63,796 responses; select all that apply",
+              "Data": {
+                "Straight / Heterosexual": 93.4134,
+                "Bisexual": 5.0395,
+                "Gay or Lesbian": 2.5644
+              }
+            },
+            {
+              "Title": "Students",
+              "SubText": "17,180 responses; select all that apply",
+              "Data": {
+                "Straight / Heterosexual": 91.1641,
+                "Bisexual": 7.6601,
+                "Gay or Lesbian": 2.9744
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Disability Status",
+          "Copy": "Individuals with many forms of disability and difference are part of the developer community, including those with mental health challenges and physical disabilities. Mental health issues like depression and anxiety are particularly common among our respondents. In the United States, almost 30% of respondents said they deal with a mental health challenge, a higher proportion than other large countries such as the UK, Canada, Germany, or India.",
+          "Graphs": [
+            {
+              "Title": "Mental Health and Differences",
+              "SubText": "15,922 responses identified as having a mental difference",
+              "Data": {
+                "I have a mood or emotional disorder (e.g. depression, bipolar disorder)": 8.7553,
+                "I have an anxiety disorder": 8.6124,
+                "I have a concentration and/or memory disorder (e.g. ADHD)": 6.4264,
+                "I have autism / an autism spectrum disorder (e.g. Asperger's)": 2.6214
+              }
+            },
+            {
+              "Title": "Physical Differences",
+              "HighlightIcon": true,
+              "SubText": "2,286 responses identified as having a physical difference",
+              "Data": {
+                "I am blind / have difficulty seeing": 1.4615,
+                "I am deaf / hard of hearing": 0.7853,
+                "I am unable to / find it difficult to walk or stand without assistance": 0.3443,
+                "I am unable to / find it difficult to type": 0.315
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Age",
+          "Copy": "About three-fourths of professional developers who took our survey are younger than 35.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "79,210 responses",
+              "Data": {
+                "Younger than 15 years": 0.5656,
+                "15 to 19 years": 5.5586,
+                "20 to 24 years": 21.1299,
+                "25 to 29 years": 27.6089,
+                "30 to 34 years": 19.2905,
+                "35 to 39 years": 11.9076,
+                "40 to 44 years": 6.2151,
+                "45 to 49 years": 3.3771,
+                "50 to 54 years": 2.025,
+                "55 to 59 years": 1.1716,
+                "60 years and older": 1.0453
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "66,329 responses",
+              "Data": {
+                "Younger than 15 years": 0.0241,
+                "15 to 19 years": 1.2378,
+                "20 to 24 years": 17.7509,
+                "25 to 29 years": 30.7693,
+                "30 to 34 years": 21.8713,
+                "35 to 39 years": 13.32,
+                "40 to 44 years": 6.9095,
+                "45 to 49 years": 3.6696,
+                "50 to 54 years": 2.2192,
+                "55 to 59 years": 1.2332,
+                "60 years and older": 0.9212
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Age and Experience by Country",
+          "Copy": "Developers on Stack Overflow are older with more experience in Australia, Western Europe, and North America and younger with less experience in regions like India and Eastern Europe.",
+          "Graphs": [
+            {
+              "Title": "Average Age",
+              "SubText": "Mean of 50,705 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Australia": 32.8096,
+                "United States": 32.7533,
+                "United Kingdom": 32.2364,
+                "Canada": 31.4269,
+                "Netherlands": 30.7414,
+                "Germany": 30.1766,
+                "France": 29.8669,
+                "Russian Federation": 28.9128,
+                "Brazil": 28.7507,
+                "Poland": 28.3714,
+                "India": 25.9274
+              }
+            },
+            {
+              "Title": "Average Years of Coding Experience",
+              "SubText": "Mean of 56,203 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Australia": 15.3662,
+                "United Kingdom": 14.8598,
+                "United States": 14.1139,
+                "Canada": 13.4304,
+                "Netherlands": 13.2293,
+                "Germany": 12.8687,
+                "France": 11.7896,
+                "Russian Federation": 11.1406,
+                "Brazil": 10.7248,
+                "Poland": 10.2412,
+                "India": 7.0682
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Evaluating Competence",
+      "GraphCollections": [
+        {
+          "Title": "All of the Developers Are Above Average?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "All of the Developers Are Above Average?",
+              "Copy": "We asked respondents to evaluate their own competence, for the specific work they do and years of experience they have, and almost 70% of respondents say they are above average while less than 10% think they are below average. This is statistically unlikely with a sample of over 70,000 developers who answered this question, to put it mildly.",
+              "SubText": "71,779 responses",
+              "Data": {
+                "Far above average": 21.4533,
+                "A little above average": 45.1023,
+                "Average": 23.929,
+                "A little below average": 7.3685,
+                "Far below average": 2.1469
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Feelings of Competence By Gender",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Feelings of Competence By Gender",
+              "HighlightIcon": true,
+              "Copy": "When asked to evaluate their own competence for the kind of work they do and their years of experience, men are much more likely to say they are far or a little above average than gender minorities in tech.",
+              "SubText": "Mean of 70,411 responses; percent who consider themselves far or a little above average; gender is select all that apply",
+              "Data": {
+                "Man": 67.7336,
+                "Non-binary, genderqueer, or gender non-conforming": 59.085,
+                "Woman": 53.4363
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Competence and Experience",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Competence and Experience",
+              "Type": "CustomFigure",
+              "Copy": "We specifically asked respondents to evaluate themselves *for their years of experience*, but we see differences in opinion with experience. New developers are much less likely to evaluate themselves as above average for their experience, and this effect does not flatten out until about 10 years of experience. We see evidence here among the most junior developers for *impostor syndrome*, pervasive patterns of self-doubt, insecurity, and fear of being exposed as a fraud. Among our respondents, men grew more confident much more quickly than gender minorities.",
+              "FigurePath": "competence_experience-1.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Life Outside Work",
+      "GraphCollections": [
+        {
+          "Title": "Children and Other Dependents",
+          "Copy": "For the second year, we asked respondents if they have children or other dependents that they care for, and almost 40% of respondents say that they do, up from last year.\n\nThe developers who said they do not have dependents to care for are younger on average with less experience than those who do. Over 60% of developers with 10 or more years of professional coding experience have children or other dependents. Respondents in the United States are more likely to say they have dependents than the rest of the world, but within the US, women are *less* likely to report having caretaking responsibilities. This fits in with other evidence we see for retention problems specific to underrepresented groups in tech.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "83,059 responses",
+              "Data": {
+                "No": 61.0735,
+                "Yes": 38.9265
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "20,088 responses",
+              "Data": {
+                "No": 64.5311,
+                "Yes": 35.4689
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "20,088 responses",
+              "Data": {
+                "No": 66.0154,
+                "Yes": 33.9846
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Families and IT Support",
+          "Copy": "We've all been there, either giving or receiving help.",
+          "Graphs": [
+            {
+              "Title": "Are you the IT Support Person for Your Family?",
+              "SubText": "87,141 responses",
+              "Data": {
+                "Yes": 53.2126,
+                "SIGH": 25.0387,
+                "Also Yes": 14.13,
+                "Fortunately, someone else has that title": 7.6187
+              }
+            },
+            {
+              "Title": "Have You Tried Turning It Off and On Again?",
+              "SubText": "86,663 responses",
+              "Data": {
+                "Yes": 78.1648,
+                "What?": 13.496,
+                "No": 8.3392
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Will People Born Today Have a Better Life Than Their Parents?",
+          "Copy": "This question mirrors a <a href='https://news.gallup.com/poll/232076/americans-optimistic-future-next-generation.aspx' target='_blank'>question that’s asked by Gallup</a> every year. The 2018 Gallup results saw 61% of the American population believing today's youth will live better than their parents; that percentage was the highest since Gallup’s 2010 survey. If we filter our survey for American respondents, the percentage is also 61%, mirroring Gallup’s results. Either way, it seems that developers don’t overwhelmingly believe we’re headed toward dystopia.\n\nRespondents in China are the most optimistic, and those in regions like Eastern Europe, Latin America, and the Middle East are especially hopeful compared to those in Western Europe. This is especially notable in countries like Germany and France, which are the 4th and 7th largest economies in the world, respectively.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "86,269 responses",
+              "Data": {
+                "Yes": 63.6822,
+                "No": 36.3178
+              }
+            },
+            {
+              "Title": "By Country",
+              "SubText": "Mean of 86,269 responses; percent who say people born today will have a better life",
+              "Data": {
+                "China": 81.3375,
+                "Ukraine": 80.8561,
+                "Russian Federation": 79.4296,
+                "Romania": 77.3585,
+                "Brazil": 76.188,
+                "Bulgaria": 74.0973,
+                "Iran": 73.3703,
+                "Mexico": 71.09,
+                "Israel": 70.472,
+                "Poland": 69.8725,
+                "India": 69.6086,
+                "Czech Republic": 67.4931,
+                "Pakistan": 66.5567,
+                "South Africa": 66.2866,
+                "Denmark": 65.1163,
+                "Australia": 64.5301,
+                "Sweden": 62.6699,
+                "United States": 61.1444,
+                "Austria": 59.5506,
+                "Turkey": 57.9117,
+                "Canada": 57.6795,
+                "United Kingdom": 56.8796,
+                "Spain": 56.605,
+                "Germany": 56.2478,
+                "Netherlands": 55.0749,
+                "Italy": 54.2615,
+                "Switzerland": 52.9286,
+                "Belgium": 47.4212,
+                "France": 40.8475
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Social Media Use",
+          "Copy": "We asked our respondents this year what social media site they use the most, and Reddit and YouTube were the most common answers. Developers' preferences aren't reflective of the most popular social media platforms in the world where Facebook ranks first and Reddit doesn’t even crack the top 10. (Reddit has about <a href='https://www.redditinc.com/' target='_blank'>330 million active users</a> compared to <a href='https://newsroom.fb.com/company-info/' target='_blank'>Facebook’s 2.32 billion monthly users</a>.)\n\nWhen we look in the United States, the situation is a little different. Twitter and Facebook are ranked higher. Notice that the United States result weighted by gender exhibits some interesting differences from the unweighted result; Instagram even gains a full rank.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "84,437 responses",
+              "Data": {
+                "Reddit": 17.0233,
+                "YouTube": 16.3791,
+                "WhatsApp": 15.8071,
+                "Facebook": 15.6069,
+                "Twitter": 13.4988,
+                "Instagram": 7.415,
+                "I don't use social media": 6.5777,
+                "LinkedIn": 5.3306,
+                "WeChat 微信": 0.7899,
+                "Snapchat": 0.7437,
+                "VK ВКонта́кте": 0.7141,
+                "Weibo 新浪微博": 0.0663,
+                "Youku Tudou 优酷": 0.0249,
+                "Hello": 0.0225
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "20,046 responses",
+              "Data": {
+                "Reddit": 28.4346,
+                "Twitter": 17.3002,
+                "Facebook": 14.1874,
+                "YouTube": 12.2867,
+                "I don't use social media": 9.2338,
+                "Instagram": 8.241,
+                "LinkedIn": 5.0883,
+                "WhatsApp": 3.038,
+                "Snapchat": 1.6263,
+                "WeChat 微信": 0.4639,
+                "VK ВКонта́кте": 0.0449,
+                "Weibo 新浪微博": 0.0399,
+                "Hello": 0.01,
+                "Youku Tudou 优酷": 0.005
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "20,046 responses",
+              "Data": {
+                "Reddit": 27.0111,
+                "Twitter": 18.3735,
+                "Facebook": 14.6435,
+                "YouTube": 11.8536,
+                "Instagram": 9.2219,
+                "I don't use social media": 8.7518,
+                "LinkedIn": 4.969,
+                "WhatsApp": 2.9656,
+                "Snapchat": 1.6432,
+                "WeChat 微信": 0.4525,
+                "Weibo 新浪微博": 0.0527,
+                "VK ВКонта́кте": 0.0395,
+                "Hello": 0.0132,
+                "Youku Tudou 优酷": 0.0088
+              }
+            }
+          ]
+        },
+        {
+          "Title": "What's Your Handle?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "What's Your Handle?",
+              "Copy": "There have been many iterations on the names we use in chat apps or online communities to identify ourselves. The most common choice for our respondents was username by a landslide. Respondents who chose userId are the oldest, and respondents who chose username are the youngest.",
+              "SubText": "80,486 responses",
+              "Data": {
+                "Username": 73.2662,
+                "Login": 10.7584,
+                "UserID": 8.4934,
+                "Handle": 4.9711,
+                "Screen Name": 2.511
+              }
+            }
+          ]
+        },
+        {
+          "Title": "IRL or online chat?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "IRL or online chat?",
+              "Copy": "Developers may have a reputation for introversion, but a firm majority of our respondents said they prefer face-to-face conversations to online chat. We're happy to report that only 11% of our respondents said they didn't want to communicate with their fellow human beings via either method.",
+              "SubText": "87,305 responses",
+              "Data": {
+                "In real life (in person)": 60.5464,
+                "Online": 28.5642,
+                "Neither": 10.8894
+              }
+            }
+          ]
+        },
+        {
+          "Title": "What Individual Person Will Have the Most Influence In Tech This Year?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "What Individual Person Will Have the Most Influence In Tech This Year?",
+              "Copy": "We asked respondents what person they thought would be most influential in 2019 in a free-text field. Besides CEOs of companies including Tesla, Amazon, Microsoft, Google, Facebook, and Apple, respondents mentioned developers building and maintaining React.js and Vue.js  (the [most loved web frameworks](https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-web-frameworks) this year), along with leaders from the Linux world and other tech domains. A few world leaders received mentions from respondents, along with a fair number of humble respondents nominating...themselves! Some individuals mentioned here are likely not viewed favorably by those who listed them, such as the <a href='https://stackoverflow.blog/2017/06/30/raise-voice-proclaim-need-net-neutrality/' target='_blank'>current chairman of the United States Federal Communications Commission (FCC)</a>. Only one woman made it to the top 25 of this list: Lisa Su, the CEO of AMD.",
+              "SubText": "30,398 responses",
+              "Data": {
+                "Elon Musk": 30.2323,
+                "Jeff Bezos": 7.2011,
+                "Satya Nadella": 4.4411,
+                "Me/myself": 2.5002,
+                "Donald Trump": 2.1646,
+                "Sundar Pichai": 1.931,
+                "Mark Zuckerberg": 1.7238,
+                "Tim Cook": 1.2797,
+                "Linus Torvalds": 1.1349,
+                "Bill Gates": 0.7369,
+                "Dan Abramov": 0.6152,
+                "Xi Jinping": 0.4277,
+                "Evan You": 0.3619,
+                "Andrew Ng": 0.3323,
+                "Richard Stallman": 0.2961,
+                "Vitalik Buterin": 0.2796,
+                "Larry Page": 0.2533,
+                "Rich Hickey": 0.2401,
+                "Ajit Pai": 0.2369,
+                "Jeff Dean": 0.2138,
+                "Lisa Su": 0.2105,
+                "Jon Skeet": 0.2073,
+                "Demis Hassabis": 0.1974,
+                "Jack Ma": 0.1875,
+                "Werner Vogels": 0.1875
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

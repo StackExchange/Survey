@@ -1,0 +1,270 @@
+{
+  "Title": "Community",
+  "SubTitle": "Where developers come to learn, share knowledge, and build their careers",
+  "Copy": null,
+  "SubSections": [
+    {
+      "Title": "Site Use",
+      "GraphCollections": [
+        {
+          "Title": "Visiting Stack Overflow",
+          "Copy": "Developers visit Stack Overflow. A lot. Our survey respondents likely visit even more than the average developer, since a majority of respondents found the survey from Stack Overflow emails, notifications, and banners. Over 82% of respondents visit Stack Overflow at least a few times per week, with over 59% visiting every day. In the United States, there are only slight shifts between the results weighted by gender and unweighted results on visit frequency.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "56,970 responses",
+              "Data": {
+                "I have never visited Stack Overflow (before today)": 0.337,
+                "Less than once per month or monthly": 3.0525,
+                "A few times per month or weekly": 13.8687,
+                "A few times per week": 23.6844,
+                "Daily or almost daily": 30.4932,
+                "Multiple times per day": 28.5642
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "11,611 responses",
+              "Data": {
+                "I have never visited Stack Overflow (before today)": 0.112,
+                "Less than once per month or monthly": 4.0651,
+                "A few times per month or weekly": 16.8375,
+                "A few times per week": 27.784,
+                "Daily or almost daily": 28.3094,
+                "Multiple times per day": 22.8921
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "11,611 responses",
+              "Data": {
+                "I have never visited Stack Overflow (before today)": 0.1298,
+                "Less than once per month or monthly": 4.3515,
+                "A few times per month or weekly": 17.3372,
+                "A few times per week": 27.8342,
+                "Daily or almost daily": 27.9411,
+                "Multiple times per day": 22.4063
+              }
+            }
+          ]
+        },
+        {
+          "Title": "How Many Participants Have a Stack Overflow Account?",
+          "Copy": "About 83% of the participants in our survey say they are registered users with accounts. This provides important context for interpreting our survey results, because most Stack Overflow traffic comes from anonymous, unregistered visitors.",
+          "Graphs": [
+            {
+              "Title": "How Many Participants Have a Stack Overflow Account?",
+              "SubText": "56,805 responses",
+              "Data": {
+                "Yes": 83.2233,
+                "No": 10.7403,
+                "Not sure/can't remember": 6.0364
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Visited SE sites",
+          "Copy": "Almost all of responents have visited Stack Overflow and about two-thirds have visited Stack Exchange.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "58,275 responses; select all that apply",
+              "Data": {
+                "Stack Overflow (public Q&A for anyone who codes)": 98.0077,
+                "Stack Exchange (public Q&A for a variety of topics)": 67.2999,
+                "Stack Overflow Jobs (for job seekers)": 36.2523,
+                "Stack Overflow for Teams (private Q&A for organizations)": 4.5148,
+                "Stack Overflow Talent (for hiring companies/recruiters)": 2.4316,
+                "Stack Overflow Advertising (for technology companies)": 1.4363,
+                "I have never visited any of these sites": 0.906
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "47,720 responses; select all that apply",
+              "Data": {
+                "Stack Overflow (public Q&A for anyone who codes)": 98.8328,
+                "Stack Exchange (public Q&A for a variety of topics)": 68.8307,
+                "Stack Overflow Jobs (for job seekers)": 39.1429,
+                "Stack Overflow for Teams (private Q&A for organizations)": 4.4887,
+                "Stack Overflow Talent (for hiring companies/recruiters)": 2.083,
+                "Stack Overflow Advertising (for technology companies)": 1.0939,
+                "I have never visited any of these sites": 0.4673
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Stack Overflow Community Now",
+      "GraphCollections": [
+        {
+          "Title": "How Often Do Developers Participate on Stack Overflow?",
+          "Copy": "Some developers come to Stack Overflow only to find answers to their questions, while others participate in the community by asking, answering, voting for, or commenting on questions. Over 34% of survey respondents participate on Stack Overflow a few times per month or more often. When comparing United States weighted data to unweighted results, we see more representation from those who have never participated on Stack Overflow.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "46,792 responses",
+              "Data": {
+                "I have never participated in Q&A on Stack Overflow": 22.2837,
+                "Less than once per month or monthly": 43.6656,
+                "A few times per month or weekly": 17.7744,
+                "A few times per week": 8.9609,
+                "Daily or almost daily": 4.6974,
+                "Multiple times per day": 2.618
+              }
+            },
+            {
+              "Title": "United States Unweighted",
+              "SubText": "9,290 responses",
+              "Data": {
+                "I have never participated in Q&A on Stack Overflow": 19.9785,
+                "Less than once per month or monthly": 49.2788,
+                "A few times per month or weekly": 16.7922,
+                "A few times per week": 7.944,
+                "Daily or almost daily": 3.8428,
+                "Multiple times per day": 2.1636
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "9,290 responses",
+              "Data": {
+                "I have never participated in Q&A on Stack Overflow": 21.0923,
+                "Less than once per month or monthly": 49.3475,
+                "A few times per month or weekly": 16.2494,
+                "A few times per week": 7.7042,
+                "Daily or almost daily": 3.5863,
+                "Multiple times per day": 2.0203
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Do Developers Consider Themselves Part of the Stack Overflow Community?",
+          "Copy": "About 43% of the respondents to our survey consider themselves part of our community, but this varies for different groups of people. For example, we find that respondents who identify as men see themselves as part of the community at much higher rates than those with other gender identities. The tech community as a whole, and we at Stack Overflow in particular, still have work to do in this area.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "56,476 responses",
+              "Data": {
+                "Yes, definitely": 15.8297,
+                "Yes, somewhat": 27.0433,
+                "Neutral": 20.7486,
+                "No, not really": 25.9792,
+                "No, not at all": 8.5488,
+                "Not sure": 1.8503
+              }
+            },
+            {
+              "Title": "By Gender",
+              "HighlightIcon": true,
+              "SubText": "Mean of 49,625 responses; percent who consider themselves definitely or somewhat part of the Stack Overflow community; gender is select all that apply",
+              "Data": {
+                "Man": 44.544,
+                "Woman": 30.0154,
+                "Non-binary, genderqueer, or gender non-conforming": 27.1357
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Compared to last year, how welcome do you feel on Stack Overflow?",
+          "Copy": "Most respondents say they feel just as welcome on Stack Overflow as they felt last year. Answers this year were slightly more polarized than those from 2019. When asked why they responded the way they did, respondents who felt less welcome mentioned the relationship between the community and the company and question quality. Respondents who felt more welcome mentioned feeling more comfortable and confident, the site being nicer or friendlier, and features of the site like emails and the newsletter.",
+          "Graphs": [
+            {
+              "Title": "Compared to last year, how welcome do you feel on Stack Overflow?",
+              "SubText": "52,683 responses",
+              "Data": {
+                "A lot more welcome now than last year": 6.0836,
+                "Somewhat more welcome now than last year": 9.5287,
+                "Just as welcome now as I felt last year": 70.6129,
+                "Somewhat less welcome now than last year": 5.8748,
+                "A lot less welcome now than last year": 4.0449,
+                "Not applicable - I did not use Stack Overflow last year": 3.8551
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Member of other online developer community",
+          "Copy": "For around 60% of respondents, Stack Overflow is the only online developer community they are a member of. Of the 41% who indicated they are members of other online developer communities. 15k respondents provided at least one additional community they participate in. Though this data is not present in results, it is available for analysis in the raw data.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "57,205 responses",
+              "Data": {
+                "No": 58.3288,
+                "Yes": 41.6712
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "47,044 responses",
+              "Data": {
+                "No": 58.4942,
+                "Yes": 41.5058
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Stack Overflow Community Moving Forward",
+      "GraphCollections": [
+        {
+          "Title": "What Would Developers Change About Stack Overflow?",
+          "Copy": "We asked respondents in a free text question one thing they would change about Stack Overflow if they had the chance. Respondents shared ideas focusing on question quality, improving search, identifying and removing outdated answers, frustrations with duplicate question handling, and issues with the way the company treats the community.",
+          "Graphs": [
+            {
+              "Title": "What Would Developers Change About Stack Overflow?",
+              "Type": "CustomFigure",
+              "FigurePath": "change_overall-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Developers' Perspectives By Gender",
+          "Copy": "The aspects of Stack Overflow that respondents would like to change exhibit differences across demographic groups. For example, developers who are men are more likely to want specific new features, while developers who are women are more likely to want to change norms for communication on our site.",
+          "Graphs": [
+            {
+              "Title": "Developers' Perspectives By Gender",
+              "HighlightIcon": true,
+              "Type": "CustomFigure",
+              "FigurePath": "change_anything-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Relax restrictions on off-topic",
+          "Copy": "We asked respondents whether they believe that Stack Overflow should relax restrictions on what is considered off-topic and received mixed results. Most respondents were not sure and almost 37% believe that restrictions should not be relaxed.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "50,804 responses",
+              "Data": {
+                "Not sure": 39.7862,
+                "No": 36.4696,
+                "Yes": 23.7442
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "42,230 responses",
+              "Data": {
+                "Not sure": 39.5169,
+                "No": 37.8972,
+                "Yes": 22.5858
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
