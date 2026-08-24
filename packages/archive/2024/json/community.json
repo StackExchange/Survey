@@ -1,0 +1,919 @@
+{
+  "NEWSOSites": {
+    "qid": "QID266",
+    "qname": "NEWSOSites",
+    "question": "Which of the following Stack Overflow sites have you visited? Select all that apply. *",
+    "datasets": {
+      "NEWSOSites": {
+        "name": "All Respondents",
+        "total_respondents": 60286,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 58698,
+            "percent": 0.9737
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 39623,
+            "percent": 0.6573
+          },
+          {
+            "response": "Stack Overflow Blog or Podcast",
+            "frequency": 9183,
+            "percent": 0.1523
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 2552,
+            "percent": 0.0423
+          },
+          {
+            "response": "Overflow API",
+            "frequency": 1677,
+            "percent": 0.0278
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 546,
+            "percent": 0.0091
+          }
+        ]
+      },
+      "NEWSOSites_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 45640,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 44848,
+            "percent": 0.9826
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 30367,
+            "percent": 0.6654
+          },
+          {
+            "response": "Stack Overflow Blog or Podcast",
+            "frequency": 7174,
+            "percent": 0.1572
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 2091,
+            "percent": 0.0458
+          },
+          {
+            "response": "Overflow API",
+            "frequency": 1161,
+            "percent": 0.0254
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 201,
+            "percent": 0.0044
+          }
+        ]
+      },
+      "NEWSOSites_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 6650,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 6209,
+            "percent": 0.9337
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 4034,
+            "percent": 0.6066
+          },
+          {
+            "response": "Stack Overflow Blog or Podcast",
+            "frequency": 835,
+            "percent": 0.1256
+          },
+          {
+            "response": "Overflow API",
+            "frequency": 244,
+            "percent": 0.0367
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 224,
+            "percent": 0.0337
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 179,
+            "percent": 0.0269
+          }
+        ]
+      },
+      "NEWSOSites_other": {
+        "name": "Other Coders",
+        "total_respondents": 7996,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 7641,
+            "percent": 0.9556
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 5222,
+            "percent": 0.6531
+          },
+          {
+            "response": "Stack Overflow Blog or Podcast",
+            "frequency": 1174,
+            "percent": 0.1468
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 282,
+            "percent": 0.0353
+          },
+          {
+            "response": "Overflow API",
+            "frequency": 272,
+            "percent": 0.034
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 121,
+            "percent": 0.0151
+          }
+        ]
+      }
+    }
+  },
+  "SOVisitFreq": {
+    "qid": "QID100",
+    "qname": "SOVisitFreq",
+    "question": "How frequently would you say you visit Stack Overflow?",
+    "datasets": {
+      "SOVisitFreq": {
+        "name": "All Respondents",
+        "total_respondents": 59536,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 7576,
+            "percent": 0.1273
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 14609,
+            "percent": 0.2454
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 19238,
+            "percent": 0.3231
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 14387,
+            "percent": 0.2417
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 3726,
+            "percent": 0.0626
+          }
+        ]
+      }
+    }
+  },
+  "SOAccount": {
+    "qid": "QID101",
+    "qname": "SOAccount",
+    "question": "Do you have a Stack Overflow account?",
+    "datasets": {
+      "SOAccount": {
+        "name": "All Respondents",
+        "total_respondents": 59560,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 45453,
+            "percent": 0.7631
+          },
+          {
+            "response": "No",
+            "frequency": 9628,
+            "percent": 0.1617
+          },
+          {
+            "response": "Not sure/can't remember",
+            "frequency": 4479,
+            "percent": 0.0752
+          }
+        ]
+      }
+    }
+  },
+  "SOPartFreq": {
+    "qid": "QID102",
+    "qname": "SOPartFreq",
+    "question": "How frequently would you say you participate in Q&amp;A on Stack Overflow? By participate we mean ask, answer, vote for, or comment on questions.",
+    "datasets": {
+      "SOPartFreq": {
+        "name": "All Respondents",
+        "total_respondents": 45237,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 441,
+            "percent": 0.0097
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 936,
+            "percent": 0.0207
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 2278,
+            "percent": 0.0504
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 6277,
+            "percent": 0.1388
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 24162,
+            "percent": 0.5341
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 11143,
+            "percent": 0.2463
+          }
+        ]
+      },
+      "SOPartFreq_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 35453,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 351,
+            "percent": 0.0099
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 755,
+            "percent": 0.0213
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 1887,
+            "percent": 0.0532
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 5067,
+            "percent": 0.1429
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 19451,
+            "percent": 0.5486
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 7942,
+            "percent": 0.224
+          }
+        ]
+      },
+      "SOPartFreq_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 4139,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 16,
+            "percent": 0.0039
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 44,
+            "percent": 0.0106
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 124,
+            "percent": 0.03
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 414,
+            "percent": 0.1
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 1791,
+            "percent": 0.4327
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 1750,
+            "percent": 0.4228
+          }
+        ]
+      },
+      "SOPartFreq_other": {
+        "name": "Other Coders",
+        "total_respondents": 5645,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 74,
+            "percent": 0.0131
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 137,
+            "percent": 0.0243
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 267,
+            "percent": 0.0473
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 796,
+            "percent": 0.141
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 2920,
+            "percent": 0.5173
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 1451,
+            "percent": 0.257
+          }
+        ]
+      }
+    }
+  },
+  "SOHow": {
+    "qid": "QID334",
+    "qname": "SOHow",
+    "question": "How do you use Stack Overflow?  Select all that apply.",
+    "datasets": {
+      "SOHow": {
+        "name": "All Respondents",
+        "total_respondents": 58962,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Quickly finding code solutions",
+            "frequency": 52744,
+            "percent": 0.8945
+          },
+          {
+            "response": "Finding reliable guidance from community-vetted answers",
+            "frequency": 40495,
+            "percent": 0.6868
+          },
+          {
+            "response": "Learning new-to-me technology/techniques",
+            "frequency": 24162,
+            "percent": 0.4098
+          },
+          {
+            "response": "Engage with community by commenting on questions and answers or voting on questions and answers",
+            "frequency": 11160,
+            "percent": 0.1893
+          },
+          {
+            "response": "Showcase expertise with code solutions",
+            "frequency": 8975,
+            "percent": 0.1522
+          },
+          {
+            "response": "Learning new-to-everyone technology/techniques",
+            "frequency": 8467,
+            "percent": 0.1436
+          }
+        ]
+      },
+      "SOHow_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 44867,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Quickly finding code solutions",
+            "frequency": 40212,
+            "percent": 0.8962
+          },
+          {
+            "response": "Finding reliable guidance from community-vetted answers",
+            "frequency": 31019,
+            "percent": 0.6914
+          },
+          {
+            "response": "Learning new-to-me technology/techniques",
+            "frequency": 17770,
+            "percent": 0.3961
+          },
+          {
+            "response": "Engage with community by commenting on questions and answers or voting on questions and answers",
+            "frequency": 8678,
+            "percent": 0.1934
+          },
+          {
+            "response": "Showcase expertise with code solutions",
+            "frequency": 7167,
+            "percent": 0.1597
+          },
+          {
+            "response": "Learning new-to-everyone technology/techniques",
+            "frequency": 6393,
+            "percent": 0.1425
+          }
+        ]
+      },
+      "SOHow_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 6337,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Quickly finding code solutions",
+            "frequency": 5690,
+            "percent": 0.8979
+          },
+          {
+            "response": "Finding reliable guidance from community-vetted answers",
+            "frequency": 4289,
+            "percent": 0.6768
+          },
+          {
+            "response": "Learning new-to-me technology/techniques",
+            "frequency": 3013,
+            "percent": 0.4755
+          },
+          {
+            "response": "Learning new-to-everyone technology/techniques",
+            "frequency": 998,
+            "percent": 0.1575
+          },
+          {
+            "response": "Engage with community by commenting on questions and answers or voting on questions and answers",
+            "frequency": 823,
+            "percent": 0.1299
+          },
+          {
+            "response": "Showcase expertise with code solutions",
+            "frequency": 685,
+            "percent": 0.1081
+          }
+        ]
+      },
+      "SOHow_other": {
+        "name": "Other Coders",
+        "total_respondents": 7758,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Quickly finding code solutions",
+            "frequency": 6842,
+            "percent": 0.8819
+          },
+          {
+            "response": "Finding reliable guidance from community-vetted answers",
+            "frequency": 5187,
+            "percent": 0.6686
+          },
+          {
+            "response": "Learning new-to-me technology/techniques",
+            "frequency": 3379,
+            "percent": 0.4356
+          },
+          {
+            "response": "Engage with community by commenting on questions and answers or voting on questions and answers",
+            "frequency": 1659,
+            "percent": 0.2138
+          },
+          {
+            "response": "Showcase expertise with code solutions",
+            "frequency": 1123,
+            "percent": 0.1448
+          },
+          {
+            "response": "Learning new-to-everyone technology/techniques",
+            "frequency": 1076,
+            "percent": 0.1387
+          }
+        ]
+      }
+    }
+  },
+  "SOComm": {
+    "qid": "QID106",
+    "qname": "SOComm",
+    "question": "Do you consider yourself a member of the Stack Overflow community?",
+    "datasets": {
+      "SOComm": {
+        "name": "All Respondents",
+        "total_respondents": 59163,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, definitely",
+            "frequency": 6139,
+            "percent": 0.1038
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 13895,
+            "percent": 0.2349
+          },
+          {
+            "response": "Neutral",
+            "frequency": 12554,
+            "percent": 0.2122
+          },
+          {
+            "response": "No, not really",
+            "frequency": 17730,
+            "percent": 0.2997
+          },
+          {
+            "response": "No, not at all",
+            "frequency": 8193,
+            "percent": 0.1385
+          },
+          {
+            "response": "Not sure",
+            "frequency": 652,
+            "percent": 0.011
+          }
+        ]
+      },
+      "SOComm_age": {
+        "name": "By Age",
+        "total_respondents": 59163,
+        "plot_type": "bar",
+        "plot_subtext": "Percent who consider themselves definitely or somewhat part of the Stack Overflow community.",
+        "data": [
+          {
+            "response": "Under 18 years old",
+            "frequency": 536,
+            "percent": 0.2371
+          },
+          {
+            "response": "18-24 years old",
+            "frequency": 3232,
+            "percent": 0.2651
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 7038,
+            "percent": 0.3267
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 5258,
+            "percent": 0.3802
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 2524,
+            "percent": 0.4273
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 1080,
+            "percent": 0.4406
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 288,
+            "percent": 0.4034
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 78,
+            "percent": 0.29
+          }
+        ]
+      }
+    }
+  },
+  "SOImprove": {
+    "qid": "QID344",
+    "qname": "SOImprove",
+    "question": "Thinking about your personal experience using Stack Overflow, what could we change/improve to make it better for you?",
+    "datasets": {
+      "SOImprove": {
+        "name": "Less than Monthly",
+        "total_respondents": 8717,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "New Users",
+            "frequency": 381,
+            "percent": 0.0964
+          },
+          {
+            "response": "Old Answer",
+            "frequency": 311,
+            "percent": 0.0787
+          },
+          {
+            "response": "New Question",
+            "frequency": 225,
+            "percent": 0.0569
+          },
+          {
+            "response": "Good Answer",
+            "frequency": 209,
+            "percent": 0.0529
+          },
+          {
+            "response": "Well Search",
+            "frequency": 173,
+            "percent": 0.0438
+          },
+          {
+            "response": "Toxic Community",
+            "frequency": 167,
+            "percent": 0.0423
+          },
+          {
+            "response": "New Answer",
+            "frequency": 163,
+            "percent": 0.0413
+          },
+          {
+            "response": "Duplicate Question",
+            "frequency": 160,
+            "percent": 0.0405
+          },
+          {
+            "response": "Good Question",
+            "frequency": 151,
+            "percent": 0.0382
+          },
+          {
+            "response": "Old Question",
+            "frequency": 151,
+            "percent": 0.0382
+          }
+        ]
+      },
+      "SOImprove_monthly": {
+        "name": "Monthly",
+        "total_respondents": 2627,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "New Users",
+            "frequency": 124,
+            "percent": 0.1049
+          },
+          {
+            "response": "New Question",
+            "frequency": 86,
+            "percent": 0.0728
+          },
+          {
+            "response": "Good Answer",
+            "frequency": 73,
+            "percent": 0.0618
+          },
+          {
+            "response": "Old Answer",
+            "frequency": 59,
+            "percent": 0.0499
+          },
+          {
+            "response": "Well Question",
+            "frequency": 54,
+            "percent": 0.0457
+          },
+          {
+            "response": "New Answer",
+            "frequency": 52,
+            "percent": 0.044
+          },
+          {
+            "response": "Low Quality",
+            "frequency": 51,
+            "percent": 0.0431
+          },
+          {
+            "response": "Duplicate Question",
+            "frequency": 49,
+            "percent": 0.0415
+          },
+          {
+            "response": "Well Way",
+            "frequency": 45,
+            "percent": 0.0381
+          },
+          {
+            "response": "Old Question",
+            "frequency": 44,
+            "percent": 0.0372
+          }
+        ]
+      },
+      "SOImprove_weekly": {
+        "name": "Weekly",
+        "total_respondents": 1033,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "New Users",
+            "frequency": 58,
+            "percent": 0.1118
+          },
+          {
+            "response": "Good Solution",
+            "frequency": 29,
+            "percent": 0.0559
+          },
+          {
+            "response": "Low Quality",
+            "frequency": 25,
+            "percent": 0.0482
+          },
+          {
+            "response": "Duplicate Question",
+            "frequency": 24,
+            "percent": 0.0462
+          },
+          {
+            "response": "Good Answer",
+            "frequency": 20,
+            "percent": 0.0385
+          },
+          {
+            "response": "New Question",
+            "frequency": 19,
+            "percent": 0.0366
+          },
+          {
+            "response": "Old Question",
+            "frequency": 19,
+            "percent": 0.0366
+          },
+          {
+            "response": "Outdated Answer",
+            "frequency": 19,
+            "percent": 0.0366
+          },
+          {
+            "response": "Toxic Member",
+            "frequency": 19,
+            "percent": 0.0366
+          },
+          {
+            "response": "New Answer",
+            "frequency": 18,
+            "percent": 0.0347
+          }
+        ]
+      },
+      "SOImprove_daily": {
+        "name": "Daily",
+        "total_respondents": 482,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "New Question",
+            "frequency": 25,
+            "percent": 0.0751
+          },
+          {
+            "response": "New Users",
+            "frequency": 20,
+            "percent": 0.0601
+          },
+          {
+            "response": "Low Quality",
+            "frequency": 17,
+            "percent": 0.0511
+          },
+          {
+            "response": "Old Answer",
+            "frequency": 16,
+            "percent": 0.048
+          },
+          {
+            "response": "Outdated Answer",
+            "frequency": 15,
+            "percent": 0.045
+          },
+          {
+            "response": "Tutorial Video",
+            "frequency": 15,
+            "percent": 0.045
+          },
+          {
+            "response": "Correct Answer",
+            "frequency": 14,
+            "percent": 0.042
+          },
+          {
+            "response": "Well Search",
+            "frequency": 14,
+            "percent": 0.042
+          },
+          {
+            "response": "Well Video",
+            "frequency": 14,
+            "percent": 0.042
+          },
+          {
+            "response": "Good Question",
+            "frequency": 12,
+            "percent": 0.036
+          }
+        ]
+      },
+      "SOImprove_daily_plus": {
+        "name": "More than Daily",
+        "total_respondents": 252,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "New Users",
+            "frequency": 28,
+            "percent": 0.129
+          },
+          {
+            "response": "New Question",
+            "frequency": 15,
+            "percent": 0.0691
+          },
+          {
+            "response": "Easy User",
+            "frequency": 11,
+            "percent": 0.0507
+          },
+          {
+            "response": "Impossible Answer",
+            "frequency": 11,
+            "percent": 0.0507
+          },
+          {
+            "response": "Relevant Question",
+            "frequency": 10,
+            "percent": 0.0461
+          },
+          {
+            "response": "Good Practice",
+            "frequency": 9,
+            "percent": 0.0415
+          },
+          {
+            "response": "Well Guidance",
+            "frequency": 9,
+            "percent": 0.0415
+          },
+          {
+            "response": "Annoying Quality",
+            "frequency": 7,
+            "percent": 0.0323
+          },
+          {
+            "response": "Unanswered Question",
+            "frequency": 7,
+            "percent": 0.0323
+          },
+          {
+            "response": "Well Search",
+            "frequency": 7,
+            "percent": 0.0323
+          }
+        ]
+      }
+    }
+  }
+}

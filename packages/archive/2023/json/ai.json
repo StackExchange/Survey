@@ -1,0 +1,1176 @@
+{
+  "AISelect": {
+    "qid": "QID314",
+    "qname": "AISelect",
+    "question": "Do you currently use AI tools in your development process? *",
+    "datasets": {
+      "AISelect": {
+        "name": "All Respondents",
+        "total_respondents": 89184,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 39042,
+            "percent": 0.4378
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 22710,
+            "percent": 0.2546
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 26221,
+            "percent": 0.294
+          }
+        ]
+      },
+      "AISel_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 67237,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 29697,
+            "percent": 0.4417
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 17401,
+            "percent": 0.2588
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 20139,
+            "percent": 0.2995
+          }
+        ]
+      },
+      "AISel_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 4961,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 2722,
+            "percent": 0.5487
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 1359,
+            "percent": 0.2739
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 880,
+            "percent": 0.1774
+          }
+        ]
+      },
+      "AISel_other": {
+        "name": "Other Coders",
+        "total_respondents": 5159,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 2173,
+            "percent": 0.4212
+          },
+          {
+            "response": "No, but I plan to soon",
+            "frequency": 1300,
+            "percent": 0.252
+          },
+          {
+            "response": "No, and I don't plan to",
+            "frequency": 1686,
+            "percent": 0.3268
+          }
+        ]
+      }
+    }
+  },
+  "AISent": {
+    "qid": "QID315",
+    "qname": "AISent",
+    "question": "How favorable is your stance on using AI tools as part of your development workflow?",
+    "datasets": {
+      "AISent": {
+        "name": "All Respondents",
+        "total_respondents": 61501,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 17050,
+            "percent": 0.2772
+          },
+          {
+            "response": "Favorable",
+            "frequency": 29863,
+            "percent": 0.4856
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 10147,
+            "percent": 0.165
+          },
+          {
+            "response": "Unsure",
+            "frequency": 2471,
+            "percent": 0.0402
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 1698,
+            "percent": 0.0276
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 272,
+            "percent": 0.0044
+          }
+        ]
+      },
+      "AISent_Prof": {
+        "name": "Professional Developers",
+        "total_respondents": 46928,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 13002,
+            "percent": 0.2771
+          },
+          {
+            "response": "Favorable",
+            "frequency": 22717,
+            "percent": 0.4841
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 7884,
+            "percent": 0.168
+          },
+          {
+            "response": "Unsure",
+            "frequency": 1821,
+            "percent": 0.0388
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 1305,
+            "percent": 0.0278
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 199,
+            "percent": 0.0042
+          }
+        ]
+      },
+      "AISent_Learn": {
+        "name": "Learning to Code",
+        "total_respondents": 4047,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 1101,
+            "percent": 0.2721
+          },
+          {
+            "response": "Favorable",
+            "frequency": 2026,
+            "percent": 0.5006
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 590,
+            "percent": 0.1458
+          },
+          {
+            "response": "Unsure",
+            "frequency": 208,
+            "percent": 0.0514
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 94,
+            "percent": 0.0232
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 28,
+            "percent": 0.0069
+          }
+        ]
+      },
+      "AISent_Other": {
+        "name": "Other Coders",
+        "total_respondents": 3463,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Very favorable",
+            "frequency": 971,
+            "percent": 0.2804
+          },
+          {
+            "response": "Favorable",
+            "frequency": 1690,
+            "percent": 0.488
+          },
+          {
+            "response": "Indifferent",
+            "frequency": 538,
+            "percent": 0.1554
+          },
+          {
+            "response": "Unsure",
+            "frequency": 150,
+            "percent": 0.0433
+          },
+          {
+            "response": "Unfavorable",
+            "frequency": 102,
+            "percent": 0.0295
+          },
+          {
+            "response": "Very unfavorable",
+            "frequency": 12,
+            "percent": 0.0035
+          }
+        ]
+      }
+    }
+  },
+  "AIAcc": {
+    "qid": "QID324",
+    "qname": "AIAcc",
+    "question": "For the AI tools you use as part of your development workflow, what are the MOST important benefits you are hoping to achieve? Please check all that apply.",
+    "datasets": {
+      "AIAcc": {
+        "name": "All Respondents",
+        "total_respondents": 38594,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Increase productivity",
+            "frequency": 32509,
+            "percent": 0.3281
+          },
+          {
+            "response": "Speed up learning",
+            "frequency": 24938,
+            "percent": 0.2517
+          },
+          {
+            "response": "Greater efficiency",
+            "frequency": 24739,
+            "percent": 0.2496
+          },
+          {
+            "response": "Improve accuracy in coding",
+            "frequency": 13189,
+            "percent": 0.1331
+          },
+          {
+            "response": "Improve collaboration",
+            "frequency": 3721,
+            "percent": 0.0375
+          }
+        ]
+      }
+    }
+  },
+  "AIBen": {
+    "qid": "QID316",
+    "qname": "AIBen",
+    "question": "How much do you trust the accuracy of the output from AI tools as part of your development workflow?",
+    "datasets": {
+      "AIBen": {
+        "name": "All Respondents",
+        "total_respondents": 39042,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Highly trust",
+            "frequency": 1751,
+            "percent": 0.0285
+          },
+          {
+            "response": "Somewhat trust",
+            "frequency": 24128,
+            "percent": 0.393
+          },
+          {
+            "response": "Neither trust nor distrust",
+            "frequency": 18837,
+            "percent": 0.3068
+          },
+          {
+            "response": "Somewhat distrust",
+            "frequency": 13330,
+            "percent": 0.2171
+          },
+          {
+            "response": "Highly distrust",
+            "frequency": 3350,
+            "percent": 0.0546
+          }
+        ]
+      }
+    }
+  },
+  "AITool": {
+    "qid": "QID319",
+    "qname": "AITool",
+    "question": "Which parts of your development workflow are you currently using AI tools for and which are you interested in using AI tools for over the next year?  Please select all that apply.",
+    "datasets": {
+      "AITool": {
+        "name": "Currently Using",
+        "total_respondents": 37726,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency": 31131,
+            "percent": 0.8255
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency": 18437,
+            "percent": 0.4889
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 12963,
+            "percent": 0.3437
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 11350,
+            "percent": 0.301
+          },
+          {
+            "response": "Testing code",
+            "frequency": 9000,
+            "percent": 0.2387
+          },
+          {
+            "response": "Project planning",
+            "frequency": 5097,
+            "percent": 0.1352
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 3806,
+            "percent": 0.1009
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 1788,
+            "percent": 0.0474
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency": 1377,
+            "percent": 0.0365
+          }
+        ]
+      },
+      "AITool_Interested": {
+        "name": "Interested in Using",
+        "total_respondents": 37726,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency": 8945,
+            "percent": 0.2372
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency": 15335,
+            "percent": 0.4066
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 18945,
+            "percent": 0.5024
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 18467,
+            "percent": 0.4897
+          },
+          {
+            "response": "Testing code",
+            "frequency": 20807,
+            "percent": 0.5517
+          },
+          {
+            "response": "Project planning",
+            "frequency": 14534,
+            "percent": 0.3854
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 18670,
+            "percent": 0.4951
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 17137,
+            "percent": 0.4544
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency": 11305,
+            "percent": 0.2998
+          }
+        ]
+      },
+      "AITool_Not": {
+        "name": "Not Interested in Using",
+        "total_respondents": 37726,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency": 1690,
+            "percent": 0.0448
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency": 2401,
+            "percent": 0.0637
+          },
+          {
+            "response": "Documenting code",
+            "frequency": 3042,
+            "percent": 0.0807
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency": 4936,
+            "percent": 0.1309
+          },
+          {
+            "response": "Testing code",
+            "frequency": 4316,
+            "percent": 0.1144
+          },
+          {
+            "response": "Project planning",
+            "frequency": 11227,
+            "percent": 0.2977
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency": 8654,
+            "percent": 0.2295
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency": 10682,
+            "percent": 0.2833
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency": 15606,
+            "percent": 0.4138
+          }
+        ]
+      }
+    }
+  },
+  "AINext": {
+    "qid": "QID320",
+    "qname": "AINext",
+    "question": "Thinking about how your workflow and process changes over time, how similar or different do you anticipate your workflow to be 1 year from now as a result of AI tools you are currently using?",
+    "datasets": {
+      "AINext": {
+        "name": "All Respondents",
+        "total_respondents": 35450,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "AINext"
+          },
+          "frequency2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "percent2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "frequency1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "percent1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "frequency4": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "percent4": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "frequency3": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "percent3": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "frequency5": {
+            "label": "Very similar",
+            "index": 5
+          },
+          "percent5": {
+            "label": "Very similar",
+            "index": 5
+          }
+        },
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency2": 6508,
+            "frequency1": 15889,
+            "frequency4": 3060,
+            "frequency3": 3919,
+            "frequency5": 1658,
+            "percent2": 0.2097,
+            "percent1": 0.512,
+            "percent4": 0.0986,
+            "percent3": 0.1263,
+            "percent5": 0.0534
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency2": 5857,
+            "frequency1": 7987,
+            "frequency4": 1668,
+            "frequency3": 1595,
+            "frequency5": 644,
+            "percent2": 0.33,
+            "percent1": 0.4499,
+            "percent4": 0.094,
+            "percent3": 0.0899,
+            "percent5": 0.0363
+          },
+          {
+            "response": "Documenting code",
+            "frequency2": 4688,
+            "frequency1": 5044,
+            "frequency4": 1179,
+            "frequency3": 1149,
+            "frequency5": 547,
+            "percent2": 0.3719,
+            "percent1": 0.4001,
+            "percent4": 0.0935,
+            "percent3": 0.0911,
+            "percent5": 0.0434
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency2": 3428,
+            "frequency1": 5300,
+            "frequency4": 1085,
+            "frequency3": 1063,
+            "frequency5": 400,
+            "percent2": 0.304,
+            "percent1": 0.47,
+            "percent4": 0.0962,
+            "percent3": 0.0943,
+            "percent5": 0.0355
+          },
+          {
+            "response": "Testing code",
+            "frequency2": 2995,
+            "frequency1": 3625,
+            "frequency4": 890,
+            "frequency3": 823,
+            "frequency5": 400,
+            "percent2": 0.343,
+            "percent1": 0.4151,
+            "percent4": 0.1019,
+            "percent3": 0.0942,
+            "percent5": 0.0458
+          },
+          {
+            "response": "Project planning",
+            "frequency2": 1390,
+            "frequency1": 2243,
+            "frequency4": 605,
+            "frequency3": 493,
+            "frequency5": 233,
+            "percent2": 0.28,
+            "percent1": 0.4519,
+            "percent4": 0.1219,
+            "percent3": 0.0993,
+            "percent5": 0.0469
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency2": 1144,
+            "frequency1": 1363,
+            "frequency4": 575,
+            "frequency3": 389,
+            "frequency5": 212,
+            "percent2": 0.3106,
+            "percent1": 0.3701,
+            "percent4": 0.1561,
+            "percent3": 0.1056,
+            "percent5": 0.0576
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency2": 534,
+            "frequency1": 590,
+            "frequency4": 289,
+            "frequency3": 183,
+            "frequency5": 150,
+            "percent2": 0.3058,
+            "percent1": 0.3379,
+            "percent4": 0.1655,
+            "percent3": 0.1048,
+            "percent5": 0.0859
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency2": 392,
+            "frequency1": 403,
+            "frequency4": 259,
+            "frequency3": 152,
+            "frequency5": 133,
+            "percent2": 0.2928,
+            "percent1": 0.301,
+            "percent4": 0.1934,
+            "percent3": 0.1135,
+            "percent5": 0.0993
+          }
+        ]
+      },
+      "AINext_prof": {
+        "name": "Professionals",
+        "total_respondents": 27119,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "AINext"
+          },
+          "frequency2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "percent2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "frequency1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "percent1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "frequency4": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "percent4": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "frequency3": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "percent3": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "frequency5": {
+            "label": "Very similar",
+            "index": 5
+          },
+          "percent5": {
+            "label": "Very similar",
+            "index": 5
+          }
+        },
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency2": 4559,
+            "frequency1": 12495,
+            "frequency4": 2357,
+            "frequency3": 3125,
+            "frequency5": 1361,
+            "percent2": 0.1908,
+            "percent1": 0.5229,
+            "percent4": 0.0986,
+            "percent3": 0.1308,
+            "percent5": 0.057
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency2": 4083,
+            "frequency1": 6068,
+            "frequency4": 1221,
+            "frequency3": 1218,
+            "frequency5": 479,
+            "percent2": 0.3124,
+            "percent1": 0.4643,
+            "percent4": 0.0934,
+            "percent3": 0.0932,
+            "percent5": 0.0367
+          },
+          {
+            "response": "Documenting code",
+            "frequency2": 3557,
+            "frequency1": 4012,
+            "frequency4": 878,
+            "frequency3": 926,
+            "frequency5": 428,
+            "percent2": 0.3629,
+            "percent1": 0.4093,
+            "percent4": 0.0896,
+            "percent3": 0.0945,
+            "percent5": 0.0437
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency2": 2394,
+            "frequency1": 3902,
+            "frequency4": 791,
+            "frequency3": 751,
+            "frequency5": 294,
+            "percent2": 0.2944,
+            "percent1": 0.4798,
+            "percent4": 0.0973,
+            "percent3": 0.0924,
+            "percent5": 0.0362
+          },
+          {
+            "response": "Testing code",
+            "frequency2": 2353,
+            "frequency1": 3031,
+            "frequency4": 681,
+            "frequency3": 663,
+            "frequency5": 299,
+            "percent2": 0.3349,
+            "percent1": 0.4313,
+            "percent4": 0.0969,
+            "percent3": 0.0944,
+            "percent5": 0.0426
+          },
+          {
+            "response": "Project planning",
+            "frequency2": 903,
+            "frequency1": 1544,
+            "frequency4": 402,
+            "frequency3": 346,
+            "frequency5": 154,
+            "percent2": 0.2696,
+            "percent1": 0.461,
+            "percent4": 0.12,
+            "percent3": 0.1033,
+            "percent5": 0.046
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency2": 797,
+            "frequency1": 964,
+            "frequency4": 391,
+            "frequency3": 280,
+            "frequency5": 141,
+            "percent2": 0.3098,
+            "percent1": 0.3747,
+            "percent4": 0.152,
+            "percent3": 0.1088,
+            "percent5": 0.0548
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency2": 384,
+            "frequency1": 465,
+            "frequency4": 204,
+            "frequency3": 132,
+            "frequency5": 107,
+            "percent2": 0.2972,
+            "percent1": 0.3599,
+            "percent4": 0.1579,
+            "percent3": 0.1022,
+            "percent5": 0.0828
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency2": 287,
+            "frequency1": 309,
+            "frequency4": 187,
+            "frequency3": 110,
+            "frequency5": 90,
+            "percent2": 0.292,
+            "percent1": 0.3143,
+            "percent4": 0.1902,
+            "percent3": 0.1119,
+            "percent5": 0.0916
+          }
+        ]
+      },
+      "AINext_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 2395,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "AINext"
+          },
+          "frequency2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "percent2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "frequency1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "percent1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "frequency3": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "percent3": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "frequency4": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "percent4": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "frequency5": {
+            "label": "Very similar",
+            "index": 5
+          },
+          "percent5": {
+            "label": "Very similar",
+            "index": 5
+          }
+        },
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency2": 591,
+            "frequency1": 895,
+            "frequency3": 203,
+            "frequency4": 215,
+            "frequency5": 66,
+            "percent2": 0.3,
+            "percent1": 0.4543,
+            "percent3": 0.103,
+            "percent4": 0.1091,
+            "percent5": 0.0335
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency2": 557,
+            "frequency1": 585,
+            "frequency3": 134,
+            "frequency4": 111,
+            "frequency5": 50,
+            "percent2": 0.3876,
+            "percent1": 0.4071,
+            "percent3": 0.0932,
+            "percent4": 0.0772,
+            "percent5": 0.0348
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency2": 355,
+            "frequency1": 470,
+            "frequency3": 114,
+            "frequency4": 111,
+            "frequency5": 26,
+            "percent2": 0.3299,
+            "percent1": 0.4368,
+            "percent3": 0.1059,
+            "percent4": 0.1032,
+            "percent5": 0.0242
+          },
+          {
+            "response": "Documenting code",
+            "frequency2": 317,
+            "frequency1": 268,
+            "frequency3": 86,
+            "frequency4": 61,
+            "frequency5": 29,
+            "percent2": 0.4166,
+            "percent1": 0.3522,
+            "percent3": 0.113,
+            "percent4": 0.0802,
+            "percent5": 0.0381
+          },
+          {
+            "response": "Testing code",
+            "frequency2": 203,
+            "frequency1": 173,
+            "frequency3": 77,
+            "frequency4": 59,
+            "frequency5": 36,
+            "percent2": 0.3704,
+            "percent1": 0.3157,
+            "percent3": 0.1405,
+            "percent4": 0.1077,
+            "percent5": 0.0657
+          },
+          {
+            "response": "Project planning",
+            "frequency2": 177,
+            "frequency1": 237,
+            "frequency3": 81,
+            "frequency4": 49,
+            "frequency5": 20,
+            "percent2": 0.3138,
+            "percent1": 0.4202,
+            "percent3": 0.1436,
+            "percent4": 0.0869,
+            "percent5": 0.0355
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency2": 155,
+            "frequency1": 146,
+            "frequency3": 61,
+            "frequency4": 32,
+            "frequency5": 26,
+            "percent2": 0.369,
+            "percent1": 0.3476,
+            "percent3": 0.1452,
+            "percent4": 0.0762,
+            "percent5": 0.0619
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency2": 63,
+            "frequency1": 37,
+            "frequency3": 26,
+            "frequency4": 21,
+            "frequency5": 15,
+            "percent2": 0.3889,
+            "percent1": 0.2284,
+            "percent3": 0.1605,
+            "percent4": 0.1296,
+            "percent5": 0.0926
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency2": 41,
+            "frequency1": 26,
+            "frequency3": 29,
+            "frequency4": 18,
+            "frequency5": 15,
+            "percent2": 0.3178,
+            "percent1": 0.2016,
+            "percent3": 0.2248,
+            "percent4": 0.1395,
+            "percent5": 0.1163
+          }
+        ]
+      },
+      "AINext_other": {
+        "name": "Other Coders",
+        "total_respondents": 1944,
+        "plot_type": "stacked_bar",
+        "plot_metadata": {
+          "response": {
+            "label": "AINext"
+          },
+          "frequency2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "percent2": {
+            "label": "Very different",
+            "index": 1
+          },
+          "frequency1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "percent1": {
+            "label": "Somewhat different",
+            "index": 2
+          },
+          "frequency3": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "percent3": {
+            "label": "Neither different nor similar",
+            "index": 3
+          },
+          "frequency4": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "percent4": {
+            "label": "Somewhat similar",
+            "index": 4
+          },
+          "frequency5": {
+            "label": "Very similar",
+            "index": 5
+          },
+          "percent5": {
+            "label": "Very similar",
+            "index": 5
+          }
+        },
+        "data": [
+          {
+            "response": "Writing code",
+            "frequency2": 454,
+            "frequency1": 814,
+            "frequency3": 145,
+            "frequency4": 185,
+            "frequency5": 83,
+            "percent2": 0.2701,
+            "percent1": 0.4842,
+            "percent3": 0.0863,
+            "percent4": 0.1101,
+            "percent5": 0.0494
+          },
+          {
+            "response": "Debugging and getting help",
+            "frequency2": 406,
+            "frequency1": 434,
+            "frequency3": 89,
+            "frequency4": 94,
+            "frequency5": 37,
+            "percent2": 0.383,
+            "percent1": 0.4094,
+            "percent3": 0.084,
+            "percent4": 0.0887,
+            "percent5": 0.0349
+          },
+          {
+            "response": "Documenting code",
+            "frequency2": 262,
+            "frequency1": 250,
+            "frequency3": 65,
+            "frequency4": 50,
+            "frequency5": 29,
+            "percent2": 0.3994,
+            "percent1": 0.3811,
+            "percent3": 0.0991,
+            "percent4": 0.0762,
+            "percent5": 0.0442
+          },
+          {
+            "response": "Learning about a codebase",
+            "frequency2": 210,
+            "frequency1": 305,
+            "frequency3": 54,
+            "frequency4": 60,
+            "frequency5": 30,
+            "percent2": 0.3187,
+            "percent1": 0.4628,
+            "percent3": 0.0819,
+            "percent4": 0.091,
+            "percent5": 0.0455
+          },
+          {
+            "response": "Testing code",
+            "frequency2": 144,
+            "frequency1": 143,
+            "frequency3": 45,
+            "frequency4": 32,
+            "frequency5": 25,
+            "percent2": 0.3702,
+            "percent1": 0.3676,
+            "percent3": 0.1157,
+            "percent4": 0.0823,
+            "percent5": 0.0643
+          },
+          {
+            "response": "Project planning",
+            "frequency2": 101,
+            "frequency1": 160,
+            "frequency3": 38,
+            "frequency4": 29,
+            "frequency5": 21,
+            "percent2": 0.2894,
+            "percent1": 0.4585,
+            "percent3": 0.1089,
+            "percent4": 0.0831,
+            "percent5": 0.0602
+          },
+          {
+            "response": "Committing and reviewing code",
+            "frequency2": 62,
+            "frequency1": 78,
+            "frequency3": 41,
+            "frequency4": 22,
+            "frequency5": 16,
+            "percent2": 0.2831,
+            "percent1": 0.3562,
+            "percent3": 0.1872,
+            "percent4": 0.1005,
+            "percent5": 0.0731
+          },
+          {
+            "response": "Deployment and monitoring",
+            "frequency2": 28,
+            "frequency1": 23,
+            "frequency3": 22,
+            "frequency4": 11,
+            "frequency5": 11,
+            "percent2": 0.2947,
+            "percent1": 0.2421,
+            "percent3": 0.2316,
+            "percent4": 0.1158,
+            "percent5": 0.1158
+          },
+          {
+            "response": "Collaborating with teammates ",
+            "frequency2": 24,
+            "frequency1": 19,
+            "frequency3": 12,
+            "frequency4": 9,
+            "frequency5": 12,
+            "percent2": 0.3158,
+            "percent1": 0.25,
+            "percent3": 0.1579,
+            "percent4": 0.1184,
+            "percent5": 0.1579
+          }
+        ]
+      }
+    }
+  }
+}

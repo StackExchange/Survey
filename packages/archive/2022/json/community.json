@@ -1,0 +1,369 @@
+{
+  "NEWSOSites": {
+    "qid": "QID266",
+    "qname": "NEWSOSites",
+    "question": "Which of the following Stack Overflow sites have you visited? Select all that apply.",
+    "datasets": {
+      "NEWSOSites": {
+        "name": "All Respondents",
+        "total_respondents": 38309,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 37652,
+            "percent": 0.9828
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 27159,
+            "percent": 0.7089
+          },
+          {
+            "response": "Collectives on Stack Overflow",
+            "frequency": 3922,
+            "percent": 0.1024
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 2353,
+            "percent": 0.0614
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 164,
+            "percent": 0.0043
+          }
+        ]
+      },
+      "NEWSOSites_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 28805,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Stack Overflow",
+            "frequency": 28432,
+            "percent": 0.9871
+          },
+          {
+            "response": "Stack Exchange",
+            "frequency": 20802,
+            "percent": 0.7222
+          },
+          {
+            "response": "Collectives on Stack Overflow",
+            "frequency": 2890,
+            "percent": 0.1003
+          },
+          {
+            "response": "Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+            "frequency": 1925,
+            "percent": 0.0668
+          },
+          {
+            "response": "I have never visited Stack Overflow or the Stack Exchange network",
+            "frequency": 57,
+            "percent": 0.002
+          }
+        ]
+      }
+    }
+  },
+  "SOVisitFreq": {
+    "qid": "QID100",
+    "qname": "SOVisitFreq",
+    "question": "How frequently would you say you visit Stack Overflow?",
+    "datasets": {
+      "SOVisitFreq": {
+        "name": "All Respondents",
+        "total_respondents": 38177,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 9362,
+            "percent": 0.2452
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 12077,
+            "percent": 0.3163
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 10018,
+            "percent": 0.2624
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 5586,
+            "percent": 0.1463
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 1134,
+            "percent": 0.0297
+          }
+        ]
+      },
+      "SOVisitFreq_us": {
+        "name": "United States",
+        "total_respondents": 6762,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 1376,
+            "percent": 0.2035
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 1884,
+            "percent": 0.2786
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 2047,
+            "percent": 0.3027
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 1190,
+            "percent": 0.176
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 265,
+            "percent": 0.0392
+          }
+        ]
+      }
+    }
+  },
+  "SOAccount": {
+    "qid": "QID101",
+    "qname": "SOAccount",
+    "question": "Do you have a Stack Overflow account?",
+    "datasets": {
+      "SOAccount": {
+        "name": "All Respondents",
+        "total_respondents": 38409,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 31878,
+            "percent": 0.83
+          },
+          {
+            "response": "No",
+            "frequency": 4558,
+            "percent": 0.1187
+          },
+          {
+            "response": "Not sure/can't remember",
+            "frequency": 1973,
+            "percent": 0.0514
+          }
+        ]
+      }
+    }
+  },
+  "SOPartFreq": {
+    "qid": "QID102",
+    "qname": "SOPartFreq",
+    "question": "How frequently would you say you participate in Q&amp;A on Stack Overflow? By participate we mean ask, answer, vote for, or comment on questions.",
+    "datasets": {
+      "SOPartFreq": {
+        "name": "All Respondents",
+        "total_respondents": 31746,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 765,
+            "percent": 0.0241
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 1355,
+            "percent": 0.0427
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 2890,
+            "percent": 0.091
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 6273,
+            "percent": 0.1976
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 13728,
+            "percent": 0.4324
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 6735,
+            "percent": 0.2122
+          }
+        ]
+      },
+      "SOPartFreq_us": {
+        "name": "United States",
+        "total_respondents": 5282,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 163,
+            "percent": 0.0309
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 205,
+            "percent": 0.0388
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 407,
+            "percent": 0.0771
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 1002,
+            "percent": 0.1897
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 2482,
+            "percent": 0.4699
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 1023,
+            "percent": 0.1937
+          }
+        ]
+      }
+    }
+  },
+  "SOComm": {
+    "qid": "QID106",
+    "qname": "SOComm",
+    "question": "Do you consider yourself a member of the Stack Overflow community?",
+    "datasets": {
+      "SOComm": {
+        "name": "All Respondents",
+        "total_respondents": 38325,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, somewhat",
+            "frequency": 10668,
+            "percent": 0.2784
+          },
+          {
+            "response": "Yes, definitely",
+            "frequency": 6393,
+            "percent": 0.1668
+          },
+          {
+            "response": "Neutral",
+            "frequency": 7496,
+            "percent": 0.1956
+          },
+          {
+            "response": "No, not really",
+            "frequency": 9552,
+            "percent": 0.2492
+          },
+          {
+            "response": "No, not at all",
+            "frequency": 3642,
+            "percent": 0.095
+          },
+          {
+            "response": "Not sure",
+            "frequency": 574,
+            "percent": 0.015
+          }
+        ]
+      },
+      "SOComm_gender": {
+        "name": "By Gender",
+        "total_respondents": 37075,
+        "plot_type": "bar",
+        "plot_subtext": "Percent who consider themselves definitely or somewhat part of the Stack Overflow community out of all respondents.",
+        "data": [
+          {
+            "response": "Man",
+            "frequency": 15898,
+            "percent": 0.4541
+          },
+          {
+            "response": "Woman",
+            "frequency": 612,
+            "percent": 0.3602
+          },
+          {
+            "response": "Non-binary, genderqueer, or gender non-conforming",
+            "frequency": 182,
+            "percent": 0.2848
+          }
+        ]
+      },
+      "SOComm_age": {
+        "name": "By Age",
+        "total_respondents": 37936,
+        "plot_type": "bar",
+        "plot_subtext": "Percent who consider themselves definitely or somewhat part of the Stack Overflow community.",
+        "data": [
+          {
+            "response": "Under 18 years old",
+            "frequency": 788,
+            "percent": 0.3731
+          },
+          {
+            "response": "18-24 years old",
+            "frequency": 3847,
+            "percent": 0.4102
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 7083,
+            "percent": 0.4617
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 3416,
+            "percent": 0.4717
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 1185,
+            "percent": 0.4746
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 388,
+            "percent": 0.4538
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 94,
+            "percent": 0.4196
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 106,
+            "percent": 0.3706
+          }
+        ]
+      }
+    }
+  }
+}

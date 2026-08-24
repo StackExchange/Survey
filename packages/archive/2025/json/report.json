@@ -1,0 +1,1121 @@
+{
+  "settings": {
+    "description": "The 2025 Developer Survey is the definitive report on the state of software development. In its fifteenth year, Stack Overflow received over 49,000+ responses from 177 countries across 62 questions focused on 314 different technologies, including new focus on AI agent tools, LLMs and community platforms. This annual Developer Survey provides a crucial snapshot into the needs of the global developer community, focusing on the tools and technologies they use or want to learn more about."
+  },
+  "chapters": [
+    {
+      "name": "Overview",
+      "description": "Welcome to the 2025 Developer Survey!",
+      "_id": "overview"
+    },
+    {
+      "name": "Developers",
+      "description": "What we know about the global community of developers. ",
+      "_id": "developers",
+      "sections": [
+        {
+          "chapter": "Developers",
+          "name": "Profile",
+          "_id": "profile",
+          "questions": [
+            {
+              "chapter": "Developers",
+              "section": "Profile",
+              "name": "Coding",
+              "description": "The Developer Survey is meant to explore insights for those that code. A majority of respondents (76%) are professional developers with an additional 15% that are aspirational or adjacent.",
+              "dataId": "MainBranch",
+              "highlight": false,
+              "_id": "coding",
+              "dataIdSlug": "main-branch"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Profile",
+              "name": "Age",
+              "description": "76% of the respondents in this survey are professional developers, and most (66%) professional developers are between 25 and 44.",
+              "dataId": "Age",
+              "highlight": false,
+              "_id": "age",
+              "dataIdSlug": "age"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Profile",
+              "name": "Country",
+              "description": "Ukraine and France swapped places this year compared to last, placing France in the top 5 list of responding countries.",
+              "dataId": "Country",
+              "highlight": true,
+              "highlightHeadline": "USA, Germany and India are top countries responding to this year's survey",
+              "_id": "country",
+              "dataIdSlug": "country"
+            }
+          ]
+        },
+        {
+          "chapter": "Developers",
+          "name": "Education & Experience",
+          "_id": "education-experience",
+          "questions": [
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "Educational attainment",
+              "description": "30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "dataId": "EdLevel",
+              "highlight": false,
+              "_id": "educational-attainment",
+              "dataIdSlug": "ed-level"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "Years coding",
+              "description": "35% of developers responding to the Developer Survey this year have been coding less than 10 years.",
+              "dataId": "YearsCode",
+              "highlight": true,
+              "highlightHeadline": "Most developers have been coding for 10+ years",
+              "_id": "years-coding",
+              "dataIdSlug": "years-code"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "Learn to code",
+              "description": "A significant 69% of developers have spent time in the last year learning new coding techniques or a new programming language.",
+              "dataId": "LearnCodeChoose",
+              "highlight": false,
+              "_id": "learn-to-code",
+              "dataIdSlug": "learn-code-choose"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "How did you learn to code?",
+              "description": "Technical documentation is the most used resource for learning, with nearly 68% of respondents using it in the past year.",
+              "dataId": "LearnCode",
+              "highlight": false,
+              "_id": "how-did-you-learn-to-code",
+              "dataIdSlug": "learn-code"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "Learn to code for AI",
+              "description": "Over 36% of respondents learned how to use AI-enabled tools for their job or to advance their career in the last year.",
+              "dataId": "LearnCodeAI",
+              "highlight": true,
+              "highlightHeadline": "More than one third of respondents use AI-enabled tools to learn AI this year",
+              "_id": "learn-to-code-for-ai",
+              "dataIdSlug": "learn-code-ai"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Education & Experience",
+              "name": "How did you learn to code for AI?",
+              "description": "AI-powered tools and applications are the most popular way to learn about AI, with over 52% of respondents using them.",
+              "dataId": "AILearnHow",
+              "highlight": false,
+              "_id": "how-did-you-learn-to-code-for-ai",
+              "dataIdSlug": "ai-learn-how"
+            }
+          ]
+        },
+        {
+          "chapter": "Developers",
+          "name": "Developer roles",
+          "_id": "developer-roles",
+          "questions": [
+            {
+              "chapter": "Developers",
+              "section": "Developer roles",
+              "name": "Role",
+              "description": "Architect is a new role we added to the survey this year and is the fourth most popular role for respondents.",
+              "dataId": "DevType",
+              "highlight": true,
+              "highlightHeadline": "Architect is the fourth top role for developers this year",
+              "highlightRows": "0,5",
+              "_id": "role",
+              "dataIdSlug": "dev-type"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Developer roles",
+              "name": "Work experience",
+              "description": "1 out of every 4 respondents have less than 5 years of work experience. For architects, 1 out of every 25 have less than 5 years of work experience.",
+              "dataId": "WorkExp",
+              "highlight": false,
+              "_id": "work-experience",
+              "dataIdSlug": "work-exp"
+            },
+            {
+              "chapter": "Developers",
+              "section": "Developer roles",
+              "name": "Industry",
+              "description": "Most respondents learning to code are in the software development or higher education industry, and almost all of them are using AI to learn.",
+              "dataId": "Industry",
+              "highlight": false,
+              "_id": "industry",
+              "dataIdSlug": "industry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Technology",
+      "description": "Each year we explore the tools and technologies developers are currently using and the ones they want to use. \n\nThis year, we included new questions about embedded technology tools and industry-sourced, community-vetted technology options.",
+      "_id": "technology",
+      "sections": [
+        {
+          "chapter": "Technology",
+          "name": "Most popular technologies",
+          "_id": "most-popular-technologies",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Programming, scripting, and markup languages",
+              "description": "After more than a decade of steady growth, Python's adoption has accelerated significantly. It saw a 7 percentage point increase from 2024 to 2025; this speaks to its ability to be the go-to language for AI, data science, and back-end development.",
+              "dataId": "Language",
+              "highlight": true,
+              "highlightHeadline": "Python adoption grew in 2025",
+              "highlightRows": "0,5",
+              "_id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "language"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Databases",
+              "description": "The significant growth in usage for Redis (+8%) highlights its growing importance. As applications become more complex, the need for high-speed, in-memory caching and data structures has made Redis an essential part of the modern tech stack.",
+              "dataId": "Database",
+              "highlight": false,
+              "_id": "databases",
+              "dataIdSlug": "database"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Cloud development",
+              "description": "Docker has moved from a popular tool to a near-universal one. After years of growth, it experienced a +17 point jump in usage from 2024 to 2025, the largest single-year increase of any technology surveyed. This is partially due to consolidating some technology sectors in this year's survey.",
+              "dataId": "Platform",
+              "highlight": false,
+              "_id": "cloud-development",
+              "dataIdSlug": "platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Web frameworks and technologies ",
+              "description": "The +5 point increase for FastAPI is one of the most significant shifts in the web framework space. This signals a strong trend towards using Python for building performant APIs and reflects the overall strength of the Python ecosystem.",
+              "dataId": "Webframe",
+              "highlight": false,
+              "_id": "web-frameworks-and-technologies",
+              "dataIdSlug": "webframe"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Dev IDEs",
+              "description": "Subscription-based, AI-enabled IDEs weren't able to topple the dominance of Visual Studio and Visual Studio Code this year. Both maintained their top spots for the fourth  year while relying on extensions as optional, paid AI services.",
+              "dataId": "DevEnvs",
+              "highlight": true,
+              "highlightHeadline": "Visual Studio and Visual Studio Code both maintained their top spots for developer environments used for the fourth year",
+              "highlightRows": "0,5",
+              "_id": "dev-id-es",
+              "dataIdSlug": "dev-envs"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Stack Overflow tags",
+              "description": "Our new category for technology this year showcases some recently added (last 3 years) tags on Stack Overflow that have grown more than others in their weight class. AI tech tops the list with Google Gemini and large language models.",
+              "dataId": "SOTags",
+              "highlight": false,
+              "_id": "stack-overflow-tags",
+              "dataIdSlug": "so-tags"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Community platforms",
+              "description": "Respondents learning to code use Youtube for community more than professional developers (70% vs. 60%).",
+              "dataId": "CommPlatform",
+              "highlight": true,
+              "highlightHeadline": "Respondents learning to code use YouTube for community more than professional developers",
+              "highlightRows": "0,5",
+              "_id": "community-platforms",
+              "dataIdSlug": "comm-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Large language models",
+              "description": "OpenAI's GPT models top the large language model list with 82% of developers indicating they used them for development work in the past year. Anthropic's Claude Sonnet models are used more by professional developers (45%) than by those learning to code (30%).",
+              "dataId": "AIModels",
+              "highlight": true,
+              "highlightHeadline": "A vast majority of developers indicating they worked with OpenAI GPT models in the past year",
+              "highlightRows": "0,5",
+              "_id": "large-language-models",
+              "dataIdSlug": "ai-models"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Code documentation and collaboration tools",
+              "description": "Professional developers that use AI compared to all professional developers show a slight preference for Miro (17% vs. 16%) and Notion (19% vs. 17%) - could this be due to the AI integrations both tools have recently incorporated?",
+              "dataId": "OfficeStackAsync",
+              "highlight": false,
+              "_id": "code-documentation-and-collaboration-tools",
+              "dataIdSlug": "office-stack-async"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Computer operating systems",
+              "description": "We know developers prefer Android over iOS for personal use since we began measuring them both in 2023, and this year Android also surpasses Ubuntu for personal use (29% vs. 28%). ",
+              "dataId": "OpSys",
+              "highlight": false,
+              "_id": "computer-operating-systems",
+              "dataIdSlug": "op-sys"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Admired and Desired",
+          "description": "To better gauge hype versus reality, we created a visualization that shows the distance between the proportion of respondents who want to use a technology (“desired”) and the proportion of users that have used the same technology in the past year and want to continue using it (“admired”).",
+          "_id": "admired-and-desired",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Programming, scripting, and markup languages",
+              "description": "Rust is yet again the most admired programming language (72%), followed by Gleam (70%), Elixir (66%) and Zig (64%). Gleam is a new addition to the list, and for good reason - developers like it!",
+              "dataId": "DA_Language",
+              "highlight": false,
+              "_id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "da-language"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Databases",
+              "description": "What is it like to be the most desired and the most admired technology in your category? The answer lies with PostgreSQL, ranked highest for both since 2023!",
+              "dataId": "DA_Database",
+              "highlight": false,
+              "_id": "databases",
+              "dataIdSlug": "da-database"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Cloud development",
+              "description": "Rust's growth is directly tied to the success of its build tool and package manager, Cargo, which is the most admired (71%) cloud development and infrastructure tool this year.",
+              "dataId": "DA_Platform",
+              "highlight": true,
+              "highlightHeadline": "Cargo is the most admired cloud development and infrastructure tool this year",
+              "highlightRows": "9,14",
+              "_id": "cloud-development",
+              "dataIdSlug": "da-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Web frameworks and technologies ",
+              "description": "While its overall usage is still smaller than almost all other web frameworks in the survey, Phoenix's key story is in its developer satisfaction. It is the most admired web framework in 2025 (79%), and has been since 2023. ",
+              "dataId": "DA_Webframe",
+              "highlight": false,
+              "_id": "web-frameworks-and-technologies",
+              "dataIdSlug": "da-webframe"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Dev IDEs",
+              "description": "Not only is Visual Studio Code the most used IDE for five years in a row, it is also consistently ranked the most desired IDE. Developers that haven't used VS Code overwhelmingly want to use it in the next year.",
+              "dataId": "DA_DevEnvs",
+              "highlight": false,
+              "_id": "dev-id-es",
+              "dataIdSlug": "da-dev-envs"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Stack Overflow tags",
+              "description": "uv is a Python package manager built in Rust; need we say more about why this is the most admired (74%) SO tag technology this year?",
+              "dataId": "DA_SOTags",
+              "highlight": true,
+              "highlightHeadline": "uv is the most admired SO tag technology this year",
+              "highlightRows": "5,10",
+              "_id": "stack-overflow-tags",
+              "dataIdSlug": "da-so-tags"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Community platforms",
+              "description": "You like us, you really like us! Stack Overflow is the most used community platform this year but is also the most desirable community platform this year. GitHub is also making the top of the list this year as most admired community platform.",
+              "dataId": "DA_CommPlatform",
+              "highlight": false,
+              "_id": "community-platforms",
+              "dataIdSlug": "da-comm-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Large language models",
+              "description": "Anthropic's Claude Sonnet is the most admired LLM this year (behind Gemini Reasoning) and second most desired (33%).",
+              "dataId": "DA_AIModels",
+              "highlight": true,
+              "highlightHeadline": "Claude Sonnet is the most admired AI model",
+              "highlightRows": "0,5",
+              "_id": "large-language-models",
+              "dataIdSlug": "da-ai-models"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Code documentation and collaboration tools",
+              "description": "Jira steps down as the most desired tool for code documentation and collaboration and the new top desired tool is GitHub. Markdown continues to be the most admired sync tool for the third year.",
+              "dataId": "DA_OfficeStackAsync",
+              "highlight": true,
+              "highlightHeadline": "GitHub is a more desirable collaboration tool than Jira this year",
+              "highlightRows": "0,5",
+              "_id": "code-documentation-and-collaboration-tools",
+              "dataIdSlug": "da-office-stack-async"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Worked with vs. want to work with",
+          "description": "Knowing that developers want to use something is only half of the story.  These charts show the technologies developers want to use next year aggregated by the technologies they already use.  The sankey chart highlights the strongest relationships between what developers use and want to use, with technologies used justified left and technologies wanted justified right.",
+          "_id": "worked-with-vs-want-to-work-with",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Programming, scripting, and markup languages",
+              "description": "Python developers aspire to use Rust and Go as the path to high-performance systems programming.",
+              "dataId": "WW_Language",
+              "highlight": false,
+              "_id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "ww-language"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Databases",
+              "description": "Developers using MongoDB or Redis show a strong desire to also work with PostgreSQL. They see the value in adding relational database skills to their toolkit.",
+              "dataId": "WW_Database",
+              "highlight": false,
+              "_id": "databases",
+              "dataIdSlug": "ww-database"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Cloud development",
+              "description": "Users of all major cloud platforms (AWS, Azure, Google Cloud) show a very strong desire to learn both Docker, highlighting that containerization skills are essential for modern cloud development.",
+              "dataId": "WW_Platform",
+              "highlight": false,
+              "_id": "cloud-development",
+              "dataIdSlug": "ww-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Web frameworks and technologies ",
+              "description": "Node.js users want to use React, Next.js and Vue.js. This indicates developers wishing to skill up into a role that can handle more aspects of the codebase.",
+              "dataId": "WW_Webframe",
+              "highlight": false,
+              "_id": "web-frameworks-and-technologies",
+              "dataIdSlug": "ww-webframe"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Dev IDEs",
+              "description": "The newer AI-enabled editors like Claude Code and Cursor are attracting interest from developers already using the industry standard IDE, VS Code.",
+              "dataId": "WW_DevEnvs",
+              "highlight": false,
+              "_id": "dev-id-es",
+              "dataIdSlug": "ww-dev-envs"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Stack Overflow tags",
+              "description": "Most professional developers who indicated they used Google Gemini last year, are interested in other AI-oriented subjects like \"Large Language Model\" or \"RAG\", and  tools like \"Ollama\".\n\nThis pattern holds true for both Professional Developers and those Learning to Code, showing that developers at all levels are actively exploring the rapidly evolving AI landscape rather than committing to a single tool or platform.",
+              "dataId": "WW_SOTags",
+              "highlight": true,
+              "highlightHeadline": "Developers at all levels are exploring the evolving AI landscape through Stack Overflow",
+              "_id": "stack-overflow-tags",
+              "dataIdSlug": "ww-so-tags"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Community platforms",
+              "description": "Developers who use community platforms also express a strong desire to use many other communities in the coming year. Most developers that have worked with other community platforms in the past year want to work with GitHub public repos.  This shows the strong connection developers have with open source technologies and the abundance of technical documentation available on GitHub.",
+              "dataId": "WW_CommPlatform",
+              "highlight": false,
+              "_id": "community-platforms",
+              "dataIdSlug": "ww-comm-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Large language models",
+              "description": "While developers have explored many large language models, OpenAI's GPT models function as the ecosystem's center of gravity. OpenAI GPT users and other LLM users show significant interest in trying Claude Sonnet and Gemini Reasoning models",
+              "dataId": "WW_AIModels",
+              "highlight": false,
+              "_id": "large-language-models",
+              "dataIdSlug": "ww-ai-models"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Worked with vs. want to work with",
+              "name": "Code documentation and collaboration tools",
+              "description": "The data shows the demand to continue using code documentation tools they are currently using is higher for tools that developers adopt for personal knowledge management and documentation, most notably Obsidian, which a significant proportion of Jira and Confluence users that want to use next year.",
+              "dataId": "WW_OfficeStackAsync",
+              "highlight": false,
+              "_id": "code-documentation-and-collaboration-tools",
+              "dataIdSlug": "ww-office-stack-async"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "description": "In this section we gain insight into the real sentiments behind the surge in AI popularity. Is it making a real impact in the way developers work or is it all hype?",
+      "_id": "ai",
+      "sections": [
+        {
+          "chapter": "AI",
+          "name": "Sentiment and usage",
+          "_id": "sentiment-and-usage",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "Sentiment and usage",
+              "name": "AI tools in the development process",
+              "description": "84% of respondents are using or planning to use AI tools in their development process, an increase over last year (76%). This year we can see 51% of professional developers use AI tools daily.",
+              "dataId": "AISelect",
+              "highlight": true,
+              "highlightHeadline": "84% of respondents are using AI tools this year",
+              "_id": "ai-tools-in-the-development-process",
+              "dataIdSlug": "ai-select"
+            },
+            {
+              "chapter": "AI",
+              "section": "Sentiment and usage",
+              "name": "AI tool sentiment",
+              "description": "Conversely to usage, positive sentiment for AI tools has decreased in 2025: 70%+ in 2023 and 2024 to just 60% this year. Professionals show a higher overall favorable sentiment (61%) than those learning to code (53%). ",
+              "dataId": "AISent",
+              "highlight": true,
+              "highlightHeadline": "Positive sentiment to AI tools has decreased in 2025",
+              "_id": "ai-tool-sentiment",
+              "dataIdSlug": "ai-sent"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "Developer tools",
+          "_id": "developer-tools",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "Accuracy of AI tools",
+              "description": "More developers actively distrust the accuracy of AI tools (46%) than trust it (33%), and only a fraction (3%) report \"highly trusting\" the output. Experienced developers are the most cautious, with the lowest \"highly trust\" rate (2.6%) and the highest \"highly distrust\" rate (20%), indicating a widespread need for human verification for those in roles with accountability.",
+              "dataId": "AIAcc",
+              "highlight": true,
+              "highlightHeadline": "More developers actively distrust the accuracy of AI tools than trust it",
+              "_id": "accuracy-of-ai-tools",
+              "dataIdSlug": "ai-acc"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "AI tools' ability to handle complex tasks",
+              "description": "In 2024, 35% of professional developers already believed that AI tools struggled with complex tasks. This year, that number has dropped to 29% among professional developers and is consistent amongst experience levels. Complex tasks carry too much risk to spend extra time proving out the efficacy of AI tools.",
+              "dataId": "AIComplex",
+              "highlight": false,
+              "_id": "ai-tools-ability-to-handle-complex-tasks",
+              "dataIdSlug": "ai-complex"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "AI in the development workflow",
+              "description": "Developers show the most resistance to using AI for high-responsibility, systemic tasks like Deployment and monitoring (76% don't plan to) and Project planning (69% don't plan to).",
+              "dataId": "AITool",
+              "highlight": false,
+              "_id": "ai-in-the-development-workflow",
+              "dataIdSlug": "ai-tool"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "AI workflow and tool satisfaction",
+              "description": "Respondents who said they are currently using mostly AI tools to complete tasks in the development workflow are highly satisfied with and frequently using AI to search for answers or learn new concepts; respondents plan to mostly use AI in the future for documentation and testing tasks and are slightly less satisfied with the tools they are using now.",
+              "dataId": "AI_Workflow_Sent",
+              "highlight": false,
+              "_id": "ai-workflow-and-tool-satisfaction",
+              "dataIdSlug": "ai-workflow-sent"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "AI tool frustrations",
+              "description": "The biggest single frustration, cited by 66% of developers, is dealing with \"AI solutions that are almost right, but not quite,\" which often leads to the second-biggest frustration: \"Debugging AI-generated code is more time-consuming\" (45%)",
+              "dataId": "AIFrustration",
+              "highlight": true,
+              "highlightHeadline": "66% of developers are frustrated with AI solutions that are almost right",
+              "_id": "ai-tool-frustrations",
+              "dataIdSlug": "ai-frustration"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "AI and humans in the future",
+              "description": "In a future with advanced AI, the #1 reason developers would still ask a person for help is \"When I don’t trust AI’s answers\" (75%). This positions human developers as the ultimate arbiters of quality and correctness.",
+              "dataId": "AIHuman",
+              "highlight": false,
+              "_id": "ai-and-humans-in-the-future",
+              "dataIdSlug": "ai-human"
+            },
+            {
+              "chapter": "AI",
+              "section": "Developer tools",
+              "name": "Vibe coding",
+              "description": "Most respondents are not vibe coding (72%), and an additional 5% are emphatic it not being part of their development workflow.",
+              "dataId": "AIExplain",
+              "highlight": false,
+              "_id": "vibe-coding",
+              "dataIdSlug": "ai-explain"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "AI Agents",
+          "_id": "ai-agents",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI agents",
+              "description": "AI agents are not yet mainstream. A majority of developers (52%) either don't use agents or stick to simpler AI tools, and a significant portion (38%) have no plans to adopt them.",
+              "dataId": "AIAgents",
+              "highlight": true,
+              "highlightHeadline": "A majority of developers don't use AI agents",
+              "_id": "ai-agents",
+              "dataIdSlug": "ai-agents"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI agents affect on work productivity",
+              "description": "52% of developers agree that AI tools and/or AI agents have had a positive effect on their productivity.",
+              "dataId": "AIAgentChange",
+              "highlight": false,
+              "_id": "ai-agents-affect-on-work-productivity",
+              "dataIdSlug": "ai-agent-change"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI agent uses at work",
+              "description": "If you happen to be using AI agents at work and you are a software developer, chances are high that you are using agents for software development (84%).",
+              "dataId": "AIAgent_Uses",
+              "highlight": false,
+              "_id": "ai-agent-uses-at-work",
+              "dataIdSlug": "ai-agent-uses"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI agent uses for general purposes",
+              "description": "TL;DR: Agents used outside of work are mostly used for language processing tasks (49%).",
+              "dataId": "AgentUsesGeneral",
+              "highlight": false,
+              "_id": "ai-agent-uses-for-general-purposes",
+              "dataIdSlug": "agent-uses-general"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "Impacts of AI agents",
+              "description": "The most recognized impacts are personal efficiency gains, and not team-wide impact. Approximately 70% of agent users agree that agents have reduced the time spent on specific development tasks, and 69% agree they have increased productivity. Only 17% of users agree that agents have improved collaboration within their team, making it the lowest-rated impact by a wide margin.",
+              "dataId": "AIAgentImpact",
+              "highlight": true,
+              "highlightHeadline": "69% of AI agent users agree AI agents have increased productivity",
+              "_id": "impacts-of-ai-agents",
+              "dataIdSlug": "ai-agent-impact"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "Challenges with AI agents",
+              "description": "Is it a learning curve, or is the tech not there yet? 87% of all respondents agree they are concerned about the accuracy, and 81% agree they have concerns about the security and privacy of data.",
+              "dataId": "AIAgentChallenges",
+              "highlight": false,
+              "_id": "challenges-with-ai-agents",
+              "dataIdSlug": "ai-agent-challenges"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI Agent data storage tools",
+              "description": "When it comes to data management for agents, traditional, developer-friendly tools like Redis (43%) are being repurposed for AI, alongside emerging vector-native databases like ChromaDB (20%) and pgvector (18%).",
+              "dataId": "AIAgentKnowledge",
+              "highlight": false,
+              "_id": "ai-agent-data-storage-tools",
+              "dataIdSlug": "ai-agent-knowledge"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI Agent orchestration tools",
+              "description": "The agent orchestration space is currently led by open-source tools. Among developers building agents, Ollama (51%) and LangChain (33%) are the most-used frameworks.",
+              "dataId": "AIAgentOrchestration",
+              "highlight": false,
+              "_id": "ai-agent-orchestration-tools",
+              "dataIdSlug": "ai-agent-orchestration"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI Agent observability and security",
+              "description": "Developers are primarily adapting their existing, traditional monitoring tools for this new task, rather than adopting new, AI-native solutions. The most used tools for AI agent observability are staples of the DevOps and application monitoring world: Grafana + Prometheus are used by 43% of agent developers, and Sentry is used by 32%.",
+              "dataId": "AIAgentObserveSecure",
+              "highlight": false,
+              "_id": "ai-agent-observability-and-security",
+              "dataIdSlug": "ai-agent-observe-secure"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI Agents",
+              "name": "AI Agent out-of-the-box tools",
+              "description": "ChatGPT (82%) and GitHub Copilot (68%) are the clear market leaders, serving as the primary entry point for most developers using out-of-the-box AI assistance.",
+              "dataId": "AIAgentExternal",
+              "highlight": false,
+              "_id": "ai-agent-out-of-the-box-tools",
+              "dataIdSlug": "ai-agent-external"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Work",
+      "description": "Developers tell us about workplace trends and offer some transparency about salary for different roles and experience levels.",
+      "_id": "work",
+      "sections": [
+        {
+          "chapter": "Work",
+          "name": "Employment",
+          "_id": "employment",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Employment",
+              "name": "Employment status",
+              "description": "It's difficult to say whether one is connected to the other, but developers who fill out the Developer Survey are 70% likely to be employed. The employment rate has remained a consistent result in Stack Overflow surveys in recent years.\nThis year we show you geographic differences among the top 5 responding countries: Germany (76%) and the UK (75%) show the highest rates of formal employment. India has a significantly larger student population (18%) among its respondents compared to the US (6%), Germany (11%), and the UK (5%).",
+              "dataId": "Employment",
+              "highlight": false,
+              "_id": "employment-status",
+              "dataIdSlug": "employment"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employment",
+              "name": "Employment additional status",
+              "description": "Developers self-employed or not working currently engage in the same amount of volunteer work. Both groups indicate 12% do volunteer work in addition to their employment status.",
+              "dataId": "EmploymentAddl",
+              "highlight": false,
+              "_id": "employment-additional-status",
+              "dataIdSlug": "employment-addl"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employment",
+              "name": "Work environment",
+              "description": "Of the top-reporting countries in this year's survey, the US has the highest number of developers working remotely (45%). 21% of developers in Germany say the choice to go into the office or work remotely is completely up to them.",
+              "dataId": "RemoteWork",
+              "highlight": true,
+              "highlightHeadline": "Nearly one third of developers are working remote this year",
+              "_id": "work-environment",
+              "dataIdSlug": "remote-work"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employment",
+              "name": "IC or PM",
+              "description": "There are a few more managers in this year's results: 15% indicate being a people manager this year compared to 13% last year, most likely reflecting the growing number of more experienced respondents in this year's survey.",
+              "dataId": "ICorPM",
+              "highlight": false,
+              "_id": "ic-or-pm",
+              "dataIdSlug": "i-cor-pm"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Company info",
+          "_id": "company-info",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Company info",
+              "name": "Company size",
+              "description": "Of respondents who identicated they were currently employed, 57% said they work for companies with fewer than 500 employees.",
+              "dataId": "OrgSize",
+              "highlight": false,
+              "_id": "company-size",
+              "dataIdSlug": "org-size"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Salary",
+          "_id": "salary",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Salary",
+              "name": "Salary by developer type",
+              "description": "Senior Executives ($139k), Engineering Managers ($130k), and Financial Analysts ($104k) have the highest median annual salaries globally.\n\nThe salary gap between the US and other countries is wide for higher paid roles. The median salary for an Engineering Manager in the US is $200,000, compared to $118,000 in Germany and just $52,000 in India.",
+              "dataId": "CompTotal",
+              "highlight": false,
+              "_id": "salary-by-developer-type",
+              "dataIdSlug": "comp-total"
+            },
+            {
+              "chapter": "Work",
+              "section": "Salary",
+              "name": "Salary and experience by developer type",
+              "description": "Despite having similar levels of experience (20 years, on average), Senior Executives and Engineering Managers report higher median salaries ($130k+) than Founders, Architects, or Product Managers ($92K - 104K).",
+              "dataId": "CompTotal_YearsCodePro_DevType",
+              "highlight": false,
+              "_id": "salary-and-experience-by-developer-type",
+              "dataIdSlug": "comp-total-years-code-pro-dev-type"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Technology purchases",
+          "_id": "technology-purchases",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Technology purchases",
+              "name": "Influence on technology purchases",
+              "description": "Nearly half (48%) of developers either endorsed the use of, or influenced the purchase of, new technology in their organizations last year. Twenty percent of those respondents said they influenced the purchase of a substantial addition to their company’s tech stack.",
+              "dataId": "PurchaseInfluence",
+              "highlight": false,
+              "highlightHeadline": "",
+              "highlightRows": "",
+              "math": "100-33.44=66",
+              "_id": "influence-on-technology-purchases",
+              "dataIdSlug": "purchase-influence"
+            },
+            {
+              "chapter": "Work",
+              "section": "Technology purchases",
+              "name": "What makes you a fan of specific tech tools",
+              "description": "This focus on fundamentals is consistent. For work projects, developers prioritize APIs (Rank 1) and quality (Rank 2). For personal projects, cost management (Rank 4) becomes more important. Notably, AI integration ranks second to last (Rank 9) in importance for both work and personal projects.\n\nThe 2024 survey also highlighted the importance of APIs, noting that 75% of developers were more likely to endorse a technology if it provided good API access.",
+              "dataId": "TechEndorse",
+              "highlight": false,
+              "_id": "what-makes-you-a-fan-of-specific-tech-tools",
+              "dataIdSlug": "tech-endorse"
+            },
+            {
+              "chapter": "Work",
+              "section": "Technology purchases",
+              "name": "How you lose interest in tech tools",
+              "description": "The reasons to reject a technology are nearly universal. The top three deal-breakers for all developers are security or privacy concerns (Rank 1), prohibitive pricing (Rank 2), and the availability of better alternatives (Rank 3). The lack of AI is the least important factor (Rank 9).",
+              "dataId": "TechOppose",
+              "highlight": true,
+              "highlightHeadline": "Privacy, pricing and better alternatives are top reasons developers turn their back on a technology",
+              "_id": "how-you-lose-interest-in-tech-tools",
+              "dataIdSlug": "tech-oppose"
+            },
+            {
+              "chapter": "Work",
+              "section": "Technology purchases",
+              "name": "Count of tools used to work",
+              "description": "Developers have many tools at work, but we asked them to quantify them this year: 54% of respondents report using 6 or more tools to do their job.",
+              "dataId": "ToolCountWork",
+              "highlight": false,
+              "_id": "count-of-tools-used-to-work",
+              "dataIdSlug": "tool-count-work"
+            },
+            {
+              "chapter": "Work",
+              "section": "Technology purchases",
+              "name": "Count of tools used to code outside of work",
+              "description": "For projects outside of work, developers typically are using 5 or less tools (65%).",
+              "dataId": "ToolCountPersonal",
+              "highlight": false,
+              "_id": "count-of-tools-used-to-code-outside-of-work",
+              "dataIdSlug": "tool-count-personal"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Job Satisfaction",
+          "_id": "job-satisfaction",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Job Satisfaction",
+              "name": "Looking for a new role",
+              "description": "46% of developers are not looking for a new role.",
+              "dataId": "NewRole",
+              "highlight": false,
+              "_id": "looking-for-a-new-role",
+              "dataIdSlug": "new-role"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job Satisfaction",
+              "name": "Job satisfaction",
+              "description": "More developers are happy at work this year (24% vs. 20% last year). This is likely related to that pay bump in the data for certain roles this year.",
+              "dataId": "JobSat",
+              "highlight": true,
+              "highlightHeadline": "One in four developers are happy at their current job",
+              "_id": "job-satisfaction",
+              "dataIdSlug": "job-sat"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job Satisfaction",
+              "name": "Ranked attributes contributing to or detracting from job satisfaction",
+              "description": "The most important factors for job satisfaction are autonomy/trust, competitive pay and solving real-world problems (all ranked in the top 3). Interpersonal factors such as liking your manager rank much lower (Rank 9).",
+              "dataId": "JobSatPoints",
+              "highlight": false,
+              "_id": "ranked-attributes-contributing-to-or-detracting-from-job-satisfaction",
+              "dataIdSlug": "job-sat-points"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job Satisfaction",
+              "name": "Is AI a threat to your job?",
+              "description": "Confidence is slipping among developers when it comes to the perceived threat of AI to their livelihood. 64% believe AI is not a threat to their job, a decrease from 68% last year.",
+              "dataId": "AIThreat",
+              "highlight": false,
+              "_id": "is-ai-a-threat-to-your-job",
+              "dataIdSlug": "ai-threat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stack Overflow",
+      "description": "Community is at the center of all that we do. Here we take a look at how people use Stack Overflow and how connected they feel to the community.",
+      "_id": "stack-overflow",
+      "sections": [
+        {
+          "chapter": "Stack Overflow",
+          "name": "Stack Overflow site use",
+          "_id": "stack-overflow-site-use",
+          "questions": [
+            {
+              "chapter": "Stack Overflow",
+              "section": "Stack Overflow site use",
+              "name": "Have an account on Stack Overflow?",
+              "description": "Stack Overflow is a foundational, long-term resource for developers. A vast majority (81%) have an account, up from 76% in 2024 and 74% in 2023.",
+              "dataId": "SOAccount",
+              "highlight": false,
+              "_id": "have-an-account-on-stack-overflow",
+              "dataIdSlug": "so-account"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Stack Overflow site use",
+              "name": "How long have you had an account on Stack Overflow?",
+              "description": "The Stack Overflow user base is deeply tenured: 76% have used the site for 6 or more years, with 45% having used it for over 11 years. ",
+              "dataId": "SODuration",
+              "_id": "how-long-have-you-had-an-account-on-stack-overflow",
+              "dataIdSlug": "so-duration"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Stack Overflow site use",
+              "name": "Frequency of visiting Stack Overflow",
+              "description": "Stack Overflow is a frequent destination for information. A strong majority (82%) visit at least a few times per month, with 25% visiting daily or more often.",
+              "dataId": "SOVisitFreq",
+              "highlight": true,
+              "highlightHeadline": "Stack Overflow is a destination developers visit frequently",
+              "highlightRows": "",
+              "math": "22.5+30.6+27.86=81",
+              "_id": "frequency-of-visiting-stack-overflow",
+              "dataIdSlug": "so-visit-freq"
+            }
+          ]
+        },
+        {
+          "chapter": "Stack Overflow",
+          "name": "Participation and Feedback",
+          "_id": "participation-and-feedback",
+          "questions": [
+            {
+              "chapter": "Stack Overflow",
+              "section": "Participation and Feedback",
+              "name": "Frequency of participation on Stack Overflow",
+              "description": "A combined 68% of respondents do not participate or rarely participate in Q&A. While Stack Overflow is a trusted source for finding human-verified knowledge, we’re continuing to find new ways to cultivate community and power learning, making the experience more valuable and engaging. See what's on <a href=\"https://stackoverflow.blog/2025/07/21/community-products-roadmap-update-july-2025/\">the roadmap</a> for the third quarter of 2025.",
+              "dataId": "SOPartFreq",
+              "highlight": false,
+              "_id": "frequency-of-participation-on-stack-overflow",
+              "dataIdSlug": "so-part-freq"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Participation and Feedback",
+              "name": "How do you choose to find relevant developer content?",
+              "description": "While all age groups want lists and articles, younger developers show a significantly higher interest in more social and interactive formats. For example, 37% of 18-24 year olds want \"Chat (people)\", compared to only 20% of 55-64 year olds. Similarly, 39% of the youngest cohort want \"Coding challenges,\" also aligning with a motivation to skill up.",
+              "dataId": "SO_Dev_Content",
+              "highlight": true,
+              "highlightHeadline": "Younger developers want developer content with social or interactive formats",
+              "_id": "how-do-you-choose-to-find-relevant-developer-content",
+              "dataIdSlug": "so-dev-content"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Participation and Feedback",
+              "name": "How would you like to use Stack Overflow?",
+              "description": "The top-ranked activities developers are interested in are passive consumption: Read and/or vote on comments (Rank 1) and arriving at a Q&A post via search (Rank 2). Active contributions like answering a question rank much lower (Rank 6).",
+              "dataId": "SO_Actions",
+              "highlight": false,
+              "highlightHeadline": "",
+              "highlightRows": "",
+              "math": "14.54+27.55=42",
+              "_id": "how-would-you-like-to-use-stack-overflow",
+              "dataIdSlug": "so-actions"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Participation and Feedback",
+              "name": "Feel like part of the Stack Overflow community?",
+              "description": "One third of respondents consider themselves a member of the Stack Overflow community. While respondents who have participated in the community longer are more likely to consider themselves part of the community, newer users are showing slightly elevated community sentiment, which could be a result of the expansion of features like Staging Ground.",
+              "dataId": "SOComm",
+              "highlight": false,
+              "_id": "feel-like-part-of-the-stack-overflow-community",
+              "dataIdSlug": "so-comm"
+            },
+            {
+              "chapter": "Stack Overflow",
+              "section": "Participation and Feedback",
+              "name": "Frictions on Stack Overflow",
+              "description": "Developers turn to Stack Overflow for human-verified, trusted knowledge. About 35% of developers report that their visits to Stack Overflow are a result of AI-related issues at least some of the time. ",
+              "dataId": "SOFriction",
+              "highlight": true,
+              "highlightHeadline": "Stack Overflow is becoming a new resource for developers that need to solve AI-related issues",
+              "_id": "frictions-on-stack-overflow",
+              "dataIdSlug": "so-friction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "description": "Survey metadata and notes.",
+      "_id": "methodology",
+      "sections": [
+        {
+          "chapter": "Methodology",
+          "name": "General",
+          "_id": "general",
+          "questions": [
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "49,009 responses from 177 countries are used in these survey results.",
+              "dataId": "",
+              "highlight": false
+            },
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "An age question, a consent question and the question asking \"Which of the following options best describes you today?\" were all used as qualifiers in the responses we kept for analysis. ~15K responses were not used. ",
+              "dataId": "",
+              "highlight": false
+            },
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "The survey was fielded from May 29, 2025 to June 23, 2025.",
+              "dataId": "",
+              "highlight": false
+            },
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "Respondents were recruited primarily through channels owned by Stack Overflow. The top sources of respondents were onsite messaging, blog posts, email/newsletter subscribers, banner ads, and social media posts. Since respondents were recruited in this way, highly-engaged users on Stack Overflow were more likely to notice the prompts to take the survey over the duration of the collection promotion. We also recruited respondents via a Reddit ad campaign, this accounted for < 2% of total responses.",
+              "dataId": "",
+              "highlight": false
+            },
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "We converted salaries from user currencies to USD using the exchange rate on June 25, 2025.",
+              "dataId": "",
+              "highlight": false
+            },
+            {
+              "chapter": "Methodology",
+              "section": "General",
+              "name": "",
+              "description": "Some questions that are multi-select for the available choices have switched to be displayed as a percentage of total unique responses instead of total frequency of responses this year.",
+              "dataId": "",
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "chapter": "Methodology",
+          "name": "Feedback",
+          "_id": "feedback",
+          "questions": [
+            {
+              "chapter": "Methodology",
+              "section": "Feedback",
+              "name": "How do you feel about the length of the survey this year?",
+              "description": "",
+              "dataId": "SurveyLength",
+              "highlight": false,
+              "_id": "how-do-you-feel-about-the-length-of-the-survey-this-year",
+              "dataIdSlug": "survey-length"
+            },
+            {
+              "chapter": "Methodology",
+              "section": "Feedback",
+              "name": "How easy or difficult was this survey to complete?",
+              "description": "",
+              "dataId": "SurveyEase",
+              "highlight": false,
+              "_id": "how-easy-or-difficult-was-this-survey-to-complete",
+              "dataIdSlug": "survey-ease"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

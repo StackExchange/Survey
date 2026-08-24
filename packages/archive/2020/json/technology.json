@@ -1,0 +1,930 @@
+{
+  "Title": "Technology",
+  "SubTitle": "The tools of the trade",
+  "Copy": null,
+  "SubSections": [
+    {
+      "Title": "Most Popular Technologies",
+      "GraphCollections": [
+        {
+          "Title": "Programming, Scripting, and Markup Languages",
+          "Copy": "Unsurprisingly, for the eighth year in a row, JavaScript has maintained it's stronghold as the most commonly used programming language. Going further down the list, we also see moderate gains for TypeScript, edging out C in terms of popularity. Additionally, Ruby, once in the top 10 of this list as recently as 2017, has declined, being surpassed by newer, trendier technologies such as Go and Kotlin.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "57,378 responses; select all that apply",
+              "Data": {
+                "JavaScript": 67.6601,
+                "HTML/CSS": 63.0573,
+                "SQL": 54.7475,
+                "Python": 44.0709,
+                "Java": 40.214,
+                "Bash/Shell/PowerShell": 33.0789,
+                "C#": 31.4424,
+                "PHP": 26.1546,
+                "TypeScript": 25.407,
+                "C++": 23.8889,
+                "C": 21.7627,
+                "Go": 8.7804,
+                "Kotlin": 7.787,
+                "Ruby": 7.0515,
+                "Assembly": 6.1923,
+                "VBA": 6.0982,
+                "Swift": 5.9204,
+                "R": 5.7304,
+                "Rust": 5.1047,
+                "Objective-C": 4.0782,
+                "Dart": 3.9736,
+                "Scala": 3.5763,
+                "Perl": 3.1301,
+                "Haskell": 2.1297,
+                "Julia": 0.9045
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "47,184 responses; select all that apply",
+              "Data": {
+                "JavaScript": 69.6634,
+                "HTML/CSS": 62.4046,
+                "SQL": 56.8604,
+                "Python": 41.6158,
+                "Java": 38.352,
+                "Bash/Shell/PowerShell": 34.8063,
+                "C#": 32.3309,
+                "TypeScript": 28.3274,
+                "PHP": 25.8329,
+                "C++": 20.5409,
+                "C": 18.2371,
+                "Go": 9.3761,
+                "Kotlin": 7.9688,
+                "Ruby": 7.5301,
+                "VBA": 6.1567,
+                "Swift": 6.0571,
+                "R": 5.4786,
+                "Assembly": 4.8851,
+                "Rust": 4.8237,
+                "Objective-C": 4.385,
+                "Scala": 3.9272,
+                "Dart": 3.7046,
+                "Perl": 3.3316,
+                "Haskell": 1.8248,
+                "Julia": 0.8668
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Web Frameworks",
+          "Copy": "When focusing purely on web frameworks, we see that jQuery is still king, but is slowly losing ground to React.js and Angular year over year. We do see some consolidation, as more than 35% of respondents use jQuery, React, a version of Angular (combining Angular, which represents Angular 2+, and Angular.js) or a flavor of ASP.NET (ASP.NET or ASP.NET Core).",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "42,279 responses; select all that apply",
+              "Data": {
+                "jQuery": 43.3217,
+                "React.js": 35.8736,
+                "Angular": 25.1118,
+                "ASP.NET": 21.8974,
+                "Express": 21.1949,
+                "ASP.NET Core": 19.1159,
+                "Vue.js": 17.3183,
+                "Spring": 16.4171,
+                "Angular.js": 16.1451,
+                "Django": 14.2246,
+                "Flask": 14.2033,
+                "Laravel": 11.0693,
+                "Ruby on Rails": 6.9633,
+                "Symfony": 4.3781,
+                "Gatsby": 4.028,
+                "Drupal": 3.238
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "36,291 responses; select all that apply",
+              "Data": {
+                "jQuery": 43.3386,
+                "React.js": 36.7502,
+                "Angular": 26.5438,
+                "ASP.NET": 22.9396,
+                "Express": 20.917,
+                "ASP.NET Core": 20.2833,
+                "Vue.js": 17.7758,
+                "Spring": 17.3707,
+                "Angular.js": 16.9822,
+                "Flask": 13.5984,
+                "Django": 13.2071,
+                "Laravel": 11.0964,
+                "Ruby on Rails": 7.1726,
+                "Symfony": 4.5438,
+                "Gatsby": 4.147,
+                "Drupal": 3.2625
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Other Frameworks, Libraries, and Tools",
+          "Copy": "Similar to last year, we asked about many of the other miscellaneous technologies that developers are using. For the second year in a row, Node.js takes the top spot, as it is used by half of the respondents. We also see growth across the board in the popularity of data analysis and machine learning technologies such as Pandas, TensorFlow, and Torch/PyTorch.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "40,314 responses; select all that apply",
+              "Data": {
+                "Node.js": 51.4486,
+                ".NET": 35.0846,
+                ".NET Core": 26.6781,
+                "Pandas": 15.5107,
+                "TensorFlow": 11.5394,
+                "React Native": 11.4749,
+                "Unity 3D": 10.9466,
+                "Ansible": 7.33,
+                "Flutter": 7.1861,
+                "Teraform": 6.246,
+                "Keras": 6.2112,
+                "Cordova": 6.0004,
+                "Xamarin": 5.8466,
+                "Apache Spark": 5.1818,
+                "Torch/PyTorch": 4.6435,
+                "Hadoop": 4.46,
+                "Unreal Engine": 3.2644,
+                "Puppet": 2.3441,
+                "Chef": 1.8182
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "33,913 responses; select all that apply",
+              "Data": {
+                "Node.js": 51.9388,
+                ".NET": 35.8624,
+                ".NET Core": 27.8625,
+                "Pandas": 14.7023,
+                "React Native": 11.848,
+                "TensorFlow": 10.3824,
+                "Unity 3D": 8.7105,
+                "Ansible": 8.1385,
+                "Teraform": 7.0003,
+                "Flutter": 6.6258,
+                "Cordova": 6.3928,
+                "Xamarin": 5.9594,
+                "Keras": 5.6262,
+                "Apache Spark": 5.3519,
+                "Hadoop": 4.6855,
+                "Torch/PyTorch": 4.1459,
+                "Puppet": 2.5447,
+                "Unreal Engine": 2.4828,
+                "Chef": 1.9521
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Databases",
+          "Copy": "When looking at database technologies, the results are mostly consistent with what we observed last year. MySQL has maintained the top spot, followed by PostgreSQL and Microsoft SQL Server. However, we see some slight growth in the popularity of Firebase, which edged out Elasticsearch this year.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "49,537 responses; select all that apply",
+              "Data": {
+                "MySQL": 55.6332,
+                "PostgreSQL": 36.1185,
+                "Microsoft SQL Server": 32.9774,
+                "SQLite": 31.1565,
+                "MongoDB": 26.4166,
+                "Redis": 18.2813,
+                "MariaDB": 16.7794,
+                "Oracle": 16.4624,
+                "Firebase": 14.3892,
+                "Elasticsearch": 13.7614,
+                "DynamoDB": 7.0594,
+                "Cassandra": 3.3389,
+                "IBM DB2": 2.8686,
+                "Couchbase": 1.8915
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "41,811 responses; select all that apply",
+              "Data": {
+                "MySQL": 53.4811,
+                "PostgreSQL": 38.5138,
+                "Microsoft SQL Server": 34.7564,
+                "SQLite": 30.59,
+                "MongoDB": 26.7107,
+                "Redis": 20.5161,
+                "MariaDB": 16.8712,
+                "Oracle": 16.3258,
+                "Elasticsearch": 15.527,
+                "Firebase": 13.903,
+                "DynamoDB": 7.8066,
+                "Cassandra": 3.5637,
+                "IBM DB2": 2.9442,
+                "Couchbase": 2.0162
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Platforms",
+          "Copy": "Linux and Windows maintain the top spots for most popular platforms, with over half of the respondents reporting that they have done development work with them this year. We also see some year over year growth in the popularity of container technologies such as Docker and Kubernetes.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "53,843 responses; select all that apply",
+              "Data": {
+                "Linux": 54.9746,
+                "Windows": 53.1081,
+                "Docker": 35.0111,
+                "AWS": 26.724,
+                "Android": 26.1891,
+                "MacOS": 23.9548,
+                "Raspberry Pi": 14.8766,
+                "Microsoft Azure": 14.5423,
+                "WordPress": 14.2154,
+                "Google Cloud Platform": 14.0575,
+                "iOS": 12.1873,
+                "Kubernetes": 11.4741,
+                "Heroku": 11.0952,
+                "Arduino": 10.6086,
+                "Slack Apps and Integrations": 7.2841,
+                "IBM Cloud or Watson": 1.627
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "44,705 responses; select all that apply",
+              "Data": {
+                "Linux": 55.911,
+                "Windows": 51.1934,
+                "Docker": 39.1567,
+                "AWS": 29.7931,
+                "MacOS": 25.6213,
+                "Android": 24.4022,
+                "Microsoft Azure": 15.9445,
+                "Google Cloud Platform": 14.5062,
+                "Raspberry Pi": 14.0163,
+                "WordPress": 13.9134,
+                "Kubernetes": 12.9337,
+                "iOS": 12.6384,
+                "Heroku": 10.7438,
+                "Arduino": 8.6187,
+                "Slack Apps and Integrations": 7.9767,
+                "IBM Cloud or Watson": 1.5054
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Most Loved, Dreaded, and Wanted",
+      "GraphCollections": [
+        {
+          "Title": "Most Loved, Dreaded, and Wanted Languages",
+          "Copy": "For five years running, Rust has taken the top spot as the most loved programming language. TypeScript is second surpassing Python compared to last year. We also see big gains in Go, moving up to 5th from 10th last year.\n\nVBA, Objective C, and Perl hold the top spots for the most dreaded languages—languages that had a high percentage of developers who are currently using them, but have no interest in continuing to do so.\n\nIf we look at technologies that developers report that they do not use but want to learn, Python takes the top spot for the fourth year in a row. We also see some modest gains in the interest in learning Rust.",
+          "Graphs": [
+            {
+              "Title": "Loved",
+              "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+              "Data": {
+                "Rust": 86.1386,
+                "TypeScript": 67.1285,
+                "Python": 66.6667,
+                "Kotlin": 62.9141,
+                "Go": 62.2668,
+                "Julia": 62.2351,
+                "Dart": 62.1491,
+                "C#": 59.653,
+                "Swift": 59.4937,
+                "JavaScript": 58.3149,
+                "SQL": 56.5944,
+                "Bash/Shell/PowerShell": 53.7355,
+                "HTML/CSS": 53.4977,
+                "Scala": 53.2164,
+                "Haskell": 51.7185,
+                "R": 44.4647,
+                "Java": 44.1059,
+                "C++": 43.4377,
+                "Ruby": 42.8571,
+                "PHP": 37.2559,
+                "C": 33.0744,
+                "Assembly": 29.3555,
+                "Perl": 28.6192,
+                "Objective-C": 23.3761,
+                "VBA": 19.6342
+              }
+            },
+            {
+              "Title": "Dreaded",
+              "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+              "Data": {
+                "VBA": 80.3658,
+                "Objective-C": 76.6239,
+                "Perl": 71.3808,
+                "Assembly": 70.6445,
+                "C": 66.9256,
+                "PHP": 62.7441,
+                "Ruby": 57.1429,
+                "C++": 56.5623,
+                "Java": 55.8941,
+                "R": 55.5353,
+                "Haskell": 48.2815,
+                "Scala": 46.7836,
+                "HTML/CSS": 46.5023,
+                "Bash/Shell/PowerShell": 46.2645,
+                "SQL": 43.4056,
+                "JavaScript": 41.6851,
+                "Swift": 40.5063,
+                "C#": 40.347,
+                "Dart": 37.8509,
+                "Julia": 37.7649,
+                "Go": 37.7332,
+                "Kotlin": 37.0859,
+                "Python": 33.3333,
+                "TypeScript": 32.8715,
+                "Rust": 13.8614
+              }
+            },
+            {
+              "Title": "Wanted",
+              "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+              "Data": {
+                "Python": 30.018,
+                "JavaScript": 18.4921,
+                "Go": 17.8722,
+                "TypeScript": 16.9537,
+                "Rust": 14.5956,
+                "Kotlin": 12.6321,
+                "Java": 8.8351,
+                "C++": 8.581,
+                "SQL": 8.2403,
+                "C#": 7.2849,
+                "Swift": 6.6316,
+                "HTML/CSS": 6.481,
+                "Dart": 5.9658,
+                "R": 5.1328,
+                "Ruby": 4.5397,
+                "C": 4.3073,
+                "Scala": 4.2404,
+                "Haskell": 4.1626,
+                "Bash/Shell/PowerShell": 3.9171,
+                "PHP": 3.5227,
+                "Assembly": 2.6184,
+                "Julia": 2.3272,
+                "Objective-C": 1.7567,
+                "Perl": 1.1313,
+                "VBA": 0.675
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted Web Frameworks",
+          "Copy": "ASP.NET Core is the most loved web framework, beating out React.js. Gatsby, a newcomer on the survey, is already sitting at 5th, being loved by 60% of the respondents.\n\nAlthough it is amongst the most popular web frameworks, Angular.js is also considered to be the most dreaded.",
+          "Graphs": [
+            {
+              "Title": "Loved",
+              "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+              "Data": {
+                "ASP.NET Core": 70.6879,
+                "React.js": 68.9391,
+                "Vue.js": 66.0475,
+                "Express": 61.9351,
+                "Gatsby": 60.7164,
+                "Spring": 57.7006,
+                "Django": 55.3375,
+                "Flask": 54.3714,
+                "Angular": 53.9512,
+                "Laravel": 51.3675,
+                "Ruby on Rails": 49.3207,
+                "Symfony": 45.597,
+                "ASP.NET": 36.8978,
+                "jQuery": 36.4599,
+                "Drupal": 25.4931,
+                "Angular.js": 24.143
+              }
+            },
+            {
+              "Title": "Dreaded",
+              "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+              "Data": {
+                "Angular.js": 75.857,
+                "Drupal": 74.5069,
+                "jQuery": 63.5401,
+                "ASP.NET": 63.1022,
+                "Symfony": 54.403,
+                "Ruby on Rails": 50.6793,
+                "Laravel": 48.6325,
+                "Angular": 46.0488,
+                "Flask": 45.6286,
+                "Django": 44.6625,
+                "Spring": 42.2994,
+                "Gatsby": 39.2836,
+                "Express": 38.0649,
+                "Vue.js": 33.9525,
+                "React.js": 31.0609,
+                "ASP.NET Core": 29.3121
+              }
+            },
+            {
+              "Title": "Wanted",
+              "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+              "Data": {
+                "React.js": 22.4403,
+                "Vue.js": 16.3852,
+                "Angular": 10.6209,
+                "Django": 9.4404,
+                "Angular.js": 7.7225,
+                "ASP.NET Core": 6.619,
+                "Flask": 5.4452,
+                "Express": 5.2555,
+                "Spring": 4.378,
+                "Ruby on Rails": 4.3526,
+                "jQuery": 4.2924,
+                "Gatsby": 3.4878,
+                "Laravel": 3.48,
+                "ASP.NET": 2.8755,
+                "Symfony": 1.5099,
+                "Drupal": 0.9533
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted Other Frameworks, Libraries, and Tools",
+          "Copy": ".NET Core and Torch/PyTorch remain the most loved of the other remaining frameworks, libraries and tools. DevOps tools Chef and Puppet are among the most dreaded technologies.",
+          "Graphs": [
+            {
+              "Title": "Loved",
+              "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+              "Data": {
+                ".NET Core": 71.5109,
+                "Torch/PyTorch": 70.5128,
+                "Flutter": 68.7608,
+                "Pandas": 68.3832,
+                "Teraform": 67.9508,
+                "Keras": 67.0527,
+                "Node.js": 66.8097,
+                "TensorFlow": 65.1763,
+                "Ansible": 58.4772,
+                "React Native": 57.9334,
+                "Apache Spark": 57.4916,
+                "Unity 3D": 55.9937,
+                "Unreal Engine": 52.7356,
+                ".NET": 47.5042,
+                "Hadoop": 46.3849,
+                "Xamarin": 45.3967,
+                "Puppet": 38.5185,
+                "Cordova": 28.7309,
+                "Chef": 27.558
+              }
+            },
+            {
+              "Title": "Dreaded",
+              "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+              "Data": {
+                "Chef": 72.442,
+                "Cordova": 71.2691,
+                "Puppet": 61.4815,
+                "Xamarin": 54.6033,
+                "Hadoop": 53.6151,
+                ".NET": 52.4958,
+                "Unreal Engine": 47.2644,
+                "Unity 3D": 44.0063,
+                "Apache Spark": 42.5084,
+                "React Native": 42.0666,
+                "Ansible": 41.5228,
+                "TensorFlow": 34.8237,
+                "Node.js": 33.1903,
+                "Keras": 32.9473,
+                "Teraform": 32.0492,
+                "Pandas": 31.6168,
+                "Flutter": 31.2392,
+                "Torch/PyTorch": 29.4872,
+                ".NET Core": 28.4891
+              }
+            },
+            {
+              "Title": "Wanted",
+              "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+              "Data": {
+                "Node.js": 18.123,
+                "TensorFlow": 17.2014,
+                "React Native": 14.0387,
+                "Flutter": 10.6845,
+                "Unity 3D": 9.2032,
+                ".NET Core": 8.2757,
+                "Torch/PyTorch": 6.7347,
+                "Unreal Engine": 6.2701,
+                "Hadoop": 5.5838,
+                "Apache Spark": 5.0496,
+                "Pandas": 4.7951,
+                "Xamarin": 4.5331,
+                "Teraform": 4.312,
+                ".NET": 3.8295,
+                "Keras": 3.7291,
+                "Ansible": 3.2692,
+                "Puppet": 1.7207,
+                "Chef": 1.6009,
+                "Cordova": 1.5091
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted Databases",
+          "Copy": "Taking a look at database technologies, Redis remains the most loved, followed by PostgreSQL and Elasticsearch. Anecdotally, Stack Overflow has been using both Redis and Elasticsearch in our tech stack for years, since the early days of the company. IBM DB2 ranked as the most dreaded database and MongoDB remains the database technology that developers want to learn the most.",
+          "Graphs": [
+            {
+              "Title": "Loved",
+              "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+              "Data": {
+                "Redis": 66.4753,
+                "PostgreSQL": 63.8945,
+                "Elasticsearch": 58.7208,
+                "MongoDB": 55.9988,
+                "Firebase": 54.9102,
+                "MariaDB": 51.3234,
+                "Microsoft SQL Server": 50.9182,
+                "DynamoDB": 50.672,
+                "SQLite": 49.4428,
+                "MySQL": 47.1352,
+                "Cassandra": 43.5913,
+                "Couchbase": 33.191,
+                "Oracle": 33.1821,
+                "IBM DB2": 23.2935
+              }
+            },
+            {
+              "Title": "Dreaded",
+              "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+              "Data": {
+                "IBM DB2": 76.7065,
+                "Oracle": 66.8179,
+                "Couchbase": 66.809,
+                "Cassandra": 56.4087,
+                "MySQL": 52.8648,
+                "SQLite": 50.5572,
+                "DynamoDB": 49.328,
+                "Microsoft SQL Server": 49.0818,
+                "MariaDB": 48.6766,
+                "Firebase": 45.0898,
+                "MongoDB": 44.0012,
+                "Elasticsearch": 41.2792,
+                "PostgreSQL": 36.1055,
+                "Redis": 33.5247
+              }
+            },
+            {
+              "Title": "Wanted",
+              "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+              "Data": {
+                "MongoDB": 19.3554,
+                "PostgreSQL": 15.575,
+                "Elasticsearch": 12.239,
+                "Redis": 12.1676,
+                "Firebase": 9.2088,
+                "MySQL": 9.01,
+                "SQLite": 7.6984,
+                "Cassandra": 6.2207,
+                "DynamoDB": 5.5047,
+                "Oracle": 4.1878,
+                "MariaDB": 3.7423,
+                "Microsoft SQL Server": 3.7382,
+                "Couchbase": 2.395,
+                "IBM DB2": 1.0673
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted Platforms",
+          "Copy": "Linux remains the most loved platform. Container technologies Docker and Kubernetes rank as the second and third most loved. They are also among the platforms that developers most want to learn, which demonstrates how beloved they are. Wordpress is still the most dreaded, but Slack Apps and integrations, newly added to the list this year, rank high at the number four spot.",
+          "Graphs": [
+            {
+              "Title": "Loved",
+              "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+              "Data": {
+                "Linux": 76.8953,
+                "Docker": 73.5982,
+                "Kubernetes": 71.1395,
+                "AWS": 66.4466,
+                "Raspberry Pi": 66.0799,
+                "MacOS": 64.3898,
+                "Microsoft Azure": 62.1584,
+                "iOS": 61.0789,
+                "Google Cloud Platform": 60.8931,
+                "Windows": 57.4996,
+                "Android": 57.0527,
+                "Arduino": 53.1688,
+                "Slack Apps and Integrations": 51.0454,
+                "Heroku": 46.1835,
+                "IBM Cloud or Watson": 37.7854,
+                "WordPress": 33.0024
+              }
+            },
+            {
+              "Title": "Dreaded",
+              "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+              "Data": {
+                "WordPress": 66.9976,
+                "IBM Cloud or Watson": 62.2146,
+                "Heroku": 53.8165,
+                "Slack Apps and Integrations": 48.9546,
+                "Arduino": 46.8312,
+                "Android": 42.9473,
+                "Windows": 42.5004,
+                "Google Cloud Platform": 39.1069,
+                "iOS": 38.9211,
+                "Microsoft Azure": 37.8416,
+                "MacOS": 35.6102,
+                "Raspberry Pi": 33.9201,
+                "AWS": 33.5534,
+                "Kubernetes": 28.8605,
+                "Docker": 26.4018,
+                "Linux": 23.1047
+              }
+            },
+            {
+              "Title": "Wanted",
+              "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+              "Data": {
+                "Docker": 24.4721,
+                "AWS": 20.2178,
+                "Kubernetes": 18.547,
+                "Linux": 16.5904,
+                "Android": 16.0317,
+                "Google Cloud Platform": 13.9538,
+                "Raspberry Pi": 12.641,
+                "iOS": 10.3961,
+                "Microsoft Azure": 9.8617,
+                "MacOS": 7.7312,
+                "Arduino": 7.3764,
+                "Windows": 4.6705,
+                "Heroku": 4.4427,
+                "Slack Apps and Integrations": 3.3073,
+                "WordPress": 2.6231,
+                "IBM Cloud or Watson": 2.5937
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Development Environments and Tools",
+      "GraphCollections": [
+        {
+          "Title": "Developers' Primary Operating Systems",
+          "Copy": "Almost half of the respondents use Windows as their primary operating system. The rest were almost evenly split between MacOS and a flavor of Linux.",
+          "Graphs": [
+            {
+              "Title": "Professional Developers",
+              "SubText": "46,223 responses",
+              "Data": {
+                "Windows": 45.7759,
+                "MacOS": 27.5058,
+                "Linux-based": 26.6361,
+                "BSD": 0.0822
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Collaboration tools",
+          "Copy": "Of the professional developers who responded to the survey, almost 82% use GitHub as a collaborative tool and more than half use Slack.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "52,883 responses; select all that apply",
+              "Data": {
+                "GitHub": 82.7979,
+                "Slack": 52.9811,
+                "Jira": 47.694,
+                "Google Suite (Docs, Meet, etc)": 41.5105,
+                "Gitlab": 36.9589,
+                "Confluence": 32.3771,
+                "Trello": 29.6031,
+                "Microsoft Teams": 25.5621,
+                "Microsoft Azure": 14.8422,
+                "Stack Overflow for Teams": 5.7807,
+                "Facebook Workplace": 2.9877
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "44,328 responses; select all that apply",
+              "Data": {
+                "GitHub": 81.4925,
+                "Slack": 56.9414,
+                "Jira": 54.1554,
+                "Google Suite (Docs, Meet, etc)": 42.569,
+                "Gitlab": 38.7768,
+                "Confluence": 36.9653,
+                "Trello": 30.5879,
+                "Microsoft Teams": 27.9507,
+                "Microsoft Azure": 16.1501,
+                "Stack Overflow for Teams": 5.157,
+                "Facebook Workplace": 2.9214
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Researching tools",
+          "Copy": "When researching new tools, over three-fourths of respondents like to try the tool for themselves via a free trial. Social proof is also important, as over 60% of developers ask other developers they know about it or visit developer communities such as Stack Overflow.",
+          "Graphs": [
+            {
+              "Title": "Researching tools",
+              "SubText": "37,321 responses; select all that apply",
+              "Data": {
+                "Start a free trial": 77.0933,
+                "Ask developers I know/work with": 67.8706,
+                "Visit developer communities like Stack Overflow": 63.9506,
+                "Read ratings or reviews on third party sites like G2Crowd": 29.8786,
+                "Research companies that have advertised on sites I visit": 12.2987,
+                "Research companies that have emailed me": 5.4661
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Purchase Influence",
+          "Copy": "With regards to technology purchases within their organization, around 57% of respondents have some or a great deal of influence.",
+          "Graphs": [
+            {
+              "Title": "Purchase Influence",
+              "SubText": "39,364 responses",
+              "Data": {
+                "I have a great deal of influence": 17.7777,
+                "I have some influence": 39.0687,
+                "I have little or no influence": 43.1536
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Top Paying Technologies",
+      "GraphCollections": [
+        {
+          "Title": "What Languages Are Associated with the Highest Salaries Worldwide?",
+          "Copy": "Globally, respondents who use Perl, Scala, and Go tend to have the highest salaries, with a median salary around $75k. Interestingly, Perl is amongst the top most dreaded languages, so it's possible that this high salary is to compensate for the dearth of developers who want to use that technology. When looking only at the US, Scala developers tend to have the highest salaries.",
+          "Graphs": [
+            {
+              "Title": "Global",
+              "SubText": "Median of 33,534 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Perl": 76,
+                "Scala": 76,
+                "Go": 74,
+                "Rust": 74,
+                "Ruby": 71,
+                "Bash/Shell/PowerShell": 65,
+                "Objective-C": 64,
+                "Haskell": 60,
+                "Julia": 59,
+                "Python": 59,
+                "Swift": 58,
+                "C#": 57,
+                "R": 57,
+                "TypeScript": 57,
+                "Kotlin": 54,
+                "SQL": 54,
+                "Assembly": 53,
+                "C++": 53,
+                "JavaScript": 53,
+                "HTML/CSS": 52,
+                "VBA": 51,
+                "C": 50,
+                "Java": 50,
+                "PHP": 39,
+                "Dart": 37
+              }
+            },
+            {
+              "Title": "United States",
+              "SubText": "Median of 7,920 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Scala": 150,
+                "Go": 140,
+                "Objective-C": 135,
+                "Kotlin": 130,
+                "Perl": 130,
+                "Ruby": 130,
+                "Rust": 130,
+                "C": 125,
+                "Swift": 125,
+                "Haskell": 121,
+                "Assembly": 120,
+                "Bash/Shell/PowerShell": 120,
+                "C++": 120,
+                "Java": 120,
+                "Python": 120,
+                "TypeScript": 120,
+                "JavaScript": 112,
+                "C#": 110,
+                "Dart": 110,
+                "HTML/CSS": 110,
+                "SQL": 110,
+                "R": 109,
+                "PHP": 100,
+                "VBA": 97
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Correlated Technologies",
+      "GraphCollections": [
+        {
+          "Title": "How Technologies Are Connected",
+          "Copy": "Technologies cluster together into related ecosystems that tend to be used by the same developers. This network graph demonstrates this by showing which technologies are most highly correlated with each other. Similar to last year, we see a large cluster of web development technologies connected via SQL to one for Microsoft technologies, as well as a cluster of operations technologies connected to the Python ecosystem network through Linux.",
+          "Graphs": [
+            {
+              "Title": "How Technologies Are Connected",
+              "Type": "CustomFigure",
+              "FigurePath": "tech_network-1.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Learning & Problem Solving",
+      "Copy": "",
+      "GraphCollections": [
+        {
+          "Title": "Learning new tech frequency",
+          "Copy": "We asked developers how frequently they learn a new language or framework. Around 75% of respondents noted that they learn a new technology at least every few months or once a year. This demonstrates how quickly innovations happen and developers are constantly learning to keep their skills fresh.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "56,156 responses",
+              "Data": {
+                "Every few months": 37.2854,
+                "Once a year": 36.8491,
+                "Once every few years": 23.6555,
+                "Once a decade": 2.2099
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "46,320 responses",
+              "Data": {
+                "Every few months": 34.8748,
+                "Once a year": 37.8735,
+                "Once every few years": 25.1231,
+                "Once a decade": 2.1287
+              }
+            }
+          ]
+        },
+        {
+          "Title": "What do you do when you get stuck",
+          "Copy": "We asked respondents what they do when they get stuck on a problem. Almost 90% reported that they visit Stack Overflow. This is an encouraging sign that we're succeeding in our mission to help people get access to the knowledge they need to get things done.",
+          "Graphs": [
+            {
+              "Title": "What do you do when you get stuck",
+              "SubText": "54,983 responses; select all that apply",
+              "Data": {
+                "Visit Stack Overflow": 90.5789,
+                "Do other work and come back later": 54.4041,
+                "Watch help / tutorial videos": 52.7618,
+                "Call a coworker or friend": 49.8791,
+                "Go for a walk or other physical activity": 43.2861,
+                "Play games": 15.0319,
+                "Meditate": 11.7127,
+                "Panic": 10.9325,
+                "Visit another developer community": 10.2577
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Already Visited Feeling",
+          "Copy": "For the first time, we asked developers how they feel when they search for a coding solution online and the first result link is purple because they already visited the link. About half of respondents chose 'Hello, old friend', which suggests it may be a frequent occurrence for certain tasks. Perhaps this is why over 2.1 million people visited the ['How do I exit the Vim editor?'](https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor) question on Stack Overflow.",
+          "Graphs": [
+            {
+              "Title": "Already Visited Feeling",
+              "SubText": "54,803 responses",
+              "Data": {
+                "Hello, old friend": 51.5702,
+                "Indifferent": 18.2563,
+                "Amused": 15.8933,
+                "Annoyed": 14.2802
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

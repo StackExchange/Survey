@@ -1,0 +1,162 @@
+{
+  "TotalRespondents": 83439,
+  "RemovedRespondents": 172,
+  "MedianResponseTime": 10.22,
+  "MainBranch": {
+    "qid": "QID2",
+    "qname": "MainBranch",
+    "question": "Which of the following options best describes you today? Here, by \"developer\" we mean \"someone who writes code.\" <b>*<\/b>",
+    "datasets": {
+      "MainBranch": {
+        "total_respondents": 82926,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "I am a developer by profession",
+            "frequency": 58153,
+            "percent": 0.697
+          },
+          {
+            "response": "I am a student who is learning to code",
+            "frequency": 12029,
+            "percent": 0.1442
+          },
+          {
+            "response": "I am not primarily a developer, but I write code sometimes as part of my work",
+            "frequency": 6578,
+            "percent": 0.0788
+          },
+          {
+            "response": "I code primarily as a hobby",
+            "frequency": 4929,
+            "percent": 0.0591
+          },
+          {
+            "response": "I used to be a developer by profession, but no longer am",
+            "frequency": 1237,
+            "percent": 0.0148
+          }
+        ]
+      }
+    }
+  },
+  "Top10Countries": {
+    "qid": "QID6",
+    "qname": "Country",
+    "question": "Where do you live? <span style=\"font-weight: bolder;\">*<\/span>",
+    "datasets": {
+      "Top10Countries": {
+        "total_respondents": 49116,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "United States of America",
+            "frequency": 15288,
+            "percent": 0.1832
+          },
+          {
+            "response": "India",
+            "frequency": 10511,
+            "percent": 0.126
+          },
+          {
+            "response": "Germany",
+            "frequency": 5625,
+            "percent": 0.0674
+          },
+          {
+            "response": "United Kingdom of Great Britain and Northern Ireland",
+            "frequency": 4475,
+            "percent": 0.0536
+          },
+          {
+            "response": "Canada",
+            "frequency": 3012,
+            "percent": 0.0361
+          },
+          {
+            "response": "France",
+            "frequency": 2708,
+            "percent": 0.0325
+          },
+          {
+            "response": "Brazil",
+            "frequency": 2254,
+            "percent": 0.027
+          },
+          {
+            "response": "Poland",
+            "frequency": 1805,
+            "percent": 0.0216
+          },
+          {
+            "response": "Netherlands",
+            "frequency": 1772,
+            "percent": 0.0212
+          },
+          {
+            "response": "Italy",
+            "frequency": 1666,
+            "percent": 0.02
+          }
+        ]
+      }
+    }
+  },
+  "SurveyLength": {
+    "qid": "QID132",
+    "qname": "SurveyLength",
+    "question": "How do you feel about the length of the survey this year?",
+    "datasets": {
+      "SurveyLength": {
+        "total_respondents": 81711,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Appropriate in length",
+            "frequency": 64514,
+            "percent": 0.7895
+          },
+          {
+            "response": "Too long",
+            "frequency": 13087,
+            "percent": 0.1602
+          },
+          {
+            "response": "Too short",
+            "frequency": 4110,
+            "percent": 0.0503
+          }
+        ]
+      }
+    }
+  },
+  "SurveyEase": {
+    "qid": "QID133",
+    "qname": "SurveyEase",
+    "question": "How easy or difficult was this survey to complete?",
+    "datasets": {
+      "SurveyEase": {
+        "total_respondents": 81948,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Easy",
+            "frequency": 63087,
+            "percent": 0.7698
+          },
+          {
+            "response": "Neither easy nor difficult",
+            "frequency": 18091,
+            "percent": 0.2208
+          },
+          {
+            "response": "Difficult",
+            "frequency": 770,
+            "percent": 0.0094
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3150 @@
+{
+  "Name": "Developer Survey 2017",
+  "Sections": [
+    {
+      "Title": "Overview",
+      "SubTitle": "This year, over 64,000 developers told us how they learn and level up, which tools they’re using, and what they want.",
+      "SubSections": [
+        {
+          "Title": "Index",
+          "GraphCollections": []
+        }
+      ]
+    },
+    {
+      "Title": "Developer Profile",
+      "SubTitle": "Who codes? More people in more places than ever before.",
+      "SubSections": [
+        {
+          "Title": "Geography",
+          "GraphCollections": [
+            {
+              "Title": "Geography",
+              "Graphs": [
+                {
+                  "Title": "Survey Respondents",
+                  "Type": "CustomFigure",
+                  "SubText": "49,726 responses"
+                },
+                {
+                  "Title": "Stack Overflow Traffic",
+                  "Type": "CustomFigure",
+                  "SubText": "% of worldwide Stack Overflow traffic"
+                },
+                {
+                  "Title": "Professional Developers",
+                  "Type": "CustomFigure",
+                  "SubText": "% of estimated worldwide developers"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Developer Roles",
+          "GraphCollections": [
+            {
+              "Title": "Developer Type",
+              "Graphs": [
+                {
+                  "Title": "Developer Type",
+                  "SubText": "36,125 responses; select all that apply",
+                  "Data": {
+                    "Web developer": 72.6228,
+                    "Desktop applications developer": 28.8858,
+                    "Mobile developer": 23.0478,
+                    "Database administrator": 14.3723,
+                    "Developer with a statistics or mathematics background": 11.3246,
+                    "Systems administrator": 11.3107,
+                    "DevOps specialist": 11.1142,
+                    "Embedded applications/devices developer": 9.2789,
+                    "Data scientist": 8.4291,
+                    "Other": 7.4574,
+                    "Graphics programming": 4.7917,
+                    "Graphic designer": 3.9474,
+                    "Machine learning specialist": 3.8173,
+                    "Quality assurance engineer": 3.4657
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Specific Developer Types",
+              "Graphs": [
+                {
+                  "Title": "Web Developers",
+                  "SubText": "10,696 responses; select all that apply",
+                  "Data": {
+                    "Full stack Web developer": 63.7248,
+                    "Back-end Web developer": 24.4016,
+                    "Front-end Web developer": 11.8736
+                  }
+                },
+                {
+                  "Title": "Mobile Developers",
+                  "SubText": "1,558 responses; select all that apply",
+                  "Data": {
+                    "Android": 64.7625,
+                    "iOS": 57.638,
+                    "Windows Phone": 4.3004,
+                    "Blackberry": 0.706
+                  }
+                },
+                {
+                  "Title": "Other Occupations",
+                  "SubText": "4,890 responses; select all that apply",
+                  "Data": {
+                    "Analyst or consultant": 38.7935,
+                    "Other": 31.8609,
+                    "Data scientist": 22.4949,
+                    "Educator or academic": 14.9693,
+                    "Designer or illustrator": 12.2699,
+                    "Product manager": 7.4642,
+                    "C-suite executive": 5.2556,
+                    "Marketing or sales manager": 3.1084,
+                    "Elected official": 0.6953
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Experience",
+          "GraphCollections": [
+            {
+              "Title": "Years Since Learning to Code",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "51,145 responses",
+                  "Data": {
+                    "Less than a year": 2.9016,
+                    "1 to 2 years": 5.4218,
+                    "2 to 3 years": 6.3564,
+                    "3 to 4 years": 7.2363,
+                    "4 to 5 years": 7.5569,
+                    "5 to 6 years": 6.9841,
+                    "6 to 7 years": 5.6095,
+                    "7 to 8 years": 4.8216,
+                    "8 to 9 years": 3.7345,
+                    "9 to 10 years": 6.2509,
+                    "10 to 11 years": 4.2585,
+                    "11 to 12 years": 2.7158,
+                    "12 to 13 years": 2.5555,
+                    "13 to 14 years": 2.1351,
+                    "14 to 15 years": 3.932,
+                    "15 to 16 years": 3.2633,
+                    "16 to 17 years": 2.0452,
+                    "17 to 18 years": 1.7186,
+                    "18 to 19 years": 1.267,
+                    "19 to 20 years": 1.9963,
+                    "20 or more years": 17.2392
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "35,983 responses",
+                  "Data": {
+                    "Less than a year": 1.0977,
+                    "1 to 2 years": 2.5123,
+                    "2 to 3 years": 3.7156,
+                    "3 to 4 years": 5.1774,
+                    "4 to 5 years": 6.5392,
+                    "5 to 6 years": 6.7949,
+                    "6 to 7 years": 5.8472,
+                    "7 to 8 years": 5.2414,
+                    "8 to 9 years": 4.1381,
+                    "9 to 10 years": 7.0811,
+                    "10 to 11 years": 5.019,
+                    "11 to 12 years": 3.3238,
+                    "12 to 13 years": 3.1793,
+                    "13 to 14 years": 2.6012,
+                    "14 to 15 years": 4.7606,
+                    "15 to 16 years": 4.013,
+                    "16 to 17 years": 2.5206,
+                    "17 to 18 years": 2.1538,
+                    "18 to 19 years": 1.5202,
+                    "19 to 20 years": 2.4289,
+                    "20 or more years": 20.3346
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Years Coding Professionally",
+              "Graphs": [
+                {
+                  "Title": "Years Coding Professionally",
+                  "SubText": "40,890 responses",
+                  "Data": {
+                    "Less than a year": 7.4199,
+                    "1 to 2 years": 12.9347,
+                    "2 to 3 years": 11.6581,
+                    "3 to 4 years": 9.7897,
+                    "4 to 5 years": 8.3272,
+                    "5 to 6 years": 7.3123,
+                    "6 to 7 years": 4.676,
+                    "7 to 8 years": 4.0059,
+                    "8 to 9 years": 3.1475,
+                    "9 to 10 years": 4.7836,
+                    "10 to 11 years": 4.1037,
+                    "11 to 12 years": 2.0494,
+                    "12 to 13 years": 1.8122,
+                    "13 to 14 years": 1.2986,
+                    "14 to 15 years": 2.0543,
+                    "15 to 16 years": 2.0665,
+                    "16 to 17 years": 1.6972,
+                    "17 to 18 years": 1.3328,
+                    "18 to 19 years": 0.9856,
+                    "19 to 20 years": 1.0443,
+                    "20 or more years": 7.5006
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Years Coded Professionally in the Past",
+              "Graphs": [
+                {
+                  "Title": "Years Coded Professionally in the Past",
+                  "SubText": "974 responses; among respondents who indicated they no longer program as part of their job",
+                  "Data": {
+                    "Less than a year": 5.8522,
+                    "1 to 2 years": 8.2136,
+                    "2 to 3 years": 8.0082,
+                    "3 to 4 years": 6.6735,
+                    "4 to 5 years": 6.7762,
+                    "5 to 6 years": 4.9281,
+                    "6 to 7 years": 3.0801,
+                    "7 to 8 years": 4.7228,
+                    "8 to 9 years": 2.8747,
+                    "9 to 10 years": 6.0575,
+                    "10 to 11 years": 5.1335,
+                    "11 to 12 years": 2.8747,
+                    "12 to 13 years": 2.0534,
+                    "13 to 14 years": 1.7454,
+                    "14 to 15 years": 4.0041,
+                    "15 to 16 years": 4.3121,
+                    "16 to 17 years": 1.9507,
+                    "17 to 18 years": 1.9507,
+                    "18 to 19 years": 0.616,
+                    "19 to 20 years": 2.3614,
+                    "20 or more years": 15.8111
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Demographics",
+          "GraphCollections": [
+            {
+              "Title": "Gender",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "35,990 responses",
+                  "Data": {
+                    "Male": 88.6079,
+                    "Female": 7.6216,
+                    "Other": 1.1892,
+                    "Gender non-conforming": 0.8725,
+                    "Transgender": 0.5001
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "26,762 responses",
+                  "Data": {
+                    "Male": 89.5262,
+                    "Female": 7.2192,
+                    "Other": 0.9753,
+                    "Gender non-conforming": 0.7025,
+                    "Transgender": 0.4073
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "SubText": "4,545 responses",
+                  "Data": {
+                    "Male": 86.1606,
+                    "Female": 8.3388,
+                    "Other": 2.0462,
+                    "Gender non-conforming": 1.6062,
+                    "Transgender": 0.7921
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ethnicity",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "33,033 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 74.4104,
+                    "South Asian": 8.767,
+                    "Hispanic or Latino/Latina": 5.6277,
+                    "East Asian": 4.9102,
+                    "Middle Eastern": 3.5813,
+                    "I prefer not to say": 2.6428,
+                    "Black or of African descent": 2.5066,
+                    "I don’t know": 1.9708,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.8809
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "24,652 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 76.1642,
+                    "South Asian": 8.1535,
+                    "Hispanic or Latino/Latina": 5.7399,
+                    "East Asian": 4.312,
+                    "Middle Eastern": 3.3709,
+                    "I prefer not to say": 2.3284,
+                    "Black or of African descent": 2.3,
+                    "I don’t know": 1.6591,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.8924
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "SubText": "4,097 responses; select all that apply",
+                  "Data": {
+                    "White or of European descent": 64.4374,
+                    "South Asian": 13.2536,
+                    "East Asian": 7.6641,
+                    "Hispanic or Latino/Latina": 5.2966,
+                    "Middle Eastern": 4.6864,
+                    "I don’t know": 3.7588,
+                    "Black or of African descent": 3.6856,
+                    "I prefer not to say": 3.2219,
+                    "Native American, Pacific Islander, or Indigenous Australian": 0.7811
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Disability Status",
+              "Graphs": [
+                {
+                  "Title": "Disability Status",
+                  "SubText": "1,755 responses identified as having a disability",
+                  "Data": {
+                    "None or prefer not to say": 96.2893,
+                    "Other": 1.8388,
+                    "Blind": 1.0196,
+                    "Deaf": 0.5429,
+                    "Unable to walk": 0.181,
+                    "Unable to type": 0.1284
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Parents' Education Level",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "34,938 responses",
+                  "Data": {
+                    "A bachelor’s degree": 29.123,
+                    "A master’s degree": 21.6412,
+                    "High school": 16.8498,
+                    "Some college/university study, no bachelor's degree": 13.69,
+                    "A doctoral degree": 5.8962,
+                    "A professional degree": 4.425,
+                    "Primary/elementary school": 3.9441,
+                    "I don't know/not sure": 2.078,
+                    "I prefer not to answer": 1.7517,
+                    "No education": 0.6011
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "26,066 responses",
+                  "Data": {
+                    "A bachelor’s degree": 30.1542,
+                    "A master’s degree": 21.952,
+                    "High school": 17.1603,
+                    "Some college/university study, no bachelor's degree": 13.5847,
+                    "A doctoral degree": 5.4324,
+                    "A professional degree": 4.2661,
+                    "Primary/elementary school": 3.9055,
+                    "I don't know/not sure": 1.6075,
+                    "I prefer not to answer": 1.4003,
+                    "No education": 0.5371
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "SubText": "4,338 responses",
+                  "Data": {
+                    "A bachelor’s degree": 26.0028,
+                    "A master’s degree": 20.4933,
+                    "High school": 16.6206,
+                    "Some college/university study, no bachelor's degree": 13.278,
+                    "A doctoral degree": 6.5468,
+                    "A professional degree": 4.4721,
+                    "I don't know/not sure": 4.3107,
+                    "Primary/elementary school": 4.2646,
+                    "I prefer not to answer": 3.2964,
+                    "No education": 0.7146
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Developer Role and Gender",
+              "Graphs": [
+                {
+                  "Title": "Developer Role and Gender",
+                  "Type": "CustomFigure",
+                  "SubText": "The dashed line shows the average ratio of men's to women's participation",
+                  "FigurePath": "2017/devtype_logratio-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Developer Role and Ethnicity",
+              "Graphs": [
+                {
+                  "Title": "White or of European descent",
+                  "SubText": "18,770 responses",
+                  "Data": {
+                    "Web developer": 72.3708,
+                    "Desktop applications developer": 30.7885,
+                    "Mobile developer": 20.0799,
+                    "Database administrator": 14.5392,
+                    "DevOps specialist": 12.3761,
+                    "Systems administrator": 12.3655,
+                    "Developer with a statistics or mathematics background": 11.4811,
+                    "Embedded applications/devices developer": 9.7336,
+                    "Other": 8.716,
+                    "Data scientist": 7.8423,
+                    "Graphics programming": 4.8801,
+                    "Quality assurance engineer": 3.5322,
+                    "Machine learning specialist": 3.479,
+                    "Graphic designer": 3.3245
+                  }
+                },
+                {
+                  "Title": "South Asian",
+                  "SubText": "2,009 responses",
+                  "Data": {
+                    "Web developer": 73.5689,
+                    "Mobile developer": 27.775,
+                    "Desktop applications developer": 22.449,
+                    "Developer with a statistics or mathematics background": 11.6974,
+                    "Database administrator": 11.3489,
+                    "DevOps specialist": 8.5117,
+                    "Data scientist": 7.3668,
+                    "Embedded applications/devices developer": 7.1677,
+                    "Systems administrator": 6.9686,
+                    "Other": 6.6202,
+                    "Graphic designer": 3.783,
+                    "Machine learning specialist": 3.783,
+                    "Quality assurance engineer": 3.0861,
+                    "Graphics programming": 2.8372
+                  }
+                },
+                {
+                  "Title": "Hispanic or Latino/Latina",
+                  "SubText": "1,412 responses",
+                  "Data": {
+                    "Web developer": 80.8782,
+                    "Desktop applications developer": 28.966,
+                    "Mobile developer": 27.762,
+                    "Database administrator": 16.9972,
+                    "Systems administrator": 14.8017,
+                    "DevOps specialist": 11.4731,
+                    "Developer with a statistics or mathematics background": 10.1983,
+                    "Data scientist": 9.5609,
+                    "Embedded applications/devices developer": 8.2153,
+                    "Other": 6.1615,
+                    "Graphics programming": 4.745,
+                    "Machine learning specialist": 4.3909,
+                    "Graphic designer": 4.1785,
+                    "Quality assurance engineer": 3.966
+                  }
+                },
+                {
+                  "Title": "East Asian",
+                  "SubText": "1,063 responses",
+                  "Data": {
+                    "Web developer": 74.2239,
+                    "Mobile developer": 27.6576,
+                    "Desktop applications developer": 25.0235,
+                    "Database administrator": 12.8881,
+                    "Developer with a statistics or mathematics background": 11.3829,
+                    "DevOps specialist": 10.9125,
+                    "Systems administrator": 10.4421,
+                    "Data scientist": 8.8429,
+                    "Embedded applications/devices developer": 7.714,
+                    "Other": 5.3622,
+                    "Machine learning specialist": 4.7977,
+                    "Graphics programming": 4.5155,
+                    "Graphic designer": 3.857,
+                    "Quality assurance engineer": 3.7629
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Years of Coding Experience and Demographics",
+              "Graphs": [
+                {
+                  "Title": "Gender",
+                  "Type": "DoubleBar",
+                  "SubText": "29,255 responses",
+                  "Data": {
+                    "Less than a year": 10.7222,
+                    "1 to 2 years": 16.615,
+                    "2 to 3 years": 14.0009,
+                    "3 to 4 years": 9.6588,
+                    "4 to 5 years": 8.5955,
+                    "5 to 6 years": 6.5574,
+                    "6 to 7 years": 4.6522,
+                    "7 to 8 years": 3.6331,
+                    "8 to 9 years": 2.2153,
+                    "9 to 10 years": 3.7218,
+                    "10 to 11 years": 3.899,
+                    "11 to 12 years": 1.5507,
+                    "12 to 13 years": 1.4178,
+                    "13 to 14 years": 0.6203,
+                    "14 to 15 years": 1.2406,
+                    "15 to 16 years": 1.4621,
+                    "16 to 17 years": 1.2406,
+                    "17 to 18 years": 1.1963,
+                    "18 to 19 years": 1.0634,
+                    "19 to 20 years": 0.576,
+                    "20 or more years": 5.3611
+                  },
+                  "SecondaryData": {
+                    "Less than a year": 5.9993,
+                    "1 to 2 years": 11.2799,
+                    "2 to 3 years": 10.8121,
+                    "3 to 4 years": 9.5097,
+                    "4 to 5 years": 8.1325,
+                    "5 to 6 years": 7.4551,
+                    "6 to 7 years": 4.7904,
+                    "7 to 8 years": 4.36,
+                    "8 to 9 years": 3.4319,
+                    "9 to 10 years": 5.0112,
+                    "10 to 11 years": 4.3451,
+                    "11 to 12 years": 2.2904,
+                    "12 to 13 years": 2.0172,
+                    "13 to 14 years": 1.4933,
+                    "14 to 15 years": 2.1969,
+                    "15 to 16 years": 2.3765,
+                    "16 to 17 years": 1.9611,
+                    "17 to 18 years": 1.5756,
+                    "18 to 19 years": 1.1115,
+                    "19 to 20 years": 1.1751,
+                    "20 or more years": 8.6751
+                  },
+                  "LegendText": "Female; Male"
+                },
+                {
+                  "Title": "Average Years by Ethnicity",
+                  "SubText": "Mean of 33,004 responses",
+                  "Format": "{0:#.0}",
+                  "Data": {
+                    "White or of European descent": 12.4717,
+                    "Native American, Pacific Islander, or Indigenous Australian": 12.0859,
+                    "I prefer not to say": 11.4966,
+                    "Hispanic or Latino/Latina": 10.6385,
+                    "Middle Eastern": 9.6125,
+                    "East Asian": 9.2031,
+                    "Black or of African descent": 8.808,
+                    "I don’t know": 8.3333,
+                    "South Asian": 8.0477
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Education",
+          "GraphCollections": [
+            {
+              "Title": "Educational Attainment",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "51,392 responses",
+                  "Data": {
+                    "I never completed any formal education": 0.8289,
+                    "Primary/elementary school": 2.0373,
+                    "Secondary school": 11.496,
+                    "Some college/university study without earning a bachelor’s degree": 15.8176,
+                    "Bachelor’s degree": 42.0474,
+                    "Master’s degree": 21.6785,
+                    "Professional degree": 1.3913,
+                    "Doctoral degree": 2.5451,
+                    "I prefer not to answer": 2.1579
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "36,131 responses",
+                  "Data": {
+                    "I never completed any formal education": 0.7224,
+                    "Primary/elementary school": 0.5646,
+                    "Secondary school": 6.3104,
+                    "Some college/university study without earning a bachelor’s degree": 14.9179,
+                    "Bachelor’s degree": 47.8536,
+                    "Master’s degree": 24.8623,
+                    "Professional degree": 1.5029,
+                    "Doctoral degree": 2.1893,
+                    "I prefer not to answer": 1.0766
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Undergraduate Major",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "42,841 responses; select all that apply",
+                  "Data": {
+                    "Computer science or software engineering": 49.9755,
+                    "Computer engineering or electrical/electronics engineering": 10.1865,
+                    "Computer programming or Web development": 9.0637,
+                    "Information technology, networking, or system administration": 4.9952,
+                    "A natural science": 4.3533,
+                    "A non-computer-focused engineering discipline": 4.1782,
+                    "Mathematics or statistics": 3.8468,
+                    "Something else": 2.4743,
+                    "A humanities discipline": 2.1031,
+                    "A business discipline": 2.1008,
+                    "Management information systems": 1.5266,
+                    "Fine arts or performing arts": 1.5079,
+                    "A social science": 1.4776,
+                    "I never declared a major": 1.3819,
+                    "Psychology": 0.5019,
+                    "A health science": 0.3315
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "32,958 responses; select all that apply",
+                  "Data": {
+                    "Computer science or software engineering": 54.1993,
+                    "Computer engineering or electrical/electronics engineering": 10.0188,
+                    "Computer programming or Web development": 9.0964,
+                    "Information technology, networking, or system administration": 4.348,
+                    "A non-computer-focused engineering discipline": 3.6198,
+                    "A natural science": 3.5227,
+                    "Mathematics or statistics": 3.3983,
+                    "Something else": 2.13,
+                    "A humanities discipline": 1.9146,
+                    "A business discipline": 1.7143,
+                    "Fine arts or performing arts": 1.4503,
+                    "Management information systems": 1.4321,
+                    "I never declared a major": 1.2926,
+                    "A social science": 1.2501,
+                    "Psychology": 0.4187,
+                    "A health science": 0.2003
+                  }
+                },
+                {
+                  "Title": "Students",
+                  "SubText": "3,945 responses; select all that apply",
+                  "Data": {
+                    "Computer science or software engineering": 48.289,
+                    "Computer programming or Web development": 12.4715,
+                    "Computer engineering or electrical/electronics engineering": 10.2408,
+                    "Information technology, networking, or system administration": 6.8188,
+                    "Something else": 3.3207,
+                    "A natural science": 3.2446,
+                    "A non-computer-focused engineering discipline": 3.1432,
+                    "Mathematics or statistics": 2.763,
+                    "A business discipline": 2.4081,
+                    "A humanities discipline": 1.6223,
+                    "I never declared a major": 1.597,
+                    "Fine arts or performing arts": 1.1914,
+                    "A social science": 1.0393,
+                    "Management information systems": 0.9632,
+                    "A health science": 0.4563,
+                    "Psychology": 0.4309
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Importance of Formal Education",
+              "Graphs": [
+                {
+                  "Title": "Importance of Formal Education",
+                  "SubText": "23,355 responses",
+                  "Data": {
+                    "Very important": 15.9109,
+                    "Important": 25.0953,
+                    "Somewhat important": 26.9279,
+                    "Not very important": 20.5309,
+                    "Not at all important": 11.535
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Other Types of Education",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "30,354 responses; select all that apply",
+                  "Data": {
+                    "Self-taught": 90.0376,
+                    "Online course": 45.4372,
+                    "On-the-job training": 41.2071,
+                    "Open source contributions": 36.9803,
+                    "Hackathon": 23.5554,
+                    "Coding competition": 22.0169,
+                    "Part-time/evening course": 15.3324,
+                    "Industry certification": 14.7328,
+                    "Bootcamp": 8.984
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "22,407 responses; select all that apply",
+                  "Data": {
+                    "Self-taught": 91.1099,
+                    "On-the-job training": 46.5658,
+                    "Online course": 44.0621,
+                    "Open source contributions": 38.9164,
+                    "Hackathon": 25.3537,
+                    "Coding competition": 21.7968,
+                    "Industry certification": 16.3877,
+                    "Part-time/evening course": 15.0132,
+                    "Bootcamp": 9.4033
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ways Developers Teach Themselves",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "26,735 responses; select all that apply",
+                  "Data": {
+                    "Official documentation": 80.1721,
+                    "Stack Overflow Q&A": 80.0785,
+                    "Trade book": 53.8208,
+                    "Non-Stack online communities": 50.6677,
+                    "Built-in help": 47.0731,
+                    "Stack Overflow Docs": 27.4846,
+                    "Textbook": 20.7892,
+                    "Friends network": 20.7107,
+                    "Company internal community": 18.5038,
+                    "Other": 11.7038,
+                    "Tutoring/mentoring": 4.3538
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "20,018 responses; select all that apply",
+                  "Data": {
+                    "Official documentation": 82.241,
+                    "Stack Overflow Q&A": 80.023,
+                    "Trade book": 56.2694,
+                    "Non-Stack online communities": 50.4746,
+                    "Built-in help": 47.6421,
+                    "Stack Overflow Docs": 25.9766,
+                    "Friends network": 20.3467,
+                    "Textbook": 19.6273,
+                    "Company internal community": 18.3235,
+                    "Other": 10.7253,
+                    "Tutoring/mentoring": 4.2762
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Bootcamp Success",
+              "Graphs": [
+                {
+                  "Title": "Bootcamp Success",
+                  "SubText": "2,602 responses",
+                  "Data": {
+                    "I already had a job as a developer when I started the program": 45.8493,
+                    "I got a job as a developer before completing the program": 9.6849,
+                    "Immediately upon graduating": 11.299,
+                    "Less than a month": 5.9954,
+                    "One to three months": 8.7625,
+                    "Four to six months": 4.0354,
+                    "Six months to a year": 2.9977,
+                    "Longer than a year": 3.2667,
+                    "I haven't gotten a job as a developer yet": 8.1091
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Program as a Hobby",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "51,392 responses",
+                  "Data": {
+                    "Yes, I program as a hobby": 48.2585,
+                    "Yes, I contribute to open source projects": 5.9309,
+                    "Yes, both": 26.7668,
+                    "No": 19.0438
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "36,131 responses",
+                  "Data": {
+                    "Yes, I program as a hobby": 45.2105,
+                    "Yes, I contribute to open source projects": 6.208,
+                    "Yes, both": 27.7352,
+                    "No": 20.8464
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Kind of Learning Do Developers Recommend?",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "23,568 responses; select all that apply",
+                  "Data": {
+                    "Take online courses": 64.6894,
+                    "Buy books and work through the exercises": 49.8557,
+                    "Part-time/evening courses": 31.8949,
+                    "Contribute to open source": 31.4961,
+                    "Bootcamp": 22.3863,
+                    "Conferences/meet-ups": 22.2505,
+                    "Return to college": 21.2873,
+                    "Participate in online coding competitions": 15.3174,
+                    "Get a job as a QA tester": 14.3245,
+                    "Participate in hackathons": 11.6556,
+                    "Master's degree": 11.1974,
+                    "Other": 9.9627,
+                    "None of these": 2.5628
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "17,025 responses; select all that apply",
+                  "Data": {
+                    "Take online courses": 64.4523,
+                    "Buy books and work through the exercises": 50.2144,
+                    "Part-time/evening courses": 32.094,
+                    "Contribute to open source": 31.7063,
+                    "Conferences/meet-ups": 23.4126,
+                    "Bootcamp": 22.7606,
+                    "Return to college": 20.9927,
+                    "Get a job as a QA tester": 15.8003,
+                    "Participate in online coding competitions": 14.0499,
+                    "Participate in hackathons": 11.1424,
+                    "Master's degree": 10.8488,
+                    "Other": 10.4082,
+                    "None of these": 2.2614
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Technology",
+      "SubTitle": "The tools and trends of the trade.",
+      "SubSections": [
+        {
+          "Title": "Most Popular Technologies",
+          "GraphCollections": [
+            {
+              "Title": "Programming Languages",
+              "Graphs": [
+                {
+                  "Title": "% of This Category",
+                  "SubText": "36,625 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 62.4573,
+                    "SQL": 51.2055,
+                    "Java": 39.656,
+                    "C#": 34.0642,
+                    "Python": 31.9563,
+                    "PHP": 28.0956,
+                    "C++": 22.2662,
+                    "C": 19.0416,
+                    "TypeScript": 9.5235,
+                    "Ruby": 9.0758,
+                    "Swift": 6.4655,
+                    "Objective-C": 6.4137,
+                    "VB.NET": 6.2061,
+                    "Assembly": 4.9775,
+                    "R": 4.4614,
+                    "Perl": 4.3276,
+                    "VBA": 4.2976,
+                    "Matlab": 4.284,
+                    "Go": 4.2512,
+                    "Scala": 3.5741,
+                    "Groovy": 3.2573,
+                    "CoffeeScript": 3.2546,
+                    "Visual Basic 6": 2.9242,
+                    "Lua": 2.8369,
+                    "Haskell": 1.772
+                  }
+                },
+                {
+                  "Title": "% of All Respondents",
+                  "SubText": "36,935 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "JavaScript": 61.9331,
+                    "SQL": 50.7757,
+                    "Java": 39.3231,
+                    "C#": 33.7783,
+                    "Python": 31.6881,
+                    "PHP": 27.8598,
+                    "C++": 22.0793,
+                    "C": 18.8818,
+                    "TypeScript": 9.4436,
+                    "Ruby": 8.9996,
+                    "Swift": 6.4113,
+                    "Objective-C": 6.3598,
+                    "VB.NET": 6.1541,
+                    "Assembly": 4.9357,
+                    "R": 4.424,
+                    "Perl": 4.2913,
+                    "VBA": 4.2615,
+                    "Matlab": 4.248,
+                    "Go": 4.2155,
+                    "Scala": 3.5441,
+                    "Groovy": 3.23,
+                    "CoffeeScript": 3.2273,
+                    "Visual Basic 6": 2.8997,
+                    "Lua": 2.813,
+                    "Haskell": 1.7571
+                  }
+                },
+                {
+                  "Title": "% of Professional Developers",
+                  "SubText": "27,612 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "JavaScript": 66.7137,
+                    "SQL": 53.7303,
+                    "Java": 38.3384,
+                    "C#": 36.6833,
+                    "Python": 27.5713,
+                    "PHP": 27.2454,
+                    "C++": 19.2887,
+                    "C": 15.4353,
+                    "TypeScript": 11.2886,
+                    "Ruby": 9.4669,
+                    "Objective-C": 7.2976,
+                    "Swift": 6.8521,
+                    "VB.NET": 6.1205,
+                    "Go": 4.6067,
+                    "Perl": 4.1323,
+                    "Scala": 4.02,
+                    "Groovy": 3.8099,
+                    "Assembly": 3.6832,
+                    "CoffeeScript": 3.6687,
+                    "VBA": 3.5021,
+                    "R": 3.0603,
+                    "Matlab": 2.8719,
+                    "Visual Basic 6": 2.5098,
+                    "Lua": 2.2744,
+                    "Haskell": 1.3798
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Frameworks, Libraries, and Other Technologies",
+              "Graphs": [
+                {
+                  "Title": "% of This Category",
+                  "SubText": "20,229 responses; select all that apply",
+                  "Data": {
+                    "Node.js": 47.071,
+                    "AngularJS": 44.3027,
+                    ".NET Core": 33.4322,
+                    "React": 19.5413,
+                    "Cordova": 11.0337,
+                    "Firebase": 9.783,
+                    "Xamarin": 8.2802,
+                    "Hadoop": 5.675,
+                    "Spark": 4.7111
+                  }
+                },
+                {
+                  "Title": "% of All Respondents",
+                  "SubText": "36,935 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "Node.js": 25.7804,
+                    "AngularJS": 24.2642,
+                    ".NET Core": 18.3105,
+                    "React": 10.7026,
+                    "Cordova": 6.043,
+                    "Firebase": 5.3581,
+                    "Xamarin": 4.535,
+                    "Hadoop": 3.1082,
+                    "Spark": 2.5802
+                  }
+                },
+                {
+                  "Title": "% of Professional Developers",
+                  "SubText": "27,612 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "AngularJS": 28.1001,
+                    "Node.js": 27.9082,
+                    ".NET Core": 19.5966,
+                    "React": 12.5706,
+                    "Cordova": 6.8702,
+                    "Firebase": 5.5845,
+                    "Xamarin": 4.8095,
+                    "Hadoop": 3.2269,
+                    "Spark": 2.7162
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Databases",
+              "Graphs": [
+                {
+                  "Title": "% of This Category",
+                  "SubText": "29,452 responses; select all that apply",
+                  "Data": {
+                    "MySQL": 55.5989,
+                    "SQL Server": 38.5644,
+                    "SQLite": 26.6128,
+                    "PostgreSQL": 26.5347,
+                    "MongoDB": 21.024,
+                    "Oracle": 16.549,
+                    "Redis": 14.067,
+                    "Cassandra": 3.0762
+                  }
+                },
+                {
+                  "Title": "% of All Respondents",
+                  "SubText": "36,935 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "MySQL": 44.3346,
+                    "SQL Server": 30.7513,
+                    "SQLite": 21.2211,
+                    "PostgreSQL": 21.1588,
+                    "MongoDB": 16.7646,
+                    "Oracle": 13.1962,
+                    "Redis": 11.217,
+                    "Cassandra": 2.453
+                  }
+                },
+                {
+                  "Title": "% of Professional Developers",
+                  "SubText": "27,612 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "MySQL": 43.8759,
+                    "SQL Server": 34.0577,
+                    "PostgreSQL": 23.2761,
+                    "SQLite": 21.5703,
+                    "MongoDB": 18.5354,
+                    "Oracle": 13.9541,
+                    "Redis": 13.6426,
+                    "Cassandra": 2.8756
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Platforms",
+              "Graphs": [
+                {
+                  "Title": "% of This Category",
+                  "SubText": "29,114 responses; select all that apply",
+                  "Data": {
+                    "Windows Desktop": 41.0421,
+                    "Linux Desktop": 32.9498,
+                    "Android": 28.2029,
+                    "Amazon Web Services (AWS)": 28.1068,
+                    "Mac OS": 18.4207,
+                    "iOS": 16.4251,
+                    "Raspberry Pi": 16.061,
+                    "WordPress": 15.5836,
+                    "Microsoft Azure": 11.4275,
+                    "Arduino": 10.2562,
+                    "Windows Phone": 3.8607,
+                    "SharePoint": 3.7199,
+                    "Salesforce": 2.6173,
+                    "Serverless": 2.0815,
+                    "Mainframe": 1.3876
+                  }
+                },
+                {
+                  "Title": "% of All Respondents",
+                  "SubText": "36,935 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "Windows Desktop": 32.3514,
+                    "Linux Desktop": 25.9727,
+                    "Android": 22.2309,
+                    "Amazon Web Services (AWS)": 22.1551,
+                    "Mac OS": 14.5201,
+                    "iOS": 12.9471,
+                    "Raspberry Pi": 12.6601,
+                    "WordPress": 12.2837,
+                    "Microsoft Azure": 9.0077,
+                    "Arduino": 8.0845,
+                    "Windows Phone": 3.0432,
+                    "SharePoint": 2.9322,
+                    "Salesforce": 2.0631,
+                    "Serverless": 1.6407,
+                    "Mainframe": 1.0938
+                  }
+                },
+                {
+                  "Title": "% of Professional Developers",
+                  "SubText": "27,612 responses; select all that apply. Shown as a percentage of the respondents who chose at least one language, framework, database, or platform.",
+                  "Data": {
+                    "Windows Desktop": 31.1966,
+                    "Amazon Web Services (AWS)": 25.6084,
+                    "Linux Desktop": 24.2286,
+                    "Android": 21.6536,
+                    "Mac OS": 15.3375,
+                    "iOS": 14.2655,
+                    "WordPress": 12.1505,
+                    "Raspberry Pi": 11.3357,
+                    "Microsoft Azure": 10.4701,
+                    "Arduino": 6.5479,
+                    "Windows Phone": 3.111,
+                    "SharePoint": 2.8828,
+                    "Salesforce": 2.3251,
+                    "Serverless": 1.8579,
+                    "Mainframe": 1.1481
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Languages Over Time",
+              "Graphs": [
+                {
+                  "Title": "Languages Over Time",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/historical_languages-1.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Most Loved, Dreaded, and Wanted",
+          "GraphCollections": [
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Languages",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Rust": 73.0769,
+                    "Smalltalk": 66.9725,
+                    "TypeScript": 64.1055,
+                    "Swift": 63.9358,
+                    "Go": 63.2627,
+                    "Python": 62.7136,
+                    "Elixir": 62.3684,
+                    "C#": 61.6544,
+                    "Scala": 59.893,
+                    "Clojure": 59.8465,
+                    "JavaScript": 59.8164,
+                    "F#": 56.2363,
+                    "Haskell": 54.5455,
+                    "SQL": 53.4126,
+                    "C++": 52.0417,
+                    "Julia": 50.7246,
+                    "Java": 50.5164,
+                    "R": 49.8776,
+                    "Ruby": 48.4958,
+                    "C": 41.6691,
+                    "PHP": 41.3605,
+                    "Erlang": 39.8577,
+                    "Dart": 38.6207,
+                    "Common Lisp": 37.3626,
+                    "Groovy": 37.1333
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Visual Basic 6": 88.3287,
+                    "VBA": 80.432,
+                    "CoffeeScript": 79.1946,
+                    "VB.NET": 77.2107,
+                    "Matlab": 72.3391,
+                    "Objective-C": 68.1141,
+                    "Assembly": 67.6358,
+                    "Perl": 65.8675,
+                    "Lua": 65.8325,
+                    "Hack": 64.486,
+                    "Groovy": 62.8667,
+                    "Common Lisp": 62.6374,
+                    "Dart": 61.3793,
+                    "Erlang": 60.1423,
+                    "PHP": 58.6395,
+                    "C": 58.3309,
+                    "Ruby": 51.5042,
+                    "R": 50.1224,
+                    "Java": 49.4836,
+                    "Julia": 49.2754,
+                    "C++": 47.9583,
+                    "SQL": 46.5874,
+                    "Haskell": 45.4545,
+                    "F#": 43.7637,
+                    "JavaScript": 40.1836
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "Python": 20.5978,
+                    "JavaScript": 18.5935,
+                    "Go": 13.4645,
+                    "C++": 11.7588,
+                    "Java": 11.7452,
+                    "TypeScript": 10.2836,
+                    "C#": 10.1344,
+                    "Swift": 8.6849,
+                    "Ruby": 6.9705,
+                    "Rust": 6.5814,
+                    "SQL": 6.5427,
+                    "Scala": 6.5333,
+                    "C": 6.4241,
+                    "Haskell": 5.3559,
+                    "R": 5.1127,
+                    "F#": 4.8502,
+                    "PHP": 4.1373,
+                    "Assembly": 3.7792,
+                    "Elixir": 3.6171,
+                    "Objective-C": 3.1514,
+                    "Clojure": 2.9261,
+                    "Erlang": 2.5561,
+                    "CoffeeScript": 2.1837,
+                    "Lua": 2.1134,
+                    "Perl": 1.5432
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Frameworks, Libraries and Other Technologies",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "React": 66.9112,
+                    "Node.js": 62.0773,
+                    ".NET Core": 60.8754,
+                    "Spark": 60.1259,
+                    "Firebase": 52.9055,
+                    "AngularJS": 51.6737,
+                    "Hadoop": 48.7805,
+                    "Xamarin": 48.6567,
+                    "Cordova": 38.7993
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Cordova": 61.2007,
+                    "Xamarin": 51.3433,
+                    "Hadoop": 51.2195,
+                    "AngularJS": 48.3263,
+                    "Firebase": 47.0945,
+                    "Spark": 39.8741,
+                    ".NET Core": 39.1246,
+                    "Node.js": 37.9227,
+                    "React": 33.0888
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "Node.js": 22.2246,
+                    "AngularJS": 19.3687,
+                    "React": 18.9337,
+                    ".NET Core": 12.828,
+                    "Xamarin": 8.4246,
+                    "Hadoop": 7.9116,
+                    "Spark": 5.4369,
+                    "Firebase": 5.4078,
+                    "Cordova": 3.7231
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Databases",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Redis": 64.7598,
+                    "PostgreSQL": 60.755,
+                    "MongoDB": 54.9742,
+                    "SQL Server": 54.2173,
+                    "Cassandra": 49.8896,
+                    "MySQL": 49.5756,
+                    "SQLite": 47.2059,
+                    "Oracle": 36.9101
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "Oracle": 63.0899,
+                    "SQLite": 52.7941,
+                    "MySQL": 50.4244,
+                    "Cassandra": 50.1104,
+                    "SQL Server": 45.7827,
+                    "MongoDB": 45.0258,
+                    "PostgreSQL": 39.245,
+                    "Redis": 35.2402
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "MongoDB": 20.7714,
+                    "PostgreSQL": 11.5198,
+                    "Redis": 10.6154,
+                    "MySQL": 8.4894,
+                    "Cassandra": 7.4581,
+                    "SQLite": 7.1709,
+                    "SQL Server": 4.6431,
+                    "Oracle": 3.8329
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Loved, Dreaded, and Wanted Platforms",
+              "Graphs": [
+                {
+                  "Title": "Loved",
+                  "SubText": "% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it",
+                  "Data": {
+                    "Linux Desktop": 69.6028,
+                    "Serverless": 66.3366,
+                    "Amazon Web Services (AWS)": 65.2328,
+                    "Raspberry Pi": 65.2267,
+                    "Mac OS": 62.3345,
+                    "iOS": 62.0243,
+                    "Microsoft Azure": 61.7373,
+                    "Android": 61.5759,
+                    "Arduino": 59.1762,
+                    "Windows Desktop": 55.9628,
+                    "Mainframe": 42.3267,
+                    "Windows Phone": 39.2349,
+                    "WordPress": 35.508,
+                    "Salesforce": 29.3963,
+                    "SharePoint": 29.0859
+                  }
+                },
+                {
+                  "Title": "Dreaded",
+                  "SubText": "% of developers who are developing with the language or technology but have not expressed interest in continuing to do so",
+                  "Data": {
+                    "SharePoint": 70.9141,
+                    "Salesforce": 70.6037,
+                    "WordPress": 64.492,
+                    "Windows Phone": 60.7651,
+                    "Mainframe": 57.6733,
+                    "Windows Desktop": 44.0372,
+                    "Arduino": 40.8238,
+                    "Android": 38.4241,
+                    "Microsoft Azure": 38.2627,
+                    "iOS": 37.9757,
+                    "Mac OS": 37.6655,
+                    "Raspberry Pi": 34.7733,
+                    "Amazon Web Services (AWS)": 34.7672,
+                    "Serverless": 33.6634,
+                    "Linux Desktop": 30.3972
+                  }
+                },
+                {
+                  "Title": "Wanted",
+                  "SubText": "% of developers who are not developing with the language or technology but have expressed interest in developing with it",
+                  "Data": {
+                    "Android": 20.6446,
+                    "Amazon Web Services (AWS)": 18.5667,
+                    "Raspberry Pi": 15.3706,
+                    "iOS": 13.2362,
+                    "Linux Desktop": 9.6466,
+                    "Arduino": 8.3995,
+                    "Microsoft Azure": 7.1132,
+                    "Mac OS": 6.6053,
+                    "Serverless": 3.9957,
+                    "Windows Desktop": 3.941,
+                    "Windows Phone": 2.6633,
+                    "WordPress": 2.2452,
+                    "Salesforce": 1.1257,
+                    "SharePoint": 0.9691,
+                    "Mainframe": 0.6568
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Technologies and Occupations",
+          "GraphCollections": [
+            {
+              "Title": "Most Popular Languages by Occupation",
+              "Graphs": [
+                {
+                  "Title": "Web Developer",
+                  "SubText": "20,091 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 81.6734,
+                    "SQL": 60.3653,
+                    "C#": 38.1365,
+                    "Java": 37.8976,
+                    "PHP": 33.846,
+                    "Python": 25.3397,
+                    "TypeScript": 14.4393,
+                    "C++": 12.5927,
+                    "Ruby": 11.1393,
+                    "C": 10.3081,
+                    "VB.NET": 6.4855,
+                    "Objective-C": 5.5398,
+                    "Swift": 5.4502,
+                    "Go": 4.9226,
+                    "CoffeeScript": 4.6986,
+                    "Groovy": 4.0267,
+                    "Scala": 3.967,
+                    "Perl": 3.8276,
+                    "VBA": 3.1507,
+                    "R": 2.4986,
+                    "Visual Basic 6": 2.419,
+                    "Assembly": 2.409,
+                    "Lua": 1.9511,
+                    "Matlab": 1.8765,
+                    "Elixir": 1.4385
+                  }
+                },
+                {
+                  "Title": "Desktop Developer",
+                  "SubText": "8,155 responses; select all that apply",
+                  "Data": {
+                    "SQL": 60.2452,
+                    "JavaScript": 59.9632,
+                    "C#": 59.4237,
+                    "Java": 39.8774,
+                    "C++": 31.2814,
+                    "Python": 25.4323,
+                    "PHP": 21.5696,
+                    "C": 21.2508,
+                    "TypeScript": 12.0662,
+                    "VB.NET": 11.9926,
+                    "Objective-C": 7.664,
+                    "VBA": 6.9528,
+                    "Swift": 6.1312,
+                    "Ruby": 5.6775,
+                    "Assembly": 5.2974,
+                    "Visual Basic 6": 5.2974,
+                    "Perl": 3.9485,
+                    "Go": 3.6665,
+                    "Matlab": 3.5806,
+                    "Groovy": 3.2495,
+                    "Lua": 2.8939,
+                    "Scala": 2.7468,
+                    "R": 2.6487,
+                    "F#": 2.3789,
+                    "CoffeeScript": 2.2318
+                  }
+                },
+                {
+                  "Title": "Sysadmin / DevOps",
+                  "SubText": "5,258 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 73.9064,
+                    "SQL": 63.8646,
+                    "Java": 41.3846,
+                    "Python": 38.9121,
+                    "PHP": 37.8091,
+                    "C#": 35.1274,
+                    "C++": 20.7113,
+                    "C": 18.5051,
+                    "Ruby": 14.0167,
+                    "TypeScript": 13.3321,
+                    "Go": 9.2431,
+                    "Perl": 8.5203,
+                    "VB.NET": 7.3222,
+                    "Swift": 6.7516,
+                    "Objective-C": 6.5804,
+                    "Groovy": 6.2571,
+                    "CoffeeScript": 5.6295,
+                    "Scala": 5.4964,
+                    "VBA": 5.1921,
+                    "Assembly": 4.5264,
+                    "Lua": 3.7086,
+                    "R": 3.5755,
+                    "Visual Basic 6": 3.3663,
+                    "Matlab": 2.7387,
+                    "Haskell": 2.054
+                  }
+                },
+                {
+                  "Title": "Data Scientist/Engineer",
+                  "SubText": "4,779 responses; select all that apply",
+                  "Data": {
+                    "JavaScript": 58.6734,
+                    "SQL": 57.9619,
+                    "Python": 44.9885,
+                    "Java": 44.4026,
+                    "C#": 35.2166,
+                    "C++": 31.9941,
+                    "PHP": 24.5867,
+                    "C": 24.0427,
+                    "R": 11.1739,
+                    "TypeScript": 9.2069,
+                    "Ruby": 9.186,
+                    "Scala": 8.5792,
+                    "Matlab": 8.1816,
+                    "Objective-C": 7.0726,
+                    "VB.NET": 6.7587,
+                    "Assembly": 6.675,
+                    "Perl": 6.5913,
+                    "Swift": 6.3821,
+                    "Go": 6.3612,
+                    "VBA": 5.9427,
+                    "Groovy": 4.4988,
+                    "CoffeeScript": 3.8502,
+                    "Visual Basic 6": 3.7246,
+                    "Lua": 3.4945,
+                    "Haskell": 2.8249
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Most Popular Developer Environments by Occupation",
+              "Graphs": [
+                {
+                  "Title": "Web Developer",
+                  "SubText": "19,772 responses; select all that apply",
+                  "Data": {
+                    "Visual Studio": 38.8023,
+                    "Notepad++": 34.3162,
+                    "Sublime Text": 31.3726,
+                    "Vim": 27.1394,
+                    "Visual Studio Code": 23.9682,
+                    "IntelliJ": 22.9871,
+                    "Atom": 20.003,
+                    "Eclipse": 19.9777,
+                    "Android Studio": 14.0097,
+                    "PHPStorm": 11.7236,
+                    "Xcode": 9.1796,
+                    "NetBeans": 7.8343,
+                    "PyCharm": 7.723,
+                    "Emacs": 4.1877,
+                    "IPython / Jupyter": 3.3633,
+                    "RubyMine": 2.19,
+                    "RStudio": 1.3352,
+                    "TextMate": 1.224,
+                    "Coda": 0.703,
+                    "Komodo": 0.612,
+                    "Zend": 0.5108,
+                    "Light Table": 0.1821
+                  }
+                },
+                {
+                  "Title": "Desktop Developer",
+                  "SubText": "7,973 responses; select all that apply",
+                  "Data": {
+                    "Visual Studio": 66.4367,
+                    "Notepad++": 48.1249,
+                    "Visual Studio Code": 25.8121,
+                    "Eclipse": 25.1599,
+                    "Vim": 21.1589,
+                    "Sublime Text": 21.1213,
+                    "IntelliJ": 18.7759,
+                    "Android Studio": 17.4338,
+                    "Atom": 12.6552,
+                    "Xcode": 11.3759,
+                    "NetBeans": 8.8925,
+                    "PyCharm": 7.3247,
+                    "PHPStorm": 4.9291,
+                    "Emacs": 4.6156,
+                    "IPython / Jupyter": 2.8346,
+                    "RStudio": 1.5302,
+                    "RubyMine": 1.4298,
+                    "TextMate": 1.179,
+                    "Komodo": 0.6898,
+                    "Coda": 0.5393,
+                    "Zend": 0.3637,
+                    "Light Table": 0.2132
+                  }
+                },
+                {
+                  "Title": "Sysadmin / DevOps",
+                  "SubText": "5,164 responses; select all that apply",
+                  "Data": {
+                    "Vim": 42.1185,
+                    "Visual Studio": 35.883,
+                    "Notepad++": 33.1332,
+                    "Sublime Text": 28.6406,
+                    "IntelliJ": 23.7994,
+                    "Visual Studio Code": 22.4245,
+                    "Eclipse": 21.9404,
+                    "Atom": 20.701,
+                    "Android Studio": 15.4144,
+                    "PHPStorm": 12.2386,
+                    "PyCharm": 11.3478,
+                    "Xcode": 10.4957,
+                    "NetBeans": 8.1913,
+                    "Emacs": 7.0488,
+                    "IPython / Jupyter": 5.6158,
+                    "RubyMine": 2.5949,
+                    "RStudio": 1.8203,
+                    "TextMate": 1.6266,
+                    "Komodo": 0.8714,
+                    "Coda": 0.8521,
+                    "Zend": 0.5809,
+                    "Light Table": 0.2711
+                  }
+                },
+                {
+                  "Title": "Data Scientist/Engineer",
+                  "SubText": "4,659 responses; select all that apply",
+                  "Data": {
+                    "Visual Studio": 39.0856,
+                    "Notepad++": 36.7461,
+                    "Vim": 34.0416,
+                    "Eclipse": 26.8513,
+                    "Sublime Text": 26.0571,
+                    "IntelliJ": 25.22,
+                    "Visual Studio Code": 17.2998,
+                    "Atom": 15.8832,
+                    "Android Studio": 15.454,
+                    "PyCharm": 14.0159,
+                    "IPython / Jupyter": 12.7281,
+                    "Xcode": 10.7319,
+                    "Emacs": 9.5085,
+                    "NetBeans": 8.9719,
+                    "RStudio": 7.1045,
+                    "PHPStorm": 6.9114,
+                    "RubyMine": 1.6742,
+                    "TextMate": 1.3951,
+                    "Komodo": 1.0303,
+                    "Coda": 0.6225,
+                    "Zend": 0.601,
+                    "Light Table": 0.3863
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Top Paying Technologies",
+          "GraphCollections": [
+            {
+              "Title": "Top Paying Technologies by Region",
+              "Graphs": [
+                {
+                  "Title": "Worldwide",
+                  "SubText": "Median of 12,128 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Clojure": 72000,
+                    "Rust": 65714.2857,
+                    "Elixir": 65000,
+                    "F#": 64516.129,
+                    "Go": 64516.129,
+                    "Perl": 63068.1818,
+                    "Groovy": 61809.0909,
+                    "Ruby": 60000,
+                    "Scala": 60000,
+                    "R": 57125,
+                    "CoffeeScript": 55053.7634,
+                    "Lua": 54919.3548,
+                    "TypeScript": 54298.6425,
+                    "Haskell": 53763.4409,
+                    "Objective-C": 53763.4409,
+                    "Python": 53763.4409,
+                    "Swift": 53763.4409,
+                    "C#": 53750,
+                    "C++": 51323.9247,
+                    "VBA": 50475.5155,
+                    "JavaScript": 50000,
+                    "Matlab": 50000,
+                    "SQL": 50000,
+                    "VB.NET": 50000,
+                    "C": 49422.5408
+                  }
+                },
+                {
+                  "Title": "US",
+                  "SubText": "Median of 3,603 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Go": 110000,
+                    "Scala": 110000,
+                    "Objective-C": 109000,
+                    "CoffeeScript": 105500,
+                    "Perl": 105000,
+                    "C++": 100890,
+                    "C": 100000,
+                    "R": 100000,
+                    "Swift": 100000,
+                    "TypeScript": 100000,
+                    "Python": 99000,
+                    "Groovy": 98250,
+                    "Ruby": 97000,
+                    "Java": 96000,
+                    "SQL": 91000,
+                    "C#": 90000,
+                    "JavaScript": 90000,
+                    "Assembly": 83000,
+                    "PHP": 80000,
+                    "VBA": 80000,
+                    "VB.NET": 75000
+                  }
+                },
+                {
+                  "Title": "UK",
+                  "SubText": "Median of 1,398 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "TypeScript": 53763.4409,
+                    "Ruby": 51250,
+                    "C#": 50750,
+                    "C++": 50000,
+                    "Java": 50000,
+                    "Python": 50000,
+                    "JavaScript": 48506.0484,
+                    "C": 48256.0484,
+                    "SQL": 48125,
+                    "VB.NET": 43750,
+                    "PHP": 42500
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "Median of 958 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Java": 53763.4409,
+                    "Python": 53763.4409,
+                    "TypeScript": 53763.4409,
+                    "C": 51612.9032,
+                    "C++": 51612.9032,
+                    "JavaScript": 51612.9032,
+                    "SQL": 51612.9032,
+                    "C#": 50537.6344,
+                    "PHP": 45161.2903
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "Median of 706 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Python": 8809.2791,
+                    "Java": 7341.0659,
+                    "JavaScript": 7047.4233,
+                    "C#": 6900.602,
+                    "SQL": 6695.0521,
+                    "C++": 6621.6415,
+                    "C": 6239.906,
+                    "PHP": 5285.5675
+                  }
+                },
+                {
+                  "Title": "France",
+                  "SubText": "Median of 450 responses",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Python": 42150.5376,
+                    "C++": 41075.2688,
+                    "JavaScript": 39784.9462,
+                    "SQL": 39784.9462,
+                    "Java": 39086.0215,
+                    "C#": 38709.6774,
+                    "PHP": 37634.4086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Correlated Technologies",
+          "GraphCollections": [
+            {
+              "Title": "Correlated Technologies",
+              "Graphs": [
+                {
+                  "Title": "Correlated Technologies",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/correlated_technologies-1.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Work",
+      "SubTitle": "Developers generally love their career path. Whether they like their current job is another story.",
+      "SubSections": [
+        {
+          "Title": "Employment",
+          "GraphCollections": [
+            {
+              "Title": "Employment Status",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "51,392 responses",
+                  "Data": {
+                    "Employed full-time": 70.3378,
+                    "Independent contractor, freelancer, or self-employed": 10.1825,
+                    "Employed part-time": 6.1877,
+                    "Not employed, and not looking for work": 5.4308,
+                    "Not employed, but looking for work": 5.4211,
+                    "I prefer not to say": 2.1132,
+                    "Retired": 0.3269
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "36,131 responses",
+                  "Data": {
+                    "Employed full-time": 83.6152,
+                    "Independent contractor, freelancer, or self-employed": 10.2156,
+                    "Employed part-time": 3.9412,
+                    "Not employed, but looking for work": 1.287,
+                    "I prefer not to say": 0.5314,
+                    "Not employed, and not looking for work": 0.3404,
+                    "Retired": 0.0692
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Employment Status by Geography",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "11,455 responses",
+                  "Data": {
+                    "Employed full-time": 76.7001,
+                    "Independent contractor, freelancer, or self-employed": 6.7481,
+                    "Employed part-time": 5.2204,
+                    "Not employed, and not looking for work": 4.6792,
+                    "Not employed, but looking for work": 4.6006,
+                    "I prefer not to say": 1.5452,
+                    "Retired": 0.5063
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "2,233 responses",
+                  "Data": {
+                    "Employed full-time": 71.6525,
+                    "Independent contractor, freelancer, or self-employed": 9.3596,
+                    "Not employed, but looking for work": 6.18,
+                    "Employed part-time": 5.6426,
+                    "Not employed, and not looking for work": 5.3292,
+                    "I prefer not to say": 1.1644,
+                    "Retired": 0.6717
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "4,740 responses",
+                  "Data": {
+                    "Employed full-time": 75,
+                    "Independent contractor, freelancer, or self-employed": 11.5401,
+                    "Not employed, and not looking for work": 5.2532,
+                    "Not employed, but looking for work": 3.2911,
+                    "Employed part-time": 2.7215,
+                    "I prefer not to say": 1.7932,
+                    "Retired": 0.4008
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "4,143 responses",
+                  "Data": {
+                    "Employed full-time": 67.1253,
+                    "Employed part-time": 12.9616,
+                    "Independent contractor, freelancer, or self-employed": 9.148,
+                    "Not employed, and not looking for work": 5.0929,
+                    "I prefer not to say": 3.162,
+                    "Not employed, but looking for work": 2.3413,
+                    "Retired": 0.169
+                  }
+                },
+                {
+                  "Title": "France",
+                  "SubText": "1,740 responses",
+                  "Data": {
+                    "Employed full-time": 69.1379,
+                    "Independent contractor, freelancer, or self-employed": 9.5977,
+                    "Employed part-time": 7.8736,
+                    "Not employed, and not looking for work": 6.3218,
+                    "Not employed, but looking for work": 4.5977,
+                    "I prefer not to say": 2.1839,
+                    "Retired": 0.2874
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "5,197 responses",
+                  "Data": {
+                    "Employed full-time": 72.157,
+                    "Not employed, but looking for work": 9.0052,
+                    "Independent contractor, freelancer, or self-employed": 7.0618,
+                    "Not employed, and not looking for work": 5.8495,
+                    "I prefer not to say": 3.2711,
+                    "Employed part-time": 2.5014,
+                    "Retired": 0.1539
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Employment Status for Professional Developers by Geography",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "8,310 responses",
+                  "Data": {
+                    "Employed full-time": 89.2419,
+                    "Independent contractor, freelancer, or self-employed": 6.4501,
+                    "Employed part-time": 2.1901,
+                    "Not employed, but looking for work": 1.5644,
+                    "I prefer not to say": 0.2888,
+                    "Not employed, and not looking for work": 0.2286,
+                    "Retired": 0.0361
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "1,605 responses",
+                  "Data": {
+                    "Employed full-time": 84.2368,
+                    "Independent contractor, freelancer, or self-employed": 9.7819,
+                    "Employed part-time": 2.9283,
+                    "Not employed, but looking for work": 1.9938,
+                    "Not employed, and not looking for work": 0.4984,
+                    "I prefer not to say": 0.3738,
+                    "Retired": 0.1869
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "3,568 responses",
+                  "Data": {
+                    "Employed full-time": 85.398,
+                    "Independent contractor, freelancer, or self-employed": 12.1637,
+                    "Employed part-time": 1.065,
+                    "Not employed, but looking for work": 0.5605,
+                    "I prefer not to say": 0.4484,
+                    "Not employed, and not looking for work": 0.2803,
+                    "Retired": 0.0841
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "2,767 responses",
+                  "Data": {
+                    "Employed full-time": 78.9664,
+                    "Independent contractor, freelancer, or self-employed": 10.3361,
+                    "Employed part-time": 8.9628,
+                    "I prefer not to say": 0.7589,
+                    "Not employed, but looking for work": 0.5782,
+                    "Not employed, and not looking for work": 0.3614,
+                    "Retired": 0.0361
+                  }
+                },
+                {
+                  "Title": "France",
+                  "SubText": "1,246 responses",
+                  "Data": {
+                    "Employed full-time": 83.9486,
+                    "Independent contractor, freelancer, or self-employed": 9.7111,
+                    "Employed part-time": 4.2536,
+                    "Not employed, but looking for work": 1.1236,
+                    "Not employed, and not looking for work": 0.4815,
+                    "I prefer not to say": 0.321,
+                    "Retired": 0.1605
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "3,438 responses",
+                  "Data": {
+                    "Employed full-time": 89.4706,
+                    "Independent contractor, freelancer, or self-employed": 6.4282,
+                    "Not employed, but looking for work": 1.4834,
+                    "Employed part-time": 1.2507,
+                    "I prefer not to say": 1.018,
+                    "Not employed, and not looking for work": 0.2909,
+                    "Retired": 0.0582
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Company Type",
+          "GraphCollections": [
+            {
+              "Title": "Industry Breakdown",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "44,072 responses",
+                  "Data": {
+                    "Software": 28.2447,
+                    "Internet or Web services": 14.2812,
+                    "Finance, banking, or insurance": 8.4997,
+                    "Media, advertising, publishing, or entertainment": 4.9396,
+                    "Other": 4.504,
+                    "Consulting": 4.2703,
+                    "Education": 4.2272,
+                    "Health care services": 3.7303,
+                    "Telecommunications": 3.1902,
+                    "Retail or wholesale trade": 2.918,
+                    "Government (including military)": 2.8612,
+                    "I prefer not to answer": 2.7523,
+                    "Computer hardware or consumer electronics": 2.3348,
+                    "Transportation, logistics, or warehousing": 2.0217,
+                    "Automotive": 1.8356,
+                    "Aerospace or defense": 1.7426,
+                    "Gaming": 1.704,
+                    "Industrial equipment/heavy machinery": 1.3728,
+                    "Energy generation/distribution": 1.1164,
+                    "Pharmaceuticals and/or medical devices": 0.9553,
+                    "Nonprofit/nongovernmental organizations": 0.7987,
+                    "Construction": 0.6172,
+                    "Agriculture, forestry, or fisheries": 0.5786,
+                    "Mining or oil & gas extraction": 0.5037
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "35,305 responses",
+                  "Data": {
+                    "Software": 30.0694,
+                    "Internet or Web services": 14.692,
+                    "Finance, banking, or insurance": 9.0724,
+                    "Media, advertising, publishing, or entertainment": 5.2089,
+                    "Consulting": 4.2374,
+                    "Other": 3.9145,
+                    "Health care services": 3.821,
+                    "Telecommunications": 3.1525,
+                    "Education": 3.0336,
+                    "Retail or wholesale trade": 2.9118,
+                    "Government (including military)": 2.6314,
+                    "I prefer not to answer": 2.4104,
+                    "Transportation, logistics, or warehousing": 2.147,
+                    "Computer hardware or consumer electronics": 2.0592,
+                    "Automotive": 1.8269,
+                    "Gaming": 1.7335,
+                    "Aerospace or defense": 1.7136,
+                    "Industrial equipment/heavy machinery": 1.3086,
+                    "Energy generation/distribution": 0.9914,
+                    "Pharmaceuticals and/or medical devices": 0.8979,
+                    "Nonprofit/nongovernmental organizations": 0.6996,
+                    "Agriculture, forestry, or fisheries": 0.507,
+                    "Construction": 0.507,
+                    "Mining or oil & gas extraction": 0.4532
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Company Size",
+              "Graphs": [
+                {
+                  "Title": "Company Size",
+                  "SubText": "38,922 responses",
+                  "Data": {
+                    "Fewer than 10 employees": 9.7811,
+                    "10 to 19 employees": 10.5416,
+                    "20 to 99 employees": 22.0621,
+                    "100 to 499 employees": 18.6887,
+                    "500 to 999 employees": 6.3871,
+                    "1,000 to 4,999 employees": 9.8428,
+                    "5,000 to 9,999 employees": 4.1211,
+                    "10,000 or more employees": 14.5933,
+                    "I don’t know": 2.2327,
+                    "I prefer not to answer": 1.7497
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Company Type",
+              "Graphs": [
+                {
+                  "Title": "Company Type",
+                  "SubText": "38,823 responses",
+                  "Data": {
+                    "Privately-held limited company, not in startup mode": 43.0389,
+                    "Publicly-traded corporation": 15.1225,
+                    "I don't know": 8.3275,
+                    "Sole proprietorship or partnership, not in startup mode": 7.2921,
+                    "Government agency or public school/university": 6.3133,
+                    "Venture-funded startup": 6.1484,
+                    "I prefer not to answer": 4.6776,
+                    "Pre-series A startup": 3.3176,
+                    "Non-profit/non-governmental organization or private school/university": 3.1553,
+                    "State-owned company": 1.7258,
+                    "Something else": 0.8809
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Career Satisfaction",
+          "GraphCollections": [
+            {
+              "Title": "How Do Developers Feel About Their Jobs and Careers?",
+              "Graphs": [
+                {
+                  "Title": "Job Satisfaction",
+                  "SubText": "40,376 responses",
+                  "Data": {
+                    "0 - Not at all satisfied": 1.1566,
+                    "1": 0.9238,
+                    "2": 2.1993,
+                    "3": 4.0494,
+                    "4": 4.6191,
+                    "5": 9.2852,
+                    "6": 11.705,
+                    "7": 19.737,
+                    "8": 22.2484,
+                    "9": 13.8028,
+                    "10 - Completely satisfied": 10.2734
+                  }
+                },
+                {
+                  "Title": "Career Satisfaction",
+                  "SubText": "42,695 responses",
+                  "Data": {
+                    "0 - Not at all satisfied": 0.9181,
+                    "1": 0.4942,
+                    "2": 1.1594,
+                    "3": 2.4499,
+                    "4": 3.1666,
+                    "5": 7.1905,
+                    "6": 11.0575,
+                    "7": 21.9792,
+                    "8": 25.8508,
+                    "9": 13.0671,
+                    "10 - Completely satisfied": 12.6666
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Satisfied Are Developers with Their Equipment?",
+              "Graphs": [
+                {
+                  "Title": "How Satisfied Are Developers with Their Equipment?",
+                  "SubText": "Average of 29,841 responses on a 1-5 scale, where 1 indicates 'Not at all satisfied' and 5 indicates 'Very satisfied'",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Storage read/write speed": 3.7845,
+                    "Storage capacity": 3.7804,
+                    "Amount of RAM": 3.7638,
+                    "Processing power (CPU and/or GPU)": 3.7289,
+                    "Monitors/screens (number of, size, resolution)": 3.7204
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Looking for a Job",
+          "GraphCollections": [
+            {
+              "Title": "Job Search Status",
+              "Graphs": [
+                {
+                  "Title": "Job Search Status",
+                  "SubText": "33,380 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 62.1001,
+                    "I am not interested in new job opportunities": 24.8053,
+                    "I am actively looking for a job": 13.0947
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Job Search Status by Geography",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "7,852 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 59.0168,
+                    "I am not interested in new job opportunities": 28.2476,
+                    "I am actively looking for a job": 12.7356
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "1,531 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 60.8099,
+                    "I am not interested in new job opportunities": 27.6943,
+                    "I am actively looking for a job": 11.4958
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "3,171 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 59.0981,
+                    "I am not interested in new job opportunities": 31.3781,
+                    "I am actively looking for a job": 9.5238
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "2,706 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 59.4235,
+                    "I am not interested in new job opportunities": 31.5595,
+                    "I am actively looking for a job": 9.017
+                  }
+                },
+                {
+                  "Title": "France",
+                  "SubText": "1,088 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 64.1544,
+                    "I am not interested in new job opportunities": 27.8493,
+                    "I am actively looking for a job": 7.9963
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "3,022 responses",
+                  "Data": {
+                    "I’m not actively looking, but I am open to new opportunities": 60.8206,
+                    "I am actively looking for a job": 26.638,
+                    "I am not interested in new job opportunities": 12.5414
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Who's Actively Looking for a Job?",
+              "Graphs": [
+                {
+                  "Title": "Who's Actively Looking for a Job?",
+                  "SubText": "Mean of 24,024 responses",
+                  "Data": {
+                    "Machine learning specialist": 14.3326,
+                    "Data scientist": 13.1868,
+                    "Mobile developer": 12.8307,
+                    "Graphic designer": 12.7001,
+                    "Quality assurance engineer": 12.2497,
+                    "Developer with a statistics or mathematics background": 12.187,
+                    "Database administrator": 12.0277,
+                    "Web developer": 11.393,
+                    "Systems administrator": 11.3775,
+                    "Desktop applications developer": 11.2712,
+                    "DevOps specialist": 11.0163,
+                    "Embedded applications/devices developer": 10.7207,
+                    "Graphics programming": 10.4332,
+                    "Other": 9.7215
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Job Discovery",
+          "GraphCollections": [
+            {
+              "Title": "How Did Developers Find Their Current Job?",
+              "Graphs": [
+                {
+                  "Title": "How Did Developers Find Their Current Job?",
+                  "SubText": "23,737 responses",
+                  "Data": {
+                    "A friend, family member, or former colleague told me": 26.7725,
+                    "I was contacted directly by someone at the company (e.g. internal recruiter)": 17.9256,
+                    "A general-purpose job board": 13.8897,
+                    "An external recruiter or headhunter": 13.4179,
+                    "I visited the company’s Web site and found a job listing there": 8.5394,
+                    "Some other way": 7.7305,
+                    "A career fair or on-campus recruiting event": 7.6842,
+                    "A tech-specific job board": 4.0401
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Hours Per Week Spent on Job Searches",
+              "Graphs": [
+                {
+                  "Title": "Overall",
+                  "SubText": "20,600 responses",
+                  "Data": {
+                    "0": 24.8981,
+                    "1": 28.6456,
+                    "2": 14.2379,
+                    "3": 5.9854,
+                    "4": 5.3204,
+                    "5": 4.6505,
+                    "6": 2.0728,
+                    "7": 1.2913,
+                    "8": 1.5777,
+                    "9": 0.4515,
+                    "10": 2.7136,
+                    "11": 0.2816,
+                    "12": 0.6117,
+                    "13": 0.1796,
+                    "14": 0.3738,
+                    "15": 0.6505,
+                    "16": 0.199,
+                    "17": 0.1214,
+                    "18": 0.1456,
+                    "19": 0.2184,
+                    "20": 1.2573,
+                    "21": 0.165,
+                    "22": 0.1068,
+                    "23": 0.0534,
+                    "24": 0.1602
+                  }
+                },
+                {
+                  "Title": "Median Hours by Job Search Status",
+                  "SubText": "Median of 20,600 responses",
+                  "Format": "{0:n0}",
+                  "Data": {
+                    "I am actively looking for a job": 5,
+                    "I’m not actively looking, but I am open to new opportunities": 1,
+                    "I am not interested in new job opportunities": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Job Priorities",
+          "GraphCollections": [
+            {
+              "Title": "How Do Developers Assess Potential Jobs?",
+              "Graphs": [
+                {
+                  "Title": "How Do Developers Assess Potential Jobs?",
+                  "SubText": "Average of 22,692 responses on a 1-5 scale, where 1 indicates 'Not at all important' and 5 indicates 'Very important'",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Opportunities for professional development": 4.2279,
+                    "The compensation and benefits offered": 4.0933,
+                    "The office environment I’d be working in": 4.0115,
+                    "The languages, frameworks, and other technologies I’d be working with": 4.0103,
+                    "The amount of time I’d have to spend commuting": 3.9264,
+                    "How projects are managed at the company or organization": 3.8467,
+                    "The experience level called for in the job description": 3.5915,
+                    "The specific department or team I’d be working on": 3.5812,
+                    "The specific role or job title I’d be applying for": 3.5609,
+                    "The financial performance or funding status of the company or organization": 3.537,
+                    "How widely used or impactful the product or service I’d be working on is": 3.4587,
+                    "The opportunity to work from home/remotely": 3.4334,
+                    "The industry that I’d be working in": 3.4063,
+                    "The reputations of the company’s senior leaders": 3.2843,
+                    "The diversity of the company or organization": 3.0082
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Developers Value in Compensation/Benefits",
+              "Graphs": [
+                {
+                  "Title": "What Developers Value in Compensation/Benefits",
+                  "SubText": "30,235 responses; choosing at most 5 options",
+                  "Data": {
+                    "Vacation/days off": 57.0266,
+                    "Remote options": 53.319,
+                    "Health benefits": 47.1407,
+                    "Expected work hours": 44.2798,
+                    "Equipment": 40.1058,
+                    "Professional development sponsorship": 37.8171,
+                    "Annual bonus": 31.619,
+                    "Retirement": 26.3238,
+                    "Education sponsorship": 17.5393,
+                    "Meals": 15.191,
+                    "Stock options": 14.6486,
+                    "Long-term leave": 14.4038,
+                    "Private office": 11.6223,
+                    "Child/elder care": 9.059,
+                    "Other": 2.937,
+                    "Charitable match": 2.6228,
+                    "None of these": 2.4706
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Importance of Compensation/Benefits by Geography",
+              "Graphs": [
+                {
+                  "Title": "Importance of Compensation/Benefits by Geography",
+                  "Type": "CustomFigure",
+                  "SubText": "Scores are on a 1-5 scale, where 1 indicates 'Not at all important' and 5 indicates 'Very important'",
+                  "FigurePath": "2017/priorities_country-1.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Diversity",
+          "GraphCollections": [
+            {
+              "Title": "Is Diversity in the Workplace Important?",
+              "Graphs": [
+                {
+                  "Title": "Is Diversity in the Workplace Important?",
+                  "SubText": "30,903 responses",
+                  "Data": {
+                    "Strongly disagree": 3.8184,
+                    "Disagree": 7.53,
+                    "Somewhat agree": 23.8262,
+                    "Agree": 38.8668,
+                    "Strongly agree": 25.9586
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Who Values Diversity",
+              "Graphs": [
+                {
+                  "Title": "Who Values Diversity",
+                  "Type": "DoubleBar",
+                  "SubText": "23,173 responses; % who agreed or strongly agreed",
+                  "Data": {
+                    "Black or of African descent": 80.303,
+                    "East Asian": 78.3951,
+                    "Hispanic or Latino/Latina": 87.2881,
+                    "Middle Eastern": 72.5,
+                    "Native American, Pacific Islander, or Indigenous Australian": 69.2308,
+                    "South Asian": 84.5745,
+                    "White or of European descent": 80.7238
+                  },
+                  "SecondaryData": {
+                    "Black or of African descent": 75.6144,
+                    "East Asian": 65.1575,
+                    "Hispanic or Latino/Latina": 70.6731,
+                    "Middle Eastern": 65.4402,
+                    "Native American, Pacific Islander, or Indigenous Australian": 66.8571,
+                    "South Asian": 73.9198,
+                    "White or of European descent": 60.4701
+                  },
+                  "LegendText": "Female; Male"
+                }
+              ]
+            },
+            {
+              "Title": "Diversity and Experience",
+              "Graphs": [
+                {
+                  "Title": "Diversity and Experience",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/diversity_experience-1.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Salary",
+          "GraphCollections": [
+            {
+              "Title": "Salary by Developer Type",
+              "Graphs": [
+                {
+                  "Title": "Salary by Developer Type",
+                  "SubText": "Median of 12,475 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "DevOps specialist": 60215.0538,
+                    "Machine learning specialist": 57000,
+                    "Developer with a statistics or mathematics background": 55000,
+                    "Data scientist": 53763.4409,
+                    "Quality assurance engineer": 53756.7204,
+                    "Embedded applications/devices developer": 52500,
+                    "Desktop applications developer": 50537.6344,
+                    "Systems administrator": 50000,
+                    "Database administrator": 49242.4242,
+                    "Web developer": 48868.7783,
+                    "Graphics programming": 45161.2903,
+                    "Mobile developer": 43655.914,
+                    "Graphic designer": 40930.1075
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Salaries by Geography",
+              "Graphs": [
+                {
+                  "Title": "United States",
+                  "SubText": "Median of 3,630 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Machine learning specialist": 108000,
+                    "Developer with a statistics or mathematics background": 101000,
+                    "Data scientist": 100000,
+                    "DevOps specialist": 100000,
+                    "Embedded applications/devices developer": 100000,
+                    "Mobile developer": 95000,
+                    "Graphics programming": 93000,
+                    "Desktop applications developer": 92000,
+                    "Systems administrator": 90000,
+                    "Web developer": 90000,
+                    "Database administrator": 85000,
+                    "Quality assurance engineer": 85000,
+                    "Graphic designer": 70000
+                  }
+                },
+                {
+                  "Title": "Canada",
+                  "SubText": "Median of 651 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Data scientist": 60606.0606,
+                    "Developer with a statistics or mathematics background": 59090.9091,
+                    "DevOps specialist": 55492.4242,
+                    "Desktop applications developer": 53030.303,
+                    "Embedded applications/devices developer": 53030.303,
+                    "Graphic designer": 53030.303,
+                    "Graphics programming": 53030.303,
+                    "Machine learning specialist": 53030.303,
+                    "Mobile developer": 53030.303,
+                    "Web developer": 52651.5152,
+                    "Database administrator": 50969.697,
+                    "Systems administrator": 49242.4242,
+                    "Quality assurance engineer": 46212.1212
+                  }
+                },
+                {
+                  "Title": "United Kingdom",
+                  "SubText": "Median of 1,422 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "DevOps specialist": 56250,
+                    "Developer with a statistics or mathematics background": 53906.25,
+                    "Machine learning specialist": 52500,
+                    "Data scientist": 50625,
+                    "Quality assurance engineer": 50000,
+                    "Desktop applications developer": 48812.5,
+                    "Systems administrator": 48750,
+                    "Web developer": 48750,
+                    "Graphics programming": 48060,
+                    "Embedded applications/devices developer": 47812.5,
+                    "Database administrator": 46250,
+                    "Mobile developer": 46250,
+                    "Graphic designer": 40000
+                  }
+                },
+                {
+                  "Title": "Germany",
+                  "SubText": "Median of 959 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Embedded applications/devices developer": 58064.5161,
+                    "Machine learning specialist": 56989.2473,
+                    "DevOps specialist": 55913.9785,
+                    "Quality assurance engineer": 54301.0753,
+                    "Data scientist": 53763.4409,
+                    "Developer with a statistics or mathematics background": 53763.4409,
+                    "Desktop applications developer": 51612.9032,
+                    "Web developer": 51612.9032,
+                    "Database administrator": 49247.3118,
+                    "Mobile developer": 49032.2581,
+                    "Systems administrator": 48387.0968,
+                    "Graphics programming": 46774.1935,
+                    "Graphic designer": 43010.7527
+                  }
+                },
+                {
+                  "Title": "France",
+                  "SubText": "Median of 465 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Quality assurance engineer": 53763.4409,
+                    "Machine learning specialist": 48387.0968,
+                    "Developer with a statistics or mathematics background": 45161.2903,
+                    "DevOps specialist": 45161.2903,
+                    "Data scientist": 41666.6667,
+                    "Embedded applications/devices developer": 41290.3226,
+                    "Graphics programming": 40860.2151,
+                    "Mobile developer": 40161.2903,
+                    "Web developer": 38870.9677,
+                    "Desktop applications developer": 38709.6774,
+                    "Database administrator": 38440.8602,
+                    "Graphic designer": 38440.8602,
+                    "Systems administrator": 38172.043
+                  }
+                },
+                {
+                  "Title": "India",
+                  "SubText": "Median of 804 responses; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Embedded applications/devices developer": 14623.4033,
+                    "Graphics programming": 11745.7055,
+                    "Data scientist": 10057.2603,
+                    "Machine learning specialist": 8809.2791,
+                    "Systems administrator": 8809.2791,
+                    "DevOps specialist": 8442.2258,
+                    "Graphic designer": 8075.1725,
+                    "Desktop applications developer": 8061.2992,
+                    "Quality assurance engineer": 7781.5299,
+                    "Developer with a statistics or mathematics background": 7341.0659,
+                    "Web developer": 7341.0659,
+                    "Database administrator": 7194.2446,
+                    "Mobile developer": 5872.8527
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Salary and Experience by Developer Type",
+              "Graphs": [
+                {
+                  "Title": "Salary and Experience by Developer Type",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/salary_devtype-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Salary and Experience by Language",
+              "Graphs": [
+                {
+                  "Title": "Salary and Experience by Language",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/salary_language-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Salary Self-Assessment",
+              "Graphs": [
+                {
+                  "Title": "Salary Self-Assessment",
+                  "SubText": "13,387 responses",
+                  "Data": {
+                    "Greatly underpaid": 11.6157,
+                    "Somewhat underpaid": 44.9466,
+                    "Neither underpaid nor overpaid": 36.1321,
+                    "Somewhat overpaid": 6.5511,
+                    "Greatly overpaid": 0.7545
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Salary Self-Assessment by Language",
+              "Graphs": [
+                {
+                  "Title": "Salary Self-Assessment by Language",
+                  "Type": "CustomFigure",
+                  "FigurePath": "2017/underpaid_tech-1.svg"
+                }
+              ]
+            },
+            {
+              "Title": "Students' Expected Salaries",
+              "Graphs": [
+                {
+                  "Title": "Students' Expected Salaries",
+                  "SubText": "2,566 and 705 responses, respectively; USD",
+                  "Format": "${0:n0}",
+                  "Data": {
+                    "Students' average expected salary": 33142.2205,
+                    "Average salary for <1 yr experience": 33298.752
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Evaluating Developers",
+          "GraphCollections": [
+            {
+              "Title": "What Would Developers Choose for Performance Metrics?",
+              "Graphs": [
+                {
+                  "Title": "What Would Developers Choose for Performance Metrics?",
+                  "SubText": "25,472 responses; select all that apply",
+                  "Data": {
+                    "Customer satisfaction": 71.7023,
+                    "On time/in budget": 66.4298,
+                    "Peers' rating": 54.7699,
+                    "Benchmarked product performance": 41.4062,
+                    "Manager's rating": 35.6823,
+                    "Self-rating": 35.1916,
+                    "Revenue performance": 28.282,
+                    "Bugs found": 20.2104,
+                    "Hours worked": 15.943,
+                    "Release frequency": 12.4058,
+                    "Commit frequency": 9.163,
+                    "Lines of code": 5.9516,
+                    "Other": 3.604
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Do Developers Think Employers Should Prioritize When Recruiting?",
+              "Graphs": [
+                {
+                  "Title": "What Do Developers Think Employers Should Prioritize When Recruiting?",
+                  "SubText": "Average of 28,925 responses on a 1-5 scale, where 1 indicates 'Not at all important' and 5 indicates 'Very important'",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Communication skills": 4.102,
+                    "Track record of getting things done": 4.0927,
+                    "Knowledge of algorithms and data structures": 3.768,
+                    "Experience with specific tools (libraries, frameworks, etc.) used by the employer": 3.5339,
+                    "Experience with specific project management tools & techniques": 2.8973,
+                    "Previous companies worked at": 2.8297,
+                    "Contributions to open source projects": 2.8122,
+                    "Educational credentials (e.g. schools attended, specific field of study, grades earned)": 2.7682,
+                    "Previous job titles held": 2.7311,
+                    "Stack Overflow reputation": 2.2684
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Development Practices",
+          "GraphCollections": [
+            {
+              "Title": "Which Methodologies Do Developers Use?",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "25,771 responses; select all that apply",
+                  "Data": {
+                    "Agile": 76.8577,
+                    "Scrum": 65.2361,
+                    "Pair": 42.7768,
+                    "Kanban": 34.791,
+                    "Waterfall": 26.8558,
+                    "Extreme": 19.4831,
+                    "Lean": 15.0712,
+                    "Domain-driven design": 13.488,
+                    "Mob": 5.254,
+                    "Evidence-based SWE": 5.1996,
+                    "PRINCE2": 2.7667
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "20,519 responses; select all that apply",
+                  "Data": {
+                    "Agile": 81.851,
+                    "Scrum": 70.8368,
+                    "Pair": 45.4457,
+                    "Kanban": 38.1305,
+                    "Waterfall": 26.9506,
+                    "Extreme": 20.6784,
+                    "Lean": 15.2931,
+                    "Domain-driven design": 14.9228,
+                    "Mob": 4.586,
+                    "Evidence-based SWE": 4.3131,
+                    "PRINCE2": 2.5927
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Version Control",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "30,730 responses; select all that apply",
+                  "Data": {
+                    "Git": 69.2027,
+                    "Subversion": 9.0791,
+                    "Team Foundation Server": 7.3381,
+                    "I don't use version control": 4.7771,
+                    "I use some other system": 3.0068,
+                    "Zip file back-ups": 1.9818,
+                    "Mercurial": 1.9232,
+                    "Copying and pasting files to network shares": 1.6596,
+                    "Visual Source Safe": 0.6378,
+                    "Rational ClearCase": 0.3938
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "22,646 responses; select all that apply",
+                  "Data": {
+                    "Git": 70.7498,
+                    "Subversion": 10.4301,
+                    "Team Foundation Server": 8.8228,
+                    "I use some other system": 3.2721,
+                    "Mercurial": 2.1858,
+                    "I don't use version control": 1.5014,
+                    "Zip file back-ups": 1.1481,
+                    "Copying and pasting files to network shares": 0.9406,
+                    "Visual Source Safe": 0.5608,
+                    "Rational ClearCase": 0.3886
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Do You Pronounce 'GIF'?",
+              "Graphs": [
+                {
+                  "Title": "How Do You Pronounce 'GIF'?",
+                  "SubText": "51,008 responses",
+                  "Data": {
+                    "With a hard \"g,\" like \"gift\"": 65.6446,
+                    "With a soft \"g,\" like \"jiff\"": 26.2861,
+                    "Enunciating each letter: \"gee eye eff\"": 6.0481,
+                    "Some other way": 2.0213
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ship It! (We Can Optimize Later)",
+              "Graphs": [
+                {
+                  "Title": "Ship It! (We Can Optimize Later)",
+                  "SubText": "29,641 responses",
+                  "Data": {
+                    "Strongly disagree": 9.9018,
+                    "Disagree": 29.8067,
+                    "Somewhat agree": 33.0083,
+                    "Agree": 21.4399,
+                    "Strongly agree": 5.8433
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Can A Developer Who's Sharing an Office Use a Noisy Keyboard?",
+              "Graphs": [
+                {
+                  "Title": "Can A Developer Who's Sharing an Office Use a Noisy Keyboard?",
+                  "SubText": "42,046 responses",
+                  "Data": {
+                    "Yes": 53.7935,
+                    "No": 46.2065
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Tabs or Spaces?",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "38,851 responses",
+                  "Data": {
+                    "Tabs": 42.9384,
+                    "Spaces": 37.7519,
+                    "Both": 19.3097
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "28,657 responses",
+                  "Data": {
+                    "Spaces": 41.7908,
+                    "Tabs": 40.6846,
+                    "Both": 17.5245
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Ideal Auditory Environment for Coding",
+              "Graphs": [
+                {
+                  "Title": "Ideal Auditory Environment for Coding",
+                  "SubText": "36,457 responses",
+                  "Data": {
+                    "Turn on some music": 59.6017,
+                    "Keep the room absolutely quiet": 24.2477,
+                    "Put on some ambient sounds (e.g. whale songs, forest sounds)": 7.118,
+                    "Something else": 3.5192,
+                    "Put on a movie or TV show": 3.2367,
+                    "Turn on the news or talk radio": 2.2767
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Remote Work",
+          "GraphCollections": [
+            {
+              "Title": "How Often Do Developers Work Remotely?",
+              "Graphs": [
+                {
+                  "Title": "How Often Do Developers Work Remotely?",
+                  "SubText": "44,008 responses",
+                  "Data": {
+                    "It's complicated": 4.2015,
+                    "All or almost all the time (I'm full-time remote)": 11.1457,
+                    "More than half, but not all, the time": 4.3378,
+                    "About half the time": 4.0197,
+                    "Less than half the time, but at least one day each week": 9.4233,
+                    "A few days each month": 35.1163,
+                    "Never": 31.7556
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Job Satisfaction Rating and Remote Work",
+              "Graphs": [
+                {
+                  "Title": "Job Satisfaction Rating and Remote Work",
+                  "SubText": "Mean of 40,325 responses; satisfaction on a 0-10 scale",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "All or almost all the time (I'm full-time remote)": 7.3884,
+                    "Less than half the time, but at least one day each week": 7.1201,
+                    "A few days each month": 7.0775,
+                    "About half the time": 6.9737,
+                    "More than half, but not all, the time": 6.9532,
+                    "It's complicated": 6.8408,
+                    "Never": 6.6325
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Where Are Developers Working Remote Full Time?",
+              "Graphs": [
+                {
+                  "Title": "Where Are Developers Working Remote Full Time?",
+                  "SubText": "Mean of 44,008 responses",
+                  "Data": {
+                    "Russian Federation": 22.7735,
+                    "Brazil": 15.1248,
+                    "Italy": 13.6223,
+                    "United States": 12.8494,
+                    "Australia": 11.9845,
+                    "Spain": 11.1959,
+                    "Poland": 10.7174,
+                    "Canada": 10.235,
+                    "India": 9.7404,
+                    "France": 9.0301,
+                    "United Kingdom": 8.8122,
+                    "Israel": 8.8063,
+                    "Netherlands": 6.31,
+                    "Germany": 6.1644,
+                    "Switzerland": 4.8507,
+                    "Sweden": 4.4693
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "Which Kinds of Developers Work Remote?",
+              "Graphs": [
+                {
+                  "Title": "Which Kinds of Developers Work Remote?",
+                  "SubText": "Mean of 35,277 responses",
+                  "Data": {
+                    "Graphic designer": 22.2711,
+                    "Graphics programming": 17.4256,
+                    "Systems administrator": 16.9025,
+                    "Database administrator": 15.3025,
+                    "Mobile developer": 14.224,
+                    "Machine learning specialist": 13.4202,
+                    "Quality assurance engineer": 12.7258,
+                    "DevOps specialist": 12.4809,
+                    "Data scientist": 12.419,
+                    "Web developer": 11.889,
+                    "Developer with a statistics or mathematics background": 11.744,
+                    "Other": 11.5075,
+                    "Embedded applications/devices developer": 11.07,
+                    "Desktop applications developer": 10.9139
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "Checking in Code",
+          "GraphCollections": [
+            {
+              "Title": "How Often Do Developers Check In Code?",
+              "Graphs": [
+                {
+                  "Title": "How Often Do Developers Check In Code?",
+                  "SubText": "29,561 responses",
+                  "Data": {
+                    "Multiple times a day": 52.6437,
+                    "Once a day": 9.614,
+                    "A few times a week": 21.5148,
+                    "A few times a month": 8.3353,
+                    "Just a few times over the year": 5.5681,
+                    "Never": 2.324
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How are Job Satisfaction and Committing Code Related?",
+              "Graphs": [
+                {
+                  "Title": "How are Job Satisfaction and Committing Code Related?",
+                  "SubText": "Mean of 24,831 responses; satisfaction on a 0-10 scale",
+                  "Format": "{0:#.00}",
+                  "Data": {
+                    "Multiple times a day": 7.1211,
+                    "Once a day": 6.8872,
+                    "A few times a week": 6.8839,
+                    "A few times a month": 6.6401,
+                    "Never": 6.6066,
+                    "Just a few times over the year": 6.4541
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Community",
+      "SubTitle": "Where developers go to learn, share, and level up.",
+      "SubSections": [
+        {
+          "Title": "Site Use",
+          "GraphCollections": [
+            {
+              "Title": "How Are Survey Respondents Engaging on Stack Overflow?",
+              "Graphs": [
+                {
+                  "Title": "All Respondents",
+                  "SubText": "36,932 responses",
+                  "Data": {
+                    "I have a login for Stack Overflow, but haven’t created a CV or Developer Story": 53.3304,
+                    "I have created a CV or Developer Story on Stack Overflow": 24.1146,
+                    "I’ve visited Stack Overflow, but haven’t logged in/created an account": 21.6939,
+                    "I’d never heard of Stack Overflow before today": 0.5307,
+                    "I’ve heard of Stack Overflow, but have never visited": 0.3303
+                  }
+                },
+                {
+                  "Title": "Professional Developers",
+                  "SubText": "27,412 responses",
+                  "Data": {
+                    "I have a login for Stack Overflow, but haven’t created a CV or Developer Story": 52.4114,
+                    "I have created a CV or Developer Story on Stack Overflow": 27.8637,
+                    "I’ve visited Stack Overflow, but haven’t logged in/created an account": 19.2288,
+                    "I’d never heard of Stack Overflow before today": 0.3429,
+                    "I’ve heard of Stack Overflow, but have never visited": 0.1532
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "How Often Do Stack Overflow Users Find What They Need?",
+              "Graphs": [
+                {
+                  "Title": "How Often Do Stack Overflow Users Find What They Need?",
+                  "SubText": "% who have done each item at least several times in three months; select all that apply",
+                  "Data": {
+                    "Found an answer that solved my coding problem": 89.8513,
+                    "Copied a code example and pasted it into my codebase": 44.4602,
+                    "Written a new answer to someone else’s question": 19.162,
+                    "Asked a new question": 12.9871,
+                    "Participated in community discussions on meta or in chat": 5.7293
+                  }
+                }
+              ]
+            },
+            {
+              "Title": "What Do Developers Think About Stack Overflow?",
+              "Graphs": [
+                {
+                  "Title": "What Do Developers Think About Stack Overflow?",
+                  "SubText": "Average of 34,279 responses on a 1-5 scale, where 1 indicates 'Strongly disagree' and 5 indicates 'Strongly agree'",
+                  "Format": "{0:#.0}",
+                  "Data": {
+                    "Stack Overflow makes the Internet a better place": 4.2992,
+                    "The answers and code examples I get on Stack Overflow are helpful": 4.2949,
+                    "I don’t know what I’d do without Stack Overflow": 3.4244,
+                    "I feel like a member of the Stack Overflow community": 2.9405,
+                    "The ads on Stack Overflow are relevant to me": 2.7894,
+                    "The moderation on Stack Overflow is unfair": 2.1837,
+                    "The ads on Stack Overflow are distracting": 2.1726,
+                    "The people who run Stack Overflow are just in it for the money": 1.8922
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Methodology",
+      "SubTitle": "How we ran and analyzed the survey.",
+      "SubSections": [
+        {
+          "Title": "Index",
+          "GraphCollections": []
+        }
+      ]
+    }
+  ]
+}

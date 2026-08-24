@@ -1,0 +1,1045 @@
+{
+  "SOAccount": {
+    "qid": "QID72",
+    "qname": "SOAccount",
+    "question": "Do you have a Stack Overflow account?",
+    "datasets": {
+      "SOAccount": {
+        "name": "All Respondents",
+        "total_respondents": 32748,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes",
+            "frequency": 26664,
+            "percent": 0.8142
+          },
+          {
+            "response": "No",
+            "frequency": 3905,
+            "percent": 0.1192
+          },
+          {
+            "response": "Not sure/can't remember",
+            "frequency": 2179,
+            "percent": 0.0665
+          }
+        ]
+      }
+    }
+  },
+  "SODuration": {
+    "qid": "QID71",
+    "qname": "SODuration",
+    "question": "How long have you used Stack Overflow?",
+    "datasets": {
+      "SODuration": {
+        "name": "All Respondents",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 864,
+            "percent": 0.0265
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 2127,
+            "percent": 0.0653
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 4001,
+            "percent": 0.1228
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 10240,
+            "percent": 0.3143
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 10771,
+            "percent": 0.3306
+          },
+          {
+            "response": "15+ years",
+            "frequency": 3978,
+            "percent": 0.1221
+          }
+        ]
+      },
+      "SODuration_18to24": {
+        "name": "Age 18-24",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 441,
+            "percent": 0.0838
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 1184,
+            "percent": 0.2251
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 1790,
+            "percent": 0.3403
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 1504,
+            "percent": 0.2859
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 118,
+            "percent": 0.0224
+          },
+          {
+            "response": "15+ years",
+            "frequency": 12,
+            "percent": 0.0023
+          }
+        ]
+      },
+      "SODuration_25to34": {
+        "name": "Age 25-34",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 206,
+            "percent": 0.0195
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 585,
+            "percent": 0.0554
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 1448,
+            "percent": 0.1371
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 4826,
+            "percent": 0.4569
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 3075,
+            "percent": 0.2911
+          },
+          {
+            "response": "15+ years",
+            "frequency": 247,
+            "percent": 0.0234
+          }
+        ]
+      },
+      "SODuration_35to44": {
+        "name": "Age 35-44",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 106,
+            "percent": 0.0115
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 149,
+            "percent": 0.0162
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 390,
+            "percent": 0.0424
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 2308,
+            "percent": 0.2508
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 4484,
+            "percent": 0.4872
+          },
+          {
+            "response": "15+ years",
+            "frequency": 1645,
+            "percent": 0.1787
+          }
+        ]
+      },
+      "SODuration_45to54": {
+        "name": "Age 45-54",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 48,
+            "percent": 0.0105
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 79,
+            "percent": 0.0172
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 174,
+            "percent": 0.0379
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 872,
+            "percent": 0.19
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 1973,
+            "percent": 0.4299
+          },
+          {
+            "response": "15+ years",
+            "frequency": 1400,
+            "percent": 0.3051
+          }
+        ]
+      },
+      "SODuration_55to64": {
+        "name": "Age 55-64",
+        "total_respondents": 32578,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Less than one year",
+            "frequency": 23,
+            "percent": 0.0113
+          },
+          {
+            "response": "1 - 2 years",
+            "frequency": 52,
+            "percent": 0.0255
+          },
+          {
+            "response": "3 - 5 years",
+            "frequency": 109,
+            "percent": 0.0535
+          },
+          {
+            "response": "6 - 10 years",
+            "frequency": 510,
+            "percent": 0.2501
+          },
+          {
+            "response": "11 - 15 years",
+            "frequency": 824,
+            "percent": 0.4041
+          },
+          {
+            "response": "15+ years",
+            "frequency": 508,
+            "percent": 0.2491
+          }
+        ]
+      }
+    }
+  },
+  "SOVisitFreq": {
+    "qid": "QID70",
+    "qname": "SOVisitFreq",
+    "question": "How frequently would you say you visit Stack Overflow?",
+    "datasets": {
+      "SOVisitFreq": {
+        "name": "All Respondents",
+        "total_respondents": 32661,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Multiple times per day",
+            "frequency": 2662,
+            "percent": 0.0815
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 5449,
+            "percent": 0.1668
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 9144,
+            "percent": 0.28
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 9639,
+            "percent": 0.2951
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 3498,
+            "percent": 0.1071
+          },
+          {
+            "response": "Less than once every 2 - 3 months",
+            "frequency": 1335,
+            "percent": 0.0409
+          },
+          {
+            "response": "Infrequently, less than once per year",
+            "frequency": 934,
+            "percent": 0.0286
+          }
+        ]
+      }
+    }
+  },
+  "SOPartFreq": {
+    "qid": "QID73",
+    "qname": "SOPartFreq",
+    "question": "How frequently would you say you participate in Q&amp;A on Stack Overflow? By participate we mean ask, answer, and vote or comment on questions.",
+    "datasets": {
+      "SOPartFreq": {
+        "name": "All Respondents",
+        "total_respondents": 32183,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Infrequently, less than once per year",
+            "frequency": 12053,
+            "percent": 0.3745
+          },
+          {
+            "response": "I have never participated in Q&A on Stack Overflow",
+            "frequency": 9938,
+            "percent": 0.3088
+          },
+          {
+            "response": "Less than once every 2 - 3 months",
+            "frequency": 4586,
+            "percent": 0.1425
+          },
+          {
+            "response": "Less than once per month or monthly",
+            "frequency": 2425,
+            "percent": 0.0754
+          },
+          {
+            "response": "A few times per month or weekly",
+            "frequency": 1906,
+            "percent": 0.0592
+          },
+          {
+            "response": "A few times per week",
+            "frequency": 759,
+            "percent": 0.0236
+          },
+          {
+            "response": "Daily or almost daily",
+            "frequency": 335,
+            "percent": 0.0104
+          },
+          {
+            "response": "Multiple times per day",
+            "frequency": 181,
+            "percent": 0.0056
+          }
+        ]
+      }
+    }
+  },
+  "SO_Dev_Content": {
+    "qid": "QID75",
+    "qname": "SO_Dev_Content",
+    "question": "Whether it be to solve a problem, for career growth or connecting with a community of developers, is there an alternative to the Q&amp;A format you prefer using today or would like to see on Stack Overflow to get what you need? Select all that apply.",
+    "datasets": {
+      "SO_Dev_Content": {
+        "name": "All Respondents",
+        "total_respondents": 22807,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "frequency": 10868,
+            "percent": 0.4765
+          },
+          {
+            "response": "Long-form articles",
+            "frequency": 9314,
+            "percent": 0.4084
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "frequency": 7564,
+            "percent": 0.3317
+          },
+          {
+            "response": "Coding challenges",
+            "frequency": 6719,
+            "percent": 0.2946
+          },
+          {
+            "response": "Chat (people)",
+            "frequency": 6070,
+            "percent": 0.2661
+          },
+          {
+            "response": "Videos",
+            "frequency": 5692,
+            "percent": 0.2496
+          },
+          {
+            "response": "Job board",
+            "frequency": 4751,
+            "percent": 0.2083
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "frequency": 4325,
+            "percent": 0.1896
+          },
+          {
+            "response": "Message Boards",
+            "frequency": 4072,
+            "percent": 0.1785
+          },
+          {
+            "response": "Logic games/puzzles",
+            "frequency": 3599,
+            "percent": 0.1578
+          },
+          {
+            "response": "Direct messaging of users",
+            "frequency": 3417,
+            "percent": 0.1498
+          },
+          {
+            "response": "Other",
+            "frequency": 1026,
+            "percent": 0.045
+          }
+        ]
+      },
+      "SO_Dev_Content_18to24": {
+        "name": "Age 18-24",
+        "total_respondents": 3731,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "total": 3731,
+            "frequency": 1801,
+            "percent": 0.4827
+          },
+          {
+            "response": "Long-form articles",
+            "total": 3731,
+            "frequency": 1525,
+            "percent": 0.4087
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "total": 3731,
+            "frequency": 1167,
+            "percent": 0.3128
+          },
+          {
+            "response": "Coding challenges",
+            "total": 3731,
+            "frequency": 1447,
+            "percent": 0.3878
+          },
+          {
+            "response": "Chat (people)",
+            "total": 3731,
+            "frequency": 1397,
+            "percent": 0.3744
+          },
+          {
+            "response": "Videos",
+            "total": 3731,
+            "frequency": 979,
+            "percent": 0.2624
+          },
+          {
+            "response": "Job board",
+            "total": 3731,
+            "frequency": 771,
+            "percent": 0.2066
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "total": 3731,
+            "frequency": 835,
+            "percent": 0.2238
+          },
+          {
+            "response": "Message Boards",
+            "total": 3731,
+            "frequency": 720,
+            "percent": 0.193
+          },
+          {
+            "response": "Logic games/puzzles",
+            "total": 3731,
+            "frequency": 791,
+            "percent": 0.212
+          },
+          {
+            "response": "Direct messaging of users",
+            "total": 3731,
+            "frequency": 737,
+            "percent": 0.1975
+          },
+          {
+            "response": "Other",
+            "total": 3731,
+            "frequency": 120,
+            "percent": 0.0322
+          }
+        ]
+      },
+      "SO_Dev_Content_25to34": {
+        "name": "Age 25-34",
+        "total_respondents": 7424,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "total": 7424,
+            "frequency": 3602,
+            "percent": 0.4852
+          },
+          {
+            "response": "Long-form articles",
+            "total": 7424,
+            "frequency": 3083,
+            "percent": 0.4153
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "total": 7424,
+            "frequency": 2539,
+            "percent": 0.342
+          },
+          {
+            "response": "Coding challenges",
+            "total": 7424,
+            "frequency": 2432,
+            "percent": 0.3276
+          },
+          {
+            "response": "Chat (people)",
+            "total": 7424,
+            "frequency": 2041,
+            "percent": 0.2749
+          },
+          {
+            "response": "Videos",
+            "total": 7424,
+            "frequency": 1845,
+            "percent": 0.2485
+          },
+          {
+            "response": "Job board",
+            "total": 7424,
+            "frequency": 1763,
+            "percent": 0.2375
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "total": 7424,
+            "frequency": 1648,
+            "percent": 0.222
+          },
+          {
+            "response": "Message Boards",
+            "total": 7424,
+            "frequency": 1294,
+            "percent": 0.1743
+          },
+          {
+            "response": "Logic games/puzzles",
+            "total": 7424,
+            "frequency": 1326,
+            "percent": 0.1786
+          },
+          {
+            "response": "Direct messaging of users",
+            "total": 7424,
+            "frequency": 1120,
+            "percent": 0.1509
+          },
+          {
+            "response": "Other",
+            "total": 7424,
+            "frequency": 308,
+            "percent": 0.0415
+          }
+        ]
+      },
+      "SO_Dev_Content_35to44": {
+        "name": "Age 35-44",
+        "total_respondents": 6526,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "total": 6526,
+            "frequency": 3015,
+            "percent": 0.462
+          },
+          {
+            "response": "Long-form articles",
+            "total": 6526,
+            "frequency": 2605,
+            "percent": 0.3992
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "total": 6526,
+            "frequency": 2360,
+            "percent": 0.3616
+          },
+          {
+            "response": "Coding challenges",
+            "total": 6526,
+            "frequency": 1768,
+            "percent": 0.2709
+          },
+          {
+            "response": "Chat (people)",
+            "total": 6526,
+            "frequency": 1565,
+            "percent": 0.2398
+          },
+          {
+            "response": "Videos",
+            "total": 6526,
+            "frequency": 1648,
+            "percent": 0.2525
+          },
+          {
+            "response": "Job board",
+            "total": 6526,
+            "frequency": 1428,
+            "percent": 0.2188
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "total": 6526,
+            "frequency": 1211,
+            "percent": 0.1856
+          },
+          {
+            "response": "Message Boards",
+            "total": 6526,
+            "frequency": 1102,
+            "percent": 0.1689
+          },
+          {
+            "response": "Logic games/puzzles",
+            "total": 6526,
+            "frequency": 928,
+            "percent": 0.1422
+          },
+          {
+            "response": "Direct messaging of users",
+            "total": 6526,
+            "frequency": 828,
+            "percent": 0.1269
+          },
+          {
+            "response": "Other",
+            "total": 6526,
+            "frequency": 287,
+            "percent": 0.044
+          }
+        ]
+      },
+      "SO_Dev_Content_45to54": {
+        "name": "Age 45-54",
+        "total_respondents": 3179,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "total": 3179,
+            "frequency": 1544,
+            "percent": 0.4857
+          },
+          {
+            "response": "Long-form articles",
+            "total": 3179,
+            "frequency": 1265,
+            "percent": 0.3979
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "total": 3179,
+            "frequency": 1051,
+            "percent": 0.3306
+          },
+          {
+            "response": "Coding challenges",
+            "total": 3179,
+            "frequency": 702,
+            "percent": 0.2208
+          },
+          {
+            "response": "Chat (people)",
+            "total": 3179,
+            "frequency": 671,
+            "percent": 0.2111
+          },
+          {
+            "response": "Videos",
+            "total": 3179,
+            "frequency": 757,
+            "percent": 0.2381
+          },
+          {
+            "response": "Job board",
+            "total": 3179,
+            "frequency": 538,
+            "percent": 0.1692
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "total": 3179,
+            "frequency": 433,
+            "percent": 0.1362
+          },
+          {
+            "response": "Message Boards",
+            "total": 3179,
+            "frequency": 584,
+            "percent": 0.1837
+          },
+          {
+            "response": "Logic games/puzzles",
+            "total": 3179,
+            "frequency": 381,
+            "percent": 0.1198
+          },
+          {
+            "response": "Direct messaging of users",
+            "total": 3179,
+            "frequency": 439,
+            "percent": 0.1381
+          },
+          {
+            "response": "Other",
+            "total": 3179,
+            "frequency": 165,
+            "percent": 0.0519
+          }
+        ]
+      },
+      "SO_Dev_Content_55to64": {
+        "name": "Age 55-64",
+        "total_respondents": 1362,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Lists of recommendations (tools, frameworks, technologies, etc.)",
+            "total": 1362,
+            "frequency": 652,
+            "percent": 0.4787
+          },
+          {
+            "response": "Long-form articles",
+            "total": 1362,
+            "frequency": 593,
+            "percent": 0.4354
+          },
+          {
+            "response": "Chat (bot/AI)",
+            "total": 1362,
+            "frequency": 345,
+            "percent": 0.2533
+          },
+          {
+            "response": "Coding challenges",
+            "total": 1362,
+            "frequency": 276,
+            "percent": 0.2026
+          },
+          {
+            "response": "Chat (people)",
+            "total": 1362,
+            "frequency": 273,
+            "percent": 0.2004
+          },
+          {
+            "response": "Videos",
+            "total": 1362,
+            "frequency": 319,
+            "percent": 0.2342
+          },
+          {
+            "response": "Job board",
+            "total": 1362,
+            "frequency": 195,
+            "percent": 0.1432
+          },
+          {
+            "response": "Day-in-the-life profiles/interviews with experts",
+            "total": 1362,
+            "frequency": 148,
+            "percent": 0.1087
+          },
+          {
+            "response": "Message Boards",
+            "total": 1362,
+            "frequency": 249,
+            "percent": 0.1828
+          },
+          {
+            "response": "Logic games/puzzles",
+            "total": 1362,
+            "frequency": 123,
+            "percent": 0.0903
+          },
+          {
+            "response": "Direct messaging of users",
+            "total": 1362,
+            "frequency": 188,
+            "percent": 0.138
+          },
+          {
+            "response": "Other",
+            "total": 1362,
+            "frequency": 84,
+            "percent": 0.0617
+          }
+        ]
+      }
+    }
+  },
+  "SO_Actions": {
+    "qid": "QID76",
+    "qname": "SO_Actions",
+    "question": "When visiting Stack Overflow, which following activities are you most interested in?  Please rank the following so the first activity is what most interests you and last is your least interested activity.",
+    "datasets": {
+      "SO_Actions": {
+        "name": "All Respondents",
+        "total_respondents": 26234,
+        "plot_type": "table",
+        "plot_metadata": [
+          "Actions",
+          "Overall Rank",
+          "Median Rank",
+          "Mode Rank"
+        ],
+        "data": [
+          {
+            "response": "Read and/or vote on comments for a Question or Answer I am interested in",
+            "rank": 1,
+            "median": 2,
+            "mode": 1
+          },
+          {
+            "response": "Directly open a Q&A post via search, documentation or a peer",
+            "rank": 2,
+            "median": 4,
+            "mode": 1
+          },
+          {
+            "response": "Ask a question",
+            "rank": 3,
+            "median": 5,
+            "mode": 2
+          },
+          {
+            "response": "Browse content related to Q&A posts I recently viewed",
+            "rank": 4,
+            "median": 5,
+            "mode": 2
+          },
+          {
+            "response": "Upvote/Downvote Q&A posts",
+            "rank": 5,
+            "median": 5,
+            "mode": 3
+          },
+          {
+            "response": "Answer a question",
+            "rank": 6,
+            "median": 5,
+            "mode": 6
+          },
+          {
+            "response": "Comment on Q&A posts",
+            "rank": 7,
+            "median": 6,
+            "mode": 6
+          },
+          {
+            "response": "Bookmark posts to look at later",
+            "rank": 8,
+            "median": 6,
+            "mode": 8
+          },
+          {
+            "response": "Use discussion or chat feature",
+            "rank": 9,
+            "median": 7,
+            "mode": 9
+          },
+          {
+            "response": "Other (write in):",
+            "rank": 10,
+            "median": 10,
+            "mode": 10
+          }
+        ]
+      }
+    }
+  },
+  "SOComm": {
+    "qid": "QID77",
+    "qname": "SOComm",
+    "question": "Do you consider yourself a member of the Stack Overflow community?",
+    "datasets": {
+      "SOComm": {
+        "name": "All Respondents",
+        "total_respondents": 31664,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, definitely",
+            "frequency": 3035,
+            "percent": 0.0959
+          },
+          {
+            "response": "Yes, somewhat",
+            "frequency": 7388,
+            "percent": 0.2333
+          },
+          {
+            "response": "Neutral",
+            "frequency": 6389,
+            "percent": 0.2018
+          },
+          {
+            "response": "No, not really",
+            "frequency": 9938,
+            "percent": 0.3139
+          },
+          {
+            "response": "No, not at all",
+            "frequency": 4618,
+            "percent": 0.1458
+          },
+          {
+            "response": "Not sure",
+            "frequency": 296,
+            "percent": 0.0093
+          }
+        ]
+      },
+      "SOComm_duration": {
+        "name": "By Duration",
+        "total_respondents": 31502,
+        "plot_type": "bar",
+        "plot_subtext": "Percent who consider themselves definitely or somewhat part of the Stack Overflow community.",
+        "data": [
+          {
+            "in_community": true,
+            "response": "Less than one year",
+            "total": 777,
+            "frequency": 237,
+            "percent": 0.305
+          },
+          {
+            "in_community": true,
+            "response": "1 - 2 years",
+            "total": 2015,
+            "frequency": 574,
+            "percent": 0.2849
+          },
+          {
+            "in_community": true,
+            "response": "3 - 5 years",
+            "total": 3819,
+            "frequency": 1096,
+            "percent": 0.287
+          },
+          {
+            "in_community": true,
+            "response": "6 - 10 years",
+            "total": 9932,
+            "frequency": 3046,
+            "percent": 0.3067
+          },
+          {
+            "in_community": true,
+            "response": "11 - 15 years",
+            "total": 10541,
+            "frequency": 3947,
+            "percent": 0.3744
+          },
+          {
+            "in_community": true,
+            "response": "15+ years",
+            "total": 3880,
+            "frequency": 1408,
+            "percent": 0.3629
+          }
+        ]
+      }
+    }
+  },
+  "SOFriction": {
+    "qid": "QID97",
+    "qname": "SOFriction",
+    "question": "When you visit Stack Overflow, how often is it a result of encountering issues from AI or AI-enabled tools that require extra time or effort to fix, understand, or debug?",
+    "datasets": {
+      "SOFriction": {
+        "name": "All Respondents",
+        "total_respondents": 30751,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Rarely, almost never",
+            "frequency": 13200,
+            "percent": 0.4293
+          },
+          {
+            "response": "I don't use AI or AI-enabled tools",
+            "frequency": 6786,
+            "percent": 0.2207
+          },
+          {
+            "response": "Less than half of the time",
+            "frequency": 5691,
+            "percent": 0.1851
+          },
+          {
+            "response": "About half of the time",
+            "frequency": 2784,
+            "percent": 0.0905
+          },
+          {
+            "response": "More than half the time",
+            "frequency": 2290,
+            "percent": 0.0745
+          }
+        ]
+      }
+    }
+  }
+}
