@@ -15,7 +15,6 @@ export const theme = {
 	focus: token('focus', '#5074ef'),
 	onFocus: token('on-focus', '#ffffff'),
 	rest: token('rest', '#998b7a'),
-	// Everything a chart has drawn but isn't asking you to read.
 	dim: token('dim', '#bcb9b3'),
 	onRest: token('on-rest', '#201c1d'),
 

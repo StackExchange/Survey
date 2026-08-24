@@ -54,7 +54,7 @@
 				{clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
 			</text>
 
-			<text x={valueX} y={middle(y + ROW / 2, RANK_SIZE)} text-anchor="end" font-size={RANK_SIZE} fill={theme.muted}>
+			<text x={valueX} y={middle(y + ROW / 2, RANK_SIZE)} text-anchor="end" font-size={RANK_SIZE} fill={theme.ink}>
 				#{i + 1}
 			</text>
 		</g>
