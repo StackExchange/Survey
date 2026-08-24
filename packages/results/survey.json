@@ -25,7 +25,7 @@
               "name": "Age",
               "dataId": "Age",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "age",
               "dataIdSlug": "age"
@@ -36,7 +36,7 @@
               "name": "Relationship to coding",
               "dataId": "CodeMain",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "relationship-to-coding",
               "dataIdSlug": "code-main"
@@ -47,7 +47,7 @@
               "name": "Work environment",
               "dataId": "Education",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "work-environment",
               "dataIdSlug": "education"
@@ -58,7 +58,7 @@
               "name": "Employment status",
               "dataId": "Employment",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "employment-status",
               "dataIdSlug": "employment"
@@ -69,7 +69,7 @@
               "name": "Gender",
               "dataId": "Gender",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "gender",
               "dataIdSlug": "gender"
@@ -80,7 +80,7 @@
               "name": "Country",
               "dataId": "Country",
               "chart": "table",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "country",
               "dataIdSlug": "country"
@@ -99,7 +99,7 @@
               "name": "Employment additional status",
               "dataId": "EmploymentAddl",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "employment-additional-status",
               "dataIdSlug": "employment-addl"
@@ -118,7 +118,7 @@
               "name": "IC or PM",
               "dataId": "ICorPM",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ic-or-pm",
               "dataIdSlug": "i-cor-pm"
@@ -129,7 +129,7 @@
               "name": "Work Setting",
               "dataId": "WorkSetting",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "work-setting",
               "dataIdSlug": "work-setting"
@@ -140,7 +140,7 @@
               "name": "Years coding",
               "dataId": "YearsCode",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "years-coding",
               "dataIdSlug": "years-code"
@@ -151,7 +151,7 @@
               "name": "Years of work experience",
               "dataId": "WorkExp",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "years-of-work-experience",
               "dataIdSlug": "work-exp"
@@ -162,7 +162,7 @@
               "name": "Title",
               "dataId": "Role",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "title",
               "dataIdSlug": "role"
@@ -181,7 +181,7 @@
               "name": "Functions at work",
               "dataId": "RoleFunctions",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "functions-at-work",
               "dataIdSlug": "role-functions"
@@ -192,7 +192,7 @@
               "name": "Employer organization size",
               "dataId": "OrgSize",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "employer-organization-size",
               "dataIdSlug": "org-size"
@@ -203,7 +203,7 @@
               "name": "Tech budget decisionmaker status",
               "dataId": "TechBudget",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "tech-budget-decisionmaker-status",
               "dataIdSlug": "tech-budget"
@@ -222,7 +222,7 @@
               "name": "Relationship to purchase decisions at work",
               "dataId": "PurchasePower",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "relationship-to-purchase-decisions-at-work",
               "dataIdSlug": "purchase-power"
@@ -233,7 +233,7 @@
               "name": "Reasons to endorse a technology",
               "dataId": "TechEndorse",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "reasons-to-endorse-a-technology",
               "dataIdSlug": "tech-endorse"
@@ -244,7 +244,7 @@
               "name": "Industry",
               "dataId": "Industry",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "industry",
               "dataIdSlug": "industry"
@@ -255,7 +255,7 @@
               "name": "Job satisfaction",
               "dataId": "JobSat",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "job-satisfaction",
               "dataIdSlug": "job-sat"
@@ -266,7 +266,7 @@
               "name": "Reasons to be complacent with current job",
               "dataId": "JobSatComplacent",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "reasons-to-be-complacent-with-current-job",
               "dataIdSlug": "job-sat-complacent"
@@ -277,7 +277,7 @@
               "name": "Reasons job is easy",
               "dataId": "JobEase",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "reasons-job-is-easy",
               "dataIdSlug": "job-ease"
@@ -288,7 +288,7 @@
               "name": "Does AI affect job ease",
               "dataId": "JobEaseAI",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-ease",
               "dataIdSlug": "job-ease-ai"
@@ -299,7 +299,7 @@
               "name": "Reasons job is difficult",
               "dataId": "JobDifficulty",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "reasons-job-is-difficult",
               "dataIdSlug": "job-difficulty"
@@ -310,7 +310,7 @@
               "name": "Does AI affect job difficulties",
               "dataId": "JobDifficultyAI",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-difficulties",
               "dataIdSlug": "job-difficulty-ai"
@@ -321,7 +321,7 @@
               "name": "Count of tools used",
               "dataId": "ToolCount",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "count-of-tools-used",
               "dataIdSlug": "tool-count"
@@ -332,7 +332,7 @@
               "name": "Compensation",
               "dataId": "Compensation",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "compensation",
               "dataIdSlug": "compensation"
@@ -343,58 +343,75 @@
       "features": [
         {
           "chapter": "Work",
-          "headline": "Seven in ten respondents are in employment",
-          "description": "The remainder are split between freelancing, study and those not currently working.",
+          "headline": "33% are not happy at work",
+          "description": "Discontent in current working conditions has grown from 28% in 2025 to 33% in 2026, and happy and complacent responses both fell about 2%.",
           "tier": "hero",
           "chart": "3d-waffle-large",
-          "dataId": "Employment",
+          "dataId": "JobSat",
           "dataset": [],
           "limit": "",
-          "values": [
-            "Employed"
-          ],
-          "dataIdSlug": "employment"
+          "values": [],
+          "dataIdSlug": "job-sat"
         },
         {
           "chapter": "Work",
-          "headline": "Individual contributors outnumber managers six to one",
-          "description": "The overwhelming majority of respondents write code rather than manage the people who do.",
+          "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
+          "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and staffing shortages (14%).",
           "tier": "hero",
           "chart": "3d-cube",
-          "dataId": "ICorPM",
+          "dataId": "JobDifficulty",
           "dataset": [],
           "limit": "",
-          "values": [
-            "Individual contributor",
-            "People manager"
-          ],
-          "dataIdSlug": "i-cor-pm"
+          "values": [],
+          "dataIdSlug": "job-difficulty"
         },
         {
           "chapter": "Work",
-          "headline": "Remote work holds its ground in the US",
-          "description": "Fully remote remains the single most common arrangement, ahead of hybrid and in-person.",
+          "headline": "33% are not happy at work",
+          "description": "Discontent in current working conditions has grown from 28% in 2025 to 33% in 2026, and happy and complacent responses both fell about 2%.",
           "tier": "highlight",
-          "chart": "2d-bar-stacked-horizontal",
+          "chart": "3d-waffle-large",
+          "dataId": "JobSat",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "job-sat"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
+          "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and staffing shortages (14%).",
+          "tier": "highlight",
+          "chart": "3d-cube",
+          "dataId": "JobDifficulty",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "job-difficulty"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Top 3 responding countries this year are the U.S., Germany and the U.K.",
+          "description": "The United States represents the largest single location share of respondents, followed by Germany at 9% and the United Kingdom at 6%.",
+          "tier": "highlight",
+          "chart": "3d-rank",
+          "dataId": "Country",
+          "dataset": [],
+          "limit": "10",
+          "values": [],
+          "dataIdSlug": "country"
+        },
+        {
+          "chapter": "Work",
+          "headline": "35% work fully remote",
+          "description": "Fully remote setups remain the dominant arrangement among respondents, outpacing heavy in-person hybrid setups (20%) and strictly in-person roles (18%).",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-vertical",
           "dataId": "WorkSetting",
           "dataset": [],
           "limit": "",
           "values": [],
           "dataIdSlug": "work-setting"
-        },
-        {
-          "chapter": "Work",
-          "headline": "Most developers are individual contributors",
-          "description": "Just under one in seven respondents describe themselves as a people manager.",
-          "tier": "highlight",
-          "chart": "stat",
-          "dataId": "ICorPM",
-          "dataset": [],
-          "limit": "",
-          "values": [
-            "Individual contributor"
-          ],
-          "dataIdSlug": "i-cor-pm"
         },
         {
           "chapter": "Work",
@@ -409,8 +426,8 @@
         },
         {
           "chapter": "Work",
-          "headline": "The shape of the companies developers work for",
-          "description": "Mid-sized organisations dominate, with true solo working rarer than often assumed.",
+          "headline": "10% work for themselves",
+          "description": "The percentage of people saying it was just them in an org jumped from 4% to 10% this year. AI has made it easier for people to do work outside of their primary expertise, so it could point to the rise of soloprenuers, full-stack freelancers, or devs finding alternate work arrangements after layoffs.",
           "tier": "highlight",
           "chart": "2d-treemap",
           "dataId": "OrgSize",
@@ -421,10 +438,10 @@
         },
         {
           "chapter": "Work",
-          "headline": "Pay varies more by country than by role",
-          "description": "The gap between the highest and lowest paying markets dwarfs the gap between job titles.",
+          "headline": "Headline for Compensation goes here",
+          "description": "TBD",
           "tier": "highlight",
-          "chart": "2d-bar-stacked-minmax",
+          "chart": "stat",
           "dataId": "Compensation",
           "dataset": [],
           "limit": "",
@@ -433,15 +450,15 @@
         },
         {
           "chapter": "Work",
-          "headline": "One in five influenced a substantial tech purchase",
-          "description": "Developers shape buying decisions well beyond their own individual tooling choices.",
+          "headline": "Users top reasons to endorse a technology are reliability and performance",
+          "description": "Core reliability and performance are the leading reasons professionals endorse a technology, taking priority over pure productivity gains (16%) and ecosystem strength (13%).",
           "tier": "highlight",
           "chart": "2d-waffle-large",
-          "dataId": "TechBudget",
+          "dataId": "TechEndorse",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "tech-budget"
+          "dataIdSlug": "tech-endorse"
         }
       ],
       "index": 1
@@ -464,7 +481,7 @@
               "name": "Tasks delegated to AI agents",
               "dataId": "KnowAgentDelegate",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "tasks-delegated-to-ai-agents",
               "dataIdSlug": "know-agent-delegate"
@@ -475,7 +492,7 @@
               "name": "Signals of trustworthy information",
               "dataId": "TrustReason",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "signals-of-trustworthy-information",
               "dataIdSlug": "trust-reason"
@@ -486,7 +503,7 @@
               "name": "Important project context",
               "dataId": "ContextSelect",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "important-project-context",
               "dataIdSlug": "context-select"
@@ -497,7 +514,7 @@
               "name": "Barriers to finding context",
               "dataId": "ContextProblems",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "barriers-to-finding-context",
               "dataIdSlug": "context-problems"
@@ -508,7 +525,7 @@
               "name": "Managing work context",
               "dataId": "ContextWork",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "managing-work-context",
               "dataIdSlug": "context-work"
@@ -527,7 +544,7 @@
               "name": "Sources for work-related answers",
               "dataId": "KnowledgeQ",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "sources-for-work-related-answers",
               "dataIdSlug": "knowledge-q"
@@ -538,7 +555,7 @@
               "name": "Time spent finding information",
               "dataId": "KnowledgeA",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "time-spent-finding-information",
               "dataIdSlug": "knowledge-a"
@@ -549,7 +566,7 @@
               "name": "Importance of information accuracy",
               "dataId": "KnowledgeAcc",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "importance-of-information-accuracy",
               "dataIdSlug": "knowledge-acc"
@@ -560,7 +577,7 @@
               "name": "Importance of current information",
               "dataId": "KnowledgeTime",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "importance-of-current-information",
               "dataIdSlug": "knowledge-time"
@@ -571,7 +588,7 @@
               "name": "Importance of source traceability",
               "dataId": "KnowledgeSource",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "importance-of-source-traceability",
               "dataIdSlug": "knowledge-source"
@@ -582,7 +599,7 @@
               "name": "Source attribution for AI answers",
               "dataId": "KnowledgeSourceAI",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "source-attribution-for-ai-answers",
               "dataIdSlug": "knowledge-source-ai"
@@ -593,7 +610,7 @@
               "name": "Control over information used by AI",
               "dataId": "KnowAgentTrust",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "control-over-information-used-by-ai",
               "dataIdSlug": "know-agent-trust"
@@ -604,7 +621,7 @@
               "name": "Discovering context too late",
               "dataId": "ContextFreq",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "discovering-context-too-late",
               "dataIdSlug": "context-freq"
@@ -623,7 +640,7 @@
               "name": "Factors in AI adoption",
               "dataId": "AIAdopt",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "factors-in-ai-adoption",
               "dataIdSlug": "ai-adopt"
@@ -634,7 +651,7 @@
               "name": "Organizational AI usage practices",
               "dataId": "AIToken",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "organizational-ai-usage-practices",
               "dataIdSlug": "ai-token"
@@ -645,7 +662,7 @@
               "name": "AI cost and usage limits",
               "dataId": "AICost",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-cost-and-usage-limits",
               "dataIdSlug": "ai-cost"
@@ -656,7 +673,7 @@
               "name": "Cost-conscious prompting",
               "dataId": "AICostPrompt",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "cost-conscious-prompting",
               "dataIdSlug": "ai-cost-prompt"
@@ -674,49 +691,86 @@
           "name": "TBD17",
           "description": "",
           "id": "tbd-17"
+        },
+        {
+          "chapter": "Knowledge",
+          "name": "Education & Experience",
+          "description": "",
+          "id": "education-experience"
+        },
+        {
+          "chapter": "Knowledge",
+          "name": "Developer roles",
+          "description": "",
+          "id": "developer-roles"
         }
       ],
       "features": [
         {
           "chapter": "Knowledge",
-          "headline": "Experience spans five decades of developers",
-          "description": "From those in their first year to those with more than fifty, the range is unusually wide.",
-          "tier": "hold",
+          "headline": "Source attribution in AI for technical answers is overwhelmingly important",
+          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
+          "tier": "hero",
           "chart": "3d-bar-stacked-minmax",
-          "dataId": "KnowledgeQ",
+          "dataId": "KnowledgeSourceAI",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "knowledge-q"
+          "dataIdSlug": "knowledge-source-ai"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Three in four are developers by profession",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
           "description": "The rest write code as part of another role, are learning, or code as a hobby.",
-          "tier": "hold",
+          "tier": "hero",
           "chart": "3d-waffle-large",
-          "dataId": "KnowAgentDelegate",
+          "dataId": "ContextSelect",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "know-agent-delegate"
+          "dataIdSlug": "context-select"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
-          "tier": "hold",
-          "chart": "quote",
-          "dataId": "",
+          "headline": "Source attribution in AI for technical answers is overwhelmingly important",
+          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
+          "tier": "highlight",
+          "chart": "3d-bar-stacked-minmax",
+          "dataId": "KnowledgeSourceAI",
           "dataset": [],
           "limit": "",
-          "values": []
+          "values": [],
+          "dataIdSlug": "knowledge-source-ai"
         },
         {
           "chapter": "Knowledge",
-          "headline": "The age of the developer population",
-          "description": "The 25-34 bracket is the largest, with a long tail either side of it.",
-          "tier": "hold",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The rest write code as part of another role, are learning, or code as a hobby.",
+          "tier": "highlight",
+          "chart": "3d-waffle-large",
+          "dataId": "ContextSelect",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-select"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
+          "chart": "2d-treemap",
+          "dataId": "ContextSelect",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-select"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Project goals or requirements (85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "ContextSelect",
           "dataset": [],
@@ -726,50 +780,51 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Most respondents code for a living",
-          "description": "Professional developers make up the clear majority of everyone who answered.",
-          "tier": "hold",
-          "chart": "stat",
-          "dataId": "ContextFreq",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "ContextSelect",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "context-freq"
+          "dataIdSlug": "context-select"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Formal education among professionals",
-          "description": "A bachelors degree is the most common, but far from a prerequisite for the work.",
-          "tier": "hold",
-          "chart": "2d-treemap",
-          "dataId": "AIAdopt",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
+          "chart": "3d-rank",
+          "dataId": "ContextSelect",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "ai-adopt"
+          "dataIdSlug": "context-select"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
-          "tier": "hold",
-          "chart": "quote",
-          "dataId": "",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
+          "chart": "3d-cube",
+          "dataId": "ContextSelect",
           "dataset": [],
           "limit": "",
-          "values": []
+          "values": [],
+          "dataIdSlug": "context-select"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Where developers learn to code",
-          "description": "Technical documentation leads, with Stack Overflow third behind general online resources.",
-          "tier": "hold",
-          "chart": "rank",
-          "dataId": "AIToken",
+          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "highlight",
+          "chart": "3d-rank",
+          "dataId": "ContextSelect",
           "dataset": [],
           "limit": "5",
           "values": [],
-          "dataIdSlug": "ai-token"
+          "dataIdSlug": "context-select"
         }
       ],
       "index": 2
@@ -792,7 +847,7 @@
               "name": "AI tool usage",
               "dataId": "AISelect",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-tool-usage",
               "dataIdSlug": "ai-select"
@@ -803,7 +858,7 @@
               "name": "AI tool usage frequency",
               "dataId": "AIFreq",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-tool-usage-frequency",
               "dataIdSlug": "ai-freq"
@@ -814,7 +869,7 @@
               "name": "AI tool usage daily",
               "dataId": "AIDaily",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-tool-usage-daily",
               "dataIdSlug": "ai-daily"
@@ -825,7 +880,7 @@
               "name": "Attitudes towards AI tools",
               "dataId": "AISentiment",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "attitudes-towards-ai-tools",
               "dataIdSlug": "ai-sentiment"
@@ -836,7 +891,7 @@
               "name": "Trust in AI tools",
               "dataId": "AITrust",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "trust-in-ai-tools",
               "dataIdSlug": "ai-trust"
@@ -855,7 +910,7 @@
               "name": "AI workflow current and expected",
               "dataId": "AIWork",
               "chart": "bar-clustered",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-workflow-current-and-expected",
               "dataIdSlug": "ai-work"
@@ -866,7 +921,7 @@
               "name": "Next steps after receiving an AI prompt response",
               "dataId": "AIWorkNext",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "next-steps-after-receiving-an-ai-prompt-response",
               "dataIdSlug": "ai-work-next"
@@ -877,7 +932,7 @@
               "name": "How good are AI tools at complex tasks",
               "dataId": "AIComplex",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "how-good-are-ai-tools-at-complex-tasks",
               "dataIdSlug": "ai-complex"
@@ -888,7 +943,7 @@
               "name": "AI tool count",
               "dataId": "AIToolCount",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-tool-count",
               "dataIdSlug": "ai-tool-count"
@@ -907,7 +962,7 @@
               "name": "AI agent data storage tools",
               "dataId": "AIMem",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-agent-data-storage-tools",
               "dataIdSlug": "ai-mem"
@@ -918,7 +973,7 @@
               "name": "AI agent orchestration tools",
               "dataId": "AIOrch",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-agent-orchestration-tools",
               "dataIdSlug": "ai-orch"
@@ -929,7 +984,7 @@
               "name": "AI agent observability and security",
               "dataId": "AIObs",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-agent-observability-and-security",
               "dataIdSlug": "ai-obs"
@@ -940,7 +995,7 @@
               "name": "AI coding agents",
               "dataId": "AICodeAgent",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-coding-agents",
               "dataIdSlug": "ai-code-agent"
@@ -951,7 +1006,7 @@
               "name": "AI-no-code agents",
               "dataId": "AINoCode",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-no-code-agents",
               "dataIdSlug": "ai-no-code"
@@ -962,7 +1017,7 @@
               "name": "AI agent automation tools",
               "dataId": "AIAutomate",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-agent-automation-tools",
               "dataIdSlug": "ai-automate"
@@ -981,7 +1036,7 @@
               "name": "AI impact in different work functions",
               "dataId": "AIImpact",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-impact-in-different-work-functions",
               "dataIdSlug": "ai-impact"
@@ -992,7 +1047,7 @@
               "name": "Satisfaction with AI tools",
               "dataId": "AISat",
               "chart": "bar-stacked",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "satisfaction-with-ai-tools",
               "dataIdSlug": "ai-sat"
@@ -1003,7 +1058,7 @@
               "name": "Did you switch AI tools in the past year?",
               "dataId": "AIToolSwitch",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "did-you-switch-ai-tools-in-the-past-year",
               "dataIdSlug": "ai-tool-switch"
@@ -1014,7 +1069,7 @@
               "name": "AI memory retention",
               "dataId": "AIRetain",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-memory-retention",
               "dataIdSlug": "ai-retain"
@@ -1025,7 +1080,7 @@
               "name": "AI at work",
               "dataId": "AIUse",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-at-work",
               "dataIdSlug": "ai-use"
@@ -1036,7 +1091,7 @@
               "name": "AI avoidance",
               "dataId": "AIAvoid",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ai-avoidance",
               "dataIdSlug": "ai-avoid"
@@ -1047,7 +1102,7 @@
               "name": "Vetting new AI tools",
               "dataId": "AITry",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "vetting-new-ai-tools",
               "dataIdSlug": "ai-try"
@@ -1058,22 +1113,10 @@
       "features": [
         {
           "chapter": "AI",
-          "headline": "Half of professional developers now use AI tools daily",
-          "description": "Daily use is markedly higher among professionals than among those still learning to code.",
+          "headline": "62% find AI favorable",
+          "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
           "tier": "hero",
-          "chart": "3d-waffle-medium",
-          "dataId": "AIFreq",
-          "dataset": [],
-          "limit": "",
-          "values": [],
-          "dataIdSlug": "ai-freq"
-        },
-        {
-          "chapter": "AI",
-          "headline": "Sentiment cooled even as adoption climbed",
-          "description": "Favourable views fell year on year while daily use kept rising: enthusiasm is not the driver.",
-          "tier": "hero",
-          "chart": "3d-bar-stacked-horizontal",
+          "chart": "3d-cube",
           "dataId": "AISentiment",
           "dataset": [],
           "limit": "",
@@ -1082,69 +1125,102 @@
         },
         {
           "chapter": "AI",
-          "headline": "A quarter of developers somewhat distrust AI accuracy",
-          "description": "Only 3% say they highly trust it, making distrust by far the more common position.",
+          "headline": "31% of daily AI users use it for 4+ hours/day",
+          "description": "Of the over 70% of respondents who use AI daily, 31% use it over four hours per day.",
+          "tier": "hero",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AIDaily",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-daily"
+        },
+        {
+          "chapter": "AI",
+          "headline": "62% find AI favorable",
+          "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
           "tier": "highlight",
-          "chart": "2d-waffle-medium",
-          "dataId": "AITrust",
+          "chart": "3d-waffle-medium",
+          "dataId": "AISentiment",
           "dataset": [],
           "limit": "",
           "values": [
-            "I trust it for many tasks, but not important work decisions"
+            "Somewhat favorable",
+            "Very favorable"
           ],
+          "dataIdSlug": "ai-sentiment"
+        },
+        {
+          "chapter": "AI",
+          "headline": "31% of daily AI users use it for 4+ hours/day",
+          "description": "Of the over 70% of respondents who use AI daily, 31% use it over four hours per day.",
+          "tier": "highlight",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AIDaily",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-daily"
+        },
+        {
+          "chapter": "AI",
+          "headline": "48% trust AI when they can easily verify the output",
+          "description": "Nearly half of respondents trust AI output only when it can be easily verified, with high-stakes trust remaining low—just 7% trust AI for important work decisions.",
+          "tier": "highlight",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AITrust",
+          "dataset": [],
+          "limit": "",
+          "values": [],
           "dataIdSlug": "ai-trust"
         },
         {
           "chapter": "AI",
-          "headline": "How well AI handles genuinely complex work",
-          "description": "Few rate it highly: most place it somewhere between good-not-great and actively poor.",
+          "headline": "41% do not avoid AI",
+          "description": "While four in ten developers make no effort to avoid AI tools, fears of skill atrophy or self-replacement (17%) and ethical concerns (15%) drive resistance among detractors.",
           "tier": "highlight",
           "chart": "2d-bar-stacked-vertical",
-          "dataId": "AIComplex",
+          "dataId": "AIAvoid",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "ai-complex"
+          "dataIdSlug": "ai-avoid"
         },
         {
           "chapter": "AI",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
-          "tier": "highlight",
-          "chart": "quote",
-          "dataId": "",
-          "dataset": [],
-          "limit": "",
-          "values": []
-        },
-        {
-          "chapter": "AI",
-          "headline": "Almost right, but not quite: the top AI frustration",
-          "description": "Two thirds cite near-miss answers, ahead of the time cost of debugging AI-generated code.",
-          "tier": "highlight",
-          "chart": "stat",
-          "dataId": "AISat",
-          "dataset": [],
-          "limit": "",
-          "values": [
-            "Communication"
-          ],
-          "dataIdSlug": "ai-sat"
-        },
-        {
-          "chapter": "AI",
-          "headline": "Daily use outpaces weekly use nearly three to one",
-          "description": "Among all respondents, AI has largely settled into an everyday habit rather than an occasional one.",
+          "headline": "24% use AI tools that are approved and provided by their organization",
+          "description": "For all the concerns raised about shadow AI, only 24% of organizations provide approved AI tools and guidance. 30% of organizations leave AI usage decisions up to the individual.",
           "tier": "highlight",
           "chart": "2d-treemap-small",
-          "dataId": "AISelect",
+          "dataId": "AIUse",
           "dataset": [],
           "limit": "",
-          "values": [
-            "AI coding assistants or coding agents",
-            "General-purpose AI chat tools"
-          ],
-          "dataIdSlug": "ai-select"
+          "values": [],
+          "dataIdSlug": "ai-use"
+        },
+        {
+          "chapter": "AI",
+          "headline": "25% switch AI tools due to better output quality",
+          "description": "Seeking superior output quality is the single largest reason developers switch AI tools, though a third (34%) retained their original tool choices over the past year. For all the concerns over token costs, only 6% switched because of costs.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AIToolSwitch",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "ai-tool-switch"
+        },
+        {
+          "chapter": "AI",
+          "headline": "74% who use AI tools or agents rate implementation as a combined useful/very useful impact to their work",
+          "description": "AI delivers its highest practical value during implementation (74% combined useful/very useful) and debugging (72%), whereas interpersonal functions like team communication lag in perceived impact.",
+          "tier": "highlight",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AIImpact",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-impact"
         }
       ],
       "index": 3
@@ -1167,7 +1243,7 @@
               "name": "Users using technology",
               "dataId": "TechDropDown",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "users-using-technology",
               "dataIdSlug": "tech-drop-down"
@@ -1178,7 +1254,7 @@
               "name": "Programming, scripting, and markup languages",
               "dataId": "Languages",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "programming-scripting-and-markup-languages",
               "dataIdSlug": "languages"
@@ -1189,7 +1265,7 @@
               "name": "Code Testing tools",
               "dataId": "CodeTest",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "code-testing-tools",
               "dataIdSlug": "code-test"
@@ -1200,7 +1276,7 @@
               "name": "Databases",
               "dataId": "Databases",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "databases",
               "dataIdSlug": "databases"
@@ -1211,7 +1287,7 @@
               "name": "Cloud development",
               "dataId": "CloudPlat",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "cloud-development",
               "dataIdSlug": "cloud-plat"
@@ -1222,7 +1298,7 @@
               "name": "Web frameworks and technologies",
               "dataId": "WebFramework",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "web-framework"
@@ -1233,7 +1309,7 @@
               "name": "LLMs",
               "dataId": "LLM",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ll-ms",
               "dataIdSlug": "llm"
@@ -1244,7 +1320,7 @@
               "name": "Dev IDEs",
               "dataId": "DevIDE",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "dev-id-es",
               "dataIdSlug": "dev-ide"
@@ -1263,7 +1339,7 @@
               "name": "Programming, scripting, and markup languages",
               "dataId": "DA_Language",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "programming-scripting-and-markup-languages",
               "dataIdSlug": "da-language"
@@ -1274,7 +1350,7 @@
               "name": "Code Testing tools",
               "dataId": "DA_CodeTest",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "code-testing-tools",
               "dataIdSlug": "da-code-test"
@@ -1285,7 +1361,7 @@
               "name": "Databases",
               "dataId": "DA_Database",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "databases",
               "dataIdSlug": "da-database"
@@ -1296,7 +1372,7 @@
               "name": "Cloud development",
               "dataId": "DA_Platform",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "cloud-development",
               "dataIdSlug": "da-platform"
@@ -1307,7 +1383,7 @@
               "name": "Web frameworks and technologies",
               "dataId": "DA_Webframe",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "da-webframe"
@@ -1318,7 +1394,7 @@
               "name": "Dev IDEs",
               "dataId": "DA_DevEnvs",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "dev-id-es",
               "dataIdSlug": "da-dev-envs"
@@ -1329,7 +1405,7 @@
               "name": "LLMs",
               "dataId": "DA_LLM",
               "chart": "dumbbell",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "ll-ms",
               "dataIdSlug": "da-llm"
@@ -1348,7 +1424,7 @@
               "name": "Knowledge Management Tools",
               "dataId": "KnowMgmt",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "knowledge-management-tools",
               "dataIdSlug": "know-mgmt"
@@ -1359,7 +1435,7 @@
               "name": "Enterprise Search",
               "dataId": "EntSearch",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "enterprise-search",
               "dataIdSlug": "ent-search"
@@ -1370,7 +1446,7 @@
               "name": "Security Operations Tools",
               "dataId": "SecOps",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "security-operations-tools",
               "dataIdSlug": "sec-ops"
@@ -1389,7 +1465,7 @@
               "name": "Did your team build tools?",
               "dataId": "BuildTool",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "did-your-team-build-tools",
               "dataIdSlug": "build-tool"
@@ -1400,7 +1476,7 @@
               "name": "Did you build tools with AI assistance?",
               "dataId": "BuildToolAI",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "did-you-build-tools-with-ai-assistance",
               "dataIdSlug": "build-tool-ai"
@@ -1411,7 +1487,7 @@
               "name": "Did AI cause business disruptions?",
               "dataId": "Disruption",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "did-ai-cause-business-disruptions",
               "dataIdSlug": "disruption"
@@ -1422,39 +1498,65 @@
       "features": [
         {
           "chapter": "Technology",
-          "headline": "JavaScript holds the top spot for a thirteenth year",
-          "description": "Ranked by the share of all respondents who did extensive development work in each language this year.",
+          "headline": "Top used programming languages feature Javascript at the top of the list for 12th year in a row",
+          "description": "The majority of developers are using JavaScript, SQL, HTML/CSS, Python, and Bash/Shell. Not too surprising; these are the basic techs involved in web software, and everything is web  software these days. No real complaints here, about a third of folks want to use these techs in 6 months (except for the shell languages (25%) and HTML (29%) because can’t we get a script to write that? ). AI seems to love using JavScript and Python (38% each).",
           "tier": "hero",
-          "chart": "3d-rank",
+          "chart": "3d-bar-stacked-minmax",
           "dataId": "Languages",
           "dataset": [],
-          "limit": "5",
+          "limit": "",
           "values": [],
           "dataIdSlug": "languages"
         },
         {
           "chapter": "Technology",
-          "headline": "PostgreSQL is now the default database",
-          "description": "Proportional share of respondents using each database, with Postgres well clear of MySQL and SQLite.",
+          "headline": "75% have used Anthropic LLMs in the last year, and 49% want to use them; 74% have used OpenAI LLMs, 32% want to use them.",
+          "description": "The two companies focused on frontier models are the top two in LLM usage at 74% each. However, that usage doesn’t translate into admiration at the same rate—49% want to use Anthropic LLMs, but only 32% want OpenAI LLMs.",
           "tier": "hero",
-          "chart": "3d-treemap",
-          "dataId": "Databases",
+          "chart": "stat",
+          "dataId": "LLM",
           "dataset": [],
-          "limit": "6",
-          "values": [],
-          "dataIdSlug": "databases"
+          "limit": "",
+          "values": [
+            "Anthropic"
+          ],
+          "dataIdSlug": "llm"
         },
         {
           "chapter": "Technology",
-          "headline": "The web frameworks developers actually reach for",
-          "description": "Node.js and React lead, with jQuery still placing well ahead of several newer arrivals.",
+          "headline": "23% use technology related to security",
+          "description": "For all the talk of security work shifting left, only 23% of developers end up touching security tools, the lowest percentage of responses outside of none of these and other.",
+          "tier": "highlight",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "TechDropDown",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "tech-drop-down"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "For building software at work, 54% say they used AI to help them build something to replace a vendor",
+          "description": "While only 19% say they’re building tools to replace paid vendors, when you add AI to the question, that jumps to 54%.",
+          "tier": "highlight",
+          "chart": "3d-treemap",
+          "dataId": "BuildToolAI",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "build-tool-ai"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "18% have used Rust, 26% want to use Rust",
+          "description": "Once again, Rust seems to have the best press with a small but growing user base. While only 18% percent say they used it, 26% want to use it soon.",
           "tier": "highlight",
           "chart": "rank",
-          "dataId": "WebFramework",
+          "dataId": "Languages",
           "dataset": [],
-          "limit": "5",
+          "limit": "",
           "values": [],
-          "dataIdSlug": "web-framework"
+          "dataIdSlug": "languages"
         },
         {
           "chapter": "Technology",
@@ -1469,34 +1571,34 @@
         },
         {
           "chapter": "Technology",
-          "headline": "Three in four developers write code in VS Code",
-          "description": "No other editor comes close: the nearest, Visual Studio, is used by well under a third.",
+          "headline": "58% have used Postgres in the last year",
+          "description": "Postgres continues reign as the most used database, used by a majority of respondents.",
           "tier": "highlight",
           "chart": "2d-waffle-large",
-          "dataId": "DevIDE",
+          "dataId": "Databases",
           "dataset": [],
           "limit": "",
           "values": [
-            "Visual Studio Code"
+            "PostgreSQL"
           ],
-          "dataIdSlug": "dev-ide"
+          "dataIdSlug": "databases"
         },
         {
           "chapter": "Technology",
-          "headline": "Where professional developers deploy",
-          "description": "Docker dominates, with npm and AWS the next most common parts of the toolchain.",
+          "headline": "46% have used Node and 41% have used React",
+          "description": "Node and React are the top-two frameworks by a large margin.",
           "tier": "highlight",
           "chart": "2d-treemap",
-          "dataId": "CloudPlat",
+          "dataId": "WebFramework",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "cloud-plat"
+          "dataIdSlug": "web-framework"
         },
         {
           "chapter": "Technology",
-          "headline": "Anthropic LLMs are the ones most want to use of all model providers",
-          "description": "Ahead of OpenAI and Google among the LLMs people want to use.",
+          "headline": "75% have used Anthropic LLMs in the last year, and 49% want to use them; 74% have used OpenAI LLMs, 32% want to use them.",
+          "description": "The two companies focused on frontier models are the top two in LLM usage at 74% each. However, that usage doesn’t translate into admiration at the same rate—49% want to use Anthropic LLMs, but only 32% want OpenAI LLMs.",
           "tier": "highlight",
           "chart": "stat",
           "dataId": "LLM",
@@ -1528,7 +1630,7 @@
               "name": "AI’s impact on Stack Overflow usage",
               "dataId": "SOChange",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "a-is-impact-on-stack-overflow-usage",
               "dataIdSlug": "so-change"
@@ -1539,7 +1641,7 @@
               "name": "Where developers look for answers",
               "dataId": "Answers",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "where-developers-look-for-answers",
               "dataIdSlug": "answers"
@@ -1550,7 +1652,7 @@
               "name": "What makes answers trustworthy",
               "dataId": "AnswersTrust",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "what-makes-answers-trustworthy",
               "dataIdSlug": "answers-trust"
@@ -1569,7 +1671,7 @@
               "name": "Community participation",
               "dataId": "CommunityType",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "community-participation",
               "dataIdSlug": "community-type"
@@ -1580,7 +1682,7 @@
               "name": "Barriers to community participation",
               "dataId": "CommunityGap",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "barriers-to-community-participation",
               "dataIdSlug": "community-gap"
@@ -1591,7 +1693,7 @@
               "name": "Sources influencing skill development",
               "dataId": "CommunitySkills",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "sources-influencing-skill-development",
               "dataIdSlug": "community-skills"
@@ -1602,7 +1704,7 @@
               "name": "How developers learned to code",
               "dataId": "LearnCodeHow",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "how-developers-learned-to-code",
               "dataIdSlug": "learn-code-how"
@@ -1613,7 +1715,7 @@
               "name": "How developers learned AI programming",
               "dataId": "LearnAIHow",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "how-developers-learned-ai-programming",
               "dataIdSlug": "learn-ai-how"
@@ -1632,7 +1734,7 @@
               "name": "Stack Overflow account ownership",
               "dataId": "SOAccount",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "stack-overflow-account-ownership",
               "dataIdSlug": "so-account"
@@ -1643,7 +1745,7 @@
               "name": "Years using Stack Overflow",
               "dataId": "SOYears",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "years-using-stack-overflow",
               "dataIdSlug": "so-years"
@@ -1654,7 +1756,7 @@
               "name": "Learning new coding skills",
               "dataId": "LearnCode",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "learning-new-coding-skills",
               "dataIdSlug": "learn-code"
@@ -1665,7 +1767,7 @@
               "name": "Learning AI skills",
               "dataId": "LearnAI",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "learning-ai-skills",
               "dataIdSlug": "learn-ai"
@@ -1676,7 +1778,7 @@
               "name": "Community platforms",
               "dataId": "CommPlat",
               "chart": "bar",
-              "description": "Placeholder 30% of developers learning to code this year have already attained a BS degree, indicating they are learning for a higher degree, for work, or are upskilling. This is an increase over last year when 24% said they had attained a BS degree.",
+              "description": "",
               "subtext": "",
               "id": "community-platforms",
               "dataIdSlug": "comm-plat"
@@ -1687,43 +1789,63 @@
       "features": [
         {
           "chapter": "Community",
-          "headline": "Four in five respondents have a Stack Overflow account",
+          "headline": "69% use GitHub projects or Stack Overflow as their community platform of choice in the past year",
+          "description": "Public GitHub projects (69%) and Stack Overflow (69%) tied as the most heavily utilized technical community platforms in the past year, followed by YouTube (58%) and Reddit (54%).",
+          "tier": "hero",
+          "chart": "3d-rank",
+          "dataId": "CommPlat",
+          "dataset": [],
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "comm-plat"
+        },
+        {
+          "chapter": "Community",
+          "headline": "52% learned a new skill or programming language in the last year",
           "description": "Account holding is near universal, even among those who rarely post or answer.",
           "tier": "hero",
           "chart": "hero-stat",
-          "dataId": "SOAccount",
-          "dataset": [],
-          "limit": "",
-          "values": [
-            "Yes"
-          ],
-          "dataIdSlug": "so-account"
-        },
-        {
-          "chapter": "Community",
-          "headline": "Most respondents already have an account",
-          "description": "Only around one in eight say they have never created one.",
-          "tier": "highlight",
-          "chart": "stat",
-          "dataId": "SOAccount",
-          "dataset": [],
-          "limit": "",
-          "values": [
-            "Yes"
-          ],
-          "dataIdSlug": "so-account"
-        },
-        {
-          "chapter": "Community",
-          "headline": "Participation is far rarer than visiting",
-          "description": "Nearly a third have never asked or answered, despite visiting regularly.",
-          "tier": "highlight",
-          "chart": "3d-bar-stacked-vertical",
-          "dataId": "Answers",
+          "dataId": "LearnCode",
           "dataset": [],
           "limit": "",
           "values": [],
-          "dataIdSlug": "answers"
+          "dataIdSlug": "learn-code"
+        },
+        {
+          "chapter": "Community",
+          "headline": "52% learned a new skill or programming language in the last year",
+          "description": "Account holding is near universal, even among those who rarely post or answer.",
+          "tier": "highlight",
+          "chart": "hero-stat",
+          "dataId": "LearnCode",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "learn-code"
+        },
+        {
+          "chapter": "Community",
+          "headline": "40% are learning AI skills for both work and personal projects",
+          "description": "Four in ten developers learned AI programming across both personal and work settings, driving overall AI skill development participation to 79% overall.",
+          "tier": "highlight",
+          "chart": "3d-cube",
+          "dataId": "LearnAI",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "learn-ai"
+        },
+        {
+          "chapter": "Community",
+          "headline": "64% visiting less for simple questions",
+          "description": "Nearly two-thirds of developers rely less on Stack Overflow for straightforward queries due to AI, with 29% asking fewer questions overall.",
+          "tier": "highlight",
+          "chart": "3d-rank",
+          "dataId": "SOChange",
+          "dataset": [],
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "so-change"
         },
         {
           "chapter": "Community",
@@ -1738,43 +1860,28 @@
         },
         {
           "chapter": "Community",
-          "headline": "The content developers want most",
-          "description": "Recommendation lists lead, ahead of long-form articles and AI chat.",
+          "headline": "Online search tools are the most popular way to search for answers",
+          "description": "Standard web search remains the primary initial problem-solving method, though turning directly to AI agents follows closely behind for 70% of respondents.",
           "tier": "highlight",
           "chart": "rank",
-          "dataId": "LearnCode",
+          "dataId": "Answers",
           "dataset": [],
           "limit": "5",
           "values": [],
-          "dataIdSlug": "learn-code"
+          "dataIdSlug": "answers"
         },
         {
           "chapter": "Community",
-          "headline": "Somewhat beats definitely on belonging",
-          "description": "More respondents feel a qualified sense of community than an unequivocal one.",
+          "headline": "69% use GitHub projects or Stack Overflow as their community platform of choice in the past year",
+          "description": "Public GitHub projects (69%) and Stack Overflow (69%) tied as the most heavily utilized technical community platforms in the past year, followed by YouTube (58%) and Reddit (54%).",
           "tier": "highlight",
-          "chart": "2d-treemap-small",
-          "dataId": "CommunitySkills",
-          "dataset": [],
-          "limit": "",
-          "values": [
-            "Stack Overflow / Stack Exchange"
-          ],
-          "dataIdSlug": "community-skills"
-        },
-        {
-          "chapter": "Community",
-          "headline": "More than a quarter visit at least weekly",
-          "description": "Weekly visits are the single largest group, ahead of daily and multiple-times-daily use.",
-          "tier": "highlight",
-          "chart": "2d-waffle-medium",
+          "chart": "3d-bar-stacked-horizontal",
           "dataId": "CommPlat",
           "dataset": [],
           "limit": "",
           "values": [
-            "Stack Overflow",
-            "Substack",
-            "Reddit"
+            "GitHub (public projects, not private repos)",
+            "Stack Overflow"
           ],
           "dataIdSlug": "comm-plat"
         }
