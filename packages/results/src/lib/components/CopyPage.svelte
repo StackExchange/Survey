@@ -17,7 +17,7 @@
 	const shared = $derived(dev ? new URL(url, page.url.origin).href : `${siteUrl}${url}`)
 
 	const prompt = $derived(
-		`Read ${shared} — the Stack Overflow Developer Survey results for ${title}, as markdown — and summarise what stands out.`
+		`Read ${shared} — the Stack Overflow Developer Survey results for ${title}, as markdown. Summarise what stands out.`
 	)
 
 	const items = $derived([
@@ -29,6 +29,7 @@
 	const markdown = async () => {
 		const response = await fetch(url)
 		if (!response.ok) throw new Error(`${response.status} for ${url}`)
+
 		return response.text()
 	}
 </script>
