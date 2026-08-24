@@ -18,6 +18,10 @@
 	const slots = $derived(Array.from({ length: cells }, (_, i) => i))
 	const layout = $derived(grid(cells, Math.min(width, 620), GAP))
 
+	// The field stops growing at 620 and a near-square grid rarely uses all of it,
+	// so centre what was drawn in what was given.
+	const origin = $derived(px((width - (layout.columns * layout.size + GAP * (layout.columns - 1))) / 2))
+
 	const height = $derived(layout.height)
 
 	const enter = (event: PointerEvent) =>
@@ -25,19 +29,21 @@
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
-	{#each slots as i (i)}
-		{@const column = i % layout.columns}
-		{@const line = Math.floor(i / layout.columns)}
+	<g transform="translate({origin} 0)">
+		{#each slots as i (i)}
+			{@const column = i % layout.columns}
+			{@const line = Math.floor(i / layout.columns)}
 
-		<rect
-			x={px(column * (layout.size + GAP))}
-			y={px(line * (layout.size + GAP))}
-			width={layout.size}
-			height={layout.size}
-			fill={i === 0 ? series(3) : theme.faceSide}
-			role="presentation"
-			onpointermove={enter}
-			onpointerleave={() => onhover?.(null)}
-		/>
-	{/each}
+			<rect
+				x={px(column * (layout.size + GAP))}
+				y={px(line * (layout.size + GAP))}
+				width={layout.size}
+				height={layout.size}
+				fill={i === 0 ? series(3) : theme.faceSide}
+				role="presentation"
+				onpointermove={enter}
+				onpointerleave={() => onhover?.(null)}
+			/>
+		{/each}
+	</g>
 </Frame>

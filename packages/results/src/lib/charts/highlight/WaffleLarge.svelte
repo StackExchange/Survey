@@ -1,12 +1,14 @@
 <script lang="ts">
 	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { percent, px, series, theme } from '$charts/utils/theme'
+	import { px, series, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
-	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
+	// No `onhover`: the whole field is one value, so there is nothing a readout could
+	// say that the drawing and the `<desc>` don't already.
+	let { figure, width = 800 }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const COLUMNS = 10
 	const GAP = 6
@@ -20,23 +22,23 @@
 	const size = $derived(px((Math.min(width, 640) - GAP * (COLUMNS - 1)) / COLUMNS))
 	const height = $derived(COLUMNS * size + GAP * (COLUMNS - 1))
 
-	const slots = Array.from({ length: 100 }, (_, i) => i)
+	// The field stops growing at 640, so centre it in whatever it was given rather
+	// than leaving the slack on one side.
+	const origin = $derived(px((width - (COLUMNS * size + GAP * (COLUMNS - 1))) / 2))
 
-	const enter = (event: PointerEvent) =>
-		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: percent(share), color: series(0) }] }, event)
+	const slots = Array.from({ length: 100 }, (_, i) => i)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
-	{#each slots as i (i)}
-		<rect
-			x={px((i % COLUMNS) * (size + GAP))}
-			y={px(Math.floor(i / COLUMNS) * (size + GAP))}
-			width={size}
-			height={size}
-			fill={i < filled ? series(0) : theme.ghost}
-			role="presentation"
-			onpointermove={enter}
-			onpointerleave={() => onhover?.(null)}
-		/>
-	{/each}
+	<g transform="translate({origin} 0)">
+		{#each slots as i (i)}
+			<rect
+				x={px((i % COLUMNS) * (size + GAP))}
+				y={px(Math.floor(i / COLUMNS) * (size + GAP))}
+				width={size}
+				height={size}
+				fill={i < filled ? series(0) : theme.ghost}
+			/>
+		{/each}
+	</g>
 </Frame>
