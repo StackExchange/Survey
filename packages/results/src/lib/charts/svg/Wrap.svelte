@@ -30,14 +30,13 @@
 	const readChrome = chromeReader()
 	const chrome = $derived(readChrome?.() ?? {})
 	const brand = $derived(chrome.brand ?? false)
-	// Set only by the export, so the preview stops at the caption.
 	const footer = $derived(chrome.footer ?? false)
 	const facts = $derived(captionOf(figure))
-	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext))
+	const editorial = $derived(/^(2d|3d)-|^(hero-stat|rank)$/.test(String(figure?.chart ?? '')))
+	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext) && (brand || !editorial))
 	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)
 	const caption = $derived(stats || brand)
 	const top = $derived(brand ? headerLayout(chrome, width, PAD).height : 0)
-	// Where the masthead band starts: flush with the bottom edge, under everything.
 	const foot = $derived(top + height + (caption ? STATS : 0) + PAD)
 	const w = $derived(px(width))
 	const h = $derived(px(foot + (footer ? MASTHEAD : 0)))
@@ -56,7 +55,7 @@
 	aria-describedby={description ? `${uid}-desc` : undefined}
 	font-family={theme.font}
 >
-	<title>{label}</title>
+	{#if brand}<title>{label}</title>{/if}
 	{#if description}<desc id="{uid}-desc">{description}</desc>{/if}
 
 	{#if brand}
