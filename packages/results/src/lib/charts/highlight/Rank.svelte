@@ -1,9 +1,7 @@
 <script lang="ts">
-	// A numbered list in data order. No bars: the sheet's `limit` has cut this to
-	// the top few, where the order is the finding and the gaps usually aren't.
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { focusedOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, middle, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
@@ -16,22 +14,29 @@
 	const GAP = 10
 	const TAB = 36
 	const LABEL_SIZE = 30
-	const VALUE_SIZE = 15
+	const RANK_SIZE = 30
 
 	const hover = useHover(() => onhover)
 
 	const rows = $derived(rowsOf(figure))
+	const focused = $derived(focusedOf(figure))
+	const fillOf = (row: any, i: number, hovered: boolean) => (hovered ? theme.ink : row === focused ? theme.focus : series(i))
 	const short = $derived(shorten(figure))
 	const format = $derived(formatOf(figure))
 
 	const height = $derived(rows.length * (ROW + GAP))
-
-	// The value sits at the right end, so the label has to stop before it.
 	const valueX = $derived(width - 20)
 	const labelWidth = $derived(width - TAB - 40 - 90)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: series(i) }] }, event)
+		hover.enter(
+			i,
+			{
+				title: String(row.response ?? ''),
+				rows: [{ value: format(row), label: `#${i + 1}`, color: row === focused ? theme.focus : series(i) }],
+			},
+			event
+		)
 	}
 </script>
 
@@ -40,19 +45,17 @@
 		{@const y = i * (ROW + GAP)}
 
 		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
-			<!-- First child, so every label paints over it and stays selectable. The
-			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" {y} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
 			<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={hover.active === i ? theme.rule : theme.ghost} />
-			<rect x="0" {y} width={TAB} height={ROW} fill={series(i)} />
+			<rect x="0" {y} width={TAB} height={ROW} fill={fillOf(row, i, hover.active === i)} />
 
 			<text x={TAB + 24} y={middle(y + ROW / 2, LABEL_SIZE)} font-family={theme.fontHeadline} font-size={LABEL_SIZE} fill={theme.ink}>
-				{i + 1}. {clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
+				{clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
 			</text>
 
-			<text x={valueX} y={middle(y + ROW / 2, VALUE_SIZE)} text-anchor="end" font-size={VALUE_SIZE} font-weight="600" fill={theme.muted}>
-				{format(row)}
+			<text x={valueX} y={middle(y + ROW / 2, RANK_SIZE)} text-anchor="end" font-size={RANK_SIZE} fill={theme.muted}>
+				#{i + 1}
 			</text>
 		</g>
 	{/each}

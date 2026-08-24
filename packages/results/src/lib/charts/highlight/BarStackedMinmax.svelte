@@ -7,7 +7,7 @@
 
 	import { amountOf, endsOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, descent, HOVER_WASH, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -35,45 +35,54 @@
 	const gap = $derived(px(column * 0.55))
 	const y = $derived(scaleLinear().domain([0, largest]).range([0, plot]).clamp(true))
 
+	// Two columns capped at 130 each, so the pair is far narrower than the frame:
+	// centre it rather than leaving all the slack on the right.
+	const origin = $derived(px((width - (column * 2 + gap)) / 2))
+
+	// Hovering turns the bar black rather than washing the column behind it. No
+	// focus: this draws the two ends of the set, so there is no row to accent.
+	const fillOf = (i: number, hovered: boolean) => (hovered ? theme.ink : i === 0 ? series(0) : theme.faceSide)
+
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)
 	}
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, 2)}>
-	{#each ends as row, i (row.response ?? i)}
-		{@const x = px(i * (column + gap))}
-		{@const body = px(y(amount(row)))}
-		{@const top = px(plot - body)}
+	<g transform="translate({origin} 0)">
+		{#each ends as row, i (row.response ?? i)}
+			{@const x = px(i * (column + gap))}
+			{@const body = px(y(amount(row)))}
+			{@const top = px(plot - body)}
 
-		<rect {x} y={top} width={column} height={CAP} fill={theme.faceTop} />
-		<rect {x} y={px(top + CAP)} width={column} height={body} fill={i === 0 ? series(0) : theme.faceSide} />
+			<rect {x} y={top} width={column} height={CAP} fill={theme.faceTop} />
+			<rect {x} y={px(top + CAP)} width={column} height={body} fill={fillOf(i, hover.active === i)} />
 
-		<text
-			x={px(x + column / 2)}
-			y={px(plot + CAP + LABEL_SIZE + 8)}
-			text-anchor="middle"
-			font-size={LABEL_SIZE}
-			font-weight="600"
-			fill={theme.ink}
-		>
-			{format(row)}
-		</text>
-		<text x={px(x + column / 2)} y={px(plot + CAP + LABEL_SIZE * 2.4 + 8)} text-anchor="middle" font-size={LABEL_SIZE} fill={theme.muted}>
-			{clip(short(row.response), chars(column + gap, LABEL_SIZE))}
-		</text>
+			<text
+				x={px(x + column / 2)}
+				y={px(plot + CAP + LABEL_SIZE + 8)}
+				text-anchor="middle"
+				font-size={LABEL_SIZE}
+				font-weight="600"
+				fill={theme.ink}
+			>
+				{format(row)}
+			</text>
+			<text x={px(x + column / 2)} y={px(plot + CAP + LABEL_SIZE * 2.4 + 8)} text-anchor="middle" font-size={LABEL_SIZE} fill={theme.muted}>
+				{clip(short(row.response), chars(column + gap, LABEL_SIZE))}
+			</text>
 
-		<rect
-			{x}
-			y="0"
-			width={Math.max(column, HIT)}
-			height={px(plot + CAP)}
-			fill={hover.active === i ? theme.ink : 'transparent'}
-			opacity={hover.active === i ? HOVER_WASH : 1}
-			role="presentation"
-			onpointermove={(event) => enter(i, row, event)}
-			onpointerleave={hover.leave}
-			onpointercancel={hover.leave}
-		/>
-	{/each}
+			<rect
+				{x}
+				y="0"
+				width={Math.max(column, HIT)}
+				height={px(plot + CAP)}
+				fill="transparent"
+				role="presentation"
+				onpointermove={(event) => enter(i, row, event)}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
+			/>
+		{/each}
+	</g>
 </Frame>
