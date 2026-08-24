@@ -1,14 +1,13 @@
 <script lang="ts">
-	// A row per response, split into the share that answered and the remainder.
-	// Row length is a share of the largest response so the set fills the width;
-	// the split inside it is against 100%.
+	// A row per response, centred. Row length is a share of the largest response so
+	// the set fills the width — one solid bar per value, nothing stacked inside it.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, HOVER_WASH, middle, percent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, middle, onSeries, px, series, shorten, textWidth, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -16,8 +15,8 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const BAR = 44
-	const GAP = 14
-	const LABEL_SIZE = 12
+	const GAP = 8
+	const LABEL_SIZE = 15
 
 	const hover = useHover(() => onhover)
 
@@ -27,53 +26,50 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
+	const leader = $derived(rows.findIndex((row: any) => amount(row) === largest))
+	const focused = $derived(focusedOf(figure))
+	const accent = $derived(focused ?? rows[leader])
+	const accentFill = $derived(focused ? theme.focus : series(0))
+	const accentInk = $derived(focused ? theme.onFocus : onSeries(0))
+	// Pointer first, then the accent: hovering any mark — the focused one included —
+	// turns it black, and the accent is what is drawn when the pointer is elsewhere.
+	// `ink`/`background` are a pair, so that reads black on a light page and white on
+	// a dark one.
+	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? accentFill : theme.rest)
+	const inkOf = (row: any, hovered: boolean) => (hovered ? theme.background : row === accent ? accentInk : theme.onRest)
 	const x = $derived(scaleLinear().domain([0, largest]).range([0, width]).clamp(true))
 
-	const height = $derived(rows.length * (BAR + GAP))
+	// Breathing room at each end of a label, which is also what it is clipped to.
+	const INSET = 12
+	const height = $derived(rows.length * (BAR + GAP) - GAP)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			i,
-			{
-				title: String(row.response ?? ''),
-				rows: [
-					{ value: format(row), label: 'answered this', color: theme.accent },
-					{ value: percent(1 - amount(row)), label: 'did not', color: series(0) },
-				],
-			},
-			event
-		)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(0) }] }, event)
 	}
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, 8)}>
 	{#each rows as row, i (row.response ?? i)}
-		{@const y = i * (BAR + GAP)}
+		{@const y = px(i * (BAR + GAP))}
 		{@const length = px(x(amount(row)))}
 		{@const start = px((width - length) / 2)}
-		{@const split = px(length * Math.min(Math.max(amount(row), 0), 1))}
+		{@const label = clip(short(row.response), chars(width - INSET * 2, LABEL_SIZE))}
+		{@const inside = textWidth(label, LABEL_SIZE) + INSET * 2 <= length}
 
 		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
-			<!-- First child, so every label paints over it and stays selectable. The
-			     handlers are on the group, so the whole row still answers the pointer. -->
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 
-			{#if hover.active === i}
-				<rect x="0" y={y - GAP / 2} {width} height={BAR + GAP} fill={theme.ink} opacity={HOVER_WASH} />
-			{/if}
+			<rect x={start} {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
 
-			<rect x={start} {y} width={split} height={BAR} fill={theme.accent} />
-			<rect x={px(start + split)} {y} width={px(Math.max(length - split, 0))} height={BAR} fill={series(0)} />
-
-			<!-- In the left margin where the row is short enough to leave one, and
-			     dropped where it isn't: the rows are centred, so the margin is whatever
-			     the value happens to leave, and a label can't be promised space. The
-			     readout and the `<desc>` carry every response either way. -->
-			{#if start > 90}
-				<text x={px(start - 10)} y={middle(y + BAR / 2, LABEL_SIZE)} text-anchor="end" font-size={LABEL_SIZE} fill={theme.muted}>
-					{clip(short(row.response), chars(start - 16, LABEL_SIZE))}
-				</text>
-			{/if}
+			<text
+				x={px(start + (inside ? length / 2 : length + INSET))}
+				y={middle(y + BAR / 2, LABEL_SIZE)}
+				text-anchor={inside ? 'middle' : 'start'}
+				font-size={LABEL_SIZE}
+				fill={inside ? inkOf(row, hover.active === i) : theme.muted}
+			>
+				{label}
+			</text>
 		</g>
 	{/each}
 </Frame>
