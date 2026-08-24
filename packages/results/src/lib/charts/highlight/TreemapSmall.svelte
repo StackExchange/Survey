@@ -3,7 +3,7 @@
 	// three times the square — the sides are the square roots of the shares.
 	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, descent, px, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -22,29 +22,27 @@
 
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	// Two squares only, so a focus past them leaves the accent where it was. A
-	// focus is drawn in the chapter's colour; the default keeps the palette's first.
+	// Two squares only, so a focus past them leaves the accent where it was.
 	const focused = $derived(focusedOf(figure))
 	const accent = $derived(rows.includes(focused) ? focused : rows[0])
-	const accentFill = $derived(accent === focused ? theme.focus : series(0))
-	// Pointer first, then the accent: hovering any mark — the focused one included —
-	// turns it black, and the accent is what is drawn when the pointer is elsewhere.
-	// `ink`/`background` are a pair, so that reads black on a light page and white on
-	// a dark one.
-	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? accentFill : theme.faceSide)
+	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 
-	// The tallest square gets the plot, and it is always the larger of the two.
-	const box = $derived(px(Math.min((width - GAP) * 0.62, 340)))
+	// The pair is `box * (1 + ratio) + GAP` wide, so that is what has to fit the
+	// width — sizing `box` alone cropped both squares when the values were close.
+	const ratio = $derived(Math.sqrt(Math.min(...rows.map(amount), largest) / largest))
+	const box = $derived(px(Math.min((width - GAP) / (1 + ratio), width * 0.62)))
 	const side = (row: any) => px(box * Math.sqrt(Math.max(amount(row), 0) / largest))
 
 	const height = $derived(box + LABEL_SIZE * 2.2 + 6 + descent(LABEL_SIZE))
 
-	// The pair is only as wide as the two shares make it, so centre it in the frame
-	// rather than leaving all the slack on the right.
 	const origin = $derived(px((width - (side(rows[0]) + GAP + side(rows[1] ?? rows[0]))) / 2))
 
 	const enter = (row: any, i: number, event: PointerEvent) =>
-		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(i) }] }, event)
+		hover.enter(
+			i,
+			{ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: theme.focus }] },
+			event
+		)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>

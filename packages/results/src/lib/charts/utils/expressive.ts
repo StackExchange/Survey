@@ -78,7 +78,9 @@ export function treemapCells(rows: any[], values: number[], width: number, heigh
 		.sum((d: any) => d.value ?? 0)
 		.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))
 
-	treemap().tile(treemapSquarify).size([width, height]).paddingInner(padding).round(true)(root)
+	// `ratio(1)` rather than d3's default golden ratio: these cells carry two lines of
+	// type each, and a square holds a label where a 1.6-wide cell drops it.
+	treemap().tile(treemapSquarify.ratio(1)).size([width, height]).paddingInner(padding).round(true)(root)
 
 	return (root.leaves() as any[]).map((leaf) => ({
 		row: leaf.data.row,

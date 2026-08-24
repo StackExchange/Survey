@@ -27,7 +27,6 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
-	// Nothing else here is accented, so a focused bar takes a colour of its own.
 	const focused = $derived(focusedOf(figure))
 
 	const depth = $derived(px(BAR * 0.62))

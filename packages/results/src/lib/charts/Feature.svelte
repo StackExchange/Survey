@@ -40,8 +40,8 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="flex items-start justify-center gap-15 {tier === 'hero' ? 'py-10' : ''}">
-	<div class="{tier === 'hero' ? '' : 'max-w-lg'} {flip ? '' : 'lg:order-last'}">
+<div class="items-start justify-center gap-15 lg:grid lg:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
+	<div class="col-span-5 {flip ? '' : 'lg:order-last'}">
 		{#if children}
 			{@render children()}
 		{:else if tier === 'hero' && year && chapter}
@@ -75,7 +75,7 @@
 		{/if}
 	</div>
 
-	<figure bind:clientWidth={measured} class="[&>svg]:h-auto [&>svg]:w-full">
+	<figure bind:clientWidth={measured} class="col-span-5 [&>svg]:h-auto [&>svg]:w-full">
 		<Chart figure={block} {width} onhover={(data, event) => (hovered = { data, event })} />
 
 		<Tooltip data={hovered.data} event={hovered.event} />

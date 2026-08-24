@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { amountOf, focusedOf, formatOf, readingOf, rowsOf, treemapCells } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, onSeries, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -18,23 +18,32 @@
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	// Square: a squarified layout gives its cells better aspect ratios the closer the
-	// frame is to 1:1, and the figure is meant to read as one object.
 	const height = $derived(width)
 	const cells = $derived(treemapCells(rows, rows.map(amount), width, height))
 	const focused = $derived(focusedOf(figure))
-	// As in ./BarStackedHorizontal.svelte: the pointer outranks the focus, so
-	// hovering the focused cell turns it black like any other.
-	const fillOf = (row: any, rank: number, hovered: boolean) => (hovered ? theme.ink : row === focused ? theme.focus : series(rank))
+	// The chapter's colour tinted down the layout order, as ./Rank.svelte does — the
+	// cells are one set, largest first. A focus drops the ramp: the named cell in the
+	// chapter's first colour, every other in its second, as the bars do.
+	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : !focused || row === focused ? theme.focus : theme.rest)
+	const tintOf = (rank: number, hovered: boolean) => (hovered || focused ? 1 : 1 - (0.7 * rank) / Math.max(cells.length - 1, 1))
+	// A tint under 0.6 is closer to the page than to the colour, so the ink flips.
 	const inkOf = (row: any, rank: number, hovered: boolean) =>
-		hovered ? theme.background : row === focused ? theme.onFocus : onSeries(rank)
+		hovered
+			? theme.background
+			: focused
+				? row === focused
+					? theme.onFocus
+					: theme.onRest
+				: tintOf(rank, false) < 0.6
+					? theme.ink
+					: theme.onFocus
 
 	const enter = (cell: any, rank: number, event: PointerEvent) =>
 		hover.enter(
 			rank,
 			{
 				title: String(cell.row.response ?? ''),
-				rows: [{ value: format(cell.row), label: 'of respondents', color: cell.row === focused ? theme.focus : series(rank) }],
+				rows: [{ value: format(cell.row), label: 'of respondents', color: fillOf(cell.row, false) }],
 			},
 			event
 		)
@@ -45,7 +54,14 @@
 		{@const hovered = hover.active === rank}
 
 		<g role="presentation" onpointermove={(event) => enter(cell, rank, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
-			<rect x={cell.x} y={cell.y} width={cell.width} height={cell.height} fill={fillOf(cell.row, rank, hovered)} />
+			<rect
+				x={cell.x}
+				y={cell.y}
+				width={cell.width}
+				height={cell.height}
+				fill={fillOf(cell.row, hovered)}
+				fill-opacity={tintOf(rank, hovered)}
+			/>
 
 			{#if cell.height > LABEL_SIZE * 3 && cell.width > 70}
 				<text x={cell.x + 10} y={cell.y + LABEL_SIZE + 6} font-size={LABEL_SIZE} fill={inkOf(cell.row, rank, hovered)}>

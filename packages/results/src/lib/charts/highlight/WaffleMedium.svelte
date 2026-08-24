@@ -18,8 +18,7 @@
 	const slots = $derived(Array.from({ length: cells }, (_, i) => i))
 	const layout = $derived(grid(cells, Math.min(width, 620), GAP))
 
-	// The field stops growing at 620 and a near-square grid rarely uses all of it,
-	// so centre what was drawn in what was given.
+	// The grid rarely uses the whole width, so centre what it did use.
 	const origin = $derived(px((width - (layout.columns * layout.size + GAP * (layout.columns - 1))) / 2))
 
 	const height = $derived(layout.height)

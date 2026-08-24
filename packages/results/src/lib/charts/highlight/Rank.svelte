@@ -3,7 +3,7 @@
 
 	import { focusedOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, middle, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, middle, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -20,7 +20,11 @@
 
 	const rows = $derived(rowsOf(figure))
 	const focused = $derived(focusedOf(figure))
-	const fillOf = (row: any, i: number, hovered: boolean) => (hovered ? theme.ink : row === focused ? theme.focus : series(i))
+	// One colour tinted down the order: these rows place rather than differ. Opacity
+	// rather than `color-mix`, so a downloaded .svg tints the same way. A focus drops
+	// the ramp — see ./Treemap.svelte.
+	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : focused && row !== focused ? theme.rest : theme.focus)
+	const tintOf = (i: number, hovered: boolean) => (hovered || focused ? 1 : 1 - (0.7 * i) / Math.max(rows.length - 1, 1))
 	const short = $derived(shorten(figure))
 	const format = $derived(formatOf(figure))
 
@@ -33,7 +37,7 @@
 			i,
 			{
 				title: String(row.response ?? ''),
-				rows: [{ value: format(row), label: `#${i + 1}`, color: row === focused ? theme.focus : series(i) }],
+				rows: [{ value: format(row), label: `#${i + 1}`, color: theme.focus }],
 			},
 			event
 		)
@@ -48,7 +52,7 @@
 			<rect x="0" {y} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
 			<rect x={TAB} {y} width={Math.max(width - TAB, 0)} height={ROW} fill={hover.active === i ? theme.rule : theme.ghost} />
-			<rect x="0" {y} width={TAB} height={ROW} fill={fillOf(row, i, hover.active === i)} />
+			<rect x="0" {y} width={TAB} height={ROW} fill={fillOf(row, hover.active === i)} fill-opacity={tintOf(i, hover.active === i)} />
 
 			<text x={TAB + 24} y={middle(y + ROW / 2, LABEL_SIZE)} font-family={theme.fontHeadline} font-size={LABEL_SIZE} fill={theme.ink}>
 				{clip(short(row.response), chars(labelWidth, LABEL_SIZE))}

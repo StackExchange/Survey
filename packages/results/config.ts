@@ -78,8 +78,10 @@ export const chapterChartVars = (index: number) => {
 	const colour = chapterColour(index)
 
 	return [
-		`--chart-focus: ${colour.primary}`,
-		`--chart-on-focus: ${colour.ink}`,
+		`--chapter-primary: ${colour.primary}`,
+		`--chapter-ink: ${colour.ink}`,
+		`--chart-focus: var(--chapter-primary)`,
+		`--chart-on-focus: var(--chapter-ink)`,
 		`--chart-rest: ${colour.secondary}`,
 		`--chart-on-rest: ${colour.secondaryInk}`,
 	].join('; ')

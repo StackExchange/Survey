@@ -35,13 +35,11 @@
 	const gap = $derived(px(column * 0.55))
 	const y = $derived(scaleLinear().domain([0, largest]).range([0, plot]).clamp(true))
 
-	// Two columns capped at 130 each, so the pair is far narrower than the frame:
-	// centre it rather than leaving all the slack on the right.
+	// The pair is far narrower than the frame, so centre it in what is left.
 	const origin = $derived(px((width - (column * 2 + gap)) / 2))
 
-	// Hovering turns the bar black rather than washing the column behind it. No
-	// focus: this draws the two ends of the set, so there is no row to accent.
-	const fillOf = (i: number, hovered: boolean) => (hovered ? theme.ink : i === 0 ? series(0) : theme.faceSide)
+	// No focus: this draws the two ends of the set, so there is no row to accent.
+	const fillOf = (i: number, hovered: boolean) => (hovered ? theme.ink : i === 0 ? theme.focus : theme.rest)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), color: series(0) }] }, event)

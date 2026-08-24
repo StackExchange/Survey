@@ -385,7 +385,7 @@
           "chart": "2d-treemap",
           "dataId": "JobDifficulty",
           "focus": "Unclear priorities or requirements",
-          "limit": "",
+          "limit": "8",
           "values": [],
           "dataIdSlug": "job-difficulty"
         },
@@ -725,7 +725,7 @@
           "tier": "hero",
           "chart": "3d-waffle-large",
           "dataId": "ContextSelect",
-          "focus": "",
+          "focus": "Project goals or requirements",
           "limit": "",
           "values": [],
           "dataIdSlug": "context-select"
@@ -1530,7 +1530,7 @@
           "chart": "2d-bar-stacked-horizontal",
           "dataId": "TechDropDown",
           "focus": "I used security software for permissions and compliance operations",
-          "limit": "",
+          "limit": "10",
           "values": [],
           "dataIdSlug": "tech-drop-down"
         },

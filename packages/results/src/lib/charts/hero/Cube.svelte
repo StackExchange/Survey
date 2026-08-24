@@ -19,8 +19,7 @@
 
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	// Two cubes only, so a focus past them leaves the accent where it was. A focus
-	// is drawn in the chapter's colour; the default keeps the palette's own.
+	// Two cubes only, so a focus past them leaves the accent where it was.
 	const focused = $derived(focusedOf(figure))
 	const accent = $derived(rows.includes(focused) ? focused : rows[0])
 	const accentFill = $derived(accent === focused ? theme.focus : series(1))

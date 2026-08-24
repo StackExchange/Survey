@@ -1,13 +1,13 @@
 <script lang="ts">
 	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
+	// One share, so the chapter's two colours: its first for the filled cells.
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { px, series, theme } from '$charts/utils/theme'
+	import { px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
-	// No `onhover`: the whole field is one value, so there is nothing a readout could
-	// say that the drawing and the `<desc>` don't already.
+	// No `onhover`: one value, so a readout would only repeat the `<desc>`.
 	let { figure, width = 800 }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const COLUMNS = 10
@@ -19,26 +19,20 @@
 	// At least one cell for a real-but-tiny share, as `percent` does for "<1%".
 	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * 100)) : 0)
 
-	const size = $derived(px((Math.min(width, 640) - GAP * (COLUMNS - 1)) / COLUMNS))
+	const size = $derived(px((width - GAP * (COLUMNS - 1)) / COLUMNS))
 	const height = $derived(COLUMNS * size + GAP * (COLUMNS - 1))
-
-	// The field stops growing at 640, so centre it in whatever it was given rather
-	// than leaving the slack on one side.
-	const origin = $derived(px((width - (COLUMNS * size + GAP * (COLUMNS - 1))) / 2))
 
 	const slots = Array.from({ length: 100 }, (_, i) => i)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
-	<g transform="translate({origin} 0)">
-		{#each slots as i (i)}
-			<rect
-				x={px((i % COLUMNS) * (size + GAP))}
-				y={px(Math.floor(i / COLUMNS) * (size + GAP))}
-				width={size}
-				height={size}
-				fill={i < filled ? series(0) : theme.ghost}
-			/>
-		{/each}
-	</g>
+	{#each slots as i (i)}
+		<rect
+			x={px((i % COLUMNS) * (size + GAP))}
+			y={px(Math.floor(i / COLUMNS) * (size + GAP))}
+			width={size}
+			height={size}
+			fill={i < filled ? theme.focus : theme.rest}
+		/>
+	{/each}
 </Frame>

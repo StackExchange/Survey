@@ -26,7 +26,6 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
-	// Nothing else here is accented, so a focused column takes a colour of its own.
 	const focused = $derived(focusedOf(figure))
 
 	const column = $derived(px((width * 0.72) / Math.max(rows.length, 1)))

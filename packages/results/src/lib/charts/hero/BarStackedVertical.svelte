@@ -23,7 +23,6 @@
 
 	// Largest at the base, so the stack narrows going up whatever order it arrives in.
 	const stack = $derived([...rows].sort((a, b) => amount(b) - amount(a)))
-	// Nothing else here is accented, so a focused slab takes a colour of its own.
 	const focused = $derived(focusedOf(figure))
 	const largest = $derived(largestOf(stack.map(amount)))
 
