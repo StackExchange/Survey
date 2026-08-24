@@ -1,0 +1,4224 @@
+{
+  "MainBranch": {
+    "qid": "QID3",
+    "qname": "MainBranch",
+    "question": "Are you someone who writes code? Please select one of the following options that best describes you today.",
+    "datasets": {
+      "MainBranch": {
+        "total_respondents": 49019,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "I am a developer by profession",
+            "frequency": 37356,
+            "percent": 0.7621
+          },
+          {
+            "response": "I am not primarily a developer, but I write code sometimes as part of my work/studies",
+            "frequency": 4876,
+            "percent": 0.0995
+          },
+          {
+            "response": "I am learning to code",
+            "frequency": 2564,
+            "percent": 0.0523
+          },
+          {
+            "response": "I code primarily as a hobby",
+            "frequency": 1916,
+            "percent": 0.0391
+          },
+          {
+            "response": "I used to be a developer by profession, but no longer am",
+            "frequency": 1320,
+            "percent": 0.0269
+          },
+          {
+            "response": "I work with developers or my work supports developers but am not a developer by profession",
+            "frequency": 987,
+            "percent": 0.0201
+          }
+        ]
+      }
+    }
+  },
+  "Age": {
+    "qid": "QID4",
+    "qname": "Age",
+    "question": "What is your age?",
+    "datasets": {
+      "Age": {
+        "name": "All Respondents",
+        "total_respondents": 49019,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "18-24 years old",
+            "frequency": 9173,
+            "percent": 0.1871
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 16444,
+            "percent": 0.3355
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 13207,
+            "percent": 0.2694
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 6254,
+            "percent": 0.1276
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 2624,
+            "percent": 0.0535
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 941,
+            "percent": 0.0192
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 376,
+            "percent": 0.0077
+          }
+        ]
+      },
+      "Age_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 37356,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "18-24 years old",
+            "frequency": 5289,
+            "percent": 0.1416
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 13858,
+            "percent": 0.371
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 10948,
+            "percent": 0.2931
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 4854,
+            "percent": 0.1299
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 1830,
+            "percent": 0.049
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 437,
+            "percent": 0.0117
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 140,
+            "percent": 0.0037
+          }
+        ]
+      },
+      "Age_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 4494,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "18-24 years old",
+            "frequency": 3083,
+            "percent": 0.686
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 743,
+            "percent": 0.1653
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 297,
+            "percent": 0.0661
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 182,
+            "percent": 0.0405
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 59,
+            "percent": 0.0131
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 26,
+            "percent": 0.0058
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 104,
+            "percent": 0.0231
+          }
+        ]
+      },
+      "Age_prof_ai": {
+        "name": "Professionals Using AI",
+        "total_respondents": 28410,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "18-24 years old",
+            "frequency": 3878,
+            "percent": 0.1365
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 10563,
+            "percent": 0.3718
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 8531,
+            "percent": 0.3003
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 3810,
+            "percent": 0.1341
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 1297,
+            "percent": 0.0457
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 258,
+            "percent": 0.0091
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 73,
+            "percent": 0.0026
+          }
+        ]
+      },
+      "Age_learn_ai": {
+        "name": "Learners Using AI",
+        "total_respondents": 2891,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "18-24 years old",
+            "frequency": 2049,
+            "percent": 0.7088
+          },
+          {
+            "response": "25-34 years old",
+            "frequency": 450,
+            "percent": 0.1557
+          },
+          {
+            "response": "35-44 years old",
+            "frequency": 177,
+            "percent": 0.0612
+          },
+          {
+            "response": "45-54 years old",
+            "frequency": 113,
+            "percent": 0.0391
+          },
+          {
+            "response": "55-64 years old",
+            "frequency": 35,
+            "percent": 0.0121
+          },
+          {
+            "response": "65 years or older",
+            "frequency": 13,
+            "percent": 0.0045
+          },
+          {
+            "response": "Prefer not to say",
+            "frequency": 54,
+            "percent": 0.0187
+          }
+        ]
+      }
+    }
+  },
+  "Country": {
+    "qid": "QID20",
+    "qname": "Country",
+    "question": "Where do you live?",
+    "datasets": {
+      "Country": {
+        "name": "Top 10 Countries",
+        "total_respondents": 35307,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "United States of America",
+            "frequency": 7218,
+            "percent": 0.2044
+          },
+          {
+            "response": "Germany",
+            "frequency": 3022,
+            "percent": 0.0856
+          },
+          {
+            "response": "India",
+            "frequency": 2536,
+            "percent": 0.0718
+          },
+          {
+            "response": "United Kingdom of Great Britain and Northern Ireland",
+            "frequency": 2036,
+            "percent": 0.0577
+          },
+          {
+            "response": "France",
+            "frequency": 1408,
+            "percent": 0.0399
+          },
+          {
+            "response": "Canada",
+            "frequency": 1303,
+            "percent": 0.0369
+          },
+          {
+            "response": "Ukraine",
+            "frequency": 963,
+            "percent": 0.0273
+          },
+          {
+            "response": "Poland",
+            "frequency": 886,
+            "percent": 0.0251
+          },
+          {
+            "response": "Netherlands",
+            "frequency": 867,
+            "percent": 0.0246
+          },
+          {
+            "response": "Italy",
+            "frequency": 833,
+            "percent": 0.0236
+          }
+        ]
+      },
+      "AllCountries": {
+        "name": "All Countries",
+        "total_respondents": 35369,
+        "plot_type": "table",
+        "plot_metadata": [
+          "Country",
+          "Frequency",
+          "Percent"
+        ],
+        "data": [
+          {
+            "response": "United States of America",
+            "frequency": 7218,
+            "percent": 0.2044
+          },
+          {
+            "response": "Germany",
+            "frequency": 3022,
+            "percent": 0.0856
+          },
+          {
+            "response": "India",
+            "frequency": 2536,
+            "percent": 0.0718
+          },
+          {
+            "response": "United Kingdom of Great Britain and Northern Ireland",
+            "frequency": 2036,
+            "percent": 0.0577
+          },
+          {
+            "response": "France",
+            "frequency": 1408,
+            "percent": 0.0399
+          },
+          {
+            "response": "Canada",
+            "frequency": 1303,
+            "percent": 0.0369
+          },
+          {
+            "response": "Ukraine",
+            "frequency": 963,
+            "percent": 0.0273
+          },
+          {
+            "response": "Poland",
+            "frequency": 886,
+            "percent": 0.0251
+          },
+          {
+            "response": "Netherlands",
+            "frequency": 867,
+            "percent": 0.0246
+          },
+          {
+            "response": "Italy",
+            "frequency": 833,
+            "percent": 0.0236
+          },
+          {
+            "response": "Brazil",
+            "frequency": 822,
+            "percent": 0.0233
+          },
+          {
+            "response": "Australia",
+            "frequency": 802,
+            "percent": 0.0227
+          },
+          {
+            "response": "Spain",
+            "frequency": 716,
+            "percent": 0.0203
+          },
+          {
+            "response": "Sweden",
+            "frequency": 616,
+            "percent": 0.0174
+          },
+          {
+            "response": "Switzerland",
+            "frequency": 546,
+            "percent": 0.0155
+          },
+          {
+            "response": "Czech Republic",
+            "frequency": 520,
+            "percent": 0.0147
+          },
+          {
+            "response": "Austria",
+            "frequency": 410,
+            "percent": 0.0116
+          },
+          {
+            "response": "Romania",
+            "frequency": 322,
+            "percent": 0.0091
+          },
+          {
+            "response": "Belgium",
+            "frequency": 320,
+            "percent": 0.0091
+          },
+          {
+            "response": "Denmark",
+            "frequency": 316,
+            "percent": 0.009
+          },
+          {
+            "response": "Israel",
+            "frequency": 297,
+            "percent": 0.0084
+          },
+          {
+            "response": "Turkey",
+            "frequency": 294,
+            "percent": 0.0083
+          },
+          {
+            "response": "Mexico",
+            "frequency": 284,
+            "percent": 0.008
+          },
+          {
+            "response": "Portugal",
+            "frequency": 279,
+            "percent": 0.0079
+          },
+          {
+            "response": "China",
+            "frequency": 255,
+            "percent": 0.0072
+          },
+          {
+            "response": "New Zealand",
+            "frequency": 255,
+            "percent": 0.0072
+          },
+          {
+            "response": "Finland",
+            "frequency": 254,
+            "percent": 0.0072
+          },
+          {
+            "response": "Greece",
+            "frequency": 252,
+            "percent": 0.0071
+          },
+          {
+            "response": "South Africa",
+            "frequency": 251,
+            "percent": 0.0071
+          },
+          {
+            "response": "Bulgaria",
+            "frequency": 244,
+            "percent": 0.0069
+          },
+          {
+            "response": "Pakistan",
+            "frequency": 238,
+            "percent": 0.0067
+          },
+          {
+            "response": "Norway",
+            "frequency": 237,
+            "percent": 0.0067
+          },
+          {
+            "response": "Hungary",
+            "frequency": 235,
+            "percent": 0.0067
+          },
+          {
+            "response": "Argentina",
+            "frequency": 222,
+            "percent": 0.0063
+          },
+          {
+            "response": "Bangladesh",
+            "frequency": 219,
+            "percent": 0.0062
+          },
+          {
+            "response": "Ireland",
+            "frequency": 209,
+            "percent": 0.0059
+          },
+          {
+            "response": "Colombia",
+            "frequency": 202,
+            "percent": 0.0057
+          },
+          {
+            "response": "Russian Federation",
+            "frequency": 200,
+            "percent": 0.0057
+          },
+          {
+            "response": "Nigeria",
+            "frequency": 199,
+            "percent": 0.0056
+          },
+          {
+            "response": "Japan",
+            "frequency": 188,
+            "percent": 0.0053
+          },
+          {
+            "response": "Indonesia",
+            "frequency": 180,
+            "percent": 0.0051
+          },
+          {
+            "response": "Serbia",
+            "frequency": 158,
+            "percent": 0.0045
+          },
+          {
+            "response": "Iran, Islamic Republic of...",
+            "frequency": 149,
+            "percent": 0.0042
+          },
+          {
+            "response": "Kenya",
+            "frequency": 147,
+            "percent": 0.0042
+          },
+          {
+            "response": "Slovakia",
+            "frequency": 147,
+            "percent": 0.0042
+          },
+          {
+            "response": "Viet Nam",
+            "frequency": 145,
+            "percent": 0.0041
+          },
+          {
+            "response": "Philippines",
+            "frequency": 141,
+            "percent": 0.004
+          },
+          {
+            "response": "Egypt",
+            "frequency": 139,
+            "percent": 0.0039
+          },
+          {
+            "response": "Chile",
+            "frequency": 131,
+            "percent": 0.0037
+          },
+          {
+            "response": "Thailand",
+            "frequency": 119,
+            "percent": 0.0034
+          },
+          {
+            "response": "Taiwan",
+            "frequency": 118,
+            "percent": 0.0033
+          },
+          {
+            "response": "Croatia",
+            "frequency": 113,
+            "percent": 0.0032
+          },
+          {
+            "response": "Lithuania",
+            "frequency": 101,
+            "percent": 0.0029
+          },
+          {
+            "response": "Sri Lanka",
+            "frequency": 95,
+            "percent": 0.0027
+          },
+          {
+            "response": "Singapore",
+            "frequency": 89,
+            "percent": 0.0025
+          },
+          {
+            "response": "United Arab Emirates",
+            "frequency": 89,
+            "percent": 0.0025
+          },
+          {
+            "response": "South Korea",
+            "frequency": 86,
+            "percent": 0.0024
+          },
+          {
+            "response": "Nepal",
+            "frequency": 83,
+            "percent": 0.0024
+          },
+          {
+            "response": "Malaysia",
+            "frequency": 82,
+            "percent": 0.0023
+          },
+          {
+            "response": "Slovenia",
+            "frequency": 78,
+            "percent": 0.0022
+          },
+          {
+            "response": "Hong Kong (S.A.R.)",
+            "frequency": 72,
+            "percent": 0.002
+          },
+          {
+            "response": "Estonia",
+            "frequency": 70,
+            "percent": 0.002
+          },
+          {
+            "response": "Peru",
+            "frequency": 64,
+            "percent": 0.0018
+          },
+          {
+            "response": "Latvia",
+            "frequency": 62,
+            "percent": 0.0018
+          },
+          {
+            "response": "Morocco",
+            "frequency": 55,
+            "percent": 0.0016
+          },
+          {
+            "response": "Uruguay",
+            "frequency": 52,
+            "percent": 0.0015
+          },
+          {
+            "response": "Algeria",
+            "frequency": 48,
+            "percent": 0.0014
+          },
+          {
+            "response": "Georgia",
+            "frequency": 48,
+            "percent": 0.0014
+          },
+          {
+            "response": "Venezuela, Bolivarian Republic of...",
+            "frequency": 47,
+            "percent": 0.0013
+          },
+          {
+            "response": "Ghana",
+            "frequency": 46,
+            "percent": 0.0013
+          },
+          {
+            "response": "Tunisia",
+            "frequency": 46,
+            "percent": 0.0013
+          },
+          {
+            "response": "Cyprus",
+            "frequency": 39,
+            "percent": 0.0011
+          },
+          {
+            "response": "Ethiopia",
+            "frequency": 38,
+            "percent": 0.0011
+          },
+          {
+            "response": "Saudi Arabia",
+            "frequency": 37,
+            "percent": 0.001
+          },
+          {
+            "response": "Guatemala",
+            "frequency": 33,
+            "percent": 0.0009
+          },
+          {
+            "response": "Jordan",
+            "frequency": 32,
+            "percent": 0.0009
+          },
+          {
+            "response": "Bosnia and Herzegovina",
+            "frequency": 30,
+            "percent": 0.0008
+          },
+          {
+            "response": "Kazakhstan",
+            "frequency": 29,
+            "percent": 0.0008
+          },
+          {
+            "response": "Ecuador",
+            "frequency": 28,
+            "percent": 0.0008
+          },
+          {
+            "response": "Uganda",
+            "frequency": 28,
+            "percent": 0.0008
+          },
+          {
+            "response": "Belarus",
+            "frequency": 26,
+            "percent": 0.0007
+          },
+          {
+            "response": "Dominican Republic",
+            "frequency": 26,
+            "percent": 0.0007
+          },
+          {
+            "response": "Armenia",
+            "frequency": 25,
+            "percent": 0.0007
+          },
+          {
+            "response": "Costa Rica",
+            "frequency": 25,
+            "percent": 0.0007
+          },
+          {
+            "response": "Luxembourg",
+            "frequency": 23,
+            "percent": 0.0007
+          },
+          {
+            "response": "Albania",
+            "frequency": 22,
+            "percent": 0.0006
+          },
+          {
+            "response": "Paraguay",
+            "frequency": 21,
+            "percent": 0.0006
+          },
+          {
+            "response": "Lebanon",
+            "frequency": 20,
+            "percent": 0.0006
+          },
+          {
+            "response": "Malta",
+            "frequency": 19,
+            "percent": 0.0005
+          },
+          {
+            "response": "Azerbaijan",
+            "frequency": 18,
+            "percent": 0.0005
+          },
+          {
+            "response": "Bolivia",
+            "frequency": 18,
+            "percent": 0.0005
+          },
+          {
+            "response": "Yemen",
+            "frequency": 18,
+            "percent": 0.0005
+          },
+          {
+            "response": "Myanmar",
+            "frequency": 17,
+            "percent": 0.0005
+          },
+          {
+            "response": "Uzbekistan",
+            "frequency": 16,
+            "percent": 0.0005
+          },
+          {
+            "response": "Montenegro",
+            "frequency": 15,
+            "percent": 0.0004
+          },
+          {
+            "response": "Rwanda",
+            "frequency": 15,
+            "percent": 0.0004
+          },
+          {
+            "response": "Afghanistan",
+            "frequency": 13,
+            "percent": 0.0004
+          },
+          {
+            "response": "Cameroon",
+            "frequency": 13,
+            "percent": 0.0004
+          },
+          {
+            "response": "Iceland",
+            "frequency": 13,
+            "percent": 0.0004
+          },
+          {
+            "response": "Iraq",
+            "frequency": 13,
+            "percent": 0.0004
+          },
+          {
+            "response": "Zimbabwe",
+            "frequency": 13,
+            "percent": 0.0004
+          },
+          {
+            "response": "El Salvador",
+            "frequency": 12,
+            "percent": 0.0003
+          },
+          {
+            "response": "Zambia",
+            "frequency": 12,
+            "percent": 0.0003
+          },
+          {
+            "response": "Cambodia",
+            "frequency": 11,
+            "percent": 0.0003
+          },
+          {
+            "response": "Honduras",
+            "frequency": 11,
+            "percent": 0.0003
+          },
+          {
+            "response": "Madagascar",
+            "frequency": 11,
+            "percent": 0.0003
+          },
+          {
+            "response": "Mauritius",
+            "frequency": 11,
+            "percent": 0.0003
+          },
+          {
+            "response": "Syrian Arab Republic",
+            "frequency": 11,
+            "percent": 0.0003
+          },
+          {
+            "response": "Isle of Man",
+            "frequency": 10,
+            "percent": 0.0003
+          },
+          {
+            "response": "Kyrgyzstan",
+            "frequency": 10,
+            "percent": 0.0003
+          },
+          {
+            "response": "Panama",
+            "frequency": 10,
+            "percent": 0.0003
+          },
+          {
+            "response": "Maldives",
+            "frequency": 9,
+            "percent": 0.0003
+          },
+          {
+            "response": "Togo",
+            "frequency": 9,
+            "percent": 0.0003
+          },
+          {
+            "response": "Cuba",
+            "frequency": 8,
+            "percent": 0.0002
+          },
+          {
+            "response": "Côte d'Ivoire",
+            "frequency": 8,
+            "percent": 0.0002
+          },
+          {
+            "response": "Republic of Moldova",
+            "frequency": 8,
+            "percent": 0.0002
+          },
+          {
+            "response": "Angola",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Bahrain",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Democratic Republic of the Congo",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Kuwait",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Namibia",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Palestine",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Trinidad and Tobago",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "United Republic of Tanzania",
+            "frequency": 7,
+            "percent": 0.0002
+          },
+          {
+            "response": "Andorra",
+            "frequency": 6,
+            "percent": 0.0002
+          },
+          {
+            "response": "Kosovo",
+            "frequency": 6,
+            "percent": 0.0002
+          },
+          {
+            "response": "Nicaragua",
+            "frequency": 6,
+            "percent": 0.0002
+          },
+          {
+            "response": "North Korea",
+            "frequency": 6,
+            "percent": 0.0002
+          },
+          {
+            "response": "Oman",
+            "frequency": 6,
+            "percent": 0.0002
+          },
+          {
+            "response": "Benin",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Congo, Republic of the...",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Fiji",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Mozambique",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Qatar",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Senegal",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Swaziland",
+            "frequency": 5,
+            "percent": 0.0001
+          },
+          {
+            "response": "Barbados",
+            "frequency": 4,
+            "percent": 0.0001
+          },
+          {
+            "response": "Guyana",
+            "frequency": 4,
+            "percent": 0.0001
+          },
+          {
+            "response": "Jamaica",
+            "frequency": 4,
+            "percent": 0.0001
+          },
+          {
+            "response": "Malawi",
+            "frequency": 4,
+            "percent": 0.0001
+          },
+          {
+            "response": "Somalia",
+            "frequency": 4,
+            "percent": 0.0001
+          },
+          {
+            "response": "Belize",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Bhutan",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Brunei Darussalam",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Mongolia",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Papua New Guinea",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Sudan",
+            "frequency": 3,
+            "percent": 0.0001
+          },
+          {
+            "response": "Antigua and Barbuda",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Botswana",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Burundi",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Haiti",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Lao People's Democratic Republic",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Libyan Arab Jamahiriya",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Mali",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Micronesia, Federated States of...",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Saint Lucia",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Sierra Leone",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Suriname",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Tajikistan",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Turkmenistan",
+            "frequency": 2,
+            "percent": 0.0001
+          },
+          {
+            "response": "Cape Verde",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Djibouti",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Gabon",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Gambia",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Guinea",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Guinea-Bissau",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Lesotho",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Mauritania",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Niger",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Palau",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "San Marino",
+            "frequency": 1,
+            "percent": 0
+          },
+          {
+            "response": "Timor-Leste",
+            "frequency": 1,
+            "percent": 0
+          }
+        ]
+      }
+    }
+  },
+  "EdLevel": {
+    "qid": "QID9",
+    "qname": "EdLevel",
+    "question": "Which of the following best describes the highest level of formal education that you’ve completed? ",
+    "datasets": {
+      "EdLevel": {
+        "name": "All Respondents",
+        "total_respondents": 47988,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Primary/elementary school",
+            "frequency": 581,
+            "percent": 0.0121
+          },
+          {
+            "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+            "frequency": 3617,
+            "percent": 0.0754
+          },
+          {
+            "response": "Some college/university study without earning a degree",
+            "frequency": 6160,
+            "percent": 0.1284
+          },
+          {
+            "response": "Associate degree (A.A., A.S., etc.)",
+            "frequency": 1558,
+            "percent": 0.0325
+          },
+          {
+            "response": "Bachelor’s degree (B.A., B.S., B.Eng., etc.)",
+            "frequency": 20207,
+            "percent": 0.4211
+          },
+          {
+            "response": "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+            "frequency": 12551,
+            "percent": 0.2615
+          },
+          {
+            "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+            "frequency": 2615,
+            "percent": 0.0545
+          },
+          {
+            "response": "Something else",
+            "frequency": 699,
+            "percent": 0.0146
+          }
+        ]
+      },
+      "EdLevel_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 36705,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Primary/elementary school",
+            "frequency": 277,
+            "percent": 0.0075
+          },
+          {
+            "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+            "frequency": 1871,
+            "percent": 0.051
+          },
+          {
+            "response": "Some college/university study without earning a degree",
+            "frequency": 4226,
+            "percent": 0.1151
+          },
+          {
+            "response": "Associate degree (A.A., A.S., etc.)",
+            "frequency": 1160,
+            "percent": 0.0316
+          },
+          {
+            "response": "Bachelor’s degree (B.A., B.S., B.Eng., etc.)",
+            "frequency": 16847,
+            "percent": 0.459
+          },
+          {
+            "response": "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+            "frequency": 10272,
+            "percent": 0.2799
+          },
+          {
+            "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+            "frequency": 1650,
+            "percent": 0.045
+          },
+          {
+            "response": "Something else",
+            "frequency": 402,
+            "percent": 0.011
+          }
+        ]
+      },
+      "EdLevel_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 4342,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Primary/elementary school",
+            "frequency": 165,
+            "percent": 0.038
+          },
+          {
+            "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+            "frequency": 1217,
+            "percent": 0.2803
+          },
+          {
+            "response": "Some college/university study without earning a degree",
+            "frequency": 1039,
+            "percent": 0.2393
+          },
+          {
+            "response": "Associate degree (A.A., A.S., etc.)",
+            "frequency": 141,
+            "percent": 0.0325
+          },
+          {
+            "response": "Bachelor’s degree (B.A., B.S., B.Eng., etc.)",
+            "frequency": 1285,
+            "percent": 0.2959
+          },
+          {
+            "response": "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+            "frequency": 310,
+            "percent": 0.0714
+          },
+          {
+            "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+            "frequency": 52,
+            "percent": 0.012
+          },
+          {
+            "response": "Something else",
+            "frequency": 133,
+            "percent": 0.0306
+          }
+        ]
+      },
+      "EdLevel_prof_ai": {
+        "name": "Professionals Using AI",
+        "total_respondents": 28378,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Primary/elementary school",
+            "frequency": 193,
+            "percent": 0.0068
+          },
+          {
+            "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+            "frequency": 1400,
+            "percent": 0.0493
+          },
+          {
+            "response": "Some college/university study without earning a degree",
+            "frequency": 3267,
+            "percent": 0.1151
+          },
+          {
+            "response": "Associate degree (A.A., A.S., etc.)",
+            "frequency": 886,
+            "percent": 0.0312
+          },
+          {
+            "response": "Bachelor’s degree (B.A., B.S., B.Eng., etc.)",
+            "frequency": 13076,
+            "percent": 0.4608
+          },
+          {
+            "response": "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+            "frequency": 8044,
+            "percent": 0.2835
+          },
+          {
+            "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+            "frequency": 1251,
+            "percent": 0.0441
+          },
+          {
+            "response": "Something else",
+            "frequency": 261,
+            "percent": 0.0092
+          }
+        ]
+      },
+      "EdLevel_learn_ai": {
+        "name": "Learning to Code with AI",
+        "total_respondents": 2866,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Primary/elementary school",
+            "frequency": 87,
+            "percent": 0.0304
+          },
+          {
+            "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+            "frequency": 789,
+            "percent": 0.2753
+          },
+          {
+            "response": "Some college/university study without earning a degree",
+            "frequency": 680,
+            "percent": 0.2373
+          },
+          {
+            "response": "Associate degree (A.A., A.S., etc.)",
+            "frequency": 83,
+            "percent": 0.029
+          },
+          {
+            "response": "Bachelor’s degree (B.A., B.S., B.Eng., etc.)",
+            "frequency": 893,
+            "percent": 0.3116
+          },
+          {
+            "response": "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+            "frequency": 223,
+            "percent": 0.0778
+          },
+          {
+            "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+            "frequency": 26,
+            "percent": 0.0091
+          },
+          {
+            "response": "Something else",
+            "frequency": 85,
+            "percent": 0.0297
+          }
+        ]
+      }
+    }
+  },
+  "YearsCode": {
+    "qid": "QID13",
+    "qname": "YearsCode",
+    "question": "Including any education, how many years have you been coding in total?  Please round to the nearest whole number, excluding any decimal points.",
+    "datasets": {
+      "YearsCode": {
+        "name": "All Respondents",
+        "total_respondents": 42923,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 6828,
+            "percent": 0.1393
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 10323,
+            "percent": 0.2106
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 7623,
+            "percent": 0.1555
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 5783,
+            "percent": 0.118
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 7175,
+            "percent": 0.1464
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 3441,
+            "percent": 0.0702
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 1502,
+            "percent": 0.0306
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 248,
+            "percent": 0.0051
+          }
+        ]
+      },
+      "18-24 years old": {
+        "name": "18-24 years old",
+        "plot_type": "bar",
+        "total_respondents": 7435,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 3706,
+            "percent": 0.4985
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 3232,
+            "percent": 0.4347
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 481,
+            "percent": 0.0647
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 16,
+            "percent": 0.0022
+          }
+        ]
+      },
+      "25-34 years old": {
+        "name": "25-34 years old",
+        "plot_type": "bar",
+        "total_respondents": 14108,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 2042,
+            "percent": 0.1447
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 5342,
+            "percent": 0.3787
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 4695,
+            "percent": 0.3328
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 1851,
+            "percent": 0.1312
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 178,
+            "percent": 0.0126
+          }
+        ]
+      },
+      "35-44 years old": {
+        "name": "35-44 years old",
+        "plot_type": "bar",
+        "total_respondents": 11717,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 654,
+            "percent": 0.0558
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 1315,
+            "percent": 0.1122
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 2065,
+            "percent": 0.1762
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 3296,
+            "percent": 0.2813
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 4152,
+            "percent": 0.3544
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 235,
+            "percent": 0.0201
+          }
+        ]
+      },
+      "45-54 years old": {
+        "name": "45-54 years old",
+        "plot_type": "bar",
+        "total_respondents": 5672,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 234,
+            "percent": 0.0413
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 279,
+            "percent": 0.0492
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 274,
+            "percent": 0.0483
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 483,
+            "percent": 0.0852
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 2224,
+            "percent": 0.3921
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 1937,
+            "percent": 0.3415
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 241,
+            "percent": 0.0425
+          }
+        ]
+      },
+      "55-64 years old": {
+        "name": "55-64 years old",
+        "plot_type": "bar",
+        "total_respondents": 2483,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 69,
+            "percent": 0.0278
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 82,
+            "percent": 0.033
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 69,
+            "percent": 0.0278
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 98,
+            "percent": 0.0395
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 409,
+            "percent": 0.1647
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 887,
+            "percent": 0.3572
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 851,
+            "percent": 0.3427
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 18,
+            "percent": 0.0072
+          }
+        ]
+      }
+    }
+  },
+  "LearnCodeChoose": {
+    "qid": "QID10",
+    "qname": "LearnCodeChoose",
+    "question": "Did you begin learning to code or learn a new coding skill/programming language in the last year?",
+    "datasets": {
+      "LearnCodeChoose": {
+        "total_respondents": 46708,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I am not new to coding but am learning new coding techniques or programming language",
+            "frequency": 32259,
+            "percent": 0.6907
+          },
+          {
+            "response": "No, I am not new to coding and did not learn new coding techniques or programming languages",
+            "frequency": 12463,
+            "percent": 0.2668
+          },
+          {
+            "response": "Yes, I am new to coding or currently a student",
+            "frequency": 1986,
+            "percent": 0.0425
+          }
+        ]
+      }
+    }
+  },
+  "LearnCode": {
+    "qid": "QID11",
+    "qname": "LearnCode",
+    "question": "How did you learn to code in the past year? Select all that apply.",
+    "datasets": {
+      "LearnCode": {
+        "name": "All Respondents",
+        "total_respondents": 33454,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Technical documentation (is generated for/by the tool or system)",
+            "total": 33454,
+            "frequency": 22674,
+            "percent": 0.6778
+          },
+          {
+            "response": "Other online resources (e.g. standard search, forum, online community)",
+            "total": 33454,
+            "frequency": 19639,
+            "percent": 0.587
+          },
+          {
+            "response": "Stack Overflow or Stack Exchange",
+            "total": 33454,
+            "frequency": 17209,
+            "percent": 0.5144
+          },
+          {
+            "response": "Videos (not associated with specific online course or certification)",
+            "total": 33454,
+            "frequency": 16711,
+            "percent": 0.4995
+          },
+          {
+            "response": "AI CodeGen tools or AI-enabled apps",
+            "total": 33454,
+            "frequency": 14713,
+            "percent": 0.4398
+          },
+          {
+            "response": "Blogs or podcasts",
+            "total": 33454,
+            "frequency": 11653,
+            "percent": 0.3483
+          },
+          {
+            "response": "Online Courses or Certification (includes all media types)",
+            "total": 33454,
+            "frequency": 10930,
+            "percent": 0.3267
+          },
+          {
+            "response": "Books / Physical media",
+            "total": 33454,
+            "frequency": 10155,
+            "percent": 0.3036
+          },
+          {
+            "response": "Colleague or on-the-job training",
+            "total": 33454,
+            "frequency": 8576,
+            "percent": 0.2564
+          },
+          {
+            "response": "School (i.e., University, College, etc)",
+            "total": 33454,
+            "frequency": 5542,
+            "percent": 0.1657
+          },
+          {
+            "response": "Games or coding challenges",
+            "total": 33454,
+            "frequency": 4035,
+            "percent": 0.1206
+          },
+          {
+            "response": "Coding Bootcamp",
+            "total": 33454,
+            "frequency": 1738,
+            "percent": 0.052
+          },
+          {
+            "response": "Other",
+            "total": 33454,
+            "frequency": 1068,
+            "percent": 0.0319
+          }
+        ]
+      },
+      "18-24 years old": {
+        "name": "18-24 years old",
+        "plot_type": "bar",
+        "total_respondents": 7203,
+        "data": [
+          {
+            "frequency": 4685,
+            "percent": 0.6504,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 4322,
+            "percent": 0.6,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 3836,
+            "percent": 0.5326,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 3976,
+            "percent": 0.552,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 2875,
+            "percent": 0.3991,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 2056,
+            "percent": 0.2854,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 2190,
+            "percent": 0.304,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 1886,
+            "percent": 0.2618,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 1727,
+            "percent": 0.2398,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 3081,
+            "percent": 0.4277,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 1091,
+            "percent": 0.1515,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 529,
+            "percent": 0.0734,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "25-34 years old": {
+        "name": "25-34 years old",
+        "plot_type": "bar",
+        "total_respondents": 11332,
+        "data": [
+          {
+            "frequency": 7932,
+            "percent": 0.7,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 6528,
+            "percent": 0.5761,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 5802,
+            "percent": 0.512,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 5718,
+            "percent": 0.5046,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 5139,
+            "percent": 0.4535,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 4074,
+            "percent": 0.3595,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 3782,
+            "percent": 0.3337,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 3261,
+            "percent": 0.2878,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 3272,
+            "percent": 0.2887,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 1436,
+            "percent": 0.1267,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 1432,
+            "percent": 0.1264,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 666,
+            "percent": 0.0588,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "35-44 years old": {
+        "name": "35-44 years old",
+        "plot_type": "bar",
+        "total_respondents": 8457,
+        "data": [
+          {
+            "frequency": 5802,
+            "percent": 0.6861,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 4807,
+            "percent": 0.5684,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 4080,
+            "percent": 0.4824,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 4060,
+            "percent": 0.4801,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 3992,
+            "percent": 0.472,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 3258,
+            "percent": 0.3852,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 2828,
+            "percent": 0.3344,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 2654,
+            "percent": 0.3138,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 2194,
+            "percent": 0.2594,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 571,
+            "percent": 0.0675,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 968,
+            "percent": 0.1145,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 328,
+            "percent": 0.0388,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "45-54 years old": {
+        "name": "45-54 years old",
+        "plot_type": "bar",
+        "total_respondents": 3991,
+        "data": [
+          {
+            "frequency": 2675,
+            "percent": 0.6703,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 2411,
+            "percent": 0.6041,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 2097,
+            "percent": 0.5254,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 1931,
+            "percent": 0.4838,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 1822,
+            "percent": 0.4565,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 1555,
+            "percent": 0.3896,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 1357,
+            "percent": 0.34,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 1400,
+            "percent": 0.3508,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 925,
+            "percent": 0.2318,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 258,
+            "percent": 0.0646,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 380,
+            "percent": 0.0952,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 135,
+            "percent": 0.0338,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "55-64 years old": {
+        "name": "55-64 years old",
+        "plot_type": "bar",
+        "total_respondents": 1687,
+        "data": [
+          {
+            "frequency": 1084,
+            "percent": 0.6426,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 1054,
+            "percent": 0.6248,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 953,
+            "percent": 0.5649,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 739,
+            "percent": 0.4381,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 648,
+            "percent": 0.3841,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 530,
+            "percent": 0.3142,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 553,
+            "percent": 0.3278,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 663,
+            "percent": 0.393,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 361,
+            "percent": 0.214,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 124,
+            "percent": 0.0735,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 107,
+            "percent": 0.0634,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 50,
+            "percent": 0.0296,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      }
+    }
+  },
+  "LearnCodeAI": {
+    "qid": "QID12",
+    "qname": "LearnCodeAI",
+    "question": "Did you spend time in the last year learning AI programming or AI-enabled tooling on your own or at work?",
+    "datasets": {
+      "LearnCodeAI": {
+        "name": "All Respondents",
+        "total_respondents": 45065,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Yes, I learned how to use AI-enabled tools required for my job or to benefit my career",
+            "frequency": 16346,
+            "percent": 0.3627
+          },
+          {
+            "response": "Yes, I learned how to use AI-enabled tools for my personal curiosity and/or hobbies",
+            "frequency": 13986,
+            "percent": 0.3104
+          },
+          {
+            "response": "No, I learned something that was not related to AI or AI enablement for my personal curiosity and/or hobbies",
+            "frequency": 5271,
+            "percent": 0.117
+          },
+          {
+            "response": "No, I didn't spend time learning in the past year",
+            "frequency": 4849,
+            "percent": 0.1076
+          },
+          {
+            "response": "No, I learned something that was not related to AI or AI enablement as required for my job or to benefit my career",
+            "frequency": 4613,
+            "percent": 0.1024
+          }
+        ]
+      }
+    }
+  },
+  "AILearnHow": {
+    "qid": "QID32",
+    "qname": "AILearnHow",
+    "question": "How did you learn to code for AI in the past year? Select all that apply.",
+    "datasets": {
+      "AILearnHow": {
+        "name": "All Respondents",
+        "total_respondents": 28172,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "AI CodeGen tools or AI-enabled apps",
+            "total": 28172,
+            "frequency": 14781,
+            "percent": 0.5247
+          },
+          {
+            "response": "Other online resources (e.g. standard search, forum, online community)",
+            "total": 28172,
+            "frequency": 12453,
+            "percent": 0.442
+          },
+          {
+            "response": "Technical documentation (is generated for/by the tool or system)",
+            "total": 28172,
+            "frequency": 11976,
+            "percent": 0.4251
+          },
+          {
+            "response": "Videos (not associated with specific online course or certification)",
+            "total": 28172,
+            "frequency": 10911,
+            "percent": 0.3873
+          },
+          {
+            "response": "Blogs or podcasts",
+            "total": 28172,
+            "frequency": 8083,
+            "percent": 0.2869
+          },
+          {
+            "response": "Colleague or on-the-job training",
+            "total": 28172,
+            "frequency": 6071,
+            "percent": 0.2155
+          },
+          {
+            "response": "Stack Overflow or Stack Exchange",
+            "total": 28172,
+            "frequency": 4781,
+            "percent": 0.1697
+          },
+          {
+            "response": "Online Courses or Certification (includes all media types)",
+            "total": 28172,
+            "frequency": 4620,
+            "percent": 0.164
+          },
+          {
+            "response": "Books / Physical media",
+            "total": 28172,
+            "frequency": 2404,
+            "percent": 0.0853
+          },
+          {
+            "response": "School (i.e., University, College, etc)",
+            "total": 28172,
+            "frequency": 1747,
+            "percent": 0.062
+          },
+          {
+            "response": "Games or coding challenges",
+            "total": 28172,
+            "frequency": 920,
+            "percent": 0.0327
+          },
+          {
+            "response": "Coding Bootcamp",
+            "total": 28172,
+            "frequency": 832,
+            "percent": 0.0295
+          }
+        ]
+      },
+      "18-24 years old": {
+        "name": "18-24 years old",
+        "plot_type": "bar",
+        "total_respondents": 4409,
+        "data": [
+          {
+            "frequency": 2068,
+            "percent": 0.469,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 1822,
+            "percent": 0.4132,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 1651,
+            "percent": 0.3745,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 1873,
+            "percent": 0.4248,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 978,
+            "percent": 0.2218,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 687,
+            "percent": 0.1558,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 895,
+            "percent": 0.203,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 686,
+            "percent": 0.1556,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 387,
+            "percent": 0.0878,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 901,
+            "percent": 0.2044,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 231,
+            "percent": 0.0524,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 199,
+            "percent": 0.0451,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "25-34 years old": {
+        "name": "25-34 years old",
+        "plot_type": "bar",
+        "total_respondents": 9486,
+        "data": [
+          {
+            "frequency": 4945,
+            "percent": 0.5213,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 4039,
+            "percent": 0.4258,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 4179,
+            "percent": 0.4405,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 3583,
+            "percent": 0.3777,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 2669,
+            "percent": 0.2814,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 2164,
+            "percent": 0.2281,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 1621,
+            "percent": 0.1709,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 1510,
+            "percent": 0.1592,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 682,
+            "percent": 0.0719,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 505,
+            "percent": 0.0532,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 304,
+            "percent": 0.032,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 315,
+            "percent": 0.0332,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "35-44 years old": {
+        "name": "35-44 years old",
+        "plot_type": "bar",
+        "total_respondents": 8241,
+        "data": [
+          {
+            "frequency": 4542,
+            "percent": 0.5511,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 3679,
+            "percent": 0.4464,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 3567,
+            "percent": 0.4328,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 3199,
+            "percent": 0.3882,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 2555,
+            "percent": 0.31,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 1982,
+            "percent": 0.2405,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 1198,
+            "percent": 0.1454,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 1379,
+            "percent": 0.1673,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 638,
+            "percent": 0.0774,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 182,
+            "percent": 0.0221,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 221,
+            "percent": 0.0268,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 196,
+            "percent": 0.0238,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "45-54 years old": {
+        "name": "45-54 years old",
+        "plot_type": "bar",
+        "total_respondents": 4017,
+        "data": [
+          {
+            "frequency": 2196,
+            "percent": 0.5467,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 1924,
+            "percent": 0.479,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 1759,
+            "percent": 0.4379,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 1569,
+            "percent": 0.3906,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 1333,
+            "percent": 0.3318,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 890,
+            "percent": 0.2216,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 659,
+            "percent": 0.1641,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 676,
+            "percent": 0.1683,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 403,
+            "percent": 0.1003,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 90,
+            "percent": 0.0224,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 107,
+            "percent": 0.0266,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 74,
+            "percent": 0.0184,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      },
+      "55-64 years old": {
+        "name": "55-64 years old",
+        "plot_type": "bar",
+        "total_respondents": 1498,
+        "data": [
+          {
+            "frequency": 781,
+            "percent": 0.5214,
+            "response": "AI CodeGen tools or AI-enabled apps"
+          },
+          {
+            "frequency": 718,
+            "percent": 0.4793,
+            "response": "Other online resources (e.g. standard search, forum, online community)"
+          },
+          {
+            "frequency": 593,
+            "percent": 0.3959,
+            "response": "Technical documentation (is generated for/by the tool or system)"
+          },
+          {
+            "frequency": 517,
+            "percent": 0.3451,
+            "response": "Videos (not associated with specific online course or certification)"
+          },
+          {
+            "frequency": 424,
+            "percent": 0.283,
+            "response": "Blogs or podcasts"
+          },
+          {
+            "frequency": 272,
+            "percent": 0.1816,
+            "response": "Colleague or on-the-job training"
+          },
+          {
+            "frequency": 280,
+            "percent": 0.1869,
+            "response": "Stack Overflow or Stack Exchange"
+          },
+          {
+            "frequency": 284,
+            "percent": 0.1896,
+            "response": "Online Courses or Certification (includes all media types)"
+          },
+          {
+            "frequency": 208,
+            "percent": 0.1389,
+            "response": "Books / Physical media"
+          },
+          {
+            "frequency": 40,
+            "percent": 0.0267,
+            "response": "School (i.e., University, College, etc)"
+          },
+          {
+            "frequency": 31,
+            "percent": 0.0207,
+            "response": "Games or coding challenges"
+          },
+          {
+            "frequency": 27,
+            "percent": 0.018,
+            "response": "Coding Bootcamp"
+          }
+        ]
+      }
+    }
+  },
+  "DevType": {
+    "qid": "QID15",
+    "qname": "DevType",
+    "question": "Which of the following describes your current job or the job you had for the most time in the past year?",
+    "datasets": {
+      "DevType": {
+        "name": "All Respondents",
+        "total_respondents": 43560,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 11919,
+            "percent": 0.2696
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 6266,
+            "percent": 0.1417
+          },
+          {
+            "response": "Student",
+            "frequency": 4976,
+            "percent": 0.1125
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 2688,
+            "percent": 0.0608
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 1885,
+            "percent": 0.0426
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 1878,
+            "percent": 0.0425
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 1339,
+            "percent": 0.0303
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 1254,
+            "percent": 0.0284
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 1077,
+            "percent": 0.0244
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 1027,
+            "percent": 0.0232
+          },
+          {
+            "response": "Other",
+            "frequency": 1027,
+            "percent": 0.0232
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 870,
+            "percent": 0.0197
+          },
+          {
+            "response": "Retired",
+            "frequency": 857,
+            "percent": 0.0194
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 747,
+            "percent": 0.0169
+          },
+          {
+            "response": "AI/ML engineer",
+            "frequency": 615,
+            "percent": 0.0139
+          },
+          {
+            "response": "Senior executive (C-suite, VP, etc.)",
+            "frequency": 553,
+            "percent": 0.0125
+          },
+          {
+            "response": "Data scientist",
+            "frequency": 532,
+            "percent": 0.012
+          },
+          {
+            "response": "Cybersecurity or InfoSec professional",
+            "frequency": 465,
+            "percent": 0.0105
+          },
+          {
+            "response": "System administrator",
+            "frequency": 447,
+            "percent": 0.0101
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 443,
+            "percent": 0.01
+          },
+          {
+            "response": "Founder, technology or otherwise",
+            "frequency": 428,
+            "percent": 0.0097
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 416,
+            "percent": 0.0094
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 388,
+            "percent": 0.0088
+          },
+          {
+            "response": "Developer, QA or test",
+            "frequency": 342,
+            "percent": 0.0077
+          },
+          {
+            "response": "Project manager",
+            "frequency": 296,
+            "percent": 0.0067
+          },
+          {
+            "response": "Applied scientist",
+            "frequency": 284,
+            "percent": 0.0064
+          },
+          {
+            "response": "Support engineer or analyst",
+            "frequency": 236,
+            "percent": 0.0053
+          },
+          {
+            "response": "Developer, AI apps or physical AI",
+            "frequency": 229,
+            "percent": 0.0052
+          },
+          {
+            "response": "Product manager",
+            "frequency": 201,
+            "percent": 0.0045
+          },
+          {
+            "response": "Database administrator or engineer",
+            "frequency": 177,
+            "percent": 0.004
+          },
+          {
+            "response": "UX, Research Ops or UI design professional",
+            "frequency": 121,
+            "percent": 0.0027
+          },
+          {
+            "response": "Financial analyst or engineer",
+            "frequency": 111,
+            "percent": 0.0025
+          },
+          {
+            "response": "Educator",
+            "frequency": 84,
+            "percent": 0.0019
+          },
+          {
+            "response": "Site reliability engineer",
+            "frequency": 39,
+            "percent": 0.0009
+          }
+        ]
+      },
+      "United States": {
+        "name": "United States",
+        "plot_type": "bar",
+        "total_respondents": 7218,
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 2011,
+            "percent": 0.2786
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 803,
+            "percent": 0.1112
+          },
+          {
+            "response": "Student",
+            "frequency": 499,
+            "percent": 0.0691
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 447,
+            "percent": 0.0619
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 332,
+            "percent": 0.046
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 264,
+            "percent": 0.0366
+          },
+          {
+            "response": "Retired",
+            "frequency": 254,
+            "percent": 0.0352
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 250,
+            "percent": 0.0346
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 234,
+            "percent": 0.0324
+          },
+          {
+            "response": "Other",
+            "frequency": 234,
+            "percent": 0.0324
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 180,
+            "percent": 0.0249
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 155,
+            "percent": 0.0215
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 140,
+            "percent": 0.0194
+          },
+          {
+            "response": "Senior executive (C-suite, VP, etc.)",
+            "frequency": 121,
+            "percent": 0.0168
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 120,
+            "percent": 0.0166
+          },
+          {
+            "response": "Data scientist",
+            "frequency": 112,
+            "percent": 0.0155
+          },
+          {
+            "response": "AI/ML engineer",
+            "frequency": 110,
+            "percent": 0.0152
+          },
+          {
+            "response": "Cybersecurity or InfoSec professional",
+            "frequency": 109,
+            "percent": 0.0151
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 100,
+            "percent": 0.0139
+          },
+          {
+            "response": "Founder, technology or otherwise",
+            "frequency": 97,
+            "percent": 0.0134
+          },
+          {
+            "response": "System administrator",
+            "frequency": 84,
+            "percent": 0.0116
+          },
+          {
+            "response": "Applied scientist",
+            "frequency": 76,
+            "percent": 0.0105
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 76,
+            "percent": 0.0105
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 75,
+            "percent": 0.0104
+          }
+        ]
+      },
+      "Germany": {
+        "name": "Germany",
+        "plot_type": "bar",
+        "total_respondents": 3022,
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 803,
+            "percent": 0.2657
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 358,
+            "percent": 0.1185
+          },
+          {
+            "response": "Student",
+            "frequency": 353,
+            "percent": 0.1168
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 215,
+            "percent": 0.0711
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 172,
+            "percent": 0.0569
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 125,
+            "percent": 0.0414
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 109,
+            "percent": 0.0361
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 104,
+            "percent": 0.0344
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 101,
+            "percent": 0.0334
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 82,
+            "percent": 0.0271
+          },
+          {
+            "response": "Other",
+            "frequency": 64,
+            "percent": 0.0212
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 60,
+            "percent": 0.0199
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 45,
+            "percent": 0.0149
+          },
+          {
+            "response": "Data scientist",
+            "frequency": 44,
+            "percent": 0.0146
+          },
+          {
+            "response": "Retired",
+            "frequency": 37,
+            "percent": 0.0122
+          },
+          {
+            "response": "Project manager",
+            "frequency": 35,
+            "percent": 0.0116
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 34,
+            "percent": 0.0113
+          },
+          {
+            "response": "Cybersecurity or InfoSec professional",
+            "frequency": 34,
+            "percent": 0.0113
+          },
+          {
+            "response": "System administrator",
+            "frequency": 34,
+            "percent": 0.0113
+          }
+        ]
+      },
+      "India": {
+        "name": "India",
+        "plot_type": "bar",
+        "total_respondents": 2536,
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 642,
+            "percent": 0.2532
+          },
+          {
+            "response": "Student",
+            "frequency": 497,
+            "percent": 0.196
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 372,
+            "percent": 0.1467
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 153,
+            "percent": 0.0603
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 149,
+            "percent": 0.0588
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 138,
+            "percent": 0.0544
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 60,
+            "percent": 0.0237
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 49,
+            "percent": 0.0193
+          },
+          {
+            "response": "AI/ML engineer",
+            "frequency": 47,
+            "percent": 0.0185
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 46,
+            "percent": 0.0181
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 41,
+            "percent": 0.0162
+          },
+          {
+            "response": "Other",
+            "frequency": 34,
+            "percent": 0.0134
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 32,
+            "percent": 0.0126
+          }
+        ]
+      },
+      "United Kingdom": {
+        "name": "United Kingdom",
+        "plot_type": "bar",
+        "total_respondents": 2036,
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 588,
+            "percent": 0.2888
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 316,
+            "percent": 0.1552
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 122,
+            "percent": 0.0599
+          },
+          {
+            "response": "Student",
+            "frequency": 110,
+            "percent": 0.054
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 91,
+            "percent": 0.0447
+          },
+          {
+            "response": "Retired",
+            "frequency": 86,
+            "percent": 0.0422
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 68,
+            "percent": 0.0334
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 67,
+            "percent": 0.0329
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 65,
+            "percent": 0.0319
+          },
+          {
+            "response": "Other",
+            "frequency": 51,
+            "percent": 0.025
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 48,
+            "percent": 0.0236
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 45,
+            "percent": 0.0221
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 38,
+            "percent": 0.0187
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 33,
+            "percent": 0.0162
+          },
+          {
+            "response": "AI/ML engineer",
+            "frequency": 31,
+            "percent": 0.0152
+          },
+          {
+            "response": "Senior executive (C-suite, VP, etc.)",
+            "frequency": 31,
+            "percent": 0.0152
+          },
+          {
+            "response": "Data scientist",
+            "frequency": 29,
+            "percent": 0.0142
+          },
+          {
+            "response": "Founder, technology or otherwise",
+            "frequency": 24,
+            "percent": 0.0118
+          },
+          {
+            "response": "Cybersecurity or InfoSec professional",
+            "frequency": 22,
+            "percent": 0.0108
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 22,
+            "percent": 0.0108
+          }
+        ]
+      },
+      "France": {
+        "name": "France",
+        "plot_type": "bar",
+        "total_respondents": 1408,
+        "data": [
+          {
+            "response": "Developer, full-stack",
+            "frequency": 355,
+            "percent": 0.2521
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 174,
+            "percent": 0.1236
+          },
+          {
+            "response": "Student",
+            "frequency": 155,
+            "percent": 0.1101
+          },
+          {
+            "response": "Architect, software or solutions",
+            "frequency": 104,
+            "percent": 0.0739
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 61,
+            "percent": 0.0433
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 59,
+            "percent": 0.0419
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 56,
+            "percent": 0.0398
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 49,
+            "percent": 0.0348
+          },
+          {
+            "response": "DevOps engineer or professional",
+            "frequency": 43,
+            "percent": 0.0305
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 32,
+            "percent": 0.0227
+          },
+          {
+            "response": "Data engineer",
+            "frequency": 30,
+            "percent": 0.0213
+          },
+          {
+            "response": "Data scientist",
+            "frequency": 26,
+            "percent": 0.0185
+          },
+          {
+            "response": "Senior executive (C-suite, VP, etc.)",
+            "frequency": 26,
+            "percent": 0.0185
+          },
+          {
+            "response": "AI/ML engineer",
+            "frequency": 25,
+            "percent": 0.0178
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 25,
+            "percent": 0.0178
+          },
+          {
+            "response": "Other",
+            "frequency": 23,
+            "percent": 0.0163
+          },
+          {
+            "response": "Retired",
+            "frequency": 22,
+            "percent": 0.0156
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 20,
+            "percent": 0.0142
+          },
+          {
+            "response": "Cybersecurity or InfoSec professional",
+            "frequency": 18,
+            "percent": 0.0128
+          },
+          {
+            "response": "System administrator",
+            "frequency": 16,
+            "percent": 0.0114
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 15,
+            "percent": 0.0107
+          }
+        ]
+      }
+    }
+  },
+  "WorkExp": {
+    "qid": "QID14",
+    "qname": "WorkExp",
+    "question": "How many years of professional work experience do you have? Please round to the nearest whole number, excluding any decimal points.  If your answer is '0', please leave blank.",
+    "datasets": {
+      "WorkExp": {
+        "name": "All Respondents",
+        "total_respondents": 42763,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 12152,
+            "percent": 0.2479
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 9618,
+            "percent": 0.1962
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 6973,
+            "percent": 0.1423
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 5027,
+            "percent": 0.1026
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 6073,
+            "percent": 0.1239
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 2145,
+            "percent": 0.0438
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 628,
+            "percent": 0.0128
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 147,
+            "percent": 0.003
+          }
+        ]
+      },
+      "Full-stack Dev": {
+        "name": "Full-stack Dev",
+        "plot_type": "bar",
+        "total_respondents": 11919,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 3361,
+            "percent": 0.282
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 2907,
+            "percent": 0.2439
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 1941,
+            "percent": 0.1628
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 1363,
+            "percent": 0.1144
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 1542,
+            "percent": 0.1294
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 433,
+            "percent": 0.0363
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 98,
+            "percent": 0.0082
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 4,
+            "percent": 0.0003
+          }
+        ]
+      },
+      "Back-end Dev": {
+        "name": "Back-end Dev",
+        "plot_type": "bar",
+        "total_respondents": 6266,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 1591,
+            "percent": 0.2539
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 1619,
+            "percent": 0.2584
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 1190,
+            "percent": 0.1899
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 752,
+            "percent": 0.12
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 764,
+            "percent": 0.1219
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 186,
+            "percent": 0.0297
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 35,
+            "percent": 0.0056
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 4,
+            "percent": 0.0006
+          }
+        ]
+      },
+      "Architect": {
+        "name": "Architect",
+        "plot_type": "bar",
+        "total_respondents": 2688,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 167,
+            "percent": 0.0621
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 363,
+            "percent": 0.135
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 532,
+            "percent": 0.1979
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 532,
+            "percent": 0.1979
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 750,
+            "percent": 0.279
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 242,
+            "percent": 0.09
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 52,
+            "percent": 0.0193
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 9,
+            "percent": 0.0033
+          }
+        ]
+      },
+      "Enterprise/desktop Dev": {
+        "name": "Enterprise/desktop Dev",
+        "plot_type": "bar",
+        "total_respondents": 1885,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 405,
+            "percent": 0.2149
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 313,
+            "percent": 0.166
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 244,
+            "percent": 0.1294
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 195,
+            "percent": 0.1034
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 403,
+            "percent": 0.2138
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 200,
+            "percent": 0.1061
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 45,
+            "percent": 0.0239
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 6,
+            "percent": 0.0032
+          }
+        ]
+      },
+      "Front-end Dev": {
+        "name": "Front-end Dev",
+        "plot_type": "bar",
+        "total_respondents": 1878,
+        "data": [
+          {
+            "response": "1 to 5 years",
+            "frequency": 615,
+            "percent": 0.3275
+          },
+          {
+            "response": "6 to 10 years",
+            "frequency": 552,
+            "percent": 0.2939
+          },
+          {
+            "response": "11 to 15 years",
+            "frequency": 316,
+            "percent": 0.1683
+          },
+          {
+            "response": "16 to 20 years",
+            "frequency": 159,
+            "percent": 0.0847
+          },
+          {
+            "response": "21 to 30 years",
+            "frequency": 137,
+            "percent": 0.0729
+          },
+          {
+            "response": "31 to 40 years",
+            "frequency": 33,
+            "percent": 0.0176
+          },
+          {
+            "response": "41 to 50 years",
+            "frequency": 3,
+            "percent": 0.0016
+          },
+          {
+            "response": "More than 50 years",
+            "frequency": 1,
+            "percent": 0.0005
+          }
+        ]
+      }
+    }
+  },
+  "Industry": {
+    "qid": "QID25",
+    "qname": "Industry",
+    "question": "What industry do you work for in?",
+    "datasets": {
+      "Industry": {
+        "name": "All Respondents",
+        "total_respondents": 33568,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 16368,
+            "percent": 0.5281
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 1714,
+            "percent": 0.0553
+          },
+          {
+            "response": "Fintech",
+            "frequency": 1684,
+            "percent": 0.0543
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 1492,
+            "percent": 0.0481
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 1465,
+            "percent": 0.0473
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 1458,
+            "percent": 0.047
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 1149,
+            "percent": 0.0371
+          },
+          {
+            "response": "Other",
+            "frequency": 973,
+            "percent": 0.0314
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 908,
+            "percent": 0.0293
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 893,
+            "percent": 0.0288
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 773,
+            "percent": 0.0249
+          },
+          {
+            "response": "Energy",
+            "frequency": 740,
+            "percent": 0.0239
+          },
+          {
+            "response": "Insurance",
+            "frequency": 433,
+            "percent": 0.014
+          },
+          {
+            "response": "Entertainment",
+            "frequency": 188,
+            "percent": 0.0061
+          },
+          {
+            "response": "Government & Defense",
+            "frequency": 129,
+            "percent": 0.0042
+          },
+          {
+            "response": "Consulting/Professional Services",
+            "frequency": 101,
+            "percent": 0.0033
+          },
+          {
+            "response": "Aviation/Aerospace",
+            "frequency": 92,
+            "percent": 0.003
+          },
+          {
+            "response": "Healthcare & Pharmaceuticals",
+            "frequency": 84,
+            "percent": 0.0027
+          },
+          {
+            "response": "Non-Profit",
+            "frequency": 78,
+            "percent": 0.0025
+          },
+          {
+            "response": "Automotive",
+            "frequency": 72,
+            "percent": 0.0023
+          },
+          {
+            "response": "Real Estate",
+            "frequency": 55,
+            "percent": 0.0018
+          },
+          {
+            "response": "Agriculture",
+            "frequency": 45,
+            "percent": 0.0015
+          },
+          {
+            "response": "Legal",
+            "frequency": 40,
+            "percent": 0.0013
+          },
+          {
+            "response": "Human Resources",
+            "frequency": 21,
+            "percent": 0.0007
+          },
+          {
+            "response": "Environment",
+            "frequency": 19,
+            "percent": 0.0006
+          },
+          {
+            "response": "Marketing",
+            "frequency": 19,
+            "percent": 0.0006
+          }
+        ]
+      },
+      "Industry_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 28170,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 15038,
+            "percent": 0.5751
+          },
+          {
+            "response": "Fintech",
+            "frequency": 1518,
+            "percent": 0.0581
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 1310,
+            "percent": 0.0501
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 1184,
+            "percent": 0.0453
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 1128,
+            "percent": 0.0431
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 916,
+            "percent": 0.035
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 745,
+            "percent": 0.0285
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 730,
+            "percent": 0.0279
+          },
+          {
+            "response": "Other",
+            "frequency": 671,
+            "percent": 0.0257
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 625,
+            "percent": 0.0239
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 614,
+            "percent": 0.0235
+          },
+          {
+            "response": "Energy",
+            "frequency": 581,
+            "percent": 0.0222
+          },
+          {
+            "response": "Insurance",
+            "frequency": 375,
+            "percent": 0.0143
+          },
+          {
+            "response": "Entertainment",
+            "frequency": 159,
+            "percent": 0.0061
+          },
+          {
+            "response": "Government & Defense",
+            "frequency": 98,
+            "percent": 0.0037
+          },
+          {
+            "response": "Aviation/Aerospace",
+            "frequency": 75,
+            "percent": 0.0029
+          },
+          {
+            "response": "Healthcare & Pharmaceuticals",
+            "frequency": 62,
+            "percent": 0.0024
+          },
+          {
+            "response": "Automotive",
+            "frequency": 56,
+            "percent": 0.0021
+          },
+          {
+            "response": "Consulting/Professional Services",
+            "frequency": 52,
+            "percent": 0.002
+          },
+          {
+            "response": "Non-Profit",
+            "frequency": 51,
+            "percent": 0.002
+          },
+          {
+            "response": "Real Estate",
+            "frequency": 46,
+            "percent": 0.0018
+          },
+          {
+            "response": "Agriculture",
+            "frequency": 36,
+            "percent": 0.0014
+          },
+          {
+            "response": "Legal",
+            "frequency": 31,
+            "percent": 0.0012
+          },
+          {
+            "response": "Human Resources",
+            "frequency": 18,
+            "percent": 0.0007
+          },
+          {
+            "response": "Marketing",
+            "frequency": 15,
+            "percent": 0.0006
+          },
+          {
+            "response": "Environment",
+            "frequency": 13,
+            "percent": 0.0005
+          }
+        ]
+      },
+      "Industry_learn": {
+        "name": "Learning to Code",
+        "total_respondents": 1039,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 379,
+            "percent": 0.3927
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 125,
+            "percent": 0.1295
+          },
+          {
+            "response": "Other",
+            "frequency": 74,
+            "percent": 0.0767
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 63,
+            "percent": 0.0653
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 56,
+            "percent": 0.058
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 53,
+            "percent": 0.0549
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 53,
+            "percent": 0.0549
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 32,
+            "percent": 0.0332
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 32,
+            "percent": 0.0332
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 28,
+            "percent": 0.029
+          },
+          {
+            "response": "Energy",
+            "frequency": 26,
+            "percent": 0.0269
+          },
+          {
+            "response": "Fintech",
+            "frequency": 16,
+            "percent": 0.0166
+          },
+          {
+            "response": "Insurance",
+            "frequency": 6,
+            "percent": 0.0062
+          },
+          {
+            "response": "Entertainment",
+            "frequency": 5,
+            "percent": 0.0052
+          },
+          {
+            "response": "Government & Defense",
+            "frequency": 5,
+            "percent": 0.0052
+          },
+          {
+            "response": "Consulting/Professional Services",
+            "frequency": 4,
+            "percent": 0.0041
+          },
+          {
+            "response": "Healthcare & Pharmaceuticals",
+            "frequency": 3,
+            "percent": 0.0031
+          },
+          {
+            "response": "Automotive",
+            "frequency": 2,
+            "percent": 0.0021
+          },
+          {
+            "response": "Aviation/Aerospace",
+            "frequency": 1,
+            "percent": 0.001
+          },
+          {
+            "response": "Non-Profit",
+            "frequency": 1,
+            "percent": 0.001
+          },
+          {
+            "response": "Real Estate",
+            "frequency": 1,
+            "percent": 0.001
+          }
+        ]
+      },
+      "Industry_prof_ai": {
+        "name": "Professional Developers (AI)",
+        "total_respondents": 23466,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 12640,
+            "percent": 0.5791
+          },
+          {
+            "response": "Fintech",
+            "frequency": 1341,
+            "percent": 0.0614
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 1091,
+            "percent": 0.05
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 989,
+            "percent": 0.0453
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 905,
+            "percent": 0.0415
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 777,
+            "percent": 0.0356
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 605,
+            "percent": 0.0277
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 582,
+            "percent": 0.0267
+          },
+          {
+            "response": "Other",
+            "frequency": 544,
+            "percent": 0.0249
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 525,
+            "percent": 0.0241
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 492,
+            "percent": 0.0225
+          },
+          {
+            "response": "Energy",
+            "frequency": 465,
+            "percent": 0.0213
+          },
+          {
+            "response": "Insurance",
+            "frequency": 309,
+            "percent": 0.0142
+          },
+          {
+            "response": "Entertainment",
+            "frequency": 123,
+            "percent": 0.0056
+          },
+          {
+            "response": "Government & Defense",
+            "frequency": 68,
+            "percent": 0.0031
+          },
+          {
+            "response": "Aviation/Aerospace",
+            "frequency": 55,
+            "percent": 0.0025
+          },
+          {
+            "response": "Healthcare & Pharmaceuticals",
+            "frequency": 51,
+            "percent": 0.0023
+          },
+          {
+            "response": "Consulting/Professional Services",
+            "frequency": 47,
+            "percent": 0.0022
+          },
+          {
+            "response": "Non-Profit",
+            "frequency": 43,
+            "percent": 0.002
+          },
+          {
+            "response": "Automotive",
+            "frequency": 40,
+            "percent": 0.0018
+          },
+          {
+            "response": "Real Estate",
+            "frequency": 40,
+            "percent": 0.0018
+          },
+          {
+            "response": "Legal",
+            "frequency": 28,
+            "percent": 0.0013
+          },
+          {
+            "response": "Agriculture",
+            "frequency": 27,
+            "percent": 0.0012
+          },
+          {
+            "response": "Human Resources",
+            "frequency": 18,
+            "percent": 0.0008
+          },
+          {
+            "response": "Marketing",
+            "frequency": 12,
+            "percent": 0.0005
+          },
+          {
+            "response": "Environment",
+            "frequency": 9,
+            "percent": 0.0004
+          }
+        ]
+      },
+      "Industry_learn_ai": {
+        "name": "Learning to Code (AI)",
+        "total_respondents": 805,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Software Development",
+            "frequency": 323,
+            "percent": 0.429
+          },
+          {
+            "response": "Higher Education",
+            "frequency": 85,
+            "percent": 0.1129
+          },
+          {
+            "response": "Other",
+            "frequency": 48,
+            "percent": 0.0637
+          },
+          {
+            "response": "Internet, Telecomm or Information Services",
+            "frequency": 43,
+            "percent": 0.0571
+          },
+          {
+            "response": "Retail and Consumer Services",
+            "frequency": 43,
+            "percent": 0.0571
+          },
+          {
+            "response": "Computer Systems Design and Services",
+            "frequency": 41,
+            "percent": 0.0544
+          },
+          {
+            "response": "Manufacturing",
+            "frequency": 39,
+            "percent": 0.0518
+          },
+          {
+            "response": "Banking/Financial Services",
+            "frequency": 29,
+            "percent": 0.0385
+          },
+          {
+            "response": "Transportation, or Supply Chain",
+            "frequency": 24,
+            "percent": 0.0319
+          },
+          {
+            "response": "Media & Advertising Services",
+            "frequency": 23,
+            "percent": 0.0305
+          },
+          {
+            "response": "Energy",
+            "frequency": 22,
+            "percent": 0.0292
+          },
+          {
+            "response": "Fintech",
+            "frequency": 11,
+            "percent": 0.0146
+          },
+          {
+            "response": "Insurance",
+            "frequency": 5,
+            "percent": 0.0066
+          },
+          {
+            "response": "Consulting/Professional Services",
+            "frequency": 4,
+            "percent": 0.0053
+          },
+          {
+            "response": "Government & Defense",
+            "frequency": 4,
+            "percent": 0.0053
+          },
+          {
+            "response": "Entertainment",
+            "frequency": 3,
+            "percent": 0.004
+          },
+          {
+            "response": "Automotive",
+            "frequency": 2,
+            "percent": 0.0027
+          },
+          {
+            "response": "Healthcare & Pharmaceuticals",
+            "frequency": 2,
+            "percent": 0.0027
+          },
+          {
+            "response": "Non-Profit",
+            "frequency": 1,
+            "percent": 0.0013
+          },
+          {
+            "response": "Real Estate",
+            "frequency": 1,
+            "percent": 0.0013
+          }
+        ]
+      }
+    }
+  }
+}
