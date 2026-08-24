@@ -1,0 +1,3632 @@
+{
+  "Age": {
+    "meta": {
+      "qid": "QID3",
+      "qname": "Age",
+      "question": "<p>What is your age?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30903
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "25-34 years old",
+        "count": 9267,
+        "pct": 0.2999
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "35-44 years old",
+        "count": 8522,
+        "pct": 0.2758
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "18-24 years old",
+        "count": 4944,
+        "pct": 0.16
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "45-54 years old",
+        "count": 4198,
+        "pct": 0.1358
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "55-64 years old",
+        "count": 1829,
+        "pct": 0.0592
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Under 18 years old",
+        "count": 969,
+        "pct": 0.0314
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "65 years or older",
+        "count": 822,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer not to say",
+        "count": 352,
+        "pct": 0.0114
+      }
+    ]
+  },
+  "CodeMain": {
+    "meta": {
+      "qid": "QID4",
+      "qname": "CodeMain",
+      "question": "<p>Are you someone who creates code? Please select one of the following options that best describes you today.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30794
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I create code as a primary part of my job",
+        "count": 23234,
+        "pct": 0.7545
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I create code occasionally",
+        "count": 4743,
+        "pct": 0.154
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I manage or support people who create code",
+        "count": 1170,
+        "pct": 0.038
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not create code",
+        "count": 944,
+        "pct": 0.0307
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I review/maintain code but rarely create it",
+        "count": 703,
+        "pct": 0.0228
+      }
+    ]
+  },
+  "Education": {
+    "meta": {
+      "qid": "QID5",
+      "qname": "Education",
+      "question": "<p>Which of the following best describes the highest level of formal education that you&#39;ve completed?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30761
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bachelor's degree (B.A., B.S., B.Eng., etc.)",
+        "count": 12396,
+        "pct": 0.403
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Master's degree (M.A., M.S., M.Eng., MBA, etc.)",
+        "count": 7990,
+        "pct": 0.2597
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Some college/university study without earning a degree",
+        "count": 3813,
+        "pct": 0.124
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+        "count": 2431,
+        "pct": 0.079
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+        "count": 1812,
+        "pct": 0.0589
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Associate degree (A.A., A.S., etc.)",
+        "count": 942,
+        "pct": 0.0306
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Primary/elementary school",
+        "count": 706,
+        "pct": 0.023
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 671,
+        "pct": 0.0218
+      }
+    ]
+  },
+  "Employment": {
+    "meta": {
+      "qid": "QID6",
+      "qname": "Employment",
+      "question": "<p>Which of the following best describes your current employment status?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30903
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "USA",
+          "n": 4755
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Germany",
+          "n": 1983
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "India",
+          "n": 1309
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "UK",
+          "n": 1374
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "France",
+          "n": 794
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Employed",
+        "count": 20259,
+        "pct": 0.6556
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 4607,
+        "pct": 0.1491
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Student",
+        "count": 3139,
+        "pct": 0.1016
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not employed",
+        "count": 1742,
+        "pct": 0.0564
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Retired",
+        "count": 607,
+        "pct": 0.0196
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 549,
+        "pct": 0.0178
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Employed",
+        "count": 3294,
+        "pct": 0.6927
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 535,
+        "pct": 0.1125
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Student",
+        "count": 321,
+        "pct": 0.0675
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not employed",
+        "count": 317,
+        "pct": 0.0667
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Retired",
+        "count": 210,
+        "pct": 0.0442
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 78,
+        "pct": 0.0164
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Employed",
+        "count": 1454,
+        "pct": 0.7332
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Student",
+        "count": 224,
+        "pct": 0.113
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 186,
+        "pct": 0.0938
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not employed",
+        "count": 76,
+        "pct": 0.0383
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 27,
+        "pct": 0.0136
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Retired",
+        "count": 16,
+        "pct": 0.0081
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Employed",
+        "count": 753,
+        "pct": 0.5752
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Student",
+        "count": 254,
+        "pct": 0.194
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 163,
+        "pct": 0.1245
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not employed",
+        "count": 107,
+        "pct": 0.0817
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 24,
+        "pct": 0.0183
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Retired",
+        "count": 8,
+        "pct": 0.0061
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Employed",
+        "count": 983,
+        "pct": 0.7154
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 165,
+        "pct": 0.1201
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Student",
+        "count": 85,
+        "pct": 0.0619
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Not employed",
+        "count": 69,
+        "pct": 0.0502
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Retired",
+        "count": 60,
+        "pct": 0.0437
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 12,
+        "pct": 0.0087
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Employed",
+        "count": 565,
+        "pct": 0.7116
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 96,
+        "pct": 0.1209
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Student",
+        "count": 82,
+        "pct": 0.1033
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Not employed",
+        "count": 28,
+        "pct": 0.0353
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Retired",
+        "count": 15,
+        "pct": 0.0189
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "I prefer not to say",
+        "count": 8,
+        "pct": 0.0101
+      }
+    ]
+  },
+  "EmploymentAddl": {
+    "meta": {
+      "qid": "QID7",
+      "qname": "EmploymentAddl",
+      "question": "<p>In addition to your main employment, which of the following other current work, school, or life responsibilities are you currently engaged in?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 28099
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "None of the above",
+        "count": 11528,
+        "pct": 0.4103
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Caring for dependents (children, elderly, etc.)",
+        "count": 5178,
+        "pct": 0.1843
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engaged in paid work (20-29 hours per week)",
+        "count": 4921,
+        "pct": 0.1751
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Volunteering (regularly)",
+        "count": 3419,
+        "pct": 0.1217
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Attending school (full-time)",
+        "count": 3277,
+        "pct": 0.1166
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engaged in paid work (less than 10 hours per week)",
+        "count": 1929,
+        "pct": 0.0687
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Attending school (part-time)",
+        "count": 1611,
+        "pct": 0.0573
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engaged in paid work (10-19 hours per week)",
+        "count": 1322,
+        "pct": 0.047
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Transitioning to retirement (gradually reducing work hours)",
+        "count": 713,
+        "pct": 0.0254
+      }
+    ]
+  },
+  "ICorPM": {
+    "meta": {
+      "qid": "QID8",
+      "qname": "ICorPM",
+      "question": "<p>Are you an individual contributor or people manager?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 24749
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Individual contributor",
+        "count": 12568,
+        "pct": 0.5078
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Individual contributor in a senior or staff-level role",
+        "count": 7517,
+        "pct": 0.3037
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Both people manager and individual contributor",
+        "count": 3828,
+        "pct": 0.1547
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "People manager",
+        "count": 836,
+        "pct": 0.0338
+      }
+    ]
+  },
+  "WorkSetting": {
+    "meta": {
+      "qid": "QID9",
+      "qname": "WorkSetting",
+      "question": "<p>Which best describes your current work situation?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 24602
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "USA",
+          "n": 3940
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Germany",
+          "n": 1746
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "India",
+          "n": 951
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "UK",
+          "n": 1175
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "France",
+          "n": 679
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Remote",
+        "count": 8564,
+        "pct": 0.3481
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 4883,
+        "pct": 0.1985
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "In-person",
+        "count": 4335,
+        "pct": 0.1762
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 3823,
+        "pct": 0.1554
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 2997,
+        "pct": 0.1218
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Remote",
+        "count": 1888,
+        "pct": 0.4792
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "In-person",
+        "count": 638,
+        "pct": 0.1619
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 629,
+        "pct": 0.1596
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 449,
+        "pct": 0.114
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 336,
+        "pct": 0.0853
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Remote",
+        "count": 437,
+        "pct": 0.2503
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 384,
+        "pct": 0.2199
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 364,
+        "pct": 0.2085
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 359,
+        "pct": 0.2056
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "In-person",
+        "count": 202,
+        "pct": 0.1157
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "In-person",
+        "count": 265,
+        "pct": 0.2787
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Remote",
+        "count": 261,
+        "pct": 0.2744
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 198,
+        "pct": 0.2082
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 151,
+        "pct": 0.1588
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 76,
+        "pct": 0.0799
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Remote",
+        "count": 441,
+        "pct": 0.3753
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 255,
+        "pct": 0.217
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 195,
+        "pct": 0.166
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 173,
+        "pct": 0.1472
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "In-person",
+        "count": 111,
+        "pct": 0.0945
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 237,
+        "pct": 0.349
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Remote",
+        "count": 142,
+        "pct": 0.2091
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 119,
+        "pct": 0.1753
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "In-person",
+        "count": 105,
+        "pct": 0.1546
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 76,
+        "pct": 0.1119
+      }
+    ]
+  },
+  "YearsCode": {
+    "meta": {
+      "qid": "QID14",
+      "qname": "YearsCode",
+      "question": "<p>Including any education, how many years have you been coding in total? Please round to the nearest whole number, excluding any decimal points.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 25204
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "0-4 years",
+        "count": 2467,
+        "pct": 0.0979
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "5-9 years",
+        "count": 5021,
+        "pct": 0.1992
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "10-14 years",
+        "count": 4821,
+        "pct": 0.1913
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "15-19 years",
+        "count": 3432,
+        "pct": 0.1362
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "20-29 years",
+        "count": 5128,
+        "pct": 0.2035
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "30-39 years",
+        "count": 2512,
+        "pct": 0.0997
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "40+ years",
+        "count": 1823,
+        "pct": 0.0723
+      }
+    ]
+  },
+  "WorkExp": {
+    "meta": {
+      "qid": "QID15",
+      "qname": "WorkExp",
+      "question": "<p>How many years have you been working professionally in total? Please round to the nearest whole number, excluding any decimal points.  If you have no professional work experience, you can leave this question unanswered.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 24607
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "0-4 years",
+        "count": 5612,
+        "pct": 0.2281
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "5-9 years",
+        "count": 4519,
+        "pct": 0.1836
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "10-14 years",
+        "count": 4268,
+        "pct": 0.1734
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "15-19 years",
+        "count": 3030,
+        "pct": 0.1231
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "20-29 years",
+        "count": 4296,
+        "pct": 0.1746
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "30-39 years",
+        "count": 1929,
+        "pct": 0.0784
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "40+ years",
+        "count": 953,
+        "pct": 0.0387
+      }
+    ]
+  },
+  "Role": {
+    "meta": {
+      "qid": "QID16",
+      "qname": "Role",
+      "question": "<p>Which of the following best describes your current role, or the role you held for the most time in the past year?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 25767
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 7042,
+        "pct": 0.2733
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 3473,
+        "pct": 0.1348
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Student",
+        "count": 1823,
+        "pct": 0.0707
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 1792,
+        "pct": 0.0695
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 1030,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, front-end",
+        "count": 933,
+        "pct": 0.0362
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 731,
+        "pct": 0.0284
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Academic researcher",
+        "count": 705,
+        "pct": 0.0274
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, mobile",
+        "count": 685,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engineering manager",
+        "count": 603,
+        "pct": 0.0234
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 545,
+        "pct": 0.0212
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 527,
+        "pct": 0.0205
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI/ML engineer",
+        "count": 455,
+        "pct": 0.0177
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data engineer",
+        "count": 426,
+        "pct": 0.0165
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Senior executive (C-suite, VP, etc.)",
+        "count": 374,
+        "pct": 0.0145
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Founder or entrepreneur",
+        "count": 350,
+        "pct": 0.0136
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Retired",
+        "count": 330,
+        "pct": 0.0128
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, game or graphics",
+        "count": 316,
+        "pct": 0.0123
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data scientist",
+        "count": 301,
+        "pct": 0.0117
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "System administrator",
+        "count": 299,
+        "pct": 0.0116
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data or business analyst",
+        "count": 254,
+        "pct": 0.0099
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
+        "count": 244,
+        "pct": 0.0095
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cybersecurity or InfoSec professional",
+        "count": 228,
+        "pct": 0.0088
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Software engineer",
+        "count": 219,
+        "pct": 0.0085
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cloud infrastructure engineer",
+        "count": 218,
+        "pct": 0.0085
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, QA or test",
+        "count": 203,
+        "pct": 0.0079
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, AI apps or physical AI",
+        "count": 200,
+        "pct": 0.0078
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Applied scientist",
+        "count": 183,
+        "pct": 0.0071
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Educator or instructor",
+        "count": 175,
+        "pct": 0.0068
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Project manager",
+        "count": 158,
+        "pct": 0.0061
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Product manager",
+        "count": 149,
+        "pct": 0.0058
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hardware engineer",
+        "count": 145,
+        "pct": 0.0056
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Support engineer or analyst",
+        "count": 123,
+        "pct": 0.0048
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Site reliability engineer",
+        "count": 119,
+        "pct": 0.0046
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "UX, research, or UI design professional",
+        "count": 97,
+        "pct": 0.0038
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Database administrator or engineer",
+        "count": 94,
+        "pct": 0.0036
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer advocate or developer relations professional",
+        "count": 61,
+        "pct": 0.0024
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Financial analyst or engineer",
+        "count": 45,
+        "pct": 0.0017
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Technical writer or documentation professional",
+        "count": 41,
+        "pct": 0.0016
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Platform engineer",
+        "count": 37,
+        "pct": 0.0014
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Marketing/Sales professional",
+        "count": 34,
+        "pct": 0.0013
+      }
+    ]
+  },
+  "RoleFunctions": {
+    "meta": {
+      "qid": "QID17",
+      "qname": "RoleFunctions",
+      "question": "<p>In a typical week, which of the following activities are part of your work? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 24714
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Writing, editing, or generating code",
+        "count": 22221,
+        "pct": 0.8991
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Debugging or troubleshooting",
+        "count": 20573,
+        "pct": 0.8324
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Reviewing code, pull requests, or technical changes",
+        "count": 16494,
+        "pct": 0.6674
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Making technical design or architecture decisions",
+        "count": 15679,
+        "pct": 0.6344
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Answering questions from teammates, customers, users, or stakeholders",
+        "count": 14754,
+        "pct": 0.597
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Planning, scoping, or estimating work",
+        "count": 14202,
+        "pct": 0.5747
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Writing or updating documentation",
+        "count": 13918,
+        "pct": 0.5632
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Deploying or releasing software",
+        "count": 12800,
+        "pct": 0.5179
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Writing or maintaining tests",
+        "count": 12618,
+        "pct": 0.5106
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Changing production code, systems, or infrastructure",
+        "count": 12334,
+        "pct": 0.4991
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Investigating an incident, outage, or production issue",
+        "count": 11486,
+        "pct": 0.4648
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Monitoring systems, logs, metrics, or alerts",
+        "count": 10955,
+        "pct": 0.4433
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Maintaining dependencies, packages, or development environments",
+        "count": 9720,
+        "pct": 0.3933
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coordinating work across teams or functions",
+        "count": 7974,
+        "pct": 0.3227
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Finding or fixing security, privacy, or compliance issues",
+        "count": 7754,
+        "pct": 0.3137
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Onboarding to a new project, tool, system, or codebase",
+        "count": 5732,
+        "pct": 0.2319
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Analyzing data, reports, or business metrics",
+        "count": 5722,
+        "pct": 0.2315
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "None of the above",
+        "count": 834,
+        "pct": 0.0337
+      }
+    ]
+  },
+  "OrgSize": {
+    "meta": {
+      "qid": "QID18",
+      "qname": "OrgSize",
+      "question": "<p>Approximately how many people are employed by your employer? This should only include your primary company. If you had more than one employer, please consider the one you spent most of your time working for in the past year.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 21115
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "20 to 99 employees",
+        "count": 3677,
+        "pct": 0.1741
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Less than 20 employees",
+        "count": 3555,
+        "pct": 0.1684
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "100 to 499 employees",
+        "count": 3474,
+        "pct": 0.1645
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "10,000 or more employees",
+        "count": 2941,
+        "pct": 0.1393
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "1,000 to 4,999 employees",
+        "count": 2409,
+        "pct": 0.1141
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Just me - I am a freelancer, sole proprietor, etc.",
+        "count": 2213,
+        "pct": 0.1048
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "500 to 999 employees",
+        "count": 1307,
+        "pct": 0.0619
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "5,000 to 9,999 employees",
+        "count": 1017,
+        "pct": 0.0482
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don’t know",
+        "count": 522,
+        "pct": 0.0247
+      }
+    ]
+  },
+  "TechBudget": {
+    "meta": {
+      "qid": "QID19",
+      "qname": "TechBudget",
+      "question": "<p>Has your department&#39;s budget increased, decreased, or stayed the same in your most recent budget cycle? When considering your department, refer to the one you are working in today.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 20915
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don't know",
+        "count": 6757,
+        "pct": 0.3231
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stayed the same",
+        "count": 5839,
+        "pct": 0.2792
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Increased",
+        "count": 4713,
+        "pct": 0.2253
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Decreased",
+        "count": 3606,
+        "pct": 0.1724
+      }
+    ]
+  },
+  "PurchasePower": {
+    "meta": {
+      "qid": "QID21",
+      "qname": "PurchasePower",
+      "question": "<p>Which of the following describes your role in choosing or using software tools at your organization? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 20042
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I influence tool choices by giving feedback or requirements",
+        "count": 11916,
+        "pct": 0.5946
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I evaluate, recommend, or shortlist tools",
+        "count": 9664,
+        "pct": 0.4822
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I use tools selected by others",
+        "count": 9131,
+        "pct": 0.4556
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I make the final decision to purchase tools",
+        "count": 3552,
+        "pct": 0.1772
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not have a role in choosing or using software tools at my organization",
+        "count": 3320,
+        "pct": 0.1657
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I approve or manage budget for tools",
+        "count": 1867,
+        "pct": 0.0932
+      }
+    ]
+  },
+  "TechEndorse": {
+    "meta": {
+      "qid": "QID22",
+      "qname": "TechEndorse",
+      "question": "<p>Thinking about technologies you enjoy using for work, school, or personal projects, what is the main reason you would recommend one to others? Select one.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 22371
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It is reliable, performant, and stable",
+        "count": 3874,
+        "pct": 0.1732
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It helps me be more productive or save time",
+        "count": 3563,
+        "pct": 0.1593
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has a strong community, ecosystem, or open-source presence",
+        "count": 2888,
+        "pct": 0.1291
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has a strong developer experience, such as APIs, SDKs, tooling, or integrations",
+        "count": 2541,
+        "pct": 0.1136
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It is flexible, customizable, or easy to adapt to my needs",
+        "count": 1678,
+        "pct": 0.075
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has a reputation for quality and long-term trustworthiness",
+        "count": 1666,
+        "pct": 0.0745
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has excellent documentation, examples, or learning resources",
+        "count": 1370,
+        "pct": 0.0612
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It is easy to learn and use",
+        "count": 1226,
+        "pct": 0.0548
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I’m not sure",
+        "count": 1223,
+        "pct": 0.0547
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 632,
+        "pct": 0.0283
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has useful AI features or agent capabilities",
+        "count": 505,
+        "pct": 0.0226
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has strong security, privacy, or compliance features",
+        "count": 423,
+        "pct": 0.0189
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "It has manageable cost, pricing, or licensing",
+        "count": 421,
+        "pct": 0.0188
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I would not recommend any technology I use",
+        "count": 361,
+        "pct": 0.0161
+      }
+    ]
+  },
+  "Industry": {
+    "meta": {
+      "qid": "QID23",
+      "qname": "Industry",
+      "question": "<p>What industry is the company you work for in?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 18909
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Software development",
+        "count": 3785,
+        "pct": 0.2002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "IT services, consulting, systems integration, or managed services",
+        "count": 2914,
+        "pct": 0.1541
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 1344,
+        "pct": 0.0711
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Banking/financial services",
+        "count": 1126,
+        "pct": 0.0595
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Healthcare",
+        "count": 955,
+        "pct": 0.0505
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Retail, e-commerce, or consumer services",
+        "count": 952,
+        "pct": 0.0503
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Fintech",
+        "count": 853,
+        "pct": 0.0451
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Education",
+        "count": 796,
+        "pct": 0.0421
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engineering services or applied R&D",
+        "count": 749,
+        "pct": 0.0396
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Manufacturing",
+        "count": 749,
+        "pct": 0.0396
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Government",
+        "count": 734,
+        "pct": 0.0388
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Scientific research",
+        "count": 570,
+        "pct": 0.0301
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Media or advertising services",
+        "count": 542,
+        "pct": 0.0287
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Utilities, internet, or telecommunications",
+        "count": 542,
+        "pct": 0.0287
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Transportation or supply chain",
+        "count": 485,
+        "pct": 0.0256
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Energy",
+        "count": 410,
+        "pct": 0.0217
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Insurance",
+        "count": 294,
+        "pct": 0.0155
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hospitality or travel",
+        "count": 226,
+        "pct": 0.012
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Non-profit or social services",
+        "count": 209,
+        "pct": 0.0111
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Agriculture, forestry, fishing, and hunting",
+        "count": 207,
+        "pct": 0.0109
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Life sciences or biotechnology",
+        "count": 173,
+        "pct": 0.0091
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Mining or construction",
+        "count": 153,
+        "pct": 0.0081
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Broadcasting or publishing",
+        "count": 141,
+        "pct": 0.0075
+      }
+    ]
+  },
+  "JobSat": {
+    "meta": {
+      "qid": "QID24",
+      "qname": "JobSat",
+      "question": "<p>How satisfied are you in your current professional role?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 18876
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Complacent at Work",
+        "count": 8516,
+        "pct": 0.4512
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not Happy at Work",
+        "count": 6161,
+        "pct": 0.3264
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Happy at Work",
+        "count": 4199,
+        "pct": 0.2225
+      }
+    ]
+  },
+  "JobSatComplacent": {
+    "meta": {
+      "qid": "QID25",
+      "qname": "JobSatComplacent",
+      "question": "<p>If you feel complacent at work, what is the primary driver?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 8312
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not feel complacent",
+        "count": 2896,
+        "pct": 0.3484
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Burnout/tech fatigue",
+        "count": 1756,
+        "pct": 0.2113
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Economic uncertainty making me hesitant to switch roles",
+        "count": 1592,
+        "pct": 0.1915
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lack of upward mobility due to corporate tightening",
+        "count": 866,
+        "pct": 0.1042
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI automating the challenging parts of my job",
+        "count": 831,
+        "pct": 0.1
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 206,
+        "pct": 0.0248
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "i don't understand the question",
+        "count": 49,
+        "pct": 0.0059
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "lack of technical challenge",
+        "count": 42,
+        "pct": 0.0051
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "lack of challenging work",
+        "count": 23,
+        "pct": 0.0028
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai automating the fun parts of my job",
+        "count": 15,
+        "pct": 0.0018
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "all of the above",
+        "count": 12,
+        "pct": 0.0014
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "i don't get the question",
+        "count": 8,
+        "pct": 0.001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "verstehe die frage nicht",
+        "count": 7,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "poor leadership",
+        "count": 5,
+        "pct": 0.0006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": ".",
+        "count": 2,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "no entiendo la pregunta",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "salary",
+        "count": 1,
+        "pct": 0.0001
+      }
+    ]
+  },
+  "JobEase": {
+    "meta": {
+      "qid": "QID26",
+      "qname": "JobEase",
+      "question": "<p>In the past 6 months, which factor has done the most to make your job easier to do?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 18521
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Nothing has made my job easier in the past 6 months",
+        "count": 3922,
+        "pct": 0.2118
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Access to the right tools or platforms",
+        "count": 3758,
+        "pct": 0.2029
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 3198,
+        "pct": 0.1727
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Clear priorities or requirements",
+        "count": 1314,
+        "pct": 0.0709
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Better processes, workflows, or coordination",
+        "count": 1270,
+        "pct": 0.0686
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I’m not sure",
+        "count": 1117,
+        "pct": 0.0603
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Enough time, staffing, or resources",
+        "count": 1104,
+        "pct": 0.0596
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 773,
+        "pct": 0.0417
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 753,
+        "pct": 0.0407
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Leadership activity or organizational changes",
+        "count": 399,
+        "pct": 0.0215
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai assistant",
+        "count": 348,
+        "pct": 0.0188
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 311,
+        "pct": 0.0168
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai coding tools",
+        "count": 53,
+        "pct": 0.0029
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "access to ai",
+        "count": 22,
+        "pct": 0.0012
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai improvements",
+        "count": 18,
+        "pct": 0.001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai",
+        "count": 16,
+        "pct": 0.0009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "agentic ai",
+        "count": 14,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai integration",
+        "count": 14,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai coding agents",
+        "count": 13,
+        "pct": 0.0007
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "use of ai",
+        "count": 13,
+        "pct": 0.0007
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "introduction of claude code",
+        "count": 11,
+        "pct": 0.0006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai agents",
+        "count": 10,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai tools",
+        "count": 9,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "coding agents",
+        "count": 9,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai assisted coding",
+        "count": 8,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai tooling",
+        "count": 8,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "using ai",
+        "count": 8,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "new job",
+        "count": 6,
+        "pct": 0.0003
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "inteligência artificial",
+        "count": 5,
+        "pct": 0.0003
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai code generation",
+        "count": 4,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "working remotely",
+        "count": 4,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "better ai",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "claude code",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "inteligencia artificial",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ki",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ia",
+        "count": 1,
+        "pct": 0.0001
+      }
+    ]
+  },
+  "JobEaseAI": {
+    "meta": {
+      "qid": "QID103",
+      "qname": "JobEaseAI",
+      "question": "<p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13006
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Access to the right tools or platforms",
+        "count": 14,
+        "pct": 0.0038
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Access to the right tools or platforms",
+        "count": 213,
+        "pct": 0.0574
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Access to the right tools or platforms",
+        "count": 968,
+        "pct": 0.2606
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Access to the right tools or platforms",
+        "count": 2493,
+        "pct": 0.6712
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Better processes, workflows, or coordination",
+        "count": 17,
+        "pct": 0.0135
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 475,
+        "pct": 0.3782
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 508,
+        "pct": 0.4045
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 242,
+        "pct": 0.1927
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Clear priorities or requirements",
+        "count": 25,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Clear priorities or requirements",
+        "count": 840,
+        "pct": 0.6393
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Clear priorities or requirements",
+        "count": 369,
+        "pct": 0.2808
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Clear priorities or requirements",
+        "count": 73,
+        "pct": 0.0556
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Enough time, staffing, or resources",
+        "count": 29,
+        "pct": 0.0267
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 558,
+        "pct": 0.5129
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 374,
+        "pct": 0.3438
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 117,
+        "pct": 0.1075
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 13,
+        "pct": 0.0169
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 314,
+        "pct": 0.4089
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 313,
+        "pct": 0.4076
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 119,
+        "pct": 0.1549
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 12,
+        "pct": 0.0162
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 349,
+        "pct": 0.471
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 250,
+        "pct": 0.3374
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 124,
+        "pct": 0.1673
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 57,
+        "pct": 0.0179
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 2113,
+        "pct": 0.6622
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 847,
+        "pct": 0.2654
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 147,
+        "pct": 0.0461
+      }
+    ]
+  },
+  "JobDifficulty": {
+    "meta": {
+      "qid": "QID27",
+      "qname": "JobDifficulty",
+      "question": "<p>In the past 6 months, which factor has done the most to make your job harder to do?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 18214
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Unclear priorities or requirements",
+        "count": 3031,
+        "pct": 0.1664
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 2701,
+        "pct": 0.1483
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not enough time, staffing, or resources",
+        "count": 2602,
+        "pct": 0.1429
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Leadership activity or organizational changes",
+        "count": 2174,
+        "pct": 0.1194
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Nothing has made my job harder in the past 6 months",
+        "count": 1752,
+        "pct": 0.0962
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 1540,
+        "pct": 0.0846
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Poor documentation or knowledge sharing",
+        "count": 1296,
+        "pct": 0.0712
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I’m not sure",
+        "count": 869,
+        "pct": 0.0477
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 853,
+        "pct": 0.0468
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lack of access to the right tools or platforms",
+        "count": 674,
+        "pct": 0.037
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 318,
+        "pct": 0.0175
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai bullshit",
+        "count": 117,
+        "pct": 0.0064
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai",
+        "count": 52,
+        "pct": 0.0029
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "all of the above",
+        "count": 50,
+        "pct": 0.0027
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "almost all of the above",
+        "count": 42,
+        "pct": 0.0023
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai and ai agents",
+        "count": 24,
+        "pct": 0.0013
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai disruption",
+        "count": 18,
+        "pct": 0.001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai everywhere",
+        "count": 16,
+        "pct": 0.0009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "reviewing ai generated code",
+        "count": 15,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai generated code",
+        "count": 11,
+        "pct": 0.0006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai slop",
+        "count": 10,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai slop from colleagues",
+        "count": 8,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai tools",
+        "count": 8,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "too much ai slop",
+        "count": 7,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ai hallucinations",
+        "count": 6,
+        "pct": 0.0003
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "llm",
+        "count": 4,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "no money",
+        "count": 4,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "nothing",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "technical debt",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "depression",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "politics",
+        "count": 2,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "burnout",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "ia",
+        "count": 1,
+        "pct": 0.0001
+      }
+    ]
+  },
+  "JobDifficultyAI": {
+    "meta": {
+      "qid": "QID104",
+      "qname": "JobDifficultyAI",
+      "question": "<p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13346
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 61,
+        "pct": 0.0229
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 1812,
+        "pct": 0.6817
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 560,
+        "pct": 0.2107
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 205,
+        "pct": 0.0771
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 18,
+        "pct": 0.0355
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 282,
+        "pct": 0.5562
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 109,
+        "pct": 0.215
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 90,
+        "pct": 0.1775
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 27,
+        "pct": 0.0355
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 517,
+        "pct": 0.6794
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 143,
+        "pct": 0.1879
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 62,
+        "pct": 0.0815
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Not enough time, staffing, or resources",
+        "count": 98,
+        "pct": 0.0382
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 1753,
+        "pct": 0.6832
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 511,
+        "pct": 0.1991
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 192,
+        "pct": 0.0748
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 62,
+        "pct": 0.048
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 869,
+        "pct": 0.6726
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 229,
+        "pct": 0.1772
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 123,
+        "pct": 0.0952
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Unclear priorities or requirements",
+        "count": 126,
+        "pct": 0.0416
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Unclear priorities or requirements",
+        "count": 2084,
+        "pct": 0.688
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Unclear priorities or requirements",
+        "count": 597,
+        "pct": 0.1971
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Unclear priorities or requirements",
+        "count": 202,
+        "pct": 0.0667
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 85,
+        "pct": 0.0558
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 832,
+        "pct": 0.5463
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 344,
+        "pct": 0.2259
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 253,
+        "pct": 0.1661
+      }
+    ]
+  },
+  "ToolCount": {
+    "meta": {
+      "qid": "QID29",
+      "qname": "ToolCount",
+      "question": "<p>In a typical month over the past year, about how many distinct software tools, platforms, or services did you personally use to do your primary work?<\/p>\n<p>Count tools you intentionally opened, configured, or relied on to create, analyze, manage, build, deploy, support, or share work. These may be free, purchased, internal, or open-source tools.<\/p>\n<p>Do not count general operating systems, web browsers, programming languages, libraries/packages, one-off scripts or commands, or multiple interchangeable utilities that serve the same narrow purpose.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14836
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "5.0",
+        "count": 2550,
+        "pct": 0.1719
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "10.0",
+        "count": 2389,
+        "pct": 0.161
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "3.0",
+        "count": 1427,
+        "pct": 0.0962
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "4.0",
+        "count": 1263,
+        "pct": 0.0851
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "6.0",
+        "count": 1135,
+        "pct": 0.0765
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "8.0",
+        "count": 910,
+        "pct": 0.0613
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "7.0",
+        "count": 775,
+        "pct": 0.0522
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "20.0",
+        "count": 708,
+        "pct": 0.0477
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "2.0",
+        "count": 687,
+        "pct": 0.0463
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "15.0",
+        "count": 646,
+        "pct": 0.0435
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "12.0",
+        "count": 501,
+        "pct": 0.0338
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "1.0",
+        "count": 275,
+        "pct": 0.0185
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "9.0",
+        "count": 265,
+        "pct": 0.0179
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "30.0",
+        "count": 191,
+        "pct": 0.0129
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "0.0",
+        "count": 153,
+        "pct": 0.0103
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "25.0",
+        "count": 135,
+        "pct": 0.0091
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "11.0",
+        "count": 114,
+        "pct": 0.0077
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "50.0",
+        "count": 89,
+        "pct": 0.006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "13.0",
+        "count": 85,
+        "pct": 0.0057
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "14.0",
+        "count": 77,
+        "pct": 0.0052
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "16.0",
+        "count": 58,
+        "pct": 0.0039
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "40.0",
+        "count": 42,
+        "pct": 0.0028
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "100.0",
+        "count": 41,
+        "pct": 0.0028
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "17.0",
+        "count": 35,
+        "pct": 0.0024
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "18.0",
+        "count": 35,
+        "pct": 0.0024
+      }
+    ]
+  },
+  "Gender": {
+    "meta": {
+      "qid": "QID30",
+      "qname": "Gender",
+      "question": "<p>Which of the following best represents your gender identity?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 21149
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Man",
+        "count": 18191,
+        "pct": 0.8601
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Woman",
+        "count": 1393,
+        "pct": 0.0659
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer not to say",
+        "count": 899,
+        "pct": 0.0425
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Non-binary",
+        "count": 431,
+        "pct": 0.0204
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer to self-describe:",
+        "count": 235,
+        "pct": 0.0111
+      }
+    ]
+  },
+  "Country": {
+    "meta": {
+      "qid": "QID31",
+      "qname": "Country",
+      "question": "<p>Where do you live?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 21370
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "United States of America",
+        "count": 4755,
+        "pct": 0.2225
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Germany",
+        "count": 1983,
+        "pct": 0.0928
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "United Kingdom of Great Britain and Northern Ireland",
+        "count": 1374,
+        "pct": 0.0643
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "India",
+        "count": 1309,
+        "pct": 0.0613
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Canada",
+        "count": 851,
+        "pct": 0.0398
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "France",
+        "count": 794,
+        "pct": 0.0372
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Netherlands",
+        "count": 577,
+        "pct": 0.027
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Poland",
+        "count": 527,
+        "pct": 0.0247
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Australia",
+        "count": 522,
+        "pct": 0.0244
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ukraine",
+        "count": 484,
+        "pct": 0.0226
+      }
+    ]
+  },
+  "Compensation": {
+    "meta": {
+      "qid": "QID33",
+      "qname": "Compensation",
+      "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
+      "slices": [
+        {
+          "slice_type": "view",
+          "slice_value": "By role",
+          "n": 8955
+        },
+        {
+          "slice_type": "view",
+          "slice_value": "By country",
+          "n": 8955
+        },
+        {
+          "slice_type": "view",
+          "slice_value": "By professional experience",
+          "n": 8955
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 2802,
+        "pct": null,
+        "median_yearly_salary_usd": 79610
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 1473,
+        "pct": null,
+        "median_yearly_salary_usd": 81884
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 717,
+        "pct": null,
+        "median_yearly_salary_usd": 102355
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 439,
+        "pct": null,
+        "median_yearly_salary_usd": 77335
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 333,
+        "pct": null,
+        "median_yearly_salary_usd": 83788
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, front-end",
+        "count": 332,
+        "pct": null,
+        "median_yearly_salary_usd": 69857
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engineering manager",
+        "count": 285,
+        "pct": null,
+        "median_yearly_salary_usd": 131000
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, mobile",
+        "count": 250,
+        "pct": null,
+        "median_yearly_salary_usd": 83120
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 242,
+        "pct": null,
+        "median_yearly_salary_usd": 82738
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Academic researcher",
+        "count": 202,
+        "pct": null,
+        "median_yearly_salary_usd": 61134
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data engineer",
+        "count": 191,
+        "pct": null,
+        "median_yearly_salary_usd": 88708
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI/ML engineer",
+        "count": 143,
+        "pct": null,
+        "median_yearly_salary_usd": 90982
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data scientist",
+        "count": 123,
+        "pct": null,
+        "median_yearly_salary_usd": 89500
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Senior executive (C-suite, VP, etc.)",
+        "count": 115,
+        "pct": null,
+        "median_yearly_salary_usd": 113728
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
+        "count": 101,
+        "pct": null,
+        "median_yearly_salary_usd": 102355
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "United States of America",
+        "count": 2283,
+        "pct": null,
+        "median_yearly_salary_usd": 150000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Germany",
+        "count": 985,
+        "pct": null,
+        "median_yearly_salary_usd": 83022
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "United Kingdom of Great Britain and Northern Ireland",
+        "count": 649,
+        "pct": null,
+        "median_yearly_salary_usd": 93098
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Canada",
+        "count": 396,
+        "pct": null,
+        "median_yearly_salary_usd": 92188
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "France",
+        "count": 391,
+        "pct": null,
+        "median_yearly_salary_usd": 59139
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "India",
+        "count": 335,
+        "pct": null,
+        "median_yearly_salary_usd": 19325
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Netherlands",
+        "count": 275,
+        "pct": null,
+        "median_yearly_salary_usd": 78472
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Australia",
+        "count": 233,
+        "pct": null,
+        "median_yearly_salary_usd": 103156
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Spain",
+        "count": 228,
+        "pct": null,
+        "median_yearly_salary_usd": 62550
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Ukraine",
+        "count": 197,
+        "pct": null,
+        "median_yearly_salary_usd": 34693
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "5-9 years",
+        "count": 1938,
+        "pct": null,
+        "median_yearly_salary_usd": 68077
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "10-14 years",
+        "count": 1883,
+        "pct": null,
+        "median_yearly_salary_usd": 90982
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "20-29 years",
+        "count": 1618,
+        "pct": null,
+        "median_yearly_salary_usd": 104550
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "0-4 years",
+        "count": 1373,
+        "pct": null,
+        "median_yearly_salary_usd": 45000
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "15-19 years",
+        "count": 1287,
+        "pct": null,
+        "median_yearly_salary_usd": 97861
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "30-39 years",
+        "count": 647,
+        "pct": null,
+        "median_yearly_salary_usd": 113728
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "40+ years",
+        "count": 180,
+        "pct": null,
+        "median_yearly_salary_usd": 120000
+      }
+    ]
+  }
+}

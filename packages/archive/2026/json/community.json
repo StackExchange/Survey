@@ -1,0 +1,1346 @@
+{
+  "SOChange": {
+    "meta": {
+      "qid": "QID53",
+      "qname": "SOChange",
+      "question": "<p>How has AI changed your Stack Overflow usage? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 16985
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit less for simple questions",
+        "count": 10892,
+        "pct": 0.6413
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask fewer questions",
+        "count": 4910,
+        "pct": 0.2891
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Contribute less",
+        "count": 4496,
+        "pct": 0.2647
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No change",
+        "count": 3704,
+        "pct": 0.2181
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit more for verification (for example, source attribution)",
+        "count": 2707,
+        "pct": 0.1594
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 1084,
+        "pct": 0.0638
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask more advanced questions",
+        "count": 967,
+        "pct": 0.0569
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit SO more because AI-generated answers lead you there",
+        "count": 965,
+        "pct": 0.0568
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Contribute more",
+        "count": 203,
+        "pct": 0.012
+      }
+    ]
+  },
+  "Answers": {
+    "meta": {
+      "qid": "QID54",
+      "qname": "Answers",
+      "question": "<p>Which actions do you turn to first when trying to find answers to a problem? Select your top 3 choices.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 16664
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Use online search tools to find general guidance and/or discourse",
+        "count": 13774,
+        "pct": 0.8266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask an AI agent",
+        "count": 11643,
+        "pct": 0.6987
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Go directly to a maintained repository or more than one and search within its contents (this could be a repository like Wikipedia or IMDB or GitHub projects)",
+        "count": 7288,
+        "pct": 0.4373
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Send a message to a human I trust directly",
+        "count": 4803,
+        "pct": 0.2882
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Post a message in a group text or private discussion among humans I know",
+        "count": 2462,
+        "pct": 0.1477
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Post in a public online forum",
+        "count": 1327,
+        "pct": 0.0796
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Send a message to a human that I don't know directly",
+        "count": 276,
+        "pct": 0.0166
+      }
+    ]
+  },
+  "AnswersTrust": {
+    "meta": {
+      "qid": "QID56",
+      "qname": "AnswersTrust",
+      "question": "<p>What makes you trust the information you find when you are searching for answers? Select your top 3 choices.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15355
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The format and content of the information is well-organized and logical",
+        "count": 9071,
+        "pct": 0.5908
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "There are many upvotes/likes/shares/views associated with the content",
+        "count": 7377,
+        "pct": 0.4804
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The information was referred to me by a human I trust directly",
+        "count": 7159,
+        "pct": 0.4662
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The information has many citations, sources themselves don't matter as much as the ability to track down the origin",
+        "count": 6111,
+        "pct": 0.398
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I can see user activity associated with the human that posts the information I find",
+        "count": 3890,
+        "pct": 0.2533
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I heard about the source of information before from another trusted source, such as a news site, a social feed, or a podcast interview",
+        "count": 3730,
+        "pct": 0.2429
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The format and content of the information is creative and thought-provoking",
+        "count": 1628,
+        "pct": 0.106
+      }
+    ]
+  },
+  "CommunityType": {
+    "meta": {
+      "qid": "QID57",
+      "qname": "CommunityType",
+      "question": "<p>How do you participate in technical or professional communities? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15917
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I read answers, posts, or discussions",
+        "count": 12420,
+        "pct": 0.7803
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I comment or react",
+        "count": 6660,
+        "pct": 0.4184
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I share resources with others",
+        "count": 5597,
+        "pct": 0.3516
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I answer questions",
+        "count": 5358,
+        "pct": 0.3366
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I ask questions",
+        "count": 4972,
+        "pct": 0.3124
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I follow specific creators or experts",
+        "count": 4734,
+        "pct": 0.2974
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I contribute to open-source projects",
+        "count": 4468,
+        "pct": 0.2807
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I attend events, meetups, or webinars",
+        "count": 3339,
+        "pct": 0.2098
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I participate in private groups or chats",
+        "count": 3225,
+        "pct": 0.2026
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not currently participate in communities",
+        "count": 2304,
+        "pct": 0.1448
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I moderate or help manage a community",
+        "count": 1066,
+        "pct": 0.067
+      }
+    ]
+  },
+  "CommunityGap": {
+    "meta": {
+      "qid": "QID58",
+      "qname": "CommunityGap",
+      "question": "<p>What, if anything, prevents you from participating more in technical or professional communities? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15602
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I usually find answers without posting",
+        "count": 10162,
+        "pct": 0.6513
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI tools answer enough of my questions",
+        "count": 6979,
+        "pct": 0.4473
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not have time",
+        "count": 5588,
+        "pct": 0.3582
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My questions are too specific to my company or context",
+        "count": 3532,
+        "pct": 0.2264
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I worry about being judged or criticized",
+        "count": 3297,
+        "pct": 0.2113
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not feel confident asking questions publicly",
+        "count": 3134,
+        "pct": 0.2009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I prefer private conversations",
+        "count": 2762,
+        "pct": 0.177
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Nothing prevents me from participating more",
+        "count": 1912,
+        "pct": 0.1225
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Communities do not feel welcoming to people like me",
+        "count": 1893,
+        "pct": 0.1213
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Communities feel too advanced or specialized",
+        "count": 1826,
+        "pct": 0.117
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I have privacy, legal, or employer restrictions",
+        "count": 1663,
+        "pct": 0.1066
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not know where to participate",
+        "count": 1399,
+        "pct": 0.0897
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not applicable",
+        "count": 425,
+        "pct": 0.0272
+      }
+    ]
+  },
+  "CommunitySkills": {
+    "meta": {
+      "qid": "QID60",
+      "qname": "CommunitySkills",
+      "question": "<p>Which sources most influence what technical, AI, or professional skills you decide to learn next? Select up to 3.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15260
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coworkers, classmates, or peers",
+        "count": 6695,
+        "pct": 0.4387
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Manager or workplace expectations",
+        "count": 4986,
+        "pct": 0.3267
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "YouTube or video creators",
+        "count": 3931,
+        "pct": 0.2576
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online communities or forums",
+        "count": 3519,
+        "pct": 0.2306
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Job postings or labor market signals",
+        "count": 2971,
+        "pct": 0.1947
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Documentation",
+        "count": 2687,
+        "pct": 0.1761
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Newsletters or blogs",
+        "count": 2062,
+        "pct": 0.1351
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI tools or chatbots",
+        "count": 2032,
+        "pct": 0.1332
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I am not currently deciding what to learn next",
+        "count": 1673,
+        "pct": 0.1096
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Conferences or events",
+        "count": 1434,
+        "pct": 0.094
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Social media",
+        "count": 1384,
+        "pct": 0.0907
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Courses or certifications",
+        "count": 1077,
+        "pct": 0.0706
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow / Stack Exchange",
+        "count": 1012,
+        "pct": 0.0663
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Podcasts",
+        "count": 843,
+        "pct": 0.0552
+      }
+    ]
+  },
+  "LearnCodeHow": {
+    "meta": {
+      "qid": "QID11",
+      "qname": "LearnCodeHow",
+      "question": "<p>How did you learn to code in the past year? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14530
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Technical documentation (is generated for/by the tool or system)",
+        "count": 8555,
+        "pct": 0.5888
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI codegen tools or AI-enabled apps",
+        "count": 7650,
+        "pct": 0.5265
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other online resources (e.g. standard search, forum, online community)",
+        "count": 7518,
+        "pct": 0.5174
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Videos (not associated with specific online course or certification)",
+        "count": 5975,
+        "pct": 0.4112
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow or Stack Exchange",
+        "count": 4909,
+        "pct": 0.3379
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online courses or certification (includes all media types)",
+        "count": 4260,
+        "pct": 0.2932
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Blogs or podcasts",
+        "count": 4010,
+        "pct": 0.276
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Books / physical media",
+        "count": 3846,
+        "pct": 0.2647
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Colleague or on-the-job training",
+        "count": 3106,
+        "pct": 0.2138
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "School (i.e., university, college, etc)",
+        "count": 2064,
+        "pct": 0.1421
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Games or coding challenges",
+        "count": 1700,
+        "pct": 0.117
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coding bootcamp",
+        "count": 922,
+        "pct": 0.0635
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 629,
+        "pct": 0.0433
+      }
+    ]
+  },
+  "LearnAIHow": {
+    "meta": {
+      "qid": "QID13",
+      "qname": "LearnAIHow",
+      "question": "<p>How did you learn to code for AI in the past year? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 20565
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI CodeGen tools or AI-enabled apps",
+        "count": 10407,
+        "pct": 0.5061
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other online resources (e.g. standard search, forum, online community)",
+        "count": 9244,
+        "pct": 0.4495
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Technical documentation (is generated for/by the tool or system)",
+        "count": 8733,
+        "pct": 0.4247
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Videos (not associated with specific online course or certification)",
+        "count": 7781,
+        "pct": 0.3784
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Colleague or on-the-job training",
+        "count": 6648,
+        "pct": 0.3233
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Blogs or podcasts",
+        "count": 6069,
+        "pct": 0.2951
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online Courses or Certification (includes all media types)",
+        "count": 3516,
+        "pct": 0.171
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow or Stack Exchange",
+        "count": 2281,
+        "pct": 0.1109
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Books / Physical media",
+        "count": 1583,
+        "pct": 0.077
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 1290,
+        "pct": 0.0627
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "School (i.e., University, College, etc)",
+        "count": 1132,
+        "pct": 0.055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Games or coding challenges",
+        "count": 828,
+        "pct": 0.0403
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coding Bootcamp",
+        "count": 777,
+        "pct": 0.0378
+      }
+    ]
+  },
+  "SOAccount": {
+    "meta": {
+      "qid": "QID51",
+      "qname": "SOAccount",
+      "question": "<p>Do you have a Stack Overflow account?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 17217
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes",
+        "count": 13320,
+        "pct": 0.7737
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 2363,
+        "pct": 0.1372
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure/can't remember",
+        "count": 1534,
+        "pct": 0.0891
+      }
+    ]
+  },
+  "SOYears": {
+    "meta": {
+      "qid": "QID52",
+      "qname": "SOYears",
+      "question": "<p>How long have you used Stack Overflow?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 17142
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 10 and 15 years",
+        "count": 5739,
+        "pct": 0.3348
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 5 and 10 years",
+        "count": 4291,
+        "pct": 0.2503
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "More than 15 years, or since Stack Overflow started in 2008",
+        "count": 3000,
+        "pct": 0.175
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 3 and 5 years",
+        "count": 1561,
+        "pct": 0.0911
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don't use Stack Overflow",
+        "count": 1020,
+        "pct": 0.0595
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 1 and 3 years",
+        "count": 957,
+        "pct": 0.0558
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Less than one year",
+        "count": 574,
+        "pct": 0.0335
+      }
+    ]
+  },
+  "LearnCode": {
+    "meta": {
+      "qid": "QID10",
+      "qname": "LearnCode",
+      "question": "<p>Did you begin learning to code or learn a new coding skill or programming language in the last year?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 29146
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes",
+        "count": 15169,
+        "pct": 0.5204
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 13977,
+        "pct": 0.4796
+      }
+    ]
+  },
+  "LearnAI": {
+    "meta": {
+      "qid": "QID12",
+      "qname": "LearnAI",
+      "question": "<p>In the last year, did you spend time learning AI programming or AI-enabled tooling on your own or at work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 28240
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, both on my own and at work",
+        "count": 11350,
+        "pct": 0.4019
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, on my own",
+        "count": 6607,
+        "pct": 0.234
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 5923,
+        "pct": 0.2097
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, at work",
+        "count": 4360,
+        "pct": 0.1544
+      }
+    ]
+  },
+  "CommPlat": {
+    "meta": {
+      "qid": "QID42",
+      "qname": "CommPlat",
+      "question": "<p>Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10741
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GitHub (public projects, not private repos)",
+        "count": 7460,
+        "pct": 0.6945
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow",
+        "count": 7372,
+        "pct": 0.6863
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "YouTube",
+        "count": 6272,
+        "pct": 0.5839
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Reddit",
+        "count": 5784,
+        "pct": 0.5385
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Exchange",
+        "count": 4062,
+        "pct": 0.3782
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LinkedIn",
+        "count": 4058,
+        "pct": 0.3778
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Discord",
+        "count": 3591,
+        "pct": 0.3343
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Medium",
+        "count": 2826,
+        "pct": 0.2631
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hacker News",
+        "count": 2576,
+        "pct": 0.2398
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "X",
+        "count": 1758,
+        "pct": 0.1637
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bluesky",
+        "count": 1356,
+        "pct": 0.1262
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Slack (public channels, not work)",
+        "count": 1250,
+        "pct": 0.1164
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Dev.to",
+        "count": 1103,
+        "pct": 0.1027
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Company-sponsored forums",
+        "count": 927,
+        "pct": 0.0863
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Substack",
+        "count": 858,
+        "pct": 0.0799
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 719,
+        "pct": 0.0669
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Twitch",
+        "count": 569,
+        "pct": 0.053
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kaggle",
+        "count": 499,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hashnode",
+        "count": 131,
+        "pct": 0.0122
+      }
+    ]
+  },
+  "DA_CommPlatform": {
+    "meta": {
+      "qid": "QID42",
+      "qname": "CommPlat",
+      "question": "<p>Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10741
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "GitHub (public projects, not private repos)",
+        "count": 4814,
+        "pct": 0.4482
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Stack Overflow",
+        "count": 4660,
+        "pct": 0.4339
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "YouTube",
+        "count": 3926,
+        "pct": 0.3655
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Reddit",
+        "count": 2989,
+        "pct": 0.2783
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Stack Exchange",
+        "count": 2687,
+        "pct": 0.2502
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Discord",
+        "count": 1955,
+        "pct": 0.182
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Hacker News",
+        "count": 1635,
+        "pct": 0.1522
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "LinkedIn",
+        "count": 1610,
+        "pct": 0.1499
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Medium",
+        "count": 1183,
+        "pct": 0.1101
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Bluesky",
+        "count": 966,
+        "pct": 0.0899
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "X",
+        "count": 953,
+        "pct": 0.0887
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Slack (public channels, not work)",
+        "count": 696,
+        "pct": 0.0648
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Other, please specify",
+        "count": 628,
+        "pct": 0.0585
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Dev.to",
+        "count": 573,
+        "pct": 0.0533
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Substack",
+        "count": 506,
+        "pct": 0.0471
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Company-sponsored forums",
+        "count": 499,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Kaggle",
+        "count": 383,
+        "pct": 0.0357
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Twitch",
+        "count": 348,
+        "pct": 0.0324
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Hashnode",
+        "count": 125,
+        "pct": 0.0116
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Other, please specify",
+        "count": 576,
+        "pct": 0.8011
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Stack Exchange",
+        "count": 2557,
+        "pct": 0.6295
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "GitHub (public projects, not private repos)",
+        "count": 4672,
+        "pct": 0.6263
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "YouTube",
+        "count": 3841,
+        "pct": 0.6124
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Stack Overflow",
+        "count": 4499,
+        "pct": 0.6103
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Bluesky",
+        "count": 778,
+        "pct": 0.5737
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Hacker News",
+        "count": 1456,
+        "pct": 0.5652
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Discord",
+        "count": 1812,
+        "pct": 0.5046
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Reddit",
+        "count": 2889,
+        "pct": 0.4995
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "X",
+        "count": 875,
+        "pct": 0.4977
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Kaggle",
+        "count": 245,
+        "pct": 0.491
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Twitch",
+        "count": 278,
+        "pct": 0.4886
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Slack (public channels, not work)",
+        "count": 599,
+        "pct": 0.4792
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Substack",
+        "count": 407,
+        "pct": 0.4744
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Hashnode",
+        "count": 62,
+        "pct": 0.4733
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Company-sponsored forums",
+        "count": 430,
+        "pct": 0.4639
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Dev.to",
+        "count": 469,
+        "pct": 0.4252
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Medium",
+        "count": 1111,
+        "pct": 0.3931
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "LinkedIn",
+        "count": 1507,
+        "pct": 0.3714
+      }
+    ]
+  }
+}

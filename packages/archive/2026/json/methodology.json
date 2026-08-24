@@ -1,0 +1,106 @@
+{
+	"TotalRespondents": 49019,
+	"MedianResponseTime": 22.68,
+	"TotalCountries": 177,
+	"GaveSalary": 23928,
+	"ExchangeRateUpdated": "2025-06-24",
+	"MainBranch": {
+		"qid": "QID3",
+		"qname": "MainBranch",
+		"question": "Are you someone who writes code? Please select one of the following options that best describes you today.",
+		"datasets": {
+			"MainBranch": {
+				"total_respondents": 49019,
+				"plot_type": "bar",
+				"data": [
+					{
+						"response": "I am a developer by profession",
+						"frequency": 37356,
+						"percent": 0.7621
+					},
+					{
+						"response": "I am not primarily a developer, but I write code sometimes as part of my work/studies",
+						"frequency": 4876,
+						"percent": 0.0995
+					},
+					{
+						"response": "I am learning to code",
+						"frequency": 2564,
+						"percent": 0.0523
+					},
+					{
+						"response": "I code primarily as a hobby",
+						"frequency": 1916,
+						"percent": 0.0391
+					},
+					{
+						"response": "I used to be a developer by profession, but no longer am",
+						"frequency": 1320,
+						"percent": 0.0269
+					},
+					{
+						"response": "I work with developers or my work supports developers but am not a developer by profession",
+						"frequency": 987,
+						"percent": 0.0201
+					}
+				]
+			}
+		}
+	},
+	"SurveyLength": {
+		"qid": "QID94",
+		"qname": "SurveyLength",
+		"question": "How do you feel about the length of the survey this year?",
+		"datasets": {
+			"SurveyLength": {
+				"total_respondents": 29511,
+				"plot_type": "bar",
+				"data": [
+					{
+						"response": "Appropriate in length",
+						"frequency": 16777,
+						"percent": 0.5685
+					},
+					{
+						"response": "Too long",
+						"frequency": 12404,
+						"percent": 0.4203
+					},
+					{
+						"response": "Too short",
+						"frequency": 330,
+						"percent": 0.0112
+					}
+				]
+			}
+		}
+	},
+	"SurveyEase": {
+		"qid": "QID95",
+		"qname": "SurveyEase",
+		"question": "How easy or difficult was this survey to complete?",
+		"datasets": {
+			"SurveyEase": {
+				"total_respondents": 29492,
+				"plot_type": "bar",
+				"data": [
+					{
+						"response": "Neither easy nor difficult",
+						"frequency": 15421,
+						"percent": 0.5229
+					},
+					{
+						"response": "Easy",
+						"frequency": 11740,
+						"percent": 0.3981
+					},
+					{
+						"response": "Difficult",
+						"frequency": 2331,
+						"percent": 0.079
+					}
+				]
+			}
+		}
+	}
+}
