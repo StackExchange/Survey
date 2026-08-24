@@ -2,12 +2,16 @@
 	import { IconArrowDownLeft, IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
 
 	import { resolve } from '$app/paths'
+	import { page } from '$app/state'
 
 	import { chapterColour } from '$config'
 
 	import Icon from '$components/Icon.svelte'
 
 	let { year, previous, next }: { year: string; previous?: any; next?: any } = $props()
+	const deep = $derived(page.route.id?.startsWith('/[year]/[chapter]/data') ?? false)
+	const href = (chapter: any) =>
+		deep ? resolve('/[year]/[chapter]/data', { year, chapter: chapter.id }) : resolve('/[year]/[chapter]', { year, chapter: chapter.id })
 </script>
 
 {#snippet card(chapter: any, direction: 'previous' | 'next')}
@@ -19,7 +23,7 @@
 				? 'mr-12 origin-bottom-left bg-white dark:bg-black-200'
 				: `${chapterColour(chapter.index).bg} ml-12 origin-bottom-right`}"
 			rel={back ? 'prev' : 'next'}
-			href={resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}
+			href={href(chapter)}
 		>
 			<span class="{back ? 'text-black-400' : 'text-black'} mb-2 flex items-center text-sm">
 				{back ? 'Previous' : 'Next'}:
