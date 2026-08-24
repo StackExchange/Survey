@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconArrowDownBox, IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
+	import { IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
 
 	import BrandHeader from '$lib/components/BrandHeader.svelte'
 	import Button from '$lib/components/Button.svelte'
@@ -47,11 +47,8 @@
 	<div class="-ml-3 flex flex-wrap gap-1">
 		<Button variant="plain" href={entry.results} data-sveltekit-reload icon={IconChart} label="Results" />
 
-		{#if entry.data}
-			<Button variant="plain" href={entry.data} rel="external" icon={IconArrowDownBox} label="Data (CSV)" />
-		{/if}
 		{#if entry.source}
-			<Button variant="plain" href={entry.source} rel="external noopener" icon={IconServiceGitHub} label="Files" />
+			<Button variant="plain" href={entry.source} rel="external noopener" icon={IconServiceGitHub} label="Data & files" />
 		{/if}
 	</div>
 {/snippet}
