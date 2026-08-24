@@ -95,6 +95,7 @@
 	--chart-accent: var(--color-orange);
 
 	--chart-focus: var(--color-blue);
+	--chart-dim: var(--color-black-300);
 	--chart-on-focus: var(--color-white);
 	--chart-rest: var(--color-beige);
 	--chart-on-rest: var(--color-black);
@@ -127,6 +128,8 @@
 	--chart-tint: var(--color-black-500);
 	--chart-ghost: var(--color-black-500);
 	--chart-grid: var(--color-black-500);
+
+	--chart-dim: var(--color-black-400);
 
 	/* Override these as not readable on dark mode */
 	--chart-series-8: var(--color-blue-light);

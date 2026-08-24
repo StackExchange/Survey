@@ -40,8 +40,8 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="items-start justify-center gap-15 lg:grid lg:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
-	<div class="col-span-5 {flip ? '' : 'lg:order-last'}">
+<div class="items-start justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
+	<div class="col-span-5 {flip ? '' : 'md:order-last'}">
 		{#if children}
 			{@render children()}
 		{:else if tier === 'hero' && year && chapter}

@@ -14,8 +14,8 @@
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
+	const BAR = 44
 	const GAP = 8
-	const MIN_BAR = 24
 
 	const hover = useHover(() => onhover)
 
@@ -31,8 +31,6 @@
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 	const x = $derived(scaleLinear().domain([0, largest]).range([0, width]).clamp(true))
 
-	// Square, until `MIN_BAR` — past that the frame grows taller rather than thinner.
-	const BAR = $derived(px(Math.max((width - GAP * Math.max(rows.length - 1, 0)) / Math.max(rows.length, 1), MIN_BAR)))
 	const height = $derived(rows.length * (BAR + GAP) - GAP)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
@@ -48,15 +46,10 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = px(i * (BAR + GAP))}
 		{@const length = px(x(amount(row)))}
-		{@const cap = px(Math.min(BAR, length))}
 
 		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 			<rect x="0" {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
-
-			<!-- The last square of the bar, always the accent: a terminator rather than a
-			     second measurement, so it takes length from the bar rather than adding to it. -->
-			<rect x={px(length - cap)} {y} width={cap} height={BAR} fill={theme.accent} />
 		</g>
 	{/each}
 </Frame>

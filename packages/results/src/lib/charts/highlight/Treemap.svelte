@@ -9,7 +9,7 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const LABEL_SIZE = 16
-	const UNIT_SIZE = 18
+	const UNIT_SIZE = 28
 
 	const hover = useHover(() => onhover)
 
@@ -21,12 +21,9 @@
 	const height = $derived(width)
 	const cells = $derived(treemapCells(rows, rows.map(amount), width, height))
 	const focused = $derived(focusedOf(figure))
-	// The chapter's colour tinted down the layout order, as ./Rank.svelte does — the
-	// cells are one set, largest first. A focus drops the ramp: the named cell in the
-	// chapter's first colour, every other in its second, as the bars do.
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : !focused || row === focused ? theme.focus : theme.rest)
 	const tintOf = (rank: number, hovered: boolean) => (hovered || focused ? 1 : 1 - (0.7 * rank) / Math.max(cells.length - 1, 1))
-	// A tint under 0.6 is closer to the page than to the colour, so the ink flips.
+
 	const inkOf = (row: any, rank: number, hovered: boolean) =>
 		hovered
 			? theme.background
@@ -64,12 +61,12 @@
 			/>
 
 			{#if cell.height > LABEL_SIZE * 3 && cell.width > 70}
-				<text x={cell.x + 10} y={cell.y + LABEL_SIZE + 6} font-size={LABEL_SIZE} fill={inkOf(cell.row, rank, hovered)}>
+				<text x={cell.x + 10} y={cell.y + cell.height - LABEL_SIZE} font-size={LABEL_SIZE} fill={inkOf(cell.row, rank, hovered)}>
 					{clip(short(cell.row.response), chars(cell.width - 20, LABEL_SIZE))}
 				</text>
 				<text
 					x={cell.x + 10}
-					y={cell.y + cell.height - UNIT_SIZE + 7}
+					y={cell.y + cell.height - 38}
 					font-size={UNIT_SIZE}
 					font-family={theme.fontHeadline}
 					font-weight="600"

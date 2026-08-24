@@ -1,6 +1,6 @@
 <script lang="ts">
-	// A column per response, drawn square. No labels: the readout, the `<desc>` and
-	// the table beside the chart carry the names and the numbers.
+	// A column per response. No labels: the readout, the `<desc>` and the table
+	// beside the chart carry the names and the numbers.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
@@ -30,7 +30,7 @@
 	const accent = $derived(focused ?? rows[leader])
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 
-	const plot = $derived(px(width))
+	const plot = $derived(px(Math.min(width * 0.7, 750)))
 	const height = $derived(plot)
 
 	const column = $derived(px((width - GAP * Math.max(rows.length - 1, 0)) / Math.max(rows.length, 1)))
@@ -52,9 +52,6 @@
 		{@const top = px(plot - body)}
 
 		<rect {x} y={top} width={column} height={body} fill={fillOf(row, hover.active === i)} />
-
-		<!-- The top square of the column, always the accent — see ./BarStackedHorizontal.svelte. -->
-		<rect {x} y={top} width={column} height={px(Math.min(column, body))} fill={theme.accent} />
 
 		<!-- The whole column band, so a short bar is still reachable. -->
 		<rect

@@ -21,6 +21,6 @@
 	</p>
 
 	{#if row}
-		<p class="mt-auto mb-3 text-lg opacity-70">{short(row.response)}</p>
+		<p class="mt-auto mb-3 text-2xl">{short(row.response)}</p>
 	{/if}
 </div>
