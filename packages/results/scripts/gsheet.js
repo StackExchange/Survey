@@ -6,7 +6,7 @@ import { csvParseRows } from 'd3-dsv'
 import { camelCase, kebabCase } from 'lodash-es'
 
 // Where to save this
-const OUT = path.resolve(fileURLToPath(import.meta.url), '../../src/content/survey.json')
+const OUT = path.resolve(fileURLToPath(import.meta.url), '../../survey.json')
 
 // The Copy Spreadsheet - MUST BE SET TO PUBLIC
 // https://docs.google.com/spreadsheets/d/[ID FROM HERE]/edit#
@@ -95,5 +95,5 @@ await fs.writeFile(OUT, `${JSON.stringify(survey, null, 2)}\n`)
 for (const row of dropped) console.error(`✕ dropped ${row}`)
 
 console.error(
-	`✅ ${chapters.length} chapters, ${sections.length} sections, ${questions.length} questions, ${features.length} features → src/content/survey.json`
+	`✅ ${chapters.length} chapters, ${sections.length} sections, ${questions.length} questions, ${features.length} features → survey.json`
 )

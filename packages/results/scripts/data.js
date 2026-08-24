@@ -39,7 +39,12 @@ const readYears = () => readJson(path.resolve(APP, '../archive/index.json'))
 // --- inputs ------------------------------------------------------------------
 
 async function readInputs() {
-	const dataDir = path.join(APP, 'src/data')
+	const survey = await readJson(path.join(APP, 'survey.json'))
+
+	// This year's export lives with every other year's, so the day it is published
+	// nothing moves — the archive row is already the path the site built from.
+	const home = `packages/archive/${survey.settings.year}/json`
+	const dataDir = path.join(REPO, home)
 	const files = (await fs.readdir(dataDir)).filter((f) => f.endsWith('.json'))
 
 	const data = Object.fromEntries(
@@ -58,13 +63,11 @@ async function readInputs() {
 		}
 	}
 
-	const survey = await readJson(path.join(APP, 'src/content/survey.json'))
-
 	// The scalars the methodology page prints, carried in the payload so no module
-	// outside this file imports from $data.
+	// outside this file reads the export directly.
 	const methodology = Object.fromEntries(Object.entries(data.methodology ?? {}).filter(([, v]) => typeof v !== 'object'))
 
-	return { survey, data, bank, methodology }
+	return { survey, data, bank, methodology, home }
 }
 
 // --- figures -----------------------------------------------------------------
@@ -264,7 +267,7 @@ async function write(file, value, state) {
 }
 
 export async function generate() {
-	const { survey, data, bank, methodology } = await readInputs()
+	const { survey, data, bank, methodology, home } = await readInputs()
 	const years = await readYears()
 
 	// Collected, not thrown one at a time: whoever has to fix the sheet or rerun
@@ -277,7 +280,7 @@ export async function generate() {
 	const live = survey.chapters.filter((chapter) => {
 		const file = data[chapter.id]
 
-		if (!file) return void console.error(`⚠ chapter "${chapter.id}" skipped — no src/data/${chapter.id}.json`)
+		if (!file) return void console.error(`⚠ chapter "${chapter.id}" skipped — no ${home}/${chapter.id}.json`)
 		if (!Object.values(file).some(isTidy)) return void console.error(`⚠ chapter "${chapter.id}" skipped — still the legacy format`)
 
 		return true
@@ -285,7 +288,7 @@ export async function generate() {
 
 	for (const id of Object.keys(data)) {
 		if (id !== 'methodology' && !survey.chapters.some((c) => c.id === id))
-			console.error(`⚠ src/data/${id}.json is not claimed by any chapter`)
+			console.error(`⚠ ${home}/${id}.json is not claimed by any chapter`)
 	}
 
 	const summaries = live.map(summary)

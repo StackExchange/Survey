@@ -7,12 +7,15 @@ import { defineConfig } from 'vite'
 
 import years from '../archive/index.json' with { type: 'json' }
 import { generate, summarise } from './scripts/data.js'
+import survey from './survey.json' with { type: 'json' }
 
 // Earlier years are other Netlify deploys, proxied in from netlify.toml
 const archived = new Set(years.map(({ year }) => `/${year}`))
 
 // What the generator reads, so dev can rebuild the payloads when they change.
-const inputs = ['src/data', 'src/content/survey.json', '../../questions'].map((p) => path.resolve(import.meta.dirname, p))
+const inputs = ['survey.json', `../archive/${survey.settings.year}/json`, '../../questions'].map((p) =>
+	path.resolve(import.meta.dirname, p)
+)
 
 export default defineConfig({
 	plugins: [
@@ -43,8 +46,6 @@ export default defineConfig({
 			alias: {
 				$archive: '../archive',
 				$config: 'config.ts',
-				$content: 'src/content',
-				$data: 'src/data',
 				$generated: 'src/generated',
 				$charts: 'src/lib/charts',
 				$components: 'src/lib/components',
