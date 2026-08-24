@@ -15,8 +15,9 @@ export const ogImage = '/stack-overflow-dev-survey-open-graph.png'
 
 export const githubRepo = 'https://github.com/StackExchange/Survey'
 
-// Root url for question previews
-export const surveyPreview = 'https://stackoverflow-survey-preview.netlify.app'
+// Root url for question previews, built from packages/survey
+// This site builds all branches so `releases/vYYYY` would be come releases-v2026…
+export const surveyPreview = (year: string | number) => `https://releases-${year}.questions.survey.stackoverflow.co`
 
 // Index of the value maps to the survey.json chapter order
 const chapterColours = [
