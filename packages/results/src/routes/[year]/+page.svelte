@@ -12,7 +12,7 @@
 	import Icon from '$components/Icon.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import Hero from '$charts/Hero.svelte'
+	import Feature from '$charts/Feature.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data } = $props()
@@ -73,7 +73,7 @@
 						</article>
 					{:else}
 						<article class="mx-auto max-w-2/3 py-40">
-							<Hero block={hero} year={data.year} {chapter} flip={i % 2 === 1} />
+							<Feature block={hero} tier="hero" year={data.year} {chapter} flip={i % 2 === 1} />
 						</article>
 					{/if}
 				{/each}

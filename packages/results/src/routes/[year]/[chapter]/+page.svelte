@@ -12,7 +12,7 @@
 	import CopyPage from '$components/CopyPage.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import Highlight from '$charts/Highlight.svelte'
+	import Feature from '$charts/Feature.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data, params } = $props()
@@ -42,7 +42,7 @@
 			{#if block.kind === 'quote'}
 				<Quote {block} />
 			{:else}
-				<Highlight {block} flip={i % 2 !== 1} />
+				<Feature {block} flip={i % 2 === 1} />
 			{/if}
 		</article>
 	{/each}
