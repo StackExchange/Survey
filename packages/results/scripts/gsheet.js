@@ -43,7 +43,8 @@ function mapRow(headers, row) {
 }
 
 async function getSheet(name) {
-	const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(name)}`)
+	const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(name)}`
+	const res = await fetch(url)
 
 	// A private sheet 401s, but a missing tab answers 200 with an HTML error page
 	if (!res.ok) throw new Error(`${name}: HTTP ${res.status} — is the sheet shared with "anyone with the link"?`)
@@ -90,6 +91,7 @@ const survey = {
 	chapters,
 }
 
+// Written before the exit below, so a bad pull is still there to look at.
 await fs.writeFile(OUT, `${JSON.stringify(survey, null, 2)}\n`)
 
 for (const row of dropped) console.error(`✕ dropped ${row}`)
@@ -97,3 +99,11 @@ for (const row of dropped) console.error(`✕ dropped ${row}`)
 console.error(
 	`✅ ${chapters.length} chapters, ${sections.length} sections, ${questions.length} questions, ${features.length} features → survey.json`
 )
+
+// A drop means two tabs disagree about a name, which is always a mistake in the
+// sheet — and the site it builds is missing that row without saying so. Exiting
+// non-zero stops `content && data` here rather than at a blank page.
+if (dropped.length) {
+	console.error(`\n✕ ${dropped.length} row(s) dropped — fix the sheet and pull again`)
+	process.exitCode = 1
+}
