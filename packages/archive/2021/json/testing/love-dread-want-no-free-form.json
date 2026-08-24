@@ -1,0 +1,2315 @@
+{
+  "Language": {
+    "qname": "Language",
+    "qid": "QID233",
+    "question": "Which <b>programming, scripting, and markup languages<\/b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the language and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "APL",
+        "love_dread_want": "Dreaded",
+        "Freq": 256,
+        "Perc": 0.2876
+      },
+      {
+        "sq_value": "APL",
+        "love_dread_want": "Loved",
+        "Freq": 266,
+        "Perc": 0.2989
+      },
+      {
+        "sq_value": "APL",
+        "love_dread_want": "Wanted",
+        "Freq": 368,
+        "Perc": 0.4135
+      },
+      {
+        "sq_value": "Assembly",
+        "love_dread_want": "Dreaded",
+        "Freq": 3003,
+        "Perc": 0.4574
+      },
+      {
+        "sq_value": "Assembly",
+        "love_dread_want": "Loved",
+        "Freq": 1539,
+        "Perc": 0.2344
+      },
+      {
+        "sq_value": "Assembly",
+        "love_dread_want": "Wanted",
+        "Freq": 2024,
+        "Perc": 0.3083
+      },
+      {
+        "sq_value": "Bash/Shell",
+        "love_dread_want": "Dreaded",
+        "Freq": 9556,
+        "Perc": 0.4086
+      },
+      {
+        "sq_value": "Bash/Shell",
+        "love_dread_want": "Loved",
+        "Freq": 12366,
+        "Perc": 0.5287
+      },
+      {
+        "sq_value": "Bash/Shell",
+        "love_dread_want": "Wanted",
+        "Freq": 1467,
+        "Perc": 0.0627
+      },
+      {
+        "sq_value": "C",
+        "love_dread_want": "Dreaded",
+        "Freq": 10249,
+        "Perc": 0.5156
+      },
+      {
+        "sq_value": "C",
+        "love_dread_want": "Loved",
+        "Freq": 6722,
+        "Perc": 0.3381
+      },
+      {
+        "sq_value": "C",
+        "love_dread_want": "Wanted",
+        "Freq": 2908,
+        "Perc": 0.1463
+      },
+      {
+        "sq_value": "C#",
+        "love_dread_want": "Dreaded",
+        "Freq": 8535,
+        "Perc": 0.3251
+      },
+      {
+        "sq_value": "C#",
+        "love_dread_want": "Loved",
+        "Freq": 13945,
+        "Perc": 0.5312
+      },
+      {
+        "sq_value": "C#",
+        "love_dread_want": "Wanted",
+        "Freq": 3773,
+        "Perc": 0.1437
+      },
+      {
+        "sq_value": "C++",
+        "love_dread_want": "Dreaded",
+        "Freq": 9948,
+        "Perc": 0.3971
+      },
+      {
+        "sq_value": "C++",
+        "love_dread_want": "Loved",
+        "Freq": 9680,
+        "Perc": 0.3864
+      },
+      {
+        "sq_value": "C++",
+        "love_dread_want": "Wanted",
+        "Freq": 5421,
+        "Perc": 0.2164
+      },
+      {
+        "sq_value": "Clojure",
+        "love_dread_want": "Dreaded",
+        "Freq": 289,
+        "Perc": 0.108
+      },
+      {
+        "sq_value": "Clojure",
+        "love_dread_want": "Loved",
+        "Freq": 1230,
+        "Perc": 0.4598
+      },
+      {
+        "sq_value": "Clojure",
+        "love_dread_want": "Wanted",
+        "Freq": 1156,
+        "Perc": 0.4321
+      },
+      {
+        "sq_value": "COBOL",
+        "love_dread_want": "Dreaded",
+        "Freq": 355,
+        "Perc": 0.5213
+      },
+      {
+        "sq_value": "COBOL",
+        "love_dread_want": "Loved",
+        "Freq": 69,
+        "Perc": 0.1013
+      },
+      {
+        "sq_value": "COBOL",
+        "love_dread_want": "Wanted",
+        "Freq": 257,
+        "Perc": 0.3774
+      },
+      {
+        "sq_value": "Crystal",
+        "love_dread_want": "Dreaded",
+        "Freq": 184,
+        "Perc": 0.187
+      },
+      {
+        "sq_value": "Crystal",
+        "love_dread_want": "Loved",
+        "Freq": 276,
+        "Perc": 0.2805
+      },
+      {
+        "sq_value": "Crystal",
+        "love_dread_want": "Wanted",
+        "Freq": 524,
+        "Perc": 0.5325
+      },
+      {
+        "sq_value": "Dart",
+        "love_dread_want": "Dreaded",
+        "Freq": 1756,
+        "Perc": 0.2025
+      },
+      {
+        "sq_value": "Dart",
+        "love_dread_want": "Loved",
+        "Freq": 3095,
+        "Perc": 0.357
+      },
+      {
+        "sq_value": "Dart",
+        "love_dread_want": "Wanted",
+        "Freq": 3819,
+        "Perc": 0.4405
+      },
+      {
+        "sq_value": "Delphi",
+        "love_dread_want": "Dreaded",
+        "Freq": 886,
+        "Perc": 0.4723
+      },
+      {
+        "sq_value": "Delphi",
+        "love_dread_want": "Loved",
+        "Freq": 816,
+        "Perc": 0.435
+      },
+      {
+        "sq_value": "Delphi",
+        "love_dread_want": "Wanted",
+        "Freq": 174,
+        "Perc": 0.0928
+      },
+      {
+        "sq_value": "Elixir",
+        "love_dread_want": "Dreaded",
+        "Freq": 395,
+        "Perc": 0.1057
+      },
+      {
+        "sq_value": "Elixir",
+        "love_dread_want": "Loved",
+        "Freq": 1023,
+        "Perc": 0.2737
+      },
+      {
+        "sq_value": "Elixir",
+        "love_dread_want": "Wanted",
+        "Freq": 2320,
+        "Perc": 0.6207
+      },
+      {
+        "sq_value": "Erlang",
+        "love_dread_want": "Dreaded",
+        "Freq": 296,
+        "Perc": 0.1769
+      },
+      {
+        "sq_value": "Erlang",
+        "love_dread_want": "Loved",
+        "Freq": 345,
+        "Perc": 0.2062
+      },
+      {
+        "sq_value": "Erlang",
+        "love_dread_want": "Wanted",
+        "Freq": 1032,
+        "Perc": 0.6169
+      },
+      {
+        "sq_value": "F#",
+        "love_dread_want": "Dreaded",
+        "Freq": 293,
+        "Perc": 0.1201
+      },
+      {
+        "sq_value": "F#",
+        "love_dread_want": "Loved",
+        "Freq": 494,
+        "Perc": 0.2025
+      },
+      {
+        "sq_value": "F#",
+        "love_dread_want": "Wanted",
+        "Freq": 1653,
+        "Perc": 0.6775
+      },
+      {
+        "sq_value": "Go",
+        "love_dread_want": "Dreaded",
+        "Freq": 2875,
+        "Perc": 0.156
+      },
+      {
+        "sq_value": "Go",
+        "love_dread_want": "Loved",
+        "Freq": 4860,
+        "Perc": 0.2637
+      },
+      {
+        "sq_value": "Go",
+        "love_dread_want": "Wanted",
+        "Freq": 10695,
+        "Perc": 0.5803
+      },
+      {
+        "sq_value": "Groovy",
+        "love_dread_want": "Dreaded",
+        "Freq": 1652,
+        "Perc": 0.5842
+      },
+      {
+        "sq_value": "Groovy",
+        "love_dread_want": "Loved",
+        "Freq": 780,
+        "Perc": 0.2758
+      },
+      {
+        "sq_value": "Groovy",
+        "love_dread_want": "Wanted",
+        "Freq": 396,
+        "Perc": 0.14
+      },
+      {
+        "sq_value": "Haskell",
+        "love_dread_want": "Dreaded",
+        "Freq": 804,
+        "Perc": 0.1907
+      },
+      {
+        "sq_value": "Haskell",
+        "love_dread_want": "Loved",
+        "Freq": 911,
+        "Perc": 0.2161
+      },
+      {
+        "sq_value": "Haskell",
+        "love_dread_want": "Wanted",
+        "Freq": 2500,
+        "Perc": 0.5931
+      },
+      {
+        "sq_value": "HTML/CSS",
+        "love_dread_want": "Dreaded",
+        "Freq": 18010,
+        "Perc": 0.3836
+      },
+      {
+        "sq_value": "HTML/CSS",
+        "love_dread_want": "Loved",
+        "Freq": 27266,
+        "Perc": 0.5808
+      },
+      {
+        "sq_value": "HTML/CSS",
+        "love_dread_want": "Wanted",
+        "Freq": 1673,
+        "Perc": 0.0356
+      },
+      {
+        "sq_value": "Java",
+        "love_dread_want": "Dreaded",
+        "Freq": 15065,
+        "Perc": 0.4697
+      },
+      {
+        "sq_value": "Java",
+        "love_dread_want": "Loved",
+        "Freq": 13445,
+        "Perc": 0.4192
+      },
+      {
+        "sq_value": "Java",
+        "love_dread_want": "Wanted",
+        "Freq": 3566,
+        "Perc": 0.1112
+      },
+      {
+        "sq_value": "JavaScript",
+        "love_dread_want": "Dreaded",
+        "Freq": 20174,
+        "Perc": 0.3562
+      },
+      {
+        "sq_value": "JavaScript",
+        "love_dread_want": "Loved",
+        "Freq": 32295,
+        "Perc": 0.5702
+      },
+      {
+        "sq_value": "JavaScript",
+        "love_dread_want": "Wanted",
+        "Freq": 4168,
+        "Perc": 0.0736
+      },
+      {
+        "sq_value": "Julia",
+        "love_dread_want": "Dreaded",
+        "Freq": 306,
+        "Perc": 0.1131
+      },
+      {
+        "sq_value": "Julia",
+        "love_dread_want": "Loved",
+        "Freq": 719,
+        "Perc": 0.2657
+      },
+      {
+        "sq_value": "Julia",
+        "love_dread_want": "Wanted",
+        "Freq": 1681,
+        "Perc": 0.6212
+      },
+      {
+        "sq_value": "Kotlin",
+        "love_dread_want": "Dreaded",
+        "Freq": 2584,
+        "Perc": 0.1972
+      },
+      {
+        "sq_value": "Kotlin",
+        "love_dread_want": "Loved",
+        "Freq": 4137,
+        "Perc": 0.3157
+      },
+      {
+        "sq_value": "Kotlin",
+        "love_dread_want": "Wanted",
+        "Freq": 6383,
+        "Perc": 0.4871
+      },
+      {
+        "sq_value": "LISP",
+        "love_dread_want": "Dreaded",
+        "Freq": 474,
+        "Perc": 0.2392
+      },
+      {
+        "sq_value": "LISP",
+        "love_dread_want": "Loved",
+        "Freq": 599,
+        "Perc": 0.3022
+      },
+      {
+        "sq_value": "LISP",
+        "love_dread_want": "Wanted",
+        "Freq": 909,
+        "Perc": 0.4586
+      },
+      {
+        "sq_value": "Matlab",
+        "love_dread_want": "Dreaded",
+        "Freq": 2938,
+        "Perc": 0.6527
+      },
+      {
+        "sq_value": "Matlab",
+        "love_dread_want": "Loved",
+        "Freq": 822,
+        "Perc": 0.1826
+      },
+      {
+        "sq_value": "Matlab",
+        "love_dread_want": "Wanted",
+        "Freq": 741,
+        "Perc": 0.1646
+      },
+      {
+        "sq_value": "Node.js",
+        "love_dread_want": "Dreaded",
+        "Freq": 10065,
+        "Perc": 0.2979
+      },
+      {
+        "sq_value": "Node.js",
+        "love_dread_want": "Loved",
+        "Freq": 17333,
+        "Perc": 0.513
+      },
+      {
+        "sq_value": "Node.js",
+        "love_dread_want": "Wanted",
+        "Freq": 6392,
+        "Perc": 0.1892
+      },
+      {
+        "sq_value": "Objective-C",
+        "love_dread_want": "Dreaded",
+        "Freq": 1656,
+        "Perc": 0.5417
+      },
+      {
+        "sq_value": "Objective-C",
+        "love_dread_want": "Loved",
+        "Freq": 608,
+        "Perc": 0.1989
+      },
+      {
+        "sq_value": "Objective-C",
+        "love_dread_want": "Wanted",
+        "Freq": 793,
+        "Perc": 0.2594
+      },
+      {
+        "sq_value": "Perl",
+        "love_dread_want": "Dreaded",
+        "Freq": 1269,
+        "Perc": 0.518
+      },
+      {
+        "sq_value": "Perl",
+        "love_dread_want": "Loved",
+        "Freq": 718,
+        "Perc": 0.2931
+      },
+      {
+        "sq_value": "Perl",
+        "love_dread_want": "Wanted",
+        "Freq": 463,
+        "Perc": 0.189
+      },
+      {
+        "sq_value": "PHP",
+        "love_dread_want": "Dreaded",
+        "Freq": 10611,
+        "Perc": 0.5473
+      },
+      {
+        "sq_value": "PHP",
+        "love_dread_want": "Loved",
+        "Freq": 7167,
+        "Perc": 0.3696
+      },
+      {
+        "sq_value": "PHP",
+        "love_dread_want": "Wanted",
+        "Freq": 1611,
+        "Perc": 0.0831
+      },
+      {
+        "sq_value": "PowerShell",
+        "love_dread_want": "Dreaded",
+        "Freq": 4902,
+        "Perc": 0.5032
+      },
+      {
+        "sq_value": "PowerShell",
+        "love_dread_want": "Loved",
+        "Freq": 3781,
+        "Perc": 0.3882
+      },
+      {
+        "sq_value": "PowerShell",
+        "love_dread_want": "Wanted",
+        "Freq": 1058,
+        "Perc": 0.1086
+      },
+      {
+        "sq_value": "Python",
+        "love_dread_want": "Dreaded",
+        "Freq": 12505,
+        "Perc": 0.2664
+      },
+      {
+        "sq_value": "Python",
+        "love_dread_want": "Loved",
+        "Freq": 26401,
+        "Perc": 0.5624
+      },
+      {
+        "sq_value": "Python",
+        "love_dread_want": "Wanted",
+        "Freq": 8034,
+        "Perc": 0.1712
+      },
+      {
+        "sq_value": "R",
+        "love_dread_want": "Dreaded",
+        "Freq": 2272,
+        "Perc": 0.3635
+      },
+      {
+        "sq_value": "R",
+        "love_dread_want": "Loved",
+        "Freq": 1803,
+        "Perc": 0.2885
+      },
+      {
+        "sq_value": "R",
+        "love_dread_want": "Wanted",
+        "Freq": 2175,
+        "Perc": 0.348
+      },
+      {
+        "sq_value": "Ruby",
+        "love_dread_want": "Dreaded",
+        "Freq": 2537,
+        "Perc": 0.342
+      },
+      {
+        "sq_value": "Ruby",
+        "love_dread_want": "Loved",
+        "Freq": 2912,
+        "Perc": 0.3925
+      },
+      {
+        "sq_value": "Ruby",
+        "love_dread_want": "Wanted",
+        "Freq": 1970,
+        "Perc": 0.2655
+      },
+      {
+        "sq_value": "Rust",
+        "love_dread_want": "Dreaded",
+        "Freq": 735,
+        "Perc": 0.045
+      },
+      {
+        "sq_value": "Rust",
+        "love_dread_want": "Loved",
+        "Freq": 4965,
+        "Perc": 0.3042
+      },
+      {
+        "sq_value": "Rust",
+        "love_dread_want": "Wanted",
+        "Freq": 10624,
+        "Perc": 0.6508
+      },
+      {
+        "sq_value": "Scala",
+        "love_dread_want": "Dreaded",
+        "Freq": 997,
+        "Perc": 0.2415
+      },
+      {
+        "sq_value": "Scala",
+        "love_dread_want": "Loved",
+        "Freq": 1101,
+        "Perc": 0.2667
+      },
+      {
+        "sq_value": "Scala",
+        "love_dread_want": "Wanted",
+        "Freq": 2030,
+        "Perc": 0.4918
+      },
+      {
+        "sq_value": "SQL",
+        "love_dread_want": "Dreaded",
+        "Freq": 14509,
+        "Perc": 0.3561
+      },
+      {
+        "sq_value": "SQL",
+        "love_dread_want": "Loved",
+        "Freq": 23527,
+        "Perc": 0.5774
+      },
+      {
+        "sq_value": "SQL",
+        "love_dread_want": "Wanted",
+        "Freq": 2713,
+        "Perc": 0.0666
+      },
+      {
+        "sq_value": "Swift",
+        "love_dread_want": "Dreaded",
+        "Freq": 1489,
+        "Perc": 0.1916
+      },
+      {
+        "sq_value": "Swift",
+        "love_dread_want": "Loved",
+        "Freq": 2623,
+        "Perc": 0.3375
+      },
+      {
+        "sq_value": "Swift",
+        "love_dread_want": "Wanted",
+        "Freq": 3659,
+        "Perc": 0.4709
+      },
+      {
+        "sq_value": "TypeScript",
+        "love_dread_want": "Dreaded",
+        "Freq": 6649,
+        "Perc": 0.201
+      },
+      {
+        "sq_value": "TypeScript",
+        "love_dread_want": "Loved",
+        "Freq": 17778,
+        "Perc": 0.5373
+      },
+      {
+        "sq_value": "TypeScript",
+        "love_dread_want": "Wanted",
+        "Freq": 8659,
+        "Perc": 0.2617
+      },
+      {
+        "sq_value": "VBA",
+        "love_dread_want": "Dreaded",
+        "Freq": 2993,
+        "Perc": 0.7357
+      },
+      {
+        "sq_value": "VBA",
+        "love_dread_want": "Loved",
+        "Freq": 773,
+        "Perc": 0.19
+      },
+      {
+        "sq_value": "VBA",
+        "love_dread_want": "Wanted",
+        "Freq": 302,
+        "Perc": 0.0742
+      }
+    ]
+  },
+  "Database": {
+    "qname": "Database",
+    "qid": "QID262",
+    "question": "Which <b>database environments <\/b>have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the database and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "Cassandra",
+        "love_dread_want": "Dreaded",
+        "Freq": 1043,
+        "Perc": 0.1939
+      },
+      {
+        "sq_value": "Cassandra",
+        "love_dread_want": "Loved",
+        "Freq": 781,
+        "Perc": 0.1452
+      },
+      {
+        "sq_value": "Cassandra",
+        "love_dread_want": "Wanted",
+        "Freq": 3556,
+        "Perc": 0.661
+      },
+      {
+        "sq_value": "Couchbase",
+        "love_dread_want": "Dreaded",
+        "Freq": 665,
+        "Perc": 0.2772
+      },
+      {
+        "sq_value": "Couchbase",
+        "love_dread_want": "Loved",
+        "Freq": 414,
+        "Perc": 0.1726
+      },
+      {
+        "sq_value": "Couchbase",
+        "love_dread_want": "Wanted",
+        "Freq": 1320,
+        "Perc": 0.5502
+      },
+      {
+        "sq_value": "DynamoDB",
+        "love_dread_want": "Dreaded",
+        "Freq": 2243,
+        "Perc": 0.2689
+      },
+      {
+        "sq_value": "DynamoDB",
+        "love_dread_want": "Loved",
+        "Freq": 2773,
+        "Perc": 0.3324
+      },
+      {
+        "sq_value": "DynamoDB",
+        "love_dread_want": "Wanted",
+        "Freq": 3326,
+        "Perc": 0.3987
+      },
+      {
+        "sq_value": "Elasticsearch",
+        "love_dread_want": "Dreaded",
+        "Freq": 3954,
+        "Perc": 0.2523
+      },
+      {
+        "sq_value": "Elasticsearch",
+        "love_dread_want": "Loved",
+        "Freq": 5193,
+        "Perc": 0.3314
+      },
+      {
+        "sq_value": "Elasticsearch",
+        "love_dread_want": "Wanted",
+        "Freq": 6523,
+        "Perc": 0.4163
+      },
+      {
+        "sq_value": "Firebase",
+        "love_dread_want": "Dreaded",
+        "Freq": 4883,
+        "Perc": 0.3057
+      },
+      {
+        "sq_value": "Firebase",
+        "love_dread_want": "Loved",
+        "Freq": 6258,
+        "Perc": 0.3918
+      },
+      {
+        "sq_value": "Firebase",
+        "love_dread_want": "Wanted",
+        "Freq": 4831,
+        "Perc": 0.3025
+      },
+      {
+        "sq_value": "IBM DB2",
+        "love_dread_want": "Dreaded",
+        "Freq": 1055,
+        "Perc": 0.5858
+      },
+      {
+        "sq_value": "IBM DB2",
+        "love_dread_want": "Loved",
+        "Freq": 347,
+        "Perc": 0.1927
+      },
+      {
+        "sq_value": "IBM DB2",
+        "love_dread_want": "Wanted",
+        "Freq": 399,
+        "Perc": 0.2215
+      },
+      {
+        "sq_value": "MariaDB",
+        "love_dread_want": "Dreaded",
+        "Freq": 5336,
+        "Perc": 0.393
+      },
+      {
+        "sq_value": "MariaDB",
+        "love_dread_want": "Loved",
+        "Freq": 6508,
+        "Perc": 0.4794
+      },
+      {
+        "sq_value": "MariaDB",
+        "love_dread_want": "Wanted",
+        "Freq": 1732,
+        "Perc": 0.1276
+      },
+      {
+        "sq_value": "Microsoft SQL Server",
+        "love_dread_want": "Dreaded",
+        "Freq": 8475,
+        "Perc": 0.4208
+      },
+      {
+        "sq_value": "Microsoft SQL Server",
+        "love_dread_want": "Loved",
+        "Freq": 10043,
+        "Perc": 0.4986
+      },
+      {
+        "sq_value": "Microsoft SQL Server",
+        "love_dread_want": "Wanted",
+        "Freq": 1624,
+        "Perc": 0.0806
+      },
+      {
+        "sq_value": "MongoDB",
+        "love_dread_want": "Dreaded",
+        "Freq": 7563,
+        "Perc": 0.2669
+      },
+      {
+        "sq_value": "MongoDB",
+        "love_dread_want": "Loved",
+        "Freq": 11508,
+        "Perc": 0.4061
+      },
+      {
+        "sq_value": "MongoDB",
+        "love_dread_want": "Wanted",
+        "Freq": 9270,
+        "Perc": 0.3271
+      },
+      {
+        "sq_value": "MySQL",
+        "love_dread_want": "Dreaded",
+        "Freq": 16778,
+        "Perc": 0.4407
+      },
+      {
+        "sq_value": "MySQL",
+        "love_dread_want": "Loved",
+        "Freq": 17742,
+        "Perc": 0.466
+      },
+      {
+        "sq_value": "MySQL",
+        "love_dread_want": "Wanted",
+        "Freq": 3551,
+        "Perc": 0.0933
+      },
+      {
+        "sq_value": "Oracle",
+        "love_dread_want": "Dreaded",
+        "Freq": 5613,
+        "Perc": 0.5396
+      },
+      {
+        "sq_value": "Oracle",
+        "love_dread_want": "Loved",
+        "Freq": 3050,
+        "Perc": 0.2932
+      },
+      {
+        "sq_value": "Oracle",
+        "love_dread_want": "Wanted",
+        "Freq": 1740,
+        "Perc": 0.1673
+      },
+      {
+        "sq_value": "PostgreSQL",
+        "love_dread_want": "Dreaded",
+        "Freq": 8221,
+        "Perc": 0.2309
+      },
+      {
+        "sq_value": "PostgreSQL",
+        "love_dread_want": "Loved",
+        "Freq": 19612,
+        "Perc": 0.5507
+      },
+      {
+        "sq_value": "PostgreSQL",
+        "love_dread_want": "Wanted",
+        "Freq": 7778,
+        "Perc": 0.2184
+      },
+      {
+        "sq_value": "Redis",
+        "love_dread_want": "Dreaded",
+        "Freq": 4150,
+        "Perc": 0.1936
+      },
+      {
+        "sq_value": "Redis",
+        "love_dread_want": "Loved",
+        "Freq": 10123,
+        "Perc": 0.4721
+      },
+      {
+        "sq_value": "Redis",
+        "love_dread_want": "Wanted",
+        "Freq": 7168,
+        "Perc": 0.3343
+      },
+      {
+        "sq_value": "SQLite",
+        "love_dread_want": "Dreaded",
+        "Freq": 10067,
+        "Perc": 0.3882
+      },
+      {
+        "sq_value": "SQLite",
+        "love_dread_want": "Loved",
+        "Freq": 12085,
+        "Perc": 0.466
+      },
+      {
+        "sq_value": "SQLite",
+        "love_dread_want": "Wanted",
+        "Freq": 3783,
+        "Perc": 0.1459
+      }
+    ]
+  },
+  "Platform": {
+    "qname": "Platform",
+    "qid": "QID263",
+    "question": "Which <b>cloud platforms<\/b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the platform and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "AWS",
+        "love_dread_want": "Dreaded",
+        "Freq": 9521,
+        "Perc": 0.2328
+      },
+      {
+        "sq_value": "AWS",
+        "love_dread_want": "Loved",
+        "Freq": 18994,
+        "Perc": 0.4644
+      },
+      {
+        "sq_value": "AWS",
+        "love_dread_want": "Wanted",
+        "Freq": 12386,
+        "Perc": 0.3028
+      },
+      {
+        "sq_value": "DigitalOcean",
+        "love_dread_want": "Dreaded",
+        "Freq": 3823,
+        "Perc": 0.2823
+      },
+      {
+        "sq_value": "DigitalOcean",
+        "love_dread_want": "Loved",
+        "Freq": 5493,
+        "Perc": 0.4057
+      },
+      {
+        "sq_value": "DigitalOcean",
+        "love_dread_want": "Wanted",
+        "Freq": 4225,
+        "Perc": 0.312
+      },
+      {
+        "sq_value": "Google Cloud Platform",
+        "love_dread_want": "Dreaded",
+        "Freq": 6587,
+        "Perc": 0.2533
+      },
+      {
+        "sq_value": "Google Cloud Platform",
+        "love_dread_want": "Loved",
+        "Freq": 9760,
+        "Perc": 0.3753
+      },
+      {
+        "sq_value": "Google Cloud Platform",
+        "love_dread_want": "Wanted",
+        "Freq": 9658,
+        "Perc": 0.3714
+      },
+      {
+        "sq_value": "Heroku",
+        "love_dread_want": "Dreaded",
+        "Freq": 6524,
+        "Perc": 0.407
+      },
+      {
+        "sq_value": "Heroku",
+        "love_dread_want": "Loved",
+        "Freq": 6100,
+        "Perc": 0.3805
+      },
+      {
+        "sq_value": "Heroku",
+        "love_dread_want": "Wanted",
+        "Freq": 3407,
+        "Perc": 0.2125
+      },
+      {
+        "sq_value": "IBM Cloud or Watson",
+        "love_dread_want": "Dreaded",
+        "Freq": 841,
+        "Perc": 0.263
+      },
+      {
+        "sq_value": "IBM Cloud or Watson",
+        "love_dread_want": "Loved",
+        "Freq": 500,
+        "Perc": 0.1563
+      },
+      {
+        "sq_value": "IBM Cloud or Watson",
+        "love_dread_want": "Wanted",
+        "Freq": 1857,
+        "Perc": 0.5807
+      },
+      {
+        "sq_value": "Microsoft Azure",
+        "love_dread_want": "Dreaded",
+        "Freq": 6589,
+        "Perc": 0.2605
+      },
+      {
+        "sq_value": "Microsoft Azure",
+        "love_dread_want": "Loved",
+        "Freq": 9627,
+        "Perc": 0.3807
+      },
+      {
+        "sq_value": "Microsoft Azure",
+        "love_dread_want": "Wanted",
+        "Freq": 9074,
+        "Perc": 0.3588
+      },
+      {
+        "sq_value": "Oracle Cloud Infrastructure",
+        "love_dread_want": "Dreaded",
+        "Freq": 567,
+        "Perc": 0.2268
+      },
+      {
+        "sq_value": "Oracle Cloud Infrastructure",
+        "love_dread_want": "Loved",
+        "Freq": 425,
+        "Perc": 0.17
+      },
+      {
+        "sq_value": "Oracle Cloud Infrastructure",
+        "love_dread_want": "Wanted",
+        "Freq": 1508,
+        "Perc": 0.6032
+      }
+    ]
+  },
+  "Webframe": {
+    "qname": "Webframe",
+    "qid": "QID264",
+    "question": "Which <strong>web frameworks <\/strong><span style=\"font-weight: bolder;\">and libraries<\/span> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "Angular",
+        "love_dread_want": "Dreaded",
+        "Freq": 6257,
+        "Perc": 0.3389
+      },
+      {
+        "sq_value": "Angular",
+        "love_dread_want": "Loved",
+        "Freq": 7933,
+        "Perc": 0.4297
+      },
+      {
+        "sq_value": "Angular",
+        "love_dread_want": "Wanted",
+        "Freq": 4272,
+        "Perc": 0.2314
+      },
+      {
+        "sq_value": "Angular.js",
+        "love_dread_want": "Dreaded",
+        "Freq": 5441,
+        "Perc": 0.5221
+      },
+      {
+        "sq_value": "Angular.js",
+        "love_dread_want": "Loved",
+        "Freq": 1650,
+        "Perc": 0.1583
+      },
+      {
+        "sq_value": "Angular.js",
+        "love_dread_want": "Wanted",
+        "Freq": 3330,
+        "Perc": 0.3195
+      },
+      {
+        "sq_value": "ASP.NET",
+        "love_dread_want": "Dreaded",
+        "Freq": 6170,
+        "Perc": 0.5602
+      },
+      {
+        "sq_value": "ASP.NET",
+        "love_dread_want": "Loved",
+        "Freq": 3532,
+        "Perc": 0.3207
+      },
+      {
+        "sq_value": "ASP.NET",
+        "love_dread_want": "Wanted",
+        "Freq": 1312,
+        "Perc": 0.1191
+      },
+      {
+        "sq_value": "ASP.NET Core ",
+        "love_dread_want": "Dreaded",
+        "Freq": 3180,
+        "Perc": 0.2274
+      },
+      {
+        "sq_value": "ASP.NET Core ",
+        "love_dread_want": "Loved",
+        "Freq": 8006,
+        "Perc": 0.5726
+      },
+      {
+        "sq_value": "ASP.NET Core ",
+        "love_dread_want": "Wanted",
+        "Freq": 2797,
+        "Perc": 0.2
+      },
+      {
+        "sq_value": "Django",
+        "love_dread_want": "Dreaded",
+        "Freq": 4116,
+        "Perc": 0.2876
+      },
+      {
+        "sq_value": "Django",
+        "love_dread_want": "Loved",
+        "Freq": 5099,
+        "Perc": 0.3563
+      },
+      {
+        "sq_value": "Django",
+        "love_dread_want": "Wanted",
+        "Freq": 5095,
+        "Perc": 0.356
+      },
+      {
+        "sq_value": "Drupal",
+        "love_dread_want": "Dreaded",
+        "Freq": 1101,
+        "Perc": 0.6026
+      },
+      {
+        "sq_value": "Drupal",
+        "love_dread_want": "Loved",
+        "Freq": 364,
+        "Perc": 0.1992
+      },
+      {
+        "sq_value": "Drupal",
+        "love_dread_want": "Wanted",
+        "Freq": 362,
+        "Perc": 0.1981
+      },
+      {
+        "sq_value": "Express",
+        "love_dread_want": "Dreaded",
+        "Freq": 5577,
+        "Perc": 0.3164
+      },
+      {
+        "sq_value": "Express",
+        "love_dread_want": "Loved",
+        "Freq": 9133,
+        "Perc": 0.5182
+      },
+      {
+        "sq_value": "Express",
+        "love_dread_want": "Wanted",
+        "Freq": 2915,
+        "Perc": 0.1654
+      },
+      {
+        "sq_value": "FastAPI",
+        "love_dread_want": "Dreaded",
+        "Freq": 715,
+        "Perc": 0.1441
+      },
+      {
+        "sq_value": "FastAPI",
+        "love_dread_want": "Loved",
+        "Freq": 1679,
+        "Perc": 0.3384
+      },
+      {
+        "sq_value": "FastAPI",
+        "love_dread_want": "Wanted",
+        "Freq": 2567,
+        "Perc": 0.5174
+      },
+      {
+        "sq_value": "Flask",
+        "love_dread_want": "Dreaded",
+        "Freq": 4862,
+        "Perc": 0.3691
+      },
+      {
+        "sq_value": "Flask",
+        "love_dread_want": "Loved",
+        "Freq": 5095,
+        "Perc": 0.3868
+      },
+      {
+        "sq_value": "Flask",
+        "love_dread_want": "Wanted",
+        "Freq": 3215,
+        "Perc": 0.2441
+      },
+      {
+        "sq_value": "Gatsby",
+        "love_dread_want": "Dreaded",
+        "Freq": 1261,
+        "Perc": 0.3025
+      },
+      {
+        "sq_value": "Gatsby",
+        "love_dread_want": "Loved",
+        "Freq": 1193,
+        "Perc": 0.2862
+      },
+      {
+        "sq_value": "Gatsby",
+        "love_dread_want": "Wanted",
+        "Freq": 1714,
+        "Perc": 0.4112
+      },
+      {
+        "sq_value": "jQuery",
+        "love_dread_want": "Dreaded",
+        "Freq": 13732,
+        "Perc": 0.6011
+      },
+      {
+        "sq_value": "jQuery",
+        "love_dread_want": "Loved",
+        "Freq": 7523,
+        "Perc": 0.3293
+      },
+      {
+        "sq_value": "jQuery",
+        "love_dread_want": "Wanted",
+        "Freq": 1590,
+        "Perc": 0.0696
+      },
+      {
+        "sq_value": "Laravel",
+        "love_dread_want": "Dreaded",
+        "Freq": 2885,
+        "Perc": 0.369
+      },
+      {
+        "sq_value": "Laravel",
+        "love_dread_want": "Loved",
+        "Freq": 3375,
+        "Perc": 0.4316
+      },
+      {
+        "sq_value": "Laravel",
+        "love_dread_want": "Wanted",
+        "Freq": 1559,
+        "Perc": 0.1994
+      },
+      {
+        "sq_value": "React.js",
+        "love_dread_want": "Dreaded",
+        "Freq": 7617,
+        "Perc": 0.2187
+      },
+      {
+        "sq_value": "React.js",
+        "love_dread_want": "Loved",
+        "Freq": 17162,
+        "Perc": 0.4929
+      },
+      {
+        "sq_value": "React.js",
+        "love_dread_want": "Wanted",
+        "Freq": 10042,
+        "Perc": 0.2884
+      },
+      {
+        "sq_value": "Ruby on Rails",
+        "love_dread_want": "Dreaded",
+        "Freq": 1837,
+        "Perc": 0.2901
+      },
+      {
+        "sq_value": "Ruby on Rails",
+        "love_dread_want": "Loved",
+        "Freq": 2514,
+        "Perc": 0.397
+      },
+      {
+        "sq_value": "Ruby on Rails",
+        "love_dread_want": "Wanted",
+        "Freq": 1981,
+        "Perc": 0.3129
+      },
+      {
+        "sq_value": "Spring",
+        "love_dread_want": "Dreaded",
+        "Freq": 3600,
+        "Perc": 0.3229
+      },
+      {
+        "sq_value": "Spring",
+        "love_dread_want": "Loved",
+        "Freq": 5383,
+        "Perc": 0.4829
+      },
+      {
+        "sq_value": "Spring",
+        "love_dread_want": "Wanted",
+        "Freq": 2165,
+        "Perc": 0.1942
+      },
+      {
+        "sq_value": "Svelte",
+        "love_dread_want": "Dreaded",
+        "Freq": 482,
+        "Perc": 0.0824
+      },
+      {
+        "sq_value": "Svelte",
+        "love_dread_want": "Loved",
+        "Freq": 1218,
+        "Perc": 0.2082
+      },
+      {
+        "sq_value": "Svelte",
+        "love_dread_want": "Wanted",
+        "Freq": 4151,
+        "Perc": 0.7095
+      },
+      {
+        "sq_value": "Symfony",
+        "love_dread_want": "Dreaded",
+        "Freq": 1247,
+        "Perc": 0.4033
+      },
+      {
+        "sq_value": "Symfony",
+        "love_dread_want": "Loved",
+        "Freq": 1139,
+        "Perc": 0.3684
+      },
+      {
+        "sq_value": "Symfony",
+        "love_dread_want": "Wanted",
+        "Freq": 706,
+        "Perc": 0.2283
+      },
+      {
+        "sq_value": "Vue.js",
+        "love_dread_want": "Dreaded",
+        "Freq": 4156,
+        "Perc": 0.2023
+      },
+      {
+        "sq_value": "Vue.js",
+        "love_dread_want": "Loved",
+        "Freq": 7536,
+        "Perc": 0.3668
+      },
+      {
+        "sq_value": "Vue.js",
+        "love_dread_want": "Wanted",
+        "Freq": 8854,
+        "Perc": 0.4309
+      }
+    ]
+  },
+  "MiscTech": {
+    "qname": "MiscTech",
+    "qid": "QID265",
+    "question": "Which <b>other frameworks and libraries<\/b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": ".NET Core / .NET 5",
+        "love_dread_want": "Dreaded",
+        "Freq": 4090,
+        "Perc": 0.2176
+      },
+      {
+        "sq_value": ".NET Core / .NET 5",
+        "love_dread_want": "Loved",
+        "Freq": 10931,
+        "Perc": 0.5815
+      },
+      {
+        "sq_value": ".NET Core / .NET 5",
+        "love_dread_want": "Wanted",
+        "Freq": 3776,
+        "Perc": 0.2009
+      },
+      {
+        "sq_value": ".NET Framework",
+        "love_dread_want": "Dreaded",
+        "Freq": 9398,
+        "Perc": 0.5188
+      },
+      {
+        "sq_value": ".NET Framework",
+        "love_dread_want": "Loved",
+        "Freq": 6867,
+        "Perc": 0.3791
+      },
+      {
+        "sq_value": ".NET Framework",
+        "love_dread_want": "Wanted",
+        "Freq": 1851,
+        "Perc": 0.1022
+      },
+      {
+        "sq_value": "Apache Spark",
+        "love_dread_want": "Dreaded",
+        "Freq": 1133,
+        "Perc": 0.2073
+      },
+      {
+        "sq_value": "Apache Spark",
+        "love_dread_want": "Loved",
+        "Freq": 1634,
+        "Perc": 0.299
+      },
+      {
+        "sq_value": "Apache Spark",
+        "love_dread_want": "Wanted",
+        "Freq": 2698,
+        "Perc": 0.4937
+      },
+      {
+        "sq_value": "Cordova",
+        "love_dread_want": "Dreaded",
+        "Freq": 2337,
+        "Perc": 0.5668
+      },
+      {
+        "sq_value": "Cordova",
+        "love_dread_want": "Loved",
+        "Freq": 1091,
+        "Perc": 0.2646
+      },
+      {
+        "sq_value": "Cordova",
+        "love_dread_want": "Wanted",
+        "Freq": 695,
+        "Perc": 0.1686
+      },
+      {
+        "sq_value": "Flutter",
+        "love_dread_want": "Dreaded",
+        "Freq": 2040,
+        "Perc": 0.1383
+      },
+      {
+        "sq_value": "Flutter",
+        "love_dread_want": "Loved",
+        "Freq": 4392,
+        "Perc": 0.2977
+      },
+      {
+        "sq_value": "Flutter",
+        "love_dread_want": "Wanted",
+        "Freq": 8320,
+        "Perc": 0.564
+      },
+      {
+        "sq_value": "Hadoop",
+        "love_dread_want": "Dreaded",
+        "Freq": 1152,
+        "Perc": 0.2411
+      },
+      {
+        "sq_value": "Hadoop",
+        "love_dread_want": "Loved",
+        "Freq": 953,
+        "Perc": 0.1995
+      },
+      {
+        "sq_value": "Hadoop",
+        "love_dread_want": "Wanted",
+        "Freq": 2673,
+        "Perc": 0.5594
+      },
+      {
+        "sq_value": "Keras",
+        "love_dread_want": "Dreaded",
+        "Freq": 1688,
+        "Perc": 0.2264
+      },
+      {
+        "sq_value": "Keras",
+        "love_dread_want": "Loved",
+        "Freq": 3124,
+        "Perc": 0.419
+      },
+      {
+        "sq_value": "Keras",
+        "love_dread_want": "Wanted",
+        "Freq": 2644,
+        "Perc": 0.3546
+      },
+      {
+        "sq_value": "NumPy",
+        "love_dread_want": "Dreaded",
+        "Freq": 5357,
+        "Perc": 0.2662
+      },
+      {
+        "sq_value": "NumPy",
+        "love_dread_want": "Loved",
+        "Freq": 10699,
+        "Perc": 0.5317
+      },
+      {
+        "sq_value": "NumPy",
+        "love_dread_want": "Wanted",
+        "Freq": 4066,
+        "Perc": 0.2021
+      },
+      {
+        "sq_value": "Pandas",
+        "love_dread_want": "Dreaded",
+        "Freq": 4409,
+        "Perc": 0.2598
+      },
+      {
+        "sq_value": "Pandas",
+        "love_dread_want": "Loved",
+        "Freq": 8932,
+        "Perc": 0.5264
+      },
+      {
+        "sq_value": "Pandas",
+        "love_dread_want": "Wanted",
+        "Freq": 3627,
+        "Perc": 0.2138
+      },
+      {
+        "sq_value": "Qt",
+        "love_dread_want": "Dreaded",
+        "Freq": 2567,
+        "Perc": 0.3733
+      },
+      {
+        "sq_value": "Qt",
+        "love_dread_want": "Loved",
+        "Freq": 2137,
+        "Perc": 0.3108
+      },
+      {
+        "sq_value": "Qt",
+        "love_dread_want": "Wanted",
+        "Freq": 2172,
+        "Perc": 0.3159
+      },
+      {
+        "sq_value": "React Native",
+        "love_dread_want": "Dreaded",
+        "Freq": 2881,
+        "Perc": 0.1826
+      },
+      {
+        "sq_value": "React Native",
+        "love_dread_want": "Loved",
+        "Freq": 4005,
+        "Perc": 0.2538
+      },
+      {
+        "sq_value": "React Native",
+        "love_dread_want": "Wanted",
+        "Freq": 8892,
+        "Perc": 0.5636
+      },
+      {
+        "sq_value": "TensorFlow",
+        "love_dread_want": "Dreaded",
+        "Freq": 2980,
+        "Perc": 0.1623
+      },
+      {
+        "sq_value": "TensorFlow",
+        "love_dread_want": "Loved",
+        "Freq": 4867,
+        "Perc": 0.2651
+      },
+      {
+        "sq_value": "TensorFlow",
+        "love_dread_want": "Wanted",
+        "Freq": 10513,
+        "Perc": 0.5726
+      },
+      {
+        "sq_value": "Torch/PyTorch",
+        "love_dread_want": "Dreaded",
+        "Freq": 1493,
+        "Perc": 0.136
+      },
+      {
+        "sq_value": "Torch/PyTorch",
+        "love_dread_want": "Loved",
+        "Freq": 3188,
+        "Perc": 0.2903
+      },
+      {
+        "sq_value": "Torch/PyTorch",
+        "love_dread_want": "Wanted",
+        "Freq": 6300,
+        "Perc": 0.5737
+      }
+    ]
+  },
+  "ToolsTech": {
+    "qname": "ToolsTech",
+    "qid": "QID275",
+    "question": "Which <strong>tools<\/strong> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the technology and want to continue to do so, please check both boxes in that row.)",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "Ansible",
+        "love_dread_want": "Dreaded",
+        "Freq": 2409,
+        "Perc": 0.288
+      },
+      {
+        "sq_value": "Ansible",
+        "love_dread_want": "Loved",
+        "Freq": 3075,
+        "Perc": 0.3676
+      },
+      {
+        "sq_value": "Ansible",
+        "love_dread_want": "Wanted",
+        "Freq": 2882,
+        "Perc": 0.3445
+      },
+      {
+        "sq_value": "Chef",
+        "love_dread_want": "Dreaded",
+        "Freq": 694,
+        "Perc": 0.3684
+      },
+      {
+        "sq_value": "Chef",
+        "love_dread_want": "Loved",
+        "Freq": 261,
+        "Perc": 0.1385
+      },
+      {
+        "sq_value": "Chef",
+        "love_dread_want": "Wanted",
+        "Freq": 929,
+        "Perc": 0.4931
+      },
+      {
+        "sq_value": "Deno",
+        "love_dread_want": "Dreaded",
+        "Freq": 316,
+        "Perc": 0.0611
+      },
+      {
+        "sq_value": "Deno",
+        "love_dread_want": "Loved",
+        "Freq": 692,
+        "Perc": 0.1339
+      },
+      {
+        "sq_value": "Deno",
+        "love_dread_want": "Wanted",
+        "Freq": 4160,
+        "Perc": 0.805
+      },
+      {
+        "sq_value": "Docker",
+        "love_dread_want": "Dreaded",
+        "Freq": 8181,
+        "Perc": 0.1756
+      },
+      {
+        "sq_value": "Docker",
+        "love_dread_want": "Loved",
+        "Freq": 26740,
+        "Perc": 0.5738
+      },
+      {
+        "sq_value": "Docker",
+        "love_dread_want": "Wanted",
+        "Freq": 11681,
+        "Perc": 0.2507
+      },
+      {
+        "sq_value": "Flow",
+        "love_dread_want": "Dreaded",
+        "Freq": 441,
+        "Perc": 0.2898
+      },
+      {
+        "sq_value": "Flow",
+        "love_dread_want": "Loved",
+        "Freq": 464,
+        "Perc": 0.3049
+      },
+      {
+        "sq_value": "Flow",
+        "love_dread_want": "Wanted",
+        "Freq": 617,
+        "Perc": 0.4054
+      },
+      {
+        "sq_value": "Git",
+        "love_dread_want": "Dreaded",
+        "Freq": 10025,
+        "Perc": 0.1453
+      },
+      {
+        "sq_value": "Git",
+        "love_dread_want": "Loved",
+        "Freq": 56752,
+        "Perc": 0.8227
+      },
+      {
+        "sq_value": "Git",
+        "love_dread_want": "Wanted",
+        "Freq": 2206,
+        "Perc": 0.032
+      },
+      {
+        "sq_value": "Kubernetes",
+        "love_dread_want": "Dreaded",
+        "Freq": 3265,
+        "Perc": 0.1276
+      },
+      {
+        "sq_value": "Kubernetes",
+        "love_dread_want": "Loved",
+        "Freq": 8618,
+        "Perc": 0.3369
+      },
+      {
+        "sq_value": "Kubernetes",
+        "love_dread_want": "Wanted",
+        "Freq": 13696,
+        "Perc": 0.5354
+      },
+      {
+        "sq_value": "Pulumi",
+        "love_dread_want": "Dreaded",
+        "Freq": 130,
+        "Perc": 0.1226
+      },
+      {
+        "sq_value": "Pulumi",
+        "love_dread_want": "Loved",
+        "Freq": 233,
+        "Perc": 0.2198
+      },
+      {
+        "sq_value": "Pulumi",
+        "love_dread_want": "Wanted",
+        "Freq": 697,
+        "Perc": 0.6575
+      },
+      {
+        "sq_value": "Puppet",
+        "love_dread_want": "Dreaded",
+        "Freq": 829,
+        "Perc": 0.3578
+      },
+      {
+        "sq_value": "Puppet",
+        "love_dread_want": "Loved",
+        "Freq": 453,
+        "Perc": 0.1955
+      },
+      {
+        "sq_value": "Puppet",
+        "love_dread_want": "Wanted",
+        "Freq": 1035,
+        "Perc": 0.4467
+      },
+      {
+        "sq_value": "Terraform",
+        "love_dread_want": "Dreaded",
+        "Freq": 1660,
+        "Perc": 0.1763
+      },
+      {
+        "sq_value": "Terraform",
+        "love_dread_want": "Loved",
+        "Freq": 3662,
+        "Perc": 0.3889
+      },
+      {
+        "sq_value": "Terraform",
+        "love_dread_want": "Wanted",
+        "Freq": 4094,
+        "Perc": 0.4348
+      },
+      {
+        "sq_value": "Unity 3D",
+        "love_dread_want": "Dreaded",
+        "Freq": 3219,
+        "Perc": 0.2652
+      },
+      {
+        "sq_value": "Unity 3D",
+        "love_dread_want": "Loved",
+        "Freq": 3830,
+        "Perc": 0.3155
+      },
+      {
+        "sq_value": "Unity 3D",
+        "love_dread_want": "Wanted",
+        "Freq": 5090,
+        "Perc": 0.4193
+      },
+      {
+        "sq_value": "Unreal Engine",
+        "love_dread_want": "Dreaded",
+        "Freq": 1102,
+        "Perc": 0.1545
+      },
+      {
+        "sq_value": "Unreal Engine",
+        "love_dread_want": "Loved",
+        "Freq": 1188,
+        "Perc": 0.1665
+      },
+      {
+        "sq_value": "Unreal Engine",
+        "love_dread_want": "Wanted",
+        "Freq": 4844,
+        "Perc": 0.679
+      },
+      {
+        "sq_value": "Xamarin",
+        "love_dread_want": "Dreaded",
+        "Freq": 1576,
+        "Perc": 0.3294
+      },
+      {
+        "sq_value": "Xamarin",
+        "love_dread_want": "Loved",
+        "Freq": 1208,
+        "Perc": 0.2525
+      },
+      {
+        "sq_value": "Xamarin",
+        "love_dread_want": "Wanted",
+        "Freq": 2001,
+        "Perc": 0.4182
+      },
+      {
+        "sq_value": "Yarn",
+        "love_dread_want": "Dreaded",
+        "Freq": 4574,
+        "Perc": 0.3155
+      },
+      {
+        "sq_value": "Yarn",
+        "love_dread_want": "Loved",
+        "Freq": 8121,
+        "Perc": 0.5601
+      },
+      {
+        "sq_value": "Yarn",
+        "love_dread_want": "Wanted",
+        "Freq": 1804,
+        "Perc": 0.1244
+      }
+    ]
+  },
+  "NEWCollabTools": {
+    "qname": "NEWCollabTools",
+    "qid": "QID274",
+    "question": "Which <strong>development environments<\/strong> did you use regularly over the past year, and which do you want to work with over the next year? Please check all that apply.",
+    "total_responses": null,
+    "type": "Matrix",
+    "data": [
+      {
+        "sq_value": "Android Studio",
+        "love_dread_want": "Dreaded",
+        "Freq": 8822,
+        "Perc": 0.4268
+      },
+      {
+        "sq_value": "Android Studio",
+        "love_dread_want": "Loved",
+        "Freq": 8939,
+        "Perc": 0.4325
+      },
+      {
+        "sq_value": "Android Studio",
+        "love_dread_want": "Wanted",
+        "Freq": 2908,
+        "Perc": 0.1407
+      },
+      {
+        "sq_value": "Atom",
+        "love_dread_want": "Dreaded",
+        "Freq": 6927,
+        "Perc": 0.6225
+      },
+      {
+        "sq_value": "Atom",
+        "love_dread_want": "Loved",
+        "Freq": 3411,
+        "Perc": 0.3065
+      },
+      {
+        "sq_value": "Atom",
+        "love_dread_want": "Wanted",
+        "Freq": 790,
+        "Perc": 0.071
+      },
+      {
+        "sq_value": "Eclipse",
+        "love_dread_want": "Dreaded",
+        "Freq": 8782,
+        "Perc": 0.6569
+      },
+      {
+        "sq_value": "Eclipse",
+        "love_dread_want": "Loved",
+        "Freq": 3877,
+        "Perc": 0.29
+      },
+      {
+        "sq_value": "Eclipse",
+        "love_dread_want": "Wanted",
+        "Freq": 709,
+        "Perc": 0.053
+      },
+      {
+        "sq_value": "Emacs",
+        "love_dread_want": "Dreaded",
+        "Freq": 1317,
+        "Perc": 0.2621
+      },
+      {
+        "sq_value": "Emacs",
+        "love_dread_want": "Loved",
+        "Freq": 2926,
+        "Perc": 0.5824
+      },
+      {
+        "sq_value": "Emacs",
+        "love_dread_want": "Wanted",
+        "Freq": 781,
+        "Perc": 0.1555
+      },
+      {
+        "sq_value": "IntelliJ",
+        "love_dread_want": "Dreaded",
+        "Freq": 7414,
+        "Perc": 0.2977
+      },
+      {
+        "sq_value": "IntelliJ",
+        "love_dread_want": "Loved",
+        "Freq": 15542,
+        "Perc": 0.624
+      },
+      {
+        "sq_value": "IntelliJ",
+        "love_dread_want": "Wanted",
+        "Freq": 1950,
+        "Perc": 0.0783
+      },
+      {
+        "sq_value": "IPython/Jupyter",
+        "love_dread_want": "Dreaded",
+        "Freq": 3478,
+        "Perc": 0.3072
+      },
+      {
+        "sq_value": "IPython/Jupyter",
+        "love_dread_want": "Loved",
+        "Freq": 6583,
+        "Perc": 0.5815
+      },
+      {
+        "sq_value": "IPython/Jupyter",
+        "love_dread_want": "Wanted",
+        "Freq": 1259,
+        "Perc": 0.1112
+      },
+      {
+        "sq_value": "Neovim",
+        "love_dread_want": "Dreaded",
+        "Freq": 701,
+        "Perc": 0.141
+      },
+      {
+        "sq_value": "Neovim",
+        "love_dread_want": "Loved",
+        "Freq": 3310,
+        "Perc": 0.666
+      },
+      {
+        "sq_value": "Neovim",
+        "love_dread_want": "Wanted",
+        "Freq": 959,
+        "Perc": 0.193
+      },
+      {
+        "sq_value": "NetBeans",
+        "love_dread_want": "Dreaded",
+        "Freq": 4432,
+        "Perc": 0.7262
+      },
+      {
+        "sq_value": "NetBeans",
+        "love_dread_want": "Loved",
+        "Freq": 1272,
+        "Perc": 0.2084
+      },
+      {
+        "sq_value": "NetBeans",
+        "love_dread_want": "Wanted",
+        "Freq": 399,
+        "Perc": 0.0654
+      },
+      {
+        "sq_value": "Notepad++",
+        "love_dread_want": "Dreaded",
+        "Freq": 10381,
+        "Perc": 0.4302
+      },
+      {
+        "sq_value": "Notepad++",
+        "love_dread_want": "Loved",
+        "Freq": 13365,
+        "Perc": 0.5538
+      },
+      {
+        "sq_value": "Notepad++",
+        "love_dread_want": "Wanted",
+        "Freq": 386,
+        "Perc": 0.016
+      },
+      {
+        "sq_value": "PHPStorm",
+        "love_dread_want": "Dreaded",
+        "Freq": 2576,
+        "Perc": 0.3903
+      },
+      {
+        "sq_value": "PHPStorm",
+        "love_dread_want": "Loved",
+        "Freq": 3400,
+        "Perc": 0.5152
+      },
+      {
+        "sq_value": "PHPStorm",
+        "love_dread_want": "Wanted",
+        "Freq": 624,
+        "Perc": 0.0945
+      },
+      {
+        "sq_value": "PyCharm",
+        "love_dread_want": "Dreaded",
+        "Freq": 5994,
+        "Perc": 0.3484
+      },
+      {
+        "sq_value": "PyCharm",
+        "love_dread_want": "Loved",
+        "Freq": 9396,
+        "Perc": 0.5462
+      },
+      {
+        "sq_value": "PyCharm",
+        "love_dread_want": "Wanted",
+        "Freq": 1814,
+        "Perc": 0.1054
+      },
+      {
+        "sq_value": "Rider",
+        "love_dread_want": "Dreaded",
+        "Freq": 923,
+        "Perc": 0.2245
+      },
+      {
+        "sq_value": "Rider",
+        "love_dread_want": "Loved",
+        "Freq": 2276,
+        "Perc": 0.5535
+      },
+      {
+        "sq_value": "Rider",
+        "love_dread_want": "Wanted",
+        "Freq": 913,
+        "Perc": 0.222
+      },
+      {
+        "sq_value": "RStudio",
+        "love_dread_want": "Dreaded",
+        "Freq": 1576,
+        "Perc": 0.4283
+      },
+      {
+        "sq_value": "RStudio",
+        "love_dread_want": "Loved",
+        "Freq": 1543,
+        "Perc": 0.4193
+      },
+      {
+        "sq_value": "RStudio",
+        "love_dread_want": "Wanted",
+        "Freq": 561,
+        "Perc": 0.1524
+      },
+      {
+        "sq_value": "RubyMine",
+        "love_dread_want": "Dreaded",
+        "Freq": 486,
+        "Perc": 0.3197
+      },
+      {
+        "sq_value": "RubyMine",
+        "love_dread_want": "Loved",
+        "Freq": 705,
+        "Perc": 0.4638
+      },
+      {
+        "sq_value": "RubyMine",
+        "love_dread_want": "Wanted",
+        "Freq": 329,
+        "Perc": 0.2164
+      },
+      {
+        "sq_value": "Sublime Text",
+        "love_dread_want": "Dreaded",
+        "Freq": 7937,
+        "Perc": 0.463
+      },
+      {
+        "sq_value": "Sublime Text",
+        "love_dread_want": "Loved",
+        "Freq": 8398,
+        "Perc": 0.4899
+      },
+      {
+        "sq_value": "Sublime Text",
+        "love_dread_want": "Wanted",
+        "Freq": 808,
+        "Perc": 0.0471
+      },
+      {
+        "sq_value": "TextMate",
+        "love_dread_want": "Dreaded",
+        "Freq": 372,
+        "Perc": 0.4721
+      },
+      {
+        "sq_value": "TextMate",
+        "love_dread_want": "Loved",
+        "Freq": 291,
+        "Perc": 0.3693
+      },
+      {
+        "sq_value": "TextMate",
+        "love_dread_want": "Wanted",
+        "Freq": 125,
+        "Perc": 0.1586
+      },
+      {
+        "sq_value": "Vim",
+        "love_dread_want": "Dreaded",
+        "Freq": 5847,
+        "Perc": 0.2755
+      },
+      {
+        "sq_value": "Vim",
+        "love_dread_want": "Loved",
+        "Freq": 13491,
+        "Perc": 0.6356
+      },
+      {
+        "sq_value": "Vim",
+        "love_dread_want": "Wanted",
+        "Freq": 1886,
+        "Perc": 0.0889
+      },
+      {
+        "sq_value": "Visual Studio",
+        "love_dread_want": "Dreaded",
+        "Freq": 10560,
+        "Perc": 0.3776
+      },
+      {
+        "sq_value": "Visual Studio",
+        "love_dread_want": "Loved",
+        "Freq": 15863,
+        "Perc": 0.5672
+      },
+      {
+        "sq_value": "Visual Studio",
+        "love_dread_want": "Wanted",
+        "Freq": 1542,
+        "Perc": 0.0551
+      },
+      {
+        "sq_value": "Visual Studio Code",
+        "love_dread_want": "Dreaded",
+        "Freq": 11743,
+        "Perc": 0.1978
+      },
+      {
+        "sq_value": "Visual Studio Code",
+        "love_dread_want": "Loved",
+        "Freq": 45046,
+        "Perc": 0.7587
+      },
+      {
+        "sq_value": "Visual Studio Code",
+        "love_dread_want": "Wanted",
+        "Freq": 2581,
+        "Perc": 0.0435
+      },
+      {
+        "sq_value": "Webstorm",
+        "love_dread_want": "Dreaded",
+        "Freq": 2304,
+        "Perc": 0.3045
+      },
+      {
+        "sq_value": "Webstorm",
+        "love_dread_want": "Loved",
+        "Freq": 4127,
+        "Perc": 0.5455
+      },
+      {
+        "sq_value": "Webstorm",
+        "love_dread_want": "Wanted",
+        "Freq": 1135,
+        "Perc": 0.15
+      },
+      {
+        "sq_value": "Xcode",
+        "love_dread_want": "Dreaded",
+        "Freq": 4215,
+        "Perc": 0.3593
+      },
+      {
+        "sq_value": "Xcode",
+        "love_dread_want": "Loved",
+        "Freq": 4637,
+        "Perc": 0.3953
+      },
+      {
+        "sq_value": "Xcode",
+        "love_dread_want": "Wanted",
+        "Freq": 2879,
+        "Perc": 0.2454
+      }
+    ]
+  }
+}

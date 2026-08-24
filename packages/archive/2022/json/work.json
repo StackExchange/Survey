@@ -1,0 +1,1473 @@
+{
+  "Employment": {
+    "qid": "QID296",
+    "qname": "Employment",
+    "question": "Which of the following best describes your current employment status?",
+    "datasets": {
+      "Employment": {
+        "name": "All Respondents",
+        "total_respondents": 45454,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 26289,
+            "percent": 0.6834
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 6146,
+            "percent": 0.1598
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 5636,
+            "percent": 0.1465
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 2349,
+            "percent": 0.0611
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 2035,
+            "percent": 0.0529
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 1784,
+            "percent": 0.0464
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 678,
+            "percent": 0.0176
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 360,
+            "percent": 0.0094
+          },
+          {
+            "response": "Retired",
+            "frequency": 177,
+            "percent": 0.0046
+          }
+        ]
+      },
+      "Employment_prof": {
+        "name": "Professional Developers",
+        "total_respondents": 34069,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 23248,
+            "percent": 0.8047
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 4714,
+            "percent": 0.1632
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 2145,
+            "percent": 0.0742
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 1799,
+            "percent": 0.0623
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 1224,
+            "percent": 0.0424
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 670,
+            "percent": 0.0232
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 138,
+            "percent": 0.0048
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 80,
+            "percent": 0.0028
+          },
+          {
+            "response": "Retired",
+            "frequency": 51,
+            "percent": 0.0018
+          }
+        ]
+      }
+    }
+  },
+  "EmploymentGeo": {
+    "qid": "QID296",
+    "qname": "Employment",
+    "question": "Which of the following best describes your current employment status?",
+    "datasets": {
+      "United States": {
+        "name": "United States",
+        "total_respondents": 7669,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 5213,
+            "percent": 0.6797
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 870,
+            "percent": 0.1134
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 659,
+            "percent": 0.0859
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 232,
+            "percent": 0.0303
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 228,
+            "percent": 0.0297
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 192,
+            "percent": 0.025
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 135,
+            "percent": 0.0176
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 74,
+            "percent": 0.0096
+          },
+          {
+            "response": "Retired",
+            "frequency": 66,
+            "percent": 0.0086
+          }
+        ]
+      },
+      "India": {
+        "name": "India",
+        "total_respondents": 4243,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 2416,
+            "percent": 0.5694
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 713,
+            "percent": 0.168
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 402,
+            "percent": 0.0947
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 262,
+            "percent": 0.0617
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 224,
+            "percent": 0.0528
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 123,
+            "percent": 0.029
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 56,
+            "percent": 0.0132
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 45,
+            "percent": 0.0106
+          },
+          {
+            "response": "Retired",
+            "frequency": 2,
+            "percent": 0.0005
+          }
+        ]
+      },
+      "Germany": {
+        "name": "Germany",
+        "total_respondents": 3546,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 1971,
+            "percent": 0.5558
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 575,
+            "percent": 0.1622
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 355,
+            "percent": 0.1001
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 349,
+            "percent": 0.0984
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 184,
+            "percent": 0.0519
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 48,
+            "percent": 0.0135
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 34,
+            "percent": 0.0096
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 24,
+            "percent": 0.0068
+          },
+          {
+            "response": "Retired",
+            "frequency": 6,
+            "percent": 0.0017
+          }
+        ]
+      },
+      "United Kingdom": {
+        "name": "United Kingdom",
+        "total_respondents": 2497,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 1710,
+            "percent": 0.6848
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 321,
+            "percent": 0.1286
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 243,
+            "percent": 0.0973
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 71,
+            "percent": 0.0284
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 45,
+            "percent": 0.018
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 34,
+            "percent": 0.0136
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 31,
+            "percent": 0.0124
+          },
+          {
+            "response": "Retired",
+            "frequency": 25,
+            "percent": 0.01
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 17,
+            "percent": 0.0068
+          }
+        ]
+      },
+      "Canada": {
+        "name": "Canada",
+        "total_respondents": 1462,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Employed, full-time",
+            "frequency": 894,
+            "percent": 0.6115
+          },
+          {
+            "response": "Student, full-time",
+            "frequency": 213,
+            "percent": 0.1457
+          },
+          {
+            "response": "Independent contractor, freelancer, or self-employed",
+            "frequency": 181,
+            "percent": 0.1238
+          },
+          {
+            "response": "Employed, part-time",
+            "frequency": 56,
+            "percent": 0.0383
+          },
+          {
+            "response": "Not employed, but looking for work",
+            "frequency": 41,
+            "percent": 0.028
+          },
+          {
+            "response": "Student, part-time",
+            "frequency": 39,
+            "percent": 0.0267
+          },
+          {
+            "response": "Not employed, and not looking for work",
+            "frequency": 19,
+            "percent": 0.013
+          },
+          {
+            "response": "I prefer not to say",
+            "frequency": 12,
+            "percent": 0.0082
+          },
+          {
+            "response": "Retired",
+            "frequency": 7,
+            "percent": 0.0048
+          }
+        ]
+      }
+    }
+  },
+  "RemoteWork": {
+    "qid": "QID308",
+    "qname": "RemoteWork",
+    "question": "Which best describes your current work situation?",
+    "datasets": {
+      "RemoteWork": {
+        "name": "All Respondents",
+        "total_respondents": 31493,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Fully remote",
+            "frequency": 13464,
+            "percent": 0.4275
+          },
+          {
+            "response": "Hybrid (some remote, some in-person)",
+            "frequency": 13365,
+            "percent": 0.4244
+          },
+          {
+            "response": "Full in-person",
+            "frequency": 4664,
+            "percent": 0.1481
+          }
+        ]
+      }
+    }
+  },
+  "CodingActivities": {
+    "qid": "QID297",
+    "qname": "CodingActivities",
+    "question": "Which of the following best describes the code you write outside of work? Select all that apply.",
+    "datasets": {
+      "CodingActivities": {
+        "name": "All Respondents",
+        "total_respondents": 31463,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Hobby",
+            "frequency": 23434,
+            "percent": 0.7448
+          },
+          {
+            "response": "Contribute to open-source projects",
+            "frequency": 9047,
+            "percent": 0.2875
+          },
+          {
+            "response": "Freelance/contract work",
+            "frequency": 7097,
+            "percent": 0.2256
+          },
+          {
+            "response": "School or academic work",
+            "frequency": 4603,
+            "percent": 0.1463
+          },
+          {
+            "response": "Bootstrapping a business",
+            "frequency": 4429,
+            "percent": 0.1408
+          },
+          {
+            "response": "I don’t code outside of work",
+            "frequency": 3593,
+            "percent": 0.1142
+          },
+          {
+            "response": "Other (please specify):",
+            "frequency": 1090,
+            "percent": 0.0346
+          }
+        ]
+      }
+    }
+  },
+  "OrgSize": {
+    "qid": "QID29",
+    "qname": "OrgSize",
+    "question": "Approximately how many people are employed by the company or organization you currently work for? ",
+    "datasets": {
+      "OrgSize": {
+        "name": "All Respondents",
+        "total_respondents": 24894,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Just me - I am a freelancer, sole proprietor, etc.",
+            "frequency": 1293,
+            "percent": 0.0519
+          },
+          {
+            "response": "2 to 9 employees",
+            "frequency": 2442,
+            "percent": 0.0981
+          },
+          {
+            "response": "10 to 19 employees",
+            "frequency": 2229,
+            "percent": 0.0895
+          },
+          {
+            "response": "20 to 99 employees",
+            "frequency": 5275,
+            "percent": 0.2119
+          },
+          {
+            "response": "100 to 499 employees",
+            "frequency": 4537,
+            "percent": 0.1823
+          },
+          {
+            "response": "500 to 999 employees",
+            "frequency": 1754,
+            "percent": 0.0705
+          },
+          {
+            "response": "1,000 to 4,999 employees",
+            "frequency": 2686,
+            "percent": 0.1079
+          },
+          {
+            "response": "5,000 to 9,999 employees",
+            "frequency": 1039,
+            "percent": 0.0417
+          },
+          {
+            "response": "10,000 or more employees",
+            "frequency": 3188,
+            "percent": 0.1281
+          },
+          {
+            "response": "I don’t know",
+            "frequency": 451,
+            "percent": 0.0181
+          }
+        ]
+      }
+    }
+  },
+  "PurchaseInfluence": {
+    "qid": "QID278",
+    "qname": "PurchaseInfluence",
+    "question": "What level of influence do you, personally, have over new technology purchases at your organization?",
+    "datasets": {
+      "PurchaseInfluence": {
+        "name": "All Respondents",
+        "total_respondents": 27159,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "I have some influence",
+            "frequency": 11806,
+            "percent": 0.4347
+          },
+          {
+            "response": "I have little or no influence",
+            "frequency": 9133,
+            "percent": 0.3363
+          },
+          {
+            "response": "I have a great deal of influence",
+            "frequency": 6220,
+            "percent": 0.229
+          }
+        ]
+      }
+    }
+  },
+  "BuyNewTool": {
+    "qid": "QID279",
+    "qname": "BuyNewTool",
+    "question": "When buying a new tool or software, how do you discover and research available solutions? Select all that apply.",
+    "datasets": {
+      "BuyNewTool": {
+        "name": "All Respondents",
+        "total_respondents": 36314,
+        "plot_type": "bar",
+        "data": [
+          {
+            "response": "Start a free trial",
+            "frequency": 25761,
+            "percent": 0.7094
+          },
+          {
+            "response": "Ask developers I know/work with",
+            "frequency": 24399,
+            "percent": 0.6719
+          },
+          {
+            "response": "Visit developer communities like Stack Overflow",
+            "frequency": 22676,
+            "percent": 0.6244
+          },
+          {
+            "response": "Read ratings or reviews on third party sites like G2Crowd",
+            "frequency": 10609,
+            "percent": 0.2921
+          },
+          {
+            "response": "Research companies that have advertised on sites I visit",
+            "frequency": 4715,
+            "percent": 0.1298
+          },
+          {
+            "response": "Other (please specify):",
+            "frequency": 2339,
+            "percent": 0.0644
+          },
+          {
+            "response": "Research companies that have emailed me",
+            "frequency": 1870,
+            "percent": 0.0515
+          }
+        ]
+      }
+    }
+  },
+  "CompTotal": {
+    "qid": "QID51",
+    "qname": "CompTotal",
+    "question": "What is your current total compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation.  If you are paid hourly, please estimate an equivalent weekly, monthly, or yearly salary. If you prefer not to answer, please leave the box empty.",
+    "datasets": {
+      "CompTotal": {
+        "name": "All Respondents",
+        "total_respondents": 19932,
+        "plot_type": "bar",
+        "plot_subtext": "Median yearly salary in USD",
+        "plot_metadata": {
+          "label": {
+            "key": "median_yearly_salary_usd",
+            "label": "Median yearly salary (USD)",
+            "unit": "$"
+          }
+        },
+        "data": [
+          {
+            "response": "Senior Executive (C-Suite, VP, etc.)",
+            "frequency": 565,
+            "median_yearly_salary_usd": 120000,
+            "mean_yearly_salary_usd": 289822.3575,
+            "percent": 1
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 1229,
+            "median_yearly_salary_usd": 110000,
+            "mean_yearly_salary_usd": 228553.5932,
+            "percent": 0.9167
+          },
+          {
+            "response": "Engineer, site reliability",
+            "frequency": 744,
+            "median_yearly_salary_usd": 91883,
+            "mean_yearly_salary_usd": 187587.5161,
+            "percent": 0.7657
+          },
+          {
+            "response": "Security professional",
+            "frequency": 628,
+            "median_yearly_salary_usd": 88954,
+            "mean_yearly_salary_usd": 197260.8105,
+            "percent": 0.7413
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 2035,
+            "median_yearly_salary_usd": 86478,
+            "mean_yearly_salary_usd": 229415.3219,
+            "percent": 0.7206
+          },
+          {
+            "response": "Engineer, data",
+            "frequency": 1267,
+            "median_yearly_salary_usd": 81074,
+            "mean_yearly_salary_usd": 201621.2281,
+            "percent": 0.6756
+          },
+          {
+            "response": "Blockchain",
+            "frequency": 365,
+            "median_yearly_salary_usd": 80000,
+            "mean_yearly_salary_usd": 245615.0904,
+            "percent": 0.6667
+          },
+          {
+            "response": "DevOps specialist",
+            "frequency": 2331,
+            "median_yearly_salary_usd": 78900,
+            "mean_yearly_salary_usd": 174373.7177,
+            "percent": 0.6575
+          },
+          {
+            "response": "Marketing or sales professional",
+            "frequency": 107,
+            "median_yearly_salary_usd": 76707,
+            "mean_yearly_salary_usd": 160828.3364,
+            "percent": 0.6392
+          },
+          {
+            "response": "Product manager",
+            "frequency": 765,
+            "median_yearly_salary_usd": 75885,
+            "mean_yearly_salary_usd": 218313.9307,
+            "percent": 0.6324
+          },
+          {
+            "response": "Data scientist or machine learning specialist",
+            "frequency": 1078,
+            "median_yearly_salary_usd": 75650,
+            "mean_yearly_salary_usd": 197940.9861,
+            "percent": 0.6304
+          },
+          {
+            "response": "Scientist",
+            "frequency": 533,
+            "median_yearly_salary_usd": 73491,
+            "mean_yearly_salary_usd": 221474.7767,
+            "percent": 0.6124
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 1344,
+            "median_yearly_salary_usd": 69800,
+            "mean_yearly_salary_usd": 170749.715,
+            "percent": 0.5817
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 9526,
+            "median_yearly_salary_usd": 69183,
+            "mean_yearly_salary_usd": 163031.7916,
+            "percent": 0.5765
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 3133,
+            "median_yearly_salary_usd": 69183,
+            "mean_yearly_salary_usd": 168471.1178,
+            "percent": 0.5765
+          },
+          {
+            "response": "Project manager",
+            "frequency": 1162,
+            "median_yearly_salary_usd": 68102,
+            "mean_yearly_salary_usd": 161859.7917,
+            "percent": 0.5675
+          },
+          {
+            "response": "System administrator",
+            "frequency": 1554,
+            "median_yearly_salary_usd": 66356.5,
+            "mean_yearly_salary_usd": 150889.8604,
+            "percent": 0.553
+          },
+          {
+            "response": "Developer, QA or test",
+            "frequency": 1025,
+            "median_yearly_salary_usd": 66060,
+            "mean_yearly_salary_usd": 163846.6771,
+            "percent": 0.5505
+          },
+          {
+            "response": "Developer, full-stack",
+            "frequency": 9876,
+            "median_yearly_salary_usd": 66000,
+            "mean_yearly_salary_usd": 165530.0621,
+            "percent": 0.55
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 521,
+            "median_yearly_salary_usd": 65021,
+            "mean_yearly_salary_usd": 184581.9194,
+            "percent": 0.5418
+          },
+          {
+            "response": "Database administrator",
+            "frequency": 1616,
+            "median_yearly_salary_usd": 65000,
+            "mean_yearly_salary_usd": 141023.4288,
+            "percent": 0.5417
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 980,
+            "median_yearly_salary_usd": 64859.5,
+            "mean_yearly_salary_usd": 150558.8939,
+            "percent": 0.5405
+          },
+          {
+            "response": "Educator",
+            "frequency": 599,
+            "median_yearly_salary_usd": 64859,
+            "mean_yearly_salary_usd": 136434.3673,
+            "percent": 0.5405
+          },
+          {
+            "response": "Designer",
+            "frequency": 964,
+            "median_yearly_salary_usd": 60535,
+            "mean_yearly_salary_usd": 163876.0985,
+            "percent": 0.5045
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 5109,
+            "median_yearly_salary_usd": 60000,
+            "mean_yearly_salary_usd": 151285.0887,
+            "percent": 0.5
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 690,
+            "median_yearly_salary_usd": 56413.5,
+            "mean_yearly_salary_usd": 160133.8623,
+            "percent": 0.4701
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 2297,
+            "median_yearly_salary_usd": 56211,
+            "mean_yearly_salary_usd": 124905.5869,
+            "percent": 0.4684
+          },
+          {
+            "response": "Student",
+            "frequency": 281,
+            "median_yearly_salary_usd": 23352,
+            "mean_yearly_salary_usd": 80047.3879,
+            "percent": 0.1946
+          }
+        ]
+      },
+      "CompTotal_usa": {
+        "name": "United States",
+        "total_respondents": 4244,
+        "plot_type": "bar",
+        "plot_subtext": "Median yearly salary in USD",
+        "plot_metadata": {
+          "label": {
+            "key": "median_yearly_salary_usd",
+            "label": "Median yearly salary (USD)",
+            "unit": "$"
+          }
+        },
+        "data": [
+          {
+            "response": "Blockchain",
+            "frequency": 60,
+            "median_yearly_salary_usd": 200000,
+            "percent": 1
+          },
+          {
+            "response": "Senior Executive (C-Suite, VP, etc.)",
+            "frequency": 163,
+            "median_yearly_salary_usd": 200000,
+            "percent": 1
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 348,
+            "median_yearly_salary_usd": 182750,
+            "percent": 0.9138
+          },
+          {
+            "response": "Engineer, site reliability",
+            "frequency": 210,
+            "median_yearly_salary_usd": 180000,
+            "percent": 0.9
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 496,
+            "median_yearly_salary_usd": 175000,
+            "percent": 0.875
+          },
+          {
+            "response": "Product manager",
+            "frequency": 156,
+            "median_yearly_salary_usd": 165000,
+            "percent": 0.825
+          },
+          {
+            "response": "Security professional",
+            "frequency": 185,
+            "median_yearly_salary_usd": 152000,
+            "percent": 0.76
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 1866,
+            "median_yearly_salary_usd": 150000,
+            "percent": 0.75
+          },
+          {
+            "response": "DevOps specialist",
+            "frequency": 512,
+            "median_yearly_salary_usd": 150000,
+            "percent": 0.75
+          },
+          {
+            "response": "Engineer, data",
+            "frequency": 319,
+            "median_yearly_salary_usd": 150000,
+            "percent": 0.75
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 334,
+            "median_yearly_salary_usd": 145000,
+            "percent": 0.725
+          },
+          {
+            "response": "Data scientist or machine learning specialist",
+            "frequency": 239,
+            "median_yearly_salary_usd": 143750,
+            "percent": 0.7188
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 102,
+            "median_yearly_salary_usd": 140000,
+            "percent": 0.7
+          },
+          {
+            "response": "Project manager",
+            "frequency": 221,
+            "median_yearly_salary_usd": 140000,
+            "percent": 0.7
+          },
+          {
+            "response": "Developer, full-stack",
+            "frequency": 2165,
+            "median_yearly_salary_usd": 137000,
+            "percent": 0.685
+          },
+          {
+            "response": "Educator",
+            "frequency": 101,
+            "median_yearly_salary_usd": 135000,
+            "percent": 0.675
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 287,
+            "median_yearly_salary_usd": 132000,
+            "percent": 0.66
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 953,
+            "median_yearly_salary_usd": 132000,
+            "percent": 0.66
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 666,
+            "median_yearly_salary_usd": 130000,
+            "percent": 0.65
+          },
+          {
+            "response": "Marketing or sales professional",
+            "frequency": 42,
+            "median_yearly_salary_usd": 129750,
+            "percent": 0.6488
+          },
+          {
+            "response": "Database administrator",
+            "frequency": 366,
+            "median_yearly_salary_usd": 129500,
+            "percent": 0.6475
+          },
+          {
+            "response": "System administrator",
+            "frequency": 347,
+            "median_yearly_salary_usd": 127000,
+            "percent": 0.635
+          },
+          {
+            "response": "Designer",
+            "frequency": 225,
+            "median_yearly_salary_usd": 126000,
+            "percent": 0.63
+          },
+          {
+            "response": "Developer, QA or test",
+            "frequency": 253,
+            "median_yearly_salary_usd": 123000,
+            "percent": 0.615
+          },
+          {
+            "response": "Scientist",
+            "frequency": 168,
+            "median_yearly_salary_usd": 120500,
+            "percent": 0.6025
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 227,
+            "median_yearly_salary_usd": 120000,
+            "percent": 0.6
+          },
+          {
+            "response": "Academic researcher",
+            "frequency": 142,
+            "median_yearly_salary_usd": 110000,
+            "percent": 0.55
+          },
+          {
+            "response": "Student",
+            "frequency": 30,
+            "median_yearly_salary_usd": 84000,
+            "percent": 0.42
+          }
+        ]
+      }
+    }
+  },
+  "CompTotal_YearsCodePro_DevType": {
+    "qid": "QID51",
+    "qname": "CompTotal",
+    "question": "What is your current total compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation.  If you are paid hourly, please estimate an equivalent weekly, monthly, or yearly salary. If you prefer not to answer, please leave the box empty.",
+    "datasets": {
+      "CompTotal_YearsCodePro_DevType": {
+        "name": "Salary and Experience by Developer Type",
+        "total_respondents": 19145,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "key": "mean_prof_years",
+            "label": "Average years of professional experience"
+          },
+          "y": {
+            "key": "median_yearly_salary_usd",
+            "label": "Median yearly salary (USD)",
+            "unit": "$"
+          },
+          "response": {
+            "key": "DevType",
+            "label": "Developer Type"
+          }
+        },
+        "data": [
+          {
+            "response": "Academic researcher",
+            "frequency": 658,
+            "y": 57292,
+            "x": 9.7188
+          },
+          {
+            "response": "Blockchain",
+            "frequency": 356,
+            "y": 79996,
+            "x": 8.9326
+          },
+          {
+            "response": "Cloud infrastructure engineer",
+            "frequency": 1999,
+            "y": 86478,
+            "x": 11.0395
+          },
+          {
+            "response": "Data or business analyst",
+            "frequency": 948,
+            "y": 65164,
+            "x": 11.2932
+          },
+          {
+            "response": "Data scientist or machine learning specialist",
+            "frequency": 1050,
+            "y": 76266,
+            "x": 8.8857
+          },
+          {
+            "response": "Database administrator",
+            "frequency": 1593,
+            "y": 65276,
+            "x": 12.8512
+          },
+          {
+            "response": "Designer",
+            "frequency": 935,
+            "y": 61398,
+            "x": 12.3112
+          },
+          {
+            "response": "Developer, back-end",
+            "frequency": 9234,
+            "y": 70264,
+            "x": 10.0458
+          },
+          {
+            "response": "Developer, desktop or enterprise applications",
+            "frequency": 3055,
+            "y": 70000,
+            "x": 12.3457
+          },
+          {
+            "response": "Developer, embedded applications or devices",
+            "frequency": 1298,
+            "y": 70264,
+            "x": 11.3945
+          },
+          {
+            "response": "Developer, front-end",
+            "frequency": 4897,
+            "y": 61832,
+            "x": 9.2624
+          },
+          {
+            "response": "Developer, full-stack",
+            "frequency": 9570,
+            "y": 67447,
+            "x": 9.6794
+          },
+          {
+            "response": "Developer, game or graphics",
+            "frequency": 506,
+            "y": 65706.5,
+            "x": 11.1443
+          },
+          {
+            "response": "Developer, mobile",
+            "frequency": 2231,
+            "y": 57501,
+            "x": 9.5823
+          },
+          {
+            "response": "Developer, QA or test",
+            "frequency": 985,
+            "y": 67056,
+            "x": 10.6985
+          },
+          {
+            "response": "DevOps specialist",
+            "frequency": 2296,
+            "y": 79993,
+            "x": 11.0871
+          },
+          {
+            "response": "Educator",
+            "frequency": 585,
+            "y": 64859,
+            "x": 12.0547
+          },
+          {
+            "response": "Engineer, data",
+            "frequency": 1230,
+            "y": 82760.5,
+            "x": 10.4236
+          },
+          {
+            "response": "Engineer, site reliability",
+            "frequency": 734,
+            "y": 93015.5,
+            "x": 11.3283
+          },
+          {
+            "response": "Engineering manager",
+            "frequency": 1222,
+            "y": 110000,
+            "x": 13.9804
+          },
+          {
+            "response": "Marketing or sales professional",
+            "frequency": 97,
+            "y": 76707,
+            "x": 13.6082
+          },
+          {
+            "response": "Product manager",
+            "frequency": 754,
+            "y": 75910.5,
+            "x": 13.6804
+          },
+          {
+            "response": "Project manager",
+            "frequency": 1155,
+            "y": 68102,
+            "x": 13.0113
+          },
+          {
+            "response": "Scientist",
+            "frequency": 515,
+            "y": 73978,
+            "x": 10.6951
+          },
+          {
+            "response": "Security professional",
+            "frequency": 614,
+            "y": 89957,
+            "x": 12.5945
+          },
+          {
+            "response": "Senior Executive (C-Suite, VP, etc.)",
+            "frequency": 562,
+            "y": 120000,
+            "x": 16.3826
+          },
+          {
+            "response": "System administrator",
+            "frequency": 1535,
+            "y": 66810,
+            "x": 12.3342
+          }
+        ]
+      }
+    }
+  },
+  "CompTotal_YearsCodePro_Language": {
+    "qid": "QID51",
+    "qname": "CompTotal",
+    "question": "What is your current total compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation.  If you are paid hourly, please estimate an equivalent weekly, monthly, or yearly salary. If you prefer not to answer, please leave the box empty.",
+    "datasets": {
+      "CompTotal_YearsCodePro_Language": {
+        "name": "Salary and Experience by Language",
+        "total_respondents": 19097,
+        "plot_type": "scatter",
+        "plot_metadata": {
+          "x": {
+            "key": "mean_prof_years",
+            "label": "Average years of professional experience"
+          },
+          "y": {
+            "key": "median_yearly_salary_usd",
+            "label": "Median yearly salary (USD)",
+            "unit": "$"
+          },
+          "response": {
+            "key": "Language",
+            "label": "Language"
+          }
+        },
+        "data": [
+          {
+            "response": "Clojure",
+            "frequency": 480,
+            "y": 109089.5,
+            "x": 12.875
+          },
+          {
+            "response": "Erlang",
+            "frequency": 215,
+            "y": 103776,
+            "x": 14.4373
+          },
+          {
+            "response": "COBOL",
+            "frequency": 85,
+            "y": 98321,
+            "x": 18.0217
+          },
+          {
+            "response": "LISP",
+            "frequency": 211,
+            "y": 97288,
+            "x": 15.7175
+          },
+          {
+            "response": "Perl",
+            "frequency": 487,
+            "y": 97288,
+            "x": 16.9425
+          },
+          {
+            "response": "Elixir",
+            "frequency": 592,
+            "y": 97128,
+            "x": 11.9962
+          },
+          {
+            "response": "Haskell",
+            "frequency": 323,
+            "y": 95000,
+            "x": 11.4395
+          },
+          {
+            "response": "Scala",
+            "frequency": 616,
+            "y": 93616.5,
+            "x": 11.7949
+          },
+          {
+            "response": "Ruby",
+            "frequency": 1544,
+            "y": 91883,
+            "x": 12.0904
+          },
+          {
+            "response": "F#",
+            "frequency": 240,
+            "y": 90000,
+            "x": 13.7121
+          },
+          {
+            "response": "Go",
+            "frequency": 2539,
+            "y": 90000,
+            "x": 10.9133
+          },
+          {
+            "response": "Groovy",
+            "frequency": 859,
+            "y": 87576,
+            "x": 12.0654
+          },
+          {
+            "response": "Rust",
+            "frequency": 2005,
+            "y": 86848.5,
+            "x": 9.7897
+          },
+          {
+            "response": "Assembly",
+            "frequency": 650,
+            "y": 86478,
+            "x": 14.0389
+          },
+          {
+            "response": "Fortran",
+            "frequency": 130,
+            "y": 85500,
+            "x": 17.5188
+          },
+          {
+            "response": "Julia",
+            "frequency": 266,
+            "y": 83770,
+            "x": 9.945
+          },
+          {
+            "response": "Bash/Shell",
+            "frequency": 6162,
+            "y": 81074,
+            "x": 11.5068
+          },
+          {
+            "response": "Objective-C",
+            "frequency": 519,
+            "y": 81074,
+            "x": 13.4853
+          },
+          {
+            "response": "SAS",
+            "frequency": 92,
+            "y": 80064,
+            "x": 13.1579
+          },
+          {
+            "response": "APL",
+            "frequency": 52,
+            "y": 78408,
+            "x": 15.7895
+          },
+          {
+            "response": "Crystal",
+            "frequency": 91,
+            "y": 78000,
+            "x": 17.6334
+          },
+          {
+            "response": "PowerShell",
+            "frequency": 2462,
+            "y": 77916,
+            "x": 11.86
+          },
+          {
+            "response": "Lua",
+            "frequency": 659,
+            "y": 77832,
+            "x": 11.5902
+          },
+          {
+            "response": "Swift",
+            "frequency": 952,
+            "y": 77832,
+            "x": 11.0865
+          },
+          {
+            "response": "R",
+            "frequency": 707,
+            "y": 73639,
+            "x": 10.525
+          },
+          {
+            "response": "Python",
+            "frequency": 8256,
+            "y": 73152,
+            "x": 9.9879
+          },
+          {
+            "response": "TypeScript",
+            "frequency": 7649,
+            "y": 72000,
+            "x": 9.7907
+          },
+          {
+            "response": "C",
+            "frequency": 2635,
+            "y": 71345,
+            "x": 12.2219
+          },
+          {
+            "response": "C#",
+            "frequency": 5487,
+            "y": 71154,
+            "x": 11.5278
+          },
+          {
+            "response": "SQL",
+            "frequency": 9999,
+            "y": 70692,
+            "x": 11.4086
+          },
+          {
+            "response": "Kotlin",
+            "frequency": 1796,
+            "y": 70264,
+            "x": 9.8797
+          },
+          {
+            "response": "C++",
+            "frequency": 3326,
+            "y": 70000,
+            "x": 11.6033
+          },
+          {
+            "response": "JavaScript",
+            "frequency": 12582,
+            "y": 69587,
+            "x": 10.4991
+          },
+          {
+            "response": "Java",
+            "frequency": 5721,
+            "y": 68352,
+            "x": 10.4703
+          },
+          {
+            "response": "HTML/CSS",
+            "frequency": 10006,
+            "y": 67021,
+            "x": 10.5583
+          },
+          {
+            "response": "Delphi",
+            "frequency": 544,
+            "y": 66915.5,
+            "x": 21.6073
+          },
+          {
+            "response": "VBA",
+            "frequency": 775,
+            "y": 65053.5,
+            "x": 13.0276
+          },
+          {
+            "response": "Solidity",
+            "frequency": 213,
+            "y": 63426,
+            "x": 9.3194
+          },
+          {
+            "response": "OCaml",
+            "frequency": 87,
+            "y": 62697,
+            "x": 10.3932
+          },
+          {
+            "response": "MATLAB",
+            "frequency": 523,
+            "y": 58908,
+            "x": 9.6313
+          },
+          {
+            "response": "PHP",
+            "frequency": 3604,
+            "y": 54049,
+            "x": 11.07
+          },
+          {
+            "response": "Dart",
+            "frequency": 1024,
+            "y": 50460,
+            "x": 9.386
+          }
+        ]
+      }
+    }
+  }
+}

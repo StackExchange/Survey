@@ -1,0 +1,1020 @@
+{
+  "Title": "Work",
+  "SubTitle": "How developers get down to the business of software",
+  "SubSections": [
+    {
+      "Title": "Employment",
+      "GraphCollections": [
+        {
+          "Title": "Employment Status",
+          "Copy": "Over 90% of professional developers are employed at least part-time.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "87,181 responses",
+              "Data": {
+                "Employed full-time": 73.9152,
+                "Independent contractor, freelancer, or self-employed": 9.7624,
+                "Not employed, but looking for work": 6.4234,
+                "Employed part-time": 5.1261,
+                "Not employed, and not looking for work": 4.3622,
+                "Retired": 0.4106
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "72,820 responses",
+              "Data": {
+                "Employed full-time": 84.2296,
+                "Independent contractor, freelancer, or self-employed": 9.4699,
+                "Employed part-time": 3.7929,
+                "Not employed, but looking for work": 1.9981,
+                "Not employed, and not looking for work": 0.3818,
+                "Retired": 0.1277
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Employment Status by Geography",
+          "Copy": "Germany has an unusually high proportion of developers working part-time. Developers in the United States are somewhat less likely to work as independent contractors or freelancers. In all of these locations, more than 70% of developers are employed full-time.",
+          "Graphs": [
+            {
+              "Title": "United States",
+              "SubText": "20,663 responses",
+              "Data": {
+                "Employed full-time": 81.1644,
+                "Independent contractor, freelancer, or self-employed": 6.3011,
+                "Not employed, but looking for work": 4.7476,
+                "Employed part-time": 3.8039,
+                "Not employed, and not looking for work": 3.3151,
+                "Retired": 0.6679
+              }
+            },
+            {
+              "Title": "India",
+              "SubText": "8,808 responses",
+              "Data": {
+                "Employed full-time": 75.0795,
+                "Not employed, but looking for work": 11.0127,
+                "Independent contractor, freelancer, or self-employed": 7.2548,
+                "Not employed, and not looking for work": 4.723,
+                "Employed part-time": 1.8733,
+                "Retired": 0.0568
+              }
+            },
+            {
+              "Title": "United Kingdom",
+              "SubText": "6,159 responses",
+              "Data": {
+                "Employed full-time": 78.779,
+                "Independent contractor, freelancer, or self-employed": 10.5537,
+                "Not employed, and not looking for work": 4.5624,
+                "Not employed, but looking for work": 3.2473,
+                "Employed part-time": 2.1594,
+                "Retired": 0.6982
+              }
+            },
+            {
+              "Title": "Germany",
+              "SubText": "5,723 responses",
+              "Data": {
+                "Employed full-time": 73.0736,
+                "Employed part-time": 11.6722,
+                "Independent contractor, freelancer, or self-employed": 8.3173,
+                "Not employed, and not looking for work": 4.0538,
+                "Not employed, but looking for work": 2.5511,
+                "Retired": 0.332
+              }
+            },
+            {
+              "Title": "Canada",
+              "SubText": "3,336 responses",
+              "Data": {
+                "Employed full-time": 74.7302,
+                "Independent contractor, freelancer, or self-employed": 9.3225,
+                "Not employed, but looking for work": 5.7554,
+                "Not employed, and not looking for work": 5.1859,
+                "Employed part-time": 4.4964,
+                "Retired": 0.5096
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Company Type",
+      "GraphCollections": [
+        {
+          "Title": "Industry",
+          "Copy": "Software developers work in a diverse range of industries, both inside and outside the technology sector. Of the industry options we used this year, more professional developers said they work for companies doing general software development (not otherwise specified), IT, and finance/banking. Developers working in industries such as consulting, government, and nonprofits have more years of professional coding experience, while those working in web development or SaaS have about half as many median years of coding experience overall.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "71,128 responses",
+              "Data": {
+                "Software development - other": 11.8617,
+                "Information technology": 10.9099,
+                "Financial and banking": 8.884,
+                "Software as a service (saas) development": 7.5849,
+                "Web development or design": 7.5526,
+                "Consulting": 6.9565,
+                "Data and analytics": 5.6588,
+                "Health care or social services": 4.3696,
+                "Media, advertising, publishing, or entertainment": 3.8733,
+                "Retail or ecommerce": 3.8396,
+                "Internet": 3.3489,
+                "Education and training": 3.3194,
+                "Manufacturing": 2.816,
+                "Cloud-based solutions or services": 2.75,
+                "Government or public administration": 2.6853,
+                "Research - academic or scientific": 2.6417,
+                "Telecommunications": 2.2959,
+                "Transportation": 1.9655,
+                "Energy or utilities": 1.8207,
+                "Security": 1.3553,
+                "Marketing": 1.2541,
+                "Travel": 1.0938,
+                "Nonprofit": 0.5919,
+                "Real estate": 0.5708
+              }
+            },
+            {
+              "Title": "Professional Developers",
+              "SubText": "68,175 responses",
+              "Data": {
+                "Software development - other": 11.9868,
+                "Information technology": 10.8427,
+                "Financial and banking": 8.9857,
+                "Software as a service (saas) development": 7.7184,
+                "Web development or design": 7.5233,
+                "Consulting": 6.9864,
+                "Data and analytics": 5.6678,
+                "Health care or social services": 4.3902,
+                "Media, advertising, publishing, or entertainment": 3.8812,
+                "Retail or ecommerce": 3.8768,
+                "Internet": 3.2813,
+                "Education and training": 3.1624,
+                "Cloud-based solutions or services": 2.8045,
+                "Manufacturing": 2.7752,
+                "Government or public administration": 2.6549,
+                "Research - academic or scientific": 2.6227,
+                "Telecommunications": 2.3014,
+                "Transportation": 1.9699,
+                "Energy or utilities": 1.7998,
+                "Security": 1.304,
+                "Marketing": 1.2468,
+                "Travel": 1.1016,
+                "Real estate": 0.5735,
+                "Nonprofit": 0.5427
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Company Size",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Company Size",
+              "Copy": "Developers work in companies of all sizes, from small to large enterprise organizations. More software developers in the United States work at larger companies compared to the rest of the world, including Europe. The more experienced a developer is, the more likely they are to work at a larger company. On average, each additional year of professional coding experience is associated with a 30-person increase in a developer's organizational size.",
+              "SubText": "71,791 responses",
+              "Data": {
+                "Just me - I am a freelancer, sole proprietor, etc.": 6.0871,
+                "2-9 employees": 10.2979,
+                "10 to 19 employees": 9.4274,
+                "20 to 99 employees": 21.1712,
+                "100 to 499 employees": 17.8769,
+                "500 to 999 employees": 6.3727,
+                "1,000 to 4,999 employees": 10.4749,
+                "5,000 to 9,999 employees": 4.1579,
+                "10,000 or more employees": 14.1341
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Career Values",
+      "GraphCollections": [
+        {
+          "Title": "How Do Developers Feel About Their Careers and Jobs?",
+          "Copy": "As we've found in previous years, developers tend to be more satisfied with their career than with their current job. Job satisfaction is highest for engineering managers and senior engineering executives, along with SREs and DevOps specialists. Developers with the lowest job satisfaction include academic researchers, educators, scientists, and designers.",
+          "Graphs": [
+            {
+              "Title": "Career Satisfaction",
+              "SubText": "72,847 responses",
+              "Data": {
+                "Very dissatisfied": 5.1258,
+                "Slightly dissatisfied": 10.5289,
+                "Neither satisfied nor dissatisfied": 9.9551,
+                "Slightly satisfied": 34.3432,
+                "Very satisfied": 40.0469
+              }
+            },
+            {
+              "Title": "Job Satisfaction",
+              "SubText": "70,988 responses",
+              "Data": {
+                "Very dissatisfied": 6.842,
+                "Slightly dissatisfied": 15.1462,
+                "Neither satisfied nor dissatisfied": 12.2838,
+                "Slightly satisfied": 34.1001,
+                "Very satisfied": 31.6279
+              }
+            }
+          ]
+        },
+        {
+          "Title": "How Confident Are Developers in Their Managers?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "How Confident Are Developers in Their Managers?",
+              "Copy": "Engineering management is a technical discipline that impacts developers and the work that they do every day. Fortunately, over 80% of respondents are somewhat or very confident that their manager knows what they're doing.",
+              "SubText": "61,159 responses",
+              "Data": {
+                "Very confident": 39.8044,
+                "Somewhat confident": 41.2155,
+                "Not at all confident": 15.5594,
+                "I don't have a manager": 3.4206
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Do Developers Need to Become Managers to Make More Money?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Do Developers Need to Become Managers to Make More Money?",
+              "Copy": "When it comes to their own perceptions of engineering management as a career, half of respondents don't think they necessarily need to move to people management to continue to grow their salary.",
+              "SubText": "61,157 responses",
+              "Data": {
+                "No": 51.255,
+                "Yes": 29.1528,
+                "Not sure": 19.5922
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Do Developers Want To Become Managers in the Future?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Do Developers Want To Become Managers in the Future?",
+              "Copy": "Respondents are evenly divided about their own plans for such a career change, with no single response dominating. Those who say they do not want to be a manager have *more* years of experience than those who do, with twice as many years of professional coding experience. Developers who are interested today in entering a management path likely have such a career path ahead of them, or perhaps some will change their mind!",
+              "SubText": "61,232 responses",
+              "Data": {
+                "Not sure": 36.3797,
+                "No": 33.2881,
+                "Yes": 25.4197,
+                "I am already a manager": 4.9125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Looking for a Job",
+      "GraphCollections": [
+        {
+          "Title": "Job Search Status",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Job Search Status",
+              "Copy": "Only 15% of respondents are actively looking for a job, but almost three-fourths of developers are interested in hearing about new job opportunities.",
+              "SubText": "80,555 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 58.668,
+                "I am not interested in new job opportunities": 26.1685,
+                "I am actively looking for a job": 15.1636
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Job Search Status by Geography",
+          "Copy": "Job seeking status is largely consistent across these regions.",
+          "Graphs": [
+            {
+              "Title": "United States",
+              "SubText": "19,239 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 54.6754,
+                "I am not interested in new job opportunities": 31.9923,
+                "I am actively looking for a job": 13.3323
+              }
+            },
+            {
+              "Title": "India",
+              "SubText": "8,341 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 59.5612,
+                "I am actively looking for a job": 29.4689,
+                "I am not interested in new job opportunities": 10.9699
+              }
+            },
+            {
+              "Title": "United Kingdom",
+              "SubText": "5,653 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 55.1566,
+                "I am not interested in new job opportunities": 35.008,
+                "I am actively looking for a job": 9.8355
+              }
+            },
+            {
+              "Title": "Germany",
+              "SubText": "5,324 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 57.4568,
+                "I am not interested in new job opportunities": 33.5838,
+                "I am actively looking for a job": 8.9594
+              }
+            },
+            {
+              "Title": "Canada",
+              "SubText": "3,061 responses",
+              "Data": {
+                "I’m not actively looking, but I am open to new opportunities": 58.3469,
+                "I am not interested in new job opportunities": 28.6508,
+                "I am actively looking for a job": 13.0023
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Who's Actively Looking for a Job?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Who's Actively Looking for a Job?",
+              "Copy": "Among professional developers, those who work as senior engineering executives, DevOps specialists, and SREs are looking for work the least. Developers working in academia and data scientists (categories that we know often overlap) are looking for work at higher proportions.",
+              "SubText": "Mean of 76,778 responses",
+              "Data": {
+                "Academic researcher": 21.2214,
+                "Data scientist or machine learning specialist": 18.6016,
+                "Designer": 18.4755,
+                "Data or business analyst": 17.8529,
+                "Developer, game or graphics": 17.3998,
+                "Developer, mobile": 17.2467,
+                "Educator": 17.1939,
+                "Scientist": 17.1681,
+                "Developer, front-end": 15.5903,
+                "Developer, embedded applications or devices": 15.1323,
+                "Engineer, data": 14.9581,
+                "Database administrator": 14.5993,
+                "Developer, back-end": 14.5868,
+                "System administrator": 14.3519,
+                "Developer, full-stack": 14.2138,
+                "Developer, desktop or enterprise applications": 14.1911,
+                "Developer, QA or test": 14.0907,
+                "Engineering manager": 13.4418,
+                "Product manager": 13.2317,
+                "Engineer, site reliability": 12.6068,
+                "DevOps specialist": 11.7518,
+                "Senior executive/VP": 11.4133
+              }
+            }
+          ]
+        },
+        {
+          "Title": "How Long Ago Did Developers Last Change Jobs?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "How Long Ago Did Developers Last Change Jobs?",
+              "Copy": "Over half of the respondents on our survey have taken a new job within the past two years; frequent job changes are the norm for software developers.",
+              "SubText": "79,854 responses",
+              "Data": {
+                "Less than a year ago": 32.3641,
+                "1-2 years ago": 26.7551,
+                "3-4 years ago": 14.5228,
+                "More than 4 years ago": 18.2759,
+                "I've never had a job": 3.7919,
+                "NA - I am an independent contractor or self employed": 4.2903
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Interview Practices",
+          "Copy": "We asked our professional developer respondents this year about their last successful interview process that resulted in a job offer, and what type of tasks or interviews they had experienced. The most common experience was being interviewed by senior folks and managers, and less than 40% of respondents report being asked to write any code at all. Women are more likely to report completing a take-home project and less likely to say they were asked to solve a brain-teaser puzzle than men, which is related to the types of roles they are applying for (more front-end and data science roles where take-home projects are prevalent).\n\nWe also asked respondents if they have ever been asked to solve <a href='http://wiki.c2.com/?FizzBuzzTest' target='_blank'>Fizz Buzz</a> during any interview; almost 15% of respondents have.",
+          "Graphs": [
+            {
+              "Title": "Most Common Interview Practices",
+              "SubText": "67,155 responses",
+              "Data": {
+                "Interview with people in senior / management roles": 80.335,
+                "Interview with people in peer roles": 60.4884,
+                "Write any code": 39.0306,
+                "Write code by hand (e.g., on a whiteboard)": 27.8267,
+                "Complete a take-home project": 24.2931,
+                "Solve a brain-teaser style puzzle": 19.3076
+              }
+            },
+            {
+              "Title": "Fizz Buzz",
+              "SubText": "71,344 responses",
+              "Data": {
+                "No": 85.3232,
+                "Yes": 14.6768
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Updating That Resume",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Updating That Resume",
+              "Copy": "When asked about the last time they updated their resume, our respondents were most likely to say it was motivated by starting a new job search. We asked respondents who said they had re-entered the workforce why, and reasons included career changes from other fields, retiring from the military, and years spent caring for children full-time.",
+              "SubText": "77,877 responses",
+              "Data": {
+                "I was preparing for a job search": 42.7713,
+                "My job status changed (promotion, new job, etc.)": 17.3941,
+                "Something else changed (education, award, media, etc.)": 15.3909,
+                "I heard about a job opportunity (from a recruiter, online job posting, etc.)": 14.5447,
+                "I had a negative experience or interaction at work": 8.0537,
+                "Re-entry into the workforce": 1.8452
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Job Priorities",
+      "GraphCollections": [
+        {
+          "Title": "Most Important Job Factors",
+          "Copy": "We asked respondents to picture themselves comparing two jobs with the same compensation, benefits, and location, and consider which characteristics would most influence their choice between the two. Different types of developers apply different sets of priorities when considering jobs. Developers who belong to gender minorities in tech rank the office environment and company culture as their highest concern when assessing a new job, and are more likely to say the diversity of an organization is a top concern for them.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "79,371 responses; select three most important",
+              "Data": {
+                "Languages, frameworks, and other technologies I'd be working with": 54.1256,
+                "Office environment or company culture": 48.4787,
+                "Flex time or a flexible schedule": 45.6086,
+                "Opportunities for professional development": 43.5083,
+                "Remote work options": 31.7194,
+                "How widely used or impactful my work output would be": 23.4809,
+                "Industry that I'd be working in": 15.0181,
+                "Financial performance or funding status of the company or organization": 13.8149,
+                "Specific department or team I'd be working on": 12.7515,
+                "Diversity of the company or organization": 6.8237
+              }
+            },
+            {
+              "Title": "Men",
+              "SubText": "70,651 responses; select three most important",
+              "Data": {
+                "Languages, frameworks, and other technologies I'd be working with": 55.2561,
+                "Office environment or company culture": 48.2173,
+                "Flex time or a flexible schedule": 45.7644,
+                "Opportunities for professional development": 43.6597,
+                "Remote work options": 31.9217,
+                "How widely used or impactful my work output would be": 23.6614,
+                "Industry that I'd be working in": 15.033,
+                "Financial performance or funding status of the company or organization": 14.0776,
+                "Specific department or team I'd be working on": 12.5731,
+                "Diversity of the company or organization": 5.5583
+              }
+            },
+            {
+              "Title": "Women",
+              "SubText": "5,997 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 52.8598,
+                "Flex time or a flexible schedule": 44.6223,
+                "Opportunities for professional development": 44.3222,
+                "Languages, frameworks, and other technologies I'd be working with": 42.8047,
+                "Remote work options": 29.5815,
+                "How widely used or impactful my work output would be": 22.2111,
+                "Diversity of the company or organization": 19.5598,
+                "Specific department or team I'd be working on": 14.5073,
+                "Industry that I'd be working in": 14.1237,
+                "Financial performance or funding status of the company or organization": 9.7382
+              }
+            },
+            {
+              "Title": "Non-binary",
+              "HighlightIcon": true,
+              "SubText": "866 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 51.963,
+                "Languages, frameworks, and other technologies I'd be working with": 43.0716,
+                "Flex time or a flexible schedule": 42.8406,
+                "Diversity of the company or organization": 32.9099,
+                "Opportunities for professional development": 29.9076,
+                "Remote work options": 29.9076,
+                "How widely used or impactful my work output would be": 21.1316,
+                "Industry that I'd be working in": 19.3995,
+                "Specific department or team I'd be working on": 13.2794,
+                "Financial performance or funding status of the company or organization": 7.0439
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Weighting Important Job Factors in the US",
+          "Copy": "Since we know that there is difference in opinion about job priorities by gender, let's compare the overall opinion in our raw results with a weighted opinion. Using survey weighting doesn't change the results for most choices dramatically, but the diversity of an organization grows significantly more important.",
+          "Graphs": [
+            {
+              "Title": "United States Unweighted",
+              "SubText": "19,082 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 52.201,
+                "Languages, frameworks, and other technologies I'd be working with": 50.5555,
+                "Flex time or a flexible schedule": 42.5165,
+                "Opportunities for professional development": 35.7719,
+                "Remote work options": 35.3003,
+                "How widely used or impactful my work output would be": 26.2341,
+                "Specific department or team I'd be working on": 16.3452,
+                "Industry that I'd be working in": 15.8841,
+                "Financial performance or funding status of the company or organization": 13.8822,
+                "Diversity of the company or organization": 9.5378
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "HighlightIcon": true,
+              "SubText": "19,082 responses; select three most important",
+              "Data": {
+                "Office environment or company culture": 52.8338,
+                "Languages, frameworks, and other technologies I'd be working with": 48.6419,
+                "Flex time or a flexible schedule": 42.3749,
+                "Opportunities for professional development": 35.5591,
+                "Remote work options": 35.1303,
+                "How widely used or impactful my work output would be": 25.9211,
+                "Specific department or team I'd be working on": 16.3938,
+                "Industry that I'd be working in": 15.7989,
+                "Financial performance or funding status of the company or organization": 13.2303,
+                "Diversity of the company or organization": 12.3265
+              }
+            }
+          ]
+        },
+        {
+          "Title": "How Often Do Developers Work Remotely?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "How Often Do Developers Work Remotely?",
+              "Copy": "About 12% of respondents say they work remotely full-time, up a bit from the last time we asked this question two years ago. Developers who work remotely full-time have on average about 60% more years of professional coding experience than those who never do.",
+              "SubText": "70,284 responses",
+              "Data": {
+                "Less than once per month / Never": 42.997,
+                "A few days each month": 24.5319,
+                "Less than half the time, but at least one day each week": 8.9921,
+                "About half the time": 2.8257,
+                "More than half, but not all, the time": 3.3806,
+                "All or almost all the time (I'm full-time remote)": 12.044,
+                "It's complicated": 5.2288
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Where Do Developers Want to Work?",
+          "Copy": "Almost 60% of developers say they prefer to work in an office, while over 30% (close to 40% in the United States) would prefer to work at their own homes. If that's you, check out <a href='https://stackoverflow.com/jobs/remote-developer-jobs' target='_blank'>remote developer jobs</a> here on Stack Overflow.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "70,055 responses",
+              "Data": {
+                "Office": 57.943,
+                "Home": 33.2282,
+                "Other place, such as a coworking space or cafe": 8.8288
+              }
+            },
+            {
+              "Title": "United States",
+              "SubText": "17,442 responses",
+              "Data": {
+                "Office": 53.6234,
+                "Home": 38.413,
+                "Other place, such as a coworking space or cafe": 7.9635
+              }
+            },
+            {
+              "Title": "India",
+              "SubText": "6,624 responses",
+              "Data": {
+                "Office": 66.3345,
+                "Home": 24.7434,
+                "Other place, such as a coworking space or cafe": 8.9221
+              }
+            },
+            {
+              "Title": "United Kingdom",
+              "SubText": "5,237 responses",
+              "Data": {
+                "Office": 59.0796,
+                "Home": 34.0462,
+                "Other place, such as a coworking space or cafe": 6.8742
+              }
+            },
+            {
+              "Title": "Germany",
+              "SubText": "4,660 responses",
+              "Data": {
+                "Office": 64.0558,
+                "Home": 28.7124,
+                "Other place, such as a coworking space or cafe": 7.2318
+              }
+            },
+            {
+              "Title": "Canada",
+              "SubText": "2,677 responses",
+              "Data": {
+                "Office": 59.2081,
+                "Home": 33.6944,
+                "Other place, such as a coworking space or cafe": 7.0975
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Development Practices",
+      "GraphCollections": [
+        {
+          "Title": "How Structured Is the Work of Developers?",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "How Structured Is the Work of Developers?",
+              "Copy": "We asked respondents if they use a schedule or spec to schedule and plan their work, and only 20% said their work closely aligns with such a planning doc. Those who adopt a more flexible approach or don't use any schedule or spec are more likely to have *more* years of professional coding experience; closely following a schedule or spec is associated with fewer years of experience.",
+              "SubText": "68,914 responses",
+              "Data": {
+                "There's no schedule or spec; I work on what seems most important or urgent": 30.3073,
+                "There is a schedule and/or spec (made by me or by a colleague), and my work somewhat aligns": 50.0276,
+                "There is a schedule and/or spec (made by me or by a colleague), and I follow it very closely": 19.6651
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Greatest Challenges to Productivity",
+          "Copy": "When asked what their greatest challenges to productivity are, developers' most common responses include a distracting work environment and meetings. Gender minority respondents are less likely to say that being tasked with non-development work is a problem for them, and more likely to say that toxic work environments are.",
+          "Graphs": [
+            {
+              "Title": "All Respondents",
+              "SubText": "68,141 responses; select up to three",
+              "Data": {
+                "Distracting work environment": 41.8118,
+                "Meetings": 36.6314,
+                "Being tasked with non-development work": 36.4626,
+                "Not enough people for the workload": 33.5921,
+                "Lack of support from management": 26.5772,
+                "Inadequate access to necessary tools": 21.1062,
+                "Toxic work environment": 20.7878,
+                "Time spent commuting": 20.5207,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 19.8794
+              }
+            },
+            {
+              "Title": "Men",
+              "SubText": "61,183 responses; select up to three",
+              "Data": {
+                "Distracting work environment": 41.9201,
+                "Being tasked with non-development work": 36.855,
+                "Meetings": 36.7782,
+                "Not enough people for the workload": 33.7087,
+                "Lack of support from management": 26.5662,
+                "Inadequate access to necessary tools": 21.166,
+                "Toxic work environment": 20.5482,
+                "Time spent commuting": 20.54,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 19.883
+              }
+            },
+            {
+              "Title": "Women",
+              "HighlightIcon": true,
+              "SubText": "4,900 responses; select up to three",
+              "Data": {
+                "Distracting work environment": 40.8776,
+                "Meetings": 35.4286,
+                "Being tasked with non-development work": 32.8367,
+                "Not enough people for the workload": 32.0204,
+                "Lack of support from management": 26.449,
+                "Toxic work environment": 23.1837,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 21.1633,
+                "Inadequate access to necessary tools": 20.551,
+                "Time spent commuting": 20.5306
+              }
+            },
+            {
+              "Title": "Non-binary",
+              "SubText": "709 responses; select up to three",
+              "Data": {
+                "Distracting work environment": 44.1467,
+                "Not enough people for the workload": 35.9661,
+                "Meetings": 29.1961,
+                "Lack of support from management": 28.2087,
+                "Being tasked with non-development work": 27.6446,
+                "Toxic work environment": 24.9647,
+                "Inadequate access to necessary tools": 24.4006,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 20.5924,
+                "Time spent commuting": 19.8872
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Weighting Productivity Challenges in the US",
+          "Copy": "We can compare the overall opinion for the United States in our raw results with a weighted opinion. There are small shifts in some challenges to productivity like toxic work environments and meetings.",
+          "Graphs": [
+            {
+              "Title": "United States Unweighted",
+              "SubText": "16,966 responses; select three most important",
+              "Data": {
+                "Meetings": 41.312,
+                "Distracting work environment": 40.3749,
+                "Being tasked with non-development work": 37.4985,
+                "Not enough people for the workload": 35.6949,
+                "Lack of support from management": 23.4882,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 22.9636,
+                "Inadequate access to necessary tools": 18.7493,
+                "Time spent commuting": 18.5371,
+                "Toxic work environment": 14.9416
+              }
+            },
+            {
+              "Title": "United States Weighted by Gender",
+              "SubText": "16,966 responses; select three most important",
+              "Data": {
+                "Meetings": 40.766,
+                "Distracting work environment": 40.5472,
+                "Being tasked with non-development work": 36.7848,
+                "Not enough people for the workload": 35.7895,
+                "Lack of support from management": 23.5956,
+                "Non-work commitments (parenting, school work, hobbies, etc.)": 23.0276,
+                "Inadequate access to necessary tools": 18.8379,
+                "Time spent commuting": 18.5044,
+                "Toxic work environment": 15.3986
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Quality of Open Source Software",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Quality of Open Source Software",
+              "Copy": "Few respondents think that OSS is typically worse than proprietary or closed source software, but opinions are about evenly split between those who say that OSS is typically of better quality and those who say that both models for developing software result in about the same quality. Unsurprisingly, developers who contribute to open source are more likely to say that OSS is of higher quality.",
+              "SubText": "86,842 responses",
+              "Data": {
+                "OSS is, on average, of HIGHER quality than proprietary / closed source software": 42.0948,
+                "The quality of OSS and closed source software is about the same": 47.819,
+                "OSS is, on average, of LOWER quality than proprietary / closed source software": 10.0861
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Code Review",
+          "Copy": "Most respondents say they review code as part of their work, because it is an important part of the software engineering process. It's not a dominant part of most developers' work week, though. About three-fourths of developers say they spend five hours or less each week reviewing code.",
+          "Graphs": [
+            {
+              "Title": "Do You Review Code as Part of Your Work?",
+              "SubText": "70,390 responses",
+              "Data": {
+                "Yes, because I was told to do so": 7.5849,
+                "Yes, because I see value in code review": 68.7939,
+                "No": 23.6213
+              }
+            },
+            {
+              "Title": "Hours Per Week Reviewing Code",
+              "SubText": "49,790 responses",
+              "Data": {
+                "Less than 1 hour": 12.2334,
+                "2 to 3 hours": 31.3818,
+                "4 to 5 hours": 31.2513,
+                "6 to 7 hours": 5.7381,
+                "8 to 9 hours": 5.7903,
+                "10 to 11 hours": 7.9695,
+                "12 to 13 hours": 0.9379,
+                "14 to 15 hours": 1.8919,
+                "16 to 17 hours": 0.2772,
+                "18 to 19 hours": 0.0723,
+                "20 hours or more": 2.4563
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Unit Tests",
+          "Copy": "We asked respondents if their organization uses unit tests in development, and they are overwhelmingly in favor of unit testing, whether they currently use them or not. In fact, developers at companies who embrace unit testing also have slightly higher job satisfaction.",
+          "Graphs": [
+            {
+              "Title": "Does Your Company Employ Unit Tests?",
+              "SubText": "62,668 responses",
+              "Data": {
+                "Yes, it's part of our process": 41.8411,
+                "Yes, it's not part of our process but the developers do it on their own": 20.4698,
+                "No, but I think we should": 33.2466,
+                "No, and I'm glad we don't": 4.4425
+              }
+            },
+            {
+              "Title": "How are Job Satisfaction and Unit Tests Related?",
+              "SubText": "Mean of 62,528 responses; satisfaction on a 1-5 scale, from very dissatisfied to very satisfied",
+              "Format": "{0:#.00}",
+              "Data": {
+                "Yes, it's part of our process": 3.8654,
+                "Yes, it's not part of our process but the developers do it on their own": 3.7235,
+                "No, and I'm glad we don't": 3.7139,
+                "No, but I think we should": 3.4195
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Music for Focus While Coding",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Music for Focus While Coding",
+              "Type": "CustomFigure",
+              "Copy": "When asked what musical artist or genre helps them focus, respondents replied with an enormous variety of music, including classical music, video game or movie soundtracks, more kinds of metal than some of us knew existed, and music without lyrics or vocals. A few percent of respondents were clear that they prefer silence for concentrating.",
+              "SubText": "Network shows words that cooccur most often among 56,643 responses; words with larger points are used more often and heavier connections indicate words used more often together",
+              "FigurePath": "music_playlist-1.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Salary",
+      "GraphCollections": [
+        {
+          "Title": "Salary by Developer Type",
+          "Copy": "Engineering managers, SREs, DevOps specialists, and data scientists/engineers command the highest salaries. Average top earning roles are remarkably consistent across the globe, from India to Europe to the United States. See our [Methodology](https://insights.stackoverflow.com/survey/2019#methodology) section for information on how we converted local currencies used by respondents to U.S. dollars.",
+          "Graphs": [
+            {
+              "Title": "Global",
+              "SubText": "Median of 54,807 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Engineering manager": 95,
+                "Engineer, site reliability": 85,
+                "DevOps specialist": 71,
+                "Engineer, data": 66,
+                "Data scientist or machine learning specialist": 61,
+                "Data or business analyst": 59,
+                "Developer, embedded applications or devices": 57,
+                "Developer, full-stack": 57,
+                "Developer, back-end": 56,
+                "Developer, desktop or enterprise applications": 56,
+                "Scientist": 55,
+                "System administrator": 55,
+                "Database administrator": 54,
+                "Developer, QA or test": 54,
+                "Developer, front-end": 52,
+                "Designer": 51,
+                "Educator": 50,
+                "Developer, game or graphics": 48,
+                "Developer, mobile": 45,
+                "Academic researcher": 38
+              }
+            },
+            {
+              "Title": "United States",
+              "SubText": "Median of 14,661 responses; USD",
+              "Format": "${0:n0}k",
+              "Data": {
+                "Engineering manager": 152,
+                "Engineer, site reliability": 140,
+                "DevOps specialist": 122,
+                "Data scientist or machine learning specialist": 120,
+                "Engineer, data": 120,
+                "Developer, back-end": 116,
+                "Developer, mobile": 112,
+                "Developer, embedded applications or devices": 111,
+                "Developer, desktop or enterprise applications": 110,
+                "Developer, full-stack": 110,
+                "Educator": 110,
+                "Scientist": 110,
+                "Database administrator": 105,
+                "System administrator": 105,
+                "Developer, front-end": 103,
+                "Developer, game or graphics": 103,
+                "Data or business analyst": 100,
+                "Developer, QA or test": 98.5,
+                "Designer": 98,
+                "Academic researcher": 95
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Salary and Experience by Developer Type",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Salary and Experience by Developer Type",
+              "Type": "CustomFigure",
+              "Copy": "Naturally, developers with more years of experience are paid more. However, some types of coding work are paid more highly at the same level of experience. Developers who work with data (data scientists and engineers) and those who work in DevOps and site reliability are high earners for their level of experience, while academic researchers and educators are paid less at their experience levels.",
+              "FigurePath": "salary_devtype-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Salary and Experience by Language",
+          "Copy": "",
+          "Graphs": [
+            {
+              "Title": "Salary and Experience by Language",
+              "Type": "CustomFigure",
+              "Copy": "Developers using languages that appear above the line in this chart, such as Clojure, Scala, Go, Rust, and R, are being paid more even given how much experience they have. Developers using languages below the line, like PHP, Assembly, and VBA, however, are paid less even given years of experience. The size of the circles in this chart represents how many developers are using that language compared to the others.",
+              "FigurePath": "salary_language-1.svg"
+            }
+          ]
+        },
+        {
+          "Title": "Hours Worked Per Week",
+          "Copy": "For the first time this year, we asked respondents how many hours they work each week, and three-fourths say they work less than 45 hours per week. Senior executives, product managers, and engineering managers are more likely to work longer hours, as well as developers in Eastern Europe, India, and the United States.",
+          "Graphs": [
+            {
+              "Title": "Overall",
+              "SubText": "64,503 responses",
+              "Data": {
+                "Less than 30 hours": 6.3795,
+                "30 to 34 hours": 3.4433,
+                "35 to 39 hours": 13.449,
+                "40 to 44 hours": 51.7278,
+                "45 to 49 hours": 11.6165,
+                "50 to 54 hours": 7.6183,
+                "55 to 59 hours": 1.1891,
+                "60 to 64 hours": 2.2929,
+                "65 to 69 hours": 0.2465,
+                "70 hours or more": 2.0371
+              }
+            },
+            {
+              "Title": "By Developer Type",
+              "SubText": "Mean of 63,511 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Senior executive/VP": 47.6952,
+                "Product manager": 44.824,
+                "Engineering manager": 44.5219,
+                "System administrator": 43.7907,
+                "DevOps specialist": 43.3858,
+                "Designer": 43.3311,
+                "Database administrator": 43.2592,
+                "Engineer, data": 43.1313,
+                "Engineer, site reliability": 43.1303,
+                "Data or business analyst": 42.9876,
+                "Developer, desktop or enterprise applications": 42.611,
+                "Data scientist or machine learning specialist": 42.4758,
+                "Developer, full-stack": 42.47,
+                "Developer, embedded applications or devices": 42.4161,
+                "Developer, mobile": 42.402,
+                "Developer, QA or test": 42.2904,
+                "Educator": 42.2461,
+                "Developer, back-end": 42.0511,
+                "Developer, front-end": 41.9642,
+                "Scientist": 41.9446,
+                "Academic researcher": 41.9287,
+                "Developer, game or graphics": 41.6193
+              }
+            },
+            {
+              "Title": "By Country",
+              "HighlightIcon": true,
+              "SubText": "Mean of 42,318 responses",
+              "Format": "{0:#.0}",
+              "Data": {
+                "Poland": 44.6099,
+                "India": 42.2032,
+                "United States": 42.1067,
+                "France": 40.8503,
+                "Russian Federation": 40.5731,
+                "Brazil": 40.3896,
+                "Germany": 40.2386,
+                "Canada": 40.1806,
+                "Australia": 40.0935,
+                "United Kingdom": 39.5512,
+                "Netherlands": 38.1207
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
