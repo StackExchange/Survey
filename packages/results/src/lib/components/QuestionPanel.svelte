@@ -107,8 +107,11 @@
 				display 200ms allow-discrete;
 		}
 
+		/* `none`, not `0 0`: an identity translate still makes this dialog a containing
+		   block for `position: fixed` descendants, which lands the charts' pointer-
+		   positioned tooltips ~700px to the right. At rest there is no transform at all. */
 		dialog[open] {
-			translate: 0 0;
+			translate: none;
 		}
 
 		@starting-style {
