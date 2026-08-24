@@ -10,10 +10,12 @@
 	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
 </script>
 
-<p class="font-headline text-[clamp(var(--text-6xl),14vw,14rem)] leading-none font-medium">
-	{figures}{#if unit}<span class="text-[0.35em]">{unit}</span>{/if}
-</p>
+<div class="flex aspect-square w-full flex-col bg-black-200 px-7 py-4">
+	<p class="w-full font-headline text-[clamp(var(--text-6xl),14vw,14rem)] leading-none font-medium">
+		{figures}{#if unit}<span class="text-[0.35em]">{unit}</span>{/if}
+	</p>
 
-{#if row}
-	<p class="mt-6 text-lg text-black-400 dark:text-black-300">{short(row.response)}</p>
-{/if}
+	{#if row}
+		<p class="mt-auto mb-3 text-lg text-black-400 dark:text-black-300">{short(row.response)}</p>
+	{/if}
+</div>
