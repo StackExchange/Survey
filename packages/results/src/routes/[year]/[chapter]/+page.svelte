@@ -3,6 +3,8 @@
 
 	import { resolve } from '$app/paths'
 
+	import { chapterChartVars } from '$config'
+
 	import ButtonToggle from '$components/ButtonToggle.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
 	import ChapterJump from '$components/ChapterJump.svelte'
@@ -20,7 +22,7 @@
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="chapter" />
 
-<main id="main" tabindex="-1">
+<main id="main" tabindex="-1" style={chapterChartVars(data.chapter.index)}>
 	<div class="container mx-auto my-8 flex items-center justify-between">
 		<ButtonToggle
 			options={[

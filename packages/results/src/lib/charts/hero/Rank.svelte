@@ -5,7 +5,7 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { SKEW, slab } from '$charts/utils/iso'
 	import { chars, clip, DIM, px, series, shorten, theme } from '$charts/utils/theme'
@@ -26,6 +26,8 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
+	// Nothing else here is accented, so a focused column takes a colour of its own.
+	const focused = $derived(focusedOf(figure))
 
 	const column = $derived(px((width * 0.72) / Math.max(rows.length, 1)))
 	const thickness = $derived(px(column * 0.62))
@@ -60,7 +62,7 @@
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.side} fill={series(0)} />
-				<path d={box.front} fill={series(4)} />
+				<path d={box.front} fill={row === focused ? theme.focus : series(4)} />
 				<path d={box.top} fill={theme.faceTop} />
 
 				<!-- Down the face, reading bottom-to-top: at this size the response is

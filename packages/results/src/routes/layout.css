@@ -94,6 +94,11 @@
 	--chart-tint: var(--color-black-100);
 	--chart-accent: var(--color-orange);
 
+	--chart-focus: var(--color-blue);
+	--chart-on-focus: var(--color-white);
+	--chart-rest: var(--color-beige);
+	--chart-on-rest: var(--color-black);
+
 	--chart-from: var(--color-blue);
 	--chart-to: var(--color-orange);
 

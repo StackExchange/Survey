@@ -223,6 +223,13 @@ function featureOf(ctx, chapter, ref) {
 	if (ref.values?.length) data = ref.values.map((v) => data.find((r) => r.response === v))
 	if (ref.limit) data = data.slice(0, Number(ref.limit))
 
+	// The `focus` column: the response the chart accents, named in full the way
+	// `values` names them. Checked against the rows this figure actually kept — a
+	// reworded response would otherwise accent nothing, silently, on a live page.
+	if (ref.focus && !data.some((r) => r.response === ref.focus)) {
+		return ctx.fail(`${where}: no focus "${ref.focus}" — rows are ${data.map((r) => r.response).join(', ')}`)
+	}
+
 	// The section and slug the question sits at, for the "in context" link.
 	const section = (chapter.sections ?? []).find((s) => (s.questions ?? []).some((q) => q.dataId === ref.dataId))
 
@@ -237,6 +244,7 @@ function featureOf(ctx, chapter, ref) {
 		subtext: ref.subtext || null,
 		section: section?.name ?? null,
 		slug: (section?.questions ?? []).find((q) => q.dataId === ref.dataId)?.dataIdSlug ?? null,
+		focus: ref.focus || null,
 		data,
 	}
 }

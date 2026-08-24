@@ -2,7 +2,7 @@
 	// Cubes in a row, not the nested rectangles the name suggests: nesting reads as
 	// containment and these responses are multi-select. Sides go as the square root
 	// of the share, so the visible face is the proportional part.
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -14,6 +14,7 @@
 	const LABEL_SIZE = 14
 
 	const rows = $derived(rowsOf(figure))
+	const focused = $derived(focusedOf(figure))
 	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
@@ -34,7 +35,13 @@
 	)
 
 	const enter = (row: any, i: number, event: PointerEvent) =>
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(i) }] }, event)
+		onhover?.(
+			{
+				title: String(row.response ?? ''),
+				rows: [{ value: format(row), label: 'of respondents', color: row === focused ? theme.focus : series(i) }],
+			},
+			event
+		)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, 8)}>
@@ -49,7 +56,7 @@
 			onpointerleave={() => onhover?.(null)}
 		>
 			<path d={CUBE.top} fill={theme.faceTop} />
-			<path d={CUBE.left} fill={series(i)} />
+			<path d={CUBE.left} fill={row === focused ? theme.focus : series(i)} />
 			<path d={CUBE.right} fill={theme.faceSide} />
 		</g>
 

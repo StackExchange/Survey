@@ -6,6 +6,16 @@ import { count, percent, px, shorten } from '$charts/utils/theme'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
+// The one response a figure was told to accent, named in full by the `focus`
+// column on the sheet's Features tab. scripts/data.js checks it against the rows
+// it emitted, so what arrives here either matches a row or is null.
+//
+// The row itself, not the string: charts slice, sort and re-rank their rows, and
+// an identity check against the row survives all three. Nothing dims — a focus
+// recolours the mark it names and leaves hover the only thing changing opacity.
+export const focusedOf = (figure: any) =>
+	figure?.focus ? (rowsOf(figure).find((row: any) => row.response === figure.focus) ?? null) : null
+
 // The salary questions carry a named measure instead of a share, resolved by the
 // loader into `{key, label, unit}`. Everything else is `pct`.
 export const valueOf = (figure: any) => figure.value ?? null
@@ -63,7 +73,7 @@ export function readingOf(figure: any, limit = 6) {
 // "1 in 5" — how many respondents one filled cell of a waffle stands for.
 export const oneIn = (share: number) => Math.max(2, Math.round(1 / Math.max(share, 0.0001)))
 
-export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = 4) {
+export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = 8) {
 	const root = hierarchy({ children: rows.map((row, i) => ({ row, i, value: Math.max(values[i], 0) })) } as any)
 		.sum((d: any) => d.value ?? 0)
 		.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))

@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Two values as two cubes on a shared floor. Sides go as the square root, not
 	// the cube root: a reader compares the face they can see.
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
 	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -18,6 +18,12 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
+
+	// Two cubes only, so a focus past them leaves the accent where it was. A focus
+	// is drawn in the chapter's colour; the default keeps the palette's own.
+	const focused = $derived(focusedOf(figure))
+	const accent = $derived(rows.includes(focused) ? focused : rows[0])
+	const accentFill = $derived(accent === focused ? theme.focus : series(1))
 
 	// The larger cube takes 55% of the width; the smaller follows from its share.
 	const box = $derived(px(Math.min(width * 0.55, 520)))
@@ -44,7 +50,7 @@
 			onpointerleave={() => onhover?.(null)}
 		>
 			<path d={CUBE.top} fill={theme.faceTop} />
-			<path d={CUBE.left} fill={series(i === 0 ? 1 : 6)} />
+			<path d={CUBE.left} fill={row === accent ? accentFill : series(6)} />
 			<path d={CUBE.right} fill={theme.faceSide} />
 		</g>
 

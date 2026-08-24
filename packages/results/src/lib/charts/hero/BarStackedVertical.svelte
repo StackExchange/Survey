@@ -3,7 +3,7 @@
 	// varying both would measure the same number twice.
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { slab } from '$charts/utils/iso'
 	import { DIM, middle, onSeries, px, series, theme } from '$charts/utils/theme'
@@ -23,6 +23,8 @@
 
 	// Largest at the base, so the stack narrows going up whatever order it arrives in.
 	const stack = $derived([...rows].sort((a, b) => amount(b) - amount(a)))
+	// Nothing else here is accented, so a focused slab takes a colour of its own.
+	const focused = $derived(focusedOf(figure))
 	const largest = $derived(largestOf(stack.map(amount)))
 
 	const base = $derived(px(Math.min(width * 0.62, 620)))
@@ -55,7 +57,7 @@
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.side} fill={theme.faceSide} />
-				<path d={box.front} fill={series(0)} />
+				<path d={box.front} fill={row === focused ? theme.focus : series(0)} />
 				<path d={box.top} fill={theme.faceTop} />
 
 				<text
@@ -64,7 +66,7 @@
 					text-anchor="middle"
 					font-size={VALUE_SIZE}
 					font-weight="600"
-					fill={onSeries(0)}
+					fill={row === focused ? theme.onFocus : onSeries(0)}
 				>
 					{format(row)}
 				</text>

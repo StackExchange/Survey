@@ -21,20 +21,69 @@ export const surveyPreview = (year: string | number) => `https://releases-${year
 
 // Index of the value maps to the survey.json chapter order
 const chapterColours = [
-	{ bg: 'bg-blue', bgLg: 'lg:bg-blue', border: 'border-blue', primary: 'var(--color-blue)', secondary: 'var(--color-beige)' },
-	{ bg: 'bg-pink', bgLg: 'lg:bg-pink', border: 'border-pink', primary: 'var(--color-pink)', secondary: 'var(--color-purple)' },
-	{ bg: 'bg-yellow', bgLg: 'lg:bg-yellow', border: 'border-yellow', primary: 'var(--color-yellow)', secondary: 'var(--color-beige)' },
-	{ bg: 'bg-green', bgLg: 'lg:bg-green', border: 'border-green', primary: 'var(--color-green)', secondary: 'var(--color-blue)' },
+	{
+		bg: 'bg-blue',
+		bgLg: 'lg:bg-blue',
+		border: 'border-blue',
+		primary: 'var(--color-blue)',
+		ink: 'var(--color-white)',
+		secondary: 'var(--color-beige)',
+		secondaryInk: 'var(--color-black)',
+	},
+	{
+		bg: 'bg-pink',
+		bgLg: 'lg:bg-pink',
+		border: 'border-pink',
+		primary: 'var(--color-pink)',
+		ink: 'var(--color-black)',
+		secondary: 'var(--color-purple)',
+		secondaryInk: 'var(--color-black)',
+	},
+	{
+		bg: 'bg-yellow',
+		bgLg: 'lg:bg-yellow',
+		border: 'border-yellow',
+		primary: 'var(--color-yellow)',
+		ink: 'var(--color-black)',
+		secondary: 'var(--color-beige)',
+		secondaryInk: 'var(--color-black)',
+	},
+	{
+		bg: 'bg-green',
+		bgLg: 'lg:bg-green',
+		border: 'border-green',
+		primary: 'var(--color-green)',
+		ink: 'var(--color-black)',
+		secondary: 'var(--color-blue)',
+		secondaryInk: 'var(--color-white)',
+	},
 	{
 		bg: 'bg-purple',
 		bgLg: 'lg:bg-purple',
 		border: 'border-purple',
 		primary: 'var(--color-purple)',
+		ink: 'var(--color-black)',
 		secondary: 'var(--color-orange-medium)',
+		secondaryInk: 'var(--color-white)',
 	},
 ]
 
 export const chapterColour = (index: number) => chapterColours[(index - 1) % chapterColours.length]
+
+// The chart tokens a chapter owns: what a focused response is drawn in, what
+// every other response is drawn in, and the ink that reads on each. Set on
+// whatever element wraps that chapter's figures — see the defaults in
+// src/routes/layout.css.
+export const chapterChartVars = (index: number) => {
+	const colour = chapterColour(index)
+
+	return [
+		`--chart-focus: ${colour.primary}`,
+		`--chart-on-focus: ${colour.ink}`,
+		`--chart-rest: ${colour.secondary}`,
+		`--chart-on-rest: ${colour.secondaryInk}`,
+	].join('; ')
+}
 
 // Citation
 export const licence = {

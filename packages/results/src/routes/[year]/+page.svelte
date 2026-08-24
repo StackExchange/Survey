@@ -4,7 +4,7 @@
 	import { resolve } from '$app/paths'
 
 	import { count } from '$charts/utils/theme'
-	import { chapterColour } from '$config'
+	import { chapterChartVars, chapterColour } from '$config'
 	import { inversion } from '$lib/invert.svelte'
 
 	import BrandHeader from '$components/BrandHeader.svelte'
@@ -63,7 +63,7 @@
 
 	<section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
 		{#each data.chapters as chapter, chapterI (chapter.id)}
-			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30">
+			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30" style={chapterChartVars(chapter.index)}>
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}

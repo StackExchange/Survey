@@ -5,7 +5,7 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { SKEW, slab } from '$charts/utils/iso'
 	import { chars, clip, DIM, px, series, shorten, theme } from '$charts/utils/theme'
@@ -27,6 +27,8 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
+	// Nothing else here is accented, so a focused bar takes a colour of its own.
+	const focused = $derived(focusedOf(figure))
 
 	const depth = $derived(px(BAR * 0.62))
 	// The longest bar plus its end cap has to land inside the width.
@@ -61,7 +63,7 @@
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<path d={box.top} fill={series(4)} />
-				<path d={box.front} fill={series(0)} />
+				<path d={box.front} fill={row === focused ? theme.focus : series(0)} />
 				<path d={box.side} fill={theme.faceTop} />
 			</g>
 

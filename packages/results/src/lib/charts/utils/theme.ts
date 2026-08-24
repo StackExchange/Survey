@@ -12,6 +12,11 @@ export const theme = {
 	tint: token('tint', '#f9f8f8'),
 	accent: token('accent', '#ff5e00'),
 
+	focus: token('focus', '#5074ef'),
+	onFocus: token('on-focus', '#ffffff'),
+	rest: token('rest', '#998b7a'),
+	onRest: token('on-rest', '#201c1d'),
+
 	from: token('from', '#5074ef'),
 	to: token('to', '#ff5e00'),
 
