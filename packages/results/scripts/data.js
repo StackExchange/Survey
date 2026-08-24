@@ -201,6 +201,10 @@ function figureOf(ctx, chapterId, q) {
 	}
 }
 
+// The charts that read a figure's `series`. Everything else draws one measure per
+// response, so a segmented figure has to be named with a series-aware chart.
+const SERIES_CHARTS = new Set(['bar-stacked', 'bar-clustered', 'dumbbell', 'sankey', 'scatter', 'table'])
+
 // A figure the sheet promoted, narrowed to the one cut and the rows it asked for.
 function featureOf(ctx, chapter, ref) {
 	if (ref.chart === 'quote')
@@ -222,6 +226,16 @@ function featureOf(ctx, chapter, ref) {
 
 	if (ref.values?.length) data = ref.values.map((v) => data.find((r) => r.response === v))
 	if (ref.limit) data = data.slice(0, Number(ref.limit))
+
+	// A Hero or a Highlight draws one measure per response, so a segmented figure
+	// would repeat every response once per segment — 35 marks for 7 responses, and a
+	// duplicate key in each chart's `{#each}`. Only the Data tier has charts that
+	// read the segments, so this is a wiring mistake in the sheet, not a drawing one.
+	if (group.series?.length && !SERIES_CHARTS.has(ref.chart)) {
+		return ctx.fail(
+			`${where}: "${ref.dataId}" is segmented by ${group.series.length} (${group.series.join(', ')}) — "${ref.chart}" draws one measure per response, so it needs one of ${[...SERIES_CHARTS].join(', ')}`
+		)
+	}
 
 	// The `focus` column: the response the chart accents, named in full the way
 	// `values` names them. Checked against the rows this figure actually kept — a
