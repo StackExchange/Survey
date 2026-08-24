@@ -58,7 +58,8 @@
 			aria-selected={active}
 			aria-controls={panelId}
 			tabindex={active ? 0 : -1}
-			class="relative cursor-pointer px-5 py-3 whitespace-nowrap {active
+			data-text={entry.demographic.name}
+			class="relative cursor-pointer px-5 py-3 whitespace-nowrap after:invisible after:block after:h-0 after:overflow-hidden after:font-semibold after:content-[attr(data-text)] {active
 				? 'bg-black-150 font-semibold dark:bg-black-500'
 				: 'border-transparent text-black-400 hover:text-black lg:bg-black-100 dark:text-black-300 dark:hover:border-black-500 dark:hover:text-white lg:dark:bg-black-600'}"
 			onclick={() => onselect(id)}
