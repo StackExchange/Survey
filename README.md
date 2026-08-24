@@ -40,6 +40,7 @@ Possible answers:
 
 - [questions/](./questions/) — YAML source files for survey questions, plus the top-level [`questions/survey.yaml`](./questions/survey.yaml) flow definition.
 - [packages/survey/](./packages/survey/) — Svelte/Vite tooling for previewing the survey, validating YAML, and preparing the survey for Qualtrics.
+- [packages/results/](./packages/results/) — The results site for the current survey year, built from the question bank, the year's data export, and editorial copy.
 - [packages/archive/](./packages/archive/) — Historical survey releases, including results data, schemas, PDFs, and static result pages.
 
 ## Help shape the 2026 survey
@@ -114,21 +115,29 @@ Run the live survey result site preview:
 npm run dev -w results
 ```
 
+## Process
+
+1. **Gather** — Stack Overflow decides what ships, including suggestions in [Discussions](https://github.com/StackExchange/Survey/discussions).
+2. **Author** — `questions/{section}/{QuestionId}.yaml`, flow in [`questions/survey.yaml`](./questions/survey.yaml). Dropped questions move to `questions/retired/` rather than being deleted, so their IDs stay claimed.
+3. **Check** — `npm run validate -w survey`; `npm run dev -w survey` to walk the flow; `npm run gen:types -w survey` after a schema change.
+4. **Field** — `npm run sync:qualtrics:dry -w survey`, then `npm run sync:qualtrics -w survey`.
+5. **Build** — the export lands in `packages/archive/<year>/json/`, copy syncs with `npm run content -w results`, `npm run dev -w results` previews. On `main`, while the survey is in the field.
+6. **Publish** — merging to `main` is what goes live, so the order matters:
+   1. Merge into `main` with `--no-ff`.
+   2. Cut `releases/YYYY` there and push **the branch first** — the site links to its Netlify deploy.
+   3. The archive should be at `releases-YYYY.questions.survey.stackoverflow.co`
+   4. Push `main`. The site is live.
+7. **Wind down** — `results.csv`, `schema.csv` and `survey.pdf` land on `main` whenever they are ready after release; `/YYYY/results.csv` redirects to `main`, so nothing needs to be on the release branch for the download to work. Add the year's row to [`index.json`](./packages/archive/index.json) and the archive [README](./packages/archive/README.md). Corrections keep merging into `releases/YYYY` until `main` turns to the next year.
+
 ## Versioning
 
-Survey releases follow a yearly-with-patches scheme:
+Feature branches merge into `main` as usual. Each year gets one branch — `releases/YYYY` — cut from `main` at the results release, open for corrections until `main` turns to the next year, and holding that year's final state from then on.
 
-- `v2026` — initial release of the 2026 survey.
-- `v2026.1`, `v2026.2`, ... — corrections, metadata fixes, and late clarifications for the 2026 release.
+**Release branches are never deleted:** the results site links every question into the branch's Netlify deploy. See [packages/survey](./packages/survey/README.md#deployed-preview).
 
-Branches:
+`releases/v2025-questions` predates this. 2025 ran from a previous repository, so it holds only the imported question bank.
 
-- `main` — current development for the next upcoming survey year.
-- `release/YYYY` — long-lived branch for patching a historical survey year.
-
-When a survey year locks, `main` is branched to `release/YYYY` and tagged `vYYYY`. Later patches for that year land on its release branch and are tagged as `.N` revisions. `main` continues toward the next survey year.
-
-Each question carries a `version: 'YYYY.N'` field matching the release it ships under. Once a question ID appears in a tagged release, the ID is frozen; substantially different questions should receive a new ID so historical response columns remain interpretable.
+Each question carries `version: 'YYYY.N'` — the survey year, and a revision that resets with it. Bump `N` when changing a question that has already shipped; authoring edits do not count. IDs freeze at the same point, so a change that breaks comparison with earlier answers gets a new ID instead.
 
 ## Why open the survey instrument?
 

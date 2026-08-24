@@ -22,19 +22,40 @@ npm run dev -w results
 
 ## Sync content
 
-Content is stored in a public Google Sheet. To convert this to `src/survey,json` run this command.
+Content is stored in a public Google Sheet. To convert this to `survey.json` run this command.
 
 ```bash
 npm run content -w results
+```
+
+## Data
+
+`scripts/data.js` bakes three inputs into one payload per route:
+
+| Input                                 | What it is                                         |
+| ------------------------------------- | -------------------------------------------------- |
+| `packages/archive/<year>/json/*.json` | The year's export, one file per chapter            |
+| `survey.json`                         | Editorial copy, synced from the Google Sheet above |
+| `questions/`                          | The question bank, for wording and short labels    |
+
+Which year it reads comes from `settings.year` in `survey.json`, so rolling over is a sheet change plus a new archive folder.
+
+Output goes to `src/generated/` and is not checked in — the Vite plugin in `vite.config.js` rebuilds it on every dev start and build, so it cannot go stale. To run it alone:
+
+```bash
+npm run data -w results
 ```
 
 ## Types of graphic
 
 ### Expressive
 
-The 3D ("Hero") and 2D ("Highlight") types.
+The 3D ("Hero") and 2D ("Highlight") types. The `Tier` column of the Features tab
+picks the page, and so the column below: `homepage` draws the 3D set, `chapter` the
+2D set, and `hold` publishes nowhere. The older names `hero` and `highlight` still
+work, so the sheet can be renamed a row at a time.
 
-| Concept                                 | Hero (3D)                   | Highlight (2D)              |
+| Concept                                 | `homepage` — Hero (3D)      | `chapter` — Highlight (2D)  |
 | --------------------------------------- | --------------------------- | --------------------------- |
 | Magnitude comparison (2 values)         | `3d-cube`                   | `2d-treemap-small`          |
 | % of whole (large)                      | `3d-waffle-large`           | `2d-waffle-large`           |
@@ -83,11 +104,11 @@ This is an index to all the previous year’s results. The data comes from `/pac
 
 ### `/[year]`: This year’s survey
 
-An editorialised introduction to this year’s survey. Each chapter has ~2 hero infographics design to give an quick overview of the trends and insights. Uses the `Hero (3D)` column of graphics.
+An editorialised introduction to this year’s survey. Each chapter has ~2 hero infographics design to give an quick overview of the trends and insights. Set by `tier: homepage` in the sheet, which uses the `Hero (3D)` column of graphics.
 
 ## `/[years]/[chapter]`: Chapter overview
 
-~5 key data points from the chapter presented in a less expressive but still infographic approach. Uses the `Highlight (2D)` column of graphics.
+~5 key data points from the chapter presented in a less expressive but still infographic approach. Set by `tier: chapter` in the sheet, which uses the `Highlight (2D)` column of graphics.
 
 ## `/[years]/[chapter]/data`: Complete chapter data
 

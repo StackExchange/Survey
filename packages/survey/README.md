@@ -10,6 +10,12 @@ A respondent-style render of the questions with hot reload for editing the surve
 npm run dev -w survey
 ```
 
+## Deployed preview
+
+Netlify builds this package, with branch deploys on e.g., `https://<branch>.questions.survey.stackoverflow.co`.
+
+`packages/results` uses `surveyPreview` in [`packages/results/config.ts`](../results/config.ts) to link every question to `https://releases-${year}.questions.survey.stackoverflow.co`, so we always have a copy of that year.
+
 ## Validation
 
 Validate every question YAML and the survey.yaml flow.
