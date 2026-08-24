@@ -13,13 +13,6 @@ npm run build -w results
 npm run dev -w results
 ```
 
-## Preview url
-
-1. Get a [Netlify PAT token](https://app.netlify.com/user/applications)
-2. Add to the root `.env` file `NETLIFY_AUTH_TOKEN="..."`
-3. Run `npm run deploy-preview -w results`
-4. The preview link will be shared in the output
-
 ## Sync content
 
 Content is stored in a public Google Sheet. To convert this to `survey.json` run this command.
