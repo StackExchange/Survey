@@ -13,6 +13,7 @@
 	import Seo from '$components/Seo.svelte'
 
 	import Feature from '$charts/Feature.svelte'
+	import Prose from '$charts/text/Prose.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data, params } = $props()
@@ -33,13 +34,15 @@
 		<CopyPage title="the {data.chapter.name} chapter" />
 	</div>
 
-	<div class="container mx-auto mb-60">
+	<!-- <div class="container mx-auto mb-60">
 		<div class="md max-w-prose text-lg">{@html data.chapter.descriptionLongHtml}</div>
-	</div>
+	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
 		<article class="mx-auto my-[15vh] w-full max-w-360 px-6">
-			{#if block.kind === 'quote'}
+			{#if block.kind === 'text'}
+				<Prose {block} />
+			{:else if block.kind === 'quote'}
 				<Quote {block} />
 			{:else}
 				<Feature {block} flip={i % 2 === 1} />

@@ -761,7 +761,7 @@
           "tier": "highlight",
           "chart": "2d-treemap",
           "dataId": "ContextSelect",
-          "focus": "",
+          "focus": "Project goals or requirements",
           "limit": "",
           "values": [],
           "dataIdSlug": "context-select"
@@ -1524,6 +1524,17 @@
         },
         {
           "chapter": "Technology",
+          "headline": "",
+          "description": "The technology leaderboards have been constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit; what’s changed are the categories of tech on this list. Cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies in some of these lists have been there for years. Some lists show clear leaders in the space. But every one of these lists show that there is plenty of room for alternative technologies, as each of these lists has a large number of technologies in the single digits for usage (and we had to cut off the lists at some point).",
+          "tier": "highlight",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
           "headline": "23% use technology related to security",
           "description": "For all the talk of security work shifting left, only 23% of respondents end up touching security tools, the lowest percentage of responses outside of none of these and other.",
           "tier": "highlight",
@@ -1533,6 +1544,17 @@
           "limit": "10",
           "values": [],
           "dataIdSlug": "tech-drop-down"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Reports of the SaaSpocalypse have been greatly exaggerated. Only 19% of respondents are building alternatives to paid products. Unless we’re talking about building with AI. In that case, 54% of AI engineers are replacing paid vendors. It’s still the lowest number on the AI builder’s list, but shows that AI makes it much easier to replace a vendor with custom software. \n\nMost folks are building for their teammates – 77% build scripts/automation and 63% build internal tools. 54% of respondents build software for customers – at first blush, this seems low. But consider how many software engineers work for orgs that aren’t software companies – energy, manufacturing, retail folks like Starbucks and Walmart, and finance.",
+          "tier": "highlight",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "Technology",

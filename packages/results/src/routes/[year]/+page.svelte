@@ -13,6 +13,7 @@
 	import Seo from '$components/Seo.svelte'
 
 	import Feature from '$charts/Feature.svelte'
+	import Prose from '$charts/text/Prose.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data } = $props()
@@ -67,7 +68,9 @@
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}
-					{#if hero.kind === 'quote'}
+					{#if hero.kind === 'text'}
+						<Prose block={hero} />
+					{:else if hero.kind === 'quote'}
 						<article class="mx-auto max-w-2/3 py-40">
 							<Quote block={hero} />
 						</article>

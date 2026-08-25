@@ -1,7 +1,4 @@
 <script lang="ts">
-	// A row per response, length proportional to the share. Only the focused row is
-	// named, in a gutter before the bars: the readout, the `<desc>` and the table
-	// beside the chart carry the rest.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
@@ -18,7 +15,6 @@
 	const BAR = 44
 	const LABEL_SIZE = 16
 	const UNIT_SIZE = 18
-	// The gutter never takes more than this much of the frame, however long the label.
 	const CAPTION = 0.4
 
 	const hover = useHover(() => onhover)
@@ -35,8 +31,6 @@
 
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 
-	// Clipped to the room it is allowed first, then the gutter measured from what is
-	// left, so the bars start after the longest line rather than under it.
 	const named = $derived(accent ? clip(short(accent.response), chars(width * CAPTION - 16, LABEL_SIZE)) : '')
 	const gutter = $derived(accent ? px(Math.max(textWidth(named, LABEL_SIZE), textWidth(format(accent), UNIT_SIZE)) + 16) : 0)
 

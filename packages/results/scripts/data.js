@@ -203,8 +203,16 @@ function figureOf(ctx, chapterId, q) {
 
 // A figure the sheet promoted, narrowed to the one cut and the rows it asked for.
 function featureOf(ctx, chapter, ref) {
-	if (ref.chart === 'quote')
-		return { kind: 'quote', chart: 'quote', headline: ref.headline, description: ref.description, descriptionHtml: html(ref.description) }
+	// Copy with no figure behind it: a pull quote, or a passage between the charts.
+	if (ref.chart === 'quote' || ref.chart === 'text') {
+		return {
+			kind: ref.chart,
+			chart: ref.chart,
+			headline: ref.headline,
+			description: ref.description,
+			descriptionHtml: html(ref.description),
+		}
+	}
 
 	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
 
