@@ -71,7 +71,7 @@
 		{/if}
 
 		{#if dev}
-			<aside class="group-hover:block hidden mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</aside>
+			<aside class="mt-5 hidden font-mono text-xs group-hover:block">DEV: {block.chart} / {block.dataId}</aside>
 		{/if}
 	</div>
 

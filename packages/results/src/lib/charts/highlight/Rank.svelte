@@ -3,7 +3,7 @@
 
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, middle, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, GAP, middle, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -11,7 +11,6 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const ROW = 66
-	const GAP = 10
 	const TAB = 36
 	const LABEL_SIZE = 30
 	const RANK_SIZE = 30

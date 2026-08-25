@@ -63,6 +63,10 @@ export const series = (i: number) => theme.series[i % theme.series.length]
 
 export const onSeries = (i: number) => theme.onSeries[i % theme.onSeries.length]
 
+// The space between one mark and the next — waffle cells, bars, rank rows, treemap
+// cells. One value, so the forms read as a set rather than seven near-misses.
+export const GAP = 8
+
 export const PAD = 15
 
 // The wash laid over the row under the pointer, and the opacity of the hero

@@ -3,14 +3,13 @@
 	// three times the square — the sides are the square roots of the shares.
 	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, px, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, GAP, px, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const GAP = 28
 	const LABEL_SIZE = 16
 	const UNIT_SIZE = 28
 
@@ -23,14 +22,11 @@
 
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	// Two squares only, so a focus past them leaves the accent where it was.
 	const focused = $derived(focusedOf(figure))
 	const accent = $derived(rows.includes(focused) ? focused : rows[0])
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 	const inkOf = (row: any, hovered: boolean) => (hovered ? theme.background : row === accent ? theme.onFocus : theme.onRest)
 
-	// The pair is `box * (1 + ratio) + GAP` wide, so that is what has to fit the
-	// width — sizing `box` alone cropped both squares when the values were close.
 	const ratio = $derived(Math.sqrt(Math.min(...rows.map(amount), largest) / largest))
 	const box = $derived(px(Math.min((width - GAP) / (1 + ratio), width * 0.62)))
 	const side = (row: any) => px(box * Math.sqrt(Math.max(amount(row), 0) / largest))

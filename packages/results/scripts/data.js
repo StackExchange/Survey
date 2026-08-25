@@ -264,6 +264,9 @@ function featureOf(ctx, chapter, ref) {
 		section: section?.name ?? null,
 		slug: (section?.questions ?? []).find((q) => q.dataId === ref.dataId)?.dataIdSlug ?? null,
 		focus: ref.focus || null,
+		// Which rows the sheet picked, so a one-share chart knows whether its rows are a
+		// selection to add up or a whole distribution to read the first of.
+		values: ref.values?.length ? ref.values : null,
 		data,
 	}
 }

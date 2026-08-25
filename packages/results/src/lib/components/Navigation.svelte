@@ -32,14 +32,20 @@
 
 	const plain = 'border-black-150 dark:border-black-500'
 
+	// On a data page the chapter links stay in the data section, otherwise they go to the chapter overview.
+	const deep = $derived(page.route.id?.startsWith('/[year]/[chapter]/data') ?? false)
+
 	const links = $derived([
-		{ href: resolve('/[year]', { year }), name: year, borderClass: plain },
+		{ href: resolve('/[year]', { year }), name: year, borderClass: plain, exact: true },
 		...chapters.map((chapter) => ({
-			href: resolve('/[year]/[chapter]', { year, chapter: chapter.id }),
+			href: deep
+				? resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })
+				: resolve('/[year]/[chapter]', { year, chapter: chapter.id }),
 			name: chapter.name,
 			borderClass: chapterColour(chapter.index).border,
+			exact: false,
 		})),
-		{ href: resolve('/[year]/methodology', { year }), name: 'Methodology', borderClass: plain },
+		{ href: resolve('/[year]/methodology', { year }), name: 'Methodology', borderClass: plain, exact: true },
 	])
 
 	const wipe = (node: Element, { duration = 150, delay = 0 } = {}): TransitionConfig => ({
@@ -53,6 +59,10 @@
 	let list = $state<HTMLOListElement | null>(null)
 
 	const current = $derived(page.url.pathname)
+
+	// A single question page still counts as its chapter's data page.
+	const isCurrent = (link: { href: string; exact: boolean }) =>
+		link.exact ? current === link.href : current === link.href || current.startsWith(`${link.href}/`)
 
 	async function toggleOpen() {
 		open = !open
@@ -132,7 +142,7 @@
 					<a
 						class="block w-full border-l-4 bg-black {link.borderClass} px-4 py-2 hover:bg-black-500 aria-[current=page]:bg-black-500 aria-[current=page]:font-bold"
 						href={link.href}
-						aria-current={current === link.href ? 'page' : undefined}
+						aria-current={isCurrent(link) ? 'page' : undefined}
 						onclick={() => close()}
 						onkeydown={onListKeydown}
 					>

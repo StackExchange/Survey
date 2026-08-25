@@ -1,9 +1,4 @@
 <script lang="ts">
-	// Fixed, not absolute: no positioned ancestor needed, and it stays at reading
-	// size however much the chart's `<svg>` was scaled down.
-	//
-	// aria-hidden — the chart is one `role="img"` and the data table beside it is
-	// what makes these numbers reachable without a pointer.
 	import type { TooltipData } from '$charts/utils/tooltip'
 
 	let { data, event }: { data: TooltipData | null; event?: PointerEvent } = $props()
@@ -14,7 +9,6 @@
 	let height = $state(0)
 	let viewport = $state({ w: 0, h: 0 })
 
-	// Nudged back inside the viewport rather than flipped across the pointer.
 	const left = $derived(Math.max(8, Math.min((event?.clientX ?? 0) + OFFSET, viewport.w - width - 8)))
 	const above = $derived((event?.clientY ?? 0) - height - OFFSET)
 	const top = $derived(above < 8 ? (event?.clientY ?? 0) + OFFSET : above)
@@ -27,7 +21,7 @@
 		aria-hidden="true"
 		bind:clientWidth={width}
 		bind:clientHeight={height}
-		class="pointer-events-none fixed z-50 max-w-72 border-black-200 bg-white p-3 text-sm shadow-black-400 dark:border-black-500 dark:bg-black"
+		class="pointer-events-none fixed z-50 max-w-72 border-black-200 bg-black-100 p-3 text-sm shadow-black-400 dark:border-black-500 dark:bg-black"
 		style="left: {left}px; top: {top}px"
 	>
 		<p class="text-xs text-black-400 dark:text-black-300">{data.title}</p>

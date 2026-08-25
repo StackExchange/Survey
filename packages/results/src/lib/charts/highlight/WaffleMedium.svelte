@@ -2,14 +2,12 @@
 	// The "1 in X" shape: X cells with one filled. Rounding is the point of the
 	// form — 26% draws four cells — and the exact figure is in the `<desc>`.
 	import { amountOf, grid, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { px, theme } from '$charts/utils/theme'
+	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
-
-	const GAP = 14
 
 	const rows = $derived(rowsOf(figure))
 	const row = $derived(rows[0])

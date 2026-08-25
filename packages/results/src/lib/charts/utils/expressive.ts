@@ -2,7 +2,7 @@
 // narrowed by $lib/server/content.ts, so a component never filters again.
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy'
 
-import { count, percent, px, shorten } from '$charts/utils/theme'
+import { count, GAP, percent, px, shorten } from '$charts/utils/theme'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
@@ -25,11 +25,21 @@ export const valueOf = (figure: any) => figure.value ?? null
 type Pick = (...args: any[]) => any
 const self: Pick = (row: any) => row
 
+// A share as its label shows it. Two marks that both read 69% are drawn the same
+// size, rather than 0.6945 and 0.6863 apart by a pixel or two — and a real-but-tiny
+// share stays off zero, as `percent` keeps it off "0%".
+const shown = (share: number) => {
+	const rounded = Math.round(share * 100) / 100
+
+	return rounded === 0 && share > 0 ? share : rounded
+}
+
 export const amountOf = (figure: any, pick: Pick = self) => {
 	const value = valueOf(figure)
 	return (...args: any[]) => {
 		const cell = pick(...args)
-		return value ? (cell?.[value.key] ?? 0) : (cell?.pct ?? 0)
+		// A named measure is a count, not a share, so it is drawn as it comes.
+		return value ? (cell?.[value.key] ?? 0) : shown(cell?.pct ?? 0)
 	}
 }
 
@@ -73,7 +83,7 @@ export function readingOf(figure: any, limit = 6) {
 // "1 in 5" — how many respondents one filled cell of a waffle stands for.
 export const oneIn = (share: number) => Math.max(2, Math.round(1 / Math.max(share, 0.0001)))
 
-export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = 8) {
+export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = GAP) {
 	const root = hierarchy({ children: rows.map((row, i) => ({ row, i, value: Math.max(values[i], 0) })) } as any)
 		.sum((d: any) => d.value ?? 0)
 		.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))

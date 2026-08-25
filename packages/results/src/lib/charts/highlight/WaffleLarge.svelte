@@ -2,7 +2,7 @@
 	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
 	// One share, so the chapter's two colours: its first for the filled cells.
 	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { px, theme } from '$charts/utils/theme'
+	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -11,7 +11,6 @@
 	let { figure, width = 800 }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const COLUMNS = 10
-	const GAP = 6
 
 	const rows = $derived(rowsOf(figure))
 	const share = $derived(
