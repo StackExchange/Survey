@@ -41,8 +41,8 @@
 	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
-		<article class="px-6 my-20 {block.kind === 'figure' ? 'bg-black-100 py-20' : ''}">
-		  <div class="mx-auto max-w-360">
+		<article class="px-6 {block.kind === 'figure' ? 'bg-black-100 dark:bg-black border-t border-b border-transparent dark:border-black-500 py-20 my-[8vh]' : 'my-20'}">
+		  <div class="mx-auto max-w-300">
   			{#if block.kind === 'text'}
   				<Prose {block} />
   			{:else if block.kind === 'quote'}

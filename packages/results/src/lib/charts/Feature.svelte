@@ -64,6 +64,8 @@
 				</a>
 			</ChapterHeader>
 		{:else}
+			<span aria-hidden="true" class="mr-2 mb-2 inline-block h-3 w-3" style="background: var(--chapter-primary, var(--color-orange))"
+			></span>
 			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
 			{#if block.description}
 				<div class="md mt-4 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>

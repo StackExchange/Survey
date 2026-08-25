@@ -1524,7 +1524,7 @@
         },
         {
           "chapter": "Technology",
-          "headline": "",
+          "headline": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
           "description": "The technology leaderboards have been constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit; what’s changed are the categories of tech on this list. Cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies in some of these lists have been there for years. Some lists show clear leaders in the space. But every one of these lists show that there is plenty of room for alternative technologies, as each of these lists has a large number of technologies in the single digits for usage (and we had to cut off the lists at some point).",
           "tier": "highlight",
           "chart": "text",
@@ -1595,6 +1595,17 @@
         },
         {
           "chapter": "Technology",
+          "headline": "I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.",
+          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft ([source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/))",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
           "headline": "",
           "description": "Postgres continues to rule the space. Plucky little SQLite gets a lot of love for being a tiny team—it seems to be a default for basic vibe coding projects. But on top of that, it is used everywhere.",
           "tier": "highlight",
@@ -1617,17 +1628,6 @@
             "PostgreSQL"
           ],
           "dataIdSlug": "databases"
-        },
-        {
-          "chapter": "Technology",
-          "headline": "I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.",
-          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft ([source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/))",
-          "tier": "highlight",
-          "chart": "quote",
-          "dataId": "",
-          "focus": "",
-          "limit": "",
-          "values": []
         },
         {
           "chapter": "Technology",

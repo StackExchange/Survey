@@ -21,7 +21,7 @@
 		aria-hidden="true"
 		bind:clientWidth={width}
 		bind:clientHeight={height}
-		class="pointer-events-none fixed z-50 max-w-72 border-black-200 bg-black-100 p-3 text-sm shadow-black-400 dark:border-black-500 dark:bg-black"
+		class="pointer-events-none fixed z-50 max-w-72 border-black-200 bg-white p-3 text-sm shadow-black-400 dark:border-black-500 dark:bg-black"
 		style="left: {left}px; top: {top}px"
 	>
 		<p class="text-xs text-black-400 dark:text-black-300">{data.title}</p>

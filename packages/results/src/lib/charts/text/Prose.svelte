@@ -8,10 +8,10 @@
 
 <div class="mx-auto max-w-prose">
 	{#if block.headline}
-		<h3 class="font-headline text-3xl font-normal">{block.headline}</h3>
+		<h2 class="font-headline text-5xl font-normal">{block.headline}</h2>
 	{/if}
 
 	{#if copy}
-		<div class="md text-lg {block.headline ? 'mt-4' : ''}">{@html copy}</div>
+		<div class="md text-lg {block.headline ? 'mt-7' : ''}">{@html copy}</div>
 	{/if}
 </div>
