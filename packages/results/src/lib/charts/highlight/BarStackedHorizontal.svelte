@@ -41,6 +41,10 @@
 			.clamp(true)
 	)
 
+	// Following the focused bar's own end, held inside the frame. The gutter above is
+	// what guarantees the room: the longest bar can only reach `width - gutter`.
+	const captionX = $derived(accent ? px(Math.min(x(amount(accent)) + 16, width - (gutter - 16))) : 0)
+
 	const height = $derived(rows.length * (BAR + GAP) - GAP)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
@@ -59,22 +63,14 @@
 
 		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
-			<rect x={gutter} {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
+			<rect x="0" {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
 
-			<!-- Pinned to the row it names, right-aligned so it ends where the bars begin. -->
+			<!-- Pinned to the row it names, left-aligned off that bar's own end. -->
 			{#if row === accent}
-				<text
-					x={px(gutter - 12)}
-					y={px(y + 20)}
-					text-anchor="end"
-					font-size={UNIT_SIZE}
-					font-family={theme.fontHeadline}
-					font-weight="600"
-					fill={theme.ink}
-				>
+				<text x={captionX} y={px(y + 20)} font-size={UNIT_SIZE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
 					{format(row)}
 				</text>
-				<text x={px(gutter - 12)} y={px(y + 38)} text-anchor="end" font-size={LABEL_SIZE} fill={theme.muted}>
+				<text x={captionX} y={px(y + 38)} font-size={LABEL_SIZE} fill={theme.muted}>
 					{named}
 				</text>
 			{/if}

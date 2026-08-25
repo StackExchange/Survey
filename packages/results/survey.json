@@ -1570,6 +1570,17 @@
         },
         {
           "chapter": "Technology",
+          "headline": "",
+          "description": "The majority of developers are using JavaScript, SQL, HTML/CSS, Python, and Bash/Shell. Not too surprising; these are the basic techs involved in web software, and everything is web  software these days. No real complaints here, about a third of folks want to use these techs in 6 months (except for the shell languages (25%) and HTML (29%) because can’t we get a script to write that? ). AI seems to love using JavScript and Python (38% each).\n\nFor the backend (and standalone) languages, things get a little more diversified. Java and C# both top here, ~27%, though C# seems to leave a slightly better impression, as slightly more people want to use it in the next six months. Rust perennially has more admirers than users. Other languages more admired than used include Zig, Haskel, Elixir, and Erlang.",
+          "tier": "highlight",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
           "headline": "18% have used Rust, 26% want to use Rust",
           "description": "Once again, Rust seems to have the best press with a small but growing user base. While only 18% percent say they used it, 26% want to use it soon.",
           "tier": "highlight",
@@ -1584,10 +1595,10 @@
         },
         {
           "chapter": "Technology",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
+          "headline": "",
+          "description": "Postgres continues to rule the space. Plucky little SQLite gets a lot of love for being a tiny team—it seems to be a default for basic vibe coding projects. But on top of that, it is used everywhere.",
           "tier": "highlight",
-          "chart": "quote",
+          "chart": "text",
           "dataId": "",
           "focus": "",
           "limit": "",
@@ -1609,6 +1620,28 @@
         },
         {
           "chapter": "Technology",
+          "headline": "I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.",
+          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft ([source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/))",
+          "tier": "highlight",
+          "chart": "quote",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Web framework defaults are emerging. It looks like a significant portion of devs use Node (46%)  and React (41%) as their web stack. This category has a long tail, as developers are always trying to solve these problems better, with some having a net positive reputation where their want to use score passes their used score.",
+          "tier": "highlight",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
           "headline": "46% have used Node and 41% have used React",
           "description": "Node and React are the top-two frameworks by a large margin.",
           "tier": "highlight",
@@ -1618,6 +1651,17 @@
           "limit": "10",
           "values": [],
           "dataIdSlug": "web-framework"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "The two companies really focused on the frontier LLM space are the top two in usage. But folks don’t feel the same about them, as Anthropic is more desired (49% vs 32%) and more used in agents (45% vs 32%). These two (and a few of the others on this list) trade off the top spots on the LLM leaderboards, but there’s a clear winner in the press leaderboard.",
+          "tier": "highlight",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "Technology",

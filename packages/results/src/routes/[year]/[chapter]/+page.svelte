@@ -17,6 +17,8 @@
 	import Quote from '$charts/text/Quote.svelte'
 
 	let { data, params } = $props()
+
+
 </script>
 
 <Seo title="{data.chapter.name} {data.year}" description={data.chapter.description} graph={data.chapter.jsonld} />
@@ -39,14 +41,16 @@
 	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
-		<article class="mx-auto my-[15vh] w-full max-w-360 px-6">
-			{#if block.kind === 'text'}
-				<Prose {block} />
-			{:else if block.kind === 'quote'}
-				<Quote {block} />
-			{:else}
-				<Feature {block} flip={i % 2 === 1} />
-			{/if}
+		<article class="px-6 my-20 {block.kind === 'figure' ? 'bg-black-100 py-20' : ''}">
+		  <div class="mx-auto max-w-360">
+  			{#if block.kind === 'text'}
+  				<Prose {block} />
+  			{:else if block.kind === 'quote'}
+  				<Quote {block} />
+  			{:else}
+  				<Feature {block} flip={i % 2 === 1} />
+  			{/if}
+			</div>
 		</article>
 	{/each}
 
