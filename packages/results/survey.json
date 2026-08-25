@@ -1140,7 +1140,7 @@
           "headline": "62% find AI favorable",
           "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
           "tier": "highlight",
-          "chart": "2d-waffle-medium",
+          "chart": "2d-waffle-large",
           "dataId": "AISentiment",
           "focus": "",
           "limit": "",

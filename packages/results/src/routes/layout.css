@@ -93,6 +93,7 @@
 	--chart-grid: var(--color-black-350);
 	--chart-tint: var(--color-black-100);
 	--chart-accent: var(--color-orange);
+	--chart-on-accent: var(--color-black);
 
 	--chart-focus: var(--color-blue);
 	--chart-dim: var(--color-black-300);

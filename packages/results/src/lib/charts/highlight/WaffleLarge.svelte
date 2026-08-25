@@ -13,8 +13,15 @@
 	const COLUMNS = 10
 	const GAP = 6
 
-	const row = $derived(rowsOf(figure)[0])
-	const share = $derived(amountOf(figure)(row))
+	const rows = $derived(rowsOf(figure))
+	const share = $derived(
+		figure.values
+			? Math.min(
+					rows.reduce((total: number, row: any) => total + amountOf(figure)(row), 0),
+					1
+				)
+			: amountOf(figure)(rows[0])
+	)
 
 	// At least one cell for a real-but-tiny share, as `percent` does for "<1%".
 	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * 100)) : 0)

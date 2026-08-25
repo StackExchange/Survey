@@ -11,6 +11,7 @@ export const theme = {
 	grid: token('grid', '#bcb9b3'),
 	tint: token('tint', '#f9f8f8'),
 	accent: token('accent', '#ff5e00'),
+	onAccent: token('on-accent', '#201c1d'),
 
 	focus: token('focus', '#5074ef'),
 	onFocus: token('on-focus', '#ffffff'),
