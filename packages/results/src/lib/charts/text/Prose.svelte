@@ -8,7 +8,7 @@
 
 <div class="mx-auto max-w-prose">
 	{#if block.headline}
-		<h2 class="font-headline text-5xl font-normal">{block.headline}</h2>
+		<p class="font-headline text-5xl font-normal">{block.headline}</p>
 	{/if}
 
 	{#if copy}

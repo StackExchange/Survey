@@ -31,7 +31,6 @@ import Dumbbell from './standard/Dumbbell.svelte'
 import Sankey from './standard/Sankey.svelte'
 import Scatter from './standard/Scatter.svelte'
 import Table from './standard/Table.svelte'
-import TextProse from './text/Prose.svelte'
 import TextStat from './text/Stat.svelte'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
@@ -66,9 +65,6 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	'2d-waffle-medium': HighlightWaffleMedium,
 	rank: HighlightRank,
 	stat: TextStat,
-
-	// Copy with no figure behind it — ../svg/Wrap.svelte never sees these.
-	text: TextProse,
 }
 
 // Which ids answer the "scale to the largest value" option — i.e. the charts that

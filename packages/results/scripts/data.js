@@ -270,6 +270,7 @@ function featureOf(ctx, chapter, ref) {
 		descriptionHtml: html(ref.description),
 		subtext: ref.subtext || null,
 		section: section?.name ?? null,
+		sectionId: section?.id ?? null,
 		slug: (section?.questions ?? []).find((q) => q.dataId === ref.dataId)?.dataIdSlug ?? null,
 		focus: ref.focus || null,
 		// Which rows the sheet picked, so a one-share chart knows whether its rows are a

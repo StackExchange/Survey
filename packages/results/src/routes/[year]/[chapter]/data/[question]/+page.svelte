@@ -144,7 +144,7 @@
 		</ChartDownload>
 	</div>
 
-	<div class="border-t border-black-200 py-10">
+	<div class="border-t border-black-200 dark:border-black-500 py-10">
 		<section class="mx-auto max-w-300 px-6" id="data">
 			<h2 id="asked" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
@@ -194,7 +194,7 @@
 		</section>
 	</div>
 
-	<div class="border-t border-black-200 py-10">
+	<div class="border-t border-black-200 dark:border-black-500 py-10">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="export">
 			<h2 class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>

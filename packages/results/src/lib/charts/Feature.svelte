@@ -2,7 +2,7 @@
 	import type { TooltipData } from '$charts/utils/tooltip'
 	import type { Snippet } from 'svelte'
 
-	import { IconArrowRight } from '@stackoverflow/stacks-icons/icons'
+	import { IconArrowRight, IconLink } from '@stackoverflow/stacks-icons/icons'
 
 	import { dev } from '$app/environment'
 	import { resolve } from '$app/paths'
@@ -33,6 +33,13 @@
 	} = $props()
 
 	const Chart = $derived(charts[block.chart as keyof typeof charts])
+
+	const inData = $derived(
+		year && chapter && block.sectionId ? `${resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}#${block.sectionId}` : null
+	)
+	const question = $derived(
+		year && chapter && block.slug ? resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug }) : null
+	)
 
 	let hovered = $state<{ data: TooltipData | null; event?: PointerEvent }>({ data: null })
 
@@ -67,7 +74,11 @@
 			<p class="mb-4 flex items-center gap-2 text-sm text-black-400 dark:text-black-300">
 				<span aria-hidden="true" class="inline-block h-3 w-3 shrink-0" style="background: var(--chapter-primary, var(--color-orange))"
 				></span>
-				{block.section ?? ''}
+				{#if inData}
+					<a class="hover:underline" href={inData}>{block.section}</a>
+				{:else}
+					{block.section ?? ''}
+				{/if}
 			</p>
 
 			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
@@ -75,20 +86,34 @@
 			{#if block.description}
 				<div class="md mt-4 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 			{/if}
+
+			{#if question}
+				<a
+					href={question}
+					onclick={(event) => openQuestion(event, question)}
+					class="absolute bottom-3 right-3 inline-flex items-center gap-1.5 px-3 py-2 hover:bg-black dark:hover:bg-black-500 hover:text-white"
+					aria-label="Permalink: {block.headline}"
+				>
+					Share or cite
+					<Icon src={IconLink} />
+				</a>
+			{/if}
 		{/if}
 
-		{#if dev}
-			<aside class="mt-5 hidden font-mono text-xs lg:group-hover:block">DEV: {block.chart} / {block.dataId}</aside>
-		{/if}
+		<!-- {#if dev}
+			<div class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</div>
+		{/if} -->
 	</div>
 
-	<figure bind:clientWidth={measured} class="col-span-5 [&>svg]:h-auto [&>svg]:w-full mt-10 lg:mt-0">
+	<figure bind:clientWidth={measured} class="col-span-5 mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full">
 		<Chart figure={block} {width} onhover={(data, event) => (hovered = { data, event })} />
 
 		<Tooltip data={hovered.data} event={hovered.event} />
 
-		<div class="sr-only">
+		<!-- The table is the figure's caption: a screen reader gets the numbers the
+		     drawing only has as geometry. -->
+		<figcaption class="sr-only">
 			<DataTable figure={block} />
-		</div>
+		</figcaption>
 	</figure>
 </div>

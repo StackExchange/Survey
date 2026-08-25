@@ -109,12 +109,12 @@
 
 <header class="vt-nav pointer-events-none fixed top-0 right-0 left-0 z-50 flex">
 	{#if wordmark}
-		<h1 class="origin-left leading-0" transition:wipe>
+		<p class="origin-left leading-0" transition:wipe>
 			<a class="pointer-events-auto inline-flex items-stretch leading-4" href={resolve('/[year]', { year })}>
 				<span class="flex items-center bg-orange p-2 text-black"><Icon src={IconGlyph32Square} title="Stack Overflow" /></span>
 				<span class="flex items-center bg-black px-4 text-white hover:bg-black-500">Developer Survey {year}</span>
 			</a>
-		</h1>
+		</p>
 	{/if}
 
 	<nav
