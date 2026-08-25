@@ -64,20 +64,25 @@
 				</a>
 			</ChapterHeader>
 		{:else}
-			<span aria-hidden="true" class="mr-2 mb-2 inline-block h-3 w-3" style="background: var(--chapter-primary, var(--color-orange))"
-			></span>
+			<p class="mb-4 flex items-center gap-2 text-sm text-black-400 dark:text-black-300">
+				<span aria-hidden="true" class="inline-block h-3 w-3 shrink-0" style="background: var(--chapter-primary, var(--color-orange))"
+				></span>
+				{block.section ?? ''}
+			</p>
+
 			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
+
 			{#if block.description}
 				<div class="md mt-4 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 			{/if}
 		{/if}
 
 		{#if dev}
-			<aside class="mt-5 hidden font-mono text-xs group-hover:block">DEV: {block.chart} / {block.dataId}</aside>
+			<aside class="mt-5 hidden font-mono text-xs lg:group-hover:block">DEV: {block.chart} / {block.dataId}</aside>
 		{/if}
 	</div>
 
-	<figure bind:clientWidth={measured} class="col-span-5 [&>svg]:h-auto [&>svg]:w-full">
+	<figure bind:clientWidth={measured} class="col-span-5 [&>svg]:h-auto [&>svg]:w-full mt-10 lg:mt-0">
 		<Chart figure={block} {width} onhover={(data, event) => (hovered = { data, event })} />
 
 		<Tooltip data={hovered.data} event={hovered.event} />

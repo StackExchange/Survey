@@ -41,7 +41,7 @@
 	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
-		<article class="px-6 {block.kind === 'figure' ? 'bg-black-100 dark:bg-black border-t border-b border-transparent dark:border-black-500 py-20 my-[8vh]' : 'my-20'}">
+		<article class="px-6 {block.kind === 'figure' ? 'bg-black-100 dark:bg-black border-t border-b border-transparent dark:border-black-500 py-10 lg:py-20 my-10 lg:my-[8vh]' : 'my-0 lg:my-20'}">
 		  <div class="mx-auto max-w-300">
   			{#if block.kind === 'text'}
   				<Prose {block} />
