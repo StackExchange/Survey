@@ -40,7 +40,7 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="items-start justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
+<div class="group items-start justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
 	<div class="col-span-5 {flip ? '' : 'md:order-last'}">
 		{#if children}
 			{@render children()}
@@ -71,7 +71,7 @@
 		{/if}
 
 		{#if dev}
-			<aside class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</aside>
+			<aside class="group-hover:block hidden mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</aside>
 		{/if}
 	</div>
 
