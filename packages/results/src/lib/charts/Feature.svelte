@@ -100,9 +100,9 @@
 			{/if}
 		{/if}
 
-		<!-- {#if dev}
+		{#if dev}
 			<div class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</div>
-		{/if} -->
+		{/if}
 	</div>
 
 	<figure bind:clientWidth={measured} class="col-span-5 mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full">

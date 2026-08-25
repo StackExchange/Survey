@@ -39,10 +39,16 @@
 	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
+		{@const figure = block.kind === 'figure'}
+		{@const stacked = figure && data.chapter.highlights[i - 1]?.kind === 'figure'}
+		{@const last = i === data.chapter.highlights.length - 1}
+
 		<article
-			class="px-6 {block.kind === 'figure'
-				? 'relative my-10 border-t border-b border-transparent bg-black-100 py-10 lg:my-[8vh] lg:py-20 dark:border-black-500 dark:bg-black'
-				: 'my-0 lg:my-20'}"
+			class="px-6 {figure
+				? 'relative border-t border-b border-transparent bg-black-100 py-10 lg:py-20 dark:border-black-500 dark:bg-black'
+				: ''}
+				{stacked ? 'mt-0 border-t-0' : figure ? 'mt-10 lg:mt-[8vh]' : 'mt-0 lg:mt-20'}
+				{last ? 'mb-10 lg:mb-[8vh]' : ''}"
 		>
 			<div class="mx-auto max-w-300">
 				{#if block.kind === 'text'}
