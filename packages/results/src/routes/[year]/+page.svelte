@@ -48,7 +48,7 @@
 
 	<section class="spindle-scope relative overflow-hidden">
 		<img src="/img/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
-		<div class="relative z-50 container my-60 flex items-end text-2xl leading-snug lg:w-50">
+		<div class="relative z-10 container my-60 flex items-end text-2xl leading-snug lg:w-50">
 			<dl
 				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
 			>
