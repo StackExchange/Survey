@@ -7,19 +7,19 @@
 import type { OnHover } from '$charts/utils/tooltip'
 import type { Component } from 'svelte'
 
-import HeroBarStackedHorizontal from './hero/BarStackedHorizontal.svelte'
-import HeroBarStackedVertical from './hero/BarStackedVertical.svelte'
-import HeroCube from './hero/Cube.svelte'
-import HeroTreemap from './hero/Treemap.svelte'
-import HeroWaffleLarge from './hero/WaffleLarge.svelte'
-import HeroWaffleMedium from './hero/WaffleMedium.svelte'
-import HighlightBarStackedHorizontal from './highlight/BarStackedHorizontal.svelte'
-import HighlightBarStackedVertical from './highlight/BarStackedVertical.svelte'
-import HighlightRank from './highlight/Rank.svelte'
-import HighlightTreemap from './highlight/Treemap.svelte'
-import HighlightTreemapSmall from './highlight/TreemapSmall.svelte'
-import HighlightWaffleLarge from './highlight/WaffleLarge.svelte'
-import HighlightWaffleMedium from './highlight/WaffleMedium.svelte'
+import BarStackedHorizontal2d from './2d/BarStackedHorizontal.svelte'
+import BarStackedVertical2d from './2d/BarStackedVertical.svelte'
+import Rank2d from './2d/Rank.svelte'
+import Treemap2d from './2d/Treemap.svelte'
+import TreemapSmall2d from './2d/TreemapSmall.svelte'
+import WaffleLarge2d from './2d/WaffleLarge.svelte'
+import WaffleMedium2d from './2d/WaffleMedium.svelte'
+import BarStackedHorizontal3d from './3d/BarStackedHorizontal.svelte'
+import BarStackedVertical3d from './3d/BarStackedVertical.svelte'
+import Cube3d from './3d/Cube.svelte'
+import Treemap3d from './3d/Treemap.svelte'
+import WaffleLarge3d from './3d/WaffleLarge.svelte'
+import WaffleMedium3d from './3d/WaffleMedium.svelte'
 import Bar from './standard/Bar.svelte'
 import BarClustered from './standard/BarClustered.svelte'
 import BarStacked from './standard/BarStacked.svelte'
@@ -39,23 +39,25 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	sankey: Sankey,
 	table: Table,
 
-	// Hero (3D) — /[year]. One flat record rather than one per tier: the ids don't
-	// collide, and everything that walks this map wants all of them.
-	'3d-bar-stacked-horizontal': HeroBarStackedHorizontal,
-	'3d-bar-stacked-vertical': HeroBarStackedVertical,
-	'3d-cube': HeroCube,
-	'3d-treemap': HeroTreemap,
-	'3d-waffle-large': HeroWaffleLarge,
-	'3d-waffle-medium': HeroWaffleMedium,
+	// 3D — /[year], the `home` tier. One flat record rather than one per tier: the
+	// ids don't collide, and everything that walks this map wants all of them. The
+	// suffix on the component is the prefix on the id: an import can't lead with a
+	// digit, a directory can.
+	'3d-bar-stacked-horizontal': BarStackedHorizontal3d,
+	'3d-bar-stacked-vertical': BarStackedVertical3d,
+	'3d-cube': Cube3d,
+	'3d-treemap': Treemap3d,
+	'3d-waffle-large': WaffleLarge3d,
+	'3d-waffle-medium': WaffleMedium3d,
 
-	// Highlight (2D) — a chapter overview.
-	'2d-bar-stacked-horizontal': HighlightBarStackedHorizontal,
-	'2d-bar-stacked-vertical': HighlightBarStackedVertical,
-	'2d-treemap': HighlightTreemap,
-	'2d-treemap-small': HighlightTreemapSmall,
-	'2d-waffle-large': HighlightWaffleLarge,
-	'2d-waffle-medium': HighlightWaffleMedium,
-	rank: HighlightRank,
+	// 2D — a chapter overview, the `chapter` tier.
+	'2d-bar-stacked-horizontal': BarStackedHorizontal2d,
+	'2d-bar-stacked-vertical': BarStackedVertical2d,
+	'2d-treemap': Treemap2d,
+	'2d-treemap-small': TreemapSmall2d,
+	'2d-waffle-large': WaffleLarge2d,
+	'2d-waffle-medium': WaffleMedium2d,
+	rank: Rank2d,
 	stat: TextStat,
 }
 

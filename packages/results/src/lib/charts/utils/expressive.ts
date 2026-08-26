@@ -1,4 +1,4 @@
-// What the Hero (3D) and Highlight (2D) charts share. A feature arrives already
+// What the 3D and 2D charts share. A feature arrives already
 // narrowed by $lib/server/content.ts, so a component never filters again.
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy'
 
