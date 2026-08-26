@@ -395,7 +395,7 @@ export async function generate() {
 	for (const chapter of live) {
 		await write(
 			`chapter/${chapter.id}.json`,
-			{ ...summary(chapter), highlights: featuresOf(ctx, chapter, 'highlight'), ...nextTo(chapter.id), jsonld: seo.chapter[chapter.id] },
+			{ ...summary(chapter), highlights: featuresOf(ctx, chapter, 'chapter'), ...nextTo(chapter.id), jsonld: seo.chapter[chapter.id] },
 			state
 		)
 
@@ -409,7 +409,7 @@ export async function generate() {
 	await write(
 		'year.json',
 		{
-			chapters: live.map((c) => ({ ...summary(c), heroes: featuresOf(ctx, c, 'hero') })),
+			chapters: live.map((c) => ({ ...summary(c), heroes: featuresOf(ctx, c, 'home') })),
 			jsonld: seo.year,
 		},
 		state
