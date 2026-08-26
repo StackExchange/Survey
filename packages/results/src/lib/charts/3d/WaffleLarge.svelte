@@ -1,13 +1,14 @@
 <script lang="ts">
-	// A share as a field of cubes, 10 x 10, butted end to end. A cube's drawn size is
-	// exactly `size` across and `cubeHeight(size)` down, so stepping the grid by those
-	// two numbers lands each one on its neighbour's edge with nothing between.
+	// A share as a field of cubes: 50 of them, so one cube is two percentage points.
 	//
-	// Every other column then drops half a cube height, which is what interlocks them:
-	// a cube's right face ends exactly where its lower-right neighbour's left face
-	// begins. Straight off the base artwork, where the four cubes sit at 0, 92.376 and
-	// 184.752 — one cube height apart down a column, half of one between columns.
-	import { amountOf, CUBE, cube, cubeHeight, readingOf, rowsOf } from '$charts/utils/expressive'
+	// The field is a rhombus, 10 cubes along one lattice axis and 5 along the other.
+	// Both axes step a full footprint across and half a cube height — one down-right,
+	// one up-right — which is what makes the rows increasingly staggered and lands
+	// every cube edge to edge with its neighbours rather than overlapping them.
+	//
+	//   column = a + b            a: 0..LONG-1,  down-right
+	//   level  = a - b + SHORT-1  b: 0..SHORT-1, up-right
+	import { cube, CUBE, cubeHeight, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, percent, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
@@ -15,23 +16,36 @@
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const COLUMNS = 10
-	const ROWS = 10
+	const LONG = 10
+	const SHORT = 5
+	const CELLS = LONG * SHORT
+
+	// The rhombus spans this many columns, and the same many levels — a level being
+	// half a cube height, so the two cubes above and below in a column sit a whole
+	// one apart.
+	const SPAN = LONG + SHORT - 1
 
 	const row = $derived(rowsOf(figure)[0])
-	const share = $derived(amountOf(figure)(row))
-	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * 100)) : 0)
+	const share = $derived(shareOf(figure))
 
-	const size = $derived(width / COLUMNS)
-	const lineHeight = $derived(cubeHeight(size))
-	const stagger = $derived(lineHeight / 2)
+	// At least one cube for a real-but-tiny share, as `percent` does for "<1%".
+	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * CELLS)) : 0)
 
-	// The staggered columns hang half a cube below the last full row.
-	const height = $derived(ROWS * lineHeight + stagger)
+	const size = $derived(width / SPAN)
+	const half = $derived(cubeHeight(size) / 2)
+	const height = $derived((SPAN - 1) * half + cubeHeight(size))
 
-	// Index order: nothing overlaps on a grid this tight, so there is no back to
-	// front to paint in.
-	const cells = $derived(Array.from({ length: COLUMNS * ROWS }, (_, i) => ({ i, column: i % COLUMNS, line: Math.floor(i / COLUMNS) })))
+	// Column by column, top to bottom within one, so the filled front sweeps left to
+	// right from the rhombus's own point.
+	const cells = $derived(
+		Array.from({ length: CELLS }, (_, i) => {
+			const a = i % LONG
+			const b = Math.floor(i / LONG)
+			return { column: a + b, level: a - b + SHORT - 1 }
+		})
+			.sort((p, q) => p.column - q.column || p.level - q.level)
+			.map((cell, i) => ({ ...cell, i }))
+	)
 
 	const enter = (event: PointerEvent) =>
 		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: percent(share), label: 'of respondents', color: theme.focus }] }, event)
@@ -42,7 +56,7 @@
 		{@const on = cell.i < filled}
 
 		<g
-			transform={cube(cell.column * size, cell.line * lineHeight + (cell.column % 2) * stagger, size)}
+			transform={cube(cell.column * size, cell.level * half, size)}
 			opacity={on ? 1 : OFF}
 			role="presentation"
 			onpointermove={enter}
