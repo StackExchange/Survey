@@ -10,9 +10,12 @@
 // vite.config.js does it on every dev start and build.
 
 // The glob key is an absolute path; the tail after the payload kind is the id.
+// `lastIndexOf`, not `indexOf`: the kind is a segment of $generated, and matching
+// the first one would key off a directory above the repo that happened to be
+// called the same thing.
 const load = (glob: Record<string, any>, kind: string) =>
 	Object.fromEntries(
-		Object.entries(glob).map(([path, payload]) => [path.slice(path.indexOf(kind) + kind.length).replace(/\.json$/, ''), payload])
+		Object.entries(glob).map(([path, payload]) => [path.slice(path.lastIndexOf(kind) + kind.length).replace(/\.json$/, ''), payload])
 	)
 
 const chapters = load(import.meta.glob('$generated/chapter/*.json', { eager: true, import: 'default' }), '/chapter/')
