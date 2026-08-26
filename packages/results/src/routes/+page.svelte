@@ -17,16 +17,10 @@
 		source: string | null
 	}
 
-	// A year with no `results` URL in the archive index is not published yet, so
-	// the newest published year leads and the rest fall into the list below. The
-	// cast is the filter: every entry that survives it has a `results` URL.
 	const published = $derived(data.years.filter(({ results }) => results) as Year[])
 	const current = $derived(published[0])
 	const past = $derived(published.slice(1))
 </script>
-
-<!-- Every year URL comes from the archive index as a string, so there is no route
-     id for `resolve` to check. -->
 
 {#snippet links(entry: Year)}
 	<div class="-ml-3 flex flex-wrap gap-1">
@@ -39,10 +33,6 @@
 {/snippet}
 
 <Seo description={siteDescriptionLong} graph={data.jsonld.home} />
-
-<div class="fixed top-0 right-0 z-50 flex">
-	<ThemeToggle />
-</div>
 
 <BrandHeader>
 	<div class="mt-16">
