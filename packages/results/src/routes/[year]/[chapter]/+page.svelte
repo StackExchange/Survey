@@ -50,7 +50,7 @@
 				{stacked ? 'mt-0 border-t-0' : figure ? 'mt-10 lg:mt-[8vh]' : 'mt-0 lg:mt-20'}
 				{last ? 'mb-10 lg:mb-[8vh]' : ''}"
 		>
-			<div class="mx-auto max-w-300">
+			<div class="mx-auto max-w-310">
 				{#if block.kind === 'text'}
 					<Prose {block} />
 				{:else if block.kind === 'quote'}

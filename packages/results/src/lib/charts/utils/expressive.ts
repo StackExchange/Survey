@@ -54,12 +54,6 @@ export const formatOf = (figure: any, pick: Pick = self) => {
 // than guarding a division.
 export const largestOf = (values: number[]) => Math.max(0.0001, ...values)
 
-// The two extremes, for the forms that draw only the top and bottom response.
-export function endsOf(rows: any[], amount: (row: any) => number) {
-	const sorted = [...rows].sort((a, b) => amount(b) - amount(a))
-	return sorted.length > 1 ? [sorted[0], sorted[sorted.length - 1]] : sorted
-}
-
 // A trailing "%" is drawn smaller than the number it follows, so it is split off
 // rather than being part of the string.
 export function splitUnit(text: string) {
@@ -110,3 +104,21 @@ export function grid(n: number, width: number, gap: number) {
 
 	return { columns, rows, size, height: px(rows * size + gap * (rows - 1)) }
 }
+
+// The isometric cube these forms are built from, at the base artwork's own 160-wide
+// scale so the numbers here are the ones in the .svg. Replacing the artwork is
+// replacing these three paths and the two measurements under them.
+const UNIT = 160
+
+export const CUBE = {
+	top: 'M0 46.188L80 0L160 46.188L80 92.376Z',
+	left: 'M0 46.188L80 92.376L80 184.752L0 138.564Z',
+	right: 'M80 92.376L160 46.188L160 138.564L80 184.752Z',
+}
+
+const CUBE_HEIGHT = 184.752 / UNIT
+
+// Uniform scale, so the 30° edges stay 30°.
+export const cube = (x: number, y: number, size: number) => `translate(${px(x)} ${px(y)}) scale(${px(size / UNIT, 4)})`
+
+export const cubeHeight = (size: number) => size * CUBE_HEIGHT

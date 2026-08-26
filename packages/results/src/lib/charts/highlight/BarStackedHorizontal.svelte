@@ -14,7 +14,7 @@
 
 	const BAR = 44
 	const LABEL_SIZE = 16
-	const UNIT_SIZE = 18
+	const UNIT_SIZE = 25
 	const CAPTION = 0.4
 
 	const hover = useHover(() => onhover)
@@ -65,12 +65,11 @@
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 			<rect x="0" {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
 
-			<!-- Pinned to the row it names, left-aligned off that bar's own end. -->
 			{#if row === accent}
 				<text x={captionX} y={px(y + 20)} font-size={UNIT_SIZE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
 					{format(row)}
 				</text>
-				<text x={captionX} y={px(y + 38)} font-size={LABEL_SIZE} fill={theme.muted}>
+				<text x={captionX} y={px(y + 42)} font-size={LABEL_SIZE} fill={theme.muted}>
 					{named}
 				</text>
 			{/if}

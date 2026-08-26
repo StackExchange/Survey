@@ -68,17 +68,15 @@
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}
-					{#if hero.kind === 'text'}
-						<Prose block={hero} />
-					{:else if hero.kind === 'quote'}
-						<article class="mx-auto max-w-2/3 py-40">
-							<Quote block={hero} />
-						</article>
-					{:else}
-						<article class="mx-auto max-w-2/3 py-40">
-							<Feature block={hero} tier="hero" year={data.year} {chapter} flip={i % 2 === 1} />
-						</article>
-					{/if}
+  				<div class="mx-auto container py-[8vh]">
+  					{#if hero.kind === 'text'}
+  						<Prose block={hero} />
+  					{:else if hero.kind === 'quote'}
+  						<Quote block={hero} />
+  					{:else}
+  						<Feature block={hero} tier="hero" year={data.year} {chapter} flip={i % 2 === 1} />
+  					{/if}
+  				</div>
 				{/each}
 			</section>
 		{/each}

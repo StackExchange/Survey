@@ -32,7 +32,7 @@
 	const brand = $derived(chrome.brand ?? false)
 	const footer = $derived(chrome.footer ?? false)
 	const facts = $derived(captionOf(figure))
-	const editorial = $derived(/^(2d|3d)-|^(hero-stat|rank)$/.test(String(figure?.chart ?? '')))
+	const editorial = $derived(/^(2d|3d)-|^rank$/.test(String(figure?.chart ?? '')))
 	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext) && (brand || !editorial))
 	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)
 	const caption = $derived(stats || brand)

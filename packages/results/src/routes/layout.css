@@ -109,6 +109,11 @@
 	--chart-face-side: var(--color-beige);
 	--chart-ghost: var(--color-black-200);
 
+	/* An 'off' cube's three faces. */
+	--chart-off-top: var(--color-black-300);
+	--chart-off-left: var(--color-black-500);
+	--chart-off-right: var(--color-white);
+
 	/* Categorical ramp, brand order. Pointed at the tokens rather than repeating
 	   the hexes, so a brand change reaches the charts. */
 	--chart-series-1: var(--color-blue);
@@ -131,6 +136,10 @@
 	--chart-grid: var(--color-black-500);
 
 	--chart-dim: var(--color-black-400);
+
+	/* At 26% over the page, black-500 is all but invisible — the left face needs
+	   lifting or the off cubes read as nothing at all. */
+	--chart-off-left: var(--color-black-400);
 
 	/* Override these as not readable on dark mode */
 	--chart-series-8: var(--color-blue-light);

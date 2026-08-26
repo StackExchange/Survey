@@ -1,75 +1,116 @@
 <script lang="ts">
-	// The stepped pyramid. Slab heights are equal so only the footprint varies —
-	// varying both would measure the same number twice.
+	// Columns, height proportional to the share, labelled down their own faces.
+	// Straight off the base artwork: a column split into a lit left half and a
+	// shaded right half, a diamond base split the same way, and an orange cap that
+	// rides the column's own top.
+	//
+	// The bar body runs between the two diamond centres, so each diamond covers the
+	// last stretch of the bar — that overlap is what makes the ends read as solid
+	// rather than as lids stuck on.
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { slab } from '$charts/utils/iso'
-	import { DIM, middle, onSeries, px, series, theme } from '$charts/utils/theme'
+	import { chars, clip, DIM, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const VALUE_SIZE = 16
+	// Artwork proportions: a 160-wide column with a 30-tall diamond at each end.
+	const ART = { column: 160, nose: 30 }
+	const LABEL_SIZE = 34
+	const VALUE_SIZE = 15
 
 	const hover = useHover(() => onhover)
 
+	// Order as it arrives. `limit` on the sheet takes the first N, so a figure that
+	// asks for a top ten is already ranked — re-sorting here would fight it.
 	const rows = $derived(rowsOf(figure))
+	const short = $derived(shorten(figure))
 	const amount = $derived(amountOf(figure))
 	const format = $derived(formatOf(figure))
 
-	// Largest at the base, so the stack narrows going up whatever order it arrives in.
-	const stack = $derived([...rows].sort((a, b) => amount(b) - amount(a)))
-	const focused = $derived(focusedOf(figure))
-	const largest = $derived(largestOf(stack.map(amount)))
+	const largest = $derived(largestOf(rows.map(amount)))
 
-	const base = $derived(px(Math.min(width * 0.62, 620)))
-	const depth = $derived(px(base * 0.42))
-	const thickness = $derived(px(Math.max(28, base / (stack.length * 2.4))))
+	// One slot per column, the column filling four fifths of it — so the gutter
+	// scales with the count instead of being a constant that runs out.
+	const step = $derived(width / Math.max(rows.length, 1))
+	const COLUMN = $derived(px(Math.min(ART.column, step * 0.8)))
 
-	// Values are drawn inside the slabs, so nothing is reserved below the base.
-	const height = $derived(stack.length * thickness + depth * 0.5)
+	const half = $derived(px(COLUMN / 2))
+	const NOSE = $derived(px(COLUMN * (ART.nose / ART.column)))
+	const LONGEST = $derived(px(Math.min(width * 0.5, 520)))
 
-	// Footprint from the share, but never so narrow that the slab disappears.
-	const footprint = (row: any) => px(Math.max(base * 0.22, base * (amount(row) / largest)))
+	// Every column draws the same three shapes, so they are written once about a
+	// local origin on the diamond's centre and placed with a translate. The base is
+	// that same diamond split down the middle, which is what makes it read as the
+	// near end of one solid.
+	const DIAMOND = $derived(`M${-half} 0L0 ${-NOSE}L${half} 0L0 ${NOSE}Z`)
+	const BASE_LEFT = $derived(`M${-half} 0L0 ${-NOSE}V${NOSE}Z`)
+	const BASE_RIGHT = $derived(`M${half} 0L0 ${-NOSE}V${NOSE}Z`)
+
+	// Room for the cap above and the share below.
+	const baseline = $derived(px(NOSE + 8 + LONGEST))
+	const height = $derived(baseline + NOSE + VALUE_SIZE * 1.8)
+
+	// Never shorter than its own two ends, or the cap swallows the base.
+	const lengthOf = (row: any) => px(Math.max(NOSE * 2, LONGEST * (amount(row) / largest)))
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(0) }] }, event)
+		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: `#${i + 1}`, color: theme.focus }] }, event)
 	}
 </script>
 
-<Frame {figure} {width} {height} reading={readingOf(figure, 6)}>
-	<!-- Bottom slab first, so each one above overlaps the lid below it. -->
-	{#each stack as row, i (row.response ?? i)}
-		{@const w = footprint(row)}
-		{@const y = px(height - (i + 1) * thickness)}
-		{@const x = px((base - w) / 2)}
-		{@const box = slab(x, y, w, thickness, depth * (w / base))}
+<Frame {figure} {width} {height} reading={readingOf(figure, 10)}>
+	{#each rows as row, i (row.response ?? i)}
+		{@const len = lengthOf(row)}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
+		<!-- Origin on this column's base-diamond centre, so nothing below carries the
+		     column offset and the two diamonds share one coordinate system. -->
+		<g
+			role="presentation"
+			transform="translate({px(i * step + step / 2)} {baseline})"
+			onpointermove={(event) => enter(i, row, event)}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
+		>
 			<!-- First child, so every label paints over it and stays selectable. The
-			     handlers are on the group, so the whole row still answers the pointer. -->
-			<rect {x} y={px(y - box.rise)} width={Math.max(w, HIT)} height={px(thickness + box.rise)} fill="transparent" />
+			     handlers are on the group, so the whole column still answers the pointer. -->
+			<rect x={-half} y={px(-(len + NOSE))} width={px(Math.max(COLUMN, HIT))} height={px(len + NOSE * 2)} fill="transparent" />
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
-				<path d={box.side} fill={theme.faceSide} />
-				<path d={box.front} fill={row === focused ? theme.focus : series(0)} />
-				<path d={box.top} fill={theme.faceTop} />
+				<!-- bar-top — the chapter's primary, i.e. `--chart-focus`. -->
+				<rect x={-half} y={px(-len)} width={half} height={len} fill={theme.focus} />
+				<!-- bar-bottom — the chapter's secondary, i.e. `--chart-rest`. -->
+				<rect x="0" y={px(-len)} width={half} height={len} fill={theme.rest} />
 
-				<text
-					x={px(x + w / 2)}
-					y={middle(px(y + thickness / 2), VALUE_SIZE)}
-					text-anchor="middle"
-					font-size={VALUE_SIZE}
-					font-weight="600"
-					fill={row === focused ? theme.onFocus : onSeries(0)}
-				>
-					{format(row)}
-				</text>
+				<!-- cap — orange whatever the chapter is, and only ever moved. Drawn after
+				     the body, because it covers the column's top stretch. -->
+				<path d={DIAMOND} transform="translate(0 {px(-len)})" fill={theme.accent} />
+
+				<!-- The base's two halves carry the body's own colours, so the overlap at
+				     the bottom of the column is invisible. -->
+				<path d={BASE_LEFT} fill={theme.focus} />
+				<path d={BASE_RIGHT} fill={theme.rest} />
 			</g>
+
+			<!-- Up the column, reading bottom-to-top: at this size the response is far
+			     too long to sit under a column this narrow. Rotated glyphs grow to the
+			     left of their baseline, so the baseline sits right of centre. -->
+			<text
+				transform="translate({px(LABEL_SIZE * 0.35)} {px(-(NOSE + 8))}) rotate(-90)"
+				font-family={theme.fontHeadline}
+				font-size={LABEL_SIZE}
+				fill={theme.ink}
+			>
+				{clip(short(row.response), chars(len - NOSE - 24, LABEL_SIZE))}
+			</text>
+
+			<text x="0" y={px(NOSE + VALUE_SIZE + 8)} text-anchor="middle" font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
+				{format(row)}
+			</text>
 		</g>
 	{/each}
 </Frame>

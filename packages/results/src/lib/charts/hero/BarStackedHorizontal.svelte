@@ -1,22 +1,26 @@
 <script lang="ts">
-	// Slabs on their side, length proportional to the share. Depth is constant, or
-	// they stop reading as one solid seen from one angle.
+	// A prism on its side, length proportional to the share. Straight off the base
+	// artwork: a bar split into a lit top and a shaded bottom half, a diamond tail
+	// at the origin, and a pointed cap that rides the bar's own end. Nothing here
+	// shears, so the geometry is four rects and three triangles rather than an
+	// isometric projection.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { SKEW, slab } from '$charts/utils/iso'
-	import { chars, clip, DIM, px, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, DIM, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const BAR = 62
-	const GAP = 46
+	// Artwork proportions: a 160-tall bar with a 30-wide tail and cap.
+	const BAR = 96
+	const NOSE = px(BAR * (30 / 160))
+	const GAP = 20
 	const LABEL_SIZE = 15
 
 	const hover = useHover(() => onhover)
@@ -27,51 +31,59 @@
 	const format = $derived(formatOf(figure))
 
 	const largest = $derived(largestOf(rows.map(amount)))
-	const focused = $derived(focusedOf(figure))
 
-	const depth = $derived(px(BAR * 0.62))
-	// The longest bar plus its end cap has to land inside the width.
-	const plot = $derived(Math.max(1, width - depth))
 	const x = $derived(
 		scaleLinear()
 			.domain([0, largest])
-			.range([width * 0.18, plot])
+			.range([Math.max(width * 0.18, NOSE * 3), Math.max(width - NOSE, NOSE * 3)])
 			.clamp(true)
 	)
 
-	// Bar, lid behind it, label above that — or the first row's label lands off the
-	// top of the box.
-	const LEAD = $derived(px(LABEL_SIZE * 1.4 + depth * SKEW))
+	const LEAD = px(LABEL_SIZE * 1.4)
 	const height = $derived(LEAD + rows.length * (BAR + GAP) - GAP)
+	const half = px(BAR / 2)
+	const DIAMOND = `M0 ${-half}L${NOSE} 0L0 ${half}L${-NOSE} 0Z`
+	const TAIL_TOP = `M0 ${-half}L${NOSE} 0H${-NOSE}Z`
+	const TAIL_BOTTOM = `M0 ${half}L${NOSE} 0H${-NOSE}Z`
+	const SHARE_Y = px(-half - 8)
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(i, { title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(4) }] }, event)
+		hover.enter(
+			i,
+			{ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: theme.focus }] },
+			event
+		)
 	}
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, 8)}>
 	{#each rows as row, i (row.response ?? i)}
-		{@const length = px(x(amount(row)))}
-		{@const y = px(LEAD + i * (BAR + GAP))}
-		{@const box = slab(0, y, length, BAR, depth)}
+		{@const end = px(x(amount(row)))}
+		{@const body = px(end - NOSE)}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
-			<!-- First child, so every label paints over it and stays selectable. The
-			     handlers are on the group, so the whole row still answers the pointer. -->
-			<rect x="0" y={px(y - box.rise)} width={px(Math.max(length + depth, HIT))} height={px(BAR + box.rise)} fill="transparent" />
+		<g
+			role="presentation"
+			transform="translate(0 {px(LEAD + i * (BAR + GAP) + half)})"
+			onpointermove={(event) => enter(i, row, event)}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
+		>
+			<rect x="0" y={-half} width={px(Math.max(end + NOSE, HIT))} height={px(BAR)} fill="transparent" />
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
-				<path d={box.top} fill={series(4)} />
-				<path d={box.front} fill={row === focused ? theme.focus : series(0)} />
-				<path d={box.side} fill={theme.faceTop} />
+				<rect x={NOSE} y={-half} width={body} height={half} fill={theme.focus} />
+				<path d={TAIL_TOP} transform="translate({NOSE} 0)" fill={theme.focus} />
+
+				<rect x={NOSE} y="0" width={body} height={half} fill={theme.rest} />
+				<path d={TAIL_BOTTOM} transform="translate({NOSE} 0)" fill={theme.rest} />
+
+				<path d={DIAMOND} transform="translate({end} 0)" fill={theme.accent} />
 			</g>
 
-			<!-- Above its own bar: a row this deep has no gutter to put a label in, and
-			     the responses here are whole phrases. -->
-			<text x="0" y={px(y - box.rise - 8)} font-size={LABEL_SIZE} fill={theme.muted}>
+			<text font-size={LABEL_SIZE} fill={theme.ink}>
 				{clip(short(row.response), chars(width - 90, LABEL_SIZE))}
 			</text>
-			<text x={px(length + depth)} y={px(y - box.rise - 8)} text-anchor="end" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
+			<text x={px(end + NOSE)} y={SHARE_Y} text-anchor="end" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
 				{format(row)}
 			</text>
 		</g>

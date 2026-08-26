@@ -1,9 +1,8 @@
 <script lang="ts">
 	// Two values as two cubes on a shared floor. Sides go as the square root, not
 	// the cube root: a reader compares the face they can see.
-	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { CUBE, cube, cubeHeight } from '$charts/utils/iso'
-	import { chars, clip, descent, px, series, shorten, theme } from '$charts/utils/theme'
+	import { amountOf, CUBE, cube, cubeHeight, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { chars, clip, descent, px, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -19,11 +18,6 @@
 
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	// Two cubes only, so a focus past them leaves the accent where it was.
-	const focused = $derived(focusedOf(figure))
-	const accent = $derived(rows.includes(focused) ? focused : rows[0])
-	const accentFill = $derived(accent === focused ? theme.focus : series(1))
-
 	// The larger cube takes 55% of the width; the smaller follows from its share.
 	const box = $derived(px(Math.min(width * 0.55, 520)))
 	const side = (row: any) => px(box * Math.sqrt(Math.max(amount(row), 0) / largest))
@@ -32,8 +26,8 @@
 	const floor = $derived(px(cubeHeight(box)))
 	const height = $derived(floor + LABEL_SIZE * 2.6 + 10 + descent(LABEL_SIZE))
 
-	const enter = (row: any, i: number, event: PointerEvent) =>
-		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: series(i) }] }, event)
+	const enter = (row: any, event: PointerEvent) =>
+		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: theme.focus }] }, event)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
@@ -45,12 +39,12 @@
 		<g
 			transform={cube(x, floor - cubeHeight(s), s)}
 			role="presentation"
-			onpointermove={(event) => enter(row, i, event)}
+			onpointermove={(event) => enter(row, event)}
 			onpointerleave={() => onhover?.(null)}
 		>
-			<path d={CUBE.top} fill={theme.faceTop} />
-			<path d={CUBE.left} fill={row === accent ? accentFill : series(6)} />
-			<path d={CUBE.right} fill={theme.faceSide} />
+			<path d={CUBE.top} fill={theme.accent} />
+			<path d={CUBE.left} fill={theme.focus} />
+			<path d={CUBE.right} fill={theme.rest} />
 		</g>
 
 		<text {x} y={px(floor + LABEL_SIZE + 10)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>{format(row)}</text>

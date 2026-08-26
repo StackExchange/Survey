@@ -70,7 +70,7 @@
 
 <div
 	onclick={close}
-	class="tint fixed inset-0 z-40 bg-black/50 {data ? 'visible opacity-100' : 'invisible opacity-0'}"
+	class="tint fixed inset-0 z-40 bg-black/50 dark:bg-white/10 {data ? 'visible opacity-100' : 'invisible opacity-0'}"
 	style="backdrop-filter:grayscale(1)"
 	aria-hidden="true"
 ></div>

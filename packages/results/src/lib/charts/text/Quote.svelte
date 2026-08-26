@@ -4,8 +4,8 @@
 	const cite = $derived(block.descriptionHtml?.trim())
 </script>
 
-<blockquote class="mx-auto max-w-7xl text-center">
-	<p class="font-headline text-[clamp(var(--text-2xl),3vw+0.5rem,var(--text-5xl))] leading-[1.2em] font-normal text-balance">
+<blockquote class="mx-auto max-w-6xl text-center">
+	<p class="font-headline text-[clamp(var(--text-2xl),3vw+0.5rem,var(--text-5xl))] leading-[1.1em] font-normal text-balance">
 		“{block.headline}”
 	</p>
 

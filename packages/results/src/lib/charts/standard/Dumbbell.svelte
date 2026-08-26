@@ -36,8 +36,8 @@
 	const domain = useDomain()
 
 	const DOT = 20
-	const LABEL_SIZE = 14
-	const VALUE_SIZE = 15
+	const LABEL_SIZE = 16
+	const VALUE_SIZE = 16
 	const LINE = 20
 	const TRACK = 30
 

@@ -15,7 +15,7 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const LABEL_SIZE = 16
-	const UNIT_SIZE = 28
+	const UNIT_SIZE = 25
 
 	const hover = useHover(() => onhover)
 
@@ -85,7 +85,7 @@
 		>
 			{format(accent)}
 		</text>
-		<text x={captionX} y={px(plot + UNIT_SIZE + LABEL_SIZE + 18)} font-size={LABEL_SIZE} fill={theme.ink}>
+		<text x={captionX} y={px(plot + UNIT_SIZE + LABEL_SIZE + 18)} font-size={LABEL_SIZE} fill={theme.muted}>
 			{named}
 		</text>
 	{/if}

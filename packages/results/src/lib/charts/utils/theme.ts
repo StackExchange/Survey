@@ -29,6 +29,13 @@ export const theme = {
 	// against the page at this size.
 	ghost: token('ghost', '#e5e4e3'),
 
+	// An 'off' cube's three faces, from the base artwork. Its own greys rather than
+	// faded versions of the live ones: washing the live faces back loses the
+	// shading direction, and a cube you can't read the top of stops being a cube.
+	offTop: token('off-top', '#b6b6b6'),
+	offLeft: token('off-left', '#423d3d'),
+	offRight: token('off-right', '#ffffff'),
+
 	// Index with `series(i)` — a sankey carries more nodes than there are colours.
 	series: [
 		token('series-1', '#5074ef'),
@@ -69,10 +76,15 @@ export const GAP = 8
 
 export const PAD = 15
 
-// The wash laid over the row under the pointer, and the opacity of the hero
-// slabs that aren't. Both were repeated as bare literals across the charts.
+// The wash laid over the row under the pointer, and the opacity of the hero marks
+// that aren't. Both were repeated as bare literals across the charts.
 export const HOVER_WASH = 0.05
 export const DIM = 0.75
+
+// An 'off' cube's own opacity, off the base artwork. A group opacity rather than
+// three faded fills: one number to change, and the faces don't composite against
+// each other where they meet.
+export const OFF = 0.26
 
 // `places` is for the few values that aren't lengths: a scale factor multiplies
 // up, so it needs more of them.

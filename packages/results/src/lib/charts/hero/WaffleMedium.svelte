@@ -1,9 +1,9 @@
 <script lang="ts">
-	// The "1 in X" shape as cubes. Two rows once there are more than five, so the
-	// field stays wider than it is deep.
-	import { amountOf, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
-	import { CUBE, cube, cubeHeight, SKEW } from '$charts/utils/iso'
-	import { series, theme } from '$charts/utils/theme'
+	// The "1 in X" shape as cubes, butted end to end, every other column dropping half
+	// a cube height so the two interlock. Two rows once there are more than five, so
+	// the field stays wider than it is deep.
+	import { amountOf, CUBE, cube, cubeHeight, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { OFF, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -18,20 +18,19 @@
 	const columns = $derived(Math.ceil(cells / lines))
 
 	// Capped, or "1 in 2" draws two cubes half a page wide each.
-	const size = $derived(Math.min(width / (columns + lines / 2) / 1.35, width / 5))
-	const step = $derived(size * 1.35)
+	const size = $derived(Math.min(width / columns, width / 5))
+	const lineHeight = $derived(cubeHeight(size))
+	const stagger = $derived(lineHeight / 2)
 
-	const height = $derived((lines - 1) * step * SKEW * 0.5 + cubeHeight(size))
+	// The staggered columns hang half a cube below the last full row.
+	const height = $derived(lines * lineHeight + stagger)
 
-	// Back to front, so a cube overlaps the one behind it.
-	const order = $derived(
-		Array.from({ length: cells }, (_, i) => ({ i, column: i % columns, line: Math.floor(i / columns) })).sort(
-			(a, b) => a.line + a.column - (b.line + b.column)
-		)
-	)
+	// Index order: nothing overlaps on a grid this tight, so there is no back to
+	// front to paint in.
+	const order = $derived(Array.from({ length: cells }, (_, i) => ({ i, column: i % columns, line: Math.floor(i / columns) })))
 
 	const enter = (event: PointerEvent) =>
-		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: series(1) }] }, event)
+		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: theme.focus }] }, event)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
@@ -39,14 +38,15 @@
 		{@const on = cell.i === 0}
 
 		<g
-			transform={cube(cell.column * step + cell.line * step * 0.5, cell.line * step * SKEW * 0.5, size)}
+			transform={cube(cell.column * size, cell.line * lineHeight + (cell.column % 2) * stagger, size)}
+			opacity={on ? 1 : OFF}
 			role="presentation"
 			onpointermove={enter}
 			onpointerleave={() => onhover?.(null)}
 		>
-			<path d={CUBE.top} fill={on ? theme.faceTop : theme.ghost} />
-			<path d={CUBE.left} fill={on ? series(1) : theme.tint} />
-			<path d={CUBE.right} fill={on ? theme.faceSide : theme.ghost} />
+			<path d={CUBE.top} fill={on ? theme.accent : theme.offTop} />
+			<path d={CUBE.left} fill={on ? theme.focus : theme.offLeft} />
+			<path d={CUBE.right} fill={on ? theme.rest : theme.offRight} />
 		</g>
 	{/each}
 </Frame>
