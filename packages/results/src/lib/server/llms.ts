@@ -92,10 +92,33 @@ function asked(block: any) {
 	return `Asked as: ${d.title} (${meta.join(', ')})`
 }
 
-function figure(block: any, heading: string) {
+// Every line prefixed, the blank one included: a bare blank line would close the
+// quote and leave the attribution standing as its own paragraph.
+const blockquote = (text: string) =>
+	text
+		.split('\n')
+		.map((line) => (line.trim() ? `> ${line}` : '>'))
+		.join('\n')
+
+// The heading a block owns, where it has one. A passage between the charts may
+// carry only copy, and `### undefined` reads worse than no heading at all.
+const headingOf = (block: any, level: string) => {
+	const text = block.name || block.headline || block.dataId
+	return text ? `${level} ${text}` : null
+}
+
+// The three kinds a chapter's stream carries. Only a figure has rows, a cut and a
+// bank entry behind it; a quote and a passage are copy the sheet wrote, and either
+// can arrive without a headline.
+function figure(block: any, heading: string | null) {
 	// A quote is its own copy, so it drops the caller's heading rather than
-	// printing the same text twice.
-	if (block.kind === 'quote') return join(`> ${block.headline}`, block.description)
+	// printing the same text twice. `description` is the attribution beneath it.
+	if (block.kind === 'quote') {
+		return blockquote(join(`“${block.headline}”`, block.description?.trim() && `— ${block.description.trim()}`))
+	}
+
+	// A passage has no figure behind it: nothing to ask, cut or tabulate.
+	if (block.kind === 'text') return join(heading, block.description)
 
 	// A question carries its cuts and nothing flat; a promoted figure is already
 	// narrowed to the one cut the sheet asked for.
@@ -146,7 +169,14 @@ function yearPage(page: PageRef) {
 			)
 			.join('\n'),
 		'## Headline figures',
-		chapters.flatMap((chapter: any) => chapter.heroes.map((hero: any) => figure(hero, `### ${chapter.name}`))).join('\n\n')
+		// One heading per chapter, then each hero under its own headline: a chapter
+		// promotes more than one figure, and repeating the chapter name as the heading
+		// left the year page with two identical `### Work`s and the headlines nowhere.
+		chapters
+			.map((chapter: any) =>
+				join(`### ${chapter.name}`, chapter.heroes.map((hero: any) => figure(hero, headingOf(hero, '####'))).join('\n\n'))
+			)
+			.join('\n\n')
 	)
 }
 
@@ -159,7 +189,7 @@ function chapterPage(page: PageRef, id: string) {
 		`# ${chapter.name} ${year}`,
 		chapter.description,
 		'## Highlights',
-		chapter.highlights.map((h: any) => figure(h, `### ${h.headline || h.name}`)).join('\n\n'),
+		chapter.highlights.map((h: any) => figure(h, headingOf(h, '###'))).join('\n\n'),
 		`Every figure in this chapter: ${siteUrl}/${year}/${id}/data.md`
 	)
 }
@@ -179,7 +209,7 @@ function dataPage(page: PageRef, id: string) {
 					section.questions
 						.map((q: any) =>
 							join(
-								figure(q, `### ${q.name || q.dataId}`),
+								figure(q, headingOf(q, '###')),
 								q.kind === 'figure' && `Every respondent group: ${siteUrl}/${year}/${id}/data/${q.id}.md`
 							)
 						)
