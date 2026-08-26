@@ -93,7 +93,7 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
+        "response": "Other",
         "count": 197,
         "pct": 0.0121
       }
@@ -108,7 +108,7 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 13338
+          "n": 15245
         }
       ]
     },
@@ -118,35 +118,42 @@
         "series": null,
         "response": "Small scripts/automations",
         "count": 10304,
-        "pct": 0.7725
+        "pct": 0.6759
       },
       {
         "slice": 0,
         "series": null,
         "response": "Team-level internal tools",
         "count": 8398,
-        "pct": 0.6296
+        "pct": 0.5509
       },
       {
         "slice": 0,
         "series": null,
         "response": "Customer-facing products",
         "count": 7254,
-        "pct": 0.5439
+        "pct": 0.4758
       },
       {
         "slice": 0,
         "series": null,
         "response": "Cross-team/platform tools",
         "count": 6130,
-        "pct": 0.4596
+        "pct": 0.4021
       },
       {
         "slice": 0,
         "series": null,
         "response": "Replacing paid vendors",
         "count": 2482,
-        "pct": 0.1861
+        "pct": 0.1628
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "None",
+        "count": 1949,
+        "pct": 0.1278
       }
     ]
   },
@@ -281,7 +288,7 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
+        "response": "Other",
         "count": 1172,
         "pct": 0.0859
       }
@@ -312,6 +319,11 @@
           "slice_type": "workexp",
           "slice_value": "16+ years",
           "n": 5296
+        },
+        {
+          "slice_type": "technologyseries",
+          "slice_value": "Used for AI",
+          "n": 14099
         }
       ]
     },
@@ -334,15 +346,15 @@
         "slice": 0,
         "series": null,
         "response": "HTML/CSS",
-        "count": 8211,
-        "pct": 0.5824
+        "count": 8212,
+        "pct": 0.5825
       },
       {
         "slice": 0,
         "series": null,
         "response": "Python",
-        "count": 8182,
-        "pct": 0.5803
+        "count": 8184,
+        "pct": 0.5805
       },
       {
         "slice": 0,
@@ -355,22 +367,22 @@
         "slice": 0,
         "series": null,
         "response": "TypeScript",
-        "count": 6169,
-        "pct": 0.4375
+        "count": 6171,
+        "pct": 0.4377
       },
       {
         "slice": 0,
         "series": null,
         "response": "Java",
-        "count": 3884,
-        "pct": 0.2755
+        "count": 3885,
+        "pct": 0.2756
       },
       {
         "slice": 0,
         "series": null,
         "response": "C#",
-        "count": 3818,
-        "pct": 0.2708
+        "count": 3826,
+        "pct": 0.2714
       },
       {
         "slice": 0,
@@ -397,8 +409,8 @@
         "slice": 0,
         "series": null,
         "response": "Rust",
-        "count": 2540,
-        "pct": 0.1802
+        "count": 2542,
+        "pct": 0.1803
       },
       {
         "slice": 0,
@@ -411,8 +423,8 @@
         "slice": 0,
         "series": null,
         "response": "Go",
-        "count": 2328,
-        "pct": 0.1651
+        "count": 2332,
+        "pct": 0.1654
       },
       {
         "slice": 0,
@@ -432,22 +444,15 @@
         "slice": 0,
         "series": null,
         "response": "Assembly",
-        "count": 1019,
+        "count": 1020,
         "pct": 0.0723
       },
       {
         "slice": 0,
         "series": null,
         "response": "Swift",
-        "count": 827,
-        "pct": 0.0587
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Other, please specify",
-        "count": 824,
-        "pct": 0.0584
+        "count": 831,
+        "pct": 0.0589
       },
       {
         "slice": 0,
@@ -459,9 +464,16 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Other",
+        "count": 733,
+        "pct": 0.052
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Dart",
-        "count": 694,
-        "pct": 0.0492
+        "count": 697,
+        "pct": 0.0494
       },
       {
         "slice": 0,
@@ -495,15 +507,15 @@
         "slice": 0,
         "series": null,
         "response": "VBA",
-        "count": 551,
-        "pct": 0.0391
+        "count": 552,
+        "pct": 0.0392
       },
       {
         "slice": 0,
         "series": null,
         "response": "Groovy",
-        "count": 541,
-        "pct": 0.0384
+        "count": 544,
+        "pct": 0.0386
       },
       {
         "slice": 0,
@@ -537,14 +549,14 @@
         "slice": 0,
         "series": null,
         "response": "Lisp",
-        "count": 367,
-        "pct": 0.026
+        "count": 368,
+        "pct": 0.0261
       },
       {
         "slice": 0,
         "series": null,
         "response": "Elixir",
-        "count": 366,
+        "count": 367,
         "pct": 0.026
       },
       {
@@ -572,7 +584,7 @@
         "slice": 0,
         "series": null,
         "response": "Delphi",
-        "count": 266,
+        "count": 267,
         "pct": 0.0189
       },
       {
@@ -593,8 +605,8 @@
         "slice": 0,
         "series": null,
         "response": "Julia",
-        "count": 210,
-        "pct": 0.0149
+        "count": 211,
+        "pct": 0.015
       },
       {
         "slice": 0,
@@ -660,11 +672,25 @@
         "pct": 0.0058
       },
       {
+        "slice": 0,
+        "series": null,
+        "response": "Odin",
+        "count": 34,
+        "pct": 0.0024
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Elm",
+        "count": 17,
+        "pct": 0.0012
+      },
+      {
         "slice": 1,
         "series": null,
         "response": "Python",
-        "count": 2198,
-        "pct": 0.6653
+        "count": 2199,
+        "pct": 0.6656
       },
       {
         "slice": 1,
@@ -677,8 +703,8 @@
         "slice": 1,
         "series": null,
         "response": "HTML/CSS",
-        "count": 2002,
-        "pct": 0.6059
+        "count": 2003,
+        "pct": 0.6062
       },
       {
         "slice": 1,
@@ -698,15 +724,15 @@
         "slice": 1,
         "series": null,
         "response": "TypeScript",
-        "count": 1467,
-        "pct": 0.444
+        "count": 1468,
+        "pct": 0.4443
       },
       {
         "slice": 1,
         "series": null,
         "response": "Java",
-        "count": 1095,
-        "pct": 0.3314
+        "count": 1096,
+        "pct": 0.3317
       },
       {
         "slice": 1,
@@ -726,8 +752,8 @@
         "slice": 1,
         "series": null,
         "response": "C#",
-        "count": 857,
-        "pct": 0.2594
+        "count": 859,
+        "pct": 0.26
       },
       {
         "slice": 1,
@@ -775,15 +801,15 @@
         "slice": 1,
         "series": null,
         "response": "Assembly",
-        "count": 389,
-        "pct": 0.1177
+        "count": 390,
+        "pct": 0.118
       },
       {
         "slice": 1,
         "series": null,
         "response": "Dart",
-        "count": 252,
-        "pct": 0.0763
+        "count": 253,
+        "pct": 0.0766
       },
       {
         "slice": 1,
@@ -816,13 +842,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 200,
-        "pct": 0.0605
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Zig",
         "count": 173,
         "pct": 0.0524
@@ -830,9 +849,16 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Other",
+        "count": 170,
+        "pct": 0.0515
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Swift",
-        "count": 168,
-        "pct": 0.0508
+        "count": 170,
+        "pct": 0.0515
       },
       {
         "slice": 1,
@@ -1003,6 +1029,20 @@
         "pct": 0.0085
       },
       {
+        "slice": 1,
+        "series": null,
+        "response": "Odin",
+        "count": 14,
+        "pct": 0.0042
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Elm",
+        "count": 5,
+        "pct": 0.0015
+      },
+      {
         "slice": 2,
         "series": null,
         "response": "JavaScript",
@@ -1041,8 +1081,8 @@
         "slice": 2,
         "series": null,
         "response": "TypeScript",
-        "count": 2369,
-        "pct": 0.5096
+        "count": 2370,
+        "pct": 0.5098
       },
       {
         "slice": 2,
@@ -1055,8 +1095,8 @@
         "slice": 2,
         "series": null,
         "response": "C#",
-        "count": 1153,
-        "pct": 0.248
+        "count": 1154,
+        "pct": 0.2482
       },
       {
         "slice": 2,
@@ -1090,8 +1130,8 @@
         "slice": 2,
         "series": null,
         "response": "Rust",
-        "count": 782,
-        "pct": 0.1682
+        "count": 783,
+        "pct": 0.1684
       },
       {
         "slice": 2,
@@ -1125,15 +1165,8 @@
         "slice": 2,
         "series": null,
         "response": "Swift",
-        "count": 267,
-        "pct": 0.0574
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Other, please specify",
-        "count": 223,
-        "pct": 0.048
+        "count": 268,
+        "pct": 0.0576
       },
       {
         "slice": 2,
@@ -1148,6 +1181,13 @@
         "response": "Dart",
         "count": 200,
         "pct": 0.043
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Other",
+        "count": 197,
+        "pct": 0.0424
       },
       {
         "slice": 2,
@@ -1202,8 +1242,8 @@
         "slice": 2,
         "series": null,
         "response": "VBA",
-        "count": 127,
-        "pct": 0.0273
+        "count": 128,
+        "pct": 0.0275
       },
       {
         "slice": 2,
@@ -1271,14 +1311,14 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Clojure",
-        "count": 54,
-        "pct": 0.0116
+        "response": "Julia",
+        "count": 55,
+        "pct": 0.0118
       },
       {
         "slice": 2,
         "series": null,
-        "response": "Julia",
+        "response": "Clojure",
         "count": 54,
         "pct": 0.0116
       },
@@ -1346,6 +1386,20 @@
         "pct": 0.0041
       },
       {
+        "slice": 2,
+        "series": null,
+        "response": "Odin",
+        "count": 11,
+        "pct": 0.0024
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Elm",
+        "count": 9,
+        "pct": 0.0019
+      },
+      {
         "slice": 3,
         "series": null,
         "response": "SQL",
@@ -1370,8 +1424,8 @@
         "slice": 3,
         "series": null,
         "response": "Python",
-        "count": 2817,
-        "pct": 0.5319
+        "count": 2818,
+        "pct": 0.5321
       },
       {
         "slice": 3,
@@ -1391,8 +1445,8 @@
         "slice": 3,
         "series": null,
         "response": "C#",
-        "count": 1631,
-        "pct": 0.308
+        "count": 1636,
+        "pct": 0.3089
       },
       {
         "slice": 3,
@@ -1433,15 +1487,15 @@
         "slice": 3,
         "series": null,
         "response": "Go",
-        "count": 771,
-        "pct": 0.1456
+        "count": 775,
+        "pct": 0.1463
       },
       {
         "slice": 3,
         "series": null,
         "response": "Rust",
-        "count": 678,
-        "pct": 0.128
+        "count": 679,
+        "pct": 0.1282
       },
       {
         "slice": 3,
@@ -1461,8 +1515,8 @@
         "slice": 3,
         "series": null,
         "response": "Swift",
-        "count": 350,
-        "pct": 0.0661
+        "count": 351,
+        "pct": 0.0663
       },
       {
         "slice": 3,
@@ -1474,9 +1528,9 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 337,
-        "pct": 0.0636
+        "response": "Other",
+        "count": 308,
+        "pct": 0.0582
       },
       {
         "slice": 3,
@@ -1502,16 +1556,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "R",
-        "count": 235,
-        "pct": 0.0444
+        "response": "Groovy",
+        "count": 236,
+        "pct": 0.0446
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Groovy",
-        "count": 233,
-        "pct": 0.044
+        "response": "R",
+        "count": 235,
+        "pct": 0.0444
       },
       {
         "slice": 3,
@@ -1524,8 +1578,8 @@
         "slice": 3,
         "series": null,
         "response": "Dart",
-        "count": 195,
-        "pct": 0.0368
+        "count": 196,
+        "pct": 0.037
       },
       {
         "slice": 3,
@@ -1538,8 +1592,8 @@
         "slice": 3,
         "series": null,
         "response": "Delphi",
-        "count": 158,
-        "pct": 0.0298
+        "count": 159,
+        "pct": 0.03
       },
       {
         "slice": 3,
@@ -1559,8 +1613,8 @@
         "slice": 3,
         "series": null,
         "response": "Elixir",
-        "count": 122,
-        "pct": 0.023
+        "count": 123,
+        "pct": 0.0232
       },
       {
         "slice": 3,
@@ -1573,8 +1627,8 @@
         "slice": 3,
         "series": null,
         "response": "Lisp",
-        "count": 106,
-        "pct": 0.02
+        "count": 107,
+        "pct": 0.0202
       },
       {
         "slice": 3,
@@ -1687,6 +1741,377 @@
         "response": "OCaml",
         "count": 18,
         "pct": 0.0034
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Odin",
+        "count": 5,
+        "pct": 0.0009
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Elm",
+        "count": 3,
+        "pct": 0.0006
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Python",
+        "count": 5495,
+        "pct": 0.3897
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "JavaScript",
+        "count": 5419,
+        "pct": 0.3844
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "HTML/CSS",
+        "count": 4692,
+        "pct": 0.3328
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "TypeScript",
+        "count": 4293,
+        "pct": 0.3045
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "SQL",
+        "count": 4207,
+        "pct": 0.2984
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Bash/Shell (all shells)",
+        "count": 4038,
+        "pct": 0.2864
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "C#",
+        "count": 2277,
+        "pct": 0.1615
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "PowerShell",
+        "count": 2057,
+        "pct": 0.1459
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Java",
+        "count": 2052,
+        "pct": 0.1455
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Rust",
+        "count": 1602,
+        "pct": 0.1136
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "C++",
+        "count": 1595,
+        "pct": 0.1131
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Go",
+        "count": 1524,
+        "pct": 0.1081
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "PHP",
+        "count": 1303,
+        "pct": 0.0924
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "C",
+        "count": 1120,
+        "pct": 0.0794
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Kotlin",
+        "count": 976,
+        "pct": 0.0692
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Swift",
+        "count": 600,
+        "pct": 0.0426
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Lua",
+        "count": 529,
+        "pct": 0.0375
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Ruby",
+        "count": 509,
+        "pct": 0.0361
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Dart",
+        "count": 464,
+        "pct": 0.0329
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Other",
+        "count": 375,
+        "pct": 0.0266
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Assembly",
+        "count": 323,
+        "pct": 0.0229
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Nix",
+        "count": 318,
+        "pct": 0.0226
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "R",
+        "count": 295,
+        "pct": 0.0209
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Groovy",
+        "count": 258,
+        "pct": 0.0183
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Elixir",
+        "count": 257,
+        "pct": 0.0182
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Visual Basic (.Net)",
+        "count": 255,
+        "pct": 0.0181
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "VBA",
+        "count": 243,
+        "pct": 0.0172
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Perl",
+        "count": 226,
+        "pct": 0.016
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "GDScript",
+        "count": 216,
+        "pct": 0.0153
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Objective-C",
+        "count": 212,
+        "pct": 0.015
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "MATLAB",
+        "count": 200,
+        "pct": 0.0142
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Zig",
+        "count": 200,
+        "pct": 0.0142
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Scala",
+        "count": 199,
+        "pct": 0.0141
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "MicroPython",
+        "count": 172,
+        "pct": 0.0122
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Delphi",
+        "count": 152,
+        "pct": 0.0108
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Ada",
+        "count": 134,
+        "pct": 0.0095
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Lisp",
+        "count": 133,
+        "pct": 0.0094
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Clojure",
+        "count": 132,
+        "pct": 0.0094
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Erlang",
+        "count": 127,
+        "pct": 0.009
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Haskell",
+        "count": 127,
+        "pct": 0.009
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "F#",
+        "count": 117,
+        "pct": 0.0083
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Fortran",
+        "count": 113,
+        "pct": 0.008
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Julia",
+        "count": 112,
+        "pct": 0.0079
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "COBOL",
+        "count": 104,
+        "pct": 0.0074
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Solidity",
+        "count": 101,
+        "pct": 0.0072
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "OCaml",
+        "count": 96,
+        "pct": 0.0068
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Prolog",
+        "count": 90,
+        "pct": 0.0064
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Gleam",
+        "count": 86,
+        "pct": 0.0061
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Mojo",
+        "count": 68,
+        "pct": 0.0048
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Odin",
+        "count": 10,
+        "pct": 0.0007
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Elm",
+        "count": 5,
+        "pct": 0.0004
       }
     ]
   },
@@ -1737,8 +2162,8 @@
         "slice": 0,
         "series": null,
         "response": "pytest",
-        "count": 2971,
-        "pct": 0.2802
+        "count": 2972,
+        "pct": 0.2803
       },
       {
         "slice": 0,
@@ -1751,7 +2176,7 @@
         "slice": 0,
         "series": null,
         "response": "JUnit",
-        "count": 2273,
+        "count": 2274,
         "pct": 0.2144
       },
       {
@@ -1806,13 +2231,6 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 950,
-        "pct": 0.0896
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "NUnit",
         "count": 921,
         "pct": 0.0869
@@ -1830,6 +2248,13 @@
         "response": "Testcontainers",
         "count": 827,
         "pct": 0.078
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 696,
+        "pct": 0.0656
       },
       {
         "slice": 0,
@@ -1974,6 +2399,13 @@
       {
         "slice": 0,
         "series": null,
+        "response": "PHPUnit",
+        "count": 88,
+        "pct": 0.0083
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Sourcery",
         "count": 88,
         "pct": 0.0083
@@ -1984,6 +2416,27 @@
         "response": "Ellipsis",
         "count": 82,
         "pct": 0.0077
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bruno",
+        "count": 60,
+        "pct": 0.0057
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GoogleTest",
+        "count": 56,
+        "pct": 0.0053
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "MSTest",
+        "count": 47,
+        "pct": 0.0044
       },
       {
         "slice": 1,
@@ -2017,8 +2470,8 @@
         "slice": 1,
         "series": null,
         "response": "JUnit",
-        "count": 486,
-        "pct": 0.2056
+        "count": 487,
+        "pct": 0.206
       },
       {
         "slice": 1,
@@ -2058,13 +2511,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 194,
-        "pct": 0.0821
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "xUnit.net",
         "count": 183,
         "pct": 0.0774
@@ -2082,6 +2528,13 @@
         "response": "Cypress",
         "count": 157,
         "pct": 0.0664
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other",
+        "count": 149,
+        "pct": 0.063
       },
       {
         "slice": 1,
@@ -2252,6 +2705,34 @@
         "pct": 0.0131
       },
       {
+        "slice": 1,
+        "series": null,
+        "response": "GoogleTest",
+        "count": 20,
+        "pct": 0.0085
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bruno",
+        "count": 10,
+        "pct": 0.0042
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "PHPUnit",
+        "count": 9,
+        "pct": 0.0038
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "MSTest",
+        "count": 5,
+        "pct": 0.0021
+      },
+      {
         "slice": 2,
         "series": null,
         "response": "ESLint",
@@ -2269,8 +2750,8 @@
         "slice": 2,
         "series": null,
         "response": "pytest",
-        "count": 1085,
-        "pct": 0.2821
+        "count": 1086,
+        "pct": 0.2824
       },
       {
         "slice": 2,
@@ -2359,13 +2840,6 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Other, please specify",
-        "count": 305,
-        "pct": 0.0793
-      },
-      {
-        "slice": 2,
-        "series": null,
         "response": "JaCoCo",
         "count": 256,
         "pct": 0.0666
@@ -2383,6 +2857,13 @@
         "response": "BrowserStack",
         "count": 227,
         "pct": 0.059
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Other",
+        "count": 218,
+        "pct": 0.0567
       },
       {
         "slice": 2,
@@ -2492,6 +2973,13 @@
       {
         "slice": 2,
         "series": null,
+        "response": "PHPUnit",
+        "count": 34,
+        "pct": 0.0088
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Qodo",
         "count": 32,
         "pct": 0.0083
@@ -2506,6 +2994,13 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Bruno",
+        "count": 28,
+        "pct": 0.0073
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Sourcery",
         "count": 23,
         "pct": 0.006
@@ -2516,6 +3011,20 @@
         "response": "Ellipsis",
         "count": 22,
         "pct": 0.0057
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "GoogleTest",
+        "count": 14,
+        "pct": 0.0036
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "MSTest",
+        "count": 10,
+        "pct": 0.0026
       },
       {
         "slice": 3,
@@ -2611,13 +3120,6 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 414,
-        "pct": 0.1047
-      },
-      {
-        "slice": 3,
-        "series": null,
         "response": "Testcontainers",
         "count": 330,
         "pct": 0.0834
@@ -2628,6 +3130,13 @@
         "response": "Cypress",
         "count": 312,
         "pct": 0.0789
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Other",
+        "count": 296,
+        "pct": 0.0748
       },
       {
         "slice": 3,
@@ -2751,9 +3260,23 @@
       {
         "slice": 3,
         "series": null,
+        "response": "PHPUnit",
+        "count": 44,
+        "pct": 0.0111
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Greptile",
         "count": 33,
         "pct": 0.0083
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "MSTest",
+        "count": 31,
+        "pct": 0.0078
       },
       {
         "slice": 3,
@@ -2775,6 +3298,20 @@
         "response": "Sourcery",
         "count": 22,
         "pct": 0.0056
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Bruno",
+        "count": 21,
+        "pct": 0.0053
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "GoogleTest",
+        "count": 21,
+        "pct": 0.0053
       },
       {
         "slice": 3,
@@ -2818,15 +3355,15 @@
         "slice": 0,
         "series": null,
         "response": "PostgreSQL",
-        "count": 6983,
-        "pct": 0.579
+        "count": 6984,
+        "pct": 0.5791
       },
       {
         "slice": 0,
         "series": null,
         "response": "SQLite",
-        "count": 5081,
-        "pct": 0.4213
+        "count": 5083,
+        "pct": 0.4214
       },
       {
         "slice": 0,
@@ -2874,8 +3411,8 @@
         "slice": 0,
         "series": null,
         "response": "Oracle",
-        "count": 1133,
-        "pct": 0.0939
+        "count": 1135,
+        "pct": 0.0941
       },
       {
         "slice": 0,
@@ -2915,16 +3452,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 584,
-        "pct": 0.0484
+        "response": "Cloud Firestore",
+        "count": 582,
+        "pct": 0.0483
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Cloud Firestore",
-        "count": 582,
-        "pct": 0.0483
+        "response": "Other",
+        "count": 575,
+        "pct": 0.0477
       },
       {
         "slice": 0,
@@ -2937,7 +3474,7 @@
         "slice": 0,
         "series": null,
         "response": "Snowflake",
-        "count": 541,
+        "count": 542,
         "pct": 0.0449
       },
       {
@@ -2979,8 +3516,8 @@
         "slice": 0,
         "series": null,
         "response": "Clickhouse",
-        "count": 428,
-        "pct": 0.0355
+        "count": 429,
+        "pct": 0.0356
       },
       {
         "slice": 0,
@@ -3014,8 +3551,8 @@
         "slice": 0,
         "series": null,
         "response": "Pocketbase",
-        "count": 128,
-        "pct": 0.0106
+        "count": 129,
+        "pct": 0.0107
       },
       {
         "slice": 0,
@@ -3042,8 +3579,8 @@
         "slice": 1,
         "series": null,
         "response": "SQLite",
-        "count": 1212,
-        "pct": 0.4656
+        "count": 1213,
+        "pct": 0.466
       },
       {
         "slice": 1,
@@ -3153,9 +3690,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 122,
-        "pct": 0.0469
+        "response": "Other",
+        "count": 121,
+        "pct": 0.0465
       },
       {
         "slice": 1,
@@ -3343,8 +3880,8 @@
         "slice": 2,
         "series": null,
         "response": "Snowflake",
-        "count": 223,
-        "pct": 0.0535
+        "count": 224,
+        "pct": 0.0537
       },
       {
         "slice": 2,
@@ -3377,14 +3914,14 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Other, please specify",
-        "count": 192,
-        "pct": 0.0461
+        "response": "Clickhouse",
+        "count": 190,
+        "pct": 0.0456
       },
       {
         "slice": 2,
         "series": null,
-        "response": "Clickhouse",
+        "response": "Other",
         "count": 190,
         "pct": 0.0456
       },
@@ -3476,8 +4013,8 @@
         "slice": 3,
         "series": null,
         "response": "SQLite",
-        "count": 1936,
-        "pct": 0.4075
+        "count": 1937,
+        "pct": 0.4077
       },
       {
         "slice": 3,
@@ -3525,8 +4062,8 @@
         "slice": 3,
         "series": null,
         "response": "Oracle",
-        "count": 509,
-        "pct": 0.1071
+        "count": 511,
+        "pct": 0.1076
       },
       {
         "slice": 3,
@@ -3552,16 +4089,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 249,
-        "pct": 0.0524
+        "response": "Supabase",
+        "count": 246,
+        "pct": 0.0518
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Supabase",
-        "count": 246,
-        "pct": 0.0518
+        "response": "Other",
+        "count": 244,
+        "pct": 0.0514
       },
       {
         "slice": 3,
@@ -3630,8 +4167,8 @@
         "slice": 3,
         "series": null,
         "response": "Clickhouse",
-        "count": 141,
-        "pct": 0.0297
+        "count": 142,
+        "pct": 0.0299
       },
       {
         "slice": 3,
@@ -3672,8 +4209,8 @@
         "slice": 3,
         "series": null,
         "response": "Pocketbase",
-        "count": 29,
-        "pct": 0.0061
+        "count": 30,
+        "pct": 0.0063
       },
       {
         "slice": 3,
@@ -3829,15 +4366,15 @@
         "slice": 0,
         "series": null,
         "response": "APT",
-        "count": 1811,
-        "pct": 0.1663
+        "count": 1813,
+        "pct": 0.1665
       },
       {
         "slice": 0,
         "series": null,
         "response": "Cargo",
-        "count": 1768,
-        "pct": 0.1624
+        "count": 1770,
+        "pct": 0.1625
       },
       {
         "slice": 0,
@@ -3871,8 +4408,8 @@
         "slice": 0,
         "series": null,
         "response": "Podman",
-        "count": 1413,
-        "pct": 0.1298
+        "count": 1415,
+        "pct": 0.1299
       },
       {
         "slice": 0,
@@ -3920,8 +4457,8 @@
         "slice": 0,
         "series": null,
         "response": "Chocolatey",
-        "count": 1052,
-        "pct": 0.0966
+        "count": 1053,
+        "pct": 0.0967
       },
       {
         "slice": 0,
@@ -4017,9 +4554,9 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 467,
-        "pct": 0.0429
+        "response": "Other",
+        "count": 459,
+        "pct": 0.0422
       },
       {
         "slice": 0,
@@ -4207,8 +4744,8 @@
         "slice": 1,
         "series": null,
         "response": "APT",
-        "count": 474,
-        "pct": 0.216
+        "count": 475,
+        "pct": 0.2165
       },
       {
         "slice": 1,
@@ -4430,9 +4967,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 94,
-        "pct": 0.0428
+        "response": "Other",
+        "count": 92,
+        "pct": 0.0419
       },
       {
         "slice": 1,
@@ -4641,8 +5178,8 @@
         "slice": 2,
         "series": null,
         "response": "APT",
-        "count": 584,
-        "pct": 0.1516
+        "count": 585,
+        "pct": 0.1519
       },
       {
         "slice": 2,
@@ -4829,9 +5366,9 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Other, please specify",
-        "count": 151,
-        "pct": 0.0392
+        "response": "Other",
+        "count": 150,
+        "pct": 0.039
       },
       {
         "slice": 2,
@@ -5054,8 +5591,8 @@
         "slice": 3,
         "series": null,
         "response": "Podman",
-        "count": 564,
-        "pct": 0.1308
+        "count": 566,
+        "pct": 0.1313
       },
       {
         "slice": 3,
@@ -5081,14 +5618,14 @@
       {
         "slice": 3,
         "series": null,
-        "response": "CMake",
-        "count": 493,
-        "pct": 0.1144
+        "response": "Cargo",
+        "count": 495,
+        "pct": 0.1148
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Cargo",
+        "response": "CMake",
         "count": 493,
         "pct": 0.1144
       },
@@ -5117,8 +5654,8 @@
         "slice": 3,
         "series": null,
         "response": "Chocolatey",
-        "count": 396,
-        "pct": 0.0919
+        "count": 397,
+        "pct": 0.0921
       },
       {
         "slice": 3,
@@ -5193,16 +5730,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 182,
-        "pct": 0.0422
+        "response": "Ninja",
+        "count": 181,
+        "pct": 0.042
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Ninja",
-        "count": 181,
-        "pct": 0.042
+        "response": "Other",
+        "count": 177,
+        "pct": 0.0411
       },
       {
         "slice": 3,
@@ -5351,8 +5888,8 @@
         "slice": 0,
         "series": null,
         "response": "React",
-        "count": 4263,
-        "pct": 0.4146
+        "count": 4265,
+        "pct": 0.4148
       },
       {
         "slice": 0,
@@ -5455,13 +5992,6 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 726,
-        "pct": 0.0706
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "Blazor",
         "count": 692,
         "pct": 0.0673
@@ -5479,6 +6009,13 @@
         "response": "AngularJS",
         "count": 612,
         "pct": 0.0595
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 604,
+        "pct": 0.0587
       },
       {
         "slice": 0,
@@ -5526,15 +6063,15 @@
         "slice": 0,
         "series": null,
         "response": "Symfony",
-        "count": 411,
-        "pct": 0.04
+        "count": 413,
+        "pct": 0.0402
       },
       {
         "slice": 0,
         "series": null,
         "response": "Axum",
-        "count": 371,
-        "pct": 0.0361
+        "count": 374,
+        "pct": 0.0364
       },
       {
         "slice": 0,
@@ -5547,8 +6084,8 @@
         "slice": 0,
         "series": null,
         "response": "Hono",
-        "count": 285,
-        "pct": 0.0277
+        "count": 287,
+        "pct": 0.0279
       },
       {
         "slice": 0,
@@ -5561,8 +6098,8 @@
         "slice": 0,
         "series": null,
         "response": "Drupal",
-        "count": 206,
-        "pct": 0.02
+        "count": 207,
+        "pct": 0.0201
       },
       {
         "slice": 0,
@@ -5591,6 +6128,41 @@
         "response": "Koa",
         "count": 92,
         "pct": 0.0089
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Quarkus",
+        "count": 26,
+        "pct": 0.0025
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Flutter",
+        "count": 24,
+        "pct": 0.0023
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Leptos",
+        "count": 22,
+        "pct": 0.0021
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lit",
+        "count": 20,
+        "pct": 0.0019
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lustre",
+        "count": 20,
+        "pct": 0.0019
       },
       {
         "slice": 1,
@@ -5728,13 +6300,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 171,
-        "pct": 0.0729
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "AngularJS",
         "count": 144,
         "pct": 0.0614
@@ -5763,6 +6328,13 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Other",
+        "count": 136,
+        "pct": 0.0579
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "htmx",
         "count": 134,
         "pct": 0.0571
@@ -5778,8 +6350,8 @@
         "slice": 1,
         "series": null,
         "response": "Hono",
-        "count": 107,
-        "pct": 0.0456
+        "count": 108,
+        "pct": 0.046
       },
       {
         "slice": 1,
@@ -5799,8 +6371,8 @@
         "slice": 1,
         "series": null,
         "response": "Symfony",
-        "count": 78,
-        "pct": 0.0332
+        "count": 79,
+        "pct": 0.0337
       },
       {
         "slice": 1,
@@ -5845,6 +6417,41 @@
         "pct": 0.0124
       },
       {
+        "slice": 1,
+        "series": null,
+        "response": "Flutter",
+        "count": 8,
+        "pct": 0.0034
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Quarkus",
+        "count": 8,
+        "pct": 0.0034
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Leptos",
+        "count": 6,
+        "pct": 0.0026
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Lustre",
+        "count": 6,
+        "pct": 0.0026
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Lit",
+        "count": 5,
+        "pct": 0.0021
+      },
+      {
         "slice": 2,
         "series": null,
         "response": "Node.js",
@@ -5855,8 +6462,8 @@
         "slice": 2,
         "series": null,
         "response": "React",
-        "count": 1603,
-        "pct": 0.4494
+        "count": 1604,
+        "pct": 0.4497
       },
       {
         "slice": 2,
@@ -5966,13 +6573,6 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Other, please specify",
-        "count": 224,
-        "pct": 0.0628
-      },
-      {
-        "slice": 2,
-        "series": null,
         "response": "Astro",
         "count": 223,
         "pct": 0.0625
@@ -6009,6 +6609,13 @@
         "slice": 2,
         "series": null,
         "response": "Nuxt.js",
+        "count": 178,
+        "pct": 0.0499
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Other",
         "count": 178,
         "pct": 0.0499
       },
@@ -6079,8 +6686,8 @@
         "slice": 2,
         "series": null,
         "response": "Drupal",
-        "count": 60,
-        "pct": 0.0168
+        "count": 61,
+        "pct": 0.0171
       },
       {
         "slice": 2,
@@ -6097,6 +6704,41 @@
         "pct": 0.0104
       },
       {
+        "slice": 2,
+        "series": null,
+        "response": "Flutter",
+        "count": 11,
+        "pct": 0.0031
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Quarkus",
+        "count": 10,
+        "pct": 0.0028
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Lit",
+        "count": 9,
+        "pct": 0.0025
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Lustre",
+        "count": 9,
+        "pct": 0.0025
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Leptos",
+        "count": 5,
+        "pct": 0.0014
+      },
+      {
         "slice": 3,
         "series": null,
         "response": "Node.js",
@@ -6107,8 +6749,8 @@
         "slice": 3,
         "series": null,
         "response": "React",
-        "count": 1378,
-        "pct": 0.36
+        "count": 1379,
+        "pct": 0.3602
       },
       {
         "slice": 3,
@@ -6204,13 +6846,6 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 295,
-        "pct": 0.0771
-      },
-      {
-        "slice": 3,
-        "series": null,
         "response": "Laravel",
         "count": 278,
         "pct": 0.0726
@@ -6221,6 +6856,13 @@
         "response": "Ruby on Rails",
         "count": 271,
         "pct": 0.0708
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Other",
+        "count": 260,
+        "pct": 0.0679
       },
       {
         "slice": 3,
@@ -6247,8 +6889,8 @@
         "slice": 3,
         "series": null,
         "response": "Symfony",
-        "count": 163,
-        "pct": 0.0426
+        "count": 164,
+        "pct": 0.0428
       },
       {
         "slice": 3,
@@ -6310,15 +6952,15 @@
         "slice": 3,
         "series": null,
         "response": "Axum",
-        "count": 79,
-        "pct": 0.0206
+        "count": 81,
+        "pct": 0.0212
       },
       {
         "slice": 3,
         "series": null,
         "response": "Hono",
-        "count": 65,
-        "pct": 0.017
+        "count": 66,
+        "pct": 0.0172
       },
       {
         "slice": 3,
@@ -6347,6 +6989,41 @@
         "response": "Koa",
         "count": 20,
         "pct": 0.0052
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Leptos",
+        "count": 9,
+        "pct": 0.0024
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Quarkus",
+        "count": 8,
+        "pct": 0.0021
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Lit",
+        "count": 6,
+        "pct": 0.0016
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Flutter",
+        "count": 5,
+        "pct": 0.0013
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Lustre",
+        "count": 2,
+        "pct": 0.0005
       }
     ]
   },
@@ -6383,8 +7060,8 @@
         "slice": 0,
         "series": null,
         "response": "Visual Studio Code",
-        "count": 9349,
-        "pct": 0.7086
+        "count": 9350,
+        "pct": 0.7087
       },
       {
         "slice": 0,
@@ -6418,8 +7095,8 @@
         "slice": 0,
         "series": null,
         "response": "Cursor",
-        "count": 1970,
-        "pct": 0.1493
+        "count": 1971,
+        "pct": 0.1494
       },
       {
         "slice": 0,
@@ -6432,8 +7109,8 @@
         "slice": 0,
         "series": null,
         "response": "Android Studio",
-        "count": 1879,
-        "pct": 0.1424
+        "count": 1880,
+        "pct": 0.1425
       },
       {
         "slice": 0,
@@ -6446,8 +7123,8 @@
         "slice": 0,
         "series": null,
         "response": "Nano",
-        "count": 1598,
-        "pct": 0.1211
+        "count": 1600,
+        "pct": 0.1213
       },
       {
         "slice": 0,
@@ -6487,23 +7164,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 937,
-        "pct": 0.071
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "Rider",
-        "count": 922,
-        "pct": 0.0699
+        "count": 924,
+        "pct": 0.07
       },
       {
         "slice": 0,
         "series": null,
         "response": "Eclipse",
-        "count": 902,
-        "pct": 0.0684
+        "count": 910,
+        "pct": 0.069
       },
       {
         "slice": 0,
@@ -6516,21 +7186,21 @@
         "slice": 0,
         "series": null,
         "response": "GitHub Codespaces",
-        "count": 875,
-        "pct": 0.0663
+        "count": 876,
+        "pct": 0.0664
       },
       {
         "slice": 0,
         "series": null,
         "response": "PhpStorm",
-        "count": 742,
-        "pct": 0.0562
+        "count": 743,
+        "pct": 0.0563
       },
       {
         "slice": 0,
         "series": null,
         "response": "Emacs",
-        "count": 696,
+        "count": 697,
         "pct": 0.0528
       },
       {
@@ -6539,6 +7209,13 @@
         "response": "CLion",
         "count": 630,
         "pct": 0.0478
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 551,
+        "pct": 0.0418
       },
       {
         "slice": 0,
@@ -6565,8 +7242,8 @@
         "slice": 0,
         "series": null,
         "response": "Kiro",
-        "count": 364,
-        "pct": 0.0276
+        "count": 365,
+        "pct": 0.0277
       },
       {
         "slice": 0,
@@ -6585,6 +7262,13 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Helix",
+        "count": 182,
+        "pct": 0.0138
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "RubyMine",
         "count": 180,
         "pct": 0.0136
@@ -6597,11 +7281,39 @@
         "pct": 0.0068
       },
       {
+        "slice": 0,
+        "series": null,
+        "response": "Antigravity",
+        "count": 58,
+        "pct": 0.0044
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "R Studio",
+        "count": 52,
+        "pct": 0.0039
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kate",
+        "count": 44,
+        "pct": 0.0033
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "BBEdit",
+        "count": 29,
+        "pct": 0.0022
+      },
+      {
         "slice": 1,
         "series": null,
         "response": "Visual Studio Code",
-        "count": 2206,
-        "pct": 0.7657
+        "count": 2207,
+        "pct": 0.7661
       },
       {
         "slice": 1,
@@ -6642,8 +7354,8 @@
         "slice": 1,
         "series": null,
         "response": "Android Studio",
-        "count": 558,
-        "pct": 0.1937
+        "count": 559,
+        "pct": 0.194
       },
       {
         "slice": 1,
@@ -6677,8 +7389,8 @@
         "slice": 1,
         "series": null,
         "response": "Nano",
-        "count": 414,
-        "pct": 0.1437
+        "count": 415,
+        "pct": 0.144
       },
       {
         "slice": 1,
@@ -6698,8 +7410,8 @@
         "slice": 1,
         "series": null,
         "response": "GitHub Codespaces",
-        "count": 263,
-        "pct": 0.0913
+        "count": 264,
+        "pct": 0.0916
       },
       {
         "slice": 1,
@@ -6739,13 +7451,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 208,
-        "pct": 0.0722
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Emacs",
         "count": 149,
         "pct": 0.0517
@@ -6761,8 +7466,8 @@
         "slice": 1,
         "series": null,
         "response": "PhpStorm",
-        "count": 124,
-        "pct": 0.043
+        "count": 125,
+        "pct": 0.0434
       },
       {
         "slice": 1,
@@ -6788,9 +7493,16 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Other",
+        "count": 97,
+        "pct": 0.0337
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Kiro",
-        "count": 88,
-        "pct": 0.0305
+        "count": 89,
+        "pct": 0.0309
       },
       {
         "slice": 1,
@@ -6798,6 +7510,13 @@
         "response": "NetBeans",
         "count": 85,
         "pct": 0.0295
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Helix",
+        "count": 69,
+        "pct": 0.024
       },
       {
         "slice": 1,
@@ -6812,6 +7531,34 @@
         "response": "RubyMine",
         "count": 42,
         "pct": 0.0146
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Antigravity",
+        "count": 12,
+        "pct": 0.0042
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Kate",
+        "count": 11,
+        "pct": 0.0038
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "R Studio",
+        "count": 10,
+        "pct": 0.0035
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "BBEdit",
+        "count": 2,
+        "pct": 0.0007
       },
       {
         "slice": 2,
@@ -6852,8 +7599,8 @@
         "slice": 2,
         "series": null,
         "response": "Cursor",
-        "count": 807,
-        "pct": 0.179
+        "count": 808,
+        "pct": 0.1792
       },
       {
         "slice": 2,
@@ -6915,8 +7662,8 @@
         "slice": 2,
         "series": null,
         "response": "Rider",
-        "count": 341,
-        "pct": 0.0756
+        "count": 343,
+        "pct": 0.0761
       },
       {
         "slice": 2,
@@ -6938,13 +7685,6 @@
         "response": "PhpStorm",
         "count": 275,
         "pct": 0.061
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Other, please specify",
-        "count": 255,
-        "pct": 0.0566
       },
       {
         "slice": 2,
@@ -6998,6 +7738,13 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Other",
+        "count": 140,
+        "pct": 0.0311
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Kiro",
         "count": 120,
         "pct": 0.0266
@@ -7026,9 +7773,44 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Helix",
+        "count": 57,
+        "pct": 0.0126
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Trae",
         "count": 24,
         "pct": 0.0053
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Antigravity",
+        "count": 21,
+        "pct": 0.0047
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "R Studio",
+        "count": 18,
+        "pct": 0.004
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Kate",
+        "count": 13,
+        "pct": 0.0029
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "BBEdit",
+        "count": 2,
+        "pct": 0.0004
       },
       {
         "slice": 3,
@@ -7097,8 +7879,8 @@
         "slice": 3,
         "series": null,
         "response": "Nano",
-        "count": 533,
-        "pct": 0.1047
+        "count": 534,
+        "pct": 0.1048
       },
       {
         "slice": 3,
@@ -7132,15 +7914,8 @@
         "slice": 3,
         "series": null,
         "response": "Eclipse",
-        "count": 397,
-        "pct": 0.078
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "Other, please specify",
-        "count": 385,
-        "pct": 0.0756
+        "count": 403,
+        "pct": 0.0791
       },
       {
         "slice": 3,
@@ -7176,6 +7951,13 @@
         "response": "GitHub Codespaces",
         "count": 274,
         "pct": 0.0538
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Other",
+        "count": 263,
+        "pct": 0.0516
       },
       {
         "slice": 3,
@@ -7243,6 +8025,41 @@
       {
         "slice": 3,
         "series": null,
+        "response": "Helix",
+        "count": 30,
+        "pct": 0.0059
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "BBEdit",
+        "count": 25,
+        "pct": 0.0049
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Antigravity",
+        "count": 23,
+        "pct": 0.0045
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "R Studio",
+        "count": 23,
+        "pct": 0.0045
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Kate",
+        "count": 14,
+        "pct": 0.0027
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Trae",
         "count": 12,
         "pct": 0.0024
@@ -7274,6 +8091,11 @@
           "slice_type": "workexp",
           "slice_value": "16+ years",
           "n": 4587
+        },
+        {
+          "slice_type": "technologyseries",
+          "slice_value": "Used for AI",
+          "n": 11895
         }
       ]
     },
@@ -7282,15 +8104,15 @@
         "slice": 0,
         "series": null,
         "response": "Anthropic",
-        "count": 8869,
-        "pct": 0.7456
+        "count": 8871,
+        "pct": 0.7458
       },
       {
         "slice": 0,
         "series": null,
         "response": "OpenAI",
-        "count": 8833,
-        "pct": 0.7426
+        "count": 8834,
+        "pct": 0.7427
       },
       {
         "slice": 0,
@@ -7310,8 +8132,8 @@
         "slice": 0,
         "series": null,
         "response": "DeepSeek",
-        "count": 2251,
-        "pct": 0.1892
+        "count": 2253,
+        "pct": 0.1894
       },
       {
         "slice": 0,
@@ -7331,8 +8153,8 @@
         "slice": 0,
         "series": null,
         "response": "xAI",
-        "count": 895,
-        "pct": 0.0752
+        "count": 906,
+        "pct": 0.0762
       },
       {
         "slice": 0,
@@ -7344,16 +8166,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 475,
-        "pct": 0.0399
+        "response": "Moonshot AI",
+        "count": 466,
+        "pct": 0.0392
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Moonshot AI",
-        "count": 466,
-        "pct": 0.0392
+        "response": "Other",
+        "count": 427,
+        "pct": 0.0359
       },
       {
         "slice": 0,
@@ -7440,6 +8262,27 @@
         "pct": 0.0033
       },
       {
+        "slice": 0,
+        "series": null,
+        "response": "Kimi",
+        "count": 15,
+        "pct": 0.0013
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Minimax",
+        "count": 13,
+        "pct": 0.0011
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GLM",
+        "count": 4,
+        "pct": 0.0003
+      },
+      {
         "slice": 1,
         "series": null,
         "response": "OpenAI",
@@ -7450,8 +8293,8 @@
         "slice": 1,
         "series": null,
         "response": "Anthropic",
-        "count": 1875,
-        "pct": 0.7137
+        "count": 1876,
+        "pct": 0.7141
       },
       {
         "slice": 1,
@@ -7464,8 +8307,8 @@
         "slice": 1,
         "series": null,
         "response": "DeepSeek",
-        "count": 706,
-        "pct": 0.2687
+        "count": 707,
+        "pct": 0.2691
       },
       {
         "slice": 1,
@@ -7492,8 +8335,8 @@
         "slice": 1,
         "series": null,
         "response": "xAI",
-        "count": 252,
-        "pct": 0.0959
+        "count": 253,
+        "pct": 0.0963
       },
       {
         "slice": 1,
@@ -7519,9 +8362,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Other, please specify",
-        "count": 97,
-        "pct": 0.0369
+        "response": "Other",
+        "count": 88,
+        "pct": 0.0335
       },
       {
         "slice": 1,
@@ -7601,6 +8444,20 @@
         "pct": 0.0069
       },
       {
+        "slice": 1,
+        "series": null,
+        "response": "Kimi",
+        "count": 3,
+        "pct": 0.0011
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Minimax",
+        "count": 3,
+        "pct": 0.0011
+      },
+      {
         "slice": 2,
         "series": null,
         "response": "Anthropic",
@@ -7611,8 +8468,8 @@
         "slice": 2,
         "series": null,
         "response": "OpenAI",
-        "count": 3102,
-        "pct": 0.7518
+        "count": 3103,
+        "pct": 0.7521
       },
       {
         "slice": 2,
@@ -7632,8 +8489,8 @@
         "slice": 2,
         "series": null,
         "response": "DeepSeek",
-        "count": 692,
-        "pct": 0.1677
+        "count": 693,
+        "pct": 0.168
       },
       {
         "slice": 2,
@@ -7653,8 +8510,8 @@
         "slice": 2,
         "series": null,
         "response": "xAI",
-        "count": 277,
-        "pct": 0.0671
+        "count": 280,
+        "pct": 0.0679
       },
       {
         "slice": 2,
@@ -7673,9 +8530,9 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Other, please specify",
-        "count": 138,
-        "pct": 0.0334
+        "response": "Other",
+        "count": 125,
+        "pct": 0.0303
       },
       {
         "slice": 2,
@@ -7762,11 +8619,25 @@
         "pct": 0.0019
       },
       {
+        "slice": 2,
+        "series": null,
+        "response": "Kimi",
+        "count": 4,
+        "pct": 0.001
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Minimax",
+        "count": 4,
+        "pct": 0.001
+      },
+      {
         "slice": 3,
         "series": null,
         "response": "Anthropic",
-        "count": 3449,
-        "pct": 0.7519
+        "count": 3450,
+        "pct": 0.7521
       },
       {
         "slice": 3,
@@ -7814,8 +8685,8 @@
         "slice": 3,
         "series": null,
         "response": "xAI",
-        "count": 311,
-        "pct": 0.0678
+        "count": 318,
+        "pct": 0.0693
       },
       {
         "slice": 3,
@@ -7827,9 +8698,9 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Other, please specify",
-        "count": 218,
-        "pct": 0.0475
+        "response": "Other",
+        "count": 193,
+        "pct": 0.0421
       },
       {
         "slice": 3,
@@ -7904,6 +8775,13 @@
       {
         "slice": 3,
         "series": null,
+        "response": "Kimi",
+        "count": 8,
+        "pct": 0.0017
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Luel",
         "count": 7,
         "pct": 0.0015
@@ -7921,6 +8799,202 @@
         "response": "Guide Labs",
         "count": 5,
         "pct": 0.0011
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Minimax",
+        "count": 5,
+        "pct": 0.0011
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "GLM",
+        "count": 4,
+        "pct": 0.0009
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Anthropic",
+        "count": 5371,
+        "pct": 0.4515
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "OpenAI",
+        "count": 3796,
+        "pct": 0.3191
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Google AI",
+        "count": 2000,
+        "pct": 0.1681
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Microsoft",
+        "count": 1017,
+        "pct": 0.0855
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "DeepSeek",
+        "count": 753,
+        "pct": 0.0633
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Alibaba Qwen",
+        "count": 588,
+        "pct": 0.0494
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Mistral AI",
+        "count": 332,
+        "pct": 0.0279
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Moonshot AI",
+        "count": 292,
+        "pct": 0.0245
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "xAI",
+        "count": 251,
+        "pct": 0.0211
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Other",
+        "count": 238,
+        "pct": 0.02
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Zhipu AI",
+        "count": 193,
+        "pct": 0.0162
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Meta AI",
+        "count": 186,
+        "pct": 0.0156
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Databricks (DBRX)",
+        "count": 86,
+        "pct": 0.0072
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Snowflake",
+        "count": 79,
+        "pct": 0.0066
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Cohere",
+        "count": 69,
+        "pct": 0.0058
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Voyage AI (MongoDB)",
+        "count": 52,
+        "pct": 0.0044
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Cascade",
+        "count": 51,
+        "pct": 0.0043
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Black Forest Labs",
+        "count": 48,
+        "pct": 0.004
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "01.AI",
+        "count": 41,
+        "pct": 0.0034
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Luel",
+        "count": 41,
+        "pct": 0.0034
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Stability AI",
+        "count": 40,
+        "pct": 0.0034
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Guide Labs",
+        "count": 37,
+        "pct": 0.0031
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Reka",
+        "count": 35,
+        "pct": 0.0029
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Minimax",
+        "count": 11,
+        "pct": 0.0009
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Kimi",
+        "count": 6,
+        "pct": 0.0005
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "GLM",
+        "count": 3,
+        "pct": 0.0003
       }
     ]
   },
@@ -7933,6 +9007,11 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
+          "n": 9142
+        },
+        {
+          "slice_type": "technologyseries",
+          "slice_value": "Used for AI",
           "n": 9142
         }
       ]
@@ -7969,16 +9048,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 1053,
-        "pct": 0.1152
+        "response": "Stack Internal / Stack Overflow for Teams",
+        "count": 644,
+        "pct": 0.0704
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Stack Internal / Stack Overflow for Teams",
-        "count": 644,
-        "pct": 0.0704
+        "response": "Other",
+        "count": 602,
+        "pct": 0.0658
       },
       {
         "slice": 0,
@@ -7993,6 +9072,13 @@
         "response": "DokuWiki",
         "count": 307,
         "pct": 0.0336
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Obsidian",
+        "count": 252,
+        "pct": 0.0276
       },
       {
         "slice": 0,
@@ -8012,8 +9098,8 @@
         "slice": 0,
         "series": null,
         "response": "BookStack",
-        "count": 126,
-        "pct": 0.0138
+        "count": 131,
+        "pct": 0.0143
       },
       {
         "slice": 0,
@@ -8026,8 +9112,8 @@
         "slice": 0,
         "series": null,
         "response": "Outline",
-        "count": 100,
-        "pct": 0.0109
+        "count": 101,
+        "pct": 0.011
       },
       {
         "slice": 0,
@@ -8046,6 +9132,13 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Azure Devops",
+        "count": 74,
+        "pct": 0.0081
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Guru",
         "count": 71,
         "pct": 0.0078
@@ -8053,9 +9146,23 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Gitlab",
+        "count": 67,
+        "pct": 0.0073
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Slab",
         "count": 55,
         "pct": 0.006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Mediawiki",
+        "count": 52,
+        "pct": 0.0057
       },
       {
         "slice": 0,
@@ -8084,6 +9191,181 @@
         "response": "Helpjuice",
         "count": 26,
         "pct": 0.0028
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Atlassian Confluence",
+        "count": 812,
+        "pct": 0.0888
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Google Workspace / Google Drive / Google Docs",
+        "count": 614,
+        "pct": 0.0672
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Notion",
+        "count": 357,
+        "pct": 0.0391
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Microsoft SharePoint",
+        "count": 211,
+        "pct": 0.0231
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other",
+        "count": 150,
+        "pct": 0.0164
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Stack Internal / Stack Overflow for Teams",
+        "count": 122,
+        "pct": 0.0133
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Obsidian",
+        "count": 84,
+        "pct": 0.0092
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "ServiceNow Knowledge Management",
+        "count": 53,
+        "pct": 0.0058
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Zendesk Guide",
+        "count": 45,
+        "pct": 0.0049
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Coda",
+        "count": 44,
+        "pct": 0.0048
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "DokuWiki",
+        "count": 42,
+        "pct": 0.0046
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "XWiki",
+        "count": 41,
+        "pct": 0.0045
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Quip",
+        "count": 38,
+        "pct": 0.0042
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "BookStack",
+        "count": 37,
+        "pct": 0.004
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Outline",
+        "count": 34,
+        "pct": 0.0037
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Guru",
+        "count": 33,
+        "pct": 0.0036
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Document360",
+        "count": 31,
+        "pct": 0.0034
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "KnowledgeOwl",
+        "count": 29,
+        "pct": 0.0032
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bloomfire",
+        "count": 28,
+        "pct": 0.0031
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Helpjuice",
+        "count": 27,
+        "pct": 0.003
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Slab",
+        "count": 24,
+        "pct": 0.0026
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Nuclino",
+        "count": 23,
+        "pct": 0.0025
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Azure Devops",
+        "count": 13,
+        "pct": 0.0014
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Gitlab",
+        "count": 11,
+        "pct": 0.0012
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Mediawiki",
+        "count": 6,
+        "pct": 0.0007
       }
     ]
   },
@@ -8096,6 +9378,11 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
+          "n": 2746
+        },
+        {
+          "slice_type": "technologyseries",
+          "slice_value": "Used for AI",
           "n": 2746
         }
       ]
@@ -8161,15 +9448,15 @@
         "slice": 0,
         "series": null,
         "response": "Algolia",
-        "count": 172,
-        "pct": 0.0626
+        "count": 173,
+        "pct": 0.063
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 144,
-        "pct": 0.0524
+        "response": "Other",
+        "count": 143,
+        "pct": 0.0521
       },
       {
         "slice": 0,
@@ -8233,6 +9520,139 @@
         "response": "Yext",
         "count": 28,
         "pct": 0.0102
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Google Cloud Search / Vertex AI Search",
+        "count": 161,
+        "pct": 0.0586
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Elastic / Elasticsearch / Elastic Enterprise Search",
+        "count": 149,
+        "pct": 0.0543
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "OpenSearch",
+        "count": 121,
+        "pct": 0.0441
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Azure AI Search / Azure Cognitive Search",
+        "count": 118,
+        "pct": 0.043
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Microsoft Search",
+        "count": 105,
+        "pct": 0.0382
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Glean",
+        "count": 79,
+        "pct": 0.0288
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "MongoDB Atlas Search",
+        "count": 60,
+        "pct": 0.0218
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other",
+        "count": 55,
+        "pct": 0.02
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Apache Solr",
+        "count": 49,
+        "pct": 0.0178
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "ServiceNow AI Search",
+        "count": 42,
+        "pct": 0.0153
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Algolia",
+        "count": 41,
+        "pct": 0.0149
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Amazon Kendra",
+        "count": 41,
+        "pct": 0.0149
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "IBM Watson Discovery",
+        "count": 41,
+        "pct": 0.0149
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Salesforce Einstein Search",
+        "count": 31,
+        "pct": 0.0113
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Lucidworks",
+        "count": 29,
+        "pct": 0.0106
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "SearchStax",
+        "count": 28,
+        "pct": 0.0102
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sinequa",
+        "count": 28,
+        "pct": 0.0102
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Coveo",
+        "count": 27,
+        "pct": 0.0098
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Yext",
+        "count": 26,
+        "pct": 0.0095
       }
     ]
   },
@@ -8245,6 +9665,11 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
+          "n": 4052
+        },
+        {
+          "slice_type": "technologyseries",
+          "slice_value": "Used for AI",
           "n": 4052
         }
       ]
@@ -8261,15 +9686,15 @@
         "slice": 0,
         "series": null,
         "response": "Okta",
-        "count": 1161,
-        "pct": 0.2865
+        "count": 1162,
+        "pct": 0.2868
       },
       {
         "slice": 0,
         "series": null,
         "response": "Keycloak",
-        "count": 751,
-        "pct": 0.1853
+        "count": 753,
+        "pct": 0.1858
       },
       {
         "slice": 0,
@@ -8302,16 +9727,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Other, please specify",
-        "count": 380,
-        "pct": 0.0938
+        "response": "Fortinet",
+        "count": 370,
+        "pct": 0.0913
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Fortinet",
-        "count": 370,
-        "pct": 0.0913
+        "response": "Other",
+        "count": 330,
+        "pct": 0.0814
       },
       {
         "slice": 0,
@@ -8358,7 +9783,7 @@
       {
         "slice": 0,
         "series": null,
-        "response": "<a href=\"http://Mend.io\">Mend.io<\/a>",
+        "response": "Mend.io",
         "count": 129,
         "pct": 0.0318
       },
@@ -8438,6 +9863,216 @@
         "response": "Contrast Security",
         "count": 39,
         "pct": 0.0096
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Microsoft Entra",
+        "count": 32,
+        "pct": 0.0079
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "authentik",
+        "count": 13,
+        "pct": 0.0032
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Auth0",
+        "count": 172,
+        "pct": 0.0424
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Datadog",
+        "count": 125,
+        "pct": 0.0308
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Okta",
+        "count": 98,
+        "pct": 0.0242
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other",
+        "count": 87,
+        "pct": 0.0215
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Keycloak",
+        "count": 79,
+        "pct": 0.0195
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sonar",
+        "count": 78,
+        "pct": 0.0192
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "CrowdStrike",
+        "count": 62,
+        "pct": 0.0153
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Splunk",
+        "count": 56,
+        "pct": 0.0138
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Checkmarx",
+        "count": 39,
+        "pct": 0.0096
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Wiz",
+        "count": 39,
+        "pct": 0.0096
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "BeyondTrust",
+        "count": 38,
+        "pct": 0.0094
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "CyberArk",
+        "count": 38,
+        "pct": 0.0094
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Check Point",
+        "count": 37,
+        "pct": 0.0091
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Fortinet",
+        "count": 37,
+        "pct": 0.0091
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "OneLogin",
+        "count": 37,
+        "pct": 0.0091
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Teleport",
+        "count": 37,
+        "pct": 0.0091
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Mend.io",
+        "count": 35,
+        "pct": 0.0086
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "OpenText",
+        "count": 35,
+        "pct": 0.0086
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Orca Security",
+        "count": 35,
+        "pct": 0.0086
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Aqua Security",
+        "count": 33,
+        "pct": 0.0081
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "SentinelOne",
+        "count": 33,
+        "pct": 0.0081
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Contrast Security",
+        "count": 32,
+        "pct": 0.0079
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "PortSwigger",
+        "count": 31,
+        "pct": 0.0077
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Delinea",
+        "count": 30,
+        "pct": 0.0074
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Ping Identity",
+        "count": 30,
+        "pct": 0.0074
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Tenable",
+        "count": 30,
+        "pct": 0.0074
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Veracode",
+        "count": 29,
+        "pct": 0.0072
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Microsoft Entra",
+        "count": 3,
+        "pct": 0.0007
       }
     ]
   },
@@ -8459,8 +10094,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Python",
-        "count": 4712,
-        "pct": 0.3342
+        "count": 4713,
+        "pct": 0.3343
       },
       {
         "slice": 0,
@@ -8473,7 +10108,7 @@
         "slice": 0,
         "series": "Desired",
         "response": "HTML/CSS",
-        "count": 4081,
+        "count": 4082,
         "pct": 0.2895
       },
       {
@@ -8487,15 +10122,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "TypeScript",
-        "count": 3877,
-        "pct": 0.275
+        "count": 3879,
+        "pct": 0.2751
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "Rust",
-        "count": 3708,
-        "pct": 0.263
+        "count": 3711,
+        "pct": 0.2632
       },
       {
         "slice": 0,
@@ -8508,15 +10143,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "Go",
-        "count": 2496,
-        "pct": 0.177
+        "count": 2498,
+        "pct": 0.1772
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "C#",
-        "count": 2325,
-        "pct": 0.1649
+        "count": 2327,
+        "pct": 0.165
       },
       {
         "slice": 0,
@@ -8557,8 +10192,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Zig",
-        "count": 1124,
-        "pct": 0.0797
+        "count": 1125,
+        "pct": 0.0798
       },
       {
         "slice": 0,
@@ -8585,22 +10220,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "Swift",
-        "count": 739,
-        "pct": 0.0524
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 676,
-        "pct": 0.0479
+        "count": 743,
+        "pct": 0.0527
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "Elixir",
-        "count": 657,
-        "pct": 0.0466
+        "count": 658,
+        "pct": 0.0467
       },
       {
         "slice": 0,
@@ -8626,16 +10254,16 @@
       {
         "slice": 0,
         "series": "Desired",
-        "response": "GDScript",
-        "count": 571,
-        "pct": 0.0405
+        "response": "Dart",
+        "count": 572,
+        "pct": 0.0406
       },
       {
         "slice": 0,
         "series": "Desired",
-        "response": "Dart",
-        "count": 569,
-        "pct": 0.0404
+        "response": "GDScript",
+        "count": 571,
+        "pct": 0.0405
       },
       {
         "slice": 0,
@@ -8676,8 +10304,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Julia",
-        "count": 354,
-        "pct": 0.0251
+        "count": 355,
+        "pct": 0.0252
       },
       {
         "slice": 0,
@@ -8746,8 +10374,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Groovy",
-        "count": 236,
-        "pct": 0.0167
+        "count": 237,
+        "pct": 0.0168
       },
       {
         "slice": 0,
@@ -8781,8 +10409,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Delphi",
-        "count": 202,
-        "pct": 0.0143
+        "count": 203,
+        "pct": 0.0144
       },
       {
         "slice": 0,
@@ -8800,24 +10428,45 @@
       },
       {
         "slice": 0,
+        "series": "Desired",
+        "response": "Odin",
+        "count": 64,
+        "pct": 0.0045
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Elm",
+        "count": 21,
+        "pct": 0.0015
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Elm",
+        "count": 16,
+        "pct": 0.9412
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Odin",
+        "count": 28,
+        "pct": 0.8235
+      },
+      {
+        "slice": 0,
         "series": "Admired",
         "response": "Rust",
-        "count": 1712,
-        "pct": 0.674
+        "count": 1713,
+        "pct": 0.6739
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Elixir",
-        "count": 227,
-        "pct": 0.6202
-      },
-      {
-        "slice": 0,
-        "series": "Admired",
-        "response": "Other, please specify",
-        "count": 506,
-        "pct": 0.6141
+        "count": 228,
+        "pct": 0.6213
       },
       {
         "slice": 0,
@@ -8838,7 +10487,7 @@
         "series": "Admired",
         "response": "Lisp",
         "count": 204,
-        "pct": 0.5559
+        "pct": 0.5543
       },
       {
         "slice": 0,
@@ -8851,8 +10500,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "TypeScript",
-        "count": 3270,
-        "pct": 0.5301
+        "count": 3272,
+        "pct": 0.5302
       },
       {
         "slice": 0,
@@ -8879,22 +10528,22 @@
         "slice": 0,
         "series": "Admired",
         "response": "Python",
-        "count": 4141,
+        "count": 4142,
         "pct": 0.5061
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "C#",
-        "count": 1912,
-        "pct": 0.5008
+        "count": 1914,
+        "pct": 0.5003
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Go",
-        "count": 1152,
-        "pct": 0.4948
+        "count": 1154,
+        "pct": 0.4949
       },
       {
         "slice": 0,
@@ -8913,9 +10562,16 @@
       {
         "slice": 0,
         "series": "Admired",
+        "response": "Swift",
+        "count": 403,
+        "pct": 0.485
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
         "response": "Assembly",
         "count": 493,
-        "pct": 0.4838
+        "pct": 0.4833
       },
       {
         "slice": 0,
@@ -8923,13 +10579,6 @@
         "response": "F#",
         "count": 83,
         "pct": 0.4826
-      },
-      {
-        "slice": 0,
-        "series": "Admired",
-        "response": "Swift",
-        "count": 399,
-        "pct": 0.4825
       },
       {
         "slice": 0,
@@ -8949,15 +10598,15 @@
         "slice": 0,
         "series": "Admired",
         "response": "HTML/CSS",
-        "count": 3922,
+        "count": 3923,
         "pct": 0.4777
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Julia",
-        "count": 99,
-        "pct": 0.4714
+        "count": 100,
+        "pct": 0.4739
       },
       {
         "slice": 0,
@@ -8998,8 +10647,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Dart",
-        "count": 293,
-        "pct": 0.4222
+        "count": 295,
+        "pct": 0.4232
       },
       {
         "slice": 0,
@@ -9041,7 +10690,7 @@
         "series": "Admired",
         "response": "Java",
         "count": 1496,
-        "pct": 0.3852
+        "pct": 0.3851
       },
       {
         "slice": 0,
@@ -9061,8 +10710,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Delphi",
-        "count": 95,
-        "pct": 0.3571
+        "count": 96,
+        "pct": 0.3596
       },
       {
         "slice": 0,
@@ -9124,8 +10773,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Groovy",
-        "count": 118,
-        "pct": 0.2181
+        "count": 119,
+        "pct": 0.2188
       },
       {
         "slice": 0,
@@ -9139,7 +10788,7 @@
         "series": "Admired",
         "response": "VBA",
         "count": 111,
-        "pct": 0.2015
+        "pct": 0.2011
       }
     ]
   },
@@ -9168,8 +10817,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Playwright",
-        "count": 1923,
-        "pct": 0.1813
+        "count": 1924,
+        "pct": 0.1814
       },
       {
         "slice": 0,
@@ -9196,8 +10845,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "JUnit",
-        "count": 1144,
-        "pct": 0.1079
+        "count": 1145,
+        "pct": 0.108
       },
       {
         "slice": 0,
@@ -9233,13 +10882,6 @@
         "response": "xUnit.net",
         "count": 740,
         "pct": 0.0698
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 737,
-        "pct": 0.0695
       },
       {
         "slice": 0,
@@ -9425,10 +11067,59 @@
       },
       {
         "slice": 0,
+        "series": "Desired",
+        "response": "PHPUnit",
+        "count": 57,
+        "pct": 0.0054
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Bruno",
+        "count": 50,
+        "pct": 0.0047
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "GoogleTest",
+        "count": 38,
+        "pct": 0.0036
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "MSTest",
+        "count": 30,
+        "pct": 0.0028
+      },
+      {
+        "slice": 0,
         "series": "Admired",
-        "response": "Other, please specify",
-        "count": 655,
-        "pct": 0.6895
+        "response": "Bruno",
+        "count": 47,
+        "pct": 0.7833
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "GoogleTest",
+        "count": 36,
+        "pct": 0.6429
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "MSTest",
+        "count": 30,
+        "pct": 0.6383
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "PHPUnit",
+        "count": 56,
+        "pct": 0.6364
       },
       {
         "slice": 0,
@@ -9463,7 +11154,7 @@
         "series": "Admired",
         "response": "pytest",
         "count": 1524,
-        "pct": 0.513
+        "pct": 0.5128
       },
       {
         "slice": 0,
@@ -9490,8 +11181,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "JUnit",
-        "count": 985,
-        "pct": 0.4333
+        "count": 986,
+        "pct": 0.4336
       },
       {
         "slice": 0,
@@ -9709,15 +11400,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "PostgreSQL",
-        "count": 5295,
-        "pct": 0.439
+        "count": 5296,
+        "pct": 0.4391
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "SQLite",
-        "count": 3468,
-        "pct": 0.2875
+        "count": 3471,
+        "pct": 0.2878
       },
       {
         "slice": 0,
@@ -9800,15 +11491,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "Clickhouse",
-        "count": 499,
-        "pct": 0.0414
+        "count": 500,
+        "pct": 0.0415
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "Oracle",
-        "count": 499,
-        "pct": 0.0414
+        "count": 500,
+        "pct": 0.0415
       },
       {
         "slice": 0,
@@ -9830,13 +11521,6 @@
         "response": "Databricks SQL",
         "count": 450,
         "pct": 0.0373
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 427,
-        "pct": 0.0354
       },
       {
         "slice": 0,
@@ -9926,15 +11610,15 @@
         "slice": 0,
         "series": "Admired",
         "response": "PostgreSQL",
-        "count": 4347,
-        "pct": 0.6225
+        "count": 4348,
+        "pct": 0.6226
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "SQLite",
-        "count": 2864,
-        "pct": 0.5637
+        "count": 2866,
+        "pct": 0.5638
       },
       {
         "slice": 0,
@@ -9942,13 +11626,6 @@
         "response": "Valkey",
         "count": 339,
         "pct": 0.5622
-      },
-      {
-        "slice": 0,
-        "series": "Admired",
-        "response": "Other, please specify",
-        "count": 324,
-        "pct": 0.5548
       },
       {
         "slice": 0,
@@ -9968,8 +11645,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Clickhouse",
-        "count": 216,
-        "pct": 0.5047
+        "count": 217,
+        "pct": 0.5058
       },
       {
         "slice": 0,
@@ -9983,7 +11660,7 @@
         "series": "Admired",
         "response": "Pocketbase",
         "count": 58,
-        "pct": 0.4531
+        "pct": 0.4496
       },
       {
         "slice": 0,
@@ -10074,7 +11751,7 @@
         "series": "Admired",
         "response": "Snowflake",
         "count": 194,
-        "pct": 0.3586
+        "pct": 0.3579
       },
       {
         "slice": 0,
@@ -10108,8 +11785,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Oracle",
-        "count": 356,
-        "pct": 0.3142
+        "count": 357,
+        "pct": 0.3145
       },
       {
         "slice": 0,
@@ -10229,8 +11906,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Cargo",
-        "count": 1509,
-        "pct": 0.1386
+        "count": 1511,
+        "pct": 0.1388
       },
       {
         "slice": 0,
@@ -10264,8 +11941,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Podman",
-        "count": 1164,
-        "pct": 0.1069
+        "count": 1165,
+        "pct": 0.107
       },
       {
         "slice": 0,
@@ -10278,8 +11955,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "APT",
-        "count": 1095,
-        "pct": 0.1006
+        "count": 1096,
+        "pct": 0.1007
       },
       {
         "slice": 0,
@@ -10320,8 +11997,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Bun",
-        "count": 739,
-        "pct": 0.0679
+        "count": 740,
+        "pct": 0.068
       },
       {
         "slice": 0,
@@ -10411,8 +12088,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Chocolatey",
-        "count": 457,
-        "pct": 0.042
+        "count": 458,
+        "pct": 0.0421
       },
       {
         "slice": 0,
@@ -10420,13 +12097,6 @@
         "response": "Webpack",
         "count": 444,
         "pct": 0.0408
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 407,
-        "pct": 0.0374
       },
       {
         "slice": 0,
@@ -10557,16 +12227,9 @@
       {
         "slice": 0,
         "series": "Admired",
-        "response": "Other, please specify",
-        "count": 358,
-        "pct": 0.7666
-      },
-      {
-        "slice": 0,
-        "series": "Admired",
         "response": "Cargo",
-        "count": 1155,
-        "pct": 0.6533
+        "count": 1157,
+        "pct": 0.6537
       },
       {
         "slice": 0,
@@ -10621,15 +12284,15 @@
         "slice": 0,
         "series": "Admired",
         "response": "APT",
-        "count": 999,
+        "count": 1000,
         "pct": 0.5516
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Podman",
-        "count": 776,
-        "pct": 0.5492
+        "count": 777,
+        "pct": 0.5491
       },
       {
         "slice": 0,
@@ -10922,8 +12585,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Chocolatey",
-        "count": 343,
-        "pct": 0.326
+        "count": 344,
+        "pct": 0.3267
       },
       {
         "slice": 0,
@@ -10973,8 +12636,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "React",
-        "count": 2490,
-        "pct": 0.2422
+        "count": 2491,
+        "pct": 0.2423
       },
       {
         "slice": 0,
@@ -11036,8 +12699,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "htmx",
-        "count": 857,
-        "pct": 0.0834
+        "count": 858,
+        "pct": 0.0835
       },
       {
         "slice": 0,
@@ -11091,13 +12754,6 @@
       {
         "slice": 0,
         "series": "Desired",
-        "response": "Other, please specify",
-        "count": 623,
-        "pct": 0.0606
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
         "response": "ASP.NET",
         "count": 613,
         "pct": 0.0596
@@ -11141,8 +12797,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Axum",
-        "count": 413,
-        "pct": 0.0402
+        "count": 416,
+        "pct": 0.0405
       },
       {
         "slice": 0,
@@ -11169,15 +12825,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "Symfony",
-        "count": 297,
-        "pct": 0.0289
+        "count": 298,
+        "pct": 0.029
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "Hono",
-        "count": 287,
-        "pct": 0.0279
+        "count": 289,
+        "pct": 0.0281
       },
       {
         "slice": 0,
@@ -11223,17 +12879,73 @@
       },
       {
         "slice": 0,
+        "series": "Desired",
+        "response": "Leptos",
+        "count": 26,
+        "pct": 0.0025
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Lustre",
+        "count": 25,
+        "pct": 0.0024
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Quarkus",
+        "count": 25,
+        "pct": 0.0024
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Lit",
+        "count": 17,
+        "pct": 0.0017
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Flutter",
+        "count": 15,
+        "pct": 0.0015
+      },
+      {
+        "slice": 0,
         "series": "Admired",
-        "response": "Other, please specify",
-        "count": 518,
-        "pct": 0.7135
+        "response": "Lustre",
+        "count": 20,
+        "pct": 1
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Leptos",
+        "count": 18,
+        "pct": 0.8182
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Quarkus",
+        "count": 21,
+        "pct": 0.8077
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Lit",
+        "count": 16,
+        "pct": 0.8
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Axum",
-        "count": 261,
-        "pct": 0.7035
+        "count": 264,
+        "pct": 0.7059
       },
       {
         "slice": 0,
@@ -11248,6 +12960,13 @@
         "response": "SvelteKit",
         "count": 371,
         "pct": 0.6441
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Flutter",
+        "count": 15,
+        "pct": 0.625
       },
       {
         "slice": 0,
@@ -11302,8 +13021,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Hono",
-        "count": 145,
-        "pct": 0.5088
+        "count": 147,
+        "pct": 0.5122
       },
       {
         "slice": 0,
@@ -11344,8 +13063,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "React",
-        "count": 1991,
-        "pct": 0.467
+        "count": 1992,
+        "pct": 0.4671
       },
       {
         "slice": 0,
@@ -11379,8 +13098,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Symfony",
-        "count": 182,
-        "pct": 0.4428
+        "count": 183,
+        "pct": 0.4431
       },
       {
         "slice": 0,
@@ -11443,7 +13162,7 @@
         "series": "Admired",
         "response": "Drupal",
         "count": 78,
-        "pct": 0.3786
+        "pct": 0.3768
       },
       {
         "slice": 0,
@@ -11528,8 +13247,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Neovim",
-        "count": 1701,
-        "pct": 0.1289
+        "count": 1702,
+        "pct": 0.129
       },
       {
         "slice": 0,
@@ -11549,7 +13268,7 @@
         "slice": 0,
         "series": "Desired",
         "response": "Cursor",
-        "count": 1035,
+        "count": 1036,
         "pct": 0.0785
       },
       {
@@ -11570,15 +13289,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Nano",
-        "count": 823,
-        "pct": 0.0624
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 800,
-        "pct": 0.0606
+        "count": 824,
+        "pct": 0.0625
       },
       {
         "slice": 0,
@@ -11605,8 +13317,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Rider",
-        "count": 686,
-        "pct": 0.052
+        "count": 689,
+        "pct": 0.0522
       },
       {
         "slice": 0,
@@ -11619,8 +13331,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "Emacs",
-        "count": 604,
-        "pct": 0.0458
+        "count": 605,
+        "pct": 0.0459
       },
       {
         "slice": 0,
@@ -11647,15 +13359,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "RustRover",
-        "count": 468,
+        "count": 469,
         "pct": 0.0355
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "Eclipse",
-        "count": 394,
-        "pct": 0.0299
+        "count": 399,
+        "pct": 0.0302
       },
       {
         "slice": 0,
@@ -11667,6 +13379,13 @@
       {
         "slice": 0,
         "series": "Desired",
+        "response": "Kiro",
+        "count": 222,
+        "pct": 0.0168
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
         "response": "Windsurf",
         "count": 222,
         "pct": 0.0168
@@ -11674,9 +13393,9 @@
       {
         "slice": 0,
         "series": "Desired",
-        "response": "Kiro",
-        "count": 221,
-        "pct": 0.0168
+        "response": "Helix",
+        "count": 180,
+        "pct": 0.0136
       },
       {
         "slice": 0,
@@ -11708,10 +13427,59 @@
       },
       {
         "slice": 0,
+        "series": "Desired",
+        "response": "Antigravity",
+        "count": 39,
+        "pct": 0.003
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "R Studio",
+        "count": 39,
+        "pct": 0.003
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Kate",
+        "count": 38,
+        "pct": 0.0029
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "BBEdit",
+        "count": 24,
+        "pct": 0.0018
+      },
+      {
+        "slice": 0,
         "series": "Admired",
-        "response": "Other, please specify",
-        "count": 707,
-        "pct": 0.7545
+        "response": "Helix",
+        "count": 161,
+        "pct": 0.8846
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "BBEdit",
+        "count": 24,
+        "pct": 0.8276
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Kate",
+        "count": 36,
+        "pct": 0.8182
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "R Studio",
+        "count": 39,
+        "pct": 0.75
       },
       {
         "slice": 0,
@@ -11723,9 +13491,16 @@
       {
         "slice": 0,
         "series": "Admired",
+        "response": "Antigravity",
+        "count": 36,
+        "pct": 0.6207
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
         "response": "Emacs",
-        "count": 424,
-        "pct": 0.6092
+        "count": 425,
+        "pct": 0.6098
       },
       {
         "slice": 0,
@@ -11738,8 +13513,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "Rider",
-        "count": 524,
-        "pct": 0.5683
+        "count": 526,
+        "pct": 0.5693
       },
       {
         "slice": 0,
@@ -11753,7 +13528,7 @@
         "series": "Admired",
         "response": "Visual Studio Code",
         "count": 5206,
-        "pct": 0.5569
+        "pct": 0.5568
       },
       {
         "slice": 0,
@@ -11795,7 +13570,7 @@
         "series": "Admired",
         "response": "PhpStorm",
         "count": 383,
-        "pct": 0.5162
+        "pct": 0.5155
       },
       {
         "slice": 0,
@@ -11843,7 +13618,7 @@
         "slice": 0,
         "series": "Admired",
         "response": "Nano",
-        "count": 747,
+        "count": 748,
         "pct": 0.4675
       },
       {
@@ -11858,7 +13633,7 @@
         "series": "Admired",
         "response": "Android Studio",
         "count": 741,
-        "pct": 0.3944
+        "pct": 0.3941
       },
       {
         "slice": 0,
@@ -11879,28 +13654,28 @@
         "series": "Admired",
         "response": "GitHub Codespaces",
         "count": 300,
-        "pct": 0.3429
+        "pct": 0.3425
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Cursor",
-        "count": 649,
-        "pct": 0.3294
+        "count": 650,
+        "pct": 0.3298
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Eclipse",
-        "count": 292,
-        "pct": 0.3237
+        "count": 297,
+        "pct": 0.3264
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "Kiro",
-        "count": 113,
-        "pct": 0.3104
+        "count": 114,
+        "pct": 0.3123
       },
       {
         "slice": 0,
@@ -11943,15 +13718,15 @@
         "slice": 0,
         "series": "Desired",
         "response": "Anthropic",
-        "count": 5837,
-        "pct": 0.4907
+        "count": 5839,
+        "pct": 0.4909
       },
       {
         "slice": 0,
         "series": "Desired",
         "response": "OpenAI",
-        "count": 3828,
-        "pct": 0.3218
+        "count": 3829,
+        "pct": 0.3219
       },
       {
         "slice": 0,
@@ -11964,8 +13739,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "DeepSeek",
-        "count": 1523,
-        "pct": 0.128
+        "count": 1524,
+        "pct": 0.1281
       },
       {
         "slice": 0,
@@ -11999,15 +13774,8 @@
         "slice": 0,
         "series": "Desired",
         "response": "xAI",
-        "count": 517,
-        "pct": 0.0435
-      },
-      {
-        "slice": 0,
-        "series": "Desired",
-        "response": "Other, please specify",
-        "count": 392,
-        "pct": 0.033
+        "count": 520,
+        "pct": 0.0437
       },
       {
         "slice": 0,
@@ -12102,10 +13870,31 @@
       },
       {
         "slice": 0,
+        "series": "Desired",
+        "response": "Kimi",
+        "count": 11,
+        "pct": 0.0009
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Minimax",
+        "count": 10,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "GLM",
+        "count": 9,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
         "series": "Admired",
-        "response": "Other, please specify",
-        "count": 321,
-        "pct": 0.6758
+        "response": "Minimax",
+        "count": 9,
+        "pct": 0.6923
       },
       {
         "slice": 0,
@@ -12118,8 +13907,15 @@
         "slice": 0,
         "series": "Admired",
         "response": "Anthropic",
-        "count": 5365,
-        "pct": 0.6049
+        "count": 5367,
+        "pct": 0.605
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Kimi",
+        "count": 9,
+        "pct": 0.6
       },
       {
         "slice": 0,
@@ -12148,6 +13944,13 @@
         "response": "Alibaba Qwen",
         "count": 631,
         "pct": 0.5245
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "GLM",
+        "count": 2,
+        "pct": 0.5
       },
       {
         "slice": 0,
@@ -12188,14 +13991,14 @@
         "slice": 0,
         "series": "Admired",
         "response": "DeepSeek",
-        "count": 981,
-        "pct": 0.4358
+        "count": 982,
+        "pct": 0.4359
       },
       {
         "slice": 0,
         "series": "Admired",
         "response": "OpenAI",
-        "count": 3668,
+        "count": 3669,
         "pct": 0.4153
       },
       {
@@ -12223,8 +14026,8 @@
         "slice": 0,
         "series": "Admired",
         "response": "xAI",
-        "count": 334,
-        "pct": 0.3732
+        "count": 337,
+        "pct": 0.372
       },
       {
         "slice": 0,
