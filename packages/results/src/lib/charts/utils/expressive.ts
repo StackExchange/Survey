@@ -74,6 +74,21 @@ export function readingOf(figure: any, limit = 6) {
 	return said.join(', ')
 }
 
+// The one number a waffle draws. `values` means the sheet picked a set of
+// responses to add up, and a single value picks one; otherwise the rows are a
+// whole distribution and the first is what the figure is about.
+export function shareOf(figure: any) {
+	const rows = rowsOf(figure)
+	const amount = amountOf(figure)
+
+	return figure.values
+		? Math.min(
+				rows.reduce((total: number, row: any) => total + amount(row), 0),
+				1
+			)
+		: amount(rows[0])
+}
+
 // "1 in 5" — how many respondents one filled cell of a waffle stands for.
 export const oneIn = (share: number) => Math.max(2, Math.round(1 / Math.max(share, 0.0001)))
 

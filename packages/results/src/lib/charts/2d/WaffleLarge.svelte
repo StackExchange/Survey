@@ -1,7 +1,7 @@
 <script lang="ts">
 	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
 	// One share, so the chapter's two colours: its first for the filled cells.
-	import { amountOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { readingOf, shareOf } from '$charts/utils/expressive'
 	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
@@ -12,15 +12,7 @@
 
 	const COLUMNS = 10
 
-	const rows = $derived(rowsOf(figure))
-	const share = $derived(
-		figure.values
-			? Math.min(
-					rows.reduce((total: number, row: any) => total + amountOf(figure)(row), 0),
-					1
-				)
-			: amountOf(figure)(rows[0])
-	)
+	const share = $derived(shareOf(figure))
 
 	// At least one cell for a real-but-tiny share, as `percent` does for "<1%".
 	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * 100)) : 0)

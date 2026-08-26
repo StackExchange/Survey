@@ -1,7 +1,7 @@
 <script lang="ts">
 	// The "1 in X" shape: X cells with one filled. Rounding is the point of the
 	// form — 26% draws four cells — and the exact figure is in the `<desc>`.
-	import { amountOf, grid, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { grid, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
@@ -11,12 +11,7 @@
 
 	const rows = $derived(rowsOf(figure))
 	const row = $derived(rows[0])
-	const share = $derived(
-		Math.min(
-			rows.reduce((total: number, r: any) => total + amountOf(figure)(r), 0),
-			1
-		)
-	)
+	const share = $derived(shareOf(figure))
 
 	const cells = $derived(oneIn(share))
 	const slots = $derived(Array.from({ length: cells }, (_, i) => i))

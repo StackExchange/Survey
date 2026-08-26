@@ -350,7 +350,9 @@
           "dataId": "JobSat",
           "focus": "",
           "limit": "",
-          "values": [],
+          "values": [
+            "Not Happy at Work"
+          ],
           "dataIdSlug": "job-sat"
         },
         {
@@ -1515,8 +1517,12 @@
           "chart": "3d-bar-stacked-vertical",
           "dataId": "Languages",
           "focus": "",
-          "limit": "10",
-          "values": [],
+          "limit": "",
+          "values": [
+            "JavaScript",
+            "SQL",
+            "HTML/CSS"
+          ],
           "dataIdSlug": "languages"
         },
         {
@@ -1862,7 +1868,7 @@
           "chart": "3d-bar-stacked-vertical",
           "dataId": "CommPlat",
           "focus": "",
-          "limit": "5",
+          "limit": "4",
           "values": [],
           "dataIdSlug": "comm-plat"
         },
@@ -1871,13 +1877,11 @@
           "headline": "52% learned a new skill or programming language in the last year",
           "description": "Over half of respondents actively began learning to code or acquired a new programming skill in the past year, relying most on technical documentation (59%) and AI codegen tools (53%).",
           "tier": "home",
-          "chart": "stat",
+          "chart": "3d-cube",
           "dataId": "LearnCode",
           "focus": "",
           "limit": "",
-          "values": [
-            "Yes"
-          ],
+          "values": [],
           "dataIdSlug": "learn-code"
         },
         {

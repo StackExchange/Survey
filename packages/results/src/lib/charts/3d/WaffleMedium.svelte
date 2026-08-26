@@ -2,7 +2,7 @@
 	// The "1 in X" shape as cubes, butted end to end, every other column dropping half
 	// a cube height so the two interlock. Two rows once there are more than five, so
 	// the field stays wider than it is deep.
-	import { amountOf, CUBE, cube, cubeHeight, oneIn, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
@@ -10,8 +10,9 @@
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const row = $derived(rowsOf(figure)[0])
-	const share = $derived(amountOf(figure)(row))
+	const rows = $derived(rowsOf(figure))
+	const row = $derived(rows[0])
+	const share = $derived(shareOf(figure))
 	const cells = $derived(oneIn(share))
 
 	const lines = $derived(cells > 5 ? 2 : 1)
