@@ -11,7 +11,7 @@
 
 	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, DIM, px, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, descent, DIM, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -22,6 +22,16 @@
 	const ART = { column: 160, nose: 30 }
 	const LABEL_SIZE = 34
 	const VALUE_SIZE = 15
+
+	// The ground the bases stand on, taken off the base diamond's own edge: (-80, 0)
+	// to (0, 30) on the artwork, so a step to the right is 0.375 of that step down.
+	// Fixed whatever the column scales to.
+	const SLOPE = ART.nose / (ART.column / 2)
+
+	// The same ratio as an angle. Shearing a label by it puts its cross-strokes
+	// parallel to that edge, which is what makes it read as painted on the face
+	// rather than laid over it — and it agrees with the ground by construction.
+	const LEAN = -px((Math.atan(SLOPE) * 180) / Math.PI)
 
 	const hover = useHover(() => onhover)
 
@@ -35,9 +45,11 @@
 	const largest = $derived(largestOf(rows.map(amount)))
 
 	// One slot per column, the column filling four fifths of it — so the gutter
-	// scales with the count instead of being a constant that runs out.
-	const step = $derived(width / Math.max(rows.length, 1))
-	const COLUMN = $derived(px(Math.min(ART.column, step * 0.8)))
+	// scales with the count instead of being a constant that runs out. Capped at the
+	// artwork's own size: a handful of responses should draw a few columns standing
+	// together, not the same few stretched across the whole width.
+	const step = $derived(px(Math.min(ART.column / 0.8, width / Math.max(rows.length, 1))))
+	const COLUMN = $derived(px(step * 0.8))
 
 	const half = $derived(px(COLUMN / 2))
 	const NOSE = $derived(px(COLUMN * (ART.nose / ART.column)))
@@ -51,9 +63,26 @@
 	const BASE_LEFT = $derived(`M${-half} 0L0 ${-NOSE}V${NOSE}Z`)
 	const BASE_RIGHT = $derived(`M${half} 0L0 ${-NOSE}V${NOSE}Z`)
 
-	// Room for the cap above and the share below.
+	// Each column stands one step further back along that ground than the last, so
+	// the row recedes instead of sitting on one flat line.
+	const DROP = $derived(px(step * SLOPE))
+
+	// Centred on whatever is left over once the columns have taken their own width.
+	const first = $derived(px((width - ((rows.length - 1) * step + COLUMN)) / 2 + COLUMN / 2))
+
+	// Room for the cap above and the share below. Only the first column's cap can
+	// reach the top — every later one starts lower — so the lead is measured off it.
 	const baseline = $derived(px(NOSE + 8 + LONGEST))
-	const height = $derived(baseline + NOSE + VALUE_SIZE * 1.8)
+	// The last column stands lowest, and its share hangs under that — measured to the
+	// descender, since an `<svg>` clips at its viewBox.
+	const FOOT = $derived(NOSE + VALUE_SIZE + 8 + descent(VALUE_SIZE))
+	const height = $derived(baseline + (Math.max(rows.length, 1) - 1) * DROP + FOOT)
+
+	// Centred on the left face: the glyph block runs a cap height left of its own
+	// baseline, so the baseline sits that far right of the face's middle.
+	const labelX = $derived(px(-half / 2 + LABEL_SIZE * 0.35))
+	// The face's foot slopes, so its height at the label's own x, less a little air.
+	const labelY = $derived(px((NOSE * (labelX + half)) / half - 8))
 
 	// Never shorter than its own two ends, or the cap swallows the base.
 	const lengthOf = (row: any) => px(Math.max(NOSE * 2, LONGEST * (amount(row) / largest)))
@@ -71,7 +100,7 @@
 		     column offset and the two diamonds share one coordinate system. -->
 		<g
 			role="presentation"
-			transform="translate({px(i * step + step / 2)} {baseline})"
+			transform="translate({px(first + i * step)} {px(baseline + i * DROP)})"
 			onpointermove={(event) => enter(i, row, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
@@ -96,11 +125,13 @@
 				<path d={BASE_RIGHT} fill={theme.rest} />
 			</g>
 
-			<!-- Up the column, reading bottom-to-top: at this size the response is far
-			     too long to sit under a column this narrow. Rotated glyphs grow to the
-			     left of their baseline, so the baseline sits right of centre. -->
+			<!-- Up the left face, reading bottom-to-top: at this size the response is far
+			     too long to sit under a column this narrow. `rotate` turns it up the
+			     column, `skewX` then leans it onto the face — applied before the rotate,
+			     so it shears across the glyphs rather than along them. Rotated glyphs
+			     grow left of their baseline, hence the offset that centres the block. -->
 			<text
-				transform="translate({px(LABEL_SIZE * 0.35)} {px(-(NOSE + 8))}) rotate(-90)"
+				transform="translate({labelX} {labelY}) rotate(-90) skewX({LEAN})"
 				font-family={theme.fontHeadline}
 				font-size={LABEL_SIZE}
 				fill={theme.ink}
