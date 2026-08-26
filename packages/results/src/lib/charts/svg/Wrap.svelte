@@ -32,7 +32,10 @@
 	const brand = $derived(chrome.brand ?? false)
 	const footer = $derived(chrome.footer ?? false)
 	const facts = $derived(captionOf(figure))
-	const editorial = $derived(/^(2d|3d)-|^rank$/.test(String(figure?.chart ?? '')))
+	// A promoted figure carries the tier that promoted it; a chapter's Data charts
+	// have none. That is the whole distinction, so read it rather than inferring it
+	// back out of the chart id.
+	const editorial = $derived(Boolean(figure?.tier))
 	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext) && (brand || !editorial))
 	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)
 	const caption = $derived(stats || brand)

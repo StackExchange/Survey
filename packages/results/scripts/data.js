@@ -216,13 +216,6 @@ function featureOf(ctx, chapter, ref) {
 
 	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
 
-	// The expressive tiers by id — `2d-*`, `3d-*` and the two one-offs, as in
-	// $charts/index.ts. Everything else there belongs to a chapter's Data section: it
-	// reads segments, carries its own legend and axes, and is drawn at a width a
-	// promoted figure never gets. A Highlight naming `dumbbell` is a sheet mistake.
-	if (!/^(2d|3d)-|^(rank|stat)$/.test(ref.chart)) {
-		return ctx.fail(`${where}: "${ref.chart}" is a Data chart — a ${ref.tier} draws with the 2d, 3d, rank or stat charts`)
-	}
 	const { groups, ...resolved } = resolve(ctx, chapter.id, ref.dataId, where, ref.chart, ref.headline) ?? {}
 	if (!groups) return null
 
@@ -265,6 +258,9 @@ function featureOf(ctx, chapter, ref) {
 		...resolved,
 		...group,
 		chart: ref.chart,
+		// What promoted this figure. `Wrap` reads it to tell an editorial figure from a
+		// Data one, which it used to do by pattern-matching the chart id.
+		tier: ref.tier,
 		headline: ref.headline,
 		description: ref.description,
 		descriptionHtml: html(ref.description),
