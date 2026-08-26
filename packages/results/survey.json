@@ -1125,6 +1125,17 @@
         },
         {
           "chapter": "AI",
+          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
+          "description": "Survey Respondant",
+          "tier": "home",
+          "chart": "quote",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
           "headline": "31% of daily AI users use it for 4+ hours/day",
           "description": "Of the over 70% of respondents who use AI daily, 31% use it over four hours per day.",
           "tier": "home",
@@ -1228,7 +1239,7 @@
     {
       "name": "Technology",
       "description": "A description for the 'Technology' section.",
-      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
+      "descriptionLong": "The technology leaderboards have been constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit; what’s changed are the categories of tech on this list. Cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies in some of these lists have been there for years. Some lists show clear leaders in the space. But every one of these lists show that there is plenty of room for alternative technologies, as each of these lists has a large number of technologies in the single digits for usage (and we had to cut off the lists at some point).",
       "id": "technology",
       "sections": [
         {
@@ -1265,7 +1276,7 @@
               "name": "Code Testing tools",
               "dataId": "CodeTest",
               "chart": "bar",
-              "description": "",
+              "description": "ESLint is widely used in this survey due to it's direct ties to Javascript.  Did you know that ESLint is an open source project with more than 1K contributors?  See more at [github.com/eslint/eslint](https://github.com/eslint/eslint)",
               "subtext": "",
               "id": "code-testing-tools",
               "dataIdSlug": "code-test"
@@ -1276,7 +1287,7 @@
               "name": "Databases",
               "dataId": "Databases",
               "chart": "bar",
-              "description": "",
+              "description": "Ubiquitous Developer Adoption: Bryan Clark (Director of Product for LakeBase at Databricks) recalls observing this massive shift during his time at GitHub: \"...inside GitHub, you could see every developer was switching to start using Postgres in their CITV and things like that.\" Listen to [his interview](https://stackoverflow.blog/2026/06/09/checkpoints-by-gaslighting-postgres-database/) on the Stack Overflow Podcast.",
               "subtext": "",
               "id": "databases",
               "dataIdSlug": "databases"
@@ -1287,7 +1298,7 @@
               "name": "Cloud development",
               "dataId": "CloudPlat",
               "chart": "bar",
-              "description": "",
+              "description": "Cloudflare usage is up this year compared to last (25% vs. 21%) - is it due to the increase in bot activity which Cloudflare works to safeguard against?",
               "subtext": "",
               "id": "cloud-development",
               "dataIdSlug": "cloud-plat"
@@ -1298,7 +1309,7 @@
               "name": "Web frameworks and technologies",
               "dataId": "WebFramework",
               "chart": "bar",
-              "description": "46% have used Node and 41% have used React",
+              "description": "46% have used Node and 41% have used React, these are the top 2 web frameworks being used in this year's survey and last year's.",
               "subtext": "",
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "web-framework"
@@ -1309,7 +1320,7 @@
               "name": "LLMs",
               "dataId": "LLM",
               "chart": "bar",
-              "description": "",
+              "description": "Most everyone uses Anthropic and OpenAI models, open-weight models from DeepSeek and Alibaba Qwen models are being used more, too.",
               "subtext": "",
               "id": "ll-ms",
               "dataIdSlug": "llm"
@@ -1504,7 +1515,7 @@
           "chart": "3d-bar-stacked-vertical",
           "dataId": "Languages",
           "focus": "",
-          "limit": "",
+          "limit": "10",
           "values": [],
           "dataIdSlug": "languages"
         },
@@ -1524,7 +1535,7 @@
         },
         {
           "chapter": "Technology",
-          "headline": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+          "headline": "What’s new, what’s old, and something for everyone in technologies surveyed this year",
           "description": "The technology leaderboards have been constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit; what’s changed are the categories of tech on this list. Cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies in some of these lists have been there for years. Some lists show clear leaders in the space. But every one of these lists show that there is plenty of room for alternative technologies, as each of these lists has a large number of technologies in the single digits for usage (and we had to cut off the lists at some point).",
           "tier": "chapter",
           "chart": "text",
@@ -1535,15 +1546,15 @@
         },
         {
           "chapter": "Technology",
-          "headline": "23% use technology related to security",
-          "description": "For all the talk of security work shifting left, only 23% of respondents end up touching security tools, the lowest percentage of responses outside of none of these and other.",
-          "tier": "chapter",
+          "headline": "",
+          "description": "",
+          "tier": "",
           "chart": "2d-bar-stacked-horizontal",
-          "dataId": "TechDropDown",
-          "focus": "I used security software for permissions and compliance operations",
+          "dataId": "Languages",
+          "focus": "Javascript|SQL|HTML/CSS",
           "limit": "10",
           "values": [],
-          "dataIdSlug": "tech-drop-down"
+          "dataIdSlug": "languages"
         },
         {
           "chapter": "Technology",
@@ -1860,7 +1871,7 @@
           "headline": "69% use GitHub projects or Stack Overflow as their community platform of choice in the past year",
           "description": "Public GitHub projects (69%) and Stack Overflow (69%) tied as the most heavily utilized technical community platforms in the past year, followed by YouTube (58%) and Reddit (54%).",
           "tier": "home",
-          "chart": "3d-rank",
+          "chart": "3d-bar-stacked-vertical",
           "dataId": "CommPlat",
           "focus": "",
           "limit": "5",

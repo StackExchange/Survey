@@ -56,9 +56,8 @@ work, so the sheet can be renamed a row at a time.
 | Proportional areas (multi-category)     | `3d-treemap`                | `2d-treemap`                |
 | Categorical breakdown, vertical         | `3d-bar-stacked-vertical`   | `2d-bar-stacked-vertical`   |
 | Categorical breakdown, horizontal       | `3d-bar-stacked-horizontal` | `2d-bar-stacked-horizontal` |
-| Min/max comparison                      | `3d-bar-stacked-minmax`     | `2d-bar-stacked-minmax`     |
-| Ranked Top X                            | `3d-rank`                   | `rank`                      |
-| Single stat callout (etc 1/4, 7.5, 85%) | `hero-stat`                 | `stat`                      |
+| Ranked list                             | —                           | `rank`                      |
+| Single stat callout (etc 1/4, 7.5, 85%) | —                           | `stat`                      |
 | Respondant quote                        | —                           | `quote`                     |
 
 ### Standard
