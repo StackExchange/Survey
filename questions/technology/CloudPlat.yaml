@@ -24,7 +24,8 @@ question:
     - Composer
     - Conda
     - DigitalOcean
-    - Docker / Docker Compose
+    - label: Docker / Docker Compose
+      short: Docker
     - Firebase
     - Fly.io
     - Google Cloud
