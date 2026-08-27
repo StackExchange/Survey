@@ -53,16 +53,14 @@
 		focus: selection.focus,
 		normalise,
 		url,
-		// Not `figureTitle`: a masthead should stay blank rather than fall back to
-		// the question text or the chart id.
+		// Not `figureTitle`: a masthead stays blank rather than falling back.
 		headline: figure.headline || figure.name,
 		demographic: figure.demographic?.name,
 	})
 
-	// The only charts that read `normalise`.
 	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
 
-	// The masthead is on the file only: on screen the page's own footer says the same.
+	// File only: on screen the page's own footer says the same.
 	const exported = $derived({ ...chrome, footer: true })
 
 	async function png() {
@@ -75,7 +73,7 @@
 		const drawn = await toSvg(Chart, { figure: selection.shown, width: CHART_WIDTH, chrome: exported })
 		if (!drawn) return null
 
-		// Optional, but it is what makes the file open as SVG rather than as text.
+		// What makes the file open as SVG rather than as text.
 		const markup = `<?xml version="1.0" encoding="UTF-8"?>\n${drawn.markup}`
 		return { blob: new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }), extension: 'svg' }
 	}

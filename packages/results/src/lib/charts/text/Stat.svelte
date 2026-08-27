@@ -4,12 +4,16 @@
 
 	let { figure }: { figure: any } = $props()
 
+	// Sized off the container, so the number fills the tile whatever its digits.
+	const BUDGET = 160
+	const CEILING = 60
+
 	const row = $derived(rowsOf(figure)[0])
 	const short = $derived(shorten(figure))
 
 	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
 	const glyphs = $derived(Math.max(figures.length + (unit ? 0.4 : 0), 2))
-	const size = $derived(Math.min(160 / glyphs, 60))
+	const size = $derived(Math.min(BUDGET / glyphs, CEILING))
 </script>
 
 <div

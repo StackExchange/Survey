@@ -6,8 +6,7 @@
 	import Button from '$components/Button.svelte'
 	import Icon from '$components/Icon.svelte'
 
-	// `normalise` belongs to the caller — the export reads it too — so it binds
-	// rather than being owned here.
+	// `normalise` belongs to the caller: the export reads it too.
 	let {
 		selection,
 		scalable = false,
