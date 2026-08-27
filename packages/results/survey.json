@@ -1122,7 +1122,10 @@
           "dataId": "AISentiment",
           "focus": "",
           "limit": "",
-          "values": [],
+          "values": [
+            "Very favorable",
+            "Very unfavorable"
+          ],
           "dataIdSlug": "ai-sentiment"
         },
         {
