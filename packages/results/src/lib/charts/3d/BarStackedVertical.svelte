@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { OnHover } from '$charts/utils/tooltip'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, capColumn, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, descent, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
@@ -10,10 +10,10 @@
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const ART = { column: 160, nose: 30 }
+	const COLUMN = 160
 	// The name set into the column's face, so it leans with the artwork.
 	const NAME_SIZE = 34
-	const SLOPE = ART.nose / (ART.column / 2)
+	const SLOPE = NOSE_RISE * 2
 	const LEAN = -px((Math.atan(SLOPE) * 180) / Math.PI)
 	const VALUE_GAP = 8
 
@@ -25,16 +25,14 @@
 	const format = $derived(formatOf(figure))
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	const step = $derived(px(Math.min(ART.column / 0.8, width / Math.max(rows.length, 1))))
+	const step = $derived(px(Math.min(COLUMN / 0.8, width / Math.max(rows.length, 1))))
 	const column = $derived(px(step * 0.8))
 	const half = $derived(px(column / 2))
-	const nose = $derived(px(column * (ART.nose / ART.column)))
+	const nose = $derived(px(column * NOSE_RISE))
 	const longest = $derived(px(Math.min(width * 0.5, 520)))
 	const drop = $derived(px(step * SLOPE))
 
-	const diamond = $derived(`M${-half} 0L0 ${-nose}L${half} 0L0 ${nose}Z`)
-	const baseLeft = $derived(`M${-half} 0L0 ${-nose}V${nose}Z`)
-	const baseRight = $derived(`M${half} 0L0 ${-nose}V${nose}Z`)
+	const cap = $derived(capColumn(half, nose))
 
 	const first = $derived(px((width - ((rows.length - 1) * step + column)) / 2 + column / 2))
 	const baseline = $derived(px(nose + 8 + longest))
@@ -70,10 +68,10 @@
 			<rect x={-half} y={px(-len)} width={half} height={len} fill={theme.focus} />
 			<rect x="0" y={px(-len)} width={half} height={len} fill={theme.rest} />
 
-			<path d={diamond} transform="translate(0 {px(-len)})" fill={theme.accent} />
+			<path d={cap.face} transform="translate(0 {px(-len)})" fill={theme.accent} />
 
-			<path d={baseLeft} fill={theme.focus} />
-			<path d={baseRight} fill={theme.rest} />
+			<path d={cap.left} fill={theme.focus} />
+			<path d={cap.right} fill={theme.rest} />
 
 			<text
 				transform="translate({nameX} {nameY}) rotate(-90) skewX({LEAN})"

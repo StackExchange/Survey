@@ -133,3 +133,23 @@ export const plate = (cx: number, cy: number, w: number, depth: number) => {
 		right: `M${point(cx + hw, cy)}L${point(cx, cy + hh)}L${point(cx, cy + hh + depth)}L${point(cx + hw, cy + depth)}Z`,
 	}
 }
+
+// The 3D bar's nose, as a share of the bar's thickness — the flatter cousin of
+// the cube's projection, at the base artwork's own 160-wide scale.
+export const NOSE_RISE = 30 / 160
+
+// A bar's pointed cap: the whole rhombus for the far end, and its two halves
+// for the near one, each continuing a face of the bar. `half` is the bar's
+// half-thickness, `nose` how far the point juts past the body.
+export const capColumn = (half: number, nose: number) => ({
+	face: `M${-half} 0L0 ${-nose}L${half} 0L0 ${nose}Z`,
+	left: `M${-half} 0L0 ${-nose}V${nose}Z`,
+	right: `M${half} 0L0 ${-nose}V${nose}Z`,
+})
+
+// The same cap, quarter-turned, for a bar that runs across the page.
+export const capRow = (half: number, nose: number) => ({
+	face: `M0 ${-half}L${nose} 0L0 ${half}L${-nose} 0Z`,
+	top: `M0 ${-half}L${nose} 0H${-nose}Z`,
+	bottom: `M0 ${half}L${nose} 0H${-nose}Z`,
+})

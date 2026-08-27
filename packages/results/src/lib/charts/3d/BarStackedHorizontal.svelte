@@ -3,7 +3,7 @@
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, capRow, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { CAPTION_SHARE, chars, clip, DIM, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
@@ -13,7 +13,7 @@
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const BAR = 96
-	const NOSE = px(BAR * (30 / 160))
+	const NOSE = px(BAR * NOSE_RISE)
 	const ROW_GAP = 20
 	const VALUE_GAP = 16
 
@@ -42,9 +42,7 @@
 
 	const height = $derived(rows.length * (BAR + ROW_GAP) - ROW_GAP)
 	const half = px(BAR / 2)
-	const DIAMOND = `M0 ${-half}L${NOSE} 0L0 ${half}L${-NOSE} 0Z`
-	const TAIL_TOP = `M0 ${-half}L${NOSE} 0H${-NOSE}Z`
-	const TAIL_BOTTOM = `M0 ${half}L${NOSE} 0H${-NOSE}Z`
+	const CAP = capRow(half, NOSE)
 
 	const valueY = -2
 	const labelY = valueY + LABEL_DY
@@ -75,12 +73,12 @@
 
 			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
 				<rect x={NOSE} y={-half} width={body} height={half} fill={theme.focus} />
-				<path d={TAIL_TOP} transform="translate({NOSE} 0)" fill={theme.focus} />
+				<path d={CAP.top} transform="translate({NOSE} 0)" fill={theme.focus} />
 
 				<rect x={NOSE} y="0" width={body} height={half} fill={theme.rest} />
-				<path d={TAIL_BOTTOM} transform="translate({NOSE} 0)" fill={theme.rest} />
+				<path d={CAP.bottom} transform="translate({NOSE} 0)" fill={theme.rest} />
 
-				<path d={DIAMOND} transform="translate({end} 0)" fill={theme.accent} />
+				<path d={CAP.face} transform="translate({end} 0)" fill={theme.accent} />
 			</g>
 
 			<text x={captionX} y={valueY} font-size={VALUE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
