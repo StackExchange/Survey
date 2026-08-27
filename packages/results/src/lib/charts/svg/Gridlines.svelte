@@ -3,7 +3,7 @@
 
 	let { from, to, top, bottom }: { from: number; to: number; top: number; bottom: number } = $props()
 
-	const MARKS = [0, 0.25, 0.5, 0.75, 1]
+	const MARKS = [0, 0.25, 0.5, 0.75, 1] // percentages
 </script>
 
 {#each MARKS as mark (mark)}
