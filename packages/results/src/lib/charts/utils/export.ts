@@ -75,6 +75,10 @@ export async function toSvg(Chart: Component<any>, { figure, width = 800, chrome
 
 	const host = document.createElement('div')
 	host.setAttribute('aria-hidden', 'true')
+	// A file is always light, whichever theme the page is in. The markup keeps its
+	// `var(--chart-*, …)` fills, so a standalone SVG falls back to light anyway —
+	// this holds the same for anything that rasterises while still in the document.
+	host.className = 'chart-light'
 	host.style.cssText = 'position:fixed;top:0;left:-10000px;pointer-events:none'
 	document.body.append(host)
 
