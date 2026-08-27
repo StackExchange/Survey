@@ -127,7 +127,7 @@
 		{#if options.nameEl}
 			<svelte:element this={options.nameEl} class="flex flex-col md:flex-row {options.nameClass}">
 				<a
-					class="inline-block {options.blockBgClass} {options.blockClass}"
+					class="inline-block hover:bg-black-500 hover:text-white {options.blockBgClass} {options.blockClass}"
 					href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}
 				>
 					{chapter.name}

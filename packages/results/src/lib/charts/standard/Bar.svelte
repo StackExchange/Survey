@@ -112,7 +112,14 @@
 					{label}
 				</text>
 
-				<text x={px(plotX + bar + 8)} y={middle(y + ROW / 1.6, LABEL_SIZE)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
+				<text
+					x={px(plotX + bar + 8)}
+					y={middle(y + ROW / 1.6, LABEL_SIZE)}
+					font-size={LABEL_SIZE}
+					font-family={theme.fontHeadline}
+					font-weight="600"
+					fill={theme.ink}
+				>
 					{format(row)}
 				</text>
 
@@ -124,7 +131,14 @@
 
 				<rect x={plotX} y={y + (ROW - BAR) / 2} width={bar} height={BAR} fill={series(0)} />
 
-				<text x={px(plotX + bar + 8)} y={middle(y + ROW / 2, LABEL_SIZE)} font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
+				<text
+					x={px(plotX + bar + 8)}
+					y={middle(y + ROW / 2, LABEL_SIZE)}
+					font-size={LABEL_SIZE}
+					font-family={theme.fontHeadline}
+					font-weight="600"
+					fill={theme.ink}
+				>
 					{format(row)}
 				</text>
 			{/if}

@@ -152,6 +152,7 @@
 				dx={(leading ? 1 : -1) * (DOT / 2 + 5)}
 				text-anchor={leading ? 'start' : 'end'}
 				font-size={VALUE_SIZE}
+				font-family={theme.fontHeadline}
 				font-weight="600"
 				fill={theme.ink}
 			>
@@ -166,7 +167,7 @@
 				text-anchor={leading ? 'end' : 'start'}
 				font-size={VALUE_SIZE}
 				font-weight="600"
-				font-family="Stack Sans Headline"
+				font-family={theme.fontHeadline}
 				fill={theme.ink}
 			>
 				{format(row.b)}

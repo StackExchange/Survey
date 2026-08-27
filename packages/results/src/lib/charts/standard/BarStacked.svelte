@@ -134,6 +134,7 @@
 							y={middle(y + LABEL + BAR / 2, VALUE_SIZE)}
 							text-anchor="middle"
 							font-size={VALUE_SIZE}
+							font-family={theme.fontHeadline}
 							font-weight="600"
 							fill={onSeries(i)}
 						>

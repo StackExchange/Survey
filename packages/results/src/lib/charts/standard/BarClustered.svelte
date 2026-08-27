@@ -115,7 +115,14 @@
 				{@const bar = px(x(amount(row, i)))}
 
 				<rect x={plotX} y={barY} width={bar} height={BAR} fill={series(i)} />
-				<text x={px(plotX + bar + 8)} y={middle(barY + BAR / 2, VALUE_SIZE)} font-size={VALUE_SIZE} font-weight="600" fill={theme.ink}>
+				<text
+					x={px(plotX + bar + 8)}
+					y={middle(barY + BAR / 2, VALUE_SIZE)}
+					font-size={VALUE_SIZE}
+					font-family={theme.fontHeadline}
+					font-weight="600"
+					fill={theme.ink}
+				>
 					{format(row, i)}
 				</text>
 			{/each}

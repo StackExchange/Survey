@@ -60,10 +60,9 @@ export const theme = {
 		token('on-series-8', '#ffffff'),
 	],
 
-	// Bare name, no stack and no quotes: Figma drops the font when handed a
-	// quoted, comma-separated list.
-	font: 'Stack Sans Text',
-	fontHeadline: 'Stack Sans Headline',
+
+	font: 'Stack Sans Text, system-ui, sans-serif',
+	fontHeadline: 'Stack Sans Headline, system-ui, sans-serif',
 }
 
 export const series = (i: number) => theme.series[i % theme.series.length]

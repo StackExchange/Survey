@@ -1,15 +1,6 @@
 <script lang="ts">
-	// A share as a field of cubes: 50 of them, so one cube is two percentage points.
-	//
-	// The field is a rhombus, 10 cubes along one lattice axis and 5 along the other.
-	// Both axes step a full footprint across and half a cube height — one down-right,
-	// one up-right — which is what makes the rows increasingly staggered and lands
-	// every cube edge to edge with its neighbours rather than overlapping them.
-	//
-	//   column = a + b            a: 0..LONG-1,  down-right
-	//   level  = a - b + SHORT-1  b: 0..SHORT-1, up-right
 	import { cube, CUBE, cubeHeight, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
-	import { OFF, percent, theme } from '$charts/utils/theme'
+	import { chars, clip, descent, OFF, percent, px, shorten, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -19,24 +10,27 @@
 	const LONG = 10
 	const SHORT = 5
 	const CELLS = LONG * SHORT
-
-	// The rhombus spans this many columns, and the same many levels — a level being
-	// half a cube height, so the two cubes above and below in a column sit a whole
-	// one apart.
 	const SPAN = LONG + SHORT - 1
 
+	const LABEL_SIZE = 16
+	const UNIT_SIZE = 25
+
 	const row = $derived(rowsOf(figure)[0])
+	const short = $derived(shorten(figure))
 	const share = $derived(shareOf(figure))
 
-	// At least one cube for a real-but-tiny share, as `percent` does for "<1%".
 	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * CELLS)) : 0)
 
 	const size = $derived(width / SPAN)
 	const half = $derived(cubeHeight(size) / 2)
-	const height = $derived((SPAN - 1) * half + cubeHeight(size))
 
-	// Column by column, top to bottom within one, so the filled front sweeps left to
-	// right from the rhombus's own point.
+	const grid = $derived((SPAN - 1) * half + cubeHeight(size))
+
+	const UNIT_Y = $derived(px((grid * 2) / 3.3 + UNIT_SIZE))
+	const NAMED_Y = $derived(px(UNIT_Y + 22))
+
+	const height = $derived(Math.max(grid, NAMED_Y + descent(LABEL_SIZE)))
+
 	const cells = $derived(
 		Array.from({ length: CELLS }, (_, i) => {
 			const a = i % LONG
