@@ -88,7 +88,6 @@
 	--chart-grid: var(--color-black-350);
 	--chart-tint: var(--color-black-100);
 	--chart-accent: var(--color-orange);
-	--chart-on-accent: var(--color-black);
 
 	--chart-focus: var(--color-blue);
 	--chart-dim: var(--color-black-300);
@@ -99,15 +98,10 @@
 	--chart-from: var(--color-blue);
 	--chart-to: var(--color-orange);
 
-	/* A hero's isometric faces, and the unfilled cells of a waffle. */
-	--chart-face-top: var(--color-orange);
-	--chart-face-side: var(--color-beige);
+	/* A rank row's track. */
 	--chart-ghost: var(--color-black-200);
 
-	/* An 'off' cube's three faces, before `OFF` washes them back — so they are set
-	   darker than the ghost that comes out. Stepping down towards the page keeps the
-	   top reading as the top; they touch in the medium waffle, and this shading is
-	   the only thing telling one cube from the next. */
+	/* An 'off' cube's faces, set darker because `OFF` washes them back. */
 	--chart-off-top: var(--color-black-500);
 	--chart-off-left: var(--color-black-350);
 	--chart-off-right: var(--color-black-250);

@@ -1,6 +1,5 @@
-// Presentation attributes, not CSS classes: a chart also renders as a standalone
-// .svg and into a canvas. The literal is what a file opened on its own resolves
-// to. routes/layout.css defines the variables; keep the two in step.
+// Presentation attributes, not CSS classes: a chart also renders standalone and
+// into a canvas. routes/layout.css defines the variables; keep the two in step.
 const token = (name: string, fallback: string) => `var(--chart-${name}, ${fallback})`
 
 export const theme = {
@@ -11,7 +10,6 @@ export const theme = {
 	grid: token('grid', '#bcb9b3'),
 	tint: token('tint', '#f9f8f8'),
 	accent: token('accent', '#ff5e00'),
-	onAccent: token('on-accent', '#201c1d'),
 
 	focus: token('focus', '#5074ef'),
 	onFocus: token('on-focus', '#ffffff'),
@@ -22,26 +20,15 @@ export const theme = {
 	from: token('from', '#5074ef'),
 	to: token('to', '#ff5e00'),
 
-	faceTop: token('face-top', '#ff5e00'),
-	faceSide: token('face-side', '#998b7a'),
-
-	// The unfilled cells of a waffle. Heavier than `tint`, which disappears
-	// against the page at this size.
+	// A rank row's track. Heavier than `tint`, which disappears at this size.
 	ghost: token('ghost', '#e5e4e3'),
 
-	// An 'off' cube's three faces, from the base artwork. Its own greys rather than
-	// faded versions of the live ones: washing the live faces back loses the
-	// shading direction, and a cube you can't read the top of stops being a cube.
-	//
-	// These are the fills before `OFF` is laid over them, so they sit darker than the
-	// cube that comes out — a face has to have somewhere to fade from. Darkest on top,
-	// and far enough apart to stay apart once washed: off cubes touch in the medium
-	// waffle, and the shading is the only thing telling one from the next.
+	// An 'off' cube's three faces. Its own greys, not faded live ones: washing
+	// the live faces back loses the shading direction.
 	offTop: token('off-top', '#424242'),
 	offLeft: token('off-left', '#a09e9b'),
 	offRight: token('off-right', '#ccc8c2'),
 
-	// Index with `series(i)` — a sankey carries more nodes than there are colours.
 	series: [
 		token('series-1', '#5074ef'),
 		token('series-2', '#9e9cff'),
@@ -53,7 +40,6 @@ export const theme = {
 		token('series-8', '#00165e'),
 	],
 
-	// The readable ink for each swatch above.
 	onSeries: [
 		token('on-series-1', '#ffffff'),
 		token('on-series-2', '#201c1d'),
@@ -65,7 +51,6 @@ export const theme = {
 		token('on-series-8', '#ffffff'),
 	],
 
-
 	font: 'Stack Sans Text, system-ui, sans-serif',
 	fontHeadline: 'Stack Sans Headline, system-ui, sans-serif',
 }
@@ -74,24 +59,28 @@ export const series = (i: number) => theme.series[i % theme.series.length]
 
 export const onSeries = (i: number) => theme.onSeries[i % theme.onSeries.length]
 
-// The space between one mark and the next — waffle cells, bars, rank rows, treemap
-// cells. One value, so the forms read as a set rather than seven near-misses.
+export const FINE = 12 // axis ticks, point names, legend
+export const SMALL = 14 // standard data charts, and the chrome band
+export const LABEL = 16 // editorial 2d/3d row labels
+export const VALUE = 25 // the display number
+
+// Between a value's baseline and the name under it.
+export const LABEL_DY = 22
+
+export const CAPTION_SHARE = 0.4
+
 export const GAP = 8
 
 export const PAD = 15
 
-// The wash laid over the row under the pointer, and the opacity of the hero marks
-// that aren't. Both were repeated as bare literals across the charts.
 export const HOVER_WASH = 0.05
 export const DIM = 0.75
 
-// An 'off' cube's own opacity, so it reads as a ghost of the ground rather than a
-// grey object on it. A group opacity rather than three faded fills: one number to
-// change, and the faces don't composite against each other where they meet.
+// An 'off' cube's opacity. A group opacity rather than three faded fills, so the
+// faces don't composite against each other where they meet.
 export const OFF = 0.5
 
-// `places` is for the few values that aren't lengths: a scale factor multiplies
-// up, so it needs more of them.
+// `places` is for the few values that aren't lengths — a scale factor needs more.
 export function px(n: number, places = 2) {
 	const factor = 10 ** places
 	return Math.round(n * factor) / factor
@@ -106,17 +95,15 @@ const GLYPH_DIGITS = 0.66
 
 export const textWidth = (text: string, fontSize: number) => px(text.length * fontSize * GLYPH)
 
-// An `<svg>` clips at its viewBox, so a height measured to the baseline cuts off
-// every descender.
+// An `<svg>` clips at its viewBox, so a height to the baseline cuts descenders.
 export const descent = (fontSize: number) => px(fontSize * 0.34)
 
-// `dominant-baseline` baked into `y`: Figma and most SVG converters ignore the
-// attribute and read `y` as the alphabetic baseline.
+// `dominant-baseline` baked into `y`: Figma and most converters ignore it.
 export const middle = (y: number, fontSize: number) => px(y + fontSize * 0.35)
 
 export const hanging = (y: number, fontSize: number) => px(y + fontSize * 0.7)
 
-export const chars = (px: number, fontSize: number) => Math.max(1, Math.floor(px / (fontSize * GLYPH)))
+export const chars = (room: number, fontSize: number) => Math.max(1, Math.floor(room / (fontSize * GLYPH)))
 
 export const digitsWidth = (text: string, fontSize: number) => px(text.length * fontSize * GLYPH_DIGITS)
 
@@ -124,15 +111,15 @@ export const labelGutter = (width: number) => Math.round(width * 0.2)
 
 const MIN_GUTTER_CHARS = 18
 
-// Whether a row chart draws its label above the bar rather than beside it,
-// because the gutter is too narrow to hold a useful number of characters.
 export const labelsAbove = (width: number, fontSize: number) => chars(labelGutter(width), fontSize) < MIN_GUTTER_CHARS
 
 export const SWATCH = 9
 const LEGEND_ROW = 22
+const LEGEND_SPACE = 22
+export const LEGEND_GAP = 6
 
 // Returns its own height so a chart reserves the space from the same layout
-// ./Legend.svelte draws from.
+// ../svg/Legend.svelte draws from.
 export function legend(labels: any[], width: number) {
 	const items: { label: string; i: number; x: number; row: number }[] = []
 	let x = 0
@@ -140,7 +127,7 @@ export function legend(labels: any[], width: number) {
 
 	for (const [i, label] of labels.entries()) {
 		const text = String(label)
-		const w = textWidth(text, 12) + SWATCH + 22
+		const w = textWidth(text, FINE) + SWATCH + LEGEND_SPACE
 		if (x && x + w > width) {
 			row++
 			x = 0
@@ -177,8 +164,7 @@ export const figureTitle = (figure: any) => figure.headline || figure.name || fi
 
 export const clip = (text: string, chars: number) => (text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text)
 
-// The figure's short form of a response where it has one, resolved in
-// $lib/server/content.
+// The figure's short form of a response, resolved in $lib/server/content.
 export const shorten = (figure: any) => (value: unknown) => {
 	const text = String(value ?? '')
 	return figure?.shorts?.[text] ?? text
