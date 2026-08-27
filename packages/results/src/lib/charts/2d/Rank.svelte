@@ -13,7 +13,6 @@
 	const ROW = 66
 	const TAB = 36
 	const LABEL_SIZE = 30
-	const RANK_SIZE = 30
 
 	const hover = useHover(() => onhover)
 
@@ -55,9 +54,9 @@
 
 			<text
 				x={valueX}
-				y={middle(y + ROW / 2, RANK_SIZE)}
+				y={middle(y + ROW / 2, LABEL_SIZE)}
 				text-anchor="end"
-				font-size={RANK_SIZE}
+				font-size={LABEL_SIZE}
 				font-family={theme.fontHeadline}
 				fill={theme.ink}
 			>

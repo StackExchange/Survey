@@ -1,13 +1,10 @@
 <script lang="ts">
-	// A hundred cells, one per percentage point, ten by ten so a row is ten points.
-	// One share, so the chapter's two colours: its first for the filled cells.
 	import { readingOf, shareOf } from '$charts/utils/expressive'
 	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
-	// No `onhover`: one value, so a readout would only repeat the `<desc>`.
 	let { figure, width = 800 }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const COLUMNS = 10

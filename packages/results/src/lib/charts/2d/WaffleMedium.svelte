@@ -1,6 +1,4 @@
 <script lang="ts">
-	// The "1 in X" shape: X cells with one filled. Rounding is the point of the
-	// form — 26% draws four cells — and the exact figure is in the `<desc>`.
 	import { grid, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { GAP, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -17,7 +15,6 @@
 	const slots = $derived(Array.from({ length: cells }, (_, i) => i))
 	const layout = $derived(grid(cells, Math.min(width, 620), GAP))
 
-	// The grid rarely uses the whole width, so centre what it did use.
 	const origin = $derived(px((width - (layout.columns * layout.size + GAP * (layout.columns - 1))) / 2))
 
 	const height = $derived(layout.height)

@@ -5,7 +5,7 @@
 
 	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, GAP, px, shorten, textWidth, theme } from '$charts/utils/theme'
+	import { CAPTION_SHARE, chars, clip, GAP, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -13,9 +13,7 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const BAR = 44
-	const LABEL_SIZE = 16
-	const UNIT_SIZE = 25
-	const CAPTION = 0.4
+	const VALUE_GAP = 16
 
 	const hover = useHover(() => onhover)
 
@@ -31,8 +29,8 @@
 
 	const fillOf = (row: any, hovered: boolean) => (hovered ? theme.ink : row === accent ? theme.focus : theme.rest)
 
-	const named = $derived(accent ? clip(short(accent.response), chars(width * CAPTION - 16, LABEL_SIZE)) : '')
-	const gutter = $derived(accent ? px(Math.max(textWidth(named, LABEL_SIZE), textWidth(format(accent), UNIT_SIZE)) + 16) : 0)
+	const named = $derived(accent ? clip(short(accent.response), chars(width * CAPTION_SHARE - VALUE_GAP, LABEL)) : '')
+	const gutter = $derived(accent ? px(Math.max(textWidth(named, LABEL), textWidth(format(accent), VALUE)) + VALUE_GAP) : 0)
 
 	const x = $derived(
 		scaleLinear()
@@ -41,9 +39,8 @@
 			.clamp(true)
 	)
 
-	// Following the focused bar's own end, held inside the frame. The gutter above is
-	// what guarantees the room: the longest bar can only reach `width - gutter`.
-	const captionX = $derived(accent ? px(Math.min(x(amount(accent)) + 16, width - (gutter - 16))) : 0)
+	// Follows the focused bar's end. The gutter above guarantees the room.
+	const captionX = $derived(accent ? px(Math.min(x(amount(accent)) + VALUE_GAP, width - (gutter - VALUE_GAP))) : 0)
 
 	const height = $derived(rows.length * (BAR + GAP) - GAP)
 
@@ -66,10 +63,10 @@
 			<rect x="0" {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
 
 			{#if row === accent}
-				<text x={captionX} y={px(y + 20)} font-size={UNIT_SIZE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
+				<text x={captionX} y={px(y + VALUE_GAP + 4)} font-size={VALUE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
 					{format(row)}
 				</text>
-				<text x={captionX} y={px(y + 42)} font-size={LABEL_SIZE} fill={theme.muted}>
+				<text x={captionX} y={px(y + VALUE_GAP + 4 + LABEL_DY)} font-size={LABEL} fill={theme.muted}>
 					{named}
 				</text>
 			{/if}

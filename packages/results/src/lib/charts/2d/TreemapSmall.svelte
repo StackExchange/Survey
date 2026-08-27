@@ -1,17 +1,12 @@
 <script lang="ts">
-	// Two values as two squares. Area rather than height, so "three times more" is
-	// three times the square — the sides are the square roots of the shares.
 	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, GAP, px, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, GAP, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
-
-	const LABEL_SIZE = 16
-	const UNIT_SIZE = 28
 
 	const hover = useHover(() => onhover)
 
@@ -53,14 +48,14 @@
 			<g role="presentation" onpointermove={(event) => enter(row, i, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
 				<rect {x} y={px(box - s)} width={s} height={s} fill={fillOf(row, hover.active === i)} />
 
-				{#if s > LABEL_SIZE * 3 && s > 70}
-					<text x={px(x + 10)} y={px(box - LABEL_SIZE)} font-size={LABEL_SIZE} fill={inkOf(row, hover.active === i)}>
-						{clip(short(row.response), chars(s - 20, LABEL_SIZE))}
+				{#if s > LABEL * 3 && s > 70}
+					<text x={px(x + 10)} y={px(box - LABEL)} font-size={LABEL} fill={inkOf(row, hover.active === i)}>
+						{clip(short(row.response), chars(s - 20, LABEL))}
 					</text>
 					<text
 						x={px(x + 10)}
-						y={px(box - 38)}
-						font-size={UNIT_SIZE}
+						y={px(box - LABEL - LABEL_DY)}
+						font-size={VALUE}
 						font-family={theme.fontHeadline}
 						font-weight="600"
 						fill={inkOf(row, hover.active === i)}

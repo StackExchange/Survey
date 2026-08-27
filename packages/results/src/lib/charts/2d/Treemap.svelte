@@ -1,15 +1,12 @@
 <script lang="ts">
 	import { amountOf, focusedOf, formatOf, readingOf, rowsOf, treemapCells } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, LABEL, LABEL_DY, shorten, theme, VALUE } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
-
-	const LABEL_SIZE = 16
-	const UNIT_SIZE = 28
 
 	const hover = useHover(() => onhover)
 
@@ -60,14 +57,14 @@
 				fill-opacity={tintOf(rank, hovered)}
 			/>
 
-			{#if cell.height > LABEL_SIZE * 3 && cell.width > 70}
-				<text x={cell.x + 10} y={cell.y + cell.height - LABEL_SIZE} font-size={LABEL_SIZE} fill={inkOf(cell.row, rank, hovered)}>
-					{clip(short(cell.row.response), chars(cell.width - 20, LABEL_SIZE))}
+			{#if cell.height > LABEL * 3 && cell.width > 70}
+				<text x={cell.x + 10} y={cell.y + cell.height - LABEL} font-size={LABEL} fill={inkOf(cell.row, rank, hovered)}>
+					{clip(short(cell.row.response), chars(cell.width - 20, LABEL))}
 				</text>
 				<text
 					x={cell.x + 10}
-					y={cell.y + cell.height - 38}
-					font-size={UNIT_SIZE}
+					y={cell.y + cell.height - LABEL - LABEL_DY}
+					font-size={VALUE}
 					font-family={theme.fontHeadline}
 					font-weight="600"
 					fill={inkOf(cell.row, rank, hovered)}
