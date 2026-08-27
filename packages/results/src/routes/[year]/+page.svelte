@@ -46,7 +46,7 @@
 		</p>
 	</section>
 
-	<section class="spindle-scope relative overflow-hidden">
+	<section class="spindle-scope relative overflow-hidden border-b border-transparent dark:border-black-500">
 		<img src="/img/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
 		<div class="relative z-10 container my-60 flex items-end text-2xl leading-snug lg:w-50">
 			<dl

@@ -77,12 +77,12 @@
 				transform="translate({nameX} {nameY}) rotate(-90) skewX({LEAN})"
 				font-family={theme.fontHeadline}
 				font-size={NAME_SIZE}
-				fill={theme.ink}
+				fill="#201c1d"
 			>
 				{clip(short(row.response), chars(len - nose - 24, NAME_SIZE))}
 			</text>
 
-			<text x={-half} y={valueY} font-family={theme.fontHeadline} font-size={VALUE} font-weight="600" fill={theme.ink}>
+			<text x={-half} y={valueY} font-family={theme.fontHeadline} font-size={VALUE} font-weight="600" fill="{theme.ink}">
 				{format(row)}
 			</text>
 			<text x={-half} y={labelY} font-size={LABEL} fill={theme.muted}>
