@@ -7,26 +7,42 @@
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, FINE, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import {
+		chars,
+		clip,
+		count,
+		descent,
+		digitsWidth,
+		FINE,
+		GAP,
+		hanging,
+		middle,
+		PAD,
+		px,
+		series,
+		shorten,
+		SMALL,
+		textWidth,
+		theme,
+	} from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
+	import Gridlines from '$charts/svg/Gridlines.svelte'
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const hover = useHover(() => onhover)
-
-	// Two scatters on one page would otherwise share a gradient id.
 	const uid = $props.id()
 
-	const RAMP_WIDTH = 96
-	const AXIS_LEFT = 76
-	const AXIS_BOTTOM = 64
+	const hover = useHover(() => onhover)
+
+	const TICKS = 6
+	const DOT = 6
+	const TICK_GAP = GAP * 2
+	const TITLE_GAP = GAP * 2
+	const RAMP_BAR = 14
 
 	const rows = $derived(rowsOf(figure))
-	// Which two of the row's named columns to plot, resolved by the loader — the
-	// export names its columns and says nothing about where they belong. The
-	// sheet's `Axis Labels` overrides the wording, and only the wording.
 	const axes = $derived.by(() => {
 		if (!figure.axes) return null
 		const [x, y] = figure.axisLabels ?? []
@@ -39,64 +55,97 @@
 
 	const valueAt = (row: any, axis: any) => (axis ? (row?.[axis.key] ?? 0) : 0)
 
-	const plotWidth = $derived(Math.max(1, width - AXIS_LEFT - RAMP_WIDTH - PAD))
-	// An aspect ratio, not a fixed height: the cloud's steepness carries meaning.
-	const plotHeight = $derived(Math.round(plotWidth * 0.75))
-	const height = $derived(PAD + plotHeight + AXIS_BOTTOM)
-	const rampHeight = $derived(Math.round(plotHeight * 0.4))
-
 	const span = (values: number[]) => {
 		const min = Math.min(...values)
 		const max = Math.max(...values)
-		// A single distinct value would collapse the scale to a point.
+
 		return min === max ? [min - 1, max + 1] : [min, max]
 	}
-
-	const xScale = $derived(
-		scaleLinear()
-			.domain(span(rows.map((row: any) => valueAt(row, axes?.x))))
-			.range([0, plotWidth])
-			.nice()
-	)
-	const yScale = $derived(
-		scaleLinear()
-			.domain(span(rows.map((row: any) => valueAt(row, axes?.y))))
-			.range([plotHeight, 0])
-			.nice()
-	)
-
-	const frequencies = $derived(rows.map((row: any) => row.count ?? 0))
-	const opacity = $derived(scaleLinear().domain(span(frequencies)).range([0.3, 1]).clamp(true))
 
 	// '$' reads before the number, '%' after it — prefixing both gives "%10".
 	const tick = (value: number, axis: any) => {
 		if (axis?.unit === '$') return `$${count(value)}`
+
 		return `${value}${axis?.unit === '%' ? '%' : ''}`
 	}
 
-	const DOT = 6
-	// Gap from a point to its name, and the line a nudged name drops by.
-	const GUTTER = DOT + 9
-	const LINE = FINE + 2
+	const frequencies = $derived(rows.map((row: any) => row.count ?? 0))
 
-	// A name sits beside its point, flipping inside near the right edge. Collisions
-	// nudge down a line, walked in y order so a nudge only pushes into free space.
+	const FAINTEST = 0.3
+	const opacity = $derived(scaleLinear().domain(span(frequencies)).range([FAINTEST, 1]).clamp(true))
+
+	const domain = (axis: any) => span(rows.map((row: any) => valueAt(row, axis)))
+	const xTicks = $derived(scaleLinear().domain(domain(axes?.x)).nice().ticks(TICKS))
+	const yTicks = $derived(scaleLinear().domain(domain(axes?.y)).nice().ticks(TICKS))
+
+	const roomFor = (labels: string[]) => Math.max(...labels.map((text) => digitsWidth(text, SMALL)))
+
+	const AXIS_LEFT = $derived(PAD + SMALL + TITLE_GAP + roomFor(yTicks.map((value) => tick(value, axes?.y))) + TICK_GAP)
+	const AXIS_BOTTOM = PAD + SMALL + TITLE_GAP + SMALL + TICK_GAP
+	const RAMP_WIDTH = $derived(RAMP_BAR + GAP + roomFor(frequencies.map((value) => count(value))) + PAD)
+
+	const plotWidth = $derived(Math.max(1, width - AXIS_LEFT - RAMP_WIDTH - PAD))
+	const plotHeight = $derived(Math.round(plotWidth * 0.75))
+	const height = $derived(PAD + plotHeight + AXIS_BOTTOM)
+	const rampHeight = $derived(Math.round(plotHeight * 0.4))
+
+	const xScale = $derived(scaleLinear().domain(domain(axes?.x)).range([0, plotWidth]).nice())
+	const yScale = $derived(scaleLinear().domain(domain(axes?.y)).range([plotHeight, 0]).nice())
+	const xGrid = $derived(xTicks.slice(0, -1).map((value) => xScale(value)))
+	const yGrid = $derived(yTicks.slice(0, -1).map((value) => yScale(value)))
+
+	const GUTTER = DOT + GAP
+	const LINE = FINE + 2
+	const NAME = 32
+
+	// A name takes the first free line: beside its own point, else the other side
+	// of it, else a line further down. Two names clash only where they share both
+	// a line and a stretch of it — testing the boxes, not the side, is what stops
+	// a name at one end of the plot shoving one at the other end out of the way.
 	const points = $derived.by(() => {
 		const placed = rows
-			.map((row: any) => {
-				const cx = px(xScale(valueAt(row, axes?.x)))
-				const flip = cx > plotWidth * 0.72
-				// Clipped to the room beside the point, which varies by position.
-				return { row, cx, cy: px(yScale(valueAt(row, axes?.y))), flip, room: (flip ? cx : plotWidth - cx) - GUTTER }
-			})
+			.map((row: any) => ({
+				row,
+				cx: px(xScale(valueAt(row, axes?.x))),
+				cy: px(yScale(valueAt(row, axes?.y))),
+			}))
 			.sort((a: any, b: any) => a.cy - b.cy)
 
-		const lowest: Record<string, number> = {}
+		const taken: any[] = []
+
+		const slotFor = (point: any, flip: boolean, y: number) => {
+			const room = (flip ? point.cx : plotWidth - point.cx) - GUTTER
+			const text = clip(clip(short(point.row.response), NAME), chars(room, FINE))
+			const width = textWidth(text, FINE)
+			const x0 = flip ? point.cx - GUTTER - width : point.cx + GUTTER
+
+			// Two names clash only where they share both a line and a stretch of it.
+			const clear =
+				room >= FINE &&
+				y >= 0 &&
+				y <= plotHeight &&
+				!taken.some((other: any) => other.x0 < x0 + width && x0 < other.x1 && Math.abs(other.y - y) < LINE)
+
+			return { flip, text, y, x0, x1: x0 + width, clear }
+		}
+
 		for (const point of placed) {
-			const side = point.flip ? 'left' : 'right'
-			const floor = lowest[side] ?? -Infinity
-			;(point as any).labelY = point.cy < floor + LINE ? floor + LINE : point.cy
-			lowest[side] = (point as any).labelY
+			// The roomier side first, so a name by an edge starts on the inside.
+			const near = point.cx > plotWidth / 2
+			let slot = slotFor(point, near, point.cy)
+
+			for (let step = 0; step < 4 && !slot.clear; step++)
+				for (const flip of [near, !near]) {
+					slot = slotFor(point, flip, point.cy + step * LINE)
+					if (slot.clear) break
+				}
+
+			// Nothing free within reach: back to the point. An overlap there reads
+			// better than a name a long way from its mark.
+			if (!slot.clear) slot = slotFor(point, near, point.cy)
+
+			Object.assign(point, slot, { labelY: slot.y })
+			taken.push(slot)
 		}
 
 		return placed
@@ -108,7 +157,7 @@
 			{
 				title: String(row.response ?? ''),
 				rows: [
-					{ value: tick(valueAt(row, axes?.y), axes?.y), label: axes?.y?.label, color: theme.from },
+					{ value: tick(valueAt(row, axes?.y), axes?.y), label: axes?.y?.label, color: series(0) },
 					{ value: tick(valueAt(row, axes?.x), axes?.x), label: axes?.x?.label },
 					{ value: count(row.count), label: 'respondents' },
 				],
@@ -120,36 +169,44 @@
 
 <Frame {figure} {width} {height}>
 	<g transform="translate({AXIS_LEFT}, {PAD})">
-		{#each xScale.ticks(6) as value (value)}
-			{@const at = px(xScale(value))}
-			<line x1={at} x2={at} y1="0" y2={plotHeight} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
-			<text x={at} y={plotHeight + 18} text-anchor="middle" font-size={FINE} fill={theme.muted}>
+		<Gridlines from={0} to={plotWidth} top={0} bottom={plotHeight} at={xGrid} />
+		<Gridlines from={0} to={plotWidth} top={0} bottom={plotHeight} axis="y" at={yGrid} />
+
+		{#each xTicks as value (value)}
+			<text x={px(xScale(value))} y={hanging(plotHeight + TICK_GAP, SMALL)} text-anchor="middle" font-size={SMALL} fill={theme.muted}>
 				{tick(value, axes?.x)}
 			</text>
 		{/each}
 
-		{#each yScale.ticks(6) as value (value)}
-			{@const at = px(yScale(value))}
-			<line x1="0" x2={plotWidth} y1={at} y2={at} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
-			<text x="-10" y={middle(at, FINE)} text-anchor="end" font-size={FINE} fill={theme.muted}>
+		{#each yTicks as value (value)}
+			<text x={-TICK_GAP} y={middle(px(yScale(value)), SMALL)} text-anchor="end" font-size={SMALL} fill={theme.muted}>
 				{tick(value, axes?.y)}
 			</text>
 		{/each}
 
 		{#if axes?.x?.label}
-			<text x={plotWidth / 2} y={plotHeight + 46} text-anchor="middle" font-size={FINE} font-weight="600" fill={theme.ink}>
-				{clip(String(axes.x.label), chars(plotWidth, FINE))}
+			<text
+				x={plotWidth / 2}
+				y={hanging(plotHeight + TICK_GAP + SMALL + TITLE_GAP, SMALL)}
+				text-anchor="middle"
+				font-size={SMALL}
+				font-weight="600"
+				fill={theme.muted}
+			>
+				{clip(String(axes.x.label), chars(plotWidth, SMALL))}
 			</text>
 		{/if}
 		{#if axes?.y?.label}
+			<!-- Rotated -90°, its glyphs stand to the left of the baseline — so the
+			     baseline goes a line in from the margin, not on it. -->
 			<text
 				text-anchor="middle"
-				font-size={FINE}
+				font-size={SMALL}
 				font-weight="600"
-				fill={theme.ink}
-				transform="translate(-56, {plotHeight / 2}) rotate(-90)"
+				fill={theme.muted}
+				transform="translate({px(hanging(PAD, SMALL) - AXIS_LEFT)}, {plotHeight / 2}) rotate(-90)"
 			>
-				{clip(String(axes.y.label), chars(plotHeight, FINE))}
+				{clip(String(axes.y.label), chars(plotHeight, SMALL))}
 			</text>
 		{/if}
 
@@ -161,14 +218,14 @@
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
 			>
-				<!-- A 6px dot is a pinpoint. Hit target first, so the name stays selectable. -->
+				<!-- The dot is a pinpoint. Hit target first, so the name stays selectable. -->
 				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
 
 				<circle
 					cx={point.cx}
 					cy={point.cy}
 					r={hover.active === i ? DOT + 2 : DOT}
-					fill={theme.from}
+					fill={series(0)}
 					fill-opacity={px(opacity(point.row.count ?? 0))}
 					stroke={hover.active === i ? theme.ink : theme.background}
 				/>
@@ -192,23 +249,36 @@
 					font-size={FINE}
 					fill={theme.ink}
 				>
-					{clip(short(point.row.response), chars(point.room, FINE))}
+					{point.text}
 				</text>
 			</g>
 		{/each}
 	</g>
 
-	<g transform="translate({width - RAMP_WIDTH + 16}, {PAD})">
+	<g transform="translate({px(width - RAMP_WIDTH)}, {PAD})">
 		<defs>
 			<linearGradient id="density-{uid}" x1="0" x2="0" y1="1" y2="0">
-				<stop offset="0%" stop-color={theme.from} stop-opacity="0.3" />
-				<stop offset="100%" stop-color={theme.from} stop-opacity="1" />
+				<stop offset="0%" stop-color={series(0)} stop-opacity={FAINTEST} />
+				<stop offset="100%" stop-color={series(0)} stop-opacity="1" />
 			</linearGradient>
 		</defs>
 
-		<text y="-8" font-size={FINE} font-weight="600" fill={theme.ink}>Responses</text>
-		<rect width="14" height={rampHeight} rx="7" fill="url(#density-{uid})" />
-		<text x="20" y="8" font-size={FINE} fill={theme.muted}>{count(Math.max(...frequencies))}</text>
-		<text x="20" y={rampHeight - 2} font-size={FINE} fill={theme.muted}>{count(Math.min(...frequencies))}</text>
+		<rect width={RAMP_BAR} height={rampHeight} rx={RAMP_BAR / 2} fill="url(#density-{uid})" />
+
+		<!-- The two ends of the bar, read against its top and bottom edges. -->
+		<text x={RAMP_BAR + GAP} y={hanging(0, FINE)} font-size={FINE} fill={theme.muted}>{count(Math.max(...frequencies))}</text>
+		<text x={RAMP_BAR + GAP} y={rampHeight - descent(FINE)} font-size={FINE} fill={theme.muted}>{count(Math.min(...frequencies))}</text>
+
+		<!-- Turned into the column the numbers leave empty between them, so titling
+		     the ramp costs no width. -->
+		<text
+			text-anchor="middle"
+			font-size={SMALL}
+			font-weight="600"
+			fill={theme.muted}
+			transform="translate({hanging(RAMP_BAR + GAP, SMALL)}, {px(rampHeight / 2)}) rotate(-90)"
+		>
+			{clip('Responses', chars(rampHeight, SMALL))}
+		</text>
 	</g>
 </Frame>
