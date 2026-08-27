@@ -79,6 +79,8 @@
 	--color-black-600: #201c1d;
 }
 
+/* `.chart-light` is what an export's off-screen host wears: a downloaded file is
+   light whatever the page is set to. */
 :root,
 .chart-light {
 	--chart-bg: var(--color-black-150);
@@ -144,6 +146,13 @@
 	--chart-on-series-8: var(--color-black);
 
 	--panel: var(--color-black-500);
+}
+
+.dark .chart-preview {
+	--chart-bg: var(--color-black-500);
+	--chart-tint: var(--color-black-400);
+	--chart-ghost: var(--color-black-400);
+	--chart-grid: var(--color-black-350);
 }
 
 /* A run of sections that steps its ground one tone away from where it rests while

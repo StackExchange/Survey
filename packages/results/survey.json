@@ -27,6 +27,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "age",
               "dataIdSlug": "age"
             },
@@ -38,6 +39,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "relationship-to-coding",
               "dataIdSlug": "code-main"
             },
@@ -49,6 +51,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "work-environment",
               "dataIdSlug": "education"
             },
@@ -60,6 +63,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "employment-status",
               "dataIdSlug": "employment"
             },
@@ -71,6 +75,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "gender",
               "dataIdSlug": "gender"
             },
@@ -82,6 +87,7 @@
               "chart": "table",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "country",
               "dataIdSlug": "country"
             }
@@ -101,6 +107,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "employment-additional-status",
               "dataIdSlug": "employment-addl"
             }
@@ -120,6 +127,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ic-or-pm",
               "dataIdSlug": "i-cor-pm"
             },
@@ -131,6 +139,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "work-setting",
               "dataIdSlug": "work-setting"
             },
@@ -142,6 +151,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "years-coding",
               "dataIdSlug": "years-code"
             },
@@ -153,6 +163,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "years-of-work-experience",
               "dataIdSlug": "work-exp"
             },
@@ -164,6 +175,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "title",
               "dataIdSlug": "role"
             }
@@ -183,6 +195,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "functions-at-work",
               "dataIdSlug": "role-functions"
             },
@@ -194,6 +207,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "employer-organization-size",
               "dataIdSlug": "org-size"
             },
@@ -205,6 +219,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "tech-budget-decisionmaker-status",
               "dataIdSlug": "tech-budget"
             }
@@ -224,6 +239,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "relationship-to-purchase-decisions-at-work",
               "dataIdSlug": "purchase-power"
             },
@@ -235,6 +251,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "reasons-to-endorse-a-technology",
               "dataIdSlug": "tech-endorse"
             },
@@ -246,6 +263,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "industry",
               "dataIdSlug": "industry"
             },
@@ -257,6 +275,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "job-satisfaction",
               "dataIdSlug": "job-sat"
             },
@@ -268,6 +287,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "reasons-to-be-complacent-with-current-job",
               "dataIdSlug": "job-sat-complacent"
             },
@@ -279,6 +299,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "reasons-job-is-easy",
               "dataIdSlug": "job-ease"
             },
@@ -290,6 +311,10 @@
               "chart": "sankey",
               "description": "",
               "subtext": "",
+              "axisLabels": [
+                "Worked with",
+                "Wants to work with"
+              ],
               "id": "does-ai-affect-job-ease",
               "dataIdSlug": "cf-job-ease-ai"
             },
@@ -301,6 +326,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "reasons-job-is-difficult",
               "dataIdSlug": "job-difficulty"
             },
@@ -312,6 +338,10 @@
               "chart": "sankey",
               "description": "",
               "subtext": "",
+              "axisLabels": [
+                "Worked with",
+                "Wants to work with"
+              ],
               "id": "does-ai-affect-job-difficulties",
               "dataIdSlug": "cf-job-difficulty-ai"
             },
@@ -323,6 +353,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "count-of-tools-used",
               "dataIdSlug": "tool-count"
             },
@@ -334,6 +365,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "compensation",
               "dataIdSlug": "compensation"
             },
@@ -345,6 +377,10 @@
               "chart": "scatter",
               "description": "",
               "subtext": "",
+              "axisLabels": [
+                "Average years of professional experience",
+                "Median yearly salary (USD)"
+              ],
               "id": "compensation",
               "dataIdSlug": "scatter-compensation"
             }
@@ -496,6 +532,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "tasks-delegated-to-ai-agents",
               "dataIdSlug": "know-agent-delegate"
             },
@@ -507,6 +544,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "signals-of-trustworthy-information",
               "dataIdSlug": "trust-reason"
             },
@@ -518,6 +556,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "important-project-context",
               "dataIdSlug": "context-select"
             },
@@ -529,6 +568,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "barriers-to-finding-context",
               "dataIdSlug": "context-problems"
             },
@@ -540,6 +580,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "managing-work-context",
               "dataIdSlug": "context-work"
             }
@@ -559,6 +600,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "sources-for-work-related-answers",
               "dataIdSlug": "knowledge-q"
             },
@@ -570,6 +612,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "time-spent-finding-information",
               "dataIdSlug": "knowledge-a"
             },
@@ -581,6 +624,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "importance-of-information-accuracy",
               "dataIdSlug": "knowledge-acc"
             },
@@ -592,6 +636,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "importance-of-current-information",
               "dataIdSlug": "knowledge-time"
             },
@@ -603,6 +648,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "importance-of-source-traceability",
               "dataIdSlug": "knowledge-source"
             },
@@ -614,6 +660,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "source-attribution-for-ai-answers",
               "dataIdSlug": "knowledge-source-ai"
             },
@@ -625,6 +672,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "control-over-information-used-by-ai",
               "dataIdSlug": "know-agent-trust"
             },
@@ -636,6 +684,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "discovering-context-too-late",
               "dataIdSlug": "context-freq"
             }
@@ -655,6 +704,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "factors-in-ai-adoption",
               "dataIdSlug": "ai-adopt"
             },
@@ -666,6 +716,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "organizational-ai-usage-practices",
               "dataIdSlug": "ai-token"
             },
@@ -677,6 +728,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-cost-and-usage-limits",
               "dataIdSlug": "ai-cost"
             },
@@ -688,6 +740,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "cost-conscious-prompting",
               "dataIdSlug": "ai-cost-prompt"
             }
@@ -862,6 +915,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-tool-usage",
               "dataIdSlug": "ai-select"
             },
@@ -873,6 +927,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-tool-usage-frequency",
               "dataIdSlug": "ai-freq"
             },
@@ -884,6 +939,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-tool-usage-daily",
               "dataIdSlug": "ai-daily"
             },
@@ -895,6 +951,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "attitudes-towards-ai-tools",
               "dataIdSlug": "ai-sentiment"
             },
@@ -906,6 +963,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "trust-in-ai-tools",
               "dataIdSlug": "ai-trust"
             }
@@ -925,6 +983,7 @@
               "chart": "bar-clustered",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-workflow-current-and-expected",
               "dataIdSlug": "ai-work"
             },
@@ -936,6 +995,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "next-steps-after-receiving-an-ai-prompt-response",
               "dataIdSlug": "ai-work-next"
             },
@@ -947,6 +1007,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "how-good-are-ai-tools-at-complex-tasks",
               "dataIdSlug": "ai-complex"
             },
@@ -958,6 +1019,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-tool-count",
               "dataIdSlug": "ai-tool-count"
             }
@@ -977,6 +1039,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-agent-data-storage-tools",
               "dataIdSlug": "ai-mem"
             },
@@ -988,6 +1051,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-agent-orchestration-tools",
               "dataIdSlug": "ai-orch"
             },
@@ -999,6 +1063,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-agent-observability-and-security",
               "dataIdSlug": "ai-obs"
             },
@@ -1010,6 +1075,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-coding-agents",
               "dataIdSlug": "ai-code-agent"
             },
@@ -1021,6 +1087,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-no-code-agents",
               "dataIdSlug": "ai-no-code"
             },
@@ -1032,6 +1099,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-agent-automation-tools",
               "dataIdSlug": "ai-automate"
             }
@@ -1051,6 +1119,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-impact-in-different-work-functions",
               "dataIdSlug": "ai-impact"
             },
@@ -1062,6 +1131,7 @@
               "chart": "bar-stacked",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "satisfaction-with-ai-tools",
               "dataIdSlug": "ai-sat"
             },
@@ -1073,6 +1143,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "did-you-switch-ai-tools-in-the-past-year",
               "dataIdSlug": "ai-tool-switch"
             },
@@ -1084,6 +1155,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-memory-retention",
               "dataIdSlug": "ai-retain"
             },
@@ -1095,6 +1167,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-at-work",
               "dataIdSlug": "ai-use"
             },
@@ -1106,6 +1179,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "ai-avoidance",
               "dataIdSlug": "ai-avoid"
             },
@@ -1117,6 +1191,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "vetting-new-ai-tools",
               "dataIdSlug": "ai-try"
             }
@@ -1272,6 +1347,7 @@
               "chart": "bar",
               "description": "Used less than other technologies surveyed this year, only 23% use technology related to security",
               "subtext": "Subject areas listed here correspond to questions that follow",
+              "axisLabels": [],
               "id": "users-using-technology",
               "dataIdSlug": "tech-drop-down"
             },
@@ -1283,6 +1359,7 @@
               "chart": "bar",
               "description": "Top used programming languages features Javascript at the top of the list for 12th year in a row",
               "subtext": "",
+              "axisLabels": [],
               "id": "programming-scripting-and-markup-languages",
               "dataIdSlug": "languages"
             },
@@ -1294,6 +1371,7 @@
               "chart": "bar",
               "description": "ESLint is widely used in this survey due to it's direct ties to Javascript.  Did you know that ESLint is an open source project with more than 1K contributors?  See more at [github.com/eslint/eslint](https://github.com/eslint/eslint)",
               "subtext": "",
+              "axisLabels": [],
               "id": "code-testing-tools",
               "dataIdSlug": "code-test"
             },
@@ -1305,6 +1383,7 @@
               "chart": "bar",
               "description": "Ubiquitous Developer Adoption: Bryan Clark (Director of Product for LakeBase at Databricks) recalls observing this massive shift during his time at GitHub: \"...inside GitHub, you could see every developer was switching to start using Postgres in their CITV and things like that.\" Listen to [his interview](https://stackoverflow.blog/2026/06/09/checkpoints-by-gaslighting-postgres-database/) on the Stack Overflow Podcast.",
               "subtext": "",
+              "axisLabels": [],
               "id": "databases",
               "dataIdSlug": "databases"
             },
@@ -1316,6 +1395,7 @@
               "chart": "bar",
               "description": "Cloudflare usage is up this year compared to last (25% vs. 21%) - is it due to the increase in bot activity which Cloudflare works to safeguard against?",
               "subtext": "",
+              "axisLabels": [],
               "id": "cloud-development",
               "dataIdSlug": "cloud-plat"
             },
@@ -1327,6 +1407,7 @@
               "chart": "bar",
               "description": "46% have used Node and 41% have used React, these are the top 2 web frameworks being used in this year's survey and last year's.",
               "subtext": "",
+              "axisLabels": [],
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "web-framework"
             },
@@ -1338,6 +1419,7 @@
               "chart": "bar",
               "description": "Most everyone uses Anthropic and OpenAI models, open-weight models from DeepSeek and Alibaba Qwen models are being used more, too.",
               "subtext": "",
+              "axisLabels": [],
               "id": "ll-ms",
               "dataIdSlug": "llm"
             },
@@ -1349,6 +1431,7 @@
               "chart": "bar",
               "description": "VS Code is still the most used IDE despite AI disruptors; usage has remained at or above 71% since 2021",
               "subtext": "",
+              "axisLabels": [],
               "id": "dev-id-es",
               "dataIdSlug": "dev-ide"
             }
@@ -1368,6 +1451,7 @@
               "chart": "dumbbell",
               "description": "26% want to use Rust, 67% of Rust users want to continue using Rust",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "programming-scripting-and-markup-languages",
               "dataIdSlug": "da-language"
             },
@@ -1379,6 +1463,7 @@
               "chart": "dumbbell",
               "description": "Bruno, PHPUnit, GoogleTest and MSTest may not be on the top of the desired list for most, but users of these testing tools rate them very highly on the admired scale",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "code-testing-tools",
               "dataIdSlug": "da-code-test"
             },
@@ -1390,6 +1475,7 @@
               "chart": "dumbbell",
               "description": "PostgreSQL is the most admired database technology this year, users love to use it",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "databases",
               "dataIdSlug": "da-database"
             },
@@ -1401,6 +1487,7 @@
               "chart": "dumbbell",
               "description": "VS Code",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "cloud-development",
               "dataIdSlug": "da-platform"
             },
@@ -1412,6 +1499,7 @@
               "chart": "dumbbell",
               "description": "Svelte and SvelteKit are both highly admired, scoring 59% and 64% respectively",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "da-webframe"
             },
@@ -1423,6 +1511,7 @@
               "chart": "dumbbell",
               "description": "IYKYK: Helix users want to keep using it as their IDE more than any other IDE this year",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "dev-id-es",
               "dataIdSlug": "da-dev-envs"
             },
@@ -1434,6 +1523,7 @@
               "chart": "dumbbell",
               "description": "75% have used Anthropic LLMs in the last year, and 61% want to keep using them; 74% have used OpenAI LLMs, 42% want to keep using them.",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
               "id": "ll-ms",
               "dataIdSlug": "da-llm"
             }
@@ -1453,6 +1543,7 @@
               "chart": "bar",
               "description": "Confluence is the most used knowledge management tool this year",
               "subtext": "",
+              "axisLabels": [],
               "id": "knowledge-management-tools",
               "dataIdSlug": "know-mgmt"
             },
@@ -1464,6 +1555,7 @@
               "chart": "bar",
               "description": "Elastic is the most used enterprise search technology this year",
               "subtext": "",
+              "axisLabels": [],
               "id": "enterprise-search",
               "dataIdSlug": "ent-search"
             },
@@ -1475,6 +1567,7 @@
               "chart": "bar",
               "description": "Auth0 and Okta are the most used Security Ops technologies this year",
               "subtext": "",
+              "axisLabels": [],
               "id": "security-operations-tools",
               "dataIdSlug": "sec-ops"
             }
@@ -1494,6 +1587,7 @@
               "chart": "bar",
               "description": "Only 19% of users building software are working to replace a vendor",
               "subtext": "",
+              "axisLabels": [],
               "id": "did-your-team-build-tools",
               "dataIdSlug": "build-tool"
             },
@@ -1505,6 +1599,7 @@
               "chart": "bar",
               "description": "For those building software at work, 54% say they used AI to help them build something to replace a vendor",
               "subtext": "",
+              "axisLabels": [],
               "id": "did-you-build-tools-with-ai-assistance",
               "dataIdSlug": "build-tool-ai"
             },
@@ -1516,6 +1611,7 @@
               "chart": "bar",
               "description": "Security and privacy issues caused 23% of teams valuable time in the last year",
               "subtext": "",
+              "axisLabels": [],
               "id": "did-ai-cause-business-disruptions",
               "dataIdSlug": "disruption"
             }
@@ -1755,6 +1851,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "a-is-impact-on-stack-overflow-usage",
               "dataIdSlug": "so-change"
             },
@@ -1766,6 +1863,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "where-developers-look-for-answers",
               "dataIdSlug": "answers"
             },
@@ -1777,6 +1875,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "what-makes-answers-trustworthy",
               "dataIdSlug": "answers-trust"
             }
@@ -1796,6 +1895,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "community-participation",
               "dataIdSlug": "community-type"
             },
@@ -1807,6 +1907,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "barriers-to-community-participation",
               "dataIdSlug": "community-gap"
             },
@@ -1818,6 +1919,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "sources-influencing-skill-development",
               "dataIdSlug": "community-skills"
             },
@@ -1829,6 +1931,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "how-developers-learned-to-code",
               "dataIdSlug": "learn-code-how"
             },
@@ -1840,6 +1943,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "how-developers-learned-ai-programming",
               "dataIdSlug": "learn-ai-how"
             }
@@ -1859,6 +1963,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "stack-overflow-account-ownership",
               "dataIdSlug": "so-account"
             },
@@ -1870,6 +1975,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "years-using-stack-overflow",
               "dataIdSlug": "so-years"
             },
@@ -1881,6 +1987,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "learning-new-coding-skills",
               "dataIdSlug": "learn-code"
             },
@@ -1892,6 +1999,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "learning-ai-skills",
               "dataIdSlug": "learn-ai"
             },
@@ -1903,6 +2011,7 @@
               "chart": "bar",
               "description": "",
               "subtext": "",
+              "axisLabels": [],
               "id": "community-platforms",
               "dataIdSlug": "comm-plat"
             }

@@ -39,7 +39,6 @@
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
-	<!-- Baseline-aligned, so the two areas are compared off a shared floor. -->
 	<g transform="translate({origin} 0)">
 		{#each rows as row, i (row.response ?? i)}
 			{@const s = side(row)}
