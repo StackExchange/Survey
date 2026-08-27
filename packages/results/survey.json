@@ -336,6 +336,17 @@
               "subtext": "",
               "id": "compensation",
               "dataIdSlug": "compensation"
+            },
+            {
+              "chapter": "Work",
+              "section": "TBD5",
+              "name": "Compensation",
+              "dataId": "Scatter_Compensation",
+              "chart": "scatter",
+              "description": "",
+              "subtext": "",
+              "id": "compensation",
+              "dataIdSlug": "scatter-compensation"
             }
           ]
         }

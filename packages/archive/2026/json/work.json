@@ -3027,17 +3027,17 @@
         {
           "slice_type": "view",
           "slice_value": "By role",
-          "n": 8955
+          "n": 12040
         },
         {
           "slice_type": "view",
           "slice_value": "By country",
-          "n": 8955
+          "n": 12040
         },
         {
           "slice_type": "view",
           "slice_value": "By professional experience",
-          "n": 8955
+          "n": 12040
         }
       ]
     },
@@ -3045,248 +3045,304 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Engineering manager",
+        "count": 378,
+        "pct": null,
+        "median_yearly_salary_usd": 133263
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Senior executive (C-suite, VP, etc.)",
+        "count": 176,
+        "pct": null,
+        "median_yearly_salary_usd": 131498
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cloud infrastructure engineer",
+        "count": 129,
+        "pct": null,
+        "median_yearly_salary_usd": 110000
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 1023,
+        "pct": null,
+        "median_yearly_salary_usd": 102355
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
+        "count": 144,
+        "pct": null,
+        "median_yearly_salary_usd": 101710
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Software engineer",
+        "count": 105,
+        "pct": null,
+        "median_yearly_salary_usd": 101218
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI/ML engineer",
+        "count": 194,
+        "pct": null,
+        "median_yearly_salary_usd": 95337
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Founder or entrepreneur",
+        "count": 111,
+        "pct": null,
+        "median_yearly_salary_usd": 94012
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data scientist",
+        "count": 155,
+        "pct": null,
+        "median_yearly_salary_usd": 90982
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data engineer",
+        "count": 233,
+        "pct": null,
+        "median_yearly_salary_usd": 90000
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 1922,
+        "pct": null,
+        "median_yearly_salary_usd": 85296
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 412,
+        "pct": null,
+        "median_yearly_salary_usd": 85296
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 307,
+        "pct": null,
+        "median_yearly_salary_usd": 85096
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, mobile",
+        "count": 346,
+        "pct": null,
+        "median_yearly_salary_usd": 84277
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 559,
+        "pct": null,
+        "median_yearly_salary_usd": 80000
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Developer, full-stack",
-        "count": 2802,
+        "count": 3761,
         "pct": null,
         "median_yearly_salary_usd": 79610
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Developer, back-end",
-        "count": 1473,
+        "response": "Developer, game or graphics",
+        "count": 108,
         "pct": null,
-        "median_yearly_salary_usd": 81884
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Architect, software or solutions",
-        "count": 717,
-        "pct": null,
-        "median_yearly_salary_usd": 102355
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Developer, desktop or enterprise applications",
-        "count": 439,
-        "pct": null,
-        "median_yearly_salary_usd": 77335
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Developer, embedded applications or devices",
-        "count": 333,
-        "pct": null,
-        "median_yearly_salary_usd": 83788
+        "median_yearly_salary_usd": 77002
       },
       {
         "slice": 0,
         "series": null,
         "response": "Developer, front-end",
-        "count": 332,
+        "count": 441,
         "pct": null,
-        "median_yearly_salary_usd": 69857
+        "median_yearly_salary_usd": 70320
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Engineering manager",
-        "count": 285,
+        "response": "Data or business analyst",
+        "count": 119,
         "pct": null,
-        "median_yearly_salary_usd": 131000
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Developer, mobile",
-        "count": 250,
-        "pct": null,
-        "median_yearly_salary_usd": 83120
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "DevOps engineer or professional",
-        "count": 242,
-        "pct": null,
-        "median_yearly_salary_usd": 82738
+        "median_yearly_salary_usd": 67161
       },
       {
         "slice": 0,
         "series": null,
         "response": "Academic researcher",
-        "count": 202,
+        "count": 253,
         "pct": null,
-        "median_yearly_salary_usd": 61134
+        "median_yearly_salary_usd": 61413
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Data engineer",
-        "count": 191,
+        "response": "System administrator",
+        "count": 122,
         "pct": null,
-        "median_yearly_salary_usd": 88708
+        "median_yearly_salary_usd": 55230
       },
       {
         "slice": 0,
         "series": null,
-        "response": "AI/ML engineer",
-        "count": 143,
+        "response": "Other",
+        "count": 106,
         "pct": null,
-        "median_yearly_salary_usd": 90982
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Data scientist",
-        "count": 123,
-        "pct": null,
-        "median_yearly_salary_usd": 89500
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Senior executive (C-suite, VP, etc.)",
-        "count": 115,
-        "pct": null,
-        "median_yearly_salary_usd": 113728
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
-        "count": 101,
-        "pct": null,
-        "median_yearly_salary_usd": 102355
+        "median_yearly_salary_usd": 51000
       },
       {
         "slice": 1,
         "series": null,
         "response": "United States of America",
-        "count": 2283,
+        "count": 2885,
         "pct": null,
-        "median_yearly_salary_usd": 150000
+        "median_yearly_salary_usd": 154000
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Germany",
-        "count": 985,
+        "response": "Switzerland",
+        "count": 229,
         "pct": null,
-        "median_yearly_salary_usd": 83022
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "United Kingdom of Great Britain and Northern Ireland",
-        "count": 649,
-        "pct": null,
-        "median_yearly_salary_usd": 93098
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Canada",
-        "count": 396,
-        "pct": null,
-        "median_yearly_salary_usd": 92188
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "France",
-        "count": 391,
-        "pct": null,
-        "median_yearly_salary_usd": 59139
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "India",
-        "count": 335,
-        "pct": null,
-        "median_yearly_salary_usd": 19325
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Netherlands",
-        "count": 275,
-        "pct": null,
-        "median_yearly_salary_usd": 78472
+        "median_yearly_salary_usd": 139262
       },
       {
         "slice": 1,
         "series": null,
         "response": "Australia",
-        "count": 233,
+        "count": 306,
         "pct": null,
-        "median_yearly_salary_usd": 103156
+        "median_yearly_salary_usd": 104550
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Spain",
-        "count": 228,
+        "response": "Denmark",
+        "count": 123,
         "pct": null,
-        "median_yearly_salary_usd": 62550
+        "median_yearly_salary_usd": 104214
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Ukraine",
-        "count": 197,
+        "response": "Norway",
+        "count": 110,
         "pct": null,
-        "median_yearly_salary_usd": 34693
+        "median_yearly_salary_usd": 103004
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "United Kingdom of Great Britain and Northern Ireland",
+        "count": 855,
+        "pct": null,
+        "median_yearly_salary_usd": 96333
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Canada",
+        "count": 539,
+        "pct": null,
+        "median_yearly_salary_usd": 94315
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Germany",
+        "count": 1218,
+        "pct": null,
+        "median_yearly_salary_usd": 85296
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Austria",
+        "count": 163,
+        "pct": null,
+        "median_yearly_salary_usd": 84912
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Netherlands",
+        "count": 360,
+        "pct": null,
+        "median_yearly_salary_usd": 82453
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "0-4 years",
+        "count": 1647,
+        "pct": null,
+        "median_yearly_salary_usd": 42548
       },
       {
         "slice": 2,
         "series": null,
         "response": "5-9 years",
-        "count": 1938,
+        "count": 2403,
         "pct": null,
-        "median_yearly_salary_usd": 68077
+        "median_yearly_salary_usd": 67188
       },
       {
         "slice": 2,
         "series": null,
         "response": "10-14 years",
-        "count": 1883,
+        "count": 2503,
         "pct": null,
         "median_yearly_salary_usd": 90982
       },
       {
         "slice": 2,
         "series": null,
-        "response": "20-29 years",
-        "count": 1618,
-        "pct": null,
-        "median_yearly_salary_usd": 104550
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "0-4 years",
-        "count": 1373,
-        "pct": null,
-        "median_yearly_salary_usd": 45000
-      },
-      {
-        "slice": 2,
-        "series": null,
         "response": "15-19 years",
-        "count": 1287,
+        "count": 1786,
         "pct": null,
-        "median_yearly_salary_usd": 97861
+        "median_yearly_salary_usd": 100000
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "20-29 years",
+        "count": 2349,
+        "pct": null,
+        "median_yearly_salary_usd": 104630
       },
       {
         "slice": 2,
         "series": null,
         "response": "30-39 years",
-        "count": 647,
+        "count": 990,
         "pct": null,
         "median_yearly_salary_usd": 113728
       },
@@ -3294,9 +3350,9 @@
         "slice": 2,
         "series": null,
         "response": "40+ years",
-        "count": 180,
+        "count": 315,
         "pct": null,
-        "median_yearly_salary_usd": 120000
+        "median_yearly_salary_usd": 111520
       }
     ]
   },
@@ -3721,6 +3777,423 @@
         "response": "Lack of access to the right tools or platforms",
         "count": 18,
         "pct": null
+      }
+    ]
+  },
+  "Scatter_Compensation": {
+    "meta": {
+      "qid": "QID33",
+      "qname": "Scatter_Compensation",
+      "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
+      "slices": [
+        {
+          "slice_type": "view",
+          "slice_value": "By role",
+          "n": 12040
+        },
+        {
+          "slice_type": "view",
+          "slice_value": "By country",
+          "n": 12040
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Engineering manager",
+        "count": 378,
+        "pct": null,
+        "median_yearly_salary_usd": 133263,
+        "mean_prof_years": 18.5
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Senior executive (C-suite, VP, etc.)",
+        "count": 176,
+        "pct": null,
+        "median_yearly_salary_usd": 131498,
+        "mean_prof_years": 21.9
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Cloud infrastructure engineer",
+        "count": 129,
+        "pct": null,
+        "median_yearly_salary_usd": 110000,
+        "mean_prof_years": 16.2
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 1023,
+        "pct": null,
+        "median_yearly_salary_usd": 102355,
+        "mean_prof_years": 20.1
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
+        "count": 144,
+        "pct": null,
+        "median_yearly_salary_usd": 101710,
+        "mean_prof_years": 17.2
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Software engineer",
+        "count": 105,
+        "pct": null,
+        "median_yearly_salary_usd": 101218,
+        "mean_prof_years": 15.2
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI/ML engineer",
+        "count": 194,
+        "pct": null,
+        "median_yearly_salary_usd": 95337,
+        "mean_prof_years": 12.1
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Founder or entrepreneur",
+        "count": 111,
+        "pct": null,
+        "median_yearly_salary_usd": 94012,
+        "mean_prof_years": 18.5
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data scientist",
+        "count": 155,
+        "pct": null,
+        "median_yearly_salary_usd": 90982,
+        "mean_prof_years": 13
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data engineer",
+        "count": 233,
+        "pct": null,
+        "median_yearly_salary_usd": 90000,
+        "mean_prof_years": 15.4
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 1922,
+        "pct": null,
+        "median_yearly_salary_usd": 85296,
+        "mean_prof_years": 14.5
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 412,
+        "pct": null,
+        "median_yearly_salary_usd": 85296,
+        "mean_prof_years": 14.5
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 307,
+        "pct": null,
+        "median_yearly_salary_usd": 85096,
+        "mean_prof_years": 14.2
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, mobile",
+        "count": 346,
+        "pct": null,
+        "median_yearly_salary_usd": 84277,
+        "mean_prof_years": 14.2
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 559,
+        "pct": null,
+        "median_yearly_salary_usd": 80000,
+        "mean_prof_years": 16.7
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 3761,
+        "pct": null,
+        "median_yearly_salary_usd": 79610,
+        "mean_prof_years": 13.9
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, game or graphics",
+        "count": 108,
+        "pct": null,
+        "median_yearly_salary_usd": 77002,
+        "mean_prof_years": 12.4
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Developer, front-end",
+        "count": 441,
+        "pct": null,
+        "median_yearly_salary_usd": 70320,
+        "mean_prof_years": 11.8
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Data or business analyst",
+        "count": 119,
+        "pct": null,
+        "median_yearly_salary_usd": 67161,
+        "mean_prof_years": 14.6
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Academic researcher",
+        "count": 253,
+        "pct": null,
+        "median_yearly_salary_usd": 61413,
+        "mean_prof_years": 12.6
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "System administrator",
+        "count": 122,
+        "pct": null,
+        "median_yearly_salary_usd": 55230,
+        "mean_prof_years": 14.5
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 106,
+        "pct": null,
+        "median_yearly_salary_usd": 51000,
+        "mean_prof_years": 15.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "United States of America",
+        "count": 2885,
+        "pct": null,
+        "median_yearly_salary_usd": 154000,
+        "mean_prof_years": 17.4
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Switzerland",
+        "count": 229,
+        "pct": null,
+        "median_yearly_salary_usd": 139262,
+        "mean_prof_years": 14.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Australia",
+        "count": 306,
+        "pct": null,
+        "median_yearly_salary_usd": 104550,
+        "mean_prof_years": 17.9
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Denmark",
+        "count": 123,
+        "pct": null,
+        "median_yearly_salary_usd": 104214,
+        "mean_prof_years": 14.2
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Norway",
+        "count": 110,
+        "pct": null,
+        "median_yearly_salary_usd": 103004,
+        "mean_prof_years": 15.5
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "United Kingdom of Great Britain and Northern Ireland",
+        "count": 855,
+        "pct": null,
+        "median_yearly_salary_usd": 96333,
+        "mean_prof_years": 17.8
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Canada",
+        "count": 539,
+        "pct": null,
+        "median_yearly_salary_usd": 94315,
+        "mean_prof_years": 16.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Germany",
+        "count": 1218,
+        "pct": null,
+        "median_yearly_salary_usd": 85296,
+        "mean_prof_years": 14.2
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Austria",
+        "count": 163,
+        "pct": null,
+        "median_yearly_salary_usd": 84912,
+        "mean_prof_years": 13.4
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Netherlands",
+        "count": 360,
+        "pct": null,
+        "median_yearly_salary_usd": 82453,
+        "mean_prof_years": 15.1
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "New Zealand",
+        "count": 107,
+        "pct": null,
+        "median_yearly_salary_usd": 80858,
+        "mean_prof_years": 19.9
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Belgium",
+        "count": 117,
+        "pct": null,
+        "median_yearly_salary_usd": 74964,
+        "mean_prof_years": 13.8
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sweden",
+        "count": 241,
+        "pct": null,
+        "median_yearly_salary_usd": 71965,
+        "mean_prof_years": 16.6
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Spain",
+        "count": 331,
+        "pct": null,
+        "median_yearly_salary_usd": 68237,
+        "mean_prof_years": 16.1
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Poland",
+        "count": 309,
+        "pct": null,
+        "median_yearly_salary_usd": 65733,
+        "mean_prof_years": 12.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "France",
+        "count": 526,
+        "pct": null,
+        "median_yearly_salary_usd": 62550,
+        "mean_prof_years": 13.5
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Portugal",
+        "count": 135,
+        "pct": null,
+        "median_yearly_salary_usd": 61413,
+        "mean_prof_years": 12.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Czech Republic",
+        "count": 158,
+        "pct": null,
+        "median_yearly_salary_usd": 56438,
+        "mean_prof_years": 13
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Italy",
+        "count": 302,
+        "pct": null,
+        "median_yearly_salary_usd": 47766,
+        "mean_prof_years": 15.7
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Brazil",
+        "count": 244,
+        "pct": null,
+        "median_yearly_salary_usd": 36002,
+        "mean_prof_years": 15.5
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Ukraine",
+        "count": 259,
+        "pct": null,
+        "median_yearly_salary_usd": 35800,
+        "mean_prof_years": 10.2
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "India",
+        "count": 472,
+        "pct": null,
+        "median_yearly_salary_usd": 18802,
+        "mean_prof_years": 8.8
       }
     ]
   }
