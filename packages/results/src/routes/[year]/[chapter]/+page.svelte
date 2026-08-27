@@ -47,7 +47,7 @@
 			class="px-6 {figure
 				? 'relative border-t border-b border-transparent bg-black-100 py-10 lg:py-20 dark:border-black-500 dark:bg-black'
 				: ''}
-				{stacked ? 'mt-0 border-t-0' : figure ? 'mt-10 lg:mt-[8vh]' : 'mt-0 lg:mt-20'}
+				{stacked ? 'mt-0 border-t-0' : figure ? 'mt-15 lg:mt-[8vh]' : 'mt-15 lg:mt-20'}
 				{last ? 'mb-10 lg:mb-[8vh]' : ''}"
 		>
 			<div class="mx-auto max-w-310">
