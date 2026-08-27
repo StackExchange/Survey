@@ -5,7 +5,7 @@
 
 	import { count } from '$charts/utils/theme'
 	import { chapterChartVars, chapterColour } from '$config'
-	import { inversion } from '$lib/invert.svelte'
+	import { tinting } from '$lib/tint.svelte'
 
 	import BrandHeader from '$components/BrandHeader.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
@@ -18,7 +18,7 @@
 
 	let { data } = $props()
 
-	const highlights = inversion()
+	const highlights = tinting()
 </script>
 
 <Seo title="Results {data.year}" graph={data.jsonld} />
@@ -62,7 +62,7 @@
 		</div>
 	</section>
 
-	<section aria-label="Highlights" {@attach highlights.ground} class="bg-black-150 text-black dark:bg-black-600 dark:text-white">
+	<section aria-label="Highlights" {@attach highlights.ground} class="theme-ground">
 		{#each data.chapters as chapter, chapterI (chapter.id)}
 			<section {@attach highlights.trigger(chapterI % 2 === 1)} class="min-h-screen py-30" style={chapterChartVars(chapter.index)}>
 				<ChapterHeader year={data.year} {chapter} variant="home" />

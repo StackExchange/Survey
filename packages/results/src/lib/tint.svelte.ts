@@ -1,13 +1,13 @@
 import type { Attachment } from 'svelte/attachments'
 
-// The ground under a run of sections, inverted while one of the marked ones holds
-// the screen. The whole run flips rather than the single section, so there is no
+// The ground under a run of sections, tinted while one of the marked ones holds
+// the screen. The whole run changes rather than the single section, so there is no
 // box edge scrolling past — the page itself reads as having changed.
 //
-// `.theme-invert` does the work: layout.css keys both the `dark:` variant and the
-// `--chart-*` tokens off it, so headers, cards and charts follow without being
-// handed a theme. Inverted rather than darkened because the reader already chose
-// the page ground.
+// `.theme-tint` does the work: layout.css steps the ground and the `--chart-*`
+// tokens one tone away from their resting values, so headers, cards and charts
+// follow without being handed a theme. A step rather than an inversion, because
+// the reader already chose the page ground and light/dark should survive it.
 
 // Half a viewport top and bottom, so the swap lands as a section crosses the
 // middle of the screen rather than the moment its first pixel appears.
@@ -18,9 +18,9 @@ const ROOT_MARGIN = '-50% 0px -50% 0px'
 // with no crossfade and needs no branch here.
 const FADE = 250
 
-export function inversion() {
+export function tinting() {
 	// A count rather than a flag: on a viewport short enough for two marked
-	// sections to overlap the middle, the ground stays inverted until the last one
+	// sections to overlap the middle, the ground stays tinted until the last one
 	// leaves.
 	let holding = $state(0)
 
@@ -42,7 +42,7 @@ export function inversion() {
 			}
 
 			shown = next
-			node.classList.toggle('theme-invert', next)
+			node.classList.toggle('theme-tint', next)
 		})
 
 		return () => clearTimeout(fading)
@@ -53,8 +53,8 @@ export function inversion() {
 	const trigger =
 		(enabled = true): Attachment<HTMLElement> =>
 		(node) => {
-			// Without an observer the run keeps the page ground, which is legible on
-			// its own — the inversion is decoration.
+			// Without an observer the run keeps its resting ground, which is legible on
+			// its own — the tint is decoration.
 			if (!enabled || typeof IntersectionObserver === 'undefined') return
 
 			let counted = false
