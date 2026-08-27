@@ -2098,22 +2098,22 @@
         "slice": 0,
         "series": null,
         "response": "Nothing has made my job easier in the past 6 months",
-        "count": 3922,
-        "pct": 0.2118
+        "count": 3902,
+        "pct": 0.2107
       },
       {
         "slice": 0,
         "series": null,
         "response": "Access to the right tools or platforms",
-        "count": 3758,
-        "pct": 0.2029
+        "count": 3714,
+        "pct": 0.2005
       },
       {
         "slice": 0,
         "series": null,
         "response": "Supportive teammates, managers, or mentors",
-        "count": 3198,
-        "pct": 0.1727
+        "count": 3191,
+        "pct": 0.1723
       },
       {
         "slice": 0,
@@ -2126,225 +2126,50 @@
         "slice": 0,
         "series": null,
         "response": "Better processes, workflows, or coordination",
-        "count": 1270,
-        "pct": 0.0686
+        "count": 1256,
+        "pct": 0.0678
       },
       {
         "slice": 0,
         "series": null,
         "response": "I’m not sure",
-        "count": 1117,
-        "pct": 0.0603
+        "count": 1107,
+        "pct": 0.0598
       },
       {
         "slice": 0,
         "series": null,
         "response": "Enough time, staffing, or resources",
-        "count": 1104,
-        "pct": 0.0596
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Helpful documentation or knowledge sharing",
-        "count": 773,
-        "pct": 0.0417
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Reliable systems, infrastructure, or environments",
-        "count": 753,
-        "pct": 0.0407
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Leadership activity or organizational changes",
-        "count": 399,
-        "pct": 0.0215
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai assistant",
-        "count": 348,
-        "pct": 0.0188
+        "count": 1088,
+        "pct": 0.0587
       },
       {
         "slice": 0,
         "series": null,
         "response": "Other",
-        "count": 311,
-        "pct": 0.0168
+        "count": 1044,
+        "pct": 0.0564
       },
       {
         "slice": 0,
         "series": null,
-        "response": "ai coding tools",
-        "count": 53,
-        "pct": 0.0029
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 768,
+        "pct": 0.0415
       },
       {
         "slice": 0,
         "series": null,
-        "response": "access to ai",
-        "count": 22,
-        "pct": 0.0012
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 741,
+        "pct": 0.04
       },
       {
         "slice": 0,
         "series": null,
-        "response": "ai improvements",
-        "count": 18,
-        "pct": 0.001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai",
-        "count": 16,
-        "pct": 0.0009
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "agentic ai",
-        "count": 14,
-        "pct": 0.0008
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai integration",
-        "count": 14,
-        "pct": 0.0008
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai coding agents",
-        "count": 13,
-        "pct": 0.0007
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "use of ai",
-        "count": 13,
-        "pct": 0.0007
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "introduction of claude code",
-        "count": 11,
-        "pct": 0.0006
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai agents",
-        "count": 10,
-        "pct": 0.0005
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai tools",
-        "count": 9,
-        "pct": 0.0005
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "coding agents",
-        "count": 9,
-        "pct": 0.0005
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai assisted coding",
-        "count": 8,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai tooling",
-        "count": 8,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "using ai",
-        "count": 8,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "new job",
-        "count": 6,
-        "pct": 0.0003
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "inteligência artificial",
-        "count": 5,
-        "pct": 0.0003
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai code generation",
-        "count": 4,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "working remotely",
-        "count": 4,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "better ai",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "claude code",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "inteligencia artificial",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ki",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ia",
-        "count": 1,
-        "pct": 0.0001
+        "response": "Leadership activity or organizational changes",
+        "count": 396,
+        "pct": 0.0214
       }
     ]
   },
@@ -2578,232 +2403,78 @@
         "slice": 0,
         "series": null,
         "response": "Unclear priorities or requirements",
-        "count": 3031,
-        "pct": 0.1664
+        "count": 3029,
+        "pct": 0.1663
       },
       {
         "slice": 0,
         "series": null,
         "response": "Inefficient processes, workflows, or coordination",
-        "count": 2701,
-        "pct": 0.1483
+        "count": 2658,
+        "pct": 0.1459
       },
       {
         "slice": 0,
         "series": null,
         "response": "Not enough time, staffing, or resources",
-        "count": 2602,
-        "pct": 0.1429
+        "count": 2566,
+        "pct": 0.1409
       },
       {
         "slice": 0,
         "series": null,
         "response": "Leadership activity or organizational changes",
-        "count": 2174,
-        "pct": 0.1194
+        "count": 2162,
+        "pct": 0.1187
       },
       {
         "slice": 0,
         "series": null,
         "response": "Nothing has made my job harder in the past 6 months",
-        "count": 1752,
-        "pct": 0.0962
+        "count": 1743,
+        "pct": 0.0957
       },
       {
         "slice": 0,
         "series": null,
         "response": "Unreliable systems, infrastructure, or environments",
-        "count": 1540,
-        "pct": 0.0846
+        "count": 1523,
+        "pct": 0.0836
       },
       {
         "slice": 0,
         "series": null,
         "response": "Poor documentation or knowledge sharing",
-        "count": 1296,
-        "pct": 0.0712
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "I’m not sure",
-        "count": 869,
-        "pct": 0.0477
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Lack of support from teammates, managers, or mentors",
-        "count": 853,
-        "pct": 0.0468
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Lack of access to the right tools or platforms",
-        "count": 674,
-        "pct": 0.037
+        "count": 1292,
+        "pct": 0.0709
       },
       {
         "slice": 0,
         "series": null,
         "response": "Other",
-        "count": 318,
-        "pct": 0.0175
+        "count": 1108,
+        "pct": 0.0608
       },
       {
         "slice": 0,
         "series": null,
-        "response": "ai bullshit",
-        "count": 117,
-        "pct": 0.0064
+        "response": "I’m not sure",
+        "count": 865,
+        "pct": 0.0475
       },
       {
         "slice": 0,
         "series": null,
-        "response": "ai",
-        "count": 52,
-        "pct": 0.0029
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 761,
+        "pct": 0.0418
       },
       {
         "slice": 0,
         "series": null,
-        "response": "all of the above",
-        "count": 50,
-        "pct": 0.0027
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "almost all of the above",
-        "count": 42,
-        "pct": 0.0023
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai and ai agents",
-        "count": 24,
-        "pct": 0.0013
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai disruption",
-        "count": 18,
-        "pct": 0.001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai everywhere",
-        "count": 16,
-        "pct": 0.0009
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "reviewing ai generated code",
-        "count": 15,
-        "pct": 0.0008
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai generated code",
-        "count": 11,
-        "pct": 0.0006
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai slop",
-        "count": 10,
-        "pct": 0.0005
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai slop from colleagues",
-        "count": 8,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai tools",
-        "count": 8,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "too much ai slop",
-        "count": 7,
-        "pct": 0.0004
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai hallucinations",
-        "count": 6,
-        "pct": 0.0003
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "llm",
-        "count": 4,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "no money",
-        "count": 4,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "nothing",
-        "count": 3,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "technical debt",
-        "count": 3,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "depression",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "politics",
-        "count": 2,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "burnout",
-        "count": 1,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ia",
-        "count": 1,
-        "pct": 0.0001
+        "response": "Lack of access to the right tools or platforms",
+        "count": 507,
+        "pct": 0.0278
       }
     ]
   },
@@ -3036,175 +2707,175 @@
       {
         "slice": 0,
         "series": null,
-        "response": "5.0",
+        "response": "5",
         "count": 2550,
         "pct": 0.1719
       },
       {
         "slice": 0,
         "series": null,
-        "response": "10.0",
+        "response": "10",
         "count": 2389,
         "pct": 0.161
       },
       {
         "slice": 0,
         "series": null,
-        "response": "3.0",
+        "response": "3",
         "count": 1427,
         "pct": 0.0962
       },
       {
         "slice": 0,
         "series": null,
-        "response": "4.0",
+        "response": "4",
         "count": 1263,
         "pct": 0.0851
       },
       {
         "slice": 0,
         "series": null,
-        "response": "6.0",
+        "response": "6",
         "count": 1135,
         "pct": 0.0765
       },
       {
         "slice": 0,
         "series": null,
-        "response": "8.0",
+        "response": "8",
         "count": 910,
         "pct": 0.0613
       },
       {
         "slice": 0,
         "series": null,
-        "response": "7.0",
+        "response": "7",
         "count": 775,
         "pct": 0.0522
       },
       {
         "slice": 0,
         "series": null,
-        "response": "20.0",
+        "response": "20",
         "count": 708,
         "pct": 0.0477
       },
       {
         "slice": 0,
         "series": null,
-        "response": "2.0",
+        "response": "2",
         "count": 687,
         "pct": 0.0463
       },
       {
         "slice": 0,
         "series": null,
-        "response": "15.0",
+        "response": "15",
         "count": 646,
         "pct": 0.0435
       },
       {
         "slice": 0,
         "series": null,
-        "response": "12.0",
+        "response": "12",
         "count": 501,
         "pct": 0.0338
       },
       {
         "slice": 0,
         "series": null,
-        "response": "1.0",
+        "response": "1",
         "count": 275,
         "pct": 0.0185
       },
       {
         "slice": 0,
         "series": null,
-        "response": "9.0",
+        "response": "9",
         "count": 265,
         "pct": 0.0179
       },
       {
         "slice": 0,
         "series": null,
-        "response": "30.0",
+        "response": "30",
         "count": 191,
         "pct": 0.0129
       },
       {
         "slice": 0,
         "series": null,
-        "response": "0.0",
+        "response": "0",
         "count": 153,
         "pct": 0.0103
       },
       {
         "slice": 0,
         "series": null,
-        "response": "25.0",
+        "response": "25",
         "count": 135,
         "pct": 0.0091
       },
       {
         "slice": 0,
         "series": null,
-        "response": "11.0",
+        "response": "11",
         "count": 114,
         "pct": 0.0077
       },
       {
         "slice": 0,
         "series": null,
-        "response": "50.0",
+        "response": "50",
         "count": 89,
         "pct": 0.006
       },
       {
         "slice": 0,
         "series": null,
-        "response": "13.0",
+        "response": "13",
         "count": 85,
         "pct": 0.0057
       },
       {
         "slice": 0,
         "series": null,
-        "response": "14.0",
+        "response": "14",
         "count": 77,
         "pct": 0.0052
       },
       {
         "slice": 0,
         "series": null,
-        "response": "16.0",
+        "response": "16",
         "count": 58,
         "pct": 0.0039
       },
       {
         "slice": 0,
         "series": null,
-        "response": "40.0",
+        "response": "40",
         "count": 42,
         "pct": 0.0028
       },
       {
         "slice": 0,
         "series": null,
-        "response": "100.0",
+        "response": "100",
         "count": 41,
         "pct": 0.0028
       },
       {
         "slice": 0,
         "series": null,
-        "response": "17.0",
+        "response": "17",
         "count": 35,
         "pct": 0.0024
       },
       {
         "slice": 0,
         "series": null,
-        "response": "18.0",
+        "response": "18",
         "count": 35,
         "pct": 0.0024
       }
@@ -3626,6 +3297,430 @@
         "count": 180,
         "pct": null,
         "median_yearly_salary_usd": 120000
+      }
+    ]
+  },
+  "CF_JobEaseAI": {
+    "meta": {
+      "qid": "QID103",
+      "qname": "CF_JobEaseAI",
+      "question": "<p>In the past 6 months, which factor has done the most to make your job easier to do?<\/p> <p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13006
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Access to the right tools or platforms",
+        "count": 2493,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 2113,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Access to the right tools or platforms",
+        "count": 968,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 847,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Clear priorities or requirements",
+        "count": 840,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 558,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 508,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 475,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 374,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Clear priorities or requirements",
+        "count": 369,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 349,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 314,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 313,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 250,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Better processes, workflows, or coordination",
+        "count": 242,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Access to the right tools or platforms",
+        "count": 213,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 147,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 124,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 119,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Enough time, staffing, or resources",
+        "count": 117,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Clear priorities or requirements",
+        "count": 73,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Supportive teammates, managers, or mentors",
+        "count": 57,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Enough time, staffing, or resources",
+        "count": 29,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Clear priorities or requirements",
+        "count": 25,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Better processes, workflows, or coordination",
+        "count": 17,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Access to the right tools or platforms",
+        "count": 14,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Helpful documentation or knowledge sharing",
+        "count": 13,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Reliable systems, infrastructure, or environments",
+        "count": 12,
+        "pct": null
+      }
+    ]
+  },
+  "CF_JobDifficultyAI": {
+    "meta": {
+      "qid": "QID104",
+      "qname": "CF_JobDifficultyAI",
+      "question": "<p>In the past 6 months, which factor has done the most to make your job harder to do?<\/p> <p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 13346
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Unclear priorities or requirements",
+        "count": 2084,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 1812,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 1753,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 869,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 832,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Unclear priorities or requirements",
+        "count": 597,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 560,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 517,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 511,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 344,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "No, AI or AI agents were not a reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 282,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 253,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 229,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 205,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Unclear priorities or requirements",
+        "count": 202,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Not enough time, staffing, or resources",
+        "count": 192,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 143,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Unclear priorities or requirements",
+        "count": 126,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 123,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents contributed, but were not the main reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 109,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Not enough time, staffing, or resources",
+        "count": 98,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 90,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Unreliable systems, infrastructure, or environments",
+        "count": 85,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 62,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Poor documentation or knowledge sharing",
+        "count": 62,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Inefficient processes, workflows, or coordination",
+        "count": 61,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Lack of support from teammates, managers, or mentors",
+        "count": 27,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "I’m not sure",
+        "response": "Lack of access to the right tools or platforms",
+        "count": 18,
+        "pct": null
       }
     ]
   }

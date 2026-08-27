@@ -286,12 +286,12 @@
               "chapter": "Work",
               "section": "TBD5",
               "name": "Does AI affect job ease",
-              "dataId": "JobEaseAI",
+              "dataId": "CF_JobEaseAI",
               "chart": "sankey",
               "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-ease",
-              "dataIdSlug": "job-ease-ai"
+              "dataIdSlug": "cf-job-ease-ai"
             },
             {
               "chapter": "Work",
@@ -308,12 +308,12 @@
               "chapter": "Work",
               "section": "TBD5",
               "name": "Does AI affect job difficulties",
-              "dataId": "JobDifficultyAI",
+              "dataId": "CF_JobDifficultyAI",
               "chart": "sankey",
               "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-difficulties",
-              "dataIdSlug": "job-difficulty-ai"
+              "dataIdSlug": "cf-job-difficulty-ai"
             },
             {
               "chapter": "Work",
