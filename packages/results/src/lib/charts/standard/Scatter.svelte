@@ -7,7 +7,7 @@
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, count, FINE, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -22,8 +22,6 @@
 	const RAMP_WIDTH = 96
 	const AXIS_LEFT = 76
 	const AXIS_BOTTOM = 64
-	const TICK_SIZE = 11
-	const LABEL_SIZE = 12
 
 	const rows = $derived(rowsOf(figure))
 	// Which two of the row's named columns to plot, resolved by the loader — the
@@ -34,8 +32,7 @@
 	const valueAt = (row: any, axis: any) => (axis ? (row?.[axis.key] ?? 0) : 0)
 
 	const plotWidth = $derived(Math.max(1, width - AXIS_LEFT - RAMP_WIDTH - PAD))
-	// An aspect ratio, not a fixed height: how steep the cloud looks is part of
-	// what a scatter says.
+	// An aspect ratio, not a fixed height: the cloud's steepness carries meaning.
 	const plotHeight = $derived(Math.round(plotWidth * 0.75))
 	const height = $derived(PAD + plotHeight + AXIS_BOTTOM)
 	const rampHeight = $derived(Math.round(plotHeight * 0.4))
@@ -70,9 +67,9 @@
 	}
 
 	const DOT = 6
-	// Gap from a point to its name, and the line spacing a nudged name drops by.
+	// Gap from a point to its name, and the line a nudged name drops by.
 	const GUTTER = DOT + 9
-	const LINE = TICK_SIZE + 2
+	const LINE = FINE + 2
 
 	// A name sits beside its point, flipping inside near the right edge. Collisions
 	// nudge down a line, walked in y order so a nudge only pushes into free space.
@@ -97,8 +94,6 @@
 		return placed
 	})
 
-	// Opacity is the one encoding a reader cannot put a number to, so the count
-	// leads the readout.
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		hover.enter(
 			i,
@@ -120,7 +115,7 @@
 		{#each xScale.ticks(6) as value (value)}
 			{@const at = px(xScale(value))}
 			<line x1={at} x2={at} y1="0" y2={plotHeight} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
-			<text x={at} y={plotHeight + 18} text-anchor="middle" font-size={TICK_SIZE} fill={theme.muted}>
+			<text x={at} y={plotHeight + 18} text-anchor="middle" font-size={FINE} fill={theme.muted}>
 				{tick(value, axes?.x)}
 			</text>
 		{/each}
@@ -128,25 +123,25 @@
 		{#each yScale.ticks(6) as value (value)}
 			{@const at = px(yScale(value))}
 			<line x1="0" x2={plotWidth} y1={at} y2={at} stroke={theme.rule} stroke-dasharray="1, 2" vector-effect="non-scaling-stroke" />
-			<text x="-10" y={middle(at, TICK_SIZE)} text-anchor="end" font-size={TICK_SIZE} fill={theme.muted}>
+			<text x="-10" y={middle(at, FINE)} text-anchor="end" font-size={FINE} fill={theme.muted}>
 				{tick(value, axes?.y)}
 			</text>
 		{/each}
 
 		{#if axes?.x?.label}
-			<text x={plotWidth / 2} y={plotHeight + 46} text-anchor="middle" font-size={LABEL_SIZE} font-weight="600" fill={theme.ink}>
-				{clip(String(axes.x.label), chars(plotWidth, LABEL_SIZE))}
+			<text x={plotWidth / 2} y={plotHeight + 46} text-anchor="middle" font-size={FINE} font-weight="600" fill={theme.ink}>
+				{clip(String(axes.x.label), chars(plotWidth, FINE))}
 			</text>
 		{/if}
 		{#if axes?.y?.label}
 			<text
 				text-anchor="middle"
-				font-size={LABEL_SIZE}
+				font-size={FINE}
 				font-weight="600"
 				fill={theme.ink}
 				transform="translate(-56, {plotHeight / 2}) rotate(-90)"
 			>
-				{clip(String(axes.y.label), chars(plotHeight, LABEL_SIZE))}
+				{clip(String(axes.y.label), chars(plotHeight, FINE))}
 			</text>
 		{/if}
 
@@ -158,8 +153,7 @@
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
 			>
-				<!-- A 6px dot is a pinpoint; this is what the pointer actually has to
-				     find. First child, so the name paints over it and stays selectable. -->
+				<!-- A 6px dot is a pinpoint. Hit target first, so the name stays selectable. -->
 				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
 
 				<circle
@@ -185,18 +179,17 @@
 
 				<text
 					x={point.cx + side * GUTTER}
-					y={middle(point.labelY, TICK_SIZE)}
+					y={middle(point.labelY, FINE)}
 					text-anchor={point.flip ? 'end' : 'start'}
-					font-size={TICK_SIZE}
+					font-size={FINE}
 					fill={theme.ink}
 				>
-					{clip(short(point.row.response), chars(point.room, TICK_SIZE))}
+					{clip(short(point.row.response), chars(point.room, FINE))}
 				</text>
 			</g>
 		{/each}
 	</g>
 
-	<!-- Density key: the same hue from its weakest to its strongest. -->
 	<g transform="translate({width - RAMP_WIDTH + 16}, {PAD})">
 		<defs>
 			<linearGradient id="density-{uid}" x1="0" x2="0" y1="1" y2="0">
@@ -205,9 +198,9 @@
 			</linearGradient>
 		</defs>
 
-		<text y="-8" font-size={TICK_SIZE} font-weight="600" fill={theme.ink}>Responses</text>
+		<text y="-8" font-size={FINE} font-weight="600" fill={theme.ink}>Responses</text>
 		<rect width="14" height={rampHeight} rx="7" fill="url(#density-{uid})" />
-		<text x="20" y="8" font-size={TICK_SIZE} fill={theme.muted}>{count(Math.max(...frequencies))}</text>
-		<text x="20" y={rampHeight - 2} font-size={TICK_SIZE} fill={theme.muted}>{count(Math.min(...frequencies))}</text>
+		<text x="20" y="8" font-size={FINE} fill={theme.muted}>{count(Math.max(...frequencies))}</text>
+		<text x="20" y={rampHeight - 2} font-size={FINE} fill={theme.muted}>{count(Math.min(...frequencies))}</text>
 	</g>
 </Frame>

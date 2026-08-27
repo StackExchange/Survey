@@ -11,7 +11,9 @@
 		clip,
 		count,
 		digitsWidth,
+		GAP,
 		HOVER_WASH,
+		LABEL,
 		labelGutter,
 		labelsAbove,
 		middle,
@@ -28,20 +30,40 @@
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	// Dims every row but the focused ones. No-op unless an export asked for it.
-	const dim = useFocus()
-	const domain = useDomain()
-
 	// Row height is composed from these, so a bar can't get thicker than its row.
 	const BAR = 25
-	const GAP = 8
 	const LINE = 20
-	const LABEL_SIZE = 16
+	const VALUE_GAP = 8
 
+	// No-op unless an export asked for a focus.
+	const dim = useFocus()
+	const domain = useDomain()
 	const hover = useHover(() => onhover)
 
-	// The drawn label is shortened then clipped, so the readout is the only place
-	// the response appears in full.
+	const rows = $derived(rowsOf(figure))
+	const short = $derived(shorten(figure))
+	const value = $derived(valueOf(figure))
+	const amount = $derived(amountOf(figure))
+	const format = $derived(formatOf(figure))
+
+	// A share is drawn against a full 0–1 unless normalising; a value has no
+	// natural maximum, so it scales to the largest in the set.
+	const scale = $derived(value ? Math.max(1, ...rows.map(amount)) : domain(rows.map(amount)))
+
+	const labelAbove = $derived(labelsAbove(width, LABEL))
+	const labelWidth = $derived(labelGutter(width))
+
+	// Reserved from the widest label it will actually draw.
+	const valueWidth = $derived(Math.ceil(Math.max(24, ...rows.map((row: any) => digitsWidth(format(row), LABEL)))) + 12)
+	const plotX = $derived(labelAbove ? PAD : labelWidth + 12)
+	const plotWidth = $derived(Math.max(1, width - plotX - valueWidth - PAD))
+
+	const x = $derived(scaleLinear().domain([0, scale]).range([0, plotWidth]).clamp(true))
+
+	// Stacked, a row carries a line of text as well as the bar.
+	const ROW = $derived(labelAbove ? LINE + BAR + GAP : BAR + GAP)
+	const height = $derived(PAD + rows.length * ROW + PAD)
+
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		hover.enter(
 			i,
@@ -55,33 +77,6 @@
 			event
 		)
 	}
-
-	const rows = $derived(rowsOf(figure))
-	const short = $derived(shorten(figure))
-
-	// The salary questions carry {key, label, unit}; everything else is a share.
-	const value = $derived(valueOf(figure))
-	const amount = $derived(amountOf(figure))
-	const format = $derived(formatOf(figure))
-
-	// A share is drawn against a full 0–1 unless normalising; a value has no
-	// natural maximum, so it scales to the largest in the set.
-	const scale = $derived(value ? Math.max(1, ...rows.map(amount)) : domain(rows.map(amount)))
-
-	const labelAbove = $derived(labelsAbove(width, LABEL_SIZE))
-
-	const labelWidth = $derived(labelGutter(width))
-
-	// Reserved from the widest label it will actually draw.
-	const valueWidth = $derived(Math.ceil(Math.max(24, ...rows.map((row: any) => digitsWidth(format(row), LABEL_SIZE)))) + 12)
-	const plotX = $derived(labelAbove ? PAD : labelWidth + 12)
-	const plotWidth = $derived(Math.max(1, width - plotX - valueWidth - PAD))
-
-	const x = $derived(scaleLinear().domain([0, scale]).range([0, plotWidth]).clamp(true))
-
-	// Stacked rows carry a line of text as well as the bar.
-	const ROW = $derived(labelAbove ? LINE + BAR + GAP : BAR + GAP)
-	const height = $derived(PAD + rows.length * ROW + PAD)
 </script>
 
 <Frame {figure} {width} {height}>
@@ -90,7 +85,7 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const y = PAD + i * ROW}
 		{@const bar = amount(row) ? Math.max(1, px(x(amount(row)))) : 0}
-		{@const label = clip(short(row.response), chars(width - PAD * 2, LABEL_SIZE))}
+		{@const label = clip(short(row.response), chars(width - PAD * 2, LABEL))}
 
 		<g
 			opacity={dim(row.response)}
@@ -99,8 +94,7 @@
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
 		>
-			<!-- First child, so every label paints over it and stays selectable. The
-			     handlers are on the group, so the whole row still answers the pointer. -->
+			<!-- Hit target first, so labels stay selectable. -->
 			<rect x="0" y={y + (ROW - Math.max(ROW, HIT)) / 2} {width} height={Math.max(ROW, HIT)} fill="transparent" />
 
 			{#if hover.active === i}
@@ -108,14 +102,14 @@
 			{/if}
 
 			{#if labelAbove}
-				<text x={PAD} y={middle(y + LINE / 2, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
+				<text x={PAD} y={middle(y + LINE / 2, LABEL)} font-size={LABEL} fill={theme.ink}>
 					{label}
 				</text>
 
 				<text
-					x={px(plotX + bar + 8)}
-					y={middle(y + ROW / 1.6, LABEL_SIZE)}
-					font-size={LABEL_SIZE}
+					x={px(plotX + bar + VALUE_GAP)}
+					y={middle(y + ROW / 1.6, LABEL)}
+					font-size={LABEL}
 					font-family={theme.fontHeadline}
 					font-weight="600"
 					fill={theme.ink}
@@ -125,16 +119,16 @@
 
 				<rect x={plotX} y={y + LINE} width={bar} height={BAR} fill={series(0)} />
 			{:else}
-				<text x={PAD} y={middle(y + ROW / 2, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
-					{clip(short(row.response), chars(labelWidth, LABEL_SIZE))}
+				<text x={PAD} y={middle(y + ROW / 2, LABEL)} font-size={LABEL} fill={theme.ink}>
+					{clip(short(row.response), chars(labelWidth, LABEL))}
 				</text>
 
 				<rect x={plotX} y={y + (ROW - BAR) / 2} width={bar} height={BAR} fill={series(0)} />
 
 				<text
-					x={px(plotX + bar + 8)}
-					y={middle(y + ROW / 2, LABEL_SIZE)}
-					font-size={LABEL_SIZE}
+					x={px(plotX + bar + VALUE_GAP)}
+					y={middle(y + ROW / 2, LABEL)}
+					font-size={LABEL}
 					font-family={theme.fontHeadline}
 					font-weight="600"
 					fill={theme.ink}

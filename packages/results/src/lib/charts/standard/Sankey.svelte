@@ -1,23 +1,20 @@
 <script lang="ts">
-	// Flow between two columns of the same set: `response` is what a respondent
-	// worked with, `series` what they want next, drawn from one shared vocabulary.
-	// The node set is that vocabulary twice — one column read from, one read to. As
-	// a single node set d3-sankey resolves it to an eight-column DAG with names
-	// colliding into downstream nodes.
+	// Flow between two columns of one shared vocabulary: worked with → wants to.
+	// The node set is that vocabulary twice, or d3-sankey builds an 8-column DAG.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, middle, PAD, px, pxPath, series, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, count, middle, PAD, px, pxPath, series, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	// A strand under the pointer, so the rest can drop back and let it be followed.
+	// A strand under the pointer, so the rest drop back and it can be followed.
 	const hover = useHover(() => onhover)
 
 	// One gradient per link, so they need a namespace of their own on the page.
@@ -26,27 +23,22 @@
 	const NODE_WIDTH = 14
 	const NODE_PADDING = 12
 	const ROW = 60
-	const LABEL_SIZE = 14
-	const HEAD_SIZE = 14
-	// A band above the flow for the column headings. Text is drawn from its
-	// baseline, so without this they sit off the top of the canvas.
+	// Room for the column headings, which hang from a baseline.
 	const HEAD = 28
-	// Names sit outside the columns on both sides, so the flow gives up width at
-	// each end rather than the single gutter a row chart needs.
-	const LABEL_WIDTH = $derived(Math.round(width * 0.17))
+	// Names sit outside the columns on both sides, so the flow gives up width
+	// at each end rather than the single gutter a row chart needs.
+	const labelWidth = $derived(Math.round(width * 0.17))
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 
-	// A row is `response -> series`: worked with, wants to work with. The same
-	// language appears on both sides, so one id list spans both columns and a
-	// language keeps its colour across the flow.
+	// One id list spans both columns, so a language keeps its colour across.
 	const names = $derived([...new Set(rows.flatMap((row: any) => [row.response, row.series]))].filter(Boolean) as string[])
 	const labels = $derived(names.map(short))
 	const idOf = $derived(new Map(names.map((name: string, i: number) => [name, i])))
 
-	// Only the ids a column actually uses: d3-sankey pushes a node with no
-	// outgoing links to the far side, where it lands in the wrong column.
+	// Only the ids a column uses: d3-sankey pushes a link-less node to the far
+	// side, where it lands in the wrong column.
 	const columns = $derived.by(() => {
 		const sources = new Set(rows.map((row: any) => idOf.get(row.response)))
 		const targets = new Set(rows.map((row: any) => idOf.get(row.series)))
@@ -62,7 +54,7 @@
 
 		const left = new Map(columns.left.map((id: number, i: number) => [id, i]))
 		const right = new Map(columns.right.map((id: number, i: number) => [id, columns.left.length + i]))
-		const x0 = LABEL_WIDTH
+		const x0 = labelWidth
 
 		// Generics: the bare overload types nodes as `{}` and rejects these.
 		return layout<{ name: string; label: number }, { value: number }>()
@@ -70,10 +62,9 @@
 			.nodePadding(NODE_PADDING)
 			.extent([
 				[x0, HEAD],
-				[Math.max(x0 + NODE_WIDTH * 3, width - LABEL_WIDTH), HEAD + plotHeight],
+				[Math.max(x0 + NODE_WIDTH * 3, width - labelWidth), HEAD + plotHeight],
 			])({
-			// `label` keeps the shared id, which colours the node — the same language
-			// has to read the same in both columns.
+			// `label` keeps the shared id, which colours the node.
 			nodes: [...columns.left, ...columns.right].map((id: number) => ({ name: labels[id], label: id })),
 			links: rows.map((row: any) => ({
 				source: left.get(idOf.get(row.response)!),
@@ -96,7 +87,7 @@
 				title: `${edge.source.name} → ${edge.target.name}`,
 				rows: [
 					{ value: count(edge.value), label: 'respondents', color: hue(edge.source) },
-					// What share of everyone who worked with the source this strand is.
+					// This strand's share of everyone who worked with the source.
 					{ value: `${Math.round((edge.value / Math.max(1, edge.source.value)) * 100)}%`, label: `of ${edge.source.name} users` },
 				],
 			},
@@ -108,14 +99,11 @@
 <Frame {figure} {width} {height}>
 	<g transform="translate(0, {PAD})">
 		{#if graph.nodes.length}
-			<!-- Baseline set clear of the flow's top edge, which starts at HEAD. -->
-			<text x={LABEL_WIDTH} y={HEAD - 12} text-anchor="end" font-size={HEAD_SIZE} font-weight="600" fill={theme.muted}>Worked with</text>
-			<text x={width - LABEL_WIDTH} y={HEAD - 12} font-size={HEAD_SIZE} font-weight="600" fill={theme.muted}>Wants to work with</text>
+			<text x={labelWidth} y={HEAD - 12} text-anchor="end" font-size={SMALL} font-weight="600" fill={theme.muted}>Worked with</text>
+			<text x={width - labelWidth} y={HEAD - 12} font-size={SMALL} font-weight="600" fill={theme.muted}>Wants to work with</text>
 		{/if}
 
 		<defs>
-			<!-- Each link fades from its source's colour to its target's, so a strand
-			     can be followed across without a legend. -->
 			{#each graph.links as edge, i (i)}
 				<linearGradient
 					id="link-{uid}-{i}"
@@ -141,8 +129,7 @@
 			/>
 		{/each}
 
-		<!-- Hit strokes over the lot: most strands are only a pixel or two thick, and
-		     they cross, so the pointer needs a wider band and the topmost one wins. -->
+		<!-- Hit strokes over the lot: most strands are a pixel or two thick. -->
 		{#each graph.links as edge, i (i)}
 			<path
 				d={strand(edge)}
@@ -160,16 +147,14 @@
 			{@const source = i < columns.left.length}
 			<rect x={px(node.x0)} y={px(node.y0)} width={px(node.x1 - node.x0)} height={px(Math.max(1, node.y1 - node.y0))} fill={hue(node)} />
 
-			<!-- Read from on the left, read to on the right, so each name sits on the
-			     outside of its own column. -->
 			<text
 				x={px(source ? node.x0 - 8 : node.x1 + 8)}
-				y={middle(px((node.y0 + node.y1) / 2), LABEL_SIZE)}
+				y={middle(px((node.y0 + node.y1) / 2), SMALL)}
 				text-anchor={source ? 'end' : 'start'}
-				font-size={LABEL_SIZE}
+				font-size={SMALL}
 				fill={theme.ink}
 			>
-				{clip(node.name, chars(LABEL_WIDTH - 8, LABEL_SIZE))}
+				{clip(node.name, chars(labelWidth - 8, SMALL))}
 			</text>
 		{/each}
 	</g>

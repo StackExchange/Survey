@@ -2,7 +2,7 @@
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, HOVER_WASH, middle, PAD, px, shorten, theme } from '$charts/utils/theme'
+	import { chars, clip, HOVER_WASH, middle, PAD, px, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 	import { tableOf } from '$lib/table'
 
@@ -12,18 +12,8 @@
 
 	const ROW = 30
 	const HEAD = 35
-	const HEAD_SIZE = 14
-	const CELL_SIZE = 14
 
 	const hover = useHover(() => onhover)
-
-	const enter = (r: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			r,
-			{ title: row.cells[0], rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })) },
-			event
-		)
-	}
 
 	const table = $derived(tableOf(figure))
 	const rows = $derived(table?.rows ?? [])
@@ -39,6 +29,14 @@
 	const edge = (i: number) => px(x(i) + colWidth(i) - PAD * 2)
 
 	const height = $derived(PAD + HEAD + rows.length * ROW + PAD)
+
+	const enter = (r: number, row: any, event: PointerEvent) => {
+		hover.enter(
+			r,
+			{ title: row.cells[0], rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })) },
+			event
+		)
+	}
 </script>
 
 <Frame {figure} {width} {height}>
@@ -48,11 +46,11 @@
 				x={numeric[i] ? edge(i) : x(i)}
 				y="14"
 				text-anchor={numeric[i] ? 'end' : 'start'}
-				font-size={HEAD_SIZE}
+				font-size={SMALL}
 				font-weight="600"
 				fill={theme.ink}
 			>
-				{clip(header, chars(colWidth(i) - 12, HEAD_SIZE))}
+				{clip(header, chars(colWidth(i) - 12, SMALL))}
 			</text>
 		{/each}
 
@@ -79,12 +77,12 @@
 					{@const text = short(value)}
 					<text
 						x={numeric[i] ? edge(i) : x(i)}
-						y={middle(y + ROW / 2 - 4, CELL_SIZE)}
+						y={middle(y + ROW / 2 - 4, SMALL)}
 						text-anchor={numeric[i] ? 'end' : 'start'}
-						font-size={CELL_SIZE}
+						font-size={SMALL}
 						fill={theme.ink}
 					>
-						{clip(text, chars(colWidth(i) - 12, CELL_SIZE))}
+						{clip(text, chars(colWidth(i) - 12, SMALL))}
 					</text>
 				{/each}
 			</g>

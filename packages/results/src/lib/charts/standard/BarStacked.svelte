@@ -1,7 +1,5 @@
 <script lang="ts">
-	// The Likert shape. Rows arrive flat — one per (statement, segment) — and are
-	// grouped into bars here. The export carries no offset column, so the running
-	// sum that stacks the segments is computed rather than read.
+	// The Likert shape. Rows arrive flat, one per (statement, segment).
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { scaleLinear } from 'd3-scale'
@@ -22,6 +20,7 @@
 		px,
 		series,
 		shorten,
+		SMALL,
 		textWidth,
 		theme,
 	} from '$charts/utils/theme'
@@ -34,40 +33,20 @@
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	// Dims every row but the focused ones. No-op unless an export asked for it.
+	// No-op unless an export asked for a focus.
 	const dim = useFocus()
 
-	const LABEL = 18
+	const LABEL_ROW = 18
 	const BAR = 25
-	const GAP = 18
-	const LABEL_SIZE = 13
-	const VALUE_SIZE = 14
+	const ROW_GAP = 18
 
 	const hover = useHover(() => onhover)
-
-	// One hit target per statement, not per segment: a 2% slice is a few pixels
-	// wide, and it gives the narrow segments somewhere to show their label.
-	const enter = (r: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			r,
-			{
-				title: String(row.response ?? ''),
-				rows: row.segments.map((segment: any, i: number) => ({
-					value: percent(segment.pct),
-					label: segment.count ? `${labels[i]} · ${count(segment.count)}` : labels[i],
-					color: series(i),
-				})),
-			},
-			event
-		)
-	}
 
 	const short = $derived(shorten(figure))
 	const names = $derived(figure.series ?? [])
 	const labels = $derived(names.map(short))
 
-	// Segments stack at the running sum of the ones before them — the export ships
-	// no offset column, and computing it is cheaper than writing every row twice.
+	// Segments stack at the running sum before them: the export ships no offset.
 	const rows = $derived(
 		bySeries(figure.data, names).map(({ response, cells }) => {
 			let offset = 0
@@ -87,21 +66,37 @@
 	const plotWidth = $derived(Math.max(1, width - PAD * 2))
 	const key = $derived(legend(labels, plotWidth))
 
-	// Segments are shares of the whole bar, so the domain is always 0–1.
 	const x = $derived(scaleLinear().domain([0, 1]).range([0, plotWidth]).clamp(true))
 
-	const height = $derived(PAD + key.height + rows.length * (LABEL + BAR + GAP) + PAD)
+	const height = $derived(PAD + key.height + rows.length * (LABEL_ROW + BAR + ROW_GAP) + PAD)
+
+	// One hit target per statement, not per segment: a 2% slice is a few pixels
+	// wide, and it gives the narrow segments somewhere to show their label.
+	const enter = (r: number, row: any, event: PointerEvent) => {
+		hover.enter(
+			r,
+			{
+				title: String(row.response ?? ''),
+				rows: row.segments.map((segment: any, i: number) => ({
+					value: percent(segment.pct),
+					label: segment.count ? `${labels[i]} · ${count(segment.count)}` : labels[i],
+					color: series(i),
+				})),
+			},
+			event
+		)
+	}
 </script>
 
 <Frame {figure} {width} {height}>
 	<g transform="translate({PAD}, {PAD})">
 		<Legend layout={key} colors={labels.map((_: string, i: number) => series(i))} />
 
-		<Gridlines from={0} to={plotWidth} top={key.height} bottom={key.height + rows.length * (LABEL + BAR + GAP)} />
+		<Gridlines from={0} to={plotWidth} top={key.height} bottom={key.height + rows.length * (LABEL_ROW + BAR + ROW_GAP)} />
 
 		{#each rows as row, r (row.response ?? r)}
-			{@const y = key.height + r * (LABEL + BAR + GAP)}
-			{@const band = LABEL + BAR + GAP / 2}
+			{@const y = key.height + r * (LABEL_ROW + BAR + ROW_GAP)}
+			{@const band = LABEL_ROW + BAR + ROW_GAP / 2}
 			<g
 				opacity={dim(row.response)}
 				role="presentation"
@@ -109,31 +104,29 @@
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
 			>
-				<!-- First child, so every label paints over it and stays selectable. The
-				     handlers are on the group, so the whole row still answers the pointer. -->
-				<rect x={-PAD} y={y - GAP / 4} width={plotWidth + PAD * 2} height={Math.max(band, HIT)} fill="transparent" />
+				<!-- Hit target first, so labels stay selectable. -->
+				<rect x={-PAD} y={y - ROW_GAP / 4} width={plotWidth + PAD * 2} height={Math.max(band, HIT)} fill="transparent" />
 
 				{#if hover.active === r}
-					<rect x={-PAD} y={y - GAP / 4} width={plotWidth + PAD * 2} height={band} fill={theme.ink} opacity={HOVER_WASH} />
+					<rect x={-PAD} y={y - ROW_GAP / 4} width={plotWidth + PAD * 2} height={band} fill={theme.ink} opacity={HOVER_WASH} />
 				{/if}
 
-				<text y={hanging(y, LABEL_SIZE)} font-size={LABEL_SIZE} fill={theme.ink}>
-					{clip(short(row.response), chars(plotWidth, LABEL_SIZE))}
+				<text y={hanging(y, SMALL)} font-size={SMALL} fill={theme.ink}>
+					{clip(short(row.response), chars(plotWidth, SMALL))}
 				</text>
 
 				{#each row.segments as segment, i (i)}
 					{@const left = px(x(segment.offset))}
 					{@const w = px(x(segment.pct))}
 					{@const value = percent(segment.pct)}
-					<rect x={left} y={y + LABEL} width={w} height={BAR} fill={series(i)} />
+					<rect x={left} y={y + LABEL_ROW} width={w} height={BAR} fill={series(i)} />
 
-					<!-- Only where the segment can actually hold the label. -->
-					{#if w >= textWidth(value, VALUE_SIZE) + 10}
+					{#if w >= textWidth(value, SMALL) + 10}
 						<text
 							x={px(left + w / 2)}
-							y={middle(y + LABEL + BAR / 2, VALUE_SIZE)}
+							y={middle(y + LABEL_ROW + BAR / 2, SMALL)}
 							text-anchor="middle"
-							font-size={VALUE_SIZE}
+							font-size={SMALL}
 							font-family={theme.fontHeadline}
 							font-weight="600"
 							fill={onSeries(i)}
