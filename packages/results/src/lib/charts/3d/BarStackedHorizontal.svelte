@@ -5,7 +5,7 @@
 
 	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, DIM, px, shorten, textWidth, theme } from '$charts/utils/theme'
+	import { CAPTION_SHARE, chars, clip, DIM, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -14,10 +14,8 @@
 
 	const BAR = 96
 	const NOSE = px(BAR * (30 / 160))
-	const GAP = 20
-	const LABEL_SIZE = 16
-	const UNIT_SIZE = 25
-	const CAPTION = 0.4
+	const ROW_GAP = 20
+	const VALUE_GAP = 16
 
 	const hover = useHover(() => onhover)
 
@@ -28,15 +26,13 @@
 
 	const largest = $derived(largestOf(rows.map(amount)))
 
-	const named = (row: any) => clip(short(row.response), chars(width * CAPTION - 16, LABEL_SIZE))
+	const named = (row: any) => clip(short(row.response), chars(width * CAPTION_SHARE - VALUE_GAP, LABEL))
 
 	// Every row carries its own caption, so the gutter is the widest of them.
 	const gutter = $derived(
-		rows.reduce((room: number, row: any) => Math.max(room, textWidth(named(row), LABEL_SIZE), textWidth(format(row), UNIT_SIZE)), 0) + 16
+		rows.reduce((room: number, row: any) => Math.max(room, textWidth(named(row), LABEL), textWidth(format(row), VALUE)), 0) + VALUE_GAP
 	)
 
-	// The cap rides past `end` by its own depth, so the gutter comes off the range
-	// on top of that: only then can a caption clear the bar it belongs to.
 	const x = $derived(
 		scaleLinear()
 			.domain([0, largest])
@@ -44,15 +40,14 @@
 			.clamp(true)
 	)
 
-	const height = $derived(rows.length * (BAR + GAP) - GAP)
+	const height = $derived(rows.length * (BAR + ROW_GAP) - ROW_GAP)
 	const half = px(BAR / 2)
 	const DIAMOND = `M0 ${-half}L${NOSE} 0L0 ${half}L${-NOSE} 0Z`
 	const TAIL_TOP = `M0 ${-half}L${NOSE} 0H${-NOSE}Z`
 	const TAIL_BOTTOM = `M0 ${half}L${NOSE} 0H${-NOSE}Z`
 
-	// A row's origin is its midline, not its top edge, so the two lines straddle it.
-	const UNIT_Y = -2
-	const NAMED_Y = 20
+	const valueY = -2
+	const labelY = valueY + LABEL_DY
 
 	const enter = (i: number, row: any, event: PointerEvent) => {
 		hover.enter(
@@ -67,13 +62,11 @@
 	{#each rows as row, i (row.response ?? i)}
 		{@const end = px(x(amount(row)))}
 		{@const body = px(end - NOSE)}
-		<!-- Following the bar's own cap, held inside the frame. The gutter above is
-		     what guarantees the room. -->
-		{@const captionX = px(Math.min(end + NOSE + 16, width - (gutter - 16)))}
+		{@const captionX = px(Math.min(end + NOSE + VALUE_GAP, width - (gutter - VALUE_GAP)))}
 
 		<g
 			role="presentation"
-			transform="translate(0 {px(i * (BAR + GAP) + half)})"
+			transform="translate(0 {px(i * (BAR + ROW_GAP) + half)})"
 			onpointermove={(event) => enter(i, row, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
@@ -90,10 +83,10 @@
 				<path d={DIAMOND} transform="translate({end} 0)" fill={theme.accent} />
 			</g>
 
-			<text x={captionX} y={UNIT_Y} font-size={UNIT_SIZE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
+			<text x={captionX} y={valueY} font-size={VALUE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
 				{format(row)}
 			</text>
-			<text x={captionX} y={NAMED_Y} font-size={LABEL_SIZE} fill={theme.muted}>
+			<text x={captionX} y={labelY} font-size={LABEL} fill={theme.muted}>
 				{named(row)}
 			</text>
 		</g>

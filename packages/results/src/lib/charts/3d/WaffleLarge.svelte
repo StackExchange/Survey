@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cube, CUBE, cubeHeight, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
-	import { descent, OFF, percent, px, theme } from '$charts/utils/theme'
+	import { descent, LABEL, LABEL_DY, OFF, percent, px, theme, VALUE } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -12,9 +12,6 @@
 	const CELLS = LONG * SHORT
 	const SPAN = LONG + SHORT - 1
 
-	const LABEL_SIZE = 16
-	const UNIT_SIZE = 25
-
 	const row = $derived(rowsOf(figure)[0])
 	const share = $derived(shareOf(figure))
 
@@ -25,10 +22,10 @@
 
 	const grid = $derived((SPAN - 1) * half + cubeHeight(size))
 
-	const UNIT_Y = $derived(px((grid * 2) / 3.3 + UNIT_SIZE))
-	const NAMED_Y = $derived(px(UNIT_Y + 22))
+	const valueY = $derived(px((grid * 2) / 3.3 + VALUE))
+	const labelY = $derived(px(valueY + LABEL_DY))
 
-	const height = $derived(Math.max(grid, NAMED_Y + descent(LABEL_SIZE)))
+	const height = $derived(Math.max(grid, labelY + descent(LABEL)))
 
 	const cells = $derived(
 		Array.from({ length: CELLS }, (_, i) => {

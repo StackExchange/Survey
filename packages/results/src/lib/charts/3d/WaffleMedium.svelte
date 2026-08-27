@@ -1,15 +1,5 @@
 <script lang="ts">
-	// The "1 in X" shape as cubes, in two rows climbing away to the right, the lit one
-	// at the near end of the lower row.
-	//
-	// Same field as the large waffle: a column is a whole cube across, a level is half
-	// a cube high, and a cube only ever lands where the two are both even or both odd.
-	// That is what leaves the air between them — laid on the tighter lattice the cubes
-	// share edges and a row of them silts up into one ribbon.
-	//
-	// The rows are built as pairs rather than filled one after the other, so an odd
-	// count leaves them one apart rather than dropping the remainder on the second:
-	// six came out four and two.
+	// "1 in X" as cubes, in two rows climbing away to the right.
 	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -23,7 +13,6 @@
 	const share = $derived(shareOf(figure))
 	const cells = $derived(oneIn(share))
 
-	// One column per cube, so the row's whole demand is the count.
 	// Capped, or "1 in 2" draws two cubes half a page wide each.
 	const size = $derived(Math.min(width / cells, width / 5))
 	const half = $derived(cubeHeight(size) / 2)
@@ -39,11 +28,9 @@
 		})
 	)
 
-	// Nothing overlaps on a field this open, so there is no back to front to paint in.
 	const ceiling = $derived(Math.min(...placed.map((cell) => cell.level)))
 	const floor = $derived(Math.max(...placed.map((cell) => cell.level)))
 	const height = $derived((floor - ceiling) * half + cubeHeight(size))
-	// Centred: a capped `size` leaves the rows short of the column they sit in.
 	const left = $derived((width - cells * size) / 2)
 
 	const enter = (event: PointerEvent) =>
