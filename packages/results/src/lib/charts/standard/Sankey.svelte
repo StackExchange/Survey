@@ -46,6 +46,9 @@
 		return { left: left || headerOf('response'), right: right || headerOf('series') }
 	})
 
+	// Each heading stops a margin short of the midpoint, or two long ones meet.
+	const headRoom = $derived(chars(width / 2 - PAD * 2, SMALL))
+
 	// One id list spans both columns, so a language keeps its colour across.
 	const names = $derived([...new Set(rows.flatMap((row: any) => [row.response, row.series]))].filter(Boolean) as string[])
 	const labels = $derived(names.map(short))
@@ -113,15 +116,14 @@
 <Frame {figure} {width} {height}>
 	<g transform="translate(0, {PAD})">
 		{#if graph.nodes.length}
-			<!-- Clipped at the midpoint, or two long headings meet in the middle. -->
 			{#if heads.left}
-				<text y={HEAD - 12} font-size={SMALL} font-weight="600" fill={theme.muted}>
-					{clip(heads.left, chars(width / 2 - PAD, SMALL))}
+				<text x={PAD} y={HEAD - 12} font-size={SMALL} font-weight="600" fill={theme.muted}>
+					{clip(heads.left, headRoom)}
 				</text>
 			{/if}
 			{#if heads.right}
-				<text x={px(width)} y={HEAD - 12} text-anchor="end" font-size={SMALL} font-weight="600" fill={theme.muted}>
-					{clip(heads.right, chars(width / 2 - PAD, SMALL))}
+				<text x={px(width - PAD)} y={HEAD - 12} text-anchor="end" font-size={SMALL} font-weight="600" fill={theme.muted}>
+					{clip(heads.right, headRoom)}
 				</text>
 			{/if}
 		{/if}
@@ -177,7 +179,7 @@
 				font-size={SMALL}
 				fill={theme.ink}
 			>
-				{clip(node.name, chars(labelWidth - 8, SMALL))}
+				{clip(node.name, chars(labelWidth - 8 - PAD, SMALL))}
 			</text>
 		{/each}
 	</g>
