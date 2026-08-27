@@ -1,5 +1,5 @@
 <script lang="ts">
-	// Flow between two columns of one shared vocabulary: worked with → wants to.
+	// Flow between two columns of one shared vocabulary, whatever the question asks.
 	// The node set is that vocabulary twice, or d3-sankey builds an 8-column DAG.
 	import type { OnHover } from '$charts/utils/tooltip'
 
@@ -31,6 +31,20 @@
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
+
+	// Headings come from the sheet's `Axis Labels`; blank draws none rather than a
+	// made-up one. `columns[].header` is the fallback, minus the generator's
+	// generic names and the figure's own title again — those title nothing.
+	const GENERIC = new Set(['Segment', 'Response'])
+	const headerOf = (key: string) => {
+		const header = figure?.columns?.find((column: any) => column.key === key)?.header
+		if (!header || GENERIC.has(header) || header === figure?.name || header === figure?.question) return undefined
+		return String(header)
+	}
+	const heads = $derived.by(() => {
+		const [left, right] = figure?.axisLabels ?? []
+		return { left: left || headerOf('response'), right: right || headerOf('series') }
+	})
 
 	// One id list spans both columns, so a language keeps its colour across.
 	const names = $derived([...new Set(rows.flatMap((row: any) => [row.response, row.series]))].filter(Boolean) as string[])
@@ -99,8 +113,17 @@
 <Frame {figure} {width} {height}>
 	<g transform="translate(0, {PAD})">
 		{#if graph.nodes.length}
-			<text x={labelWidth} y={HEAD - 12} text-anchor="end" font-size={SMALL} font-weight="600" fill={theme.muted}>Worked with</text>
-			<text x={width - labelWidth} y={HEAD - 12} font-size={SMALL} font-weight="600" fill={theme.muted}>Wants to work with</text>
+			<!-- Clipped at the midpoint, or two long headings meet in the middle. -->
+			{#if heads.left}
+				<text y={HEAD - 12} font-size={SMALL} font-weight="600" fill={theme.muted}>
+					{clip(heads.left, chars(width / 2 - PAD, SMALL))}
+				</text>
+			{/if}
+			{#if heads.right}
+				<text x={px(width)} y={HEAD - 12} text-anchor="end" font-size={SMALL} font-weight="600" fill={theme.muted}>
+					{clip(heads.right, chars(width / 2 - PAD, SMALL))}
+				</text>
+			{/if}
 		{/if}
 
 		<defs>

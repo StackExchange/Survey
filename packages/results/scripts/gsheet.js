@@ -13,7 +13,7 @@ const OUT = path.resolve(fileURLToPath(import.meta.url), '../../survey.json')
 const SHEET_ID = process.env.GOOGLE_SHEETS_SHEETID
 
 // Columns with split with `|`
-const LISTS = new Set(['dataset', 'values'])
+const LISTS = new Set(['dataset', 'values', 'axisLabels'])
 
 if (!SHEET_ID) throw new Error('GOOGLE_SHEETS_SHEETID is not set — see .env.example')
 

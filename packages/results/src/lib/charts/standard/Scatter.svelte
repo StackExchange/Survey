@@ -25,8 +25,16 @@
 
 	const rows = $derived(rowsOf(figure))
 	// Which two of the row's named columns to plot, resolved by the loader — the
-	// export names its columns and says nothing about where they belong.
-	const axes = $derived(figure.axes ?? null)
+	// export names its columns and says nothing about where they belong. The
+	// sheet's `Axis Labels` overrides the wording, and only the wording.
+	const axes = $derived.by(() => {
+		if (!figure.axes) return null
+		const [x, y] = figure.axisLabels ?? []
+		return {
+			x: { ...figure.axes.x, label: x || figure.axes.x?.label },
+			y: { ...figure.axes.y, label: y || figure.axes.y?.label },
+		}
+	})
 	const short = $derived(shorten(figure))
 
 	const valueAt = (row: any, axis: any) => (axis ? (row?.[axis.key] ?? 0) : 0)
