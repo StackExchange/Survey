@@ -1,20 +1,16 @@
-// Which responses an export draws, and which it brings forward.
-//
-// Held by ChartDownload, which owns both halves: ChartOptions sets it and the
-// drawing reads it. Call during component init.
+// Held by ChartDownload: ChartOptions sets it and the drawing reads it.
 
 export function rowSelection(figure: () => any) {
-	// Keyed by group the way the page keys its own selection: responses differ
-	// between cuts, so a row hidden in one would silently apply to another.
+	// Keyed by group: responses differ between cuts, so a row hidden in one
+	// would silently apply to another.
 	let dropped = $state<{ group: string; responses: string[] }>({ group: '', responses: [] })
 	let lit = $state<{ group: string; responses: string[] }>({ group: '', responses: [] })
 
 	const rows = $derived((figure().data ?? []).filter(Boolean))
 	const responses = $derived(rows.map((row: any) => row.response))
 
-	// Hiding and focusing both work by response, so this is only offered where a
-	// response identifies one row. A sankey's are {source, target, value}, and a
-	// write-ins table repeats them once per use_type.
+	// Only where a response identifies one row: a sankey's are {source, target,
+	// value}, and a write-ins table repeats them once per use_type.
 	const listable = $derived(
 		rows.length > 1 &&
 			responses.every((response: unknown) => typeof response === 'string') &&
@@ -57,8 +53,8 @@ export function rowSelection(figure: () => any) {
 			dropped = { group, responses: without(hidden, response) }
 		},
 
-		// Hiding a row drops its focus too: a highlight on something that isn't
-		// drawn would leave the count saying one thing and the chart another.
+		// Hiding a row drops its focus: a highlight on something undrawn would
+		// leave the count saying one thing and the chart another.
 		highlight(response: string) {
 			lit = { group, responses: without(focus, response) }
 			if (hidden.includes(response)) dropped = { group, responses: without(hidden, response) }

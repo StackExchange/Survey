@@ -1,6 +1,5 @@
-// Draws a chart to a PNG in the browser. The component is mounted off-screen at
-// the requested options rather than lifted off the page, so an export can differ
-// from what is on screen.
+// Draws a chart to a PNG. Mounted off-screen at the requested options rather
+// than lifted off the page, so an export can differ from what is on screen.
 import type { Chrome } from '$charts/utils/chrome'
 import type { Component } from 'svelte'
 
@@ -15,7 +14,7 @@ const SVG_NS = 'http://www.w3.org/2000/svg'
 
 interface Options {
 	figure: any
-	/** The SVG's own width. Charts lay out to it, so it changes the design, not the resolution. */
+	/** The SVG's own width. Charts lay out to it, so it changes the design. */
 	width?: number
 	/** Raster multiplier. Same layout, more pixels. */
 	scale?: number
@@ -41,8 +40,7 @@ async function face({ family, url }: (typeof FACES)[number]) {
 	const response = await fetch(url)
 	if (!response.ok) throw new Error(`${response.status} for ${url}`)
 
-	// `woff2`, not layout.css's `woff2-variations`: the variable axis still works
-	// and the plain format string is understood more widely.
+	// `woff2`, not layout.css's `woff2-variations`: understood more widely.
 	const src = `url(data:font/woff2;base64,${base64(await response.arrayBuffer())}) format('woff2')`
 
 	return `@font-face{font-family:'${family}';font-style:normal;font-weight:200 700;src:${src}}`
@@ -50,8 +48,7 @@ async function face({ family, url }: (typeof FACES)[number]) {
 
 let embedded: Promise<string> | null = null
 
-// An SVG loaded into an `<img>` is its own sandboxed document and cannot reach
-// the page's webfonts, so a PNG falls back to the system font without these.
+// An SVG in an `<img>` is sandboxed and cannot reach the page's webfonts.
 function fontFaces() {
 	embedded ??= Promise.all(FACES.map(face))
 		.then((faces) => faces.join(''))
@@ -64,12 +61,10 @@ function fontFaces() {
 	return embedded
 }
 
-// Figma reads `font-family` off the text node itself and ignores both the
-// ancestor and the embedded `@font-face`, so it gets flattened on the way out.
+// Figma reads `font-family` off the text node and ignores the ancestor.
 function inlineFontFamily(svg: SVGElement) {
 	for (const text of svg.querySelectorAll('text')) {
-		// `closest` returns the node itself when it already carries one, so the
-		// headline faces keep theirs.
+		// `closest` returns the node itself, so headline faces keep theirs.
 		const family = text.closest('[font-family]')?.getAttribute('font-family')
 		if (family) text.setAttribute('font-family', family)
 	}
@@ -115,8 +110,7 @@ export async function toPng(Chart: Component<any>, options: Options) {
 
 	const scale = options.scale ?? 2
 
-	// A data URL rather than a blob URL: Safari treats a canvas that drew a
-	// blob-backed SVG as tainted and refuses to read it back.
+	// A data URL, not a blob URL: Safari taints a canvas that drew a blob SVG.
 	const image = new Image()
 	image.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg.markup)}`
 	await image.decode()
@@ -135,7 +129,6 @@ export function save(blob: Blob, filename: string) {
 	link.href = url
 	link.download = filename
 	link.click()
-	// Not synchronous: Firefox has been known to cancel the download if the URL
-	// goes away in the same task as the click.
+	// Not synchronous: Firefox cancels if the URL goes in the click's task.
 	setTimeout(() => URL.revokeObjectURL(url), 0)
 }

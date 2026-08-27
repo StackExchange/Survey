@@ -1,9 +1,4 @@
-// Chart id → component, keyed by a block's `chart:` in src/content/*.yaml.
-//
-// Nothing draws a heading: the page has one. Most return a single `<svg>` root
-// so the same render works inline and as a file; the ./text ones have no `<svg>`
-// and ./export.ts returns null for them, which ChartDownload treats as nothing
-// to offer.
+// Nothing draws a heading: the page has one. The ./text ones have no `<svg>`.
 import type { OnHover } from '$charts/utils/tooltip'
 import type { Component } from 'svelte'
 
@@ -39,10 +34,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	sankey: Sankey,
 	table: Table,
 
-	// 3D — /[year], the `home` tier. One flat record rather than one per tier: the
-	// ids don't collide, and everything that walks this map wants all of them. The
-	// suffix on the component is the prefix on the id: an import can't lead with a
-	// digit, a directory can.
+	// 3D — /[year], the `home` tier. One flat record: the ids don't collide.
 	'3d-bar-stacked-horizontal': BarStackedHorizontal3d,
 	'3d-bar-stacked-vertical': BarStackedVertical3d,
 	'3d-cube': Cube3d,
@@ -61,7 +53,5 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	stat: TextStat,
 }
 
-// Which ids answer the "scale to the largest value" option — i.e. the charts that
-// call `useDomain()`. Here rather than in ChartDownload.svelte, so the ids and the
-// list that names them sit in one file.
+// Which ids answer the "scale to the largest value" option: `useDomain()` callers.
 export const SCALABLE = new Set(['bar', 'bar-clustered', 'dumbbell'])

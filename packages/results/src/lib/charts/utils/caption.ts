@@ -1,7 +1,4 @@
-// The facts that sit under every chart. Three places render them — the page's
-// sr-only caption, the SVG `<desc>` and the drawn band in ../svg/Stats.svelte —
-// and they were assembled independently in all three, so this is the one read of
-// `figure.demographic`.
+// The facts under every chart: sr-only caption, `<desc>` and ../svg/Stats.svelte.
 import { count } from '$charts/utils/theme'
 import { ofSurvey } from '$lib/table'
 
@@ -25,8 +22,7 @@ export function captionOf(figure: any): Caption {
 	}
 }
 
-// The same facts on one line. `reading` is the chart-in-a-sentence from
-// ./expressive.ts, which only the `<desc>` carries.
+// The same facts on one line. Only the `<desc>` carries `reading`.
 export function captionText(figure: any, reading?: string) {
 	const { demographic, n, share, subtext } = captionOf(figure)
 

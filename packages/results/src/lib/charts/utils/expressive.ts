@@ -1,33 +1,22 @@
-// What the 3D and 2D charts share. A feature arrives already
-// narrowed by $lib/server/content.ts, so a component never filters again.
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy'
 
 import { count, GAP, percent, px, shorten } from '$charts/utils/theme'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
-// The one response a figure was told to accent, named in full by the `focus`
-// column on the sheet's Features tab. scripts/data.js checks it against the rows
-// it emitted, so what arrives here either matches a row or is null.
-//
-// The row itself, not the string: charts slice, sort and re-rank their rows, and
-// an identity check against the row survives all three. Nothing dims — a focus
-// recolours the mark it names and leaves hover the only thing changing opacity.
+// The one response the sheet's `focus` column named, as the row not the string:
+// charts slice, sort and re-rank, and an identity check survives all three.
 export const focusedOf = (figure: any) =>
 	figure?.focus ? (rowsOf(figure).find((row: any) => row.response === figure.focus) ?? null) : null
 
-// The salary questions carry a named measure instead of a share, resolved by the
-// loader into `{key, label, unit}`. Everything else is `pct`.
+// A named measure `{key, label, unit}` — the salary questions. Else `pct`.
 export const valueOf = (figure: any) => figure.value ?? null
 
-// `pick` is for the charts whose row holds several measurements — a clustered
-// bar reads `row.cells[i]`, so it passes the cell in rather than the row.
+// `pick` is for rows holding several measurements: a clustered bar passes the cell.
 type Pick = (...args: any[]) => any
 const self: Pick = (row: any) => row
 
-// A share as its label shows it. Two marks that both read 69% are drawn the same
-// size, rather than 0.6945 and 0.6863 apart by a pixel or two — and a real-but-tiny
-// share stays off zero, as `percent` keeps it off "0%".
+// A share as its label shows it, so two marks both reading 69% are drawn alike.
 const shown = (share: number) => {
 	const rounded = Math.round(share * 100) / 100
 
@@ -38,7 +27,6 @@ export const amountOf = (figure: any, pick: Pick = self) => {
 	const value = valueOf(figure)
 	return (...args: any[]) => {
 		const cell = pick(...args)
-		// A named measure is a count, not a share, so it is drawn as it comes.
 		return value ? (cell?.[value.key] ?? 0) : shown(cell?.pct ?? 0)
 	}
 }
@@ -49,20 +37,16 @@ export const formatOf = (figure: any, pick: Pick = self) => {
 	return (...args: any[]) => (value ? `${value.unit ?? ''}${count(amount(...args))}` : percent(amount(...args)))
 }
 
-// Never zero: an empty or all-zero set would divide a scale by nothing. The
-// epsilon is smaller than `useDomain`'s, which is scaling a drawn axis rather
-// than guarding a division.
+// Never zero: an all-zero set would divide a scale by nothing.
 export const largestOf = (values: number[]) => Math.max(0.0001, ...values)
 
-// A trailing "%" is drawn smaller than the number it follows, so it is split off
-// rather than being part of the string.
+// A trailing "%" is drawn smaller than its number, so it is split off.
 export function splitUnit(text: string) {
 	const figures = String(text ?? '')
 	return figures.endsWith('%') ? { figures: figures.slice(0, -1), unit: '%' } : { figures, unit: '' }
 }
 
-// The chart in a sentence, for the `<desc>`. These forms draw few value labels —
-// a waffle draws none — so without this the numbers exist only as geometry.
+// The chart in a sentence, for the `<desc>`.
 export function readingOf(figure: any, limit = 6) {
 	const rows = rowsOf(figure)
 	const short = shorten(figure)
@@ -74,9 +58,7 @@ export function readingOf(figure: any, limit = 6) {
 	return said.join(', ')
 }
 
-// The one number a waffle draws. `values` means the sheet picked a set of
-// responses to add up, and a single value picks one; otherwise the rows are a
-// whole distribution and the first is what the figure is about.
+// The one number a waffle draws. `values` means the sheet picked a set to add up.
 export function shareOf(figure: any) {
 	const rows = rowsOf(figure)
 	const amount = amountOf(figure)
@@ -89,7 +71,7 @@ export function shareOf(figure: any) {
 		: amount(rows[0])
 }
 
-// "1 in 5" — how many respondents one filled cell of a waffle stands for.
+// "1 in 5" — how many respondents one filled cell stands for.
 export const oneIn = (share: number) => Math.max(2, Math.round(1 / Math.max(share, 0.0001)))
 
 export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = GAP) {
@@ -97,8 +79,7 @@ export function treemapCells(rows: any[], values: number[], width: number, heigh
 		.sum((d: any) => d.value ?? 0)
 		.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))
 
-	// `ratio(1)` rather than d3's default golden ratio: these cells carry two lines of
-	// type each, and a square holds a label where a 1.6-wide cell drops it.
+	// `ratio(1)` not d3's golden default: a square holds two lines of type.
 	treemap().tile(treemapSquarify.ratio(1)).size([width, height]).paddingInner(padding).round(true)(root)
 
 	return (root.leaves() as any[]).map((leaf) => ({
@@ -111,7 +92,6 @@ export function treemapCells(rows: any[], values: number[], width: number, heigh
 	}))
 }
 
-// A near-square grid for `n` cells — the waffle's shape.
 export function grid(n: number, width: number, gap: number) {
 	const columns = Math.min(n, Math.max(1, Math.round(Math.sqrt(n * 1.6))))
 	const rows = Math.ceil(n / columns)
@@ -120,9 +100,7 @@ export function grid(n: number, width: number, gap: number) {
 	return { columns, rows, size, height: px(rows * size + gap * (rows - 1)) }
 }
 
-// The isometric cube these forms are built from, at the base artwork's own 160-wide
-// scale so the numbers here are the ones in the .svg. Replacing the artwork is
-// replacing these three paths and the two measurements under them.
+// The isometric cube, at the base artwork's own 160-wide scale.
 const UNIT = 160
 
 export const CUBE = {
@@ -138,14 +116,12 @@ export const cube = (x: number, y: number, size: number) => `translate(${px(x)} 
 
 export const cubeHeight = (size: number) => size * CUBE_HEIGHT
 
-// The stepped stack's plate: the cube's top face over a shallower extrusion, at
-// the same 160-wide scale, so a plate and a `cube()` given the same width sit on
-// the same footprint. `w` is the rhombus across its widest points; `cy` is the
-// centre of the top face, which is also where a label for it hangs.
 const PLATE_RISE = 46.188 / UNIT
 
 export const plateRise = (w: number) => w * PLATE_RISE
 
+// The stepped stack's plate: the cube's top face over a shallower extrusion.
+// `w` is the rhombus at its widest; `cy` is the centre of the top face.
 export const plate = (cx: number, cy: number, w: number, depth: number) => {
 	const hw = w / 2
 	const hh = plateRise(w)
