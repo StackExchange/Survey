@@ -19,7 +19,7 @@
 	const NODE_PADDING = 12
 	const ROW = 60
 	const HEAD = 28
-	const labelWidth = $derived(Math.round(width * 0.20))
+	const labelWidth = $derived(Math.round(width * 0.2))
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))

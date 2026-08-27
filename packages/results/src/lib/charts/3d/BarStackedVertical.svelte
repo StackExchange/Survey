@@ -82,7 +82,7 @@
 				{clip(short(row.response), chars(len - nose - 24, NAME_SIZE))}
 			</text>
 
-			<text x={-half} y={valueY} font-family={theme.fontHeadline} font-size={VALUE} font-weight="600" fill="{theme.ink}">
+			<text x={-half} y={valueY} font-family={theme.fontHeadline} font-size={VALUE} font-weight="600" fill={theme.ink}>
 				{format(row)}
 			</text>
 			<text x={-half} y={labelY} font-size={LABEL} fill={theme.muted}>
