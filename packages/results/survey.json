@@ -287,7 +287,7 @@
               "section": "TBD5",
               "name": "Does AI affect job ease",
               "dataId": "JobEaseAI",
-              "chart": "bar-stacked",
+              "chart": "sankey",
               "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-ease",
@@ -309,7 +309,7 @@
               "section": "TBD5",
               "name": "Does AI affect job difficulties",
               "dataId": "JobDifficultyAI",
-              "chart": "bar-stacked",
+              "chart": "sankey",
               "description": "",
               "subtext": "",
               "id": "does-ai-affect-job-difficulties",
@@ -346,13 +346,11 @@
           "headline": "33% are not happy at work",
           "description": "Discontent in current working conditions has grown from 28% in 2025 to 33% in 2026, and happy and complacent responses both fell about 2%.",
           "tier": "home",
-          "chart": "3d-waffle-large",
+          "chart": "3d-treemap",
           "dataId": "JobSat",
           "focus": "",
           "limit": "",
-          "values": [
-            "Not Happy at Work"
-          ],
+          "values": [],
           "dataIdSlug": "job-sat"
         },
         {
@@ -360,11 +358,13 @@
           "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
           "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and staffing shortages (14%).",
           "tier": "home",
-          "chart": "3d-cube",
+          "chart": "3d-waffle-medium",
           "dataId": "JobDifficulty",
-          "focus": "Unclear priorities or requirements",
+          "focus": "",
           "limit": "",
-          "values": [],
+          "values": [
+            "Unclear priorities or requirements"
+          ],
           "dataIdSlug": "job-difficulty"
         },
         {
@@ -1523,8 +1523,9 @@
           "limit": "",
           "values": [
             "JavaScript",
-            "SQL",
-            "HTML/CSS"
+            "TypeScript",
+            "Rust",
+            "Go"
           ],
           "dataIdSlug": "languages"
         },
@@ -1533,7 +1534,7 @@
           "headline": "75% have used Anthropic LLMs in the last year, and 49% want to use them; 74% have used OpenAI LLMs, 32% want to use them.",
           "description": "The two companies focused on frontier models are the top two in LLM usage at 74% each. However, that usage doesn’t translate into admiration at the same rate—49% want to use Anthropic LLMs, but only 32% want OpenAI LLMs.",
           "tier": "home",
-          "chart": "stat",
+          "chart": "3d-waffle-large",
           "dataId": "LLM",
           "focus": "",
           "limit": "",
@@ -1628,7 +1629,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "Small scripts are most common for builders to work on",
+          "description": "Small scripts are most common for builders to work on, 19% say they’re building tools to replace paid vendors.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "BuildTool",
@@ -1674,7 +1675,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "The two companies focused on frontier models are the top two in LLM usage at 74% each.",
+          "description": "The two companies focused on frontier models are the top two in LLM usage: Anthropic at 75% and OpenAI at 74%.",
           "tier": "chapter",
           "chart": "2d-treemap",
           "dataId": "LLM",
@@ -1697,7 +1698,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "For all the talk of security work shifting left, only 23% of developers end up touching security tools",
+          "description": "For all the talk of security work shifting left, only 23% of respondents have used security tools in the past year.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "TechDropDown",

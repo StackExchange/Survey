@@ -2,14 +2,10 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-/* mode-watcher owns `.dark` on <html>, applied before first paint.
-
-   `.theme-invert` is a subtree that reads as the opposite of the page: on a light
-   page every `dark:` utility inside it turns on, on a dark page every one turns
-   off. Both halves are needed — the reader chooses the page ground, so a section
-   cannot just be spelled dark. One level deep only; nesting an invert inside an
-   invert is not modelled. */
-@custom-variant dark (&:where(.dark, .dark *):not(.theme-invert, .theme-invert *), &:where(.theme-invert, .theme-invert *):not(.dark *));
+/* mode-watcher owns `.dark` on <html>, applied before first paint. Nothing else
+   sets it — a section that wants to stand out steps its ground with
+   `.theme-tint` (see below) rather than flipping the theme under the reader. */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
 	font-family: 'Stack Sans Text';
@@ -84,8 +80,7 @@
 }
 
 :root,
-.chart-light,
-.dark .theme-invert {
+.chart-light {
 	--chart-bg: var(--color-black-150);
 	--chart-ink: var(--color-black);
 	--chart-muted: var(--color-black-400);
@@ -109,10 +104,13 @@
 	--chart-face-side: var(--color-beige);
 	--chart-ghost: var(--color-black-200);
 
-	/* An 'off' cube's three faces. */
-	--chart-off-top: var(--color-black-300);
-	--chart-off-left: var(--color-black-500);
-	--chart-off-right: var(--color-white);
+	/* An 'off' cube's three faces, before `OFF` washes them back — so they are set
+	   darker than the ghost that comes out. Stepping down towards the page keeps the
+	   top reading as the top; they touch in the medium waffle, and this shading is
+	   the only thing telling one cube from the next. */
+	--chart-off-top: var(--color-black-500);
+	--chart-off-left: var(--color-black-350);
+	--chart-off-right: var(--color-black-250);
 
 	/* Categorical ramp, brand order. Pointed at the tokens rather than repeating
 	   the hexes, so a brand change reaches the charts. */
@@ -124,10 +122,13 @@
 	--chart-series-6: var(--color-orange);
 	--chart-series-7: var(--color-beige);
 	--chart-series-8: var(--color-blue-dark);
+
+	/* A card raised off whatever ground it sits on — not a chart token, but themed
+	   the same way so a card and the figure beside it move together. */
+	--panel: var(--color-white);
 }
 
-.dark,
-.theme-invert {
+.dark {
 	--chart-bg: var(--color-black);
 	--chart-ink: var(--color-white);
 	--chart-muted: var(--color-black-300);
@@ -137,13 +138,62 @@
 
 	--chart-dim: var(--color-black-400);
 
-	/* At 26% over the page, black-500 is all but invisible — the left face needs
-	   lifting or the off cubes read as nothing at all. */
-	--chart-off-left: var(--color-black-400);
+	/* Mirrored: light steps the faces down from the page, dark steps them up off it,
+	   so the top stays the face furthest from the ground either way. Washed at `OFF`
+	   these clear both dark grounds, so the tint below needs no say in them. */
+	--chart-off-top: var(--color-black-200);
+	--chart-off-left: var(--color-black-300);
+	--chart-off-right: var(--color-black-400);
 
 	/* Override these as not readable on dark mode */
 	--chart-series-8: var(--color-blue-light);
 	--chart-on-series-8: var(--color-black);
+
+	--panel: var(--color-black-500);
+}
+
+/* A run of sections that steps its ground one tone away from where it rests while
+   one of them holds the screen, so scrolling reads as moving through a band rather
+   than past a box. Light stays light and dark stays dark — the reader's choice of
+   ground survives, only its tone moves.
+
+   `.theme-ground` is the resting state, `.theme-tint` the held one; invert.svelte
+   toggles the second on the element carrying the first. Contrast pairs that would
+   collapse against the stepped ground are restated here. */
+.theme-ground {
+	background-color: var(--color-black-150);
+	color: var(--color-black);
+}
+
+.theme-ground.theme-tint {
+	background-color: var(--color-blue-extra-light);
+
+	--chart-bg: var(--color-blue-extra-light);
+	--chart-tint: var(--color-white);
+
+	/* Both sit within a shade of the stepped ground and would read as nothing. */
+	--chart-rule: var(--color-blue);
+	--chart-ghost: var(--color-blue-light);
+}
+
+.dark .theme-ground {
+	background-color: var(--color-black-600);
+	color: var(--color-white);
+}
+
+.dark .theme-ground.theme-tint {
+	background-color: var(--color-black-500);
+
+	--chart-bg: var(--color-black-500);
+	--chart-tint: var(--color-black-400);
+
+	/* black-500 is the stepped ground itself; these have to lift off it. */
+	--chart-ghost: var(--color-black-400);
+	--chart-grid: var(--color-black-350);
+
+	/* black-500 is now the ground, so a card cannot also be black-500. It steps
+	   down instead of up — recessed rather than raised, still separated. */
+	--panel: var(--color-black);
 }
 
 @utility container {

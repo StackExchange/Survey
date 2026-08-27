@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cube, CUBE, cubeHeight, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
-	import { chars, clip, descent, OFF, percent, px, shorten, theme } from '$charts/utils/theme'
+	import { descent, OFF, percent, px, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -16,7 +16,6 @@
 	const UNIT_SIZE = 25
 
 	const row = $derived(rowsOf(figure)[0])
-	const short = $derived(shorten(figure))
 	const share = $derived(shareOf(figure))
 
 	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * CELLS)) : 0)

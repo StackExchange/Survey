@@ -1,7 +1,15 @@
 <script lang="ts">
-	// The "1 in X" shape as cubes, butted end to end, every other column dropping half
-	// a cube height so the two interlock. Two rows once there are more than five, so
-	// the field stays wider than it is deep.
+	// The "1 in X" shape as cubes, in two rows climbing away to the right, the lit one
+	// at the near end of the lower row.
+	//
+	// Same field as the large waffle: a column is a whole cube across, a level is half
+	// a cube high, and a cube only ever lands where the two are both even or both odd.
+	// That is what leaves the air between them — laid on the tighter lattice the cubes
+	// share edges and a row of them silts up into one ribbon.
+	//
+	// The rows are built as pairs rather than filled one after the other, so an odd
+	// count leaves them one apart rather than dropping the remainder on the second:
+	// six came out four and two.
 	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
@@ -15,31 +23,39 @@
 	const share = $derived(shareOf(figure))
 	const cells = $derived(oneIn(share))
 
-	const lines = $derived(cells > 5 ? 2 : 1)
-	const columns = $derived(Math.ceil(cells / lines))
-
+	// One column per cube, so the row's whole demand is the count.
 	// Capped, or "1 in 2" draws two cubes half a page wide each.
-	const size = $derived(Math.min(width / columns, width / 5))
-	const lineHeight = $derived(cubeHeight(size))
-	const stagger = $derived(lineHeight / 2)
+	const size = $derived(Math.min(width / cells, width / 5))
+	const half = $derived(cubeHeight(size) / 2)
 
-	// The staggered columns hang half a cube below the last full row.
-	const height = $derived(lines * lineHeight + stagger)
+	const placed = $derived(
+		Array.from({ length: cells }, (_, i) => {
+			const pair = Math.floor(i / 2)
+			const lower = i % 2
 
-	// Index order: nothing overlaps on a grid this tight, so there is no back to
-	// front to paint in.
-	const order = $derived(Array.from({ length: cells }, (_, i) => ({ i, column: i % columns, line: Math.floor(i / columns) })))
+			// The lower of a pair is one column on and one level down — the field's own
+			// step, so the two rows stagger instead of butting together.
+			return { i, column: 2 * pair + lower, level: lower - 2 * pair }
+		})
+	)
+
+	// Nothing overlaps on a field this open, so there is no back to front to paint in.
+	const ceiling = $derived(Math.min(...placed.map((cell) => cell.level)))
+	const floor = $derived(Math.max(...placed.map((cell) => cell.level)))
+	const height = $derived((floor - ceiling) * half + cubeHeight(size))
+	// Centred: a capped `size` leaves the rows short of the column they sit in.
+	const left = $derived((width - cells * size) / 2)
 
 	const enter = (event: PointerEvent) =>
 		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: theme.focus }] }, event)
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
-	{#each order as cell (cell.i)}
+	{#each placed as cell (cell.i)}
 		{@const on = cell.i === 0}
 
 		<g
-			transform={cube(cell.column * size, cell.line * lineHeight + (cell.column % 2) * stagger, size)}
+			transform={cube(left + cell.column * size, (cell.level - ceiling) * half, size)}
 			opacity={on ? 1 : OFF}
 			role="presentation"
 			onpointermove={enter}
