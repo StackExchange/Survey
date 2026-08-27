@@ -27,5 +27,6 @@ question:
       short: Nothing made it harder
     - I’m not sure
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

@@ -18,5 +18,6 @@ question:
     - label: I do not avoid using AI at work or school
       short: I don't avoid AI
     - label: 'Other, please specify:'
+      short: Other
       key: other
       text_entry: true

@@ -64,5 +64,6 @@ question:
     - Visual Basic (.Net)
     - Zig
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

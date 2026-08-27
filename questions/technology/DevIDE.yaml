@@ -43,5 +43,6 @@ question:
     - Xcode
     - Zed
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

@@ -18,5 +18,6 @@ question:
     - label: Multi-platform search enablement
       short: Multi-platform search
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

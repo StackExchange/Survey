@@ -19,6 +19,7 @@ question:
       short: No problems encountered
     - I don’t use AI tools regularly
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

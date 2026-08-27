@@ -44,5 +44,6 @@ question:
       short: Company policy allows it
     - Not sure
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

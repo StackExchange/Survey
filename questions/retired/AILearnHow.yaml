@@ -27,6 +27,7 @@ question:
     - label: Stack Overflow or Stack Exchange
       short: Stack Overflow or Exchange
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

@@ -32,6 +32,7 @@ question:
     - label: Learning new concepts or technologies
       short: Learning new technologies
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

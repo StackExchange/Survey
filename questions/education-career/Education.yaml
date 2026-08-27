@@ -20,5 +20,6 @@ question:
     - label: Professional degree (JD, MD, Ph.D, Ed.D, etc.)
       short: Professional degree
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

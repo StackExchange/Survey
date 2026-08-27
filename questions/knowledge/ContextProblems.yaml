@@ -35,5 +35,6 @@ question:
       short: Usually have what I need
     - Not applicable
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

@@ -40,5 +40,6 @@ question:
     - label: Utilities, internet, or telecommunications
       short: Utilities and telecoms
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

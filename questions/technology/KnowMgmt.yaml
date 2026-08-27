@@ -36,5 +36,6 @@ question:
     - XWiki
     - Zendesk Guide
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

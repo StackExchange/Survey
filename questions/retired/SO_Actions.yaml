@@ -21,6 +21,7 @@ question:
     - Upvote/Downvote Q&A posts
     - Use discussion or chat feature
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

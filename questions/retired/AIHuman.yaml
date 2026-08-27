@@ -25,6 +25,7 @@ question:
     - label: I don’t think I’ll need help from people anymore
       short: Won’t need people anymore
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

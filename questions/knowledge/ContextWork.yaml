@@ -29,5 +29,6 @@ question:
     - label: I do not do anything specific to manage context
       short: Nothing specific
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

@@ -22,5 +22,6 @@ question:
     - Stack Overflow or Stack Exchange
     - Reviewing GitHub projects or existing code repositories
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

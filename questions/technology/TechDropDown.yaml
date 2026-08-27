@@ -37,6 +37,7 @@ question:
       short: Security software
       key: security_software
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
     - label: None of these

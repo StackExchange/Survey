@@ -48,6 +48,7 @@ question:
     - label: UX, Research Ops or UI design professional
       short: UX, research or UI design
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

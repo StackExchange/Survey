@@ -12,5 +12,6 @@ question:
     - Burnout/tech fatigue
     - I do not feel complacent
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

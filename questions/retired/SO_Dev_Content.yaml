@@ -21,6 +21,7 @@ question:
     - label: Day-in-the-life profiles/interviews with experts
       short: Expert profiles and interviews
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
   deprecated: true

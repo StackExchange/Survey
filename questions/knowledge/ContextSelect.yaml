@@ -37,5 +37,6 @@ question:
     - label: I do not usually need additional context
       short: Don't need more context
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
