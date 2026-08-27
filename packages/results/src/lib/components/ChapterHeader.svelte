@@ -78,7 +78,7 @@
 			blockBgClass: `${bg} text-black`,
 			innerClass: 'mx-auto w-full max-w-300 px-6',
 			nameEl: null,
-			wrapClass: `flex flex-col items-stretch justify-end pt-25 ${bg} bg-[url(/img/bg-chapter-hero.svg)] bg-no-repeat bg-cover bg-bottom-right`,
+			wrapClass: `flex flex-col items-stretch justify-end pt-25 ${bg} bg-[url(/img/bg-chapter-hero.svg)] bg-no-repeat bg-size-[50% auto] bg-top-right`,
 			nameClass: '',
 			blockClass: '',
 			sectionClass: '',
