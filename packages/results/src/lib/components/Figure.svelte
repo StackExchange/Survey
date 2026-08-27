@@ -25,10 +25,6 @@
 
 	const open = (event: MouseEvent) => href && openQuestion(event, href)
 
-	// The preview follows the reader's theme; the file it makes stays light, fixed
-	// by `.chart-light` on the off-screen host in $charts/utils/export.
-	const preview = $derived(chrome.brand ? 'chart-preview' : '')
-
 	const Chart = $derived(charts[block.chart as keyof typeof charts])
 
 	let hovered = $state<{ data: TooltipData | null; event?: PointerEvent }>({ data: null })
@@ -45,8 +41,8 @@
 </script>
 
 <figure class="relative flex h-full flex-col">
-	<div class="grow bg-black-150 dark:bg-black-500 {fits}">
-		<div bind:clientWidth={measured} class="[&>svg]:w-full {scales} {floor} {preview}">
+	<div class="chart-ground grow bg-black-150 dark:bg-black-500 {fits}">
+		<div bind:clientWidth={measured} class="[&>svg]:w-full {scales} {floor}">
 			{#if Chart}
 				<ChartRoot chart={Chart} figure={block} width={drawn} {chrome} onhover={(data, event) => (hovered = { data, event })} />
 			{/if}

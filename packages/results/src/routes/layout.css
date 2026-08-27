@@ -148,7 +148,9 @@
 	--panel: var(--color-black-500);
 }
 
-.dark .chart-preview {
+/* `.chart-ground` is the panel a figure paints behind its chart — a step off the
+   page, so the tokens that would vanish against it are restated here. */
+.dark .chart-ground {
 	--chart-bg: var(--color-black-500);
 	--chart-tint: var(--color-black-400);
 	--chart-ghost: var(--color-black-400);
