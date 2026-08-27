@@ -47,24 +47,24 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="group items-start justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
+<div class="group items-center justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10' : ''}">
 	<div class="{tier === 'hero' ? 'col-span-4' : 'col-span-5'} {flip ? '' : 'md:order-last'}">
 		{#if children}
 			{@render children()}
 		{:else if tier === 'hero' && year && chapter}
 			<ChapterHeader {year} {chapter} variant="hero" section={block.section}>
 				<div class="bg-(--panel)">
-				  <div class="p-5">
-  					<h4 class="font-headline text-3xl font-normal">
-              {block.headline}
-            </h4>
-  					{#if block.description}
-  						<div class="md mt-3 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
-  					{/if}
+					<div class="p-5">
+						<h4 class="font-headline text-3xl font-normal">
+							{block.headline}
+						</h4>
+						{#if block.description}
+							<div class="md mt-3 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
+						{/if}
 					</div>
 
 					<a
-						class="flex ml-auto w-fit items-center gap-2 self-end px-4 py-2 bg-black-150 hover:bg-black hover:text-white dark:bg-black-400 dark:hover:bg-orange dark:hover:text-black"
+						class="ml-auto flex w-fit items-center gap-2 self-end bg-black-150 px-4 py-2 hover:bg-black hover:text-white dark:bg-black-400 dark:hover:bg-orange dark:hover:text-black"
 						href={resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug })}
 						onclick={(event) =>
 							openQuestion(event, resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug }))}
@@ -95,7 +95,7 @@
 				<a
 					href={question}
 					onclick={(event) => openQuestion(event, question)}
-					class="absolute text-sm bottom-3 right-3 inline-flex items-center gap-1.5 px-3 py-2 hover:bg-black dark:hover:bg-black-500 hover:text-white"
+					class="absolute right-3 bottom-3 inline-flex items-center gap-1.5 px-3 py-2 text-sm hover:bg-black hover:text-white dark:hover:bg-black-500"
 					aria-label="Permalink: {block.headline}"
 				>
 					Share or cite
