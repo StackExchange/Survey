@@ -1,6 +1,4 @@
 <script lang="ts">
-	// `flatten` in ./utils/chrome.ts stripped the source's own fills, so `fill`
-	// here is the only one that applies — no stylesheet to depend on.
 	import type { Glyph } from '$charts/utils/chrome'
 
 	import { px, theme } from '$charts/utils/theme'
