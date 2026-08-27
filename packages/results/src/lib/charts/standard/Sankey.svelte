@@ -1,40 +1,30 @@
 <script lang="ts">
-	// Flow between two columns of one shared vocabulary, whatever the question asks.
-	// The node set is that vocabulary twice, or d3-sankey builds an 8-column DAG.
 	import type { OnHover } from '$charts/utils/tooltip'
 
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, middle, PAD, px, pxPath, series, shorten, SMALL, theme } from '$charts/utils/theme'
+	import { chars, clip, count, middle, PAD, percent, px, pxPath, series, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	// A strand under the pointer, so the rest drop back and it can be followed.
 	const hover = useHover(() => onhover)
-
-	// One gradient per link, so they need a namespace of their own on the page.
-	const uid = $props.id()
+	const uid = $props.id() // id attribute for SVG gradients
 
 	const NODE_WIDTH = 14
 	const NODE_PADDING = 12
 	const ROW = 60
-	// Room for the column headings, which hang from a baseline.
 	const HEAD = 28
-	// Names sit outside the columns on both sides, so the flow gives up width
-	// at each end rather than the single gutter a row chart needs.
-	const labelWidth = $derived(Math.round(width * 0.17))
+	const labelWidth = $derived(Math.round(width * 0.20))
 
 	const rows = $derived(rowsOf(figure))
 	const short = $derived(shorten(figure))
 
-	// Headings come from the sheet's `Axis Labels`; blank draws none rather than a
-	// made-up one. `columns[].header` is the fallback, minus the generator's
-	// generic names and the figure's own title again — those title nothing.
+	// Axis labels: value set in the content sheet
 	const GENERIC = new Set(['Segment', 'Response'])
 	const headerOf = (key: string) => {
 		const header = figure?.columns?.find((column: any) => column.key === key)?.header
@@ -46,20 +36,19 @@
 		return { left: left || headerOf('response'), right: right || headerOf('series') }
 	})
 
-	// Each heading stops a margin short of the midpoint, or two long ones meet.
 	const headRoom = $derived(chars(width / 2 - PAD * 2, SMALL))
 
-	// One id list spans both columns, so a language keeps its colour across.
+	// One id list spans both columns, so a language keeps its colour
 	const names = $derived([...new Set(rows.flatMap((row: any) => [row.response, row.series]))].filter(Boolean) as string[])
 	const labels = $derived(names.map(short))
 	const idOf = $derived(new Map(names.map((name: string, i: number) => [name, i])))
 
-	// Only the ids a column uses: d3-sankey pushes a link-less node to the far
-	// side, where it lands in the wrong column.
+	// Only the ids a column uses
 	const columns = $derived.by(() => {
 		const sources = new Set(rows.map((row: any) => idOf.get(row.response)))
 		const targets = new Set(rows.map((row: any) => idOf.get(row.series)))
 		const ids = names.map((_: string, i: number) => i)
+
 		return { left: ids.filter((i: number) => sources.has(i)), right: ids.filter((i: number) => targets.has(i)) }
 	})
 
@@ -73,7 +62,6 @@
 		const right = new Map(columns.right.map((id: number, i: number) => [id, columns.left.length + i]))
 		const x0 = labelWidth
 
-		// Generics: the bare overload types nodes as `{}` and rejects these.
 		return layout<{ name: string; label: number }, { value: number }>()
 			.nodeWidth(NODE_WIDTH)
 			.nodePadding(NODE_PADDING)
@@ -81,7 +69,6 @@
 				[x0, HEAD],
 				[Math.max(x0 + NODE_WIDTH * 3, width - labelWidth), HEAD + plotHeight],
 			])({
-			// `label` keeps the shared id, which colours the node.
 			nodes: [...columns.left, ...columns.right].map((id: number) => ({ name: labels[id], label: id })),
 			links: rows.map((row: any) => ({
 				source: left.get(idOf.get(row.response)!),
@@ -92,9 +79,7 @@
 	})
 
 	const link = sankeyLinkHorizontal()
-	// d3 hands back full float precision, and it is drawn twice.
 	const strand = (edge: any) => pxPath(link(edge) ?? '')
-
 	const hue = (node: any) => series(node.label ?? 0)
 
 	const enter = (i: number, edge: any, event: PointerEvent) => {
@@ -104,8 +89,8 @@
 				title: `${edge.source.name} → ${edge.target.name}`,
 				rows: [
 					{ value: count(edge.value), label: 'respondents', color: hue(edge.source) },
-					// This strand's share of everyone who worked with the source.
-					{ value: `${Math.round((edge.value / Math.max(1, edge.source.value)) * 100)}%`, label: `of ${edge.source.name} users` },
+					// This strand's share of everyone in the source node.
+					{ value: percent(edge.value / Math.max(1, edge.source.value)), label: `of ${edge.source.name} users` },
 				],
 			},
 			event
@@ -154,7 +139,6 @@
 			/>
 		{/each}
 
-		<!-- Hit strokes over the lot: most strands are a pixel or two thick. -->
 		{#each graph.links as edge, i (i)}
 			<path
 				d={strand(edge)}
