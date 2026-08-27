@@ -1,37 +1,42 @@
 <script lang="ts">
-	// "1 in X" as cubes, in two rows climbing away to the right.
+	// "1 in X" as cubes: the large waffle's slab, two deep, with the long axis
+	// negated so it climbs away to the right where that one descends.
 	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, theme } from '$charts/utils/theme'
 	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
+	const SHORT = 2
+
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
-	const rows = $derived(rowsOf(figure))
-	const row = $derived(rows[0])
+	const row = $derived(rowsOf(figure)[0])
 	const share = $derived(shareOf(figure))
 	const cells = $derived(oneIn(share))
 
-	// Capped, or "1 in 2" draws two cubes half a page wide each.
-	const size = $derived(Math.min(width / cells, width / 5))
-	const half = $derived(cubeHeight(size) / 2)
+	const long = $derived(Math.ceil(cells / SHORT))
 
 	const placed = $derived(
-		Array.from({ length: cells }, (_, i) => {
-			const pair = Math.floor(i / 2)
-			const lower = i % 2
+		Array.from({ length: long * SHORT }, (_, i) => {
+			const a = i % long
+			const b = Math.floor(i / long)
 
-			// The lower of a pair is one column on and one level down — the field's own
-			// step, so the two rows stagger instead of butting together.
-			return { i, column: 2 * pair + lower, level: lower - 2 * pair }
+			return { column: a + b, level: long - 1 - a + b }
 		})
+			.sort((p, q) => p.column - q.column || p.level - q.level)
+			.slice(0, cells)
+			.map((cell, i) => ({ ...cell, i }))
 	)
 
-	const ceiling = $derived(Math.min(...placed.map((cell) => cell.level)))
-	const floor = $derived(Math.max(...placed.map((cell) => cell.level)))
-	const height = $derived((floor - ceiling) * half + cubeHeight(size))
-	const left = $derived((width - cells * size) / 2)
+	const span = $derived(placed[placed.length - 1].column + 1)
+
+	// Capped, or "1 in 2" draws two cubes half a page wide each.
+	const size = $derived(Math.min(width / span, width / 5))
+	const half = $derived(cubeHeight(size) / 2)
+
+	const height = $derived(long * half + cubeHeight(size))
+	const left = $derived((width - span * size) / 2)
 
 	const enter = (event: PointerEvent) =>
 		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: theme.focus }] }, event)
@@ -42,7 +47,7 @@
 		{@const on = cell.i === 0}
 
 		<g
-			transform={cube(left + cell.column * size, (cell.level - ceiling) * half, size)}
+			transform={cube(left + cell.column * size, cell.level * half, size)}
 			opacity={on ? 1 : OFF}
 			role="presentation"
 			onpointermove={enter}
