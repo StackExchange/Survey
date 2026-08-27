@@ -3,7 +3,7 @@
 
 	import { amountOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, descent, DIM, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
+	import { chars, clip, descent, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 	import { HIT } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -67,15 +67,13 @@
 		>
 			<rect x={-half} y={px(-(len + nose))} width={px(Math.max(column, HIT))} height={px(len + nose * 2)} fill="transparent" />
 
-			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
-				<rect x={-half} y={px(-len)} width={half} height={len} fill={theme.focus} />
-				<rect x="0" y={px(-len)} width={half} height={len} fill={theme.rest} />
+			<rect x={-half} y={px(-len)} width={half} height={len} fill={theme.focus} />
+			<rect x="0" y={px(-len)} width={half} height={len} fill={theme.rest} />
 
-				<path d={diamond} transform="translate(0 {px(-len)})" fill={theme.accent} />
+			<path d={diamond} transform="translate(0 {px(-len)})" fill={theme.accent} />
 
-				<path d={baseLeft} fill={theme.focus} />
-				<path d={baseRight} fill={theme.rest} />
-			</g>
+			<path d={baseLeft} fill={theme.focus} />
+			<path d={baseRight} fill={theme.rest} />
 
 			<text
 				transform="translate({nameX} {nameY}) rotate(-90) skewX({LEAN})"
