@@ -18,6 +18,7 @@ import WaffleMedium3d from './3d/WaffleMedium.svelte'
 import Bar from './standard/Bar.svelte'
 import BarClustered from './standard/BarClustered.svelte'
 import BarStacked from './standard/BarStacked.svelte'
+import BarVertical from './standard/BarVertical.svelte'
 import Dumbbell from './standard/Dumbbell.svelte'
 import Sankey from './standard/Sankey.svelte'
 import Scatter from './standard/Scatter.svelte'
@@ -29,6 +30,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	bar: Bar,
 	'bar-stacked': BarStacked,
 	'bar-clustered': BarClustered,
+	'bar-vertical': BarVertical,
 	dumbbell: Dumbbell,
 	scatter: Scatter,
 	sankey: Sankey,
@@ -54,4 +56,4 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 }
 
 // Which ids answer the "scale to the largest value" option: `useDomain()` callers.
-export const SCALABLE = new Set(['bar', 'bar-clustered', 'dumbbell'])
+export const SCALABLE = new Set(['bar', 'bar-clustered', 'bar-vertical', 'dumbbell'])

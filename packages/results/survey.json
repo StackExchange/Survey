@@ -350,7 +350,7 @@
               "section": "TBD5",
               "name": "Count of tools used",
               "dataId": "ToolCount",
-              "chart": "bar",
+              "chart": "bar-vertical",
               "description": "",
               "subtext": "",
               "axisLabels": [],
