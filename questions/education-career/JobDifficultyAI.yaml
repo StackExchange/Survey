@@ -7,10 +7,14 @@ question:
   scale:
     multiple: false
     columns:
-      - Yes, AI or AI agents were the main reason
-      - Yes, AI or AI agents contributed, but were not the main reason
-      - No, AI or AI agents were not a reason
-      - I’m not sure
+      - label: Yes, AI or AI agents were the main reason
+        short: AI was the main reason
+      - label: Yes, AI or AI agents contributed, but were not the main reason
+        short: AI contributed
+      - label: No, AI or AI agents were not a reason
+        short: AI was not a reason
+      - label: I’m not sure
+        short: Not sure
   carry_forward:
     from: JobDifficulty
     include_text_entry: true

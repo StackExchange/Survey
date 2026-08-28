@@ -11,7 +11,7 @@ question:
     - AI/ML engineer
     - Applied scientist
     - label: Architect, software or solutions
-      short: Architect
+      short: SW/Sol. Architect
     - label: Cloud infrastructure engineer
       short: Cloud infrastructure
     - label: Cybersecurity or InfoSec professional
@@ -46,8 +46,7 @@ question:
       short: DevOps
     - label: Educator or instructor
       short: Educator
-    - label: Engineering manager
-      short: Eng manager
+    - Engineering manager
     - label: Financial analyst or engineer
       short: Finance
     - label: Founder or entrepreneur

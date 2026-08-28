@@ -20,7 +20,7 @@ question:
     - label: Enough time, staffing, or resources
       short: Enough time and staffing
     - label: Leadership activity or organizational changes
-      short: Leadership or org changes
+      short: Leadership/org changes
     - label: Better processes, workflows, or coordination
       short: Better processes
     - label: Nothing has made my job easier in the past 6 months
