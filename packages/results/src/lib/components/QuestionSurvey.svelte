@@ -11,10 +11,10 @@
 </script>
 
 <script lang="ts">
-	let { definition }: { definition: any; name: string } = $props()
+	let { definition }: { definition: any } = $props()
 </script>
 
-<div class="relative bg-blue-extra-light p-4 dark:bg-blue-light dark:text-black">
+<div class="relative bg-blue-extra-light p-4 not-last:mb-2 dark:bg-blue-light dark:text-black">
 	<div class="md text-sm">{@html definition.titleHtml}</div>
 
 	<ul class="mt-2 flex flex-wrap text-xs text-black-400">

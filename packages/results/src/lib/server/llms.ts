@@ -83,13 +83,18 @@ function nLine(demographic: any) {
 	return `n = ${respondents(demographic?.n)}${share ? ` (${share})` : ''}`
 }
 
-// From the bank where it resolves, the export otherwise.
+// From the bank where it resolves, the export otherwise. A derived cut names every
+// question it was built from.
 function asked(block: any) {
-	const d = block.definition
-	if (!d) return `Asked as: ${block.question} (\`${block.dataId}\`)`
+	const found = block.definitions ?? []
+	if (!found.length) return `Asked as: ${block.question} (\`${block.dataId}\`)`
 
-	const meta = [`\`${d.id}\``, d.type.replace(/_/g, ' '), d.required ? 'required' : 'optional', `v${d.version}`]
-	return `Asked as: ${d.title} (${meta.join(', ')})`
+	return found
+		.map((d: any) => {
+			const meta = [`\`${d.id}\``, d.type.replace(/_/g, ' '), d.required ? 'required' : 'optional', `v${d.version}`]
+			return `Asked as: ${d.title} (${meta.join(', ')})`
+		})
+		.join('\n')
 }
 
 // Every line prefixed, the blank one included: a bare blank line would close the
@@ -230,10 +235,10 @@ function questionPage(page: PageRef, chapterId: string, slug: string) {
 		`# ${question.name}`,
 		question.description,
 		asked(question),
-		question.definition?.options &&
+		question.definitions?.[0]?.options &&
 			join(
 				'## Options offered',
-				question.definition.options
+				question.definitions[0].options
 					.map(
 						(o: any, i: number) =>
 							`${i + 1}. ${typeof o === 'string' ? o : o.label}${typeof o !== 'string' && o.text_entry ? ' (with free-text entry)' : ''}`

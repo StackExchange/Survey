@@ -82,15 +82,19 @@
 	const strand = (edge: any) => pxPath(link(edge) ?? '')
 	const hue = (node: any) => series(node.label ?? 0)
 
+	// A node draws its short name; a tooltip says the response in full, as every
+	// other chart does.
+	const full = (node: any) => names[node.label] ?? node.name
+
 	const enter = (i: number, edge: any, event: PointerEvent) => {
 		hover.enter(
 			i,
 			{
-				title: `${edge.source.name} → ${edge.target.name}`,
+				title: `${full(edge.source)} → ${full(edge.target)}`,
 				rows: [
 					{ value: count(edge.value), label: 'respondents', color: hue(edge.source) },
 					// This strand's share of everyone in the source node.
-					{ value: percent(edge.value / Math.max(1, edge.source.value)), label: `of ${edge.source.name} users` },
+					{ value: percent(edge.value / Math.max(1, edge.source.value)), label: `of ${full(edge.source)} users` },
 				],
 			},
 			event

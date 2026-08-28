@@ -29,7 +29,7 @@
 
 	let chosen = $state<{ question: string; id: string } | null>(null)
 	const figure = $derived({ ...data.question, ...current })
-	const definition = $derived(figure.definition)
+	const definitions = $derived(figure.definitions ?? [])
 	const demographics = $derived(data.question.demographics)
 	const fallback = $derived(demographics[0])
 
@@ -146,13 +146,13 @@
 
 	<div class="border-t border-black-200 py-10 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" id="data">
-			<h2 id="asked" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+			<h2 id="asked" class="inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
-				Question
+				{definitions.length > 1 ? 'Questions' : 'Question'}
 			</h2>
 
-			{#if definition}
-				<div aria-labelledby="asked" class="mb-4 max-w-3xl *:mb-4 font-headline text-2xl">
+			{#each definitions as definition (definition.id)}
+				<div aria-labelledby="asked" class="max-w-3xl font-headline text-2xl *:mb-4 not-first:mt-8">
 					{@html definition.titleHtml}
 				</div>
 
@@ -161,36 +161,36 @@
 						<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
 					{/each}
 				</ul>
-			{/if}
+			{/each}
 
 			<div class="-mx-2 my-8"><DataTable {figure} /></div>
 
-			<div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-8">
-				{#if definition?.options?.length}
-					<details>
-						<summary class="w-fit cursor-pointer text-sm">
-							{definition.options.length} options offered<span class="sr-only">: {data.question.name}</span>
-						</summary>
-						<ol class="mt-3 max-h-120 list-decimal gap-x-10 overflow-y-auto pl-5 text-sm md:columns-2">
-							{#each definition.options as option, i (i)}
-								<li class="break-inside-avoid">
-									{optionLabel(option)}{#if optionFreeText(option)}
-										<span class="text-black-400 dark:text-black-300">(with free-text entry)</span>{/if}
-								</li>
-							{/each}
-						</ol>
-					</details>
-				{/if}
+			{#each definitions as definition (definition.id)}
+				<div class="flex flex-col gap-6 not-first:mt-6 sm:flex-row sm:justify-between sm:gap-8">
+					{#if definition.options?.length}
+						<details>
+							<summary class="w-fit cursor-pointer text-sm">
+								{definition.options.length} options offered<span class="sr-only">: {definition.id}</span>
+							</summary>
+							<ol class="mt-3 max-h-120 list-decimal gap-x-10 overflow-y-auto pl-5 text-sm md:columns-2">
+								{#each definition.options as option, i (i)}
+									<li class="break-inside-avoid">
+										{optionLabel(option)}{#if optionFreeText(option)}
+											<span class="text-black-400 dark:text-black-300">(with free-text entry)</span>{/if}
+									</li>
+								{/each}
+							</ol>
+						</details>
+					{/if}
 
-				{#if definition}
 					<p class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
 						<Button variant="link" href={askedInContext(definition)} label="View in survey" iconEnd={IconArrowRight} />
 						{#if definition.source}
 							<Button variant="link" href={askedSource(definition)} label="Question definition (.yaml)" iconEnd={IconArrowRight} />
 						{/if}
 					</p>
-				{/if}
-			</div>
+				</div>
+			{/each}
 		</section>
 	</div>
 

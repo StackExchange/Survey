@@ -47,7 +47,7 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="group justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'py-10 items-center' : ''}">
+<div class="group justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'items-center py-10' : ''}">
 	<div class="{tier === 'hero' ? 'col-span-4' : 'col-span-5'} {flip ? '' : 'md:order-last'}">
 		{#if children}
 			{@render children()}

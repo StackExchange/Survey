@@ -121,7 +121,7 @@ export function toJson(figure: any, { year, url }: { year?: string | number; url
 	return {
 		question: titleOf(figure),
 		dataId: figure?.dataId ?? null,
-		asked: figure?.definition?.title ?? null,
+		asked: figure?.definitions?.[0]?.title ?? null,
 		year: year ?? null,
 		url: url ?? null,
 		demographic: figure?.demographic ?? null,

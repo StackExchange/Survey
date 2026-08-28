@@ -107,15 +107,16 @@
 								<div class="md text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
 							{/if}
 
-							{#if shown.definition}
-								{@const definition = shown.definition}
-
+							{#if shown.definitions?.length}
 								<div class="relative mt-auto pt-6">
 									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-light dark:text-black">
 										<Icon src={IconQuestion} />
-										Question
+										{shown.definitions.length > 1 ? 'Questions' : 'Question'}
 									</h4>
-									<QuestionSurvey {definition} />
+
+									{#each shown.definitions as definition (definition.id)}
+										<QuestionSurvey {definition} />
+									{/each}
 								</div>
 							{/if}
 						</header>

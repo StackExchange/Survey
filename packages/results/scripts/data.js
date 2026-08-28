@@ -181,10 +181,9 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions))
 	if (!groups.length) return ctx.fail(`${where}: "${dataId}" declares no slices`)
 
-	// The first is the primary: it's the one everything printing a single question
-	// reads. The rest are here for their shorts, and nothing prints them yet.
+	// In `qname` order: the first is the primary, and the one place that still prints
+	// a single question reads it.
 	const definitions = definitionsOf(ctx.bank, question.meta?.qname)
-	const definition = definitions[0] ?? null
 	const rows = groups[0].data
 	const axes = chart === 'scatter' ? axesFor(rows) : null
 
@@ -200,7 +199,7 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	return {
 		dataId,
 		question: question.meta?.question ?? null,
-		definition,
+		definitions,
 		columns: columnsFor(rows, title),
 		value: valueFor(rows),
 		axes,
