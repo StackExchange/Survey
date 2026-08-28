@@ -146,6 +146,29 @@ function groupOf(question, slice, at, completions) {
 	}
 }
 
+// The questions a dataset was built from — `qname` carries one or several.
+const definitionsOf = (bank, qname) =>
+	[qname]
+		.flat()
+		.filter(Boolean)
+		.map((name) => bank[name])
+		.filter(Boolean)
+
+// Every place those questions keep a `short`, own copy last. A scale's rows are the
+// labels of whatever it carries them forward from, so its shorts name them too.
+function shortsOf(bank, definitions) {
+	return Object.fromEntries(
+		definitions
+			.flatMap((definition) => {
+				const carried = definition.carry_forward?.from ? bank[definition.carry_forward.from] : null
+				return [carried?.options, definition.options, definition.scale?.columns]
+			})
+			.flat()
+			.filter((option) => option?.short)
+			.map((option) => [option.label, option.short])
+	)
+}
+
 // Everything a figure derives from the data, with no sheet copy attached — a
 // question adds its Questions row, a promoted figure its Features row.
 function resolve(ctx, chapterId, dataId, where, chart, title) {
@@ -158,7 +181,10 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions))
 	if (!groups.length) return ctx.fail(`${where}: "${dataId}" declares no slices`)
 
-	const definition = ctx.bank[question.meta?.qname] ?? null
+	// The first is the primary: it's the one everything printing a single question
+	// reads. The rest are here for their shorts, and nothing prints them yet.
+	const definitions = definitionsOf(ctx.bank, question.meta?.qname)
+	const definition = definitions[0] ?? null
 	const rows = groups[0].data
 	const axes = chart === 'scatter' ? axesFor(rows) : null
 
@@ -167,7 +193,7 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	}
 
 	// `response -> short` for the strings this figure draws, from the question bank.
-	const asked = Object.fromEntries((definition?.options ?? []).filter((o) => o?.short).map((o) => [o.label, o.short]))
+	const asked = shortsOf(ctx.bank, definitions)
 	const shorts = {}
 	for (const row of question.data) for (const v of [row.response, row.series]) if (asked[v]) shorts[v] = asked[v]
 

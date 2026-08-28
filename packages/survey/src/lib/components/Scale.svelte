@@ -13,7 +13,13 @@
 
 	let { question }: { question: Question } = $props()
 	const rows = $derived(resolveRows(question))
-	const cols = $derived((question.scale?.columns ?? []).map((label) => ({ key: snakeCase(label), label })))
+	// A column may carry a `short` for the results site; only `label` is ever shown.
+	const cols = $derived(
+		(question.scale?.columns ?? []).map((column) => {
+			const label = typeof column === 'string' ? column : column.label
+			return { key: snakeCase(label), label }
+		})
+	)
 	const multiple = $derived(question.scale?.multiple ?? false)
 	const value = $derived((answers[question.id] as Record<string, string | string[]> | undefined) ?? {})
 
