@@ -57,7 +57,6 @@
 
 	const axisLabels = $derived(figure.axisLabels ?? [])
 
-
 	const scale = $derived(value ? Math.max(1, ...rows.map(amount)) : domain(rows.map(amount)))
 
 	const tick = (measure: number) => (value ? `${value.unit ?? ''}${count(measure)}` : `${Math.round(measure * 100)}%`)
@@ -80,7 +79,7 @@
 
 	const widest = $derived(Math.max(0, ...rows.map((row: any) => textWidth(short(row.response), SMALL))))
 	const every = $derived(Math.max(1, Math.ceil((widest + GAP) / Math.max(column, 1))))
-	const values = $derived(Math.max(0, ...rows.map((row: any) => digitsWidth(format(row), SMALL))) + GAP <= column)
+	const values = $derived(Math.max(0, ...rows.map((row: any) => digitsWidth(format(row), SMALL))) + COLUMN_GAP <= column)
 
 	const yGrid = $derived(yTicks.map((measure) => plotHeight - up(measure)))
 
