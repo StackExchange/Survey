@@ -487,85 +487,6 @@
       }
     ]
   },
-  "EmploymentAddl": {
-    "meta": {
-      "qid": "QID7",
-      "qname": "EmploymentAddl",
-      "question": "<p>In addition to your main employment, which of the following other current work, school, or life responsibilities are you currently engaged in?<\/p>",
-      "slices": [
-        {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
-          "n": 28099
-        }
-      ]
-    },
-    "data": [
-      {
-        "slice": 0,
-        "series": null,
-        "response": "None of the above",
-        "count": 11528,
-        "pct": 0.4103
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Caring for dependents (children, elderly, etc.)",
-        "count": 5178,
-        "pct": 0.1843
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Engaged in paid work (20-29 hours per week)",
-        "count": 4921,
-        "pct": 0.1751
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Volunteering (regularly)",
-        "count": 3419,
-        "pct": 0.1217
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Attending school (full-time)",
-        "count": 3277,
-        "pct": 0.1166
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Engaged in paid work (less than 10 hours per week)",
-        "count": 1929,
-        "pct": 0.0687
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Attending school (part-time)",
-        "count": 1611,
-        "pct": 0.0573
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Engaged in paid work (10-19 hours per week)",
-        "count": 1322,
-        "pct": 0.047
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Transitioning to retirement (gradually reducing work hours)",
-        "count": 713,
-        "pct": 0.0254
-      }
-    ]
-  },
   "ICorPM": {
     "meta": {
       "qid": "QID8",
@@ -2173,218 +2094,6 @@
       }
     ]
   },
-  "JobEaseAI": {
-    "meta": {
-      "qid": "QID103",
-      "qname": "JobEaseAI",
-      "question": "<p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
-      "slices": [
-        {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
-          "n": 13006
-        }
-      ]
-    },
-    "data": [
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Access to the right tools or platforms",
-        "count": 14,
-        "pct": 0.0038
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Access to the right tools or platforms",
-        "count": 213,
-        "pct": 0.0574
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Access to the right tools or platforms",
-        "count": 968,
-        "pct": 0.2606
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Access to the right tools or platforms",
-        "count": 2493,
-        "pct": 0.6712
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Better processes, workflows, or coordination",
-        "count": 17,
-        "pct": 0.0135
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Better processes, workflows, or coordination",
-        "count": 475,
-        "pct": 0.3782
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Better processes, workflows, or coordination",
-        "count": 508,
-        "pct": 0.4045
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Better processes, workflows, or coordination",
-        "count": 242,
-        "pct": 0.1927
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Clear priorities or requirements",
-        "count": 25,
-        "pct": 0.019
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Clear priorities or requirements",
-        "count": 840,
-        "pct": 0.6393
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Clear priorities or requirements",
-        "count": 369,
-        "pct": 0.2808
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Clear priorities or requirements",
-        "count": 73,
-        "pct": 0.0556
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Enough time, staffing, or resources",
-        "count": 29,
-        "pct": 0.0267
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Enough time, staffing, or resources",
-        "count": 558,
-        "pct": 0.5129
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Enough time, staffing, or resources",
-        "count": 374,
-        "pct": 0.3438
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Enough time, staffing, or resources",
-        "count": 117,
-        "pct": 0.1075
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Helpful documentation or knowledge sharing",
-        "count": 13,
-        "pct": 0.0169
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Helpful documentation or knowledge sharing",
-        "count": 314,
-        "pct": 0.4089
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Helpful documentation or knowledge sharing",
-        "count": 313,
-        "pct": 0.4076
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Helpful documentation or knowledge sharing",
-        "count": 119,
-        "pct": 0.1549
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Reliable systems, infrastructure, or environments",
-        "count": 12,
-        "pct": 0.0162
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Reliable systems, infrastructure, or environments",
-        "count": 349,
-        "pct": 0.471
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Reliable systems, infrastructure, or environments",
-        "count": 250,
-        "pct": 0.3374
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Reliable systems, infrastructure, or environments",
-        "count": 124,
-        "pct": 0.1673
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Supportive teammates, managers, or mentors",
-        "count": 57,
-        "pct": 0.0179
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Supportive teammates, managers, or mentors",
-        "count": 2113,
-        "pct": 0.6622
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Supportive teammates, managers, or mentors",
-        "count": 847,
-        "pct": 0.2654
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Supportive teammates, managers, or mentors",
-        "count": 147,
-        "pct": 0.0461
-      }
-    ]
-  },
   "JobDifficulty": {
     "meta": {
       "qid": "QID27",
@@ -2475,218 +2184,6 @@
         "response": "Lack of access to the right tools or platforms",
         "count": 507,
         "pct": 0.0278
-      }
-    ]
-  },
-  "JobDifficultyAI": {
-    "meta": {
-      "qid": "QID104",
-      "qname": "JobDifficultyAI",
-      "question": "<p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
-      "slices": [
-        {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
-          "n": 13346
-        }
-      ]
-    },
-    "data": [
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Inefficient processes, workflows, or coordination",
-        "count": 61,
-        "pct": 0.0229
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Inefficient processes, workflows, or coordination",
-        "count": 1812,
-        "pct": 0.6817
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Inefficient processes, workflows, or coordination",
-        "count": 560,
-        "pct": 0.2107
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Inefficient processes, workflows, or coordination",
-        "count": 205,
-        "pct": 0.0771
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Lack of access to the right tools or platforms",
-        "count": 18,
-        "pct": 0.0355
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Lack of access to the right tools or platforms",
-        "count": 282,
-        "pct": 0.5562
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Lack of access to the right tools or platforms",
-        "count": 109,
-        "pct": 0.215
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Lack of access to the right tools or platforms",
-        "count": 90,
-        "pct": 0.1775
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Lack of support from teammates, managers, or mentors",
-        "count": 27,
-        "pct": 0.0355
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Lack of support from teammates, managers, or mentors",
-        "count": 517,
-        "pct": 0.6794
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Lack of support from teammates, managers, or mentors",
-        "count": 143,
-        "pct": 0.1879
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Lack of support from teammates, managers, or mentors",
-        "count": 62,
-        "pct": 0.0815
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Not enough time, staffing, or resources",
-        "count": 98,
-        "pct": 0.0382
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Not enough time, staffing, or resources",
-        "count": 1753,
-        "pct": 0.6832
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Not enough time, staffing, or resources",
-        "count": 511,
-        "pct": 0.1991
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Not enough time, staffing, or resources",
-        "count": 192,
-        "pct": 0.0748
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Poor documentation or knowledge sharing",
-        "count": 62,
-        "pct": 0.048
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Poor documentation or knowledge sharing",
-        "count": 869,
-        "pct": 0.6726
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Poor documentation or knowledge sharing",
-        "count": 229,
-        "pct": 0.1772
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Poor documentation or knowledge sharing",
-        "count": 123,
-        "pct": 0.0952
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Unclear priorities or requirements",
-        "count": 126,
-        "pct": 0.0416
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Unclear priorities or requirements",
-        "count": 2084,
-        "pct": 0.688
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Unclear priorities or requirements",
-        "count": 597,
-        "pct": 0.1971
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Unclear priorities or requirements",
-        "count": 202,
-        "pct": 0.0667
-      },
-      {
-        "slice": 0,
-        "series": "I’m not sure",
-        "response": "Unreliable systems, infrastructure, or environments",
-        "count": 85,
-        "pct": 0.0558
-      },
-      {
-        "slice": 0,
-        "series": "No, AI or AI agents were not a reason",
-        "response": "Unreliable systems, infrastructure, or environments",
-        "count": 832,
-        "pct": 0.5463
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents contributed, but were not the main reason",
-        "response": "Unreliable systems, infrastructure, or environments",
-        "count": 344,
-        "pct": 0.2259
-      },
-      {
-        "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Unreliable systems, infrastructure, or environments",
-        "count": 253,
-        "pct": 0.1661
       }
     ]
   },
@@ -3356,16 +2853,347 @@
       }
     ]
   },
-  "CF_JobEaseAI": {
+  "EmploymentAddl": {
+    "meta": {
+      "qid": "QID7",
+      "qname": "EmploymentAddl",
+      "question": "<p>In addition to your main employment, which of the following other current work, school, or life responsibilities are you currently engaged in?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 28099
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "None of the above",
+        "response": "Employed",
+        "count": 8763,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Caring for dependents (children, elderly, etc.)",
+        "response": "Employed",
+        "count": 3954,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (20-29 hours per week)",
+        "response": "Employed",
+        "count": 3441,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (full-time)",
+        "response": "Student",
+        "count": 2274,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Volunteering (regularly)",
+        "response": "Employed",
+        "count": 1994,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "None of the above",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 1366,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (20-29 hours per week)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 1085,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (less than 10 hours per week)",
+        "response": "Employed",
+        "count": 1031,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "None of the above",
+        "response": "Not employed",
+        "count": 939,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (part-time)",
+        "response": "Employed",
+        "count": 916,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Caring for dependents (children, elderly, etc.)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 876,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (full-time)",
+        "response": "Employed",
+        "count": 646,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Volunteering (regularly)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 641,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (10-19 hours per week)",
+        "response": "Employed",
+        "count": 609,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (less than 10 hours per week)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 468,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (10-19 hours per week)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 407,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Volunteering (regularly)",
+        "response": "Student",
+        "count": 367,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Transitioning to retirement (gradually reducing work hours)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 324,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (part-time)",
+        "response": "Student",
+        "count": 311,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (20-29 hours per week)",
+        "response": "Student",
+        "count": 308,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (less than 10 hours per week)",
+        "response": "Student",
+        "count": 281,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "None of the above",
+        "response": "Retired",
+        "count": 260,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (part-time)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 256,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Transitioning to retirement (gradually reducing work hours)",
+        "response": "Employed",
+        "count": 240,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (full-time)",
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 232,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (10-19 hours per week)",
+        "response": "Student",
+        "count": 229,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Volunteering (regularly)",
+        "response": "Not employed",
+        "count": 227,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Caring for dependents (children, elderly, etc.)",
+        "response": "Not employed",
+        "count": 209,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "None of the above",
+        "response": "Student",
+        "count": 200,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Volunteering (regularly)",
+        "response": "Retired",
+        "count": 190,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (less than 10 hours per week)",
+        "response": "Not employed",
+        "count": 115,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (full-time)",
+        "response": "Not employed",
+        "count": 114,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (part-time)",
+        "response": "Not employed",
+        "count": 111,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Transitioning to retirement (gradually reducing work hours)",
+        "response": "Retired",
+        "count": 80,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Caring for dependents (children, elderly, etc.)",
+        "response": "Retired",
+        "count": 75,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (20-29 hours per week)",
+        "response": "Not employed",
+        "count": 67,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Caring for dependents (children, elderly, etc.)",
+        "response": "Student",
+        "count": 64,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (10-19 hours per week)",
+        "response": "Not employed",
+        "count": 57,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Transitioning to retirement (gradually reducing work hours)",
+        "response": "Not employed",
+        "count": 44,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (less than 10 hours per week)",
+        "response": "Retired",
+        "count": 34,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Transitioning to retirement (gradually reducing work hours)",
+        "response": "Student",
+        "count": 25,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (10-19 hours per week)",
+        "response": "Retired",
+        "count": 20,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Engaged in paid work (20-29 hours per week)",
+        "response": "Retired",
+        "count": 20,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (part-time)",
+        "response": "Retired",
+        "count": 17,
+        "pct": null
+      },
+      {
+        "slice": 0,
+        "series": "Attending school (full-time)",
+        "response": "Retired",
+        "count": 11,
+        "pct": null
+      }
+    ]
+  },
+  "JobEaseAI": {
     "meta": {
       "qid": "QID103",
-      "qname": "CF_JobEaseAI",
+      "qname": "JobEaseAI",
       "question": "<p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 13006
+          "n": 11973
         }
       ]
     },
@@ -3568,16 +3396,16 @@
       }
     ]
   },
-  "CF_JobDifficultyAI": {
+  "JobDifficultyAI": {
     "meta": {
       "qid": "QID104",
-      "qname": "CF_JobDifficultyAI",
+      "qname": "JobDifficultyAI",
       "question": "<p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 13346
+          "n": 12246
         }
       ]
     },
@@ -3745,15 +3573,15 @@
       },
       {
         "slice": 0,
-        "series": "Yes, AI or AI agents were the main reason",
-        "response": "Lack of support from teammates, managers, or mentors",
+        "series": "I’m not sure",
+        "response": "Poor documentation or knowledge sharing",
         "count": 62,
         "pct": null
       },
       {
         "slice": 0,
-        "series": "I’m not sure",
-        "response": "Poor documentation or knowledge sharing",
+        "series": "Yes, AI or AI agents were the main reason",
+        "response": "Lack of support from teammates, managers, or mentors",
         "count": 62,
         "pct": null
       },
