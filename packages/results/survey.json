@@ -1,10 +1,10 @@
 {
   "settings": {
     "year": "2026",
-    "description": "Over XXXX developers told us how they learn, build, and work.",
+    "description": "Over 30,000 developers, students and knowledge workers told us how they learn, build, and work.",
     "descriptionLong": "Now in it’s sixteenth year the annual Developer Survey provides a crucial snapshot into the needs of the global developer community, focusing on the tools and technologies they use or indeed don’t.",
     "eyebrow": "It’s back and it’s bigger than ever",
-    "respondents": "12345"
+    "respondents": "30,903"
   },
   "chapters": [
     {
@@ -15,25 +15,13 @@
       "sections": [
         {
           "chapter": "Work",
-          "name": "TBD1",
+          "name": "What and where work happens",
           "description": "",
-          "id": "tbd-1",
+          "id": "what-and-where-work-happens",
           "questions": [
             {
               "chapter": "Work",
-              "section": "TBD1",
-              "name": "Age",
-              "dataId": "Age",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "age",
-              "dataIdSlug": "age"
-            },
-            {
-              "chapter": "Work",
-              "section": "TBD1",
+              "section": "What and where work happens",
               "name": "Relationship to coding",
               "dataId": "CodeMain",
               "chart": "bar",
@@ -45,7 +33,7 @@
             },
             {
               "chapter": "Work",
-              "section": "TBD1",
+              "section": "What and where work happens",
               "name": "Work environment",
               "dataId": "Education",
               "chart": "bar",
@@ -57,7 +45,7 @@
             },
             {
               "chapter": "Work",
-              "section": "TBD1",
+              "section": "What and where work happens",
               "name": "Employment status",
               "dataId": "Employment",
               "chart": "bar",
@@ -69,19 +57,22 @@
             },
             {
               "chapter": "Work",
-              "section": "TBD1",
-              "name": "Gender",
-              "dataId": "Gender",
-              "chart": "bar",
+              "section": "What and where work happens",
+              "name": "Employment additional status",
+              "dataId": "EmploymentAddl",
+              "chart": "sankey",
               "description": "",
               "subtext": "",
-              "axisLabels": [],
-              "id": "gender",
-              "dataIdSlug": "gender"
+              "axisLabels": [
+                "Employment Status",
+                "Additional Jobs"
+              ],
+              "id": "employment-additional-status",
+              "dataIdSlug": "employment-addl"
             },
             {
               "chapter": "Work",
-              "section": "TBD1",
+              "section": "What and where work happens",
               "name": "Country",
               "dataId": "Country",
               "chart": "table",
@@ -90,6 +81,30 @@
               "axisLabels": [],
               "id": "country",
               "dataIdSlug": "country"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Work Setting",
+              "dataId": "WorkSetting",
+              "chart": "bar",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "work-setting",
+              "dataIdSlug": "work-setting"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Industry",
+              "dataId": "Industry",
+              "chart": "bar",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "industry",
+              "dataIdSlug": "industry"
             }
           ]
         },
@@ -97,21 +112,7 @@
           "chapter": "Work",
           "name": "TBD2",
           "description": "",
-          "id": "tbd-2",
-          "questions": [
-            {
-              "chapter": "Work",
-              "section": "TBD2",
-              "name": "Employment additional status",
-              "dataId": "EmploymentAddl",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "employment-additional-status",
-              "dataIdSlug": "employment-addl"
-            }
-          ]
+          "id": "tbd-2"
         },
         {
           "chapter": "Work",
@@ -130,18 +131,6 @@
               "axisLabels": [],
               "id": "ic-or-pm",
               "dataIdSlug": "i-cor-pm"
-            },
-            {
-              "chapter": "Work",
-              "section": "TBD3",
-              "name": "Work Setting",
-              "dataId": "WorkSetting",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "work-setting",
-              "dataIdSlug": "work-setting"
             },
             {
               "chapter": "Work",
@@ -258,18 +247,6 @@
             {
               "chapter": "Work",
               "section": "TBD5",
-              "name": "Industry",
-              "dataId": "Industry",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "industry",
-              "dataIdSlug": "industry"
-            },
-            {
-              "chapter": "Work",
-              "section": "TBD5",
               "name": "Job satisfaction",
               "dataId": "JobSat",
               "chart": "bar",
@@ -307,7 +284,7 @@
               "chapter": "Work",
               "section": "TBD5",
               "name": "Does AI affect job ease",
-              "dataId": "CF_JobEaseAI",
+              "dataId": "JobEaseAI",
               "chart": "sankey",
               "description": "",
               "subtext": "",
@@ -316,7 +293,7 @@
                 "Job Ease + AI factors"
               ],
               "id": "does-ai-affect-job-ease",
-              "dataIdSlug": "cf-job-ease-ai"
+              "dataIdSlug": "job-ease-ai"
             },
             {
               "chapter": "Work",
@@ -334,7 +311,7 @@
               "chapter": "Work",
               "section": "TBD5",
               "name": "Does AI affect job difficulties",
-              "dataId": "CF_JobDifficultyAI",
+              "dataId": "JobDifficultyAI",
               "chart": "sankey",
               "description": "",
               "subtext": "",
@@ -343,7 +320,7 @@
                 "Job Ease + AI factors"
               ],
               "id": "does-ai-affect-job-difficulties",
-              "dataIdSlug": "cf-job-difficulty-ai"
+              "dataIdSlug": "job-difficulty-ai"
             },
             {
               "chapter": "Work",
