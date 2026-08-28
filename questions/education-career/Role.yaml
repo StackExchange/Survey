@@ -6,55 +6,70 @@ question:
   type: single_select
   required: false
   options:
-    - Academic researcher
+    - label: Academic researcher
+      short: Academic
     - AI/ML engineer
     - Applied scientist
     - label: Architect, software or solutions
       short: Architect
-    - Cloud infrastructure engineer
+    - label: Cloud infrastructure engineer
+      short: Cloud infrastructure
     - label: Cybersecurity or InfoSec professional
-      short: Cybersecurity or InfoSec
+      short: Security
     - Data engineer
-    - Data or business analyst
+    - label: Data or business analyst
+      short: Data or biz analyst
     - Data scientist
     - label: Database administrator or engineer
-      short: Database admin or engineer
+      short: DBA
     - label: Developer advocate or developer relations professional
-      short: Developer advocate
+      short: DevRel
     - label: Developer, AI apps or physical AI
-      short: Developer, AI or physical AI
-    - Developer, back-end
+      short: AI apps
+    - label: Developer, back-end
+      short: Back-end
     - label: Developer, desktop or enterprise applications
-      short: Developer, desktop/enterprise
+      short: Desktop or enterprise
     - label: Developer, embedded applications or devices
-      short: Developer, embedded
-    - Developer, front-end
-    - Developer, full-stack
-    - Developer, game or graphics
-    - Developer, mobile
-    - Developer, QA or test
+      short: Embedded
+    - label: Developer, front-end
+      short: Front-end
+    - label: Developer, full-stack
+      short: Full-stack
+    - label: Developer, game or graphics
+      short: Game or graphics
+    - label: Developer, mobile
+      short: Mobile
+    - label: Developer, QA or test
+      short: QA or test
     - label: DevOps engineer or professional
-      short: DevOps engineer
-    - Educator or instructor
-    - Engineering manager
-    - Financial analyst or engineer
-    - Founder or entrepreneur
+      short: DevOps
+    - label: Educator or instructor
+      short: Educator
+    - label: Engineering manager
+      short: Eng manager
+    - label: Financial analyst or engineer
+      short: Finance
+    - label: Founder or entrepreneur
+      short: Founder
     - Hardware engineer
     - Product manager
     - Project manager
     - Retired
     - label: Senior executive (C-suite, VP, etc.)
       short: Senior executive
-    - Site reliability engineer
+    - label: Site reliability engineer
+      short: SRE
     - label: Solutions engineer, implementation engineer, or forward-deployed engineer
       short: Solutions engineer
     - Student
-    - Support engineer or analyst
-    - System administrator
-    - label: Technical writer or documentation professional
-      short: Technical writer
+    - label: Support engineer or analyst
+      short: Support
+    - label: System administrator
+      short: Sysadmin
+    - Technical writer or documentation professional
     - label: UX, research, or UI design professional
-      short: UX, research or UI design
+      short: UX or UI design
     - label: Other, please specify
       short: Other
       key: other
