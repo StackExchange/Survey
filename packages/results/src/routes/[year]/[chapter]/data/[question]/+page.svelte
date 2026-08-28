@@ -152,7 +152,7 @@
 			</h2>
 
 			{#if definition}
-				<div aria-labelledby="asked" class="mb-4 flex max-w-3xl justify-between font-headline text-2xl">
+				<div aria-labelledby="asked" class="mb-4 max-w-3xl *:mb-4 font-headline text-2xl">
 					{@html definition.titleHtml}
 				</div>
 
