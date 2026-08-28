@@ -3360,7 +3360,7 @@
     "meta": {
       "qid": "QID103",
       "qname": "CF_JobEaseAI",
-      "question": "<p>In the past 6 months, which factor has done the most to make your job easier to do?<\/p> <p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
+      "question": "<p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
           "slice_type": "all",
@@ -3572,7 +3572,7 @@
     "meta": {
       "qid": "QID104",
       "qname": "CF_JobDifficultyAI",
-      "question": "<p>In the past 6 months, which factor has done the most to make your job harder to do?<\/p> <p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
+      "question": "<p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
           "slice_type": "all",

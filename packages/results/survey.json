@@ -312,8 +312,8 @@
               "description": "",
               "subtext": "",
               "axisLabels": [
-                "Worked with",
-                "Wants to work with"
+                "Job Ease factors",
+                "Job Ease + AI factors"
               ],
               "id": "does-ai-affect-job-ease",
               "dataIdSlug": "cf-job-ease-ai"
@@ -339,8 +339,8 @@
               "description": "",
               "subtext": "",
               "axisLabels": [
-                "Worked with",
-                "Wants to work with"
+                "Job Ease factors",
+                "Job Ease + AI factors"
               ],
               "id": "does-ai-affect-job-difficulties",
               "dataIdSlug": "cf-job-difficulty-ai"
