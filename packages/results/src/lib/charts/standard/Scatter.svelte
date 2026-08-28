@@ -98,10 +98,7 @@
 	const LINE = FINE + 2
 	const NAME = 32
 
-	// A name takes the first free line: beside its own point, else the other side
-	// of it, else a line further down. Two names clash only where they share both
-	// a line and a stretch of it — testing the boxes, not the side, is what stops
-	// a name at one end of the plot shoving one at the other end out of the way.
+	// Handle label conflicts
 	const points = $derived.by(() => {
 		const placed = rows
 			.map((row: any) => ({
@@ -197,8 +194,6 @@
 			</text>
 		{/if}
 		{#if axes?.y?.label}
-			<!-- Rotated -90°, its glyphs stand to the left of the baseline — so the
-			     baseline goes a line in from the margin, not on it. -->
 			<text
 				text-anchor="middle"
 				font-size={SMALL}
@@ -218,7 +213,6 @@
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
 			>
-				<!-- The dot is a pinpoint. Hit target first, so the name stays selectable. -->
 				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
 
 				<circle
@@ -227,17 +221,18 @@
 					r={hover.active === i ? DOT + 2 : DOT}
 					fill={series(0)}
 					fill-opacity={px(opacity(point.row.count ?? 0))}
+					stroke-width={hover.active === i ? 2 : 0}
 					stroke={hover.active === i ? theme.ink : theme.background}
 				/>
 
-				<!-- A leader only when the name had to move off its own point. -->
+				<!-- Line connecting the text and the circle -->
 				{#if Math.abs(point.labelY - point.cy) > 2}
 					<line
 						x1={point.cx + side * (DOT + 3)}
 						x2={point.cx + side * (GUTTER - 2)}
 						y1={point.cy}
 						y2={point.labelY}
-						stroke={theme.rule}
+						stroke={theme.ink}
 						vector-effect="non-scaling-stroke"
 					/>
 				{/if}
@@ -247,6 +242,7 @@
 					y={middle(point.labelY, FINE)}
 					text-anchor={point.flip ? 'end' : 'start'}
 					font-size={FINE}
+					font-weight={hover.active === i ? 'bold' : 'normal'}
 					fill={theme.ink}
 				>
 					{point.text}
