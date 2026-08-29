@@ -11,6 +11,7 @@ import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
 import { citeAs, licence, siteName, siteUrl } from '$config'
+import methodologyPayload from '$generated/methodology.json'
 import site from '$generated/site.json'
 import yearPayload from '$generated/year.json'
 import { ofSurvey, respondents, toMarkdown } from '$lib/table'
@@ -221,6 +222,7 @@ function methodologyPage(page: PageRef) {
 		frontMatter(page),
 		`# Methodology ${year}`,
 		'How the survey was run, who answered it, and how the numbers here were worked out.',
+		methodologyPayload.blocks.map((block: any) => figure(block, headingOf(block, '##'))).join('\n\n'),
 		scalars.length > 0 &&
 			join(
 				'## At a glance',

@@ -18,8 +18,8 @@ const LISTS = new Set(['dataset', 'values', 'axisLabels'])
 if (!SHEET_ID) throw new Error('GOOGLE_SHEETS_SHEETID is not set — see .env.example')
 
 // Define which tabs we accept
-const [settings, chapters, sections, questions, features] = await Promise.all(
-	['Settings', 'Chapters', 'Sections', 'Questions', 'Features'].map(getSheet)
+const [settings, chapters, sections, questions, features, methodology] = await Promise.all(
+	['Settings', 'Chapters', 'Sections', 'Questions', 'Features', 'Methodology'].map(getSheet)
 )
 
 function mapRow(headers, row) {
@@ -89,6 +89,7 @@ chapters.forEach((chapter, i) => (chapter.index = i + 1))
 const survey = {
 	settings: Object.fromEntries(settings.map((r) => [camelCase(r.name), r.value === 'TRUE' ? true : r.value === 'FALSE' ? false : r.value])),
 	chapters,
+	methodology,
 }
 
 // Written before the exit below, so a bad pull is still there to look at.
@@ -97,7 +98,7 @@ await fs.writeFile(OUT, `${JSON.stringify(survey, null, 2)}\n`)
 for (const row of dropped) console.error(`✕ dropped ${row}`)
 
 console.error(
-	`✅ ${chapters.length} chapters, ${sections.length} sections, ${questions.length} questions, ${features.length} features → survey.json`
+	`✅ ${chapters.length} chapters, ${sections.length} sections, ${questions.length} questions, ${features.length} features, ${methodology.length} methodology blocks → survey.json`
 )
 
 // A drop means two tabs disagree about a name, which is always a mistake in the

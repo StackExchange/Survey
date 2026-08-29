@@ -2097,5 +2097,57 @@
       ],
       "index": 5
     }
+  ],
+  "methodology": [
+    {
+      "headline": "Quick facts",
+      "description": "49,009 responses from 177 countries are used in these survey results.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "",
+      "description": "An age question, a consent question and the question asking \"Which of the following options best describes you today?\" were all used as qualifiers in the responses we kept for analysis. ~15K responses were not used.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "",
+      "description": "The survey was fielded from May 29, 2025 to June 23, 2025.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "",
+      "description": "Respondents were recruited primarily through channels owned by Stack Overflow. The top sources of respondents were onsite messaging, blog posts, email/newsletter subscribers, banner ads, and social media posts. Since respondents were recruited in this way, highly-engaged users on Stack Overflow were more likely to notice the prompts to take the survey over the duration of the collection promotion. We also recruited respondents via a Reddit ad campaign, this accounted for < 2% of total responses.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "",
+      "description": "We converted salaries from user currencies to USD using the exchange rate on June 25, 2025.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "",
+      "description": "Some questions that are multi-select for the available choices have switched to be displayed as a percentage of total unique responses instead of total frequency of responses this year.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Survey length",
+      "description": "How do you feel about the length of the survey this year?",
+      "chart": "bar",
+      "dataId": "SurveyLength",
+      "dataIdSlug": "survey-length"
+    },
+    {
+      "headline": "Difficulty",
+      "description": "How easy or difficult was this survey to complete?",
+      "chart": "bar",
+      "dataId": "SurveyEase",
+      "dataIdSlug": "survey-ease"
+    }
   ]
 }

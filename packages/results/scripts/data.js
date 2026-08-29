@@ -451,6 +451,23 @@ export async function generate() {
 		)
 	}
 
+	// Methodology is a chapter with one page: no sections, no data page, and its
+	// blocks read from the export's own methodology file. A figure there needs that
+	// file regenerated, so until it is, only the copy rows are drawn — the same rule
+	// a chapter gets, and said out loud rather than failing the build.
+	const methodologyIsTidy = Object.values(data.methodology ?? {}).some(isTidy)
+
+	const methodologyBlocks = (survey.methodology ?? [])
+		.filter((row) => {
+			if (row.chart === 'quote' || row.chart === 'text' || methodologyIsTidy) return true
+			console.error(`⚠ methodology "${row.headline}" skipped — ${home}/methodology.json is still the legacy format`)
+			return false
+		})
+		.map((row) => featureOf(ctx, { id: 'methodology', sections: [] }, { ...row, tier: row.tier || 'methodology' }))
+		.filter(Boolean)
+
+	await write('methodology.json', { blocks: methodologyBlocks, seo: seoOf(`/${year}/methodology`), jsonld: graphs.methodology }, state)
+
 	await write(
 		'year.json',
 		{
@@ -467,8 +484,8 @@ export async function generate() {
 			settings: survey.settings,
 			stats,
 			methodology,
-			seo: { home: seoOf('/'), methodology: seoOf(`/${year}/methodology`) },
-			jsonld: { home: graphs.home, methodology: graphs.methodology },
+			seo: { home: seoOf('/') },
+			jsonld: { home: graphs.home },
 			chapters: summaries,
 			pages,
 			// Which routes to prerender. A page already carries its route's own params,
@@ -487,11 +504,11 @@ export async function generate() {
 
 	for (const line of axes) console.error(`· scatter ${line}`)
 
-	return { ...state, chapters: live.length, questions: Object.values(index).flat().length }
+	return { ...state, chapters: live.length, questions: Object.values(index).flat().length, methodology: methodologyBlocks.length }
 }
 
 export const summarise = (r) =>
-	`✅ ${r.chapters} chapters, ${r.questions} questions → src/generated (${r.changed} written, ${Math.round(r.bytes / 1024)} KB)`
+	`✅ ${r.chapters} chapters, ${r.questions} questions, ${r.methodology} methodology blocks → src/generated (${r.changed} written, ${Math.round(r.bytes / 1024)} KB)`
 
 // Run directly, rather than imported by the Vite plugin.
 if (process.argv[1] === fileURLToPath(import.meta.url)) console.error(summarise(await generate()))
