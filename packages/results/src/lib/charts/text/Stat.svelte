@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatOf, rowsOf, splitUnit } from '$charts/utils/expressive'
+	import { formatOf, rowsOf } from '$charts/utils/expressive'
 	import { shorten } from '$charts/utils/theme'
 
 	let { figure }: { figure: any } = $props()
@@ -10,6 +10,9 @@
 
 	const row = $derived(rowsOf(figure)[0])
 	const short = $derived(shorten(figure))
+
+	// A trailing "%" is drawn smaller than its number, so it is split off.
+	const splitUnit = (text: string) => (text.endsWith('%') ? { figures: text.slice(0, -1), unit: '%' } : { figures: text, unit: '' })
 
 	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
 	const glyphs = $derived(Math.max(figures.length + (unit ? 0.4 : 0), 2))

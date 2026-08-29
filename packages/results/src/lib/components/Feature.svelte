@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TooltipData } from '$charts/utils/tooltip'
+	import type { TooltipData } from '$charts/utils/theme'
 	import type { Snippet } from 'svelte'
 
 	import { IconArrowRight, IconLink } from '@stackoverflow/stacks-icons/icons'

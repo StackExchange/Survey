@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Chrome } from '$charts/utils/chrome'
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 	import type { Component } from 'svelte'
 
 	import { setChrome } from '$charts/utils/chrome'

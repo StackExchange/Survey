@@ -1,6 +1,6 @@
 <script lang="ts">
 	// The Likert shape. Rows arrive flat, one per (statement, segment).
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
@@ -11,6 +11,7 @@
 		clip,
 		count,
 		hanging,
+		HIT,
 		HOVER_WASH,
 		legend,
 		middle,
@@ -24,7 +25,6 @@
 		textWidth,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
 	import Gridlines from '$charts/svg/Gridlines.svelte'

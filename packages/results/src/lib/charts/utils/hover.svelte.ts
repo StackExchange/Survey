@@ -1,5 +1,5 @@
 // `onhover` is a getter: a chart is mounted once, but the host may swap it.
-import type { OnHover, TooltipData } from './tooltip'
+import type { OnHover, TooltipData } from './theme'
 
 export function useHover(onhover: () => OnHover | undefined) {
 	let active = $state<number | null>(null)

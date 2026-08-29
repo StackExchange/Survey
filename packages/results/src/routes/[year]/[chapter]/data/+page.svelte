@@ -34,7 +34,6 @@
 		const id = chosen[block.id]
 		return id && id !== (block.demographics ?? [])[0]?.demographic.id ? `${path}?d=${id}` : path
 	}
-
 </script>
 
 <Seo {...data.chapter.seo} graph={data.chapter.jsonld} />

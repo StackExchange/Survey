@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { OnHover } from '$charts/utils/theme'
+
 	import { readingOf, shareOf } from '$charts/utils/expressive'
 	import { GAP, px, theme } from '$charts/utils/theme'
-	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 

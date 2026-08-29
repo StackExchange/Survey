@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 

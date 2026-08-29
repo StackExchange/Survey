@@ -1,12 +1,11 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
 	import { amountOf, focusedOf, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { CAPTION_SHARE, chars, clip, GAP, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
+	import { CAPTION_SHARE, chars, clip, GAP, HIT, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 

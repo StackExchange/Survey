@@ -1,12 +1,11 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { sankey as layout, sankeyLinkHorizontal } from 'd3-sankey'
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, middle, PAD, percent, px, pxPath, series, shorten, SMALL, theme } from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
+	import { chars, clip, count, HIT, middle, PAD, percent, px, series, shorten, SMALL, theme } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -79,7 +78,9 @@
 	})
 
 	const link = sankeyLinkHorizontal()
-	const strand = (edge: any) => pxPath(link(edge) ?? '')
+	// d3-sankey writes full float precision; the file is smaller rounded, and the
+	// curve is unchanged at two places.
+	const strand = (edge: any) => String(link(edge) ?? '').replace(/\d+\.\d+/g, (n) => String(px(Number(n))))
 	const hue = (node: any) => series(node.label ?? 0)
 
 	// A node draws its short name; a tooltip says the response in full, as every

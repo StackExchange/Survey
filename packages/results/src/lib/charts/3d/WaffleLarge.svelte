@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { OnHover } from '$charts/utils/theme'
+
 	import { cube, CUBE, cubeHeight, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { descent, LABEL, LABEL_DY, OFF, percent, px, theme, VALUE } from '$charts/utils/theme'
-	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 

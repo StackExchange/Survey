@@ -73,6 +73,25 @@ export const GAP = 8
 
 export const PAD = 15
 
+// What a chart hands its host on hover. A prop, not a context: ./export.ts mounts
+// a chart with no host to report to.
+interface TooltipRow {
+	value: string
+	label?: string
+	color?: string
+}
+
+export interface TooltipData {
+	// The full, unclipped category, often longer than the chart could draw.
+	title: string
+	rows: TooltipRow[]
+}
+
+export type OnHover = (data: TooltipData | null, event?: PointerEvent) => void
+
+// Hit areas are at least this tall, so a thin mark stays catchable.
+export const HIT = 24
+
 export const HOVER_WASH = 0.05
 export const DIM = 0.75
 
@@ -85,8 +104,6 @@ export function px(n: number, places = 2) {
 	const factor = 10 ** places
 	return Math.round(n * factor) / factor
 }
-
-export const pxPath = (d: string) => d.replace(/\d+\.\d+/g, (n) => String(px(Number(n))))
 
 // No text measurement where these charts render. Stack Sans advances 0.534 em
 // per glyph, measured in a browser at 11, 12, 13 and 18px.
@@ -137,27 +154,6 @@ export function legend(labels: any[], width: number) {
 	}
 
 	return { items, rowHeight: LEGEND_ROW, height: (row + 1) * LEGEND_ROW + 10 }
-}
-
-export function wrapText(text: string, width: number, fontSize: number, max = 2) {
-	const room = chars(width, fontSize)
-	const lines: string[] = []
-
-	for (const word of String(text ?? '')
-		.split(/\s+/)
-		.filter(Boolean)) {
-		const at = lines.length - 1
-
-		if (!lines.length) lines.push(word)
-		else if (lines[at].length + 1 + word.length <= room) lines[at] += ` ${word}`
-		else if (lines.length < max) lines.push(word)
-		else {
-			lines[at] = clip(`${lines[at]} ${word}`, room)
-			break
-		}
-	}
-
-	return lines
 }
 
 export const figureTitle = (figure: any) => figure.headline || figure.name || figure.question || figure.chart

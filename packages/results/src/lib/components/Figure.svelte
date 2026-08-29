@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { Chrome } from '$charts/utils/chrome'
-	import type { TooltipData } from '$charts/utils/tooltip'
+	import type { TooltipData } from '$charts/utils/theme'
 
 	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
-	import { captionText } from '$charts/utils/caption'
 	import { CHART_WIDTH } from '$charts/utils/chrome'
+	import { captionText } from '$charts/utils/expressive'
 	import { openQuestion } from '$lib/panel'
 
 	import { charts } from '$charts'

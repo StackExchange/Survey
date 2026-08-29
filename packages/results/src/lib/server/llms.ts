@@ -5,13 +5,14 @@
 // opinion on what a page is called. The twins exist for models rather than
 // people: a browser downloads text/markdown rather than rendering it, and the
 // HTML page is what a person follows.
+import type { PageRef } from '$lib/pages'
+
 import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
 import { citeAs, licence, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
 import yearPayload from '$generated/year.json'
-import type { PageRef } from '$lib/pages'
 import { ofSurvey, respondents, toMarkdown } from '$lib/table'
 
 import { getChapter, getChapterData, getQuestion } from './content'

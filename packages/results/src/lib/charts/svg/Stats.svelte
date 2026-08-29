@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Caption } from '$charts/utils/caption'
+	import type { Caption } from '$charts/utils/expressive'
 
 	import { icons, STATS } from '$charts/utils/chrome'
 	import { chars, clip, middle, PAD, px, SMALL, textWidth, theme } from '$charts/utils/theme'

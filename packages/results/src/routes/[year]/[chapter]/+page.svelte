@@ -10,9 +10,9 @@
 	import ChapterJump from '$components/ChapterJump.svelte'
 	import ChapterNextPrev from '$components/ChapterNextPrev.svelte'
 	import CopyPage from '$components/CopyPage.svelte'
+	import Feature from '$components/Feature.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import Feature from '$components/Feature.svelte'
 	import Prose from '$charts/text/Prose.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 

@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
-	import { amountOf, capColumn, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, descent, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
+	import { chars, clip, descent, HIT, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -13,6 +12,15 @@
 	const COLUMN = 160
 	// The name set into the column's face, so it leans with the artwork.
 	const NAME_SIZE = 34
+	// A bar's pointed cap: the whole rhombus for the far end, and its two halves for
+	// the near one, each continuing a face of the bar. `half` is the bar's
+	// half-thickness, `nose` how far the point juts past the body.
+	const capColumn = (half: number, nose: number) => ({
+		face: `M${-half} 0L0 ${-nose}L${half} 0L0 ${nose}Z`,
+		left: `M${-half} 0L0 ${-nose}V${nose}Z`,
+		right: `M${half} 0L0 ${-nose}V${nose}Z`,
+	})
+
 	const SLOPE = NOSE_RISE * 2
 	const LEAN = -px((Math.atan(SLOPE) * 180) / Math.PI)
 	const VALUE_GAP = 8

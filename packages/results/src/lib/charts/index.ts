@@ -1,5 +1,5 @@
 // Nothing draws a heading: the page has one. The ./text ones have no `<svg>`.
-import type { OnHover } from '$charts/utils/tooltip'
+import type { OnHover } from '$charts/utils/theme'
 import type { Component } from 'svelte'
 
 import BarStackedHorizontal2d from './2d/BarStackedHorizontal.svelte'

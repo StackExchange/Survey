@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
@@ -12,6 +12,7 @@
 		count,
 		digitsWidth,
 		GAP,
+		HIT,
 		HOVER_WASH,
 		LABEL,
 		labelGutter,
@@ -23,7 +24,6 @@
 		shorten,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
 
 	import Gridlines from '$charts/svg/Gridlines.svelte'
 	import Frame from '$charts/svg/Wrap.svelte'

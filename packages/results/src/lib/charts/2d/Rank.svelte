@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, GAP, middle, shorten, theme } from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
+	import { chars, clip, GAP, HIT, middle, shorten, theme } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 

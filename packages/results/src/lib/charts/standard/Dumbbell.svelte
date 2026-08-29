@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Two points per response with the gap drawn between them. Each value is
 	// labelled on the outer side of its dot, so the two never collide.
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
@@ -11,6 +11,7 @@
 		chars,
 		clip,
 		digitsWidth,
+		HIT,
 		HOVER_WASH,
 		LABEL,
 		labelGutter,
@@ -23,7 +24,6 @@
 		shorten,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
 	import Gridlines from '$charts/svg/Gridlines.svelte'

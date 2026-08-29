@@ -1,9 +1,10 @@
 <script lang="ts">
 	// "1 in X" as cubes: the large waffle's slab, two deep, with the long axis
 	// negated so it climbs away to the right where that one descends.
+	import type { OnHover } from '$charts/utils/theme'
+
 	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
 	import { OFF, theme } from '$charts/utils/theme'
-	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 

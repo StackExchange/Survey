@@ -1,18 +1,26 @@
 <script lang="ts">
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
-	import { amountOf, capRow, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { amountOf, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { CAPTION_SHARE, chars, clip, DIM, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
+	import { CAPTION_SHARE, chars, clip, DIM, HIT, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const BAR = 96
+	// The same pointed cap as the column bar, quarter-turned for a bar that runs
+	// across the page. `half` is the bar's half-thickness, `nose` how far the point
+	// juts past the body.
+	const capRow = (half: number, nose: number) => ({
+		face: `M0 ${-half}L${nose} 0L0 ${half}L${-nose} 0Z`,
+		top: `M0 ${-half}L${nose} 0H${-nose}Z`,
+		bottom: `M0 ${half}L${nose} 0H${-nose}Z`,
+	})
+
 	const NOSE = px(BAR * NOSE_RISE)
 	const ROW_GAP = 20
 	const VALUE_GAP = 16

@@ -448,7 +448,11 @@ export async function generate() {
 	}
 
 	for (const [key, payload] of Object.entries(questionPayloads)) {
-		await write(`question/${key}.json`, { ...payload, seo: seoOf(`/${year}/${key.replace('/', '/data/')}`), jsonld: graphs.question[key] }, state)
+		await write(
+			`question/${key}.json`,
+			{ ...payload, seo: seoOf(`/${year}/${key.replace('/', '/data/')}`), jsonld: graphs.question[key] },
+			state
+		)
 	}
 
 	await write(

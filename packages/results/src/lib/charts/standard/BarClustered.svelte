@@ -1,7 +1,7 @@
 <script lang="ts">
 	// A group of bars per response, one per series. Plain groups against one set
 	// of scales: a nested Bar chart put an `<svg>` inside an `<svg>`.
-	import type { OnHover } from '$charts/utils/tooltip'
+	import type { OnHover } from '$charts/utils/theme'
 
 	import { scaleLinear } from 'd3-scale'
 
@@ -12,6 +12,7 @@
 		chars,
 		clip,
 		digitsWidth,
+		HIT,
 		HOVER_WASH,
 		labelGutter,
 		legend,
@@ -23,7 +24,6 @@
 		SMALL,
 		theme,
 	} from '$charts/utils/theme'
-	import { HIT } from '$charts/utils/tooltip'
 	import { bySeries } from '$lib/table'
 
 	import Gridlines from '$charts/svg/Gridlines.svelte'

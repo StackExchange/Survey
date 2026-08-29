@@ -9,10 +9,10 @@
 
 	import BrandHeader from '$components/BrandHeader.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
+	import Feature from '$components/Feature.svelte'
 	import Icon from '$components/Icon.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import Feature from '$components/Feature.svelte'
 	import Prose from '$charts/text/Prose.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 

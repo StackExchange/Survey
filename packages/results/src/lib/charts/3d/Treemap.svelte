@@ -1,11 +1,31 @@
 <script lang="ts">
-	import { amountOf, formatOf, plate, plateRise, readingOf, rowsOf } from '$charts/utils/expressive'
+	import type { OnHover } from '$charts/utils/theme'
+
+	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { chars, clip, descent, hanging, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
-	import { type OnHover } from '$charts/utils/tooltip'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
+
+	// The plate's rise, at the cube artwork's own 160-wide scale: this is the only
+	// chart that stacks them.
+	const PLATE_RISE = 46.188 / 160
+	const plateRise = (w: number) => w * PLATE_RISE
+
+	// The stepped stack's plate: the cube's top face over a shallower extrusion.
+	// `w` is the rhombus at its widest; `cy` is the centre of the top face.
+	const plate = (cx: number, cy: number, w: number, depth: number) => {
+		const hw = w / 2
+		const hh = plateRise(w)
+		const point = (x: number, y: number) => `${px(x)} ${px(y)}`
+
+		return {
+			top: `M${point(cx, cy - hh)}L${point(cx + hw, cy)}L${point(cx, cy + hh)}L${point(cx - hw, cy)}Z`,
+			left: `M${point(cx - hw, cy)}L${point(cx, cy + hh)}L${point(cx, cy + hh + depth)}L${point(cx - hw, cy + depth)}Z`,
+			right: `M${point(cx + hw, cy)}L${point(cx, cy + hh)}L${point(cx, cy + hh + depth)}L${point(cx + hw, cy + depth)}Z`,
+		}
+	}
 
 	const LABEL_GAP = 16
 	const MAX = 6

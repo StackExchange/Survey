@@ -1,12 +1,33 @@
 <script lang="ts">
-	import { amountOf, focusedOf, formatOf, readingOf, rowsOf, treemapCells } from '$charts/utils/expressive'
+	import type { OnHover } from '$charts/utils/theme'
+
+	import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy'
+
+	import { amountOf, focusedOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, LABEL, LABEL_DY, shorten, theme, VALUE } from '$charts/utils/theme'
-	import { type OnHover } from '$charts/utils/tooltip'
+	import { chars, clip, GAP, LABEL, LABEL_DY, shorten, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
+
+	function treemapCells(rows: any[], values: number[], width: number, height: number, padding = GAP) {
+		const root = hierarchy({ children: rows.map((row, i) => ({ row, i, value: Math.max(values[i], 0) })) } as any)
+			.sum((d: any) => d.value ?? 0)
+			.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))
+
+		// `ratio(1)` not d3's golden default: a square holds two lines of type.
+		treemap().tile(treemapSquarify.ratio(1)).size([width, height]).paddingInner(padding).round(true)(root)
+
+		return (root.leaves() as any[]).map((leaf) => ({
+			row: leaf.data.row,
+			i: leaf.data.i,
+			x: leaf.x0,
+			y: leaf.y0,
+			width: Math.max(0, leaf.x1 - leaf.x0),
+			height: Math.max(0, leaf.y1 - leaf.y0),
+		}))
+	}
 
 	const hover = useHover(() => onhover)
 

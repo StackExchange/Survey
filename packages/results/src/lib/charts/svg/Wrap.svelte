@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte'
 
-	import { captionOf, captionText } from '$charts/utils/caption'
 	import { chromeReader, headerLayout, MASTHEAD, STATS } from '$charts/utils/chrome'
+	import { captionOf, captionText } from '$charts/utils/expressive'
 	import { figureTitle, PAD, px, theme } from '$charts/utils/theme'
 	import { licence } from '$config'
 

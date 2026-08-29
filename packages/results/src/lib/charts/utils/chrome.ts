@@ -1,7 +1,7 @@
 import { IconAnswer, IconInfo, IconLogo, IconUserStack } from '@stackoverflow/stacks-icons/icons'
 import { getContext, setContext } from 'svelte'
 
-import { PAD, textWidth, wrapText } from './theme'
+import { chars, clip, PAD, textWidth } from './theme'
 
 export interface Chrome {
 	brand?: boolean
@@ -31,6 +31,29 @@ export const LOGO_PAD = 20
 
 export const TITLE_SIZE = 26
 export const STATS = 26
+
+// The headline over two lines at most, the second clipped. Only the masthead
+// wraps text, so it wraps its own.
+function wrapText(text: string, width: number, fontSize: number, max = 2) {
+	const room = chars(width, fontSize)
+	const lines: string[] = []
+
+	for (const word of String(text ?? '')
+		.split(/\s+/)
+		.filter(Boolean)) {
+		const at = lines.length - 1
+
+		if (!lines.length) lines.push(word)
+		else if (lines[at].length + 1 + word.length <= room) lines[at] += ` ${word}`
+		else if (lines.length < max) lines.push(word)
+		else {
+			lines[at] = clip(`${lines[at]} ${word}`, room)
+			break
+		}
+	}
+
+	return lines
+}
 
 // Asked before the chart is drawn: everything below shifts down by `height`.
 export function headerLayout(chrome: Chrome, width: number, margin = PAD) {

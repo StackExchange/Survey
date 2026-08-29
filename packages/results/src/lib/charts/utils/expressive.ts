@@ -1,6 +1,5 @@
-import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy'
-
-import { count, GAP, percent, px, shorten } from '$charts/utils/theme'
+import { count, percent, px, shorten } from '$charts/utils/theme'
+import { ofSurvey } from '$lib/table'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
 
@@ -40,10 +39,32 @@ export const formatOf = (figure: any, pick: Pick = self) => {
 // Never zero: an all-zero set would divide a scale by nothing.
 export const largestOf = (values: number[]) => Math.max(0.0001, ...values)
 
-// A trailing "%" is drawn smaller than its number, so it is split off.
-export function splitUnit(text: string) {
-	const figures = String(text ?? '')
-	return figures.endsWith('%') ? { figures: figures.slice(0, -1), unit: '%' } : { figures, unit: '' }
+// The facts under every chart: sr-only caption, `<desc>` and ../svg/Stats.svelte.
+export interface Caption {
+	demographic: string
+	/** Already formatted, or empty where the cut carries no count. */
+	n: string
+	share: string
+	subtext: string
+}
+
+export function captionOf(figure: any): Caption {
+	const n = figure?.demographic?.n
+
+	return {
+		demographic: figure?.demographic?.name ?? '',
+		// Absent rather than zero: a cut with no count should say nothing at all.
+		n: n == null ? '' : count(n),
+		share: ofSurvey(figure?.demographic?.share) ?? '',
+		subtext: figure?.subtext ? String(figure.subtext) : '',
+	}
+}
+
+// The same facts on one line. Only the `<desc>` carries `reading`.
+export function captionText(figure: any, reading?: string) {
+	const { demographic, n, share, subtext } = captionOf(figure)
+
+	return [reading, demographic, n && `n = ${n}`, share && `${share} of respondents`, subtext].filter(Boolean).join(' · ')
 }
 
 // The chart in a sentence, for the `<desc>`.
@@ -74,24 +95,6 @@ export function shareOf(figure: any) {
 // "1 in 5" — how many respondents one filled cell stands for.
 export const oneIn = (share: number) => Math.max(2, Math.round(1 / Math.max(share, 0.0001)))
 
-export function treemapCells(rows: any[], values: number[], width: number, height: number, padding = GAP) {
-	const root = hierarchy({ children: rows.map((row, i) => ({ row, i, value: Math.max(values[i], 0) })) } as any)
-		.sum((d: any) => d.value ?? 0)
-		.sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))
-
-	// `ratio(1)` not d3's golden default: a square holds two lines of type.
-	treemap().tile(treemapSquarify.ratio(1)).size([width, height]).paddingInner(padding).round(true)(root)
-
-	return (root.leaves() as any[]).map((leaf) => ({
-		row: leaf.data.row,
-		i: leaf.data.i,
-		x: leaf.x0,
-		y: leaf.y0,
-		width: Math.max(0, leaf.x1 - leaf.x0),
-		height: Math.max(0, leaf.y1 - leaf.y0),
-	}))
-}
-
 export function grid(n: number, width: number, gap: number) {
 	const columns = Math.min(n, Math.max(1, Math.round(Math.sqrt(n * 1.6))))
 	const rows = Math.ceil(n / columns)
@@ -116,40 +119,6 @@ export const cube = (x: number, y: number, size: number) => `translate(${px(x)} 
 
 export const cubeHeight = (size: number) => size * CUBE_HEIGHT
 
-const PLATE_RISE = 46.188 / UNIT
-
-export const plateRise = (w: number) => w * PLATE_RISE
-
-// The stepped stack's plate: the cube's top face over a shallower extrusion.
-// `w` is the rhombus at its widest; `cy` is the centre of the top face.
-export const plate = (cx: number, cy: number, w: number, depth: number) => {
-	const hw = w / 2
-	const hh = plateRise(w)
-	const point = (x: number, y: number) => `${px(x)} ${px(y)}`
-
-	return {
-		top: `M${point(cx, cy - hh)}L${point(cx + hw, cy)}L${point(cx, cy + hh)}L${point(cx - hw, cy)}Z`,
-		left: `M${point(cx - hw, cy)}L${point(cx, cy + hh)}L${point(cx, cy + hh + depth)}L${point(cx - hw, cy + depth)}Z`,
-		right: `M${point(cx + hw, cy)}L${point(cx, cy + hh)}L${point(cx, cy + hh + depth)}L${point(cx + hw, cy + depth)}Z`,
-	}
-}
-
 // The 3D bar's nose, as a share of the bar's thickness — the flatter cousin of
 // the cube's projection, at the base artwork's own 160-wide scale.
 export const NOSE_RISE = 30 / 160
-
-// A bar's pointed cap: the whole rhombus for the far end, and its two halves
-// for the near one, each continuing a face of the bar. `half` is the bar's
-// half-thickness, `nose` how far the point juts past the body.
-export const capColumn = (half: number, nose: number) => ({
-	face: `M${-half} 0L0 ${-nose}L${half} 0L0 ${nose}Z`,
-	left: `M${-half} 0L0 ${-nose}V${nose}Z`,
-	right: `M${half} 0L0 ${-nose}V${nose}Z`,
-})
-
-// The same cap, quarter-turned, for a bar that runs across the page.
-export const capRow = (half: number, nose: number) => ({
-	face: `M0 ${-half}L${nose} 0L0 ${half}L${-nose} 0Z`,
-	top: `M0 ${-half}L${nose} 0H${-nose}Z`,
-	bottom: `M0 ${half}L${nose} 0H${-nose}Z`,
-})

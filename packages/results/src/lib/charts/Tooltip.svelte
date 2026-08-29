@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TooltipData } from '$charts/utils/tooltip'
+	import type { TooltipData } from '$charts/utils/theme'
 
 	let { data, event }: { data: TooltipData | null; event?: PointerEvent } = $props()
 
