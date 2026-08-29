@@ -22,6 +22,7 @@
 		year,
 		chapter,
 		flip = false,
+		responsiveChart = true,
 		children,
 	}: {
 		block: any
@@ -29,6 +30,7 @@
 		year?: string
 		chapter?: any
 		flip?: boolean
+		responsiveChart?: boolean
 		children?: Snippet
 	} = $props()
 
@@ -44,7 +46,8 @@
 	let hovered = $state<{ data: TooltipData | null; event?: PointerEvent }>({ data: null })
 
 	let measured = $state(0)
-	const width = $derived(measured || 800)
+
+	const chartWidth = $derived(responsiveChart ? measured || 590 : 700)
 </script>
 
 <div class="group justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'items-center py-10' : 'pb-6 lg:pb-0'}">
@@ -106,14 +109,15 @@
 
 		{#if dev}
 			<div class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</div>
+		{/if}
 	</div>
 
 	<figure
 		bind:clientWidth={measured}
 		data-ready={measured ? '' : undefined}
-		class="chart-reveal {tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full"
+		class="chart-reveal {tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 touch-pan-y lg:mt-0 [&>svg]:h-auto [&>svg]:w-full"
 	>
-		<Chart figure={block} {width} onhover={(data, event) => (hovered = { data, event })} />
+		<Chart figure={block} width={chartWidth} onhover={(data, event) => (hovered = { data, event })} />
 
 		<Tooltip data={hovered.data} event={hovered.event} />
 

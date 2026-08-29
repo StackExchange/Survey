@@ -68,13 +68,13 @@
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}
-					<div class="container mx-auto py-0 lg:py-[8vh]">
+					<div class="container mx-auto py-10 lg:py-[8vh]">
 						{#if hero.kind === 'text'}
 							<Prose block={hero} />
 						{:else if hero.kind === 'quote'}
 							<Quote block={hero} />
 						{:else}
-							<Feature block={hero} tier="hero" year={data.year} {chapter} flip={i % 2 === 1} />
+							<Feature block={hero} tier="hero" year={data.year} {chapter} flip={i % 2 === 1} responsiveChart={false} />
 						{/if}
 					</div>
 				{/each}
