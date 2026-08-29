@@ -12,7 +12,7 @@
 	import CopyPage from '$components/CopyPage.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import Feature from '$charts/Feature.svelte'
+	import Feature from '$components/Feature.svelte'
 	import Prose from '$charts/text/Prose.svelte'
 	import Quote from '$charts/text/Quote.svelte'
 
