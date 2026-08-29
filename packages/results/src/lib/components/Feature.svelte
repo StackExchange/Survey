@@ -109,7 +109,11 @@
 		{/if}
 	</div>
 
-	<figure bind:clientWidth={measured} class="{tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full">
+	<figure
+		bind:clientWidth={measured}
+		data-ready={measured ? '' : undefined}
+		class="chart-reveal {tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full"
+	>
 		<Chart figure={block} {width} onhover={(data, event) => (hovered = { data, event })} />
 
 		<Tooltip data={hovered.data} event={hovered.event} />
