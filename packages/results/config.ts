@@ -23,7 +23,6 @@ export const surveyPreview = (year: string | number) => `https://releases-${year
 const chapterColours = [
 	{
 		bg: 'bg-blue',
-		bgLg: 'lg:bg-blue',
 		border: 'border-blue',
 		primary: 'var(--color-blue)',
 		ink: 'var(--color-white)',
@@ -32,7 +31,6 @@ const chapterColours = [
 	},
 	{
 		bg: 'bg-pink',
-		bgLg: 'lg:bg-pink',
 		border: 'border-pink',
 		primary: 'var(--color-pink)',
 		ink: 'var(--color-black)',
@@ -41,7 +39,6 @@ const chapterColours = [
 	},
 	{
 		bg: 'bg-yellow',
-		bgLg: 'lg:bg-yellow',
 		border: 'border-yellow',
 		primary: 'var(--color-yellow)',
 		ink: 'var(--color-black)',
@@ -59,7 +56,6 @@ const chapterColours = [
 	},
 	{
 		bg: 'bg-purple',
-		bgLg: 'lg:bg-purple',
 		border: 'border-purple',
 		primary: 'var(--color-purple)',
 		ink: 'var(--color-black)',

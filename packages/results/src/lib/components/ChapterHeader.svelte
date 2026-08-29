@@ -23,7 +23,6 @@
 
 	const colours = $derived(chapterColour(chapter.index))
 	const bg = $derived(colours.bg)
-	const bgLg = $derived(colours.bgLg)
 
 	const variants = $derived({
 		home: {
