@@ -103,7 +103,7 @@ export function toMarkdown(figure: any) {
 
 // Raw values, not `cell`'s display strings: "1,234" arrives in a spreadsheet as
 // text. Squared to the payload's keys, so a row missing one still lands under it.
-export function toRows(figure: any) {
+function toRows(figure: any) {
 	const columns = figure?.columns ?? []
 	return rowsOf(figure).map((row: any) => Object.fromEntries(columns.map((c: any) => [c.key, row[c.key] ?? null])))
 }

@@ -11,7 +11,7 @@
 
 import { siteDescriptionLong, siteName } from '../../config.ts'
 
-export type PageKind = 'home' | 'year' | 'chapter' | 'methodology' | 'data' | 'question'
+type PageKind = 'home' | 'year' | 'chapter' | 'methodology' | 'data' | 'question'
 
 export interface PageRef {
 	kind: PageKind
@@ -32,7 +32,7 @@ const ref = (kind: PageKind, path: string, title: string, description: string, p
 	params,
 })
 
-export interface PageInputs {
+interface PageInputs {
 	settings: { year: string | number; description: string }
 	chapters: { id: string; name: string; description?: string }[]
 	questions: Record<string, { slug: string; name: string; description?: string }[]>

@@ -12,7 +12,7 @@
 // `short` is the table heading, where there isn't — a header clipped to
 // "Percent of re…" says less than "Percent".
 
-export type Label = { key: string; label: string; unit: string }
+type Label = { key: string; label: string; unit: string }
 
 const REGISTRY: Record<string, { label: string; unit?: string; short?: string }> = {
 	count: { label: 'Respondents' },
@@ -38,6 +38,6 @@ export const columnLabel = (key: string) => REGISTRY[key]?.short ?? REGISTRY[key
 
 export const unitFor = (key: string) => REGISTRY[key]?.unit ?? ''
 
-export const STRUCTURAL = new Set(['slice', 'series', 'response', 'count', 'pct'])
+const STRUCTURAL = new Set(['slice', 'series', 'response', 'count', 'pct'])
 
 export const valueKeys = (rows: any[]) => [...new Set(rows.flatMap((row) => Object.keys(row).filter((key) => !STRUCTURAL.has(key))))]
