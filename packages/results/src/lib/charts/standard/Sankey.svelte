@@ -52,7 +52,7 @@
 	})
 
 	const plotHeight = $derived(Math.max(200, Math.max(columns.left.length, columns.right.length) * ROW))
-	const height = $derived(PAD * 2 + HEAD + plotHeight)
+	const height = $derived(PAD * 3 + HEAD + plotHeight)
 
 	const graph = $derived.by(() => {
 		if (!columns.left.length || !columns.right.length) return { nodes: [], links: [] }
