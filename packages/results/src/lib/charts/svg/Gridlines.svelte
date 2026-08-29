@@ -1,9 +1,6 @@
 <script lang="ts">
 	import { px, theme } from '$charts/utils/theme'
 
-	// `from`/`to` and `top`/`bottom` are the plot box. `axis` says which way the
-	// lines run inside it, and `at` places them — a scale's own ticks, where the
-	// chart has a scale. Without it they fall on the quarters.
 	let {
 		from,
 		to,
@@ -30,7 +27,7 @@
 		stroke={theme.grid}
 		stroke-width="1"
 		stroke-linecap="round"
-		stroke-dasharray="0.1 4"
+		stroke-dasharray="0.2 3"
 		vector-effect="non-scaling-stroke"
 	/>
 {/each}
