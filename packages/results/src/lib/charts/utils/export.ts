@@ -67,6 +67,15 @@ function inlineFontFamily(svg: SVGElement) {
 	}
 }
 
+// `non-scaling-stroke` holds a hairline at one device pixel however the page
+// scales a chart, but an export is rasterised at `scale`, where the same rule
+// thins the strokes back down — the dotted gridlines all but disappear. The
+// exported SVG is drawn at its viewBox size and nothing scales it, so plain
+// user-unit strokes come out the same weight as on screen.
+function dropNonScalingStroke(svg: SVGElement) {
+	for (const node of svg.querySelectorAll('[vector-effect]')) node.removeAttribute('vector-effect')
+}
+
 export async function toSvg(Chart: Component<any>, { figure, width = 800, chrome = {}, fonts = false }: Options) {
 	const faces = fonts ? await fontFaces() : ''
 
@@ -84,6 +93,7 @@ export async function toSvg(Chart: Component<any>, { figure, width = 800, chrome
 		if (!svg) return null
 
 		inlineFontFamily(svg)
+		dropNonScalingStroke(svg)
 
 		if (faces) {
 			const style = document.createElementNS(SVG_NS, 'style')
