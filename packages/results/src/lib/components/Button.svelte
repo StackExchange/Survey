@@ -52,9 +52,9 @@
 
 	const variants = {
 		outline:
-			'bg-white dark:bg-black border dark:border-black-400 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500 dark:hover:border-black-500',
+			'bg-white dark:bg-black border dark:border-black-500 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500 dark:hover:border-black-500',
 		filled:
-			'bg-black-200 dark:bg-black-400 dark:text-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-black-300',
+			'bg-black-200 dark:bg-transparent dark:text-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-black-300',
 		plain: 'hover:bg-black dark:hover:bg-black-500 hover:text-white',
 		link: 'underline-offset-2 hover:text-blue',
 	}

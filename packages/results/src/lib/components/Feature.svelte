@@ -47,7 +47,7 @@
 	const width = $derived(measured || 800)
 </script>
 
-<div class="group justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'items-center py-10' : ''}">
+<div class="group justify-center gap-15 md:grid md:grid-cols-10 {tier === 'hero' ? 'items-center py-10' : 'pb-6 lg:pb-0'}">
 	<div class="{tier === 'hero' ? 'col-span-4' : 'col-span-5'} {flip ? '' : 'md:order-last'}">
 		{#if children}
 			{@render children()}
@@ -85,7 +85,7 @@
 				{/if}
 			</p>
 
-			<h3 class="font-headline text-4xl font-normal">{block.headline}</h3>
+			<h3 class="font-headline text-3xl font-normal md:text-4xl">{block.headline}</h3>
 
 			{#if block.description}
 				<div class="md mt-4 text-base text-black-400 dark:text-black-300">{@html block.descriptionHtml}</div>
@@ -104,9 +104,9 @@
 			{/if}
 		{/if}
 
-		{#if dev}
+		<!-- {#if dev}
 			<div class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</div>
-		{/if}
+		{/if} -->
 	</div>
 
 	<figure

@@ -109,12 +109,15 @@
 
 <header class="vt-nav pointer-events-none fixed top-0 right-0 left-0 z-50 flex">
 	{#if wordmark}
-		<p class="origin-left leading-0" transition:wipe>
-			<a class="pointer-events-auto inline-flex items-stretch leading-4" href={resolve('/[year]', { year })}>
-				<span class="flex items-center bg-orange p-2 text-black"><Icon src={IconGlyph32Square} title="Stack Overflow" /></span>
-				<span class="flex items-center bg-black px-4 text-white hover:bg-black-500">Developer Survey {year}</span>
-			</a>
-		</p>
+		<a class="pointer-events-auto inline-flex origin-left items-stretch leading-4" href={resolve('/[year]', { year })} transition:wipe>
+			<span class="flex items-center bg-orange p-2 text-black"><Icon src={IconGlyph32Square} title="Stack Overflow" /></span>
+			<span
+				class="flex items-center gap-1.5 bg-black px-4 text-white hover:bg-black-500 dark:bg-white dark:text-black dark:hover:bg-black-200"
+			>
+				<span class="font-medium">Dev<span class="hidden sm:inline">eloper</span> Survey</span>
+				{year}
+			</span>
+		</a>
 	{/if}
 
 	<nav
@@ -126,7 +129,7 @@
 	>
 		<button
 			bind:this={toggle}
-			class="ml-auto flex h-12 cursor-pointer items-center justify-between gap-2 border-l-4 border-black-150 bg-black fill-current px-4 py-3 text-left text-sm font-semibold hover:bg-black-500 lg:w-full dark:border-black-500"
+			class="ml-auto flex h-12 cursor-pointer items-center justify-between gap-2 bg-black fill-current px-4 py-3 text-left text-sm font-semibold hover:bg-black-500 lg:w-full dark:border-black-500 dark:bg-white dark:text-black dark:hover:bg-black-200"
 			aria-expanded={open}
 			aria-controls="navigation-list"
 			aria-label={open ? 'Close menu' : 'Open menu'}

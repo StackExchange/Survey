@@ -10,9 +10,9 @@
 
 <header class="vt-chapter-header flex min-h-[70vh] flex-col bg-black-150 gutter dark:bg-black-500">
 	<h1 class="chapter-title font-headline-notch my-auto flex flex-col items-start font-normal text-white">
-		<a href={resolve('/')} class="bg-orange px-2 py-3 text-black hover:bg-orange-medium hover:text-white lg:px-3 lg:py-4"
-			><Icon src={IconLogo} title="Stack Overflow" /></a
-		>
+		<a href={resolve('/')} class="bg-orange px-4 py-3 text-black hover:bg-orange-medium hover:text-white lg:py-4">
+			<Icon src={IconLogo} title="Stack Overflow" />
+		</a>
 		<span class="bg-black px-[0.3em] pt-[0.1em] pb-[0.2em] dark:bg-white dark:text-black">Developer</span>
 		<span class="bg-black px-[0.3em] pb-[0.2em] dark:bg-white dark:text-black">Survey</span>
 		{#if label}<span class="bg-white px-[0.3em] py-[0.15em] text-black dark:bg-black dark:text-white">{label}</span>{/if}
@@ -39,7 +39,7 @@
 	}
 
 	.chapter-title {
-		font-size: clamp(var(--text-4xl), 5vw + 1rem, var(--text-9xl));
+		font-size: clamp(var(--text-5xl), 5vw + 1rem, var(--text-9xl));
 		line-height: 1;
 	}
 </style>

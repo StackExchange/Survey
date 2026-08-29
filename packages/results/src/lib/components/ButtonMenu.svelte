@@ -91,11 +91,7 @@
 	<div
 		bind:this={menu}
 		{id}
-		class={clsx(
-			'absolute top-full z-50 -mt-px min-w-55 border bg-black-150 dark:border-black-500 dark:bg-black',
-			menuClass,
-			open || 'hidden'
-		)}
+		class={clsx('absolute top-full z-50 -mt-px border bg-black-150 dark:border-black-500 dark:bg-black', menuClass, open || 'hidden')}
 	>
 		{#each items as item (item.name)}
 			<Button

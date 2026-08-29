@@ -45,7 +45,7 @@
 	bind:this={tablist}
 	role="tablist"
 	aria-label={label}
-	class="mb-2 flex flex-nowrap gap-2 overflow-x-auto bg-white max-lg:no-scrollbar lg:mb-0 dark:bg-black"
+	class="no-scrollbar flex flex-nowrap gap-2 overflow-x-auto bg-white dark:bg-black"
 >
 	{#each demographics as entry (entry.demographic.id)}
 		{@const id = entry.demographic.id}

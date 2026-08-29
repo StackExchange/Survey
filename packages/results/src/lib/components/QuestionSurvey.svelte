@@ -19,7 +19,7 @@
 
 	<ul class="mt-2 flex flex-wrap text-xs text-black-400">
 		{#each askedFacts(definition) as fact (fact)}
-			<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
+			<li class="capitalize not-first:before:mx-2 not-first:before:content-['·']">{fact}</li>
 		{/each}
 	</ul>
 </div>

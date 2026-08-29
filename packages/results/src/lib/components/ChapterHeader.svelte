@@ -27,14 +27,14 @@
 
 	const variants = $derived({
 		home: {
-			blockBgClass: `${bg} text-black`,
+			blockBgClass: `${bg} text-black hover:bg-black-500 hover:text-white`,
 			innerClass: 'container mx-auto',
 			nameEl: 'h2',
 			wrapClass: null,
 			nameClass: 'font-headline-notch text-7xl text-[clamp(var(--text-4xl),5vw+1rem,var(--text-7xl))] font-semibold',
 			blockClass: 'px-3 py-2',
 			sectionClass: 'bg-black text-white dark:bg-white dark:text-black',
-			descriptionClass: 'mt-5 text-2xl',
+			descriptionClass: 'mt-5 text-xl lg:text-2xl',
 			vt: false,
 			mark: false,
 		},
@@ -51,19 +51,19 @@
 			mark: false,
 		},
 		data: {
-			blockBgClass: `${bgLg} lg:text-black`,
+			blockBgClass: `${bg} text-black hover:bg-black hover:text-white`,
 			innerClass: 'container mx-auto',
 			nameEl: 'h1',
-			wrapClass: 'bg-black-150 relative overflow-hidden flex flex-col items-stretch pt-25 pb-7 dark:bg-black-500 min-h-[50vh]',
+			wrapClass: 'bg-black-150 relative overflow-hidden flex flexitems-stretch pt-25 pb-7 dark:bg-black-500 min-h-[50vh]',
 			nameClass: 'font-headline text-4xl font-normal',
-			blockClass: 'lg:px-2 lg:py-1',
+			blockClass: 'px-2 py-1',
 			sectionClass: 'lg:bg-black lg:text-white lg:dark:bg-white lg:dark:text-black',
 			descriptionClass: 'text-xl lg:bg-white lg:dark:bg-black lg:p-4 mt-5 lg:mt-0',
 			vt: true,
 			mark: true,
 		},
 		hero: {
-			blockBgClass: `${bg} text-black`,
+			blockBgClass: `${bg} text-black hover:bg-black-500 hover:text-white`,
 			innerClass: '',
 			nameEl: 'h3',
 			wrapClass: '',
@@ -75,7 +75,7 @@
 			mark: false,
 		},
 		question: {
-			blockBgClass: `${bg} text-black`,
+			blockBgClass: `${bg} text-black hover:bg-black-500 hover:text-white`,
 			innerClass: 'mx-auto w-full max-w-300 px-6',
 			nameEl: null,
 			wrapClass: `flex flex-col items-stretch justify-end pt-25 ${bg} bg-[url(/img/bg-chapter-hero.svg)] bg-no-repeat bg-size-[50%_auto] bg-top-right`,
@@ -125,9 +125,9 @@
 
 	<div class="{options.innerClass} relative z-40 flex flex-1 flex-col">
 		{#if options.nameEl}
-			<svelte:element this={options.nameEl} class="flex flex-col md:flex-row {options.nameClass}">
+			<svelte:element this={options.nameEl} class="flex items-start {options.nameClass}">
 				<a
-					class="inline-block hover:bg-black-500 hover:text-white {options.blockBgClass} {options.blockClass}"
+					class="inline-block {options.blockBgClass} {options.blockClass}"
 					href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}
 				>
 					{chapter.name}

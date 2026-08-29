@@ -48,11 +48,11 @@
 	onpointerleave={() => (held = false)}
 	onfocus={() => (held = true)}
 	onblur={() => (held = false)}
-	class="jump sticky bottom-5 mr-5 ml-auto flex w-full max-w-100 bg-black leading-snug hover:bg-orange-medium dark:bg-orange-medium dark:hover:bg-orange-dark"
+	class="jump sticky bottom-5 mr-5 ml-auto flex w-1/2 max-w-100 bg-black leading-snug hover:bg-orange-medium lg:w-full dark:bg-orange-medium dark:hover:bg-orange-dark"
 >
-	<Icon src={spot} class="native h-auto max-w-30 p-3" />
+	<Icon src={spot} class="native hidden h-auto max-w-30 p-3 lg:block" />
 
-	<div class="flex-1 p-4 pl-2 text-white">
+	<div class="flex-1 p-4 pl-4 text-white lg:pl-2">
 		<div class="font-semibold">{title}</div>
 		<div class="opacity-50">{subtitle}</div>
 	</div>

@@ -48,7 +48,7 @@
 <div class="flex flex-col gap-6">
 	{#each formats as format, i (format.id)}
 		<div class="items-start gap-4 {i !== 0 ? 'border-t' : undefined} border-black-200 pt-5 lg:flex lg:gap-6 dark:border-black-500">
-			<div class="flex-1/3">
+			<div class="mb-4 flex-1/3">
 				<h3 class="mb-2 font-headline text-2xl font-medium">
 					{#if format.text}
 						<label for="export-{format.id}">{format.label}</label>
@@ -68,7 +68,7 @@
 			</div>
 
 			{#if format.text}
-				<div class="relative flex-2/3">
+				<div class="mb- relative flex-2/3">
 					<textarea
 						id="export-{format.id}"
 						class="w-full resize-y border-0 bg-black-100 p-3 pr-15 font-mono text-xs dark:bg-black"
@@ -83,7 +83,7 @@
 			{/if}
 
 			{#if format.download}
-				<Button label="Download CSV" icon={IconArrowDownBox} onclick={format.download} />
+				<Button label="Download CSV" class="w-full lg:w-auto" icon={IconArrowDownBox} onclick={format.download} />
 			{/if}
 		</div>
 	{/each}

@@ -6,7 +6,7 @@
 
 <div class="mx-auto max-w-prose">
 	{#if block.headline}
-		<h2 class="font-headline text-5xl font-normal">
+		<h2 class="font-headline text-4xl font-normal md:text-5xl">
 			{block.headline}
 		</h2>
 	{/if}

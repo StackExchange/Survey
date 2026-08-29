@@ -156,7 +156,7 @@
 						</div>
 						<ul class="flex flex-wrap text-sm text-black-400 dark:text-black-300">
 							{#each askedFacts(definition) as fact (fact)}
-								<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
+								<li class="capitalize not-first:before:mx-2 not-first:before:content-['·']">{fact}</li>
 							{/each}
 						</ul>
 					</div>
