@@ -393,15 +393,14 @@
         },
         {
           "chapter": "Work",
-          "headline": "33% are not happy at work",
-          "description": "Discontent in current working conditions has grown from 28% in 2025 to 33% in 2026, and happy and complacent responses both fell about 2%.",
+          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
+          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
           "tier": "chapter",
-          "chart": "2d-waffle-large",
-          "dataId": "JobSat",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "job-sat"
+          "values": []
         },
         {
           "chapter": "Work",
@@ -775,15 +774,14 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Source attribution in AI for technical answers is overwhelmingly important",
-          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
+          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
+          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
           "tier": "chapter",
-          "chart": "2d-waffle-large",
-          "dataId": "KnowledgeSourceAI",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "knowledge-source-ai"
+          "values": []
         },
         {
           "chapter": "Knowledge",
@@ -1213,6 +1211,17 @@
           "limit": "",
           "values": [],
           "dataIdSlug": "ai-daily"
+        },
+        {
+          "chapter": "AI",
+          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
+          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "AI",
@@ -2022,15 +2031,14 @@
         },
         {
           "chapter": "Community",
-          "headline": "52% learned a new skill or programming language in the last year",
-          "description": "Over half of respondents actively began learning to code or acquired a new programming skill in the past year, relying most on technical documentation (59%) and AI codegen tools (53%).",
+          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
+          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
           "tier": "chapter",
-          "chart": "2d-bar-stacked-vertical",
-          "dataId": "LearnCodeHow",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
-          "limit": "5",
-          "values": [],
-          "dataIdSlug": "learn-code-how"
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "Community",
@@ -2100,20 +2108,20 @@
   ],
   "methodology": [
     {
-      "headline": "Quick facts",
-      "description": "49,009 responses from 177 countries are used in these survey results.",
+      "headline": "",
+      "description": "**30,903** responses from **177** countries are used in these survey results.",
       "chart": "text",
       "dataId": ""
     },
     {
       "headline": "",
-      "description": "An age question, a consent question and the question asking \"Which of the following options best describes you today?\" were all used as qualifiers in the responses we kept for analysis. ~15K responses were not used.",
+      "description": "An age question, a consent question and the question asking __\"Which of the following options best describes you today?\"__ were all used as qualifiers in the responses we kept for analysis. ~15K responses were not used.",
       "chart": "text",
       "dataId": ""
     },
     {
       "headline": "",
-      "description": "The survey was fielded from May 29, 2025 to June 23, 2025.",
+      "description": "The survey was fielded from **May 29, 2025** to **June 23, 2025**.",
       "chart": "text",
       "dataId": ""
     },
