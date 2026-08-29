@@ -45,7 +45,13 @@
 			{@const s = side(row)}
 			{@const x = i === 0 ? 0 : px(side(rows[0]) + GAP)}
 
-			<g role="presentation" onpointermove={(event) => enter(row, i, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
+			<g
+				role="presentation"
+				onpointerdown={(event) => enter(row, i, event)}
+				onpointermove={(event) => enter(row, i, event)}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
+			>
 				<rect {x} y={px(box - s)} width={s} height={s} fill={fillOf(row, hover.active === i)} />
 
 				{#if s > LABEL * 3 && s > 70}

@@ -57,7 +57,13 @@
 		{@const y = px(i * (BAR + GAP))}
 		{@const length = px(x(amount(row)))}
 
-		<g role="presentation" onpointermove={(event) => enter(i, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
+		<g
+			role="presentation"
+			onpointerdown={(event) => enter(i, row, event)}
+			onpointermove={(event) => enter(i, row, event)}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
+		>
 			<rect x="0" {y} {width} height={Math.max(BAR, HIT)} fill="transparent" />
 			<rect x="0" {y} width={length} height={BAR} fill={fillOf(row, hover.active === i)} />
 

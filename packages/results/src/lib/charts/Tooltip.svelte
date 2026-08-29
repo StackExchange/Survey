@@ -4,14 +4,17 @@
 	let { data, event }: { data: TooltipData | null; event?: PointerEvent } = $props()
 
 	const OFFSET = 14
+	const THUMB = 44
+
+	const offset = $derived(event?.pointerType === 'touch' ? THUMB : OFFSET)
 
 	let width = $state(0)
 	let height = $state(0)
 	let viewport = $state({ w: 0, h: 0 })
 
 	const left = $derived(Math.max(8, Math.min((event?.clientX ?? 0) + OFFSET, viewport.w - width - 8)))
-	const above = $derived((event?.clientY ?? 0) - height - OFFSET)
-	const top = $derived(above < 8 ? (event?.clientY ?? 0) + OFFSET : above)
+	const above = $derived((event?.clientY ?? 0) - height - offset)
+	const top = $derived(above < 8 ? (event?.clientY ?? 0) + offset : above)
 </script>
 
 <svelte:window bind:innerWidth={viewport.w} bind:innerHeight={viewport.h} />

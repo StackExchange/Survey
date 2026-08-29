@@ -36,6 +36,7 @@
 				<div
 					role="presentation"
 					class="flex items-stretch"
+					onpointerdown={(event) => enter(i, row, event)}
 					onpointermove={(event) => enter(i, row, event)}
 					onpointerleave={hover.leave}
 					onpointercancel={hover.leave}

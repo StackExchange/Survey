@@ -2,6 +2,7 @@
 	import type { OnHover } from '$charts/utils/theme'
 
 	import { amountOf, formatOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { closes, opens, useDismiss } from '$charts/utils/hover.svelte'
 	import { chars, clip, descent, hanging, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -99,7 +100,8 @@
 
 	const spans = $derived(anchors.map((anchor: { x: number }) => chars(Math.max(anchor.x - 4, 20), LABEL)))
 
-	const enter = (row: any, event: PointerEvent) =>
+	const enter = (row: any, event: PointerEvent) => {
+		if (!opens(event)) return
 		onhover?.(
 			{
 				title: String(row.response ?? ''),
@@ -107,13 +109,24 @@
 			},
 			event
 		)
+	}
+
+	const leave = (event?: PointerEvent) => closes(event) && onhover?.(null)
+
+	useDismiss(() => onhover?.(null))
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure, MAX)}>
 	{#each rows as row, i (row.response ?? i)}
 		{@const faces = plate(cx, centres[i] + shift, widths[i], depths[i])}
 
-		<g role="presentation" onpointermove={(event) => enter(row, event)} onpointerleave={() => onhover?.(null)}>
+		<g
+			role="presentation"
+			onpointerdown={(event) => enter(row, event)}
+			onpointermove={(event) => enter(row, event)}
+			onpointerleave={leave}
+			onpointercancel={leave}
+		>
 			<path d={faces.left} fill={theme.focus} />
 			<path d={faces.right} fill={theme.rest} />
 			<path d={faces.top} fill={theme.accent} />

@@ -73,6 +73,7 @@
 		<g
 			role="presentation"
 			transform="translate(0 {px(i * (BAR + ROW_GAP) + half)})"
+			onpointerdown={(event) => enter(i, row, event)}
 			onpointermove={(event) => enter(i, row, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}

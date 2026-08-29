@@ -2,6 +2,7 @@
 	import type { OnHover } from '$charts/utils/theme'
 
 	import { amountOf, CUBE, cube, cubeHeight, formatOf, largestOf, readingOf, rowsOf } from '$charts/utils/expressive'
+	import { closes, opens, useDismiss } from '$charts/utils/hover.svelte'
 	import { chars, clip, descent, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -32,8 +33,14 @@
 	const labelY = $derived(px(valueY + LABEL_DY))
 	const height = $derived(labelY + descent(LABEL))
 
-	const enter = (row: any, event: PointerEvent) =>
+	const enter = (row: any, event: PointerEvent) => {
+		if (!opens(event)) return
 		onhover?.({ title: String(row.response ?? ''), rows: [{ value: format(row), label: 'of respondents', color: theme.focus }] }, event)
+	}
+
+	const leave = (event?: PointerEvent) => closes(event) && onhover?.(null)
+
+	useDismiss(() => onhover?.(null))
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
@@ -44,8 +51,10 @@
 		<g
 			transform={cube(x, floor - cubeHeight(s), s)}
 			role="presentation"
+			onpointerdown={(event) => enter(row, event)}
 			onpointermove={(event) => enter(row, event)}
-			onpointerleave={() => onhover?.(null)}
+			onpointerleave={leave}
+			onpointercancel={leave}
 		>
 			<path d={CUBE.top} fill={theme.accent} />
 			<path d={CUBE.left} fill={theme.focus} />

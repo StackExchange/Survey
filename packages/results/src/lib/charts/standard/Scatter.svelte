@@ -209,6 +209,7 @@
 			{@const side = point.flip ? -1 : 1}
 			<g
 				role="presentation"
+				onpointerdown={(event) => enter(i, point.row, event)}
 				onpointermove={(event) => enter(i, point.row, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}

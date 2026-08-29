@@ -58,7 +58,13 @@
 		{#each rows as row, r (r)}
 			{@const y = HEAD + r * ROW}
 
-			<g role="presentation" onpointermove={(event) => enter(r, row, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
+			<g
+				role="presentation"
+				onpointerdown={(event) => enter(r, row, event)}
+				onpointermove={(event) => enter(r, row, event)}
+				onpointerleave={hover.leave}
+				onpointercancel={hover.leave}
+			>
 				<rect x={PAD} y={y + (ROW - Math.max(ROW, HIT)) / 2 - 4} width={width - PAD * 2} height={Math.max(ROW, HIT)} fill="transparent" />
 
 				{#if r % 2 || hover.active === r}

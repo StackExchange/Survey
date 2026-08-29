@@ -2,6 +2,7 @@
 	import type { OnHover } from '$charts/utils/theme'
 
 	import { grid, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
+	import { closes, opens, useDismiss } from '$charts/utils/hover.svelte'
 	import { GAP, px, theme } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -20,8 +21,14 @@
 
 	const height = $derived(layout.height)
 
-	const enter = (event: PointerEvent) =>
+	const enter = (event: PointerEvent) => {
+		if (!opens(event)) return
 		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: theme.focus }] }, event)
+	}
+
+	const leave = (event?: PointerEvent) => closes(event) && onhover?.(null)
+
+	useDismiss(() => onhover?.(null))
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
@@ -37,8 +44,10 @@
 				height={layout.size}
 				fill={i === 0 ? theme.focus : theme.rest}
 				role="presentation"
+				onpointerdown={enter}
 				onpointermove={enter}
-				onpointerleave={() => onhover?.(null)}
+				onpointerleave={leave}
+				onpointercancel={leave}
 			/>
 		{/each}
 	</g>

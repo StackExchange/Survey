@@ -68,7 +68,13 @@
 	{#each cells as cell, rank (cell.i)}
 		{@const hovered = hover.active === rank}
 
-		<g role="presentation" onpointermove={(event) => enter(cell, rank, event)} onpointerleave={hover.leave} onpointercancel={hover.leave}>
+		<g
+			role="presentation"
+			onpointerdown={(event) => enter(cell, rank, event)}
+			onpointermove={(event) => enter(cell, rank, event)}
+			onpointerleave={hover.leave}
+			onpointercancel={hover.leave}
+		>
 			<rect
 				x={cell.x}
 				y={cell.y}

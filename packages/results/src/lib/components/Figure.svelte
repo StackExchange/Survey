@@ -42,7 +42,11 @@
 
 <figure class="relative flex h-full flex-col">
 	<div class="chart-ground grow bg-black-150 dark:bg-black-500 {fits}">
-		<div bind:clientWidth={measured} data-ready={width || measured ? '' : undefined} class="chart-reveal [&>svg]:w-full {scales} {floor}">
+		<div
+			bind:clientWidth={measured}
+			data-ready={width || measured ? '' : undefined}
+			class="chart-reveal touch-pan-y [&>svg]:w-full {scales} {floor}"
+		>
 			{#if Chart}
 				<ChartRoot chart={Chart} figure={block} width={drawn} {chrome} onhover={(data, event) => (hovered = { data, event })} />
 			{/if}

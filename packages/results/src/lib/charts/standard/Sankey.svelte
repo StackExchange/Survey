@@ -151,6 +151,7 @@
 				stroke-width={px(Math.max(HIT / 2, edge.width ?? 1))}
 				fill="none"
 				role="presentation"
+				onpointerdown={(event) => enter(i, edge, event)}
 				onpointermove={(event) => enter(i, edge, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}

@@ -116,6 +116,7 @@
 			<g
 				opacity={dim(row.response)}
 				role="presentation"
+				onpointerdown={(event) => enter(i, row, event)}
 				onpointermove={(event) => enter(i, row, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}

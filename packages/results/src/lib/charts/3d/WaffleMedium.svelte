@@ -4,6 +4,7 @@
 	import type { OnHover } from '$charts/utils/theme'
 
 	import { cube, CUBE, cubeHeight, oneIn, readingOf, rowsOf, shareOf } from '$charts/utils/expressive'
+	import { closes, opens, useDismiss } from '$charts/utils/hover.svelte'
 	import { OFF, theme } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -39,8 +40,14 @@
 	const height = $derived(long * half + cubeHeight(size))
 	const left = $derived((width - span * size) / 2)
 
-	const enter = (event: PointerEvent) =>
+	const enter = (event: PointerEvent) => {
+		if (!opens(event)) return
 		onhover?.({ title: String(row?.response ?? ''), rows: [{ value: `1 in ${cells}`, color: theme.focus }] }, event)
+	}
+
+	const leave = (event?: PointerEvent) => closes(event) && onhover?.(null)
+
+	useDismiss(() => onhover?.(null))
 </script>
 
 <Frame {figure} {width} {height} reading={readingOf(figure)}>
@@ -51,8 +58,10 @@
 			transform={cube(left + cell.column * size, cell.level * half, size)}
 			opacity={on ? 1 : OFF}
 			role="presentation"
+			onpointerdown={enter}
 			onpointermove={enter}
-			onpointerleave={() => onhover?.(null)}
+			onpointerleave={leave}
+			onpointercancel={leave}
 		>
 			<path d={CUBE.top} fill={on ? theme.accent : theme.offTop} />
 			<path d={CUBE.left} fill={on ? theme.focus : theme.offLeft} />

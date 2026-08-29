@@ -67,6 +67,7 @@
 		<g
 			role="presentation"
 			transform="translate({px(first + i * step)} {px(baseline + i * drop)})"
+			onpointerdown={(event) => enter(i, row, event)}
 			onpointermove={(event) => enter(i, row, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
