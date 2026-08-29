@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types'
 
-	import { IconArrowLeft, IconArrowRight, IconQuestion, IconTrendUp } from '@stackoverflow/stacks-icons/icons'
+	import { IconArrowLeft, IconArrowRight, IconListOrdered, IconQuestion, IconTrendUp } from '@stackoverflow/stacks-icons/icons'
 
 	import { dev } from '$app/environment'
 	import { replaceState } from '$app/navigation'
@@ -51,9 +51,6 @@
 		// replaceState, not pushState: back still means the previous page, and the canonical stays clean.
 		replaceState(id === fallback.demographic.id ? location.pathname : `${location.pathname}?d=${id}`, page.state)
 	}
-
-	const optionLabel = (option: any) => (typeof option === 'string' ? option : option.label)
-	const optionFreeText = (option: any) => typeof option !== 'string' && Boolean(option.text_entry)
 
 	const askedSource = (definition: any) => `${githubRepo}/blob/main/${definition.source}`
 	const askedInContext = (definition: any) => `${surveyPreview(data.year)}/#q-${definition.id}`
@@ -145,58 +142,65 @@
 	</div>
 
 	<div class="border-t border-black-200 py-10 dark:border-black-500">
-		<section class="mx-auto max-w-300 px-6" id="data">
+		<section class="mx-auto max-w-300 px-6" id="data" aria-labelledby="asked">
 			<h2 id="asked" class="inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
 				{definitions.length > 1 ? 'Questions' : 'Question'}
 			</h2>
 
 			{#each definitions as definition (definition.id)}
-				<div aria-labelledby="asked" class="max-w-3xl font-headline text-2xl *:mb-4 not-first:mt-8">
-					{@html definition.titleHtml}
-				</div>
-
-				<ul class="mt-4 flex flex-wrap text-sm text-black-400 dark:text-black-300">
-					{#each askedFacts(definition) as fact (fact)}
-						<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
-					{/each}
-				</ul>
-			{/each}
-
-			<div class="-mx-2 my-8"><DataTable {figure} /></div>
-
-			{#each definitions as definition (definition.id)}
-				<div class="flex flex-col gap-6 not-first:mt-6 sm:flex-row sm:justify-between sm:gap-8">
-					{#if definition.options?.length}
-						<details>
-							<summary class="w-fit cursor-pointer text-sm">
-								{definition.options.length} options offered<span class="sr-only">: {definition.id}</span>
-							</summary>
-							<ol class="mt-3 max-h-120 list-decimal gap-x-10 overflow-y-auto pl-5 text-sm md:columns-2">
-								{#each definition.options as option, i (i)}
-									<li class="break-inside-avoid">
-										{optionLabel(option)}{#if optionFreeText(option)}
-											<span class="text-black-400 dark:text-black-300">(with free-text entry)</span>{/if}
-									</li>
-								{/each}
-							</ol>
-						</details>
-					{/if}
-
-					<p class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-						<Button variant="link" href={askedInContext(definition)} label="View in survey" iconEnd={IconArrowRight} />
+				<div class="lg:grid grid-cols-10 mt-6 gap-10">
+				  <div class="col-span-7">
+						<div class="font-headline text-xl mb-4">
+ 							{@html definition.titleHtml}
+						</div>
+						<ul class="flex flex-wrap text-sm text-black-400 dark:text-black-300">
+ 							{#each askedFacts(definition) as fact (fact)}
+								<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
+ 							{/each}
+						</ul>
+					</div>
+					<ul class="col-span-3 mt-3 flex flex-col gap-y-1 lg:mt-0">
+						<li>
+							<Button
+								variant="link"
+								href={askedInContext(definition)}
+								label="View in survey"
+								iconEnd={IconArrowRight}
+								class="lg:w-full lg:justify-between"
+							/>
+						</li>
 						{#if definition.source}
-							<Button variant="link" href={askedSource(definition)} label="Question definition (.yaml)" iconEnd={IconArrowRight} />
+							<li>
+								<Button
+									variant="link"
+									href={askedSource(definition)}
+									label="Question definition (.yaml)"
+									iconEnd={IconArrowRight}
+									class="lg:w-full lg:justify-between"
+								/>
+							</li>
 						{/if}
-					</p>
+					</ul>
 				</div>
 			{/each}
 		</section>
 	</div>
 
 	<div class="border-t border-black-200 py-10 dark:border-black-500">
+		<section class="mx-auto max-w-300 px-6" aria-labelledby="responses">
+			<h2 id="responses" class="inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent mb-8">
+				<span class="bg-blue-light p-1.5"><Icon src={IconListOrdered} class="native shrink-0" /></span>
+				Data
+			</h2>
+
+			<div class="-mx-2"><DataTable {figure} /></div>
+		</section>
+	</div>
+
+	<div class="border-t border-black-200 py-10 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="export">
-			<h2 class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+			<h2 id="export" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>
 				Use this data
 			</h2>
