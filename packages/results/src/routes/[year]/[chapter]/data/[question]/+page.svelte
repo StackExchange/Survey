@@ -149,15 +149,15 @@
 			</h2>
 
 			{#each definitions as definition (definition.id)}
-				<div class="lg:grid grid-cols-10 mt-6 gap-10">
-				  <div class="col-span-7">
-						<div class="font-headline text-xl mb-4">
- 							{@html definition.titleHtml}
+				<div class="mt-6 grid-cols-10 gap-10 lg:grid">
+					<div class="col-span-7">
+						<div class="mb-4 font-headline text-xl">
+							{@html definition.titleHtml}
 						</div>
 						<ul class="flex flex-wrap text-sm text-black-400 dark:text-black-300">
- 							{#each askedFacts(definition) as fact (fact)}
+							{#each askedFacts(definition) as fact (fact)}
 								<li class="not-first:before:mx-2 not-first:before:content-['\25aa']">{fact}</li>
- 							{/each}
+							{/each}
 						</ul>
 					</div>
 					<ul class="col-span-3 mt-3 flex flex-col gap-y-1 lg:mt-0">
@@ -189,7 +189,7 @@
 
 	<div class="border-t border-black-200 py-10 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="responses">
-			<h2 id="responses" class="inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent mb-8">
+			<h2 id="responses" class="mb-8 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconListOrdered} class="native shrink-0" /></span>
 				Data
 			</h2>
