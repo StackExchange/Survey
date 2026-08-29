@@ -27,8 +27,8 @@
 		)
 </script>
 
-<div class="@container w-full">
-	<ol class="flex flex-col gap-2 md:gap-3 font-headline leading-none text-xl md:text-2xl lg:text-3xl">
+<div class="w-full">
+	<ol class="flex flex-col gap-2 font-headline text-xl leading-none md:gap-3 md:text-2xl lg:text-3xl">
 		{#each rows as row, i (row.response ?? i)}
 			{@const hovered = hover.active === i}
 
