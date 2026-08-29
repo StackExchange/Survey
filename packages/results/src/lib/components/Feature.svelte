@@ -104,9 +104,8 @@
 			{/if}
 		{/if}
 
-		<!-- {#if dev}
+		{#if dev}
 			<div class="mt-5 font-mono text-xs">DEV: {block.chart} / {block.dataId}</div>
-		{/if} -->
 	</div>
 
 	<figure
