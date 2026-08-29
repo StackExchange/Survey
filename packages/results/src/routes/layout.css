@@ -1,10 +1,6 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
-
-/* mode-watcher owns `.dark` on <html>, applied before first paint. Nothing else
-   sets it — a section that wants to stand out steps its ground with
-   `.theme-tint` (see below) rather than flipping the theme under the reader. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
@@ -79,8 +75,6 @@
 	--color-black-600: #201c1d;
 }
 
-/* `.chart-light` is what an export's off-screen host wears: a downloaded file is
-   light whatever the page is set to. */
 :root,
 .chart-light {
 	--chart-bg: var(--color-black-150);
@@ -148,23 +142,39 @@
 	--panel: var(--color-black-500);
 }
 
-/* `.chart-ground` is the panel a figure paints behind its chart — a step off the
-   page, so the tokens that would vanish against it are restated here. */
+/* Chart fade in to hide the width diff between SSR and hydrated */
+.js .chart-reveal {
+	opacity: 0;
+	animation: chart-reveal 250ms ease-out 2s forwards;
+}
+
+.js .chart-reveal[data-ready] {
+	opacity: 1;
+	transition: opacity 250ms ease-out;
+}
+
+@keyframes chart-reveal {
+	to {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js .chart-reveal {
+		animation-duration: 0s;
+	}
+
+	.js .chart-reveal[data-ready] {
+		transition: none;
+	}
+}
+
 .dark .chart-ground {
 	--chart-bg: var(--color-black-500);
 	--chart-tint: var(--color-black-400);
 	--chart-ghost: var(--color-black-400);
 	--chart-grid: var(--color-black-350);
 }
-
-/* A run of sections that steps its ground one tone away from where it rests while
-   one of them holds the screen, so scrolling reads as moving through a band rather
-   than past a box. Light stays light and dark stays dark — the reader's choice of
-   ground survives, only its tone moves.
-
-   `.theme-ground` is the resting state, `.theme-tint` the held one; invert.svelte
-   toggles the second on the element carrying the first. Contrast pairs that would
-   collapse against the stepped ground are restated here. */
 .theme-ground {
 	background-color: var(--color-black-150);
 	color: var(--color-black);
