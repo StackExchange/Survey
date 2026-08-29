@@ -5,7 +5,7 @@
 
 	import { amountOf, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { CAPTION_SHARE, chars, clip, DIM, HIT, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
+	import { CAPTION_SHARE, chars, clip, HIT, LABEL, LABEL_DY, px, shorten, textWidth, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -80,15 +80,13 @@
 		>
 			<rect x="0" y={-half} width={px(Math.max(end + NOSE, HIT))} height={px(BAR)} fill="transparent" />
 
-			<g opacity={hover.active === null || hover.active === i ? 1 : DIM}>
-				<rect x={NOSE} y={-half} width={body} height={half} fill={theme.focus} />
-				<path d={CAP.top} transform="translate({NOSE} 0)" fill={theme.focus} />
+			<rect x={NOSE} y={-half} width={body} height={half} fill={theme.focus} />
+			<path d={CAP.top} transform="translate({NOSE} 0)" fill={theme.focus} />
 
-				<rect x={NOSE} y="0" width={body} height={half} fill={theme.rest} />
-				<path d={CAP.bottom} transform="translate({NOSE} 0)" fill={theme.rest} />
+			<rect x={NOSE} y="0" width={body} height={half} fill={theme.rest} />
+			<path d={CAP.bottom} transform="translate({NOSE} 0)" fill={theme.rest} />
 
-				<path d={CAP.face} transform="translate({end} 0)" fill={theme.accent} />
-			</g>
+			<path d={CAP.face} transform="translate({end} 0)" fill={theme.accent} />
 
 			<text x={captionX} y={valueY} font-size={VALUE} font-family={theme.fontHeadline} font-weight="600" fill={theme.ink}>
 				{format(row)}
