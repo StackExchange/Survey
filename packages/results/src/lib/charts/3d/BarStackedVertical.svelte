@@ -3,18 +3,15 @@
 
 	import { amountOf, formatOf, largestOf, NOSE_RISE, readingOf, rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, descent, HIT, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
+	import { descent, HIT, LABEL, LABEL_DY, px, shorten, theme, VALUE } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
 	let { figure, width = 1000, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const COLUMN = 160
-	// The name set into the column's face, so it leans with the artwork.
-	const NAME_SIZE = 34
-	// A bar's pointed cap: the whole rhombus for the far end, and its two halves for
-	// the near one, each continuing a face of the bar. `half` is the bar's
-	// half-thickness, `nose` how far the point juts past the body.
+	const NAME_SIZE = 33
+
 	const capColumn = (half: number, nose: number) => ({
 		face: `M${-half} 0L0 ${-nose}L${half} 0L0 ${nose}Z`,
 		left: `M${-half} 0L0 ${-nose}V${nose}Z`,
@@ -51,7 +48,7 @@
 	const height = $derived(baseline + (Math.max(rows.length, 1) - 1) * drop + foot)
 
 	const nameX = $derived(px(-half / 2 + NAME_SIZE * 0.3))
-	const nameY = $derived(px((nose * (nameX + half)) / half - 30))
+	const nameY = $derived(px((nose * (nameX + half)) / half - 20))
 
 	const lengthOf = (row: any) => px(Math.max(nose * 2, longest * (amount(row) / largest)))
 
@@ -88,7 +85,7 @@
 				font-size={NAME_SIZE}
 				fill="#201c1d"
 			>
-				{clip(short(row.response), chars(len - nose - 24, NAME_SIZE))}
+				{short(row.response)}
 			</text>
 
 			<text x={-half} y={valueY} font-family={theme.fontHeadline} font-size={VALUE} font-weight="600" fill={theme.ink}>
