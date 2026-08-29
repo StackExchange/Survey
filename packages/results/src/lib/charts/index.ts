@@ -4,7 +4,6 @@ import type { Component } from 'svelte'
 
 import BarStackedHorizontal2d from './2d/BarStackedHorizontal.svelte'
 import BarStackedVertical2d from './2d/BarStackedVertical.svelte'
-import Rank2d from './2d/Rank.svelte'
 import Treemap2d from './2d/Treemap.svelte'
 import TreemapSmall2d from './2d/TreemapSmall.svelte'
 import WaffleLarge2d from './2d/WaffleLarge.svelte'
@@ -23,6 +22,7 @@ import Dumbbell from './standard/Dumbbell.svelte'
 import Sankey from './standard/Sankey.svelte'
 import Scatter from './standard/Scatter.svelte'
 import Table from './standard/Table.svelte'
+import TextRank from './text/Rank.svelte'
 import TextStat from './text/Stat.svelte'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
@@ -51,7 +51,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	'2d-treemap-small': TreemapSmall2d,
 	'2d-waffle-large': WaffleLarge2d,
 	'2d-waffle-medium': WaffleMedium2d,
-	rank: Rank2d,
+	rank: TextRank,
 	stat: TextStat,
 }
 
