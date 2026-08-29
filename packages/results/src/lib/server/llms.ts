@@ -1,68 +1,24 @@
-// Every published page, once, and its markdown twin.
+// The markdown twin of every published page.
 //
-// The sitemap, llms.txt, the .md endpoints and their prerender entries all
-// derive from `listPages()`, so the four cannot drift. The twins exist for
-// models rather than people — a browser downloads text/markdown rather than
-// rendering it, and the HTML page is what a person follows.
+// The page list itself is built in scripts/data.js and read here as
+// `site.pages` — a title or a URL written in this file would be a second
+// opinion on what a page is called. The twins exist for models rather than
+// people: a browser downloads text/markdown rather than rendering it, and the
+// HTML page is what a person follows.
 import { error } from '@sveltejs/kit'
 
 import years from '$archive/index.json'
-import { citeAs, licence, siteDescription, siteName, siteUrl } from '$config'
+import { citeAs, licence, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
 import yearPayload from '$generated/year.json'
+import type { PageRef } from '$lib/pages'
 import { ofSurvey, respondents, toMarkdown } from '$lib/table'
 
 import { getChapter, getChapterData, getQuestion } from './content'
 
 const year = String(site.settings.year)
 
-export type PageKind = 'home' | 'year' | 'chapter' | 'methodology' | 'data' | 'question'
-
-export interface PageRef {
-	kind: PageKind
-	path: string
-	markdown: string
-	title: string
-	description: string
-	// Passed to a .md endpoint's `entries` verbatim.
-	params: Record<string, string>
-}
-
-const ref = (kind: PageKind, path: string, title: string, description: string, params: Record<string, string>): PageRef => ({
-	kind,
-	path,
-	markdown: path === '/' ? '/index.md' : `${path}.md`,
-	title,
-	description,
-	params,
-})
-
-export function listPages(): PageRef[] {
-	const chapters = site.chapters
-
-	return [
-		ref('home', '/', siteName, siteDescription, {}),
-		ref('year', `/${year}`, `${siteName} ${year}`, site.settings.description, { year }),
-		...chapters.flatMap(({ id, name, description }: any) => [
-			ref('chapter', `/${year}/${id}`, `${name} ${year}`, description?.trim() || `The ${name} chapter.`, { year, page: id }),
-			ref('data', `/${year}/${id}/data`, `${name} data ${year}`, `Every figure in the ${name} chapter, with sample sizes.`, {
-				year,
-				chapter: id,
-			}),
-			...((site.questions as Record<string, any[]>)[id] ?? []).map(({ slug, name: question }: any) =>
-				ref('question', `/${year}/${id}/data/${slug}`, `${question} ${year}`, `${question}, by respondent group.`, {
-					year,
-					chapter: id,
-					question: slug,
-				})
-			),
-		]),
-		ref('methodology', `/${year}/methodology`, `Methodology ${year}`, 'How the survey was run and how the numbers were worked out.', {
-			year,
-			page: 'methodology',
-		}),
-	]
-}
+const pages = site.pages as PageRef[]
 
 const join = (...parts: (string | null | undefined | false)[]) => parts.filter(Boolean).join('\n\n')
 
@@ -288,7 +244,7 @@ function renderMarkdown(page: PageRef): string | null {
 		case 'year':
 			return yearPage(page)
 		case 'chapter':
-			return chapterPage(page, page.params.page)
+			return chapterPage(page, chapter)
 		case 'data':
 			return dataPage(page, chapter)
 		case 'question':
@@ -299,19 +255,13 @@ function renderMarkdown(page: PageRef): string | null {
 }
 
 // Nothing links to the .md twins as routes — the alternate link is absolute, so
-// the crawler skips it — so every endpoint declares its own entries. Loosely
-// typed because each route wants its own RouteParams.
-export const entriesFor =
-	(...kinds: PageKind[]) =>
-	(): any[] =>
-		listPages()
-			.filter((page) => kinds.includes(page.kind))
-			.map(({ params }) => params)
+// the crawler skips it — so the endpoint names its own entries. `/index.md` and
+// `/2026/work/data.md` alike, minus the leading slash and the extension the route
+// supplies.
+export const markdownEntries = () => pages.map((page) => ({ page: page.markdown.slice(1, -'.md'.length) }))
 
-export function markdown(kinds: PageKind[], params: Record<string, string | undefined>) {
-	const match = (page: PageRef) => kinds.includes(page.kind) && Object.entries(page.params).every(([key, value]) => params[key] === value)
-
-	const page = listPages().find(match)
+export function markdown(path: string) {
+	const page = pages.find((entry) => entry.markdown === `/${path}.md`)
 	const body = page && renderMarkdown(page)
 
 	if (!body) error(404, 'No markdown for this page')

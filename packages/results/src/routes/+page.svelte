@@ -32,7 +32,7 @@
 	</div>
 {/snippet}
 
-<Seo description={siteDescriptionLong} graph={data.jsonld.home} />
+<Seo {...data.seo} graph={data.jsonld.home} />
 
 <BrandHeader>
 	<div class="mt-16">

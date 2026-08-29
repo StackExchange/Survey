@@ -56,7 +56,7 @@ export default defineConfig({
 			},
 			prerender: {
 				// Nothing links to the endpoints, so they are named rather than crawled.
-				entries: ['*', '/sitemap.xml', '/index.md', '/llms.txt'],
+				entries: ['*', '/sitemap.xml', '/llms.txt'],
 				handleHttpError: ({ path, message }) => {
 					if (!archived.has(path)) throw new Error(message)
 				},

@@ -21,7 +21,7 @@
 	const highlights = tinting()
 </script>
 
-<Seo title="Results {data.year}" graph={data.jsonld} />
+<Seo {...data.seo} graph={data.jsonld} />
 
 <BrandHeader label={data.year} />
 

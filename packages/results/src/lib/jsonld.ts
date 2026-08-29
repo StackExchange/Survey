@@ -5,7 +5,9 @@
 // front-end concern — what the page asserts about itself — and the script only
 // happens to be where it is cheapest to run.
 
-import { dataset, licence, organisation, siteDescription, siteDescriptionLong, siteName, siteUrl } from '../../config.ts'
+import type { PageRef } from './pages.ts'
+
+import { dataset, licence, organisation, siteDescription, siteName, siteUrl } from '../../config.ts'
 
 const licenceUrl = licence.database.url
 
@@ -50,7 +52,9 @@ const breadcrumbs = (trail: { name: string; path: string }[]) => ({
 	})),
 })
 
-const webPage = (page: any, mainEntity?: string) => ({
+// `page` is the entry from `pagesFor` — the same name and sentence the tab, the
+// meta description and the markdown twin carry.
+const webPage = (page: PageRef, mainEntity?: string) => ({
 	'@type': 'WebPage',
 	'@id': ids.page(page.path),
 	url: `${siteUrl}${page.path}`,
@@ -73,14 +77,15 @@ const download = (format: string, name: string, url: string) => ({
 	contentUrl: url.startsWith('/') ? `${siteUrl}${url}` : url,
 })
 
-export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
+export function graphsFor({ survey, years, chapters, chapterPayloads, pages }: any) {
 	const year = String(survey.settings.year)
+	const at = (path: string): PageRef => pages.find((page: PageRef) => page.path === path)
 	const base = () => [organization(), website()]
 	const crumb = { name: 'Developer Survey', path: '/' }
 
 	const home = [
 		...base(),
-		webPage({ path: '/', title: 'Stack Overflow Developer Survey', description: siteDescriptionLong, markdown: '/index.md' }, ids.catalog),
+		webPage(at('/'), ids.catalog),
 		breadcrumbs([crumb]),
 		{
 			'@type': 'DataCatalog',
@@ -103,15 +108,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 
 	const yearGraph = [
 		...base(),
-		webPage(
-			{
-				path: `/${year}`,
-				title: `Stack Overflow Developer Survey ${year}`,
-				description: survey.settings.description,
-				markdown: `/${year}.md`,
-			},
-			ids.dataset(`/${year}`)
-		),
+		webPage(at(`/${year}`), ids.dataset(`/${year}`)),
 		breadcrumbs([crumb, { name: year, path: `/${year}` }]),
 		{
 			'@type': 'Dataset',
@@ -141,12 +138,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 	const methodologyPath = `/${year}/methodology`
 	const methodology = [
 		...base(),
-		webPage({
-			path: methodologyPath,
-			title: `Methodology ${year}`,
-			description: 'How the survey was run and how the numbers were worked out.',
-			markdown: `${methodologyPath}.md`,
-		}),
+		webPage(at(methodologyPath)),
 		breadcrumbs([crumb, { name: year, path: `/${year}` }, { name: 'Methodology', path: methodologyPath }]),
 	]
 
@@ -161,7 +153,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 
 		chapter[c.id] = [
 			...base(),
-			webPage({ path: chapterPath, title: `${c.name} ${year}`, description: c.description, markdown: `${chapterPath}.md` }),
+			webPage(at(chapterPath)),
 			breadcrumbs([crumb, { name: year, path: `/${year}` }, { name: c.name, path: chapterPath }]),
 			{
 				'@type': 'Article',
@@ -204,15 +196,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 
 		dataPage[c.id] = [
 			...base(),
-			webPage(
-				{
-					path: dataPath,
-					title: `${c.name} data ${year}`,
-					description: `Every figure in the ${c.name} chapter, with sample sizes.`,
-					markdown: `${dataPath}.md`,
-				},
-				ids.dataset(dataPath)
-			),
+			webPage(at(dataPath), ids.dataset(dataPath)),
 			breadcrumbs([crumb, { name: year, path: `/${year}` }, { name: c.name, path: chapterPath }, { name: 'Data', path: dataPath }]),
 			chapterDataset,
 		]
@@ -224,7 +208,7 @@ export function graphsFor({ survey, years, chapters, chapterPayloads }: any) {
 
 			question[`${c.id}/${q.id}`] = [
 				...base(),
-				webPage({ path, title: `${q.name} ${year}`, description: q.description, markdown: `${path}.md` }, ids.dataset(path)),
+				webPage(at(path), ids.dataset(path)),
 				breadcrumbs([
 					crumb,
 					{ name: year, path: `/${year}` },

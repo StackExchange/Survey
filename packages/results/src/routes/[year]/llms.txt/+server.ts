@@ -2,14 +2,13 @@ import type { EntryGenerator } from './$types'
 
 import { licence, siteName, siteUrl } from '$config'
 import site from '$generated/site.json'
-import { listPages } from '$lib/server/llms'
 
 export const prerender = true
 
 export const entries: EntryGenerator = () => [{ year: site.settings.year }]
 
 export function GET() {
-	const pages = listPages()
+	const pages = site.pages
 	const { year } = site.settings
 
 	// Names both, so a model can skip the HTML entirely.

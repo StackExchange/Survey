@@ -17,6 +17,7 @@ import YAML from 'yaml'
 
 import { graphsFor } from '../src/lib/jsonld.ts'
 import { columnLabel, labelFor, unitFor, valueKeys } from '../src/lib/labels.ts'
+import { pagesFor } from '../src/lib/pages.ts'
 
 marked.use({ breaks: true, gfm: true })
 
@@ -358,6 +359,7 @@ export async function generate() {
 		return { previous: ref(wrap(at - 1)), next: ref(wrap(at + 1)) }
 	}
 
+	const year = String(survey.settings.year)
 	const state = { changed: 0, bytes: 0, structural: false }
 	const index = {}
 	const axes = []
@@ -379,7 +381,7 @@ export async function generate() {
 		const drawable = flat.map((q) => figureOf(ctx, chapter.id, q)).filter(Boolean)
 		const sibling = (i) => (drawable[i] ? { slug: drawable[i].dataIdSlug, name: drawable[i].name } : null)
 
-		index[chapter.id] = drawable.map((f) => ({ slug: f.dataIdSlug, name: f.name }))
+		index[chapter.id] = drawable.map((f) => ({ slug: f.dataIdSlug, name: f.name, description: f.description }))
 		for (const f of drawable) if (f.axes) axes.push(`${f.dataId}: x=${f.axes.x.key} y=${f.axes.y.key}`)
 
 		chapterPayloads[chapter.id] = {
@@ -411,32 +413,53 @@ export async function generate() {
 		chapters: summaries.length,
 	}
 
-	const seo = graphsFor({ survey, years, chapters: summaries, chapterPayloads })
+	// Every page, named once. `<Seo>`, the schema.org graphs, the sitemap, both
+	// llms.txt indexes and the .md twins all read this rather than composing a
+	// title or a description of their own.
+	const pages = pagesFor({ settings: survey.settings, chapters: summaries, questions: index })
+	const seoOf = (path) => {
+		const { title, description } = pages.find((page) => page.path === path)
+		return { title, description }
+	}
+	const entriesOf = (kind) => pages.filter((page) => page.kind === kind).map(({ params }) => params)
+
+	const graphs = graphsFor({ survey, years, chapters: summaries, chapterPayloads, pages })
 
 	for (const chapter of live) {
+		const path = `/${year}/${chapter.id}`
+
 		await write(
 			`chapter/${chapter.id}.json`,
-			{ ...summary(chapter), highlights: featuresOf(ctx, chapter, 'chapter'), ...nextTo(chapter.id), jsonld: seo.chapter[chapter.id] },
+			{
+				...summary(chapter),
+				highlights: featuresOf(ctx, chapter, 'chapter'),
+				...nextTo(chapter.id),
+				seo: seoOf(path),
+				jsonld: graphs.chapter[chapter.id],
+			},
 			state
 		)
 
-		await write(`data/${chapter.id}.json`, { ...chapterPayloads[chapter.id], jsonld: seo.dataPage[chapter.id] }, state)
+		await write(
+			`data/${chapter.id}.json`,
+			{ ...chapterPayloads[chapter.id], seo: seoOf(`${path}/data`), jsonld: graphs.dataPage[chapter.id] },
+			state
+		)
 	}
 
 	for (const [key, payload] of Object.entries(questionPayloads)) {
-		await write(`question/${key}.json`, { ...payload, jsonld: seo.question[key] }, state)
+		await write(`question/${key}.json`, { ...payload, seo: seoOf(`/${year}/${key.replace('/', '/data/')}`), jsonld: graphs.question[key] }, state)
 	}
 
 	await write(
 		'year.json',
 		{
 			chapters: live.map((c) => ({ ...summary(c), heroes: featuresOf(ctx, c, 'home') })),
-			jsonld: seo.year,
+			seo: seoOf(`/${year}`),
+			jsonld: graphs.year,
 		},
 		state
 	)
-
-	const year = String(survey.settings.year)
 
 	await write(
 		'site.json',
@@ -444,14 +467,17 @@ export async function generate() {
 			settings: survey.settings,
 			stats,
 			methodology,
-			jsonld: { home: seo.home, methodology: seo.methodology },
+			seo: { home: seoOf('/'), methodology: seoOf(`/${year}/methodology`) },
+			jsonld: { home: graphs.home, methodology: graphs.methodology },
 			chapters: summaries,
-			questions: index,
-			// Which routes to prerender, so no route recomputes the list.
+			pages,
+			// Which routes to prerender. A page already carries its route's own params,
+			// so this is the page list filtered — the chapter entries serve both
+			// `[chapter]` and `[chapter]/data`.
 			entries: {
-				year: [{ year }],
-				chapter: summaries.map(({ id }) => ({ year, chapter: id })),
-				question: summaries.flatMap(({ id }) => index[id].map(({ slug }) => ({ year, chapter: id, question: slug }))),
+				year: entriesOf('year'),
+				chapter: entriesOf('chapter'),
+				question: entriesOf('question'),
 			},
 		},
 		state

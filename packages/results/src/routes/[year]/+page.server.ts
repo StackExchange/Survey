@@ -5,4 +5,10 @@ import year from '$generated/year.json'
 
 export const entries: EntryGenerator = () => [{ year: site.settings.year }]
 
-export const load: PageServerLoad = () => ({ settings: site.settings, stats: site.stats, chapters: year.chapters, jsonld: year.jsonld })
+export const load: PageServerLoad = () => ({
+	settings: site.settings,
+	stats: site.stats,
+	chapters: year.chapters,
+	seo: year.seo,
+	jsonld: year.jsonld,
+})

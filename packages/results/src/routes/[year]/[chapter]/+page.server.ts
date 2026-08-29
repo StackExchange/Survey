@@ -12,8 +12,5 @@ export const load: PageServerLoad = ({ params }) => {
 
 	if (!chapter) throw error(404, `No chapter "${params.chapter}"`)
 
-	// The first highlight's chart stands in as the chapter's image in JSON-LD.
-	const lead = chapter.highlights.find((h: any) => h.kind === 'figure')
-
 	return { chapter }
 }

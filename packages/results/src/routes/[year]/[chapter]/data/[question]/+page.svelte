@@ -72,7 +72,7 @@
 </script>
 
 {#if !panel}
-	<Seo title="{data.question.name} — {data.chapter.name} data {data.year}" description={data.question.description} graph={data.jsonld} />
+	<Seo {...data.seo} graph={data.jsonld} />
 {/if}
 
 <div class="mb-10">

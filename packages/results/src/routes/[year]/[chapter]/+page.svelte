@@ -19,7 +19,7 @@
 	let { data, params } = $props()
 </script>
 
-<Seo title="{data.chapter.name} {data.year}" description={data.chapter.description} graph={data.chapter.jsonld} />
+<Seo {...data.chapter.seo} graph={data.chapter.jsonld} />
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="chapter" />
 

@@ -7,6 +7,7 @@
 	// Once per route: `<svelte:head>` does not de-duplicate, so a layout *and* a
 	// page yields two of each tag. Site-wide tags live in app.html.
 	interface Props {
+		// The page's own name, from `site.pages` via its payload's `seo`.
 		title?: string
 		description?: string
 		image?: string
@@ -21,7 +22,9 @@
 
 	let { title, description = siteDescription, image = ogImage, type = 'website', noindex = false, markdown = true, graph }: Props = $props()
 
-	const fullTitle = $derived(title ? `${title} | ${siteName}` : siteName)
+	// The year index is named after the site itself, so suffixing it would print the
+	// site name twice.
+	const fullTitle = $derived(!title ? siteName : title.startsWith(siteName) ? title : `${title} | ${siteName}`)
 	const canonical = $derived(`${siteUrl}${page.url.pathname}`)
 	const imageUrl = $derived(`${siteUrl}${asset(image as `/${string}`)}`)
 

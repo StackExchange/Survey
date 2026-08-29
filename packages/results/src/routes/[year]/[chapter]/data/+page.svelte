@@ -35,10 +35,9 @@
 		return id && id !== (block.demographics ?? [])[0]?.demographic.id ? `${path}?d=${id}` : path
 	}
 
-	const description = $derived(`Every figure in the ${data.chapter.name} chapter, with sample sizes.`)
 </script>
 
-<Seo title="{data.chapter.name} data {data.year}" {description} graph={data.chapter.jsonld} />
+<Seo {...data.chapter.seo} graph={data.chapter.jsonld} />
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Data">
 	<nav aria-label="Chapter sections" class="mt-10">

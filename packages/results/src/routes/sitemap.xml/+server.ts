@@ -1,13 +1,13 @@
 import years from '$archive/index.json'
 import { siteUrl } from '$config'
-import { listPages } from '$lib/server/llms'
+import site from '$generated/site.json'
 
 export const prerender = true
 
 const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
 
 export function GET() {
-	const current = listPages().map(({ path }) => path)
+	const current = site.pages.map(({ path }) => path)
 	const listed = new Set(current)
 
 	const paths = [
