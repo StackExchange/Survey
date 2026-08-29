@@ -52,12 +52,12 @@
 			<dl
 				class="[&>dt]:font-headline-notch flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[96px]"
 			>
-				<dt>{count(data.stats.respondents)}</dt>
+				<dt>{data.stats.respondents}</dt>
 				<dd>Responses</dd>
 				<dt>{count(data.stats.countries)}</dt>
 				<dd>Countries reached</dd>
-				<dt>{count(data.stats.salaries)}</dt>
-				<dd>Salaries shared</dd>
+				<dt>{data.stats.responseTime}</dt>
+				<dd>Minutes to complete</dd>
 			</dl>
 		</div>
 	</section>

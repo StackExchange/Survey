@@ -401,14 +401,10 @@ export async function generate() {
 		}
 	}
 
-	// The counts the year index prints. All five are a lookup, not a derivation —
-	// a stat that needs its own pass over the bank belongs in the export instead.
 	const stats = {
-		// Editorial, not derived: the sheet publishes the headline figure, and the
-		// Name/Value tab has no types, so it arrives as a string.
-		respondents: Number(survey.settings.respondents),
+		respondents: survey.settings.respondents,
 		countries: methodology.TotalCountries,
-		salaries: methodology.GaveSalary,
+		responseTime: Math.round(methodology.MedianResponseTime),
 		questions: Object.values(index).flat().length,
 		chapters: summaries.length,
 	}
