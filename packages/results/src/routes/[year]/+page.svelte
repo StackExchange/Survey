@@ -5,7 +5,7 @@
 
 	import { count } from '$charts/utils/theme'
 	import { chapterChartVars, chapterColour } from '$config'
-	import { tinting } from '$lib/tint.svelte'
+	import { tinting } from '$lib/home-section-tint.svelte'
 
 	import BrandHeader from '$components/BrandHeader.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
