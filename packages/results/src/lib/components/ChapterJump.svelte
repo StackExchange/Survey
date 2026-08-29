@@ -48,21 +48,21 @@
 	onpointerleave={() => (held = false)}
 	onfocus={() => (held = true)}
 	onblur={() => (held = false)}
-	class="jump sticky bottom-5 mr-5 ml-auto flex w-1/2 max-w-100 bg-black leading-snug hover:bg-orange-medium lg:w-full dark:bg-orange-medium dark:hover:bg-orange-dark"
+	class="jump sticky bottom-5 float-right mr-5 ml-auto inline-flex max-w-100 bg-black leading-snug hover:bg-orange-medium lg:w-full dark:bg-orange-medium dark:hover:bg-orange-dark"
 >
 	<Icon src={spot} class="native hidden h-auto max-w-30 p-3 lg:block" />
 
-	<div class="flex-1 p-4 pl-4 text-white lg:pl-2">
-		<div class="font-semibold">{title}</div>
-		<div class="opacity-50">{subtitle}</div>
+	<div class="flex-1 p-0 leading-tight text-white lg:p-4">
+		<div class="px-3 pt-2 font-semibold lg:mb-1 lg:p-0">{title}</div>
+		<div class="hidden opacity-50 md:block">{subtitle}</div>
 	</div>
 
-	<div class="arrow absolute right-0 bottom-0 bg-orange p-2 text-black">
-		<Icon src={arrow} />
+	<div class="arrow static right-0 bottom-0 flex bg-orange p-2 text-black md:absolute">
+		<Icon src={arrow} class="mt-auto" />
 	</div>
 </a>
 
-<div aria-hidden="true" class="h-px" {@attach foot}></div>
+<div aria-hidden="true" class="h-30" {@attach foot}></div>
 
 <style>
 	.jump {
