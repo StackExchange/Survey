@@ -68,7 +68,7 @@
 				<ChapterHeader year={data.year} {chapter} variant="home" />
 
 				{#each chapter.heroes as hero, i (`${chapter.id}-hero-${i}`)}
-					<div class="container mx-auto py-10 lg:py-[8vh]">
+					<div class="container mx-auto py-10 lg:py-[7vh]">
 						{#if hero.kind === 'text'}
 							<Prose block={hero} />
 						{:else if hero.kind === 'quote'}
