@@ -115,7 +115,7 @@
 	<figure
 		bind:clientWidth={measured}
 		data-ready={measured ? '' : undefined}
-		class="chart-reveal {tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 touch-pan-y lg:mt-0 [&>svg]:h-auto [&>svg]:w-full"
+		class="chart-reveal {tier === 'hero' ? 'col-span-6' : 'col-span-5'} mt-10 lg:mt-0 [&>svg]:h-auto [&>svg]:w-full"
 	>
 		<Chart figure={block} width={chartWidth} onhover={(data, event) => (hovered = { data, event })} />
 
