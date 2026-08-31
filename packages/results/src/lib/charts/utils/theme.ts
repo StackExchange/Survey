@@ -61,7 +61,7 @@ export const onSeries = (i: number) => theme.onSeries[i % theme.onSeries.length]
 
 export const FINE = 12 // axis ticks, point names, legend
 export const SMALL = 14 // standard data charts, and the chrome band
-export const LABEL = 16 // editorial 2d/3d row labels
+export const LABEL = 15 // editorial 2d/3d row labels
 export const VALUE = 25 // the display number
 
 // Between a value's baseline and the name under it.
