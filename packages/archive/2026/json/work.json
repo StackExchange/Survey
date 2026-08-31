@@ -1,76 +1,4 @@
 {
-  "Age": {
-    "meta": {
-      "qid": "QID3",
-      "qname": "Age",
-      "question": "<p>What is your age?<\/p>",
-      "slices": [
-        {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
-          "n": 30903
-        }
-      ]
-    },
-    "data": [
-      {
-        "slice": 0,
-        "series": null,
-        "response": "25-34 years old",
-        "count": 9267,
-        "pct": 0.2999
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "35-44 years old",
-        "count": 8522,
-        "pct": 0.2758
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "18-24 years old",
-        "count": 4944,
-        "pct": 0.16
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "45-54 years old",
-        "count": 4198,
-        "pct": 0.1358
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "55-64 years old",
-        "count": 1829,
-        "pct": 0.0592
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Under 18 years old",
-        "count": 969,
-        "pct": 0.0314
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "65 years or older",
-        "count": 822,
-        "pct": 0.0266
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Prefer not to say",
-        "count": 352,
-        "pct": 0.0114
-      }
-    ]
-  },
   "CodeMain": {
     "meta": {
       "qid": "QID4",
@@ -1884,120 +1812,43 @@
         "slice": 0,
         "series": null,
         "response": "I do not feel complacent",
-        "count": 2896,
-        "pct": 0.3484
+        "count": 2889,
+        "pct": 0.3476
       },
       {
         "slice": 0,
         "series": null,
         "response": "Burnout/tech fatigue",
-        "count": 1756,
-        "pct": 0.2113
+        "count": 1753,
+        "pct": 0.2109
       },
       {
         "slice": 0,
         "series": null,
         "response": "Economic uncertainty making me hesitant to switch roles",
-        "count": 1592,
-        "pct": 0.1915
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Lack of upward mobility due to corporate tightening",
-        "count": 866,
-        "pct": 0.1042
+        "count": 1545,
+        "pct": 0.1859
       },
       {
         "slice": 0,
         "series": null,
         "response": "AI automating the challenging parts of my job",
-        "count": 831,
-        "pct": 0.1
+        "count": 822,
+        "pct": 0.0989
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Lack of upward mobility due to corporate tightening",
+        "count": 811,
+        "pct": 0.0976
       },
       {
         "slice": 0,
         "series": null,
         "response": "Other",
-        "count": 206,
-        "pct": 0.0248
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "i don't understand the question",
-        "count": 49,
-        "pct": 0.0059
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "lack of technical challenge",
-        "count": 42,
-        "pct": 0.0051
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "lack of challenging work",
-        "count": 23,
-        "pct": 0.0028
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "ai automating the fun parts of my job",
-        "count": 15,
-        "pct": 0.0018
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "all of the above",
-        "count": 12,
-        "pct": 0.0014
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "i don't get the question",
-        "count": 8,
-        "pct": 0.001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "verstehe die frage nicht",
-        "count": 7,
-        "pct": 0.0008
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "poor leadership",
-        "count": 5,
-        "pct": 0.0006
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": ".",
-        "count": 2,
-        "pct": 0.0002
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "no entiendo la pregunta",
-        "count": 1,
-        "pct": 0.0001
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "salary",
-        "count": 1,
-        "pct": 0.0001
+        "count": 492,
+        "pct": 0.0592
       }
     ]
   },
@@ -2375,57 +2226,6 @@
         "response": "18",
         "count": 35,
         "pct": 0.0024
-      }
-    ]
-  },
-  "Gender": {
-    "meta": {
-      "qid": "QID30",
-      "qname": "Gender",
-      "question": "<p>Which of the following best represents your gender identity?<\/p>",
-      "slices": [
-        {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
-          "n": 21149
-        }
-      ]
-    },
-    "data": [
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Man",
-        "count": 18191,
-        "pct": 0.8601
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Woman",
-        "count": 1393,
-        "pct": 0.0659
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Prefer not to say",
-        "count": 899,
-        "pct": 0.0425
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Non-binary",
-        "count": 431,
-        "pct": 0.0204
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Prefer to self-describe:",
-        "count": 235,
-        "pct": 0.0111
       }
     ]
   },

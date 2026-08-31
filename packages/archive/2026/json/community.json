@@ -1061,6 +1061,57 @@
       }
     ]
   },
+  "Gender": {
+    "meta": {
+      "qid": "QID30",
+      "qname": "Gender",
+      "question": "<p>Which of the following best represents your gender identity?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 21149
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Man",
+        "count": 18191,
+        "pct": 0.8601
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Woman",
+        "count": 1393,
+        "pct": 0.0659
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer not to say",
+        "count": 899,
+        "pct": 0.0425
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Non-binary",
+        "count": 431,
+        "pct": 0.0204
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer to self-describe:",
+        "count": 235,
+        "pct": 0.0111
+      }
+    ]
+  },
   "DA_CommPlatform": {
     "meta": {
       "qid": "QID42",

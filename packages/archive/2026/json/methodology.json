@@ -1,106 +1,208 @@
 {
-	"TotalRespondents": 49019,
-	"MedianResponseTime": 22.68,
-	"TotalCountries": 177,
-	"GaveSalary": 23928,
-	"ExchangeRateUpdated": "2025-06-24",
-	"MainBranch": {
-		"qid": "QID3",
-		"qname": "MainBranch",
-		"question": "Are you someone who writes code? Please select one of the following options that best describes you today.",
-		"datasets": {
-			"MainBranch": {
-				"total_respondents": 49019,
-				"plot_type": "bar",
-				"data": [
-					{
-						"response": "I am a developer by profession",
-						"frequency": 37356,
-						"percent": 0.7621
-					},
-					{
-						"response": "I am not primarily a developer, but I write code sometimes as part of my work/studies",
-						"frequency": 4876,
-						"percent": 0.0995
-					},
-					{
-						"response": "I am learning to code",
-						"frequency": 2564,
-						"percent": 0.0523
-					},
-					{
-						"response": "I code primarily as a hobby",
-						"frequency": 1916,
-						"percent": 0.0391
-					},
-					{
-						"response": "I used to be a developer by profession, but no longer am",
-						"frequency": 1320,
-						"percent": 0.0269
-					},
-					{
-						"response": "I work with developers or my work supports developers but am not a developer by profession",
-						"frequency": 987,
-						"percent": 0.0201
-					}
-				]
-			}
-		}
-	},
-	"SurveyLength": {
-		"qid": "QID94",
-		"qname": "SurveyLength",
-		"question": "How do you feel about the length of the survey this year?",
-		"datasets": {
-			"SurveyLength": {
-				"total_respondents": 29511,
-				"plot_type": "bar",
-				"data": [
-					{
-						"response": "Appropriate in length",
-						"frequency": 16777,
-						"percent": 0.5685
-					},
-					{
-						"response": "Too long",
-						"frequency": 12404,
-						"percent": 0.4203
-					},
-					{
-						"response": "Too short",
-						"frequency": 330,
-						"percent": 0.0112
-					}
-				]
-			}
-		}
-	},
-	"SurveyEase": {
-		"qid": "QID95",
-		"qname": "SurveyEase",
-		"question": "How easy or difficult was this survey to complete?",
-		"datasets": {
-			"SurveyEase": {
-				"total_respondents": 29492,
-				"plot_type": "bar",
-				"data": [
-					{
-						"response": "Neither easy nor difficult",
-						"frequency": 15421,
-						"percent": 0.5229
-					},
-					{
-						"response": "Easy",
-						"frequency": 11740,
-						"percent": 0.3981
-					},
-					{
-						"response": "Difficult",
-						"frequency": 2331,
-						"percent": 0.079
-					}
-				]
-			}
-		}
-	}
+  "Age": {
+    "meta": {
+      "qid": "QID3",
+      "qname": "Age",
+      "question": "<p>What is your age?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30903
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "25-34 years old",
+        "count": 9267,
+        "pct": 0.2999
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "35-44 years old",
+        "count": 8522,
+        "pct": 0.2758
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "18-24 years old",
+        "count": 4944,
+        "pct": 0.16
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "45-54 years old",
+        "count": 4198,
+        "pct": 0.1358
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "55-64 years old",
+        "count": 1829,
+        "pct": 0.0592
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Under 18 years old",
+        "count": 969,
+        "pct": 0.0314
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "65 years or older",
+        "count": 822,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer not to say",
+        "count": 352,
+        "pct": 0.0114
+      }
+    ]
+  },
+  "SurveyLength": {
+    "meta": {
+      "qid": "QID99",
+      "qname": "SurveyLength",
+      "question": "<p>How do you feel about the length of the survey this year?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14347
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Too long",
+        "count": 9399,
+        "pct": 0.6551
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Appropriate in length",
+        "count": 5026,
+        "pct": 0.3503
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Too short",
+        "count": 250,
+        "pct": 0.0174
+      }
+    ]
+  },
+  "SurveyEase": {
+    "meta": {
+      "qid": "QID100",
+      "qname": "SurveyEase",
+      "question": "<p>How easy or difficult was this survey to complete?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14442
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Neither easy nor difficult",
+        "count": 8060,
+        "pct": 0.5581
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Easy",
+        "count": 4459,
+        "pct": 0.3088
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Difficult",
+        "count": 2212,
+        "pct": 0.1532
+      }
+    ]
+  },
+  "Consent": {
+    "meta": {
+      "qid": "QID2",
+      "qname": "Consent",
+      "question": "<p>This survey is for research purposes only. Your participation in this survey is completely anonymous, and you will not be contacted about your responses. All results will be analyzed only in the aggregate. Anonymized results of the survey will be made publicly available under the Open Database License, where anyone can download and analyze the data. Certain answers you and your peers give may be considered personally identifiable information and therefore kept out of the anonymized results file. The information gathered via this survey is made available to the public in the spirit of community on which Stack Overflow was founded and to serve as a resource for everyone who codes. If you have any questions about this survey, please contact Stack’s Privacy Team at <a href=\"mailto:privacy@stackoverflow.com\">privacy@stackoverflow.com<\/a>.<\/p>\n<p>By clicking &quot;I agree&quot;, you acknowledge that you have read our <a href=\"https://stackoverflow.com/legal/privacy-policy\">Privacy Policy<\/a> and agree to the <a href=\"https://stackoverflow.com/legal/terms-of-service/public\">Terms of Service<\/a>. You may unsubscribe from these communications at any time by clicking the link at the bottom of our emails or by following the instructions in our Privacy Policy.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 30896
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I agree",
+        "count": 30893,
+        "pct": 0.9999
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not agree (selecting this will end the survey)",
+        "count": 3,
+        "pct": 0.0001
+      }
+    ]
+  },
+  "SOChangeAddlConsent": {
+    "meta": {
+      "qid": "QID106",
+      "qname": "SOChangeAddlConsent",
+      "question": "<p>May we use your response about how your Stack Overflow usage has changed?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12625
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I agree to allow Stack to share my statement above publicly.",
+        "count": 8572,
+        "pct": 0.679
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I agree to share my statement for Stack Research Team review only.",
+        "count": 4053,
+        "pct": 0.321
+      }
+    ]
+  }
 }
