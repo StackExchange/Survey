@@ -405,7 +405,6 @@ export async function generate() {
 		respondents: survey.settings.respondents,
 		countries: methodology.TotalCountries,
 		responseTime: Math.round(methodology.MedianResponseTime),
-		questions: Object.values(index).flat().length,
 		chapters: summaries.length,
 	}
 
@@ -504,11 +503,10 @@ export async function generate() {
 
 	for (const line of axes) console.error(`· scatter ${line}`)
 
-	return { ...state, chapters: live.length, questions: Object.values(index).flat().length, methodology: methodologyBlocks.length }
+	return { ...state, chapters: live.length }
 }
 
-export const summarise = (r) =>
-	`✅ ${r.chapters} chapters, ${r.questions} questions, ${r.methodology} methodology blocks → src/generated (${r.changed} written, ${Math.round(r.bytes / 1024)} KB)`
+export const summarise = (r) => `✅ ${r.chapters} chapters → src/generated (${r.changed} written, ${Math.round(r.bytes / 1024)} KB)`
 
 // Run directly, rather than imported by the Vite plugin.
 if (process.argv[1] === fileURLToPath(import.meta.url)) console.error(summarise(await generate()))

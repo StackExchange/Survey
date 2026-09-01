@@ -40,7 +40,7 @@
 		<img src="/img/home-categories.svg" class="h-auto w-full" width="611" height="485" alt="Categories" />
 		<p class="max-w-2xl text-4xl">
 			<span class="font-headline-notch block text-9xl lg:text-[260px] lg:leading-60">
-				{data.stats.questions}
+				{data.settings.questionCount}
 			</span>
 			questions asked across {data.stats.chapters} insightful categories
 		</p>
