@@ -498,97 +498,17 @@
       "sections": [
         {
           "chapter": "Knowledge",
-          "name": "Knowledge and context",
+          "name": "Context Challenges",
           "description": "",
-          "id": "knowledge-and-context",
+          "id": "context-challenges",
           "questions": [
             {
               "chapter": "Knowledge",
-              "section": "Knowledge and context",
-              "name": "Tasks delegated to AI agents",
-              "dataId": "KnowAgentDelegate",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "tasks-delegated-to-ai-agents",
-              "dataIdSlug": "know-agent-delegate"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Knowledge and context",
-              "name": "Signals of trustworthy information",
-              "dataId": "TrustReason",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "signals-of-trustworthy-information",
-              "dataIdSlug": "trust-reason"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Knowledge and context",
-              "name": "Important project context",
-              "dataId": "ContextSelect",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "important-project-context",
-              "dataIdSlug": "context-select"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Knowledge and context",
-              "name": "Barriers to finding context",
-              "dataId": "ContextProblems",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "barriers-to-finding-context",
-              "dataIdSlug": "context-problems"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Knowledge and context",
-              "name": "Managing work context",
-              "dataId": "ContextWork",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "managing-work-context",
-              "dataIdSlug": "context-work"
-            }
-          ]
-        },
-        {
-          "chapter": "Knowledge",
-          "name": "Information quality and trust",
-          "description": "",
-          "id": "information-quality-and-trust",
-          "questions": [
-            {
-              "chapter": "Knowledge",
-              "section": "Information quality and trust",
-              "name": "Sources for work-related answers",
-              "dataId": "KnowledgeQ",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "sources-for-work-related-answers",
-              "dataIdSlug": "knowledge-q"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Information quality and trust",
+              "section": "Context Challenges",
               "name": "Time spent finding information",
               "dataId": "KnowledgeA",
               "chart": "bar",
-              "description": "",
+              "description": "~59% spend 5+ hours/week searching for information; 11% spend 20+ hours",
               "subtext": "",
               "axisLabels": [],
               "id": "time-spent-finding-information",
@@ -596,11 +516,79 @@
             },
             {
               "chapter": "Knowledge",
-              "section": "Information quality and trust",
+              "section": "Context Challenges",
+              "name": "Important project context",
+              "dataId": "ContextSelect",
+              "chart": "bar",
+              "description": "Project goals (85%) and code/technical docs (73%) are the most needed context types.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "important-project-context",
+              "dataIdSlug": "context-select"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Barriers to finding context",
+              "dataId": "ContextProblems",
+              "chart": "bar",
+              "description": "Incomplete info (63%), knowledge in people's heads (61%), and outdated info (57%) are top barriers.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "barriers-to-finding-context",
+              "dataIdSlug": "context-problems"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Managing work context",
+              "dataId": "ContextWork",
+              "chart": "bar",
+              "description": "Context management is highly manual — keeping separate notes (54%) and starting fresh AI sessions (45%) dominate.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "managing-work-context",
+              "dataIdSlug": "context-work"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Discovering context too late",
+              "dataId": "ContextFreq",
+              "chart": "bar",
+              "description": "79% discover important context only after starting a task, highlighting systemic context gaps.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "discovering-context-too-late",
+              "dataIdSlug": "context-freq"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge",
+          "name": "Knowledge sources and trust",
+          "description": "",
+          "id": "knowledge-sources-and-trust",
+          "questions": [
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Sources for work-related answers",
+              "dataId": "KnowledgeQ",
+              "chart": "bar",
+              "description": "Coworkers (72%) and code repos (63%) are the go-to sources — internal beats external.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "sources-for-work-related-answers",
+              "dataIdSlug": "knowledge-q"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
               "name": "Importance of information accuracy",
               "dataId": "KnowledgeAcc",
               "chart": "bar-stacked",
-              "description": "",
+              "description": "Accuracy is the expectation for official docs and code repos; chat tools and Stack Overflow face lower accuracy expectations.",
               "subtext": "",
               "axisLabels": [],
               "id": "importance-of-information-accuracy",
@@ -608,11 +596,11 @@
             },
             {
               "chapter": "Knowledge",
-              "section": "Information quality and trust",
+              "section": "Knowledge sources and trust",
               "name": "Importance of current information",
               "dataId": "KnowledgeTime",
               "chart": "bar-stacked",
-              "description": "",
+              "description": "Recency/timestamps matter most for project tools and code repos; people tolerate stale human knowledge.",
               "subtext": "",
               "axisLabels": [],
               "id": "importance-of-current-information",
@@ -620,11 +608,11 @@
             },
             {
               "chapter": "Knowledge",
-              "section": "Information quality and trust",
+              "section": "Knowledge sources and trust",
               "name": "Importance of source traceability",
               "dataId": "KnowledgeSource",
               "chart": "bar-stacked",
-              "description": "",
+              "description": "Source traceability is most critical for code repos and API docs; coworker knowledge is trusted by reputation.",
               "subtext": "",
               "axisLabels": [],
               "id": "importance-of-source-traceability",
@@ -632,11 +620,11 @@
             },
             {
               "chapter": "Knowledge",
-              "section": "Information quality and trust",
+              "section": "Knowledge sources and trust",
               "name": "Source attribution for AI answers",
               "dataId": "KnowledgeSourceAI",
               "chart": "bar",
-              "description": "",
+              "description": "79% consider source attribution important or very important for trusting AI answers.",
               "subtext": "",
               "axisLabels": [],
               "id": "source-attribution-for-ai-answers",
@@ -644,27 +632,15 @@
             },
             {
               "chapter": "Knowledge",
-              "section": "Information quality and trust",
-              "name": "Control over information used by AI",
-              "dataId": "KnowAgentTrust",
+              "section": "Knowledge sources and trust",
+              "name": "Signals of trustworthy information",
+              "dataId": "TrustReason",
               "chart": "bar",
-              "description": "",
+              "description": "Recency (72.6%) and authority (60%) beat attribution and peer validation as trust signals.",
               "subtext": "",
               "axisLabels": [],
-              "id": "control-over-information-used-by-ai",
-              "dataIdSlug": "know-agent-trust"
-            },
-            {
-              "chapter": "Knowledge",
-              "section": "Information quality and trust",
-              "name": "Discovering context too late",
-              "dataId": "ContextFreq",
-              "chart": "bar",
-              "description": "",
-              "subtext": "",
-              "axisLabels": [],
-              "id": "discovering-context-too-late",
-              "dataIdSlug": "context-freq"
+              "id": "signals-of-trustworthy-information",
+              "dataIdSlug": "trust-reason"
             }
           ]
         },
@@ -677,10 +653,34 @@
             {
               "chapter": "Knowledge",
               "section": "AI adoption and cost",
+              "name": "Tasks delegated to AI agents",
+              "dataId": "KnowAgentDelegate",
+              "chart": "bar",
+              "description": "Code tasks dominate AI use (73% write code, 62% debug); critical ops like deploying (10%) are rarely delegated.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "tasks-delegated-to-ai-agents",
+              "dataIdSlug": "know-agent-delegate"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Control over information used by AI",
+              "dataId": "KnowAgentTrust",
+              "chart": "bar",
+              "description": "64% actively curate what info AI uses; 17% have little or no visibility into AI inputs.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "control-over-information-used-by-ai",
+              "dataIdSlug": "know-agent-trust"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
               "name": "Factors in AI adoption",
               "dataId": "AIAdopt",
               "chart": "bar",
-              "description": "",
+              "description": "Output quality, security, and price drive adoption — organizations are pragmatic and risk-averse.",
               "subtext": "",
               "axisLabels": [],
               "id": "factors-in-ai-adoption",
@@ -692,7 +692,7 @@
               "name": "Organizational AI usage practices",
               "dataId": "AIToken",
               "chart": "bar",
-              "description": "",
+              "description": "38% of orgs set AI spending limits; 18% have no formal governance.",
               "subtext": "",
               "axisLabels": [],
               "id": "organizational-ai-usage-practices",
@@ -704,7 +704,7 @@
               "name": "AI cost and usage limits",
               "dataId": "AICost",
               "chart": "bar",
-              "description": "",
+              "description": "33% self-monitor AI usage; cost pressure changes model selection and task selectivity.",
               "subtext": "",
               "axisLabels": [],
               "id": "ai-cost-and-usage-limits",
@@ -716,37 +716,13 @@
               "name": "Cost-conscious prompting",
               "dataId": "AICostPrompt",
               "chart": "bar",
-              "description": "",
+              "description": "75% changed prompts for quality, 38% for cost — quality optimization outpaces cost-cutting 2:1.",
               "subtext": "",
               "axisLabels": [],
               "id": "cost-conscious-prompting",
               "dataIdSlug": "ai-cost-prompt"
             }
           ]
-        },
-        {
-          "chapter": "Knowledge",
-          "name": "TBD16",
-          "description": "",
-          "id": "tbd-16"
-        },
-        {
-          "chapter": "Knowledge",
-          "name": "TBD17",
-          "description": "",
-          "id": "tbd-17"
-        },
-        {
-          "chapter": "Knowledge",
-          "name": "Education & Experience",
-          "description": "",
-          "id": "education-experience"
-        },
-        {
-          "chapter": "Knowledge",
-          "name": "Developer roles",
-          "description": "",
-          "id": "developer-roles"
         }
       ],
       "features": [
