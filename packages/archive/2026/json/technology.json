@@ -14065,5 +14065,4876 @@
         "pct": 0.2599
       }
     ]
+  },
+  "Languages_Timeseries": {
+    "meta": {
+      "qid": "QID36",
+      "qname": "Languages",
+      "question": "<p>Which programming, scripting, and markup languages have you done extensive development work in over the past year, which do you want to work with over the next year, and which have you used AI tools or AI agents to work with? Select all that apply in each row.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14099
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2017",
+        "count": null,
+        "pct": 0.619
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2017",
+        "count": null,
+        "pct": 0.508
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2017",
+        "count": null,
+        "pct": 0.317
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2017",
+        "count": null,
+        "pct": 0.094
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2017",
+        "count": null,
+        "pct": 0.393
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2017",
+        "count": null,
+        "pct": 0.338
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2017",
+        "count": null,
+        "pct": 0.221
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2017",
+        "count": null,
+        "pct": 0.189
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2017",
+        "count": null,
+        "pct": 0.281
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2017",
+        "count": null,
+        "pct": 0.042
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2017",
+        "count": null,
+        "pct": 0.028
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2017",
+        "count": null,
+        "pct": 0.049
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2017",
+        "count": null,
+        "pct": 0.064
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2017",
+        "count": null,
+        "pct": 0.09
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2017",
+        "count": null,
+        "pct": 0.044
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2017",
+        "count": null,
+        "pct": 0.062
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2017",
+        "count": null,
+        "pct": 0.043
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2017",
+        "count": null,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2017",
+        "count": null,
+        "pct": 0.043
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2017",
+        "count": null,
+        "pct": 0.042
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2017",
+        "count": null,
+        "pct": 0.064
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2017",
+        "count": null,
+        "pct": 0.018
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2017",
+        "count": null,
+        "pct": 0.035
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2018",
+        "count": null,
+        "pct": 0.698
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2018",
+        "count": null,
+        "pct": 0.57
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2018",
+        "count": null,
+        "pct": 0.685
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2018",
+        "count": null,
+        "pct": 0.388
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2018",
+        "count": null,
+        "pct": 0.398
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2018",
+        "count": null,
+        "pct": 0.174
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2018",
+        "count": null,
+        "pct": 0.453
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2018",
+        "count": null,
+        "pct": 0.344
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2018",
+        "count": null,
+        "pct": 0.244
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2018",
+        "count": null,
+        "pct": 0.23
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2018",
+        "count": null,
+        "pct": 0.307
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2018",
+        "count": null,
+        "pct": 0.071
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2018",
+        "count": null,
+        "pct": 0.045
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2018",
+        "count": null,
+        "pct": 0.074
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2018",
+        "count": null,
+        "pct": 0.081
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2018",
+        "count": null,
+        "pct": 0.101
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2018",
+        "count": null,
+        "pct": 0.061
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2018",
+        "count": null,
+        "pct": 0.067
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2018",
+        "count": null,
+        "pct": 0.049
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2018",
+        "count": null,
+        "pct": 0.043
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2018",
+        "count": null,
+        "pct": 0.042
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2018",
+        "count": null,
+        "pct": 0.058
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2018",
+        "count": null,
+        "pct": 0.07
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2018",
+        "count": null,
+        "pct": 0.044
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2019",
+        "count": null,
+        "pct": 0.678
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2019",
+        "count": null,
+        "pct": 0.544
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2019",
+        "count": null,
+        "pct": 0.635
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2019",
+        "count": null,
+        "pct": 0.417
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2019",
+        "count": null,
+        "pct": 0.366
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2019",
+        "count": null,
+        "pct": 0.212
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2019",
+        "count": null,
+        "pct": 0.411
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2019",
+        "count": null,
+        "pct": 0.31
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2019",
+        "count": null,
+        "pct": 0.235
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2019",
+        "count": null,
+        "pct": 0.206
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2019",
+        "count": null,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2019",
+        "count": null,
+        "pct": 0.264
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2019",
+        "count": null,
+        "pct": 0.082
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2019",
+        "count": null,
+        "pct": 0.064
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2019",
+        "count": null,
+        "pct": 0.067
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2019",
+        "count": null,
+        "pct": 0.066
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2019",
+        "count": null,
+        "pct": 0.084
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2019",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2019",
+        "count": null,
+        "pct": 0.058
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2019",
+        "count": null,
+        "pct": 0.055
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2019",
+        "count": null,
+        "pct": 0.014
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2019",
+        "count": null,
+        "pct": 0.048
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2019",
+        "count": null,
+        "pct": 0.038
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2019",
+        "count": null,
+        "pct": 0.014
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2020",
+        "count": null,
+        "pct": 0.677
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2020",
+        "count": null,
+        "pct": 0.547
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2020",
+        "count": null,
+        "pct": 0.631
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2020",
+        "count": null,
+        "pct": 0.441
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2020",
+        "count": null,
+        "pct": 0.331
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2020",
+        "count": null,
+        "pct": 0.254
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2020",
+        "count": null,
+        "pct": 0.402
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2020",
+        "count": null,
+        "pct": 0.314
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2020",
+        "count": null,
+        "pct": 0.239
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2020",
+        "count": null,
+        "pct": 0.218
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2020",
+        "count": null,
+        "pct": 0.051
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2020",
+        "count": null,
+        "pct": 0.262
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2020",
+        "count": null,
+        "pct": 0.088
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2020",
+        "count": null,
+        "pct": 0.078
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2020",
+        "count": null,
+        "pct": 0.062
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2020",
+        "count": null,
+        "pct": 0.059
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2020",
+        "count": null,
+        "pct": 0.071
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2020",
+        "count": null,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2020",
+        "count": null,
+        "pct": 0.057
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2020",
+        "count": null,
+        "pct": 0.061
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2020",
+        "count": null,
+        "pct": 0.031
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2020",
+        "count": null,
+        "pct": 0.041
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2020",
+        "count": null,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2020",
+        "count": null,
+        "pct": 0.036
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2020",
+        "count": null,
+        "pct": 0.009
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2021",
+        "count": null,
+        "pct": 0.6496
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2021",
+        "count": null,
+        "pct": 0.4708
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2021",
+        "count": null,
+        "pct": 0.5607
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2021",
+        "count": null,
+        "pct": 0.4824
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2713
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2021",
+        "count": null,
+        "pct": 0.3019
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2021",
+        "count": null,
+        "pct": 0.3535
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2786
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1075
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2431
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2101
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0832
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2198
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0955
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0703
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0561
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2021",
+        "count": null,
+        "pct": 0.051
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0675
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0602
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0507
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0466
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0301
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0246
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0466
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0133
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0174
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2021",
+        "count": null,
+        "pct": 0.028
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0221
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2021",
+        "count": null,
+        "pct": 0.026
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2021",
+        "count": null,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0079
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0129
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0188
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0097
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0053
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2022",
+        "count": null,
+        "pct": 0.6536
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4943
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2022",
+        "count": null,
+        "pct": 0.5508
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4807
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2907
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2022",
+        "count": null,
+        "pct": 0.3483
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2022",
+        "count": null,
+        "pct": 0.3327
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2798
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1207
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2255
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1927
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0932
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1207
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1115
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0916
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0403
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0547
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0491
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0605
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0654
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0466
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0448
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0332
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0231
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2022",
+        "count": null,
+        "pct": 0.041
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0131
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0215
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0239
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0222
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0259
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0325
+      },
+      {
+        "slice": 0,
+        "series": "Fortran",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0091
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2022",
+        "count": null,
+        "pct": 0.009
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0153
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0151
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0103
+      },
+      {
+        "slice": 0,
+        "series": "OCaml",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0059
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0065
+      },
+      {
+        "slice": 0,
+        "series": "Solidity",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0145
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2023",
+        "count": null,
+        "pct": 0.6361
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4866
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2023",
+        "count": null,
+        "pct": 0.5297
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4928
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2023",
+        "count": null,
+        "pct": 0.3237
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2023",
+        "count": null,
+        "pct": 0.3887
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2023",
+        "count": null,
+        "pct": 0.3055
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2762
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1359
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2242
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1934
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1305
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1858
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1324
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0906
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0609
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0543
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0623
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0602
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0423
+      },
+      {
+        "slice": 0,
+        "series": "GDScript",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0171
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0407
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0355
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2023",
+        "count": null,
+        "pct": 0.034
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0246
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0381
+      },
+      {
+        "slice": 0,
+        "series": "Zig",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0083
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0153
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0232
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0231
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0209
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0277
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0323
+      },
+      {
+        "slice": 0,
+        "series": "Fortran",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0095
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0099
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0115
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0126
+      },
+      {
+        "slice": 0,
+        "series": "Ada",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0077
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0097
+      },
+      {
+        "slice": 0,
+        "series": "OCaml",
+        "response": "2023",
+        "count": null,
+        "pct": 0.007
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0066
+      },
+      {
+        "slice": 0,
+        "series": "Prolog",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0089
+      },
+      {
+        "slice": 0,
+        "series": "Solidity",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0133
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2024",
+        "count": null,
+        "pct": 0.623
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2024",
+        "count": null,
+        "pct": 0.51
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2024",
+        "count": null,
+        "pct": 0.529
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2024",
+        "count": null,
+        "pct": 0.51
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2024",
+        "count": null,
+        "pct": 0.339
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2024",
+        "count": null,
+        "pct": 0.385
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2024",
+        "count": null,
+        "pct": 0.303
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2024",
+        "count": null,
+        "pct": 0.271
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2024",
+        "count": null,
+        "pct": 0.138
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2024",
+        "count": null,
+        "pct": 0.23
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2024",
+        "count": null,
+        "pct": 0.203
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2024",
+        "count": null,
+        "pct": 0.126
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2024",
+        "count": null,
+        "pct": 0.182
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2024",
+        "count": null,
+        "pct": 0.135
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2024",
+        "count": null,
+        "pct": 0.094
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2024",
+        "count": null,
+        "pct": 0.062
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2024",
+        "count": null,
+        "pct": 0.054
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2024",
+        "count": null,
+        "pct": 0.047
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2024",
+        "count": null,
+        "pct": 0.052
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2024",
+        "count": null,
+        "pct": 0.06
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2024",
+        "count": null,
+        "pct": 0.043
+      },
+      {
+        "slice": 0,
+        "series": "GDScript",
+        "response": "2024",
+        "count": null,
+        "pct": 0.023
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2024",
+        "count": null,
+        "pct": 0.042
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2024",
+        "count": null,
+        "pct": 0.037
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2024",
+        "count": null,
+        "pct": 0.033
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2024",
+        "count": null,
+        "pct": 0.025
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "Zig",
+        "response": "2024",
+        "count": null,
+        "pct": 0.011
+      },
+      {
+        "slice": 0,
+        "series": "MicroPython",
+        "response": "2024",
+        "count": null,
+        "pct": 0.016
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2024",
+        "count": null,
+        "pct": 0.015
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2024",
+        "count": null,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2024",
+        "count": null,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2024",
+        "count": null,
+        "pct": 0.02
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2024",
+        "count": null,
+        "pct": 0.026
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2024",
+        "count": null,
+        "pct": 0.018
+      },
+      {
+        "slice": 0,
+        "series": "Fortran",
+        "response": "2024",
+        "count": null,
+        "pct": 0.011
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2024",
+        "count": null,
+        "pct": 0.009
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2024",
+        "count": null,
+        "pct": 0.011
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2024",
+        "count": null,
+        "pct": 0.012
+      },
+      {
+        "slice": 0,
+        "series": "Ada",
+        "response": "2024",
+        "count": null,
+        "pct": 0.009
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2024",
+        "count": null,
+        "pct": 0.009
+      },
+      {
+        "slice": 0,
+        "series": "OCaml",
+        "response": "2024",
+        "count": null,
+        "pct": 0.008
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2024",
+        "count": null,
+        "pct": 0.007
+      },
+      {
+        "slice": 0,
+        "series": "Prolog",
+        "response": "2024",
+        "count": null,
+        "pct": 0.008
+      },
+      {
+        "slice": 0,
+        "series": "Solidity",
+        "response": "2024",
+        "count": null,
+        "pct": 0.011
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2025",
+        "count": null,
+        "pct": 0.6603
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2025",
+        "count": null,
+        "pct": 0.5858
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2025",
+        "count": null,
+        "pct": 0.6192
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2025",
+        "count": null,
+        "pct": 0.5787
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2025",
+        "count": null,
+        "pct": 0.4874
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2025",
+        "count": null,
+        "pct": 0.4357
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2942
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2783
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2317
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2353
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2196
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1485
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1884
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1641
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1075
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0915
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0706
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2025",
+        "count": null,
+        "pct": 0.054
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0643
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0593
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0493
+      },
+      {
+        "slice": 0,
+        "series": "GDScript",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0334
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0443
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0419
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0483
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0382
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0387
+      },
+      {
+        "slice": 0,
+        "series": "Zig",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0214
+      },
+      {
+        "slice": 0,
+        "series": "MicroPython",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0227
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0237
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0265
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2025",
+        "count": null,
+        "pct": 0.025
+      },
+      {
+        "slice": 0,
+        "series": "Fortran",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0141
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0146
+      },
+      {
+        "slice": 0,
+        "series": "Gleam",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0111
+      },
+      {
+        "slice": 0,
+        "series": "Ada",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0135
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0128
+      },
+      {
+        "slice": 0,
+        "series": "OCaml",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0115
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0097
+      },
+      {
+        "slice": 0,
+        "series": "Prolog",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0106
+      },
+      {
+        "slice": 0,
+        "series": "Mojo",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0046
+      },
+      {
+        "slice": 0,
+        "series": "JavaScript",
+        "response": "2026",
+        "count": 8742,
+        "pct": 0.62
+      },
+      {
+        "slice": 0,
+        "series": "SQL",
+        "response": "2026",
+        "count": 8237,
+        "pct": 0.5842
+      },
+      {
+        "slice": 0,
+        "series": "HTML/CSS",
+        "response": "2026",
+        "count": 8212,
+        "pct": 0.5825
+      },
+      {
+        "slice": 0,
+        "series": "Python",
+        "response": "2026",
+        "count": 8184,
+        "pct": 0.5805
+      },
+      {
+        "slice": 0,
+        "series": "Bash/Shell (all shells)",
+        "response": "2026",
+        "count": 7231,
+        "pct": 0.5129
+      },
+      {
+        "slice": 0,
+        "series": "TypeScript",
+        "response": "2026",
+        "count": 6171,
+        "pct": 0.4377
+      },
+      {
+        "slice": 0,
+        "series": "Java",
+        "response": "2026",
+        "count": 3885,
+        "pct": 0.2756
+      },
+      {
+        "slice": 0,
+        "series": "C#",
+        "response": "2026",
+        "count": 3826,
+        "pct": 0.2714
+      },
+      {
+        "slice": 0,
+        "series": "PowerShell",
+        "response": "2026",
+        "count": 3472,
+        "pct": 0.2463
+      },
+      {
+        "slice": 0,
+        "series": "C++",
+        "response": "2026",
+        "count": 3425,
+        "pct": 0.2429
+      },
+      {
+        "slice": 0,
+        "series": "C",
+        "response": "2026",
+        "count": 3070,
+        "pct": 0.2177
+      },
+      {
+        "slice": 0,
+        "series": "Rust",
+        "response": "2026",
+        "count": 2542,
+        "pct": 0.1803
+      },
+      {
+        "slice": 0,
+        "series": "PHP",
+        "response": "2026",
+        "count": 2490,
+        "pct": 0.1766
+      },
+      {
+        "slice": 0,
+        "series": "Go",
+        "response": "2026",
+        "count": 2332,
+        "pct": 0.1654
+      },
+      {
+        "slice": 0,
+        "series": "Kotlin",
+        "response": "2026",
+        "count": 1524,
+        "pct": 0.1081
+      },
+      {
+        "slice": 0,
+        "series": "Lua",
+        "response": "2026",
+        "count": 1327,
+        "pct": 0.0941
+      },
+      {
+        "slice": 0,
+        "series": "Assembly",
+        "response": "2026",
+        "count": 1020,
+        "pct": 0.0723
+      },
+      {
+        "slice": 0,
+        "series": "Swift",
+        "response": "2026",
+        "count": 831,
+        "pct": 0.0589
+      },
+      {
+        "slice": 0,
+        "series": "Ruby",
+        "response": "2026",
+        "count": 823,
+        "pct": 0.0584
+      },
+      {
+        "slice": 0,
+        "series": "Dart",
+        "response": "2026",
+        "count": 697,
+        "pct": 0.0494
+      },
+      {
+        "slice": 0,
+        "series": "R",
+        "response": "2026",
+        "count": 639,
+        "pct": 0.0453
+      },
+      {
+        "slice": 0,
+        "series": "GDScript",
+        "response": "2026",
+        "count": 571,
+        "pct": 0.0405
+      },
+      {
+        "slice": 0,
+        "series": "Visual Basic (.Net)",
+        "response": "2026",
+        "count": 557,
+        "pct": 0.0395
+      },
+      {
+        "slice": 0,
+        "series": "VBA",
+        "response": "2026",
+        "count": 552,
+        "pct": 0.0392
+      },
+      {
+        "slice": 0,
+        "series": "Groovy",
+        "response": "2026",
+        "count": 544,
+        "pct": 0.0386
+      },
+      {
+        "slice": 0,
+        "series": "Perl",
+        "response": "2026",
+        "count": 538,
+        "pct": 0.0382
+      },
+      {
+        "slice": 0,
+        "series": "MATLAB",
+        "response": "2026",
+        "count": 513,
+        "pct": 0.0364
+      },
+      {
+        "slice": 0,
+        "series": "Zig",
+        "response": "2026",
+        "count": 398,
+        "pct": 0.0282
+      },
+      {
+        "slice": 0,
+        "series": "MicroPython",
+        "response": "2026",
+        "count": 384,
+        "pct": 0.0272
+      },
+      {
+        "slice": 0,
+        "series": "Lisp",
+        "response": "2026",
+        "count": 368,
+        "pct": 0.0261
+      },
+      {
+        "slice": 0,
+        "series": "Elixir",
+        "response": "2026",
+        "count": 367,
+        "pct": 0.026
+      },
+      {
+        "slice": 0,
+        "series": "Objective-C",
+        "response": "2026",
+        "count": 357,
+        "pct": 0.0253
+      },
+      {
+        "slice": 0,
+        "series": "Haskell",
+        "response": "2026",
+        "count": 324,
+        "pct": 0.023
+      },
+      {
+        "slice": 0,
+        "series": "Scala",
+        "response": "2026",
+        "count": 309,
+        "pct": 0.0219
+      },
+      {
+        "slice": 0,
+        "series": "Delphi",
+        "response": "2026",
+        "count": 267,
+        "pct": 0.0189
+      },
+      {
+        "slice": 0,
+        "series": "Fortran",
+        "response": "2026",
+        "count": 239,
+        "pct": 0.017
+      },
+      {
+        "slice": 0,
+        "series": "Erlang",
+        "response": "2026",
+        "count": 218,
+        "pct": 0.0155
+      },
+      {
+        "slice": 0,
+        "series": "Julia",
+        "response": "2026",
+        "count": 211,
+        "pct": 0.015
+      },
+      {
+        "slice": 0,
+        "series": "Clojure",
+        "response": "2026",
+        "count": 187,
+        "pct": 0.0133
+      },
+      {
+        "slice": 0,
+        "series": "Gleam",
+        "response": "2026",
+        "count": 176,
+        "pct": 0.0125
+      },
+      {
+        "slice": 0,
+        "series": "Ada",
+        "response": "2026",
+        "count": 172,
+        "pct": 0.0122
+      },
+      {
+        "slice": 0,
+        "series": "F#",
+        "response": "2026",
+        "count": 172,
+        "pct": 0.0122
+      },
+      {
+        "slice": 0,
+        "series": "OCaml",
+        "response": "2026",
+        "count": 165,
+        "pct": 0.0117
+      },
+      {
+        "slice": 0,
+        "series": "COBOL",
+        "response": "2026",
+        "count": 150,
+        "pct": 0.0106
+      },
+      {
+        "slice": 0,
+        "series": "Prolog",
+        "response": "2026",
+        "count": 129,
+        "pct": 0.0091
+      },
+      {
+        "slice": 0,
+        "series": "Solidity",
+        "response": "2026",
+        "count": 118,
+        "pct": 0.0084
+      },
+      {
+        "slice": 0,
+        "series": "Mojo",
+        "response": "2026",
+        "count": 82,
+        "pct": 0.0058
+      }
+    ]
+  },
+  "Databases_Timeseries": {
+    "meta": {
+      "qid": "QID37",
+      "qname": "Databases",
+      "question": "<p>Which database environments have you done extensive development work in over the past year? Which do you want to work in over the next year? If you worked with the database and want to continue to do so, please check both boxes in that row.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12061
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2018",
+        "count": null,
+        "pct": 0.329
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2018",
+        "count": null,
+        "pct": 0.197
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2018",
+        "count": null,
+        "pct": 0.587
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2018",
+        "count": null,
+        "pct": 0.18
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2018",
+        "count": null,
+        "pct": 0.412
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2018",
+        "count": null,
+        "pct": 0.134
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2018",
+        "count": null,
+        "pct": 0.259
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2018",
+        "count": null,
+        "pct": 0.141
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2018",
+        "count": null,
+        "pct": 0.111
+      },
+      {
+        "slice": 0,
+        "series": "BigQuery",
+        "response": "2018",
+        "count": null,
+        "pct": 0.021
+      },
+      {
+        "slice": 0,
+        "series": "Cosmos DB",
+        "response": "2018",
+        "count": null,
+        "pct": 0.079
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2018",
+        "count": null,
+        "pct": 0.024
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2018",
+        "count": null,
+        "pct": 0.037
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2018",
+        "count": null,
+        "pct": 0.025
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2019",
+        "count": null,
+        "pct": 0.343
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2019",
+        "count": null,
+        "pct": 0.316
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2019",
+        "count": null,
+        "pct": 0.54
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2019",
+        "count": null,
+        "pct": 0.186
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2019",
+        "count": null,
+        "pct": 0.328
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2019",
+        "count": null,
+        "pct": 0.165
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2019",
+        "count": null,
+        "pct": 0.255
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2019",
+        "count": null,
+        "pct": 0.143
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2019",
+        "count": null,
+        "pct": 0.165
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2019",
+        "count": null,
+        "pct": 0.062
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2019",
+        "count": null,
+        "pct": 0.128
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2019",
+        "count": null,
+        "pct": 0.035
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2020",
+        "count": null,
+        "pct": 0.361
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2020",
+        "count": null,
+        "pct": 0.312
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2020",
+        "count": null,
+        "pct": 0.556
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2020",
+        "count": null,
+        "pct": 0.183
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2020",
+        "count": null,
+        "pct": 0.33
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2020",
+        "count": null,
+        "pct": 0.168
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2020",
+        "count": null,
+        "pct": 0.264
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2020",
+        "count": null,
+        "pct": 0.138
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2020",
+        "count": null,
+        "pct": 0.165
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2020",
+        "count": null,
+        "pct": 0.071
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2020",
+        "count": null,
+        "pct": 0.033
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2020",
+        "count": null,
+        "pct": 0.029
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2021",
+        "count": null,
+        "pct": 0.4042
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2021",
+        "count": null,
+        "pct": 0.3218
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2021",
+        "count": null,
+        "pct": 0.5018
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2069
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2687
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1719
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2021",
+        "count": null,
+        "pct": 0.277
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1327
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1261
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2021",
+        "count": null,
+        "pct": 0.073
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0204
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4359
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2022",
+        "count": null,
+        "pct": 0.3201
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4685
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2213
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2687
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1793
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2022",
+        "count": null,
+        "pct": 0.283
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1221
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1149
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0826
+      },
+      {
+        "slice": 0,
+        "series": "Cloud Firestore",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0745
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0872
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0212
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0266
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2022",
+        "count": null,
+        "pct": 0.02
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4555
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2023",
+        "count": null,
+        "pct": 0.309
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4109
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2041
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2545
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1761
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2552
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1339
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2023",
+        "count": null,
+        "pct": 0.098
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0887
+      },
+      {
+        "slice": 0,
+        "series": "Supabase",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0277
+      },
+      {
+        "slice": 0,
+        "series": "BigQuery",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0451
+      },
+      {
+        "slice": 0,
+        "series": "DuckDB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0061
+      },
+      {
+        "slice": 0,
+        "series": "Cloud Firestore",
+        "response": "2023",
+        "count": null,
+        "pct": 0.064
+      },
+      {
+        "slice": 0,
+        "series": "H2",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0366
+      },
+      {
+        "slice": 0,
+        "series": "Snowflake",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0237
+      },
+      {
+        "slice": 0,
+        "series": "Cosmos DB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0349
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0644
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft Access",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0425
+      },
+      {
+        "slice": 0,
+        "series": "InfluxDB",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0273
+      },
+      {
+        "slice": 0,
+        "series": "Clickhouse",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0111
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0187
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0251
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0185
+      },
+      {
+        "slice": 0,
+        "series": "Cockroachdb",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0104
+      },
+      {
+        "slice": 0,
+        "series": "Datomic",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0032
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2024",
+        "count": null,
+        "pct": 0.487
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2024",
+        "count": null,
+        "pct": 0.331
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2024",
+        "count": null,
+        "pct": 0.403
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2024",
+        "count": null,
+        "pct": 0.2
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2024",
+        "count": null,
+        "pct": 0.253
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.172
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.248
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2024",
+        "count": null,
+        "pct": 0.125
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2024",
+        "count": null,
+        "pct": 0.101
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2024",
+        "count": null,
+        "pct": 0.079
+      },
+      {
+        "slice": 0,
+        "series": "Supabase",
+        "response": "2024",
+        "count": null,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "BigQuery",
+        "response": "2024",
+        "count": null,
+        "pct": 0.048
+      },
+      {
+        "slice": 0,
+        "series": "DuckDB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.014
+      },
+      {
+        "slice": 0,
+        "series": "Cloud Firestore",
+        "response": "2024",
+        "count": null,
+        "pct": 0.054
+      },
+      {
+        "slice": 0,
+        "series": "H2",
+        "response": "2024",
+        "count": null,
+        "pct": 0.038
+      },
+      {
+        "slice": 0,
+        "series": "Snowflake",
+        "response": "2024",
+        "count": null,
+        "pct": 0.026
+      },
+      {
+        "slice": 0,
+        "series": "Cosmos DB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.033
+      },
+      {
+        "slice": 0,
+        "series": "Databricks SQL",
+        "response": "2024",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2024",
+        "count": null,
+        "pct": 0.058
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft Access",
+        "response": "2024",
+        "count": null,
+        "pct": 0.042
+      },
+      {
+        "slice": 0,
+        "series": "InfluxDB",
+        "response": "2024",
+        "count": null,
+        "pct": 0.025
+      },
+      {
+        "slice": 0,
+        "series": "Clickhouse",
+        "response": "2024",
+        "count": null,
+        "pct": 0.017
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2024",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2024",
+        "count": null,
+        "pct": 0.024
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2024",
+        "count": null,
+        "pct": 0.017
+      },
+      {
+        "slice": 0,
+        "series": "Cockroachdb",
+        "response": "2024",
+        "count": null,
+        "pct": 0.01
+      },
+      {
+        "slice": 0,
+        "series": "Datomic",
+        "response": "2024",
+        "count": null,
+        "pct": 0.004
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2025",
+        "count": null,
+        "pct": 0.5563
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2025",
+        "count": null,
+        "pct": 0.3752
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2025",
+        "count": null,
+        "pct": 0.4052
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2801
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2025",
+        "count": null,
+        "pct": 0.3014
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2245
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.24
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1665
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1057
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0977
+      },
+      {
+        "slice": 0,
+        "series": "Supabase",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0597
+      },
+      {
+        "slice": 0,
+        "series": "BigQuery",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0653
+      },
+      {
+        "slice": 0,
+        "series": "DuckDB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.033
+      },
+      {
+        "slice": 0,
+        "series": "Valkey",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0242
+      },
+      {
+        "slice": 0,
+        "series": "Cloud Firestore",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0572
+      },
+      {
+        "slice": 0,
+        "series": "H2",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0499
+      },
+      {
+        "slice": 0,
+        "series": "Snowflake",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0413
+      },
+      {
+        "slice": 0,
+        "series": "Cosmos DB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0456
+      },
+      {
+        "slice": 0,
+        "series": "Databricks SQL",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0343
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0497
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft Access",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0476
+      },
+      {
+        "slice": 0,
+        "series": "InfluxDB",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0369
+      },
+      {
+        "slice": 0,
+        "series": "Clickhouse",
+        "response": "2025",
+        "count": null,
+        "pct": 0.024
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0265
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0293
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0235
+      },
+      {
+        "slice": 0,
+        "series": "Amazon Redshift",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0234
+      },
+      {
+        "slice": 0,
+        "series": "Pocketbase",
+        "response": "2025",
+        "count": null,
+        "pct": 0.01
+      },
+      {
+        "slice": 0,
+        "series": "Cockroachdb",
+        "response": "2025",
+        "count": null,
+        "pct": 0.01
+      },
+      {
+        "slice": 0,
+        "series": "Datomic",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0057
+      },
+      {
+        "slice": 0,
+        "series": "PostgreSQL",
+        "response": "2026",
+        "count": 6984,
+        "pct": 0.5791
+      },
+      {
+        "slice": 0,
+        "series": "SQLite",
+        "response": "2026",
+        "count": 5083,
+        "pct": 0.4214
+      },
+      {
+        "slice": 0,
+        "series": "MySQL",
+        "response": "2026",
+        "count": 4235,
+        "pct": 0.3511
+      },
+      {
+        "slice": 0,
+        "series": "Redis",
+        "response": "2026",
+        "count": 3414,
+        "pct": 0.2831
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft SQL Server",
+        "response": "2026",
+        "count": 3270,
+        "pct": 0.2711
+      },
+      {
+        "slice": 0,
+        "series": "MariaDB",
+        "response": "2026",
+        "count": 2446,
+        "pct": 0.2028
+      },
+      {
+        "slice": 0,
+        "series": "MongoDB",
+        "response": "2026",
+        "count": 2297,
+        "pct": 0.1904
+      },
+      {
+        "slice": 0,
+        "series": "Elasticsearch",
+        "response": "2026",
+        "count": 1784,
+        "pct": 0.1479
+      },
+      {
+        "slice": 0,
+        "series": "Oracle",
+        "response": "2026",
+        "count": 1135,
+        "pct": 0.0941
+      },
+      {
+        "slice": 0,
+        "series": "Dynamodb",
+        "response": "2026",
+        "count": 1116,
+        "pct": 0.0925
+      },
+      {
+        "slice": 0,
+        "series": "Supabase",
+        "response": "2026",
+        "count": 933,
+        "pct": 0.0774
+      },
+      {
+        "slice": 0,
+        "series": "BigQuery",
+        "response": "2026",
+        "count": 809,
+        "pct": 0.0671
+      },
+      {
+        "slice": 0,
+        "series": "DuckDB",
+        "response": "2026",
+        "count": 690,
+        "pct": 0.0572
+      },
+      {
+        "slice": 0,
+        "series": "Valkey",
+        "response": "2026",
+        "count": 603,
+        "pct": 0.05
+      },
+      {
+        "slice": 0,
+        "series": "Cloud Firestore",
+        "response": "2026",
+        "count": 582,
+        "pct": 0.0483
+      },
+      {
+        "slice": 0,
+        "series": "H2",
+        "response": "2026",
+        "count": 564,
+        "pct": 0.0468
+      },
+      {
+        "slice": 0,
+        "series": "Snowflake",
+        "response": "2026",
+        "count": 542,
+        "pct": 0.0449
+      },
+      {
+        "slice": 0,
+        "series": "Cosmos DB",
+        "response": "2026",
+        "count": 513,
+        "pct": 0.0425
+      },
+      {
+        "slice": 0,
+        "series": "Databricks SQL",
+        "response": "2026",
+        "count": 510,
+        "pct": 0.0423
+      },
+      {
+        "slice": 0,
+        "series": "Firebase Realtime Database",
+        "response": "2026",
+        "count": 504,
+        "pct": 0.0418
+      },
+      {
+        "slice": 0,
+        "series": "Microsoft Access",
+        "response": "2026",
+        "count": 483,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "InfluxDB",
+        "response": "2026",
+        "count": 432,
+        "pct": 0.0358
+      },
+      {
+        "slice": 0,
+        "series": "Clickhouse",
+        "response": "2026",
+        "count": 429,
+        "pct": 0.0356
+      },
+      {
+        "slice": 0,
+        "series": "Neo4J",
+        "response": "2026",
+        "count": 332,
+        "pct": 0.0275
+      },
+      {
+        "slice": 0,
+        "series": "Cassandra",
+        "response": "2026",
+        "count": 300,
+        "pct": 0.0249
+      },
+      {
+        "slice": 0,
+        "series": "IBM DB2",
+        "response": "2026",
+        "count": 269,
+        "pct": 0.0223
+      },
+      {
+        "slice": 0,
+        "series": "Amazon Redshift",
+        "response": "2026",
+        "count": 268,
+        "pct": 0.0222
+      },
+      {
+        "slice": 0,
+        "series": "Pocketbase",
+        "response": "2026",
+        "count": 129,
+        "pct": 0.0107
+      },
+      {
+        "slice": 0,
+        "series": "Cockroachdb",
+        "response": "2026",
+        "count": 117,
+        "pct": 0.0097
+      },
+      {
+        "slice": 0,
+        "series": "Datomic",
+        "response": "2026",
+        "count": 64,
+        "pct": 0.0053
+      }
+    ]
+  },
+  "WebFramework_Timeseries": {
+    "meta": {
+      "qid": "QID39",
+      "qname": "WebFramework",
+      "question": "<p>Which web frameworks and web technologies have you done extensive development work in over the past year? Which do you want to work in over the next year? If you worked with the framework and want to continue to do so, please check both boxes in that row.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10281
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2020",
+        "count": null,
+        "pct": 0.514
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2020",
+        "count": null,
+        "pct": 0.359
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2020",
+        "count": null,
+        "pct": 0.433
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2020",
+        "count": null,
+        "pct": 0.173
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2020",
+        "count": null,
+        "pct": 0.251
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2020",
+        "count": null,
+        "pct": 0.219
+      },
+      {
+        "slice": 0,
+        "series": "WordPress",
+        "response": "2020",
+        "count": null,
+        "pct": 0.142
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2020",
+        "count": null,
+        "pct": 0.142
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2020",
+        "count": null,
+        "pct": 0.142
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2020",
+        "count": null,
+        "pct": 0.111
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2020",
+        "count": null,
+        "pct": 0.07
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2020",
+        "count": null,
+        "pct": 0.044
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2020",
+        "count": null,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2021",
+        "count": null,
+        "pct": 0.3391
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2021",
+        "count": null,
+        "pct": 0.401
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2021",
+        "count": null,
+        "pct": 0.3442
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0388
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1897
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2296
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2021",
+        "count": null,
+        "pct": 0.2382
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1574
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1614
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1499
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0275
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1012
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2021",
+        "count": null,
+        "pct": 0.1149
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0704
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0385
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2021",
+        "count": null,
+        "pct": 0.0239
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4712
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2022",
+        "count": null,
+        "pct": 0.4262
+      },
+      {
+        "slice": 0,
+        "series": "Next.js",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1352
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2857
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0602
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1882
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2039
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2022",
+        "count": null,
+        "pct": 0.2299
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2022",
+        "count": null,
+        "pct": 0.149
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1464
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2022",
+        "count": null,
+        "pct": 0.1465
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0458
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0945
+      },
+      {
+        "slice": 0,
+        "series": "Blazor",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0446
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0899
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0583
+      },
+      {
+        "slice": 0,
+        "series": "Nuxt.js",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0383
+      },
+      {
+        "slice": 0,
+        "series": "Deno",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0169
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0358
+      },
+      {
+        "slice": 0,
+        "series": "Fastify",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0185
+      },
+      {
+        "slice": 0,
+        "series": "Phoenix",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0213
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2022",
+        "count": null,
+        "pct": 0.0222
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4265
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2023",
+        "count": null,
+        "pct": 0.4058
+      },
+      {
+        "slice": 0,
+        "series": "Next.js",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1667
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2023",
+        "count": null,
+        "pct": 0.2198
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0742
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1638
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1746
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1928
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1279
+      },
+      {
+        "slice": 0,
+        "series": "WordPress",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1338
+      },
+      {
+        "slice": 0,
+        "series": "Spring Boot",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1195
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1216
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2023",
+        "count": null,
+        "pct": 0.1147
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0662
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0758
+      },
+      {
+        "slice": 0,
+        "series": "Blazor",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0488
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0721
+      },
+      {
+        "slice": 0,
+        "series": "NestJS",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0513
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0549
+      },
+      {
+        "slice": 0,
+        "series": "Nuxt.js",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0369
+      },
+      {
+        "slice": 0,
+        "series": "Deno",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0236
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2023",
+        "count": null,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": "Fastify",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0205
+      },
+      {
+        "slice": 0,
+        "series": "Phoenix",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0204
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0187
+      },
+      {
+        "slice": 0,
+        "series": "Remix",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0127
+      },
+      {
+        "slice": 0,
+        "series": "Lit",
+        "response": "2023",
+        "count": null,
+        "pct": 0.0068
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2024",
+        "count": null,
+        "pct": 0.408
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2024",
+        "count": null,
+        "pct": 0.395
+      },
+      {
+        "slice": 0,
+        "series": "Next.js",
+        "response": "2024",
+        "count": null,
+        "pct": 0.179
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2024",
+        "count": null,
+        "pct": 0.214
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2024",
+        "count": null,
+        "pct": 0.099
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2024",
+        "count": null,
+        "pct": 0.154
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2024",
+        "count": null,
+        "pct": 0.171
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2024",
+        "count": null,
+        "pct": 0.178
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2024",
+        "count": null,
+        "pct": 0.129
+      },
+      {
+        "slice": 0,
+        "series": "WordPress",
+        "response": "2024",
+        "count": null,
+        "pct": 0.118
+      },
+      {
+        "slice": 0,
+        "series": "Spring Boot",
+        "response": "2024",
+        "count": null,
+        "pct": 0.127
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2024",
+        "count": null,
+        "pct": 0.129
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2024",
+        "count": null,
+        "pct": 0.12
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2024",
+        "count": null,
+        "pct": 0.065
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2024",
+        "count": null,
+        "pct": 0.079
+      },
+      {
+        "slice": 0,
+        "series": "Blazor",
+        "response": "2024",
+        "count": null,
+        "pct": 0.049
+      },
+      {
+        "slice": 0,
+        "series": "Astro",
+        "response": "2024",
+        "count": null,
+        "pct": 0.03
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2024",
+        "count": null,
+        "pct": 0.068
+      },
+      {
+        "slice": 0,
+        "series": "NestJS",
+        "response": "2024",
+        "count": null,
+        "pct": 0.058
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2024",
+        "count": null,
+        "pct": 0.047
+      },
+      {
+        "slice": 0,
+        "series": "Nuxt.js",
+        "response": "2024",
+        "count": null,
+        "pct": 0.036
+      },
+      {
+        "slice": 0,
+        "series": "Deno",
+        "response": "2024",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2024",
+        "count": null,
+        "pct": 0.032
+      },
+      {
+        "slice": 0,
+        "series": "Fastify",
+        "response": "2024",
+        "count": null,
+        "pct": 0.022
+      },
+      {
+        "slice": 0,
+        "series": "Phoenix",
+        "response": "2024",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2024",
+        "count": null,
+        "pct": 0.019
+      },
+      {
+        "slice": 0,
+        "series": "Remix",
+        "response": "2024",
+        "count": null,
+        "pct": 0.016
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2025",
+        "count": null,
+        "pct": 0.487
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2025",
+        "count": null,
+        "pct": 0.447
+      },
+      {
+        "slice": 0,
+        "series": "Next.js",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2081
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET Core",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1968
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2025",
+        "count": null,
+        "pct": 0.2338
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1478
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1756
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1822
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1987
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1417
+      },
+      {
+        "slice": 0,
+        "series": "WordPress",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1361
+      },
+      {
+        "slice": 0,
+        "series": "Spring Boot",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1469
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1437
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2025",
+        "count": null,
+        "pct": 0.1257
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0724
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0891
+      },
+      {
+        "slice": 0,
+        "series": "Blazor",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0695
+      },
+      {
+        "slice": 0,
+        "series": "Astro",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0446
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0725
+      },
+      {
+        "slice": 0,
+        "series": "NestJS",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0673
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0589
+      },
+      {
+        "slice": 0,
+        "series": "Nuxt.js",
+        "response": "2025",
+        "count": null,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "Deno",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0405
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2025",
+        "count": null,
+        "pct": 0.04
+      },
+      {
+        "slice": 0,
+        "series": "Axum",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0283
+      },
+      {
+        "slice": 0,
+        "series": "Fastify",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0292
+      },
+      {
+        "slice": 0,
+        "series": "Phoenix",
+        "response": "2025",
+        "count": null,
+        "pct": 0.024
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2025",
+        "count": null,
+        "pct": 0.0222
+      },
+      {
+        "slice": 0,
+        "series": "Node.js",
+        "response": "2026",
+        "count": 4769,
+        "pct": 0.4639
+      },
+      {
+        "slice": 0,
+        "series": "React",
+        "response": "2026",
+        "count": 4265,
+        "pct": 0.4148
+      },
+      {
+        "slice": 0,
+        "series": "Next.js",
+        "response": "2026",
+        "count": 2117,
+        "pct": 0.2059
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET Core",
+        "response": "2026",
+        "count": 2045,
+        "pct": 0.1989
+      },
+      {
+        "slice": 0,
+        "series": "jQuery",
+        "response": "2026",
+        "count": 2028,
+        "pct": 0.1973
+      },
+      {
+        "slice": 0,
+        "series": "FastAPI",
+        "response": "2026",
+        "count": 1903,
+        "pct": 0.1851
+      },
+      {
+        "slice": 0,
+        "series": "Vue.js",
+        "response": "2026",
+        "count": 1773,
+        "pct": 0.1725
+      },
+      {
+        "slice": 0,
+        "series": "Angular",
+        "response": "2026",
+        "count": 1642,
+        "pct": 0.1597
+      },
+      {
+        "slice": 0,
+        "series": "Express",
+        "response": "2026",
+        "count": 1604,
+        "pct": 0.156
+      },
+      {
+        "slice": 0,
+        "series": "ASP.NET",
+        "response": "2026",
+        "count": 1428,
+        "pct": 0.1389
+      },
+      {
+        "slice": 0,
+        "series": "WordPress",
+        "response": "2026",
+        "count": 1365,
+        "pct": 0.1328
+      },
+      {
+        "slice": 0,
+        "series": "Spring Boot",
+        "response": "2026",
+        "count": 1314,
+        "pct": 0.1278
+      },
+      {
+        "slice": 0,
+        "series": "Flask",
+        "response": "2026",
+        "count": 1284,
+        "pct": 0.1249
+      },
+      {
+        "slice": 0,
+        "series": "Django",
+        "response": "2026",
+        "count": 1160,
+        "pct": 0.1128
+      },
+      {
+        "slice": 0,
+        "series": "Svelte",
+        "response": "2026",
+        "count": 802,
+        "pct": 0.078
+      },
+      {
+        "slice": 0,
+        "series": "Laravel",
+        "response": "2026",
+        "count": 785,
+        "pct": 0.0764
+      },
+      {
+        "slice": 0,
+        "series": "Blazor",
+        "response": "2026",
+        "count": 692,
+        "pct": 0.0673
+      },
+      {
+        "slice": 0,
+        "series": "Astro",
+        "response": "2026",
+        "count": 634,
+        "pct": 0.0617
+      },
+      {
+        "slice": 0,
+        "series": "AngularJS",
+        "response": "2026",
+        "count": 612,
+        "pct": 0.0595
+      },
+      {
+        "slice": 0,
+        "series": "NestJS",
+        "response": "2026",
+        "count": 600,
+        "pct": 0.0584
+      },
+      {
+        "slice": 0,
+        "series": "Ruby on Rails",
+        "response": "2026",
+        "count": 583,
+        "pct": 0.0567
+      },
+      {
+        "slice": 0,
+        "series": "Nuxt.js",
+        "response": "2026",
+        "count": 454,
+        "pct": 0.0442
+      },
+      {
+        "slice": 0,
+        "series": "Deno",
+        "response": "2026",
+        "count": 416,
+        "pct": 0.0405
+      },
+      {
+        "slice": 0,
+        "series": "Symfony",
+        "response": "2026",
+        "count": 413,
+        "pct": 0.0402
+      },
+      {
+        "slice": 0,
+        "series": "Axum",
+        "response": "2026",
+        "count": 374,
+        "pct": 0.0364
+      },
+      {
+        "slice": 0,
+        "series": "Fastify",
+        "response": "2026",
+        "count": 355,
+        "pct": 0.0345
+      },
+      {
+        "slice": 0,
+        "series": "Phoenix",
+        "response": "2026",
+        "count": 262,
+        "pct": 0.0255
+      },
+      {
+        "slice": 0,
+        "series": "Drupal",
+        "response": "2026",
+        "count": 207,
+        "pct": 0.0201
+      },
+      {
+        "slice": 0,
+        "series": "Remix",
+        "response": "2026",
+        "count": 177,
+        "pct": 0.0172
+      },
+      {
+        "slice": 0,
+        "series": "Lit",
+        "response": "2026",
+        "count": 20,
+        "pct": 0.0019
+      }
+    ]
   }
 }

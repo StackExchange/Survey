@@ -1354,6 +1354,18 @@
             {
               "chapter": "Technology",
               "section": "Most popular technologies",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "Languages_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "languages-timeseries"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
               "name": "Code Testing tools",
               "dataId": "CodeTest",
               "chart": "bar",
@@ -1378,6 +1390,18 @@
             {
               "chapter": "Technology",
               "section": "Most popular technologies",
+              "name": "Databases",
+              "dataId": "Databases_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "databases",
+              "dataIdSlug": "databases-timeseries"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
               "name": "Cloud development",
               "dataId": "CloudPlat",
               "chart": "bar",
@@ -1398,6 +1422,18 @@
               "axisLabels": [],
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "web-framework"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Web frameworks and technologies",
+              "dataId": "WebFramework_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "web-framework-timeseries"
             },
             {
               "chapter": "Technology",
