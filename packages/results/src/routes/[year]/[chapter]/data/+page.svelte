@@ -136,7 +136,7 @@
 								aria-labelledby={groups.length > 1 ? tabId(panelId, shown.demographic.id) : undefined}
 								tabindex={groups.length > 1 ? 0 : undefined}
 							>
-								<Figure block={shown} href={permalink(block)} table />
+								<Figure block={shown} href={permalink(block)} chrome={{ normalise: shown.chart === 'bar-vertical' }} table />
 							</div>
 						</div>
 					</div>
