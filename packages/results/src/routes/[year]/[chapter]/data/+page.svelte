@@ -11,7 +11,6 @@
 	import CopyPage from '$components/CopyPage.svelte'
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
-	import QuestionSurvey from '$components/QuestionSurvey.svelte'
 	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Seo from '$components/Seo.svelte'
 
@@ -32,6 +31,7 @@
 	function permalink(block: any) {
 		const path = resolve('/[year]/[chapter]/data/[question]', { year: data.year, chapter: data.chapter.id, question: block.id })
 		const id = chosen[block.id]
+
 		return id && id !== (block.demographics ?? [])[0]?.demographic.id ? `${path}?d=${id}` : path
 	}
 </script>
@@ -106,27 +106,43 @@
 							{/if}
 
 							{#if shown.definitions?.length}
-								<div class="relative mt-auto pt-6">
-									<h4 class="flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 dark:bg-blue-light dark:text-black">
+								<a
+									class="group relative mt-auto"
+									title="See what was asked in full"
+									href={resolve('/[year]/[chapter]/data/[question]#asked', {
+										year: data.year,
+										chapter: data.chapter.id,
+										question: block.id,
+									})}
+								>
+									<h4
+										class="mt-4 flex w-fit items-center gap-2 bg-blue-extra-light px-4 pt-2 group-hover:bg-blue-light dark:bg-blue-light dark:text-black"
+									>
 										<Icon src={IconQuestion} />
-										{shown.definitions.length > 1 ? 'Questions' : 'Question'}
+										Question
 									</h4>
-
-									{#each shown.definitions as definition (definition.id)}
-										<QuestionSurvey {definition} />
-									{/each}
-								</div>
+									<div class="bg-blue-extra-light p-4 text-sm group-hover:bg-blue-light dark:bg-blue-light dark:text-black">
+										<div class="line-clamp-3 *:not-last:mb-2">
+											{@html shown.definitions[0].titleHtml}
+										</div>
+										{#if shown.definitions.length > 1}
+											<div class="mt-2 text-xs">+ {shown.definitions.length - 1} more</div>
+										{/if}
+									</div>
+								</a>
 							{/if}
 						</header>
 
-						<div class="flex min-w-0 shrink basis-3/4 flex-col">
-							<QuestionTabs
-								demographics={groups}
-								selected={shown.demographic.id}
-								label="Respondent group for {block.name}"
-								{panelId}
-								onselect={(id) => choose(block, id)}
-							/>
+						<div class="flex min-w-0 shrink basis-3/4 flex-col {groups.length > 1 ? '-mt-4' : undefined}">
+							{#if groups.length > 1}
+								<QuestionTabs
+									demographics={groups}
+									selected={shown.demographic.id}
+									label="Respondent group for {block.name}"
+									{panelId}
+									onselect={(id) => choose(block, id)}
+								/>
+							{/if}
 
 							<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 							<div

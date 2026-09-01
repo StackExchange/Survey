@@ -16,7 +16,6 @@
 	import Figure from '$components/Figure.svelte'
 	import Icon from '$components/Icon.svelte'
 	import QuestionData from '$components/QuestionData.svelte'
-	import { askedFacts } from '$components/QuestionSurvey.svelte'
 	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Seo from '$components/Seo.svelte'
 	import Share from '$components/Share.svelte'
@@ -149,14 +148,23 @@
 			</h2>
 
 			{#each definitions as definition (definition.id)}
+				{@const qMeta = [
+					definition.dataId,
+					definition.type.replace(/_/g, ' '),
+					definition.required ? 'Required' : 'Optional',
+					`v${definition.version}`,
+					definition.randomize && 'Randomized',
+					definition.carry_forward?.from && `Carries forward ${definition.carry_forward.from}`,
+				].filter(Boolean)}
+
 				<div class="mt-6 grid-cols-10 gap-10 lg:grid">
 					<div class="col-span-7">
 						<div class="mb-4 font-headline text-xl">
 							{@html definition.titleHtml}
 						</div>
 						<ul class="flex flex-wrap text-sm text-black-400 dark:text-black-300">
-							{#each askedFacts(definition) as fact (fact)}
-								<li class="capitalize not-first:before:mx-2 not-first:before:content-['·']">{fact}</li>
+							{#each qMeta as item (item)}
+								<li class="capitalize not-first:before:mx-2 not-first:before:content-['·']">{item}</li>
 							{/each}
 						</ul>
 					</div>
