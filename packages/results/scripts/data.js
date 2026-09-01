@@ -401,13 +401,6 @@ export async function generate() {
 		}
 	}
 
-	const stats = {
-		respondents: survey.settings.respondents,
-		countries: methodology.TotalCountries,
-		responseTime: Math.round(methodology.MedianResponseTime),
-		chapters: summaries.length,
-	}
-
 	// Every page, named once. `<Seo>`, the schema.org graphs, the sitemap, both
 	// llms.txt indexes and the .md twins all read this rather than composing a
 	// title or a description of their own.
@@ -481,7 +474,6 @@ export async function generate() {
 		'site.json',
 		{
 			settings: survey.settings,
-			stats,
 			methodology,
 			seo: { home: seoOf('/') },
 			jsonld: { home: graphs.home },

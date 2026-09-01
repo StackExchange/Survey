@@ -3,7 +3,6 @@
 
 	import { resolve } from '$app/paths'
 
-	import { count } from '$charts/utils/theme'
 	import { chapterChartVars, chapterColour } from '$config'
 	import { tinting } from '$lib/home-section-tint.svelte'
 
@@ -42,7 +41,7 @@
 			<span class="font-headline-notch block text-9xl lg:text-[260px] lg:leading-60">
 				{data.settings.questionCount}
 			</span>
-			questions asked across {data.stats.chapters} insightful categories
+			questions asked across {data.chapters.length} insightful categories
 		</p>
 	</section>
 
@@ -52,11 +51,11 @@
 			<dl
 				class="[&>dt]:font-headline-notch [&>dt]lg:text-[96px] flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[75px]"
 			>
-				<dt>{data.stats.respondents}</dt>
+				<dt>{data.settings.respondents}</dt>
 				<dd>Responses</dd>
-				<dt>{count(data.stats.countries)}</dt>
+				<dt>{data.settings.countryCount}</dt>
 				<dd>Countries reached</dd>
-				<dt>{data.stats.responseTime}</dt>
+				<dt>{data.settings.responseTime}</dt>
 				<dd>Minutes to complete</dd>
 			</dl>
 		</div>
