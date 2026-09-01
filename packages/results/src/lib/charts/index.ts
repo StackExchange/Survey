@@ -19,6 +19,7 @@ import BarClustered from './standard/BarClustered.svelte'
 import BarStacked from './standard/BarStacked.svelte'
 import BarVertical from './standard/BarVertical.svelte'
 import Dumbbell from './standard/Dumbbell.svelte'
+import Line from './standard/Line.svelte'
 import Sankey from './standard/Sankey.svelte'
 import Scatter from './standard/Scatter.svelte'
 import Table from './standard/Table.svelte'
@@ -32,6 +33,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	'bar-clustered': BarClustered,
 	'bar-vertical': BarVertical,
 	dumbbell: Dumbbell,
+	line: Line,
 	scatter: Scatter,
 	sankey: Sankey,
 	table: Table,
