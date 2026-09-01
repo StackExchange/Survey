@@ -32,7 +32,7 @@
 		{#each rows as row, i (row.response ?? i)}
 			{@const hovered = hover.active === i}
 
-			<li class="group bg-black-200 dark:bg-black-500 hover:bg-blue-light hover:text-black">
+			<li class="group bg-black-200 hover:bg-blue-light hover:text-black dark:bg-black-500">
 				<div
 					role="presentation"
 					class="flex items-stretch"
