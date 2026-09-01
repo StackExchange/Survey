@@ -18,8 +18,7 @@
 	const hover = useHover(() => onhover)
 	const short = $derived(shorten(figure))
 
-	// As many lines as the palette can tell apart.
-	const MAX = theme.series.length
+	const MAX = 8 // Theme palette only has 8 colors
 
 	const TICKS = 5
 	const LABEL_GAP = 15
@@ -142,7 +141,15 @@
 		{/each}
 
 		{#each names as name, s (name)}
-			<path d={lines[s]} fill="none" stroke={series(s)} stroke-width={STROKE} stroke-linejoin="round" stroke-linecap="round" />
+			<path
+				d={lines[s]}
+				fill="none"
+				stroke={series(s)}
+				stroke-width={STROKE}
+				stroke-linejoin="round"
+				stroke-linecap="round"
+				pointer-events="none"
+			/>
 
 			{#each rows as row, i (row.response ?? i)}
 				{#if row.cells[s]}
@@ -153,6 +160,7 @@
 						fill={series(s)}
 						stroke={theme.background}
 						stroke-width={hover.active === i ? 2 : 1}
+						pointer-events="none"
 					/>
 				{/if}
 			{/each}
