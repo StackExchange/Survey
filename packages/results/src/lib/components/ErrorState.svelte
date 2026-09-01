@@ -22,7 +22,7 @@
 
 <main id="main" class="mx-auto flex min-h-screen max-w-3xl flex-col px-6 py-16" tabindex="-1">
 	<div class="m-auto text-center">
-		<Icon src={illo} class="native mb-6" title={status.toString()} />
+		<Icon src={illo} class="native mb-6 max-w-full h-auto" title={status.toString()} />
 
 		<h1 class="mt-8 font-headline text-3xl font-semibold">{heading}</h1>
 
