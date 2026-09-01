@@ -56,6 +56,7 @@ export function bySeries(rows: any[], series: string[]) {
 export function tableOf(figure: any) {
 	const rows = rowsOf(figure)
 	const columns = figure?.columns ?? []
+
 	if (!rows.length || !columns.length) return null
 
 	const series: string[] = figure?.series ?? []
