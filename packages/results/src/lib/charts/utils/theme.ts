@@ -124,7 +124,7 @@ export const chars = (room: number, fontSize: number) => Math.max(1, Math.floor(
 
 export const digitsWidth = (text: string, fontSize: number) => px(text.length * fontSize * GLYPH_DIGITS)
 
-export const labelGutter = (width: number) => Math.round(width * 0.2)
+export const labelGutter = (width: number) => Math.round(width * 0.25)
 
 const MIN_GUTTER_CHARS = 18
 
