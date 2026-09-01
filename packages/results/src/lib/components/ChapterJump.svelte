@@ -54,10 +54,10 @@
 
 	<div class="flex-1 p-0 leading-tight text-white lg:p-4">
 		<div class="px-3 pt-2 font-semibold lg:mb-1 lg:p-0">{title}</div>
-		<div class="hidden opacity-50 md:block">{subtitle}</div>
+		<div class="hidden opacity-50 lg:block">{subtitle}</div>
 	</div>
 
-	<div class="arrow static right-0 bottom-0 flex bg-orange p-2 text-black md:absolute">
+	<div class="arrow static right-0 bottom-0 flex bg-orange p-2 text-black lg:absolute">
 		<Icon src={arrow} class="mt-auto" />
 	</div>
 </a>
