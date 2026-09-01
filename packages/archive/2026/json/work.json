@@ -2987,7 +2987,7 @@
   "JobEaseAI": {
     "meta": {
       "qid": "QID103",
-      "qname": "JobEaseAI",
+      "qname": ["JobEaseAI", "JobEase"],
       "question": "<p>For each factor that made your job easier, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
@@ -3199,7 +3199,7 @@
   "JobDifficultyAI": {
     "meta": {
       "qid": "QID104",
-      "qname": "JobDifficultyAI",
+      "qname": ["JobDifficultyAI", "JobDifficulty"],
       "question": "<p>For each factor that made your job harder, was AI or AI agents a reason?<\/p>",
       "slices": [
         {
@@ -3411,7 +3411,7 @@
   "Scatter_Compensation": {
     "meta": {
       "qid": "QID33",
-      "qname": "Scatter_Compensation",
+      "qname": ["Compensation", "WorkExp"],
       "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
       "slices": [
         {
