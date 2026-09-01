@@ -20,7 +20,6 @@
 		middle,
 		PAD,
 		px,
-		series,
 		shorten,
 		SMALL,
 		textWidth,
@@ -37,7 +36,7 @@
 	const hover = useHover(() => onhover)
 
 	const TICKS = 6
-	const DOT = 6
+	const DOT = 10
 	const TICK_GAP = GAP * 2
 	const TITLE_GAP = GAP * 2
 	const RAMP_BAR = 14
@@ -94,7 +93,7 @@
 	const xGrid = $derived(xTicks.slice(0, -1).map((value) => xScale(value)))
 	const yGrid = $derived(yTicks.slice(0, -1).map((value) => yScale(value)))
 
-	const GUTTER = DOT + GAP
+	const GUTTER = (DOT / 2) + GAP
 	const LINE = FINE + 2
 	const NAME = 32
 
@@ -154,7 +153,7 @@
 			{
 				title: String(row.response ?? ''),
 				rows: [
-					{ value: tick(valueAt(row, axes?.y), axes?.y), label: axes?.y?.label, color: series(0) },
+					{ value: tick(valueAt(row, axes?.y), axes?.y), label: axes?.y?.label, color: theme.accent },
 					{ value: tick(valueAt(row, axes?.x), axes?.x), label: axes?.x?.label },
 					{ value: count(row.count), label: 'respondents' },
 				],
@@ -207,6 +206,7 @@
 
 		{#each points as point, i (point.row.response ?? i)}
 			{@const side = point.flip ? -1 : 1}
+			{@const size = hover.active === i ? DOT + 2 : DOT}
 			<g
 				role="presentation"
 				onpointerdown={(event) => enter(i, point.row, event)}
@@ -214,19 +214,20 @@
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
 			>
-				<circle cx={point.cx} cy={point.cy} r={HIT / 2} fill="transparent" />
+				<rect x={point.cx - HIT / 2} y={point.cy - HIT / 2} width={HIT} height={HIT} fill="transparent" />
 
-				<circle
-					cx={point.cx}
-					cy={point.cy}
-					r={hover.active === i ? DOT + 2 : DOT}
-					fill={series(0)}
+				<rect
+					x={point.cx - size / 2}
+					y={point.cy - size / 2}
+					width={size}
+					height={size}
+					fill={theme.accent}
 					fill-opacity={px(opacity(point.row.count ?? 0))}
 					stroke-width={hover.active === i ? 2 : 0}
 					stroke={hover.active === i ? theme.ink : theme.background}
 				/>
 
-				<!-- Line connecting the text and the circle -->
+				<!-- Line connecting the text and the square -->
 				{#if Math.abs(point.labelY - point.cy) > 2}
 					<line
 						x1={point.cx + side * (DOT + 3)}
@@ -255,8 +256,8 @@
 	<g transform="translate({px(width - RAMP_WIDTH)}, {PAD})">
 		<defs>
 			<linearGradient id="density-{uid}" x1="0" x2="0" y1="1" y2="0">
-				<stop offset="0%" stop-color={series(0)} stop-opacity={FAINTEST} />
-				<stop offset="100%" stop-color={series(0)} stop-opacity="1" />
+				<stop offset="0%" stop-color={theme.accent} stop-opacity={FAINTEST} />
+				<stop offset="100%" stop-color={theme.accent} stop-opacity="1" />
 			</linearGradient>
 		</defs>
 
