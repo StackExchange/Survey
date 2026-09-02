@@ -290,6 +290,9 @@ body {
 .md a {
 	text-decoration: underline;
 }
+.md a:hover {
+	color: var(--color-blue);
+}
 
 .font-headline-notch {
 	font-family: 'Stack Sans Headline', var(--font-fallback);
