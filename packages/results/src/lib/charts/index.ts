@@ -63,3 +63,6 @@ export const SCALABLE = new Set(['bar', 'bar-clustered', 'bar-vertical', 'dumbbe
 // Which ids answer "Focus": `useFocus()` callers. Line and sankey never draw a
 // per-response mark, so they've nothing to dim.
 export const FOCUSABLE = new Set(['bar', 'bar-stacked', 'bar-clustered', 'bar-vertical', 'dumbbell', 'scatter', 'table'])
+
+// Which ids squash unreadably in a narrow column: given a floor width and left to scroll instead.
+export const SCROLLS = new Set(['line', 'scatter', 'sankey'])
