@@ -48,7 +48,6 @@
 {#if selection.listable || scalable}
 	<div class="flex flex-wrap items-center gap-2">
 		<div bind:this={root} class="relative flex">
-
 			{#if selection.touched}
 				<Button variant="plain" iconEnd={IconCross} label="Reset" onclick={() => selection.reset()} />
 			{/if}
@@ -56,7 +55,7 @@
 			<button
 				bind:this={toggle}
 				type="button"
-				class="flex text-sm cursor-pointer items-center gap-1.5 px-4 py-3 whitespace-nowrap {open
+				class="flex cursor-pointer items-center gap-1.5 px-4 py-3 text-sm whitespace-nowrap {open
 					? 'bg-black text-white dark:bg-black-500'
 					: 'text-black hover:bg-black hover:text-white dark:text-black-300 lg:dark:bg-black-600'}"
 				title={open ? 'Close chart options' : 'Chart options'}
@@ -75,14 +74,15 @@
 					: 'hidden'}"
 			>
 				<fieldset>
-					<legend class="font-semibold sr-only">Chart settings</legend>
+					<legend class="sr-only font-semibold">Chart settings</legend>
 
 					{#if scalable}
-						<label class="mb-5 flex cursor-pointer items-start gap-2 text-sm leading-snug border-b border-black-200 pb-3">
+						<label class="mb-5 flex cursor-pointer items-start gap-2 border-b border-black-200 pb-3 text-sm leading-snug">
 							<input type="checkbox" class="mt-0.5 shrink-0" bind:checked={normalise} />
 							<span class="select-none">
 								Scale to the largest value
-								<span class="block text-xs text-black-400 dark:text-black-300">Easier to read, no longer comparable with other charts.</span>
+								<span class="block text-xs text-black-400 dark:text-black-300">Easier to read, no longer comparable with other charts.</span
+								>
 							</span>
 						</label>
 					{/if}
@@ -97,11 +97,12 @@
 									use:indeterminate={selection.hidden.length > 0 && selection.hidden.length < selection.rows.length}
 									onchange={() => selection.toggleAll()}
 								/>
-								<span class="select-none">{selection.hidden.length === 0 ? 'Unselect all' : 'Select all'}</span>
+								<span class="text-black-350 select-none">{selection.hidden.length === 0 ? 'Unselect all' : 'Select all'}</span>
 							</label>
 						{/if}
-						<div class="mb-3 text-sm dark:border-black-500 ml-auto">
-							{selection.kept.length} of {selection.rows.length} {#if selection.focus.length}/ {selection.focus.length} focused{/if}
+						<div class="mb-3 ml-auto text-sm text-black-350 dark:border-black-500">
+							{selection.kept.length} of {selection.rows.length}
+							{#if selection.focus.length}/ {selection.focus.length} focused{/if}
 						</div>
 					</div>
 
@@ -112,9 +113,9 @@
 								{@const on = selection.focus.includes(row.response)}
 								{@const last = !off && selection.kept.length === 1}
 
-								<li class="-mx-4 flex items-start gap-2  odd:bg-black-100 dark:odd:bg-white/5">
+								<li class="-mx-4 flex items-start gap-2 odd:bg-black-100 dark:odd:bg-white/5">
 									<label
-										class="flex flex-1 items-start px-4 py-2 gap-2 text-sm leading-snug {off
+										class="flex flex-1 items-start gap-2 px-4 py-2 text-sm leading-snug {off
 											? 'text-black-400 dark:text-black-300'
 											: ''} {last ? 'cursor-not-allowed opacity-60' : 'cursor-pointer hover:bg-black-225'}"
 										title={last ? 'At least one row must stay visible' : undefined}
@@ -132,7 +133,7 @@
 									{#if focusable}
 										<button
 											type="button"
-											class="flex self-center mr-1 shrink-0 cursor-pointer items-center gap-1 px-2 py-0.5 text-xs {on
+											class="mr-1 flex shrink-0 cursor-pointer items-center gap-1 self-center px-2 py-0.5 text-xs {on
 												? 'bg-black text-white dark:bg-white dark:text-black'
 												: 'hover:bg-black-150 dark:hover:bg-black-500'}"
 											aria-pressed={on}
