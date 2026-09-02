@@ -12,7 +12,6 @@
 	let { figure, width = 800, onhover }: { figure: any; width?: number; onhover?: OnHover } = $props()
 
 	const hover = useHover(() => onhover)
-	const uid = $props.id() // id attribute for SVG gradients
 
 	const NODE_WIDTH = 14
 	const NODE_PADDING = 12
@@ -77,14 +76,14 @@
 		}) as { nodes: any[]; links: any[] }
 	})
 
+	// d3-sankey writes full float precision we don't need so we round them
 	const link = sankeyLinkHorizontal()
-	// d3-sankey writes full float precision; the file is smaller rounded, and the
-	// curve is unchanged at two places.
-	const strand = (edge: any) => String(link(edge) ?? '').replace(/\d+\.\d+/g, (n) => String(px(Number(n))))
+		.source((edge: any) => [px(edge.source.x1), px(edge.y0)])
+		.target((edge: any) => [px(edge.target.x0), px(edge.y1)])
+
+	const strand = (edge: any) => String(link(edge) ?? '')
 	const hue = (node: any) => series(node.label ?? 0)
 
-	// A node draws its short name; a tooltip says the response in full, as every
-	// other chart does.
 	const full = (node: any) => names[node.label] ?? node.name
 
 	const enter = (i: number, edge: any, event: PointerEvent) => {
@@ -118,29 +117,13 @@
 			{/if}
 		{/if}
 
-		<defs>
-			{#each graph.links as edge, i (i)}
-				<linearGradient
-					id="link-{uid}-{i}"
-					gradientUnits="userSpaceOnUse"
-					x1={px(edge.source.x1)}
-					x2={px(edge.target.x0)}
-					y1={px((edge.source.y0 + edge.source.y1) / 2)}
-					y2={px((edge.target.y0 + edge.target.y1) / 2)}
-				>
-					<stop offset="0%" stop-color={hue(edge.source)} />
-					<stop offset="100%" stop-color={hue(edge.target)} />
-				</linearGradient>
-			{/each}
-		</defs>
-
 		{#each graph.links as edge, i (i)}
 			<path
 				d={strand(edge)}
-				stroke="url(#link-{uid}-{i})"
+				stroke={hue(edge.source)}
 				stroke-width={px(Math.max(1, edge.width ?? 1))}
 				fill="none"
-				opacity={hover.active === null ? 0.35 : hover.active === i ? 0.85 : 0.12}
+				opacity={hover.active === null ? 0.6 : hover.active === i ? 1 : 0.12}
 			/>
 		{/each}
 
@@ -160,6 +143,7 @@
 
 		{#each graph.nodes as node, i (i)}
 			{@const source = i < columns.left.length}
+
 			<rect x={px(node.x0)} y={px(node.y0)} width={px(node.x1 - node.x0)} height={px(Math.max(1, node.y1 - node.y0))} fill={hue(node)} />
 
 			<text
