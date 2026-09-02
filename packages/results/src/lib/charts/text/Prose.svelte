@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { block, headlineClass = 'text-4xl md:text-5xl' }: { block: any, headlineClass?: string } = $props()
+	let { block, headlineClass = 'text-4xl md:text-5xl' }: { block: any; headlineClass?: string } = $props()
 
 	const copy = $derived(block.descriptionHtml?.trim())
 </script>

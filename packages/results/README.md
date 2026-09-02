@@ -71,17 +71,17 @@ Set per question in the `chart` column of the content sheet, and resolved throug
 the registry in `src/lib/charts/index.ts` — a value with no entry there draws
 nothing, so the ids below are the whole list.
 
-| Type          | uid             | Row shape it draws                                       |
-| ------------- | --------------- | -------------------------------------------------------- |
-| Bar           | `bar`           | one row per response                                     |
-| Bar vertical  | `bar-vertical`  | one row per response, ideal for histograms               |
-| Bar stacked   | `bar-stacked`   | a row per (response, series); segments sum to 100%       |
-| Bar clustered | `bar-clustered` | a row per (response, series); one bar each, shared scale |
-| Dumbbell      | `dumbbell`      | a row per (response, series), exactly two series         |
-| Sankey        | `sankey`        | a row per (source, target) — `response` → `series`       |
-| Scatter       | `scatter`       | one row per response, two named numeric columns          |
-| Table         | `table`         | any columns; headings come from `src/lib/labels.ts`      |
-| Line          | `line`          | a row per (response, series), trend over an ordered `response`   |
+| Type          | uid             | Row shape it draws                                             |
+| ------------- | --------------- | -------------------------------------------------------------- |
+| Bar           | `bar`           | one row per response                                           |
+| Bar vertical  | `bar-vertical`  | one row per response, ideal for histograms                     |
+| Bar stacked   | `bar-stacked`   | a row per (response, series); segments sum to 100%             |
+| Bar clustered | `bar-clustered` | a row per (response, series); one bar each, shared scale       |
+| Dumbbell      | `dumbbell`      | a row per (response, series), exactly two series               |
+| Sankey        | `sankey`        | a row per (source, target) — `response` → `series`             |
+| Scatter       | `scatter`       | one row per response, two named numeric columns                |
+| Table         | `table`         | any columns; headings come from `src/lib/labels.ts`            |
+| Line          | `line`          | a row per (response, series), trend over an ordered `response` |
 
 ## Site structure
 
