@@ -2,6 +2,16 @@ import { LINE_SERIES_DEFAULT, rankedSeriesOf } from './expressive'
 
 // Held by ChartDownload: ChartOptions sets it and the drawing reads it.
 
+// First appearance per response, dropping the repeats a multi-series chart's long-format `data` carries.
+function dedupeByResponse(rows: any[]) {
+	const seen = new Set<string>()
+	return rows.filter((row) => {
+		if (seen.has(row.response)) return false
+		seen.add(row.response)
+		return true
+	})
+}
+
 export function rowSelection(figure: () => any) {
 	// Keyed by group: responses differ between cuts, so a row hidden in one
 	// would silently apply to another.
@@ -12,9 +22,12 @@ export function rowSelection(figure: () => any) {
 	// lines), ranked by their most recent value.
 	const isLine = $derived(figure().chart === 'line')
 
-	const rows = $derived(
-		isLine ? rankedSeriesOf(figure()).map((response: string) => ({ response })) : (figure().data ?? []).filter(Boolean)
-	)
+	// A multi-series chart (bar-clustered, bar-stacked, dumbbell) repeats each
+	// response once per series — dropped, `shown.data` needs every one of
+	// those rows, so it's kept alongside the deduped list the checklist reads.
+	const allRows = $derived((figure().data ?? []).filter(Boolean))
+
+	const rows = $derived(isLine ? rankedSeriesOf(figure()).map((response: string) => ({ response })) : dedupeByResponse(allRows))
 	const responses = $derived(rows.map((row: any) => row.response))
 
 	// Only where a response identifies one row: a sankey's are {source, target,
@@ -60,7 +73,7 @@ export function rowSelection(figure: () => any) {
 			// lets the chart apply its own default cap — so it can still tell
 			// (and caption) how much its default left out.
 			if (isLine) return dropped.group === group ? { ...figure(), series: kept.map((row: any) => row.response) } : figure()
-			return hidden.length ? { ...figure(), data: kept } : figure()
+			return hidden.length ? { ...figure(), data: allRows.filter((row: any) => !hidden.includes(row.response)) } : figure()
 		},
 		get touched() {
 			return hidden.length > 0 || focus.length > 0
