@@ -3,19 +3,22 @@
 The survey results site, built with [SvelteKit](https://svelte.dev/docs/kit/introduction) and prerendered to static files. It serves the apex, `survey.stackoverflow.co`.
 
 ```bash
+# Live preview at http://localhost:5173/
 npm run dev -w results
+
+# Optionally serve on your home network - useful for mobile testing
+npm run dev -w results -- --host
+
+# For production
 npm run build -w results
-```
 
-## Live preview
-
-```bash
-npm run dev -w results
+# As with the whole repo, run this before commiting
+npm run format
 ```
 
 ## Sync content
 
-Content is stored in a public Google Sheet. To convert this to `survey.json` run this command.
+Content is stored in a Google Sheet that must be public (so we don't need API keys to read it). To convert this to `survey.json` run this command.
 
 ```bash
 npm run content -w results
@@ -71,12 +74,14 @@ nothing, so the ids below are the whole list.
 | Type          | uid             | Row shape it draws                                       |
 | ------------- | --------------- | -------------------------------------------------------- |
 | Bar           | `bar`           | one row per response                                     |
+| Bar vertical  | `bar-vertical`  | one row per response, ideal for histograms               |
 | Bar stacked   | `bar-stacked`   | a row per (response, series); segments sum to 100%       |
 | Bar clustered | `bar-clustered` | a row per (response, series); one bar each, shared scale |
 | Dumbbell      | `dumbbell`      | a row per (response, series), exactly two series         |
 | Sankey        | `sankey`        | a row per (source, target) — `response` → `series`       |
 | Scatter       | `scatter`       | one row per response, two named numeric columns          |
 | Table         | `table`         | any columns; headings come from `src/lib/labels.ts`      |
+| Line          | `line`          | a row per (response, series), trend over an ordered `response`   |
 
 ## Site structure
 
