@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { OnHover } from '$charts/utils/theme'
 
-	import { useFocus } from '$charts/utils/chrome'
+	import { useFocus, useLimit } from '$charts/utils/chrome'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, HIT, HOVER_WASH, middle, PAD, px, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { tableOf } from '$lib/table'
@@ -15,9 +15,13 @@
 
 	const hover = useHover(() => onhover)
 	const dim = useFocus()
+	const limit = useLimit()
 
 	const table = $derived(tableOf(figure))
-	const rows = $derived(table?.rows ?? [])
+	const allRows = $derived(table?.rows ?? [])
+	const rows = $derived(limit() ? allRows.slice(0, limit()) : allRows)
+	const truncated = $derived(Boolean(limit()) && allRows.length > (limit() as number))
+	const note = $derived(truncated ? `Top ${limit()} shown` : undefined)
 	const headers = $derived(table?.headers ?? [])
 	const numeric = $derived(table?.numeric ?? [])
 	const short = $derived(shorten(figure))
@@ -40,7 +44,7 @@
 	}
 </script>
 
-<Frame {figure} {width} {height}>
+<Frame {figure} {width} {height} {note}>
 	<g transform="translate(0, {PAD})">
 		{#each headers as header, i (i)}
 			<text
@@ -54,8 +58,6 @@
 				{i === 0 ? '' : clip(header, chars(colWidth(i) - 12, SMALL))}
 			</text>
 		{/each}
-
-		<line x1={PAD} x2={width - PAD} y1={HEAD - 6} y2={HEAD - 7} stroke={theme.ink} vector-effect="non-scaling-stroke" />
 
 		{#each rows as row, r (r)}
 			{@const y = HEAD + r * ROW}
@@ -83,6 +85,7 @@
 
 				{#each row.cells as value, i (i)}
 					{@const text = short(value)}
+
 					<text
 						x={numeric[i] ? edge(i) : x(i)}
 						y={middle(y + ROW / 2 - 4, SMALL)}

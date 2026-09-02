@@ -4,7 +4,8 @@
 	import { scaleLinear, scalePoint } from 'd3-scale'
 	import { line as lineShape } from 'd3-shape'
 
-	import { largestOf } from '$charts/utils/expressive'
+	import { useLimit } from '$charts/utils/chrome'
+	import { largestOf, LINE_SERIES_DEFAULT, rankedSeriesOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { digitsWidth, hanging, HOVER_WASH, legend, middle, PAD, percent, px, series, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { bySeries } from '$lib/table'
@@ -17,8 +18,7 @@
 
 	const hover = useHover(() => onhover)
 	const short = $derived(shorten(figure))
-
-	const MAX = 8 // Theme palette only has 8 colors
+	const limit = useLimit()
 
 	const TICKS = 5
 	const LABEL_GAP = 15
@@ -31,17 +31,12 @@
 		return [...rows].sort((a, b) => Number(a.response) - Number(b.response))
 	}
 
-	const all = $derived(figure.series ?? [])
-
-	// Ranked by their most recent value
-	const names = $derived.by(() => {
-		const latest = chronological(bySeries(figure.data, all)).at(-1)
-		return all
-			.map((name: string, i: number) => ({ name, value: latest?.cells[i]?.pct ?? 0 }))
-			.sort((a: any, b: any) => b.value - a.value)
-			.slice(0, MAX)
-			.map((entry: any) => entry.name)
-	})
+	// Ranked by their most recent value; capped so colors — the palette
+	// repeats past `LINE_SERIES_DEFAULT` — don't collide, unless a caller
+	// (the question page's customize panel) has already picked a set.
+	const allNames = $derived(rankedSeriesOf(figure))
+	const names = $derived(allNames.slice(0, limit() ?? LINE_SERIES_DEFAULT))
+	const note = $derived(allNames.length > names.length ? `Top ${names.length} shown` : undefined)
 
 	const rows = $derived(chronological(bySeries(figure.data, names)))
 
@@ -105,7 +100,7 @@
 	}
 </script>
 
-<Frame {figure} {width} {height}>
+<Frame {figure} {width} {height} {note}>
 	<g transform="translate({PAD}, {PAD})">
 		<Legend layout={key} colors={names.map((_: string, i: number) => series(i))} />
 	</g>

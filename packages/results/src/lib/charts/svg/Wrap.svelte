@@ -15,12 +15,15 @@
 		width,
 		height,
 		reading,
+		note,
 		children,
 	}: {
 		figure: any
 		width: number
 		height: number
 		reading?: string
+		/** An extra note appended to the subtext stat, e.g. a chart-level truncation notice. */
+		note?: string
 		children?: Snippet
 	} = $props()
 
@@ -31,7 +34,8 @@
 	const chrome = $derived(readChrome?.() ?? {})
 	const brand = $derived(chrome.brand ?? false)
 	const footer = $derived(chrome.footer ?? false)
-	const facts = $derived(captionOf(figure))
+	const rawCaption = $derived(captionOf(figure))
+	const facts = $derived({ ...rawCaption, subtext: [rawCaption.subtext, note].filter(Boolean).join(' · ') })
 	const editorial = $derived(Boolean(figure?.tier))
 	const stats = $derived(Boolean(facts.n || facts.share || facts.subtext) && (brand || !editorial))
 	const terms = $derived(brand ? `Data licensed under ${licence.database.full}` : undefined)

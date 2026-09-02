@@ -12,6 +12,8 @@ export interface Chrome {
 	focus?: string[]
 	/** Scale a share chart to its own largest value rather than to a full 100%. */
 	normalise?: boolean
+	/** Cap a table chart to this many rows. */
+	limit?: number
 	headline?: string
 	/** The question's canonical URL, drawn in the masthead. */
 	url?: string
@@ -79,6 +81,13 @@ export function useFocus() {
 		if (!focus?.length) return undefined
 		return typeof response === 'string' && focus.includes(response) ? 1 : 0.22
 	}
+}
+
+// The row cap for a table chart, or undefined for no limit. Call at init; the return reads on each call.
+export function useLimit() {
+	const read = chromeReader()
+
+	return () => read?.().limit
 }
 
 // The top of a share chart's scale. Call at init; the return reads on each call.

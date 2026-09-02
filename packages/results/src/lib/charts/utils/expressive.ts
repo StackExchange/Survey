@@ -1,7 +1,28 @@
 import { count, percent, px, shorten } from '$charts/utils/theme'
-import { ofSurvey } from '$lib/table'
+import { bySeries, ofSurvey } from '$lib/table'
 
 export const rowsOf = (figure: any) => (figure.data ?? []).filter(Boolean)
+
+// A line chart's default line count: past this, colors start repeating —
+// the palette (`theme.series`) only has this many.
+export const LINE_SERIES_DEFAULT = 8
+
+// A line chart's series, ranked by their most recent value — the customize
+// panel's row order, and a line chart's own default (its first `n`).
+export function rankedSeriesOf(figure: any): string[] {
+	const all: string[] = figure?.series ?? []
+	if (!all.length) return all
+
+	const grouped = bySeries(figure?.data ?? [], all)
+	const numeric = grouped.length > 1 && grouped.every((row: any) => Number.isFinite(Number(row.response)))
+	const chronological = numeric ? [...grouped].sort((a: any, b: any) => Number(a.response) - Number(b.response)) : grouped
+	const latest = chronological.at(-1)
+
+	return all
+		.map((name: string, i: number) => ({ name, value: latest?.cells[i]?.pct ?? 0 }))
+		.sort((a: any, b: any) => b.value - a.value)
+		.map((entry: any) => entry.name)
+}
 
 // The one response the sheet's `focus` column named, as the row not the string:
 // charts slice, sort and re-rank, and an identity check survives all three.

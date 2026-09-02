@@ -109,7 +109,7 @@
 				<rect x="0" y={y - GROUP_GAP / 2} {width} height={groupHeight} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
-			<text x={labelWidth} y={middle(y + (groupHeight - GROUP_GAP) / 2, SMALL)} text-anchor="end" font-size={SMALL} fill={theme.ink}>
+			<text x={PAD} y={middle(y + (groupHeight - GROUP_GAP) / 2, SMALL)} font-size={SMALL} fill={theme.ink}>
 				{clip(short(row.response), chars(labelWidth, SMALL))}
 			</text>
 
@@ -118,6 +118,7 @@
 				{@const bar = px(x(amount(row, i)))}
 
 				<rect x={plotX} y={barY} width={bar} height={BAR} fill={series(i)} />
+
 				<text
 					x={px(plotX + bar + VALUE_GAP)}
 					y={middle(barY + BAR / 2, SMALL)}
