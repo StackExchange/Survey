@@ -103,7 +103,7 @@
 					<div class="container flex flex-col items-stretch gap-6 lg:flex-row">
 						<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 						<header tabindex="0" class="top-16 flex max-h-[calc(100vh-4rem)] basis-1/4 flex-col overflow-y-auto lg:sticky">
-							<h3 id={titleId} class="my-3 font-headline text-3xl leading-8">
+							<h3 id={titleId} class="mb-3 font-headline text-3xl leading-8">
 								<a
 									class="group"
 									href={resolve('/[year]/[chapter]/data/[question]', { year: data.year, chapter: data.chapter.id, question: block.id })}
