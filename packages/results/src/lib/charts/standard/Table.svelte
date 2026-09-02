@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { OnHover } from '$charts/utils/theme'
 
+	import { useFocus } from '$charts/utils/chrome'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import { chars, clip, HIT, HOVER_WASH, middle, PAD, px, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { tableOf } from '$lib/table'
@@ -13,6 +14,7 @@
 	const HEAD = 35
 
 	const hover = useHover(() => onhover)
+	const dim = useFocus()
 
 	const table = $derived(tableOf(figure))
 	const rows = $derived(table?.rows ?? [])
@@ -49,7 +51,7 @@
 				font-weight="600"
 				fill={theme.ink}
 			>
-				{clip(header, chars(colWidth(i) - 12, SMALL))}
+				{i === 0 ? '' : clip(header, chars(colWidth(i) - 12, SMALL))}
 			</text>
 		{/each}
 
@@ -59,6 +61,7 @@
 			{@const y = HEAD + r * ROW}
 
 			<g
+				opacity={dim(row.response)}
 				role="presentation"
 				onpointerdown={(event) => enter(r, row, event)}
 				onpointermove={(event) => enter(r, row, event)}

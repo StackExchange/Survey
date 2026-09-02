@@ -11,7 +11,7 @@
 
 	import Button from '$components/Button.svelte'
 
-	import { charts, SCALABLE } from '$charts'
+	import { charts, FOCUSABLE, SCALABLE } from '$charts'
 
 	import ChartOptions from './ChartOptions.svelte'
 
@@ -59,6 +59,7 @@
 	})
 
 	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
+	const focusable = $derived(FOCUSABLE.has(figure.chart))
 
 	// File only: on screen the page's own footer says the same.
 	const exported = $derived({ ...chrome, footer: true })
@@ -104,7 +105,7 @@
 	<fieldset class="mt-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-3">
 		<legend class="sr-only">Customise and download this chart</legend>
 
-		<ChartOptions {selection} {scalable} bind:normalise />
+		<ChartOptions {selection} {scalable} {focusable} bind:normalise />
 
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
 			<span id="{id}-format" class="sr-only">Format</span>

@@ -59,3 +59,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 
 // Which ids answer the "scale to the largest value" option: `useDomain()` callers.
 export const SCALABLE = new Set(['bar', 'bar-clustered', 'bar-vertical', 'dumbbell'])
+
+// Which ids answer "Focus": `useFocus()` callers. Line and sankey never draw a
+// per-response mark, so they've nothing to dim.
+export const FOCUSABLE = new Set(['bar', 'bar-stacked', 'bar-clustered', 'bar-vertical', 'dumbbell', 'scatter', 'table'])

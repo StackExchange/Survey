@@ -5,6 +5,7 @@
 
 	import { scaleLinear } from 'd3-scale'
 
+	import { useFocus } from '$charts/utils/chrome'
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
 	import {
@@ -34,6 +35,7 @@
 	const uid = $props.id()
 
 	const hover = useHover(() => onhover)
+	const dim = useFocus()
 
 	const TICKS = 6
 	const DOT = 10
@@ -208,6 +210,7 @@
 			{@const side = point.flip ? -1 : 1}
 			{@const size = hover.active === i ? DOT + 2 : DOT}
 			<g
+				opacity={dim(point.row.response)}
 				role="presentation"
 				onpointerdown={(event) => enter(i, point.row, event)}
 				onpointermove={(event) => enter(i, point.row, event)}

@@ -12,7 +12,7 @@
 			<thead>
 				<tr class="border-b border-black-150 dark:border-black-500">
 					{#each table.headers as header, i (i)}
-						<th scope="col" class="px-2 pb-2 font-semibold {table.numeric[i] ? 'text-right' : ''}">{header}</th>
+						<th scope="col" class="px-2 pb-2 font-semibold {table.numeric[i] ? 'text-right' : ''}">{i === 0 ? '' : header}</th>
 					{/each}
 				</tr>
 			</thead>

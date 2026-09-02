@@ -10,8 +10,9 @@
 	let {
 		selection,
 		scalable = false,
+		focusable = false,
 		normalise = $bindable(true),
-	}: { selection: RowSelection; scalable?: boolean; normalise?: boolean } = $props()
+	}: { selection: RowSelection; scalable?: boolean; focusable?: boolean; normalise?: boolean } = $props()
 
 	const id = $props.id()
 
@@ -86,17 +87,19 @@
 									<span class="select-none">{row.response}</span>
 								</label>
 
-								<button
-									type="button"
-									class="flex shrink-0 cursor-pointer items-center gap-1 border px-2 py-0.5 text-xs {on
-										? 'bg-black text-white dark:bg-white dark:text-black'
-										: 'hover:bg-black-150 dark:border-black-500 dark:hover:bg-black-500'}"
-									aria-pressed={on}
-									aria-label="Focus {row.response}"
-									onclick={() => selection.highlight(row.response)}
-								>
-									Focus <Icon src={IconEye} />
-								</button>
+								{#if focusable}
+									<button
+										type="button"
+										class="flex shrink-0 cursor-pointer items-center gap-1 border px-2 py-0.5 text-xs {on
+											? 'bg-black text-white dark:bg-white dark:text-black'
+											: 'hover:bg-black-150 dark:border-black-500 dark:hover:bg-black-500'}"
+										aria-pressed={on}
+										aria-label="Focus {row.response}"
+										onclick={() => selection.highlight(row.response)}
+									>
+										Focus <Icon src={IconEye} />
+									</button>
+								{/if}
 							</li>
 						{/each}
 					</ul>
