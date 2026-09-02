@@ -68,7 +68,7 @@
 				class="absolute right-0 top-full ml-auto flex items-center gap-1.5 px-3 py-2.5 hover:bg-black hover:text-white"
 				aria-label="Permalink: {block.demographic.name}"
 			>
-				Share or cite
+				View and share
 				<Icon src={IconLink} />
 			</a>
 		{/if}

@@ -101,7 +101,7 @@
 					class="absolute right-3 bottom-3 inline-flex items-center gap-1.5 px-3 py-2 text-sm hover:bg-black hover:text-white dark:hover:bg-black-500"
 					aria-label="Permalink: {block.headline}"
 				>
-					Share or cite
+					View and share
 					<Icon src={IconLink} />
 				</a>
 			{/if}
