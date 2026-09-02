@@ -102,8 +102,9 @@
 				<rect x="0" {y} {width} height={ROW} fill={theme.ink} opacity={HOVER_WASH} />
 			{/if}
 
+			<!-- For smaller screens we stack the labels -->
 			{#if labelAbove}
-				<text x={PAD} y={middle(y + LINE / 2, LABEL)} font-size={LABEL} fill={theme.ink}>
+				<text x={PAD} y={middle(y + LINE / 2.5, LABEL)} font-size={LABEL} fill={theme.ink}>
 					{label}
 				</text>
 
