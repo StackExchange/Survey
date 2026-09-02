@@ -59,6 +59,12 @@
 
 <ButtonMenu {items} label="More share options" class={className}>
 	{#snippet action()}
-		<Button copy={url} icon={IconLink} label="Copy link" title="Copy this url" class={['text-nowrap', compact && 'max-sm:hidden']} />
+		<Button
+			copy={url}
+			icon={IconLink}
+			label="Copy link"
+			title="Copy this url"
+			class={['flex-1 justify-center text-nowrap', compact && 'max-sm:hidden']}
+		/>
 	{/snippet}
 </ButtonMenu>

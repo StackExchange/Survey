@@ -36,6 +36,11 @@
 
 <ButtonMenu {items} label="More page options">
 	{#snippet action()}
-		<Button copy={markdown} label="Copy page" icon={IconClipboard} class={['text-nowrap', compact && 'max-sm:hidden']} />
+		<Button
+			copy={markdown}
+			label="Copy page"
+			icon={IconClipboard}
+			class={['flex-1 justify-center text-nowrap', compact && 'max-sm:hidden']}
+		/>
 	{/snippet}
 </ButtonMenu>
