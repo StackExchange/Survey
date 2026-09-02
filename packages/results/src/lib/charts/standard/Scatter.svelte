@@ -93,7 +93,7 @@
 	const xGrid = $derived(xTicks.slice(0, -1).map((value) => xScale(value)))
 	const yGrid = $derived(yTicks.slice(0, -1).map((value) => yScale(value)))
 
-	const GUTTER = (DOT / 2) + GAP
+	const GUTTER = DOT / 2 + GAP
 	const LINE = FINE + 2
 	const NAME = 32
 
