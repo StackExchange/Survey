@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Chrome } from '$charts/utils/chrome'
+	import type { RowSelection } from '$charts/utils/rows.svelte'
 	import type { Snippet } from 'svelte'
 
 	import { IconArrowDownBox } from '@stackoverflow/stacks-icons/icons'
@@ -7,31 +8,30 @@
 
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { save, toPng, toSvg } from '$charts/utils/export'
-	import { rowSelection } from '$charts/utils/rows.svelte'
 
 	import Button from '$components/Button.svelte'
 
-	import { charts, FOCUSABLE, SCALABLE } from '$charts'
-
-	import ChartOptions from './ChartOptions.svelte'
+	import { charts } from '$charts'
 
 	let {
 		figure,
 		name,
 		year,
 		url,
+		selection,
+		normalise = $bindable(true),
 		chart,
 	}: {
 		figure: any
 		name: string
 		year: string
 		url: string
+		selection: RowSelection
+		normalise?: boolean
 		chart: Snippet<[{ block: any; chrome: Chrome; width: number }]>
 	} = $props()
 
 	const Chart = $derived(charts[figure.chart as keyof typeof charts])
-
-	const selection = rowSelection(() => figure)
 
 	const id = $props.id()
 
@@ -41,7 +41,6 @@
 	] as const
 
 	let format = $state<'png' | 'svg'>('png')
-	let normalise = $state(true)
 	let status = $state<'idle' | 'working' | 'failed'>('idle')
 
 	// One size: 2400px covers print and a retina screen.
@@ -52,14 +51,14 @@
 		year,
 		focus: selection.focus,
 		normalise,
+		// The customize panel already picked exactly what to draw — never cap
+		// it further (a line chart otherwise defaults to its first 8 series).
+		limit: selection.kept.length,
 		url,
 		// Not `figureTitle`: a masthead stays blank rather than falling back.
 		headline: figure.headline || figure.name,
 		demographic: figure.demographic?.name,
 	})
-
-	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
-	const focusable = $derived(FOCUSABLE.has(figure.chart))
 
 	// File only: on screen the page's own footer says the same.
 	const exported = $derived({ ...chrome, footer: true })
@@ -92,7 +91,7 @@
 		}
 	}
 
-	const label = $derived({ idle: `Download`, working: 'Rendering…', failed: 'Could not render' }[status])
+	const label = $derived({ idle: `Download image`, working: 'Rendering…', failed: 'Could not render' }[status])
 </script>
 
 <div>
@@ -102,10 +101,8 @@
 		</div>
 	</div>
 
-	<fieldset class="mt-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-3">
-		<legend class="sr-only">Customise and download this chart</legend>
-
-		<ChartOptions {selection} {scalable} {focusable} bind:normalise />
+	<fieldset class="mt-3 flex flex-col lg:flex-row lg:items-center gap-3">
+		<legend class="sr-only">Download this chart</legend>
 
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
 			<span id="{id}-format" class="sr-only">Format</span>
@@ -126,7 +123,8 @@
 		</div>
 
 		<Button
-			class="justify-center"
+			variant="invert"
+			class="justify-center self-stretch w-min-600"
 			onclick={download}
 			disabled={status === 'working' || !selection.kept.length}
 			iconEnd={status === 'working' ? SpotLoading : IconArrowDownBox}

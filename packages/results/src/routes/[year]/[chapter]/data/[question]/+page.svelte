@@ -21,7 +21,11 @@
 	import Share from '$components/Share.svelte'
 
 	import ChartDownload from '$charts/ChartDownload.svelte'
+	import ChartOptions from '$charts/ChartOptions.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
+	import { rowSelection } from '$charts/utils/rows.svelte'
+
+	import { FOCUSABLE, SCALABLE } from '$charts'
 
 	// eslint-disable-next-line svelte/valid-prop-names-in-kit-pages -- QuestionPanel instantiates this itself; the router only ever passes `data`
 	let { data, panel = false }: { data: PageData; panel?: boolean } = $props()
@@ -31,6 +35,11 @@
 	const definitions = $derived(figure.definitions ?? [])
 	const demographics = $derived(data.question.demographics)
 	const fallback = $derived(demographics[0])
+
+	const selection = rowSelection(() => figure)
+	let normalise = $state(true)
+	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
+	const focusable = $derived(FOCUSABLE.has(figure.chart))
 
 	const current = $derived(
 		(chosen?.question === data.question.id && demographics.find((d: any) => d.demographic.id === chosen?.id)) || fallback
@@ -97,7 +106,7 @@
 </div>
 
 <svelte:element this={panel ? 'div' : 'main'} id={panel ? undefined : 'main'} tabindex={panel ? undefined : -1}>
-	<div class="mx-auto mb-10 max-w-300 px-6">
+	<div class="mx-auto mb-6 max-w-300 px-6">
 		<header class="mb-10 items-start justify-between gap-10 lg:flex">
 			<div>
 				<h1 class="sr-only">
@@ -112,19 +121,25 @@
 				{/if}
 			</div>
 
-			<div class="flex shrink-0 flex-wrap gap-3 sm:gap-4">
+			<div class="flex flex-col lg:flex-row justify-stretch gap-3 sm:gap-4 max-lg:*:w-full">
 				<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
 				<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
 			</div>
 		</header>
 
-		{#if demographics.length > 1}
-			<div class="border-b border-black-150 dark:border-black-500">
-				<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
+		{#if demographics.length > 1 || selection.listable || scalable}
+			<div class="flex flex-wrap items-end gap-4 border-b border-black-150 dark:border-black-500">
+				{#if demographics.length > 1}
+					<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
+				{/if}
+
+				<div class="ml-auto order-first lg:order-last">
+					<ChartOptions {selection} {scalable} {focusable} bind:normalise />
+				</div>
 			</div>
 		{/if}
 
-		<ChartDownload {figure} name={exportName} year={data.year} url={shareUrl}>
+		<ChartDownload {figure} name={exportName} year={data.year} url={shareUrl} {selection} bind:normalise>
 			{#snippet chart({ block, chrome }: any)}
 				<!-- The panel holds no focusable content as it’s an SVG -->
 				<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
@@ -140,7 +155,7 @@
 		</ChartDownload>
 	</div>
 
-	<div class="border-t border-black-200 py-10 dark:border-black-500">
+	<div class="border-t border-black-200 py-8 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" id="data" aria-labelledby="asked">
 			<h2 id="asked" class="inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconQuestion} class="native shrink-0" /></span>
@@ -195,18 +210,18 @@
 		</section>
 	</div>
 
-	<div class="border-t border-black-200 py-10 dark:border-black-500">
+	<div class="border-t border-black-200 py-8 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="responses">
-			<h2 id="responses" class="mb-8 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+			<h2 id="responses" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconListOrdered} class="native shrink-0" /></span>
 				Data
 			</h2>
 
-			<div class="-mx-2"><DataTable {figure} /></div>
+			<DataTable {figure} />
 		</section>
 	</div>
 
-	<div class="border-t border-black-200 py-10 dark:border-black-500">
+	<div class="border-t border-black-200 py-8 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="export">
 			<h2 id="export" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
 				<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>
