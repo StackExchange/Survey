@@ -66,7 +66,8 @@ question:
       short: Support
     - label: System administrator
       short: Sysadmin
-    - Technical writer or documentation professional
+    - label: Technical writer or documentation professional
+      short: Writer, technical or docs
     - label: UX, research, or UI design professional
       short: UX or UI design
     - label: Other, please specify
