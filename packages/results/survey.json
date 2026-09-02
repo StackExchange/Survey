@@ -13,7 +13,6 @@
     {
       "name": "Work",
       "description": "A description for the 'Work' section.",
-      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
       "id": "work",
       "sections": [
         {
@@ -496,7 +495,6 @@
     {
       "name": "Knowledge",
       "description": "A description for the 'Knowledge - Context - Trust' section.",
-      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
       "id": "knowledge",
       "sections": [
         {
@@ -854,7 +852,6 @@
     {
       "name": "AI",
       "description": "A description for the 'AI' section.",
-      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
       "id": "ai",
       "sections": [
         {
@@ -1297,7 +1294,6 @@
     {
       "name": "Technology",
       "description": "A description for the 'Technology' section.",
-      "descriptionLong": "The technology leaderboards have been constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit; what’s changed are the categories of tech on this list. Cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies in some of these lists have been there for years. Some lists show clear leaders in the space. But every one of these lists show that there is plenty of room for alternative technologies, as each of these lists has a large number of technologies in the single digits for usage (and we had to cut off the lists at some point).",
       "id": "technology",
       "sections": [
         {
@@ -1837,7 +1833,6 @@
     {
       "name": "Community",
       "description": "A description for the 'Community' section.",
-      "descriptionLong": "Netus gravida cursus malesuada vel est condimentum. Mauris viverra felis ultrices aliquet. Pellentesque vulputate a dapibus egestas congue faucibus. Consectetur pellentesque a risus imperdiet eget sed.\n\nAmet semper volutpat ipsum eget euismod faucibus tortor a. Duis elit aliquet nisi varius et felis vel tellus sed. Tincidunt imperdiet dictum hendrerit mauris netus sit duis nunc nulla.",
       "id": "community",
       "sections": [
         {
@@ -2143,31 +2138,25 @@
       "dataId": ""
     },
     {
-      "headline": "Survey Fielding",
-      "description": "The current local response extract includes 39,266 total rows recorded from June 23, 2026 through August 5, 2026, of which 30,903 are marked as valid responses.\n\nThe survey was promoted through stackoverflow.com, stackoverflow.blog and our email list to community members that are opted into learning about research opportunities or announcements.",
+      "headline": "Survey felding",
+      "description": "The current local response extract includes 39,266 total rows recorded from June 23, 2026 through August 5, 2026, of which 30,903 are marked as valid responses.\n\nThe survey was promoted through stackoverflow.com, stackoverflow.blog and our email list to community members that are opted into learning about research opportunities or announcements.\n\nThe survey instrument should be referenced from the public Stack Exchange survey repository: [StackExchange/Survey](https://github.com/StackExchange/Survey).\n\nThe public call for feedback that informed the 2026 Developer Survey should be referenced from Meta Stack Overflow: [Help shape the 2026 Developer Survey](https://meta.stackoverflow.com/questions/438884/help-shape-the-2026-developer-survey).",
       "chart": "text",
       "dataId": ""
     },
     {
-      "headline": "",
-      "description": "The survey instrument should be referenced from the public Stack Exchange survey repository: [StackExchange/Survey](https://github.com/StackExchange/Survey).\n\nThe public call for feedback that informed the 2026 Developer Survey should be referenced from Meta Stack Overflow: [Help shape the 2026 Developer Survey](https://meta.stackoverflow.com/questions/438884/help-shape-the-2026-developer-survey).",
-      "chart": "text",
-      "dataId": ""
-    },
-    {
-      "headline": "Valid Responses",
+      "headline": "Valid responses",
       "description": "The current valid-response rule is implemented in `mark_valid_responses()` in `R/aggregation.R`. At a high level, the function adds an integer `valid_response` indicator to the response data.\n\nWhen bot exclusion is enabled and the input data does not already include `is_bot`, the function first runs `flag_bots()`. The current bot flag uses Qualtrics response-quality fields, including reCAPTCHA score, duplicate respondent status, straightlining questions, unanswered questions, progress, duration, and whether `Country` was answered.\n\nResponses are marked valid through either the primary inclusion rule or the substantive-response recovery rule.\n\nPrimary inclusion rule:\n\n- `Consent` is present and equals `\"I agree\"`.\n- `Employment` is present.\n- The response is not flagged as a bot when bot exclusion is enabled.\n\nSubstantive-response recovery rule:\n\n- The response answered all ten core fielding questions listed below.\n- This recovery rule is evaluated independently of the primary non-bot condition, so a response with `is_bot == TRUE` can still receive `valid_response == 1` when it answered all ten core fielding questions.\n\nCore fielding questions:\n\n- `Country`\n- `Currency`\n- `Compensation`\n- `TechDropDown`\n- `Languages`\n- `CodeTest`\n- `Databases`\n- `CloudPlat`\n- `WebFramework`\n- `DevIDE`\n\nThe survey-section scripts use `valid_response == 1` as the inclusion rule for exports, so the substantive-response recovery rule is preserved downstream.",
       "chart": "text",
       "dataId": ""
     },
     {
-      "headline": "Write-in Handling",
+      "headline": "Write-in handling",
       "description": "Role write-ins from `Role_38_TEXT` are reviewed only among `valid_response == 1` responses, normalized to group repeated answers, and compared against existing and analyst-approved Role categories. Reviewed matches can recode `\"Other, please specify\"` into a final Role category while retaining `Role_Original` and `Role_NLP_Status`; unresolved write-ins remain grouped as `\"Other\"` in summaries.\n\nSOChangeAddl written responses are eligible for public use only when `valid_response == 1`, `SOChangeAddlConsent` gives permission to share publicly, and `SOChangeAddl` is non-empty. Responses are decoded, translated to English when needed, and manually curated with `SOChangeAddlPublishText`, `SOChangeAddlInclude`, and `SOChangeAddlExcludeReason`; automated text flags are used only to support review, not to make final publish decisions.",
       "chart": "text",
       "dataId": ""
     },
     {
-      "headline": "Compensation Handling",
+      "headline": "Compensation handling",
       "description": "Compensation is analyzed among `valid_response == 1` responses with non-missing `Country`, `Currency`, and positive numeric `Compensation`; values are converted to yearly USD using exchange rates, with a documented Ukraine-specific correction when likely USD values were entered under `UAH`. Compensation statistics and charts use rows where `CompensationStatsInclude` and `CompensationChartInclude` are `TRUE`, excluding rows with multiple quality flags such as very low or very high converted values, country outliers, suspicious raw-number patterns, non-employed respondents, or student/retired roles.",
       "chart": "text",
       "dataId": ""
