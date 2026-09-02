@@ -3411,7 +3411,7 @@
   "Scatter_Compensation": {
     "meta": {
       "qid": "QID33",
-      "qname": ["Compensation", "WorkExp"],
+      "qname": ["Compensation", "WorkExp", "Role"],
       "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
       "slices": [
         {
