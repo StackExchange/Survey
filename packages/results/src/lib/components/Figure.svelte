@@ -62,17 +62,15 @@
 		<span class="sr-only">{caption}</span>
 
 		{#if href}
-			<p class="absolute right-2 bottom-2 flex gap-4 bg-black-150 dark:bg-black-500">
-				<a
-					{href}
-					onclick={open}
-					class="ml-auto flex items-center gap-1.5 px-3 py-2 hover:bg-black hover:text-white"
-					aria-label="Permalink: {block.demographic.name}"
-				>
-					Share or cite
-					<Icon src={IconLink} />
-				</a>
-			</p>
+			<a
+				{href}
+				onclick={open}
+				class="absolute right-0 top-full ml-auto flex items-center gap-1.5 px-3 py-2.5 hover:bg-black hover:text-white"
+				aria-label="Permalink: {block.demographic.name}"
+			>
+				Share or cite
+				<Icon src={IconLink} />
+			</a>
 		{/if}
 	</figcaption>
 </figure>
