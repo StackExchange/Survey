@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Chrome } from '$charts/utils/chrome'
+
 	import { IconArrowRight, IconQuestion } from '@stackoverflow/stacks-icons/icons'
 	import { SpotMetrics } from '@stackoverflow/stacks-icons/spots'
 
@@ -14,7 +16,15 @@
 	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Seo from '$components/Seo.svelte'
 
+	import { SCROLLS } from '$charts'
+
 	let { data, params } = $props()
+
+	// Per-chart-type chrome overrides for this view.
+	const CHROME: Partial<Record<string, Chrome>> = {
+		'bar-vertical': { normalise: true },
+		table: { limit: 10 },
+	}
 
 	let chosen = $state<Record<string, string>>({})
 
@@ -81,6 +91,7 @@
 				{@const shown = current(block)}
 				{@const panelId = `panel-${block.id}`}
 				{@const titleId = `${block.id}-title`}
+				{@const scrolls = SCROLLS.has(shown.chart)}
 
 				<article
 					id={block.id}
@@ -147,12 +158,14 @@
 							<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 							<div
 								id={panelId}
-								class="flex grow flex-col"
+								class="flex grow flex-col {scrolls ? 'overflow-x-auto' : ''}"
 								role={groups.length > 1 ? 'tabpanel' : undefined}
 								aria-labelledby={groups.length > 1 ? tabId(panelId, shown.demographic.id) : undefined}
 								tabindex={groups.length > 1 ? 0 : undefined}
 							>
-								<Figure block={shown} href={permalink(block)} chrome={{ normalise: shown.chart === 'bar-vertical' }} table />
+								<div class="flex grow flex-col {scrolls ? 'min-w-160' : ''}">
+									<Figure block={shown} href={permalink(block)} chrome={CHROME[shown.chart] ?? {}} table />
+								</div>
 							</div>
 						</div>
 					</div>
