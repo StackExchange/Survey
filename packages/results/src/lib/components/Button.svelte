@@ -51,8 +51,7 @@
 	} & HTMLAttributes<HTMLElement> = $props()
 
 	const variants = {
-		invert:
-			'bg-black text-white dark:text-black dark:bg-white hover:bg-black-500 dark:hover:bg-black-300',
+		invert: 'bg-black text-white dark:text-black dark:bg-white hover:bg-black-500 dark:hover:bg-black-300',
 		outline:
 			'bg-white dark:bg-black border dark:border-black-500 hover:border-black hover:bg-black hover:text-white dark:hover:bg-black-500 dark:hover:border-black-500',
 		filled:

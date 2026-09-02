@@ -101,7 +101,7 @@
 		</div>
 	</div>
 
-	<fieldset class="mt-3 flex flex-col lg:flex-row lg:items-center gap-3">
+	<fieldset class="mt-3 flex flex-col gap-3 lg:flex-row lg:items-center">
 		<legend class="sr-only">Download this chart</legend>
 
 		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
@@ -124,7 +124,7 @@
 
 		<Button
 			variant="invert"
-			class="justify-center self-stretch w-min-600"
+			class="w-min-600 justify-center self-stretch"
 			onclick={download}
 			disabled={status === 'working' || !selection.kept.length}
 			iconEnd={status === 'working' ? SpotLoading : IconArrowDownBox}

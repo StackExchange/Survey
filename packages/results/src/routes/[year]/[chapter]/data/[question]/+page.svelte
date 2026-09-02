@@ -8,6 +8,7 @@
 	import { resolve } from '$app/paths'
 	import { page } from '$app/state'
 
+	import { rowSelection } from '$charts/utils/rows.svelte'
 	import { githubRepo, siteUrl, surveyPreview } from '$config'
 
 	import Button from '$components/Button.svelte'
@@ -20,12 +21,10 @@
 	import Seo from '$components/Seo.svelte'
 	import Share from '$components/Share.svelte'
 
+	import { FOCUSABLE, SCALABLE } from '$charts'
 	import ChartDownload from '$charts/ChartDownload.svelte'
 	import ChartOptions from '$charts/ChartOptions.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
-	import { rowSelection } from '$charts/utils/rows.svelte'
-
-	import { FOCUSABLE, SCALABLE } from '$charts'
 
 	// eslint-disable-next-line svelte/valid-prop-names-in-kit-pages -- QuestionPanel instantiates this itself; the router only ever passes `data`
 	let { data, panel = false }: { data: PageData; panel?: boolean } = $props()
@@ -121,7 +120,7 @@
 				{/if}
 			</div>
 
-			<div class="flex flex-col lg:flex-row justify-stretch gap-3 sm:gap-4 max-lg:*:w-full">
+			<div class="flex flex-col justify-stretch gap-3 max-lg:*:w-full sm:gap-4 lg:flex-row">
 				<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
 				<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
 			</div>
@@ -133,7 +132,7 @@
 					<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
 				{/if}
 
-				<div class="ml-auto order-first lg:order-last">
+				<div class="order-first ml-auto lg:order-last">
 					<ChartOptions {selection} {scalable} {focusable} bind:normalise />
 				</div>
 			</div>
