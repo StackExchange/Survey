@@ -1,4 +1,3 @@
-// Nothing draws a heading: the page has one. The ./text ones have no `<svg>`.
 import type { OnHover } from '$charts/utils/theme'
 import type { Component } from 'svelte'
 
@@ -27,7 +26,7 @@ import TextRank from './text/Rank.svelte'
 import TextStat from './text/Stat.svelte'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
-	// Standard — the "Data" section of a chapter.
+	// Standard: /[year]/[chapter]/data, /[year]/[chapter]/[question]data
 	bar: Bar,
 	'bar-stacked': BarStacked,
 	'bar-clustered': BarClustered,
@@ -38,7 +37,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	sankey: Sankey,
 	table: Table,
 
-	// 3D — /[year], the `home` tier. One flat record: the ids don't collide.
+	// 3D: /[year]
 	'3d-bar-stacked-horizontal': BarStackedHorizontal3d,
 	'3d-bar-stacked-vertical': BarStackedVertical3d,
 	'3d-cube': Cube3d,
@@ -46,7 +45,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	'3d-waffle-large': WaffleLarge3d,
 	'3d-waffle-medium': WaffleMedium3d,
 
-	// 2D — a chapter overview, the `chapter` tier.
+	// 2D: /[year]/[chapter]
 	'2d-bar-stacked-horizontal': BarStackedHorizontal2d,
 	'2d-bar-stacked-vertical': BarStackedVertical2d,
 	'2d-treemap': Treemap2d,
@@ -57,12 +56,11 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	stat: TextStat,
 }
 
-// Which ids answer the "scale to the largest value" option: `useDomain()` callers.
+// "Scale to the largest value" chart download option
 export const SCALABLE = new Set(['bar', 'bar-clustered', 'bar-vertical', 'dumbbell'])
 
-// Which ids answer "Focus": `useFocus()` callers. Line and sankey never draw a
-// per-response mark, so they've nothing to dim.
+// "Focus" responses for chart downloading, see useFocus()
 export const FOCUSABLE = new Set(['bar', 'bar-stacked', 'bar-clustered', 'bar-vertical', 'dumbbell', 'scatter', 'table'])
 
-// Which ids squash unreadably in a narrow column: given a floor width and left to scroll instead.
+// Charts which are complex so should scroll on smaller scrolls rather than be fully responsive
 export const SCROLLS = new Set(['line', 'scatter', 'sankey'])
