@@ -22,8 +22,10 @@ import Line from './standard/Line.svelte'
 import Sankey from './standard/Sankey.svelte'
 import Scatter from './standard/Scatter.svelte'
 import Table from './standard/Table.svelte'
+import TextQuotes from './text/Quotes.svelte'
 import TextRank from './text/Rank.svelte'
 import TextStat from './text/Stat.svelte'
+import { rowsOf } from './utils/expressive'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
 	// Standard: /[year]/[chapter]/data, /[year]/[chapter]/[question]data
@@ -36,6 +38,7 @@ export const charts: Record<string, Component<{ figure: any; width?: number; onh
 	scatter: Scatter,
 	sankey: Sankey,
 	table: Table,
+	quotes: TextQuotes,
 
 	// 3D: /[year]
 	'3d-bar-stacked-horizontal': BarStackedHorizontal3d,
@@ -64,3 +67,12 @@ export const FOCUSABLE = new Set(['bar', 'bar-stacked', 'bar-clustered', 'bar-ve
 
 // Charts which are complex so should scroll on smaller scrolls rather than be fully responsive
 export const SCROLLS = new Set(['line', 'scatter', 'sankey'])
+
+// No <svg> to draw, scale or export as an image.
+export const TEXT_ONLY = new Set(['quotes'])
+
+// Guard against really long row counts where things will break
+export const PREVIEW_LIMIT = 500
+
+// Decide if we show customize / download image / preview etc
+export const isExportable = (figure: any) => !TEXT_ONLY.has(figure?.chart) && rowsOf(figure).length <= PREVIEW_LIMIT

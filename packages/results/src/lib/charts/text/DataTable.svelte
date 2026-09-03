@@ -7,7 +7,7 @@
 </script>
 
 {#if table}
-	<div class="overflow-x-auto">
+	<div class="overflow-auto">
 		<table class="w-full text-left text-sm">
 			<thead>
 				<tr class="border-b border-black-150 dark:border-black-500">

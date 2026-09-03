@@ -11,7 +11,7 @@
 
 	import Button from '$components/Button.svelte'
 
-	import { charts } from '$charts'
+	import { charts, isExportable } from '$charts'
 
 	let {
 		figure,
@@ -32,6 +32,7 @@
 	} = $props()
 
 	const Chart = $derived(charts[figure.chart as keyof typeof charts])
+	const exportable = $derived(isExportable(figure))
 
 	const id = $props.id()
 
@@ -97,37 +98,41 @@
 <div>
 	{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
 
-	<fieldset class="mt-3 flex flex-col gap-3 lg:flex-row lg:items-center">
-		<legend class="sr-only">Download this chart</legend>
+	{#if exportable}
+		<fieldset class="mt-3 flex flex-col gap-3 lg:flex-row lg:items-center">
+			<legend class="sr-only">Download this chart</legend>
 
-		<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
-			<span id="{id}-format" class="sr-only">Format</span>
+			<div class="flex flex-wrap items-center gap-3 lg:ml-auto lg:shrink-0">
+				<span id="{id}-format" class="sr-only">Format</span>
 
-			<div role="radiogroup" aria-labelledby="{id}-format" class="flex w-full bg-black-200 p-1 lg:w-auto dark:bg-black-500">
-				{#each formats as option (option.value)}
-					<label class="flex flex-1 cursor-pointer text-center text-nowrap">
-						<input class="peer sr-only" type="radio" name="{id}-format" value={option.value} bind:group={format} />
-						<span
-							class="w-full px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
-						>
-							{option.label}
-							<span class="opacity-60">({option.extension})</span>
-						</span>
-					</label>
-				{/each}
+				<div role="radiogroup" aria-labelledby="{id}-format" class="flex w-full bg-black-200 p-1 lg:w-auto dark:bg-black-500">
+					{#each formats as option (option.value)}
+						<label class="flex flex-1 cursor-pointer text-center text-nowrap">
+							<input class="peer sr-only" type="radio" name="{id}-format" value={option.value} bind:group={format} />
+							<span
+								class="w-full px-4 py-1 select-none peer-checked:bg-white peer-checked:text-black peer-focus-visible:outline-2 peer-focus-visible:-outline-offset-2 peer-focus-visible:outline-orange"
+							>
+								{option.label}
+								<span class="opacity-60">({option.extension})</span>
+							</span>
+						</label>
+					{/each}
+				</div>
 			</div>
-		</div>
 
-		<Button
-			variant="invert"
-			class="w-min-600 justify-center self-stretch"
-			onclick={download}
-			disabled={status === 'working' || !selection.kept.length}
-			iconEnd={status === 'working' ? SpotLoading : IconArrowDownBox}
-		>
-			{label}
-		</Button>
-	</fieldset>
+			<Button
+				variant="invert"
+				class="w-min-600 justify-center self-stretch"
+				onclick={download}
+				disabled={status === 'working' || !selection.kept.length}
+				iconEnd={status === 'working' ? SpotLoading : IconArrowDownBox}
+			>
+				{label}
+			</Button>
+		</fieldset>
+	{/if}
 </div>
 
-<p class="sr-only" aria-live="polite">{status === 'idle' ? '' : label}</p>
+{#if exportable}
+	<p class="sr-only" aria-live="polite">{status === 'idle' ? '' : label}</p>
+{/if}

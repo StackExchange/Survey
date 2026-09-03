@@ -8,7 +8,7 @@
 	import { captionText } from '$charts/utils/expressive'
 	import { openQuestion } from '$lib/panel'
 
-	import { charts, SCROLLS } from '$charts'
+	import { charts, SCROLLS, TEXT_ONLY } from '$charts'
 	import ChartRoot from '$charts/ChartRoot.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
 	import Tooltip from '$charts/Tooltip.svelte'
@@ -32,7 +32,7 @@
 	let measured = $state(0)
 	const drawn = $derived(width ?? (measured || CHART_WIDTH))
 
-	const scrolls = $derived(Boolean(width) || SCROLLS.has(block.chart))
+	const scrolls = $derived((Boolean(width) && !TEXT_ONLY.has(block.chart)) || SCROLLS.has(block.chart))
 
 	const fits = $derived(scrolls ? 'overflow-x-auto' : '')
 	const floor = $derived(scrolls ? 'min-w-160' : '')

@@ -21,7 +21,7 @@
 	import Seo from '$components/Seo.svelte'
 	import Share from '$components/Share.svelte'
 
-	import { FOCUSABLE, SCALABLE } from '$charts'
+	import { FOCUSABLE, isExportable, SCALABLE } from '$charts'
 	import ChartDownload from '$charts/ChartDownload.svelte'
 	import ChartOptions from '$charts/ChartOptions.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
@@ -41,6 +41,7 @@
 	let normalise = $state(true)
 	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
 	const focusable = $derived(FOCUSABLE.has(figure.chart))
+	const exportable = $derived(isExportable(figure))
 	const isFallback = $derived(current.demographic.id === fallback.demographic.id)
 
 	// `page.url.searchParams` throws during prerendering, so `?d=` waits.
@@ -123,15 +124,17 @@
 			</div>
 		</header>
 
-		{#if demographics.length > 1 || selection.listable || scalable}
+		{#if demographics.length > 1 || (exportable && (selection.listable || scalable))}
 			<div class="flex flex-wrap items-end gap-4 border-b border-black-150 dark:border-black-500">
 				{#if demographics.length > 1}
 					<QuestionTabs {demographics} selected={current.demographic.id} panelId="figure" onselect={choose} />
 				{/if}
 
-				<div class="order-first ml-auto lg:order-last">
-					<ChartOptions {selection} {scalable} {focusable} bind:normalise />
-				</div>
+				{#if exportable}
+					<div class="order-first ml-auto lg:order-last">
+						<ChartOptions {selection} {scalable} {focusable} bind:normalise />
+					</div>
+				{/if}
 			</div>
 		{/if}
 
@@ -206,16 +209,18 @@
 		</section>
 	</div>
 
-	<div class="border-t border-black-200 py-8 dark:border-black-500">
-		<section class="mx-auto max-w-300 px-6" aria-labelledby="responses">
-			<h2 id="responses" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
-				<span class="bg-blue-light p-1.5"><Icon src={IconListOrdered} class="native shrink-0" /></span>
-				Data
-			</h2>
+	{#if exportable}
+		<div class="border-t border-black-200 py-8 dark:border-black-500">
+			<section class="mx-auto max-w-300 px-6" aria-labelledby="responses">
+				<h2 id="responses" class="mb-4 inline-flex items-center gap-2 bg-black-100 pr-2 dark:bg-transparent">
+					<span class="bg-blue-light p-1.5"><Icon src={IconListOrdered} class="native shrink-0" /></span>
+					Data
+				</h2>
 
-			<DataTable {figure} />
-		</section>
-	</div>
+				<DataTable {figure} />
+			</section>
+		</div>
+	{/if}
 
 	<div class="border-t border-black-200 py-8 dark:border-black-500">
 		<section class="mx-auto max-w-300 px-6" aria-labelledby="export">

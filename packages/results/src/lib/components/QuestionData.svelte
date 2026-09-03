@@ -6,6 +6,8 @@
 	import { citation, licence } from '$config'
 	import { toCsv, toJson, toMarkdown } from '$lib/table'
 
+	import { isExportable } from '$charts'
+
 	import Button from './Button.svelte'
 
 	let { figure, name, url, year }: { figure: any; name: string; url: string; year: string } = $props()
@@ -13,36 +15,40 @@
 	// The BOM is for Excel char encoding
 	const csv = () => save(new Blob(['﻿', toCsv(figure)], { type: 'text/csv;charset=utf-8' }), `${name}.csv`)
 
-	const formats = $derived([
-		{
-			id: 'citation',
-			label: 'Citation',
-			spot: SpotArticle,
-			text: citation(figure.name || figure.headline || figure.dataId, year, url),
-			rows: 3,
-		},
-		{
-			id: 'json',
-			label: 'JSON',
-			spot: SpotCoding,
-			description: 'Structured for code, with the question, the year and the source url alongside the numbers.',
-			text: JSON.stringify(toJson(figure, { year, url }), null, 2),
-		},
-		{
-			id: 'markdown',
-			label: 'Markdown',
-			spot: SpotDocument,
-			description: 'A formatted table, ready to paste into a document, an issue or a prompt.',
-			text: toMarkdown(figure),
-		},
-		{
-			id: 'csv',
-			label: 'Spreadsheet',
-			spot: SpotDataset,
-			description: '.csv is a plain text format which most spreadsheet software can open.',
-			download: csv,
-		},
-	])
+	const exportable = $derived(isExportable(figure))
+
+	const formats = $derived(
+		[
+			{
+				id: 'citation',
+				label: 'Citation',
+				spot: SpotArticle,
+				text: citation(figure.name || figure.headline || figure.dataId, year, url),
+				rows: 3,
+			},
+			exportable && {
+				id: 'json',
+				label: 'JSON',
+				spot: SpotCoding,
+				description: 'Structured for code, with the question, the year and the source url alongside the numbers.',
+				text: JSON.stringify(toJson(figure, { year, url }), null, 2),
+			},
+			exportable && {
+				id: 'markdown',
+				label: 'Markdown',
+				spot: SpotDocument,
+				description: 'A formatted table, ready to paste into a document, an issue or a prompt.',
+				text: toMarkdown(figure),
+			},
+			{
+				id: 'csv',
+				label: 'Spreadsheet',
+				spot: SpotDataset,
+				description: '.csv is a plain text format which most spreadsheet software can open.',
+				download: csv,
+			},
+		].filter(Boolean)
+	)
 </script>
 
 <div class="flex flex-col gap-6">
@@ -71,7 +77,7 @@
 				<div class="mb- relative flex-2/3">
 					<textarea
 						id="export-{format.id}"
-						class="w-full resize-y border-0 bg-black-100 p-3 pr-15 font-mono text-xs dark:bg-black"
+						class="w-full resize-y border-0 bg-black-100 p-3 pr-15 font-mono text-xs dark:bg-black-500"
 						rows={format.rows ?? 14}
 						readonly
 						spellcheck="false"
