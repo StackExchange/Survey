@@ -9,7 +9,7 @@
 	import { page } from '$app/state'
 
 	import { rowSelection } from '$charts/utils/rows.svelte'
-	import { githubRepo, githubReleaseBranch, siteUrl, surveyPreview } from '$config'
+	import { githubReleaseBranch, githubRepo, siteUrl, surveyPreview } from '$config'
 
 	import Button from '$components/Button.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
