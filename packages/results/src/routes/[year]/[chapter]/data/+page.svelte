@@ -16,8 +16,6 @@
 	import QuestionTabs, { tabId } from '$components/QuestionTabs.svelte'
 	import Seo from '$components/Seo.svelte'
 
-	import { SCROLLS } from '$charts'
-
 	let { data, params } = $props()
 
 	// Per-chart-type chrome overrides for this view.
@@ -91,7 +89,6 @@
 				{@const shown = current(block)}
 				{@const panelId = `panel-${block.id}`}
 				{@const titleId = `${block.id}-title`}
-				{@const scrolls = SCROLLS.has(shown.chart)}
 
 				<article
 					id={block.id}
@@ -158,14 +155,12 @@
 							<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 							<div
 								id={panelId}
-								class="flex grow flex-col {scrolls ? 'overflow-x-auto' : ''}"
+								class="flex grow flex-col"
 								role={groups.length > 1 ? 'tabpanel' : undefined}
 								aria-labelledby={groups.length > 1 ? tabId(panelId, shown.demographic.id) : undefined}
 								tabindex={groups.length > 1 ? 0 : undefined}
 							>
-								<div class="flex grow flex-col {scrolls ? 'min-w-160' : ''}">
-									<Figure block={shown} href={permalink(block)} chrome={CHROME[shown.chart] ?? {}} table />
-								</div>
+								<Figure block={shown} href={permalink(block)} chrome={CHROME[shown.chart] ?? {}} table />
 							</div>
 						</div>
 					</div>

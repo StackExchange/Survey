@@ -139,7 +139,7 @@
 		{/if}
 
 		<ChartDownload {figure} name={exportName} year={data.year} url={shareUrl} {selection} bind:normalise>
-			{#snippet chart({ block, chrome }: any)}
+			{#snippet chart({ block, chrome, width }: any)}
 				<!-- The panel holds no focusable content as it’s an SVG -->
 				<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 				<div
@@ -148,7 +148,7 @@
 					tabindex={demographics.length > 1 ? 0 : undefined}
 					aria-labelledby={demographics.length > 1 ? tabId('figure', current.demographic.id) : undefined}
 				>
-					<Figure {block} {chrome} />
+					<Figure {block} {chrome} {width} />
 				</div>
 			{/snippet}
 		</ChartDownload>

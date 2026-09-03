@@ -95,11 +95,7 @@
 </script>
 
 <div>
-	<div class="overflow-x-auto">
-		<div class="min-w-160">
-			{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
-		</div>
-	</div>
+	{@render chart({ block: selection.shown, chrome, width: CHART_WIDTH })}
 
 	<fieldset class="mt-3 flex flex-col gap-3 lg:flex-row lg:items-center">
 		<legend class="sr-only">Download this chart</legend>

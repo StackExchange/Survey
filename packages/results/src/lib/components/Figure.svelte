@@ -4,6 +4,7 @@
 
 	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
+	import { SCROLLS } from '$charts'
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { captionText } from '$charts/utils/expressive'
 	import { openQuestion } from '$lib/panel'
@@ -32,8 +33,10 @@
 	let measured = $state(0)
 	const drawn = $derived(width ?? (measured || CHART_WIDTH))
 
-	const fits = $derived(width ? 'overflow-x-auto' : '')
-	const floor = $derived(width ? '[&>svg]:min-w-160' : '')
+	const scrolls = $derived(Boolean(width) || SCROLLS.has(block.chart))
+
+	const fits = $derived(scrolls ? 'overflow-x-auto' : '')
+	const floor = $derived(scrolls ? 'min-w-160' : '')
 
 	const scales = $derived(width ? '[&>svg]:h-auto' : '')
 
