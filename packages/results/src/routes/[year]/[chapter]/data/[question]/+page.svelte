@@ -30,20 +30,17 @@
 	let { data, panel = false }: { data: PageData; panel?: boolean } = $props()
 
 	let chosen = $state<{ question: string; id: string } | null>(null)
-	const figure = $derived({ ...data.question, ...current })
-	const definitions = $derived(figure.definitions ?? [])
 	const demographics = $derived(data.question.demographics)
 	const fallback = $derived(demographics[0])
-
+	const current = $derived(
+		(chosen?.question === data.question.id && demographics.find((d: any) => d.demographic.id === chosen?.id)) || fallback
+	)
+	const figure = $derived({ ...data.question, ...current })
+	const definitions = $derived(figure.definitions ?? [])
 	const selection = rowSelection(() => figure)
 	let normalise = $state(true)
 	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
 	const focusable = $derived(FOCUSABLE.has(figure.chart))
-
-	const current = $derived(
-		(chosen?.question === data.question.id && demographics.find((d: any) => d.demographic.id === chosen?.id)) || fallback
-	)
-
 	const isFallback = $derived(current.demographic.id === fallback.demographic.id)
 
 	// `page.url.searchParams` throws during prerendering, so `?d=` waits.
