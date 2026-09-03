@@ -2,17 +2,17 @@
   "settings": {
     "year": "2026",
     "description": "Over 30,000 developers, students and knowledge workers told us how they learn, build, and work.",
-    "descriptionLong": "Now in it’s sixteenth year the annual Developer Survey provides a crucial snapshot into the needs of the global developer community, focusing on the tools and technologies they use or indeed don’t.",
+    "descriptionLong": "Now in it’s sixteenth year the annual Developer Survey provides a crucial snapshot into the needs of the global technology community, focusing on the tools and technologies they use or indeed don’t.",
     "eyebrow": "It’s back and it’s bigger than ever",
     "respondents": "30,903",
     "countryCount": "169",
-    "questionCount": "103",
-    "responseTime": "XXXX"
+    "technologyCount": "467",
+    "questionCount": "103"
   },
   "chapters": [
     {
       "name": "Work",
-      "description": "A description for the 'Work' section.",
+      "description": "Work is more than just a pay check.  Work is where innovation starts, and answers to technology questions take shape.",
       "id": "work",
       "sections": [
         {
@@ -494,7 +494,7 @@
     },
     {
       "name": "Knowledge",
-      "description": "A description for the 'Knowledge - Context - Trust' section.",
+      "description": "Knowledge. Context. Trust.  We dig into how we use it at work and where friction tends to get in the way of a good thing.",
       "id": "knowledge",
       "sections": [
         {
@@ -851,7 +851,7 @@
     },
     {
       "name": "AI",
-      "description": "A description for the 'AI' section.",
+      "description": "What you thought you knew, and what you never knew, about AI and agents.",
       "id": "ai",
       "sections": [
         {
@@ -1293,7 +1293,7 @@
     },
     {
       "name": "Technology",
-      "description": "A description for the 'Technology' section.",
+      "description": "Our long-standing stats on popular technologies in the technology community.",
       "id": "technology",
       "sections": [
         {
@@ -1832,7 +1832,7 @@
     },
     {
       "name": "Community",
-      "description": "A description for the 'Community' section.",
+      "description": "Community is where the human shows up among all the bits and bytes.",
       "id": "community",
       "sections": [
         {

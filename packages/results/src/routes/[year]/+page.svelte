@@ -45,18 +45,18 @@
 		</p>
 	</section>
 
-	<section class="spindle-scope relative overflow-hidden border-b border-transparent dark:border-black-500">
+	<section class="spindle-scope relative overflow-hidden border-b border-transparent lg:pl-[50%] dark:border-black-500">
 		<img src="/img/home-spindle.svg" alt="" class="spindle absolute top-0 left-0 z-0 ml-[-25%] w-full" />
-		<div class="relative z-10 container my-20 flex items-end text-2xl leading-snug lg:my-60 lg:w-50">
+		<div class="relative z-10 container my-20 flex items-end text-2xl leading-snug lg:my-60">
 			<dl
-				class="[&>dt]:font-headline-notch [&>dt]lg:text-[96px] flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-6 [&>dd]:-mb-3 [&>dd]:py-3 [&>dt]:text-[75px]"
+				class="[&>dt]lg:text-[120px] flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-5 [&>dd]:-mb-3 [&>dd]:py-2 [&>dt]:text-[75px]"
 			>
-				<dt>{data.settings.respondents}</dt>
+				<dt class="font-headline-notch">{data.settings.respondents}</dt>
 				<dd>Responses</dd>
-				<dt>{data.settings.countryCount}</dt>
+				<dt class="font-headline-notch">{data.settings.countryCount}</dt>
 				<dd>Countries reached</dd>
-				<dt>{data.settings.responseTime}</dt>
-				<dd>Minutes to complete</dd>
+				<dt class="font-headline-notch">{data.settings.technologyCount}</dt>
+				<dd>Technologies examined</dd>
 			</dl>
 		</div>
 	</section>
@@ -123,7 +123,7 @@
 					<li>
 						<a
 							href="https://survey.stackoverflow.co/{year}"
-							class="-mt-px flex justify-between border-b py-3 hover:-mx-4 hover:bg-black hover:px-4 hover:text-white dark:hover:bg-white dark:hover:text-black"
+							class="-mt-px flex justify-between border-b py-3 hover:-mx-4 hover:bg-black hover:px-4 hover:text-white dark:border-black-400 dark:hover:bg-white dark:hover:text-black"
 						>
 							{year}
 							<Icon src={IconArrowRight} />
