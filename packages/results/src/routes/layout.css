@@ -150,6 +150,7 @@
 
 .js .chart-reveal[data-ready] {
 	opacity: 1;
+	animation: none;
 	transition: opacity 250ms ease-out;
 }
 
