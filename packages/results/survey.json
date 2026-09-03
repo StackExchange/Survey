@@ -2030,7 +2030,7 @@
               "section": "Stack Overflow and community platforms",
               "name": "Comments from Stack Overflow users about what changed about their habits on the site since AI took hold",
               "dataId": "SOChangeAddl",
-              "chart": "table",
+              "chart": "quotes",
               "description": "",
               "subtext": "",
               "axisLabels": [],

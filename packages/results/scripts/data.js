@@ -15,9 +15,26 @@ import { kebabCase } from 'lodash-es'
 import { marked } from 'marked'
 import YAML from 'yaml'
 
+import { maxFigureRows } from '../config.ts'
 import { graphsFor } from '../src/lib/jsonld.ts'
 import { columnLabel, labelFor, unitFor, valueKeys } from '../src/lib/labels.ts'
 import { pagesFor } from '../src/lib/pages.ts'
+
+// Chart types whose rows are example content, not a ranked/complete listing — safe to sample. Mirrors TEXT_ONLY in src/lib/charts/index.ts.
+const SAMPLED = new Set(['quotes'])
+
+// Fisher–Yates on a copy, build time only — a run's pick is fixed until the next `npm run data`.
+function sample(rows, limit) {
+	if (rows.length <= limit) return rows
+
+	const picked = [...rows]
+	for (let i = picked.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1))
+		;[picked[i], picked[j]] = [picked[j], picked[i]]
+	}
+
+	return picked.slice(0, limit)
+}
 
 marked.use({ breaks: true, gfm: true })
 
@@ -125,8 +142,9 @@ const columnsFor = (rows, title) =>
 
 // One cut: its rows, minus the slice index that selected them, minus any column
 // null in all of them. Past this point a row stands alone.
-function groupOf(question, slice, at, completions) {
-	const rows = question.data.filter((row) => row.slice === at)
+function groupOf(question, slice, at, completions, chart) {
+	const all = question.data.filter((row) => row.slice === at)
+	const rows = SAMPLED.has(chart) ? sample(all, maxFigureRows) : all
 	const used = new Set()
 	for (const row of rows) for (const [key, value] of Object.entries(row)) if (key !== 'slice' && value !== null) used.add(key)
 
@@ -179,7 +197,7 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	// with a legacy question means the file is half-migrated.
 	if (!isTidy(question)) return ctx.fail(`${where}: "${dataId}" is still the legacy format`)
 
-	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions))
+	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions, chart))
 	if (!groups.length) return ctx.fail(`${where}: "${dataId}" declares no slices`)
 
 	// In `qname` order: the first is the primary, and the one place that still prints

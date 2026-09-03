@@ -1,6 +1,8 @@
 import type { OnHover } from '$charts/utils/theme'
 import type { Component } from 'svelte'
 
+import { maxFigureRows } from '$config'
+
 import BarStackedHorizontal2d from './2d/BarStackedHorizontal.svelte'
 import BarStackedVertical2d from './2d/BarStackedVertical.svelte'
 import Treemap2d from './2d/Treemap.svelte'
@@ -71,8 +73,5 @@ export const SCROLLS = new Set(['line', 'scatter', 'sankey'])
 // No <svg> to draw, scale or export as an image.
 export const TEXT_ONLY = new Set(['quotes'])
 
-// Guard against really long row counts where things will break
-export const PREVIEW_LIMIT = 500
-
 // Decide if we show customize / download image / preview etc
-export const isExportable = (figure: any) => !TEXT_ONLY.has(figure?.chart) && rowsOf(figure).length <= PREVIEW_LIMIT
+export const isExportable = (figure: any) => !TEXT_ONLY.has(figure?.chart) && rowsOf(figure).length <= maxFigureRows

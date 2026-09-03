@@ -10,6 +10,7 @@
 
 	import { rowSelection } from '$charts/utils/rows.svelte'
 	import { githubReleaseBranch, githubRepo, siteUrl, surveyPreview } from '$config'
+	import { respondents } from '$lib/table'
 
 	import Button from '$components/Button.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
@@ -21,7 +22,7 @@
 	import Seo from '$components/Seo.svelte'
 	import Share from '$components/Share.svelte'
 
-	import { FOCUSABLE, isExportable, SCALABLE } from '$charts'
+	import { FOCUSABLE, isExportable, SCALABLE, TEXT_ONLY } from '$charts'
 	import ChartDownload from '$charts/ChartDownload.svelte'
 	import ChartOptions from '$charts/ChartOptions.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
@@ -42,6 +43,10 @@
 	const scalable = $derived(SCALABLE.has(figure.chart) && !figure.value)
 	const focusable = $derived(FOCUSABLE.has(figure.chart))
 	const exportable = $derived(isExportable(figure))
+	// scripts/data.js samples a TEXT_ONLY question down to maxFigureRows — `n` still carries the true count, so a gap here means this is a sample.
+	const sampled = $derived(
+		TEXT_ONLY.has(figure.chart) && typeof figure.demographic?.n === 'number' && figure.demographic.n > (figure.data?.length ?? 0)
+	)
 	const isFallback = $derived(current.demographic.id === fallback.demographic.id)
 
 	// `page.url.searchParams` throws during prerendering, so `?d=` waits.
@@ -228,6 +233,13 @@
 				<span class="bg-blue-light p-1.5"><Icon src={IconTrendUp} class="native" /></span>
 				Use this data
 			</h2>
+
+			{#if sampled}
+				<p class="mb-4 text-sm text-black-400 dark:text-black-300">
+					Showing a sample of {respondents(figure.data.length)} of {respondents(figure.demographic.n)} responses —
+					<a class="underline" href={githubRepo}>the full data is on GitHub</a>.
+				</p>
+			{/if}
 
 			{#if figure.series?.length}
 				<p class="mb-4 text-sm text-black-400 dark:text-black-300">
