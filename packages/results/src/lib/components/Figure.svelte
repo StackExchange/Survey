@@ -4,12 +4,11 @@
 
 	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
-	import { SCROLLS } from '$charts'
 	import { CHART_WIDTH } from '$charts/utils/chrome'
 	import { captionText } from '$charts/utils/expressive'
 	import { openQuestion } from '$lib/panel'
 
-	import { charts } from '$charts'
+	import { charts, SCROLLS } from '$charts'
 	import ChartRoot from '$charts/ChartRoot.svelte'
 	import DataTable from '$charts/text/DataTable.svelte'
 	import Tooltip from '$charts/Tooltip.svelte'
