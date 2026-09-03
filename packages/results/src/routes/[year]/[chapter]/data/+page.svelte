@@ -47,11 +47,11 @@
 <Seo {...data.chapter.seo} graph={data.chapter.jsonld} />
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Data">
-	<nav aria-label="Chapter sections" class="mt-10">
+	<nav aria-label="Chapter sections" class="mt-10 text-lg leading-tight">
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
-					<a href={`#${section.id}`} class="group flex gap-3 py-1.5 text-xl leading-tight lg:items-center">
+					<a href={`#${section.id}`} class="group flex gap-3 py-1 lg:items-center">
 						<span>{data.chapter.index}.{sectionIndex + 1}.</span>
 						<span class="group-hover:underline">{section.name}</span>
 						<Icon src={IconArrowRight} class="relative ml-auto self-center transition-transform group-hover:translate-x-2 md:ml-0" />
