@@ -21,9 +21,9 @@
 	)
 
 	const items = $derived([
-		{ name: 'Open as Markdown', href: url, icon: IconDocument, external: true },
-		{ name: 'Open in Claude', href: `https://claude.ai/new?q=${encodeURIComponent(prompt)}`, icon: IconServiceClaude, external: true },
-		{ name: 'Open in ChatGPT', href: `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`, icon: IconServiceOpenAI, external: true },
+		{ name: 'View Markdown', href: url, icon: IconDocument, external: true },
+		{ name: 'Open Claude', href: `https://claude.ai/new?q=${encodeURIComponent(prompt)}`, icon: IconServiceClaude, external: true },
+		{ name: 'Open ChatGPT', href: `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`, icon: IconServiceOpenAI, external: true },
 	])
 
 	const markdown = async () => {
