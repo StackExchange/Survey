@@ -67,7 +67,7 @@
 			<a
 				{href}
 				onclick={open}
-				class="absolute top-full right-0 ml-auto flex items-center gap-1.5 px-3 py-2.5 hover:bg-black hover:text-white"
+				class="absolute top-full right-0 ml-auto flex items-center gap-1.5 px-3 py-2.5 hover:bg-black-150 dark:hover:bg-black-500"
 				aria-label="Permalink: {block.demographic.name}"
 			>
 				View and share
