@@ -14,7 +14,7 @@
 	<header class="mb-10 bg-black-100 bg-[url(/img/home-pryamid.svg)] bg-cover bg-bottom-right bg-no-repeat">
 		<div class="mx-auto max-w-3xl px-7 pt-30">
 			<h1 class="font-headline text-5xl">
-				<span class="inline-block bg-white px-4 py-2">Methodology</span>
+				<span class="inline-block bg-white dark:bg-black px-4 py-2">Methodology</span>
 			</h1>
 		</div>
 	</header>
