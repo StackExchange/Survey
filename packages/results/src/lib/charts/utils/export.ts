@@ -127,7 +127,7 @@ export async function toPng(Chart: Component<any>, options: Options) {
 	const canvas = document.createElement('canvas')
 	canvas.width = Math.round(svg.width * scale)
 	canvas.height = Math.round(svg.height * scale)
-	canvas.getContext('2d')?.drawImage(image, 0, 0, canvas.width, canvas.height)
+	canvas.getContext('2d', { alpha: false })?.drawImage(image, 0, 0, canvas.width, canvas.height)
 
 	return new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'))
 }
