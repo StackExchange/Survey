@@ -124,6 +124,13 @@ function yearPage(page: PageRef) {
 		frontMatter(page),
 		`# ${siteName} ${year}`,
 		site.settings.descriptionLong,
+		'## At a glance',
+		[
+			`- ${site.settings.respondents} responses`,
+			`- ${site.settings.countryCount} countries reached`,
+			`- ${site.settings.technologyCount} technologies examined`,
+			`- ${site.settings.questionCount} questions asked across ${chapters.length} categories`,
+		].join('\n'),
 		'## Chapters',
 		chapters
 			.map(
