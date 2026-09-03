@@ -98,7 +98,7 @@ function figure(block: any, heading: string | null) {
 }
 
 function home(page: PageRef) {
-	const [current, ...past] = years as any[]
+	const [current, ...past] = (years as any[]).filter(({ results }) => results)
 
 	return join(
 		frontMatter(page),
