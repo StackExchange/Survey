@@ -6,7 +6,6 @@
 	import './layout.css'
 
 	import headlineFont from '$lib/assets/fonts/StackSansHeadline.woff2?url'
-	// https://stackoverflow.design/brand/typography
 	import textFont from '$lib/assets/fonts/StackSansText.woff2?url'
 
 	import Footer from '$components/Footer.svelte'
