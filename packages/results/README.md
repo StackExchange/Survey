@@ -113,4 +113,18 @@ The data broadly mapped to the exact question asked, including the option to fil
 
 ## `/[years]/[chapter]/data/[question]?p=[plot_id]`: Question permalink
 
-An individual question and it demographics filter via query string `p`.
+An individual question and it demographics filter via query string `p`. Its "View in survey" link points at the preview site built from `config.ts`'s `surveyPreview` — that site is access-locked, so the link only resolves for signed-in staff, not anonymous visitors.
+
+## Release process
+
+`main` is the working branch — always the current state of the site's code and content. `releases/<year>` is canonical: what Netlify actually deploys to production. It only moves forward at four points in the year's lifecycle:
+
+1. **Questions finalised** - Survey content is frozen for the year. Merge `main` into `releases/<year>`.
+2. **Results site launched** - The results site goes live for the year. Merge the working branch into `main` and that into `releases/<year>` so the canonical branch matches what's deployed.
+3. **CSV archives added** - Stack Overflow publishes `results.csv`/`schema.csv`. Add them under `packages/archive/<year>/` alongside the [JSON export](#data) already there, update that year's row in `packages/archive/index.json`, then merge `main` into `releases/<year>`.
+4. **Site archived** - Once the year is no longer current, snapshot the live build so it can be served as a [historical year](#earlier-years):
+   1. `npm run build -w results`
+   2. Copy `packages/results/build/<year>` into `packages/archive/<year>/site`
+   3. Commit, then merge `main` into `releases/<year>`.
+
+Between these points, keep working on `main` — `releases/<year>` should never get ahead of it.
