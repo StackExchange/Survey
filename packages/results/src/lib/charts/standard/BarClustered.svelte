@@ -11,6 +11,7 @@
 	import {
 		chars,
 		clip,
+		describeTooltip,
 		digitsWidth,
 		HIT,
 		HOVER_WASH,
@@ -73,16 +74,10 @@
 	const height = $derived(PAD + key.height + rows.length * groupHeight + PAD)
 
 	// The group is the target, so the readout compares the cuts side by side.
-	const enter = (r: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			r,
-			{
-				title: String(row.response ?? ''),
-				rows: cuts.map((cut: any, i: number) => ({ value: format(row, i), label: cut.label, color: series(i) })),
-			},
-			event
-		)
-	}
+	const describe = (row: any) => ({
+		title: String(row.response ?? ''),
+		rows: cuts.map((cut: any, i: number) => ({ value: format(row, i), label: cut.label, color: series(i) })),
+	})
 </script>
 
 <Frame {figure} {width} {height}>
@@ -94,13 +89,21 @@
 
 	{#each rows as row, r (row.response ?? r)}
 		{@const y = PAD + key.height + r * groupHeight}
+		{@const data = describe(row)}
+
+		<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+		<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 		<g
 			opacity={dim(row.response)}
-			role="presentation"
-			onpointerdown={(event) => enter(r, row, event)}
-			onpointermove={(event) => enter(r, row, event)}
+			role="img"
+			aria-label={describeTooltip(data)}
+			tabindex="0"
+			onpointerdown={(event) => hover.enter(r, data, event)}
+			onpointermove={(event) => hover.enter(r, data, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
+			onfocus={(event) => hover.enter(r, data, event)}
+			onblur={hover.leave}
 		>
 			<!-- Hit target first, so labels stay selectable. -->
 			<rect x="0" y={y - GROUP_GAP / 2} {width} height={Math.max(groupHeight, HIT)} fill="transparent" />

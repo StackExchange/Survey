@@ -3,7 +3,7 @@
 
 	import { useFocus, useLimit } from '$charts/utils/chrome'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, HIT, HOVER_WASH, middle, PAD, px, shorten, SMALL, theme } from '$charts/utils/theme'
+	import { chars, clip, describeTooltip, HIT, HOVER_WASH, middle, PAD, px, shorten, SMALL, theme } from '$charts/utils/theme'
 	import { tableOf } from '$lib/table'
 
 	import Frame from '$charts/svg/Wrap.svelte'
@@ -35,13 +35,10 @@
 
 	const height = $derived(PAD + HEAD + rows.length * ROW + PAD)
 
-	const enter = (r: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			r,
-			{ title: row.cells[0], rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })) },
-			event
-		)
-	}
+	const describe = (row: any) => ({
+		title: row.cells[0],
+		rows: row.cells.slice(1).map((value: string, i: number) => ({ value, label: headers[i + 1] })),
+	})
 </script>
 
 <Frame {figure} {width} {height} {note}>
@@ -62,13 +59,21 @@
 		{#each rows as row, r (r)}
 			{@const y = HEAD + r * ROW}
 
+			{@const data = describe(row)}
+
+			<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<g
 				opacity={dim(row.response)}
-				role="presentation"
-				onpointerdown={(event) => enter(r, row, event)}
-				onpointermove={(event) => enter(r, row, event)}
+				role="img"
+				aria-label={describeTooltip(data)}
+				tabindex="0"
+				onpointerdown={(event) => hover.enter(r, data, event)}
+				onpointermove={(event) => hover.enter(r, data, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
+				onfocus={(event) => hover.enter(r, data, event)}
+				onblur={hover.leave}
 			>
 				<rect x={PAD} y={y + (ROW - Math.max(ROW, HIT)) / 2 - 4} width={width - PAD * 2} height={Math.max(ROW, HIT)} fill="transparent" />
 

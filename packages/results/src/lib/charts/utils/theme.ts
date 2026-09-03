@@ -87,7 +87,21 @@ export interface TooltipData {
 	rows: TooltipRow[]
 }
 
-export type OnHover = (data: TooltipData | null, event?: PointerEvent) => void
+// What Tooltip.svelte needs to place itself — a real PointerEvent, or a
+// synthetic one built from a focused mark's own bounding box (see
+// `useHover`'s `enter`, which fires on keyboard focus too).
+export interface PointerLike {
+	clientX: number
+	clientY: number
+	pointerType?: string
+}
+
+export type OnHover = (data: TooltipData | null, event?: PointerLike) => void
+
+// A plain-text summary of a mark's tooltip: the accessible name a screen
+// reader announces when focus lands on it (see the standard charts' `role="img"`).
+export const describeTooltip = (data: TooltipData) =>
+	`${data.title}: ${data.rows.map((row) => [row.value, row.label].filter(Boolean).join(' ')).join(', ')}`
 
 // Hit areas are at least this tall, so a thin mark stays catchable.
 export const HIT = 24

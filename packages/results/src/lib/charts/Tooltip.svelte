@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { TooltipData } from '$charts/utils/theme'
+	import type { PointerLike, TooltipData } from '$charts/utils/theme'
 
-	let { data, event }: { data: TooltipData | null; event?: PointerEvent } = $props()
+	let { data, event }: { data: TooltipData | null; event?: PointerLike } = $props()
 
 	const OFFSET = 14
 	const THUMB = 44

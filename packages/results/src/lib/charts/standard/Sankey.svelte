@@ -5,7 +5,7 @@
 
 	import { rowsOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { chars, clip, count, HIT, middle, PAD, percent, px, series, shorten, SMALL, theme } from '$charts/utils/theme'
+	import { chars, clip, count, describeTooltip, HIT, middle, PAD, percent, px, series, shorten, SMALL, theme } from '$charts/utils/theme'
 
 	import Frame from '$charts/svg/Wrap.svelte'
 
@@ -86,20 +86,14 @@
 
 	const full = (node: any) => names[node.label] ?? node.name
 
-	const enter = (i: number, edge: any, event: PointerEvent) => {
-		hover.enter(
-			i,
-			{
-				title: `${full(edge.source)} → ${full(edge.target)}`,
-				rows: [
-					{ value: count(edge.value), label: 'respondents', color: hue(edge.source) },
-					// This strand's share of everyone in the source node.
-					{ value: percent(edge.value / Math.max(1, edge.source.value)), label: `of ${full(edge.source)} users` },
-				],
-			},
-			event
-		)
-	}
+	const describe = (edge: any) => ({
+		title: `${full(edge.source)} → ${full(edge.target)}`,
+		rows: [
+			{ value: count(edge.value), label: 'respondents', color: hue(edge.source) },
+			// This strand's share of everyone in the source node.
+			{ value: percent(edge.value / Math.max(1, edge.source.value)), label: `of ${full(edge.source)} users` },
+		],
+	})
 </script>
 
 <Frame {figure} {width} {height}>
@@ -128,16 +122,24 @@
 		{/each}
 
 		{#each graph.links as edge, i (i)}
+			{@const data = describe(edge)}
+
+			<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<path
 				d={strand(edge)}
 				stroke="transparent"
 				stroke-width={px(Math.max(HIT / 2, edge.width ?? 1))}
 				fill="none"
-				role="presentation"
-				onpointerdown={(event) => enter(i, edge, event)}
-				onpointermove={(event) => enter(i, edge, event)}
+				role="img"
+				aria-label={describeTooltip(data)}
+				tabindex="0"
+				onpointerdown={(event) => hover.enter(i, data, event)}
+				onpointermove={(event) => hover.enter(i, data, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
+				onfocus={(event) => hover.enter(i, data, event)}
+				onblur={hover.leave}
 			/>
 		{/each}
 

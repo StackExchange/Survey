@@ -1,5 +1,7 @@
 import type { OnHover, TooltipData } from './theme'
 
+const isPointer = (event: PointerEvent | FocusEvent): event is PointerEvent => 'pointerType' in event
+
 export const opens = (event: PointerEvent) => event.pointerType !== 'touch' || event.type === 'pointerdown'
 
 export const closes = (event?: PointerEvent) => !event || event.pointerType !== 'touch' || event.type === 'pointercancel'
@@ -32,14 +34,23 @@ export function useHover(onhover: () => OnHover | undefined) {
 			return active
 		},
 
-		enter(i: number, data: TooltipData, event: PointerEvent) {
-			if (!opens(event)) return
+		enter(i: number, data: TooltipData, event: PointerEvent | FocusEvent) {
+			if (isPointer(event)) {
+				if (!opens(event)) return
+				active = i
+				onhover()?.(data, event)
+				return
+			}
+
+			// Keyboard focus has no pointer position: anchor the tooltip to the
+			// focused mark's own bounding box instead.
 			active = i
-			onhover()?.(data, event)
+			const rect = (event.currentTarget as Element).getBoundingClientRect()
+			onhover()?.(data, { clientX: rect.left + rect.width / 2, clientY: rect.top, pointerType: 'keyboard' })
 		},
 
-		leave(event?: PointerEvent) {
-			if (closes(event)) clear()
+		leave(event?: PointerEvent | FocusEvent) {
+			if (!event || !isPointer(event) || closes(event)) clear()
 		},
 	}
 }

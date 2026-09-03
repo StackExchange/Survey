@@ -10,6 +10,7 @@
 		chars,
 		clip,
 		count,
+		describeTooltip,
 		hanging,
 		HIT,
 		HOVER_WASH,
@@ -72,20 +73,14 @@
 
 	// One hit target per statement, not per segment: a 2% slice is a few pixels
 	// wide, and it gives the narrow segments somewhere to show their label.
-	const enter = (r: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			r,
-			{
-				title: String(row.response ?? ''),
-				rows: row.segments.map((segment: any, i: number) => ({
-					value: percent(segment.pct),
-					label: segment.count ? `${labels[i]} · ${count(segment.count)}` : labels[i],
-					color: series(i),
-				})),
-			},
-			event
-		)
-	}
+	const describe = (row: any) => ({
+		title: String(row.response ?? ''),
+		rows: row.segments.map((segment: any, i: number) => ({
+			value: percent(segment.pct),
+			label: segment.count ? `${labels[i]} · ${count(segment.count)}` : labels[i],
+			color: series(i),
+		})),
+	})
 </script>
 
 <Frame {figure} {width} {height}>
@@ -97,13 +92,21 @@
 		{#each rows as row, r (row.response ?? r)}
 			{@const y = key.height + r * (LABEL_ROW + BAR + ROW_GAP)}
 			{@const band = LABEL_ROW + BAR + ROW_GAP / 2}
+			{@const data = describe(row)}
+
+			<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<g
 				opacity={dim(row.response)}
-				role="presentation"
-				onpointerdown={(event) => enter(r, row, event)}
-				onpointermove={(event) => enter(r, row, event)}
+				role="img"
+				aria-label={describeTooltip(data)}
+				tabindex="0"
+				onpointerdown={(event) => hover.enter(r, data, event)}
+				onpointermove={(event) => hover.enter(r, data, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
+				onfocus={(event) => hover.enter(r, data, event)}
+				onblur={hover.leave}
 			>
 				<!-- Hit target first, so labels stay selectable. -->
 				<rect x={-PAD} y={y - ROW_GAP / 4} width={plotWidth + PAD * 2} height={Math.max(band, HIT)} fill="transparent" />

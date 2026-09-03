@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TooltipData } from '$charts/utils/theme'
+	import type { PointerLike, TooltipData } from '$charts/utils/theme'
 	import type { Snippet } from 'svelte'
 
 	import { IconArrowRight, IconLink } from '@stackoverflow/stacks-icons/icons'
@@ -43,7 +43,7 @@
 		year && chapter && block.slug ? resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug }) : null
 	)
 
-	let hovered = $state<{ data: TooltipData | null; event?: PointerEvent }>({ data: null })
+	let hovered = $state<{ data: TooltipData | null; event?: PointerLike }>({ data: null })
 
 	let measured = $state(0)
 

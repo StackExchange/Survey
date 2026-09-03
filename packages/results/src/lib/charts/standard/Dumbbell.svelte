@@ -10,6 +10,7 @@
 	import {
 		chars,
 		clip,
+		describeTooltip,
 		digitsWidth,
 		HIT,
 		HOVER_WASH,
@@ -89,20 +90,16 @@
 	const pair = [theme.from, theme.to]
 
 	// The gap is the point of the chart, so the readout carries it as a row.
-	const enter = (i: number, row: any, event: PointerEvent) => {
+	const describe = (row: any) => {
 		const gap = Math.round((row.b - row.a) * 100)
-		hover.enter(
-			i,
-			{
-				title: String(row.response ?? ''),
-				rows: [
-					{ value: format(row.a), label: first, color: theme.from },
-					{ value: format(row.b), label: second, color: theme.to },
-					{ value: `${gap > 0 ? '+' : ''}${gap} pts`, label: 'difference' },
-				],
-			},
-			event
-		)
+		return {
+			title: String(row.response ?? ''),
+			rows: [
+				{ value: format(row.a), label: first, color: theme.from },
+				{ value: format(row.b), label: second, color: theme.to },
+				{ value: `${gap > 0 ? '+' : ''}${gap} pts`, label: 'difference' },
+			],
+		}
 	}
 </script>
 
@@ -119,13 +116,21 @@
 		{@const a = px(x(row.a))}
 		{@const b = px(x(row.b))}
 		{@const leading = row.a > row.b}
+		{@const data = describe(row)}
+
+		<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+		<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 		<g
 			opacity={dim(row.response)}
-			role="presentation"
-			onpointerdown={(event) => enter(i, row, event)}
-			onpointermove={(event) => enter(i, row, event)}
+			role="img"
+			aria-label={describeTooltip(data)}
+			tabindex="0"
+			onpointerdown={(event) => hover.enter(i, data, event)}
+			onpointermove={(event) => hover.enter(i, data, event)}
 			onpointerleave={hover.leave}
 			onpointercancel={hover.leave}
+			onfocus={(event) => hover.enter(i, data, event)}
+			onblur={hover.leave}
 		>
 			<!-- Hit target first, so labels stay selectable. -->
 			<rect x="0" y={y + (ROW - Math.max(ROW, HIT)) / 2} {width} height={Math.max(ROW, HIT)} fill="transparent" />

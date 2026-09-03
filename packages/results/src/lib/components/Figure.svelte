@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Chrome } from '$charts/utils/chrome'
-	import type { TooltipData } from '$charts/utils/theme'
+	import type { PointerLike, TooltipData } from '$charts/utils/theme'
 
 	import { IconLink } from '@stackoverflow/stacks-icons/icons'
 
@@ -27,7 +27,7 @@
 
 	const Chart = $derived(charts[block.chart as keyof typeof charts])
 
-	let hovered = $state<{ data: TooltipData | null; event?: PointerEvent }>({ data: null })
+	let hovered = $state<{ data: TooltipData | null; event?: PointerLike }>({ data: null })
 
 	let measured = $state(0)
 	const drawn = $derived(width ?? (measured || CHART_WIDTH))

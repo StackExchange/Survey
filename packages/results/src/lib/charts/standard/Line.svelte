@@ -7,7 +7,21 @@
 	import { useLimit } from '$charts/utils/chrome'
 	import { largestOf, LINE_SERIES_DEFAULT, rankedSeriesOf } from '$charts/utils/expressive'
 	import { useHover } from '$charts/utils/hover.svelte'
-	import { digitsWidth, hanging, HOVER_WASH, legend, middle, PAD, percent, px, series, shorten, SMALL, theme } from '$charts/utils/theme'
+	import {
+		describeTooltip,
+		digitsWidth,
+		hanging,
+		HOVER_WASH,
+		legend,
+		middle,
+		PAD,
+		percent,
+		px,
+		series,
+		shorten,
+		SMALL,
+		theme,
+	} from '$charts/utils/theme'
 	import { bySeries } from '$lib/table'
 
 	import Gridlines from '$charts/svg/Gridlines.svelte'
@@ -84,20 +98,14 @@
 		names.map((_: string, s: number) => path(rows.map((row: any) => ({ row, value: row.cells[s]?.pct ?? null }))) ?? '')
 	)
 
-	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			i,
-			{
-				title: String(row.response ?? ''),
-				rows: names
-					.map((name: string, s: number) => ({ name, s, cell: row.cells[s] }))
-					.filter((entry: any) => entry.cell)
-					.sort((a: any, b: any) => (b.cell.pct ?? 0) - (a.cell.pct ?? 0))
-					.map((entry: any) => ({ value: percent(entry.cell.pct ?? 0), label: short(entry.name), color: series(entry.s) })),
-			},
-			event
-		)
-	}
+	const describe = (row: any) => ({
+		title: String(row.response ?? ''),
+		rows: names
+			.map((name: string, s: number) => ({ name, s, cell: row.cells[s] }))
+			.filter((entry: any) => entry.cell)
+			.sort((a: any, b: any) => (b.cell.pct ?? 0) - (a.cell.pct ?? 0))
+			.map((entry: any) => ({ value: percent(entry.cell.pct ?? 0), label: short(entry.name), color: series(entry.s) })),
+	})
 </script>
 
 <Frame {figure} {width} {height} {note}>
@@ -116,12 +124,20 @@
 
 		{#each rows as row, i (row.response ?? i)}
 			{@const cx = posX(row)}
+			{@const data = describe(row)}
+
+			<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<g
-				role="presentation"
-				onpointerdown={(event) => enter(i, row, event)}
-				onpointermove={(event) => enter(i, row, event)}
+				role="img"
+				aria-label={describeTooltip(data)}
+				tabindex="0"
+				onpointerdown={(event) => hover.enter(i, data, event)}
+				onpointermove={(event) => hover.enter(i, data, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
+				onfocus={(event) => hover.enter(i, data, event)}
+				onblur={hover.leave}
 			>
 				<rect x={px(cx - step / 2)} y="0" width={px(step)} height={plotHeight} fill="transparent" />
 

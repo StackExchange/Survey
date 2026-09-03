@@ -10,6 +10,7 @@
 		chars,
 		clip,
 		count,
+		describeTooltip,
 		digitsWidth,
 		GAP,
 		hanging,
@@ -83,19 +84,13 @@
 
 	const yGrid = $derived(yTicks.map((measure) => plotHeight - up(measure)))
 
-	const enter = (i: number, row: any, event: PointerEvent) => {
-		hover.enter(
-			i,
-			{
-				title: String(row.response ?? ''),
-				rows: [
-					{ value: format(row), label: value?.label ?? 'of respondents', color: series(0) },
-					...(row.count ? [{ value: count(row.count), label: 'respondents' }] : []),
-				],
-			},
-			event
-		)
-	}
+	const describe = (row: any) => ({
+		title: String(row.response ?? ''),
+		rows: [
+			{ value: format(row), label: value?.label ?? 'of respondents', color: series(0) },
+			...(row.count ? [{ value: count(row.count), label: 'respondents' }] : []),
+		],
+	})
 </script>
 
 <Frame {figure} {width} {height}>
@@ -112,14 +107,21 @@
 			{@const left = px(i * column)}
 			{@const centre = px(i * column + column / 2)}
 			{@const drawn = amount(row) ? Math.max(1, px(up(amount(row)))) : 0}
+			{@const data = describe(row)}
 
+			<!-- Focusable so a keyboard-only user can reach the tooltip a pointer gets; `role="img"` isn't a widget role, so the linter can't tell this is deliberate. -->
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<g
 				opacity={dim(row.response)}
-				role="presentation"
-				onpointerdown={(event) => enter(i, row, event)}
-				onpointermove={(event) => enter(i, row, event)}
+				role="img"
+				aria-label={describeTooltip(data)}
+				tabindex="0"
+				onpointerdown={(event) => hover.enter(i, data, event)}
+				onpointermove={(event) => hover.enter(i, data, event)}
 				onpointerleave={hover.leave}
 				onpointercancel={hover.leave}
+				onfocus={(event) => hover.enter(i, data, event)}
+				onblur={hover.leave}
 			>
 				<rect x={left} y="0" width={px(column)} height={plotHeight} fill="transparent" />
 
