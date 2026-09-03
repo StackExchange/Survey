@@ -57,18 +57,8 @@
       "question": "<p>How often do you use each of these AI tools or AI agents in your role at work?<\/p>",
       "slices": [
         {
-          "slice_type": "aifreqview",
-          "slice_value": "Daily",
-          "n": 14478
-        },
-        {
-          "slice_type": "aifreqview",
-          "slice_value": "Weekly",
-          "n": 14478
-        },
-        {
-          "slice_type": "aifreqview",
-          "slice_value": "Monthly or Infrequent",
+          "slice_type": "all",
+          "slice_value": "All Respondents",
           "n": 14478
         }
       ]
@@ -76,87 +66,87 @@
     "data": [
       {
         "slice": 0,
-        "series": null,
+        "series": "Daily",
         "response": "AI coding assistants or coding agents",
         "count": 8403,
         "pct": 0.7301
       },
       {
         "slice": 0,
-        "series": null,
+        "series": "Weekly",
+        "response": "AI coding assistants or coding agents",
+        "count": 2316,
+        "pct": 0.2012
+      },
+      {
+        "slice": 0,
+        "series": "Monthly or Infrequent",
+        "response": "AI coding assistants or coding agents",
+        "count": 712,
+        "pct": 0.0619
+      },
+      {
+        "slice": 0,
+        "series": "Daily",
         "response": "General-purpose AI chat tools",
         "count": 7162,
         "pct": 0.6559
       },
       {
         "slice": 0,
-        "series": null,
+        "series": "Weekly",
+        "response": "General-purpose AI chat tools",
+        "count": 2922,
+        "pct": 0.2676
+      },
+      {
+        "slice": 0,
+        "series": "Monthly or Infrequent",
+        "response": "General-purpose AI chat tools",
+        "count": 768,
+        "pct": 0.0703
+      },
+      {
+        "slice": 0,
+        "series": "Daily",
         "response": "AI agents or automated workflows",
         "count": 2889,
         "pct": 0.6305
       },
       {
         "slice": 0,
-        "series": null,
-        "response": "Internal AI tools built by my company",
-        "count": 1487,
-        "pct": 0.4774
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Internal AI tools built by my company",
-        "count": 941,
-        "pct": 0.3021
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "General-purpose AI chat tools",
-        "count": 2922,
-        "pct": 0.2676
-      },
-      {
-        "slice": 1,
-        "series": null,
+        "series": "Weekly",
         "response": "AI agents or automated workflows",
         "count": 1168,
         "pct": 0.2549
       },
       {
-        "slice": 1,
-        "series": null,
-        "response": "AI coding assistants or coding agents",
-        "count": 2316,
-        "pct": 0.2012
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Internal AI tools built by my company",
-        "count": 645,
-        "pct": 0.2071
-      },
-      {
-        "slice": 2,
-        "series": null,
+        "slice": 0,
+        "series": "Monthly or Infrequent",
         "response": "AI agents or automated workflows",
         "count": 470,
         "pct": 0.1026
       },
       {
-        "slice": 2,
-        "series": null,
-        "response": "General-purpose AI chat tools",
-        "count": 768,
-        "pct": 0.0703
+        "slice": 0,
+        "series": "Daily",
+        "response": "Internal AI tools built by my company",
+        "count": 1487,
+        "pct": 0.4774
       },
       {
-        "slice": 2,
-        "series": null,
-        "response": "AI coding assistants or coding agents",
-        "count": 712,
-        "pct": 0.0619
+        "slice": 0,
+        "series": "Weekly",
+        "response": "Internal AI tools built by my company",
+        "count": 941,
+        "pct": 0.3021
+      },
+      {
+        "slice": 0,
+        "series": "Monthly or Infrequent",
+        "response": "Internal AI tools built by my company",
+        "count": 645,
+        "pct": 0.2071
       }
     ]
   },
@@ -850,7 +840,7 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 12615
+          "n": 12734
         }
       ]
     },
@@ -860,245 +850,245 @@
         "series": "More impractical than useful, not useful",
         "response": "Architecture exploration",
         "count": 1171,
-        "pct": 0.0928
+        "pct": 0.092
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Architecture exploration",
         "count": 2348,
-        "pct": 0.1861
+        "pct": 0.1844
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Architecture exploration",
         "count": 4274,
-        "pct": 0.3388
+        "pct": 0.3356
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Architecture exploration",
         "count": 3072,
-        "pct": 0.2435
+        "pct": 0.2412
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Architecture exploration",
-        "count": 1750,
-        "pct": 0.1387
+        "count": 1563,
+        "pct": 0.1227
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Communication",
         "count": 2804,
-        "pct": 0.2223
+        "pct": 0.2202
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Communication",
         "count": 2931,
-        "pct": 0.2323
+        "pct": 0.2302
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Communication",
         "count": 2705,
-        "pct": 0.2144
+        "pct": 0.2124
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Communication",
         "count": 1637,
-        "pct": 0.1298
+        "pct": 0.1286
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Communication",
-        "count": 2538,
-        "pct": 0.2012
+        "count": 2337,
+        "pct": 0.1835
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Debugging/refactoring",
         "count": 1101,
-        "pct": 0.0873
+        "pct": 0.0865
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Debugging/refactoring",
         "count": 1720,
-        "pct": 0.1363
+        "pct": 0.1351
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Debugging/refactoring",
         "count": 4776,
-        "pct": 0.3786
+        "pct": 0.3751
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Debugging/refactoring",
         "count": 4327,
-        "pct": 0.343
+        "pct": 0.3398
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Debugging/refactoring",
-        "count": 691,
-        "pct": 0.0548
+        "count": 604,
+        "pct": 0.0474
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Design",
         "count": 1796,
-        "pct": 0.1424
+        "pct": 0.141
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Design",
         "count": 2423,
-        "pct": 0.1921
+        "pct": 0.1903
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Design",
         "count": 3844,
-        "pct": 0.3047
+        "pct": 0.3019
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Design",
         "count": 2322,
-        "pct": 0.1841
+        "pct": 0.1823
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Design",
-        "count": 2230,
-        "pct": 0.1768
+        "count": 2151,
+        "pct": 0.1689
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Documentation",
         "count": 1197,
-        "pct": 0.0949
+        "pct": 0.094
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Documentation",
         "count": 1825,
-        "pct": 0.1447
+        "pct": 0.1433
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Documentation",
         "count": 3791,
-        "pct": 0.3005
+        "pct": 0.2977
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Documentation",
         "count": 4412,
-        "pct": 0.3497
+        "pct": 0.3465
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Documentation",
-        "count": 1390,
-        "pct": 0.1102
+        "count": 1258,
+        "pct": 0.0988
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Implementation",
         "count": 1126,
-        "pct": 0.0893
+        "pct": 0.0884
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Implementation",
         "count": 1566,
-        "pct": 0.1241
+        "pct": 0.123
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Implementation",
         "count": 5056,
-        "pct": 0.4008
+        "pct": 0.397
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Implementation",
         "count": 4304,
-        "pct": 0.3412
+        "pct": 0.338
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Implementation",
-        "count": 563,
-        "pct": 0.0446
+        "count": 494,
+        "pct": 0.0388
       },
       {
         "slice": 0,
         "series": "More impractical than useful, not useful",
         "response": "Review",
         "count": 1097,
-        "pct": 0.087
+        "pct": 0.0861
       },
       {
         "slice": 0,
         "series": "No strong opinion",
         "response": "Review",
         "count": 2083,
-        "pct": 0.1651
+        "pct": 0.1636
       },
       {
         "slice": 0,
         "series": "Useful",
         "response": "Review",
         "count": 4630,
-        "pct": 0.367
+        "pct": 0.3636
       },
       {
         "slice": 0,
         "series": "Very useful",
         "response": "Review",
         "count": 3397,
-        "pct": 0.2693
+        "pct": 0.2668
       },
       {
         "slice": 0,
-        "series": "N/A",
+        "series": "Not applicable",
         "response": "Review",
-        "count": 1408,
-        "pct": 0.1116
+        "count": 1242,
+        "pct": 0.0975
       }
     ]
   },
@@ -2487,7 +2477,7 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 10877
+          "n": 10926
         }
       ]
     },
@@ -2497,35 +2487,42 @@
         "series": null,
         "response": "4+ hours/day",
         "count": 3378,
-        "pct": 0.3106
+        "pct": 0.3092
       },
       {
         "slice": 0,
         "series": null,
         "response": "1-2 hours/day",
         "count": 2765,
-        "pct": 0.2542
+        "pct": 0.2531
       },
       {
         "slice": 0,
         "series": null,
         "response": "2-4 hours/day",
         "count": 2636,
-        "pct": 0.2423
+        "pct": 0.2413
       },
       {
         "slice": 0,
         "series": null,
         "response": "<1 hour every day",
         "count": 1335,
-        "pct": 0.1227
+        "pct": 0.1222
       },
       {
         "slice": 0,
         "series": null,
         "response": "<1 hour and not every day",
         "count": 763,
-        "pct": 0.0701
+        "pct": 0.0698
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "None",
+        "count": 49,
+        "pct": 0.0045
       }
     ]
   },
