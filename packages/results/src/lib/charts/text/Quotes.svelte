@@ -80,7 +80,7 @@
 	</div>
 
 	{#if row}
-		<blockquote class="flex aspect-square h-auto flex-col justify-between gap-8 overflow-y-auto lg:aspect-8/3">
+		<blockquote class="flex aspect-square h-auto flex-col justify-between gap-8 overflow-y-auto lg:aspect-2/1">
 			<p class="font-headline text-xl leading-snug text-balance md:text-2xl">
 				“{#each quote as segment, i (i)}{#if segment.highlight}<span class="text-orange">{segment.text}</span
 						>{:else}{segment.text}{/if}{/each}”
