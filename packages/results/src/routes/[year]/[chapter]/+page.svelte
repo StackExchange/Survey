@@ -34,8 +34,8 @@
 		<CopyPage title="the {data.chapter.name} chapter" />
 	</div>
 
-	<!-- <div class="container mx-auto mb-60">
-		<div class="md max-w-prose text-lg">{@html data.chapter.descriptionLongHtml}</div>
+	<!-- editorial used instead but here if needed <div class="container mx-auto mb-60">
+		<div class="md max-w-prose text-lg">{@html data.chapter.descriptionHtml}</div>
 	</div> -->
 
 	{#each data.chapter.highlights as block, i (`${block.chart}-${i}`)}
