@@ -2024,6 +2024,18 @@
               "axisLabels": [],
               "id": "community-platforms",
               "dataIdSlug": "comm-plat"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Comments from Stack Overflow users about what changed about their habits on the site since AI took hold",
+              "dataId": "SOChangeAddl",
+              "chart": "table",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "comments-from-stack-overflow-users-about-what-changed-about-their-habits-on-the-site-since-ai-took-hold",
+              "dataIdSlug": "so-change-addl"
             }
           ]
         }

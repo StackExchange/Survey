@@ -735,177 +735,51 @@
       {
         "slice": 0,
         "series": null,
-        "response": "10",
-        "count": 2119,
-        "pct": 0.1765
+        "response": "0-4 hours",
+        "count": 3033,
+        "pct": 0.2526
       },
       {
         "slice": 0,
         "series": null,
-        "response": "5",
-        "count": 1935,
-        "pct": 0.1612
+        "response": "5-9 hours",
+        "count": 4096,
+        "pct": 0.3412
       },
       {
         "slice": 0,
         "series": null,
-        "response": "8",
-        "count": 1255,
-        "pct": 0.1045
+        "response": "10-14 hours",
+        "count": 2446,
+        "pct": 0.2037
       },
       {
         "slice": 0,
         "series": null,
-        "response": "4",
-        "count": 1171,
-        "pct": 0.0975
+        "response": "15-19 hours",
+        "count": 1085,
+        "pct": 0.0904
       },
       {
         "slice": 0,
         "series": null,
-        "response": "20",
-        "count": 848,
-        "pct": 0.0706
+        "response": "20-29 hours",
+        "count": 1047,
+        "pct": 0.0872
       },
       {
         "slice": 0,
         "series": null,
-        "response": "15",
-        "count": 832,
-        "pct": 0.0693
+        "response": "30-39 hours",
+        "count": 164,
+        "pct": 0.0137
       },
       {
         "slice": 0,
         "series": null,
-        "response": "2",
-        "count": 799,
-        "pct": 0.0666
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "3",
-        "count": 747,
-        "pct": 0.0622
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "6",
-        "count": 643,
-        "pct": 0.0536
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "1",
-        "count": 316,
-        "pct": 0.0263
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "12",
-        "count": 266,
-        "pct": 0.0222
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "7",
-        "count": 216,
-        "pct": 0.018
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "16",
-        "count": 203,
-        "pct": 0.0169
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "30",
-        "count": 125,
-        "pct": 0.0104
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "25",
-        "count": 119,
-        "pct": 0.0099
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "9",
-        "count": 47,
-        "pct": 0.0039
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "14",
-        "count": 46,
-        "pct": 0.0038
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "40",
-        "count": 46,
-        "pct": 0.0038
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "24",
-        "count": 45,
-        "pct": 0.0037
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "18",
-        "count": 43,
-        "pct": 0.0036
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "50",
-        "count": 19,
-        "pct": 0.0016
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "100",
-        "count": 17,
-        "pct": 0.0014
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "35",
-        "count": 16,
-        "pct": 0.0013
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "28",
-        "count": 11,
-        "pct": 0.0009
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "32",
-        "count": 11,
-        "pct": 0.0009
+        "response": "40+ hours",
+        "count": 135,
+        "pct": 0.0112
       }
     ]
   },
