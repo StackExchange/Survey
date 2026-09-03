@@ -50,6 +50,11 @@
 		const from = headerHeight()
 		root.style.setProperty('--page-header-from', from)
 
+		// Keeps the outgoing snapshot in sync with the new incoming page
+		if (!navigation.to?.url.hash) {
+			window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+		}
+
 		return new Promise((resolve) => {
 			document.startViewTransition(async () => {
 				resolve()
