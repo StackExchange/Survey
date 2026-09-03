@@ -36,7 +36,7 @@
 
 	function normalizeStackOverflow(text: string): Segment[] {
 		return splitOn(text, /(\bstack[\s-]*overflow\b)/gi).flatMap((segment) =>
-			segment.highlight ? [segment] : splitOn(segment.text, /\b(SO|Stack)\b/g)
+			segment.highlight ? [segment] : splitOn(segment.text, /\b(SO)\b/g)
 		)
 	}
 
