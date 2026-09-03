@@ -13,10 +13,12 @@ export const siteDescriptionLong =
 
 export const ogImage = '/stack-overflow-dev-survey-open-graph.png'
 
+// See README.md and packages/results/README.md for the conventions
+// We add these here so any repo links are 'frozen' when this site is archived
 export const githubRepo = 'https://github.com/StackExchange/Survey'
+export const githubReleaseBranch = (year: string | number) => `releases/${year}`
 
-// Root url for question previews, built from packages/survey
-// This site builds all branches so `releases/vYYYY` would be come releases-v2026…
+// Root url for question previews, built from packages/survey with Netlify branch deploys on
 export const surveyPreview = (year: string | number) => `https://releases-${year}.questions.survey.stackoverflow.co`
 
 // Index of the value maps to the survey.json chapter order

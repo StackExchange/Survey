@@ -9,7 +9,7 @@
 	import { page } from '$app/state'
 
 	import { rowSelection } from '$charts/utils/rows.svelte'
-	import { githubRepo, siteUrl, surveyPreview } from '$config'
+	import { githubRepo, githubReleaseBranch, siteUrl, surveyPreview } from '$config'
 
 	import Button from '$components/Button.svelte'
 	import ChapterHeader from '$components/ChapterHeader.svelte'
@@ -56,7 +56,7 @@
 		replaceState(id === fallback.demographic.id ? location.pathname : `${location.pathname}?d=${id}`, page.state)
 	}
 
-	const askedSource = (definition: any) => `${githubRepo}/blob/main/${definition.source}`
+	const askedSource = (definition: any) => `${githubRepo}/blob/${githubReleaseBranch(data.year)}/${definition.source}`
 	const askedInContext = (definition: any) => `${surveyPreview(data.year)}/#q-${definition.id}`
 	const dataPath = $derived(resolve('/[year]/[chapter]/data', { year: data.year, chapter: data.chapter.id }))
 	const chapterPath = $derived(resolve('/[year]/[chapter]', { year: data.year, chapter: data.chapter.id }))
