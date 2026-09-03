@@ -96,7 +96,7 @@ export function toMarkdown(figure: any) {
 	if (!table) return ''
 
 	return [
-		`| ${table.headers.map(escape).join(' | ')} |`,
+		`| ${table.headers.map((header: string, i: number) => (i === 0 ? '' : escape(header))).join(' | ')} |`,
 		`| ${table.numeric.map((right: boolean) => (right ? '---:' : '---')).join(' | ')} |`,
 		...table.rows.map(({ cells }: any) => `| ${cells.map(escape).join(' | ')} |`),
 	].join('\n')
