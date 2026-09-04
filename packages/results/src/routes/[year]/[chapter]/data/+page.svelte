@@ -33,6 +33,7 @@
 	function current(block: any) {
 		const groups = block.demographics ?? []
 		const group = groups.find((d: any) => d.demographic.id === chosen[block.id]) ?? groups[0] // first is default
+
 		return group ? { ...block, ...group } : block
 	}
 

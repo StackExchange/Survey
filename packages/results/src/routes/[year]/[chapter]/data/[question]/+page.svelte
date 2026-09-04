@@ -50,6 +50,7 @@
 	$effect(() => {
 		const question = data.question.id
 		const wanted = new URLSearchParams(location.search).get('d')
+
 		chosen = wanted && demographics.some((d: any) => d.demographic.id === wanted) ? { question, id: wanted } : null
 	})
 

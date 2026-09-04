@@ -3,7 +3,6 @@
 	import Seo from '$components/Seo.svelte'
 
 	import Prose from '$charts/text/Prose.svelte'
-	import Quote from '$charts/text/Quote.svelte'
 
 	let { data } = $props()
 </script>
