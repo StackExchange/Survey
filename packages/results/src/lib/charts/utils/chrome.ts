@@ -1,0 +1,126 @@
+import { IconAnswer, IconInfo, IconLogo, IconUserStack } from '@stackoverflow/stacks-icons/icons'
+import { getContext, setContext } from 'svelte'
+
+import { chars, clip, PAD, textWidth } from './theme'
+
+export interface Chrome {
+	brand?: boolean
+	/** The masthead band. Only the downloaded file carries it; the preview does not. */
+	footer?: boolean
+	year?: string
+	/** Responses to bring forward. Everything else dims. */
+	focus?: string[]
+	/** Scale a share chart to its own largest value rather than to a full 100%. */
+	normalise?: boolean
+	/** Cap a table chart to this many rows. */
+	limit?: number
+	headline?: string
+	/** The question's canonical URL, drawn in the masthead. */
+	url?: string
+	/** The cut the figure is of — "All Respondents", "United Kingdom". */
+	demographic?: string
+}
+
+// Fixed, not measured: a chart following its container would put a different
+// drawing in the file than the one on screen. Below this it scrolls.
+export const CHART_WIDTH = 950
+
+// The band across the bottom of a downloaded file.
+export const MASTHEAD = 48
+export const LOGO = 20
+// Around the logo, and so what sets the orange block's width.
+export const LOGO_PAD = 20
+
+export const TITLE_SIZE = 26
+export const STATS = 26
+
+// The headline over two lines at most, the second clipped. Only the masthead
+// wraps text, so it wraps its own.
+function wrapText(text: string, width: number, fontSize: number, max = 2) {
+	const room = chars(width, fontSize)
+	const lines: string[] = []
+
+	for (const word of String(text ?? '')
+		.split(/\s+/)
+		.filter(Boolean)) {
+		const at = lines.length - 1
+
+		if (!lines.length) lines.push(word)
+		else if (lines[at].length + 1 + word.length <= room) lines[at] += ` ${word}`
+		else if (lines.length < max) lines.push(word)
+		else {
+			lines[at] = clip(`${lines[at]} ${word}`, room)
+			break
+		}
+	}
+
+	return lines
+}
+
+// Asked before the chart is drawn: everything below shifts down by `height`.
+export function headerLayout(chrome: Chrome, width: number, margin = PAD) {
+	const top = margin
+	const lines = chrome.headline ? wrapText(chrome.headline, width - margin * 2, TITLE_SIZE, 2) : []
+
+	return { top, lines, height: lines.length ? top + lines.length * (TITLE_SIZE * 1.2) + 10 : top }
+}
+
+const KEY = Symbol('chart-chrome')
+
+// A getter: the preview re-renders as options change.
+export const setChrome = (read: () => Chrome) => setContext(KEY, read)
+
+export const chromeReader = () => getContext<(() => Chrome) | undefined>(KEY)
+
+// `undefined` until focused, so an unhighlighted chart serialises byte for byte.
+export function useFocus() {
+	const read = chromeReader()
+
+	return (response: unknown) => {
+		const focus = read?.().focus
+		if (!focus?.length) return undefined
+		return typeof response === 'string' && focus.includes(response) ? 1 : 0.22
+	}
+}
+
+// The row cap for a table chart, or undefined for no limit. Call at init; the return reads on each call.
+export function useLimit() {
+	const read = chromeReader()
+
+	return () => read?.().limit
+}
+
+// The top of a share chart's scale. Call at init; the return reads on each call.
+export function useDomain() {
+	const read = chromeReader()
+
+	// Never zero: an all-zero set would divide the scale by nothing.
+	return (values: number[]) => (read?.().normalise ? Math.max(0.01, ...values) : 1)
+}
+
+export interface Glyph {
+	width: number
+	height: number
+	markup: string
+}
+
+// The root's size and `.svg-icon` class rely on CSS a file never sees.
+function flatten(src: string): Glyph {
+	const [, width, height] = src.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/)!
+
+	const markup = src
+		.replace(/^[\s\S]*?<svg[^>]*>/, '')
+		.replace(/<\/svg>\s*$/, '')
+		// `fill="none"` is a hollow shape, not a colour, so it stays.
+		.replace(/\sfill="(?!none)[^"]*"/g, '')
+
+	return { width: Number(width), height: Number(height), markup }
+}
+
+export const logo = flatten(IconLogo)
+
+export const icons = {
+	respondents: flatten(IconUserStack),
+	share: flatten(IconAnswer),
+	note: flatten(IconInfo),
+}

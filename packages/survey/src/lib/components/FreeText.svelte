@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { answers, setAnswer } from '$lib/store/answers.svelte'
-
 	import type { Question } from '$lib/types'
+
+	import { answers, setAnswer } from '$lib/store/answers.svelte'
 
 	let { question }: { question: Question } = $props()
 	const value = $derived((answers[question.id] as string | undefined) ?? '')

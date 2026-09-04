@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { mode, ModeWatcher } from 'mode-watcher'
 
-	import { afterNavigate } from '$app/navigation'
+	import { afterNavigate, onNavigate } from '$app/navigation'
 
 	import './layout.css'
 
-	import headlineFont from '$lib/assets/fonts/StackSansHeadline[wght].woff2?url'
-	// https://stackoverflow.design/brand/typography
-	import textFont from '$lib/assets/fonts/StackSansText[wght].woff2?url'
-	import Footer from '$lib/components/Footer.svelte'
+	import headlineFont from '$lib/assets/fonts/StackSansHeadline.woff2?url'
+	import textFont from '$lib/assets/fonts/StackSansText.woff2?url'
+
+	import Footer from '$components/Footer.svelte'
 
 	let { children } = $props()
 
@@ -38,7 +38,34 @@
 		document.getElementById('main')?.focus({ preventScroll: true })
 	})
 
-	// The chapter-header view transition lands with the pages it animates between.
+	// https://svelte.dev/blog/view-transitions
+	const headerHeight = () => `${Math.floor(document.querySelector('.vt-chapter-header')?.getBoundingClientRect().height ?? 0)}px`
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return
+
+		const root = document.documentElement
+
+		const from = headerHeight()
+		root.style.setProperty('--page-header-from', from)
+
+		// Keeps the outgoing snapshot in sync with the new incoming page
+		if (!navigation.to?.url.hash) {
+			window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+		}
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve()
+				await navigation.complete
+
+				const to = headerHeight()
+				root.style.setProperty('--page-header-to', to)
+
+				root.classList.toggle('vt-swap-header', from !== '0px' && to !== '0px')
+			})
+		})
+	})
 </script>
 
 <ModeWatcher disableTransitions={false} />

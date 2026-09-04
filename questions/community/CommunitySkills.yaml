@@ -10,17 +10,25 @@ question:
     min: 0
     max: 3
   options:
-    - Coworkers, classmates, or peers
-    - Manager or workplace expectations
-    - Online communities or forums
-    - Stack Overflow / Stack Exchange
-    - YouTube or video creators
+    - label: Coworkers, classmates, or peers
+      short: Coworkers and peers
+    - label: Manager or workplace expectations
+      short: Workplace expectations
+    - label: Online communities or forums
+      short: Communities/forums
+    - label: Stack Overflow / Stack Exchange
+      short: Stack Overflow
+    - label: YouTube or video creators
+      short: YouTube and video
     - Podcasts
     - Newsletters or blogs
     - Social media
-    - Courses or certifications
+    - label: Courses or certifications
+      short: Courses or certs
     - Documentation
     - AI tools or chatbots
-    - Job postings or labor market signals
+    - label: Job postings or labor market signals
+      short: Job postings
     - Conferences or events
-    - I am not currently deciding what to learn next
+    - label: I am not currently deciding what to learn next
+      short: Not deciding right now

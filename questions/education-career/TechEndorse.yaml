@@ -7,19 +7,32 @@ question:
   required: false
   randomize: true
   options:
-    - It helps me be more productive or save time
-    - It is easy to learn and use
-    - It has excellent documentation, examples, or learning resources
-    - It has a strong developer experience, such as APIs, SDKs, tooling, or integrations
-    - It is reliable, performant, and stable
-    - It is flexible, customizable, or easy to adapt to my needs
-    - It has strong security, privacy, or compliance features
-    - It has a strong community, ecosystem, or open-source presence
-    - It has a reputation for quality and long-term trustworthiness
-    - It has manageable cost, pricing, or licensing
-    - It has useful AI features or agent capabilities
-    - I would not recommend any technology I use
+    - label: It helps me be more productive or save time
+      short: Saves me time
+    - label: It is easy to learn and use
+      short: Easy to learn and use
+    - label: It has excellent documentation, examples, or learning resources
+      short: Excellent documentation
+    - label: It has a strong developer experience, such as APIs, SDKs, tooling, or integrations
+      short: Developer experience
+    - label: It is reliable, performant, and stable
+      short: Reliable and stable
+    - label: It is flexible, customizable, or easy to adapt to my needs
+      short: Flexible and customizable
+    - label: It has strong security, privacy, or compliance features
+      short: Security and privacy
+    - label: It has a strong community, ecosystem, or open-source presence
+      short: Community and ecosystem
+    - label: It has a reputation for quality and long-term trustworthiness
+      short: Reputation for quality
+    - label: It has manageable cost, pricing, or licensing
+      short: Manageable cost
+    - label: It has useful AI features or agent capabilities
+      short: Useful AI features
+    - label: I would not recommend any technology I use
+      short: Wouldn't recommend any
     - I’m not sure
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

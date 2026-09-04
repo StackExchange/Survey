@@ -1,0 +1,50 @@
+<script lang="ts">
+	import { IconArrowDownLeft, IconArrowDownRight } from '@stackoverflow/stacks-icons/icons'
+
+	import { resolve } from '$app/paths'
+	import { page } from '$app/state'
+
+	import { chapterColour } from '$config'
+
+	import Icon from '$components/Icon.svelte'
+
+	let { year, previous, next }: { year: string; previous?: any; next?: any } = $props()
+	const deep = $derived(page.route.id?.startsWith('/[year]/[chapter]/data') ?? false)
+	const href = (chapter: any) =>
+		deep ? resolve('/[year]/[chapter]/data', { year, chapter: chapter.id }) : resolve('/[year]/[chapter]', { year, chapter: chapter.id })
+</script>
+
+{#snippet card(chapter: any, direction: 'previous' | 'next')}
+	{@const back = direction === 'previous'}
+
+	<li class="relative flex w-full items-end lg:w-1/3 dark:text-black">
+		<a
+			class="group w-full p-6 transition-transform hover:scale-110 {back
+				? 'mr-12 origin-bottom-left bg-white dark:bg-black-200'
+				: `${chapterColour(chapter.index).bg} ml-12 origin-bottom-right`}"
+			rel={back ? 'prev' : 'next'}
+			href={href(chapter)}
+		>
+			<span class="{back ? 'text-black-400' : 'text-black'} mb-2 flex items-center text-sm">
+				{back ? 'Previous' : 'Next'}:
+			</span>
+
+			<span class="block font-headline {back ? 'mb-20 text-3xl' : 'mb-40 text-5xl'}">
+				{chapter.name}
+			</span>
+		</a>
+
+		<Icon class="absolute bottom-4 {back ? 'left-4' : 'right-4'}" src={back ? IconArrowDownLeft : IconArrowDownRight} />
+	</li>
+{/snippet}
+
+{#if previous || next}
+	<section class="mt-5 bg-black-100 dark:bg-black-500" aria-labelledby="whats-next">
+		<h2 id="whats-next" class="font-headline-notch gutter text-4xl lg:text-6xl">What’s next?</h2>
+
+		<ul class="mt-6 flex flex-col justify-between gap-6 lg:flex-row">
+			{#if previous}{@render card(previous, 'previous')}{/if}
+			{#if next}{@render card(next, 'next')}{/if}
+		</ul>
+	</section>
+{/if}

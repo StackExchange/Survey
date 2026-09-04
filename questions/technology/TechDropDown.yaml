@@ -7,26 +7,37 @@ question:
   required: false
   options:
     - label: I used a programming, scripting, or markup language for any reason
+      short: Languages
       key: programming_language
     - label: I used a database for storage, querying, deployment
+      short: Databases
       key: database
     - label: I used a cloud platform or any tools related to cloud technologies
+      short: Cloud platforms
       key: cloud_platform
     - label: I built, maintained or learned about web technologies
+      short: Web technologies
       key: web_technologies
     - label: I used a development environment (IDE) to write code or interact with agent-assisted developer tools
+      short: Dev environments
       key: development_environment
     - label: I used a community platform or online public forum to search, comment, post to, or read from for technology-related content
+      short: Community platforms
       key: community_platform
     - label: I used an LLM (large language model)
+      short: Large language models
       key: llm
     - label: I used a knowledge management platform (such as a wiki)
+      short: Knowledge mgmt.
       key: knowledge_management
     - label: I used an enterprise search platform (a secure way to search for disparate internal content)
+      short: Enterprise search
       key: enterprise_search
     - label: I used security software for permissions and compliance operations
+      short: Security software
       key: security_software
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
     - label: None of these

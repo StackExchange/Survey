@@ -1,0 +1,96 @@
+<script lang="ts">
+	import { IconArrowDownBox, IconClipboard } from '@stackoverflow/stacks-icons/icons'
+	import { SpotArticle, SpotCoding, SpotDataset, SpotDocument } from '@stackoverflow/stacks-icons/spots'
+
+	import { save } from '$charts/utils/export'
+	import { citation, licence } from '$config'
+	import { toCsv, toJson, toMarkdown } from '$lib/table'
+
+	import { isExportable } from '$charts'
+
+	import Button from './Button.svelte'
+
+	let { figure, name, url, year }: { figure: any; name: string; url: string; year: string } = $props()
+
+	// The BOM is for Excel char encoding
+	const csv = () => save(new Blob(['﻿', toCsv(figure)], { type: 'text/csv;charset=utf-8' }), `${name}.csv`)
+
+	const exportable = $derived(isExportable(figure))
+
+	const formats = $derived(
+		[
+			{
+				id: 'citation',
+				label: 'Citation',
+				spot: SpotArticle,
+				text: citation(figure.name || figure.headline || figure.dataId, year, url),
+				rows: 3,
+			},
+			exportable && {
+				id: 'json',
+				label: 'JSON',
+				spot: SpotCoding,
+				description: 'Structured for code, with the question, the year and the source url alongside the numbers.',
+				text: JSON.stringify(toJson(figure, { year, url }), null, 2),
+			},
+			exportable && {
+				id: 'markdown',
+				label: 'Markdown',
+				spot: SpotDocument,
+				description: 'A formatted table, ready to paste into a document, an issue or a prompt.',
+				text: toMarkdown(figure),
+			},
+			{
+				id: 'csv',
+				label: 'Spreadsheet',
+				spot: SpotDataset,
+				description: '.csv is a plain text format which most spreadsheet software can open.',
+				download: csv,
+			},
+		].filter(Boolean)
+	)
+</script>
+
+<div class="flex flex-col gap-6">
+	{#each formats as format, i (format.id)}
+		<div class="items-start gap-4 {i !== 0 ? 'border-t' : undefined} border-black-200 pt-5 lg:flex lg:gap-6 dark:border-black-500">
+			<div class="mb-4 flex-1/3">
+				<h3 class="mb-2 font-headline text-2xl font-medium">
+					{#if format.text}
+						<label for="export-{format.id}">{format.label}</label>
+					{:else}
+						{format.label}
+					{/if}
+				</h3>
+
+				<p class="max-w-100 text-black-400 dark:text-black-300">
+					{#if format.id === 'citation'}
+						Response data is released under the <a class="underline" href={licence.database.url}>{licence.database.name}</a>, which asks
+						that you attribute it.
+					{:else}
+						{format.description}
+					{/if}
+				</p>
+			</div>
+
+			{#if format.text}
+				<div class="mb- relative flex-2/3">
+					<textarea
+						id="export-{format.id}"
+						class="w-full resize-y border-0 bg-black-100 p-3 pr-15 font-mono text-xs dark:bg-black-500"
+						rows={format.rows ?? 14}
+						readonly
+						spellcheck="false"
+						value={format.text}></textarea>
+					<div class="absolute top-0 right-0">
+						<Button variant="filled" copy={format.text} aria-label="Copy {format.label}" icon={IconClipboard} />
+					</div>
+				</div>
+			{/if}
+
+			{#if format.download}
+				<Button label="Download CSV" class="w-full lg:w-auto" icon={IconArrowDownBox} onclick={format.download} />
+			{/if}
+		</div>
+	{/each}
+</div>

@@ -6,13 +6,18 @@ question:
   type: multi_select
   required: false
   options:
-    - Agent/multi-agent orchestration
-    - Integration with external agents and APIs
-    - Vector databases for AI applications
+    - label: Agent/multi-agent orchestration
+      short: Multi-agent orchestration
+    - label: Integration with external agents and APIs
+      short: External agents and APIs
+    - label: Vector databases for AI applications
+      short: Vector databases
     - Personalized agent creation
     - MCP servers
     - Language processing
-    - Multi-platform search enablement
+    - label: Multi-platform search enablement
+      short: Multi-platform search
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true
