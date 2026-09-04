@@ -47,7 +47,7 @@
 <Seo {...data.chapter.seo} graph={data.chapter.jsonld} />
 
 <ChapterHeader year={data.year} chapter={data.chapter} variant="data" section="Data">
-	<nav aria-label="Chapter sections" class="mt-10 text-lg leading-tight">
+	<nav aria-label="Chapter sections" class="text-md mt-10 leading-tight md:text-lg">
 		<ul>
 			{#each data.chapter.sections as section, sectionIndex (section.id)}
 				<li>
