@@ -109,7 +109,7 @@
 
 <svelte:element this={panel ? 'div' : 'main'} id={panel ? undefined : 'main'} tabindex={panel ? undefined : -1}>
 	<div class="mx-auto mb-6 max-w-300 px-6">
-		<header class="mb-10 items-start justify-between gap-10 lg:flex">
+		<header class="mb-8 items-start justify-between gap-10 lg:flex">
 			<div>
 				<h1 class="sr-only">
 					{data.question.name}
@@ -122,7 +122,6 @@
 					</div>
 				{/if}
 			</div>
-
 			<div class="flex flex-col justify-stretch gap-3 max-lg:*:w-full sm:gap-4 lg:flex-row">
 				<Share url={shareUrl} title="{data.question.name} — Stack Overflow Developer Survey {data.year}" compact={false} />
 				<CopyPage title="the question &quot;{data.question.name}&quot;" compact={false} />
