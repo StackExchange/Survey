@@ -42,6 +42,10 @@ Output goes to `src/generated/` and is not checked in — the Vite plugin in `vi
 npm run data -w results
 ```
 
+### Sampling large datasets
+
+Some data sets are too large (e.g., write-ins like `SOChangeAddl`), so they must be sampled. Its chapter JSON carries `meta.sampled: true` and a smaller `data` array, and the full rows move to a `{chapter}_{dataId}.json` file in the same `packages/archive/<year>/json/` folder.
+
 ## Types of graphic
 
 ### Expressive
