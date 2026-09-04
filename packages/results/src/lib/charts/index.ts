@@ -1,8 +1,6 @@
 import type { OnHover } from '$charts/utils/theme'
 import type { Component } from 'svelte'
 
-import { maxFigureRows } from '$config'
-
 import BarStackedHorizontal2d from './2d/BarStackedHorizontal.svelte'
 import BarStackedVertical2d from './2d/BarStackedVertical.svelte'
 import Treemap2d from './2d/Treemap.svelte'
@@ -27,7 +25,6 @@ import Table from './standard/Table.svelte'
 import TextQuotes from './text/Quotes.svelte'
 import TextRank from './text/Rank.svelte'
 import TextStat from './text/Stat.svelte'
-import { rowsOf } from './utils/expressive'
 
 export const charts: Record<string, Component<{ figure: any; width?: number; onhover?: OnHover }>> = {
 	// Standard: /[year]/[chapter]/data, /[year]/[chapter]/[question]data
@@ -74,4 +71,4 @@ export const SCROLLS = new Set(['line', 'scatter', 'sankey'])
 export const TEXT_ONLY = new Set(['quotes'])
 
 // Decide if we show customize / download image / preview etc
-export const isExportable = (figure: any) => !TEXT_ONLY.has(figure?.chart) && rowsOf(figure).length <= maxFigureRows
+export const isExportable = (figure: any) => !TEXT_ONLY.has(figure?.chart) && !figure?.sampled

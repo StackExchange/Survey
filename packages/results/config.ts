@@ -129,7 +129,3 @@ export const dataset = {
 		'remote work',
 	],
 }
-
-// Guard for figures too big to ship/interact with in full
-// scripts/data.js samples write-ins down to it and 'isExportable' controls UI
-export const maxFigureRows = 500
