@@ -173,13 +173,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Analyzing data, logs, metrics, or query results",
-        "count": 1887,
-        "pct": 0.1504
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Analyzing data, logs, metrics, or query results",
         "count": 4338,
@@ -191,6 +184,13 @@
         "response": "Analyzing data, logs, metrics, or query results",
         "count": 664,
         "pct": 0.0529
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Analyzing data, logs, metrics, or query results",
+        "count": 1887,
+        "pct": 0.1504
       },
       {
         "slice": 0,
@@ -208,13 +208,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Answering complex or ambiguous technical questions",
-        "count": 2098,
-        "pct": 0.1672
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Answering complex or ambiguous technical questions",
         "count": 3843,
@@ -226,6 +219,13 @@
         "response": "Answering complex or ambiguous technical questions",
         "count": 1335,
         "pct": 0.1064
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Answering complex or ambiguous technical questions",
+        "count": 2098,
+        "pct": 0.1672
       },
       {
         "slice": 0,
@@ -243,13 +243,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Answering straightforward technical questions",
-        "count": 1952,
-        "pct": 0.1556
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Answering straightforward technical questions",
         "count": 3422,
@@ -261,6 +254,13 @@
         "response": "Answering straightforward technical questions",
         "count": 881,
         "pct": 0.0702
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Answering straightforward technical questions",
+        "count": 1952,
+        "pct": 0.1556
       },
       {
         "slice": 0,
@@ -278,13 +278,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Architecture or technical design exploration",
-        "count": 2292,
-        "pct": 0.1827
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Architecture or technical design exploration",
         "count": 3358,
@@ -296,6 +289,13 @@
         "response": "Architecture or technical design exploration",
         "count": 983,
         "pct": 0.0783
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Architecture or technical design exploration",
+        "count": 2292,
+        "pct": 0.1827
       },
       {
         "slice": 0,
@@ -313,13 +313,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Creating or configuring development/test environments",
-        "count": 3282,
-        "pct": 0.2616
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Creating or configuring development/test environments",
         "count": 3298,
@@ -331,6 +324,13 @@
         "response": "Creating or configuring development/test environments",
         "count": 770,
         "pct": 0.0614
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Creating or configuring development/test environments",
+        "count": 3282,
+        "pct": 0.2616
       },
       {
         "slice": 0,
@@ -348,13 +348,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Debugging, troubleshooting, or refactoring code",
-        "count": 1065,
-        "pct": 0.0849
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Debugging, troubleshooting, or refactoring code",
         "count": 4340,
@@ -366,6 +359,13 @@
         "response": "Debugging, troubleshooting, or refactoring code",
         "count": 987,
         "pct": 0.0787
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Debugging, troubleshooting, or refactoring code",
+        "count": 1065,
+        "pct": 0.0849
       },
       {
         "slice": 0,
@@ -383,13 +383,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Deploying, operating, or troubleshooting production systems",
-        "count": 4093,
-        "pct": 0.3262
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Deploying, operating, or troubleshooting production systems",
         "count": 2651,
@@ -401,6 +394,13 @@
         "response": "Deploying, operating, or troubleshooting production systems",
         "count": 843,
         "pct": 0.0672
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Deploying, operating, or troubleshooting production systems",
+        "count": 4093,
+        "pct": 0.3262
       },
       {
         "slice": 0,
@@ -418,13 +418,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Finding or fixing security issues",
-        "count": 1711,
-        "pct": 0.1364
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Finding or fixing security issues",
         "count": 4409,
@@ -436,6 +429,13 @@
         "response": "Finding or fixing security issues",
         "count": 765,
         "pct": 0.061
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Finding or fixing security issues",
+        "count": 1711,
+        "pct": 0.1364
       },
       {
         "slice": 0,
@@ -453,13 +453,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Generating code in a familiar area",
-        "count": 1091,
-        "pct": 0.087
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Generating code in a familiar area",
         "count": 3784,
@@ -471,6 +464,13 @@
         "response": "Generating code in a familiar area",
         "count": 937,
         "pct": 0.0747
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating code in a familiar area",
+        "count": 1091,
+        "pct": 0.087
       },
       {
         "slice": 0,
@@ -488,13 +488,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Generating code in an unfamiliar area",
-        "count": 1470,
-        "pct": 0.1172
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Generating code in an unfamiliar area",
         "count": 4051,
@@ -506,6 +499,13 @@
         "response": "Generating code in an unfamiliar area",
         "count": 1320,
         "pct": 0.1052
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating code in an unfamiliar area",
+        "count": 1470,
+        "pct": 0.1172
       },
       {
         "slice": 0,
@@ -523,13 +523,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Generating visual, audio, or multimedia elements",
-        "count": 2752,
-        "pct": 0.2193
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Generating visual, audio, or multimedia elements",
         "count": 2142,
@@ -541,6 +534,13 @@
         "response": "Generating visual, audio, or multimedia elements",
         "count": 608,
         "pct": 0.0485
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Generating visual, audio, or multimedia elements",
+        "count": 2752,
+        "pct": 0.2193
       },
       {
         "slice": 0,
@@ -558,13 +558,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Product, UX, or visual design",
-        "count": 1768,
-        "pct": 0.1409
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Product, UX, or visual design",
         "count": 2975,
@@ -576,6 +569,13 @@
         "response": "Product, UX, or visual design",
         "count": 583,
         "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Product, UX, or visual design",
+        "count": 1768,
+        "pct": 0.1409
       },
       {
         "slice": 0,
@@ -593,13 +593,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Reviewing code, pull requests, or design decisions",
-        "count": 2657,
-        "pct": 0.2118
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Reviewing code, pull requests, or design decisions",
         "count": 3811,
@@ -611,6 +604,13 @@
         "response": "Reviewing code, pull requests, or design decisions",
         "count": 1018,
         "pct": 0.0811
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Reviewing code, pull requests, or design decisions",
+        "count": 2657,
+        "pct": 0.2118
       },
       {
         "slice": 0,
@@ -628,13 +628,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Searching, summarizing, or interpreting internal knowledge",
-        "count": 1844,
-        "pct": 0.147
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Searching, summarizing, or interpreting internal knowledge",
         "count": 4199,
@@ -646,6 +639,13 @@
         "response": "Searching, summarizing, or interpreting internal knowledge",
         "count": 669,
         "pct": 0.0533
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Searching, summarizing, or interpreting internal knowledge",
+        "count": 1844,
+        "pct": 0.147
       },
       {
         "slice": 0,
@@ -663,13 +663,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Understanding or onboarding to a new codebase",
-        "count": 1520,
-        "pct": 0.1211
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Understanding or onboarding to a new codebase",
         "count": 4139,
@@ -681,6 +674,13 @@
         "response": "Understanding or onboarding to a new codebase",
         "count": 678,
         "pct": 0.054
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Understanding or onboarding to a new codebase",
+        "count": 1520,
+        "pct": 0.1211
       },
       {
         "slice": 0,
@@ -698,13 +698,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Writing documentation, comments, or knowledge base content",
-        "count": 1928,
-        "pct": 0.1537
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Writing documentation, comments, or knowledge base content",
         "count": 4239,
@@ -716,6 +709,13 @@
         "response": "Writing documentation, comments, or knowledge base content",
         "count": 821,
         "pct": 0.0654
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing documentation, comments, or knowledge base content",
+        "count": 1928,
+        "pct": 0.1537
       },
       {
         "slice": 0,
@@ -733,13 +733,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Writing emails, messages, summaries, or other communication",
-        "count": 5279,
-        "pct": 0.4207
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Writing emails, messages, summaries, or other communication",
         "count": 2393,
@@ -751,6 +744,13 @@
         "response": "Writing emails, messages, summaries, or other communication",
         "count": 940,
         "pct": 0.0749
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing emails, messages, summaries, or other communication",
+        "count": 5279,
+        "pct": 0.4207
       },
       {
         "slice": 0,
@@ -768,13 +768,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Writing or improving tests",
-        "count": 1015,
-        "pct": 0.0809
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Writing or improving tests",
         "count": 4166,
@@ -786,6 +779,13 @@
         "response": "Writing or improving tests",
         "count": 661,
         "pct": 0.0527
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing or improving tests",
+        "count": 1015,
+        "pct": 0.0809
       },
       {
         "slice": 0,
@@ -803,13 +803,6 @@
       },
       {
         "slice": 0,
-        "series": "Do not use AI or AI agents for this and do not plan to",
-        "response": "Writing tickets, requirements, plans, or project updates",
-        "count": 3500,
-        "pct": 0.279
-      },
-      {
-        "slice": 0,
         "series": "Expect to use AI More or AI agents more for this",
         "response": "Writing tickets, requirements, plans, or project updates",
         "count": 3212,
@@ -821,6 +814,13 @@
         "response": "Writing tickets, requirements, plans, or project updates",
         "count": 862,
         "pct": 0.0687
+      },
+      {
+        "slice": 0,
+        "series": "Do not use AI or AI agents for this and do not plan to",
+        "response": "Writing tickets, requirements, plans, or project updates",
+        "count": 3500,
+        "pct": 0.279
       },
       {
         "slice": 0,
@@ -847,10 +847,10 @@
     "data": [
       {
         "slice": 0,
-        "series": "More impractical than useful, not useful",
+        "series": "Not applicable",
         "response": "Architecture exploration",
-        "count": 1171,
-        "pct": 0.092
+        "count": 1563,
+        "pct": 0.1227
       },
       {
         "slice": 0,
@@ -858,6 +858,13 @@
         "response": "Architecture exploration",
         "count": 2348,
         "pct": 0.1844
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Architecture exploration",
+        "count": 1171,
+        "pct": 0.092
       },
       {
         "slice": 0,
@@ -876,16 +883,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Architecture exploration",
-        "count": 1563,
-        "pct": 0.1227
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Communication",
-        "count": 2804,
-        "pct": 0.2202
+        "count": 2337,
+        "pct": 0.1835
       },
       {
         "slice": 0,
@@ -893,6 +893,13 @@
         "response": "Communication",
         "count": 2931,
         "pct": 0.2302
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Communication",
+        "count": 2804,
+        "pct": 0.2202
       },
       {
         "slice": 0,
@@ -911,16 +918,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Communication",
-        "count": 2337,
-        "pct": 0.1835
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Debugging/refactoring",
-        "count": 1101,
-        "pct": 0.0865
+        "count": 604,
+        "pct": 0.0474
       },
       {
         "slice": 0,
@@ -928,6 +928,13 @@
         "response": "Debugging/refactoring",
         "count": 1720,
         "pct": 0.1351
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Debugging/refactoring",
+        "count": 1101,
+        "pct": 0.0865
       },
       {
         "slice": 0,
@@ -946,16 +953,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Debugging/refactoring",
-        "count": 604,
-        "pct": 0.0474
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Design",
-        "count": 1796,
-        "pct": 0.141
+        "count": 2151,
+        "pct": 0.1689
       },
       {
         "slice": 0,
@@ -963,6 +963,13 @@
         "response": "Design",
         "count": 2423,
         "pct": 0.1903
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Design",
+        "count": 1796,
+        "pct": 0.141
       },
       {
         "slice": 0,
@@ -981,16 +988,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Design",
-        "count": 2151,
-        "pct": 0.1689
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Documentation",
-        "count": 1197,
-        "pct": 0.094
+        "count": 1258,
+        "pct": 0.0988
       },
       {
         "slice": 0,
@@ -998,6 +998,13 @@
         "response": "Documentation",
         "count": 1825,
         "pct": 0.1433
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Documentation",
+        "count": 1197,
+        "pct": 0.094
       },
       {
         "slice": 0,
@@ -1016,16 +1023,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Documentation",
-        "count": 1258,
-        "pct": 0.0988
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Implementation",
-        "count": 1126,
-        "pct": 0.0884
+        "count": 494,
+        "pct": 0.0388
       },
       {
         "slice": 0,
@@ -1033,6 +1033,13 @@
         "response": "Implementation",
         "count": 1566,
         "pct": 0.123
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Implementation",
+        "count": 1126,
+        "pct": 0.0884
       },
       {
         "slice": 0,
@@ -1051,16 +1058,9 @@
       {
         "slice": 0,
         "series": "Not applicable",
-        "response": "Implementation",
-        "count": 494,
-        "pct": 0.0388
-      },
-      {
-        "slice": 0,
-        "series": "More impractical than useful, not useful",
         "response": "Review",
-        "count": 1097,
-        "pct": 0.0861
+        "count": 1242,
+        "pct": 0.0975
       },
       {
         "slice": 0,
@@ -1068,6 +1068,13 @@
         "response": "Review",
         "count": 2083,
         "pct": 0.1636
+      },
+      {
+        "slice": 0,
+        "series": "More impractical than useful, not useful",
+        "response": "Review",
+        "count": 1097,
+        "pct": 0.0861
       },
       {
         "slice": 0,
@@ -1082,13 +1089,6 @@
         "response": "Review",
         "count": 3397,
         "pct": 0.2668
-      },
-      {
-        "slice": 0,
-        "series": "Not applicable",
-        "response": "Review",
-        "count": 1242,
-        "pct": 0.0975
       }
     ]
   },
@@ -1115,10 +1115,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Architecture exploration",
-        "count": 2686,
-        "pct": 0.2215
+        "count": 567,
+        "pct": 0.0468
       },
       {
         "slice": 0,
@@ -1129,17 +1129,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Architecture exploration",
-        "count": 567,
-        "pct": 0.0468
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Architecture exploration",
         "count": 3751,
         "pct": 0.3094
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Architecture exploration",
+        "count": 2686,
+        "pct": 0.2215
       },
       {
         "slice": 0,
@@ -1150,10 +1150,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Communication",
-        "count": 1573,
-        "pct": 0.1297
+        "count": 927,
+        "pct": 0.0765
       },
       {
         "slice": 0,
@@ -1164,17 +1164,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Communication",
-        "count": 927,
-        "pct": 0.0765
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Communication",
         "count": 2239,
         "pct": 0.1847
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Communication",
+        "count": 1573,
+        "pct": 0.1297
       },
       {
         "slice": 0,
@@ -1185,10 +1185,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Debugging/refactoring",
-        "count": 3604,
-        "pct": 0.2972
+        "count": 735,
+        "pct": 0.0606
       },
       {
         "slice": 0,
@@ -1199,17 +1199,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Debugging/refactoring",
-        "count": 735,
-        "pct": 0.0606
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Debugging/refactoring",
         "count": 4230,
         "pct": 0.3489
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Debugging/refactoring",
+        "count": 3604,
+        "pct": 0.2972
       },
       {
         "slice": 0,
@@ -1220,10 +1220,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Design",
-        "count": 2221,
-        "pct": 0.1832
+        "count": 854,
+        "pct": 0.0704
       },
       {
         "slice": 0,
@@ -1234,17 +1234,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Design",
-        "count": 854,
-        "pct": 0.0704
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Design",
         "count": 3375,
         "pct": 0.2784
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Design",
+        "count": 2221,
+        "pct": 0.1832
       },
       {
         "slice": 0,
@@ -1255,10 +1255,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Documentation",
-        "count": 3858,
-        "pct": 0.3182
+        "count": 610,
+        "pct": 0.0503
       },
       {
         "slice": 0,
@@ -1269,17 +1269,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Documentation",
-        "count": 610,
-        "pct": 0.0503
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Documentation",
         "count": 3286,
         "pct": 0.271
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Documentation",
+        "count": 3858,
+        "pct": 0.3182
       },
       {
         "slice": 0,
@@ -1290,10 +1290,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Implementation",
-        "count": 3161,
-        "pct": 0.2607
+        "count": 1399,
+        "pct": 0.1154
       },
       {
         "slice": 0,
@@ -1304,17 +1304,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Implementation",
-        "count": 1399,
-        "pct": 0.1154
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Implementation",
         "count": 4008,
         "pct": 0.3306
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Implementation",
+        "count": 3161,
+        "pct": 0.2607
       },
       {
         "slice": 0,
@@ -1325,10 +1325,10 @@
       },
       {
         "slice": 0,
-        "series": "Greatly improved",
+        "series": "Somewhat decreased",
         "response": "Review",
-        "count": 2707,
-        "pct": 0.2233
+        "count": 782,
+        "pct": 0.0645
       },
       {
         "slice": 0,
@@ -1339,17 +1339,17 @@
       },
       {
         "slice": 0,
-        "series": "Somewhat decreased",
-        "response": "Review",
-        "count": 782,
-        "pct": 0.0645
-      },
-      {
-        "slice": 0,
         "series": "Somewhat improved",
         "response": "Review",
         "count": 3800,
         "pct": 0.3134
+      },
+      {
+        "slice": 0,
+        "series": "Greatly improved",
+        "response": "Review",
+        "count": 2707,
+        "pct": 0.2233
       }
     ]
   },

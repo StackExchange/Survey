@@ -23,7 +23,7 @@ question:
     - label: Yes — access to a preferred model or provider
       short: A preferred model
     - label: Yes — the previous tool became too expensive, limited, or unavailable
-      short: The old tool got too costly
+      short: The old tool became limited
     - label: Yes — another reason (write in)
       short: Another reason
       key: other
