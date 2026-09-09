@@ -1169,17 +1169,6 @@
         },
         {
           "chapter": "AI",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
-          "tier": "home",
-          "chart": "quote",
-          "dataId": "",
-          "focus": "",
-          "limit": "",
-          "values": []
-        },
-        {
-          "chapter": "AI",
           "headline": "31% of daily AI users use it for 4+ hours/day",
           "description": "Of the over 70% of respondents who use AI daily, 31% use it over four hours per day.",
           "tier": "home",
@@ -1192,8 +1181,8 @@
         },
         {
           "chapter": "AI",
-          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
-          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
+          "headline": "",
+          "description": "Last year's survey showed respondents kicking AI’s tires, but this year’s data shows something quite different: a workforce that no longer sees AI as an experimental tech but as an indispensable part of the daily toolkit. For most respondents, the conversation has moved from “What is this and what can I use it for?” to “When should I trust this autonomous work, and how can I easily verify its output?”",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1203,18 +1192,17 @@
         },
         {
           "chapter": "AI",
-          "headline": "62% find AI favorable",
-          "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
+          "headline": "AI moves from on-the-side to built-in",
+          "description": "Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%). It’s a sign that AI has become less sidekick and more infrastructure, built right into the tools technologists already use. The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third spending upwards of four hours.",
           "tier": "chapter",
-          "chart": "2d-waffle-large",
-          "dataId": "AISentiment",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
           "limit": "",
           "values": [
             "Somewhat favorable",
             "Very favorable"
-          ],
-          "dataIdSlug": "ai-sentiment"
+          ]
         },
         {
           "chapter": "AI",
@@ -1230,39 +1218,25 @@
         },
         {
           "chapter": "AI",
-          "headline": "48% trust AI when they can easily verify the output",
-          "description": "Nearly half of respondents trust AI output only when it can be easily verified, with high-stakes trust remaining low—just 7% trust AI for important work decisions.",
+          "headline": "",
+          "description": "Despite plenty of societal concern about AI, survey respondents themselves retain a fairly positive view of the technology: when asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by 3.5 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most non-decision tasks.The sweet spot where most AI users land is trusting AI when they are very comfortable with the content it is working with, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
           "tier": "chapter",
-          "chart": "2d-bar-stacked-horizontal",
-          "dataId": "AITrust",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "ai-trust"
+          "values": []
         },
         {
           "chapter": "AI",
-          "headline": "41% do not avoid AI",
-          "description": "While four in ten developers make no effort to avoid AI tools, fears of skill atrophy or self-replacement (17%) and ethical concerns (15%) drive resistance among detractors.",
+          "headline": "The right tool for the job",
+          "description": "The same caution shows up in how people choose (and choose against) certain tools. Developers switching to new AI tools are doing it mostly because the output is better (25%) or because their organization required it (11%).",
           "tier": "chapter",
-          "chart": "2d-bar-stacked-vertical",
-          "dataId": "AIAvoid",
+          "chart": "text",
+          "dataId": "",
           "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "ai-avoid"
-        },
-        {
-          "chapter": "AI",
-          "headline": "24% use AI tools that are approved and provided by their organization",
-          "description": "For all the concerns raised about shadow AI, only 24% of organizations provide approved AI tools and guidance. 30% of organizations leave AI usage decisions up to the individual.",
-          "tier": "chapter",
-          "chart": "2d-treemap-small",
-          "dataId": "AIUse",
-          "focus": "My organization provides approved AI tools and guidance for how to use them",
-          "limit": "",
-          "values": [],
-          "dataIdSlug": "ai-use"
+          "values": []
         },
         {
           "chapter": "AI",
@@ -1271,22 +1245,71 @@
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "AIToolSwitch",
-          "focus": "",
+          "focus": "Yes — better output quality",
           "limit": "5",
           "values": [],
           "dataIdSlug": "ai-tool-switch"
         },
         {
           "chapter": "AI",
-          "headline": "74% who use AI tools or agents rate implementation as a combined useful/very useful impact to their work",
-          "description": "AI delivers its highest practical value during implementation (74% combined useful/very useful) and debugging (72%), whereas interpersonal functions like team communication lag in perceived impact.",
+          "headline": "",
+          "description": "What are they using? Claude Code (66%) and GitHub Copilot (59%) are the leaders for coding agents. Respondents are using Langchain (30%) and OpenAIAgents SDK (24%) for orchestration and Make and n8n for automation. AI memory and agent orchestration tools show a notable gap between current adoption and stated interest, suggesting that the category is still finding its footing. Coding agents, meanwhile, are a more mature market with clear leaders emerging. \n\nThat selectivity becomes very clear once you look at where AI is actually being put to work. Basically, developers trust AI with machines but not with people. AI use is common, and commonly accepted, across code generation, debugging, testing, and understanding unfamiliar codebases. Even secondary review functions—analyzing telemetry, reviewing pull requests, hunting for security issues—are seeing meaningful AI adoption.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "The human difference",
+          "description": "But the moment the task shifts toward human communication or creative output—writing emails, generating multimedia, anything requiring a feel for what people want—usage falls off a cliff. The same split shows up in perceived usefulness: technical tasks like implementation and debugging are both useful or very useful to 70%+ of survey respondents, while communication and design lag behind, landing in “slop” territory with 33% and 48% respectively finding AI useful or very useful in those areas.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "The top 5 tasks that respondents are currently using AI or AI agents for",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "AIWork_Current",
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "ai-work-current"
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "The inevitable takeaway is that technologists see AI as very good at technical problems with checkable answers, and considerably less good at solving the other everyday problems of work. A significant chunk of respondents who avoid AI completely do so out of concern for their own skills, privacy, or the technology’s enormous ethical and environmental footprint.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
-          "dataId": "AIWorkNext",
-          "focus": "Run it locally",
+          "dataId": "AIAvoid",
+          "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "ai-work-next"
+          "values": [
+            "Concern over losing job skills or training an AI to replace you",
+            "Issues with privacy or security",
+            "Environmental concerns"
+          ],
+          "dataIdSlug": "ai-avoid"
         }
       ],
       "index": 3
