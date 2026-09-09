@@ -1,11 +1,11 @@
 <script lang="ts">
+	import type { Question } from '$lib/types'
+
 	import { normaliseOptions } from '$lib/data/options'
 	import { answers, setAnswer } from '$lib/store/answers.svelte'
 
 	import KeyBadge from './KeyBadge.svelte'
 	import Markdown from './Markdown.svelte'
-
-	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 	const opts = $derived(normaliseOptions(question.options))

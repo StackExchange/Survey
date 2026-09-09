@@ -104,6 +104,10 @@ export interface SurveyQuestion {
 					 */
 					key?: string
 					/**
+					 * Chart-length form of the label, for axis and row labels on the results site. Respondents always see `label`. Past ~30 characters a row chart clips it.
+					 */
+					short?: string
+					/**
 					 * Free-input choice (the 'Other (please specify)' pattern).
 					 */
 					text_entry?: boolean

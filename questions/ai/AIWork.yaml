@@ -14,22 +14,41 @@ question:
       - Do not use AI or AI agents for this and do not plan to
       - This is not part of my workflow
   options:
-    - Architecture or technical design exploration
-    - Product, UX, or visual design
-    - Generating code in a familiar area
-    - Generating code in an unfamiliar area
-    - Understanding or onboarding to a new codebase
-    - Debugging, troubleshooting, or refactoring code
-    - Writing or improving tests
-    - Reviewing code, pull requests, or design decisions
-    - Finding or fixing security issues
-    - Writing documentation, comments, or knowledge base content
-    - Answering straightforward technical questions
-    - Answering complex or ambiguous technical questions
-    - Searching, summarizing, or interpreting internal knowledge
-    - Analyzing data, logs, metrics, or query results
-    - Writing tickets, requirements, plans, or project updates
-    - Writing emails, messages, summaries, or other communication
-    - Creating or configuring development/test environments
-    - Deploying, operating, or troubleshooting production systems
-    - Generating visual, audio, or multimedia elements
+    - label: Architecture or technical design exploration
+      short: Architecture and design
+    - label: Product, UX, or visual design
+      short: Product or UX design
+    - label: Generating code in a familiar area
+      short: Code in a familiar area
+    - label: Generating code in an unfamiliar area
+      short: Code in an unfamiliar area
+    - label: Understanding or onboarding to a new codebase
+      short: Onboarding to a codebase
+    - label: Debugging, troubleshooting, or refactoring code
+      short: Debugging and refactoring
+    - label: Writing or improving tests
+      short: Writing tests
+    - label: Reviewing code, pull requests, or design decisions
+      short: Code and design review
+    - label: Finding or fixing security issues
+      short: Security issues
+    - label: Writing documentation, comments, or knowledge base content
+      short: Documentation
+    - label: Answering straightforward technical questions
+      short: Straightforward questions
+    - label: Answering complex or ambiguous technical questions
+      short: Complex questions
+    - label: Searching, summarizing, or interpreting internal knowledge
+      short: Internal knowledge
+    - label: Analyzing data, logs, metrics, or query results
+      short: Data, logs and metrics
+    - label: Writing tickets, requirements, plans, or project updates
+      short: Tickets and plans
+    - label: Writing emails, messages, summaries, or other communication
+      short: Emails and messages
+    - label: Creating or configuring development/test environments
+      short: Dev and test environments
+    - label: Deploying, operating, or troubleshooting production systems
+      short: Deploying and operating
+    - label: Generating visual, audio, or multimedia elements
+      short: Visual and audio assets

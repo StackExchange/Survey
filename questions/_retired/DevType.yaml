@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: DevType
+  version: '2025.1'
+  title: Which of the following describes your current job or the job you had for the most time in the past year?
+  type: single_select
+  required: true
+  options:
+    - Academic researcher
+    - AI/ML engineer
+    - Applied scientist
+    - label: Architect, software or solutions
+      short: Architect
+    - Cloud infrastructure engineer
+    - label: Cybersecurity or InfoSec professional
+      short: Cybersecurity or InfoSec
+    - Data engineer
+    - Data or business analyst
+    - Data scientist
+    - label: Database administrator or engineer
+      short: Database admin or engineer
+    - label: Developer, AI apps or physical AI
+      short: Developer, AI or physical AI
+    - Developer, back-end
+    - label: Developer, desktop or enterprise applications
+      short: Developer, desktop/enterprise
+    - label: Developer, embedded applications or devices
+      short: Developer, embedded
+    - Developer, front-end
+    - Developer, full-stack
+    - Developer, game or graphics
+    - Developer, mobile
+    - Developer, QA or test
+    - label: DevOps engineer or professional
+      short: DevOps engineer
+    - Engineering manager
+    - Financial analyst or engineer
+    - label: Founder, technology or otherwise
+      short: Founder
+    - Product manager
+    - Project manager
+    - Retired
+    - label: Senior executive (C-suite, VP, etc.)
+      short: Senior executive
+    - Student
+    - Support engineer or analyst
+    - System administrator
+    - label: UX, Research Ops or UI design professional
+      short: UX, research or UI design
+    - label: Other, please specify
+      short: Other
+      key: other
+      text_entry: true
+  deprecated: true

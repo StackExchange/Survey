@@ -1,0 +1,113 @@
+[build]
+  base = "packages/results"
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # Pin the toolchain so CI matches local rather than following Netlify's default.
+  NODE_VERSION = "24"
+
+# Security headers. Deliberately not a Content-Security-Policy: the two
+# third-party tags in app.html would have to be allowlisted anyway, and OneTrust
+# injects inline styles at runtime, so an accurate policy ends up permissive
+# enough to buy little. Revisit with Content-Security-Policy-Report-Only if that
+# changes.
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    # No `preload`: that commits the domain to the browser preload list and is
+    # slow to undo, so it belongs to a decision at the apex domain, not here.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+# Content-hashed filenames, so they can be cached indefinitely. Without this
+# Netlify serves them `must-revalidate`, costing a 304 per asset per visit.
+[[headers]]
+  for = "/_app/immutable/*"
+
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Chart filenames are stable so that shared and embedded URLs keep working, which
+# rules out `immutable`. A day at the edge with revalidation after that is the
+# trade: manifest.json carries a hash per file for anything that needs to know
+# precisely what changed. Filenames carry the year, so all years share this
+# directory without colliding.
+[[headers]]
+  for = "/charts/*"
+
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# Every page has a .md twin, linked from <head> as rel="alternate". Declared
+# rather than left to Netlify's extension guess: X-Content-Type-Options is
+# nosniff above, so a wrong guess here is a wrong type at the client with no
+# recovery. Browsers download rather than render text/markdown; the audience for
+# these is models, and the HTML twin is what a person follows.
+[[headers]]
+  for = "/*.md"
+
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+
+# --- Earlier years -----------------------------------------------------------
+#
+# This site owns the apex; 2011–2025 are served by packages/archive and proxied
+# through. Everything goes to the archive, including 2025 — that year's results
+# site is a third deploy, but the archive is what holds its data files and what
+# runs the survey-banner edge function, so it has to stay in the path. It
+# forwards to the 2025 deploy itself.
+#
+# No `200!` needed: forcing exists to beat a local file, and this site publishes
+# nothing under a past year's path.
+#
+# Data files bounce to GitHub rather than being served from here. They run to
+# ~159MB apiece and have attracted abuse, and a 200-proxy would bill that
+# bandwidth to this site and the archive both. The URLs stay valid and citable —
+# they just cost a redirect instead of the file.
+#
+# 302, not 301: a permanent redirect is cached by browsers indefinitely and this
+# is likely to move again. Must precede the generic /:year/* rule below.
+[[redirects]]
+  from = "/:year/results.csv"
+  to = "https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/results.csv"
+  status = 302
+
+[[redirects]]
+  from = "/:year/schema.csv"
+  to = "https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/schema.csv"
+  status = 302
+
+[[redirects]]
+  from = "/:year/survey.pdf"
+  to = "https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/:year/survey.pdf"
+  status = 302
+
+# A bare /YYYY needs its own rule — /YYYY/* does not match it. The archive's own
+# _redirects turn these into /YYYY/site/… on its side, so the paths handed over
+# are the public ones.
+[[redirects]]
+  from = "/:year"
+  to = "https://stackoverflow-survey.netlify.app/:year"
+  status = 200
+
+[[redirects]]
+  from = "/:year/*"
+  to = "https://stackoverflow-survey.netlify.app/:year/:splat"
+  status = 200
+
+# Root-absolute in the 2015–2021 pages, so it cannot move off the apex.
+[[redirects]]
+  from = "/legacy-assets/*"
+  to = "https://stackoverflow-survey.netlify.app/legacy-assets/:splat"
+  status = 200
+
+# Legacy shortcut, carried over from the archive's _redirects.
+[[redirects]]
+  from = "/survey/*"
+  to = "https://survey.stackoverflow.co/:splat"
+  status = 302

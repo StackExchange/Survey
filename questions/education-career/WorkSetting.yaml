@@ -8,6 +8,9 @@ question:
   options:
     - Remote
     - In-person
-    - Hybrid (some remote, leans heavy to in-person)
-    - Hybrid (some in-person, leans heavy to flexibility)
-    - Your choice (very flexible, you can come in when you want or just as needed)
+    - label: Hybrid (some remote, leans heavy to in-person)
+      short: Hybrid, mostly in-person
+    - label: Hybrid (some in-person, leans heavy to flexibility)
+      short: Hybrid, mostly remote
+    - label: Your choice (very flexible, you can come in when you want or just as needed)
+      short: Your choice, fully flexible

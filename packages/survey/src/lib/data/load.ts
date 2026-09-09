@@ -6,9 +6,9 @@
 // file changes, Vite invalidates this module; Svelte components that read
 // from it re-render automatically.
 
-import YAML from 'yaml'
-
 import type { Question, Survey } from '$lib/types'
+
+import YAML from 'yaml'
 
 const questionRaws = import.meta.glob<string>('$questions/*/*.yaml', {
 	eager: true,

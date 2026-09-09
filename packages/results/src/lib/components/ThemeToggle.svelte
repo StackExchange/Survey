@@ -2,7 +2,7 @@
 	import { IconTheme, IconThemeDark, IconThemeLight } from '@stackoverflow/stacks-icons/icons'
 	import { setMode, userPrefersMode } from 'mode-watcher'
 
-	import Icon from '$lib/components/Icon.svelte'
+	import Icon from '$components/Icon.svelte'
 
 	let { class: className = '' }: { class?: string } = $props()
 

@@ -7,12 +7,15 @@ question:
   required: false
   options:
     - label: I create code as a primary part of my job
+      short: Job to create code
       key: primary_job
     - label: I create code occasionally
       key: occasionally
     - label: I review/maintain code but rarely create it
+      short: Review but rarely write
       key: review_maintain
     - label: I manage or support people who create code
+      short: Manage coders
       key: manage_support
     - label: I do not create code
       key: do_not_create_code

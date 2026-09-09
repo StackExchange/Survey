@@ -9,12 +9,17 @@ question:
     - Attending school (full-time)
     - Attending school (part-time)
     - label: Engaged in paid work (less than 10 hours per week)
+      short: Paid work, under 10 hrs
       key: hrs_under_10
     - label: Engaged in paid work (10-19 hours per week)
+      short: Paid work, 10–19 hrs
       key: hrs_10_19
     - label: Engaged in paid work (20-29 hours per week)
+      short: Paid work, 20–29 hrs
       key: hrs_20_29
-    - Transitioning to retirement (gradually reducing work hours)
+    - label: Transitioning to retirement (gradually reducing work hours)
+      short: Transitioning to retirement
     - Volunteering (regularly)
-    - Caring for dependents (children, elderly, etc.)
+    - label: Caring for dependents (children, elderly, etc.)
+      short: Caring for dependents
     - None of the above

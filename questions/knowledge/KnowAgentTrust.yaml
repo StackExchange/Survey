@@ -6,9 +6,15 @@ question:
   type: single_select
   required: false
   options:
-    - I decide exactly what information to give the AI tool
-    - I choose from available sources, files, or systems
-    - The AI tool chooses the information automatically
-    - Someone else manages what information the AI tool can access
-    - I am not sure what information the AI tool uses
-    - I do not use AI tools or agents for work
+    - label: I decide exactly what information to give the AI tool
+      short: I decide exactly
+    - label: I choose from available sources, files, or systems
+      short: I pick from what's there
+    - label: The AI tool chooses the information automatically
+      short: The tool chooses
+    - label: Someone else manages what information the AI tool can access
+      short: Someone else manages it
+    - label: I am not sure what information the AI tool uses
+      short: Not sure what it uses
+    - label: I do not use AI tools or agents for work
+      short: Don't use AI for work

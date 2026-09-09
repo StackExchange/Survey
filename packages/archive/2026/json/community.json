@@ -1,0 +1,3916 @@
+{
+  "SOChange": {
+    "meta": {
+      "qid": "QID53",
+      "qname": "SOChange",
+      "question": "<p>How has AI changed your Stack Overflow usage? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 16985
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit less for simple questions",
+        "count": 10892,
+        "pct": 0.6413
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask fewer questions",
+        "count": 4910,
+        "pct": 0.2891
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Contribute less",
+        "count": 4496,
+        "pct": 0.2647
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No change",
+        "count": 3704,
+        "pct": 0.2181
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit more for verification (for example, source attribution)",
+        "count": 2707,
+        "pct": 0.1594
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 1084,
+        "pct": 0.0638
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask more advanced questions",
+        "count": 967,
+        "pct": 0.0569
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Visit SO more because AI-generated answers lead you there",
+        "count": 965,
+        "pct": 0.0568
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Contribute more",
+        "count": 203,
+        "pct": 0.012
+      }
+    ]
+  },
+  "Answers": {
+    "meta": {
+      "qid": "QID54",
+      "qname": "Answers",
+      "question": "<p>Which actions do you turn to first when trying to find answers to a problem? Select your top 3 choices.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 16664
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Use online search tools to find general guidance and/or discourse",
+        "count": 13774,
+        "pct": 0.8266
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Ask an AI agent",
+        "count": 11643,
+        "pct": 0.6987
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Go directly to a maintained repository or more than one and search within its contents (this could be a repository like Wikipedia or IMDB or GitHub projects)",
+        "count": 7288,
+        "pct": 0.4373
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Send a message to a human I trust directly",
+        "count": 4803,
+        "pct": 0.2882
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Post a message in a group text or private discussion among humans I know",
+        "count": 2462,
+        "pct": 0.1477
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Post in a public online forum",
+        "count": 1327,
+        "pct": 0.0796
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Send a message to a human that I don't know directly",
+        "count": 276,
+        "pct": 0.0166
+      }
+    ]
+  },
+  "AnswersTrust": {
+    "meta": {
+      "qid": "QID56",
+      "qname": "AnswersTrust",
+      "question": "<p>What makes you trust the information you find when you are searching for answers? Select your top 3 choices.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15355
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The format and content of the information is well-organized and logical",
+        "count": 9071,
+        "pct": 0.5908
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "There are many upvotes/likes/shares/views associated with the content",
+        "count": 7377,
+        "pct": 0.4804
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The information was referred to me by a human I trust directly",
+        "count": 7159,
+        "pct": 0.4662
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The information has many citations, sources themselves don't matter as much as the ability to track down the origin",
+        "count": 6111,
+        "pct": 0.398
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I can see user activity associated with the human that posts the information I find",
+        "count": 3890,
+        "pct": 0.2533
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I heard about the source of information before from another trusted source, such as a news site, a social feed, or a podcast interview",
+        "count": 3730,
+        "pct": 0.2429
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "The format and content of the information is creative and thought-provoking",
+        "count": 1628,
+        "pct": 0.106
+      }
+    ]
+  },
+  "CommunityType": {
+    "meta": {
+      "qid": "QID57",
+      "qname": "CommunityType",
+      "question": "<p>How do you participate in technical or professional communities? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15917
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I read answers, posts, or discussions",
+        "count": 12420,
+        "pct": 0.7803
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I comment or react",
+        "count": 6660,
+        "pct": 0.4184
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I share resources with others",
+        "count": 5597,
+        "pct": 0.3516
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I answer questions",
+        "count": 5358,
+        "pct": 0.3366
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I ask questions",
+        "count": 4972,
+        "pct": 0.3124
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I follow specific creators or experts",
+        "count": 4734,
+        "pct": 0.2974
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I contribute to open-source projects",
+        "count": 4468,
+        "pct": 0.2807
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I attend events, meetups, or webinars",
+        "count": 3339,
+        "pct": 0.2098
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I participate in private groups or chats",
+        "count": 3225,
+        "pct": 0.2026
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not currently participate in communities",
+        "count": 2304,
+        "pct": 0.1448
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I moderate or help manage a community",
+        "count": 1066,
+        "pct": 0.067
+      }
+    ]
+  },
+  "CommunityGap": {
+    "meta": {
+      "qid": "QID58",
+      "qname": "CommunityGap",
+      "question": "<p>What, if anything, prevents you from participating more in technical or professional communities? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15602
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I usually find answers without posting",
+        "count": 10162,
+        "pct": 0.6513
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI tools answer enough of my questions",
+        "count": 6979,
+        "pct": 0.4473
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not have time",
+        "count": 5588,
+        "pct": 0.3582
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "My questions are too specific to my company or context",
+        "count": 3532,
+        "pct": 0.2264
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I worry about being judged or criticized",
+        "count": 3297,
+        "pct": 0.2113
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not feel confident asking questions publicly",
+        "count": 3134,
+        "pct": 0.2009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I prefer private conversations",
+        "count": 2762,
+        "pct": 0.177
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Nothing prevents me from participating more",
+        "count": 1912,
+        "pct": 0.1225
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Communities do not feel welcoming to people like me",
+        "count": 1893,
+        "pct": 0.1213
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Communities feel too advanced or specialized",
+        "count": 1826,
+        "pct": 0.117
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I have privacy, legal, or employer restrictions",
+        "count": 1663,
+        "pct": 0.1066
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I do not know where to participate",
+        "count": 1399,
+        "pct": 0.0897
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not applicable",
+        "count": 425,
+        "pct": 0.0272
+      }
+    ]
+  },
+  "CommunitySkills": {
+    "meta": {
+      "qid": "QID60",
+      "qname": "CommunitySkills",
+      "question": "<p>Which sources most influence what technical, AI, or professional skills you decide to learn next? Select up to 3.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 15260
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coworkers, classmates, or peers",
+        "count": 6695,
+        "pct": 0.4387
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Manager or workplace expectations",
+        "count": 4986,
+        "pct": 0.3267
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "YouTube or video creators",
+        "count": 3931,
+        "pct": 0.2576
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online communities or forums",
+        "count": 3519,
+        "pct": 0.2306
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Job postings or labor market signals",
+        "count": 2971,
+        "pct": 0.1947
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Documentation",
+        "count": 2687,
+        "pct": 0.1761
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Newsletters or blogs",
+        "count": 2062,
+        "pct": 0.1351
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI tools or chatbots",
+        "count": 2032,
+        "pct": 0.1332
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I am not currently deciding what to learn next",
+        "count": 1673,
+        "pct": 0.1096
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Conferences or events",
+        "count": 1434,
+        "pct": 0.094
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Social media",
+        "count": 1384,
+        "pct": 0.0907
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Courses or certifications",
+        "count": 1077,
+        "pct": 0.0706
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow / Stack Exchange",
+        "count": 1012,
+        "pct": 0.0663
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Podcasts",
+        "count": 843,
+        "pct": 0.0552
+      }
+    ]
+  },
+  "LearnCodeHow": {
+    "meta": {
+      "qid": "QID11",
+      "qname": "LearnCodeHow",
+      "question": "<p>How did you learn to code in the past year? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 14530
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Technical documentation (is generated for/by the tool or system)",
+        "count": 8555,
+        "pct": 0.5888
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI codegen tools or AI-enabled apps",
+        "count": 7650,
+        "pct": 0.5265
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other online resources (e.g. standard search, forum, online community)",
+        "count": 7518,
+        "pct": 0.5174
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Videos (not associated with specific online course or certification)",
+        "count": 5975,
+        "pct": 0.4112
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow or Stack Exchange",
+        "count": 4909,
+        "pct": 0.3379
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online courses or certification (includes all media types)",
+        "count": 4260,
+        "pct": 0.2932
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Blogs or podcasts",
+        "count": 4010,
+        "pct": 0.276
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Books / physical media",
+        "count": 3846,
+        "pct": 0.2647
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Colleague or on-the-job training",
+        "count": 3106,
+        "pct": 0.2138
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "School (i.e., university, college, etc)",
+        "count": 2064,
+        "pct": 0.1421
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Games or coding challenges",
+        "count": 1700,
+        "pct": 0.117
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coding bootcamp",
+        "count": 922,
+        "pct": 0.0635
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 629,
+        "pct": 0.0433
+      }
+    ]
+  },
+  "LearnAIHow": {
+    "meta": {
+      "qid": "QID13",
+      "qname": "LearnAIHow",
+      "question": "<p>How did you learn to code for AI in the past year? Select all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 20565
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "AI CodeGen tools or AI-enabled apps",
+        "count": 10407,
+        "pct": 0.5061
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other online resources (e.g. standard search, forum, online community)",
+        "count": 9244,
+        "pct": 0.4495
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Technical documentation (is generated for/by the tool or system)",
+        "count": 8733,
+        "pct": 0.4247
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Videos (not associated with specific online course or certification)",
+        "count": 7781,
+        "pct": 0.3784
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Colleague or on-the-job training",
+        "count": 6648,
+        "pct": 0.3233
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Blogs or podcasts",
+        "count": 6069,
+        "pct": 0.2951
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Online Courses or Certification (includes all media types)",
+        "count": 3516,
+        "pct": 0.171
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow or Stack Exchange",
+        "count": 2281,
+        "pct": 0.1109
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Books / Physical media",
+        "count": 1583,
+        "pct": 0.077
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other",
+        "count": 1290,
+        "pct": 0.0627
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "School (i.e., University, College, etc)",
+        "count": 1132,
+        "pct": 0.055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Games or coding challenges",
+        "count": 828,
+        "pct": 0.0403
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Coding Bootcamp",
+        "count": 777,
+        "pct": 0.0378
+      }
+    ]
+  },
+  "SOAccount": {
+    "meta": {
+      "qid": "QID51",
+      "qname": "SOAccount",
+      "question": "<p>Do you have a Stack Overflow account?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 17217
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes",
+        "count": 13320,
+        "pct": 0.7737
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 2363,
+        "pct": 0.1372
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Not sure/can't remember",
+        "count": 1534,
+        "pct": 0.0891
+      }
+    ]
+  },
+  "SOYears": {
+    "meta": {
+      "qid": "QID52",
+      "qname": "SOYears",
+      "question": "<p>How long have you used Stack Overflow?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 17142
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 10 and 15 years",
+        "count": 5739,
+        "pct": 0.3348
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 5 and 10 years",
+        "count": 4291,
+        "pct": 0.2503
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "More than 15 years, or since Stack Overflow started in 2008",
+        "count": 3000,
+        "pct": 0.175
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 3 and 5 years",
+        "count": 1561,
+        "pct": 0.0911
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "I don't use Stack Overflow",
+        "count": 1020,
+        "pct": 0.0595
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Between 1 and 3 years",
+        "count": 957,
+        "pct": 0.0558
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Less than one year",
+        "count": 574,
+        "pct": 0.0335
+      }
+    ]
+  },
+  "LearnCode": {
+    "meta": {
+      "qid": "QID10",
+      "qname": "LearnCode",
+      "question": "<p>Did you begin learning to code or learn a new coding skill or programming language in the last year?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 29146
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes",
+        "count": 15169,
+        "pct": 0.5204
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 13977,
+        "pct": 0.4796
+      }
+    ]
+  },
+  "LearnAI": {
+    "meta": {
+      "qid": "QID12",
+      "qname": "LearnAI",
+      "question": "<p>In the last year, did you spend time learning AI programming or AI-enabled tooling on your own or at work?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 28240
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, both on my own and at work",
+        "count": 11350,
+        "pct": 0.4019
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, on my own",
+        "count": 6607,
+        "pct": 0.234
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 5923,
+        "pct": 0.2097
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Yes, at work",
+        "count": 4360,
+        "pct": 0.1544
+      }
+    ]
+  },
+  "CommPlat": {
+    "meta": {
+      "qid": "QID42",
+      "qname": "CommPlat",
+      "question": "<p>Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10741
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "GitHub (public projects, not private repos)",
+        "count": 7460,
+        "pct": 0.6945
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Overflow",
+        "count": 7372,
+        "pct": 0.6863
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "YouTube",
+        "count": 6272,
+        "pct": 0.5839
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Reddit",
+        "count": 5784,
+        "pct": 0.5385
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Stack Exchange",
+        "count": 4062,
+        "pct": 0.3782
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "LinkedIn",
+        "count": 4058,
+        "pct": 0.3778
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Discord",
+        "count": 3591,
+        "pct": 0.3343
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Medium",
+        "count": 2826,
+        "pct": 0.2631
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hacker News",
+        "count": 2576,
+        "pct": 0.2398
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "X",
+        "count": 1758,
+        "pct": 0.1637
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bluesky",
+        "count": 1356,
+        "pct": 0.1262
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Slack (public channels, not work)",
+        "count": 1250,
+        "pct": 0.1164
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Dev.to",
+        "count": 1103,
+        "pct": 0.1027
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Company-sponsored forums",
+        "count": 927,
+        "pct": 0.0863
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Substack",
+        "count": 858,
+        "pct": 0.0799
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 719,
+        "pct": 0.0669
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Twitch",
+        "count": 569,
+        "pct": 0.053
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kaggle",
+        "count": 499,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Hashnode",
+        "count": 131,
+        "pct": 0.0122
+      }
+    ]
+  },
+  "Gender": {
+    "meta": {
+      "qid": "QID30",
+      "qname": "Gender",
+      "question": "<p>Which of the following best represents your gender identity?<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 21149
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Man",
+        "count": 18191,
+        "pct": 0.8601
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Woman",
+        "count": 1393,
+        "pct": 0.0659
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer not to say",
+        "count": 899,
+        "pct": 0.0425
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Non-binary",
+        "count": 431,
+        "pct": 0.0204
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Prefer to self-describe:",
+        "count": 235,
+        "pct": 0.0111
+      }
+    ]
+  },
+  "DA_CommPlatform": {
+    "meta": {
+      "qid": "QID42",
+      "qname": "CommPlat",
+      "question": "<p>Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 10741
+        }
+      ]
+    },
+    "data": [
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "GitHub (public projects, not private repos)",
+        "count": 4814,
+        "pct": 0.4482
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Stack Overflow",
+        "count": 4660,
+        "pct": 0.4339
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "YouTube",
+        "count": 3926,
+        "pct": 0.3655
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Reddit",
+        "count": 2989,
+        "pct": 0.2783
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Stack Exchange",
+        "count": 2687,
+        "pct": 0.2502
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Discord",
+        "count": 1955,
+        "pct": 0.182
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Hacker News",
+        "count": 1635,
+        "pct": 0.1522
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "LinkedIn",
+        "count": 1610,
+        "pct": 0.1499
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Medium",
+        "count": 1183,
+        "pct": 0.1101
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Bluesky",
+        "count": 966,
+        "pct": 0.0899
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "X",
+        "count": 953,
+        "pct": 0.0887
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Slack (public channels, not work)",
+        "count": 696,
+        "pct": 0.0648
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Other, please specify",
+        "count": 628,
+        "pct": 0.0585
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Dev.to",
+        "count": 573,
+        "pct": 0.0533
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Substack",
+        "count": 506,
+        "pct": 0.0471
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Company-sponsored forums",
+        "count": 499,
+        "pct": 0.0465
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Kaggle",
+        "count": 383,
+        "pct": 0.0357
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Twitch",
+        "count": 348,
+        "pct": 0.0324
+      },
+      {
+        "slice": 0,
+        "series": "Desired",
+        "response": "Hashnode",
+        "count": 125,
+        "pct": 0.0116
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Other, please specify",
+        "count": 576,
+        "pct": 0.8011
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Stack Exchange",
+        "count": 2557,
+        "pct": 0.6295
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "GitHub (public projects, not private repos)",
+        "count": 4672,
+        "pct": 0.6263
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "YouTube",
+        "count": 3841,
+        "pct": 0.6124
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Stack Overflow",
+        "count": 4499,
+        "pct": 0.6103
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Bluesky",
+        "count": 778,
+        "pct": 0.5737
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Hacker News",
+        "count": 1456,
+        "pct": 0.5652
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Discord",
+        "count": 1812,
+        "pct": 0.5046
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Reddit",
+        "count": 2889,
+        "pct": 0.4995
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "X",
+        "count": 875,
+        "pct": 0.4977
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Kaggle",
+        "count": 245,
+        "pct": 0.491
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Twitch",
+        "count": 278,
+        "pct": 0.4886
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Slack (public channels, not work)",
+        "count": 599,
+        "pct": 0.4792
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Substack",
+        "count": 407,
+        "pct": 0.4744
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Hashnode",
+        "count": 62,
+        "pct": 0.4733
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Company-sponsored forums",
+        "count": 430,
+        "pct": 0.4639
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Dev.to",
+        "count": 469,
+        "pct": 0.4252
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "Medium",
+        "count": 1111,
+        "pct": 0.3931
+      },
+      {
+        "slice": 0,
+        "series": "Admired",
+        "response": "LinkedIn",
+        "count": 1507,
+        "pct": 0.3714
+      }
+    ]
+  },
+  "SOChangeAddl": {
+    "meta": {
+      "qid": "QID105",
+      "qname": "SOChangeAddl",
+      "question": "<p>In your own words, what changed about how you use Stack Overflow?<\/p>",
+      "response": "What changed",
+      "value": "User",
+      "sampled": true,
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 5351
+        }
+      ]
+    },
+    "data": [
+			{
+				"slice": 0,
+				"response": "I use stackoverflow less because of both retirement and the incredible features of AI when I want to build things.",
+				"value": "Developer, mobile, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "It wasn't an option in the question before this one, but because of AI boom I've used StackOverflow even more than before. Because almost never AI gave me the right answer, even with the longest and most detailed prompts. So I relied on approved an long-lived answers, abundantly found only on SO. Also, people's answer often lead me to another ways of thinking or mentioned another instruments, which AI never does in a good way.",
+				"value": "DevOps engineer or professional, Russian Federation, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Searching a problem on google used to return stackoverflow links as the top pages. Now it has changed to google's AI answering the question itself using content from stackoverflow pages. This has reduced footprint on stackoverflow for most of the cases.",
+				"value": "Developer, back-end, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Less engagement overall, I can get a customized answer for my usage case from Google which definitely borrows from SO, but it saves me skimming through 10 questions to decide which one applies.",
+				"value": "Developer, back-end, Italy, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "The community can be a bit snooty at times, but it's a great concept.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Became a more trustworthy source.",
+				"value": "Cybersecurity or InfoSec professional, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Search engines are less likely to produce a stack overflow link as the first thing you see after a search",
+				"value": "Data scientist, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "nothing, SO is still providing the right answer or lead to the solution.",
+				"value": "Developer, full-stack, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Less answering unfortunately due to much more specific (\"other worldly\") questions",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use search engines less and get to SO less, unfortunately.",
+				"value": "Architect, software or solutions, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Before ai it had become a somewhat hostile\nPlatform largely replaced by Reddit .",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "the signal to noise ratio has changed, in a way that makes it difficult to participate by providing answers. Most questions I read seem to be around specific obscure apis and systems, rather than the more generic language questions.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "The increased pushing of \"AI-Technology\" (agentic workflows, the overflow blog only talking about ai, ai assist) all make the website and community feel less comfortable, and makes me spend less time on it and interacting with it.",
+				"value": "Student, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Here I have to find my problem and its solution... In AI platform I receive the problem and solution together",
+				"value": "Student, India, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "No longer use Stack Overflow to submit questions, since too often questions are deleted for arbitrary reasons. But Stack Overflow is useful to find answers to existing questions.",
+				"value": "Developer, embedded applications or devices, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I feel forced to focus on results more, and less on the understanding that reading and engaging with Stack Overflow provides me.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Visit pretty much same.",
+				"value": "Student, Nigeria, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Fewer people are asking questions because of AI, so there are fewer questions for me to answer now. I have been chasing a gold tag badge for the better part of a decade and I'm starting to think I'll never get it.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "The way we search changed",
+				"value": "Developer, back-end, China, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "No change. When I have a specific technical question I still search answers on SO.",
+				"value": "Developer, game or graphics, France, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "hardly use it directly myself anymore, for research I often ask chatgpt, which in turn might find stackoverflow answers, but I don't ask nor search on it anymore",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow was a place to type a question and get an answer I could use in my solution. AI chatbots have now replaced that user flow. For questions coding agents have difficulty with, I can now go to targeted communities for that technology or use search tools (which sometimes surface Stack Overflow, but not as much as it used to). Stack Overflow is largely irrelevant as a website in the current day-to-day developer cycle, but the data it contains is incredibly helpful to those search and AI tools. It's a tough situation... We need systems like Stack Overflow to be curated centers of correct answers to questions, but the UX keeps us from having a need to be there, so new questions/answers are not getting posted there.",
+				"value": "Developer advocate or developer relations professional, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I tired to answer a question once, but got voted down for some reason, then couldn't do anything, it was a pretty rubbish system to be honest, and certainly didn't encourage me to contribute again.",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Less frequently clicking external sites when googling questions as Gemini answers are good",
+				"value": "Developer, back-end, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to come here from google and google started to take me here less",
+				"value": "Senior executive (C-suite, VP, etc.), Finland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Troubleshooting strategy",
+				"value": "Developer, AI apps or physical AI, Ukraine, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Faster resolution of minor problems",
+				"value": "Developer, full-stack, Colombia, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "Previously I looked a better solutions in the Stack Overflow. Now, AI will provide with probability score",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use AI for 99% of my case (programing, debugging and so on) the remaining 1% maybe less is used in case of simple question for simple solution where search in stackoverflow is faster then AI generated answer (e.g how open href undar <a> in nee tab - AI need 5-10seconsds SO need just one as i know almost the answe i just need to see first few coment to confirm) and then for question which AI don’t eant reply or topic is so deeply and hard to explain or AI solution is just circle of lot of non working solution)",
+				"value": "Other, Slovakia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't need it for routine questions anymore.",
+				"value": "Engineering manager, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "The actions of the company (Stack Overflow Inc), especially how they dealt with LLMs demotivated me when it comes to contributing. I also don't read the blog any more because it no longer has useful blog posts.",
+				"value": "Developer, back-end, Austria, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I ask my agent first and then use SO for verification if the agent mentions it in the sources.",
+				"value": "UX, research, or UI design professional, Switzerland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Asking AI has made it too easy to find answers, searching and digging like we did for years has sadly fallen away",
+				"value": "Senior executive (C-suite, VP, etc.), United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Only visit if the AI-generated code does not work after multiple tries, or I suspect AI's solution is much more complicated than what it needs to be.",
+				"value": "Developer, back-end, Qatar, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Most of the questions I used to rely on Stack Overflow can now be solved by using AI.",
+				"value": "Site reliability engineer, Australia, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I am using SO for coding solutions",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, Bangladesh, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It was used to train the current LLM and now Stack is getting less used which is an issue.",
+				"value": "Architect, software or solutions, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I've been using SO for finding answers mostly and didn't do much contribution to the community. But recently AI agents have answered most of my questions and I've been visiting SO only for fundamental, advanced questions where I need to see different opinions about the different solutions/architectural designs.",
+				"value": "Developer, back-end, Iran, Islamic Republic of..., Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'm not actively using Stack Overflow lately; I just have an account from previous use.",
+				"value": "Developer, back-end, Canada, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I started to use stackoverflow to check if knowlegde was there, and if the answers where similiar or the same as ai. to be sure it wasnt dreaming. even after asking for resources and optionally SO resources looked fine. I considered posting questions and my own answer based on a AI conversation i had but discovered someone already answered someones question.",
+				"value": "Developer, full-stack, Netherlands, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Up until recently I used Google Gemini for simple questions and SO for hard questions. I have stopped using Gemini recently because I realized it is simply repackaging info from SO without compensation. Since Google is AI first, it means I have switched to DuckDuckGo as my search engine.",
+				"value": "Developer, full-stack, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow was amazing! I owe most of my knowledge of advanced topics. AI made everything easier and faster. Now, if AI can't solve an issue, I try a different approach instead of searching on SO. Unfortunately, this reduces the creation of collective knowledge, and we will pay for it long-term. But for now, this is the path of least resistance.",
+				"value": "Senior executive (C-suite, VP, etc.), Greece, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have used Stackoverflow ever since I learnt how to program. Stack Overflow used to be filled with simple & easy-to-answer questions. But now that AI has entered the field, many users including me began using it for easier questions. However, AI fails miserably at harder questions. It's less about what changed about my usage (which is the result) and more about what changed about learning about various topics (including programming) by using the internet. I use Stackoverflow from time to time to read about edge cases and less common problems. While on the other hand, the need to use Stackoverflow for rather complex questions proves valuable.",
+				"value": "Other, Egypt, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Usually there is no need to access stack overflow if the AI answer is much more user-friendly and there is no toxic people criticizing your answers. Also, is much more convenient to use Ai because they can already fix your code directly and you get your answers instantly.",
+				"value": "DevOps engineer or professional, Brazil, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Not much",
+				"value": "Retired, Denmark, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Drastically reduced usage of stack overflow because AI can just quickly find what it needs and adapt that code to my needs or whatever.\nI only use stackoverflow when google leads me there after AI has had trouble completing the task.\nInterestingly I came to stackoverflow for this: \"How to determine the URL that a local Git repository was originally cloned from\" which AI could've easily given the answer, but I felt like I could be faster and I'm saving on tokens now ;)",
+				"value": "Architect, software or solutions, Portugal, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I regard everything I see online with more skepticism because it might be AI hallucinated. Often results might be quicker to be dis-proven by trial than fact checking.",
+				"value": "Developer, back-end, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "due to the AI agents I can get a quick solution to anything.",
+				"value": "DevOps engineer or professional, India, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Most of the time when searching, the AI summary is good enough and there is no need to go to Stack Overflow",
+				"value": "Developer, back-end, Serbia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it much less since AI",
+				"value": "Developer, full-stack, Italy, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Stopped coming here almost entirely.",
+				"value": "Cloud infrastructure engineer, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use it anymore. Good riddance. StackOverflow has long been a cesspool where supposed domain \"experts\" operate their own fiefdoms for the express purpose of farming reputation.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Used it less in around 2024 due to obvious reasons but quickly went back to using it, so not much",
+				"value": "Developer, front-end, Saudi Arabia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "IA is more fast to respond to simple questions; I still use Stack Overflow for complex and difficult bugs or old code.",
+				"value": "Developer, full-stack, Dominican Republic, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Enshitification",
+				"value": "Architect, software or solutions, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Using less because of AI",
+				"value": "Developer, mobile, Czech Republic, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "The models scraped the limited value Stack Overflow ever had into their dataset. I now avoid it even more.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I dont search for day to day boiler plate, but for niche specific details about systems and details not too well documented so not well trained into AI.",
+				"value": "Architect, software or solutions, Czech Republic, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I felt it was too inaccessible to ask questions or contribute to StackOverflow before and that hasn't changed now. When it comes to seeking out information, I've moved from a search engine leading me to StackOverflow to an AI agent leading me to StackOverflow. Overall, not much has changed.",
+				"value": "Developer, back-end, Serbia, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Its easier to ask AI assistant the actual issue and direct answer than searching that in the SO and reading thought the answers.",
+				"value": "Software engineer, India, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'm now asking questions directly in my IDE AI chat.",
+				"value": "Developer, full-stack, France, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I almost stopped using Stack Overflow, LLMs answers covers my issues 99% of the time. I think you need to make Stack Overflow for agents to share findings and solve difficult problems faster",
+				"value": "Senior executive (C-suite, VP, etc.), Portugal, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I wasn't a power user before, I am not a power user now, but I disable AI overviews on my search engine, so nothing really changed for me.",
+				"value": "Academic researcher, Austria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI replaced it",
+				"value": "Other, Switzerland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO is now for advanced, hard and complex questions",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I usually google the question and used to end up on Stack Overflow, but now the answer is provided by Google directly at the top. Or I ask AI directly.",
+				"value": "Developer, back-end, Netherlands, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Most questions I have have already been answered. However, some answers are not quite right but they help.",
+				"value": "Hardware engineer, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Visit less often",
+				"value": "AI/ML engineer, Nigeria, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing changed. Sadly, it is because I did not use Stack Overflow over the past few years.",
+				"value": "Academic researcher, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "With AI, the need to visit SO was almost nil. Now very rarely when AI hallucinates or not able to fix issues for more than 30 minutes, I will visit SO. And very rarely I ask help.",
+				"value": "Founder or entrepreneur, India, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Not many useful/interesting questions coming up.",
+				"value": "System administrator, New Zealand, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Rely on SO less if my question/problem is less general or fundamental",
+				"value": "Academic researcher, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Unfortunately googles AI results at the top of every search have decreased the amount of times I view stack overflow posts.",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow only when I can't find a solution using AI tools.",
+				"value": "Developer, full-stack, Italy, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "use it less for all kind of things (box on previous page suggested for simple things only)",
+				"value": "Developer, back-end, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "LLM's have aggregated most of the stack overflow knowledge base. It's not fair, but still using agents as it works as fast speedy search, rather then dealing with traditional search engines that does not relate to my context.",
+				"value": "Developer, embedded applications or devices, Lithuania, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "With AI, the middleman (Stack Overflow) has been axed. Therefore, I use it way less",
+				"value": "DevOps engineer or professional, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I simply stopped using it. AI responses are way better and do not cook me every time I ask for something.",
+				"value": "System administrator, Mexico, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I no longer use it.",
+				"value": "Developer, back-end, Sweden, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "LLMs refer to articles but just to verify, I occasionally still visit to read through more linked articles and comments for a better understanding.",
+				"value": "Developer, mobile, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Tasks that I think are not very important or need to be done on urgent basis and I feel searching on SO will take time are now directed to an AI.",
+				"value": "Student, India, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO used to be filled with trivial questions, whereas now, only the worthwhile stuff remains.\nLLMs act as first-level support for beginners, making SO more useful to me.",
+				"value": "Architect, software or solutions, Austria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use AI when I do not find a solution directly on Stack Overflow when searching",
+				"value": "Student, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "used to find answers via google, but i dont google things any more",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I have *started* using StackOverflow since adopting AI in order to \"go back to the roots\" (I understand an actual adherance to the principle would require RTFM, but I digress); I generally only use AI to have \"conversations\" about competing design options, and I don't use it like a search engine in natural language.",
+				"value": "Developer, back-end, Brazil, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "Don't really use it at all anymore, however i assume many answers still come from Stackoverflow (given by AI, coworkers, etc)",
+				"value": "Developer, full-stack, Netherlands, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI",
+				"value": "Educator or instructor, Morocco, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I almost stopped using it completely",
+				"value": "Developer, full-stack, Israel, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I don't find it necessary for most tasks.",
+				"value": "Data or business analyst, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Google search puts AI results at the top, so even if I wanted to go to stack overflow, the answer is always there before I can click into the site",
+				"value": "Developer, front-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "The AI option in the browser provides simple answers to the technical questions and it helps to analyze the issue quickly. For deeper information, I usually tend to search in depth but for simple issues this quick ai help is very useful.",
+				"value": "Developer, back-end, India, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "in the past came here more often through web search, now less so because of ai. still a much needed resource.",
+				"value": "Founder or entrepreneur, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "It's just not a useful resource anymore - the questions are either better answered by AI or reading the docs, or are not gonna be answered (or at least not gonna be answered well, potentially not by a human at all) on stack overflow.",
+				"value": "Hardware engineer, Ukraine, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Used rarely as there are too many obtrusive adverts hiding the information I am looking for, ai content often is unreliable and has wasted much of my time, this is a retrograde step",
+				"value": "Retired, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I stopped using it because AI just helps me without belittling me like the people on this site do. AI doesn't have a team of obnoxious mods constantly telling me my questions are invalid. It doesn't have pedantic no-life users like the one you guys have here named Halfer, who is allowed to make thousands upon thousands of edits to everyone's questions/answers across the site just to remove normal human things like saying \"Any help is appreciated :)\" at the end of a question. Ironically I feel like AI treats me more like a person than this site, its mods, or its users do.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Simple straight answer questions I still go to SO for, mainly through google. Anything more advanced I go to ChatGPT for. I often don't end up getting the right answer in SO, but I do in ChatGPT.",
+				"value": "Developer, back-end, Netherlands, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I never use it",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I barely google questions anymore, leading to less StackOverflow exposure",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Answers now seem to be less useful and relevant, but that's a long-term trend with StackOverflow. Also, the attempts at reputation farming have gone way up, people who snipe in with complaints about question form without actually knowing enough about the domain to know that the information is, in fact , there, get upvoted too often.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Less usage as AI can normally clarify what I need. It has become more valuable when I need a solution to something out of usual and specific.",
+				"value": "Founder or entrepreneur, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I ignore AI, so no change because of that. But I see myself increasingly in GitHub issues or documentation there than in SO.",
+				"value": "Developer, back-end, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "With ChatGPT, I no longer need to sift through lots of posts.",
+				"value": "Developer, embedded applications or devices, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Ai is doing better job . Made search quicker , saved lot of time",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI but also the community - questions being closed without good reason",
+				"value": "Developer, full-stack, Australia, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "My questions and answers used to get more votes and comments, which encouraged me to keep contributing. Now I get much less engagement, which makes it less interesting to visit the site.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I click on the website when googling problems less often because of AI",
+				"value": "Developer, game or graphics, United States of America, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I google less, thus find fewer SO results.",
+				"value": "Architect, software or solutions, Sweden, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I get the vast majority of answers implicitly when working with LLMs and visit Stackoverflow a lot less. Sometimes not once in a month. I also noticed that the number of people viewing and upvoting some of my posts (including some that got a steady stream of upvotes for many years) are barely getting any views and upvotes any more.",
+				"value": "Engineering manager, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't google anymore",
+				"value": "Developer, back-end, Portugal, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I rarely use it for simple syntax or API questions anymore. I still use it for conceptual questions.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it to have different opinions on ambiguous topics",
+				"value": "Developer, full-stack, Ukraine, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'd have spent longer getting the answers I get from AI now from Stack Overflow. These are the small questions only",
+				"value": "Developer, full-stack, Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I used to visit many different pages and test multiple answers; I visit them less often now, but with more purpose, such as fact-checking, which is very important for the final result.",
+				"value": "Developer, front-end, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Not the initial entry point when investigating issues anymore. Used more as a source.",
+				"value": "Developer, back-end, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It's still the highest trust point I have for actual debugging. My simple context / syntax lookups have often been solved with AI but finding complex application SME is still often coming from SO",
+				"value": "Senior executive (C-suite, VP, etc.), United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I Only visit SO for complex and framework-specific questions, that AI fails to answer correctly.",
+				"value": "Data engineer, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Nowadays, I spend most of my time doing hardware development, with my software development primarily being devoted to simulations and some occasional systems administration.",
+				"value": "Hardware engineer, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I come to verify, most useful LLMs blocked on corporate network",
+				"value": "Developer, front-end, South Africa, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO has become like a time capsule, where you find lots of answers for older technologies and stacks. But for newer ones, the questions / answers dwindle.",
+				"value": "Developer, desktop or enterprise applications, Austria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO (the site, not the Network Formerly Known As SE) feels like the equivalent of Wikipedia for devs; in the sense that it is an outpost of human generated verifiable trusted knowledge. You are not doing a good job of keeping it that way (SO for agents? Rebranding? Allowing AI features when the community overwhelmingly dislikes them? Redesign N+1?)",
+				"value": "Developer, back-end, New Zealand, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Used to be my go to place for answers, but unfortunately not any more...",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I appreciate human answers more than before.",
+				"value": "Developer, desktop or enterprise applications, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Recently I use Google to search for answers and many times the AI generated responses shown with search results contain a good enough answer",
+				"value": "Database administrator or engineer, Mexico, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "With AI, it's become rare that I need to reach all the way to Stack Overflow for answers.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it more for specific questions, like how to fix a bug that only seems to occur on specific versions in specific environments",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I already dislike Stack Overflow because of its use of gamification as a motivator and emphasis on accepted answers, which have a good chance to not be the correct answer.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "My SO use is decreasing due to a few disincentives I experience: Constant arguing about closing questions that have a significant amount of votes, and even have accepted answers. My reputation being docked when others have their accounts closed. Sharply decreased volume of people seeking knowledge in my area of expertise, probably disincentivized for reasons similar to my own, especially squabbling about meta questions instead of discussing the technical content.",
+				"value": "Retired, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Ai can answer most og my question with the project context.",
+				"value": "Developer, full-stack, France, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use AI instead",
+				"value": "Developer, full-stack, Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "StackOverflow answers feel less current because less people are using it since AI slop took over. It used to be great but now you're lucky if any discussion has happened about your problem in the past 3 years.",
+				"value": "Architect, software or solutions, Canada, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Quick answers provided by Google usually reduces the incentive to go to Stack Overflow, even though the answer probably comes from there.",
+				"value": "Developer, front-end, Canada, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I could spend 20-30 minutes reading several different posts on StackOverflow and then another 30 minutes implementing the code myself, or I could just fire up Claude Code and have my code solution implemented in 5 minutes.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "It has changed because i am able to look up multiple things in LLM and have a conversation around them. It is sad because stackoverflow has helped me and millions of developers so much for more than a decade. A great example of what community building participation is. I really want it to prosper and not to shutdown. Plz innovate more and get the community charged up again. Thank you for everything.",
+				"value": "Engineering manager, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'm hesitant to interact with Stack Overflow, because it too, has inserted some kind of generative AI tooling, which I have no interest in and actively detest. It is a blight on Stack Overflow's underlying idea of community built questions and answers.",
+				"value": "Developer, front-end, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I had to first read, understand and then combine multiple questions/answers to find the solution to a specific use-case. This could take hours or even days when fighting a problem. I now get pretty good answers directly by working with LLMs.",
+				"value": "Architect, software or solutions, Greece, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI makes it easier to find answers",
+				"value": "Engineering manager, Greece, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Most typical issues I would go to SO for are handled by AI. I still go for SO for very simple things I know I can find quickly there or when AI failed me.",
+				"value": "DevOps engineer or professional, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It’s no longer a hub for simple questions.",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "I find links to SO from ai responses instead of search engine results",
+				"value": "Developer, back-end, Poland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "more suspicious of any answers, more anxious to verify suspicious answers from other sources",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it more to find conversations where people are experiencing my same issue. Used now to calm down about issues or errors I am experiencing, finding other conversations about my topics helps me.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Visit only for complicated problems / examples",
+				"value": "Developer, full-stack, Ukraine, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I work in a field when usually internet has no answers to my questions",
+				"value": "Developer, full-stack, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I see less recent questions/answers, so it is getting less relevant. Unfortunately.",
+				"value": "Software engineer, Portugal, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I still look at Stack Overflow for most questions. I often get there from a search query. I still prefer Stack Overflow to AI responses in most cases.",
+				"value": "DevOps engineer or professional, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It has become bad with AI integration, bad community work, weird logos, removal off job ads.",
+				"value": "Developer, desktop or enterprise applications, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Since I started using AI tools for coding and research, my visits to Stack Overflow have dropped to almost zero - which honestly feels a little unfortunate. I miss the days of spending hours searching for the right solution and finally discovering it on Stack Overflow!",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, Pakistan, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Visit less StackOverflow, because AI already codes all, gives the answer, fixes bugs or make research to the documentation. Moreover, StackOverflow does not appear in top results or even on first page anymore.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing. I don't use AI so I still use Stack Overflow the same amount",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow less, because the AI has scrubbed all content clean anyway and regurgitates what humans have written in less time to find an answer. It's a sad reality.",
+				"value": "Developer, back-end, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "The AI is now providing the answers, presumably trained by stack overflow data, so 90% of things can be answered without going to stack overflow. AI provides a more convenient and easier way to satisfy the user's needs. Stack overflow contains the cleanest more reliable data. I suspect that AI providers would be willing to pay a premium for this data, perhaps that'll be the new way to monetise the site as people will visit less and less over time but the data it contains will still be valuable.",
+				"value": "Developer, back-end, Thailand, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI summations and assistants in search engines have taken to reading Stack Overflow to either surmise (often wrongly) or action the questions I ask. I've now found search engines no longer link to relevant SO questions/answers, and instead link to less accurate matches with answers completely different from the solutions for which I'm searching.",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "No longer solving impossible to fix problems. Most issues I encounter already have answers on SO or the library documentation page. LLMs are better at aggregating documentation now and it is quicker to verify what the LLM suggested than to ask the question all over again on SO.",
+				"value": "Developer, back-end, Australia, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "SO rarely comes up as a source when doing AI assisted searches.",
+				"value": "DevOps engineer or professional, Canada, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I visit far less as AI agents most of the time provide me with an appropriate solution.",
+				"value": "AI/ML engineer, Austria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I start with asking LLMs. LLMs might search SO. I go to SO as a source that an LLM's response references.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it less overall because of AI, but also because I'm more knowledgable in some areas.\nHowever, for edge cases, I still prefer going there that using AI.",
+				"value": "Academic researcher, France, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "A lot less questions get asked, so a lot less for me to try and answer - and less interesting answers to notice, read and comment on. And because I do answer questions, I'm suddenly one of the top users for a week, or a month, or a quarter, when before I was very far from that.",
+				"value": "Software engineer, Palestine, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I more rarely open SO because AI usually provides an answer before I need to click on google search result that leads to SO.",
+				"value": "Developer, game or graphics, Serbia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to contribute heavily (still in the top 0.25% I think, 1k answers posted) but stopped when it became obvious the platform would tolerate lazy people who just wanted somebody else to do their work for them. You needed to be stricter but you chose to maximise low quality engagement for the sake of engagement.",
+				"value": "Founder or entrepreneur, Singapore, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI replaced search engines for simple and complex programming questions.",
+				"value": "Architect, software or solutions, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I've gotten better at finding newer answers to old questions, and answers with more consensus than others",
+				"value": "Academic researcher, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I had already stopped asking and answering questions many years ago (I last asked a question in 2013, and last answered a question in 2010). But nothing has changed; I search the internet for questions, and often results bring me to StackOverflow.",
+				"value": "Engineering manager, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "not much really\nAI is cool tech but it really can't think and stack has people who can\n(uwu mrrp mraoww nyaaa :3)",
+				"value": "Hardware engineer, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "For finding answers and complex logic, same as before AI",
+				"value": "Architect, software or solutions, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to arrive at Stack Overflow via search engine searches. Now I mostly get my answers directly in the terminal from an AI agent, or via my search engine's AI summary. I'd only visit Stack Overflow if I wanted to verify the answers, and see the rationale behind those answers from the humans who came up with them.",
+				"value": "Developer, back-end, Canada, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I only use Stack Overflow to verify AI output now or see how an error/issue I’m facing has been solved by others after AI output was continuously wrong.",
+				"value": "Architect, software or solutions, Nigeria, Stack Overflow user status is: I don't use Stack Overflow"
+			},
+			{
+				"slice": 0,
+				"response": "I have used SO considerably less and have only resort to it recently to ask a more theoretical question about things that documentation of the tools/platforms I'm using does not clarify and even for that I mostly go to Github/Gitlab or wherever they are tracking issues reported by users",
+				"value": "DevOps engineer or professional, Portugal, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it less for seeking answers to my programming related questions. AI makes it faster to find answers to my questions.",
+				"value": "DevOps engineer or professional, Honduras, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow to find answers to edge cases or read the discussion about how things can be done multiple ways. AI answers are far less controversial and may lead you down a confident but incorrect path",
+				"value": "Data engineer, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "not fast and customised like my AI",
+				"value": "AI/ML engineer, Kenya, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I was never a user on Stack Overflow. I only ever answered questions out of boredom.\n\nThanks to AI, that boredom is now gone, so I effectively don't go on Stack Overflow at all anymore.",
+				"value": "Developer, AI apps or physical AI, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "SO is a nice way to avoid AI-generated answers.",
+				"value": "Applied scientist, Norway, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I largely distrust everything published on the web from ~2024 onward, including answers on Stack Overflow/Stack Exchange.",
+				"value": "Developer, embedded applications or devices, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "\"Advice\" and other ways of answering questions where it's more of a discussion than a question/answer format is muddying the waters so am moving back to other forums (MrExcel)",
+				"value": "Data or business analyst, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI",
+				"value": "Developer, full-stack, Israel, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Used to be the first Google answer. Now I ask an LLM first, Google second",
+				"value": "Developer, back-end, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It became unnecessary when I could ask AI. Its more than just the questions, its the conversation that can be had and the way you can play around with concepts and ideas",
+				"value": "Developer, back-end, Nigeria, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow's community can be toxic for some questions. An AI doesn't judge what you ask and generaly provides it's answer faster. You only need to verify source and quality a bit more.",
+				"value": "Developer, full-stack, Belgium, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow has solutions for when AI can't find a solution",
+				"value": "Developer, full-stack, Sweden, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I just forgot I created an account so I did not use it",
+				"value": "Other, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Unfortunately, AI replaced SO. It's sad as it has been trained for sure on millions of human written answers.",
+				"value": "Developer, embedded applications or devices, Italy, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I stopped using stack overflow since IA can give answers quick and mostly correct",
+				"value": "Developer, full-stack, Argentina, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Retirement and AI.",
+				"value": "Retired, Denmark, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Used to verify typically bad or superficial AI summaries in search engines.",
+				"value": "Cloud infrastructure engineer, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I still use Stack Overflow to get developer opinions and experiences about the best solutions to specific problems.",
+				"value": "Financial analyst or engineer, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use the search engine as much for websites. The ML model answers my question in the chat",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO tone of conduct of contributors made it an unpleasant environment.",
+				"value": "Architect, software or solutions, Philippines, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I now use it after I get frustrated with my AI 'searches'.",
+				"value": "Developer advocate or developer relations professional, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack as a resource when I encounter roadblocks. My usage has not changed over the years.",
+				"value": "Data or business analyst, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it significantly less; almost never visiting anymore :/",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have not used Stack Overflow at all in the past couple of years.",
+				"value": "Engineering manager, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI coding has taken over the task of troubleshooting. I realize that this is a circular logic, especially when it comes to new technologies.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI searches StackOverflow for me, so I no longer need to access it explicitly very often.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Due to SO's continued move toward AI, discussions, and completely ignoring user feedback, I no longer provide answers.",
+				"value": "Developer, desktop or enterprise applications, Canada, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI tools answer questions in a less condescending manner than many SO answers.",
+				"value": "Data engineer, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't trust answers posted ten years ago to work today.",
+				"value": "Developer, front-end, China, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "About no change, as I may use LLMs, but I trust human SO answers, unline LLMs answers",
+				"value": "Student, Latvia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I land on stack overflow, from a search result. I do not start searching there.",
+				"value": "DevOps engineer or professional, Hungary, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I began to value StackOverflow more as a human-centered platform battling the hype of AI platforms.",
+				"value": "Other, Canada, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use AI first, but can still go to Stackoverflow if I'm not satisfied with the answer or if I have any doubts, to double-check.",
+				"value": "Developer, full-stack, Switzerland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "The AI ​​answers all questions. If provided with the right context, the AI ​​gives answers specific to my situation. It is fast and has become extremely reliable over the past year.",
+				"value": "Developer, full-stack, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't want my answers to fuel AI as it contributes to the inferno resulting from climate change",
+				"value": "Educator or instructor, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stopped to be as useful after AI.",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI :(",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it to compare AI responses with community knowledge.",
+				"value": "Founder or entrepreneur, Brazil, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "For small questions it's easier ask AI than search on StackOverflow, for specific code questions AI can generate a working example faster compared to searching multiple SO question and cobbling it together yourself",
+				"value": "Data engineer, Netherlands, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI can find answers from other sources, SO is only one of them. Almost never go to SO directly anymore.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I've tended to answer many more questions than I ask - with the obvious reduction in traffic to the site, there are less opportunities to respond to questions.",
+				"value": "Developer, full-stack, Denmark, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use real experienced user answers and the voting system to check AI generated answers, and other possible solutions to be more balanced on my solution paths.",
+				"value": "System administrator, Netherlands, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I use it more to get specific code snippets than to answer general questions, i.e. things that are also answerable with documentation alone. I used to use SO for these simple questions but AI Chatbots can be asked further questions directly which makes it easier to learn the basics of a language.",
+				"value": "Developer, game or graphics, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing, only the need has decreased due to new tasks.",
+				"value": "Architect, software or solutions, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I guess the biggest change is, with how vast the general knowledge AI has to offer, I spend less time looking up documentation, questions and answers on SO. Of course, if there's a complex issue that I know I can't really disect for an AI to digest and spit out a useful result, or it's something I don't really trust AI to reliably understand, I tend to use search engines to seek out an answer, and lots of the search results lead me to SO. I've begun my coding journey on SO with a negative reputation, for asking rookie level questions, well back in 2015-2016-ish, when I was quite young and cheeky, and didn't really know what I was doing. I was frustrated, but eventually, in a matter of couple years, I understood that the key to getting an answer was to disect the issue as thoroughly as possible, while leaving unimportant details off. SO at its peak was actually like 5 years ago, and I used it frequently before the era of AI came up. After AI has become part of our lives, majority of my troubleshooting was asking AI what to do. Some code doesn't behave like it should? Ask AI to find the root cause. And it does, with 99% accuracy, which is astounding. Like seriously, before that, I would have to spend hours looking up documentation, asking questions on a forum, waiting for answers, only to find out that the culprit was a simple typo in my code. AI finds it in seconds. But I don't think that the days for SO are over. I still find it quite useful for complex problems when development has already begun, and where AI seems to lack a good sense of context to reliably provide useful answers. Otherwise, I suppose the days of rookie questions on SO are over. :D",
+				"value": "Student, Czech Republic, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it less because it's usually faster to ask an AI or read the docs. Usually both.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I stopped visiting Stack Overflow entirely.",
+				"value": "Developer, desktop or enterprise applications, Italy, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Not much. I still highly value it.",
+				"value": "Platform engineer, Switzerland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I primarily use it to source check claims from AI to see the context that source was from.",
+				"value": "AI/ML engineer, Sweden, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Previously I googled my question (e.g. a simple CLI command arguments), opened Stack Overflow and read answers, now I query my AI tool directly and never get to stack overflow",
+				"value": "Senior executive (C-suite, VP, etc.), United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I never used SO directly, always googling an issue or context of problem and SO was always in top-5 resources to visit. Now I do it very rarely, since most of the code is generated. Only for verification or brainstorming some ideas.",
+				"value": "Developer, back-end, Ukraine, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "barely use it nowadays as compared to pre-AI",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "There are less questions to answer",
+				"value": "Engineering manager, Israel, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I still rely on Stack Overflow partly because it does not allow AI-generated content, so I can spend less time trying to verify that a proposed solution is authentic and accurate. It would not be helpful to have AI-generated content on a trusted site.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Used it mostly passively, but with AI have less incentive to move to more active use with contribution, because I don't get the friction that might push me towards it - unless I actively choose to contribute to it as part of my obligations in life.",
+				"value": "Other, Israel, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI can answer to any question more rapidly and stay focused on the development flow feels to make me more productive, except when I discover AI responses aren't appropriate",
+				"value": "Developer, full-stack, Italy, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Not needed as often. AI and code-completion are effective enough.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I'm more cautious about what I read online, anything could be an AI answer without grounds.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "The speed at which I get answers through AI is why I don't use Stack Overflow.\n\n\n[The text abruptly shifts to a seemingly unrelated topic:]\n\n[The text abruptly shifts again:]\n\n[The text abruptly ends here ... shifts again:]\n\n[The text abruptly ends here:]\n\n[The text abruptly shift",
+				"value": "Developer, front-end, Spain, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Just as before - come from google search mostly. But such occasions are now rare. Also, I always check carefully when there is an answer for a complex question - such are very valuable.",
+				"value": "Developer, back-end, Georgia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I still use it to find simple/generic answers, but for complex or specific questions I'll either work on it myself/with coworkers or occasionally ask ai",
+				"value": "Developer, mobile, New Zealand, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow now less often has an answer to my question. Many answers are out of date, with many searches yielding more matches that are a decade old than recent.\n\nAnd when I've asked a question recently, it's been policed more, with the people who are about more interested in finding reasons to close my question or deem it invalid than there are people trying to answer it.",
+				"value": "Developer, desktop or enterprise applications, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I've progressively used Stack Overflow less, first because of the emphasis on AI-generated answers, and later because it was easier to query ChatGPT or Claude.",
+				"value": "Platform engineer, Chile, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I often use it as a senior-level fact-checker. AI tools might tell me one thing and I want to verify it from a more trusted source or older reference data, which Stack Overflow is and always will be a great tool for.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Google now can answer most problems, SO has most questions already answered, and AI can solve the simple problems, and I can solve the more complex ones specific to my project.",
+				"value": "Student, United States of America, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I continue to look for answers there, but I wonder how long it will last because it seems like management is doing its best to drive the community away (pushing AI features no one wants, increasingly intrusive ads, failing to listen to community feedback, etc.)",
+				"value": "Data or business analyst, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "My change in using SO is mostly driven by changing role towards managerial tasks, which involves less coding",
+				"value": "Product manager, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI has reduced the frequency of visiting the site, as many problems and errors are now generally debugged and fixed by AI agents.",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Claude can do it much better",
+				"value": "Developer, front-end, Belgium, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I do not search coding problems the same way anymore. AI tools have lead me to laziness and my personal learning curve has taken a dip. I have been actively trying to come back to coding by avoiding AI tools and getting back into conventional coding practices again.",
+				"value": "Developer, front-end, Finland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "For issues more complex than syntax / arguments of a command, I don't trust the abstract produced by AI-based searches (I mostly use DuckDuckGo as the starting point)",
+				"value": "Developer, back-end, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use it much anymore. I was just here for reliable answers.",
+				"value": "Developer, back-end, Hungary, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "My traffic on Stack Overflow has almost dropped to 0. That's why I stopped responding to questions. The only reason is I goto AI tools like ChatGPT, Gemini, etc. more to get answer to any question",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "It is no longer the main way to retrieve information. AI chat has replaced it, but I still use it for verification.",
+				"value": "Developer, mobile, Italy, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I don't really use it anymore.",
+				"value": "Developer, desktop or enterprise applications, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI has the answer most of the time",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Since everybody is using AI, SO has become kind of stale with newer questions and answers missing.",
+				"value": "Other, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I feel like the need has reduced quite a lot; most of my queries are answered using Google AI summaries.",
+				"value": "Senior executive (C-suite, VP, etc.), India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Since AI tools can usually search online resources, including Stack Overflow for me, I open SO less and more rely on AI generated summary. However I always ask AI tools to give me proper references and I will check SO if I don't trust AI tools' answer.",
+				"value": "Data engineer, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow when I come to my senses and realise AI has disappointed me once again.",
+				"value": "Cybersecurity or InfoSec professional, Norway, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI pulls data directly from Stack Overflow, so you can easily verify various details through it.",
+				"value": "Architect, software or solutions, Japan, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "If I search for simple context or name check of something that I've forgotten, Google's AI will usually answer and I'll recognize if it's correct. I don't trust AI for anything more complicated.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Simple questions are now answered more readily by an AI response; complex and domain-specific questions are also now handled better by models that have access to my exact local context rather than requiring me to abstract into generic cases to search on public resources like Stack Overflow. \n\nI still appreciate it for one-off search as a quality reference however, especially when the topic at hand is specific in a way that established resources like Stack Overflow serve better (and AI performs poorly at, like steps to perform something in an IDE, which AI often produces poor or nonsensical instructions in my experience).",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI gives answers faster. I don't need to search.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow more now than ever before.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Search engines have reduced (but not removed) the usefulness of SO",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "In browser AI tools often answer the question and so sometimes I don’t need to enter SO.",
+				"value": "Developer, full-stack, Costa Rica, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't need to look up as many things because AI can answer them for me. Also, many of the solutions on there were outdated and AI has more up-to-date answers.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It's still one of the first place I go looking for answers, but if I can't find what I'm looking for I might use an LLM.",
+				"value": "Other, France, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Rarely visit SO anymore because the questions are usually so specific that finding the answer is harder that asking an LLM to search for an answer",
+				"value": "Developer, back-end, Spain, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Since AI is scraping from all over the internet including Stack, I got all my solutions faster while discussion with AI tools. After Antigravity IDE launch, it became never visiting tool somehow. I have OpenCode inside, along with Paid DeepSeek solution and also AntiGravity has its own free agents tokens too.",
+				"value": "Developer, full-stack, Pakistan, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Search engines forcing AI on us use content from SO to bring answers to the front page while actually discouraging driving traffic to the source of that content. Now need to visit the site directly and browse rather than rely on search engine traffic to find what I'm looking for.",
+				"value": "Hardware engineer, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Wary about inaccurate AI-generated answers and concerns over plagiarized content.",
+				"value": "Developer, full-stack, Brazil, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing much, I still read through the comments and answers. But for simple questions the ai of the search engine (google or duckduckgo) gives me a good enough answer.",
+				"value": "Data engineer, Luxembourg, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing.",
+				"value": "Developer, full-stack, Austria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use it directly anymore.",
+				"value": "Developer, mobile, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "The general public relying on AI has reduced the amount of new questions asked on StackOverflow. I expect SA to become less useful for new technologies that come out in the future. This might also hurt the AIs as they will not have high quality training data.",
+				"value": "Software engineer, Greece, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I can ask AI (Google Gemini or Chat GPT) for a lot of the questions I would have asked Stack Overflow and then follow up if the response doesn't work.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Most of the debugging/code related issues solved internally in the IDE by ai agents. This reduces my visits to stack overflow",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "fetching the correct information is far more easier with AI tools. integrate yourself to search results in different ways. not in a conventional search engine way. i believe google and others soon will provide paid ai answers option. take it.",
+				"value": "DevOps engineer or professional, Turkey, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I can generally find information from other sources, including generative AI, though I still look at it for some concepts particularly for the discussion and multiple perspectives.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack overflow is human experience to solve complex problems. That is totally different from an AI experience.\nAI starts from the scratch to solve a problem. You have a discussion with it providing lots of inputs and then it leads to the answer.\nStack overflow lets you do it on your own. You find a similar scenario of your work in stack workflow that was solved. You try to adopt and implement your own solution.\n\nStack overflow involves human creativity. If I find it on google search I would definitely look for it. But recently, search engines don't list stack overflow answers on the first pages.",
+				"value": "Architect, software or solutions, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "My regular use has changed to occasional use",
+				"value": "AI/ML engineer, India, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I'd often end up in SO through web searches and I now replace a lot of the web search I would make with AI chats which will often not lead to SO.",
+				"value": "Developer, full-stack, Portugal, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "No changes. I still enjoy contributing to this intelligence node.",
+				"value": "Academic researcher, France, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I go less often because I'm better at reading documentation.",
+				"value": "Data or business analyst, Canada, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I am now able to always get a satisfactory response from AI that is better tailored to my exact context, problem, constraint and needs, than SO ever was. I find the answers I obtain from AI today to be just as accurate, up-to-date and verifiable as SO most of the time.",
+				"value": "Software engineer, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI agents can typically answer my questions without me needing to visit websites directly.",
+				"value": "Developer, front-end, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I trust Stack Overflow more because the answers come from humans and not from overpowered predictive text.",
+				"value": "Academic researcher, Spain, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I tend to the search-engine's AI responses now as they are often misleading or just plain wrong. (If they are right, it's usually because they have parroted an SO response). I just go straight to the first SO result.",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I found other sources of documentation and solutions to problems.",
+				"value": "Student, United States of America, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow is a terrible platform. It's very unfriendly to beginners, the people there are arrogant, and most of them can't solve problems.",
+				"value": "Student, Nomadic, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Decreasing traffic and fewer questions leads to little willingness to contribute.",
+				"value": "Developer, front-end, Viet Nam, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "LLMs can answer specific questions as opposed to general or related questions that Stack Overflow has",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "In general i use more llm chats and less google and stack overflow",
+				"value": "Developer, back-end, Poland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "It no longer feels like a community, so I am not interested in giving back, as it will just be fed to AI. It still has valuable answers from the past, but it doesn't feel like it is improving or that I should spend my own energy in that.",
+				"value": "Developer, game or graphics, Netherlands, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI agent answers most of the time is up to date, while Stack Overflow questions-answers most of the time is outdated.",
+				"value": "Architect, software or solutions, Lithuania, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Currently, I only use it when researching complex topics that cannot be answered definitively by an AI agent.",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, Brazil, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Moderation somewhat eliminated my usage for the site. Sometimes you need copies of the same topic, as the answers to the topic have changed over the years, or often are from a different perspective.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Barely use it these days as AI answers my questions",
+				"value": "Data or business analyst, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I visit stack overflow to see more deep information after I asked the bots.",
+				"value": "Developer, full-stack, Bulgaria, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Initially I visited Stack Overflow less, for simple and complex questions. Then I realized the AI generated answers were plagiarizing Stack Overflow, robbing it of traffic, and still subject to incorrect results anthropomorphized as \"hallucinations.\" So now I deliberately ignore the AI generated answers and go directly to Stack Overflow results (unless the SO result is not in the top five results, in which case I may go to some other non-AI generated link first).",
+				"value": "Founder or entrepreneur, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I mostly answer questions in the [roblox] tag. Since AI tools have become more prevalent, no one asks questions in this forum anymore.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow is moving toward being an archive of information. More of the answers I've been reading are no longer active, but, contain information that is still useful, although it seems to require asking a question in more ways to get to the useful information than it used to.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I usually click Stack Overflow as a source that an LLM agent linked, unlike before where I would click it in a search result whenever I had to troubleshoot something.",
+				"value": "Student, Philippines, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow can provide valuable, varied viewpoints, to allow you to make an informed decision about how to solve a problem, or approach something new. This matters even more now, with AI code generation.",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "More content on AI. Otherwise, it is my #1 source.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Ironically I use Stack Overflow for the smaller quick questions because it's easier to search a question and keep context in my head than to give AI the whole context. More complex problems and problems that require established context I use AI tools.",
+				"value": "Engineering manager, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "with AI , we don't need to spend time generally on finding the solution. sometimes AI does go stray",
+				"value": "Architect, software or solutions, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow got outdated and the no duplicates rule kept it like that. Nowadays, official documentation, issue trackers, source code review and, sometimes, LLMs can do it a lot better, faster and with less friction.",
+				"value": "Architect, software or solutions, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'm using my ai dev tools to find solutions, so less need for S/O directly",
+				"value": "Retired, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "agents can access knowledge for me, so I don't need to visit, unless the agent is hallucinating (e.g. on less popular topics, unusual problems)",
+				"value": "Architect, software or solutions, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Only visit when my problem is really hard to solve and claude code is not anale to help me",
+				"value": "Architect, software or solutions, Italy, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I mostly code in Julia and SystemVerilog. discourse.julia.org is better than Stack Overflow for Julia. For the latter, Stack Overflow is not always helpful for SystemVerilog, hence my increasing LLM use this year.\n\nStack Overflow is still the best for my Bash/Shell scripting needs.",
+				"value": "Academic researcher, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I hesitate to use nowadays Stack Overflow due to many questions getting snarky answers or being closed for poor reasons.",
+				"value": "Founder or entrepreneur, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI farms the correct answers so it reduces the question turn-around time to ms.",
+				"value": "Data engineer, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I use less often, but still useful when I need an authoritative and comprehensive answer.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I rarely go to stack overflow now",
+				"value": "Project manager, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I haven't used SO in quite some time, even before being pushed towards AI tools adoption. Often questions were marked as duplicate, yet the \"accepted\" version is no longer applicable because of changes in libraries, code, etc. Now, with AI, I cannot even think of the last time I actively sought out an answer to a question on SO.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I turn to ChatGPT more, or to internal AI-driven code analysis tools",
+				"value": "Architect, software or solutions, Portugal, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I just don't turn to SO first... Right now, I think of a SO search as \"the big guns\"... if the AI is lost or unhelpful, I will sigh and say, fine, I'll look for it myself.",
+				"value": "Developer advocate or developer relations professional, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I could ask copilot answers when I got stuck.",
+				"value": "Retired, Netherlands, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Contributing is less rewarding. Answering AI generated questions is not fun because AI has poor communication skills.",
+				"value": "Developer, full-stack, Sweden, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "There's a lot less activity on the site last year. Almost no questions in general programming topics.",
+				"value": "Developer, full-stack, Lithuania, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "From coming to stackoverflow multiple times a day to not coming at all",
+				"value": "Developer, front-end, Israel, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Typically I now only use SO for verification or comparision of AI generated answers.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "With AI chat tools offering answers often tailored more closely to the question I find myself visiting Stack Overflow less often. Stack Overflow is still a valuable source of information to me.",
+				"value": "Cybersecurity or InfoSec professional, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Visit less for complex questions that are hard to use traditional search engines to find the correct Stack Overflow post for",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I might need to visit less because some problems are solved by ai",
+				"value": "Developer, back-end, Netherlands, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI made me comprehend Stack Overflow's value, so I go to the main source nowadays.",
+				"value": "Developer, back-end, Russian Federation, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Simply put, less. Stack Overflow is a great supplement when you know what you don't know. LLMs are simply more versatile because you don't have to know exactly what you don't know just yet.",
+				"value": "Data or business analyst, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "If I think my use case is very context dependent, I tend to consult Stack Overflow less",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "I just ask AI for quick questions like \"how to iterate through X using Y\" instead of searching the web.",
+				"value": "Developer, desktop or enterprise applications, Poland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "My usage has dropped significantly. AI assistants have replaced most of my day-to-day searches — I only go to Stack Overflow now for niche or very specific problems that AI can't solve well.",
+				"value": "Developer, full-stack, Ukraine, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Ai can usually answer the questions or direct ne to the SO thread",
+				"value": "Data engineer, Sweden, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI has made it so I write 99% less code myself, so running into coding implementation questions scarcely occurs now. The usual pattern of coding question -> Google search -> Stack Overflow in results broke in all three parts. I have 1% of the coding questions I did in years past, and when I do I ask an agent that usually gives the right the answer, and if I have doubts and end up doing a Google search, Google's AI overview often provides the context I need.\n\nI probably end up on other Stack Exchange sites more than I do Stack Overflow now, with complex system debugging usually leading me to Server Fault/Super User/Software Engineering, or User Experience for design questions.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I was often here asking and reading questions now im rarelly here",
+				"value": "Developer, desktop or enterprise applications, Italy, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI is frustrating. I use it less.",
+				"value": "Developer, full-stack, Canada, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI seems faster then finding answers here",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "use less because AI answers more",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Less light-level access, more in-depth",
+				"value": "Academic researcher, Canada, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI agents answer questions which sometimes link to Stack Overflow, as opposed to me searching on Stack Overflow myself",
+				"value": "Developer, full-stack, Belgium, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI has summarized the information from various sources which I would sometimes have to read through multiple posts on SO to find one that specifically addressed my issue.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI made searching for solutions less of a need",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use SO directly less often. When I do use it, it’s usually because an AI response cites SO as the source.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Almost no questions to answer and help others.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I mostly use it just to look up GCC NASM vb. error outputs when I run into compiler issues.",
+				"value": "Developer, embedded applications or devices, Turkey, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "Me visiting Stack Overflow less has much more to do with Google search being worse and worse than using AI.",
+				"value": "Developer, back-end, Hungary, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I just have less questions in general so use it less",
+				"value": "Developer, back-end, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow has been the number one source of useful developer to devloper information for most of my career. However, using AI tools allows me to get specific answers to my questions and tailored solutions rather than having to translate a SO answer to my environment and context.",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I hope it stays around as a helpful source, so I am more worried about it adopting AI tools.",
+				"value": "Developer, embedded applications or devices, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI has made it less necessary to look for solutions there",
+				"value": "Developer, game or graphics, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I get the solutions from Copilot/Cursor and other AI tools",
+				"value": "Engineering manager, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI LLM that I uses usually gives an output using some tools or features I am not aware of. I can then learn more about it on SO.",
+				"value": "Developer, desktop or enterprise applications, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it via proxy that is genai. It finds and phrase result quicker than me reading all results.",
+				"value": "Developer, full-stack, Poland, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "It doesn't get recommended by Google anymore so it doesn't get much use either. I've also been working on projects where I usually just look at the documentation and don't need to use my Google-fu.",
+				"value": "Student, Belgium, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use StackOverflow hardly anymore both because of StackOverflow management decisions and because of toxic gatekeeping atmosphere, the current state of StackOverflow is a joke.",
+				"value": "Developer, front-end, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to care about growing my stack overflow profile as a way to give back to the community that taught me as well as it would look good on my job applications/portfolio if my account showed decent stats and helpful interactions. I used to spend at least an hour or two per day answering questions or running through review queues - these days I simply don't have the capacity to spend that much time and thus my only contribution is on answers/questions that I come across whilst look for something specific.",
+				"value": "Developer, full-stack, South Africa, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have needed to use it less because I have become more proficient.",
+				"value": "Developer, embedded applications or devices, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I visit it less because I find the AI integration offputting and counter to my ability to view expert advice",
+				"value": "Other, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI chat models completely replaced Stack Overflow in my daily work.",
+				"value": "Data engineer, Lebanon, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "There is less activity in general and fewer questions to answer than before AI.",
+				"value": "Engineering manager, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Probably i visit less for hard questions because it's easier to write them to an ai that understands my bad english or my main language, for easy to write questions, google->stackoverflow is still my first choice",
+				"value": "Student, Italy, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I Don't have to search the internet/links/forums for answers myself anymore. AI does that for me and summarises them",
+				"value": "Developer, full-stack, Australia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I still use it to verify some statements, but a lot of questions are very old, so I rely less and less on it.",
+				"value": "Developer, back-end, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI tools with context of my current code base makes for more efficient and applicable answers to my questions. For personal projects, I am likely to end up at SO for answers.",
+				"value": "Developer, back-end, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use it anymore for tasks highly specific to my context. However, it is still my preferred source for small, straightforward questions (i.e when I forget how to map over a dictionary every other week)",
+				"value": "Developer, full-stack, Ireland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Google AI overview proposes answers from Stack Overflow, but sometimes I go to SO to ensure it's needed case",
+				"value": "Developer, back-end, Ukraine, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "When there is something I need help with related to security/auth then I visit SO for some extra knowledge",
+				"value": "DevOps engineer or professional, South Africa, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't need to use it anymore. Sad but AI tools which take their data from SO have killed it for me for now.",
+				"value": "Engineering manager, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I no longer need to search to find an answer.",
+				"value": "Applied scientist, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I haven't used it for years. Usefulness cratered a while ago.",
+				"value": "Developer, desktop or enterprise applications, Switzerland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I currently ask most of the questions to AI",
+				"value": "Developer, back-end, Spain, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Because I now tend to outsource unfamiliar coding work to an LLM agent at my job, I tend not to consult Stack Overflow as much. Because in my personal life and projects I do not use LLMs, my usage there has not changed, but remains rare as I do not devote much time to coding outside of work.",
+				"value": "DevOps engineer or professional, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Instead of getting there through a search engine, I now get there through AI.",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, Malta, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have gained more experience in my field, and have access to premium information in the form of coworkers. This leads to me needing Stack Overflow less.",
+				"value": "Developer, embedded applications or devices, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I'll only go to SO when I am not satisfied by AI answer in a complex issue. Also when I need more takes on the same issue.",
+				"value": "Engineering manager, Greece, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow more for niche issues and verification of AI output",
+				"value": "Developer, back-end, Romania, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "blame google.. it's no longer a search engine. It used to provide links to a question that were answered (on SO, for example) and I'd go pursue that path. Now, it's AI tries (and mostly succeeds, eventually) to answer your query... bypassing all search results.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use it anymore.",
+				"value": "Developer, embedded applications or devices, Colombia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI does most of my research for me these days. I only sign in to Stack Overflow to see if there are questions that need to be answered, but that hasn't happened for a long time.",
+				"value": "AI/ML engineer, Norway, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "In 2022, I found Stack Overflow to be an invaluable resource. During the early stages of my career, I frequently encountered challenges that were resolved through solutions shared by experienced engineers on the platform. Although troubleshooting each issue took considerable time, the process was educational, and my knowledge expanded with every solution and discussion.",
+				"value": "Developer, back-end, Pakistan, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Less need for research with LLMs",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Use AI to ask questions than stack overflow which takes on longer",
+				"value": "Technical writer or documentation professional, Uganda, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have switched from using SO for simple questions to coming time and time to SO to find solutions for niche or highly algorithmic problems.",
+				"value": "Student, Sri Lanka, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Honestly stopped using it some time ago due to widespread negativity. Questions couldn't be updated or re-asked even if it had been literal years and numerous version bumps since the original ask.",
+				"value": "Engineering manager, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I mainly use SO to help the various communities I belong to. Certain SO communities are seeing less questions, or questions answered more quickly than before. I'm around, there's just less to do.",
+				"value": "Cybersecurity or InfoSec professional, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it more for personal use and for verifying AI answers. But still to learn from other developers.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I now use AI for simple questions, and I visit Stack Overflow mainly to verify answers or dive into advanced details.",
+				"value": "Architect, software or solutions, France, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "I come to Stack Overflow mostly to check out other developers' experiences with certain technologies, and what usually helps me the most is the comments section on answers. Answers about configurations also help me a lot. I feel like I come to Stack Overflow less often to ask questions about programming, syntax, etc.",
+				"value": "Developer, mobile, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Only use it if AI can't answer, or not correctly answers.",
+				"value": "Developer, desktop or enterprise applications, Hungary, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use Stack Overflow less frequently – but specifically for more complex or specialized questions.",
+				"value": "Developer, back-end, Poland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it less because it's AI-focused and I don't use AI.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I curated my own knowledge database because useless AI is becoming impossible to avoid in search engines. This has lead to me being less dependent on both search engines and other sites, like SO.",
+				"value": "Developer, full-stack, Norway, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI answers most of my questions and provides most of my examples now.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I basically stopped using it except for really weird technical questions. Still a better source for deep stuff, but for simple things, AI gets me the answer quicker.",
+				"value": "DevOps engineer or professional, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it less because I ask Gemini specific or simple questions.",
+				"value": "Developer, full-stack, Spain, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It depends on where my Google search sends me. More often these days I'm being given an AI-generated answer, rather than going to a Stack Overflow page.",
+				"value": "Developer, full-stack, New Zealand, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I do not use AI for any development tasks, it has nothing to do with SO. My contributions to SO were killed by SO itself repeatedly violating community trust and shipping misfeatures that make the platform worse.",
+				"value": "Developer, back-end, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Most of what I would need can be easily gotten from LLMs",
+				"value": "Developer, front-end, Nigeria, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "I almost don't visit Stack Overflow now since AI tools entered the room.",
+				"value": "Developer, back-end, Poland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "big tech has their own versions of this which are context specific and contain additional institutional and specific business knowledge",
+				"value": "Cloud infrastructure engineer, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "We usually googling it and SO will be on the first page",
+				"value": "Engineering manager, Indonesia, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "As less and less people are contributing, less answers are fresh and up-to-date.",
+				"value": "Architect, software or solutions, Belgium, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I only go to Stack Overflow to view in-depth answers from verifiably skilled people about technologies I don't fully understand.",
+				"value": "Developer, back-end, Netherlands, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use AI more often because it can find and distill the information I need faster than looking on SO. I will look on SO sometimes when AI just can't handle the task. Also, due to my disability, some people treat me poorly on SO so I try hard NOT to ask questions anymore.",
+				"value": "Developer, mobile, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "For very specific questions, I have other, more convenient and faster options. I only use it if I have no other choice.",
+				"value": "Developer, back-end, Spain, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Unfortunately it has been made redundant.",
+				"value": "Architect, software or solutions, Greece, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Not much actually. SO still provides many valuable pieces of information and AI often points to it. Also, discussions and debates that often occur on SO about questions raised by users are adding a value that AI does not bring.",
+				"value": "Architect, software or solutions, France, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "as far as AI integrated in my work, it replaces StackOverflow for simple or medium tasks, but sometimes maybe useful too, for some examples or explanations from more experienced guys about some technology, because time to time AI is not accurate.",
+				"value": "Developer, back-end, Ukraine, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "When I have expertise in a language or domain, I am more comfortable allowing a model to generate code, or answers to very specific questions I have.\n\nWhen I am learning a new language, I try to avoid AI as much as possible, and I have found Stackoverflow a consistently good source as I have been ramping on Ruby.",
+				"value": "Developer, full-stack, Canada, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I rarely actively go there nowadays, rather than going there looking for answers (and then having to pick out the correct ones from the chaff) I can very often just get the correct answer first time from Claude",
+				"value": "Developer, full-stack, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow offer brick for a solution, while AI Agent can provide not only the whole frame but sometimes even the upholstery. Yet even with AI agent, some bricks goes to the wrong place and I often find the unqie specific brick in Stack Overflow",
+				"value": "Developer, mobile, Hungary, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I use stack overflow to verify the answers from AI",
+				"value": "Developer, back-end, Canada, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I prompt LLMs to cite sources so I find relevant SO answers",
+				"value": "Developer, desktop or enterprise applications, Czech Republic, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "simple syntax questions (e.g. \"how do I sort a dataframe in pandas\") are more quickly answered by an LLM",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI is faster and knows the contex",
+				"value": "Developer, mobile, Poland, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Up to this point I've prefer SO as a reference over AI output but AI models are starting to get better to the point where I might lean towards AI.\n\nBut still SO has some answers that fit my specific needs better than AI can and it still has some edge over AI in that way.",
+				"value": "Student, Finland, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "When I have a problem for which I cannot find solution, AI is likely to have an answer that is usually incorrect but leads to the correct solution. This is why I don't feel the need to ask questions on stack overflow. I still prefer other sources than AI whenever possible, including stack overflow.",
+				"value": "Student, Czech Republic, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I already didnt use it much, the toxic exclusion sucked, people editing my questions to mean something different, etc. The only reason I would currently visit is for a question so niche that it didnt work from AI, or simple searches. Its unlikely.",
+				"value": "Software engineer, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Asking AI instead of browsing to see if the question was already asked.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to answer questions, but these days there are hardly any questions at all related to the topics I care about, so I just have nothing more to contribute.",
+				"value": "Other, Romania, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Visiting frequency briefly decreased due to the ease-of-use for AI answers. However, somehow I managed to remember that the pure joy of programming is problem solving and not mashing together some half-assed responses or \"solutions\" to a question and making it work somehow.\n\nBanning myself from using AI tools for more than a setup phase with a quick overview about my options has actually brought back a lot of joy into programming for me.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "It is no longer necessary to seek information or help, we believe that artificial intelligence has learned from it and prohibits us from ready answers",
+				"value": "Founder or entrepreneur, Morocco, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I possibly visit slightly less if the AI overview has a good answer. I do often skip past the AI overview though because I want to see real life examples from real people in the DEV community.",
+				"value": "Student, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "I usually come to Stack Overflow pages from AI answers more than through google searches. I do think I find the right posts faster with AI. Where I used to have to scroll to 5 or 6 pages to find the right use case, I can usually get there on the first or second try. It is still valuable to go to the actual Stack Overflow post to make sure the AI answer given actually applies to the situation.",
+				"value": "Product manager, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI has replaced many searches, but still use Stack Overflow for verified information",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I hardly ever use Stack Overflow or any other forums any more since I started using Ai to help me code.",
+				"value": "Developer, full-stack, South Africa, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Halted. AI is making stackoverflow increasingly useless.",
+				"value": "Other, Brazil, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I visit Stack Overflow less frequently",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Click on stack overflow sources in Google's AI answers",
+				"value": "Engineering manager, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI will answer my question but if it doesn't know or I think it's wrong then I'll use Stake Overflow to find other ideas or verify answers",
+				"value": "Senior executive (C-suite, VP, etc.), New Zealand, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "In most of cases, I don't use it, because my coding tasks are really simple. My previous Python scripts and AI mostly cover my needs",
+				"value": "Data or business analyst, Ukraine, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Not needing to go for every single question I need an answer to.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "De maneira geral, tenho precisado menos pois meu trabalho tem se tornado mais repetitivo, portanto menos espaço para coisas desconhecidas. Além disso, a IA tem colaborado para centralizar buscas.",
+				"value": "Architect, software or solutions, Brazil, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Fewer unique high quality questions reduces engagement for people who answer them.",
+				"value": "Architect, software or solutions, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "A web search is always my first step before asking a chatbot.\n\nThis search usually leads me to Stack Overflow.",
+				"value": "Student, Germany, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Due to the knowledge LLMs carries there is no need to visit some websites anymore.",
+				"value": "Architect, software or solutions, Germany, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I search using Google Gemini and rely on the fact it will include data from Stack Overflow",
+				"value": "Developer, mobile, New Zealand, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Not much has really changed with my SO usage. It's good that the site isn't choked with AI garbage like a lot of other resources these days.",
+				"value": "Developer, QA or test, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I dont research all the topics anymore and I don't answers questions anymore.",
+				"value": "Developer, full-stack, Netherlands, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I rarely use it nowadays. AI answers the majority of questions.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "it shows up less in search results, largely because the results are polluted with \"AI\" slop based on SO's content",
+				"value": "System administrator, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Now he only uses it to verify some AI responses",
+				"value": "Architect, software or solutions, Venezuela, Bolivarian Republic of..., Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to use SO when starting out to debug criptic compiler errors and search for simple programming patterns. Today I'm much better at searching the official documentation for the tools I use. When that fails AI LLM chatbot tools usually point me in the right direction.",
+				"value": "Developer, game or graphics, Portugal, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "There was a time when a Stack Overflow link (with a good answer!) would be at the top of the list when I'm researching something. It's sometimes still there, but it's less of a sure thing.",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "SO results tend to be included in AI summaries. When I select from the list of followup links from an AI response, I favour SO over \"random\" sites",
+				"value": "Developer, back-end, Canada, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I no longer have the dread of asking/replying -- with AI I can ask without fear of downvotes, grammar nazis, duplicate closure, sarcastic remarks, etc.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I click on Stack Overflow posts when I'm interested in technical details rather than just looking for an answer.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Since AI tools become more accessible, I use SO less to find initial directions or approaches to solve my problem, but more to validate that the approach proposed by AI tools was tried by people and learn their opinions/feedback, discover alternative approaches, and get insights about possible pitfalls associated with given approach or solution.",
+				"value": "Architect, software or solutions, Israel, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Some really direct and simple questions that I can trust AI to point me to the docs, I do not search on SO anymore, but for more complex situations and in-depth knowledge I still pretty much rely on SO.",
+				"value": "Developer, full-stack, Canada, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "For most basic questions, I stopped visiting SO. \n\nFor critical questions that I suspect the LLM might lack human thought perspective, e.g. nuanced, skeptical, argumentative, I would still go to SO for verification and read the comments on answers. \n\nLLMs self-confident answers and ability to hallucinate in a spectacularly confident tone is why I consciously choose to visit SO and other platforms for critical questions.",
+				"value": "DevOps engineer or professional, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "When you contribute to a question or ask a question and even when you answer a question, moderators are sometimes harsh when providing feedback, it's been years since I contributed to anything on StackOverflow, On my dashboard or profile I have ~104k\npeople reached (Impact) so if I had been contributing more I would have gone past that. Also platforms like daily.dev is trying and doing more than StackOverflow.",
+				"value": "Developer, full-stack, Ghana, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I can't remember the last time I looked at SO or answered any questions there. Bad moderation injured the quality/community and AI dealt the mortal blow.",
+				"value": "Academic researcher, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "visit the site less for simple questions and opinion/design questions",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "The stackoverflow community used to be proud of creating quality content. At some point, the stackoverflow company decided that the quality content was not the main priority anymore, which made the community lose its main core strength. When the AI revolution began, the stackoverflow community was too weak and died. That saddens me deeply.",
+				"value": "Software engineer, Brazil, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "SO will often be cited as a source from LLMs, when I’m uncertain, I want to verify the source to ensure the LLM has summarised it correctly",
+				"value": "Developer, full-stack, Austria, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Can get the answer to my question quicker with AI.",
+				"value": "Developer, full-stack, Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I can prompt inside my code editor instead of visiting your site.",
+				"value": "Developer, full-stack, Mexico, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I've greatly reduced the frequency with which I visit the website. It seems I've gotten too used to getting answers from AI instead of finding them myself.",
+				"value": "Developer, back-end, Venezuela, Bolivarian Republic of..., Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I do not use AI, not for programming nor for anything else",
+				"value": "Developer, desktop or enterprise applications, Czech Republic, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI usage to ask questions is simpler and more friendly. No risk of getting your question denied, unanswered or disrespected.",
+				"value": "Developer, full-stack, Canada, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I tend to avoid any use of AI, to the extent that I have moved completely away from Microsoft products.",
+				"value": "Developer, front-end, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "After contributing over 5000 answers, I haven't contributed to Stack Overflow since 2024, mostly due to the poor treatment contributors received during that time. SO leadership treated our many hours of expert labor as their exclusive property, without our input or involvement. With all the focus on attracting new question askers, there was little focus on retaining question answerers. When the UI changed so much it was hard to find interesting questions any more, I fell out of the habit, and haven't been back. AI drove me away, but mostly because of how leadership responded to it, not the AI itself.",
+				"value": "Developer, mobile, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I basically only use Stack Overflow when trying to avoid AI use and I don't know how to do something on my own.",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "I stopped using it.",
+				"value": "Developer, game or graphics, Poland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "AI reduces the visits to Stack Overflow but it needs its content to enable its features. This is probably not sustainable and the asking and teaching of AI will replace classical question and answer workflows, which have built the core of StackOverflow in the past.",
+				"value": "Architect, software or solutions, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I rarely use Stack Overflow now due to AI agents as If I get any error I simply ask it to an AI Agent. I think it's sad.",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "use ai for initial answer. if work and I understand, then no more further investigation. If not, search for stack overflow or other related sites",
+				"value": "Developer, desktop or enterprise applications, Hong Kong (S.A.R.), Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "Everything. Faster, more accurate answers from AI. AI isn't rude or dismissive, and it explains everything in a simple, easy-to-understand way. I've learned more in one year using AI than I did in ten years on Stack Overflo",
+				"value": "Applied scientist, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "When AI first came around, I used it to answer more simple questions I had. Now that I have been trying to cut back on AI use, I've been returning to Stack Overflow for this purpose.",
+				"value": "Developer, desktop or enterprise applications, United States of America, Stack Overflow user status is: Between 1 and 3 years"
+			},
+			{
+				"slice": 0,
+				"response": "lot of things are easily available with AI agents integrated in IDE.",
+				"value": "Engineering manager, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I ask AI agents the questions instead of going to google/SO, so I rarely end up on SO anymore.",
+				"value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use it when AI fails or when I need more context about the solution, but almost never anymore for the simple search. In past, that simple search usually gave me some context about other potential tools or opinions, but nowadays the pace is faster, so AI limits that scope.",
+				"value": "Developer, embedded applications or devices, Belgium, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I don't NEED to go there for potential answers.",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I almost never use StackOverflow anymore. I return only to participate in the annual survey.",
+				"value": "Developer, desktop or enterprise applications, Italy, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "My contributions (questioning/answering/misc) has reduced ever since I start using search engine ai chatbots for simple problems. I might ask Qs in StackOverflow if a problem is complex but ever since the AI boom, I haven't gotten a chance to work on anything complex enough yet.",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I feel less and less incentivized to contribute there because most valuable questions have already been answered",
+				"value": "Developer, back-end, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Due to AI being able to answer virtually all questions and deal with most issues, almost never need to look anything up there anymore. However, I might guess that AI uses SO as a valuable source behind the scenes.",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "Chatbots are trained directly on data from SO, so chatbot results have cannibalized SO usage, but chatbots have also replaced a lot of what would be search engine use, and so I visit SO less by using traditional search engines less.",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I stopped using Stack Overflow at all, AI is better",
+				"value": "Developer, front-end, Spain, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I never ask questions. Before AI, complex problems would ultimately lead to Stack Overflow. Now, for any problem, whether in development or daily life, I get answers and suggestions from AI. I believe this is faster and more direct than searching for other information, and AI also helps me extract information, which is very important.",
+				"value": "Developer, desktop or enterprise applications, China, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI was trained on the wealth of wisdom on stack overflow. For the moment using AI to answer last years question is okay. But what will AI train on in five years? SO is still a useful human institution but the frontier model companies have absconded with it.",
+				"value": "AI/ML engineer, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I can't make an account for some reason. Support told me to wait. It's been a year, still can't.\nI would contribute if I could.",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Compared to before AI, were I consulted stackoverflow daily, today has been the first time in almost 2 years to do so. The reason being, it is a complex question that only an expert on a specific API can answer.",
+				"value": "Developer, back-end, Spain, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I have always used it rarely",
+				"value": "Architect, software or solutions, United States of America, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "I get the personalized answers at stack overflow.",
+				"value": "Developer, full-stack, India, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "There's a lot fewer interesting questions to read now.",
+				"value": "Role not provided, Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used it more to verify the answers obtained from AI by my colleagues",
+				"value": "Hardware engineer, Italy, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I shifted from asking public questions on Stack Overflow (SO) to using ChatGPT for immediate solutions. SO is a last resort for low-level, niche debugging where human context are needed.",
+				"value": "Student, United States of America, Stack Overflow user status is: Less than one year"
+			},
+			{
+				"slice": 0,
+				"response": "Google and AI finds answers for me more quickly",
+				"value": "Developer, desktop or enterprise applications, Russian Federation, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "There are fewer questions about subjects I know about so there are fewer opportunities to assist people. Mind you often it is clear that they don't intend to follow my instructions or are not prepared to think through and define the problem clearly or even make an attempt to understand what is going on or the semantic context of the observed behaviour.",
+				"value": "Developer, QA or test, Canada, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Ai answer faster than check8ng different solitions from stackoverflow",
+				"value": "Developer, front-end, Poland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I read stack overflow for people opinions on some matter. But i let AI to handle the heavy lifting",
+				"value": "Developer, desktop or enterprise applications, Colombia, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Well, now I know more things than some years ago, I don't need to visit frequently this place",
+				"value": "Architect, software or solutions, Argentina, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "As the answers have become more and more outdated, SO has become less useful",
+				"value": "Solutions engineer, implementation engineer, or forward-deployed engineer, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "StackOverflow has been appearing less frequently when I search for issue I'm having in Google, and Google's AI answer box usually answer simpler queries without me having to visit SO or other sites.",
+				"value": "System administrator, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI already answers many of the questions and doubts I have while working.",
+				"value": "Architect, software or solutions, Israel, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I just don't use SO very much anymore.",
+				"value": "Other, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I feel like AI hasn't affected my usage of stack overflow, because I only ask it really about my code, and stuff that can only really be solved with the full context of my code",
+				"value": "Student, United States of America, Stack Overflow user status is: Between 3 and 5 years"
+			},
+			{
+				"slice": 0,
+				"response": "Used less. No longer need it for (often outdated) unfamiliar syntax or module/extension suggestions",
+				"value": "Developer, full-stack, United States of America, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "Stack Overflow usually contains atomic information on how to use tools/languages/etc. With an LLM I can ask it something, it can piece together those atoms and give me the tailored, specific, overarching answer I'm looking for that includes multiple SO atoms.",
+				"value": "Developer, embedded applications or devices, United Kingdom of Great Britain and Northern Ireland, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
+			},
+			{
+				"slice": 0,
+				"response": "I don't use search engines that much when implementing code. So I don't cross SO that often anymore.",
+				"value": "Software engineer, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Fewer views because the AI __can already answer many questions.",
+				"value": "Developer, front-end, Germany, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "AI became the first port of call and these days only rarely does it not provide enough information to require manual search in Stack Overflow",
+				"value": "Developer, full-stack, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I used to visit stackoverflow for concise questions, now I just ask the LLM in turn in the \"AI\" chat",
+				"value": "Developer, back-end, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use stackoverflow a lot less as most questions are answered directly by AI.",
+				"value": "Developer, full-stack, Kenya, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "i mostly use it if it's the only thing that comes up on duckduckgo.\ni prefer official documentation if there is any",
+				"value": "Student, Austria, Stack Overflow user status is: Between 5 and 10 years"
+			},
+			{
+				"slice": 0,
+				"response": "Nothing. A trusted resource as needed.",
+				"value": "Retired, United States of America, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I barely need it nowadays, because AI has improved so much and provides answers more tailored to my case",
+				"value": "Developer, full-stack, Australia, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I use SO less and less because it has become less relevant to my field of work over the last few years.",
+				"value": "Software engineer, Germany, Stack Overflow user status is: Between 10 and 15 years"
+			},
+			{
+				"slice": 0,
+				"response": "I look at SO directly due to so much AI slop elsewhere that search engines are unreliable. The increase of AI use on SO would make even it less attractive.",
+				"value": "System administrator, Croatia, Stack Overflow user status is: Between 10 and 15 years"
+			}
+		]
+  }
+}

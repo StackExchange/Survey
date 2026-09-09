@@ -12,10 +12,10 @@
 // of. The exact payload shapes (Randomization, content-type validation, NPS
 // labels, etc.) were verified against a real survey definition GET.
 
+import type { Condition, OptionEntry, Question, Validate } from '../src/lib/types/index.ts'
+
 import { snakeCase } from 'lodash-es'
 import { marked } from 'marked'
-
-import type { Condition, OptionEntry, Question, Validate } from '../src/lib/types/index.ts'
 
 // --- type mapping -------------------------------------------------------
 

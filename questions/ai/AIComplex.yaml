@@ -6,9 +6,14 @@ question:
   type: single_select
   required: false
   options:
-    - Very well at handling complex tasks
-    - Good, but not great at handling complex tasks
-    - Neither good or bad at handling complex tasks
+    - label: Very well at handling complex tasks
+      short: Very well
+    - label: Good, but not great at handling complex tasks
+      short: Good, not great
+    - label: Neither good or bad at handling complex tasks
+      short: Neither good or bad
     - Bad at handling complex tasks
-    - Very poor at handling complex tasks
-    - I don't use AI tools for complex tasks / I don't know
+    - label: Very poor at handling complex tasks
+      short: Very poor
+    - label: I don't use AI tools for complex tasks / I don't know
+      short: Don't use AI / don't know

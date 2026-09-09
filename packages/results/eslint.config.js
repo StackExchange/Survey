@@ -26,10 +26,10 @@ export default defineConfig([
 	},
 
 	{
-		// Override or add rule settings here
 		// https://sveltejs.github.io/eslint-plugin-svelte/rules/
-		// rules: {
-		//   'svelte/no-at-html-tags': 'off',
-		// },
+		rules: {
+			'svelte/no-at-html-tags': 'off',
+			'svelte/no-navigation-without-resolve': 'off',
+		},
 	},
 ])

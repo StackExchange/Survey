@@ -10,7 +10,8 @@ question:
     - United States of America
     - Germany
     - India
-    - United Kingdom of Great Britain and Northern Ireland
+    - label: United Kingdom of Great Britain and Northern Ireland
+      short: United Kingdom
     - Ukraine
     - Canada
     - France
@@ -61,7 +62,8 @@ question:
     - Cyprus
     - Czech Republic
     - Democratic People's Republic of Korea
-    - Democratic Republic of the Congo
+    - label: Democratic Republic of the Congo
+      short: DR Congo
     - Denmark
     - Djibouti
     - Dominica
@@ -106,7 +108,8 @@ question:
     - Kosovo
     - Kuwait
     - Kyrgyzstan
-    - Lao People's Democratic Republic
+    - label: Lao People's Democratic Republic
+      short: Laos
     - Latvia
     - Lebanon
     - Lesotho
@@ -125,7 +128,8 @@ question:
     - Mauritania
     - Mauritius
     - Mexico
-    - Micronesia, Federated States of...
+    - label: Micronesia, Federated States of...
+      short: Micronesia
     - Moldova
     - Monaco
     - Mongolia
@@ -202,7 +206,8 @@ question:
     - Uruguay
     - Uzbekistan
     - Vanuatu
-    - Venezuela, Bolivarian Republic of...
+    - label: Venezuela, Bolivarian Republic of...
+      short: Venezuela
     - Viet Nam
     - Yemen
     - Zambia

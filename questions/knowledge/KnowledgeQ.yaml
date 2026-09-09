@@ -12,19 +12,28 @@ question:
   options:
     - Coworkers or teammates
     - Manager or leadership
-    - Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base
-    - Internal chat tools, such as Slack or Teams
-    - Project management or ticketing tools
-    - Code repositories or code comments
-    - Product, vendor, or API documentation
-    - Meeting notes or transcripts
-    - Customer, support, or sales information
-    - Past decisions or architecture records
+    - label: Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base
+      short: Internal docs and wikis
+    - label: Internal chat tools, such as Slack or Teams
+      short: Internal chat tools
+    - label: Project management or ticketing tools
+      short: Ticketing tools
+    - label: Code repositories or code comments
+      short: Code and comments
+    - label: Product, vendor, or API documentation
+      short: Product and API docs
+    - label: Meeting notes or transcripts
+      short: Meeting notes
+    - label: Customer, support, or sales information
+      short: Customer and sales info
+    - label: Past decisions or architecture records
+      short: Past decisions
     - Stack Overflow
     - Official docs
     - Vendor forum
     - None of these
     - Not sure
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

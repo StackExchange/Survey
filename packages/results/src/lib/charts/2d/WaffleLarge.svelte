@@ -1,0 +1,34 @@
+<script lang="ts">
+	import type { OnHover } from '$charts/utils/theme'
+
+	import { readingOf, shareOf } from '$charts/utils/expressive'
+	import { GAP, px, theme } from '$charts/utils/theme'
+
+	import Frame from '$charts/svg/Wrap.svelte'
+
+	let { figure, width = 800 }: { figure: any; width?: number; onhover?: OnHover } = $props()
+
+	const COLUMNS = 10
+
+	const share = $derived(shareOf(figure))
+
+	// At least one cell for a real-but-tiny share, as `percent` does for "<1%".
+	const filled = $derived(share > 0 ? Math.max(1, Math.round(share * 100)) : 0)
+
+	const size = $derived(px((width - GAP * (COLUMNS - 1)) / COLUMNS))
+	const height = $derived(COLUMNS * size + GAP * (COLUMNS - 1))
+
+	const slots = Array.from({ length: 100 }, (_, i) => i)
+</script>
+
+<Frame {figure} {width} {height} reading={readingOf(figure)}>
+	{#each slots as i (i)}
+		<rect
+			x={px((i % COLUMNS) * (size + GAP))}
+			y={px(Math.floor(i / COLUMNS) * (size + GAP))}
+			width={size}
+			height={size}
+			fill={i < filled ? theme.focus : theme.rest}
+		/>
+	{/each}
+</Frame>
