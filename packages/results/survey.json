@@ -409,7 +409,7 @@
         {
           "chapter": "Work",
           "headline": "Many-to-one: can we do more by ourselves than with a team?",
-          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—nearly tripled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for a single developer to do the work that once required a small team, opening the door to a volume of consulting and freelance projects that wouldn’t have been viable a few years ago. ([Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/)) pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
+          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—nearly tripled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for many types of tasks to be done by a single worker.  ([OpenAI research](https://cdn.openai.com/pdf/work-at-the-frontier-report.pdf)) finds among all workspaces’ non-generic messages, 43.5% fall outside of the user’s occupation. ([Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/)) also pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
           "tier": "",
           "chart": "",
           "dataId": "",
@@ -432,7 +432,7 @@
         {
           "chapter": "Work",
           "headline": "",
-          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, and when devs can't count on a dozen open offers the way they once could, staying in a role that’s a less-than-great fit becomes the safer bet. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
+          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, a ([New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1)) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
           "tier": "",
           "chart": "",
           "dataId": "",
@@ -832,7 +832,7 @@
         {
           "chapter": "Knowledge",
           "headline": "",
-          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "description": "33% self-monitor AI usage",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "AICost",
@@ -844,7 +844,7 @@
         {
           "chapter": "Knowledge",
           "headline": "",
-          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "description": "Quality optimization outpaces cost-cutting 2:1",
           "tier": "chapter",
           "chart": "2d-bar-stacked-horizontal",
           "dataId": "AICostPrompt",
@@ -857,8 +857,8 @@
           "chapter": "Knowledge",
           "headline": "",
           "description": "When it comes to their own AI usage, individual respondents took a generally cost-conscious approach: 33% personally monitor their usage, 25% choose cheaper models when possible, and 24% say their usage is metered. Not everyone is so fettered by budgets—22% are unaffected by costs of limits to their AI use while 21% have yet to see limits and probably have an intimidating yellow aura.",
-          "tier": "",
-          "chart": "",
+          "tier": "chapter",
+          "chart": "text",
           "dataId": "",
           "focus": "",
           "limit": "",
