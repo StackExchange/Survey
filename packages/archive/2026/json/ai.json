@@ -9,6 +9,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 17464
+        },
+        {
+          "slice_type": "workexp",
+          "slice_value": "1-5 years",
+          "n": 4094
+        },
+        {
+          "slice_type": "workexp",
+          "slice_value": "6-15 years",
+          "n": 5778
+        },
+        {
+          "slice_type": "workexp",
+          "slice_value": "16+ years",
+          "n": 6600
         }
       ]
     },
@@ -47,6 +62,111 @@
         "response": "I don’t use AI tools",
         "count": 3003,
         "pct": 0.172
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 2534,
+        "pct": 0.619
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 2366,
+        "pct": 0.5779
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 798,
+        "pct": 0.1949
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I don’t use AI tools",
+        "count": 778,
+        "pct": 0.19
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 542,
+        "pct": 0.1324
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 4203,
+        "pct": 0.7274
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 3646,
+        "pct": 0.631
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 1765,
+        "pct": 0.3055
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 1184,
+        "pct": 0.2049
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I don’t use AI tools",
+        "count": 787,
+        "pct": 0.1362
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "AI coding assistants or coding agents",
+        "count": 4595,
+        "pct": 0.6962
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "General-purpose AI chat tools",
+        "count": 4245,
+        "pct": 0.6432
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "AI agents or automated workflows",
+        "count": 1908,
+        "pct": 0.2891
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Internal AI tools built by my company",
+        "count": 1348,
+        "pct": 0.2042
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I don’t use AI tools",
+        "count": 1051,
+        "pct": 0.1592
       }
     ]
   },
@@ -1395,8 +1515,13 @@
       "question": "<p>Have you used any of the following tools for AI agent memory or vector databases in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 1392
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 1392
         }
       ]
@@ -1404,126 +1529,126 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Mem0",
         "count": 279,
         "pct": 0.2004
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Mem0",
-        "count": 663,
-        "pct": 0.4763
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "LangMem",
         "count": 212,
         "pct": 0.1523
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "LangMem",
-        "count": 613,
-        "pct": 0.4404
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Memary",
         "count": 176,
         "pct": 0.1264
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Memary",
-        "count": 483,
-        "pct": 0.347
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Graphiti",
         "count": 162,
         "pct": 0.1164
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Graphiti",
-        "count": 508,
-        "pct": 0.3649
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Supermemory",
         "count": 162,
         "pct": 0.1164
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Supermemory",
-        "count": 574,
-        "pct": 0.4124
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Zep",
         "count": 151,
         "pct": 0.1085
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Zep",
-        "count": 488,
-        "pct": 0.3506
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Letta",
         "count": 150,
         "pct": 0.1078
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Letta",
-        "count": 480,
-        "pct": 0.3448
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Cognee",
         "count": 133,
         "pct": 0.0955
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Cognee",
-        "count": 492,
-        "pct": 0.3534
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Hyperspell",
         "count": 129,
         "pct": 0.0927
       },
       {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
+        "response": "Mem0",
+        "count": 663,
+        "pct": 0.4763
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LangMem",
+        "count": 613,
+        "pct": 0.4404
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Supermemory",
+        "count": 574,
+        "pct": 0.4124
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Graphiti",
+        "count": 508,
+        "pct": 0.3649
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Cognee",
+        "count": 492,
+        "pct": 0.3534
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Zep",
+        "count": 488,
+        "pct": 0.3506
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Memary",
+        "count": 483,
+        "pct": 0.347
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Letta",
+        "count": 480,
+        "pct": 0.3448
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Hyperspell",
         "count": 466,
         "pct": 0.3348
@@ -1537,8 +1662,13 @@
       "question": "<p>Have you used any of the following tools for AI agent orchestration or agent frameworks in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 4400
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 4400
         }
       ]
@@ -1546,311 +1676,311 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "LangChain",
         "count": 1329,
         "pct": 0.302
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "LangChain",
-        "count": 1088,
-        "pct": 0.2473
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "OpenAI Agents SDK",
         "count": 1048,
         "pct": 0.2382
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "OpenAI Agents SDK",
-        "count": 870,
-        "pct": 0.1977
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Terminal Use",
         "count": 832,
         "pct": 0.1891
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Terminal Use",
-        "count": 669,
-        "pct": 0.152
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "LangGraph",
         "count": 825,
         "pct": 0.1875
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "LangGraph",
-        "count": 897,
-        "pct": 0.2039
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Llama Stack",
         "count": 767,
         "pct": 0.1743
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Llama Stack",
-        "count": 733,
-        "pct": 0.1666
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Google ADK",
         "count": 617,
         "pct": 0.1402
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Google ADK",
-        "count": 670,
-        "pct": 0.1523
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Hermes Agent",
         "count": 449,
         "pct": 0.102
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Hermes Agent",
-        "count": 759,
-        "pct": 0.1725
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Vercel AI SDK",
         "count": 395,
         "pct": 0.0898
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Vercel AI SDK",
-        "count": 498,
-        "pct": 0.1132
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Pydantic AI",
         "count": 390,
         "pct": 0.0886
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Pydantic AI",
-        "count": 635,
-        "pct": 0.1443
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "CrewAI",
         "count": 242,
         "pct": 0.055
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "CrewAI",
-        "count": 431,
-        "pct": 0.098
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Semantic Kernel",
         "count": 218,
         "pct": 0.0495
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Semantic Kernel",
-        "count": 389,
-        "pct": 0.0884
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "AutoGen",
         "count": 200,
         "pct": 0.0455
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "AutoGen",
-        "count": 376,
-        "pct": 0.0855
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Strands",
         "count": 178,
         "pct": 0.0405
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Strands",
-        "count": 387,
-        "pct": 0.088
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "DSPy",
         "count": 159,
         "pct": 0.0361
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "DSPy",
-        "count": 372,
-        "pct": 0.0845
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Mastra",
         "count": 132,
         "pct": 0.03
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Mastra",
-        "count": 355,
-        "pct": 0.0807
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Dify",
         "count": 126,
         "pct": 0.0286
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Dify",
-        "count": 328,
-        "pct": 0.0745
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Smolagents",
         "count": 116,
         "pct": 0.0264
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Smolagents",
-        "count": 343,
-        "pct": 0.078
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Atomic Agents",
         "count": 115,
         "pct": 0.0261
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Atomic Agents",
-        "count": 345,
-        "pct": 0.0784
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Instructor",
         "count": 106,
         "pct": 0.0241
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Instructor",
-        "count": 319,
-        "pct": 0.0725
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Agno",
         "count": 105,
         "pct": 0.0239
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Agno",
-        "count": 321,
-        "pct": 0.073
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "21st.dev",
         "count": 100,
         "pct": 0.0227
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "21st.dev",
-        "count": 329,
-        "pct": 0.0748
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "GripTape",
         "count": 91,
         "pct": 0.0207
       },
       {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
+        "response": "LangChain",
+        "count": 1088,
+        "pct": 0.2473
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LangGraph",
+        "count": 897,
+        "pct": 0.2039
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "OpenAI Agents SDK",
+        "count": 870,
+        "pct": 0.1977
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Hermes Agent",
+        "count": 759,
+        "pct": 0.1725
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Llama Stack",
+        "count": 733,
+        "pct": 0.1666
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Google ADK",
+        "count": 670,
+        "pct": 0.1523
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Terminal Use",
+        "count": 669,
+        "pct": 0.152
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Pydantic AI",
+        "count": 635,
+        "pct": 0.1443
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Vercel AI SDK",
+        "count": 498,
+        "pct": 0.1132
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "CrewAI",
+        "count": 431,
+        "pct": 0.098
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Semantic Kernel",
+        "count": 389,
+        "pct": 0.0884
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Strands",
+        "count": 387,
+        "pct": 0.088
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AutoGen",
+        "count": 376,
+        "pct": 0.0855
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "DSPy",
+        "count": 372,
+        "pct": 0.0845
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Mastra",
+        "count": 355,
+        "pct": 0.0807
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Atomic Agents",
+        "count": 345,
+        "pct": 0.0784
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Smolagents",
+        "count": 343,
+        "pct": 0.078
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "21st.dev",
+        "count": 329,
+        "pct": 0.0748
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Dify",
+        "count": 328,
+        "pct": 0.0745
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "GripTape",
         "count": 324,
         "pct": 0.0736
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Agno",
+        "count": 321,
+        "pct": 0.073
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Instructor",
+        "count": 319,
+        "pct": 0.0725
       }
     ]
   },
@@ -1861,8 +1991,13 @@
       "question": "<p>Have you used any of the following tools for AI agent observability, prompts, or evals in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 2277
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 2277
         }
       ]
@@ -1870,448 +2005,448 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Sentry",
         "count": 592,
         "pct": 0.26
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Sentry",
-        "count": 551,
-        "pct": 0.242
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "LangSmith",
         "count": 393,
         "pct": 0.1726
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "LangSmith",
-        "count": 478,
-        "pct": 0.2099
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "MLflow",
         "count": 347,
         "pct": 0.1524
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "MLflow",
-        "count": 442,
-        "pct": 0.1941
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Langfuse",
         "count": 345,
         "pct": 0.1515
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Langfuse",
-        "count": 445,
-        "pct": 0.1954
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Datadog LLM",
         "count": 271,
         "pct": 0.119
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Datadog LLM",
-        "count": 445,
-        "pct": 0.1954
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Weights &amp; Biases",
         "count": 244,
         "pct": 0.1072
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Weights &amp; Biases",
-        "count": 357,
-        "pct": 0.1568
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Arize AI",
         "count": 133,
         "pct": 0.0584
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Arize AI",
-        "count": 274,
-        "pct": 0.1203
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Braintrust",
         "count": 132,
         "pct": 0.058
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Braintrust",
-        "count": 282,
-        "pct": 0.1238
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "DeepEval",
         "count": 131,
         "pct": 0.0575
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "DeepEval",
-        "count": 302,
-        "pct": 0.1326
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Respan",
         "count": 127,
         "pct": 0.0558
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Respan",
-        "count": 299,
-        "pct": 0.1313
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Promptfoo",
         "count": 121,
         "pct": 0.0531
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Promptfoo",
-        "count": 277,
-        "pct": 0.1217
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Agenta",
         "count": 114,
         "pct": 0.0501
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Agenta",
-        "count": 270,
-        "pct": 0.1186
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Ragas",
         "count": 111,
         "pct": 0.0487
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Ragas",
-        "count": 277,
-        "pct": 0.1217
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Galileo AI",
         "count": 110,
         "pct": 0.0483
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Galileo AI",
-        "count": 271,
-        "pct": 0.119
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Portkey",
         "count": 109,
         "pct": 0.0479
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Portkey",
-        "count": 264,
-        "pct": 0.1159
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "LangWatch",
         "count": 101,
         "pct": 0.0444
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "LangWatch",
-        "count": 285,
-        "pct": 0.1252
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Helicone",
         "count": 95,
         "pct": 0.0417
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Helicone",
-        "count": 260,
-        "pct": 0.1142
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Humanloop",
         "count": 93,
         "pct": 0.0408
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Humanloop",
-        "count": 269,
-        "pct": 0.1181
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "PromptLayer",
         "count": 92,
         "pct": 0.0404
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "PromptLayer",
-        "count": 254,
-        "pct": 0.1116
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Patronus AI",
         "count": 91,
         "pct": 0.04
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Patronus AI",
-        "count": 254,
-        "pct": 0.1116
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "HoneyHive",
         "count": 90,
         "pct": 0.0395
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "HoneyHive",
-        "count": 265,
-        "pct": 0.1164
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Confident AI",
         "count": 86,
         "pct": 0.0378
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Confident AI",
-        "count": 261,
-        "pct": 0.1146
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Traceloop",
         "count": 86,
         "pct": 0.0378
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Traceloop",
-        "count": 256,
-        "pct": 0.1124
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Chamber",
         "count": 85,
         "pct": 0.0373
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Chamber",
-        "count": 266,
-        "pct": 0.1168
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Opik",
         "count": 84,
         "pct": 0.0369
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Opik",
-        "count": 264,
-        "pct": 0.1159
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Future AGI",
         "count": 80,
         "pct": 0.0351
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Future AGI",
-        "count": 261,
-        "pct": 0.1146
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Sentrial",
         "count": 79,
         "pct": 0.0347
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Sentrial",
-        "count": 246,
-        "pct": 0.108
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Athina AI",
         "count": 78,
         "pct": 0.0343
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Athina AI",
-        "count": 243,
-        "pct": 0.1067
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Lunary",
         "count": 77,
         "pct": 0.0338
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Lunary",
-        "count": 251,
-        "pct": 0.1102
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Moda",
         "count": 76,
         "pct": 0.0334
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Moda",
-        "count": 245,
-        "pct": 0.1076
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Ashr",
         "count": 70,
         "pct": 0.0307
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Ashr",
-        "count": 243,
-        "pct": 0.1067
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Parea AI",
         "count": 69,
         "pct": 0.0303
       },
       {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
+        "response": "Sentry",
+        "count": 551,
+        "pct": 0.242
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LangSmith",
+        "count": 478,
+        "pct": 0.2099
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Datadog LLM",
+        "count": 445,
+        "pct": 0.1954
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Langfuse",
+        "count": 445,
+        "pct": 0.1954
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "MLflow",
+        "count": 442,
+        "pct": 0.1941
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Weights &amp; Biases",
+        "count": 357,
+        "pct": 0.1568
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "DeepEval",
+        "count": 302,
+        "pct": 0.1326
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Respan",
+        "count": 299,
+        "pct": 0.1313
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LangWatch",
+        "count": 285,
+        "pct": 0.1252
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Braintrust",
+        "count": 282,
+        "pct": 0.1238
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Promptfoo",
+        "count": 277,
+        "pct": 0.1217
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Ragas",
+        "count": 277,
+        "pct": 0.1217
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Arize AI",
+        "count": 274,
+        "pct": 0.1203
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Galileo AI",
+        "count": 271,
+        "pct": 0.119
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Agenta",
+        "count": 270,
+        "pct": 0.1186
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Humanloop",
+        "count": 269,
+        "pct": 0.1181
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Chamber",
+        "count": 266,
+        "pct": 0.1168
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "HoneyHive",
+        "count": 265,
+        "pct": 0.1164
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Opik",
+        "count": 264,
+        "pct": 0.1159
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Portkey",
+        "count": 264,
+        "pct": 0.1159
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Confident AI",
+        "count": 261,
+        "pct": 0.1146
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Future AGI",
+        "count": 261,
+        "pct": 0.1146
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Helicone",
+        "count": 260,
+        "pct": 0.1142
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Traceloop",
+        "count": 256,
+        "pct": 0.1124
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Patronus AI",
+        "count": 254,
+        "pct": 0.1116
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "PromptLayer",
+        "count": 254,
+        "pct": 0.1116
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Lunary",
+        "count": 251,
+        "pct": 0.1102
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sentrial",
+        "count": 246,
+        "pct": 0.108
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Moda",
+        "count": 245,
+        "pct": 0.1076
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Ashr",
+        "count": 243,
+        "pct": 0.1067
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Athina AI",
+        "count": 243,
+        "pct": 0.1067
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Parea AI",
         "count": 237,
         "pct": 0.1041
@@ -2325,8 +2460,13 @@
       "question": "<p>Have you used any of the following coding agents or assistants in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 12255
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 12255
         }
       ]
@@ -2334,465 +2474,465 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Claude Code",
         "count": 8030,
         "pct": 0.6552
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Claude Code",
-        "count": 5073,
-        "pct": 0.414
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "GitHub Copilot",
         "count": 7196,
         "pct": 0.5872
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "GitHub Copilot",
-        "count": 2404,
-        "pct": 0.1962
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "OpenAI Codex",
         "count": 3620,
         "pct": 0.2954
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "OpenAI Codex",
-        "count": 2152,
-        "pct": 0.1756
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Cursor",
         "count": 3127,
         "pct": 0.2552
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Cursor",
-        "count": 1436,
-        "pct": 0.1172
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Google Antigravity",
         "count": 1956,
         "pct": 0.1596
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Google Antigravity",
-        "count": 1111,
-        "pct": 0.0907
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Gemini Code Assist",
         "count": 1789,
         "pct": 0.146
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Gemini Code Assist",
-        "count": 858,
-        "pct": 0.07
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Open Code",
         "count": 1662,
         "pct": 0.1356
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Open Code",
-        "count": 1436,
-        "pct": 0.1172
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "JetBrains AI",
         "count": 1569,
         "pct": 0.128
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "JetBrains AI",
-        "count": 791,
-        "pct": 0.0645
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Windsurf",
         "count": 796,
         "pct": 0.065
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Windsurf",
-        "count": 412,
-        "pct": 0.0336
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Warp",
         "count": 641,
         "pct": 0.0523
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Warp",
-        "count": 370,
-        "pct": 0.0302
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Cline",
         "count": 551,
         "pct": 0.045
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Cline",
-        "count": 333,
-        "pct": 0.0272
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Pi",
         "count": 535,
         "pct": 0.0437
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Pi",
-        "count": 814,
-        "pct": 0.0664
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Amazon Q Developer",
         "count": 476,
         "pct": 0.0388
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Amazon Q Developer",
-        "count": 364,
-        "pct": 0.0297
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Continue",
         "count": 466,
         "pct": 0.038
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Continue",
-        "count": 305,
-        "pct": 0.0249
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Mistral Vibe",
         "count": 393,
         "pct": 0.0321
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Mistral Vibe",
-        "count": 561,
-        "pct": 0.0458
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Kilo Code",
         "count": 392,
         "pct": 0.032
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Kilo Code",
-        "count": 344,
-        "pct": 0.0281
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Devin",
         "count": 360,
         "pct": 0.0294
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Devin",
-        "count": 367,
-        "pct": 0.0299
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Google Jules",
         "count": 307,
         "pct": 0.0251
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Google Jules",
-        "count": 338,
-        "pct": 0.0276
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Replit Agent",
         "count": 285,
         "pct": 0.0233
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Replit Agent",
-        "count": 275,
-        "pct": 0.0224
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Tabnine",
         "count": 257,
         "pct": 0.021
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Tabnine",
-        "count": 227,
-        "pct": 0.0185
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Aider",
         "count": 256,
         "pct": 0.0209
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Aider",
-        "count": 273,
-        "pct": 0.0223
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Codium (Qodo)",
         "count": 206,
         "pct": 0.0168
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Codium (Qodo)",
-        "count": 249,
-        "pct": 0.0203
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "BLACKBOX AI",
         "count": 202,
         "pct": 0.0165
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "BLACKBOX AI",
-        "count": 251,
-        "pct": 0.0205
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Supermaven",
         "count": 158,
         "pct": 0.0129
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Supermaven",
-        "count": 240,
-        "pct": 0.0196
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Trae",
         "count": 154,
         "pct": 0.0126
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Trae",
-        "count": 231,
-        "pct": 0.0188
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Augment Code",
         "count": 145,
         "pct": 0.0118
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Augment Code",
-        "count": 233,
-        "pct": 0.019
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Sourcegraph Cody",
         "count": 114,
         "pct": 0.0093
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Sourcegraph Cody",
-        "count": 226,
-        "pct": 0.0184
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Emdash",
         "count": 85,
         "pct": 0.0069
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Emdash",
-        "count": 256,
-        "pct": 0.0209
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Approxima",
         "count": 69,
         "pct": 0.0056
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "series": null,
+        "response": "ECA",
+        "count": 68,
+        "pct": 0.0055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Sweep",
+        "count": 68,
+        "pct": 0.0055
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Kavia AI",
+        "count": 63,
+        "pct": 0.0051
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Syntropy",
+        "count": 63,
+        "pct": 0.0051
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Claude Code",
+        "count": 5073,
+        "pct": 0.414
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "GitHub Copilot",
+        "count": 2404,
+        "pct": 0.1962
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "OpenAI Codex",
+        "count": 2152,
+        "pct": 0.1756
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Cursor",
+        "count": 1436,
+        "pct": 0.1172
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Open Code",
+        "count": 1436,
+        "pct": 0.1172
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Google Antigravity",
+        "count": 1111,
+        "pct": 0.0907
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Gemini Code Assist",
+        "count": 858,
+        "pct": 0.07
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Pi",
+        "count": 814,
+        "pct": 0.0664
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "JetBrains AI",
+        "count": 791,
+        "pct": 0.0645
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Mistral Vibe",
+        "count": 561,
+        "pct": 0.0458
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Windsurf",
+        "count": 412,
+        "pct": 0.0336
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Warp",
+        "count": 370,
+        "pct": 0.0302
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Devin",
+        "count": 367,
+        "pct": 0.0299
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Amazon Q Developer",
+        "count": 364,
+        "pct": 0.0297
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Kilo Code",
+        "count": 344,
+        "pct": 0.0281
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Google Jules",
+        "count": 338,
+        "pct": 0.0276
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Cline",
+        "count": 333,
+        "pct": 0.0272
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Continue",
+        "count": 305,
+        "pct": 0.0249
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Replit Agent",
+        "count": 275,
+        "pct": 0.0224
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Aider",
+        "count": 273,
+        "pct": 0.0223
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Emdash",
+        "count": 256,
+        "pct": 0.0209
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "BLACKBOX AI",
+        "count": 251,
+        "pct": 0.0205
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Codium (Qodo)",
+        "count": 249,
+        "pct": 0.0203
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Supermaven",
+        "count": 240,
+        "pct": 0.0196
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Augment Code",
+        "count": 233,
+        "pct": 0.019
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Trae",
+        "count": 231,
+        "pct": 0.0188
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Tabnine",
+        "count": 227,
+        "pct": 0.0185
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sourcegraph Cody",
+        "count": 226,
+        "pct": 0.0184
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "ECA",
+        "count": 218,
+        "pct": 0.0178
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Syntropy",
+        "count": 218,
+        "pct": 0.0178
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Approxima",
         "count": 217,
         "pct": 0.0177
       },
       {
-        "slice": 0,
-        "series": "Used in the past year",
-        "response": "ECA",
-        "count": 68,
-        "pct": 0.0055
-      },
-      {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "ECA",
-        "count": 218,
-        "pct": 0.0178
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
-        "response": "Sweep",
-        "count": 68,
-        "pct": 0.0055
-      },
-      {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Sweep",
-        "count": 213,
-        "pct": 0.0174
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
-        "response": "Kavia AI",
-        "count": 63,
-        "pct": 0.0051
-      },
-      {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
         "response": "Kavia AI",
         "count": 216,
         "pct": 0.0176
       },
       {
-        "slice": 0,
-        "series": "Used in the past year",
-        "response": "Syntropy",
-        "count": 63,
-        "pct": 0.0051
-      },
-      {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Syntropy",
-        "count": 218,
-        "pct": 0.0178
+        "slice": 1,
+        "series": null,
+        "response": "Sweep",
+        "count": 213,
+        "pct": 0.0174
       }
     ]
   },
@@ -2803,8 +2943,13 @@
       "question": "<p>Have you used any of the following no-code agent builder tools in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 2219
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 2219
         }
       ]
@@ -2812,252 +2957,252 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Lovable",
         "count": 850,
         "pct": 0.3831
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Lovable",
-        "count": 424,
-        "pct": 0.1911
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Replit",
         "count": 629,
         "pct": 0.2835
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Replit",
-        "count": 371,
-        "pct": 0.1672
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "v0",
         "count": 611,
         "pct": 0.2753
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "v0",
-        "count": 323,
-        "pct": 0.1456
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Bolt.new",
         "count": 381,
         "pct": 0.1717
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Bolt.new",
-        "count": 258,
-        "pct": 0.1163
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Base44",
         "count": 250,
         "pct": 0.1127
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Base44",
-        "count": 244,
-        "pct": 0.11
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Langflow",
         "count": 174,
         "pct": 0.0784
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Langflow",
-        "count": 269,
-        "pct": 0.1212
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Stack AI",
         "count": 159,
         "pct": 0.0717
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Stack AI",
-        "count": 278,
-        "pct": 0.1253
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Flowise",
         "count": 92,
         "pct": 0.0415
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Flowise",
-        "count": 205,
-        "pct": 0.0924
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Voiceflow",
         "count": 92,
         "pct": 0.0415
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Voiceflow",
-        "count": 225,
-        "pct": 0.1014
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Create",
         "count": 91,
         "pct": 0.041
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Create",
-        "count": 210,
-        "pct": 0.0946
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Glue",
         "count": 85,
         "pct": 0.0383
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Glue",
-        "count": 218,
-        "pct": 0.0982
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Rivet",
         "count": 78,
         "pct": 0.0352
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Rivet",
-        "count": 223,
-        "pct": 0.1005
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Botpress",
         "count": 77,
         "pct": 0.0347
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Botpress",
-        "count": 212,
-        "pct": 0.0955
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Relevance AI",
         "count": 72,
         "pct": 0.0324
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Relevance AI",
-        "count": 210,
-        "pct": 0.0946
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Sparkles",
         "count": 68,
         "pct": 0.0306
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Sparkles",
-        "count": 213,
-        "pct": 0.096
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Wordware",
         "count": 67,
         "pct": 0.0302
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Wordware",
-        "count": 201,
-        "pct": 0.0906
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Marblism",
         "count": 65,
         "pct": 0.0293
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Marblism",
-        "count": 196,
-        "pct": 0.0883
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Pickaxe",
         "count": 61,
         "pct": 0.0275
       },
       {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
+        "response": "Lovable",
+        "count": 424,
+        "pct": 0.1911
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Replit",
+        "count": 371,
+        "pct": 0.1672
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "v0",
+        "count": 323,
+        "pct": 0.1456
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Stack AI",
+        "count": 278,
+        "pct": 0.1253
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Langflow",
+        "count": 269,
+        "pct": 0.1212
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bolt.new",
+        "count": 258,
+        "pct": 0.1163
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Base44",
+        "count": 244,
+        "pct": 0.11
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Voiceflow",
+        "count": 225,
+        "pct": 0.1014
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Rivet",
+        "count": 223,
+        "pct": 0.1005
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Glue",
+        "count": 218,
+        "pct": 0.0982
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Sparkles",
+        "count": 213,
+        "pct": 0.096
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Botpress",
+        "count": 212,
+        "pct": 0.0955
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Create",
+        "count": 210,
+        "pct": 0.0946
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Relevance AI",
+        "count": 210,
+        "pct": 0.0946
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Flowise",
+        "count": 205,
+        "pct": 0.0924
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Wordware",
+        "count": 201,
+        "pct": 0.0906
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Marblism",
+        "count": 196,
+        "pct": 0.0883
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Pickaxe",
         "count": 196,
         "pct": 0.0883
@@ -3071,8 +3216,13 @@
       "question": "<p>Have you used any of the following workflow automation tools in the past year? Do you want to use any of the following in the next 6 months?<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "aiseries",
+          "slice_value": "Used",
+          "n": 4173
+        },
+        {
+          "slice_type": "aiseries",
+          "slice_value": "Want to use",
           "n": 4173
         }
       ]
@@ -3080,185 +3230,185 @@
     "data": [
       {
         "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Make",
         "count": 1625,
         "pct": 0.3894
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Make",
-        "count": 899,
-        "pct": 0.2154
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "n8n",
         "count": 1364,
         "pct": 0.3269
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "n8n",
-        "count": 1275,
-        "pct": 0.3055
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Zapier",
         "count": 771,
         "pct": 0.1848
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Zapier",
-        "count": 494,
-        "pct": 0.1184
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Temporal",
         "count": 249,
         "pct": 0.0597
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Temporal",
-        "count": 339,
-        "pct": 0.0812
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Prefect",
         "count": 125,
         "pct": 0.03
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Prefect",
-        "count": 226,
-        "pct": 0.0542
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Trigger.dev",
         "count": 100,
         "pct": 0.024
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Trigger.dev",
-        "count": 226,
-        "pct": 0.0542
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Inngest",
         "count": 96,
         "pct": 0.023
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Inngest",
-        "count": 198,
-        "pct": 0.0474
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Gumloop",
         "count": 93,
         "pct": 0.0223
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Gumloop",
-        "count": 198,
-        "pct": 0.0474
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Relay.app",
         "count": 92,
         "pct": 0.022
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Relay.app",
-        "count": 215,
-        "pct": 0.0515
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "DBOS",
         "count": 89,
         "pct": 0.0213
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "DBOS",
-        "count": 218,
-        "pct": 0.0522
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Activepieces",
         "count": 82,
         "pct": 0.0197
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Activepieces",
-        "count": 206,
-        "pct": 0.0494
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Bubble Lab",
         "count": 79,
         "pct": 0.0189
       },
       {
         "slice": 0,
-        "series": "Want to use in the next 6 months",
-        "response": "Bubble Lab",
-        "count": 213,
-        "pct": 0.051
-      },
-      {
-        "slice": 0,
-        "series": "Used in the past year",
+        "series": null,
         "response": "Cofia",
         "count": 69,
         "pct": 0.0165
       },
       {
-        "slice": 0,
-        "series": "Want to use in the next 6 months",
+        "slice": 1,
+        "series": null,
+        "response": "n8n",
+        "count": 1275,
+        "pct": 0.3055
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Make",
+        "count": 899,
+        "pct": 0.2154
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Zapier",
+        "count": 494,
+        "pct": 0.1184
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Temporal",
+        "count": 339,
+        "pct": 0.0812
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Prefect",
+        "count": 226,
+        "pct": 0.0542
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Trigger.dev",
+        "count": 226,
+        "pct": 0.0542
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "DBOS",
+        "count": 218,
+        "pct": 0.0522
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Relay.app",
+        "count": 215,
+        "pct": 0.0515
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bubble Lab",
+        "count": 213,
+        "pct": 0.051
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Activepieces",
+        "count": 206,
+        "pct": 0.0494
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Cofia",
         "count": 203,
         "pct": 0.0486
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Gumloop",
+        "count": 198,
+        "pct": 0.0474
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Inngest",
+        "count": 198,
+        "pct": 0.0474
       }
     ]
   },
@@ -3462,19 +3612,19 @@
           "n": 14428
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
-          "n": 10907
+          "slice_type": "workexp",
+          "slice_value": "1-5 years",
+          "n": 3306
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
-          "n": 2663
+          "slice_type": "workexp",
+          "slice_value": "6-15 years",
+          "n": 4979
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
-          "n": 823
+          "slice_type": "workexp",
+          "slice_value": "16+ years",
+          "n": 5546
         }
       ]
     },
@@ -3524,128 +3674,128 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Very favorable",
-        "count": 4225,
-        "pct": 0.3874
+        "response": "Somewhat favorable",
+        "count": 1001,
+        "pct": 0.3028
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Somewhat favorable",
-        "count": 3494,
-        "pct": 0.3203
+        "response": "Very favorable",
+        "count": 762,
+        "pct": 0.2305
       },
       {
         "slice": 1,
         "series": null,
         "response": "Neutral",
-        "count": 1389,
-        "pct": 0.1273
+        "count": 629,
+        "pct": 0.1903
       },
       {
         "slice": 1,
         "series": null,
         "response": "Somewhat unfavorable",
-        "count": 1156,
-        "pct": 0.106
+        "count": 612,
+        "pct": 0.1851
       },
       {
         "slice": 1,
         "series": null,
         "response": "Very unfavorable",
-        "count": 526,
-        "pct": 0.0482
+        "count": 260,
+        "pct": 0.0786
       },
       {
         "slice": 1,
         "series": null,
         "response": "Not sure",
-        "count": 117,
-        "pct": 0.0107
+        "count": 42,
+        "pct": 0.0127
       },
       {
         "slice": 2,
         "series": null,
         "response": "Somewhat favorable",
-        "count": 761,
-        "pct": 0.2858
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Somewhat unfavorable",
-        "count": 669,
-        "pct": 0.2512
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Neutral",
-        "count": 625,
-        "pct": 0.2347
+        "count": 1543,
+        "pct": 0.3099
       },
       {
         "slice": 2,
         "series": null,
         "response": "Very favorable",
-        "count": 286,
-        "pct": 0.1074
+        "count": 1517,
+        "pct": 0.3047
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 759,
+        "pct": 0.1524
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Neutral",
+        "count": 733,
+        "pct": 0.1472
       },
       {
         "slice": 2,
         "series": null,
         "response": "Very unfavorable",
-        "count": 286,
-        "pct": 0.1074
+        "count": 369,
+        "pct": 0.0741
       },
       {
         "slice": 2,
         "series": null,
         "response": "Not sure",
-        "count": 36,
-        "pct": 0.0135
+        "count": 58,
+        "pct": 0.0116
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Somewhat unfavorable",
-        "count": 281,
-        "pct": 0.3414
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "Neutral",
-        "count": 182,
-        "pct": 0.2211
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "Very unfavorable",
-        "count": 179,
-        "pct": 0.2175
+        "response": "Very favorable",
+        "count": 2184,
+        "pct": 0.3938
       },
       {
         "slice": 3,
         "series": null,
         "response": "Somewhat favorable",
-        "count": 122,
-        "pct": 0.1482
+        "count": 1670,
+        "pct": 0.3011
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Very favorable",
-        "count": 44,
-        "pct": 0.0535
+        "response": "Neutral",
+        "count": 698,
+        "pct": 0.1259
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 633,
+        "pct": 0.1141
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very unfavorable",
+        "count": 314,
+        "pct": 0.0566
       },
       {
         "slice": 3,
         "series": null,
         "response": "Not sure",
-        "count": 15,
-        "pct": 0.0182
+        "count": 47,
+        "pct": 0.0085
       }
     ]
   },
@@ -3860,19 +4010,19 @@
           "n": 14304
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
-          "n": 10824
+          "slice_type": "workexp",
+          "slice_value": "1-5 years",
+          "n": 3259
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
-          "n": 2630
+          "slice_type": "workexp",
+          "slice_value": "6-15 years",
+          "n": 4950
         },
         {
-          "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
-          "n": 819
+          "slice_type": "workexp",
+          "slice_value": "16+ years",
+          "n": 5512
         }
       ]
     },
@@ -3923,127 +4073,127 @@
         "slice": 1,
         "series": null,
         "response": "I trust it when I can easily verify the output",
-        "count": 5218,
-        "pct": 0.4821
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "I trust it for many tasks, but not important work decisions",
-        "count": 2116,
-        "pct": 0.1955
+        "count": 1515,
+        "pct": 0.4649
       },
       {
         "slice": 1,
         "series": null,
         "response": "I trust it for low-risk work tasks only",
-        "count": 1545,
-        "pct": 0.1427
+        "count": 640,
+        "pct": 0.1964
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 525,
+        "pct": 0.1611
       },
       {
         "slice": 1,
         "series": null,
         "response": "I do not trust it for most work tasks",
-        "count": 1007,
-        "pct": 0.093
+        "count": 408,
+        "pct": 0.1252
       },
       {
         "slice": 1,
         "series": null,
         "response": "I trust it for many tasks, including important work decisions",
-        "count": 897,
-        "pct": 0.0829
+        "count": 146,
+        "pct": 0.0448
       },
       {
         "slice": 1,
         "series": null,
         "response": "Not sure / I do not use AI tools",
-        "count": 41,
-        "pct": 0.0038
+        "count": 25,
+        "pct": 0.0077
       },
       {
         "slice": 2,
         "series": null,
         "response": "I trust it when I can easily verify the output",
-        "count": 1353,
-        "pct": 0.5144
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "I trust it for low-risk work tasks only",
-        "count": 563,
-        "pct": 0.2141
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "I do not trust it for most work tasks",
-        "count": 480,
-        "pct": 0.1825
+        "count": 2334,
+        "pct": 0.4715
       },
       {
         "slice": 2,
         "series": null,
         "response": "I trust it for many tasks, but not important work decisions",
-        "count": 181,
-        "pct": 0.0688
+        "count": 870,
+        "pct": 0.1758
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I trust it for low-risk work tasks only",
+        "count": 811,
+        "pct": 0.1638
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 615,
+        "pct": 0.1242
       },
       {
         "slice": 2,
         "series": null,
         "response": "I trust it for many tasks, including important work decisions",
-        "count": 37,
-        "pct": 0.0141
+        "count": 309,
+        "pct": 0.0624
       },
       {
         "slice": 2,
         "series": null,
         "response": "Not sure / I do not use AI tools",
-        "count": 16,
-        "pct": 0.0061
+        "count": 11,
+        "pct": 0.0022
       },
       {
         "slice": 3,
         "series": null,
         "response": "I trust it when I can easily verify the output",
-        "count": 288,
-        "pct": 0.3516
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "I do not trust it for most work tasks",
-        "count": 259,
-        "pct": 0.3162
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "I trust it for low-risk work tasks only",
-        "count": 211,
-        "pct": 0.2576
+        "count": 2775,
+        "pct": 0.5034
       },
       {
         "slice": 3,
         "series": null,
         "response": "I trust it for many tasks, but not important work decisions",
-        "count": 31,
-        "pct": 0.0379
+        "count": 854,
+        "pct": 0.1549
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Not sure / I do not use AI tools",
-        "count": 17,
-        "pct": 0.0208
+        "response": "I trust it for low-risk work tasks only",
+        "count": 747,
+        "pct": 0.1355
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I do not trust it for most work tasks",
+        "count": 653,
+        "pct": 0.1185
       },
       {
         "slice": 3,
         "series": null,
         "response": "I trust it for many tasks, including important work decisions",
-        "count": 13,
-        "pct": 0.0159
+        "count": 460,
+        "pct": 0.0835
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not sure / I do not use AI tools",
+        "count": 23,
+        "pct": 0.0042
       }
     ]
   },

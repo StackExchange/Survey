@@ -137,6 +137,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 13756
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 8265
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 1913
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 550
         }
       ]
     },
@@ -266,6 +281,384 @@
         "response": "Coordinating work across teams or functions",
         "count": 774,
         "pct": 0.0563
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Writing, editing, or generating code",
+        "count": 7480,
+        "pct": 0.905
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Debugging or troubleshooting",
+        "count": 6503,
+        "pct": 0.7868
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Writing or maintaining tests",
+        "count": 5566,
+        "pct": 0.6734
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Writing or updating documentation",
+        "count": 5310,
+        "pct": 0.6425
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Reviewing code, pull requests, or technical changes",
+        "count": 4902,
+        "pct": 0.5931
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Making technical design or architecture decisions",
+        "count": 3005,
+        "pct": 0.3636
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Investigating an incident, outage, or production issue",
+        "count": 2962,
+        "pct": 0.3584
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Planning, scoping, or estimating work",
+        "count": 2861,
+        "pct": 0.3462
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Answering questions from teammates, customers, users, or stakeholders",
+        "count": 2444,
+        "pct": 0.2957
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Analyzing data, reports, or business metrics",
+        "count": 2253,
+        "pct": 0.2726
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Changing production code, systems, or infrastructure",
+        "count": 2246,
+        "pct": 0.2717
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Onboarding to a new project, tool, system, or codebase",
+        "count": 2245,
+        "pct": 0.2716
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Finding or fixing security, privacy, or compliance issues",
+        "count": 2235,
+        "pct": 0.2704
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Maintaining dependencies, packages, or development environments",
+        "count": 2159,
+        "pct": 0.2612
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Monitoring systems, logs, metrics, or alerts",
+        "count": 1582,
+        "pct": 0.1914
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Deploying or releasing software",
+        "count": 1151,
+        "pct": 0.1393
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Coordinating work across teams or functions",
+        "count": 653,
+        "pct": 0.079
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "None of the above",
+        "count": 213,
+        "pct": 0.0258
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Writing, editing, or generating code",
+        "count": 1264,
+        "pct": 0.6607
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Debugging or troubleshooting",
+        "count": 965,
+        "pct": 0.5044
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Writing or maintaining tests",
+        "count": 623,
+        "pct": 0.3257
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Writing or updating documentation",
+        "count": 580,
+        "pct": 0.3032
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Reviewing code, pull requests, or technical changes",
+        "count": 570,
+        "pct": 0.298
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Making technical design or architecture decisions",
+        "count": 226,
+        "pct": 0.1181
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "None of the above",
+        "count": 222,
+        "pct": 0.116
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Planning, scoping, or estimating work",
+        "count": 209,
+        "pct": 0.1093
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Analyzing data, reports, or business metrics",
+        "count": 203,
+        "pct": 0.1061
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Investigating an incident, outage, or production issue",
+        "count": 200,
+        "pct": 0.1045
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Answering questions from teammates, customers, users, or stakeholders",
+        "count": 173,
+        "pct": 0.0904
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Onboarding to a new project, tool, system, or codebase",
+        "count": 165,
+        "pct": 0.0863
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Finding or fixing security, privacy, or compliance issues",
+        "count": 143,
+        "pct": 0.0748
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Maintaining dependencies, packages, or development environments",
+        "count": 126,
+        "pct": 0.0659
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Changing production code, systems, or infrastructure",
+        "count": 104,
+        "pct": 0.0544
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Monitoring systems, logs, metrics, or alerts",
+        "count": 82,
+        "pct": 0.0429
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Deploying or releasing software",
+        "count": 36,
+        "pct": 0.0188
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Coordinating work across teams or functions",
+        "count": 26,
+        "pct": 0.0136
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Writing, editing, or generating code",
+        "count": 228,
+        "pct": 0.4145
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Debugging or troubleshooting",
+        "count": 195,
+        "pct": 0.3545
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "None of the above",
+        "count": 147,
+        "pct": 0.2673
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Writing or updating documentation",
+        "count": 90,
+        "pct": 0.1636
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Reviewing code, pull requests, or technical changes",
+        "count": 83,
+        "pct": 0.1509
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Writing or maintaining tests",
+        "count": 79,
+        "pct": 0.1436
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Investigating an incident, outage, or production issue",
+        "count": 47,
+        "pct": 0.0855
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Planning, scoping, or estimating work",
+        "count": 39,
+        "pct": 0.0709
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Making technical design or architecture decisions",
+        "count": 35,
+        "pct": 0.0636
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Answering questions from teammates, customers, users, or stakeholders",
+        "count": 32,
+        "pct": 0.0582
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Analyzing data, reports, or business metrics",
+        "count": 31,
+        "pct": 0.0564
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Finding or fixing security, privacy, or compliance issues",
+        "count": 29,
+        "pct": 0.0527
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Onboarding to a new project, tool, system, or codebase",
+        "count": 29,
+        "pct": 0.0527
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Maintaining dependencies, packages, or development environments",
+        "count": 18,
+        "pct": 0.0327
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Monitoring systems, logs, metrics, or alerts",
+        "count": 17,
+        "pct": 0.0309
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Changing production code, systems, or infrastructure",
+        "count": 15,
+        "pct": 0.0273
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Deploying or releasing software",
+        "count": 9,
+        "pct": 0.0164
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Coordinating work across teams or functions",
+        "count": 8,
+        "pct": 0.0145
       }
     ]
   },
@@ -279,6 +672,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 12996
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 7942
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 1866
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 545
         }
       ]
     },
@@ -373,6 +781,279 @@
         "response": "None of these",
         "count": 115,
         "pct": 0.0088
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It is recent or clearly up to date",
+        "count": 5968,
+        "pct": 0.7514
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It comes from an official or trusted source",
+        "count": 4667,
+        "pct": 0.5876
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It is consistent with other trusted information",
+        "count": 3503,
+        "pct": 0.4411
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It is clear, complete, and easy to understand",
+        "count": 3431,
+        "pct": 0.432
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I know who created or owns it",
+        "count": 3075,
+        "pct": 0.3872
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It includes sources, citations, links, or supporting evidence",
+        "count": 2895,
+        "pct": 0.3645
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It is marked final, approved, accepted, or official",
+        "count": 2572,
+        "pct": 0.3238
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other people on my team use or endorse it",
+        "count": 2104,
+        "pct": 0.2649
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It was reviewed or validated by a subject matter expert",
+        "count": 1868,
+        "pct": 0.2352
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It is not marked draft, outdated, deprecated, or superseded",
+        "count": 1436,
+        "pct": 0.1808
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "It respects access, privacy, or permission rules",
+        "count": 608,
+        "pct": 0.0766
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not sure",
+        "count": 221,
+        "pct": 0.0278
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "None of these",
+        "count": 60,
+        "pct": 0.0076
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It is recent or clearly up to date",
+        "count": 1359,
+        "pct": 0.7283
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It comes from an official or trusted source",
+        "count": 1185,
+        "pct": 0.635
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It is consistent with other trusted information",
+        "count": 918,
+        "pct": 0.492
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It is clear, complete, and easy to understand",
+        "count": 781,
+        "pct": 0.4185
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It includes sources, citations, links, or supporting evidence",
+        "count": 704,
+        "pct": 0.3773
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I know who created or owns it",
+        "count": 702,
+        "pct": 0.3762
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It is marked final, approved, accepted, or official",
+        "count": 548,
+        "pct": 0.2937
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Other people on my team use or endorse it",
+        "count": 489,
+        "pct": 0.2621
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It was reviewed or validated by a subject matter expert",
+        "count": 469,
+        "pct": 0.2513
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It is not marked draft, outdated, deprecated, or superseded",
+        "count": 325,
+        "pct": 0.1742
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "It respects access, privacy, or permission rules",
+        "count": 193,
+        "pct": 0.1034
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not sure",
+        "count": 56,
+        "pct": 0.03
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "None of these",
+        "count": 12,
+        "pct": 0.0064
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It is recent or clearly up to date",
+        "count": 359,
+        "pct": 0.6587
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It comes from an official or trusted source",
+        "count": 348,
+        "pct": 0.6385
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It is consistent with other trusted information",
+        "count": 278,
+        "pct": 0.5101
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It is clear, complete, and easy to understand",
+        "count": 239,
+        "pct": 0.4385
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It includes sources, citations, links, or supporting evidence",
+        "count": 214,
+        "pct": 0.3927
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I know who created or owns it",
+        "count": 198,
+        "pct": 0.3633
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It is marked final, approved, accepted, or official",
+        "count": 155,
+        "pct": 0.2844
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It was reviewed or validated by a subject matter expert",
+        "count": 139,
+        "pct": 0.255
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Other people on my team use or endorse it",
+        "count": 113,
+        "pct": 0.2073
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It is not marked draft, outdated, deprecated, or superseded",
+        "count": 111,
+        "pct": 0.2037
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "It respects access, privacy, or permission rules",
+        "count": 59,
+        "pct": 0.1083
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not sure",
+        "count": 14,
+        "pct": 0.0257
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "None of these",
+        "count": 5,
+        "pct": 0.0092
       }
     ]
   },
@@ -735,51 +1416,401 @@
       {
         "slice": 0,
         "series": null,
-        "response": "0-4 hours",
-        "count": 3033,
-        "pct": 0.2526
+        "response": "1",
+        "count": 316,
+        "pct": 0.0263
       },
       {
         "slice": 0,
         "series": null,
-        "response": "5-9 hours",
-        "count": 4096,
-        "pct": 0.3412
+        "response": "2",
+        "count": 799,
+        "pct": 0.0666
       },
       {
         "slice": 0,
         "series": null,
-        "response": "10-14 hours",
-        "count": 2446,
-        "pct": 0.2037
+        "response": "3",
+        "count": 747,
+        "pct": 0.0622
       },
       {
         "slice": 0,
         "series": null,
-        "response": "15-19 hours",
-        "count": 1085,
-        "pct": 0.0904
+        "response": "4",
+        "count": 1171,
+        "pct": 0.0975
       },
       {
         "slice": 0,
         "series": null,
-        "response": "20-29 hours",
-        "count": 1047,
-        "pct": 0.0872
+        "response": "5",
+        "count": 1935,
+        "pct": 0.1612
       },
       {
         "slice": 0,
         "series": null,
-        "response": "30-39 hours",
-        "count": 164,
-        "pct": 0.0137
+        "response": "6",
+        "count": 643,
+        "pct": 0.0536
       },
       {
         "slice": 0,
         "series": null,
-        "response": "40+ hours",
-        "count": 135,
-        "pct": 0.0112
+        "response": "7",
+        "count": 216,
+        "pct": 0.018
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "8",
+        "count": 1255,
+        "pct": 0.1045
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "9",
+        "count": 47,
+        "pct": 0.0039
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "10",
+        "count": 2119,
+        "pct": 0.1765
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "11",
+        "count": 5,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "12",
+        "count": 266,
+        "pct": 0.0222
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "13",
+        "count": 10,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "14",
+        "count": 46,
+        "pct": 0.0038
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "15",
+        "count": 832,
+        "pct": 0.0693
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "16",
+        "count": 203,
+        "pct": 0.0169
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "17",
+        "count": 6,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "18",
+        "count": 43,
+        "pct": 0.0036
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "19",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "20",
+        "count": 848,
+        "pct": 0.0706
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "21",
+        "count": 10,
+        "pct": 0.0008
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "22",
+        "count": 4,
+        "pct": 0.0003
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "23",
+        "count": 5,
+        "pct": 0.0004
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "24",
+        "count": 45,
+        "pct": 0.0037
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "25",
+        "count": 119,
+        "pct": 0.0099
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "26",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "27",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "28",
+        "count": 11,
+        "pct": 0.0009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "29",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "30",
+        "count": 125,
+        "pct": 0.0104
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "32",
+        "count": 11,
+        "pct": 0.0009
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "33",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "35",
+        "count": 16,
+        "pct": 0.0013
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "36",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "38",
+        "count": 7,
+        "pct": 0.0006
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "39",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "40",
+        "count": 46,
+        "pct": 0.0038
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "42",
+        "count": 6,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "43",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "45",
+        "count": 4,
+        "pct": 0.0003
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "48",
+        "count": 6,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "50",
+        "count": 19,
+        "pct": 0.0016
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "54",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "55",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "56",
+        "count": 2,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "60",
+        "count": 8,
+        "pct": 0.0007
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "64",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "65",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "67",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "70",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "72",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "73",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "80",
+        "count": 6,
+        "pct": 0.0005
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "90",
+        "count": 1,
+        "pct": 0.0001
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "98",
+        "count": 3,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "99",
+        "count": 2,
+        "pct": 0.0002
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "100",
+        "count": 17,
+        "pct": 0.0014
       }
     ]
   },
@@ -2416,6 +3447,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 13945
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 8324
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 1944
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 565
         }
       ]
     },
@@ -2454,6 +3500,111 @@
         "response": "Least important",
         "count": 266,
         "pct": 0.0191
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Very important",
+        "count": 3801,
+        "pct": 0.4566
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Important",
+        "count": 2486,
+        "pct": 0.2987
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Somewhat important",
+        "count": 1344,
+        "pct": 0.1615
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not very important",
+        "count": 534,
+        "pct": 0.0642
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Least important",
+        "count": 159,
+        "pct": 0.0191
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Very important",
+        "count": 1051,
+        "pct": 0.5406
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Important",
+        "count": 539,
+        "pct": 0.2773
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Somewhat important",
+        "count": 250,
+        "pct": 0.1286
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not very important",
+        "count": 87,
+        "pct": 0.0448
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Least important",
+        "count": 17,
+        "pct": 0.0087
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Very important",
+        "count": 361,
+        "pct": 0.6389
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Important",
+        "count": 107,
+        "pct": 0.1894
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Somewhat important",
+        "count": 63,
+        "pct": 0.1115
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not very important",
+        "count": 21,
+        "pct": 0.0372
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Least important",
+        "count": 13,
+        "pct": 0.023
       }
     ]
   },
@@ -2467,6 +3618,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 13243
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 8129
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 1894
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 547
         }
       ]
     },
@@ -2512,6 +3678,132 @@
         "response": "Someone else manages what information the AI tool can access",
         "count": 811,
         "pct": 0.0612
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I decide exactly what information to give the AI tool",
+        "count": 4107,
+        "pct": 0.5052
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I choose from available sources, files, or systems",
+        "count": 1954,
+        "pct": 0.2404
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The AI tool chooses the information automatically",
+        "count": 1062,
+        "pct": 0.1306
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Someone else manages what information the AI tool can access",
+        "count": 530,
+        "pct": 0.0652
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I am not sure what information the AI tool uses",
+        "count": 436,
+        "pct": 0.0536
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "I do not use AI tools or agents for work",
+        "count": 40,
+        "pct": 0.0049
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I decide exactly what information to give the AI tool",
+        "count": 991,
+        "pct": 0.5232
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I choose from available sources, files, or systems",
+        "count": 351,
+        "pct": 0.1853
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I am not sure what information the AI tool uses",
+        "count": 175,
+        "pct": 0.0924
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Someone else manages what information the AI tool can access",
+        "count": 164,
+        "pct": 0.0866
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The AI tool chooses the information automatically",
+        "count": 152,
+        "pct": 0.0803
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "I do not use AI tools or agents for work",
+        "count": 61,
+        "pct": 0.0322
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I decide exactly what information to give the AI tool",
+        "count": 261,
+        "pct": 0.4771
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I am not sure what information the AI tool uses",
+        "count": 93,
+        "pct": 0.17
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I choose from available sources, files, or systems",
+        "count": 66,
+        "pct": 0.1207
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "I do not use AI tools or agents for work",
+        "count": 52,
+        "pct": 0.0951
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Someone else manages what information the AI tool can access",
+        "count": 38,
+        "pct": 0.0695
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The AI tool chooses the information automatically",
+        "count": 37,
+        "pct": 0.0676
       }
     ]
   },
@@ -2590,6 +3882,21 @@
           "slice_type": "all",
           "slice_value": "All Respondents",
           "n": 11462
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Daily Users",
+          "n": 7680
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Weekly Users",
+          "n": 1724
+        },
+        {
+          "slice_type": "aifreqgroup",
+          "slice_value": "Monthly/Infrequent Users",
+          "n": 501
         }
       ]
     },
@@ -2719,6 +4026,384 @@
         "response": "The tool has observability already integrated or built in",
         "count": 213,
         "pct": 0.0186
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool produces useful and accurate results",
+        "count": 2604,
+        "pct": 0.3391
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The price is acceptable for the value it provides",
+        "count": 2420,
+        "pct": 0.3151
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool meets security, privacy requirements",
+        "count": 2269,
+        "pct": 0.2954
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool meets legal or compliance requirements",
+        "count": 1735,
+        "pct": 0.2259
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Your company policy allows for usage",
+        "count": 1279,
+        "pct": 0.1665
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Not sure",
+        "count": 1252,
+        "pct": 0.163
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Employees or teams are asking to use it",
+        "count": 1103,
+        "pct": 0.1436
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool reduces time spent correcting, retrying, or reworking outputs",
+        "count": 1098,
+        "pct": 0.143
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "There is evidence that the tool improves business outcomes",
+        "count": 1078,
+        "pct": 0.1404
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool is worth paying more for because of better results",
+        "count": 981,
+        "pct": 0.1277
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Usage and spending are easy to monitor or limit",
+        "count": 850,
+        "pct": 0.1107
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool works well with how people already do their jobs",
+        "count": 774,
+        "pct": 0.1008
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool connects with systems people already use",
+        "count": 594,
+        "pct": 0.0773
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The organization can switch tools or models without major disruption",
+        "count": 523,
+        "pct": 0.0681
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Human oversight is manageable",
+        "count": 425,
+        "pct": 0.0553
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Review burden is low",
+        "count": 186,
+        "pct": 0.0242
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "The tool has observability already integrated or built in",
+        "count": 160,
+        "pct": 0.0208
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other",
+        "count": 113,
+        "pct": 0.0147
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool meets security, privacy requirements",
+        "count": 543,
+        "pct": 0.315
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Not sure",
+        "count": 476,
+        "pct": 0.2761
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool produces useful and accurate results",
+        "count": 460,
+        "pct": 0.2668
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool meets legal or compliance requirements",
+        "count": 423,
+        "pct": 0.2454
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The price is acceptable for the value it provides",
+        "count": 409,
+        "pct": 0.2372
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Your company policy allows for usage",
+        "count": 299,
+        "pct": 0.1734
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "There is evidence that the tool improves business outcomes",
+        "count": 178,
+        "pct": 0.1032
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Employees or teams are asking to use it",
+        "count": 173,
+        "pct": 0.1003
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool works well with how people already do their jobs",
+        "count": 162,
+        "pct": 0.094
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Usage and spending are easy to monitor or limit",
+        "count": 160,
+        "pct": 0.0928
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool reduces time spent correcting, retrying, or reworking outputs",
+        "count": 157,
+        "pct": 0.0911
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Human oversight is manageable",
+        "count": 118,
+        "pct": 0.0684
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool connects with systems people already use",
+        "count": 101,
+        "pct": 0.0586
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The organization can switch tools or models without major disruption",
+        "count": 90,
+        "pct": 0.0522
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool is worth paying more for because of better results",
+        "count": 85,
+        "pct": 0.0493
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Review burden is low",
+        "count": 61,
+        "pct": 0.0354
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Other",
+        "count": 38,
+        "pct": 0.022
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "The tool has observability already integrated or built in",
+        "count": 26,
+        "pct": 0.0151
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool meets security, privacy requirements",
+        "count": 156,
+        "pct": 0.3114
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Not sure",
+        "count": 147,
+        "pct": 0.2934
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool produces useful and accurate results",
+        "count": 130,
+        "pct": 0.2595
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool meets legal or compliance requirements",
+        "count": 123,
+        "pct": 0.2455
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Your company policy allows for usage",
+        "count": 97,
+        "pct": 0.1936
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The price is acceptable for the value it provides",
+        "count": 92,
+        "pct": 0.1836
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Employees or teams are asking to use it",
+        "count": 57,
+        "pct": 0.1138
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool reduces time spent correcting, retrying, or reworking outputs",
+        "count": 51,
+        "pct": 0.1018
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "There is evidence that the tool improves business outcomes",
+        "count": 49,
+        "pct": 0.0978
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Human oversight is manageable",
+        "count": 46,
+        "pct": 0.0918
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool works well with how people already do their jobs",
+        "count": 46,
+        "pct": 0.0918
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool connects with systems people already use",
+        "count": 36,
+        "pct": 0.0719
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Usage and spending are easy to monitor or limit",
+        "count": 29,
+        "pct": 0.0579
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool is worth paying more for because of better results",
+        "count": 27,
+        "pct": 0.0539
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Other",
+        "count": 19,
+        "pct": 0.0379
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Review burden is low",
+        "count": 17,
+        "pct": 0.0339
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The organization can switch tools or models without major disruption",
+        "count": 17,
+        "pct": 0.0339
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "The tool has observability already integrated or built in",
+        "count": 9,
+        "pct": 0.018
       }
     ]
   },
