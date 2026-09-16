@@ -397,8 +397,8 @@
         },
         {
           "chapter": "Work",
-          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
-          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
+          "headline": "",
+          "description": "Obviously, the world of work for technologists is in flux. This year’s data capture a workforce navigating serious uncertainty. Layoffs have become a perennial industry headline, AI is exploding expectations of what a single person can get done, and the traditional employer-employee relationship is evolving in response to these seismic shifts.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -408,46 +408,10 @@
         },
         {
           "chapter": "Work",
-          "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
-          "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and staffing shortages (14%).",
-          "tier": "chapter",
-          "chart": "2d-treemap",
-          "dataId": "JobDifficulty",
-          "focus": "Unclear priorities or requirements",
-          "limit": "8",
-          "values": [],
-          "dataIdSlug": "job-difficulty"
-        },
-        {
-          "chapter": "Work",
-          "headline": "Top 3 responding countries this year are the U.S., Germany and the U.K.",
-          "description": "The United States represents the largest single location share of respondents, followed by Germany at 9% and the United Kingdom at 6%.",
-          "tier": "chapter",
-          "chart": "rank",
-          "dataId": "Country",
-          "focus": "",
-          "limit": "5",
-          "values": [],
-          "dataIdSlug": "country"
-        },
-        {
-          "chapter": "Work",
-          "headline": "35% work fully remote",
-          "description": "Fully remote setups remain the dominant arrangement among respondents, outpacing heavy in-person hybrid setups (20%) and strictly in-person roles (18%).",
-          "tier": "chapter",
-          "chart": "2d-bar-stacked-vertical",
-          "dataId": "WorkSetting",
-          "focus": "",
-          "limit": "",
-          "values": [],
-          "dataIdSlug": "work-setting"
-        },
-        {
-          "chapter": "Work",
-          "headline": "Eu nulla mattis eget lacus quam ullamcorper enim donec justo. Fermentum augue pharetra",
-          "description": "Survey Respondant",
-          "tier": "chapter",
-          "chart": "quote",
+          "headline": "Many-to-one: can we do more by ourselves than with a team?",
+          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—nearly tripled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for a single developer to do the work that once required a small team, opening the door to a volume of consulting and freelance projects that wouldn’t have been viable a few years ago. ([Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/)) pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
+          "tier": "",
+          "chart": "",
           "dataId": "",
           "focus": "",
           "limit": "",
@@ -467,15 +431,61 @@
         },
         {
           "chapter": "Work",
-          "headline": "Headline for Compensation goes here",
-          "description": "TBD",
+          "headline": "",
+          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, and when devs can't count on a dozen open offers the way they once could, staying in a role that’s a less-than-great fit becomes the safer bet. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "New tools, same problem",
+          "description": "Amid all that churn, it's worth asking what actually earns trust and attention these days. On the tooling side, the answer is refreshingly unglamorous: reliability, productivity, and community all beat out flash. AI capabilities, interestingly, barely register as a reason to recommend a technology. Asked to cite what's actually made their jobs easier lately, developers point to concrete things—the best tools for the job, supportive teammates and coworkers—over abstractions like “better processes” or “clearer priorities.” Tellingly, 20% of respondents say nothing at all has made their job easier in the past six months. This year has asked a lot of devs without giving much back.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
+          "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and staffing shortages (14%).",
           "tier": "chapter",
-          "chart": "stat",
-          "dataId": "Compensation",
+          "chart": "2d-treemap",
+          "dataId": "JobDifficulty",
+          "focus": "Unclear priorities or requirements",
+          "limit": "8",
+          "values": [],
+          "dataIdSlug": "job-difficulty"
+        },
+        {
+          "chapter": "Work",
+          "headline": "",
+          "description": "Tools are the largest positive intervention at 20%, yet 21% say nothing made work easier.",
+          "tier": "chapter",
+          "chart": "rank",
+          "dataId": "JobEase",
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "job-ease"
+        },
+        {
+          "chapter": "Work",
+          "headline": "",
+          "description": "The picture painted by the data is that technologists are being forced to adapt on two fronts at once. The shape of employment itself is allowing for more independent, solo work, while complexity and uncertainty are making teams grow more cautious and discerning about what actually helps them at work. Through it all, the data suggests, modern employees working in technology have grounded expectations for what AI can do for them, even as the tech slowly wins their trust.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "WorkSetting",
           "focus": "",
           "limit": "",
           "values": [],
-          "dataIdSlug": "compensation"
+          "dataIdSlug": "work-setting"
         },
         {
           "chapter": "Work",
@@ -753,8 +763,8 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Li Europan lingues es membres del sam familie. Lor separat existentie es un mythpor",
-          "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\n\nOmnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser.",
+          "headline": "",
+          "description": "If this year’s data showed developers using AI tools consistently while trusting them conditionally, this section digs into the “conditionally” of it all. Where does that trust actually come from, and what gives an answer credibility in the first place?",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -764,15 +774,37 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
-          "description": "The rest write code as part of another role, are learning, or code as a hobby.",
+          "headline": "Source attribution",
+          "description": "As AI-generated content becomes harder to distinguish from human-produced work, and as governance conversations gain more traction across the industry, source attribution has become a bigger priority for technologists. This year, 92% of survey respondents called source attribution at least somewhat important when deciding whether to trust AI-generated answers, with 79% judging it important or very important.\n\nAI models, of course, are non-deterministic by design. That variability is part of what makes them useful, but it also introduces the potential for errors and hallucinations. Developers have clearly internalized this, because the overwhelming majority say that knowing where an answer came from matters a lot, not a little, when deciding whether to trust it.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "",
+          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
           "tier": "chapter",
-          "chart": "2d-waffle-large",
-          "dataId": "ContextSelect",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "KnowledgeSourceAI",
           "focus": "",
           "limit": "",
           "values": [],
-          "dataIdSlug": "context-select"
+          "dataIdSlug": "knowledge-source-ai"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Context that matters most",
+          "description": "That trust in sourcing extends naturally into a question of inputs: what context actually helps AI get things right in the first place? Respondents ranked project goals or requirements (85%) and the underlying code and docs (73%) as by far the most important context they need their AI to consider.\n\nBut if someone has a specific question, then the sources of context shift slightly. The most trusted source of information is still the people you work with (72%), followed by the code (63%), and documentation (60%). In other words, you first go to the people, then the code, then what people wrote about the code.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "Knowledge",
@@ -788,63 +820,49 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Project goals or requirements (85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "headline": "Tokenomics vs. quality",
+          "description": "Are developers changing their behaviors as they start seeing the costs of high-performing models? When asked about whether they changed their prompts to improve quality or to reduce costs, overwhelmingly respondents picked quality (75%) over cost (38%), probably because they’re the folks actually building software, not managers who have to report ROI to the board. A small portion (16%) said their prompts are perfect as they are, thanks, and aren’t changing them for either reason. \n\nThat doesn’t mean organizations have wired their AI models directly to their bank accounts. A majority of respondents have some sort of organization cost controls or monitoring: 38% set limits on usage, 28% reviewed spending data, 27% use different models for different work, and 25% set limits on who gets to use AI. 21% of respondents said their organizations saw the results from AI and started spending more.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "",
           "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
-          "dataId": "ContextSelect",
+          "dataId": "AICost",
           "focus": "",
           "limit": "",
           "values": [],
-          "dataIdSlug": "context-select"
+          "dataIdSlug": "ai-cost"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "headline": "",
           "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-horizontal",
-          "dataId": "ContextSelect",
+          "dataId": "AICostPrompt",
           "focus": "",
           "limit": "",
           "values": [],
-          "dataIdSlug": "context-select"
+          "dataIdSlug": "ai-cost-prompt"
         },
         {
           "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
-          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
-          "tier": "chapter",
-          "chart": "rank",
-          "dataId": "ContextSelect",
+          "headline": "",
+          "description": "When it comes to their own AI usage, individual respondents took a generally cost-conscious approach: 33% personally monitor their usage, 25% choose cheaper models when possible, and 24% say their usage is metered. Not everyone is so fettered by budgets—22% are unaffected by costs of limits to their AI use while 21% have yet to see limits and probably have an intimidating yellow aura.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
           "focus": "",
           "limit": "",
-          "values": [],
-          "dataIdSlug": "context-select"
-        },
-        {
-          "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
-          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
-          "tier": "chapter",
-          "chart": "rank",
-          "dataId": "ContextSelect",
-          "focus": "",
-          "limit": "",
-          "values": [],
-          "dataIdSlug": "context-select"
-        },
-        {
-          "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
-          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
-          "tier": "chapter",
-          "chart": "rank",
-          "dataId": "ContextSelect",
-          "focus": "",
-          "limit": "5",
-          "values": [],
-          "dataIdSlug": "context-select"
+          "values": []
         }
       ],
       "index": 2
@@ -1154,7 +1172,7 @@
       "features": [
         {
           "chapter": "AI",
-          "headline": "62% find AI favorable",
+          "headline": "62% like using AI",
           "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
           "tier": "home",
           "chart": "3d-cube",
@@ -1193,7 +1211,7 @@
         {
           "chapter": "AI",
           "headline": "AI moves from on-the-side to built-in",
-          "description": "Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%). It’s a sign that AI has become less sidekick and more infrastructure, built right into the tools technologists already use. The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third spending upwards of four hours.",
+          "description": "Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%). It’s a sign that AI has become less sidekick and more infrastructure, built right into the tools technologists already use. The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1219,9 +1237,20 @@
         {
           "chapter": "AI",
           "headline": "",
-          "description": "Despite plenty of societal concern about AI, survey respondents themselves retain a fairly positive view of the technology: when asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by 3.5 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most non-decision tasks.The sweet spot where most AI users land is trusting AI when they are very comfortable with the content it is working with, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
+          "description": "Despite plenty of societal concern about AI, survey respondents retain a fairly positive view of the technology: when asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by 3.5 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most tasks outside of important work decisions.The sweet spot where most AI users land is trusting AI when they understand what it’s working on, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
           "tier": "chapter",
           "chart": "text",
+          "dataId": "",
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "This is where I personally feel the importance of human judgment. If you leave it up to chance, if you leave it up to the roll of the dice of the LLM, you're not gonna get the specificity. Everything I've been doing and everything my team's been doing is imagining AI as an exoskeleton, like a Tony Stark augmentation, as opposed to an empty Ultron with nobody inside. Which nobody wants. - ([Scott Hanselman,](https://stackoverflow.blog/2026/01/13/vibe-code-anything-in-a-hanselminute/))VP of Developer Community at Microsoft",
+          "tier": "",
+          "chart": "quote",
           "dataId": "",
           "focus": "",
           "limit": "",
@@ -1253,7 +1282,7 @@
         {
           "chapter": "AI",
           "headline": "",
-          "description": "What are they using? Claude Code (66%) and GitHub Copilot (59%) are the leaders for coding agents. Respondents are using Langchain (30%) and OpenAIAgents SDK (24%) for orchestration and Make and n8n for automation. AI memory and agent orchestration tools show a notable gap between current adoption and stated interest, suggesting that the category is still finding its footing. Coding agents, meanwhile, are a more mature market with clear leaders emerging. \n\nThat selectivity becomes very clear once you look at where AI is actually being put to work. Basically, developers trust AI with machines but not with people. AI use is common, and commonly accepted, across code generation, debugging, testing, and understanding unfamiliar codebases. Even secondary review functions—analyzing telemetry, reviewing pull requests, hunting for security issues—are seeing meaningful AI adoption.",
+          "description": "What are they using? Claude Code (66%) and GitHub Copilot (59%) are the leaders for coding agents. Respondents are using Langchain (30%) and OpenAIAgents SDK (24%) for orchestration and Make (39%) and n8n (33%) for automation. AI memory and agent orchestration tools show a notable gap between current adoption and stated interest, suggesting that the category is still finding its footing. Coding agents, meanwhile, are a more mature market with clear leaders emerging. \n\nThat selectivity becomes very clear once you look at where AI is actually being put to work. Basically, developers trust AI with machines but not with people. AI use is common, and commonly accepted, across code generation, debugging, testing, and understanding unfamiliar codebases. Even secondary review functions—analyzing telemetry, reviewing pull requests, hunting for security issues—are seeing meaningful AI adoption.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1675,7 +1704,7 @@
         {
           "chapter": "Technology",
           "headline": "What’s new, what’s old, and something for everyone in technologies surveyed this year",
-          "description": "The technology leaderboards have been a constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit. What’s changed are the categories of tech on this list: cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies on some of these lists have been there for years. Some lists show clear leaders in the space. But there's still plenty of room for alternative technologies to gain ground: each of these lists includes a long tail of tools in the single digits for usage (and we had to cut the lists off somewhere).",
+          "description": "The technology leaderboards have been a constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit. What’s changed are the categories of tech on this list: cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies on some of these lists have been there for years. Some lists show clear leaders in the space. But there's still plenty of room for alternative technologies to gain ground- each of these lists includes a long tail of tools in the single digits for usage (and we had to cut the lists off somewhere).",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1701,8 +1730,8 @@
         },
         {
           "chapter": "Technology",
-          "headline": "The Core Stack: Technologies that stand the test of time",
-          "description": "The majority of developers are using JavaScript, SQL, HTML/CSS, Python, and Bash/Shell. Not too surprising; these are the basic techs involved in web software, and everything is web software these days. No real complaints here, about a third of folks want to use these techs in six6 months (except for the shell languages (25%) and HTML (29%) because can’t we get a script to write that?). AI seems to love using JavScript and Python (38% each).\n\nFor the backend (and standalone) languages, things get a little more diversified. Java and C# both top the list at roughly 27%, though C# seems to leave a slightly better impression, as slightly more people want to use it in the next six months. Rust perennially has more admirers than users. Other languages more admired than used include Zig, Haskel, Elixir, and Erlang.",
+          "headline": "The core stack: Technologies that stand the test of time",
+          "description": "The majority of developers are using JavaScript, SQL, HTML/CSS, Python, and Bash/Shell. Not too surprising These are the basic techs involved in web software, and everything is web software these days. Nobody seems too upset about it: about a third of folks want to use these techs in six months (except for the shell languages (25%) and HTML (29%) because can’t we get a script to write that?). AI seems to love using JavaScript and Python (38% each).\n\nFor the backend and standalone languages, things get a little more diversified. Java and C# both top the list at roughly 27%. C# seems to leave a slightly better impression, as slightly more people want to use it in the next six months. Rust perennially has more admirers than users. Other languages more admired than used include Zig, Haskel, Elixir, and Erlang.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1747,7 +1776,7 @@
         {
           "chapter": "Technology",
           "headline": "Builders are still building in the age of AI",
-          "description": "When developers open their IDEs to build in-house software, popular predictions of an AI-driven \"SaaSpocalypse\" turn out to be greatly exaggerated. Developers are building at high volumes, but their focus remains on internal utilities and glue code rather than replacing commercial software. 77% of developers build small scripts and automations, while 63% create team-level internal tools.  54% build customer-facing applications—a reminder that a vast portion of engineers work inside traditional enterprise sectors like retail, finance, and manufacturing. Vendor replacement sits at the bottom: Only 19% of respondents build in-house software to replace paid vendors.",
+          "description": "Popular predictions of an AI-driven \"SaaSpocalypse\" turn out to be greatly exaggerated. Developers are building at high volumes, but their focus remains on internal utilities and glue code rather than replacing commercial software. 77% of developers build small scripts and automations, while 63% create team-level internal tools.  54% build customer-facing applications—a reminder that a vast portion of engineers work inside traditional enterprise sectors like retail, finance, and manufacturing. Vendor replacement sits at the bottom: Only 19% of respondents build in-house software to replace paid vendors. \n\nBut when you shift to look at what people build with AI, SaaS vendors might get nervous: 54% those building with AI are replacing vendors. The good news is that this is limited to the AI builder subgroup—across the entire survey pool, just 10% of total developers are using AI to replace third-party software. Vendor replacement got a lot of press this year, but it’s far from an AI breakout story—it's actually the workload where AI assistance sees the lowest ceiling for adoption",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1770,7 +1799,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "When cross-referencing these builds with AI tool usage, a subtle trend emerges: AI adoption steadily drops as system complexity and operational risk increase. While 54% of developers replacing vendors utilize AI assistance, this represents a rate only within that specific subgroup. Across the entire survey pool, just 10% of total developers are using AI to replace third-party software. Vendor replacement is far from an AI breakout story—it's actually the workload where AI assistance sees the lowest ceiling for adoption. The survey's AI friction data explains why developers hesitate to replace SaaS vendors with custom LLM-generated software. Paid tools offload security compliance, SLAs, and continuous maintenance. Replacing them transfers technical debt back onto internal teams, right where AI errors create the most pain. Developers are happy to let AI generate low-risk automation scripts, but when it comes to business-critical SaaS, most teams still prefer paying a vendor over managing unmaintainable, AI-generated technical debt.",
+          "description": "When cross-referencing these builds with AI tool usage, a subtle trend emerges: AI adoption steadily drops as system complexity and operational risk increase. When you buy tools, you offload security compliance, SLAs, and continuous maintenance. Replacing them with internally-built tools transfers technical debt back onto internal teams, right where AI errors create the most pain. Developers are happy to let AI generate low-risk automation scripts, but when it comes to business-critical SaaS, most teams still prefer paying a vendor over managing unmaintainable, AI-generated technical debt.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1793,7 +1822,7 @@
         {
           "chapter": "Technology",
           "headline": "Frontier models’ next evolution",
-          "description": "While OpenAI and Anthropic sit neck-and-neck at the top of general LLM usage (74% and 75% adoption, respectively), practitioner sentiment reveals a clear divergence when evaluating developer preference and agentic execution. Anthropic holds a clear lead in forward-looking interest, with 49% of developers expressing a desire to work with Claude over the next six months, compared to 32% for OpenAI. When building autonomous coding agents or complex tool-calling pipelines, developers lean heavily toward Anthropic (45% usage) over OpenAI (32% usage). Spend tracking data from Ramp mirrors this shift, showing Anthropic capturing market share rapidly as engineering teams transition from simple chat interfaces to structured, programmatic agent architectures.",
+          "description": "While OpenAI and Anthropic sit neck-and-neck at the top of general LLM usage (74% and 75% adoption, respectively), practitioner sentiment reveals a rift between usage and the desire to keep using it. Anthropic holds a clear lead in forward-looking interest, with 49% of developers wanting  to work with Claude over the next six months, compared to 32% for OpenAI. Spend tracking data from Ramp mirrors this shift, showing Anthropic capturing market share rapidly as engineering teams transition from simple chat interfaces to structured, programmatic agent architectures.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
