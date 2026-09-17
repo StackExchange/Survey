@@ -12,17 +12,17 @@
         },
         {
           "slice_type": "workexp",
-          "slice_value": "1-5 years",
+          "slice_value": "1 - 5 yrs work exp",
           "n": 4094
         },
         {
           "slice_type": "workexp",
-          "slice_value": "6-15 years",
+          "slice_value": "6 - 15 yrs work exp",
           "n": 5778
         },
         {
           "slice_type": "workexp",
-          "slice_value": "16+ years",
+          "slice_value": "16+ yrs work exp",
           "n": 6600
         }
       ]
@@ -3613,17 +3613,17 @@
         },
         {
           "slice_type": "workexp",
-          "slice_value": "1-5 years",
+          "slice_value": "1 - 5 yrs work exp",
           "n": 3306
         },
         {
           "slice_type": "workexp",
-          "slice_value": "6-15 years",
+          "slice_value": "6 - 15 yrs work exp",
           "n": 4979
         },
         {
           "slice_type": "workexp",
-          "slice_value": "16+ years",
+          "slice_value": "16+ yrs work exp",
           "n": 5546
         }
       ]
@@ -3812,17 +3812,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 10849
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 2646
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 817
         }
       ]
@@ -4011,17 +4011,17 @@
         },
         {
           "slice_type": "workexp",
-          "slice_value": "1-5 years",
+          "slice_value": "1 - 5 yrs work exp",
           "n": 3259
         },
         {
           "slice_type": "workexp",
-          "slice_value": "6-15 years",
+          "slice_value": "6 - 15 yrs work exp",
           "n": 4950
         },
         {
           "slice_type": "workexp",
-          "slice_value": "16+ years",
+          "slice_value": "16+ yrs work exp",
           "n": 5512
         }
       ]

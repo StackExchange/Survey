@@ -140,17 +140,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 8265
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 1913
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 550
         }
       ]
@@ -675,17 +675,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 7942
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 1866
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 545
         }
       ]
@@ -3450,17 +3450,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 8324
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 1944
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 565
         }
       ]
@@ -3621,17 +3621,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 8129
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 1894
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 547
         }
       ]
@@ -3885,17 +3885,17 @@
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Daily Users",
+          "slice_value": "Daily AI Users",
           "n": 7680
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Weekly Users",
+          "slice_value": "Weekly AI Users",
           "n": 1724
         },
         {
           "slice_type": "aifreqgroup",
-          "slice_value": "Monthly/Infrequent Users",
+          "slice_value": "Monthly/Infrequent AI Users",
           "n": 501
         }
       ]
