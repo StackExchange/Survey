@@ -35,5 +35,6 @@ question:
     - Cascade
     - Luel
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

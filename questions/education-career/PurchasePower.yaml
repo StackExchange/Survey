@@ -6,9 +6,15 @@ question:
   type: multi_select
   required: false
   options:
-    - I make the final decision to purchase tools
-    - I approve or manage budget for tools
-    - I evaluate, recommend, or shortlist tools
-    - I influence tool choices by giving feedback or requirements
-    - I use tools selected by others
-    - I do not have a role in choosing or using software tools at my organization
+    - label: I make the final decision to purchase tools
+      short: Make the final decision
+    - label: I approve or manage budget for tools
+      short: Approve or manage budget
+    - label: I evaluate, recommend, or shortlist tools
+      short: Evaluate and recommend
+    - label: I influence tool choices by giving feedback or requirements
+      short: Give feedback on choices
+    - label: I use tools selected by others
+      short: Use what others select
+    - label: I do not have a role in choosing or using software tools at my organization
+      short: No role in choosing tools
