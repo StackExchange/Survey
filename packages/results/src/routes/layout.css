@@ -1,12 +1,6 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
-
-/* Chapter colours are composed at runtime from $lib/constants, so nothing
-   scannable spells them out. Without this four of the five have no background. */
-@source inline('{bg,border,text}-{blue,purple,yellow,pink,green,beige,orange-medium}');
-
-/* mode-watcher owns `.dark` on <html>, applied before first paint. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
@@ -14,14 +8,14 @@
 	font-style: normal;
 	font-weight: 200 700;
 	font-display: swap;
-	src: url('$lib/assets/fonts/StackSansText[wght].woff2') format('woff2-variations');
+	src: url('$lib/assets/fonts/StackSansText.woff2') format('woff2-variations');
 }
 @font-face {
 	font-family: 'Stack Sans Headline';
 	font-style: normal;
 	font-weight: 200 700;
 	font-display: swap;
-	src: url('$lib/assets/fonts/StackSansHeadline[wght].woff2') format('woff2-variations');
+	src: url('$lib/assets/fonts/StackSansHeadline.woff2') format('woff2-variations');
 }
 
 :root {
@@ -32,7 +26,7 @@
 		'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@theme {
+@theme static {
 	--font-sans: 'Stack Sans Text', var(--font-fallback);
 	--font-headline: 'Stack Sans Headline', var(--font-fallback);
 	--max-width-fluid: clamp(600px, 95vw, 1800px);
@@ -76,34 +70,37 @@
 	--color-black-300: #bcb9b3;
 	--color-black-350: #a09e9b;
 	--color-black-400: #636261;
-	--color-black-500: #4a4a4a;
+	--color-black-500: #424242;
 
 	--color-black-600: #201c1d;
 }
 
-/* Charts carry these as presentation attributes with a literal fallback, so a
-   standalone .svg still renders outside the page. Keep in step with
-   $charts/utils/theme.ts.
-
-   `.chart-light` re-states them for the export preview: a rasterised chart never
-   sees this file and always resolves the light literals, so the preview has to
-   say the same on a dark page. */
 :root,
 .chart-light {
 	--chart-bg: var(--color-black-150);
 	--chart-ink: var(--color-black);
 	--chart-muted: var(--color-black-400);
 	--chart-rule: var(--color-blue-light);
+	--chart-grid: var(--color-black-350);
 	--chart-tint: var(--color-black-100);
 	--chart-accent: var(--color-orange);
+
+	--chart-focus: var(--color-blue);
+	--chart-dim: var(--color-black-300);
+	--chart-on-focus: var(--color-white);
+	--chart-rest: var(--color-beige);
+	--chart-on-rest: var(--color-black);
 
 	--chart-from: var(--color-blue);
 	--chart-to: var(--color-orange);
 
-	/* A hero's isometric faces, and the unfilled cells of a waffle. */
-	--chart-face-top: var(--color-orange);
-	--chart-face-side: var(--color-beige);
+	/* A rank row's track. */
 	--chart-ghost: var(--color-black-200);
+
+	/* An 'off' cube's faces, set darker because `OFF` washes them back. */
+	--chart-off-top: var(--color-black-500);
+	--chart-off-left: var(--color-black-350);
+	--chart-off-right: var(--color-black-250);
 
 	/* Categorical ramp, brand order. Pointed at the tokens rather than repeating
 	   the hexes, so a brand change reaches the charts. */
@@ -115,21 +112,104 @@
 	--chart-series-6: var(--color-orange);
 	--chart-series-7: var(--color-beige);
 	--chart-series-8: var(--color-blue-dark);
+
+	/* A card raised off whatever ground it sits on — not a chart token, but themed
+	   the same way so a card and the figure beside it move together. */
+	--panel: var(--color-white);
 }
 
 .dark {
 	--chart-bg: var(--color-black);
 	--chart-ink: var(--color-white);
 	--chart-muted: var(--color-black-300);
-	--chart-rule: var(--color-black-500);
 	--chart-tint: var(--color-black-500);
 	--chart-ghost: var(--color-black-500);
+	--chart-grid: var(--color-black-500);
 
-	/* The brand ramp reads on both grounds except its darkest blue, which all but
-	   disappears on the dark page. Only that one is swapped — and once it is light,
-	   a label sitting on it has to turn dark. */
+	--chart-dim: var(--color-black-400);
+
+	/* Mirrored: light steps the faces down from the page, dark steps them up off it,
+	   so the top stays the face furthest from the ground either way. Washed at `OFF`
+	   these clear both dark grounds, so the tint below needs no say in them. */
+	--chart-off-top: var(--color-black-200);
+	--chart-off-left: var(--color-black-300);
+	--chart-off-right: var(--color-black-400);
+
+	/* Override these as not readable on dark mode */
 	--chart-series-8: var(--color-blue-light);
 	--chart-on-series-8: var(--color-black);
+
+	--panel: var(--color-black-500);
+}
+
+/* Chart fade in to hide the width diff between SSR and hydrated */
+.js .chart-reveal {
+	opacity: 0;
+	animation: chart-reveal 250ms ease-out 2s forwards;
+}
+
+.js .chart-reveal[data-ready] {
+	opacity: 1;
+	animation: none;
+	transition: opacity 250ms ease-out;
+}
+
+@keyframes chart-reveal {
+	to {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js .chart-reveal {
+		animation-duration: 0s;
+	}
+
+	.js .chart-reveal[data-ready] {
+		transition: none;
+	}
+}
+
+.dark .chart-ground {
+	--chart-bg: var(--color-black-500);
+	--chart-tint: var(--color-black-400);
+	--chart-ghost: var(--color-black-400);
+	--chart-grid: var(--color-black-350);
+}
+.theme-ground {
+	background-color: var(--color-black-150);
+	color: var(--color-black);
+}
+
+.theme-ground.theme-tint {
+	background-color: var(--color-blue-extra-light);
+
+	--chart-bg: var(--color-blue-extra-light);
+	--chart-tint: var(--color-white);
+
+	/* Both sit within a shade of the stepped ground and would read as nothing. */
+	--chart-rule: var(--color-blue);
+	--chart-ghost: var(--color-blue-light);
+}
+
+.dark .theme-ground {
+	background-color: var(--color-black-600);
+	color: var(--color-white);
+}
+
+.dark .theme-ground.theme-tint {
+	background-color: var(--color-black-500);
+
+	--chart-bg: var(--color-black-500);
+	--chart-tint: var(--color-black-400);
+
+	/* black-500 is the stepped ground itself; these have to lift off it. */
+	--chart-ghost: var(--color-black-400);
+	--chart-grid: var(--color-black-350);
+
+	/* black-500 is now the ground, so a card cannot also be black-500. It steps
+	   down instead of up — recessed rather than raised, still separated. */
+	--panel: var(--color-black);
 }
 
 @utility container {
@@ -146,6 +226,19 @@
 	padding-inline: clamp(1.5rem, 5vw, 4rem);
 }
 
+/* Scrolling stays; only the bar goes. For strips that are obviously swipeable. */
+@utility no-scrollbar {
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+html {
+	scroll-padding-top: 70px;
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+}
 body {
 	font-family: var(--font-sans);
 
@@ -182,6 +275,24 @@ body {
 			color 250ms ease,
 			fill 250ms ease;
 	}
+}
+
+/* Copy rendered from markdown in scripts/data.js, dropped in with {@html}. */
+.md p {
+	margin: 0 0 1.4em 0;
+}
+.md p:last-child {
+	margin-bottom: 0;
+}
+.md ul {
+	margin: 0.5em 0;
+	padding-left: 1.5em;
+}
+.md a {
+	text-decoration: underline;
+}
+.md a:hover {
+	color: var(--color-blue);
 }
 
 .font-headline-notch {

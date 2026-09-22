@@ -6,7 +6,8 @@ question:
   type: single_select
   required: false
   options:
-    - Just me - I am a freelancer, sole proprietor, etc.
+    - label: Just me - I am a freelancer, sole proprietor, etc.
+      short: Just me
     - Less than 20 employees
     - 20 to 99 employees
     - 100 to 499 employees

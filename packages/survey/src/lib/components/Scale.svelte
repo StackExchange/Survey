@@ -1,4 +1,7 @@
 <script lang="ts">
+	import type { NormalisedOption } from '$lib/data/options'
+	import type { Question } from '$lib/types'
+
 	import { snakeCase } from 'lodash-es'
 
 	import { questions as allQuestions } from '$lib/data/load'
@@ -8,12 +11,15 @@
 	import KeyBadge from './KeyBadge.svelte'
 	import Markdown from './Markdown.svelte'
 
-	import type { NormalisedOption } from '$lib/data/options'
-	import type { Question } from '$lib/types'
-
 	let { question }: { question: Question } = $props()
 	const rows = $derived(resolveRows(question))
-	const cols = $derived((question.scale?.columns ?? []).map((label) => ({ key: snakeCase(label), label })))
+	// A column may carry a `short` for the results site; only `label` is ever shown.
+	const cols = $derived(
+		(question.scale?.columns ?? []).map((column) => {
+			const label = typeof column === 'string' ? column : column.label
+			return { key: snakeCase(label), label }
+		})
+	)
 	const multiple = $derived(question.scale?.multiple ?? false)
 	const value = $derived((answers[question.id] as Record<string, string | string[]> | undefined) ?? {})
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Question } from '$lib/types'
+
 	import Display from './Display.svelte'
 	import Dropdown from './Dropdown.svelte'
 	import FreeText from './FreeText.svelte'
@@ -8,8 +10,6 @@
 	import Rank from './Rank.svelte'
 	import Scale from './Scale.svelte'
 	import SingleSelect from './SingleSelect.svelte'
-
-	import type { Question } from '$lib/types'
 
 	let { question }: { question: Question } = $props()
 </script>

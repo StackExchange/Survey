@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../question.schema.json
+question:
+  id: AIAgents
+  version: '2025.1'
+  title: Are you using AI agents in your work (development or otherwise)?  AI agents refer to autonomous software entities that can operate with minimal to no direct human intervention using artificial intelligence techniques.
+  type: single_select
+  required: false
+  options:
+    - label: Yes, I use AI agents at work daily
+      short: Yes, daily
+      key: daily
+    - label: Yes, I use AI agents at work weekly
+      short: Yes, weekly
+      key: weekly
+    - label: Yes, I use AI agents at work monthly or infrequently
+      short: Yes, monthly or infrequently
+      key: monthly
+    - label: No, I use AI exclusively in copilot/autocomplete mode
+      short: No, copilot/autocomplete only
+    - label: No, but I plan to
+      key: plans_to
+    - label: No, and I don't plan to
+      key: wont_use
+  deprecated: true

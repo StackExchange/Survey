@@ -11,7 +11,8 @@ question:
       - '**Worked with** in past year'
       - '**Want** to work with next year'
   options:
-    - Amazon Web Services (AWS)
+    - label: Amazon Web Services (AWS)
+      short: AWS
     - Ansible
     - APT
     - Bazel
@@ -23,7 +24,8 @@ question:
     - Composer
     - Conda
     - DigitalOcean
-    - Docker / Docker Compose
+    - label: Docker / Docker Compose
+      short: Docker
     - Firebase
     - Fly.io
     - Google Cloud
@@ -45,7 +47,8 @@ question:
     - NuGet
     - OpenShift
     - OpenTofu
-    - Oracle Cloud Infrastructure (OCI)
+    - label: Oracle Cloud Infrastructure (OCI)
+      short: Oracle Cloud (OCI)
     - OVHcloud
     - Pacman
     - pip
@@ -68,5 +71,6 @@ question:
     - Winget
     - Yarn
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

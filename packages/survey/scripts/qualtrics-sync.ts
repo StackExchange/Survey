@@ -25,6 +25,9 @@
 //   --force-display-logic  overwrite all YAML-managed DisplayLogic, even when signatures match
 // With no QUALTRICS_API_TOKEN, runs offline: prints the transformed payloads
 // only (no network), so the transforms can be eyeballed without credentials.
+import type { Condition, FlowElement, PageEntry, Question, Survey } from '../src/lib/types/index.ts'
+import type { ChoiceResolver, QualtricsConfig, QualtricsFlowElement, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
+
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -42,9 +45,6 @@ import {
 	signaturesEqual,
 	toQuestionPayload,
 } from './qualtrics.ts'
-
-import type { Condition, FlowElement, PageEntry, Question, Survey } from '../src/lib/types/index.ts'
-import type { ChoiceResolver, QualtricsConfig, QualtricsFlowElement, QualtricsQuestionPayload, SurveyDefinition } from './qualtrics.ts'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(here, '../../..')
