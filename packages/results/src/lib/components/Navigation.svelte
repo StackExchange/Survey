@@ -46,6 +46,7 @@
 			exact: false,
 		})),
 		{ href: resolve('/[year]/methodology', { year }), name: 'Methodology', borderClass: plain, exact: true },
+		{ href: 'https://stackoverflow.co/internal/', name: 'Stack Internal', borderClass: plain, exact: true },
 	])
 
 	const wipe = (node: Element, { duration = 150, delay = 0 } = {}): TransitionConfig => ({
