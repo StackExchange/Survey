@@ -18,7 +18,7 @@
         {
           "chapter": "Work",
           "name": "What and where work happens",
-          "description": "",
+          "description": "Meet the people behind the work: their relationship to coding, education, employment, industries, and locations, plus how they work across remote, hybrid, and in-person settings.",
           "id": "what-and-where-work-happens",
           "questions": [
             {
@@ -113,7 +113,7 @@
         {
           "chapter": "Work",
           "name": "Role functions",
-          "description": "",
+          "description": "Look beyond job titles to understand respondents’ experience, responsibilities, and balance of hands-on technical work and people management.",
           "id": "role-functions",
           "questions": [
             {
@@ -122,7 +122,7 @@
               "name": "IC or PM",
               "dataId": "ICorPM",
               "chart": "bar",
-              "description": "81% identify as individual contributors, including 30% senior/staff ICs. Only 3% are exclusively people managers",
+              "description": "81% identify as individual contributors, including 30% senior/staff ICs. Only 3% are exclusively people managers.",
               "subtext": "",
               "axisLabels": [],
               "id": "ic-or-pm",
@@ -181,7 +181,7 @@
         {
           "chapter": "Work",
           "name": "Employer + technology details",
-          "description": "",
+          "description": "Explore organization sizes, technology budgets, purchasing influence, and everyday tool use, along with what makes respondents recommend a technology.",
           "id": "employer-technology-details",
           "questions": [
             {
@@ -202,7 +202,7 @@
               "name": "Tech budget decisionmaker status",
               "dataId": "TechBudget",
               "chart": "bar",
-              "description": "Among respondents who know the answer, budget increases outnumber budget decreases 27% to 21%. However, 32% do not know their department’s budget direction.",
+              "description": "Among respondents who know the answer, budget increases outnumber budget decreases 23% to 17%. However, 32% do not know their department’s budget direction.",
               "subtext": "",
               "axisLabels": [],
               "id": "tech-budget-decisionmaker-status",
@@ -249,7 +249,7 @@
         {
           "chapter": "Work",
           "name": "Job satisfaction + AI",
-          "description": "",
+          "description": "Discover how respondents feel about their jobs, what makes work easier or harder, and where they see AI contributing to those experiences.",
           "id": "job-satisfaction-ai",
           "questions": [
             {
@@ -279,19 +279,19 @@
             {
               "chapter": "Work",
               "section": "Job satisfaction + AI",
-              "name": "Reasons job is easy",
+              "name": "Reasons your job is easy",
               "dataId": "JobEase",
               "chart": "bar",
               "description": "Tools are the largest positive intervention at 20%, yet 21% say nothing made work easier. Supportive colleagues follow at 17%, showing that technical and human enablement matter similarly.",
               "subtext": "",
               "axisLabels": [],
-              "id": "reasons-job-is-easy",
+              "id": "reasons-your-job-is-easy",
               "dataIdSlug": "job-ease"
             },
             {
               "chapter": "Work",
               "section": "Job satisfaction + AI",
-              "name": "Does AI affect job ease",
+              "name": "Does AI make work easier?",
               "dataId": "JobEaseAI",
               "chart": "sankey",
               "description": "AI is tightly associated with tool access: 68% say it was the main reason tools made work easier, and another 26% say it contributed. AI is much less likely to be the main reason supportive teams or clear priorities helped.",
@@ -300,34 +300,34 @@
                 "Job Ease factors",
                 "Job Ease + AI factors"
               ],
-              "id": "does-ai-affect-job-ease",
+              "id": "does-ai-make-work-easier",
               "dataIdSlug": "job-ease-ai"
             },
             {
               "chapter": "Work",
               "section": "Job satisfaction + AI",
-              "name": "Reasons job is difficult",
+              "name": "Reasons your job is difficult",
               "dataId": "JobDifficulty",
               "chart": "bar",
-              "description": "In the past year, work was made difficult mostly by unclear priorities (17%), inefficient processes (15%) and lack of time (14%).  A unifying thread among these factors is systemic operational friction.",
+              "description": "In the past 6 months, work was made difficult mostly by unclear priorities (17%), inefficient processes (15%), and lack of time (14%).  A unifying thread among these factors is systemic operational friction.",
               "subtext": "",
               "axisLabels": [],
-              "id": "reasons-job-is-difficult",
+              "id": "reasons-your-job-is-difficult",
               "dataIdSlug": "job-difficulty"
             },
             {
               "chapter": "Work",
               "section": "Job satisfaction + AI",
-              "name": "Does AI affect job difficulties",
+              "name": "Does AI make your job more difficult?",
               "dataId": "JobDifficultyAI",
               "chart": "sankey",
-              "description": "AI is usually not associated with job difficulties at work: the top two reasons users find their job difficult, unclear priorities and inefficient processes, 69% for each say AI was not involved.",
+              "description": "For each of the top two reasons users find their job difficult, unclear priorities and inefficient processes, 69% say AI was not involved.",
               "subtext": "",
               "axisLabels": [
                 "Job Difficulty factors",
                 "Job Difficulty + AI factors"
               ],
-              "id": "does-ai-affect-job-difficulties",
+              "id": "does-ai-make-your-job-more-difficult",
               "dataIdSlug": "job-difficulty-ai"
             }
           ]
@@ -335,25 +335,25 @@
         {
           "chapter": "Work",
           "name": "Compensation",
-          "description": "",
+          "description": "Explore respondents’ reported annual compensation, including salary, bonuses, and perks, and see how earnings vary across roles and levels of professional experience.",
           "id": "compensation",
           "questions": [
             {
               "chapter": "Work",
               "section": "Compensation",
-              "name": "Compensation",
+              "name": "Compensation by role, country, and experience",
               "dataId": "Compensation",
               "chart": "bar",
               "description": "",
               "subtext": "",
               "axisLabels": [],
-              "id": "compensation",
+              "id": "compensation-by-role-country-and-experience",
               "dataIdSlug": "compensation"
             },
             {
               "chapter": "Work",
               "section": "Compensation",
-              "name": "Compensation",
+              "name": "Compensation by experience",
               "dataId": "Scatter_Compensation",
               "chart": "scatter",
               "description": "",
@@ -362,7 +362,7 @@
                 "Average years of professional experience",
                 "Median yearly salary (USD)"
               ],
-              "id": "compensation",
+              "id": "compensation-by-experience",
               "dataIdSlug": "scatter-compensation"
             }
           ]
@@ -498,7 +498,7 @@
         {
           "chapter": "Knowledge",
           "name": "Context Challenges",
-          "description": "",
+          "description": "Explore the effort required to find useful information, the context respondents need, and the barriers and missing details that interrupt their work.",
           "id": "context-challenges",
           "questions": [
             {
@@ -566,7 +566,7 @@
         {
           "chapter": "Knowledge",
           "name": "Knowledge sources and trust",
-          "description": "",
+          "description": "Discover where respondents find answers at work and how accuracy, recency, and traceable sources shape their trust in information, including AI-generated answers.",
           "id": "knowledge-sources-and-trust",
           "questions": [
             {
@@ -646,7 +646,7 @@
         {
           "chapter": "Knowledge",
           "name": "AI adoption and cost",
-          "description": "",
+          "description": "Explore what drives AI adoption, which tasks respondents delegate, and how they control AI inputs, spending, and usage—including changes to prompts for quality or cost.",
           "id": "ai-adoption-and-cost",
           "questions": [
             {
@@ -728,7 +728,7 @@
         {
           "chapter": "Knowledge",
           "headline": "Source attribution in AI for technical answers is overwhelmingly important",
-          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
+          "description": "For AI responses, people want proof: 93% of respondents feel the source of the information is at least somewhat important.",
           "tier": "home",
           "chart": "3d-bar-stacked-horizontal",
           "dataId": "KnowledgeSourceAI",
@@ -739,7 +739,7 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "Project goals or requirements(85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "headline": "Project goals or requirements (85%) and code, repositories, or technical documentation (73%) are the top important sources for context at work",
           "description": "The rest write code as part of another role, are learning, or code as a hobby.",
           "tier": "home",
           "chart": "3d-waffle-large",
@@ -763,7 +763,7 @@
         {
           "chapter": "Knowledge",
           "headline": "Source attribution",
-          "description": "As AI-generated content becomes harder to distinguish from human-produced work, and as governance conversations gain more traction across the industry, source attribution has become a bigger priority for technologists. This year, 92% of survey respondents called source attribution at least somewhat important when deciding whether to trust AI-generated answers, with 79% judging it important or very important.\n\nAI models, of course, are non-deterministic by design. That variability is part of what makes them useful, but it also introduces the potential for errors and hallucinations. Developers have clearly internalized this, because the overwhelming majority say that knowing where an answer came from matters a lot, not a little, when deciding whether to trust it.",
+          "description": "As AI-generated content becomes harder to distinguish from human-produced work, and as governance conversations gain more traction across the industry, source attribution has become a bigger priority for technologists. This year, 93% of survey respondents called source attribution at least somewhat important when deciding whether to trust AI-generated answers, with 79% judging it important or very important.\n\nAI models, of course, are non-deterministic by design. That variability is part of what makes them useful, but it also introduces the potential for errors and hallucinations. Developers have clearly internalized this, because the overwhelming majority say that knowing where an answer came from matters a lot, not a little, when deciding whether to trust it.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -774,7 +774,7 @@
         {
           "chapter": "Knowledge",
           "headline": "",
-          "description": "For AI responses, people want proof: 92% of respondents feel the source of the information is at least somewhat important.",
+          "description": "For AI responses, people want proof: 93% of respondents feel the source of the information is at least somewhat important.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-horizontal",
           "dataId": "KnowledgeSourceAI",
@@ -819,7 +819,7 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "",
+          "headline": "How has cost or usage limits shown up at work?",
           "description": "33% self-monitor AI usage",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
@@ -831,7 +831,7 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "",
+          "headline": "Many have changed how they prompt in order to reduce cost or improve quality",
           "description": "Quality optimization outpaces cost-cutting 2:1",
           "tier": "chapter",
           "chart": "2d-bar-stacked-horizontal",
@@ -844,7 +844,7 @@
         {
           "chapter": "Knowledge",
           "headline": "",
-          "description": "When it comes to their own AI usage, individual respondents took a generally cost-conscious approach: 33% personally monitor their usage, 25% choose cheaper models when possible, and 24% say their usage is metered. Not everyone is so fettered by budgets—22% are unaffected by costs of limits to their AI use while 21% have yet to see limits and probably have an intimidating yellow aura.",
+          "description": "When it comes to their own AI usage, individual respondents took a generally cost-conscious approach: 33% personally monitor their usage, 25% choose cheaper models when possible, and 24% say their usage is metered. Not everyone is so constrained by budgets: 22% are unaffected by costs or limits to their AI use while 21% have yet to see limits and probably have an intimidating yellow aura.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -863,7 +863,7 @@
         {
           "chapter": "AI",
           "name": "AI usage",
-          "description": "",
+          "description": "See which types of AI tools respondents use, how often they use them, how much time they spend with them, and how they feel about them.",
           "id": "ai-usage",
           "questions": [
             {
@@ -919,7 +919,7 @@
         {
           "chapter": "AI",
           "name": "Trust in AI and other trends",
-          "description": "",
+          "description": "Explore how much respondents trust AI, how they verify its output, and where they use—or plan to use—it in development workflows, including complex tasks.",
           "id": "trust-in-ai-and-other-trends",
           "questions": [
             {
@@ -987,7 +987,7 @@
         {
           "chapter": "AI",
           "name": "AI agent tools",
-          "description": "",
+          "description": "Explore the tools behind AI agents, from memory, orchestration, and monitoring to coding, no-code development, and workflow automation.",
           "id": "ai-agent-tools",
           "questions": [
             {
@@ -1067,7 +1067,7 @@
         {
           "chapter": "AI",
           "name": "AI at work",
-          "description": "",
+          "description": "Examine AI’s usefulness across work tasks, its effect on satisfaction, and how individuals and organizations approach tool selection, switching, memory, and deliberate avoidance.",
           "id": "ai-at-work",
           "questions": [
             {
@@ -1088,7 +1088,7 @@
               "name": "Satisfaction with AI tools",
               "dataId": "AISat",
               "chart": "bar-stacked",
-              "description": "AI most improves satisfaction with debugging (65%), documentation (59%), and implementation (59%). Implementation is also most polarizing: 20% report decreased satisfaction.",
+              "description": "AI most improves satisfaction with debugging (66%), documentation (61%), and implementation (61%). Implementation is also most polarizing: 20% report decreased satisfaction.",
               "subtext": "",
               "axisLabels": [],
               "id": "satisfaction-with-ai-tools",
@@ -1335,7 +1335,7 @@
         {
           "chapter": "Technology",
           "name": "Most popular technologies",
-          "description": "",
+          "description": "Explore the languages, databases, frameworks, cloud platforms, and development tools respondents use, including how adoption has changed over time.",
           "id": "most-popular-technologies",
           "questions": [
             {
@@ -1475,7 +1475,7 @@
         {
           "chapter": "Technology",
           "name": "Admired and Desired",
-          "description": "To better gauge hype versus reality, we created a visualization that shows the distance between the proportion of respondents who want to use a technology (“desired”) and the proportion of users that have used the same technology in the past year and want to continue using it (“admired”).",
+          "description": "Compare the technologies respondents want to use next with those existing users want to keep using. “Desired” measures interest; “admired” measures the willingness to continue.",
           "id": "admired-and-desired",
           "questions": [
             {
@@ -1520,7 +1520,7 @@
               "name": "Cloud development",
               "dataId": "DA_Platform",
               "chart": "dumbbell",
-              "description": "VS Code",
+              "description": "",
               "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "cloud-development",
@@ -1567,7 +1567,7 @@
         {
           "chapter": "Technology",
           "name": "Popular Knowledge Technologies",
-          "description": "",
+          "description": "Discover the tools respondents use for knowledge management, enterprise search, and security operations—the systems that help teams organize, find, and protect information.",
           "id": "popular-knowledge-technologies",
           "questions": [
             {
@@ -1611,7 +1611,7 @@
         {
           "chapter": "Technology",
           "name": "Build vs. AI",
-          "description": "",
+          "description": "Explore what teams build in-house, where AI assists that work, and which AI mistakes cost them time—from incorrect code to missing context.",
           "id": "build-vs-ai",
           "questions": [
             {
@@ -1701,15 +1701,11 @@
           "headline": "",
           "description": "For the most used programming languages, Javascript is at the top of the list for 12th year in a row",
           "tier": "chapter",
-          "chart": "2d-bar-stacked-horizontal",
+          "chart": "rank",
           "dataId": "Languages",
           "focus": "JavaScript",
           "limit": "10",
-          "values": [
-            "JavaScript",
-            "SQL",
-            "HTML/CSS"
-          ],
+          "values": [],
           "dataIdSlug": "languages"
         },
         {
@@ -1728,10 +1724,10 @@
           "headline": "",
           "description": "Postgres continues reign as the most used database, used by a majority of respondents.",
           "tier": "chapter",
-          "chart": "2d-waffle-large",
+          "chart": "rank",
           "dataId": "Databases",
           "focus": "PostgreSQL",
-          "limit": "",
+          "limit": "10",
           "values": [],
           "dataIdSlug": "databases"
         },
@@ -1874,7 +1870,7 @@
         {
           "chapter": "Community",
           "name": "Finding and trusting answers",
-          "description": "",
+          "description": "See where respondents turn for technical answers, what makes those answers trustworthy, and how AI has changed their use of Stack Overflow.",
           "id": "finding-and-trusting-answers",
           "questions": [
             {
@@ -1918,7 +1914,7 @@
         {
           "chapter": "Community",
           "name": "Communities and learning",
-          "description": "",
+          "description": "Explore how respondents participate in technical communities, what holds them back, and which people and resources shape their coding and AI learning.",
           "id": "communities-and-learning",
           "questions": [
             {
@@ -1986,7 +1982,7 @@
         {
           "chapter": "Community",
           "name": "Stack Overflow and community platforms",
-          "description": "",
+          "description": "Get to know respondents’ connections to Stack Overflow and other community platforms, their learning activity, and their accounts of how AI has changed their habits.",
           "id": "stack-overflow-and-community-platforms",
           "questions": [
             {

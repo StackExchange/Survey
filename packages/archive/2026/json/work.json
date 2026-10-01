@@ -255,16 +255,16 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Student",
-        "count": 224,
-        "pct": 0.113
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 186,
+        "pct": 0.094
       },
       {
         "slice": 2,
         "series": null,
-        "response": "Independent contractor, freelancer, or self-employed",
-        "count": 186,
-        "pct": 0.094
+        "response": "Student",
+        "count": 224,
+        "pct": 0.113
       },
       {
         "slice": 2,
@@ -276,16 +276,16 @@
       {
         "slice": 2,
         "series": null,
-        "response": "I prefer not to say",
-        "count": 27,
-        "pct": 0.014
+        "response": "Retired",
+        "count": 16,
+        "pct": 0.008
       },
       {
         "slice": 2,
         "series": null,
-        "response": "Retired",
-        "count": 16,
-        "pct": 0.008
+        "response": "I prefer not to say",
+        "count": 27,
+        "pct": 0.014
       },
       {
         "slice": 3,
@@ -297,16 +297,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Student",
-        "count": 254,
-        "pct": 0.194
+        "response": "Independent contractor, freelancer, or self-employed",
+        "count": 163,
+        "pct": 0.125
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Independent contractor, freelancer, or self-employed",
-        "count": 163,
-        "pct": 0.125
+        "response": "Student",
+        "count": 254,
+        "pct": 0.194
       },
       {
         "slice": 3,
@@ -318,16 +318,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "I prefer not to say",
-        "count": 24,
-        "pct": 0.018
+        "response": "Retired",
+        "count": 8,
+        "pct": 0.006
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Retired",
-        "count": 8,
-        "pct": 0.006
+        "response": "I prefer not to say",
+        "count": 24,
+        "pct": 0.018
       },
       {
         "slice": 4,
@@ -543,16 +543,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "In-person",
-        "count": 638,
-        "pct": 0.162
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 629,
+        "pct": 0.16
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Hybrid (some remote, leans heavy to in-person)",
-        "count": 629,
-        "pct": 0.16
+        "response": "In-person",
+        "count": 638,
+        "pct": 0.162
       },
       {
         "slice": 1,
@@ -585,6 +585,13 @@
       {
         "slice": 2,
         "series": null,
+        "response": "In-person",
+        "count": 202,
+        "pct": 0.116
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Hybrid (some in-person, leans heavy to flexibility)",
         "count": 364,
         "pct": 0.209
@@ -595,20 +602,6 @@
         "response": "Your choice (very flexible, you can come in when you want or just as needed)",
         "count": 359,
         "pct": 0.206
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "In-person",
-        "count": 202,
-        "pct": 0.116
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "In-person",
-        "count": 265,
-        "pct": 0.279
       },
       {
         "slice": 3,
@@ -623,6 +616,13 @@
         "response": "Hybrid (some remote, leans heavy to in-person)",
         "count": 198,
         "pct": 0.208
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "In-person",
+        "count": 265,
+        "pct": 0.279
       },
       {
         "slice": 3,
@@ -648,23 +648,9 @@
       {
         "slice": 4,
         "series": null,
-        "response": "Hybrid (some in-person, leans heavy to flexibility)",
-        "count": 255,
-        "pct": 0.217
-      },
-      {
-        "slice": 4,
-        "series": null,
         "response": "Hybrid (some remote, leans heavy to in-person)",
         "count": 195,
         "pct": 0.166
-      },
-      {
-        "slice": 4,
-        "series": null,
-        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
-        "count": 173,
-        "pct": 0.147
       },
       {
         "slice": 4,
@@ -674,11 +660,18 @@
         "pct": 0.095
       },
       {
-        "slice": 5,
+        "slice": 4,
         "series": null,
-        "response": "Hybrid (some remote, leans heavy to in-person)",
-        "count": 237,
-        "pct": 0.349
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 255,
+        "pct": 0.217
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Your choice (very flexible, you can come in when you want or just as needed)",
+        "count": 173,
+        "pct": 0.147
       },
       {
         "slice": 5,
@@ -690,9 +683,9 @@
       {
         "slice": 5,
         "series": null,
-        "response": "Hybrid (some in-person, leans heavy to flexibility)",
-        "count": 119,
-        "pct": 0.175
+        "response": "Hybrid (some remote, leans heavy to in-person)",
+        "count": 237,
+        "pct": 0.349
       },
       {
         "slice": 5,
@@ -700,6 +693,13 @@
         "response": "In-person",
         "count": 105,
         "pct": 0.155
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Hybrid (some in-person, leans heavy to flexibility)",
+        "count": 119,
+        "pct": 0.175
       },
       {
         "slice": 5,

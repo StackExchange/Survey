@@ -66,16 +66,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "General-purpose AI chat tools",
-        "count": 2534,
-        "pct": 0.619
+        "response": "AI coding assistants or coding agents",
+        "count": 2366,
+        "pct": 0.578
       },
       {
         "slice": 1,
         "series": null,
-        "response": "AI coding assistants or coding agents",
-        "count": 2366,
-        "pct": 0.578
+        "response": "General-purpose AI chat tools",
+        "count": 2534,
+        "pct": 0.619
       },
       {
         "slice": 1,
@@ -87,16 +87,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "I don’t use AI tools",
-        "count": 778,
-        "pct": 0.19
+        "response": "Internal AI tools built by my company",
+        "count": 542,
+        "pct": 0.132
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Internal AI tools built by my company",
-        "count": 542,
-        "pct": 0.132
+        "response": "I don’t use AI tools",
+        "count": 778,
+        "pct": 0.19
       },
       {
         "slice": 2,
@@ -1607,9 +1607,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Supermemory",
-        "count": 574,
-        "pct": 0.412
+        "response": "Memary",
+        "count": 483,
+        "pct": 0.347
       },
       {
         "slice": 1,
@@ -1621,9 +1621,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Cognee",
-        "count": 492,
-        "pct": 0.353
+        "response": "Supermemory",
+        "count": 574,
+        "pct": 0.412
       },
       {
         "slice": 1,
@@ -1635,16 +1635,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Memary",
-        "count": 483,
-        "pct": 0.347
+        "response": "Letta",
+        "count": 480,
+        "pct": 0.345
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Letta",
-        "count": 480,
-        "pct": 0.345
+        "response": "Cognee",
+        "count": 492,
+        "pct": 0.353
       },
       {
         "slice": 1,
@@ -1838,13 +1838,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "LangGraph",
-        "count": 897,
-        "pct": 0.204
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "OpenAI Agents SDK",
         "count": 870,
         "pct": 0.198
@@ -1852,9 +1845,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Hermes Agent",
-        "count": 759,
-        "pct": 0.173
+        "response": "Terminal Use",
+        "count": 669,
+        "pct": 0.152
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LangGraph",
+        "count": 897,
+        "pct": 0.204
       },
       {
         "slice": 1,
@@ -1873,16 +1873,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Terminal Use",
-        "count": 669,
-        "pct": 0.152
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Pydantic AI",
-        "count": 635,
-        "pct": 0.144
+        "response": "Hermes Agent",
+        "count": 759,
+        "pct": 0.173
       },
       {
         "slice": 1,
@@ -1890,6 +1883,13 @@
         "response": "Vercel AI SDK",
         "count": 498,
         "pct": 0.113
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Pydantic AI",
+        "count": 635,
+        "pct": 0.144
       },
       {
         "slice": 1,
@@ -1908,16 +1908,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Strands",
-        "count": 387,
-        "pct": 0.088
+        "response": "AutoGen",
+        "count": 376,
+        "pct": 0.085
       },
       {
         "slice": 1,
         "series": null,
-        "response": "AutoGen",
-        "count": 376,
-        "pct": 0.085
+        "response": "Strands",
+        "count": 387,
+        "pct": 0.088
       },
       {
         "slice": 1,
@@ -1936,9 +1936,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Atomic Agents",
-        "count": 345,
-        "pct": 0.078
+        "response": "Dify",
+        "count": 328,
+        "pct": 0.075
       },
       {
         "slice": 1,
@@ -1950,23 +1950,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "21st.dev",
-        "count": 329,
-        "pct": 0.075
+        "response": "Atomic Agents",
+        "count": 345,
+        "pct": 0.078
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Dify",
-        "count": 328,
-        "pct": 0.075
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "GripTape",
-        "count": 324,
-        "pct": 0.074
+        "response": "Instructor",
+        "count": 319,
+        "pct": 0.073
       },
       {
         "slice": 1,
@@ -1978,9 +1971,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Instructor",
-        "count": 319,
-        "pct": 0.073
+        "response": "21st.dev",
+        "count": 329,
+        "pct": 0.075
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "GripTape",
+        "count": 324,
+        "pct": 0.074
       }
     ]
   },
@@ -2244,9 +2244,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Datadog LLM",
-        "count": 445,
-        "pct": 0.195
+        "response": "MLflow",
+        "count": 442,
+        "pct": 0.194
       },
       {
         "slice": 1,
@@ -2258,9 +2258,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "MLflow",
-        "count": 442,
-        "pct": 0.194
+        "response": "Datadog LLM",
+        "count": 445,
+        "pct": 0.195
       },
       {
         "slice": 1,
@@ -2268,6 +2268,20 @@
         "response": "Weights &amp; Biases",
         "count": 357,
         "pct": 0.157
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Arize AI",
+        "count": 274,
+        "pct": 0.12
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Braintrust",
+        "count": 282,
+        "pct": 0.124
       },
       {
         "slice": 1,
@@ -2286,44 +2300,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "LangWatch",
-        "count": 285,
-        "pct": 0.125
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Braintrust",
-        "count": 282,
-        "pct": 0.124
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Promptfoo",
         "count": 277,
         "pct": 0.122
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Ragas",
-        "count": 277,
-        "pct": 0.122
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Arize AI",
-        "count": 274,
-        "pct": 0.12
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Galileo AI",
-        "count": 271,
-        "pct": 0.119
       },
       {
         "slice": 1,
@@ -2335,30 +2314,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Humanloop",
-        "count": 269,
-        "pct": 0.118
+        "response": "Ragas",
+        "count": 277,
+        "pct": 0.122
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Chamber",
-        "count": 266,
-        "pct": 0.117
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "HoneyHive",
-        "count": 265,
-        "pct": 0.116
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Opik",
-        "count": 264,
-        "pct": 0.116
+        "response": "Galileo AI",
+        "count": 271,
+        "pct": 0.119
       },
       {
         "slice": 1,
@@ -2370,16 +2335,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Confident AI",
-        "count": 261,
-        "pct": 0.115
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Future AGI",
-        "count": 261,
-        "pct": 0.115
+        "response": "LangWatch",
+        "count": 285,
+        "pct": 0.125
       },
       {
         "slice": 1,
@@ -2391,8 +2349,15 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Traceloop",
-        "count": 256,
+        "response": "Humanloop",
+        "count": 269,
+        "pct": 0.118
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "PromptLayer",
+        "count": 254,
         "pct": 0.112
       },
       {
@@ -2405,16 +2370,44 @@
       {
         "slice": 1,
         "series": null,
-        "response": "PromptLayer",
-        "count": 254,
+        "response": "HoneyHive",
+        "count": 265,
+        "pct": 0.116
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Confident AI",
+        "count": 261,
+        "pct": 0.115
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Traceloop",
+        "count": 256,
         "pct": 0.112
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Lunary",
-        "count": 251,
-        "pct": 0.11
+        "response": "Chamber",
+        "count": 266,
+        "pct": 0.117
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Opik",
+        "count": 264,
+        "pct": 0.116
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Future AGI",
+        "count": 261,
+        "pct": 0.115
       },
       {
         "slice": 1,
@@ -2422,6 +2415,20 @@
         "response": "Sentrial",
         "count": 246,
         "pct": 0.108
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Athina AI",
+        "count": 243,
+        "pct": 0.107
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Lunary",
+        "count": 251,
+        "pct": 0.11
       },
       {
         "slice": 1,
@@ -2434,13 +2441,6 @@
         "slice": 1,
         "series": null,
         "response": "Ashr",
-        "count": 243,
-        "pct": 0.107
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Athina AI",
         "count": 243,
         "pct": 0.107
       },
@@ -2734,13 +2734,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Open Code",
-        "count": 1436,
-        "pct": 0.117
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Google Antigravity",
         "count": 1111,
         "pct": 0.091
@@ -2755,9 +2748,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Pi",
-        "count": 814,
-        "pct": 0.066
+        "response": "Open Code",
+        "count": 1436,
+        "pct": 0.117
       },
       {
         "slice": 1,
@@ -2765,13 +2758,6 @@
         "response": "JetBrains AI",
         "count": 791,
         "pct": 0.065
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Mistral Vibe",
-        "count": 561,
-        "pct": 0.046
       },
       {
         "slice": 1,
@@ -2790,9 +2776,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Devin",
-        "count": 367,
-        "pct": 0.03
+        "response": "Cline",
+        "count": 333,
+        "pct": 0.027
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Pi",
+        "count": 814,
+        "pct": 0.066
       },
       {
         "slice": 1,
@@ -2804,9 +2797,30 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Continue",
+        "count": 305,
+        "pct": 0.025
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Mistral Vibe",
+        "count": 561,
+        "pct": 0.046
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Kilo Code",
         "count": 344,
         "pct": 0.028
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Devin",
+        "count": 367,
+        "pct": 0.03
       },
       {
         "slice": 1,
@@ -2818,23 +2832,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Cline",
-        "count": 333,
-        "pct": 0.027
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Continue",
-        "count": 305,
-        "pct": 0.025
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Replit Agent",
         "count": 275,
         "pct": 0.022
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Tabnine",
+        "count": 227,
+        "pct": 0.019
       },
       {
         "slice": 1,
@@ -2846,22 +2853,15 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Emdash",
-        "count": 256,
-        "pct": 0.021
+        "response": "Codium (Qodo)",
+        "count": 249,
+        "pct": 0.02
       },
       {
         "slice": 1,
         "series": null,
         "response": "BLACKBOX AI",
         "count": 251,
-        "pct": 0.02
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Codium (Qodo)",
-        "count": 249,
         "pct": 0.02
       },
       {
@@ -2874,13 +2874,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Augment Code",
-        "count": 233,
-        "pct": 0.019
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Trae",
         "count": 231,
         "pct": 0.019
@@ -2888,8 +2881,8 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Tabnine",
-        "count": 227,
+        "response": "Augment Code",
+        "count": 233,
         "pct": 0.019
       },
       {
@@ -2902,16 +2895,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "ECA",
-        "count": 218,
-        "pct": 0.018
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Syntropy",
-        "count": 218,
-        "pct": 0.018
+        "response": "Emdash",
+        "count": 256,
+        "pct": 0.021
       },
       {
         "slice": 1,
@@ -2923,8 +2909,8 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Kavia AI",
-        "count": 216,
+        "response": "ECA",
+        "count": 218,
         "pct": 0.018
       },
       {
@@ -2933,6 +2919,20 @@
         "response": "Sweep",
         "count": 213,
         "pct": 0.017
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Kavia AI",
+        "count": 216,
+        "pct": 0.018
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Syntropy",
+        "count": 218,
+        "pct": 0.018
       }
     ]
   },
@@ -3105,20 +3105,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Stack AI",
-        "count": 278,
-        "pct": 0.125
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Langflow",
-        "count": 269,
-        "pct": 0.121
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Bolt.new",
         "count": 258,
         "pct": 0.116
@@ -3133,37 +3119,30 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Langflow",
+        "count": 269,
+        "pct": 0.121
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Stack AI",
+        "count": 278,
+        "pct": 0.125
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Flowise",
+        "count": 205,
+        "pct": 0.092
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Voiceflow",
         "count": 225,
         "pct": 0.101
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Rivet",
-        "count": 223,
-        "pct": 0.1
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Glue",
-        "count": 218,
-        "pct": 0.098
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Sparkles",
-        "count": 213,
-        "pct": 0.096
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Botpress",
-        "count": 212,
-        "pct": 0.096
       },
       {
         "slice": 1,
@@ -3175,6 +3154,27 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Glue",
+        "count": 218,
+        "pct": 0.098
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Rivet",
+        "count": 223,
+        "pct": 0.1
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Botpress",
+        "count": 212,
+        "pct": 0.096
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Relevance AI",
         "count": 210,
         "pct": 0.095
@@ -3182,9 +3182,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Flowise",
-        "count": 205,
-        "pct": 0.092
+        "response": "Sparkles",
+        "count": 213,
+        "pct": 0.096
       },
       {
         "slice": 1,
@@ -3322,16 +3322,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "n8n",
-        "count": 1275,
-        "pct": 0.306
+        "response": "Make",
+        "count": 899,
+        "pct": 0.215
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Make",
-        "count": 899,
-        "pct": 0.215
+        "response": "n8n",
+        "count": 1275,
+        "pct": 0.306
       },
       {
         "slice": 1,
@@ -3364,37 +3364,9 @@
       {
         "slice": 1,
         "series": null,
-        "response": "DBOS",
-        "count": 218,
-        "pct": 0.052
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Relay.app",
-        "count": 215,
-        "pct": 0.052
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Bubble Lab",
-        "count": 213,
-        "pct": 0.051
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Activepieces",
-        "count": 206,
-        "pct": 0.049
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Cofia",
-        "count": 203,
-        "pct": 0.049
+        "response": "Inngest",
+        "count": 198,
+        "pct": 0.047
       },
       {
         "slice": 1,
@@ -3406,9 +3378,37 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Inngest",
-        "count": 198,
-        "pct": 0.047
+        "response": "Relay.app",
+        "count": 215,
+        "pct": 0.052
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "DBOS",
+        "count": 218,
+        "pct": 0.052
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Activepieces",
+        "count": 206,
+        "pct": 0.049
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bubble Lab",
+        "count": 213,
+        "pct": 0.051
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Cofia",
+        "count": 203,
+        "pct": 0.049
       }
     ]
   },
@@ -3674,16 +3674,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Somewhat favorable",
-        "count": 1001,
-        "pct": 0.303
+        "response": "Very favorable",
+        "count": 762,
+        "pct": 0.231
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Very favorable",
-        "count": 762,
-        "pct": 0.231
+        "response": "Somewhat favorable",
+        "count": 1001,
+        "pct": 0.303
       },
       {
         "slice": 1,
@@ -3716,13 +3716,6 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Somewhat favorable",
-        "count": 1543,
-        "pct": 0.31
-      },
-      {
-        "slice": 2,
-        "series": null,
         "response": "Very favorable",
         "count": 1517,
         "pct": 0.305
@@ -3730,9 +3723,9 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Somewhat unfavorable",
-        "count": 759,
-        "pct": 0.152
+        "response": "Somewhat favorable",
+        "count": 1543,
+        "pct": 0.31
       },
       {
         "slice": 2,
@@ -3740,6 +3733,13 @@
         "response": "Neutral",
         "count": 733,
         "pct": 0.147
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Somewhat unfavorable",
+        "count": 759,
+        "pct": 0.152
       },
       {
         "slice": 2,
@@ -3880,16 +3880,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Very well at handling complex tasks",
-        "count": 2139,
-        "pct": 0.197
+        "response": "Bad at handling complex tasks",
+        "count": 1489,
+        "pct": 0.137
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Bad at handling complex tasks",
-        "count": 1489,
-        "pct": 0.137
+        "response": "Very well at handling complex tasks",
+        "count": 2139,
+        "pct": 0.197
       },
       {
         "slice": 1,
@@ -3929,6 +3929,13 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 116,
+        "pct": 0.044
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 467,
         "pct": 0.177
@@ -3948,25 +3955,11 @@
         "pct": 0.13
       },
       {
-        "slice": 2,
-        "series": null,
-        "response": "Very well at handling complex tasks",
-        "count": 116,
-        "pct": 0.044
-      },
-      {
         "slice": 3,
         "series": null,
-        "response": "I don't use AI tools for complex tasks / I don't know",
-        "count": 195,
-        "pct": 0.239
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "Very poor at handling complex tasks",
-        "count": 184,
-        "pct": 0.225
+        "response": "Good, but not great at handling complex tasks",
+        "count": 105,
+        "pct": 0.129
       },
       {
         "slice": 3,
@@ -3978,6 +3971,13 @@
       {
         "slice": 3,
         "series": null,
+        "response": "Very well at handling complex tasks",
+        "count": 31,
+        "pct": 0.038
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 120,
         "pct": 0.147
@@ -3985,16 +3985,16 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Good, but not great at handling complex tasks",
-        "count": 105,
-        "pct": 0.129
+        "response": "Very poor at handling complex tasks",
+        "count": 184,
+        "pct": 0.225
       },
       {
         "slice": 3,
         "series": null,
-        "response": "Very well at handling complex tasks",
-        "count": 31,
-        "pct": 0.038
+        "response": "I don't use AI tools for complex tasks / I don't know",
+        "count": 195,
+        "pct": 0.239
       }
     ]
   },
@@ -4079,16 +4079,16 @@
       {
         "slice": 1,
         "series": null,
-        "response": "I trust it for low-risk work tasks only",
-        "count": 640,
-        "pct": 0.196
+        "response": "I trust it for many tasks, but not important work decisions",
+        "count": 525,
+        "pct": 0.161
       },
       {
         "slice": 1,
         "series": null,
-        "response": "I trust it for many tasks, but not important work decisions",
-        "count": 525,
-        "pct": 0.161
+        "response": "I trust it for low-risk work tasks only",
+        "count": 640,
+        "pct": 0.196
       },
       {
         "slice": 1,
