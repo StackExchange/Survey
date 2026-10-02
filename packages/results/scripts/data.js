@@ -230,8 +230,12 @@ function figureOf(ctx, chapterId, q) {
 
 // A figure the sheet promoted, narrowed to the one cut and the rows it asked for.
 function featureOf(ctx, chapter, ref) {
-	// Copy with no figure behind it: a pull quote, or a passage between the charts.
-	if (ref.chart === 'quote' || ref.chart === 'text') {
+	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
+	const standaloneStat = ref.chart === 'stat' && !ref.dataId
+	if (standaloneStat && !ref.headline?.trim()) return ctx.fail(`${where}: a stat without dataId needs a headline`)
+
+	// Copy with no dataset behind it: a quote, passage, or a stat supplied as text.
+	if (ref.chart === 'quote' || ref.chart === 'text' || standaloneStat) {
 		return {
 			kind: ref.chart,
 			chart: ref.chart,
@@ -240,8 +244,6 @@ function featureOf(ctx, chapter, ref) {
 			descriptionHtml: html(ref.description),
 		}
 	}
-
-	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
 
 	// A feature's placement need not be the chapter that owns its data. Prefer
 	// the local export; otherwise only use an unambiguous live chapter.
@@ -464,7 +466,7 @@ export async function generate() {
 
 	const methodologyBlocks = (survey.methodology ?? [])
 		.filter((row) => {
-			if (row.chart === 'quote' || row.chart === 'text' || methodologyIsTidy) return true
+			if (row.chart === 'quote' || row.chart === 'text' || (row.chart === 'stat' && !row.dataId) || methodologyIsTidy) return true
 			console.error(`⚠ methodology "${row.headline}" skipped — ${home}/methodology.json is still the legacy format`)
 			return false
 		})

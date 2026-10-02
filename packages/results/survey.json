@@ -1325,7 +1325,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 38% usage.",
+          "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 39% usage.",
           "tier": "home",
           "chart": "3d-treemap",
           "dataId": "Languages",
@@ -1559,7 +1559,7 @@
     },
     {
       "name": "Community",
-      "description": "Community is where the human shows up among all the bits and bytes.",
+      "description": "What’s the developer community up to? Whether you’ve become best buds with an AI-powered chatbot or have taken up the anti-AI pitchforks alongside the other luddites, we can all recognize how much AI has changed. We saw that very clearly reflected in this year’s survey—especially in how developers are engaging with knowledge and community.",
       "id": "community",
       "sections": [
         {
@@ -1770,22 +1770,10 @@
       "features": [
         {
           "chapter": "Community",
-          "headline": "What’s the developer community up to?",
-          "description": "Whether you’ve become best buds with an AI-powered chatbot or have taken up the anti-AI pitchforks alongside the other luddites, we can all recognize how much AI has changed. We saw that very clearly reflected in this year’s survey—especially in how developers are engaging with knowledge and community.",
-          "tier": "home",
-          "chart": "text",
-          "dataId": "",
-          "dataset": [],
-          "focus": "",
-          "limit": "",
-          "values": []
-        },
-        {
-          "chapter": "Community",
           "headline": "Which actions do you turn to first when trying to find answers to a problem?",
           "description": "While the lion’s share of respondents still seek guidance from traditional search tools when they face a new challenge, nearly 70% of technologists also use AI agents to help them solve problems—beating out maintained repositories and trusted humans as direct sources of learning. When it comes to work-related questions, however, developers are still turning to the humans in their loops—also known as coworkers and teammates—first in order to get the answers they need (71.9%), with code repositories (62.8%) and internal documentation (60%) following as close runner-ups.",
           "tier": "home",
-          "chart": "3d-bar-stacked-vertical",
+          "chart": "2d-bar-stacked-horizontal",
           "dataId": "Answers",
           "dataset": [],
           "focus": "",
@@ -1805,6 +1793,30 @@
           "limit": "4",
           "values": [],
           "dataIdSlug": "comm-plat"
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "We’ve always been interested in how developers learn to code, upskill on new tech, and mind meld with their fellow code mongers. While we always want to be part of how developers find answers to their problems, we understand that AI changed the game. But how much? Is community still useful to developers in their times of need? What are people learning and where?",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "This year, we found that more people are learning AI programming skills than non-AI programming skills. Around 79% of developers are focusing on AI skills in their learning. This makes sense, AI programming is newer and changing fast, so there’s a lot to learn right now. But 52% of folks are learning new coding or programming skills, so there’s plenty to learn there still. Most devs (59%) are still using technical documentation to learn, with AI codegen tools coming up close behind at 53%.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
         },
         {
           "chapter": "Community",
@@ -1866,7 +1878,7 @@
     },
     {
       "name": "Knowledge",
-      "description": "Knowledge. Context. Trust.  We dig into how we use it at work and where friction tends to get in the way of a good thing.",
+      "description": "What does everyone need to know? In software development, context seems to be the reigning king this year, whether or not AI agents are involved. But the right context is not always reaching developers at the right time.",
       "id": "knowledge",
       "sections": [
         {
@@ -2101,45 +2113,34 @@
       "features": [
         {
           "chapter": "Knowledge",
-          "headline": "What does everyone need to know?",
-          "description": "In software development, context seems to be the reigning king this year, whether or not AI agents are involved. But the right context is not always reaching developers at the right time. Over 78% of developers find incomplete information to be a barrier to getting the right context at work, while 78% regularly discover the important context they need only after the fact. A lot of time goes into that context search—75% spent five plus hours searching for answers.",
+          "headline": "What gets in the way of you getting the context you need for work?",
+          "description": "Over 63% of developers find incomplete information to be a barrier to getting the right context at work, while 78% regularly discover the important context they need only after the fact. A lot of time goes into that context search—74% spent five plus hours searching for answers.",
           "tier": "home",
-          "chart": "text",
-          "dataId": "",
-          "dataset": [],
-          "focus": "",
-          "limit": "",
-          "values": []
-        },
-        {
-          "chapter": "Knowledge",
-          "headline": "",
-          "description": "Which of the following make it difficult to get the context you need for work?",
-          "tier": "home",
-          "chart": "3d-treemap",
+          "chart": "3d-bar-stacked-horizontal",
           "dataId": "ContextProblems",
           "dataset": [],
           "focus": "",
-          "limit": "",
+          "limit": "5",
           "values": [],
           "dataIdSlug": "context-problems"
         },
         {
           "chapter": "Knowledge",
-          "headline": "",
-          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from resources like technical documentation, Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know low-effort documentation is leading to more and more dissatisfaction in AI-driven work.",
+          "headline": "How often do you discover important work context only after you have already started or completed a task?",
+          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from ([resources like technical documentation])(https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know ([https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/])(low-effort documentation) is leading to more and more dissatisfaction in AI-driven work.",
           "tier": "home",
-          "chart": "text",
-          "dataId": "",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "ContextFreq",
           "dataset": [],
           "focus": "",
-          "limit": "",
-          "values": []
+          "limit": "4",
+          "values": [],
+          "dataIdSlug": "context-freq"
         },
         {
           "chapter": "Knowledge",
           "headline": "AI is forcing software organizations to document the judgment they previously relied on people to supply.",
-          "description": "Stack Overflow Chief Product and Technology Officer Jody Bailey told CTO Uncovered",
+          "description": "Stack Overflow Chief Product and Technology Officer ([Jody Bailey told CTO Uncovered])(https://www.ctouncovered.com/p/jody-bailey)",
           "tier": "home",
           "chart": "quote",
           "dataId": "",

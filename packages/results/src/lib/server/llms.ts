@@ -70,9 +70,8 @@ const headingOf = (block: any, level: string) => {
 	return text ? `${level} ${text}` : null
 }
 
-// The three kinds a chapter's stream carries. Only a figure has rows, a cut and a
-// bank entry behind it; a quote and a passage are copy the sheet wrote, and either
-// can arrive without a headline.
+// Only a figure has rows, a cut and a bank entry behind it; quotes, passages and
+// standalone stats are copy the sheet wrote.
 function figure(block: any, heading: string | null) {
 	// A quote is its own copy, so it drops the caller's heading rather than
 	// printing the same text twice. `description` is the attribution beneath it.
@@ -80,8 +79,8 @@ function figure(block: any, heading: string | null) {
 		return blockquote(join(`“${block.headline}”`, block.description?.trim() && `— ${block.description.trim()}`))
 	}
 
-	// A passage has no figure behind it: nothing to ask, cut or tabulate.
-	if (block.kind === 'text') return join(heading, block.description)
+	// Copy has no figure behind it: nothing to ask, cut or tabulate.
+	if (block.kind === 'text' || block.kind === 'stat') return join(heading, block.description)
 
 	// A question carries its cuts and nothing flat; a promoted figure is already
 	// narrowed to the one cut the sheet asked for.

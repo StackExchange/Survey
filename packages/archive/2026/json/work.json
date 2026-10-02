@@ -1302,6 +1302,41 @@
       {
         "slice": 0,
         "series": null,
+        "response": "10,000 or more employees",
+        "count": 2941,
+        "pct": 0.139
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "5,000 to 9,999 employees",
+        "count": 1017,
+        "pct": 0.048
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "1,000 to 4,999 employees",
+        "count": 2409,
+        "pct": 0.114
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "500 to 999 employees",
+        "count": 1307,
+        "pct": 0.062
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "100 to 499 employees",
+        "count": 3474,
+        "pct": 0.165
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "20 to 99 employees",
         "count": 3677,
         "pct": 0.174
@@ -1316,44 +1351,9 @@
       {
         "slice": 0,
         "series": null,
-        "response": "100 to 499 employees",
-        "count": 3474,
-        "pct": 0.165
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "10,000 or more employees",
-        "count": 2941,
-        "pct": 0.139
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "1,000 to 4,999 employees",
-        "count": 2409,
-        "pct": 0.114
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "Just me - I am a freelancer, sole proprietor, etc.",
         "count": 2213,
         "pct": 0.105
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "500 to 999 employees",
-        "count": 1307,
-        "pct": 0.062
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "5,000 to 9,999 employees",
-        "count": 1017,
-        "pct": 0.048
       },
       {
         "slice": 0,

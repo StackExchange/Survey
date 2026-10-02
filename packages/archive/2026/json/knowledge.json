@@ -3719,9 +3719,9 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Sometimes",
-        "count": 5465,
-        "pct": 0.431
+        "response": "Very often",
+        "count": 1539,
+        "pct": 0.121
       },
       {
         "slice": 0,
@@ -3733,6 +3733,13 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Sometimes",
+        "count": 5465,
+        "pct": 0.431
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Rarely",
         "count": 2136,
         "pct": 0.168
@@ -3740,9 +3747,9 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Very often",
-        "count": 1539,
-        "pct": 0.121
+        "response": "Never",
+        "count": 130,
+        "pct": 0.01
       },
       {
         "slice": 0,
@@ -3757,13 +3764,6 @@
         "response": "Not applicable",
         "count": 200,
         "pct": 0.016
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Never",
-        "count": 130,
-        "pct": 0.01
       }
     ]
   },

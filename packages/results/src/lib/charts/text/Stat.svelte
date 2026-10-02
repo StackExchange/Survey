@@ -14,7 +14,7 @@
 	// A trailing "%" is drawn smaller than its number, so it is split off.
 	const splitUnit = (text: string) => (text.endsWith('%') ? { figures: text.slice(0, -1), unit: '%' } : { figures: text, unit: '' })
 
-	const { figures, unit } = $derived(splitUnit(row ? formatOf(figure)(row) : '—'))
+	const { figures, unit } = $derived(splitUnit(figure.kind === 'stat' ? figure.headline : row ? formatOf(figure)(row) : '—'))
 	const glyphs = $derived(Math.max(figures.length + (unit ? 0.4 : 0), 2))
 	const size = $derived(Math.min(BUDGET / glyphs, CEILING))
 </script>

@@ -885,13 +885,6 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Yes, both on my own and at work",
-        "count": 11350,
-        "pct": 0.402
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "Yes, on my own",
         "count": 6607,
         "pct": 0.234
@@ -899,16 +892,23 @@
       {
         "slice": 0,
         "series": null,
-        "response": "No",
-        "count": 5923,
-        "pct": 0.21
+        "response": "Yes, at work",
+        "count": 4360,
+        "pct": 0.154
       },
       {
         "slice": 0,
         "series": null,
-        "response": "Yes, at work",
-        "count": 4360,
-        "pct": 0.154
+        "response": "Yes, both on my own and at work",
+        "count": 11350,
+        "pct": 0.402
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "No",
+        "count": 5923,
+        "pct": 0.21
       }
     ]
   },

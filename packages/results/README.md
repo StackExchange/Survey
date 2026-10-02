@@ -72,6 +72,11 @@ work, so the sheet can be renamed a row at a time.
 | Single stat callout (etc 1/4, 7.5, 85%) | —                           | `stat`                      |
 | Respondant quote                        | —                           | `quote`                     |
 
+For `stat`, set `dataId` (and optionally `values`) to display the first selected
+data row. To supply a stat as text, leave `dataId` blank and put the value, such as
+`74%`, in `headline`; `description` provides the accompanying copy. Both forms work
+on the homepage and chapter pages.
+
 ### Standard
 
 Used in "Data" section of each chapter.
