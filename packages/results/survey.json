@@ -12,7 +12,7 @@
   "chapters": [
     {
       "name": "Work",
-      "description": "Well, it ain’t what it used to be. This year, we’re finding survey respondents are less happy in their work—the numbers are showing less happy folks and more unhappy ones.  All that innovation and uncertainty can make it tough to feel comfortable in your job. \n\nMany developers are not taking this lying down: more and more technologists are finding freedom in freelance and self-employment. The percentage of freelance or self-employed developers jumped from 3.9% to 10.5% just this year. Chandrasekar recently spoke to Computing’s Ctrl Alt Lead podcast about why this might be the case: “With AI, every individual becomes almost a manager of agents. That's a sea change from just an individual that's writing code.” It seems that agents are superpowering some developers' work, making it easier for them to set a solo course backed up by their own team of agents—instead of taking their decreasing satisfaction at work on the chin.",
+      "description": "Well, it ain’t what it used to be. This year, we’re finding survey respondents are less happy in their work—the numbers are showing less happy folks and more unhappy ones.  All that innovation and uncertainty can make it tough to feel comfortable in your job.",
       "id": "work",
       "sections": [
         {
@@ -372,7 +372,7 @@
         {
           "chapter": "Work",
           "headline": "So…how’s work going for you?  33% say they are not happy at work this year.",
-          "description": "Well, it ain’t what it used to be. This year, we’re finding survey respondents are less happy in their work—the numbers are showing less happy folks and more unhappy ones.  All that innovation and uncertainty can make it tough to feel comfortable in your job.",
+          "description": "",
           "tier": "home",
           "chart": "3d-treemap",
           "dataId": "JobSat",
@@ -512,7 +512,7 @@
     },
     {
       "name": "AI",
-      "description": "What you thought you knew, and what you never knew, about AI and agents.",
+      "description": "How are technologists using AI?",
       "id": "ai",
       "sections": [
         {
@@ -815,20 +815,8 @@
       "features": [
         {
           "chapter": "AI",
-          "headline": "How are technologists using AI?",
-          "description": "To the surprise of no one, AI use has skyrocketed over the last year. Devs are using AI more than ever before in their daily work—80% of respondents from this year’s survey used AI at least an hour per day. And with increased usage has come increased favor: now more than 60% of respondents have a favorable attitude towards AI tool use in their work.",
-          "tier": "home",
-          "chart": "text",
-          "dataId": "",
-          "dataset": [],
-          "focus": "",
-          "limit": "",
-          "values": []
-        },
-        {
-          "chapter": "AI",
           "headline": "62% like using AI",
-          "description": "Over six in ten developers hold a positive outlook on AI workplace tools, with 32% expressing a very favorable view and only 7% viewing them very unfavorably.",
+          "description": "To the surprise of no one, AI use has skyrocketed over the last year. Devs are using AI more than ever before in their daily work—80% of respondents from this year’s survey used AI at least an hour per day. And with increased usage has come increased favor: now more than 60% of respondents have a favorable attitude towards AI tool use in their work.",
           "tier": "home",
           "chart": "3d-cube",
           "dataId": "AISentiment",
@@ -861,7 +849,11 @@
           "dataset": [],
           "focus": "",
           "limit": "",
-          "values": [],
+          "values": [
+            "Very important",
+            "Important",
+            "Somewhat important"
+          ],
           "dataIdSlug": "knowledge-source-ai"
         },
         {
@@ -905,7 +897,7 @@
           "chapter": "AI",
           "headline": "",
           "description": "This is where I personally feel the importance of human judgment. If you leave it up to chance, if you leave it up to the roll of the dice of the LLM, you're not gonna get the specificity. Everything I've been doing and everything my team's been doing is imagining AI as an exoskeleton, like a Tony Stark augmentation, as opposed to an empty Ultron with nobody inside. Which nobody wants. - ([Scott Hanselman,](https://stackoverflow.blog/2026/01/13/vibe-code-anything-in-a-hanselminute/))VP of Developer Community at Microsoft",
-          "tier": "",
+          "tier": "chapter",
           "chart": "quote",
           "dataId": "",
           "dataset": [],
@@ -1005,7 +997,7 @@
     },
     {
       "name": "Technology",
-      "description": "Our long-standing stats on popular technologies in the technology community.",
+      "description": "What's your favorite tech? It wouldn’t be a Stack Overflow Developer Survey if we didn’t include our technology leaderboard!",
       "id": "technology",
       "sections": [
         {
@@ -1332,10 +1324,10 @@
       "features": [
         {
           "chapter": "Technology",
-          "headline": "What's your favorite tech?",
-          "description": "And it wouldn’t be a Stack Overflow Developer Survey if we didn’t include our technology leaderboard! While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 38% usage.",
+          "headline": "",
+          "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 38% usage.",
           "tier": "home",
-          "chart": "3d-cube",
+          "chart": "3d-treemap",
           "dataId": "Languages",
           "dataset": [
             "Used for AI"
@@ -1362,10 +1354,10 @@
         },
         {
           "chapter": "Technology",
-          "headline": "",
-          "description": "When it comes to building vs. buying—the age-old trolley problem of software development—only 19% of our respondents are building their own tools to replace vendors. However, of those that are building instead of buying, over half are using AI tools to help them do it, showing AI’s utility for developers looking to bring their SaaS in-house.",
+          "headline": "When it comes to building vs. buying—the age-old trolley problem of software development—only 19% of our respondents are building their own tools to replace vendors.",
+          "description": "However, of those that are building instead of buying, over half are using AI tools to help them do it, showing AI’s utility for developers looking to bring their SaaS in-house.",
           "tier": "home",
-          "chart": "3d-treemap",
+          "chart": "2d-treemap",
           "dataId": "BuildTool",
           "dataset": [],
           "focus": "",
