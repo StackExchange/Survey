@@ -7,11 +7,14 @@ question:
   required: false
   options:
     - Visit less for simple questions
-    - Visit more for verification (for example, source attribution)
+    - label: Visit more for verification (for example, source attribution)
+      short: Used to verify
     - Ask fewer questions
-    - Ask more advanced questions
+    - label: Ask more advanced questions
+      short: Ask advanced questions
     - Contribute less
     - Contribute more
-    - Visit SO more because AI-generated answers lead you there
+    - label: Visit SO more because AI-generated answers lead you there
+      short: Visit more via AI
     - Other
     - No change

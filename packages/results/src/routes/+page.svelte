@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { IconChart, IconServiceGitHub } from '@stackoverflow/stacks-icons/icons'
 
-	import BrandHeader from '$lib/components/BrandHeader.svelte'
-	import Button from '$lib/components/Button.svelte'
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
-	import { githubRepo, siteDescriptionLong } from '$lib/constants'
-	import { graph, JsonLd, Seo } from '$lib/seo'
+	import { githubRepo, siteDescriptionLong, siteUrl } from '$config'
+
+	import BrandHeader from '$components/BrandHeader.svelte'
+	import Button from '$components/Button.svelte'
+	import Seo from '$components/Seo.svelte'
+	import ThemeToggle from '$components/ThemeToggle.svelte'
 
 	let { data } = $props()
 
@@ -16,36 +17,14 @@
 		source: string | null
 	}
 
-	// A year with no `results` URL in the archive index is not published yet, so
-	// the newest published year leads and the rest fall into the list below. The
-	// cast is the filter: every entry that survives it has a `results` URL.
 	const published = $derived(data.years.filter(({ results }) => results) as Year[])
 	const current = $derived(published[0])
 	const past = $derived(published.slice(1))
-
-	const home = $derived({
-		path: '/',
-		title: 'Stack Overflow Developer Survey',
-		description: siteDescriptionLong,
-		markdown: '/index.md',
-	})
-
-	const nodes = $derived([
-		graph.organization(),
-		graph.website(),
-		graph.webPage(home, graph.ids.catalog),
-		graph.breadcrumbs([{ name: 'Developer Survey', path: '/' }]),
-		graph.catalog(published),
-	])
 </script>
-
-<!-- Every year URL comes from the archive index as a string, so there is no route
-     id for `resolve` to check. -->
-<!-- eslint-disable svelte/no-navigation-without-resolve -->
 
 {#snippet links(entry: Year)}
 	<div class="-ml-3 flex flex-wrap gap-1">
-		<Button variant="plain" href={entry.results} data-sveltekit-reload icon={IconChart} label="Results" />
+		<Button variant="plain" href={entry.results.replace(siteUrl, '')} data-sveltekit-reload icon={IconChart} label="Results" />
 
 		{#if entry.source}
 			<Button variant="plain" href={entry.source} rel="external noopener" icon={IconServiceGitHub} label="Data & files" />
@@ -53,12 +32,7 @@
 	</div>
 {/snippet}
 
-<Seo description={siteDescriptionLong} />
-<JsonLd graph={nodes} />
-
-<div class="fixed top-0 right-0 z-50 flex">
-	<ThemeToggle />
-</div>
+<Seo {...data.seo} graph={data.jsonld.home} />
 
 <BrandHeader>
 	<div class="mt-16">
@@ -70,7 +44,6 @@
 
 		<div class="max-w-full bg-black-500 px-6 pt-6 pb-3 text-lg leading-snug text-white lg:max-w-1/2 dark:bg-black-200 dark:text-black">
 			<p class="mb-6">{siteDescriptionLong}</p>
-
 			{@render links(current)}
 		</div>
 	</div>

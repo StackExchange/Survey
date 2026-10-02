@@ -10,16 +10,27 @@ question:
     min: 0
     max: 5
   options:
-    - It is recent or clearly up to date
-    - It is marked final, approved, accepted, or official
-    - It is not marked draft, outdated, deprecated, or superseded
-    - I know who created or owns it
-    - It comes from an official or trusted source
-    - It was reviewed or validated by a subject matter expert
-    - It includes sources, citations, links, or supporting evidence
-    - It is consistent with other trusted information
-    - Other people on my team use or endorse it
-    - It is clear, complete, and easy to understand
-    - It respects access, privacy, or permission rules
+    - label: It is recent or clearly up to date
+      short: It is up to date
+    - label: It is marked final, approved, accepted, or official
+      short: Marked final or approved
+    - label: It is not marked draft, outdated, deprecated, or superseded
+      short: Not draft or outdated
+    - label: I know who created or owns it
+      short: I know who owns it
+    - label: It comes from an official or trusted source
+      short: From a trusted source
+    - label: It was reviewed or validated by a subject matter expert
+      short: Reviewed by an expert
+    - label: It includes sources, citations, links, or supporting evidence
+      short: Includes sources
+    - label: It is consistent with other trusted information
+      short: Matches other sources
+    - label: Other people on my team use or endorse it
+      short: My team endorses it
+    - label: It is clear, complete, and easy to understand
+      short: Clear and complete
+    - label: It respects access, privacy, or permission rules
+      short: Respects access rules
     - None of these
     - Not sure

@@ -70,6 +70,7 @@ Options are written as bare label strings by default. An option becomes an objec
 
 - `label` – Markdown label
 - `key:` — a stable identifier so the flow's `if/then` blocks can reference this choice
+- `short:` — a chart-length rewrite of the label for the results site (see [Short labels](#short-labels))
 - `text_entry: true` — the "Other (please specify)" free-input choice
 
 Every option has an **implicit key** equal to `snake_case(label)` (via lodash's [`snakeCase`](https://lodash.com/docs/#snakeCase)). An `if/then` block of the form `AIModelsChoice: [no]` works against the bare-string option `- No` because `snakeCase("No") = "no"`. Explicit `key:` is only written when you want a _different_ identifier from the implicit one — typically a hand-shortened name like `daily` or `independent` for a long label. Keys are referenced by `if/then` blocks in `survey.yaml`, so once a question is in production, renaming its keys is a breaking change for any downstream reference.
@@ -77,6 +78,17 @@ Every option has an **implicit key** equal to `snake_case(label)` (via lodash's 
 The YAML is the forward-facing source of truth: it does not carry per-question Qualtrics overrides (`analyzeChoices`, recode mappings, etc.). Qualtrics applies its own defaults when the survey is pushed via the export script.
 
 `randomize: true` means "shuffle the choice order on render, but pin any `text_entry: true` choice (typically `Other (please specify):`) at the end." The export script reconstructs the Qualtrics `Randomization` block from this.
+
+### Short labels
+
+`short:` is useful for when we generate graphics from the data we can have a shorter label to increase readability.
+
+```yaml
+options:
+  - label: Yes, I influenced the purchase of a substantial addition to the tech stack
+    short: Yes, a big purchase
+  - No # Normal way of defining a label
+```
 
 ### Validation
 
