@@ -35,12 +35,17 @@
 	} = $props()
 
 	const Chart = $derived(charts[block.chart as keyof typeof charts])
+	const dataChapterId = $derived(block.dataChapterId ?? chapter?.id)
 
 	const inData = $derived(
-		year && chapter && block.sectionId ? `${resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}#${block.sectionId}` : null
+		year && dataChapterId && block.sectionId
+			? `${resolve('/[year]/[chapter]/data', { year, chapter: dataChapterId })}#${block.sectionId}`
+			: null
 	)
 	const question = $derived(
-		year && chapter && block.slug ? resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug }) : null
+		year && dataChapterId && block.slug
+			? resolve('/[year]/[chapter]/data/[question]', { year, chapter: dataChapterId, question: block.slug })
+			: null
 	)
 
 	let hovered = $state<{ data: TooltipData | null; event?: PointerLike }>({ data: null })
@@ -66,15 +71,16 @@
 						{/if}
 					</div>
 
-					<a
-						class="ml-auto flex w-fit items-center gap-2 self-end bg-black-150 px-4 py-2 hover:bg-black hover:text-white dark:bg-black-400 dark:hover:bg-orange dark:hover:text-black"
-						href={resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug })}
-						onclick={(event) =>
-							openQuestion(event, resolve('/[year]/[chapter]/data/[question]', { year, chapter: chapter.id, question: block.slug }))}
-					>
-						Dig deeper
-						<Icon src={IconArrowRight} />
-					</a>
+					{#if question}
+						<a
+							class="ml-auto flex w-fit items-center gap-2 self-end bg-black-150 px-4 py-2 hover:bg-black hover:text-white dark:bg-black-400 dark:hover:bg-orange dark:hover:text-black"
+							href={question}
+							onclick={(event) => openQuestion(event, question)}
+						>
+							Dig deeper
+							<Icon src={IconArrowRight} />
+						</a>
+					{/if}
 				</div>
 			</ChapterHeader>
 		{:else}

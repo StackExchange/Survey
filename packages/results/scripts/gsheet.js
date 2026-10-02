@@ -15,6 +15,9 @@ const SHEET_ID = process.env.GOOGLE_SHEETS_SHEETID
 // Columns with split with `|`
 const LISTS = new Set(['dataset', 'values', 'axisLabels'])
 
+// Keep source locations out of the generated JSON, but available for errors.
+const sourceRows = new WeakMap()
+
 if (!SHEET_ID) throw new Error('GOOGLE_SHEETS_SHEETID is not set — see .env.example')
 
 // Define which tabs we accept
@@ -56,7 +59,12 @@ async function getSheet(name) {
 	const [headers, ...rows] = csvParseRows((await res.text()).replace(/^\uFEFF/, ''))
 
 	// Sheets pads the grid, so a blank row is all-empty rather than absent.
-	return rows.filter((row) => row.some((field) => field !== '')).map((row) => mapRow(headers, row))
+	return rows.flatMap((row, i) => {
+		if (!row.some((field) => field.trim() !== '')) return []
+		const mapped = mapRow(headers, row)
+		sourceRows.set(mapped, `${name} row ${i + 2}`)
+		return [mapped]
+	})
 }
 
 const byName = new Map(chapters.map((chapter) => [chapter.name, chapter]))
@@ -65,19 +73,22 @@ const dropped = []
 for (const section of sections) {
 	const chapter = byName.get(section.chapter)
 	if (chapter) (chapter.sections ??= []).push(section)
-	else dropped.push(`section "${section.name}" — no chapter "${section.chapter}"`)
+	else dropped.push(`${sourceRows.get(section)}: section "${section.name}" — no chapter "${section.chapter}"`)
 }
 
 for (const question of questions) {
 	const section = byName.get(question.chapter)?.sections?.find((s) => s.name === question.section)
 	if (section) (section.questions ??= []).push(question)
-	else dropped.push(`question "${question.name}" — no section "${question.chapter} / ${question.section}"`)
+	else dropped.push(`${sourceRows.get(question)}: question "${question.name}" — no section "${question.chapter} / ${question.section}"`)
 }
 
 for (const feature of features) {
 	const chapter = byName.get(feature.chapter)
 	if (chapter) (chapter.features ??= []).push(feature)
-	else dropped.push(`${feature.tier} "${feature.headline}" — no chapter "${feature.chapter}"`)
+	else {
+		const label = feature.headline || feature.dataId || feature.description?.slice(0, 80) || '(untitled)'
+		dropped.push(`${sourceRows.get(feature)}: ${feature.tier} "${label}" — no chapter "${feature.chapter}"`)
+	}
 }
 
 // Position is the chapter's own, so it belongs with the chapter rather than being

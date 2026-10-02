@@ -24,6 +24,11 @@ Content is stored in a Google Sheet that must be public (so we don't need API ke
 npm run content -w results
 ```
 
+In the Features tab, `Chapter` controls placement. A feature's `DataId` is looked
+up in that chapter first, then in the other live chapters if exactly one contains
+it. Links to the full data follow the source chapter. Missing or ambiguous data
+references fail generation.
+
 ## Data
 
 `scripts/data.js` bakes three inputs into one payload per route:

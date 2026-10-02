@@ -243,7 +243,17 @@ function featureOf(ctx, chapter, ref) {
 
 	const where = `${ref.tier} "${ref.headline}" (${chapter.id})`
 
-	const { groups, ...resolved } = resolve(ctx, chapter.id, ref.dataId, where, ref.chart, ref.headline) ?? {}
+	// A feature's placement need not be the chapter that owns its data. Prefer
+	// the local export; otherwise only use an unambiguous live chapter.
+	let sourceChapter = chapter
+	if (!ctx.data[chapter.id]?.[ref.dataId] && chapter.id !== 'methodology') {
+		const matches = ctx.chapters.filter((c) => ctx.data[c.id]?.[ref.dataId])
+		if (matches.length > 1)
+			return ctx.fail(`${where}: question "${ref.dataId}" exists in multiple chapters: ${matches.map((c) => c.id).join(', ')}`)
+		if (matches.length === 1) sourceChapter = matches[0]
+	}
+
+	const { groups, ...resolved } = resolve(ctx, sourceChapter.id, ref.dataId, where, ref.chart, ref.headline) ?? {}
 	if (!groups) return null
 
 	const wanted = ref.dataset?.[0]
@@ -278,7 +288,7 @@ function featureOf(ctx, chapter, ref) {
 	}
 
 	// The section and slug the question sits at, for the "in context" link.
-	const section = (chapter.sections ?? []).find((s) => (s.questions ?? []).some((q) => q.dataId === ref.dataId))
+	const section = (sourceChapter.sections ?? []).find((s) => (s.questions ?? []).some((q) => q.dataId === ref.dataId))
 
 	return {
 		kind: 'figure',
@@ -292,6 +302,7 @@ function featureOf(ctx, chapter, ref) {
 		description: ref.description,
 		descriptionHtml: html(ref.description),
 		subtext: ref.subtext || null,
+		dataChapterId: sourceChapter.id,
 		section: section?.name ?? null,
 		sectionId: section?.id ?? null,
 		slug: (section?.questions ?? []).find((q) => q.dataId === ref.dataId)?.dataIdSlug ?? null,
@@ -347,6 +358,7 @@ export async function generate() {
 
 		return true
 	})
+	ctx.chapters = live
 
 	for (const id of Object.keys(data)) {
 		if (id !== 'methodology' && !survey.chapters.some((c) => c.id === id))
