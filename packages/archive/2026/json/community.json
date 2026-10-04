@@ -919,8 +919,13 @@
       "question": "<p>Which community platforms have you used for technology-related content or purposes considerably or consistently in the past year? Which do you want to use over the next year? Please check all that apply.<\/p>",
       "slices": [
         {
-          "slice_type": "all",
-          "slice_value": "All Respondents",
+          "slice_type": "view",
+          "slice_value": "Worked with",
+          "n": 10741
+        },
+        {
+          "slice_type": "view",
+          "slice_value": "Want to Work with",
           "n": 10741
         }
       ]
@@ -1057,6 +1062,139 @@
         "series": null,
         "response": "Hashnode",
         "count": 131,
+        "pct": 0.012
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "GitHub (public projects, not private repos)",
+        "count": 4814,
+        "pct": 0.448
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Stack Overflow",
+        "count": 4660,
+        "pct": 0.434
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "YouTube",
+        "count": 3926,
+        "pct": 0.366
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Reddit",
+        "count": 2989,
+        "pct": 0.278
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Stack Exchange",
+        "count": 2687,
+        "pct": 0.25
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "LinkedIn",
+        "count": 1610,
+        "pct": 0.15
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Discord",
+        "count": 1955,
+        "pct": 0.182
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Medium",
+        "count": 1183,
+        "pct": 0.11
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Hacker News",
+        "count": 1635,
+        "pct": 0.152
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "X",
+        "count": 953,
+        "pct": 0.089
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bluesky",
+        "count": 966,
+        "pct": 0.09
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Slack (public channels, not work)",
+        "count": 696,
+        "pct": 0.065
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Dev.to",
+        "count": 573,
+        "pct": 0.053
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Company-sponsored forums",
+        "count": 499,
+        "pct": 0.046
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Substack",
+        "count": 506,
+        "pct": 0.047
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Other, please specify",
+        "count": 628,
+        "pct": 0.058
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Twitch",
+        "count": 348,
+        "pct": 0.032
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Kaggle",
+        "count": 383,
+        "pct": 0.036
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Hashnode",
+        "count": 125,
         "pct": 0.012
       }
     ]

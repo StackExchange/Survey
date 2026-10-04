@@ -402,7 +402,7 @@
           "chart": "3d-bar-stacked-horizontal",
           "dataId": "OrgSize",
           "dataset": [],
-          "focus": "Just me - I am a freelancer, sole proprietor, etc.",
+          "focus": "",
           "limit": "",
           "values": [],
           "dataIdSlug": "org-size"
@@ -829,7 +829,7 @@
         {
           "chapter": "AI",
           "headline": "How much do you trust the output from AI tools or AI agents as part of your workflow?",
-          "description": "And technologists have figured out better ways to use their AI tools—and place more trust in them. This year, more than 86% of respondents had some level of trust in AI’s outputs, a huge increase from 31% last year. But that trust is conditional—48% trust AI only when it comes to low risk, easily verifiable tasks.",
+          "description": "And technologists have figured out better ways to use their AI tools—and place more trust in them. This year, more than 87% of respondents had some level of trust in AI’s outputs, a huge increase from 31% last year. But that trust is conditional—48% trust AI only when it comes to low risk, easily verifiable tasks.",
           "tier": "home",
           "chart": "3d-bar-stacked-horizontal",
           "dataId": "AITrust",
@@ -842,7 +842,7 @@
         {
           "chapter": "AI",
           "headline": "And how exactly are AI users verifying the outcomes of an AI-generated answers?",
-          "description": "Well, 92% of our respondents think that it all comes down to citing your sources. AI technology may have improved by leaps and bounds over last year, but it’s responses aren’t trustworthy enough yet to take at face value.",
+          "description": "Well, 93% of our respondents think that it all comes down to citing your sources. AI technology may have improved by leaps and bounds over last year, but it’s responses aren’t trustworthy enough yet to take at face value.",
           "tier": "home",
           "chart": "3d-waffle-large",
           "dataId": "KnowledgeSourceAI",
@@ -1324,10 +1324,10 @@
       "features": [
         {
           "chapter": "Technology",
-          "headline": "",
+          "headline": "Top programming languages used for AI shows Python leading at 39% usage",
           "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 39% usage.",
           "tier": "home",
-          "chart": "3d-treemap",
+          "chart": "3d-bar-stacked-vertical",
           "dataId": "Languages",
           "dataset": [
             "Used for AI"
@@ -1430,7 +1430,7 @@
         {
           "chapter": "Technology",
           "headline": "I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.",
-          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft ([source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/))",
+          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft [source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/)",
           "tier": "chapter",
           "chart": "quote",
           "dataId": "",
@@ -1770,8 +1770,33 @@
       "features": [
         {
           "chapter": "Community",
+          "headline": "",
+          "description": "We’ve always been interested in how developers learn to code, upskill on new tech, and mind meld with their fellow code mongers. While we always want to be part of how developers find answers to their problems, we understand that AI changed the game. But how much? Is community still useful to developers in their times of need? What are people learning and where?",
+          "tier": "home",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "AI skills are coming out on top",
+          "description": "This year, we found that more people are learning AI programming skills than non-AI programming skills. Around 79% of developers are focusing on AI skills in their learning. This makes sense, AI programming is newer and changing fast, so there’s a lot to learn right now. But 52% of folks are learning new coding or programming skills, so there’s plenty to learn there still. Most devs (59%) are still using technical documentation to learn, with AI codegen tools coming up close behind at 53%.",
+          "tier": "home",
+          "chart": "2d-treemap",
+          "dataId": "LearnCode",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "learn-code"
+        },
+        {
+          "chapter": "Community",
           "headline": "Which actions do you turn to first when trying to find answers to a problem?",
-          "description": "While the lion’s share of respondents still seek guidance from traditional search tools when they face a new challenge, nearly 70% of technologists also use AI agents to help them solve problems—beating out maintained repositories and trusted humans as direct sources of learning. When it comes to work-related questions, however, developers are still turning to the humans in their loops—also known as coworkers and teammates—first in order to get the answers they need (71.9%), with code repositories (62.8%) and internal documentation (60%) following as close runner-ups.",
+          "description": "When faced with a problem they need answers to, about 70% asked an AI agent. AI agents and overviews have definitely changed everyone’s internet behaviors, and we’re feeling the effects too. Lots of folks indicated that they’re participating in the Stack Overflow community less because of AI: 64% visit less for simple questions, 29% ask fewer questions, and 26% contribute less. The good news is that whenever you go to an AI agent for answers, you’re still using Stack Overflow. Many of the model providers use our community data to train their LLMs.",
           "tier": "home",
           "chart": "2d-bar-stacked-horizontal",
           "dataId": "Answers",
@@ -1783,8 +1808,45 @@
         },
         {
           "chapter": "Community",
-          "headline": "69% use GitHub projects or Stack Overflow as their community platform of choice in the past year",
-          "description": "Public GitHub projects (69%) and Stack Overflow (69%) tied as the most heavily utilized technical community platforms in the past year, followed by YouTube (58%) and Reddit (54%).",
+          "headline": "But devs aren’t just using AI to learn",
+          "description": "Before you order our tombstone, the majority of people (83%) still use search to answer problems first. Google, once our primary referrer, added AI overviews, which certainly stops folks from following any links at all. Testing has shown that ([1 in 10 of those overviews may contain errors](https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/?ref=wheresyoured.at)). But not all of those searches stop at the AI overview, as people still have reasons to visit: 16% look to verify the source, and 6% visit because of the AI answer. This holds true for not just the individual learner—human expertise continues to be important ([even at the enterprise level](https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise/)).",
+          "tier": "home",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "I can use AI to ask simple questions but for complicated questions I use StackOverflow.",
+          "description": "Front-end developer, Ukraine, SO User 5 - 10 years",
+          "tier": "home",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "When it comes to how folks are contributing to developer knowledge communities, 22% of folks indicated no change, 6% said they ask more advanced questions, and 1% of folks recognize that the garden needs tending and are contributing more. This was a sentiment repeated by Major League Hacking’s CEO Mike Swift when he joined us on the ([Stack Overflow podcast](https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/)), telling us, “We're just inundated with digital assets and digital communication. Person-to-person, real human connection is gonna be the driver of so much stuff in life. Communities of practice guilds, in a lot of ways, are the future.”",
+          "tier": "home",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "SOChange",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "so-change"
+        },
+        {
+          "chapter": "Community",
+          "headline": "And community is still important",
+          "description": "This might be biased because it’s our survey, but the top two platforms that respondents worked with last year were Stack Overflow (72%) and GitHub (71%). In terms of platforms they want to work with next year, the top two are reversed: GitHub tops at 47% and we’re second with 46%. We’re thrilled that you all still have a lot of goodwill towards us; our challenge is to give you more reasons to visit.",
           "tier": "home",
           "chart": "3d-bar-stacked-vertical",
           "dataId": "CommPlat",
@@ -1793,6 +1855,31 @@
           "limit": "4",
           "values": [],
           "dataIdSlug": "comm-plat"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Stack Overflow is a place to get reliable up to date answers.",
+          "description": "Student, U.K., SO User 1 - 3 years",
+          "tier": "home",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "How about those folks who don’t participate in technical communities much? Part of the answer is certainly AI (45% feel that AI answers enough of their questions that they don’t seek out human expertise), but another part is that communities have built up solid knowledge (where 65% of respondents can find answers without posting). But there’s another problem that’s much older than AI (and harder, too): making folks feel welcome and safe. Of those who aren’t active in technical communities, 21% worry about being judged, 20% don’t feel confident about public posts, 18% prefer private conversations, and 12% feel like they aren’t welcome in those spaces. \n\nWhether you’ve been using AI to learn about AI or still lean on the code experts in your online and IRL communities, it’s clear that learning is still core to what it means to be a developer in our ever-shifting technological landscape.",
+          "tier": "home",
+          "chart": "rank",
+          "dataId": "CommunityGap",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "community-gap"
         },
         {
           "chapter": "Community",
@@ -1810,8 +1897,8 @@
           "chapter": "Community",
           "headline": "",
           "description": "This year, we found that more people are learning AI programming skills than non-AI programming skills. Around 79% of developers are focusing on AI skills in their learning. This makes sense, AI programming is newer and changing fast, so there’s a lot to learn right now. But 52% of folks are learning new coding or programming skills, so there’s plenty to learn there still. Most devs (59%) are still using technical documentation to learn, with AI codegen tools coming up close behind at 53%.",
-          "tier": "",
-          "chart": "",
+          "tier": "chapter",
+          "chart": "text",
           "dataId": "",
           "dataset": [],
           "focus": "",
@@ -2113,8 +2200,20 @@
       "features": [
         {
           "chapter": "Knowledge",
+          "headline": "What does everyone need to know?",
+          "description": "In software development, context seems to be the reigning king this year, whether or not AI agents are involved. But the right context is not always reaching developers at the right time. Over 78% of developers find incomplete information to be a barrier to getting the right context at work, while 78% regularly discover the important context they need only after the fact. A lot of time goes into that context search—75% spent five plus hours searching for answers.",
+          "tier": "",
+          "chart": "",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
           "headline": "What gets in the way of you getting the context you need for work?",
-          "description": "Over 63% of developers find incomplete information to be a barrier to getting the right context at work, while 78% regularly discover the important context they need only after the fact. A lot of time goes into that context search—74% spent five plus hours searching for answers.",
+          "description": "Over 63% of developers find incomplete information to be a barrier to getting the right context at work, while 79% regularly discover the important context they need only after the fact. A lot of time goes into that context search, 75% spent five plus hours searching for answers.",
           "tier": "home",
           "chart": "3d-bar-stacked-horizontal",
           "dataId": "ContextProblems",
@@ -2127,7 +2226,7 @@
         {
           "chapter": "Knowledge",
           "headline": "How often do you discover important work context only after you have already started or completed a task?",
-          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from ([resources like technical documentation])(https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know ([https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/])(low-effort documentation) is leading to more and more dissatisfaction in AI-driven work.",
+          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from ([resources like technical documentation])(https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know ([low-effort documentation])(https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/) is leading to more and more dissatisfaction in AI-driven work.",
           "tier": "home",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "ContextFreq",
