@@ -26,23 +26,23 @@
 
 <main id="main" class="min-h-screen" tabindex="-1">
 	<section class="container my-10 lg:my-30">
-		<p class="mb-6 text-lg leading-snug">
-			<span aria-hidden="true" class="mr-2 inline-block h-3 w-3 bg-orange"></span>
-			{data.settings.description}
-		</p>
-		<p class="max-w-5xl text-3xl lg:text-4xl">
-			{data.settings.descriptionLong}
-		</p>
+		<div class="mb-6 flex items-start gap-2 text-lg leading-snug">
+			<span aria-hidden="true" class="mt-[0.35em] h-3 w-3 shrink-0 bg-orange"></span>
+			<div class="md">{@html data.settingsHtml.description}</div>
+		</div>
+		<div class="md max-w-5xl text-3xl lg:text-4xl">
+			{@html data.settingsHtml.descriptionLong}
+		</div>
 	</section>
 
 	<section class="container my-30 grid gap-20 lg:my-60 lg:grid-cols-2">
 		<img src="/img/home-categories.svg" class="h-auto w-full" width="611" height="485" alt="Categories" />
-		<p class="max-w-2xl text-4xl">
-			<span class="font-headline-notch block text-9xl lg:text-[260px] lg:leading-60">
-				{data.settings.questionCount}
-			</span>
+		<div class="max-w-2xl text-4xl">
+			<div class="md font-headline-notch text-9xl lg:text-[260px] lg:leading-60">
+				{@html data.settingsHtml.questionCount}
+			</div>
 			questions asked across {data.chapters.length} insightful categories
-		</p>
+		</div>
 	</section>
 
 	<section class="spindle-scope relative overflow-hidden border-b border-transparent lg:pl-[50%] dark:border-black-500">
@@ -51,11 +51,11 @@
 			<dl
 				class="[&>dt]lg:text-[120px] flex flex-col items-start *:bg-blue-extra-light *:px-5 *:dark:text-black [&>dd]:relative [&>dd]:z-30 [&>dd]:-mt-5 [&>dd]:-mb-3 [&>dd]:py-2 [&>dt]:text-[75px]"
 			>
-				<dt class="font-headline-notch">{data.settings.respondents}</dt>
+				<dt class="md font-headline-notch">{@html data.settingsHtml.respondents}</dt>
 				<dd>Responses</dd>
-				<dt class="font-headline-notch">{data.settings.countryCount}</dt>
+				<dt class="md font-headline-notch">{@html data.settingsHtml.countryCount}</dt>
 				<dd>Countries reached</dd>
-				<dt class="font-headline-notch">{data.settings.technologyCount}</dt>
+				<dt class="md font-headline-notch">{@html data.settingsHtml.technologyCount}</dt>
 				<dd>Technologies examined</dd>
 			</dl>
 		</div>

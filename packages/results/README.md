@@ -24,6 +24,12 @@ Content is stored in a Google Sheet that must be public (so we don't need API ke
 npm run content -w results
 ```
 
+In the Settings tab, the `Value` column supports Markdown for displayed copy:
+`Description`, `Description Long`, `Question Count`, `Respondents`, `Country Count`,
+and `Technology Count`. Use `**bold text**`, `*italic text*`, or `[link text](https://example.com)`.
+Descriptions also support paragraph breaks (a blank line). Keep counts on one line.
+`Year` is a routing setting and should remain a plain year; `Eyebrow` is currently unused.
+
 In the Features tab, `Chapter` controls placement. A feature's `DataId` is looked
 up in that chapter first, then in the other live chapters if exactly one contains
 it. Links to the full data follow the source chapter. Missing or ambiguous data

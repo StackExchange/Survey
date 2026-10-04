@@ -489,6 +489,11 @@ export async function generate() {
 		'site.json',
 		{
 			settings: survey.settings,
+			settingsHtml: Object.fromEntries(
+				Object.entries(survey.settings)
+					.filter(([, value]) => typeof value === 'string')
+					.map(([name, value]) => [name, html(value)])
+			),
 			methodology,
 			seo: { home: seoOf('/') },
 			jsonld: { home: graphs.home },

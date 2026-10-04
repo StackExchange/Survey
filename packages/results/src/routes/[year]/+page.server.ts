@@ -7,6 +7,7 @@ export const entries: EntryGenerator = () => [{ year: site.settings.year }]
 
 export const load: PageServerLoad = () => ({
 	settings: site.settings,
+	settingsHtml: site.settingsHtml,
 	chapters: year.chapters,
 	seo: year.seo,
 	jsonld: year.jsonld,
