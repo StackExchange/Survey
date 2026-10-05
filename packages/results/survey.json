@@ -345,7 +345,7 @@
               "dataId": "Compensation",
               "chart": "bar",
               "description": "",
-              "subtext": "",
+              "subtext": "All respondents: limit bar charts to roles with 100 or more responses; Country-level: limit bar charts to roles with 30 or more responses.  All reflect median salary after being converted to USD.",
               "axisLabels": [],
               "id": "compensation-by-role-and-top-responding-countries",
               "dataIdSlug": "compensation"
@@ -357,7 +357,7 @@
               "dataId": "Scatter_Compensation_Role",
               "chart": "scatter",
               "description": "",
-              "subtext": "",
+              "subtext": "Scatter charts are limited to data points with 100 or more responses.  All reflect median salary after being converted to USD.",
               "axisLabels": [
                 "Average years of professional experience",
                 "Median yearly salary (USD)"
@@ -372,7 +372,7 @@
               "dataId": "Scatter_Compensation_Country",
               "chart": "scatter",
               "description": "",
-              "subtext": "",
+              "subtext": "Scatter charts are limited to data points with 100 or more responses.  All reflect median salary after being converted to USD.",
               "axisLabels": [
                 "Average years of professional experience",
                 "Median yearly salary (USD)"

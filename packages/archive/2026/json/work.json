@@ -2338,7 +2338,7 @@
         },
         {
           "slice_type": "country",
-          "slice_value": "United Kingdom of Great Britain and Northern Ireland",
+          "slice_value": "United Kingdom",
           "n": 855
         },
         {
@@ -2350,31 +2350,6 @@
           "slice_type": "country",
           "slice_value": "Canada",
           "n": 539
-        },
-        {
-          "slice_type": "country",
-          "slice_value": "France",
-          "n": 526
-        },
-        {
-          "slice_type": "country",
-          "slice_value": "Netherlands",
-          "n": 360
-        },
-        {
-          "slice_type": "country",
-          "slice_value": "Poland",
-          "n": 309
-        },
-        {
-          "slice_type": "country",
-          "slice_value": "Australia",
-          "n": 306
-        },
-        {
-          "slice_type": "country",
-          "slice_value": "Ukraine",
-          "n": 259
         }
       ]
     },
@@ -2566,10 +2541,58 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Senior executive (C-suite, VP, etc.)",
+        "count": 46,
+        "pct": null,
+        "median_yearly_salary_usd": 250000
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Architect, software or solutions",
         "count": 216,
         "pct": null,
         "median_yearly_salary_usd": 186000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Solutions engineer, implementation engineer, or forward-deployed engineer",
+        "count": 41,
+        "pct": null,
+        "median_yearly_salary_usd": 149000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Software engineer",
+        "count": 36,
+        "pct": null,
+        "median_yearly_salary_usd": 172500
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "AI/ML engineer",
+        "count": 42,
+        "pct": null,
+        "median_yearly_salary_usd": 200000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Data scientist",
+        "count": 45,
+        "pct": null,
+        "median_yearly_salary_usd": 148000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Data engineer",
+        "count": 71,
+        "pct": null,
+        "median_yearly_salary_usd": 165000
       },
       {
         "slice": 1,
@@ -2590,6 +2613,22 @@
       {
         "slice": 1,
         "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 54,
+        "pct": null,
+        "median_yearly_salary_usd": 156500
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Developer, mobile",
+        "count": 71,
+        "pct": null,
+        "median_yearly_salary_usd": 178000
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Developer, desktop or enterprise applications",
         "count": 129,
         "pct": null,
@@ -2602,6 +2641,54 @@
         "count": 974,
         "pct": null,
         "median_yearly_salary_usd": 140000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Developer, front-end",
+        "count": 93,
+        "pct": null,
+        "median_yearly_salary_usd": 150000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Data or business analyst",
+        "count": 36,
+        "pct": null,
+        "median_yearly_salary_usd": 89000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Academic researcher",
+        "count": 48,
+        "pct": null,
+        "median_yearly_salary_usd": 101857
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Cybersecurity or InfoSec professional",
+        "count": 31,
+        "pct": null,
+        "median_yearly_salary_usd": 178000
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Applied scientist",
+        "count": 30,
+        "pct": null,
+        "median_yearly_salary_usd": 150312
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Engineering manager",
+        "count": 32,
+        "pct": null,
+        "median_yearly_salary_usd": 131356
       },
       {
         "slice": 2,
@@ -2622,10 +2709,66 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 61,
+        "pct": null,
+        "median_yearly_salary_usd": 88708
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "DevOps engineer or professional",
+        "count": 38,
+        "pct": null,
+        "median_yearly_salary_usd": 85296
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 72,
+        "pct": null,
+        "median_yearly_salary_usd": 72223
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Developer, full-stack",
         "count": 366,
         "pct": null,
         "median_yearly_salary_usd": 77335
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Developer, front-end",
+        "count": 42,
+        "pct": null,
+        "median_yearly_salary_usd": 77336
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Academic researcher",
+        "count": 48,
+        "pct": null,
+        "median_yearly_salary_usd": 72047
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Engineering manager",
+        "count": 46,
+        "pct": null,
+        "median_yearly_salary_usd": 136322
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 64,
+        "pct": null,
+        "median_yearly_salary_usd": 119698
       },
       {
         "slice": 3,
@@ -2638,10 +2781,42 @@
       {
         "slice": 3,
         "series": null,
+        "response": "Developer, embedded applications or devices",
+        "count": 32,
+        "pct": null,
+        "median_yearly_salary_usd": 79798
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 44,
+        "pct": null,
+        "median_yearly_salary_usd": 95758
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Developer, full-stack",
         "count": 269,
         "pct": null,
         "median_yearly_salary_usd": 86448
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Architect, software or solutions",
+        "count": 45,
+        "pct": null,
+        "median_yearly_salary_usd": 41783
+      },
+      {
+        "slice": 4,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 71,
+        "pct": null,
+        "median_yearly_salary_usd": 20891
       },
       {
         "slice": 4,
@@ -2654,34 +2829,34 @@
       {
         "slice": 5,
         "series": null,
+        "response": "Architect, software or solutions",
+        "count": 35,
+        "pct": null,
+        "median_yearly_salary_usd": 106371
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Developer, back-end",
+        "count": 76,
+        "pct": null,
+        "median_yearly_salary_usd": 122326
+      },
+      {
+        "slice": 5,
+        "series": null,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 30,
+        "pct": null,
+        "median_yearly_salary_usd": 90947
+      },
+      {
+        "slice": 5,
+        "series": null,
         "response": "Developer, full-stack",
         "count": 173,
         "pct": null,
         "median_yearly_salary_usd": 82260
-      },
-      {
-        "slice": 6,
-        "series": null,
-        "response": "Developer, full-stack",
-        "count": 181,
-        "pct": null,
-        "median_yearly_salary_usd": 55727
-      },
-      {
-        "slice": 7,
-        "series": null,
-        "response": "Developer, full-stack",
-        "count": 109,
-        "pct": null,
-        "median_yearly_salary_usd": 72786
-      },
-      {
-        "slice": 9,
-        "series": null,
-        "response": "Developer, full-stack",
-        "count": 105,
-        "pct": null,
-        "median_yearly_salary_usd": 97580
       }
     ]
   },
