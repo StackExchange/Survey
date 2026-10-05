@@ -422,7 +422,7 @@
         {
           "chapter": "Work",
           "headline": "Many-to-one: can we do more by ourselves than with a team?",
-          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—more than doubled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for many types of tasks to be done by a single worker.  ([OpenAI research](https://cdn.openai.com/pdf/work-at-the-frontier-report.pdf)) finds among all workspaces’ non-generic messages, 43.5% fall outside of the user’s occupation. ([Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/)) also pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
+          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—more than doubled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for many types of tasks to be done by a single worker.  [OpenAI research](https://cdn.openai.com/pdf/work-at-the-frontier-report.pdf) finds among all workspaces’ non-generic messages, 43.5% fall outside of the user’s occupation. [Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/) also pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -447,7 +447,7 @@
         {
           "chapter": "Work",
           "headline": "New tools, same problem",
-          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, a ([New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1)) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
+          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, a [New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -896,7 +896,7 @@
         {
           "chapter": "AI",
           "headline": "",
-          "description": "This is where I personally feel the importance of human judgment. If you leave it up to chance, if you leave it up to the roll of the dice of the LLM, you're not gonna get the specificity. Everything I've been doing and everything my team's been doing is imagining AI as an exoskeleton, like a Tony Stark augmentation, as opposed to an empty Ultron with nobody inside. Which nobody wants. - ([Scott Hanselman,](https://stackoverflow.blog/2026/01/13/vibe-code-anything-in-a-hanselminute/))VP of Developer Community at Microsoft",
+          "description": "This is where I personally feel the importance of human judgment. If you leave it up to chance, if you leave it up to the roll of the dice of the LLM, you're not gonna get the specificity. Everything I've been doing and everything my team's been doing is imagining AI as an exoskeleton, like a Tony Stark augmentation, as opposed to an empty Ultron with nobody inside. Which nobody wants. - [Scott Hanselman, VP of Developer Community at Microsoft](https://stackoverflow.blog/2026/01/13/vibe-code-anything-in-a-hanselminute/)",
           "tier": "chapter",
           "chart": "quote",
           "dataId": "",
@@ -1327,7 +1327,7 @@
           "headline": "Top programming languages used for AI shows Python leading at 39% usage",
           "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 39% usage.",
           "tier": "home",
-          "chart": "3d-bar-stacked-vertical",
+          "chart": "2d-bar-stacked-horizontal",
           "dataId": "Languages",
           "dataset": [
             "Used for AI"
@@ -1786,12 +1786,12 @@
           "description": "This year, we found that more people are learning AI programming skills than non-AI programming skills. Around 79% of developers are focusing on AI skills in their learning. This makes sense, AI programming is newer and changing fast, so there’s a lot to learn right now. But 52% of folks are learning new coding or programming skills, so there’s plenty to learn there still. Most devs (59%) are still using technical documentation to learn, with AI codegen tools coming up close behind at 53%.",
           "tier": "home",
           "chart": "2d-treemap",
-          "dataId": "LearnCode",
+          "dataId": "LearnCodeHow",
           "dataset": [],
           "focus": "",
           "limit": "",
           "values": [],
-          "dataIdSlug": "learn-code"
+          "dataIdSlug": "learn-code-how"
         },
         {
           "chapter": "Community",
@@ -1801,7 +1801,7 @@
           "chart": "2d-bar-stacked-horizontal",
           "dataId": "Answers",
           "dataset": [],
-          "focus": "",
+          "focus": "Ask an AI agent",
           "limit": "",
           "values": [],
           "dataIdSlug": "answers"
@@ -1809,7 +1809,7 @@
         {
           "chapter": "Community",
           "headline": "But devs aren’t just using AI to learn",
-          "description": "Before you order our tombstone, the majority of people (83%) still use search to answer problems first. Google, once our primary referrer, added AI overviews, which certainly stops folks from following any links at all. Testing has shown that ([1 in 10 of those overviews may contain errors](https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/?ref=wheresyoured.at)). But not all of those searches stop at the AI overview, as people still have reasons to visit: 16% look to verify the source, and 6% visit because of the AI answer. This holds true for not just the individual learner—human expertise continues to be important ([even at the enterprise level](https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise/)).",
+          "description": "Before you order our tombstone, the majority of people (83%) still use search to answer problems first. Google, once our primary referrer, added AI overviews, which certainly stops folks from following any links at all. Testing has shown that [1 in 10 of those overviews may contain errors](https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/?ref=wheresyoured.at). But not all of those searches stop at the AI overview, as people still have reasons to visit: 16% look to verify the source, and 6% visit because of the AI answer. This holds true for not just the individual learner—human expertise continues to be important [even at the enterprise level](https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise/).",
           "tier": "home",
           "chart": "text",
           "dataId": "",
@@ -1833,7 +1833,7 @@
         {
           "chapter": "Community",
           "headline": "",
-          "description": "When it comes to how folks are contributing to developer knowledge communities, 22% of folks indicated no change, 6% said they ask more advanced questions, and 1% of folks recognize that the garden needs tending and are contributing more. This was a sentiment repeated by Major League Hacking’s CEO Mike Swift when he joined us on the ([Stack Overflow podcast](https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/)), telling us, “We're just inundated with digital assets and digital communication. Person-to-person, real human connection is gonna be the driver of so much stuff in life. Communities of practice guilds, in a lot of ways, are the future.”",
+          "description": "When it comes to how folks are contributing to developer knowledge communities, 22% of folks indicated no change, 6% said they ask more advanced questions, and 1% of folks recognize that the garden needs tending and are contributing more. This was a sentiment repeated by Major League Hacking’s CEO Mike Swift when he joined us on the [Stack Overflow podcast](https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/), telling us, “We're just inundated with digital assets and digital communication. Person-to-person, real human connection is gonna be the driver of so much stuff in life. Communities of practice guilds, in a lot of ways, are the future.”",
           "tier": "home",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "SOChange",
@@ -2226,7 +2226,7 @@
         {
           "chapter": "Knowledge",
           "headline": "How often do you discover important work context only after you have already started or completed a task?",
-          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from ([resources like technical documentation])(https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know ([low-effort documentation])(https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/) is leading to more and more dissatisfaction in AI-driven work.",
+          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from [resources like technical documentation](https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know [low-effort documentation](https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/) is leading to more and more dissatisfaction in AI-driven work.",
           "tier": "home",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "ContextFreq",
@@ -2239,7 +2239,7 @@
         {
           "chapter": "Knowledge",
           "headline": "AI is forcing software organizations to document the judgment they previously relied on people to supply.",
-          "description": "Stack Overflow Chief Product and Technology Officer ([Jody Bailey told CTO Uncovered])(https://www.ctouncovered.com/p/jody-bailey)",
+          "description": "Stack Overflow Chief Product and Technology Officer [Jody Bailey told CTO Uncovered](https://www.ctouncovered.com/p/jody-bailey)",
           "tier": "home",
           "chart": "quote",
           "dataId": "",
