@@ -3831,20 +3831,6 @@
       {
         "slice": 0,
         "series": null,
-        "response": "Good, but not great at handling complex tasks",
-        "count": 5564,
-        "pct": 0.388
-      },
-      {
-        "slice": 0,
-        "series": null,
-        "response": "Bad at handling complex tasks",
-        "count": 2299,
-        "pct": 0.16
-      },
-      {
-        "slice": 0,
-        "series": null,
         "response": "Very well at handling complex tasks",
         "count": 2288,
         "pct": 0.16
@@ -3852,9 +3838,23 @@
       {
         "slice": 0,
         "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 5564,
+        "pct": 0.388
+      },
+      {
+        "slice": 0,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 2067,
         "pct": 0.144
+      },
+      {
+        "slice": 0,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 2299,
+        "pct": 0.16
       },
       {
         "slice": 0,
@@ -3873,20 +3873,6 @@
       {
         "slice": 1,
         "series": null,
-        "response": "Good, but not great at handling complex tasks",
-        "count": 4734,
-        "pct": 0.436
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Bad at handling complex tasks",
-        "count": 1489,
-        "pct": 0.137
-      },
-      {
-        "slice": 1,
-        "series": null,
         "response": "Very well at handling complex tasks",
         "count": 2139,
         "pct": 0.197
@@ -3894,9 +3880,23 @@
       {
         "slice": 1,
         "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 4734,
+        "pct": 0.436
+      },
+      {
+        "slice": 1,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 1470,
         "pct": 0.136
+      },
+      {
+        "slice": 1,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 1489,
+        "pct": 0.137
       },
       {
         "slice": 1,
@@ -3915,20 +3915,6 @@
       {
         "slice": 2,
         "series": null,
-        "response": "Good, but not great at handling complex tasks",
-        "count": 717,
-        "pct": 0.271
-      },
-      {
-        "slice": 2,
-        "series": null,
-        "response": "Bad at handling complex tasks",
-        "count": 624,
-        "pct": 0.236
-      },
-      {
-        "slice": 2,
-        "series": null,
         "response": "Very well at handling complex tasks",
         "count": 116,
         "pct": 0.044
@@ -3936,9 +3922,23 @@
       {
         "slice": 2,
         "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 717,
+        "pct": 0.271
+      },
+      {
+        "slice": 2,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 467,
         "pct": 0.177
+      },
+      {
+        "slice": 2,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 624,
+        "pct": 0.236
       },
       {
         "slice": 2,
@@ -3957,20 +3957,6 @@
       {
         "slice": 3,
         "series": null,
-        "response": "Good, but not great at handling complex tasks",
-        "count": 105,
-        "pct": 0.129
-      },
-      {
-        "slice": 3,
-        "series": null,
-        "response": "Bad at handling complex tasks",
-        "count": 182,
-        "pct": 0.223
-      },
-      {
-        "slice": 3,
-        "series": null,
         "response": "Very well at handling complex tasks",
         "count": 31,
         "pct": 0.038
@@ -3978,9 +3964,23 @@
       {
         "slice": 3,
         "series": null,
+        "response": "Good, but not great at handling complex tasks",
+        "count": 105,
+        "pct": 0.129
+      },
+      {
+        "slice": 3,
+        "series": null,
         "response": "Neither good or bad at handling complex tasks",
         "count": 120,
         "pct": 0.147
+      },
+      {
+        "slice": 3,
+        "series": null,
+        "response": "Bad at handling complex tasks",
+        "count": 182,
+        "pct": 0.223
       },
       {
         "slice": 3,

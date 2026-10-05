@@ -2322,19 +2322,59 @@
       "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
       "slices": [
         {
-          "slice_type": "view",
-          "slice_value": "By role",
+          "slice_type": "all",
+          "slice_value": "All Respondents",
           "n": 12040
         },
         {
-          "slice_type": "view",
-          "slice_value": "By country",
-          "n": 12040
+          "slice_type": "country",
+          "slice_value": "United States of America",
+          "n": 2885
         },
         {
-          "slice_type": "view",
-          "slice_value": "By professional experience",
-          "n": 12040
+          "slice_type": "country",
+          "slice_value": "Germany",
+          "n": 1218
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "United Kingdom of Great Britain and Northern Ireland",
+          "n": 855
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "India",
+          "n": 472
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Canada",
+          "n": 539
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "France",
+          "n": 526
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Netherlands",
+          "n": 360
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Poland",
+          "n": 309
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Australia",
+          "n": 306
+        },
+        {
+          "slice_type": "country",
+          "slice_value": "Ukraine",
+          "n": 259
         }
       ]
     },
@@ -2518,138 +2558,130 @@
       {
         "slice": 1,
         "series": null,
-        "response": "United States of America",
-        "count": 2885,
+        "response": "Engineering manager",
+        "count": 118,
         "pct": null,
-        "median_yearly_salary_usd": 154000
+        "median_yearly_salary_usd": 212500
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Switzerland",
-        "count": 229,
+        "response": "Architect, software or solutions",
+        "count": 216,
         "pct": null,
-        "median_yearly_salary_usd": 139262
+        "median_yearly_salary_usd": 186000
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Australia",
-        "count": 306,
+        "response": "Developer, back-end",
+        "count": 361,
         "pct": null,
-        "median_yearly_salary_usd": 104550
+        "median_yearly_salary_usd": 180000
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Denmark",
-        "count": 123,
+        "response": "Developer, embedded applications or devices",
+        "count": 109,
         "pct": null,
-        "median_yearly_salary_usd": 104214
+        "median_yearly_salary_usd": 150000
       },
       {
         "slice": 1,
         "series": null,
-        "response": "Norway",
-        "count": 110,
+        "response": "Developer, desktop or enterprise applications",
+        "count": 129,
         "pct": null,
-        "median_yearly_salary_usd": 103004
+        "median_yearly_salary_usd": 135000
       },
       {
         "slice": 1,
         "series": null,
-        "response": "United Kingdom of Great Britain and Northern Ireland",
-        "count": 855,
+        "response": "Developer, full-stack",
+        "count": 974,
         "pct": null,
-        "median_yearly_salary_usd": 96333
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Canada",
-        "count": 539,
-        "pct": null,
-        "median_yearly_salary_usd": 94315
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Germany",
-        "count": 1218,
-        "pct": null,
-        "median_yearly_salary_usd": 85296
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Austria",
-        "count": 163,
-        "pct": null,
-        "median_yearly_salary_usd": 84912
-      },
-      {
-        "slice": 1,
-        "series": null,
-        "response": "Netherlands",
-        "count": 360,
-        "pct": null,
-        "median_yearly_salary_usd": 82453
+        "median_yearly_salary_usd": 140000
       },
       {
         "slice": 2,
         "series": null,
-        "response": "0-4 years",
-        "count": 1647,
+        "response": "Architect, software or solutions",
+        "count": 115,
         "pct": null,
-        "median_yearly_salary_usd": 42548
+        "median_yearly_salary_usd": 108042
       },
       {
         "slice": 2,
         "series": null,
-        "response": "5-9 years",
-        "count": 2403,
+        "response": "Developer, back-end",
+        "count": 188,
         "pct": null,
-        "median_yearly_salary_usd": 67188
+        "median_yearly_salary_usd": 87855
       },
       {
         "slice": 2,
         "series": null,
-        "response": "10-14 years",
-        "count": 2503,
+        "response": "Developer, full-stack",
+        "count": 366,
         "pct": null,
-        "median_yearly_salary_usd": 90982
+        "median_yearly_salary_usd": 77335
       },
       {
-        "slice": 2,
+        "slice": 3,
         "series": null,
-        "response": "15-19 years",
-        "count": 1786,
+        "response": "Developer, back-end",
+        "count": 134,
         "pct": null,
-        "median_yearly_salary_usd": 100000
+        "median_yearly_salary_usd": 114378
       },
       {
-        "slice": 2,
+        "slice": 3,
         "series": null,
-        "response": "20-29 years",
-        "count": 2349,
+        "response": "Developer, full-stack",
+        "count": 269,
         "pct": null,
-        "median_yearly_salary_usd": 104630
+        "median_yearly_salary_usd": 86448
       },
       {
-        "slice": 2,
+        "slice": 4,
         "series": null,
-        "response": "30-39 years",
-        "count": 990,
+        "response": "Developer, full-stack",
+        "count": 135,
         "pct": null,
-        "median_yearly_salary_usd": 113728
+        "median_yearly_salary_usd": 14624
       },
       {
-        "slice": 2,
+        "slice": 5,
         "series": null,
-        "response": "40+ years",
-        "count": 315,
+        "response": "Developer, full-stack",
+        "count": 173,
         "pct": null,
-        "median_yearly_salary_usd": 111520
+        "median_yearly_salary_usd": 82260
+      },
+      {
+        "slice": 6,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 181,
+        "pct": null,
+        "median_yearly_salary_usd": 55727
+      },
+      {
+        "slice": 7,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 109,
+        "pct": null,
+        "median_yearly_salary_usd": 72786
+      },
+      {
+        "slice": 9,
+        "series": null,
+        "response": "Developer, full-stack",
+        "count": 105,
+        "pct": null,
+        "median_yearly_salary_usd": 97580
       }
     ]
   },
@@ -3408,20 +3440,15 @@
       }
     ]
   },
-  "Scatter_Compensation": {
+  "Scatter_Compensation_Role": {
     "meta": {
       "qid": "QID33",
       "qname": ["Compensation", "WorkExp"],
       "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
       "slices": [
         {
-          "slice_type": "view",
-          "slice_value": "By role",
-          "n": 12040
-        },
-        {
-          "slice_type": "view",
-          "slice_value": "By country",
+          "slice_type": "all",
+          "slice_value": "All Respondents",
           "n": 12040
         }
       ]
@@ -3624,9 +3651,25 @@
         "pct": null,
         "median_yearly_salary_usd": 51000,
         "mean_prof_years": 15.7
-      },
+      }
+    ]
+  },
+  "Scatter_Compensation_Country": {
+    "meta": {
+      "qid": "QID33",
+      "qname": ["Compensation", "WorkExp"],
+      "question": "<p>What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.<\/p>",
+      "slices": [
+        {
+          "slice_type": "all",
+          "slice_value": "All Respondents",
+          "n": 12040
+        }
+      ]
+    },
+    "data": [
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "United States of America",
         "count": 2885,
@@ -3635,7 +3678,7 @@
         "mean_prof_years": 17.4
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Switzerland",
         "count": 229,
@@ -3644,7 +3687,7 @@
         "mean_prof_years": 14.7
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Australia",
         "count": 306,
@@ -3653,7 +3696,7 @@
         "mean_prof_years": 17.9
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Denmark",
         "count": 123,
@@ -3662,7 +3705,7 @@
         "mean_prof_years": 14.2
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Norway",
         "count": 110,
@@ -3671,7 +3714,7 @@
         "mean_prof_years": 15.5
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "United Kingdom of Great Britain and Northern Ireland",
         "count": 855,
@@ -3680,7 +3723,7 @@
         "mean_prof_years": 17.8
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Canada",
         "count": 539,
@@ -3689,7 +3732,7 @@
         "mean_prof_years": 16.7
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Germany",
         "count": 1218,
@@ -3698,7 +3741,7 @@
         "mean_prof_years": 14.2
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Austria",
         "count": 163,
@@ -3707,7 +3750,7 @@
         "mean_prof_years": 13.4
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Netherlands",
         "count": 360,
@@ -3716,7 +3759,7 @@
         "mean_prof_years": 15.1
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "New Zealand",
         "count": 107,
@@ -3725,7 +3768,7 @@
         "mean_prof_years": 19.9
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Belgium",
         "count": 117,
@@ -3734,7 +3777,7 @@
         "mean_prof_years": 13.8
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Sweden",
         "count": 241,
@@ -3743,7 +3786,7 @@
         "mean_prof_years": 16.6
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Spain",
         "count": 331,
@@ -3752,7 +3795,7 @@
         "mean_prof_years": 16.1
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Poland",
         "count": 309,
@@ -3761,7 +3804,7 @@
         "mean_prof_years": 12.7
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "France",
         "count": 526,
@@ -3770,7 +3813,7 @@
         "mean_prof_years": 13.5
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Portugal",
         "count": 135,
@@ -3779,7 +3822,7 @@
         "mean_prof_years": 12.7
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Czech Republic",
         "count": 158,
@@ -3788,7 +3831,7 @@
         "mean_prof_years": 13
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Italy",
         "count": 302,
@@ -3797,7 +3840,7 @@
         "mean_prof_years": 15.7
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Brazil",
         "count": 244,
@@ -3806,7 +3849,7 @@
         "mean_prof_years": 15.5
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "Ukraine",
         "count": 259,
@@ -3815,7 +3858,7 @@
         "mean_prof_years": 10.2
       },
       {
-        "slice": 1,
+        "slice": 0,
         "series": null,
         "response": "India",
         "count": 472,
