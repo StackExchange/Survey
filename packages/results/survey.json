@@ -36,13 +36,13 @@
             {
               "chapter": "Work",
               "section": "What and where work happens",
-              "name": "Work environment",
+              "name": "Educational attainment",
               "dataId": "Education",
               "chart": "bar",
               "description": "66% hold bachelor’s or master’s degrees, but 23% have no completed university degree. Formal education is common, not universal.",
               "subtext": "",
               "axisLabels": [],
-              "id": "work-environment",
+              "id": "educational-attainment",
               "dataIdSlug": "education"
             },
             {
@@ -199,13 +199,13 @@
             {
               "chapter": "Work",
               "section": "Employer + technology details",
-              "name": "Tech budget decisionmaker status",
+              "name": "Tech budget status",
               "dataId": "TechBudget",
               "chart": "bar",
-              "description": "Among respondents who know the answer, budget increases outnumber budget decreases 23% to 17%. However, 32% do not know their department’s budget direction.",
+              "description": "Budget increases outnumber budget decreases 23% to 17%. However, 32% do not know their department’s budget direction.",
               "subtext": "",
               "axisLabels": [],
-              "id": "tech-budget-decisionmaker-status",
+              "id": "tech-budget-status",
               "dataIdSlug": "tech-budget"
             },
             {
@@ -474,7 +474,7 @@
         {
           "chapter": "Work",
           "headline": "New tools, same problem",
-          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4%), and fewer report being genuinely happy (down 2%). The job market has cooled, a [New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
+          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4pp), and fewer report being genuinely happy (down 2pp). The job market has cooled, a [New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -498,8 +498,8 @@
         },
         {
           "chapter": "Work",
-          "headline": "",
-          "description": "Tools are the largest positive intervention at 20%, yet 21% say nothing made work easier.",
+          "headline": "Tools are the largest positive intervention, yet slightly more (21% vs. 20%) say nothing made work easier in the past year",
+          "description": "",
           "tier": "chapter",
           "chart": "rank",
           "dataId": "JobEase",
@@ -511,8 +511,8 @@
         },
         {
           "chapter": "Work",
-          "headline": "",
-          "description": "The picture painted by the data is that technologists are being forced to adapt on two fronts at once. The shape of employment itself is allowing for more independent, solo work, while complexity and uncertainty are making teams grow more cautious and discerning about what actually helps them at work. Through it all, the data suggests, modern employees working in technology have grounded expectations for what AI can do for them, even as the tech slowly wins their trust.",
+          "headline": "The picture painted by the data is that technologists are being forced to adapt on two fronts at once.",
+          "description": "The shape of employment itself is allowing for more independent, solo work, while complexity and uncertainty are making teams grow more cautious and discerning about what actually helps them at work. Through it all, the data suggests, modern employees working in technology have grounded expectations for what AI can do for them, even as the tech slowly wins their trust.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -758,7 +758,7 @@
               "name": "AI impact in different work functions",
               "dataId": "AIImpact",
               "chart": "bar-stacked",
-              "description": "AI is considered useful or very useful for implementation (74%), debugging (72%), documentation (65%), and review (64%).",
+              "description": "AI is considered useful or very useful for implementation (75%), debugging (73%), documentation (66%), and review (64%).",
               "subtext": "",
               "axisLabels": [],
               "id": "ai-impact-in-different-work-functions",
@@ -770,7 +770,7 @@
               "name": "Satisfaction with AI tools",
               "dataId": "AISat",
               "chart": "bar-stacked",
-              "description": "AI most improves satisfaction with debugging (66%), documentation (61%), and implementation (61%). Implementation is also most polarizing: 20% report decreased satisfaction.",
+              "description": "AI most improves satisfaction with debugging (66%), documentation (61%), and implementation (60%). Implementation is also most polarizing: 20% report decreased satisfaction.",
               "subtext": "",
               "axisLabels": [],
               "id": "satisfaction-with-ai-tools",
@@ -910,8 +910,8 @@
         },
         {
           "chapter": "AI",
-          "headline": "",
-          "description": "Despite plenty of societal concern about AI, survey respondents retain a fairly positive view of the technology: when asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by 3.5 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most tasks that are not important work decisions. The sweet spot where most AI users land is trusting AI when they understand what it’s working on, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
+          "headline": "Despite plenty of societal concern about AI, survey respondents retain a fairly positive view of the technology.",
+          "description": "When asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by almost 3 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most tasks that are not important work decisions. The sweet spot where most AI users land is trusting AI when they understand what it’s working on, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -972,7 +972,7 @@
         {
           "chapter": "AI",
           "headline": "The human difference",
-          "description": "But the moment the task shifts toward human communication or creative output—writing emails, generating multimedia, anything requiring a feel for what people want—usage falls off a cliff. The same split shows up in perceived usefulness: technical tasks like implementation and debugging are both useful or very useful to 70%+ of survey respondents, while communication and design lag behind, landing in “slop” territory with 33% and 48% respectively finding AI useful or very useful in those areas.",
+          "description": "But the moment the task shifts toward human communication or creative output—writing emails, generating multimedia, anything requiring a feel for what people want—usage falls off a cliff. The same split shows up in perceived usefulness: technical tasks like implementation and debugging are both useful or very useful to 70%+ of survey respondents, while communication and design lag behind, landing in “slop” territory with 35% and 49% respectively finding AI useful or very useful in those areas.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1009,7 +1009,7 @@
         {
           "chapter": "AI",
           "headline": "",
-          "description": "6 out of 10 users do not avoid using AI at work or school, but for those that do, losing job skills is a top concern.",
+          "description": "6 out of 10 users cite a reason to avoid using AI at work or school, losing job skills is a top concern.",
           "tier": "chapter",
           "chart": "2d-bar-stacked-vertical",
           "dataId": "AIAvoid",
@@ -1111,7 +1111,7 @@
               "name": "Cloud development",
               "dataId": "CloudPlat",
               "chart": "bar",
-              "description": "Cloudflare usage is up this year compared to last (25% vs. 21%) - is it due to the increase in bot activity which Cloudflare works to safeguard against?",
+              "description": "Cloudflare usage is up this year compared to last (25% vs. 20%) - is it due to the increase in bot activity which Cloudflare works to safeguard against?",
               "subtext": "",
               "axisLabels": [],
               "id": "cloud-development",
@@ -1180,7 +1180,7 @@
               "dataId": "DA_Language",
               "chart": "dumbbell",
               "description": "26% want to use Rust, 67% of Rust users want to continue using Rust",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "programming-scripting-and-markup-languages",
               "dataIdSlug": "da-language"
@@ -1192,7 +1192,7 @@
               "dataId": "DA_CodeTest",
               "chart": "dumbbell",
               "description": "Bruno, PHPUnit, GoogleTest and MSTest may not be on the top of the desired list for most, but users of these testing tools rate them very highly on the admired scale",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "code-testing-tools",
               "dataIdSlug": "da-code-test"
@@ -1204,7 +1204,7 @@
               "dataId": "DA_Database",
               "chart": "dumbbell",
               "description": "PostgreSQL is the most admired database technology this year, users love to use it",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "databases",
               "dataIdSlug": "da-database"
@@ -1216,7 +1216,7 @@
               "dataId": "DA_Platform",
               "chart": "dumbbell",
               "description": "",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "cloud-development",
               "dataIdSlug": "da-platform"
@@ -1228,7 +1228,7 @@
               "dataId": "DA_Webframe",
               "chart": "dumbbell",
               "description": "Svelte and SvelteKit are both highly admired, scoring 59% and 64% respectively",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "web-frameworks-and-technologies",
               "dataIdSlug": "da-webframe"
@@ -1240,7 +1240,7 @@
               "dataId": "DA_DevEnvs",
               "chart": "dumbbell",
               "description": "IYKYK: Helix users want to keep using it as their IDE more than any other IDE this year",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "dev-id-es",
               "dataIdSlug": "da-dev-envs"
@@ -1252,7 +1252,7 @@
               "dataId": "DA_LLM",
               "chart": "dumbbell",
               "description": "75% have used Anthropic LLMs in the last year, and 61% want to keep using them; 74% have used OpenAI LLMs, 42% want to keep using them.",
-              "subtext": "Admired = \"Want to use\" / Desired = \"Have used\" & \"Want to use\"",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
               "axisLabels": [],
               "id": "ll-ms",
               "dataIdSlug": "da-llm"
@@ -1327,7 +1327,7 @@
               "name": "Did you build tools with AI assistance?",
               "dataId": "BuildToolAI",
               "chart": "bar",
-              "description": "For those building software at work, 54% say they used AI to help them build something to replace a vendor",
+              "description": "For those building software at work to replace a vendor, 54% say they used AI to help them",
               "subtext": "",
               "axisLabels": [],
               "id": "did-you-build-tools-with-ai-assistance",
@@ -1339,7 +1339,7 @@
               "name": "Did AI cause business disruptions?",
               "dataId": "Disruption",
               "chart": "bar",
-              "description": "Security and privacy issues caused 23% of teams valuable time in the last year",
+              "description": "Security and privacy issues caused 24% of teams valuable time in the last year",
               "subtext": "",
               "axisLabels": [],
               "id": "did-ai-cause-business-disruptions",
@@ -1407,7 +1407,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "For the most used programming languages, Javascript is at the top of the list for 12th year in a row",
+          "description": "For the most used programming languages, JavaScript is at the top of the list for the 12th year in a row",
           "tier": "chapter",
           "chart": "rank",
           "dataId": "Languages",
@@ -1420,7 +1420,7 @@
         {
           "chapter": "Technology",
           "headline": "The core stack: Technologies that stand the test of time",
-          "description": "For the most used programming languages, JavaScript is at the top of the list for 12th year in a row",
+          "description": "For the most used programming languages, JavaScript is at the top of the list for the 12th year in a row",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1469,7 +1469,7 @@
         {
           "chapter": "Technology",
           "headline": "Builders are still building in the age of AI",
-          "description": "Popular predictions of an AI-driven \"SaaSpocalypse\" turn out to be greatly exaggerated. Developers are building at high volumes, but their focus remains on internal utilities and glue code rather than replacing commercial software. 77% of developers build small scripts and automations, while 63% create team-level internal tools.  54% build customer-facing applications—a reminder that a vast portion of engineers work inside traditional enterprise sectors like retail, finance, and manufacturing. Vendor replacement sits at the bottom: Only 19% of respondents build in-house software to replace paid vendors. \n\nBut when you shift to look at what people build with AI, SaaS vendors might get nervous: 54% those building with AI are replacing vendors. The good news is that this is limited to the AI builder subgroup, builders are more likely to be using AI in general for all projects. Vendor replacement got a lot of press this year, but it’s far from an AI breakout story—it's actually the workload where AI assistance sees the lowest ceiling for adoption.",
+          "description": "Popular predictions of an AI-driven \"SaaSpocalypse\" turn out to be greatly exaggerated. Developers are building at high volumes, but their focus remains on internal utilities and glue code rather than replacing commercial software. 77% of developers build small scripts and automations, while 63% create team-level internal tools.  54% build customer-facing applications—a reminder that a vast portion of engineers work inside traditional enterprise sectors like retail, finance, and manufacturing. Vendor replacement sits at the bottom: Only 19% of respondents build in-house software to replace paid vendors. \n\nBut when you shift to look at what people build with AI, SaaS vendors might get nervous: 54% of those building with AI are replacing vendors. The good news is that this is limited to the AI builder subgroup, builders are more likely to be using AI in general for all projects. Vendor replacement got a lot of press this year, but it’s far from an AI breakout story—it's actually the workload where AI assistance sees the lowest ceiling for adoption.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1506,7 +1506,7 @@
         {
           "chapter": "Technology",
           "headline": "",
-          "description": "While only 16% say they’re building tools to replace paid vendors, of that cohort more than half are doing so with the help of AI.",
+          "description": "While only 19% say they’re building tools to replace paid vendors, of that cohort more than half are doing so with the help of AI.",
           "tier": "chapter",
           "chart": "2d-treemap",
           "dataId": "BuildToolAI",
@@ -1519,7 +1519,7 @@
         {
           "chapter": "Technology",
           "headline": "Frontier models’ next evolution",
-          "description": "While OpenAI and Anthropic sit neck-and-neck at the top of general LLM usage (74% and 75% adoption, respectively), practitioner sentiment reveals a rift between usage and the desire to keep using it. Anthropic holds a clear lead in forward-looking interest, with 49% of developers wanting  to work with Claude over the next six months, compared to 32% for OpenAI. Spend tracking data from Ramp mirrors this shift, showing Anthropic capturing market share rapidly as engineering teams transition from simple chat interfaces to structured, programmatic agent architectures.",
+          "description": "While OpenAI and Anthropic sit neck-and-neck at the top of general LLM usage (74% and 75% adoption, respectively), practitioner sentiment reveals a rift between usage and the desire to keep using it. Anthropic holds a clear lead in forward-looking interest, with 49% of developers wanting  to work with Claude over the next year, compared to 32% for OpenAI. Spend tracking data from Ramp mirrors this shift, showing Anthropic capturing market share rapidly as engineering teams transition from simple chat interfaces to structured, programmatic agent architectures.",
           "tier": "chapter",
           "chart": "text",
           "dataId": "",
@@ -1657,7 +1657,7 @@
               "name": "Barriers to community participation",
               "dataId": "CommunityGap",
               "chart": "bar",
-              "description": "65% find answers without posting, and 45% say AI tools answer enough of their questions. Time is the second factor (36%). Beyond that, social friction is real: 21% fear judgment, 20% lack confidence asking publicly, and 12% feel communities aren't welcoming. Company-specific questions (23%) and privacy/legal restrictions (11%) also gate participation. Only 12% say nothing prevents them.",
+              "description": "65% find answers without posting, and 45% say AI tools answer enough of their questions. Time is the third factor (36%). Beyond that, social friction is real: 21% fear judgment, 20% lack confidence asking publicly, and 12% feel communities aren't welcoming. Company-specific questions (23%) and privacy/legal restrictions (11%) also gate participation. Only 12% say nothing prevents them.",
               "subtext": "",
               "axisLabels": [],
               "id": "barriers-to-community-participation",
@@ -1811,7 +1811,7 @@
         {
           "chapter": "Community",
           "headline": "When you need to answer a work-related question, which sources do you use most often?",
-          "description": "When it comes to work-related questions, however, developers are still turning to the humans in their loops—also known as coworkers and teammates—first in order to get the answers they need (71.9%), with code repositories (62.8%) and internal documentation (60%) following as close runner-ups.",
+          "description": "When it comes to work-related questions, however, developers are still turning to the humans in their loops—also known as coworkers and teammates—first in order to get the answers they need (72%), with code repositories (63%) and internal documentation (60%) following as close runner-ups.",
           "tier": "home",
           "chart": "3d-bar-stacked-horizontal",
           "dataId": "KnowledgeQ",
@@ -1912,7 +1912,7 @@
         {
           "chapter": "Community",
           "headline": "And community is still important",
-          "description": "This might be biased because it’s our survey, but the top two platforms that respondents worked with last year were Stack Overflow (72%) and GitHub (71%). In terms of platforms they want to work with next year, the top two are reversed: GitHub tops at 47% and we’re second with 46%. We’re thrilled that you all still have a lot of goodwill towards us; our challenge is to give you more reasons to visit.",
+          "description": "This might be biased because it’s our survey, but the top two platforms that respondents worked with last year were GitHub (70%) and Stack Overflow (69%). In terms of platforms they want to work with next year, the top two remain: GitHub tops at 45% and we’re second with 44%. We’re thrilled that you all still have a lot of goodwill towards us; our challenge is to give you more reasons to visit.",
           "tier": "chapter",
           "chart": "3d-bar-stacked-vertical",
           "dataId": "CommPlat",
@@ -1980,7 +1980,7 @@
               "name": "Time spent finding information",
               "dataId": "KnowledgeA",
               "chart": "bar-vertical",
-              "description": "74% spend 5 or more hours/week searching for information; 11% spend 20+ hours",
+              "description": "75% spend 5 or more hours/week searching for information; 11% spend 20+ hours",
               "subtext": "",
               "axisLabels": [],
               "id": "time-spent-finding-information",
@@ -2238,7 +2238,7 @@
         },
         {
           "chapter": "Knowledge",
-          "headline": "30% of respondents say that the accuracy of AI answers is important to the adoption or expansion of AI tool use.",
+          "headline": "31% of respondents say that the accuracy of AI answers is important to the adoption or expansion of AI tool use.",
           "description": "",
           "tier": "home",
           "chart": "3d-bar-stacked-horizontal",
@@ -2386,7 +2386,7 @@
       "dataId": ""
     },
     {
-      "headline": "Survey felding",
+      "headline": "Survey fielding",
       "description": "The current local response extract includes 39,266 total rows recorded from June 23, 2026 through August 5, 2026, of which 30,903 are marked as valid responses.\n\nThe survey was promoted through stackoverflow.com, stackoverflow.blog and our email list to community members that are opted into learning about research opportunities or announcements.\n\nThe survey instrument should be referenced from the public Stack Exchange survey repository: [StackExchange/Survey](https://github.com/StackExchange/Survey).\n\nThe public call for feedback that informed the 2026 Developer Survey should be referenced from Meta Stack Overflow: [Help shape the 2026 Developer Survey](https://meta.stackoverflow.com/questions/438884/help-shape-the-2026-developer-survey).",
       "chart": "text",
       "dataId": ""

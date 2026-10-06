@@ -10,48 +10,45 @@
 	// `compact` drops the labelled half to a lone toggle on narrow screens, for rows that have to stay on one line.
 	let { url, title, compact = true, class: className }: { url: string; title: string; compact?: boolean; class?: ClassValue } = $props()
 
-	const text = $derived(encodeURIComponent(title))
-	const link = $derived(encodeURIComponent(url))
-
 	const items = $derived([
 		{
 			name: 'X',
-			href: `https://x.com/intent/tweet?url=${encodeURIComponent(link)}&text=${encodeURIComponent(text)}&via=stackoverflow`,
+			href: `https://x.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}&via=stackoverflow`,
 			external: true,
 		},
 		{
 			name: 'LinkedIn',
-			href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`,
+			href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
 			external: true,
 		},
 		{
 			name: 'Facebook',
-			href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`,
+			href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
 			external: true,
 		},
 		{
 			name: 'WhatsApp',
-			href: `https://wa.me/?text=${encodeURIComponent(`${text} ${link}`)}`,
+			href: `https://wa.me/?text=${encodeURIComponent(`${title} ${url}`)}`,
 			external: true,
 		},
 		{
 			name: 'Reddit',
-			href: `https://www.reddit.com/submit?url=${encodeURIComponent(link)}&title=${encodeURIComponent(text)}`,
+			href: `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
 			external: true,
 		},
 		{
 			name: 'Threads',
-			href: `https://www.threads.net/intent/post?text=${encodeURIComponent(`${text} ${link}`)}`,
+			href: `https://www.threads.net/intent/post?text=${encodeURIComponent(`${title} ${url}`)}`,
 			external: true,
 		},
 		{
 			name: 'Bluesky',
-			href: `https://bsky.app/intent/compose?text=${encodeURIComponent(`${text} ${link}`)}`,
+			href: `https://bsky.app/intent/compose?text=${encodeURIComponent(`${title} ${url}`)}`,
 			external: true,
 		},
 		{
 			name: 'Email',
-			href: `mailto:?subject=${encodeURIComponent(text)}&body=${encodeURIComponent(link)}`,
+			href: `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`,
 			external: true,
 		},
 	])
