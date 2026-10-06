@@ -1543,7 +1543,7 @@
         {
           "slice_type": "all",
           "slice_value": "All Respondents",
-          "n": 5351
+          "n": 5350
         }
       ]
     },
@@ -13357,11 +13357,6 @@
         "slice": 0,
         "response": "Less trust in possible AI generated answers. Slightly less usage",
         "value": "Developer, full-stack, Germany, Stack Overflow user status is: Between 10 and 15 years"
-      },
-      {
-        "slice": 0,
-        "response": "AI answers my questions with context and understanding, which is exact opposite to most of the SO answers of arrogant faggots who are there to \"help\" by explaining how bad are you just to farm some imaginary points.",
-        "value": "Founder or entrepreneur, Czech Republic, Stack Overflow user status is: More than 15 years, or since Stack Overflow started in 2008"
       },
       {
         "slice": 0,
