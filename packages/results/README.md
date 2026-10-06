@@ -55,7 +55,11 @@ npm run data -w results
 
 ### Sampling large datasets
 
-Some data sets are too large (e.g., write-ins like `SOChangeAddl`), so they must be sampled. Its chapter JSON carries `meta.sampled: true` and a smaller `data` array, and the full rows move to a `{chapter}_{dataId}.json` file in the same `packages/archive/<year>/json/` folder.
+The data generator limits `quotes` charts, including `SOChangeAddl`, to 500 responses per respondent group before writing route payloads. A stable hash selects the sample, so rebuilding unchanged data does not change the selection. Numerical charts are not sampled.
+
+The source JSON is not modified. Keep the full responses in `{chapter}_{dataId}.json` in `packages/archive/<year>/json/` for the question page's full-data link. Chapter exports may contain either the full data or a preselected sample with `meta.sampled: true`; the build enforces the 500-response limit in either case and preserves the original respondent count.
+
+Run `npm run test:data -w results` to check the sample size, consistent chapter/question payloads, stable rebuilds, and preservation of the full archive.
 
 ## Types of graphic
 
