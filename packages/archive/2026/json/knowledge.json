@@ -1728,7 +1728,7 @@
         "series": "Important",
         "response": "Code repositories or code comments",
         "count": 2435,
-        "pct": 0.269
+        "pct": 0.276
       },
       {
         "slice": 0,
@@ -1749,21 +1749,21 @@
         "series": "Somewhat important",
         "response": "Code repositories or code comments",
         "count": 559,
-        "pct": 0.062
+        "pct": 0.063
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Code repositories or code comments",
         "count": 5751,
-        "pct": 0.634
+        "pct": 0.652
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Coworkers or teammates",
         "count": 3451,
-        "pct": 0.332
+        "pct": 0.341
       },
       {
         "slice": 0,
@@ -1784,56 +1784,56 @@
         "series": "Somewhat important",
         "response": "Coworkers or teammates",
         "count": 847,
-        "pct": 0.081
+        "pct": 0.084
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Coworkers or teammates",
         "count": 5731,
-        "pct": 0.551
+        "pct": 0.567
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Customer, support, or sales information",
         "count": 101,
-        "pct": 0.279
+        "pct": 0.289
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Customer, support, or sales information",
         "count": 3,
-        "pct": 0.008
+        "pct": 0.009
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Customer, support, or sales information",
         "count": 9,
-        "pct": 0.025
+        "pct": 0.026
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Customer, support, or sales information",
         "count": 60,
-        "pct": 0.166
+        "pct": 0.171
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Customer, support, or sales information",
         "count": 177,
-        "pct": 0.489
+        "pct": 0.506
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 2789,
-        "pct": 0.424
+        "pct": 0.438
       },
       {
         "slice": 0,
@@ -1847,28 +1847,28 @@
         "series": "Not very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 145,
-        "pct": 0.022
+        "pct": 0.023
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 1187,
-        "pct": 0.181
+        "pct": 0.186
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 2232,
-        "pct": 0.34
+        "pct": 0.35
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 3027,
-        "pct": 0.349
+        "pct": 0.359
       },
       {
         "slice": 0,
@@ -1889,21 +1889,21 @@
         "series": "Somewhat important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 1002,
-        "pct": 0.115
+        "pct": 0.119
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 4301,
-        "pct": 0.495
+        "pct": 0.509
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Manager or leadership",
         "count": 976,
-        "pct": 0.298
+        "pct": 0.308
       },
       {
         "slice": 0,
@@ -1924,21 +1924,21 @@
         "series": "Somewhat important",
         "response": "Manager or leadership",
         "count": 274,
-        "pct": 0.084
+        "pct": 0.086
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Manager or leadership",
         "count": 1891,
-        "pct": 0.578
+        "pct": 0.596
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Meeting notes or transcripts",
         "count": 555,
-        "pct": 0.361
+        "pct": 0.37
       },
       {
         "slice": 0,
@@ -1952,98 +1952,98 @@
         "series": "Not very important",
         "response": "Meeting notes or transcripts",
         "count": 57,
-        "pct": 0.037
+        "pct": 0.038
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Meeting notes or transcripts",
         "count": 357,
-        "pct": 0.232
+        "pct": 0.238
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Meeting notes or transcripts",
         "count": 517,
-        "pct": 0.337
+        "pct": 0.345
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "None of these",
         "count": 14,
-        "pct": 0.115
+        "pct": 0.143
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "None of these",
         "count": 9,
-        "pct": 0.074
+        "pct": 0.092
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "None of these",
         "count": 5,
-        "pct": 0.041
+        "pct": 0.051
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "None of these",
         "count": 16,
-        "pct": 0.131
+        "pct": 0.163
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "None of these",
         "count": 54,
-        "pct": 0.443
+        "pct": 0.551
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Not sure",
         "count": 26,
-        "pct": 0.133
+        "pct": 0.174
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Not sure",
         "count": 14,
-        "pct": 0.071
+        "pct": 0.094
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Not sure",
         "count": 7,
-        "pct": 0.036
+        "pct": 0.047
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Not sure",
         "count": 38,
-        "pct": 0.194
+        "pct": 0.255
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Not sure",
         "count": 64,
-        "pct": 0.327
+        "pct": 0.43
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Official docs",
         "count": 934,
-        "pct": 0.212
+        "pct": 0.217
       },
       {
         "slice": 0,
@@ -2064,21 +2064,21 @@
         "series": "Somewhat important",
         "response": "Official docs",
         "count": 217,
-        "pct": 0.049
+        "pct": 0.05
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Official docs",
         "count": 3126,
-        "pct": 0.708
+        "pct": 0.725
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Past decisions or architecture records",
         "count": 820,
-        "pct": 0.365
+        "pct": 0.374
       },
       {
         "slice": 0,
@@ -2092,28 +2092,28 @@
         "series": "Not very important",
         "response": "Past decisions or architecture records",
         "count": 81,
-        "pct": 0.036
+        "pct": 0.037
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Past decisions or architecture records",
         "count": 444,
-        "pct": 0.198
+        "pct": 0.203
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Past decisions or architecture records",
         "count": 841,
-        "pct": 0.374
+        "pct": 0.384
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Product, vendor, or API documentation",
         "count": 1038,
-        "pct": 0.246
+        "pct": 0.253
       },
       {
         "slice": 0,
@@ -2127,35 +2127,35 @@
         "series": "Not very important",
         "response": "Product, vendor, or API documentation",
         "count": 31,
-        "pct": 0.007
+        "pct": 0.008
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Product, vendor, or API documentation",
         "count": 227,
-        "pct": 0.054
+        "pct": 0.055
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Product, vendor, or API documentation",
         "count": 2806,
-        "pct": 0.665
+        "pct": 0.684
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Project management or ticketing tools",
         "count": 1165,
-        "pct": 0.4
+        "pct": 0.412
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Project management or ticketing tools",
         "count": 10,
-        "pct": 0.003
+        "pct": 0.004
       },
       {
         "slice": 0,
@@ -2169,21 +2169,21 @@
         "series": "Somewhat important",
         "response": "Project management or ticketing tools",
         "count": 428,
-        "pct": 0.147
+        "pct": 0.152
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Project management or ticketing tools",
         "count": 1165,
-        "pct": 0.4
+        "pct": 0.412
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Stack Overflow",
         "count": 1377,
-        "pct": 0.397
+        "pct": 0.409
       },
       {
         "slice": 0,
@@ -2197,28 +2197,28 @@
         "series": "Not very important",
         "response": "Stack Overflow",
         "count": 114,
-        "pct": 0.033
+        "pct": 0.034
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Stack Overflow",
         "count": 843,
-        "pct": 0.243
+        "pct": 0.25
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Stack Overflow",
         "count": 1010,
-        "pct": 0.291
+        "pct": 0.3
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Vendor forum",
         "count": 145,
-        "pct": 0.353
+        "pct": 0.36
       },
       {
         "slice": 0,
@@ -2239,14 +2239,14 @@
         "series": "Somewhat important",
         "response": "Vendor forum",
         "count": 89,
-        "pct": 0.217
+        "pct": 0.221
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Vendor forum",
         "count": 154,
-        "pct": 0.375
+        "pct": 0.382
       }
     ]
   },
@@ -2269,217 +2269,217 @@
         "series": "Important",
         "response": "Code repositories or code comments",
         "count": 2332,
-        "pct": 0.257
+        "pct": 0.271
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Code repositories or code comments",
         "count": 155,
-        "pct": 0.017
+        "pct": 0.018
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Code repositories or code comments",
         "count": 520,
-        "pct": 0.057
+        "pct": 0.06
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Code repositories or code comments",
         "count": 1252,
-        "pct": 0.138
+        "pct": 0.146
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Code repositories or code comments",
         "count": 4337,
-        "pct": 0.478
+        "pct": 0.505
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Coworkers or teammates",
         "count": 2977,
-        "pct": 0.286
+        "pct": 0.303
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Coworkers or teammates",
         "count": 433,
-        "pct": 0.042
+        "pct": 0.044
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Coworkers or teammates",
         "count": 1154,
-        "pct": 0.111
+        "pct": 0.117
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Coworkers or teammates",
         "count": 2303,
-        "pct": 0.221
+        "pct": 0.234
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Coworkers or teammates",
         "count": 2959,
-        "pct": 0.284
+        "pct": 0.301
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Customer, support, or sales information",
         "count": 106,
-        "pct": 0.293
+        "pct": 0.311
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Customer, support, or sales information",
         "count": 4,
-        "pct": 0.011
+        "pct": 0.012
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Customer, support, or sales information",
         "count": 15,
-        "pct": 0.041
+        "pct": 0.044
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Customer, support, or sales information",
         "count": 49,
-        "pct": 0.135
+        "pct": 0.144
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Customer, support, or sales information",
         "count": 167,
-        "pct": 0.461
+        "pct": 0.49
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 2103,
-        "pct": 0.32
+        "pct": 0.341
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 105,
-        "pct": 0.016
+        "pct": 0.017
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 448,
-        "pct": 0.068
+        "pct": 0.073
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 1308,
-        "pct": 0.199
+        "pct": 0.212
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 2211,
-        "pct": 0.336
+        "pct": 0.358
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 2735,
-        "pct": 0.315
+        "pct": 0.332
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 82,
-        "pct": 0.009
+        "pct": 0.01
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 429,
-        "pct": 0.049
+        "pct": 0.052
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 1531,
-        "pct": 0.176
+        "pct": 0.186
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 3451,
-        "pct": 0.397
+        "pct": 0.419
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Manager or leadership",
         "count": 966,
-        "pct": 0.295
+        "pct": 0.314
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Manager or leadership",
         "count": 101,
-        "pct": 0.031
+        "pct": 0.033
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Manager or leadership",
         "count": 281,
-        "pct": 0.086
+        "pct": 0.091
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Manager or leadership",
         "count": 621,
-        "pct": 0.19
+        "pct": 0.202
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Manager or leadership",
         "count": 1111,
-        "pct": 0.34
+        "pct": 0.361
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Meeting notes or transcripts",
         "count": 483,
-        "pct": 0.315
+        "pct": 0.331
       },
       {
         "slice": 0,
@@ -2493,98 +2493,98 @@
         "series": "Not very important",
         "response": "Meeting notes or transcripts",
         "count": 89,
-        "pct": 0.058
+        "pct": 0.061
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Meeting notes or transcripts",
         "count": 237,
-        "pct": 0.154
+        "pct": 0.163
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Meeting notes or transcripts",
         "count": 628,
-        "pct": 0.409
+        "pct": 0.431
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "None of these",
         "count": 11,
-        "pct": 0.09
+        "pct": 0.118
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "None of these",
         "count": 11,
-        "pct": 0.09
+        "pct": 0.118
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "None of these",
         "count": 9,
-        "pct": 0.074
+        "pct": 0.097
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "None of these",
         "count": 28,
-        "pct": 0.23
+        "pct": 0.301
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "None of these",
         "count": 34,
-        "pct": 0.279
+        "pct": 0.366
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Not sure",
         "count": 36,
-        "pct": 0.184
+        "pct": 0.25
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Not sure",
         "count": 15,
-        "pct": 0.077
+        "pct": 0.104
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Not sure",
         "count": 13,
-        "pct": 0.066
+        "pct": 0.09
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Not sure",
         "count": 40,
-        "pct": 0.204
+        "pct": 0.278
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Not sure",
         "count": 40,
-        "pct": 0.204
+        "pct": 0.278
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Official docs",
         "count": 1262,
-        "pct": 0.286
+        "pct": 0.298
       },
       {
         "slice": 0,
@@ -2598,63 +2598,63 @@
         "series": "Not very important",
         "response": "Official docs",
         "count": 164,
-        "pct": 0.037
+        "pct": 0.039
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Official docs",
         "count": 560,
-        "pct": 0.127
+        "pct": 0.132
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Official docs",
         "count": 2200,
-        "pct": 0.498
+        "pct": 0.52
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Past decisions or architecture records",
         "count": 658,
-        "pct": 0.293
+        "pct": 0.308
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Past decisions or architecture records",
         "count": 40,
-        "pct": 0.018
+        "pct": 0.019
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Past decisions or architecture records",
         "count": 177,
-        "pct": 0.079
+        "pct": 0.083
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Past decisions or architecture records",
         "count": 504,
-        "pct": 0.224
+        "pct": 0.236
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Past decisions or architecture records",
         "count": 756,
-        "pct": 0.336
+        "pct": 0.354
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Product, vendor, or API documentation",
         "count": 1255,
-        "pct": 0.297
+        "pct": 0.313
       },
       {
         "slice": 0,
@@ -2668,98 +2668,98 @@
         "series": "Not very important",
         "response": "Product, vendor, or API documentation",
         "count": 145,
-        "pct": 0.034
+        "pct": 0.036
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Product, vendor, or API documentation",
         "count": 519,
-        "pct": 0.123
+        "pct": 0.129
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Product, vendor, or API documentation",
         "count": 2056,
-        "pct": 0.487
+        "pct": 0.512
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Project management or ticketing tools",
         "count": 924,
-        "pct": 0.317
+        "pct": 0.336
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Project management or ticketing tools",
         "count": 27,
-        "pct": 0.009
+        "pct": 0.01
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Project management or ticketing tools",
         "count": 115,
-        "pct": 0.039
+        "pct": 0.042
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Project management or ticketing tools",
         "count": 461,
-        "pct": 0.158
+        "pct": 0.168
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Project management or ticketing tools",
         "count": 1225,
-        "pct": 0.42
+        "pct": 0.445
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Stack Overflow",
         "count": 1094,
-        "pct": 0.315
+        "pct": 0.333
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Stack Overflow",
         "count": 76,
-        "pct": 0.022
+        "pct": 0.023
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Stack Overflow",
         "count": 279,
-        "pct": 0.08
+        "pct": 0.085
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Stack Overflow",
         "count": 732,
-        "pct": 0.211
+        "pct": 0.222
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Stack Overflow",
         "count": 1109,
-        "pct": 0.319
+        "pct": 0.337
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Vendor forum",
         "count": 117,
-        "pct": 0.285
+        "pct": 0.295
       },
       {
         "slice": 0,
@@ -2773,21 +2773,21 @@
         "series": "Not very important",
         "response": "Vendor forum",
         "count": 26,
-        "pct": 0.063
+        "pct": 0.065
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Vendor forum",
         "count": 80,
-        "pct": 0.195
+        "pct": 0.202
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Vendor forum",
         "count": 170,
-        "pct": 0.414
+        "pct": 0.428
       }
     ]
   },
@@ -2810,525 +2810,525 @@
         "series": "Important",
         "response": "Code repositories or code comments",
         "count": 2473,
-        "pct": 0.273
+        "pct": 0.299
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Code repositories or code comments",
         "count": 143,
-        "pct": 0.016
+        "pct": 0.017
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Code repositories or code comments",
         "count": 479,
-        "pct": 0.053
+        "pct": 0.058
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Code repositories or code comments",
         "count": 1195,
-        "pct": 0.132
+        "pct": 0.144
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Code repositories or code comments",
         "count": 3983,
-        "pct": 0.439
+        "pct": 0.481
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Coworkers or teammates",
         "count": 2778,
-        "pct": 0.267
+        "pct": 0.294
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Coworkers or teammates",
         "count": 412,
-        "pct": 0.04
+        "pct": 0.044
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Coworkers or teammates",
         "count": 1410,
-        "pct": 0.136
+        "pct": 0.149
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Coworkers or teammates",
         "count": 2325,
-        "pct": 0.224
+        "pct": 0.246
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Coworkers or teammates",
         "count": 2532,
-        "pct": 0.243
+        "pct": 0.268
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Customer, support, or sales information",
         "count": 103,
-        "pct": 0.285
+        "pct": 0.314
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Customer, support, or sales information",
         "count": 10,
-        "pct": 0.028
+        "pct": 0.03
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Customer, support, or sales information",
         "count": 22,
-        "pct": 0.061
+        "pct": 0.067
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Customer, support, or sales information",
         "count": 48,
-        "pct": 0.133
+        "pct": 0.146
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Customer, support, or sales information",
         "count": 145,
-        "pct": 0.401
+        "pct": 0.442
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 2006,
-        "pct": 0.305
+        "pct": 0.338
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 135,
-        "pct": 0.021
+        "pct": 0.023
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 564,
-        "pct": 0.086
+        "pct": 0.095
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 1357,
-        "pct": 0.207
+        "pct": 0.229
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal chat tools, such as Slack or Teams",
         "count": 1871,
-        "pct": 0.285
+        "pct": 0.315
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 2577,
-        "pct": 0.297
+        "pct": 0.325
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 140,
-        "pct": 0.016
+        "pct": 0.018
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 729,
-        "pct": 0.084
+        "pct": 0.092
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 1564,
-        "pct": 0.18
+        "pct": 0.197
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Internal documentation (i.e. Design, product, or planning docs), wiki, or knowledge base",
         "count": 2915,
-        "pct": 0.336
+        "pct": 0.368
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Manager or leadership",
         "count": 832,
-        "pct": 0.254
+        "pct": 0.284
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Manager or leadership",
         "count": 131,
-        "pct": 0.04
+        "pct": 0.045
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Manager or leadership",
         "count": 411,
-        "pct": 0.126
+        "pct": 0.14
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Manager or leadership",
         "count": 654,
-        "pct": 0.2
+        "pct": 0.223
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Manager or leadership",
         "count": 903,
-        "pct": 0.276
+        "pct": 0.308
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Meeting notes or transcripts",
         "count": 486,
-        "pct": 0.316
+        "pct": 0.346
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Meeting notes or transcripts",
         "count": 43,
-        "pct": 0.028
+        "pct": 0.031
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Meeting notes or transcripts",
         "count": 105,
-        "pct": 0.068
+        "pct": 0.075
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Meeting notes or transcripts",
         "count": 288,
-        "pct": 0.188
+        "pct": 0.205
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Meeting notes or transcripts",
         "count": 483,
-        "pct": 0.315
+        "pct": 0.344
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "None of these",
         "count": 12,
-        "pct": 0.098
+        "pct": 0.135
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "None of these",
         "count": 9,
-        "pct": 0.074
+        "pct": 0.101
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "None of these",
         "count": 11,
-        "pct": 0.09
+        "pct": 0.124
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "None of these",
         "count": 25,
-        "pct": 0.205
+        "pct": 0.281
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "None of these",
         "count": 32,
-        "pct": 0.262
+        "pct": 0.36
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Not sure",
         "count": 42,
-        "pct": 0.214
+        "pct": 0.3
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Not sure",
         "count": 18,
-        "pct": 0.092
+        "pct": 0.129
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Not sure",
         "count": 6,
-        "pct": 0.031
+        "pct": 0.043
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Not sure",
         "count": 39,
-        "pct": 0.199
+        "pct": 0.279
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Not sure",
         "count": 35,
-        "pct": 0.179
+        "pct": 0.25
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Official docs",
         "count": 1097,
-        "pct": 0.249
+        "pct": 0.268
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Official docs",
         "count": 197,
-        "pct": 0.045
+        "pct": 0.048
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Official docs",
         "count": 408,
-        "pct": 0.092
+        "pct": 0.1
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Official docs",
         "count": 601,
-        "pct": 0.136
+        "pct": 0.147
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Official docs",
         "count": 1787,
-        "pct": 0.405
+        "pct": 0.437
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Past decisions or architecture records",
         "count": 691,
-        "pct": 0.307
+        "pct": 0.337
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Past decisions or architecture records",
         "count": 36,
-        "pct": 0.016
+        "pct": 0.018
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Past decisions or architecture records",
         "count": 128,
-        "pct": 0.057
+        "pct": 0.062
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Past decisions or architecture records",
         "count": 447,
-        "pct": 0.199
+        "pct": 0.218
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Past decisions or architecture records",
         "count": 747,
-        "pct": 0.332
+        "pct": 0.365
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Product, vendor, or API documentation",
         "count": 1083,
-        "pct": 0.257
+        "pct": 0.277
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Product, vendor, or API documentation",
         "count": 144,
-        "pct": 0.034
+        "pct": 0.037
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Product, vendor, or API documentation",
         "count": 356,
-        "pct": 0.084
+        "pct": 0.091
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Product, vendor, or API documentation",
         "count": 633,
-        "pct": 0.15
+        "pct": 0.162
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Product, vendor, or API documentation",
         "count": 1698,
-        "pct": 0.402
+        "pct": 0.434
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Project management or ticketing tools",
         "count": 965,
-        "pct": 0.331
+        "pct": 0.367
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Project management or ticketing tools",
         "count": 47,
-        "pct": 0.016
+        "pct": 0.018
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Project management or ticketing tools",
         "count": 143,
-        "pct": 0.049
+        "pct": 0.054
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Project management or ticketing tools",
         "count": 459,
-        "pct": 0.157
+        "pct": 0.175
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Project management or ticketing tools",
         "count": 1012,
-        "pct": 0.347
+        "pct": 0.385
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Stack Overflow",
         "count": 1144,
-        "pct": 0.33
+        "pct": 0.355
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Stack Overflow",
         "count": 79,
-        "pct": 0.023
+        "pct": 0.024
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Stack Overflow",
         "count": 282,
-        "pct": 0.081
+        "pct": 0.087
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Stack Overflow",
         "count": 667,
-        "pct": 0.192
+        "pct": 0.207
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Stack Overflow",
         "count": 1053,
-        "pct": 0.303
+        "pct": 0.327
       },
       {
         "slice": 0,
         "series": "Important",
         "response": "Vendor forum",
         "count": 127,
-        "pct": 0.309
+        "pct": 0.329
       },
       {
         "slice": 0,
         "series": "Least important",
         "response": "Vendor forum",
         "count": 12,
-        "pct": 0.029
+        "pct": 0.031
       },
       {
         "slice": 0,
         "series": "Not very important",
         "response": "Vendor forum",
         "count": 24,
-        "pct": 0.058
+        "pct": 0.062
       },
       {
         "slice": 0,
         "series": "Somewhat important",
         "response": "Vendor forum",
         "count": 79,
-        "pct": 0.192
+        "pct": 0.205
       },
       {
         "slice": 0,
         "series": "Very important",
         "response": "Vendor forum",
         "count": 144,
-        "pct": 0.35
+        "pct": 0.373
       }
     ]
   },
