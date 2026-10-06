@@ -7,6 +7,7 @@
 // One file on purpose: it is a single pass with no branching, and reading it top
 // to bottom is the documentation for what the payloads contain.
 
+import { createHash } from 'node:crypto'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -33,6 +34,21 @@ const REPO = path.resolve(APP, '../..')
 const OUT = path.join(APP, 'src/generated')
 
 const readJson = async (file) => JSON.parse(await fs.readFile(file, 'utf8'))
+
+const MAX_QUOTE_ROWS = 500
+
+// Sample before serializing route data, so the browser never downloads every
+// write-in. Hash ordering keeps the selection stable across builds and avoids
+// taking only the first responses in the export. Numeric charts stay complete.
+function sampleQuotes(rows) {
+	if (rows.length <= MAX_QUOTE_ROWS) return rows
+
+	return rows
+		.map((row) => ({ row, hash: createHash('sha256').update(JSON.stringify(row)).digest('hex') }))
+		.sort((a, b) => a.hash.localeCompare(b.hash))
+		.slice(0, MAX_QUOTE_ROWS)
+		.map(({ row }) => row)
+}
 
 // Earlier years, for the DataCatalog on the home page.
 const readYears = () => readJson(path.resolve(APP, '../archive/index.json'))
@@ -125,14 +141,16 @@ const columnsFor = (rows, title) =>
 
 // One cut: its rows, minus the slice index that selected them, minus any column
 // null in all of them. Past this point a row stands alone.
-function groupOf(question, slice, at, completions) {
-	const rows = question.data.filter((row) => row.slice === at)
+function groupOf(question, slice, at, completions, chart) {
+	const all = question.data.filter((row) => row.slice === at)
+	const rows = chart === 'quotes' ? sampleQuotes(all) : all
 	const used = new Set()
 	for (const row of rows) for (const [key, value] of Object.entries(row)) if (key !== 'slice' && value !== null) used.add(key)
 
 	const series = [...new Set(rows.map((row) => row.series).filter((v) => typeof v === 'string'))]
 
 	return {
+		sampled: Boolean(question.meta?.sampled) || rows.length < all.length,
 		demographic: {
 			id: kebabCase(slice.slice_value),
 			type: slice.slice_type ?? null,
@@ -179,7 +197,7 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 	// with a legacy question means the file is half-migrated.
 	if (!isTidy(question)) return ctx.fail(`${where}: "${dataId}" is still the legacy format`)
 
-	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions))
+	const groups = question.meta.slices.map((slice, at) => groupOf(question, slice, at, ctx.completions, chart))
 	if (!groups.length) return ctx.fail(`${where}: "${dataId}" declares no slices`)
 
 	// In `qname` order: the first is the primary, and the one place that still prints
@@ -206,7 +224,7 @@ function resolve(ctx, chapterId, dataId, where, chart, title) {
 		axes,
 		shorts,
 		groups,
-		sampled: Boolean(question.meta?.sampled),
+		sampled: groups.some((group) => group.sampled),
 	}
 }
 

@@ -14,6 +14,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
 		"data": "rm -rf src/generated && node scripts/data.js",
+		"test:data": "node --test scripts/data.test.js",
 		"content": "node --env-file-if-exists=../../.env scripts/gsheet.js"
 	},
 	"devDependencies": {
