@@ -8,6 +8,7 @@ question:
   options:
     - Employed
     - label: Independent contractor, freelancer, or self-employed
+      short: Independent or freelance
       key: independent
     - Not employed
     - Student

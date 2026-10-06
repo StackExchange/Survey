@@ -19,7 +19,8 @@ question:
     - GitHub Codespaces
     - GoLand
     - IntelliJ IDEA
-    - Jupyter Notebook/JupyterLab
+    - label: Jupyter Notebook/JupyterLab
+      short: Jupyter
     - Kiro
     - Nano
     - NetBeans
@@ -42,5 +43,6 @@ question:
     - Xcode
     - Zed
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

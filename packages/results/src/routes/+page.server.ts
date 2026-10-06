@@ -1,5 +1,6 @@
-import years from '$archive/index.json'
-
 import type { PageServerLoad } from './$types'
 
-export const load: PageServerLoad = () => ({ years })
+import years from '$archive/index.json'
+import site from '$generated/site.json'
+
+export const load: PageServerLoad = () => ({ settings: site.settings, years, seo: site.seo.home, jsonld: site.jsonld })
