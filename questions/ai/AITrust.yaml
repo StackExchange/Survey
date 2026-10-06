@@ -6,9 +6,15 @@ question:
   type: single_select
   required: false
   options:
-    - I do not trust it for most work tasks
-    - I trust it for low-risk work tasks only
-    - I trust it when I can easily verify the output
-    - I trust it for many tasks, but not important work decisions
-    - I trust it for many tasks, including important work decisions
-    - Not sure / I do not use AI tools
+    - label: I do not trust it for most work tasks
+      short: Don't trust it for most
+    - label: I trust it for low-risk work tasks only
+      short: Low-risk tasks only
+    - label: I trust it when I can easily verify the output
+      short: When I can verify it
+    - label: I trust it for many tasks, but not important work decisions
+      short: Many tasks, not decisions
+    - label: I trust it for many tasks, including important work decisions
+      short: Many tasks and decisions
+    - label: Not sure / I do not use AI tools
+      short: Not sure or don't use AI

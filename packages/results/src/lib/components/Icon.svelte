@@ -1,7 +1,7 @@
 <script lang="ts">
-	import clsx from 'clsx'
-
 	import type { ClassValue } from 'svelte/elements'
+
+	import clsx from 'clsx'
 
 	// stacks-icons ships raw SVG strings, not components — hence the string surgery.
 	interface Props {
@@ -29,5 +29,4 @@
 	})
 </script>
 
-<!-- eslint-disable-next-line svelte/no-at-html-tags -- static markup from stacks-icons -->
 {@html svg}

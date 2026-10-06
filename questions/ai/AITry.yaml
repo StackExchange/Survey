@@ -6,10 +6,16 @@ question:
   type: single_select
   required: false
   options:
-    - We mostly use one approved tool or model
-    - We use a few approved tools or models
-    - Different teams choose their own tools or models
-    - We are trying multiple tools or models before deciding what to use longer-term
-    - We are building internal tools or models
-    - We are not using AI tools or models in a meaningful way
+    - label: We mostly use one approved tool or model
+      short: Mostly one approved tool
+    - label: We use a few approved tools or models
+      short: A few approved tools
+    - label: Different teams choose their own tools or models
+      short: Teams choose their own
+    - label: We are trying multiple tools or models before deciding what to use longer-term
+      short: Trying several before deciding
+    - label: We are building internal tools or models
+      short: Building internally
+    - label: We are not using AI tools or models in a meaningful way
+      short: Not really using AI
     - Not sure

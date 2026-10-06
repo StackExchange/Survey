@@ -16,5 +16,6 @@ question:
     - Hard-to-review generated code
     - Incorrect or stale internal knowledge
     - label: Other, please specify
+      short: Other
       key: other
       text_entry: true

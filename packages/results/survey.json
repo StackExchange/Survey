@@ -1,0 +1,2441 @@
+{
+  "settings": {
+    "year": "2026",
+    "description": "More than 30K technologists from 169 countries have shared their thoughts with us, and now it’s time to share everything we’ve learned with you. So let’s dive into this year’s Annual Developer Survey.",
+    "descriptionLong": "In the whirlwind that has been the last year of technological innovation and market uncertainty, we don’t blame you if you’re feeling burnt out. If keeping up with the latest and greatest in the tech world has been difficult for you, have no fear, because the Stack Overflow Annual Developer Survey is here! \n\nFor the sixteenth year, we’ve asked developers and technologists about everything from how they’re using AI to how happy they are at work to where they’re learning new skills. This year’s survey boils down to one question: **How are you doing?**",
+    "eyebrow": "It’s back and it’s bigger than ever",
+    "respondents": "30,903",
+    "countryCount": "169",
+    "technologyCount": "467",
+    "questionCount": "103"
+  },
+  "chapters": [
+    {
+      "name": "Work",
+      "description": "Well, it ain’t what it used to be. This year, we’re finding survey respondents are less happy in their work—the numbers are showing less happy folks and more unhappy ones.  All that innovation and uncertainty can make it tough to feel comfortable in your job.",
+      "id": "work",
+      "sections": [
+        {
+          "chapter": "Work",
+          "name": "What and where work happens",
+          "description": "Meet the people behind the work: their relationship to coding, education, employment, industries, and locations, plus how they work across remote, hybrid, and in-person settings.",
+          "id": "what-and-where-work-happens",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Relationship to coding",
+              "dataId": "CodeMain",
+              "chart": "bar",
+              "description": "75% code as a primary job function; 91% create code at least occasionally. This survey is for and about a builder audience.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "relationship-to-coding",
+              "dataIdSlug": "code-main"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Educational attainment",
+              "dataId": "Education",
+              "chart": "bar",
+              "description": "66% hold bachelor’s or master’s degrees, but 23% have no completed university degree. Formal education is common, not universal.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "educational-attainment",
+              "dataIdSlug": "education"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Employment status",
+              "dataId": "Employment",
+              "chart": "bar",
+              "description": "Employment varies notably by country: Germany 73%, France 71%, USA 69%, India 58%. India also has the highest student share at 19%.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "employment-status",
+              "dataIdSlug": "employment"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Employment additional status",
+              "dataId": "EmploymentAddl",
+              "chart": "sankey",
+              "description": "Respondents often have overlapping obligations. 18% of employed respondents care for dependents, while substantial numbers combine employment, contracting, or study with additional paid work.",
+              "subtext": "",
+              "axisLabels": [
+                "Employment Status",
+                "Additional Jobs"
+              ],
+              "id": "employment-additional-status",
+              "dataIdSlug": "employment-addl"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Country",
+              "dataId": "Country",
+              "chart": "table",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "country",
+              "dataIdSlug": "country"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Work Setting",
+              "dataId": "WorkSetting",
+              "chart": "bar",
+              "description": "Geography strongly shapes work arrangements. Remote work is 48% in the USA but 21% in France; India has the largest in-person share at 28%. Germany stands out for employee-controlled flexibility.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "work-setting",
+              "dataIdSlug": "work-setting"
+            },
+            {
+              "chapter": "Work",
+              "section": "What and where work happens",
+              "name": "Industry",
+              "dataId": "Industry",
+              "chart": "bar",
+              "description": "Most respondents are embedded in industries such as finance, healthcare, retail, education, and government.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "industry",
+              "dataIdSlug": "industry"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Role functions",
+          "description": "Look beyond job titles to understand respondents’ experience, responsibilities, and balance of hands-on technical work and people management.",
+          "id": "role-functions",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Role functions",
+              "name": "IC or PM",
+              "dataId": "ICorPM",
+              "chart": "bar",
+              "description": "81% identify as individual contributors, including 30% senior/staff ICs. Only 3% are exclusively people managers.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ic-or-pm",
+              "dataIdSlug": "i-cor-pm"
+            },
+            {
+              "chapter": "Work",
+              "section": "Role functions",
+              "name": "Years coding",
+              "dataId": "YearsCode",
+              "chart": "bar",
+              "description": "38% have coded for at least 20 years, and 17% for 30+ years. This is a highly experienced coding population.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "years-coding",
+              "dataIdSlug": "years-code"
+            },
+            {
+              "chapter": "Work",
+              "section": "Role functions",
+              "name": "Years of work experience",
+              "dataId": "WorkExp",
+              "chart": "bar",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "years-of-work-experience",
+              "dataIdSlug": "work-exp"
+            },
+            {
+              "chapter": "Work",
+              "section": "Role functions",
+              "name": "Title",
+              "dataId": "Role",
+              "chart": "bar",
+              "description": "Full-stack and back-end developers comprise 41% of titles.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "title",
+              "dataIdSlug": "role"
+            },
+            {
+              "chapter": "Work",
+              "section": "Role functions",
+              "name": "Functions at work",
+              "dataId": "RoleFunctions",
+              "chart": "bar",
+              "description": "The typical role extends far beyond coding: 67% review code, 63% make architecture decisions, 56% document, and 52% deploy.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "functions-at-work",
+              "dataIdSlug": "role-functions"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Employer + technology details",
+          "description": "Explore organization sizes, technology budgets, purchasing influence, and everyday tool use, along with what makes respondents recommend a technology.",
+          "id": "employer-technology-details",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Employer + technology details",
+              "name": "Employer organization size",
+              "dataId": "OrgSize",
+              "chart": "bar",
+              "description": "34% work in organizations under 100 employees, while 30% work in organizations of 1,000+. Another 10% are solo workers.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "employer-organization-size",
+              "dataIdSlug": "org-size"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employer + technology details",
+              "name": "Tech budget status",
+              "dataId": "TechBudget",
+              "chart": "bar",
+              "description": "Budget increases outnumber budget decreases 23% to 17%. However, 32% do not know their department’s budget direction.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "tech-budget-status",
+              "dataIdSlug": "tech-budget"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employer + technology details",
+              "name": "Relationship to purchase decisions at work",
+              "dataId": "PurchasePower",
+              "chart": "bar",
+              "description": "59% influence requirements and 48% evaluate tools, but only 18% make final purchase decisions.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "relationship-to-purchase-decisions-at-work",
+              "dataIdSlug": "purchase-power"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employer + technology details",
+              "name": "Reasons to endorse a technology",
+              "dataId": "TechEndorse",
+              "chart": "bar",
+              "description": "Reliability is the leading recommendation driver at 17%, followed by productivity at 16%. AI features motivate only 2.3%, below community, developer experience, flexibility, trust, and documentation.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "reasons-to-endorse-a-technology",
+              "dataIdSlug": "tech-endorse"
+            },
+            {
+              "chapter": "Work",
+              "section": "Employer + technology details",
+              "name": "Count of tools used",
+              "dataId": "ToolCount",
+              "chart": "bar-vertical",
+              "description": "35% report 10+ tools, and 8% report 20+ tools.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "count-of-tools-used",
+              "dataIdSlug": "tool-count"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Job satisfaction + AI",
+          "description": "Discover how respondents feel about their jobs, what makes work easier or harder, and where they see AI contributing to those experiences.",
+          "id": "job-satisfaction-ai",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Job satisfaction",
+              "dataId": "JobSat",
+              "chart": "bar",
+              "description": "Just 22% are classified as happy, while 33% are unhappy and 45% are complacent",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "job-satisfaction",
+              "dataIdSlug": "job-sat"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Reasons to be \"just okay\" with current job",
+              "dataId": "JobSatComplacent",
+              "chart": "bar",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "reasons-to-be-just-okay-with-current-job",
+              "dataIdSlug": "job-sat-complacent"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Reasons your job is easy",
+              "dataId": "JobEase",
+              "chart": "bar",
+              "description": "Tools are the largest positive intervention at 20%, yet 21% say nothing made work easier. Supportive colleagues follow at 17%, showing that technical and human enablement matter similarly.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "reasons-your-job-is-easy",
+              "dataIdSlug": "job-ease"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Does AI make work easier?",
+              "dataId": "JobEaseAI",
+              "chart": "sankey",
+              "description": "AI is tightly associated with tool access: 68% say it was the main reason tools made work easier, and another 26% say it contributed. AI is much less likely to be the main reason supportive teams or clear priorities helped.",
+              "subtext": "",
+              "axisLabels": [
+                "Job Ease factors",
+                "Job Ease + AI factors"
+              ],
+              "id": "does-ai-make-work-easier",
+              "dataIdSlug": "job-ease-ai"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Reasons your job is difficult",
+              "dataId": "JobDifficulty",
+              "chart": "bar",
+              "description": "In the past 6 months, work was made difficult mostly by unclear priorities (17%), inefficient processes (15%), and lack of time (14%).  A unifying thread among these factors is systemic operational friction.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "reasons-your-job-is-difficult",
+              "dataIdSlug": "job-difficulty"
+            },
+            {
+              "chapter": "Work",
+              "section": "Job satisfaction + AI",
+              "name": "Does AI make your job more difficult?",
+              "dataId": "JobDifficultyAI",
+              "chart": "sankey",
+              "description": "For each of the top two reasons users find their job difficult, unclear priorities and inefficient processes, 69% say AI was not involved.",
+              "subtext": "",
+              "axisLabels": [
+                "Job Difficulty factors",
+                "Job Difficulty + AI factors"
+              ],
+              "id": "does-ai-make-your-job-more-difficult",
+              "dataIdSlug": "job-difficulty-ai"
+            }
+          ]
+        },
+        {
+          "chapter": "Work",
+          "name": "Compensation",
+          "description": "Explore respondents’ reported annual compensation, including salary, bonuses, and perks, and see how earnings vary across roles and levels of professional experience.",
+          "id": "compensation",
+          "questions": [
+            {
+              "chapter": "Work",
+              "section": "Compensation",
+              "name": "Compensation by role, and top responding countries",
+              "dataId": "Compensation",
+              "chart": "bar",
+              "description": "",
+              "subtext": "All respondents: limit bar charts to roles with 100 or more responses; Country-level: limit bar charts to roles with 30 or more responses.  All reflect median salary after being converted to USD.",
+              "axisLabels": [],
+              "id": "compensation-by-role-and-top-responding-countries",
+              "dataIdSlug": "compensation"
+            },
+            {
+              "chapter": "Work",
+              "section": "Compensation",
+              "name": "Compensation by experience",
+              "dataId": "Scatter_Compensation_Role",
+              "chart": "scatter",
+              "description": "",
+              "subtext": "Scatter charts are limited to data points with 100 or more responses.  All reflect median salary after being converted to USD.",
+              "axisLabels": [
+                "Average years of professional experience",
+                "Median yearly salary (USD)"
+              ],
+              "id": "compensation-by-experience",
+              "dataIdSlug": "scatter-compensation-role"
+            },
+            {
+              "chapter": "Work",
+              "section": "Compensation",
+              "name": "Compensation by experience",
+              "dataId": "Scatter_Compensation_Country",
+              "chart": "scatter",
+              "description": "",
+              "subtext": "Scatter charts are limited to data points with 100 or more responses.  All reflect median salary after being converted to USD.",
+              "axisLabels": [
+                "Average years of professional experience",
+                "Median yearly salary (USD)"
+              ],
+              "id": "compensation-by-experience",
+              "dataIdSlug": "scatter-compensation-country"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Work",
+          "headline": "So…how’s work going for you?  33% say they are not happy at work this year.",
+          "description": "",
+          "tier": "home",
+          "chart": "3d-treemap",
+          "dataId": "JobSat",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "job-sat"
+        },
+        {
+          "chapter": "Work",
+          "headline": "AI has the potential to reshape the entire software and product development life cycle, but realizing that potential requires a foundational change to workflows, roles, and ownership.",
+          "description": "Stack Overflow CEO Prashanth Chandrasekar interview with McKinsey",
+          "tier": "home",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "Many are not taking this lying down: more and more technologists are finding freedom in freelance and self-employment.",
+          "description": "The percentage of freelance or self-employed responses jumped from 3.9% to 10.5% just this year.",
+          "tier": "home",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "OrgSize",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "org-size"
+        },
+        {
+          "chapter": "Work",
+          "headline": "",
+          "description": "Stack Overflow CEO Prashanth Chandrasekar recently spoke to Computing’s Ctrl Alt Lead podcast about why this might be the case: “With AI, every individual becomes almost a manager of agents. That's a sea change from just an individual that's writing code.” It seems that agents are superpowering some developers' work, making it easier for them to set a solo course backed up by their own team of agents—instead of taking their decreasing satisfaction at work on the chin.",
+          "tier": "home",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "",
+          "description": "Obviously, the world of work for technologists is in flux. This year’s data capture a workforce navigating serious uncertainty. Layoffs have become a perennial industry headline, AI is exploding expectations of what a single person can get done, and the traditional employer-employee relationship is evolving in response to these seismic shifts.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "Many-to-one: can we do more by ourselves than with a team?",
+          "description": "More respondents in this year’s survey are striking out on their own. The percentage of respondents working as a company of one—that is, freelancers and sole proprietors—more than doubled this year from 4% to 10%. That’s a huge leap for one year, and it’s not the kind of jump you can chalk up to gradual market forces. Two explanations, by no means mutually exclusive, come to mind. One is opportunity: AI tools have made it possible for many types of tasks to be done by a single worker.  [OpenAI research](https://cdn.openai.com/pdf/work-at-the-frontier-report.pdf) finds among all workspaces’ non-generic messages, 43.5% fall outside of the user’s occupation. [Snowflake’s Head of Developer Experience Umesh Unnikrishnan](https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/) also pointed out how job duties have compressed. “I started my career at Microsoft. I was responsible for the folders feature in Outlook. But now someone like that could build something like Microsoft Outlook by themselves.”",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "10% work for themselves",
+          "description": "The percentage of people saying it was just them in an org jumped from 4% to 10% this year. AI has made it easier for people to do work outside of their primary expertise, so it could point to the rise of solopreneurs, full-stack freelancers, or devs finding alternate work arrangements after layoffs.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "OrgSize",
+          "dataset": [],
+          "focus": "Just me - I am a freelancer, sole proprietor, etc.",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "org-size"
+        },
+        {
+          "chapter": "Work",
+          "headline": "New tools, same problem",
+          "description": "That tension—opportunity versus necessity—shows up again when we look at how respondents feel about the jobs they do have. Satisfaction is down: more developers report being unhappy at work than last year (up 4pp), and fewer report being genuinely happy (down 2pp). The job market has cooled, a [New York Times investigation](https://www.nytimes.com/2026/09/13/business/self-employed-health-care-retirement.html?unlocked_article_code=1) points to a new phenomenon that could be exacerbating the job satisfaction trends in the US at least and that is the “quality jobs crisis”. Satisfaction data doesn't tell us why any individual person feels the way they do, of course, but the survey did ask what aspects of work have contributed to a person’s job feeling easier or harder to do. The main take-away is work remains complex and messy: the most selected reasons jobs got harder were “unclear priorities”(17%) and “inefficient processes”(15%). Tellingly, 21% of respondents say nothing at all has made their job easier in the past six months.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "Unclear priorities or requirements are the reason 17% say their job has gotten more difficult",
+          "description": "Ambiguous direction serves as the primary operational friction point, closely followed by inefficient workflows (15%) and time/staffing shortages (14%).",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "JobDifficulty",
+          "dataset": [],
+          "focus": "Unclear priorities or requirements",
+          "limit": "8",
+          "values": [],
+          "dataIdSlug": "job-difficulty"
+        },
+        {
+          "chapter": "Work",
+          "headline": "Tools are the largest positive intervention, yet slightly more (21% vs. 20%) say nothing made work easier in the past year",
+          "description": "",
+          "tier": "chapter",
+          "chart": "rank",
+          "dataId": "JobEase",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "job-ease"
+        },
+        {
+          "chapter": "Work",
+          "headline": "The picture painted by the data is that technologists are being forced to adapt on two fronts at once.",
+          "description": "The shape of employment itself is allowing for more independent, solo work, while complexity and uncertainty are making teams grow more cautious and discerning about what actually helps them at work. Through it all, the data suggests, modern employees working in technology have grounded expectations for what AI can do for them, even as the tech slowly wins their trust.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Work",
+          "headline": "Users' top reasons to endorse a technology are reliability and performance",
+          "description": "Core reliability and performance are the leading reasons professionals endorse a technology, taking priority over pure productivity gains (16%) and ecosystem strength (13%).",
+          "tier": "chapter",
+          "chart": "2d-waffle-large",
+          "dataId": "TechEndorse",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "tech-endorse"
+        }
+      ],
+      "index": 1
+    },
+    {
+      "name": "AI",
+      "description": "How are technologists using AI?",
+      "id": "ai",
+      "sections": [
+        {
+          "chapter": "AI",
+          "name": "AI usage",
+          "description": "See which types of AI tools respondents use, how often they use them, how much time they spend with them, and how they feel about them.",
+          "id": "ai-usage",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "AI usage",
+              "name": "AI tool usage",
+              "dataId": "AISelect",
+              "chart": "bar",
+              "description": "83% use at least one AI tool. Coding assistants (66%) and general chat tools (63%) dominate; agents/workflows reach 26%.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-tool-usage",
+              "dataIdSlug": "ai-select"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI usage",
+              "name": "AI tool usage frequency",
+              "dataId": "AIFreq",
+              "chart": "bar-clustered",
+              "description": "AI coding assistants have become habitual: 73% of their users use them daily. Internal company tools trail at 48% daily and 21% infrequently.",
+              "subtext": "Overall: Daily users - 77%, / Weekly = 18% / Monthly/Infreq. = 5%",
+              "axisLabels": [],
+              "id": "ai-tool-usage-frequency",
+              "dataIdSlug": "ai-freq"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI usage",
+              "name": "AI tool usage daily",
+              "dataId": "AIDaily",
+              "chart": "bar",
+              "description": "Daily use is substantial, not incidental: 55% use AI for at least two hours per day, including 31% at four or more hours.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-tool-usage-daily",
+              "dataIdSlug": "ai-daily"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI usage",
+              "name": "Attitudes towards AI tools",
+              "dataId": "AISentiment",
+              "chart": "bar",
+              "description": "Overall sentiment is 62% favorable. It closely tracks career maturity: 53% of early career users (1-5 years exp.) are favorable, compared with 69% of experienced users (16+ years exp.). This is not proof that work experience leads to favorable attitudes, but they are certainly related.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "attitudes-towards-ai-tools",
+              "dataIdSlug": "ai-sentiment"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "Trust in AI and other trends",
+          "description": "Explore how much respondents trust AI, how they verify its output, and where they use—or plan to use—it in development workflows, including complex tasks.",
+          "id": "trust-in-ai-and-other-trends",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "Trust in AI and other trends",
+              "name": "Trust in AI tools",
+              "dataId": "AITrust",
+              "chart": "bar",
+              "description": "Trust is conditional: 48% trust AI when they can easily verify it, while only 7% trust it with important decisions. Even among early career (1-5 years exp.) users, important-decision trust is just 4%.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "trust-in-ai-tools",
+              "dataIdSlug": "ai-trust"
+            },
+            {
+              "chapter": "AI",
+              "section": "Trust in AI and other trends",
+              "name": "AI workflow current and expected",
+              "dataId": "AIWork",
+              "chart": "bar-clustered",
+              "description": "Adoption centers on familiar-code generation (69%), debugging/refactoring (64%), straightforward questions (59%), and tests (58%). Communications tasks have the strongest resistance: 46% do not use AI there and do not plan to.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-workflow-current-and-expected",
+              "dataIdSlug": "ai-work"
+            },
+            {
+              "chapter": "AI",
+              "section": "Trust in AI and other trends",
+              "name": "Next steps after receiving an AI prompt response",
+              "dataId": "AIWorkNext",
+              "chart": "bar",
+              "description": "Most developers validate AI output by running it locally (76%), comparing it with the codebase (64%), or checking tests/security (53%). Only 10% use answers as-is.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "next-steps-after-receiving-an-ai-prompt-response",
+              "dataIdSlug": "ai-work-next"
+            },
+            {
+              "chapter": "AI",
+              "section": "Trust in AI and other trends",
+              "name": "How good are AI tools at complex tasks",
+              "dataId": "AIComplex",
+              "chart": "bar",
+              "description": "Only 16% say AI handles complex tasks very well; 39% say “good, but not great.” Daily users are much more positive, while 45% of infrequent users rate performance bad or very poor.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "how-good-are-ai-tools-at-complex-tasks",
+              "dataIdSlug": "ai-complex"
+            },
+            {
+              "chapter": "AI",
+              "section": "Trust in AI and other trends",
+              "name": "AI tool count",
+              "dataId": "AIToolCount",
+              "chart": "bar",
+              "description": "Three-quarters use two to five AI products weekly. Tool proliferation exists, but only 5% use six or more.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-tool-count",
+              "dataIdSlug": "ai-tool-count"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "AI agent tools",
+          "description": "Explore the tools behind AI agents, from memory, orchestration, and monitoring to coding, no-code development, and workflow automation.",
+          "id": "ai-agent-tools",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI agent data storage tools",
+              "dataId": "AIMem",
+              "chart": "bar",
+              "description": "Mem0 leads at 20%, but no product exceeds one-fifth of the sample, the agent-memory market remains fragmented.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-agent-data-storage-tools",
+              "dataIdSlug": "ai-mem"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI agent orchestration tools",
+              "dataId": "AIOrch",
+              "chart": "bar",
+              "description": "LangChain leads at 30%, followed by OpenAI Agents SDK at 24%. “Terminal Use” at 19% suggests many developers favor direct, lightweight orchestration over dedicated frameworks.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-agent-orchestration-tools",
+              "dataIdSlug": "ai-orch"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI agent observability and security",
+              "dataId": "AIObs",
+              "chart": "bar",
+              "description": "Sentry leads at 26%, ahead of LangSmith at 17%. Established monitoring products may have an advantage as AI observability converges with conventional application monitoring.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-agent-observability-and-security",
+              "dataIdSlug": "ai-obs"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI coding agents",
+              "dataId": "AICodeAgent",
+              "chart": "bar",
+              "description": "Claude Code (66%) and GitHub Copilot (59%) are the clear leaders.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-coding-agents",
+              "dataIdSlug": "ai-code-agent"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI-no-code agents",
+              "dataId": "AINoCode",
+              "chart": "bar",
+              "description": "Lovable leads at 38%, with Replit and v0 near 28%.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-no-code-agents",
+              "dataIdSlug": "ai-no-code"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI agent tools",
+              "name": "AI agent automation tools",
+              "dataId": "AIAutomate",
+              "chart": "bar",
+              "description": "Make (39%) and n8n (33%) lead Zapier (18%). Developer-oriented automation appears to be shifting toward flexible, composable platforms.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-agent-automation-tools",
+              "dataIdSlug": "ai-automate"
+            }
+          ]
+        },
+        {
+          "chapter": "AI",
+          "name": "AI at work",
+          "description": "Examine AI’s usefulness across work tasks, its effect on satisfaction, and how individuals and organizations approach tool selection, switching, memory, and deliberate avoidance.",
+          "id": "ai-at-work",
+          "questions": [
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "AI impact in different work functions",
+              "dataId": "AIImpact",
+              "chart": "bar-stacked",
+              "description": "AI is considered useful or very useful for implementation (75%), debugging (73%), documentation (66%), and review (64%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-impact-in-different-work-functions",
+              "dataIdSlug": "ai-impact"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "Satisfaction with AI tools",
+              "dataId": "AISat",
+              "chart": "bar-stacked",
+              "description": "AI most improves satisfaction with debugging (66%), documentation (61%), and implementation (60%). Implementation is also most polarizing: 20% report decreased satisfaction.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "satisfaction-with-ai-tools",
+              "dataIdSlug": "ai-sat"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "Did you switch AI tools in the past year?",
+              "dataId": "AIToolSwitch",
+              "chart": "bar",
+              "description": "Two-thirds switched tools during the year. Output quality is the largest reason at 25%, well ahead of integration (7%), cost (6%), security (2%), or model access (2%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "did-you-switch-ai-tools-in-the-past-year",
+              "dataIdSlug": "ai-tool-switch"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "AI memory retention",
+              "dataId": "AIRetain",
+              "chart": "bar",
+              "description": "54% want personal control of AI memory; only 15% prefer centralized organizational control. Another 14% reject retained memory entirely.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-memory-retention",
+              "dataIdSlug": "ai-retain"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "AI at work",
+              "dataId": "AIUse",
+              "chart": "bar",
+              "description": "Organizational maturity is uneven. AI is optional and individual-led for 30%; only 24% report approved tools and guidance.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-at-work",
+              "dataIdSlug": "ai-use"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "AI avoidance",
+              "dataId": "AIAvoid",
+              "chart": "bar",
+              "description": "59% intentionally avoid AI for some reason. Skill loss/job replacement (17%) exceeds ethical (15%), privacy/security (13%), environmental (8%), or training concerns (3%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-avoidance",
+              "dataIdSlug": "ai-avoid"
+            },
+            {
+              "chapter": "AI",
+              "section": "AI at work",
+              "name": "Vetting new AI tools",
+              "dataId": "AITry",
+              "chart": "bar",
+              "description": "Half of organizations have standardized on one or a few approved tools, while 30% are decentralized or actively experimenting. Only 4% are building internal tools/models.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "vetting-new-ai-tools",
+              "dataIdSlug": "ai-try"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "AI",
+          "headline": "62% like using AI",
+          "description": "To the surprise of no one, AI use has skyrocketed over the last year. Devs are using AI more than ever before in their daily work—80% of respondents from this year’s survey used AI at least an hour per day. And with increased usage has come increased favor: now more than 60% of respondents have a favorable attitude towards AI tool use in their work.",
+          "tier": "home",
+          "chart": "3d-cube",
+          "dataId": "AISentiment",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-sentiment"
+        },
+        {
+          "chapter": "AI",
+          "headline": "How much do you trust the output from AI tools or AI agents as part of your workflow?",
+          "description": "And technologists have figured out better ways to use their AI tools—and place more trust in them. This year, more than 87% of respondents had some level of trust in AI’s outputs, a huge increase from 31% last year. But that trust is conditional—48% trust AI only when it comes to low risk, easily verifiable tasks.",
+          "tier": "home",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AITrust",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-trust"
+        },
+        {
+          "chapter": "AI",
+          "headline": "And how exactly are AI users verifying the outcomes of an AI-generated answers?",
+          "description": "Well, 93% of our respondents think that it all comes down to citing your sources. AI technology may have improved by leaps and bounds over last year, but it’s responses aren’t trustworthy enough yet to take at face value.",
+          "tier": "home",
+          "chart": "3d-waffle-large",
+          "dataId": "KnowledgeSourceAI",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [
+            "Very important",
+            "Important",
+            "Somewhat important"
+          ],
+          "dataIdSlug": "knowledge-source-ai"
+        },
+        {
+          "chapter": "AI",
+          "headline": "AI moves from on-the-side to built-in",
+          "description": "Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%). It’s a sign that AI has become less sidekick and more infrastructure, built right into the tools technologists already use. The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "31% of daily AI users use it for 4+ hours/day",
+          "description": "Of the over 70% of respondents who use AI daily, 31% use it over four hours per day.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "AIDaily",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-daily"
+        },
+        {
+          "chapter": "AI",
+          "headline": "Despite plenty of societal concern about AI, survey respondents retain a fairly positive view of the technology.",
+          "description": "When asked about overall attitude toward AI tools, favorable views outnumber unfavorable ones by almost 3 to 1. But “favorable” doesn't mean “unconditionally positive.” Developers aren't simply handing AI the keys to important decisions. When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most tasks that are not important work decisions. The sweet spot where most AI users land is trusting AI when they understand what it’s working on, such as with familiar code (67% currently use AI with this) or when debugging or refactoring (61% currently use AI with this). That’s why human-in-the-loop is the dominant mode of working with these tools.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "This is where I personally feel the importance of human judgment. If you leave it up to chance, if you leave it up to the roll of the dice of the LLM, you're not gonna get the specificity. Everything I've been doing and everything my team's been doing is imagining AI as an exoskeleton, like a Tony Stark augmentation, as opposed to an empty Ultron with nobody inside. Which nobody wants.",
+          "description": "[Scott Hanselman, VP of Developer Community at Microsoft](https://stackoverflow.blog/2026/01/13/vibe-code-anything-in-a-hanselminute/)",
+          "tier": "chapter",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "The right tool for the job",
+          "description": "The same caution shows up in how people choose (and choose against) certain tools. Developers switching to new AI tools are doing it mostly because the output is better (25%) or because their organization required it (11%).",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "25% switch AI tools due to better output quality",
+          "description": "Seeking superior output quality is the single largest reason developers switch AI tools, though a third (34%) retained their original tool choices over the past year. For all the concerns over token costs, only 6% switched because of costs.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AIToolSwitch",
+          "dataset": [],
+          "focus": "Yes — better output quality",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-tool-switch"
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "What are they using? Claude Code (66%) and GitHub Copilot (59%) are the leaders for coding agents. Respondents are using LangChain (30%) and OpenAI Agents SDK (24%) for orchestration and Make (39%) and n8n (33%) for automation. AI memory and agent orchestration tools show a notable gap between current adoption and stated interest, suggesting that the category is still finding its footing. Coding agents, meanwhile, are a more mature market with clear leaders emerging. \n\nThat selectivity becomes very clear once you look at where AI is actually being put to work. Basically, developers trust AI with machines but not with people. AI use is common, and commonly accepted, across code generation, debugging, testing, and understanding unfamiliar codebases. Even secondary review functions—analyzing telemetry, reviewing pull requests, hunting for security issues—are seeing meaningful AI adoption.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "The human difference",
+          "description": "But the moment the task shifts toward human communication or creative output—writing emails, generating multimedia, anything requiring a feel for what people want—usage falls off a cliff. The same split shows up in perceived usefulness: technical tasks like implementation and debugging are both useful or very useful to 70%+ of survey respondents, while communication and design lag behind, landing in “slop” territory with 35% and 49% respectively finding AI useful or very useful in those areas.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "The top 5 tasks that respondents are currently using AI or AI agents for",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "AIWork_Current",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "ai-work-current"
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "The inevitable takeaway is that technologists see AI as very good at technical problems with checkable answers, and considerably less good at solving the other everyday problems of work. A significant chunk of respondents who avoid AI completely do so out of concern for their own skills, privacy, or the technology’s enormous ethical and environmental footprint.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "AI",
+          "headline": "",
+          "description": "6 out of 10 users cite a reason to avoid using AI at work or school, losing job skills is a top concern.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AIAvoid",
+          "dataset": [],
+          "focus": "Concern over losing job skills or training an AI to replace you",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-avoid"
+        }
+      ],
+      "index": 2
+    },
+    {
+      "name": "Technology",
+      "description": "What's your favorite tech? It wouldn’t be a Stack Overflow Developer Survey if we didn’t include our technology leaderboard!",
+      "id": "technology",
+      "sections": [
+        {
+          "chapter": "Technology",
+          "name": "Most popular technologies",
+          "description": "Explore the languages, databases, frameworks, cloud platforms, and development tools respondents use, including how adoption has changed over time.",
+          "id": "most-popular-technologies",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Users using technology",
+              "dataId": "TechDropDown",
+              "chart": "bar",
+              "description": "Used less than other technologies surveyed this year, only 23% use technology related to security",
+              "subtext": "Subject areas listed here correspond to questions that follow",
+              "axisLabels": [],
+              "id": "users-using-technology",
+              "dataIdSlug": "tech-drop-down"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "Languages",
+              "chart": "bar",
+              "description": "Top used programming languages features JavaScript at the top of the list for 12th year in a row",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "languages"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "Languages_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "languages-timeseries"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Code Testing tools",
+              "dataId": "CodeTest",
+              "chart": "bar",
+              "description": "ESLint is widely used in this survey due to its direct ties to JavaScript.  Did you know that ESLint is an open source project with more than 1K contributors?  See more at [github.com/eslint/eslint](https://github.com/eslint/eslint)",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "code-testing-tools",
+              "dataIdSlug": "code-test"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Databases",
+              "dataId": "Databases",
+              "chart": "bar",
+              "description": "Ubiquitous Developer Adoption: Bryan Clark (Director of Product for LakeBase at Databricks) recalls observing this massive shift during his time at GitHub: \"...inside GitHub, you could see every developer was switching to start using Postgres...\" Listen to [his interview](https://stackoverflow.blog/2026/06/09/checkpoints-by-gaslighting-postgres-database/) on the Stack Overflow Podcast.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "databases",
+              "dataIdSlug": "databases"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Databases",
+              "dataId": "Databases_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "databases",
+              "dataIdSlug": "databases-timeseries"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Cloud development",
+              "dataId": "CloudPlat",
+              "chart": "bar",
+              "description": "Cloudflare usage is up this year compared to last (25% vs. 20%) - is it due to the increase in bot activity which Cloudflare works to safeguard against?",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "cloud-development",
+              "dataIdSlug": "cloud-plat"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Web frameworks and technologies",
+              "dataId": "WebFramework",
+              "chart": "bar",
+              "description": "46% have used Node and 42% have used React, these are the top 2 web frameworks being used in this year's survey and last year's.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "web-framework"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Web frameworks and technologies",
+              "dataId": "WebFramework_Timeseries",
+              "chart": "line",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "web-framework-timeseries"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "LLMs",
+              "dataId": "LLM",
+              "chart": "bar",
+              "description": "Most everyone uses Anthropic and OpenAI models, open-weight models from DeepSeek and Alibaba Qwen models are being used more, too.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ll-ms",
+              "dataIdSlug": "llm"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Most popular technologies",
+              "name": "Dev IDEs",
+              "dataId": "DevIDE",
+              "chart": "bar",
+              "description": "VS Code is still the most used IDE despite AI disruptors; usage has remained at or above 71% since 2021",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "dev-id-es",
+              "dataIdSlug": "dev-ide"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Admired and Desired",
+          "description": "Compare the technologies respondents want to use next with those existing users want to keep using. “Desired” measures interest; “admired” measures the willingness to continue.",
+          "id": "admired-and-desired",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Programming, scripting, and markup languages",
+              "dataId": "DA_Language",
+              "chart": "dumbbell",
+              "description": "26% want to use Rust, 67% of Rust users want to continue using Rust",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "programming-scripting-and-markup-languages",
+              "dataIdSlug": "da-language"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Code Testing tools",
+              "dataId": "DA_CodeTest",
+              "chart": "dumbbell",
+              "description": "Bruno, PHPUnit, GoogleTest and MSTest may not be on the top of the desired list for most, but users of these testing tools rate them very highly on the admired scale",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "code-testing-tools",
+              "dataIdSlug": "da-code-test"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Databases",
+              "dataId": "DA_Database",
+              "chart": "dumbbell",
+              "description": "PostgreSQL is the most admired database technology this year, users love to use it",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "databases",
+              "dataIdSlug": "da-database"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Cloud development",
+              "dataId": "DA_Platform",
+              "chart": "dumbbell",
+              "description": "",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "cloud-development",
+              "dataIdSlug": "da-platform"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Web frameworks and technologies",
+              "dataId": "DA_Webframe",
+              "chart": "dumbbell",
+              "description": "Svelte and SvelteKit are both highly admired, scoring 59% and 64% respectively",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "web-frameworks-and-technologies",
+              "dataIdSlug": "da-webframe"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "Dev IDEs",
+              "dataId": "DA_DevEnvs",
+              "chart": "dumbbell",
+              "description": "IYKYK: Helix users want to keep using it as their IDE more than any other IDE this year",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "dev-id-es",
+              "dataIdSlug": "da-dev-envs"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Admired and Desired",
+              "name": "LLMs",
+              "dataId": "DA_LLM",
+              "chart": "dumbbell",
+              "description": "75% have used Anthropic LLMs in the last year, and 61% want to keep using them; 74% have used OpenAI LLMs, 42% want to keep using them.",
+              "subtext": "Desired = \"Want to use\" / Admired = \"Have used\" & \"Want to use\"",
+              "axisLabels": [],
+              "id": "ll-ms",
+              "dataIdSlug": "da-llm"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Popular Knowledge Technologies",
+          "description": "Discover the tools respondents use for knowledge management, enterprise search, and security operations—the systems that help teams organize, find, and protect information.",
+          "id": "popular-knowledge-technologies",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Knowledge Management Tools",
+              "dataId": "KnowMgmt",
+              "chart": "bar",
+              "description": "Confluence is the most used knowledge management tool this year",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "knowledge-management-tools",
+              "dataIdSlug": "know-mgmt"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Enterprise Search",
+              "dataId": "EntSearch",
+              "chart": "bar",
+              "description": "Elastic is the most used enterprise search technology this year",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "enterprise-search",
+              "dataIdSlug": "ent-search"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Popular Knowledge Technologies",
+              "name": "Security Operations Tools",
+              "dataId": "SecOps",
+              "chart": "bar",
+              "description": "Auth0 and Okta are the most used Security Ops technologies this year",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "security-operations-tools",
+              "dataIdSlug": "sec-ops"
+            }
+          ]
+        },
+        {
+          "chapter": "Technology",
+          "name": "Build vs. AI",
+          "description": "Explore what teams build in-house, where AI assists that work, and which AI mistakes cost them time—from incorrect code to missing context.",
+          "id": "build-vs-ai",
+          "questions": [
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did your team build tools?",
+              "dataId": "BuildTool",
+              "chart": "bar",
+              "description": "Only 19% of users building software are working to replace a vendor",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "did-your-team-build-tools",
+              "dataIdSlug": "build-tool"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did you build tools with AI assistance?",
+              "dataId": "BuildToolAI",
+              "chart": "bar",
+              "description": "For those building software at work to replace a vendor, 54% say they used AI to help them",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "did-you-build-tools-with-ai-assistance",
+              "dataIdSlug": "build-tool-ai"
+            },
+            {
+              "chapter": "Technology",
+              "section": "Build vs. AI",
+              "name": "Did AI cause business disruptions?",
+              "dataId": "Disruption",
+              "chart": "bar",
+              "description": "Security and privacy issues caused 24% of teams valuable time in the last year",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "did-ai-cause-business-disruptions",
+              "dataIdSlug": "disruption"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Technology",
+          "headline": "Top programming languages used for AI shows Python leading at 39% usage",
+          "description": "While the top-used technologies of the year—JavaScript, SQL, HTML/CSS, Python, and Bash/Shell—may not surprise you, how they are being used just might. For instance, when it comes to coding agents, AI seems to love Python above nearly all else, coming in at 39% usage.",
+          "tier": "home",
+          "chart": "2d-treemap",
+          "dataId": "Languages",
+          "dataset": [
+            "Used for AI"
+          ],
+          "focus": "",
+          "limit": "10",
+          "values": [],
+          "dataIdSlug": "languages"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Top programming languages used by those with 16+ years of professional work experience",
+          "description": "For both the seasoned developer and the green AI-assisted developer alike, JavaScript comes out near the top, trailing SQL (the first-place winner) by just one point.",
+          "tier": "home",
+          "chart": "3d-treemap",
+          "dataId": "Languages",
+          "dataset": [
+            "16+ yrs work exp"
+          ],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "languages"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "When it comes to building vs. buying—the age-old trolley problem of software development—only 19% of our respondents are building their own tools to replace vendors.",
+          "description": "However, of those that are building instead of buying, over half are using AI tools to help them do it, showing AI’s utility for developers looking to bring their SaaS in-house.",
+          "tier": "home",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "BuildTool",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "build-tool"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "What’s new, what’s old, and something for everyone in technologies surveyed this year",
+          "description": "The technology leaderboards have been a constant feature in our Developer Surveys from the beginning. That’s the core of the software developer’s toolkit. What’s changed are the categories of tech on this list: cloud providers, coding agents, LLMs, and security ops.  Many of the top technologies on some of these lists have been there for years. Some lists show clear leaders in the space. But there's still plenty of room for alternative technologies to gain ground- each of these lists includes a long tail of tools in the single digits for usage (and we had to cut the lists off somewhere).",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "For the most used programming languages, JavaScript is at the top of the list for the 12th year in a row",
+          "tier": "chapter",
+          "chart": "rank",
+          "dataId": "Languages",
+          "dataset": [],
+          "focus": "JavaScript",
+          "limit": "10",
+          "values": [],
+          "dataIdSlug": "languages"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "The core stack: Technologies that stand the test of time",
+          "description": "For the most used programming languages, JavaScript is at the top of the list for the 12th year in a row",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Postgres continues reign as the most used database, used by a majority of respondents.",
+          "tier": "chapter",
+          "chart": "rank",
+          "dataId": "Databases",
+          "dataset": [],
+          "focus": "PostgreSQL",
+          "limit": "10",
+          "values": [],
+          "dataIdSlug": "databases"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Postgres continues to rule in the database space. In an interview on [Stack Overflow’s podcast Shireesh Thota](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/) (Corporate VP of Azure Databases at Microsoft) said \"I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.\"  Is it also the AI gateway drug?  That’s how Brian O'Grady (Head of Field Research at Qdrant) put it when he summarized in a [separate interview](https://stackoverflow.blog/2026/05/05/what-un-exactly-do-you-mean-by-semantic-search/) with us the ease of starting with its vector capabilities: \"I've called it almost like a gateway drug to vector search. As soon as you use pgvector, you're in.\"",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "I tell everyone that Postgres is the Linux of databases... It's one of the best open source projects out there where the community really rallies. They care deeply.",
+          "description": "Shireesh Thota, Corporate VP of Azure Databases at Microsoft [source](https://stackoverflow.blog/2026/02/17/data-is-the-new-oil/)",
+          "tier": "chapter",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Builders are still building in the age of AI",
+          "description": "Popular predictions of an AI-driven \"SaaSpocalypse\" turn out to be greatly exaggerated. Developers are building at high volumes, but their focus remains on internal utilities and glue code rather than replacing commercial software. 77% of developers build small scripts and automations, while 63% create team-level internal tools.  54% build customer-facing applications—a reminder that a vast portion of engineers work inside traditional enterprise sectors like retail, finance, and manufacturing. Vendor replacement sits at the bottom: Only 19% of respondents build in-house software to replace paid vendors. \n\nBut when you shift to look at what people build with AI, SaaS vendors might get nervous: 54% of those building with AI are replacing vendors. The good news is that this is limited to the AI builder subgroup, builders are more likely to be using AI in general for all projects. Vendor replacement got a lot of press this year, but it’s far from an AI breakout story—it's actually the workload where AI assistance sees the lowest ceiling for adoption.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Small scripts are most common for builders to work on, 19% say they’re building tools to replace paid vendors.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "BuildTool",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "build-tool"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "When cross-referencing these builds with AI tool usage, a subtle trend emerges: AI adoption steadily drops as system complexity and operational risk increase. When you buy tools, you offload security compliance, SLAs, and continuous maintenance. Replacing them with internally-built tools transfers technical debt back onto internal teams, right where AI errors create the most pain. Developers are happy to let AI generate low-risk automation scripts, but when it comes to business-critical SaaS, most teams still prefer paying a vendor over managing unmaintainable, AI-generated technical debt.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "While only 19% say they’re building tools to replace paid vendors, of that cohort more than half are doing so with the help of AI.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "BuildToolAI",
+          "dataset": [],
+          "focus": "Replacing paid vendors",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "build-tool-ai"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "Frontier models’ next evolution",
+          "description": "While OpenAI and Anthropic sit neck-and-neck at the top of general LLM usage (74% and 75% adoption, respectively), practitioner sentiment reveals a rift between usage and the desire to keep using it. Anthropic holds a clear lead in forward-looking interest, with 49% of developers wanting  to work with Claude over the next year, compared to 32% for OpenAI. Spend tracking data from Ramp mirrors this shift, showing Anthropic capturing market share rapidly as engineering teams transition from simple chat interfaces to structured, programmatic agent architectures.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "The two companies focused on frontier models are the top two in LLM usage: Anthropic at 75% and OpenAI at 74%.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "LLM",
+          "dataset": [],
+          "focus": "Anthropic",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "llm"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Disruption and security remain areas for improvement. Few respondents reported working with security technology, suggesting AI security ops is still a relatively isolated field—and possibly a good target for anyone looking to add future-forward tools to their toolkit. Even setting aside dedicated security practitioners, 23% of users said their team lost valuable time to security or privacy issues stemming from AI.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "For all the talk of security work shifting left, only 23% of respondents have used security tools in the past year.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "TechDropDown",
+          "dataset": [],
+          "focus": "I used security software for permissions and compliance operations",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "tech-drop-down"
+        },
+        {
+          "chapter": "Technology",
+          "headline": "",
+          "description": "Security and privacy issues caused 24% of teams valuable time in the last year",
+          "tier": "chapter",
+          "chart": "stat",
+          "dataId": "Disruption",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [
+            "Security/privacy issue"
+          ],
+          "dataIdSlug": "disruption"
+        }
+      ],
+      "index": 3
+    },
+    {
+      "name": "Community",
+      "description": "What’s the developer community up to? Whether you’ve become best buds with an AI-powered chatbot or have taken up the anti-AI pitchforks alongside the other luddites, we can all recognize how much AI has changed. We saw that very clearly reflected in this year’s survey—especially in how developers are engaging with knowledge and community.",
+      "id": "community",
+      "sections": [
+        {
+          "chapter": "Community",
+          "name": "Finding and trusting answers",
+          "description": "See where respondents turn for technical answers, what makes those answers trustworthy, and how AI has changed their use of Stack Overflow.",
+          "id": "finding-and-trusting-answers",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "AI’s impact on Stack Overflow usage",
+              "dataId": "SOChange",
+              "chart": "bar",
+              "description": "AI has fundamentally changed Stack Overflow's role as a resource for answers. 64% visit less for simple questions, 29% ask fewer questions, and 27% contribute less. Only 1.2% contribute more. However, 16% now visit more specifically for verification — meaning SO is shifting from \"ask\" to \"verify.\" A small segment (6%) visit more because AI-generated answers lead them to SO for source attribution.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "a-is-impact-on-stack-overflow-usage",
+              "dataIdSlug": "so-change"
+            },
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "Where technologists look for answers",
+              "dataId": "Answers",
+              "chart": "bar",
+              "description": "Online search (83%) and AI agents (70%) are the top two answer-seeking channels, both outpacing maintained repositories (44%) and trusted humans (29%). The implication: answer-seeking is now a self-serve, AI-augmented activity — human consultation is a third or fourth resort, not a first.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "where-technologists-look-for-answers",
+              "dataIdSlug": "answers"
+            },
+            {
+              "chapter": "Community",
+              "section": "Finding and trusting answers",
+              "name": "What makes answers trustworthy",
+              "dataId": "AnswersTrust",
+              "chart": "bar",
+              "description": "Trust is driven by presentation quality and social proof, not authority. Well-organized content (59%) and high engagement metrics — upvotes, likes, views (48%) — top the list, ahead of personal referral from a trusted human (47%) and citability/trackable origin (40%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "what-makes-answers-trustworthy",
+              "dataIdSlug": "answers-trust"
+            }
+          ]
+        },
+        {
+          "chapter": "Community",
+          "name": "Communities and learning",
+          "description": "Explore how respondents participate in technical communities, what holds them back, and which people and resources shape their coding and AI learning.",
+          "id": "communities-and-learning",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Community participation",
+              "dataId": "CommunityType",
+              "chart": "bar",
+              "description": "78% read discussions, but only 42% comment/react, 34% answer questions, and 31% ask questions. Open-source contribution sits at 28%, and event attendance at 21%. 14.5% don't participate at all. The community is a consumption economy: most people take far more than they give, and active contribution is a minority behavior.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "community-participation",
+              "dataIdSlug": "community-type"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Barriers to community participation",
+              "dataId": "CommunityGap",
+              "chart": "bar",
+              "description": "65% find answers without posting, and 45% say AI tools answer enough of their questions. Time is the third factor (36%). Beyond that, social friction is real: 21% fear judgment, 20% lack confidence asking publicly, and 12% feel communities aren't welcoming. Company-specific questions (23%) and privacy/legal restrictions (11%) also gate participation. Only 12% say nothing prevents them.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "barriers-to-community-participation",
+              "dataIdSlug": "community-gap"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "Sources influencing skill development",
+              "dataId": "CommunitySkills",
+              "chart": "bar",
+              "description": "Skill direction comes from immediate social circles, not formal channels. Coworkers/peers (44%) and managers (33%) dominate. YouTube/video creators (26%) and online communities (23%) outpace documentation (18%) and job postings (20%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "sources-influencing-skill-development",
+              "dataIdSlug": "community-skills"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "How developers learned to code",
+              "dataId": "LearnCodeHow",
+              "chart": "bar",
+              "description": "Technical documentation (59%) is the #1 learning method, edging out AI codegen tools (53%) and general online resources (52%). Traditional methods — books (27%), colleague training (21%), school (14%) — are mid-tier. Bootcamps (6%) are the lowest formal option. The takeaway: developers are self-directed learners who combine docs, AI, and community resources rather than following a curriculum.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "how-developers-learned-to-code",
+              "dataIdSlug": "learn-code-how"
+            },
+            {
+              "chapter": "Community",
+              "section": "Communities and learning",
+              "name": "How developers learned AI programming",
+              "dataId": "LearnAIHow",
+              "chart": "bar",
+              "description": "AI codegen tools are the #1 method for learning AI itself (51%), followed by online resources (45%) and technical docs (43%). People are learning AI by doing AI.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "how-developers-learned-ai-programming",
+              "dataIdSlug": "learn-ai-how"
+            }
+          ]
+        },
+        {
+          "chapter": "Community",
+          "name": "Stack Overflow and community platforms",
+          "description": "Get to know respondents’ connections to Stack Overflow and other community platforms, their learning activity, and their accounts of how AI has changed their habits.",
+          "id": "stack-overflow-and-community-platforms",
+          "questions": [
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Stack Overflow account ownership",
+              "dataId": "SOAccount",
+              "chart": "bar",
+              "description": "77% of survey respondents have an SO account. This makes sense, we advertise this survey every year primarily on Stack Overflow.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "stack-overflow-account-ownership",
+              "dataIdSlug": "so-account"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Years using Stack Overflow",
+              "dataId": "SOYears",
+              "chart": "bar",
+              "description": "The user base is deeply tenured. 76% have used SO for 5+ years, with 34% at 10–15 years and 18% at 15+ years. Only 9% are new users (under 3 years), and 6% don't use it at all.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "years-using-stack-overflow",
+              "dataIdSlug": "so-years"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Gender",
+              "dataId": "Gender",
+              "chart": "bar",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "gender",
+              "dataIdSlug": "gender"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Learning new coding skills",
+              "dataId": "LearnCode",
+              "chart": "bar",
+              "description": "It's nearly split down the middle — continuous learning is a norm for roughly half the developer population, while the other half is focused on applying existing skills.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "learning-new-coding-skills",
+              "dataIdSlug": "learn-code"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Learning AI skills",
+              "dataId": "LearnAI",
+              "chart": "bar",
+              "description": "Self-directed learning dominates: 64% learn on their own time, with or without also learning at work.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "learning-ai-skills",
+              "dataIdSlug": "learn-ai"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Community platforms",
+              "dataId": "CommPlat",
+              "chart": "bar",
+              "description": "GitHub (70%) and Stack Overflow (69%) are the top two platforms, followed by YouTube (58%) and Reddit (54%). The long tail includes Discord (33%), Medium (26%), Hacker News (24%), and X (16%). Emerging platforms like Bluesky (13%) are already ahead of Slack public channels (12%).",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "community-platforms",
+              "dataIdSlug": "comm-plat"
+            },
+            {
+              "chapter": "Community",
+              "section": "Stack Overflow and community platforms",
+              "name": "Comments from Stack Overflow users about what changed about their habits on the site since AI took hold",
+              "dataId": "SOChangeAddl",
+              "chart": "quotes",
+              "description": "",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "comments-from-stack-overflow-users-about-what-changed-about-their-habits-on-the-site-since-ai-took-hold",
+              "dataIdSlug": "so-change-addl"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Community",
+          "headline": "How do you search for answers?",
+          "description": "While the lion’s share of respondents still seek guidance from traditional search tools when they face a new challenge, nearly 70% of technologists also use AI agents to help them solve problems—beating out maintained repositories and trusted humans as direct sources of learning.",
+          "tier": "home",
+          "chart": "rank",
+          "dataId": "Answers",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "answers"
+        },
+        {
+          "chapter": "Community",
+          "headline": "When you need to answer a work-related question, which sources do you use most often?",
+          "description": "When it comes to work-related questions, however, developers are still turning to the humans in their loops—also known as coworkers and teammates—first in order to get the answers they need (72%), with code repositories (63%) and internal documentation (60%) following as close runner-ups.",
+          "tier": "home",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "KnowledgeQ",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "knowledge-q"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Nearly two-thirds of developers rely less on Stack Overflow for straightforward questions due to AI, with 29% asking fewer questions overall.",
+          "description": "64% visiting less for simple questions",
+          "tier": "home",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "SOChange",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "so-change"
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "We’ve always been interested in how developers learn to code, upskill on new tech, and mind meld with their fellow code mongers. While we always want to be part of how developers find answers to their problems, we understand that AI changed the game. But how much? Is community still useful to developers in their times of need? What are people learning and where?",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "AI skills are coming out on top",
+          "description": "This year, we found that more people are learning AI programming skills than non-AI programming skills. Around 79% of developers are focusing on AI skills in their learning. This makes sense, AI programming is newer and changing fast, so there’s a lot to learn right now. But 52% of folks are learning new coding or programming skills, so there’s plenty to learn there still. Most devs (59%) are still using technical documentation to learn, with AI codegen tools coming up close behind at 53%.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "LearnCodeHow",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "learn-code-how"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Which actions do you turn to first when trying to find answers to a problem?",
+          "description": "When faced with a problem they need answers to, about 70% asked an AI agent. AI agents and overviews have definitely changed everyone’s internet behaviors, and we’re feeling the effects too. Lots of folks indicated that they’re participating in the Stack Overflow community less because of AI: 64% visit less for simple questions, 29% ask fewer questions, and 26% contribute less. The good news is that whenever you go to an AI agent for answers, you’re still using Stack Overflow. Many of the model providers use our community data to train their LLMs.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "Answers",
+          "dataset": [],
+          "focus": "Ask an AI agent",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "answers"
+        },
+        {
+          "chapter": "Community",
+          "headline": "But devs aren’t just using AI to learn",
+          "description": "Before you order our tombstone, the majority of people (83%) still use search to answer problems first. Google, once our primary referrer, added AI overviews, which certainly stops folks from following any links at all. Testing has shown that [1 in 10 of those overviews may contain errors](https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/?ref=wheresyoured.at). But not all of those searches stop at the AI overview, as people still have reasons to visit: 16% look to verify the source, and 6% visit because of the AI answer. This holds true for not just the individual learner—human expertise continues to be important [even at the enterprise level](https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise/).",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "I can use AI to ask simple questions but for complicated questions I use StackOverflow.",
+          "description": "Front-end developer, Ukraine, SO User 5 - 10 years",
+          "tier": "chapter",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "When it comes to how folks are contributing to developer knowledge communities, 22% of folks indicated no change, 6% said they ask more advanced questions, and 1% of folks recognize that the garden needs tending and are contributing more. This was a sentiment repeated by Major League Hacking’s CEO Mike Swift when he joined us on the [Stack Overflow podcast](https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/), telling us, “We're just inundated with digital assets and digital communication. Person-to-person, real human connection is gonna be the driver of so much stuff in life. Communities of practice guilds, in a lot of ways, are the future.”",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "SOChange",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "so-change"
+        },
+        {
+          "chapter": "Community",
+          "headline": "And community is still important",
+          "description": "This might be biased because it’s our survey, but the top two platforms that respondents worked with last year were GitHub (70%) and Stack Overflow (69%). In terms of platforms they want to work with next year, the top two remain: GitHub tops at 45% and we’re second with 44%. We’re thrilled that you all still have a lot of goodwill towards us; our challenge is to give you more reasons to visit.",
+          "tier": "chapter",
+          "chart": "3d-bar-stacked-vertical",
+          "dataId": "CommPlat",
+          "dataset": [],
+          "focus": "",
+          "limit": "4",
+          "values": [],
+          "dataIdSlug": "comm-plat"
+        },
+        {
+          "chapter": "Community",
+          "headline": "Stack Overflow is a place to get reliable up to date answers.",
+          "description": "Student, U.K., SO User 1 - 3 years",
+          "tier": "chapter",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Community",
+          "headline": "",
+          "description": "How about those folks who don’t participate in technical communities much? Part of the answer is certainly AI (45% feel that AI answers enough of their questions that they don’t seek out human expertise), but another part is that communities have built up solid knowledge (where 65% of respondents can find answers without posting). But there’s another problem that’s much older than AI (and harder, too): making folks feel welcome and safe. Of those who aren’t active in technical communities, 21% worry about being judged, 20% don’t feel confident about public posts, 18% prefer private conversations, and 12% feel like they aren’t welcome in those spaces. \n\nWhether you’ve been using AI to learn about AI or still lean on the code experts in your online and IRL communities, it’s clear that learning is still core to what it means to be a developer in our ever-shifting technological landscape.",
+          "tier": "chapter",
+          "chart": "rank",
+          "dataId": "CommunityGap",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "community-gap"
+        },
+        {
+          "chapter": "Community",
+          "headline": "40% are learning AI skills for both work and personal projects",
+          "description": "Four in ten developers learned AI programming across both personal and work settings, driving overall AI skill development participation to 79% overall.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "LearnAI",
+          "dataset": [],
+          "focus": "Yes, both on my own and at work",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "learn-ai"
+        }
+      ],
+      "index": 4
+    },
+    {
+      "name": "Knowledge",
+      "description": "What does everyone need to know? In software development, context seems to be the reigning king this year, whether or not AI agents are involved. But the right context is not always reaching developers at the right time.",
+      "id": "knowledge",
+      "sections": [
+        {
+          "chapter": "Knowledge",
+          "name": "Context Challenges",
+          "description": "Explore the effort required to find useful information, the context respondents need, and the barriers and missing details that interrupt their work.",
+          "id": "context-challenges",
+          "questions": [
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Time spent finding information",
+              "dataId": "KnowledgeA",
+              "chart": "bar-vertical",
+              "description": "75% spend 5 or more hours/week searching for information; 11% spend 20+ hours",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "time-spent-finding-information",
+              "dataIdSlug": "knowledge-a"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Important project context",
+              "dataId": "ContextSelect",
+              "chart": "bar",
+              "description": "Project goals (85%) and code/technical docs (73%) are the most needed context types.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "important-project-context",
+              "dataIdSlug": "context-select"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Barriers to finding context",
+              "dataId": "ContextProblems",
+              "chart": "bar",
+              "description": "Incomplete info (63%), knowledge in people's heads (61%), and outdated info (56%) are top barriers.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "barriers-to-finding-context",
+              "dataIdSlug": "context-problems"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Managing work context",
+              "dataId": "ContextWork",
+              "chart": "bar",
+              "description": "Context management is highly manual — keeping separate notes (54%) and starting fresh AI sessions (45%) dominate.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "managing-work-context",
+              "dataIdSlug": "context-work"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Context Challenges",
+              "name": "Discovering context too late",
+              "dataId": "ContextFreq",
+              "chart": "bar",
+              "description": "79% discover important context only after starting a task, highlighting systemic context gaps.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "discovering-context-too-late",
+              "dataIdSlug": "context-freq"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge",
+          "name": "Knowledge sources and trust",
+          "description": "Discover where respondents find answers at work and how accuracy, recency, and traceable sources shape their trust in information, including AI-generated answers.",
+          "id": "knowledge-sources-and-trust",
+          "questions": [
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Sources for work-related answers",
+              "dataId": "KnowledgeQ",
+              "chart": "bar",
+              "description": "Coworkers (72%) and code repos (63%) are the go-to sources — internal beats external.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "sources-for-work-related-answers",
+              "dataIdSlug": "knowledge-q"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Importance of information accuracy",
+              "dataId": "KnowledgeAcc",
+              "chart": "bar-stacked",
+              "description": "Accuracy is the expectation for official docs, API documentation, and code repos; chat tools and Stack Overflow face lower accuracy expectations.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "importance-of-information-accuracy",
+              "dataIdSlug": "knowledge-acc"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Importance of current information",
+              "dataId": "KnowledgeTime",
+              "chart": "bar-stacked",
+              "description": "Recency/timestamps matter most for official docs and product/vendor docs; people tolerate stale human knowledge.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "importance-of-current-information",
+              "dataIdSlug": "knowledge-time"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Importance of source traceability",
+              "dataId": "KnowledgeSource",
+              "chart": "bar-stacked",
+              "description": "Source traceability is most critical for code repos and customer support docs; coworker knowledge is trusted by reputation.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "importance-of-source-traceability",
+              "dataIdSlug": "knowledge-source"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Source attribution for AI answers",
+              "dataId": "KnowledgeSourceAI",
+              "chart": "bar",
+              "description": "79% consider source attribution important or very important for trusting AI answers.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "source-attribution-for-ai-answers",
+              "dataIdSlug": "knowledge-source-ai"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "Knowledge sources and trust",
+              "name": "Signals of trustworthy information",
+              "dataId": "TrustReason",
+              "chart": "bar",
+              "description": "Recency (72.6%) and authority (60%) beat attribution and peer validation as trust signals.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "signals-of-trustworthy-information",
+              "dataIdSlug": "trust-reason"
+            }
+          ]
+        },
+        {
+          "chapter": "Knowledge",
+          "name": "AI adoption and cost",
+          "description": "Explore what drives AI adoption, which tasks respondents delegate, and how they control AI inputs, spending, and usage—including changes to prompts for quality or cost.",
+          "id": "ai-adoption-and-cost",
+          "questions": [
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Tasks delegated to AI agents",
+              "dataId": "KnowAgentDelegate",
+              "chart": "bar",
+              "description": "Code tasks dominate AI use (73% write code, 62% debug); critical ops like deploying (10%) are rarely delegated.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "tasks-delegated-to-ai-agents",
+              "dataIdSlug": "know-agent-delegate"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Control over information used by AI",
+              "dataId": "KnowAgentTrust",
+              "chart": "bar",
+              "description": "64% actively curate what info AI uses; 17% have little or no visibility into AI inputs.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "control-over-information-used-by-ai",
+              "dataIdSlug": "know-agent-trust"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Factors in AI adoption",
+              "dataId": "AIAdopt",
+              "chart": "bar",
+              "description": "Output quality, security, and price drive adoption — organizations are pragmatic and risk-averse.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "factors-in-ai-adoption",
+              "dataIdSlug": "ai-adopt"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Organizational AI usage practices",
+              "dataId": "AIToken",
+              "chart": "bar",
+              "description": "38% of orgs set AI spending limits; 18% have no formal governance.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "organizational-ai-usage-practices",
+              "dataIdSlug": "ai-token"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "AI cost and usage limits",
+              "dataId": "AICost",
+              "chart": "bar",
+              "description": "33% self-monitor AI usage; cost pressure changes model selection and task selectivity.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "ai-cost-and-usage-limits",
+              "dataIdSlug": "ai-cost"
+            },
+            {
+              "chapter": "Knowledge",
+              "section": "AI adoption and cost",
+              "name": "Cost-conscious prompting",
+              "dataId": "AICostPrompt",
+              "chart": "bar",
+              "description": "75% changed prompts for quality, 38% for cost — quality optimization outpaces cost-cutting 2:1.",
+              "subtext": "",
+              "axisLabels": [],
+              "id": "cost-conscious-prompting",
+              "dataIdSlug": "ai-cost-prompt"
+            }
+          ]
+        }
+      ],
+      "features": [
+        {
+          "chapter": "Knowledge",
+          "headline": "What gets in the way of you getting the context you need for work?",
+          "description": "Over 63% of developers find incomplete information to be a barrier to getting the right context at work, while 79% regularly discover the important context they need only after the fact. A lot of time goes into that context search, 75% spent five plus hours searching for answers.",
+          "tier": "home",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "ContextProblems",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "context-problems"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "How often do you discover important work context only after you have already started or completed a task?",
+          "description": "This has left teams with a bit of a problem of their own creation. Developers have relied on the expert knowledge from [resources like technical documentation](https://survey.stackoverflow.co/2025/developers#2-how-did-you-learn-to-code), Stack Overflow, or online search to drive their work, but, as reported in a pulse survey earlier this year, we know [low-effort documentation](https://stackoverflow.blog/2026/03/16/domain-expertise-still-wanted-the-latest-trends-in-ai/) is leading to more and more dissatisfaction in AI-driven work.",
+          "tier": "home",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "ContextFreq",
+          "dataset": [],
+          "focus": "",
+          "limit": "4",
+          "values": [],
+          "dataIdSlug": "context-freq"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "AI is forcing software organizations to document the judgment they previously relied on people to supply.",
+          "description": "Stack Overflow Chief Product and Technology Officer [Jody Bailey told CTO Uncovered](https://www.ctouncovered.com/p/jody-bailey)",
+          "tier": "home",
+          "chart": "quote",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "31% of respondents say that the accuracy of AI answers is important to the adoption or expansion of AI tool use.",
+          "description": "",
+          "tier": "home",
+          "chart": "3d-bar-stacked-horizontal",
+          "dataId": "AIAdopt",
+          "dataset": [],
+          "focus": "",
+          "limit": "5",
+          "values": [],
+          "dataIdSlug": "ai-adopt"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Project goals or requirements (85%) and code, repositories, or technical documentation (73%) are the top important sources for context at work",
+          "description": "And the most important context for AI agents and assistants to have? Why, your internal projects, of course! Project requirements (85%) and the code and docs themselves (73%) are the two most important contexts that developers need their AI agents to have.",
+          "tier": "home",
+          "chart": "3d-waffle-large",
+          "dataId": "ContextSelect",
+          "dataset": [],
+          "focus": "Project goals or requirements",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-select"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "",
+          "description": "If this year’s data showed developers using AI tools consistently while trusting them conditionally, this section digs into the “conditionally” of it all. Where does that trust actually come from, and what gives an answer credibility in the first place?",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Source attribution",
+          "description": "As AI-generated content becomes harder to distinguish from human-produced work, and as governance conversations gain more traction across the industry, source attribution has become a bigger priority for technologists. This year, 93% of survey respondents called source attribution at least somewhat important when deciding whether to trust AI-generated answers, with 79% judging it important or very important.\n\nAI models, of course, are non-deterministic by design. That variability is part of what makes them useful, but it also introduces the potential for errors and hallucinations. Developers have clearly internalized this, because the overwhelming majority say that knowing where an answer came from matters a lot, not a little, when deciding whether to trust it.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "",
+          "description": "For AI responses, people want proof: 93% of respondents feel the source of the information is at least somewhat important.",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "KnowledgeSourceAI",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "knowledge-source-ai"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Context that matters most",
+          "description": "That trust in sourcing extends naturally into a question of inputs: what context actually helps AI get things right in the first place? Respondents ranked project goals or requirements (85%) and the underlying code and docs (73%) as by far the most important context they need their AI to consider.\n\nBut if someone has a specific question, then the sources of context shift slightly. The most trusted source of information is still the people you work with (72%), followed by the code (63%), and documentation (60%). In other words, you first go to the people, then the code, then what people wrote about the code.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Project goals or requirements (85%) and code, repositories, or technical documentation (73%) are the top most important sources for context at work",
+          "description": "The top two sources of AI context  are overwhelmingly project goals or requirements (85%) and the code and docs themselves (73%). The work itself is the most important context.",
+          "tier": "chapter",
+          "chart": "2d-treemap",
+          "dataId": "ContextSelect",
+          "dataset": [],
+          "focus": "Project goals or requirements",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "context-select"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Tokenomics vs. quality",
+          "description": "Are developers changing their behaviors as they start seeing the costs of high-performing models? When asked about whether they changed their prompts to improve quality or to reduce costs, overwhelmingly respondents picked quality (75%) over cost (38%), probably because they’re the folks actually building software, not managers who have to report ROI to the board. A small portion (16%) said their prompts are perfect as they are, thanks, and aren’t changing them for either reason. \n\nThat doesn’t mean organizations have wired their AI models directly to their bank accounts. A majority of respondents have some sort of organization cost controls or monitoring: 38% set limits on usage, 28% reviewed spending data, 27% use different models for different work, and 25% set limits on who gets to use AI. 21% of respondents said their organizations saw the results from AI and started spending more.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "How has cost or usage limits shown up at work?",
+          "description": "33% self-monitor AI usage",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-vertical",
+          "dataId": "AICost",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-cost"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "Many have changed how they prompt in order to reduce cost or improve quality",
+          "description": "Quality optimization outpaces cost-cutting 2:1",
+          "tier": "chapter",
+          "chart": "2d-bar-stacked-horizontal",
+          "dataId": "AICostPrompt",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": [],
+          "dataIdSlug": "ai-cost-prompt"
+        },
+        {
+          "chapter": "Knowledge",
+          "headline": "",
+          "description": "When it comes to their own AI usage, individual respondents took a generally cost-conscious approach: 33% personally monitor their usage, 25% choose cheaper models when possible, and 24% say their usage is metered. Not everyone is so constrained by budgets: 22% are unaffected by costs or limits to their AI use while 21% have yet to see limits and probably have an intimidating yellow aura.",
+          "tier": "chapter",
+          "chart": "text",
+          "dataId": "",
+          "dataset": [],
+          "focus": "",
+          "limit": "",
+          "values": []
+        }
+      ],
+      "index": 5
+    }
+  ],
+  "methodology": [
+    {
+      "headline": "",
+      "description": "**30,903** responses from **169** countries are used in these survey results.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Survey fielding",
+      "description": "The current local response extract includes 39,266 total rows recorded from June 23, 2026 through August 5, 2026, of which 30,903 are marked as valid responses.\n\nThe survey was promoted through stackoverflow.com, stackoverflow.blog and our email list to community members that are opted into learning about research opportunities or announcements.\n\nThe survey instrument should be referenced from the public Stack Exchange survey repository: [StackExchange/Survey](https://github.com/StackExchange/Survey).\n\nThe public call for feedback that informed the 2026 Developer Survey should be referenced from Meta Stack Overflow: [Help shape the 2026 Developer Survey](https://meta.stackoverflow.com/questions/438884/help-shape-the-2026-developer-survey).",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Valid responses",
+      "description": "The current valid-response rule is implemented in `mark_valid_responses()` in `R/aggregation.R`. At a high level, the function adds an integer `valid_response` indicator to the response data.\n\nWhen bot exclusion is enabled and the input data does not already include `is_bot`, the function first runs `flag_bots()`. The current bot flag uses Qualtrics response-quality fields, including reCAPTCHA score, duplicate respondent status, straightlining questions, unanswered questions, progress, duration, and whether `Country` was answered.\n\nResponses are marked valid through either the primary inclusion rule or the substantive-response recovery rule.\n\nPrimary inclusion rule:\n\n- `Consent` is present and equals `\"I agree\"`.\n- `Employment` is present.\n- The response is not flagged as a bot when bot exclusion is enabled.\n\nSubstantive-response recovery rule:\n\n- The response answered all ten core fielding questions listed below.\n- This recovery rule is evaluated independently of the primary non-bot condition, so a response with `is_bot == TRUE` can still receive `valid_response == 1` when it answered all ten core fielding questions.\n\nCore fielding questions:\n\n- `Country`\n- `Currency`\n- `Compensation`\n- `TechDropDown`\n- `Languages`\n- `CodeTest`\n- `Databases`\n- `CloudPlat`\n- `WebFramework`\n- `DevIDE`\n\nThe survey-section scripts use `valid_response == 1` as the inclusion rule for exports, so the substantive-response recovery rule is preserved downstream.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Write-in handling",
+      "description": "Role write-ins from `Role_38_TEXT` are reviewed only among `valid_response == 1` responses, normalized to group repeated answers, and compared against existing and analyst-approved Role categories. Reviewed matches can recode `\"Other, please specify\"` into a final Role category while retaining `Role_Original` and `Role_NLP_Status`; unresolved write-ins remain grouped as `\"Other\"` in summaries.\n\nSOChangeAddl written responses are eligible for public use only when `valid_response == 1`, `SOChangeAddlConsent` gives permission to share publicly, and `SOChangeAddl` is non-empty. Responses are decoded, translated to English when needed, and manually curated with `SOChangeAddlPublishText`, `SOChangeAddlInclude`, and `SOChangeAddlExcludeReason`; automated text flags are used only to support review, not to make final publish decisions.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Compensation handling",
+      "description": "Compensation is analyzed among `valid_response == 1` responses with non-missing `Country`, `Currency`, and positive numeric `Compensation`; values are converted to yearly USD using exchange rates, with a documented Ukraine-specific correction when likely USD values were entered under `UAH`. Compensation statistics and charts use rows where `CompensationStatsInclude` and `CompensationChartInclude` are `TRUE`, excluding rows with multiple quality flags such as very low or very high converted values, country outliers, suspicious raw-number patterns, non-employed respondents, or student/retired roles.",
+      "chart": "text",
+      "dataId": ""
+    },
+    {
+      "headline": "Age",
+      "description": "Age range for respondents.",
+      "chart": "bar",
+      "dataId": "Age",
+      "dataIdSlug": "age"
+    },
+    {
+      "headline": "Gender",
+      "description": "Gender of respondents",
+      "chart": "bar",
+      "dataId": "Gender",
+      "dataIdSlug": "gender"
+    },
+    {
+      "headline": "Survey length",
+      "description": "How do you feel about the length of the survey this year?",
+      "chart": "bar",
+      "dataId": "SurveyLength",
+      "dataIdSlug": "survey-length"
+    },
+    {
+      "headline": "Difficulty",
+      "description": "How easy or difficult was this survey to complete?",
+      "chart": "bar",
+      "dataId": "SurveyEase",
+      "dataIdSlug": "survey-ease"
+    }
+  ]
+}
