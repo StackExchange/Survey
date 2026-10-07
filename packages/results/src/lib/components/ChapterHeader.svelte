@@ -1,9 +1,13 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte'
 
+	import { IconBlog, IconChart } from '@stackoverflow/stacks-icons/icons'
+
 	import { resolve } from '$app/paths'
 
 	import { chapterColour } from '$config'
+
+	import Button from '$components/Button.svelte'
 
 	type Variant = 'home' | 'chapter' | 'data' | 'hero' | 'question'
 
@@ -139,6 +143,25 @@
 
 		{#if description}
 			<div class="md {options.descriptionClass} mb-auto max-w-2xl">{@html description}</div>
+
+			{#if variant === 'home'}
+				<div class="mt-5 flex flex-wrap gap-4">
+					<Button
+						variant="link"
+						href={resolve('/[year]/[chapter]', { year, chapter: chapter.id })}
+						data-sveltekit-reload
+						icon={IconBlog}
+						label="Our highlights"
+					/>
+					<Button
+						variant="link"
+						href={resolve('/[year]/[chapter]/data', { year, chapter: chapter.id })}
+						rel="external noopener"
+						icon={IconChart}
+						label="Full data"
+					/>
+				</div>
+			{/if}
 		{/if}
 
 		{#if children}
