@@ -26,11 +26,11 @@
 
 <main id="main" class="min-h-screen" tabindex="-1">
 	<section class="container my-10 lg:my-30">
-		<div class="mb-6 flex items-start gap-2 text-lg leading-snug">
+		<div class="mb-10 flex max-w-5xl items-start gap-3 text-lg leading-snug">
 			<span aria-hidden="true" class="mt-[0.35em] h-3 w-3 shrink-0 bg-orange"></span>
 			<div class="md">{@html data.settingsHtml.description}</div>
 		</div>
-		<div class="md max-w-5xl text-3xl lg:text-4xl">
+		<div class="md max-w-5xl text-2xl lg:text-3xl [&>p]:mb-8!">
 			{@html data.settingsHtml.descriptionLong}
 		</div>
 	</section>
