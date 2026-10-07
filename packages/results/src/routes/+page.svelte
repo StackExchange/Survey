@@ -6,7 +6,6 @@
 	import BrandHeader from '$components/BrandHeader.svelte'
 	import Button from '$components/Button.svelte'
 	import Seo from '$components/Seo.svelte'
-	import ThemeToggle from '$components/ThemeToggle.svelte'
 
 	let { data } = $props()
 
