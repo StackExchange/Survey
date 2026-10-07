@@ -123,6 +123,7 @@
 					<li>
 						<a
 							href="https://survey.stackoverflow.co/{year}/"
+							data-sveltekit-reload
 							class="-mt-px flex justify-between border-b py-3 hover:-mx-4 hover:bg-black hover:px-4 hover:text-white dark:border-black-400 dark:hover:bg-white dark:hover:text-black"
 						>
 							{year}
