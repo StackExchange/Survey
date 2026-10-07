@@ -122,7 +122,7 @@
 				{#each [2025, 2024, 2023, 2022, 2021] as year (`prev-${year}`)}
 					<li>
 						<a
-							href="https://survey.stackoverflow.co/{year}"
+							href="https://survey.stackoverflow.co/{year}/"
 							class="-mt-px flex justify-between border-b py-3 hover:-mx-4 hover:bg-black hover:px-4 hover:text-white dark:border-black-400 dark:hover:bg-white dark:hover:text-black"
 						>
 							{year}
