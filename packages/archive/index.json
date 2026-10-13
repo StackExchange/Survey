@@ -2,8 +2,8 @@
 	{
 	  "year": 2026,
 		"results": "https://survey.stackoverflow.co/2026",
-		"data": null,
-		"source": null
+		"data": "https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive/2026/survey_results_public.csv",
+		"source": "https://github.com/StackExchange/Survey/tree/main/packages/archive/2026"
 	},
 	{
 	  "year": 2025,
