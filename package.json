@@ -25,8 +25,8 @@
 	"license": "Apache-2.0",
 	"devDependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-		"netlify-cli": "^27.4.1",
-		"prettier": "^3.9.6",
+		"netlify-cli": "^27.10.2",
+		"prettier": "^3.9.9",
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1"
 	},
