@@ -3566,16 +3566,16 @@
       {
         "slice": 0,
         "series": null,
-        "response": "1-2 hours/day",
-        "count": 2765,
-        "pct": 0.253
+        "response": "2-4 hours/day",
+        "count": 2636,
+        "pct": 0.241
       },
       {
         "slice": 0,
         "series": null,
-        "response": "2-4 hours/day",
-        "count": 2636,
-        "pct": 0.241
+        "response": "1-2 hours/day",
+        "count": 2765,
+        "pct": 0.253
       },
       {
         "slice": 0,
